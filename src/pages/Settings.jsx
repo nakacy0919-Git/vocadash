@@ -1,45 +1,67 @@
 import React from 'react';
 
-export default function Settings({ currentMode, targetTime, setTargetTime, startGame, goBack }) {
+export default function Settings({ currentMode, setPlayMode, startGame, goBack }) {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center bg-gray-50 p-6">
-      <div className="w-full max-w-md flex flex-col items-center">
-        <button onClick={goBack} className="self-start text-gray-400 font-bold mb-8 flex items-center">
-          ← ダッシュボードに戻る
-        </button>
-        
-        <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full font-bold text-sm mb-4">
+    <div className="h-screen w-screen bg-macaron-gradient p-6 flex flex-col items-center justify-center overflow-y-auto relative">
+      
+      <button 
+        onClick={goBack}
+        className="absolute top-6 left-6 w-12 h-12 flex items-center justify-center rounded-full bg-white/40 backdrop-blur-md text-gray-600 border border-white/60 active:scale-90 transition-transform shadow-sm"
+      >
+        <span className="text-xl font-bold">←</span>
+      </button>
+
+      <div className="text-center mb-10 w-full max-w-md">
+        <span className="inline-block bg-white/60 px-4 py-1.5 rounded-full text-sm font-bold text-gray-500 mb-4 shadow-sm border border-white">
           {currentMode.label}
         </span>
-        <h2 className="text-3xl font-black text-gray-800 mb-12">目標スピードを設定</h2>
+        <h1 className="text-3xl md:text-4xl font-black text-gray-700 tracking-tight">
+          どのモードで学ぶ？
+        </h1>
+      </div>
 
-        <div className="bg-white w-full rounded-3xl shadow-xl p-8 mb-8 border border-gray-100">
-          <div className="flex items-center justify-center space-x-6 mb-6">
-            <button 
-              onClick={() => setTargetTime(Math.max(1000, targetTime - 1000))}
-              className="w-14 h-14 rounded-full bg-gray-100 text-gray-600 text-3xl font-bold active:scale-90 flex items-center justify-center"
-            >
-              -
-            </button>
-            <div className="text-center w-32">
-              <span className="text-5xl font-black text-blue-500">{(targetTime / 1000).toFixed(1)}</span>
-              <span className="text-gray-400 font-bold ml-1">秒</span>
-            </div>
-            <button 
-              onClick={() => setTargetTime(Math.min(10000, targetTime + 1000))}
-              className="w-14 h-14 rounded-full bg-gray-100 text-gray-600 text-3xl font-bold active:scale-90 flex items-center justify-center"
-            >
-              +
-            </button>
-          </div>
-        </div>
-
+      <div className="grid gap-6 w-full max-w-md">
+        
+        {/* --- じっくり学習モードボタン --- */}
         <button 
-          onClick={startGame}
-          className="w-full py-5 bg-blue-600 text-white text-2xl font-black rounded-full shadow-[0_8px_30px_rgba(37,99,235,0.4)] active:scale-95 transition-all"
+          onClick={() => { setPlayMode('study'); startGame(); }}
+          className="group relative bg-white/80 backdrop-blur-md p-8 rounded-3xl text-left shadow-md hover:shadow-xl active:scale-[0.98] transition-all border border-white overflow-hidden"
         >
-          START
+          {/* 内側のステッチ装飾 */}
+          <div className="absolute inset-2 border-2 border-dashed border-blue-300/50 rounded-2xl pointer-events-none group-hover:border-blue-400 transition-colors duration-300"></div>
+          
+          <div className="relative z-10">
+            <div className="flex items-center mb-3">
+              <span className="bg-blue-100 text-blue-600 w-10 h-10 rounded-full flex items-center justify-center text-xl mr-3 shadow-inner">📖</span>
+              <h2 className="text-2xl font-black text-gray-700">じっくり学習</h2>
+            </div>
+            <p className="text-sm text-gray-500 font-medium leading-relaxed pl-13">
+              タイマーなし。間違えてもOK。<br/>
+              構造や語源を確認しながら、音読チェックも行えるインプット用モードです。
+            </p>
+          </div>
         </button>
+
+        {/* --- スパルタテストモードボタン --- */}
+        <button 
+          onClick={() => { setPlayMode('test'); startGame(); }}
+          className="group relative bg-rose-400 p-8 rounded-3xl text-left shadow-[0_4px_20px_rgba(251,113,133,0.4)] hover:shadow-[0_8px_30px_rgba(251,113,133,0.6)] hover:bg-rose-500 active:scale-[0.98] transition-all overflow-hidden"
+        >
+          {/* 内側のステッチ装飾 */}
+          <div className="absolute inset-2 border-2 border-dashed border-white/50 rounded-2xl pointer-events-none"></div>
+          
+          <div className="relative z-10">
+            <div className="flex items-center mb-3">
+              <span className="bg-white/20 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl mr-3 shadow-inner">⚡</span>
+              <h2 className="text-2xl font-black text-white">スパルタテスト</h2>
+            </div>
+            <p className="text-sm text-rose-100 font-medium leading-relaxed pl-13">
+              1秒以内の即答を目指すアウトプット用。<br/>
+              SLAスコアが記録され、1問でも間違えると即終了の厳しいモードです。
+            </p>
+          </div>
+        </button>
+
       </div>
     </div>
   );

@@ -1,33 +1,41 @@
 import React, { useState, useEffect } from 'react';
 
-// 分割した画面コンポーネントを読み込む
 import CourseSelect from './pages/CourseSelect';
 import Home from './pages/Home';
 import Settings from './pages/Settings';
 import Play from './pages/Play';
 import Result from './pages/Result';
 
-// 各コースの問題データを読み込む（ファイルを用意したらここに追加）
 import regularQuestions from './data/questions.json';
-// import eikenPre2Questions from './data/eiken_pre2.json';
-// import eiken2Questions from './data/eiken_2.json';
+import eikenPre2Questions from './data/eiken_pre2.json';
+import eiken2Questions from './data/eiken_2.json';
+import eikenPre1Questions from './data/eiken_pre1.json';
+import eiken1Questions from './data/eiken_1.json';
 
-// コースIDとデータのマッピング
 const COURSE_DATA_MAP = {
   'regular': regularQuestions,
-  // 'eiken_pre2': eikenPre2Questions,
-  // 'eiken_2': eiken2Questions,
+  'eiken_pre2': eikenPre2Questions,
+  'eiken_2': eiken2Questions,
+  'eiken_pre1': eikenPre1Questions,
+  'eiken_1': eiken1Questions,
+};
+
+const COURSE_TITLE_MAP = {
+  'regular': '定期考査 KICK OFF',
+  'eiken_pre2': '英検 準2級',
+  'eiken_2': '英検 2級',
+  'eiken_pre1': '英検 準1級',
+  'eiken_1': '英検 1級',
 };
 
 export default function App() {
-  // アプリの画面状態: 'courseSelect', 'home', 'settings', 'playing', 'cleared'
   const [appState, setAppState] = useState('courseSelect');
-  
-  // 現在選択中のコース情報
   const [currentCourse, setCurrentCourse] = useState(null);
   const [questionsData, setQuestionsData] = useState([]);
 
-  // ゲーム設定・プレイ状態
+  // ★ 追加: プレイモード（'study' または 'test'）
+  const [playMode, setPlayMode] = useState('test');
+  
   const [targetTime, setTargetTime] = useState(5000); 
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [currentMode, setCurrentMode] = useState({ type: '', id: '', label: '' });
@@ -37,32 +45,25 @@ export default function App() {
   const [isFailed, setIsFailed] = useState(false);
   const [sessionData, setSessionData] = useState([]);
 
-  // 学習記録（LocalStorageと同期）
   const [masteryData, setMasteryData] = useState({}); 
   const [chunkStats, setChunkStats] = useState({});   
 
-  // 1. コースが選択された時の処理
   const handleCourseSelect = (courseId) => {
     setCurrentCourse(courseId);
     setQuestionsData(COURSE_DATA_MAP[courseId] || []);
     setAppState('home');
   };
 
-  // 2. 学習データの読み込み（コース切り替え時や画面遷移時に実行）
   useEffect(() => {
     if (!currentCourse) return;
-    
-    // コースごとに個別の保存キーを使用する
     const masteryKey = `vocaDashMastery_${currentCourse}`;
     const statsKey = `vocaDashChunkStats_${currentCourse}`;
-    
     setMasteryData(JSON.parse(localStorage.getItem(masteryKey) || '{}'));
     setChunkStats(JSON.parse(localStorage.getItem(statsKey) || '{}'));
   }, [currentCourse, appState]);
 
   const currentQuestion = selectedQuestions[currentIndex];
 
-  // 3. モード選択（チャンク or ランダム）
   const handleSelectMode = (modeType, value) => {
     let questions = [];
     let label = '';
@@ -78,7 +79,6 @@ export default function App() {
       id = `random-${value}`;
       label = `ランダム ${value}問`;
     }
-
     setSelectedQuestions(questions);
     setCurrentMode({ type: modeType, id, label });
     setAppState('settings'); 
@@ -92,23 +92,36 @@ export default function App() {
     setAppState('playing');
   };
 
-  // 4. タイマーロジック
+  // タイマー処理（学習モードの場合はタイマーを動かさない）
   useEffect(() => {
-    if (appState !== 'playing' || isFailed) return;
+    if (appState !== 'playing' || isFailed || playMode === 'study') return;
     if (timeLeft <= 0) {
       handleFail('timeout');
       return;
     }
     const timer = setInterval(() => setTimeLeft(prev => prev - 50), 50);
     return () => clearInterval(timer);
-  }, [timeLeft, isFailed, appState]);
+  }, [timeLeft, isFailed, appState, playMode]);
 
-  // 5. SLAベースの保存ロジック
   const saveProgress = (finalSessionData) => {
-    const masteryKey = `vocaDashMastery_${currentCourse}`;
-    const statsKey = `vocaDashChunkStats_${currentCourse}`;
-    const historyKey = `vocaDashHistory_${currentCourse}`;
+    if (finalSessionData.length === 0) return; 
 
+    const statsKey = `vocaDashChunkStats_${currentCourse}`;
+    
+    // 学習モードの場合、学習回数だけ増やしてSLAスコア（グラフ）は更新しない
+    if (playMode === 'study') {
+      if (currentMode.type === 'chunk') {
+        const newStats = { ...chunkStats };
+        if (!newStats[currentMode.id]) newStats[currentMode.id] = { playCount: 0 };
+        newStats[currentMode.id].playCount += 1;
+        setChunkStats(newStats);
+        localStorage.setItem(statsKey, JSON.stringify(newStats));
+      }
+      return;
+    }
+
+    const masteryKey = `vocaDashMastery_${currentCourse}`;
+    const historyKey = `vocaDashHistory_${currentCourse}`;
     const newMastery = { ...masteryData };
     let sessionTotalSLAScore = 0;
 
@@ -155,13 +168,14 @@ export default function App() {
     saveProgress(updatedSession);
   };
 
-  const handleAnswer = (selectedIndex) => {
-    const isCorrect = selectedIndex === currentQuestion?.correct;
-    const record = { id: currentQuestion.id, timeTaken: targetTime - timeLeft, correct: isCorrect };
+  // 正解した時や、学習モードで「次へ」を押した時に呼ばれる
+  const submitRecord = (isCorrect, timeTaken) => {
+    const record = { id: currentQuestion.id, timeTaken, correct: isCorrect };
     const updatedSession = [...sessionData, record];
-    
-    if (isCorrect) {
-      setSessionData(updatedSession);
+    setSessionData(updatedSession);
+
+    // 学習モードなら間違えてもゲームオーバーにならない
+    if (isCorrect || playMode === 'study') {
       if (currentIndex + 1 < selectedQuestions.length) {
         setCurrentIndex(prev => prev + 1);
         setTimeLeft(targetTime); 
@@ -170,9 +184,7 @@ export default function App() {
         setAppState('cleared');
       }
     } else {
-      setSessionData(updatedSession);
-      saveProgress(updatedSession);
-      setIsFailed(true);
+      handleFail('wrong_choice');
     }
   };
 
@@ -184,7 +196,6 @@ export default function App() {
     return Math.round(totalScore / chunkQuestions.length);
   };
 
-  // --- 画面分岐 ---
   if (appState === 'courseSelect') return <CourseSelect onSelectCourse={handleCourseSelect} />;
   
   if (appState === 'home') return (
@@ -192,15 +203,17 @@ export default function App() {
       handleSelectMode={handleSelectMode} 
       chunkStats={chunkStats} 
       getChunkMasteryRate={getChunkMasteryRate}
-      currentCourse={currentCourse} // グラフ用
+      currentCourse={currentCourse} 
+      courseTitle={COURSE_TITLE_MAP[currentCourse]}
+      goCourseSelect={() => setAppState('courseSelect')}
+      questionsData={questionsData}
     />
   );
 
   if (appState === 'settings') return (
     <Settings 
       currentMode={currentMode} 
-      targetTime={targetTime} 
-      setTargetTime={setTargetTime} 
+      setPlayMode={setPlayMode} 
       startGame={startGame} 
       goBack={() => setAppState('home')} 
     />
@@ -210,16 +223,18 @@ export default function App() {
 
   if (appState === 'playing') return (
     <Play
+      playMode={playMode}
       currentIndex={currentIndex}
       selectedQuestions={selectedQuestions}
       currentQuestion={currentQuestion}
       timeLeft={timeLeft}
       targetTime={targetTime}
       isFailed={isFailed}
-      handleAnswer={handleAnswer}
+      submitRecord={submitRecord}
+      handleFail={handleFail}
       goHome={() => setAppState('home')}
       startGame={startGame}
-      calculateAverageTime={() => (sessionData.reduce((a, b) => a + b.timeTaken, 0) / sessionData.length / 1000).toFixed(2)}
+      calculateAverageTime={() => sessionData.length ? (sessionData.reduce((a, b) => a + b.timeTaken, 0) / sessionData.length / 1000).toFixed(2) : 0}
     />
   );
 

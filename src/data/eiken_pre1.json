@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "grade": "pre1",
+    "english": "Marty spent many hours ________ the problem before he realized that the solution was much simpler than he thought.",
+    "japanese": "マーティはその解決策が自分が思っていたよりもずっと簡単だと気づく前に、多くの時間をその問題に________のに費やした。",
+    "choices": ["clearing out", "wrestling with", "living down", "snapping off"],
+    "correct": 1,
+    "explanation": "難題に対して「取り組む、格闘する」という意味を持つ wrestling with が正解です。文字通りレスリングのように問題と取っ組み合っているイメージです。",
+    "word_details": [
+      { "word": "clearing out", "meaning": "〜を片付ける、空にする", "etymology": "clear(綺麗にする) + out(完全に)" },
+      { "word": "wrestling with", "meaning": "〜と格闘する、〜に取り組む", "etymology": "wrestle(レスリングをする) + with(〜と)" },
+      { "word": "living down", "meaning": "（過去の過ちなど）を忘れさせる", "etymology": "live(生きる) + down(下へ・落ち着かせる) = 生き続けて過去の恥を鎮める" },
+      { "word": "snapping off", "meaning": "ポキッと折る", "etymology": "snap(ポキッと) + off(離れる)" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "pre1",
+    "english": "With faster Internet connections and better computers, more information can be ________ at high speed than ever before.",
+    "japanese": "より高速なインターネット接続とより良いコンピューターにより、以前よりも高速に多くの情報を________ことができます。",
+    "choices": ["rejoiced", "offended", "transmitted", "nauseated"],
+    "correct": 2,
+    "explanation": "「情報(information)を高速で（どうするのか）」という文脈から、「送信する、伝達する」を意味する transmitted が正解です。",
+    "word_details": [
+      { "word": "rejoiced", "meaning": "喜んだ", "etymology": "re(再び・大いに) + joy(喜び) = 大喜びする" },
+      { "word": "offended", "meaning": "怒らせた、気分を害した", "etymology": "ob(〜に向かって) + fendere(打つ) = 感情を叩く" },
+      { "word": "transmitted", "meaning": "送信した、伝達した", "etymology": "trans(越えて) + mittere(送る) = 空間を越えて送る" },
+      { "word": "nauseated", "meaning": "吐き気を催させた", "etymology": "ギリシャ語naus(船)から。船酔いさせる" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "pre1",
+    "english": "To treat an injured ankle, doctors recommend ________. This can be done by wrapping a bandage tightly around the injury.",
+    "japanese": "負傷した足首を治療するために、医師は________を勧めます。これは、怪我の周りに包帯をきつく巻くことで行うことができます。",
+    "choices": ["progression", "suspicion", "compression", "depression"],
+    "correct": 2,
+    "explanation": "「包帯をきつく巻く(wrapping a bandage tightly)」という具体的な行動から、足首を「圧迫(compression)」することが治療法だとわかります。",
+    "word_details": [
+      { "word": "progression", "meaning": "進行、前進", "etymology": "pro(前へ) + gress(歩く) + ion(こと)" },
+      { "word": "suspicion", "meaning": "疑い", "etymology": "sub(下から) + spicere(見る) = 下から疑い深く見る" },
+      { "word": "compression", "meaning": "圧迫、圧縮", "etymology": "com(共に) + press(押す) + ion(こと) = ギュッと押しつけること" },
+      { "word": "depression", "meaning": "憂鬱、不景気", "etymology": "de(下へ) + press(押す) + ion = 気分や経済が押し下げられた状態" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "pre1",
+    "english": "When there is a big business convention in town, it is almost impossible to find a hotel with a ________. Most hotels quickly get fully booked.",
+    "japanese": "町で大きなビジネスコンベンションがあるとき、________のあるホテルを見つけるのはほぼ不可能です。ほとんどのホテルはすぐに満室になります。",
+    "choices": ["transition", "segment", "vacancy", "sprain"],
+    "correct": 2,
+    "explanation": "「ホテルがすぐに満室になる(fully booked)」という状況の対義として、「空室(vacancy)」を見つけるのは不可能だ、という文脈が成立します。",
+    "word_details": [
+      { "word": "transition", "meaning": "移行、変遷", "etymology": "trans(越えて) + ire(行く) + ion" },
+      { "word": "segment", "meaning": "部分、区分", "etymology": "secare(切る) + ment(結果) = 切り取られた部分" },
+      { "word": "vacancy", "meaning": "空室、空き", "etymology": "vacare(空である) + ancy(状態)。vacation(休暇)と同じ語源" },
+      { "word": "sprain", "meaning": "捻挫", "etymology": "古フランス語espreindre(絞る、圧迫する)から" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "pre1",
+    "english": "Walt's restaurant serves dishes that were traditionally eaten by poor people in the countryside. He says ________ were skilled at creating delicious meals from cheap ingredients.",
+    "japanese": "ウォルトのレストランでは、田舎の貧しい人々が伝統的に食べていた料理を提供しています。彼は、________は安い食材からおいしい食事を作るのに熟練していたと言います。",
+    "choices": ["correspondents", "captives", "peasants", "janitors"],
+    "correct": 2,
+    "explanation": "「田舎の貧しい人々(poor people in the countryside)」を指し示す名詞として、「小作農、農民(peasants)」が正解です。",
+    "word_details": [
+      { "word": "correspondents", "meaning": "特派員、通信員", "etymology": "cor(共に) + respond(応答する) = 情報をやり取りする人" },
+      { "word": "captives", "meaning": "捕虜", "etymology": "capere(捕まえる) + ive(人) = 捕らえられた人" },
+      { "word": "peasants", "meaning": "小作農、農民", "etymology": "ラテン語pagus(田舎、村)から。pagan(異教徒)と同語源" },
+      { "word": "janitors", "meaning": "管理人、用務員", "etymology": "ローマの門の神Janus(ヤヌス)から。門番・管理人" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "pre1",
+    "english": "It is sadly ________ that, in developing countries, many of the farmers who grow nutritious crops for export do not have enough food to feed their own families.",
+    "japanese": "発展途上国において、輸出用の栄養価の高い作物を育てている多くの農民が、自分たちの家族を養うのに十分な食べ物を持っていないのは、悲しいほど________ことです。",
+    "choices": ["superficial", "restless", "ironic", "indefinite"],
+    "correct": 2,
+    "explanation": "「食べ物を育てているのに、自分たちは食べるものがない」という矛盾した状況を指して、「皮肉な(ironic)」と表現しています。",
+    "word_details": [
+      { "word": "superficial", "meaning": "表面的な", "etymology": "super(上に) + facies(顔・面) = 表面だけの" },
+      { "word": "restless", "meaning": "落ち着かない", "etymology": "rest(休息) + less(ない)" },
+      { "word": "ironic", "meaning": "皮肉な", "etymology": "ギリシャ語eironeia(見せかけの無知)から" },
+      { "word": "indefinite", "meaning": "不明確な、無期限の", "etymology": "in(否定) + de(完全に) + finire(終わらせる) = 限界が定められていない" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "pre1",
+    "english": "Some historians believe the ________ of dogs occurred over 10,000 years ago. They have been kept as pets and used to work on farms ever since.",
+    "japanese": "一部の歴史家は、犬の________が1万年以上前に起こったと考えています。それ以来、それらはペットとして飼われ、農場で働くために使われてきました。",
+    "choices": ["elevation", "verification", "deception", "domestication"],
+    "correct": 3,
+    "explanation": "野生動物が「ペットや農場の働き手になった」という歴史的プロセスを指すため、「家畜化(domestication)」が正解です。",
+    "word_details": [
+      { "word": "elevation", "meaning": "昇進、標高", "etymology": "e(外・上へ) + levare(軽くする) = 持ち上げる" },
+      { "word": "verification", "meaning": "確認、証明", "etymology": "verus(真実) + facere(作る) = 真実だと確かめること" },
+      { "word": "deception", "meaning": "欺瞞、騙すこと", "etymology": "de(離れて・悪く) + capere(掴む) = 誤った認識を掴ませる" },
+      { "word": "domestication", "meaning": "家畜化、飼いならすこと", "etymology": "domus(家)に慣れさせること。domestic(家庭の)と同語源" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "pre1",
+    "english": "A: I've been so busy at work, and now I have to ________ training our newest employee. B: That's too much. You should ask your boss if someone else can do it instead.",
+    "japanese": "A: 私は仕事でとても忙しいのに、今度は一番新しい従業員の訓練に________なりません。 B: それはあんまりです。代わりに誰か他の人ができないか、上司に尋ねるべきです。",
+    "choices": ["prop up", "count off", "turn over", "contend with"],
+    "correct": 3,
+    "explanation": "忙しい上にさらに「新人研修」という厄介な課題に「対処しなければならない、取り組まなければならない」という文脈です。「contend with 〜（〜と闘う、対処する）」が正解です。",
+    "word_details": [
+      { "word": "prop up", "meaning": "〜をテコ入れする、支える", "etymology": "prop(支柱)で上へ(up)支える" },
+      { "word": "count off", "meaning": "番号を言う", "etymology": "count(数えて) + off(切り離す)" },
+      { "word": "turn over", "meaning": "〜をひっくり返す、引き継ぐ", "etymology": "turn(回して) + over(越える)" },
+      { "word": "contend with", "meaning": "〜と戦う、対処する", "etymology": "con(共に) + tendere(伸ばす) = お互いに力を伸ばして張り合う" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "pre1",
+    "english": "After Wanda was late for the third time in one month, her manager had a long talk with her about the importance of ________.",
+    "japanese": "ワンダが1ヶ月で3回遅刻した後、彼女のマネージャーは彼女と________の重要性について長話をしました。",
+    "choices": ["drainage", "congestion", "punctuality", "optimism"],
+    "correct": 2,
+    "explanation": "「遅刻した(was late)」ことに対する指導なので、「時間を守ること(punctuality)」の重要性が説かれたと推測できます。",
+    "word_details": [
+      { "word": "drainage", "meaning": "排水", "etymology": "drain(水を抜く) + age(こと)" },
+      { "word": "congestion", "meaning": "渋滞、混雑", "etymology": "con(共に) + gerere(運ぶ) = 一箇所にまとめて運ばれて詰まること" },
+      { "word": "punctuality", "meaning": "時間を守ること", "etymology": "punct(点) + ual + ity = 時間の「点（ピリオド）」をきっちり突くこと" },
+      { "word": "optimism", "meaning": "楽観主義", "etymology": "optimus(最良の) + ism(主義) = 物事の最良の面を見る" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "pre1",
+    "english": "Since the CEO's speech was so vague, it took Gina a while to ________ to the fact that the company was in serious financial trouble.",
+    "japanese": "CEOのスピーチが非常に曖昧だったため、ジーナが会社が深刻な財政難にあるという事実に________のにはしばらく時間がかかりました。",
+    "choices": ["duck out", "give up", "fill in", "catch on"],
+    "correct": 3,
+    "explanation": "曖昧なスピーチから、裏にある真実（財政難）に「気づく、理解する」という文脈です。「catch on to 〜（〜を理解する、気づく）」が正解です。",
+    "word_details": [
+      { "word": "duck out", "meaning": "逃げ出す、避ける", "etymology": "アヒル(duck)のように頭を下げてサッと逃げる" },
+      { "word": "give up", "meaning": "諦める", "etymology": "持っているものを上に(up)投げて放棄する(give)" },
+      { "word": "fill in", "meaning": "（空欄などを）埋める", "etymology": "空いているところを中へ(in)満たす(fill)" },
+      { "word": "catch on", "meaning": "理解する、気づく、流行する", "etymology": "流れている情報にパッと捕まって(catch)乗っかる(on)イメージ" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "pre1",
+    "english": "Mark spent more than a month in the hospital after becoming the victim of a ________ bear attack.",
+    "japanese": "マークは________クマの攻撃の犠牲者となり、1ヶ月以上入院しました。",
+    "choices": ["heartfelt", "superior", "vicious", "dazed"],
+    "correct": 2,
+    "explanation": "「クマの攻撃(bear attack)の犠牲者になった」という文脈から、攻撃の性質を表す「凶暴な、悪意のある(vicious)」が正解です。",
+    "word_details": [
+      { "word": "heartfelt", "meaning": "心からの", "etymology": "heart(心) + felt(感じられた)" },
+      { "word": "superior", "meaning": "優れた、上司", "etymology": "super(上に) + ior(より〜な) = より上にいる" },
+      { "word": "vicious", "meaning": "凶暴な、悪意のある", "etymology": "vice(悪徳) + ous(満ちた) = 悪意に満ちた" },
+      { "word": "dazed", "meaning": "呆然とした", "etymology": "古ノルド語dasask(疲れ果てる)から" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "pre1",
+    "english": "The print on the contract was so small that Gus needed a magnifying glass to ________ the words.",
+    "japanese": "契約書の活字があまりにも小さかったため、ガスは文字を________ために虫眼鏡を必要としました。",
+    "choices": ["draw up", "blow out", "tune up", "make out"],
+    "correct": 3,
+    "explanation": "「文字が小さくて見えにくいので虫眼鏡を使った」という文脈です。「（見えにくいものを）判読する、理解する」を意味する make out が正解です。",
+    "word_details": [
+      { "word": "draw up", "meaning": "（文書などを）作成する", "etymology": "draw(引っ張る) + up(上へ) = 考えを引き上げて形にする" },
+      { "word": "blow out", "meaning": "吹き消す", "etymology": "blow(吹く) + out(外へ・完全に)" },
+      { "word": "tune up", "meaning": "調整する", "etymology": "tune(調子を合わせる) + up(完全に)" },
+      { "word": "make out", "meaning": "判読する、理解する", "etymology": "make(作る) + out(外へ) = ぼんやりした情報から意味を外へ作り出す" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "pre1",
+    "english": "The queen ________ her adviser to the palace, but she became extremely angry when he took a long time to arrive.",
+    "japanese": "女王は顧問を宮殿に________が、彼が到着するのに長い時間がかかったため激怒しました。",
+    "choices": ["summoned", "hammered", "mingled", "trembled"],
+    "correct": 0,
+    "explanation": "王族が部下を宮殿に「呼び寄せる」行動です。「呼び出す、召喚する(summoned)」が正解です。",
+    "word_details": [
+      { "word": "summoned", "meaning": "呼び出した", "etymology": "sub(密かに) + monere(警告する) = こっそり呼び寄せて指示を出す" },
+      { "word": "hammered", "meaning": "ハンマーで打った、ひどく酔った", "etymology": "hammer(ハンマー)の動詞形" },
+      { "word": "mingled", "meaning": "混ぜ合わせた、入り交じった", "etymology": "ゲルマン語由来。mixと同語源" },
+      { "word": "trembled", "meaning": "震えた", "etymology": "ラテン語tremere(震える)から" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "pre1",
+    "english": "Yesterday, Rhett ________ while working in the garden. When he woke up, his wife and children were standing around him with worried faces.",
+    "japanese": "昨日、レットは庭で作業中に________。彼が目を覚ますと、妻と子供たちが心配そうな顔で彼の周りに立っていました。",
+    "choices": ["corrected", "fainted", "diluted", "persisted"],
+    "correct": 1,
+    "explanation": "「目を覚ました(woke up)」という結果から、その前に「気を失った(fainted)」ことが推測できます。",
+    "word_details": [
+      { "word": "corrected", "meaning": "訂正した", "etymology": "cor(完全に) + rect(まっすぐな) = 完全に正しくする" },
+      { "word": "fainted", "meaning": "気を失った", "etymology": "古フランス語faindre(弱る、怠ける)から" },
+      { "word": "diluted", "meaning": "薄めた", "etymology": "di(離れて) + luere(洗う) = 洗い流して薄くする" },
+      { "word": "persisted", "meaning": "固執した、持続した", "etymology": "per(通して) + sistere(立つ) = ずっと立ち続ける" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "pre1",
+    "english": "After years of spending more money than taxes brought in, the government now has a ________ of trillions of dollars.",
+    "japanese": "税収よりも多くの支出をする年が続いた後、政府は現在数兆ドルの________を抱えています。",
+    "choices": ["deficit", "conspiracy", "fatigue", "petition"],
+    "correct": 0,
+    "explanation": "「収入(taxes)よりも支出(spending)が多い」結果生じるのは「赤字(deficit)」です。",
+    "word_details": [
+      { "word": "deficit", "meaning": "赤字、不足", "etymology": "de(離れて) + facere(作る) = 足りない状態が作られる" },
+      { "word": "conspiracy", "meaning": "陰謀", "etymology": "con(共に) + spirare(呼吸する) = 息をひそめて企む" },
+      { "word": "fatigue", "meaning": "疲労", "etymology": "ラテン語fatigare(疲れ果てさせる)から" },
+      { "word": "petition", "meaning": "請願、嘆願", "etymology": "petere(求める) + ion(こと)" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "pre1",
+    "english": "As a way of attracting more ________ customers, the perfume company began advertising its products in magazines read mainly by wealthy people.",
+    "japanese": "より________な顧客を引き付ける方法として、その香水会社は主に裕福な人々が読む雑誌で製品の広告を始めました。",
+    "choices": ["affluent", "brutal", "theatrical", "frantic"],
+    "correct": 0,
+    "explanation": "「裕福な人々(wealthy people)が読む雑誌」に広告を出すのは、「裕福な(affluent)」顧客を惹きつけるためです。",
+    "word_details": [
+      { "word": "affluent", "meaning": "裕福な", "etymology": "ad(〜へ) + fluere(流れる) = 富が自分の方へ豊かに流れ込む" },
+      { "word": "brutal", "meaning": "残忍な", "etymology": "brutus(重苦しい、理性のない)から" },
+      { "word": "theatrical", "meaning": "演劇の、大げさな", "etymology": "theater(劇場) + ical(〜の)" },
+      { "word": "frantic", "meaning": "半狂乱の、大慌ての", "etymology": "ギリシャ語phrenitikos(脳の炎症)から" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "pre1",
+    "english": "As the suspect was being arrested by the police, he ________ an officer's gun. Luckily, he was stopped before he could get it.",
+    "japanese": "容疑者は警察に逮捕されようとした時、警官の銃に________。幸いにも、彼は銃を手にする前に止められました。",
+    "choices": ["let up", "set off", "went for", "picked over"],
+    "correct": 2,
+    "explanation": "「銃を手にする前に止められた」ことから、銃を「取ろうと飛びかかった(went for)」という緊迫した状況が読み取れます。",
+    "word_details": [
+      { "word": "let up", "meaning": "（雨や痛みが）和らぐ", "etymology": "let(許す) + up(上へ) = 押さえつけられていたものが上へ逃げる" },
+      { "word": "set off", "meaning": "出発する、引き起こす", "etymology": "set(置く) + off(離れて) = その場から離れて進み出す" },
+      { "word": "went for", "meaning": "〜に飛びかかる、〜を取ろうとする", "etymology": "go(行く) + for(〜に向かって)" },
+      { "word": "picked over", "meaning": "（良いものを）吟味して選ぶ", "etymology": "pick(つまむ) + over(全体にわたって)" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "pre1",
+    "english": "All employees have a ________ medical checkup every year. Companies are required by law to make sure all their workers do it.",
+    "japanese": "全従業員は毎年________健康診断を受けます。企業は法律により、すべての労働者にこれを受けさせることが義務付けられています。",
+    "choices": ["muddled", "compulsory", "reminiscent", "gloomy"],
+    "correct": 1,
+    "explanation": "「法律によって要求されている(required by law)」という文脈に合致するのは、「義務的な、強制的な(compulsory)」です。",
+    "word_details": [
+      { "word": "muddled", "meaning": "混乱した", "etymology": "mud(泥)のように濁った状態" },
+      { "word": "compulsory", "meaning": "義務的な", "etymology": "com(完全に) + pellere(駆り立てる) = 逆らえない力で強制する" },
+      { "word": "reminiscent", "meaning": "連想させる、追憶の", "etymology": "re(再び) + mind(心) = 過去を心に呼び戻す" },
+      { "word": "gloomy", "meaning": "憂鬱な、薄暗い", "etymology": "古英語glom(薄暗がり)から" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "pre1",
+    "english": "E-mail and text messaging have ________ the way people write. Many people shorten words and ignore traditional rules of grammar.",
+    "japanese": "電子メールとテキストメッセージは人々の書き方を________。多くの人が言葉を短縮し、伝統的な文法ルールを無視しています。",
+    "choices": ["transformed", "officiated", "disarmed", "synthesized"],
+    "correct": 0,
+    "explanation": "書き方が大きく変わってしまった状況を描写しているため、「一変させた、変容させた(transformed)」が正解です。",
+    "word_details": [
+      { "word": "transformed", "meaning": "変容させた", "etymology": "trans(越えて・変えて) + form(形) = 別の形に変える" },
+      { "word": "officiated", "meaning": "司会を務めた、職務を果たした", "etymology": "office(役職)を執り行う" },
+      { "word": "disarmed", "meaning": "武装解除した、和らげた", "etymology": "dis(否定) + arm(武器) = 武器を取り上げる" },
+      { "word": "synthesized", "meaning": "合成した、統合した", "etymology": "syn(共に) + thesis(置く) = バラバラのものを一つに置く" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "pre1",
+    "english": "After many poor performances, the rugby player was ________ from his club's first team to its second team.",
+    "japanese": "多くの不振なプレーの後、そのラグビー選手はクラブの1軍から2軍へと________。",
+    "choices": ["adapted", "demoted", "clinched", "inclined"],
+    "correct": 1,
+    "explanation": "1軍から2軍へ移動したという事実から、「降格させられた(demoted)」が適切です。promote(昇進させる)の対義語です。",
+    "word_details": [
+      { "word": "adapted", "meaning": "適応した", "etymology": "ad(〜へ) + apt(適した) = 適するように合わせる" },
+      { "word": "demoted", "meaning": "降格させた", "etymology": "de(下へ) + movere(動かす) = 地位を下へ動かす" },
+      { "word": "clinched", "meaning": "（勝利などを）確定した、結びつけた", "etymology": "釘を打ち曲げて固定する動作から" },
+      { "word": "inclined", "meaning": "傾いた、〜する傾向がある", "etymology": "in(中へ) + clinare(曲げる) = 心が特定の方向へ傾く" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "pre1",
+    "english": "Some people feel the film was ________. Although it did not win any awards, there are those who believe it was a great work of art.",
+    "japanese": "一部の人々はその映画が________と感じています。賞は何も受賞しませんでしたが、素晴らしい芸術作品だと信じている人たちがいます。",
+    "choices": ["overridden", "underfed", "underrated", "overtaken"],
+    "correct": 2,
+    "explanation": "「賞は取れなかったが、実は素晴らしい作品だ」という文脈に合うのは、「過小評価されている(underrated)」です。",
+    "word_details": [
+      { "word": "overridden", "meaning": "覆された、無効にされた", "etymology": "over(上に) + ride(乗る) = 他の決定の上に乗って踏みつぶす" },
+      { "word": "underfed", "meaning": "栄養不足の", "etymology": "under(不十分に) + fed(与えられた)" },
+      { "word": "underrated", "meaning": "過小評価された", "etymology": "under(低く) + rate(評価する)" },
+      { "word": "overtaken", "meaning": "追い越された", "etymology": "over(越えて) + take(取る)" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "pre1",
+    "english": "A: Mom, can you make hamburgers for dinner tonight? B: Yes, but I'll have to take the meat out of the freezer and let it ________ first.",
+    "japanese": "A: お母さん、今日の夕食にハンバーグを作ってくれる？ B: ええ、でもまず冷凍庫から肉を出して________させないといけないわ。",
+    "choices": ["shatter", "reckon", "stray", "thaw"],
+    "correct": 3,
+    "explanation": "冷凍庫(freezer)から出した肉を調理前にどうするのか。当然「解凍する(thaw)」が正解です。",
+    "word_details": [
+      { "word": "shatter", "meaning": "粉々に砕ける", "etymology": "散らす（scatter）の関連語。衝撃でバラバラになること" },
+      { "word": "reckon", "meaning": "計算する、〜と思う", "etymology": "古英語gerecenian(計算する、順序立てる)" },
+      { "word": "stray", "meaning": "はぐれる、迷い出る", "etymology": "古フランス語estraier(さまよう)から" },
+      { "word": "thaw", "meaning": "解ける、解凍する", "etymology": "古英語thawian(溶ける)。氷や雪が熱で溶けること" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "pre1",
+    "english": "Lisa went to the interview even though she thought there was a low ________ of her getting the job. As she expected, she was not hired.",
+    "japanese": "リサはその仕事に就ける________は低いと思いながらも面接に行きました。予想通り、彼女は採用されませんでした。",
+    "choices": ["credibility", "restoration", "probability", "contention"],
+    "correct": 2,
+    "explanation": "仕事に就ける「見込み、確率(probability)」が低いと予想していた、という文脈が成り立ちます。",
+    "word_details": [
+      { "word": "credibility", "meaning": "信頼性", "etymology": "credere(信じる) + ability(能力)" },
+      { "word": "restoration", "meaning": "回復、修復", "etymology": "re(再び) + store(立てる) = 元の状態に戻すこと" },
+      { "word": "probability", "meaning": "確率、見込み", "etymology": "probare(証明する) + ability = 本当だと証明できそうな度合い" },
+      { "word": "contention", "meaning": "論争、主張", "etymology": "con(共に) + tendere(伸ばす) = お互いに意見を伸ばして張り合う" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "pre1",
+    "english": "A: Annie, how have you been? Did you enjoy your trip to Italy last year? B: I did, Pablo. Actually, I loved it so much that I've been ________ moving there. I'd have to wait until my son graduates from high school, though.",
+    "japanese": "A: アニー、元気だった？去年のイタリア旅行は楽しかった？ B: ええ、パブロ。実は、そこへの移住を________いるくらい気に入ったの。息子が高校を卒業するまでは待たなきゃいけないけどね。",
+    "choices": ["emphasizing", "vandalizing", "illustrating", "contemplating"],
+    "correct": 3,
+    "explanation": "旅行先が気に入りすぎて、移住を「真剣に考えている、熟考している(contemplating)」という文脈です。",
+    "word_details": [
+      { "word": "emphasizing", "meaning": "強調する", "etymology": "em(中へ) + phainein(見せる) = はっきりと見せる" },
+      { "word": "vandalizing", "meaning": "（公共物などを）破壊する", "etymology": "5世紀にローマを略奪したVandal（ヴァンダル族）から" },
+      { "word": "illustrating", "meaning": "説明する、イラストを入れる", "etymology": "il(中へ) + lustrare(照らす) = 光を当てて明確にする" },
+      { "word": "contemplating", "meaning": "熟考する", "etymology": "con(完全に) + templum(神殿/観察する場所) = じっと観察して考える" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "pre1",
+    "english": "The war continued for a year, but neither side could ________. With victory seemingly impossible, the two countries agreed to stop fighting.",
+    "japanese": "戦争は1年続きましたが、どちらの側も________ことができませんでした。勝利が不可能に思えたため、両国は戦闘の停止に合意しました。",
+    "choices": ["evolve", "devise", "reconstruct", "prevail"],
+    "correct": 3,
+    "explanation": "「勝利が不可能に思えた」という状況から、どちらも「圧倒する、勝つ(prevail)」ことができなかったことがわかります。",
+    "word_details": [
+      { "word": "evolve", "meaning": "進化する", "etymology": "e(外へ) + volvere(巻く) = 巻物を広げて展開する" },
+      { "word": "devise", "meaning": "考案する", "etymology": "di(離れて) + videre(分ける) = バラバラのものを組み合わせて工夫する" },
+      { "word": "reconstruct", "meaning": "再建する", "etymology": "re(再び) + con(共に) + struct(建てる)" },
+      { "word": "prevail", "meaning": "優勢になる、勝つ", "etymology": "pre(前に) + valere(強い) = 相手より前に出て強さを発揮する" }
+    ]
+  }
+]
