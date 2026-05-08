@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "grade": "1",
+    "english": "After the referee made several serious mistakes during the game, fans showed their ________ by booing and shouting at him.",
+    "japanese": "審判が試合中にいくつか重大なミスを犯した後、ファンは彼にブーイングや怒声を発することで________を示した。",
+    "choices": ["disdain", "clatter", "infamy", "splendor"],
+    "correct": 0,
+    "explanation": "「ブーイングや怒声を発する」という行動から、審判に対するネガティブな感情が推測できます。「軽蔑、蔑み」を意味する disdain が正解です。",
+    "word_details": [
+      { "word": "disdain", "meaning": "軽蔑、蔑み", "etymology": "dis(否定) + dain(価値/dignityと同語源) = 価値がないとみなすこと" },
+      { "word": "clatter", "meaning": "カタカタ鳴る音", "etymology": "硬いものがぶつかる擬音語から" },
+      { "word": "infamy", "meaning": "悪名、不名誉", "etymology": "in(否定) + fame(名声) + y = 良い名声がない状態" },
+      { "word": "splendor", "meaning": "壮麗さ、輝き", "etymology": "ラテン語splendere(輝く)から" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "1",
+    "english": "Carl was threatened with ________ from his apartment after not paying rent for several months. He was given one last chance to come up with the money.",
+    "japanese": "カールは数ヶ月間家賃を支払わなかった後、アパートからの________を脅かされました。彼にはお金を用立てる最後のチャンスが与えられました。",
+    "choices": ["altercation", "nomination", "eviction", "subordination"],
+    "correct": 2,
+    "explanation": "「家賃を払わない(not paying rent)」結果としてアパートから受ける仕打ちなので、「立ち退き(eviction)」が正解です。",
+    "word_details": [
+      { "word": "altercation", "meaning": "口論、激しい言い争い", "etymology": "alter(他の) = 他の人と異なる意見をぶつけ合う" },
+      { "word": "nomination", "meaning": "指名、推薦", "etymology": "nomen(名前)を挙げること" },
+      { "word": "eviction", "meaning": "立ち退き、強制退去", "etymology": "e(外へ) + vincere(勝つ/征服する) = 裁判などで勝って外へ追い出す" },
+      { "word": "subordination", "meaning": "従属、服従", "etymology": "sub(下に) + order(順序) = 下の順位に置くこと" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "1",
+    "english": "The conservative regime passed strict laws forbidding the ________ of communist ideas. Anyone accused of spreading such ideas was severely punished.",
+    "japanese": "保守政権は共産主義思想の________を禁じる厳しい法律を可決しました。そのような思想を広めたとして告発された者は厳しく罰せられました。",
+    "choices": ["recuperation", "injunction", "propagation", "deregulation"],
+    "correct": 2,
+    "explanation": "後ろの文の「spreading such ideas（思想を広めること）」の言い換えになっています。「普及、繁殖(propagation)」が正解です。",
+    "word_details": [
+      { "word": "recuperation", "meaning": "回復、取り戻すこと", "etymology": "re(再び) + capere(取る) = 健康などを再び取り戻す" },
+      { "word": "injunction", "meaning": "命令、差し止め", "etymology": "in(中に) + jungere(結びつける) = 法的な拘束を課す" },
+      { "word": "propagation", "meaning": "普及、繁殖", "etymology": "pro(前へ) + pangere(固定する) = 前方に苗を植え広げていくイメージ" },
+      { "word": "deregulation", "meaning": "規制緩和", "etymology": "de(離して・解除) + regulation(規制)" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "1",
+    "english": "A: Why does Ben always wear dark glasses? Is there something wrong with his eyes? B: No. He just wears them out of ________. He thinks they make him look cool.",
+    "japanese": "A: なぜベンはいつも黒いサングラスをかけているの？目に何か問題があるの？ B: ううん。彼は単なる________からかけているの。かっこよく見えると思っているのよ。",
+    "choices": ["thrift", "rebuke", "vanity", "piety"],
+    "correct": 2,
+    "explanation": "「かっこよく見えると思っている」という自己満足の心理描写です。「虚栄心、うぬぼれ(vanity)」が正解です。out of vanity で「見栄から」という熟語になります。",
+    "word_details": [
+      { "word": "thrift", "meaning": "倹約、節約", "etymology": "thrive(繁栄する)の名詞形 = 繁栄のための貯蓄" },
+      { "word": "rebuke", "meaning": "非難、叱責", "etymology": "re(後ろに) + buke(木を切る) = 叩き返すように激しく叱る" },
+      { "word": "vanity", "meaning": "虚栄心、うぬぼれ", "etymology": "vanus(空っぽの) + ity(性質) = 中身がないのに見栄を張ること" },
+      { "word": "piety", "meaning": "敬虔さ、信心", "etymology": "pious(敬虔な)の名詞形" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "1",
+    "english": "The CEO said his company's success throughout the years was a clear ________ to the wisdom of the policies of the company's past leaders.",
+    "japanese": "CEOは、長年にわたる会社の成功は、過去のリーダーたちの政策の知恵を明確に________ものだと語りました。",
+    "choices": ["testament", "abrasion", "reprisal", "prospectus"],
+    "correct": 0,
+    "explanation": "「be a testament to 〜」で「〜の明確な証拠である、〜を証明するものである」という1級頻出の表現です。",
+    "word_details": [
+      { "word": "testament", "meaning": "証拠、遺言", "etymology": "testari(証言する) + ment(結果) = 証言されたもの" },
+      { "word": "abrasion", "meaning": "摩耗、すりむき", "etymology": "ab(離れて) + radere(削る) = こすり落とすこと" },
+      { "word": "reprisal", "meaning": "報復、仕返し", "etymology": "re(再び) + prehendere(掴む) = 奪われたものを力で奪い返す" },
+      { "word": "prospectus", "meaning": "目論見書、案内書", "etymology": "pro(前を) + specere(見る) = 前途を見せるもの" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "1",
+    "english": "Although the man did not tell the police any outright lies, he left out several ________ details that would have made it clear the accident had been his fault.",
+    "japanese": "その男は警察に完全な嘘をつきはしませんでしたが、事故が彼の責任であることを明白にするであろういくつかの________詳細を省きました。",
+    "choices": ["irate", "salient", "ravenous", "dilapidated"],
+    "correct": 1,
+    "explanation": "事故の責任を決定づけるような「目立つ、重要な」詳細を省いたという文脈です。「salient（目立った、顕著な）」が正解です。",
+    "word_details": [
+      { "word": "irate", "meaning": "激怒した", "etymology": "ira(怒り)から" },
+      { "word": "salient", "meaning": "目立った、顕著な", "etymology": "salire(跳ぶ) + ent = ピョーンと跳び出して目立つイメージ" },
+      { "word": "ravenous", "meaning": "飢え渇いた、貪欲な", "etymology": "古フランス語raviner(奪い取る) = 奪い取るほど飢えている" },
+      { "word": "dilapidated", "meaning": "荒廃した、ボロボロの", "etymology": "di(離れて) + lapis(石) = 建物の石が崩れ落ちた状態" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "1",
+    "english": "Helen asked her neighbor to water her garden while she was away. Unfortunately, he forgot, and many of her flowers had ________ by the time she returned.",
+    "japanese": "ヘレンは留守中、隣人に庭への水やりを頼みました。不運にも彼は忘れてしまい、彼女が戻るまでに花の多くは________しまっていました。",
+    "choices": ["wilted", "tarnished", "polarized", "slighted"],
+    "correct": 0,
+    "explanation": "「水をやるのを忘れた」結果、花がどうなるかという直接的な因果関係です。「しおれる」を意味する wilted が正解です。",
+    "word_details": [
+      { "word": "wilted", "meaning": "しおれた", "etymology": "ゲルマン語由来。水分が抜けてぐったりするイメージ" },
+      { "word": "tarnished", "meaning": "変色した、名誉が汚された", "etymology": "フランス語ternir(暗くする)から" },
+      { "word": "polarized", "meaning": "二極化した", "etymology": "pole(極) + ize(〜にする) = 対立する2つの極に分かれる" },
+      { "word": "slighted", "meaning": "軽んじられた", "etymology": "slight(わずかな)の動詞形 = わずかなものとして扱う" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "1",
+    "english": "After he was arrested for robbery, Brad called his sister and asked her to pay his ________. However, she did not have the $10,000 needed for his release.",
+    "japanese": "強盗で逮捕された後、ブラッドは妹に電話し、________を払ってくれるよう頼みました。しかし、彼女には彼の釈放に必要な1万ドルがありませんでした。",
+    "choices": ["bail", "stint", "effigy", "void"],
+    "correct": 0,
+    "explanation": "逮捕(arrested)や釈放(release)に関連して支払うお金なので、「保釈金(bail)」が正解です。",
+    "word_details": [
+      { "word": "bail", "meaning": "保釈金、保釈", "etymology": "ラテン語baiulare(荷物を運ぶ、管理する) = 囚人を一時的に預かること" },
+      { "word": "stint", "meaning": "任務の期間、出し惜しみ", "etymology": "古英語styntan(短くする)から" },
+      { "word": "effigy", "meaning": "肖像、憎い人の人形", "etymology": "ex(外へ) + fingere(形作る) = 似せて作ったもの" },
+      { "word": "void", "meaning": "空虚、無効", "etymology": "ラテン語vacare(空である)から" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "1",
+    "english": "A: It's such a beautiful night! What's the name of that ________ over there? B: That's Orion. You can tell by the row of three stars in the middle.",
+    "japanese": "A: とても美しい夜ね！あそこにあるあの________の名前は何？ B: あれはオリオン座だよ。真ん中にある3つの星の並びでわかるよ。",
+    "choices": ["redemption", "tenet", "constellation", "exodus"],
+    "correct": 2,
+    "explanation": "「Orion（オリオン）」や「row of three stars（3つの星の並び）」という手がかりから、「星座(constellation)」が正解です。",
+    "word_details": [
+      { "word": "redemption", "meaning": "贖い、救済", "etymology": "re(再び) + emere(買う) = 身代金を払って取り戻すこと" },
+      { "word": "tenet", "meaning": "教義、信条", "etymology": "ラテン語tenere(保つ、持つ) = 心に保持している信念" },
+      { "word": "constellation", "meaning": "星座", "etymology": "con(共に) + stella(星) + tion = 星が集まって形作ったもの" },
+      { "word": "exodus", "meaning": "大量脱出、出国", "etymology": "ex(外へ) + hodos(道) = （集団で）外へ道を進むこと" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "1",
+    "english": "Trent caused a small fire in the kitchen when he forgot to turn the stove off. Luckily, he could ________ the flames with a bucket of water before they spread.",
+    "japanese": "トレントはコンロを消し忘れてキッチンで小さな火事を起こしました。幸運にも、彼は火が燃え広がる前にバケツの水で炎を________ことができました。",
+    "choices": ["brandish", "douse", "disavow", "recant"],
+    "correct": 1,
+    "explanation": "「バケツの水で炎を（どうしたのか）」という文脈です。「（水を）ぶっかける、火を消す」という意味の douse が正解です。",
+    "word_details": [
+      { "word": "brandish", "meaning": "（武器などを）振り回す", "etymology": "古フランス語brand(剣)を振り回すこと" },
+      { "word": "douse", "meaning": "水を浴びせる、火を消す", "etymology": "語源不明確だが、ダバッと水をかける擬音的なイメージ" },
+      { "word": "disavow", "meaning": "否認する、関係を断つ", "etymology": "dis(否定) + a(〜へ) + vow(誓う) = 誓いを打ち消す" },
+      { "word": "recant", "meaning": "（過去の言動を）撤回する", "etymology": "re(後ろに) + cantare(歌う) = 歌った（言った）ことを取り消す" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "1",
+    "english": "A: How are you enjoying your new job, Harry? B: It's great. It comes with a lot of ________, too, including extra vacation days, free lunch at the cafeteria, and access to the company gym.",
+    "japanese": "A: 新しい仕事はどう楽しんでる、ハリー？ B: 最高だよ。追加の休暇、食堂での無料ランチ、会社のジムの利用など、たくさんの________もついてくるんだ。",
+    "choices": ["statutes", "perks", "conceits", "emblems"],
+    "correct": 1,
+    "explanation": "休暇や無料ランチといった「会社から与えられる役得・特典」を指す表現として、perks が正解です。perquisiteの略語です。",
+    "word_details": [
+      { "word": "statutes", "meaning": "法令、規則", "etymology": "statuere(制定する)から。status(状態)と同語源" },
+      { "word": "perks", "meaning": "特典、役得", "etymology": "perquisite(正規の給与以外の特権)の略" },
+      { "word": "conceits", "meaning": "うぬぼれ、奇抜な発想", "etymology": "con(完全に) + capere(掴む) = 頭に思い込んだこと" },
+      { "word": "emblems", "meaning": "象徴、紋章", "etymology": "ギリシャ語emblema(はめ込まれた飾り)から" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "1",
+    "english": "A: Heath, why are you ________ in the desk drawers? Did you lose your keys again? B: No, I have those. I can't find my wallet now.",
+    "japanese": "A: ヒース、なんで机の引き出しの中を________いるの？また鍵をなくしたの？ B: ううん、あれは持ってる。今度は財布が見つからないんだよ。",
+    "choices": ["veering off", "shriveling up", "poking around", "scooting over"],
+    "correct": 2,
+    "explanation": "机の引き出しの中を「探し回っている」という動作を表す句動詞 poke around が正解です。指や棒でツンツンと突っついて探すイメージです。",
+    "word_details": [
+      { "word": "veering off", "meaning": "方向を変える、逸れる", "etymology": "フランス語virer(曲がる)から" },
+      { "word": "shriveling up", "meaning": "しなびる、縮む", "etymology": "北欧語由来。乾燥してしわくちゃになること" },
+      { "word": "poking around", "meaning": "探し回る", "etymology": "poke(突く) + around(あちこち)" },
+      { "word": "scooting over", "meaning": "席を詰める", "etymology": "scoot(急いで行く) + over = 横にサッと動く" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "1",
+    "english": "A: Fran, why don't you ________ some of your delicious chocolate marshmallow brownies for the party? B: Good idea, Ken. I think we've got everything I need to make them.",
+    "japanese": "A: フラン、パーティーのために君のおいしいチョコレートマシュマロブラウニーを________くれない？ B: いいアイデアね、ケン。作るのに必要なものは全部あると思うわ。",
+    "choices": ["tamper with", "whip up", "farm out", "head off"],
+    "correct": 1,
+    "explanation": "食べ物を「手早く作る、パパッと料理する」という意味の whip up が正解です。ホイップクリームを泡立てるように勢いよく作るイメージです。",
+    "word_details": [
+      { "word": "tamper with", "meaning": "〜を不正にいじる、改ざんする", "etymology": "temper(調節する)の変形 = 悪意を持って調整する" },
+      { "word": "whip up", "meaning": "手早く作る、感情をかき立てる", "etymology": "whip(鞭打つ、泡立てる) + up(完全に)" },
+      { "word": "farm out", "meaning": "下請けに出す", "etymology": "farm(農場、貸し出す) + out(外へ)" },
+      { "word": "head off", "meaning": "阻止する、向かう", "etymology": "head(向かう) + off(離れる) = 進路に立ち塞がって逸らす" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "1",
+    "english": "The governor is often accused of ________ to the rich. He has repeatedly cut taxes for high-income earners during his time in office.",
+    "japanese": "知事はしばしば富裕層に________していると非難されます。彼は在任中、高所得者向けの減税を繰り返し行ってきました。",
+    "choices": ["pandering", "bemoaning", "sauntering", "pervading"],
+    "correct": 0,
+    "explanation": "富裕層に有利な減税を繰り返していることから、「迎合する（媚びへつらう）」を意味する pandering が正解です。",
+    "word_details": [
+      { "word": "pandering", "meaning": "迎合する、弱みにつけこむ", "etymology": "ギリシャ神話の人物Pandarus(恋の仲介役)から" },
+      { "word": "bemoaning", "meaning": "嘆き悲しむ", "etymology": "be(強意) + moan(うめき声)" },
+      { "word": "sauntering", "meaning": "ぶらぶら歩く", "etymology": "語源不明。のんびり散歩するイメージ" },
+      { "word": "pervading", "meaning": "蔓延する、行き渡る", "etymology": "per(通して) + vadere(行く) = 隅々まで通り抜ける" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "1",
+    "english": "The defendant's ________ surprised everyone in the courtroom. They all thought the jury would return with a guilty verdict.",
+    "japanese": "被告人の________は法廷の全員を驚かせました。陪審員が有罪判決を下すと皆が思っていたのです。",
+    "choices": ["snare", "acquittal", "referral", "sojourn"],
+    "correct": 1,
+    "explanation": "皆が有罪(guilty)だと思っていたのに驚いた、ということなので、対義の「無罪判決(acquittal)」が正解です。",
+    "word_details": [
+      { "word": "snare", "meaning": "罠", "etymology": "古ノルド語snara(結び目、罠)から" },
+      { "word": "acquittal", "meaning": "無罪判決、免除", "etymology": "ac(〜へ) + quit(解放する) + al = 罪から解放すること" },
+      { "word": "referral", "meaning": "紹介、委託", "etymology": "re(後ろへ) + ferre(運ぶ) + al = 別の専門家へ運ぶこと" },
+      { "word": "sojourn", "meaning": "滞在", "etymology": "sub(下に) + diurnus(日) = ある期間その日に留まる" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "1",
+    "english": "The power plant's representative ________ claims that the plant was polluting the local water system. He said there was no reliable evidence to support the charge.",
+    "japanese": "発電所の代表者は、工場が地元の水系を汚染しているという主張を________しました。彼はその告発を裏付ける信頼できる証拠はないと述べました。",
+    "choices": ["breached", "repudiated", "appropriated", "patented"],
+    "correct": 1,
+    "explanation": "「証拠がない」と述べて告発に反論しているため、「拒絶する、否認する(repudiated)」が正解です。",
+    "word_details": [
+      { "word": "breached", "meaning": "（違反して）破った", "etymology": "ゲルマン語由来。breakと同語源" },
+      { "word": "repudiated", "meaning": "拒絶した、否認した", "etymology": "re(後ろに) + pudium(恥) = 恥ずかしくて突き返す、退ける" },
+      { "word": "appropriated", "meaning": "充当した、横領した", "etymology": "ad(〜へ) + proprius(自分自身の) = 自分のものにする" },
+      { "word": "patented", "meaning": "特許を取った", "etymology": "ラテン語patere(開いている) = 公開された権利" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "1",
+    "english": "During the strike, the angry employees of the bus company stood outside the city hall, ________, \"Higher wages now!\"",
+    "japanese": "ストライキ中、バス会社の怒った従業員たちは市役所の外に立ち、「今すぐ賃上げを！」と________。",
+    "choices": ["dissuading", "precluding", "chanting", "enlisting"],
+    "correct": 2,
+    "explanation": "「Higher wages now!」というスローガンを繰り返し叫んでいる状況です。「シュプレヒコールを上げる、唱える(chanting)」が正解です。",
+    "word_details": [
+      { "word": "dissuading", "meaning": "思いとどまらせる", "etymology": "dis(離れて) + suadere(勧める) = 説得してやめさせる" },
+      { "word": "precluding", "meaning": "排除する、妨げる", "etymology": "pre(前に) + claudere(閉じる) = あらかじめ閉め出す" },
+      { "word": "chanting", "meaning": "シュプレヒコールを上げる、唱える", "etymology": "ラテン語cantare(歌う)から" },
+      { "word": "enlisting", "meaning": "入隊させる、協力を得る", "etymology": "en(中へ) + list(名簿) = 名簿に登録する" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "1",
+    "english": "Jovanni needed a replacement part for his classic car, but the mechanic at the repair shop said that parts for it are hard to ________ because the car is so old.",
+    "japanese": "ジョヴァンニはクラシックカーの交換部品を必要としていましたが、修理工場の整備士は、その車はとても古いので部品を________のは難しいと言いました。",
+    "choices": ["come by", "filter out", "clam up", "tear into"],
+    "correct": 0,
+    "explanation": "古い車の部品を「手に入れる」のが難しい、という文脈です。「手に入れる(come by)」が正解です。",
+    "word_details": [
+      { "word": "come by", "meaning": "手に入れる、立ち寄る", "etymology": "come(来る) + by(そばに) = 自分のそばにやって来る → 手に入れる" },
+      { "word": "filter out", "meaning": "濾過して取り除く", "etymology": "filter(フィルター) + out(外へ)" },
+      { "word": "clam up", "meaning": "黙り込む", "etymology": "clam(貝)のようにピシャリと口を閉ざす" },
+      { "word": "tear into", "meaning": "激しく非難する、猛烈に攻撃する", "etymology": "tear(引き裂く)ように中へ(into)突っ込む" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "1",
+    "english": "When Michelle's neighbors have loud parties, she turns up her music to ________ the noise from next door.",
+    "japanese": "ミシェルの隣人が騒がしいパーティーをする時、彼女は音楽の音量を上げて隣からの騒音を________。",
+    "choices": ["cave in", "fritter away", "lap up", "drown out"],
+    "correct": 3,
+    "explanation": "「騒音に対して自分の音楽の音量を上げる」行動の目的は、音で別の音を「かき消す(drown out)」ことです。",
+    "word_details": [
+      { "word": "cave in", "meaning": "陥没する、屈する", "etymology": "cave(洞窟)のように内側へ崩れ落ちる" },
+      { "word": "fritter away", "meaning": "（時間やお金を）浪費する", "etymology": "fritter(細かく砕く) + away(遠くへ) = 少しずつ削り落として無駄にする" },
+      { "word": "lap up", "meaning": "喜んで受け入れる、犬猫のように舐める", "etymology": "lap(舐め取る) + up(完全に)" },
+      { "word": "drown out", "meaning": "（音を）かき消す", "etymology": "drown(溺れさせる) + out(外へ) = 別の音を水の底に沈めて聞こえなくする" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "1",
+    "english": "The CEO gave factory workers a raise after spending eight hours experiencing what it was like to do their job. He had never realized just how ________ it was.",
+    "japanese": "CEOは、工場労働者の仕事を8時間体験した後、彼らに昇給を与えました。彼はそれがどれほど________なものか気づいていませんでした。",
+    "choices": ["grueling", "cursory", "concerted", "precocious"],
+    "correct": 0,
+    "explanation": "「昇給を与えた」理由となる、仕事の過酷さを表す形容詞が必要です。「極めて過酷な、へとへとにさせる(grueling)」が正解です。",
+    "word_details": [
+      { "word": "grueling", "meaning": "極めて過酷な", "etymology": "gruel(罰する/薄いオートミール粥) + ing = 罰のように辛い" },
+      { "word": "cursory", "meaning": "大ざっぱな、急ぎの", "etymology": "currere(走る)から = 走り書きのような" },
+      { "word": "concerted", "meaning": "協力して行われる", "etymology": "con(共に) + certare(争う/努力する) = 力を合わせる" },
+      { "word": "precocious", "meaning": "早熟な、ませた", "etymology": "pre(前に) + coquere(料理する/成熟する) = 普通より早く成熟した" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "1",
+    "english": "Colin did not have enough money to pay for the car all at once, so he paid it off in ________ of $800 a month for two years.",
+    "japanese": "コリンは車を一括で支払うのに十分なお金がなかったので、2年間、月々800ドルの________で支払いました。",
+    "choices": ["enactments", "dispositions", "installments", "speculations"],
+    "correct": 2,
+    "explanation": "「一括で払えなかったので、月々〜ドルで払った」という表現から、「分割払い(installments)」が正解です。in installments で「分割で」という熟語です。",
+    "word_details": [
+      { "word": "enactments", "meaning": "制定、法律", "etymology": "en(〜にする) + act(行動・法律) + ment" },
+      { "word": "dispositions", "meaning": "性質、配置、処分", "etymology": "dis(離れて) + ponere(置く) = バラバラに配置された状態や気質" },
+      { "word": "installments", "meaning": "分割払い、1回分", "etymology": "in(中に) + stall(置く) + ment = 一部ずつ分割して置くこと" },
+      { "word": "speculations", "meaning": "推測、投機", "etymology": "specere(見る) = 先の動きを見通そうとすること" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "1",
+    "english": "The religious sect established a ________ in a rural area where its followers could live together and share everything. No private property was allowed.",
+    "japanese": "その宗教の宗派は、信者たちが一緒に生活し、すべてを共有できる________を農村地域に設立しました。私有財産は一切許されませんでした。",
+    "choices": ["repository", "prelude", "commune", "dirge"],
+    "correct": 2,
+    "explanation": "「一緒に生活し、すべてを共有する(live together and share everything)」場所なので、「生活共同体(commune)」が正解です。",
+    "word_details": [
+      { "word": "repository", "meaning": "貯蔵庫、保管所", "etymology": "re(後ろへ) + ponere(置く) = 奥にしまっておく場所" },
+      { "word": "prelude", "meaning": "前兆、前奏曲", "etymology": "pre(前に) + ludere(演奏する) = 本編の前に演奏されるもの" },
+      { "word": "commune", "meaning": "生活共同体", "etymology": "com(共に) + munis(奉仕/役目) = 責任や財産を共有すること" },
+      { "word": "dirge", "meaning": "葬送歌、哀歌", "etymology": "ラテン語dirige(導きたまえ)から。葬儀の祈りの言葉" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "1",
+    "english": "The motorist was given a ticket for a traffic ________. She had been caught driving 25 kilometers per hour over the speed limit.",
+    "japanese": "その運転手は交通________で違反切符を切られました。彼女は制限速度を時速25キロオーバーして運転しているところを捕まったのです。",
+    "choices": ["infraction", "propensity", "nemesis", "ensemble"],
+    "correct": 0,
+    "explanation": "「制限速度オーバー」という法律や規則を破る行為なので、「違反(infraction)」が正解です。",
+    "word_details": [
+      { "word": "infraction", "meaning": "（法律や規則の）違反", "etymology": "in(中に) + frangere(壊す) = 規則の中に踏み込んで壊すこと" },
+      { "word": "propensity", "meaning": "傾向、性質", "etymology": "pro(前へ) + pendere(ぶら下がる) = 心が前かがみに傾いている状態" },
+      { "word": "nemesis", "meaning": "天罰、強敵", "etymology": "ギリシャ神話の復讐の女神ネメシスから" },
+      { "word": "ensemble", "meaning": "合奏、アンサンブル", "etymology": "フランス語ensemble(一緒に)から" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "1",
+    "english": "The new prime minister's economic policy focuses on ________ inflation. He has promised to get prices under control as quickly as possible.",
+    "japanese": "新しい首相の経済政策はインフレの________に焦点を当てています。彼は可能な限り早く物価を制御下に置くと約束しました。",
+    "choices": ["reining in", "stitching up", "sounding out", "locking away"],
+    "correct": 0,
+    "explanation": "「物価を制御下におく(get prices under control)」の言い換えになる表現です。馬の手綱を引いて抑えるイメージから、「抑制する(reining in)」が正解です。",
+    "word_details": [
+      { "word": "reining in", "meaning": "抑制する", "etymology": "rein(手綱) + in(引く) = 暴れる馬の手綱を引いて抑える" },
+      { "word": "stitching up", "meaning": "縫い合わせる、話をまとめる", "etymology": "stitch(縫う) + up(完全に)" },
+      { "word": "sounding out", "meaning": "（意向などを）打診する", "etymology": "sound(音・水深を測る) + out = 音を出して深さを探る" },
+      { "word": "locking away", "meaning": "しまい込む、閉じ込める", "etymology": "lock(鍵をかける) + away(遠くへ)" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "1",
+    "english": "A: Steve, can you explain this graph? B: The blue lines ________ our company's expenses, and the green lines represent the volume of sales we made last year.",
+    "japanese": "A: スティーブ、このグラフを説明してくれる？ B: 青い線は会社の経費を________、緑の線は去年の売上高を表しているんだ。",
+    "choices": ["squint", "denote", "decry", "smear"],
+    "correct": 1,
+    "explanation": "「緑の線は〜を表している(represent)」と対になる構造なので、同じように「示す、意味する」という意味を持つ denote が正解です。",
+    "word_details": [
+      { "word": "squint", "meaning": "目を細めて見る", "etymology": "語源不明。斜視や細目で見ること" },
+      { "word": "denote", "meaning": "示す、意味する", "etymology": "de(完全に) + notare(しるしをつける) = 明確なしるしとして示す" },
+      { "word": "decry", "meaning": "非難する、けなす", "etymology": "de(下に・悪く) + cry(叫ぶ) = 声高に非難する" },
+      { "word": "smear", "meaning": "なすりつける、中傷する", "etymology": "古英語smeoru(脂肪、軟膏)から。ベタベタしたものを塗りつける" }
+    ]
+  }
+]
