@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* ふんわり変化するマカロンパステルの背景 */
+  .bg-macaron-gradient {
+    background: linear-gradient(-45deg, #ffecd2, #fcb69f, #e0c3fc, #8ec5fc);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+  }
+  
+  /* 間違えた時の優しいピンク/ピーチの背景 */
+  .bg-mistake-gradient {
+    background: linear-gradient(-45deg, #ff9a9e, #fecfef);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+  }
+
+  /* 明るく透明感のあるすりガラスパネル */
+  .glass-panel-light {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+  }
+}
+
+/* ゆっくり動く背景アニメーション */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 失敗時の「フルフルッ」と震える優しいアニメーション */
+@keyframes softShake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px) rotate(-1deg); }
+  40%, 80% { transform: translateX(5px) rotate(1deg); }
+}
+
+.animate-shake {
+  animation: softShake 0.4s ease-in-out;
+}
