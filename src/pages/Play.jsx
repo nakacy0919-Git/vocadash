@@ -55,21 +55,21 @@ export default function Play({
   };
 
   const handleChoiceClick = (originalIdx) => {
-    // 演出中（通信中）の連打バグを防ぐ
     if (showFeedbackOverlay) return;
 
-    const isCorrect = originalIdx === currentQuestion.correct;
+    // ★ 修正箇所：文字列と数値の型違いによるバグを防ぐため Number() で統一
+    const isCorrect = Number(originalIdx) === Number(currentQuestion.correct);
     const timeTaken = targetTime - timeLeft;
     
-    // スパルタモードでもクリック感を出すため、即座に音と演出を出す
     playSound(isCorrect ? 'correct' : 'incorrect');
     setShowFeedbackOverlay(isCorrect ? 'correct' : 'incorrect');
     
     if (playMode === 'study') {
+      setStudySelected(originalIdx); // 選んだ選択肢を保存
       setTimeout(() => {
         setShowFeedbackOverlay(null);
         setStudyPhase('explanation');
-      }, 800); // じっくりモードは0.8秒余韻を残す
+      }, 800);
     } else {
       setTimeout(() => {
         setShowFeedbackOverlay(null);
@@ -78,13 +78,13 @@ export default function Play({
         } else {
           handleFail('wrong_choice');
         }
-      }, 300); // スパルタモードは0.3秒でテンポ良く次へ進む
+      }, 300);
     }
   };
 
   const handleNextStudy = () => {
     if (window.speechSynthesis) window.speechSynthesis.cancel(); 
-    const isCorrect = studySelected === currentQuestion.correct;
+    const isCorrect = Number(studySelected) === Number(currentQuestion.correct);
     submitRecord(isCorrect, 0); 
     setStudySelected(null);
   };
@@ -239,7 +239,8 @@ export default function Play({
               
               <div className="flex justify-between items-center mb-6">
                 <div>
-                  {studySelected === currentQuestion.correct ? (
+                  {/* ★修正箇所：厳密な数値での判定 */}
+                  {Number(studySelected) === Number(currentQuestion.correct) ? (
                     <span className="bg-green-100 text-green-600 font-black px-4 py-1.5 rounded-full text-sm border border-green-200 shadow-sm">⭕ 正解！</span>
                   ) : (
                     <span className="bg-rose-100 text-rose-600 font-black px-4 py-1.5 rounded-full text-sm border border-rose-200 shadow-sm">❌ 不正解（正解: {currentQuestion.choices[currentQuestion.correct]}）</span>
@@ -248,19 +249,20 @@ export default function Play({
                 <TextSizeControl />
               </div>
 
-              {/* ★ 変更箇所：英文の横幅を100%使用させるために 🔊 ボタンを下に移動 */}
+              {/* ★ 変更箇所：英文の横幅を100%使用 (textWrap: balance を削除) */}
               <div className="w-full relative z-10 mb-4">
-                <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight transition-all duration-300 w-full ${getQuestionTextClass()}`} style={{ textWrap: 'balance' }}>
+                <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight transition-all duration-300 w-full ${getQuestionTextClass()}`}>
                   {completeSentence}
                 </h1>
               </div>
 
+              {/* ★ 変更箇所：🔊アイコンのみのシンプルな丸ボタン */}
               <div className="w-full flex justify-end mb-6">
                 <button 
                   onClick={() => handleReadAloud(completeSentence)}
-                  className="flex items-center gap-2 px-6 py-2.5 bg-blue-100 text-blue-500 font-bold rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200"
+                  className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200 text-2xl"
                 >
-                  🔊 <span className="text-sm">全文を音声再生</span>
+                  🔊
                 </button>
               </div>
 
@@ -321,9 +323,9 @@ export default function Play({
               <TextSizeControl />
             </div>
 
-            {/* ★ 変更箇所：英文の横幅を100%使用 */}
+            {/* ★ 変更箇所：英文の横幅を100%使用 (textWrap: balance を削除) */}
             <div className="w-full relative z-10 mb-6">
-              <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight break-words transition-all duration-300 w-full ${getQuestionTextClass()}`} style={{ textWrap: 'balance' }}>
+              <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight break-words transition-all duration-300 w-full ${getQuestionTextClass()}`}>
                 {currentQuestion.english.split('________').map((part, index, array) => (
                   <React.Fragment key={index}>
                     {part}
@@ -335,7 +337,7 @@ export default function Play({
               </h1>
             </div>
 
-            {/* ★ アクションバー（Japanese と 🔊 再生ボタンを並べる） */}
+            {/* ★ アクションバー（Japanese と 🔊 丸アイコンボタンを並べる） */}
             <div className="w-full flex items-center justify-between border-t border-gray-100 pt-6 mt-2 relative z-10 min-h-[4rem]">
               <button
                 onClick={() => setShowJapanese(!showJapanese)}
@@ -350,9 +352,9 @@ export default function Play({
               
               <button 
                 onClick={() => handleReadAloud(questionForSpeech)}
-                className="flex items-center gap-2 px-5 py-2.5 bg-blue-100 text-blue-500 font-bold rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200"
+                className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200 text-2xl"
               >
-                🔊 <span className="hidden sm:inline text-sm">音声再生</span>
+                🔊
               </button>
             </div>
 
