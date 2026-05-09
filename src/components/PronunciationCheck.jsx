@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+// ★ 追加：親要素から脱出して最前面に描画するための機能をインポート
+import { createPortal } from 'react-dom';
 
 export default function PronunciationCheck({ targetText }) {
   const [speechText, setSpeechText] = useState('');
@@ -8,7 +10,6 @@ export default function PronunciationCheck({ targetText }) {
   const [isExpanded, setIsExpanded] = useState(false);
   
   const recognitionRef = useRef(null);
-  // ★ refを追加して最新のspeechTextを保持。Reactのstate非同期更新対策。
   const speechTextRef = useRef('');
 
   useEffect(() => {
@@ -49,7 +50,7 @@ export default function PronunciationCheck({ targetText }) {
     return Math.round((matches / expWords.length) * 100);
   };
 
-  // --- 認識された単語を1つずつチェックし、マッチするものを青く表示する関数 ---
+  // --- マッチする単語を青く表示する関数 ---
   const renderHighlightedSpeech = (speech, target) => {
     if (!speech) return null;
     
@@ -89,7 +90,6 @@ export default function PronunciationCheck({ targetText }) {
     recognition.onstart = () => {
       setIsListening(true);
       setSpeechText('');
-      // ★ refもリセット
       speechTextRef.current = ''; 
       setAccuracyScore(null);
       setErrorMessage('');
@@ -101,9 +101,7 @@ export default function PronunciationCheck({ targetText }) {
         .join(' ');
         
       setSpeechText(transcript);
-      // ★ refを更新。常に最新の認識結果を保持。
       speechTextRef.current = transcript; 
-      // 一語でも聞き取られたら即座にスコアを計算
       const score = calculateAccuracy(targetText, transcript);
       setAccuracyScore(score);
     };
@@ -117,8 +115,6 @@ export default function PronunciationCheck({ targetText }) {
 
     recognition.onend = () => {
       setIsListening(false);
-      // 文字起こしが空（一語も認識されなかった）場合のみ、環境確認エラーを出す
-      // ★ 修正箇所：Stateの代わりにRefを参照することで、最新の認識結果に基づいて判定する。
       if (!speechTextRef.current) {
         setErrorMessage("音声が認識されませんでした。通信環境（WiFi）やマイク設定を確認してください。");
       }
@@ -172,12 +168,13 @@ export default function PronunciationCheck({ targetText }) {
         </div>
       )}
 
-      {isExpanded && (
-        <div className="fixed inset-0 z-[200] bg-slate-900/95 backdrop-blur-xl flex flex-col justify-between animate-fadeIn">
+      {/* ★ 変更箇所：createPortal を使って、document.body（画面の一番上の層）に直接描画する */}
+      {isExpanded && createPortal(
+        <div className="fixed inset-0 z-[9999] bg-slate-900/95 backdrop-blur-xl flex flex-col justify-between animate-fadeIn">
           
           <button 
             onClick={closeOverlay} 
-            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl flex justify-center items-center transition-colors z-[210]"
+            className="absolute top-6 right-6 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full text-white text-xl flex justify-center items-center transition-colors z-[10000]"
           >
             ✕
           </button>
@@ -229,7 +226,8 @@ export default function PronunciationCheck({ targetText }) {
             )}
           </div>
 
-          <div className="w-full max-w-md mx-auto pb-12 md:pb-8 pt-4 px-4 z-[210] bg-gradient-to-t from-slate-900 via-slate-900 to-transparent">
+          {/* ★ 下部の余白(pb)を少し増やして、iPhoneのホームバーに被らないように調整 */}
+          <div className="w-full max-w-md mx-auto pb-12 pt-4 px-4 z-[10000] bg-gradient-to-t from-slate-900 via-slate-900 to-transparent">
             {isListening ? (
               <button 
                 onClick={stopRecording} 
@@ -241,20 +239,21 @@ export default function PronunciationCheck({ targetText }) {
               <div className="flex gap-3">
                 <button 
                   onClick={closeOverlay} 
-                  className="flex-1 py-4 bg-white/10 text-white font-bold rounded-[1.5rem]"
+                  className="flex-1 py-4 bg-white/10 text-white font-bold rounded-[1.5rem] active:scale-95 transition-transform"
                 >
                   戻る
                 </button>
                 <button 
                   onClick={openAndStart} 
-                  className="flex-2 w-2/3 py-4 bg-blue-500 text-white text-xl font-black rounded-[1.5rem]"
+                  className="flex-2 w-2/3 py-4 bg-blue-500 text-white text-xl font-black rounded-[1.5rem] active:scale-95 transition-transform"
                 >
                   🎤 もう一度
                 </button>
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body // ★ ここで body（最前面）を指定
       )}
     </>
   );
