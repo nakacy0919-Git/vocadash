@@ -63,7 +63,6 @@ export default function Play({
   };
 
   const handleChoiceClick = (originalIdx) => {
-    // 既に判定エフェクトが出ている場合は、重複タップを完全に無視する
     if (showFeedbackOverlay) return;
 
     const isCorrect = Number(originalIdx) === Number(currentQuestion.correct);
@@ -106,6 +105,13 @@ export default function Play({
     window.speechSynthesis.speak(utterance);
   };
 
+  // ★ 追加：すべてのボタンを「0秒反応」にする魔法の関数
+  // e.preventDefault()を入れることで「2回押されたと勘違いするバグ」も防ぎます
+  const instantTrigger = (action) => (e) => {
+    if (e.cancelable) e.preventDefault(); 
+    action();
+  };
+
   const getQuestionTextClass = () => {
     const sizes = [
       'text-base md:text-lg lg:text-xl',       
@@ -133,7 +139,8 @@ export default function Play({
   const TextSizeControl = () => (
     <div className="flex bg-white/60 p-1 rounded-full border border-gray-200 shadow-sm backdrop-blur-sm items-center">
       <button 
-        onClick={() => setTextSizeLevel(prev => Math.max(0, prev - 1))} 
+        onTouchStart={instantTrigger(() => setTextSizeLevel(prev => Math.max(0, prev - 1)))} 
+        onMouseDown={instantTrigger(() => setTextSizeLevel(prev => Math.max(0, prev - 1)))} 
         disabled={textSizeLevel === 0}
         className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 active:bg-white active:text-blue-500 active:shadow-sm"
       >
@@ -141,7 +148,8 @@ export default function Play({
       </button>
       <div className="w-px h-5 bg-gray-300 mx-1"></div>
       <button 
-        onClick={() => setTextSizeLevel(prev => Math.min(5, prev + 1))} 
+        onTouchStart={instantTrigger(() => setTextSizeLevel(prev => Math.min(5, prev + 1)))} 
+        onMouseDown={instantTrigger(() => setTextSizeLevel(prev => Math.min(5, prev + 1)))} 
         disabled={textSizeLevel === 5}
         className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 active:bg-white active:text-blue-500 active:shadow-sm"
       >
@@ -167,7 +175,8 @@ export default function Play({
       <div className="p-4 md:p-6 z-10">
         <div className="flex items-center gap-4 mb-3">
           <button 
-            onClick={() => { window.speechSynthesis?.cancel(); goHome(); }}
+            onTouchStart={instantTrigger(() => { window.speechSynthesis?.cancel(); goHome(); })}
+            onMouseDown={instantTrigger(() => { window.speechSynthesis?.cancel(); goHome(); })}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-white/40 backdrop-blur-md text-gray-600 border border-white/60 active:scale-90 transition-transform shadow-sm"
           >
             <span className="text-xl font-bold">✕</span>
@@ -215,7 +224,8 @@ export default function Play({
                        {completeSentence}
                      </span>
                      <button 
-                       onClick={() => handleReadAloud(completeSentence)}
+                       onTouchStart={instantTrigger(() => handleReadAloud(completeSentence))}
+                       onMouseDown={instantTrigger(() => handleReadAloud(completeSentence))}
                        className="shrink-0 w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-500 rounded-full shadow-sm active:scale-90 transition-transform active:bg-rose-200"
                      >
                        🔊
@@ -227,10 +237,18 @@ export default function Play({
                </div>
                
                <div className="flex w-full gap-3">
-                 <button onClick={goHome} className="flex-1 py-4 bg-white/60 text-gray-600 text-sm font-bold rounded-2xl border border-white/80 shadow-sm active:scale-95 transition-transform">
+                 <button 
+                   onTouchStart={instantTrigger(goHome)} 
+                   onMouseDown={instantTrigger(goHome)} 
+                   className="flex-1 py-4 bg-white/60 text-gray-600 text-sm font-bold rounded-2xl border border-white/80 shadow-sm active:scale-95 transition-transform"
+                 >
                    やめる
                  </button>
-                 <button onClick={() => { window.speechSynthesis?.cancel(); startGame(); }} className="flex-2 w-2/3 py-4 bg-rose-400 text-white text-lg font-black rounded-2xl shadow-[0_4px_15px_rgba(251,113,133,0.4)] relative overflow-hidden active:scale-95 transition-transform active:bg-rose-500">
+                 <button 
+                   onTouchStart={instantTrigger(() => { window.speechSynthesis?.cancel(); startGame(); })} 
+                   onMouseDown={instantTrigger(() => { window.speechSynthesis?.cancel(); startGame(); })} 
+                   className="flex-2 w-2/3 py-4 bg-rose-400 text-white text-lg font-black rounded-2xl shadow-[0_4px_15px_rgba(251,113,133,0.4)] relative overflow-hidden active:scale-95 transition-transform active:bg-rose-500"
+                 >
                    <div className="absolute inset-1 border border-dashed border-white/50 rounded-xl pointer-events-none"></div>
                    <span className="relative z-10">もう1回！</span>
                  </button>
@@ -264,7 +282,8 @@ export default function Play({
 
               <div className="w-full flex justify-end mb-6">
                 <button 
-                  onClick={() => handleReadAloud(completeSentence)}
+                  onTouchStart={instantTrigger(() => handleReadAloud(completeSentence))}
+                  onMouseDown={instantTrigger(() => handleReadAloud(completeSentence))}
                   className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
                 >
                   🔊
@@ -292,7 +311,8 @@ export default function Play({
                         <p className="text-xs text-gray-400 leading-tight italic">{detail.etymology}</p>
                       </div>
                       <button 
-                        onClick={() => handleReadAloud(detail.word)}
+                        onTouchStart={instantTrigger(() => handleReadAloud(detail.word))}
+                        onMouseDown={instantTrigger(() => handleReadAloud(detail.word))}
                         className="relative z-10 w-10 h-10 rounded-full bg-white/80 border border-gray-200 text-gray-400 flex items-center justify-center active:bg-gray-50 active:text-blue-400 active:scale-90 transition-all shadow-sm"
                       >
                         🔊
@@ -309,7 +329,8 @@ export default function Play({
 
             <div className="p-6 bg-white/40 backdrop-blur-md border-t border-white/60">
               <button 
-                onClick={handleNextStudy}
+                onTouchStart={instantTrigger(handleNextStudy)}
+                onMouseDown={instantTrigger(handleNextStudy)}
                 className="w-full py-4 bg-gray-700 text-white font-black text-lg rounded-2xl shadow-lg relative overflow-hidden active:scale-[0.98] transition-transform active:bg-gray-800"
               >
                 <div className="absolute inset-1 border-2 border-dashed border-gray-500/50 rounded-xl pointer-events-none"></div>
@@ -343,7 +364,9 @@ export default function Play({
 
             <div className="w-full flex items-center justify-between border-t border-gray-100 pt-6 mt-2 relative z-10 min-h-[4rem]">
               <button
-                onClick={() => setShowJapanese(!showJapanese)}
+                // ★ 修正：Japaneseボタンも0秒反応化！
+                onTouchStart={instantTrigger(() => setShowJapanese(!showJapanese))}
+                onMouseDown={instantTrigger(() => setShowJapanese(!showJapanese))}
                 className={`flex items-center gap-2 px-5 py-2.5 font-bold rounded-full text-sm transition-all shadow-sm border active:scale-95 ${
                   showJapanese 
                   ? 'bg-blue-500 text-white border-blue-600' 
@@ -354,7 +377,9 @@ export default function Play({
               </button>
               
               <button 
-                onClick={() => handleReadAloud(questionForSpeech)}
+                // ★ 修正：🔊アイコンも0秒反応化！
+                onTouchStart={instantTrigger(() => handleReadAloud(questionForSpeech))}
+                onMouseDown={instantTrigger(() => handleReadAloud(questionForSpeech))}
                 className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
               >
                 🔊
@@ -378,14 +403,10 @@ export default function Play({
             {shuffledChoices.map((choiceObj, idx) => (
               <button
                 key={idx}
-                // ★ 中島先生の推理から導き出した最終奥義！
-                // onClickを廃止し、指が画面のガラスに触れた瞬間に発動する「onTouchStart」を採用。
-                // 再描画の隙間を縫って、0秒で強制的に判定をねじ込みます。
                 onTouchStart={() => {
                   handleChoiceClick(choiceObj.originalIndex);
                 }}
                 onMouseDown={() => {
-                  // PC版のためのクリック処理
                   handleChoiceClick(choiceObj.originalIndex);
                 }}
                 className="group relative select-none touch-manipulation active:scale-[0.97] transition-all duration-200 py-6 md:py-8 lg:py-10 text-lg md:text-xl lg:text-2xl font-bold text-gray-600 bg-white/90 backdrop-blur-md rounded-3xl active:bg-white active:text-blue-500 shadow-sm active:shadow-md overflow-hidden text-center border border-white/60"
