@@ -57,7 +57,7 @@ export default function Play({
   const handleChoiceClick = (originalIdx) => {
     if (showFeedbackOverlay) return;
 
-    // ★ 修正箇所：文字列と数値の型違いによるバグを防ぐため Number() で統一
+    // 文字列と数値の型違いによるバグを防ぐため Number() で統一
     const isCorrect = Number(originalIdx) === Number(currentQuestion.correct);
     const timeTaken = targetTime - timeLeft;
     
@@ -122,12 +122,13 @@ export default function Play({
     return sizes[textSizeLevel];
   };
 
+  // ★ 修正：hoverをactiveに変更
   const TextSizeControl = () => (
     <div className="flex bg-white/60 p-1 rounded-full border border-gray-200 shadow-sm backdrop-blur-sm items-center">
       <button 
         onClick={() => setTextSizeLevel(prev => Math.max(0, prev - 1))} 
         disabled={textSizeLevel === 0}
-        className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 hover:bg-white hover:text-blue-500 hover:shadow-sm"
+        className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 active:bg-white active:text-blue-500 active:shadow-sm"
       >
         <span className="text-sm font-bold">A-</span>
       </button>
@@ -135,7 +136,7 @@ export default function Play({
       <button 
         onClick={() => setTextSizeLevel(prev => Math.min(5, prev + 1))} 
         disabled={textSizeLevel === 5}
-        className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 hover:bg-white hover:text-blue-500 hover:shadow-sm"
+        className="flex items-center justify-center w-10 h-8 rounded-full transition-all disabled:opacity-30 disabled:cursor-not-allowed text-gray-600 active:bg-white active:text-blue-500 active:shadow-sm"
       >
         <span className="text-lg font-black">A+</span>
       </button>
@@ -208,7 +209,8 @@ export default function Play({
                      </span>
                      <button 
                        onClick={() => handleReadAloud(completeSentence)}
-                       className="shrink-0 w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-500 rounded-full shadow-sm active:scale-90 transition-transform hover:bg-rose-200"
+                       // ★ 修正：hoverをなくしてactiveのみに
+                       className="shrink-0 w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-500 rounded-full shadow-sm active:scale-90 transition-transform active:bg-rose-200"
                      >
                        🔊
                      </button>
@@ -222,7 +224,7 @@ export default function Play({
                  <button onClick={goHome} className="flex-1 py-4 bg-white/60 text-gray-600 text-sm font-bold rounded-2xl border border-white/80 shadow-sm active:scale-95 transition-transform">
                    やめる
                  </button>
-                 <button onClick={() => { window.speechSynthesis?.cancel(); startGame(); }} className="flex-2 w-2/3 py-4 bg-rose-400 text-white text-lg font-black rounded-2xl shadow-[0_4px_15px_rgba(251,113,133,0.4)] relative overflow-hidden active:scale-95 transition-transform hover:bg-rose-500">
+                 <button onClick={() => { window.speechSynthesis?.cancel(); startGame(); }} className="flex-2 w-2/3 py-4 bg-rose-400 text-white text-lg font-black rounded-2xl shadow-[0_4px_15px_rgba(251,113,133,0.4)] relative overflow-hidden active:scale-95 transition-transform active:bg-rose-500">
                    <div className="absolute inset-1 border border-dashed border-white/50 rounded-xl pointer-events-none"></div>
                    <span className="relative z-10">もう1回！</span>
                  </button>
@@ -239,7 +241,6 @@ export default function Play({
               
               <div className="flex justify-between items-center mb-6">
                 <div>
-                  {/* ★修正箇所：厳密な数値での判定 */}
                   {Number(studySelected) === Number(currentQuestion.correct) ? (
                     <span className="bg-green-100 text-green-600 font-black px-4 py-1.5 rounded-full text-sm border border-green-200 shadow-sm">⭕ 正解！</span>
                   ) : (
@@ -249,18 +250,17 @@ export default function Play({
                 <TextSizeControl />
               </div>
 
-              {/* ★ 変更箇所：英文の横幅を100%使用 (textWrap: balance を削除) */}
               <div className="w-full relative z-10 mb-4">
                 <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight transition-all duration-300 w-full ${getQuestionTextClass()}`}>
                   {completeSentence}
                 </h1>
               </div>
 
-              {/* ★ 変更箇所：🔊アイコンのみのシンプルな丸ボタン */}
               <div className="w-full flex justify-end mb-6">
                 <button 
                   onClick={() => handleReadAloud(completeSentence)}
-                  className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200 text-2xl"
+                  // ★ 修正：hoverをなくしてactiveのみに
+                  className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
                 >
                   🔊
                 </button>
@@ -277,7 +277,7 @@ export default function Play({
               {currentQuestion.word_details && (
                 <div className="grid gap-3 mb-8">
                   {currentQuestion.word_details.map((detail, i) => (
-                    <div key={i} className="relative p-4 rounded-2xl bg-white/60 border border-white shadow-sm flex justify-between items-center overflow-hidden hover:bg-white transition-colors">
+                    <div key={i} className="relative p-4 rounded-2xl bg-white/60 border border-white shadow-sm flex justify-between items-center overflow-hidden active:bg-white transition-colors">
                       <div className="absolute inset-1 border border-dashed border-blue-200/50 rounded-xl pointer-events-none"></div>
                       <div className="relative z-10 flex-1 pr-2">
                         <div className="flex justify-between font-bold mb-1">
@@ -288,7 +288,8 @@ export default function Play({
                       </div>
                       <button 
                         onClick={() => handleReadAloud(detail.word)}
-                        className="relative z-10 w-10 h-10 rounded-full bg-white/80 border border-gray-200 text-gray-400 flex items-center justify-center hover:bg-gray-50 hover:text-blue-400 active:scale-90 transition-all shadow-sm"
+                        // ★ 修正：hoverをなくしてactiveのみに
+                        className="relative z-10 w-10 h-10 rounded-full bg-white/80 border border-gray-200 text-gray-400 flex items-center justify-center active:bg-gray-50 active:text-blue-400 active:scale-90 transition-all shadow-sm"
                       >
                         🔊
                       </button>
@@ -305,7 +306,8 @@ export default function Play({
             <div className="p-6 bg-white/40 backdrop-blur-md border-t border-white/60">
               <button 
                 onClick={handleNextStudy}
-                className="w-full py-4 bg-gray-700 text-white font-black text-lg rounded-2xl shadow-lg relative overflow-hidden active:scale-[0.98] transition-transform hover:bg-gray-800"
+                // ★ 修正：hoverをなくしてactiveのみに
+                className="w-full py-4 bg-gray-700 text-white font-black text-lg rounded-2xl shadow-lg relative overflow-hidden active:scale-[0.98] transition-transform active:bg-gray-800"
               >
                 <div className="absolute inset-1 border-2 border-dashed border-gray-500/50 rounded-xl pointer-events-none"></div>
                 <span className="relative z-10">次の問題へ →</span>
@@ -323,7 +325,6 @@ export default function Play({
               <TextSizeControl />
             </div>
 
-            {/* ★ 変更箇所：英文の横幅を100%使用 (textWrap: balance を削除) */}
             <div className="w-full relative z-10 mb-6">
               <h1 className={`font-extrabold text-gray-700 leading-snug tracking-tight break-words transition-all duration-300 w-full ${getQuestionTextClass()}`}>
                 {currentQuestion.english.split('________').map((part, index, array) => (
@@ -337,14 +338,14 @@ export default function Play({
               </h1>
             </div>
 
-            {/* ★ アクションバー（Japanese と 🔊 丸アイコンボタンを並べる） */}
             <div className="w-full flex items-center justify-between border-t border-gray-100 pt-6 mt-2 relative z-10 min-h-[4rem]">
               <button
                 onClick={() => setShowJapanese(!showJapanese)}
+                // ★ 修正：hoverをなくしてactiveのみに
                 className={`flex items-center gap-2 px-5 py-2.5 font-bold rounded-full text-sm transition-all shadow-sm border active:scale-95 ${
                   showJapanese 
                   ? 'bg-blue-500 text-white border-blue-600' 
-                  : 'bg-gray-100/80 text-gray-500 border-gray-200/80 hover:bg-white hover:text-blue-500'
+                  : 'bg-gray-100/80 text-gray-500 border-gray-200/80 active:bg-white active:text-blue-500'
                 }`}
               >
                 Japanese
@@ -352,7 +353,8 @@ export default function Play({
               
               <button 
                 onClick={() => handleReadAloud(questionForSpeech)}
-                className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform hover:bg-blue-200 text-2xl"
+                // ★ 修正：hoverをなくしてactiveのみに
+                className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
               >
                 🔊
               </button>
@@ -376,9 +378,11 @@ export default function Play({
               <button
                 key={idx}
                 onClick={() => handleChoiceClick(choiceObj.originalIndex)}
-                className="group relative touch-manipulation active:scale-[0.97] transition-all duration-200 py-6 md:py-8 lg:py-10 text-lg md:text-xl lg:text-2xl font-bold text-gray-600 bg-white/90 backdrop-blur-md rounded-3xl hover:bg-white hover:text-blue-500 shadow-sm hover:shadow-md overflow-hidden text-center border border-white/60"
+                // ★ 最大の修正箇所：選択肢ボタンのhoverを全てactiveに変更
+                className="group relative touch-manipulation active:scale-[0.97] transition-all duration-200 py-6 md:py-8 lg:py-10 text-lg md:text-xl lg:text-2xl font-bold text-gray-600 bg-white/90 backdrop-blur-md rounded-3xl active:bg-white active:text-blue-500 shadow-sm active:shadow-md overflow-hidden text-center border border-white/60"
               >
-                <div className="absolute inset-1.5 border-[1.5px] border-dashed border-gray-300/60 rounded-2xl pointer-events-none group-hover:border-blue-300/60 transition-colors"></div>
+                {/* ★ 枠線も group-hover から group-active に変更 */}
+                <div className="absolute inset-1.5 border-[1.5px] border-dashed border-gray-300/60 rounded-2xl pointer-events-none group-active:border-blue-300/60 transition-colors"></div>
                 <span className="absolute top-4 left-5 text-[11px] text-gray-400 font-medium bg-gray-100 px-2 py-0.5 rounded-full z-10">{idx + 1}</span>
                 <span className="relative z-10 transition-colors">{choiceObj.text}</span>
               </button>
