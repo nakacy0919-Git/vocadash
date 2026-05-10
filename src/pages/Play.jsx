@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import PronunciationCheck from '../components/PronunciationCheck';
 
+let sharedAudioCtx = null;
+
 export default function Play({
   playMode, currentIndex, selectedQuestions, currentQuestion, timeLeft, targetTime,
   isFailed, submitRecord, handleFail, goHome, startGame, calculateAverageTime
@@ -34,30 +36,36 @@ export default function Play({
   }, []);
 
   const playSound = (type) => {
-    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    const osc = audioCtx.createOscillator();
-    const gain = audioCtx.createGain();
+    if (!sharedAudioCtx) {
+      sharedAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (sharedAudioCtx.state === 'suspended') {
+      sharedAudioCtx.resume();
+    }
+
+    const osc = sharedAudioCtx.createOscillator();
+    const gain = sharedAudioCtx.createGain();
     osc.connect(gain);
-    gain.connect(audioCtx.destination);
+    gain.connect(sharedAudioCtx.destination);
 
     if (type === 'correct') {
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(880, audioCtx.currentTime); 
-      osc.frequency.setValueAtTime(1100, audioCtx.currentTime + 0.1);
+      osc.frequency.setValueAtTime(880, sharedAudioCtx.currentTime); 
+      osc.frequency.setValueAtTime(1100, sharedAudioCtx.currentTime + 0.1);
     } else {
       osc.type = 'sawtooth';
-      osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+      osc.frequency.setValueAtTime(150, sharedAudioCtx.currentTime);
     }
-    gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+    gain.gain.setValueAtTime(0.1, sharedAudioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.01, sharedAudioCtx.currentTime + 0.3);
     osc.start();
-    osc.stop(audioCtx.currentTime + 0.3);
+    osc.stop(sharedAudioCtx.currentTime + 0.3);
   };
 
   const handleChoiceClick = (originalIdx) => {
+    // 既に判定エフェクトが出ている場合は、重複タップを完全に無視する
     if (showFeedbackOverlay) return;
 
-    // 文字列と数値の型違いによるバグを防ぐため Number() で統一
     const isCorrect = Number(originalIdx) === Number(currentQuestion.correct);
     const timeTaken = targetTime - timeLeft;
     
@@ -65,7 +73,7 @@ export default function Play({
     setShowFeedbackOverlay(isCorrect ? 'correct' : 'incorrect');
     
     if (playMode === 'study') {
-      setStudySelected(originalIdx); // 選んだ選択肢を保存
+      setStudySelected(originalIdx); 
       setTimeout(() => {
         setShowFeedbackOverlay(null);
         setStudyPhase('explanation');
@@ -122,7 +130,6 @@ export default function Play({
     return sizes[textSizeLevel];
   };
 
-  // ★ 修正：hoverをactiveに変更
   const TextSizeControl = () => (
     <div className="flex bg-white/60 p-1 rounded-full border border-gray-200 shadow-sm backdrop-blur-sm items-center">
       <button 
@@ -209,7 +216,6 @@ export default function Play({
                      </span>
                      <button 
                        onClick={() => handleReadAloud(completeSentence)}
-                       // ★ 修正：hoverをなくしてactiveのみに
                        className="shrink-0 w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-500 rounded-full shadow-sm active:scale-90 transition-transform active:bg-rose-200"
                      >
                        🔊
@@ -259,7 +265,6 @@ export default function Play({
               <div className="w-full flex justify-end mb-6">
                 <button 
                   onClick={() => handleReadAloud(completeSentence)}
-                  // ★ 修正：hoverをなくしてactiveのみに
                   className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
                 >
                   🔊
@@ -288,7 +293,6 @@ export default function Play({
                       </div>
                       <button 
                         onClick={() => handleReadAloud(detail.word)}
-                        // ★ 修正：hoverをなくしてactiveのみに
                         className="relative z-10 w-10 h-10 rounded-full bg-white/80 border border-gray-200 text-gray-400 flex items-center justify-center active:bg-gray-50 active:text-blue-400 active:scale-90 transition-all shadow-sm"
                       >
                         🔊
@@ -306,7 +310,6 @@ export default function Play({
             <div className="p-6 bg-white/40 backdrop-blur-md border-t border-white/60">
               <button 
                 onClick={handleNextStudy}
-                // ★ 修正：hoverをなくしてactiveのみに
                 className="w-full py-4 bg-gray-700 text-white font-black text-lg rounded-2xl shadow-lg relative overflow-hidden active:scale-[0.98] transition-transform active:bg-gray-800"
               >
                 <div className="absolute inset-1 border-2 border-dashed border-gray-500/50 rounded-xl pointer-events-none"></div>
@@ -341,7 +344,6 @@ export default function Play({
             <div className="w-full flex items-center justify-between border-t border-gray-100 pt-6 mt-2 relative z-10 min-h-[4rem]">
               <button
                 onClick={() => setShowJapanese(!showJapanese)}
-                // ★ 修正：hoverをなくしてactiveのみに
                 className={`flex items-center gap-2 px-5 py-2.5 font-bold rounded-full text-sm transition-all shadow-sm border active:scale-95 ${
                   showJapanese 
                   ? 'bg-blue-500 text-white border-blue-600' 
@@ -353,7 +355,6 @@ export default function Play({
               
               <button 
                 onClick={() => handleReadAloud(questionForSpeech)}
-                // ★ 修正：hoverをなくしてactiveのみに
                 className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
               >
                 🔊
@@ -377,14 +378,21 @@ export default function Play({
             {shuffledChoices.map((choiceObj, idx) => (
               <button
                 key={idx}
-                onClick={() => handleChoiceClick(choiceObj.originalIndex)}
-                // ★ 最大の修正箇所：選択肢ボタンのhoverを全てactiveに変更
-                className="group relative touch-manipulation active:scale-[0.97] transition-all duration-200 py-6 md:py-8 lg:py-10 text-lg md:text-xl lg:text-2xl font-bold text-gray-600 bg-white/90 backdrop-blur-md rounded-3xl active:bg-white active:text-blue-500 shadow-sm active:shadow-md overflow-hidden text-center border border-white/60"
+                // ★ 中島先生の推理から導き出した最終奥義！
+                // onClickを廃止し、指が画面のガラスに触れた瞬間に発動する「onTouchStart」を採用。
+                // 再描画の隙間を縫って、0秒で強制的に判定をねじ込みます。
+                onTouchStart={() => {
+                  handleChoiceClick(choiceObj.originalIndex);
+                }}
+                onMouseDown={() => {
+                  // PC版のためのクリック処理
+                  handleChoiceClick(choiceObj.originalIndex);
+                }}
+                className="group relative select-none touch-manipulation active:scale-[0.97] transition-all duration-200 py-6 md:py-8 lg:py-10 text-lg md:text-xl lg:text-2xl font-bold text-gray-600 bg-white/90 backdrop-blur-md rounded-3xl active:bg-white active:text-blue-500 shadow-sm active:shadow-md overflow-hidden text-center border border-white/60"
               >
-                {/* ★ 枠線も group-hover から group-active に変更 */}
                 <div className="absolute inset-1.5 border-[1.5px] border-dashed border-gray-300/60 rounded-2xl pointer-events-none group-active:border-blue-300/60 transition-colors"></div>
                 <span className="absolute top-4 left-5 text-[11px] text-gray-400 font-medium bg-gray-100 px-2 py-0.5 rounded-full z-10">{idx + 1}</span>
-                <span className="relative z-10 transition-colors">{choiceObj.text}</span>
+                <span className="relative z-10 transition-colors pointer-events-none">{choiceObj.text}</span>
               </button>
             ))}
           </div>
