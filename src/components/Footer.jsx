@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import PolicyModal from './PolicyModal';
+import GuideModal from './GuideModal'; // ★ 追加：ガイドモーダルをインポート
 
 export default function Footer() {
-  // モーダルの開閉状態と、どちらを表示するかを管理するState
-  const [modalState, setModalState] = useState({ isOpen: false, type: 'terms' });
+  const [policyState, setPolicyState] = useState({ isOpen: false, type: 'terms' });
+  const [isGuideOpen, setIsGuideOpen] = useState(false); // ★ 追加：ガイドの開閉状態
 
-  const openModal = (type) => {
-    setModalState({ isOpen: true, type });
-  };
-
-  const closeModal = () => {
-    setModalState({ isOpen: false, type: 'terms' });
-  };
+  const openPolicy = (type) => setPolicyState({ isOpen: true, type });
+  const closePolicy = () => setPolicyState({ isOpen: false, type: 'terms' });
 
   return (
     <>
@@ -20,9 +16,13 @@ export default function Footer() {
           
           {/* ▼ アプリ連携・活用ガイド ▼ */}
           <div className="flex flex-wrap justify-center gap-4 mb-6 text-sm font-bold text-gray-600">
-            <a href="#" className="hover:text-blue-500 active:text-blue-600 transition-colors flex items-center gap-1">
+            {/* ★ 修正：ガイドモーダルを開く処理を追加 */}
+            <button 
+              onClick={() => setIsGuideOpen(true)}
+              className="hover:text-blue-500 active:text-blue-600 transition-colors flex items-center gap-1"
+            >
               <span>📘</span> VocaDash活用ガイド
-            </a>
+            </button>
             <a href="https://pic-speak-story.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 active:text-blue-600 transition-colors flex items-center gap-1">
               <span>🗣️</span> PicSpeak
             </a>
@@ -34,13 +34,13 @@ export default function Footer() {
           {/* ▼ ポリシー・規約関連 ▼ */}
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-6 text-xs font-medium text-gray-500">
             <button 
-              onClick={() => openModal('terms')}
+              onClick={() => openPolicy('terms')}
               className="hover:text-gray-800 active:text-gray-900 transition-colors underline underline-offset-2 decoration-gray-300"
             >
               利用規約
             </button>
             <button 
-              onClick={() => openModal('privacy')}
+              onClick={() => openPolicy('privacy')}
               className="hover:text-gray-800 active:text-gray-900 transition-colors underline underline-offset-2 decoration-gray-300"
             >
               プライバシーポリシー
@@ -64,11 +64,17 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* モーダル本体の呼び出し */}
+      {/* ポリシーモーダル */}
       <PolicyModal 
-        isOpen={modalState.isOpen} 
-        onClose={closeModal} 
-        type={modalState.type} 
+        isOpen={policyState.isOpen} 
+        onClose={closePolicy} 
+        type={policyState.type} 
+      />
+
+      {/* ★ 追加：ガイドモーダル */}
+      <GuideModal 
+        isOpen={isGuideOpen} 
+        onClose={() => setIsGuideOpen(false)} 
       />
     </>
   );
