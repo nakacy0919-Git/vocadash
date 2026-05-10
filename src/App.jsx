@@ -6,7 +6,22 @@ import Play from './pages/Play';
 import Result from './pages/Result';
 import BrowserGuide from './components/BrowserGuide';
 
-// コースIDと表示名のマッピング
+// ▼ 修正①：本番環境（GitHub Pages）でデータが消えないように、最初からすべてのJSONを読み込んでおく
+import regularData from './data/regular.json';
+import eikenPre2Data from './data/eiken_pre2.json';
+import eiken2Data from './data/eiken_2.json';
+import eikenPre1Data from './data/eiken_pre1.json';
+import eiken1Data from './data/eiken_1.json';
+
+// コースIDと読み込んだデータを紐づける
+const COURSE_DATA_MAP = {
+  'regular': regularData,
+  'eiken_pre2': eikenPre2Data,
+  'eiken_2': eiken2Data,
+  'eiken_pre1': eikenPre1Data,
+  'eiken_1': eiken1Data,
+};
+
 const COURSE_MAP = {
   regular: '定期考査 KICK OFF',
   eiken_pre2: '英検 準2級',
@@ -15,37 +30,31 @@ const COURSE_MAP = {
   eiken_1: '英検 1級',
 };
 
-// スパルタテストモードの制限時間（10秒 = 10000ミリ秒）
-const TARGET_TIME = 10000;
-
 function App() {
-  // --- 画面遷移のステート ---
-  // 'course_select', 'home', 'settings', 'play', 'result'
   const [appState, setAppState] = useState('course_select'); 
   
-  // --- 学習データのステート ---
   const [currentCourse, setCurrentCourse] = useState(null);
   const [questionsData, setQuestionsData] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [currentMode, setCurrentMode] = useState(null); 
-  const [playMode, setPlayMode] = useState('study'); // 'study' (じっくり) or 'test' (スパルタ)
+  const [playMode, setPlayMode] = useState('study'); 
   
-  // --- プレイ中の状態管理 ---
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(TARGET_TIME);
+  
+  // ▼ 修正②：スパルタモードの解答時間を固定（10000）から可変（State）に変更
+  const [targetTime, setTargetTime] = useState(10000); 
+  const [timeLeft, setTimeLeft] = useState(10000);
   const [isFailed, setIsFailed] = useState(false);
   const [sessionResults, setSessionResults] = useState([]);
 
-  // 1. コースデータの非同期読み込み
   useEffect(() => {
     if (currentCourse) {
-      import(`./data/${currentCourse}.json`)
-        .then((data) => setQuestionsData(data.default))
-        .catch((err) => console.error("データ読み込みエラー:", err));
+      // 確実に取り込んだデータからセットする
+      setQuestionsData(COURSE_DATA_MAP[currentCourse] || []);
     }
   }, [currentCourse]);
 
-  // 2. タイマーのロジック（テストモード時のみ稼働）
+  // タイマー処理
   useEffect(() => {
     let timer;
     if (appState === 'play' && playMode === 'test' && !isFailed) {
@@ -62,7 +71,6 @@ function App() {
     return () => clearInterval(timer);
   }, [appState, playMode, isFailed]);
 
-  // --- 画面遷移ハンドラ ---
   const goCourseSelect = () => {
     setCurrentCourse(null);
     setAppState('course_select');
@@ -73,7 +81,6 @@ function App() {
     setAppState('home');
   };
 
-  // Home画面でチャンク（10問）かランダムかを選んだ時の処理
   const handleSelectMode = (modeType, value) => {
     let questions = [];
     let label = '';
@@ -86,7 +93,6 @@ function App() {
       label = `Q${start + 1} - Q${Math.min(start + 10, questionsData.length)}`;
     } else if (modeType === 'random') {
       const count = value === 'ALL' ? questionsData.length : Math.min(value, questionsData.length);
-      // ランダムにシャッフルして抽出
       questions = [...questionsData].sort(() => Math.random() - 0.5).slice(0, count);
       id = `random-${count}`;
       label = `ランダム特訓 ${count === questionsData.length ? '全問' : count + '問'}`;
@@ -94,37 +100,34 @@ function App() {
 
     setSelectedQuestions(questions);
     setCurrentMode({ type: modeType, id, label });
-    // Settings（モード選択）画面へ遷移
     setAppState('settings'); 
   };
 
-  // Settings画面から「じっくり」か「スパルタ」を選んでスタート
-  const startGame = (selectedPlayMode) => {
-    setPlayMode(selectedPlayMode || playMode);
+  // ▼ 修正③：Settings画面から、ユーザーが設定した「秒数」を受け取れるようにする
+  const startGame = (selectedPlayMode, selectedTimeMs = null) => {
+    const time = selectedTimeMs || targetTime;
+    setPlayMode(selectedPlayMode);
+    setTargetTime(time);
     setCurrentIndex(0);
-    setTimeLeft(TARGET_TIME);
+    setTimeLeft(time);
     setIsFailed(false);
     setSessionResults([]);
     setAppState('play');
   };
 
-  // --- 成績の記録と判定 ---
   const submitRecord = (isCorrect, timeTaken) => {
     const newResults = [...sessionResults, { isCorrect, timeTaken }];
     setSessionResults(newResults);
 
     if (currentIndex < selectedQuestions.length - 1) {
-      // 次の問題へ
       setCurrentIndex(currentIndex + 1);
-      setTimeLeft(TARGET_TIME);
+      setTimeLeft(targetTime); // ターゲット時間を復元
     } else {
-      // 全問終了！成績を保存してリザルト画面へ
       saveStats(newResults);
       setAppState('result');
     }
   };
 
-  // LocalStorageへの成績保存ロジック
   const saveStats = (results) => {
     const correctCount = results.filter(r => r.isCorrect).length;
     const slaRate = Math.round((correctCount / results.length) * 100);
@@ -150,7 +153,6 @@ function App() {
     return chunkScores.length > 0 ? Math.max(...chunkScores) : 0;
   };
 
-  // リザルト画面用の平均解答時間の計算ロジック
   const calculateAverageTime = () => {
     if (sessionResults.length === 0) return 0;
     const validResults = sessionResults.filter(r => r.isCorrect);
@@ -159,17 +161,10 @@ function App() {
     return (total / validResults.length / 1000).toFixed(1);
   };
 
-  // --- レンダリング ---
   return (
     <div className="font-sans antialiased text-gray-900">
-      
-      {/* どの画面にいても一番上にガイドを重ねて表示できる */}
       <BrowserGuide />
-
-      {appState === 'course_select' && (
-        <CourseSelect onSelectCourse={onSelectCourse} />
-      )}
-      
+      {appState === 'course_select' && <CourseSelect onSelectCourse={onSelectCourse} />}
       {appState === 'home' && (
         <Home 
           handleSelectMode={handleSelectMode} 
@@ -180,7 +175,6 @@ function App() {
           getChunkMasteryRate={getChunkMasteryRate}
         />
       )}
-
       {appState === 'settings' && (
         <Settings 
           currentMode={currentMode}
@@ -188,7 +182,6 @@ function App() {
           startGame={startGame}
         />
       )}
-      
       {appState === 'play' && (
         <Play 
           playMode={playMode}
@@ -196,16 +189,15 @@ function App() {
           selectedQuestions={selectedQuestions}
           currentQuestion={selectedQuestions[currentIndex]}
           timeLeft={timeLeft}
-          targetTime={TARGET_TIME}
+          targetTime={targetTime} // 可変のターゲット時間をPlayに渡す
           isFailed={isFailed}
           submitRecord={submitRecord}
           handleFail={() => setIsFailed(true)}
           goHome={() => setAppState('home')}
-          startGame={() => startGame(playMode)}
+          startGame={() => startGame(playMode, targetTime)}
           calculateAverageTime={calculateAverageTime}
         />
       )}
-
       {appState === 'result' && (
         <Result 
           results={sessionResults}
@@ -217,7 +209,6 @@ function App() {
           currentMode={currentMode}
         />
       )}
-      
     </div>
   );
 }
