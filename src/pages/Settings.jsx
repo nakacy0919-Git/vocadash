@@ -24,10 +24,10 @@ export default function Settings({ currentMode, goHome, startGame }) {
     <div className="h-screen w-screen bg-macaron-gradient p-6 flex flex-col items-center justify-center font-sans overflow-y-auto">
       <div className="max-w-md w-full bg-white/80 backdrop-blur-xl p-8 rounded-[2.5rem] shadow-[0_15px_40px_rgba(0,0,0,0.1)] border border-white/60 relative">
         
-        {/* 戻るボタン */}
+        {/* 戻るボタン（hoverを削除、activeを強化） */}
         <button 
           onClick={goHome} 
-          className="absolute top-6 left-6 w-10 h-10 flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-500 rounded-full font-bold active:scale-95 transition-all shadow-sm"
+          className="absolute top-6 left-6 w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-500 rounded-full font-bold active:bg-gray-200 active:scale-95 transition-all shadow-sm"
         >
           ←
         </button>
@@ -43,7 +43,7 @@ export default function Settings({ currentMode, goHome, startGame }) {
           {/* --- 1. じっくり学習 --- */}
           <button
             onClick={() => startGame('study', null)}
-            className="w-full group relative bg-gradient-to-br from-green-400 to-emerald-500 p-6 rounded-3xl shadow-lg active:scale-95 transition-all border-t-2 border-white/30 text-left overflow-hidden"
+            className="w-full group relative bg-gradient-to-br from-green-400 to-emerald-500 p-6 rounded-3xl shadow-lg active:scale-95 active:opacity-90 transition-all border-t-2 border-white/30 text-left overflow-hidden"
           >
              <div className="absolute inset-1.5 border-2 border-dashed border-white/30 rounded-2xl pointer-events-none"></div>
              <div className="relative z-10 flex items-center gap-4">
@@ -72,9 +72,10 @@ export default function Settings({ currentMode, goHome, startGame }) {
               <div className="w-full flex items-center justify-between bg-white/20 p-4 rounded-2xl mb-5 shadow-inner">
                 <span className="text-white font-bold text-sm md:text-base">1問の解答時間</span>
                 <div className="flex items-center gap-4">
+                  {/* マイナスボタン（hover削除、active追加） */}
                   <button 
                     onClick={() => setSpartanTime(p => Math.max(3, p - 1))} 
-                    className="w-10 h-10 rounded-full bg-white text-rose-500 font-black text-xl shadow-sm hover:bg-gray-100 active:scale-90 transition-all flex items-center justify-center pb-1"
+                    className="w-10 h-10 rounded-full bg-white text-rose-500 font-black text-xl shadow-sm active:bg-gray-100 active:scale-90 transition-all flex items-center justify-center pb-1"
                   >
                     -
                   </button>
@@ -82,19 +83,20 @@ export default function Settings({ currentMode, goHome, startGame }) {
                     <span className="text-2xl md:text-3xl font-black text-white">{spartanTime}</span>
                     <span className="text-rose-100 font-bold text-sm">秒</span>
                   </div>
+                  {/* プラスボタン（hover削除、active追加） */}
                   <button 
                     onClick={() => setSpartanTime(p => Math.min(30, p + 1))} 
-                    className="w-10 h-10 rounded-full bg-white text-rose-500 font-black text-xl shadow-sm hover:bg-gray-100 active:scale-90 transition-all flex items-center justify-center pb-1"
+                    className="w-10 h-10 rounded-full bg-white text-rose-500 font-black text-xl shadow-sm active:bg-gray-100 active:scale-90 transition-all flex items-center justify-center pb-1"
                   >
                     +
                   </button>
                 </div>
               </div>
 
-              {/* スタートボタン */}
+              {/* スタートボタン（hover削除、active追加） */}
               <button
                 onClick={handleStartSpartan}
-                className="w-full py-4 bg-white text-rose-500 font-black text-lg rounded-xl shadow-md hover:bg-gray-50 active:scale-95 transition-all relative overflow-hidden"
+                className="w-full py-4 bg-white text-rose-500 font-black text-lg rounded-xl shadow-md active:bg-gray-50 active:scale-95 transition-all relative overflow-hidden"
               >
                 <div className="absolute inset-1 border border-dashed border-rose-200 rounded-lg pointer-events-none"></div>
                 スタート！
