@@ -1,0 +1,359 @@
+[
+  {
+    "id": 1,
+    "grade": "pre2",
+    "english": "Ms. Kirshman was surprised at the large number of people who ________ her lecture on gardening. There were almost no empty seats in the room.",
+    "japanese": "カーシュマンさんは、彼女の園芸に関する講義に________した人の多さに驚きました。部屋には空席がほとんどありませんでした。",
+    "choices": ["failed", "guarded", "attended", "sailed"],
+    "correct": 2,
+    "explanation": "園芸の講義(lecture)に「出席した」人々の数に驚いたという文脈です。attended が正解です。",
+    "word_details": [
+      { "word": "failed", "meaning": "失敗した", "etymology": "fallere(だます、期待を裏切る)から" },
+      { "word": "guarded", "meaning": "守った", "etymology": "古フランス語garder(見張る)から" },
+      { "word": "attended", "meaning": "出席した", "etymology": "ad(〜へ) + tendere(伸ばす) = 注意や体をそこに向ける" },
+      { "word": "sailed", "meaning": "航海した", "etymology": "古英語segel(帆)から" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "pre2",
+    "english": "The tennis match has been ________ until next weekend because five members of the tennis team are sick.",
+    "japanese": "テニスチームのメンバーが5人病気なので、テニスの試合は来週末まで________されました。",
+    "choices": ["brought out", "put off", "given out", "torn off"],
+    "correct": 1,
+    "explanation": "メンバーが病気のため、試合が来週末まで「延期された」という文脈です。「〜を延期する」を意味する句動詞 put off が正解です。",
+    "word_details": [
+      { "word": "brought out", "meaning": "引き出された、出版された", "etymology": "bring(持ってくる) + out(外へ)" },
+      { "word": "put off", "meaning": "延期された", "etymology": "put(置く) + off(離して) = 予定を遠くに遠ざけておく" },
+      { "word": "given out", "meaning": "配られた", "etymology": "give(与える) + out(外へ)" },
+      { "word": "torn off", "meaning": "引きちぎられた", "etymology": "tear(引き裂く) + off(離して)" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "pre2",
+    "english": "After Thomas hurt his knee in a skiing accident, his doctor told him to ________ playing sports for at least two months.",
+    "japanese": "トーマスがスキーの事故で膝を怪我した後、医者は彼に少なくとも2ヶ月間はスポーツをするのを________ように言いました。",
+    "choices": ["avoid", "admit", "protect", "master"],
+    "correct": 0,
+    "explanation": "膝を怪我したため、スポーツをするのを「避ける」ように言われたという文脈です。avoid が正解です。avoid -ing で「〜するのを避ける」となります。",
+    "word_details": [
+      { "word": "avoid", "meaning": "避ける", "etymology": "ex(外に) + void(空の) = 離れて空っぽにする" },
+      { "word": "admit", "meaning": "認める", "etymology": "ad(〜へ) + mittere(送る) = 中に入ることを許す" },
+      { "word": "protect", "meaning": "保護する", "etymology": "pro(前を) + tegere(覆う) = 前を覆って守る" },
+      { "word": "master", "meaning": "習得する", "etymology": "magister(長、指導者)から" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "pre2",
+    "english": "The firefighters worked all night to ________ the forest fire before it could damage the town.",
+    "japanese": "消防士たちは、山火事が町に被害を与える前にそれを________ために一晩中働きました。",
+    "choices": ["set up", "attach to", "fall off", "put out"],
+    "correct": 3,
+    "explanation": "町に被害が出る前に、消防士が山火事を「消す」ために働いたという文脈です。put out が正解です。",
+    "word_details": [
+      { "word": "set up", "meaning": "設置する、設立する", "etymology": "set(置く) + up(直立させて)" },
+      { "word": "attach to", "meaning": "取り付ける", "etymology": "ad(〜へ) + taca(釘) = 釘でくっつける" },
+      { "word": "fall off", "meaning": "落ちる、減少する", "etymology": "fall(落ちる) + off(離れて)" },
+      { "word": "put out", "meaning": "（火を）消す", "etymology": "put(置く) + out(外へ) = 火を外に追い出すイメージ" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "pre2",
+    "english": "Sabrina's father asked her to buy some things at the supermarket, and he gave her $20. The food cost ________ $15, so Sabrina gave her father a $5 bill as change.",
+    "japanese": "サブリナの父親は彼女にスーパーで買い物をするよう頼み、20ドルを渡しました。食べ物は________15ドルだったので、サブリナはお釣りとして5ドル紙幣を父親に渡しました。",
+    "choices": ["lively", "politely", "exactly", "anxiously"],
+    "correct": 2,
+    "explanation": "20ドルを渡し、お釣りが5ドルだったということは、食べ物の合計が「ちょうど、ぴったり」15ドルだったということになります。exactly が正解です。",
+    "word_details": [
+      { "word": "lively", "meaning": "生き生きと", "etymology": "live(生きる) + ly" },
+      { "word": "politely", "meaning": "礼儀正しく", "etymology": "polite(洗練された) + ly" },
+      { "word": "exactly", "meaning": "正確に、ちょうど", "etymology": "exact(正確な) + ly = 狂いなく" },
+      { "word": "anxiously", "meaning": "心配して、切望して", "etymology": "anxious(心配な) + ly" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "pre2",
+    "english": "A: Brian, do you want to come to the gym with me tonight? B: Sorry, but I can't go. I'm busy ________ my history report.",
+    "japanese": "A: ブライアン、今夜一緒にジムに行かない？ B: ごめん、行けないんだ。歴史のレポートを________のに忙しくて。",
+    "choices": ["wrote", "written", "writing", "will write"],
+    "correct": 2,
+    "explanation": "「be busy -ing」で「〜するのに忙しい」という重要な動名詞の表現です。writing が正解です。",
+    "word_details": [
+      { "word": "be busy -ing", "meaning": "〜するのに忙しい", "etymology": "前置詞 in が省略された形（be busy in writing）から来ている慣用表現" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "pre2",
+    "english": "The class was preparing for the school festival, and the teacher made each student do a different task. Susie's ________ was to make a poster.",
+    "japanese": "クラスは文化祭の準備をしており、先生は各生徒に異なる作業をさせました。スージーの________はポスターを作ることでした。",
+    "choices": ["extinction", "generation", "compliment", "assignment"],
+    "correct": 3,
+    "explanation": "先生が各生徒に作業(task)を割り振りました。ポスターを作ることが彼女に与えられた「課題、割り当てられた仕事」でした。assignment が正解です。",
+    "word_details": [
+      { "word": "extinction", "meaning": "絶滅", "etymology": "ex(完全に) + stinguere(消す) = 全て消え去ること" },
+      { "word": "generation", "meaning": "世代、発生", "etymology": "generare(生み出す)から" },
+      { "word": "compliment", "meaning": "褒め言葉", "etymology": "com(完全に) + plere(満たす) = 礼儀を満たす言葉" },
+      { "word": "assignment", "meaning": "課題、宿題", "etymology": "ad(〜へ) + sign(しるし) + ment = 割り当てられた任務" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "pre2",
+    "english": "Jim wanted to travel around Asia for a year before he started college, but his parents were ________ the idea. They said the trip would be too expensive.",
+    "japanese": "ジムは大学を始める前に1年間アジアを旅行したかったのですが、両親はそのアイデアに________していました。彼らはその旅行は高すぎると言いました。",
+    "choices": ["about", "above", "against", "along"],
+    "correct": 2,
+    "explanation": "旅行の費用が高すぎる(too expensive)という理由で、両親がアイデアに「反対して」いたという文脈です。against が正解です。",
+    "word_details": [
+      { "word": "about", "meaning": "〜について", "etymology": "周りにあるイメージ" },
+      { "word": "above", "meaning": "〜の上に", "etymology": "基準よりも上方にあるイメージ" },
+      { "word": "against", "meaning": "〜に反対して", "etymology": "向かい合って逆らうイメージ" },
+      { "word": "along", "meaning": "〜に沿って", "etymology": "線に沿って進むイメージ" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "pre2",
+    "english": "A: Linda, let's watch the movie we rented. B: Sorry, but I'm too sleepy ________ it tonight. How about tomorrow?",
+    "japanese": "A: リンダ、借りた映画を見ようよ。 B: ごめん、今夜はそれを________には眠すぎるわ。明日はどう？",
+    "choices": ["in watching", "to watch", "by watching", "to have watched"],
+    "correct": 1,
+    "explanation": "「too ~ to ...」で「あまりに〜すぎて…できない」という重要構文です。「too sleepy to watch」で「眠すぎて見られない」となります。",
+    "word_details": [
+      { "word": "too ~ to ...", "meaning": "あまりに〜すぎて…できない", "etymology": "to 以下の行動をするには、度が過ぎている（too）という意味合い" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "pre2",
+    "english": "A: Honey, are you ________ that there is no food left in the house? B: Yes, I know. I'm going to the supermarket before lunch.",
+    "japanese": "A: あなた、家に食べ物が残っていないことに________？ B: うん、知ってるよ。昼食の前にスーパーに行くつもりだ。",
+    "choices": ["random", "proud", "aware", "rapid"],
+    "correct": 2,
+    "explanation": "「Yes, I know.」と答えていることから、相手は「〜ということに気づいているか、知っているか」と尋ねています。「be aware that 〜」で「〜に気づいている」となります。",
+    "word_details": [
+      { "word": "random", "meaning": "無作為の、ランダムな", "etymology": "古フランス語randon(速さ、勢い)から。手当たり次第の様子" },
+      { "word": "proud", "meaning": "誇りに思う", "etymology": "古フランス語prud(勇敢な)から" },
+      { "word": "aware", "meaning": "気づいている", "etymology": "gewaer(用心深い)から。意識を向けている状態" },
+      { "word": "rapid", "meaning": "急速な", "etymology": "rapere(奪い去る)から。素早い動き" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "pre2",
+    "english": "A: I left my notebook somewhere. Do you have a ________ of paper I could use to take notes? B: Yes. Here you are.",
+    "japanese": "A: どこかにノートを忘れてきちゃった。メモを取るのに使える紙を1________持ってる？ B: うん。はい、どうぞ。",
+    "choices": ["flash", "sheet", "part", "board"],
+    "correct": 1,
+    "explanation": "紙の数え方の問題です。「a sheet of paper」で「1枚の紙」という表現になります。",
+    "word_details": [
+      { "word": "a sheet of paper", "meaning": "1枚の紙", "etymology": "sheet は薄く平らなものを数える時に使われる単位" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "pre2",
+    "english": "Reiko told her parents that she would call them as soon as she got to Vancouver, but she did not keep her ________. Her parents were worried about her.",
+    "japanese": "レイコはバンクーバーに着いたらすぐに電話すると両親に言いましたが、彼女は________を守りませんでした。両親は彼女を心配しました。",
+    "choices": ["mind", "sight", "promise", "place"],
+    "correct": 2,
+    "explanation": "着いたら電話をすると言っていたのに電話をしなかったため、「約束を守らなかった(did not keep her promise)」という文脈になります。",
+    "word_details": [
+      { "word": "keep one's promise", "meaning": "約束を守る", "etymology": "promise(約束)を keep(保つ) = 破らずに維持する" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "pre2",
+    "english": "A: Could you pass me my sweater, Dave? I'm a little cold. B: Well, it's ________ that you're cold, Jan. The window is open.",
+    "japanese": "A: デイブ、セーターを取ってくれる？少し寒いの。 B: そりゃあ寒いのは________だよ、ジャン。窓が開いているんだから。",
+    "choices": ["one thing", "with luck", "no wonder", "some help"],
+    "correct": 2,
+    "explanation": "窓が開いているのだから、寒いのは「当然だ、不思議ではない」という文脈です。「it is no wonder that 〜」で「〜は当然だ」という熟語になります。",
+    "word_details": [
+      { "word": "one thing", "meaning": "一つのこと", "etymology": "" },
+      { "word": "with luck", "meaning": "運が良ければ", "etymology": "" },
+      { "word": "no wonder", "meaning": "不思議ではない、当然だ", "etymology": "wonder(驚き)が no(ない)状態" },
+      { "word": "some help", "meaning": "いくらかの助け", "etymology": "" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "pre2",
+    "english": "A: What's your favorite class this year, Ellie? B: I really like ________. We're learning the names of different countries and cities around the world.",
+    "japanese": "A: エリー、今年の好きな授業は何？ B: 私は________が本当に好き。世界中のさまざまな国や都市の名前を学んでいるの。",
+    "choices": ["economics", "literature", "geography", "chemistry"],
+    "correct": 2,
+    "explanation": "「世界中のさまざまな国や都市の名前を学んでいる」という文脈から、「地理」を意味する geography が正解です [cite: 3, 30]。",
+    "word_details": [
+      { "word": "economics", "meaning": "経済学", "etymology": "eco(家計) + nomy(管理) + ics(学問)" },
+      { "word": "literature", "meaning": "文学", "etymology": "litera(文字)から" },
+      { "word": "geography", "meaning": "地理", "etymology": "geo(地球) + graphy(描くこと) = 地球の様子を描く学問" },
+      { "word": "chemistry", "meaning": "化学", "etymology": "錬金術(alchemy)に由来" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "pre2",
+    "english": "Diane always wanted to write a novel. After three years, she finally ________ her goal. It will be published this spring.",
+    "japanese": "ダイアンはいつも小説を書きたいと思っていました。3年後、彼女はついに目標を________。この春に出版される予定です。",
+    "choices": ["debated", "accomplished", "confused", "explored"],
+    "correct": 1,
+    "explanation": "小説を書くという「目標（goal）を達成した」という文脈です。accomplished が正解です [cite: 3, 30]。",
+    "word_details": [
+      { "word": "debated", "meaning": "議論した", "etymology": "de(下に) + batere(打つ) = 徹底的に叩き合う" },
+      { "word": "accomplished", "meaning": "達成した", "etymology": "ad(〜へ) + complete(完全な) = 完全に成し遂げる" },
+      { "word": "confused", "meaning": "混乱させた", "etymology": "con(共に) + fundere(注ぐ) = ごちゃ混ぜにする" },
+      { "word": "explored", "meaning": "探検した", "etymology": "ex(外へ) + plorare(泣き叫ぶ) = 未知の領域で大声を出して探す" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "pre2",
+    "english": "A: Do you have anything to ________ my presentation? B: No, I think you've explained everything clearly.",
+    "japanese": "A: 私のプレゼンテーションに________することは何かありますか？ B: いいえ、すべて明確に説明してくれたと思います。",
+    "choices": ["break up", "add to", "pick up", "hang on"],
+    "correct": 1,
+    "explanation": "「付け加えるものはありますか？」と尋ねています。「〜に付け加える」を意味する add to が正解です [cite: 3, 30]。",
+    "word_details": [
+      { "word": "break up", "meaning": "解散する、別れる", "etymology": "break(壊す) + up(完全に) = バラバラになる" },
+      { "word": "add to", "meaning": "〜に付け加える、増す", "etymology": "add(加える) + to(〜へ)" },
+      { "word": "pick up", "meaning": "拾う、車に乗せる", "etymology": "つまみ上げるイメージ" },
+      { "word": "hang on", "meaning": "電話を切らずに待つ、しがみつく", "etymology": "hang(ぶら下がる) + on(接触)" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "pre2",
+    "english": "There is a big rock music festival in Allenville this summer. The main event will ________ in the city stadium.",
+    "japanese": "この夏、アレンビルで大きなロック音楽のフェスティバルがあります。メインイベントは市のスタジアムで________。",
+    "choices": ["look after", "take part", "take place", "look up"],
+    "correct": 2,
+    "explanation": "イベントなどが「開催される、行われる」を意味する take place が正解です [cite: 3, 31]。",
+    "word_details": [
+      { "word": "look after", "meaning": "〜の世話をする", "etymology": "look(目を向ける) + after(後ろから) = 後ろから見守る" },
+      { "word": "take part", "meaning": "参加する", "etymology": "take(取る) + part(役割) = 役割を引き受ける" },
+      { "word": "take place", "meaning": "開催される、起こる", "etymology": "take(取る) + place(場所) = 場所を占める" },
+      { "word": "look up", "meaning": "見上げる、調べる", "etymology": "look(見る) + up(上へ)" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "pre2",
+    "english": "A: The weather is starting to get warmer. I guess we won't be able to go skiing anymore this year. B: Yeah. I wish we could ski all year ________.",
+    "japanese": "A: 気候が暖かくなり始めているね。今年はもうスキーに行けないだろうな。 B: うん。一年________スキーができたらいいのに。",
+    "choices": ["last", "past", "round", "full"],
+    "correct": 2,
+    "explanation": "「all year round」で「一年中ずっと」という決まった言い回しになります [cite: 3, 31]。",
+    "word_details": [
+      { "word": "all year round", "meaning": "一年中ずっと", "etymology": "round(ぐるりと回って) = 1年をぐるりと回る間ずっと" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "pre2",
+    "english": "Medical students have to study about many kinds of ________. They must learn how to take care of sick people.",
+    "japanese": "医学生は多くの種類の________について学ばなければなりません。彼らは病気の人々の世話をする方法を学ばなければなりません。",
+    "choices": ["diseases", "reasons", "engines", "matches"],
+    "correct": 0,
+    "explanation": "病気の人々の世話をする医学生が学ぶことなので、「病気」を意味する diseases が正解です [cite: 3, 32]。",
+    "word_details": [
+      { "word": "diseases", "meaning": "病気", "etymology": "dis(離れて・否定) + ease(楽) = 楽ではない状態" },
+      { "word": "reasons", "meaning": "理由", "etymology": "ラテン語ratio(計算、理性)から" },
+      { "word": "engines", "meaning": "エンジン、機関", "etymology": "ingenium(才能、発明品)から" },
+      { "word": "matches", "meaning": "試合、マッチ棒", "etymology": "ぴったり合うもの、競争相手" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "pre2",
+    "english": "Some universities ________ all of their students with laptop computers so that students can use the Internet in class.",
+    "japanese": "一部の大学は、学生が授業でインターネットを使えるように、すべての学生にノートパソコンを________しています。",
+    "choices": ["solve", "provide", "elect", "raise"],
+    "correct": 1,
+    "explanation": "「provide A with B」で「A（人）にB（物）を供給する、提供する」という重要な表現です [cite: 3, 32]。",
+    "word_details": [
+      { "word": "solve", "meaning": "解決する", "etymology": "se(離れて) + luere(解き放つ) = 結び目を解く" },
+      { "word": "provide", "meaning": "提供する", "etymology": "pro(前もって) + videre(見る) = 先を見越して準備する" },
+      { "word": "elect", "meaning": "選挙で選ぶ", "etymology": "e(外へ) + legere(選ぶ)" },
+      { "word": "raise", "meaning": "育てる、上げる", "etymology": "古ノルド語reisa(立たせる)から" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "pre2",
+    "english": "Many scientists say that the climate is changing, and that the earth's ________ is becoming warmer. The hotter air may cause a lot of problems.",
+    "japanese": "多くの科学者は、気候が変化しており、地球の________が暖かくなっていると言います。より熱い空気は多くの問題を引き起こす可能性があります。",
+    "choices": ["tournament", "situation", "harmony", "atmosphere"],
+    "correct": 3,
+    "explanation": "「気候が変化して空気が熱くなる」という文脈から、地球の「大気、空気」を意味する atmosphere が正解です [cite: 3, 33]。",
+    "word_details": [
+      { "word": "tournament", "meaning": "トーナメント、勝ち抜き戦", "etymology": "中世の騎士の馬上槍試合から" },
+      { "word": "situation", "meaning": "状況、立場", "etymology": "situs(置かれた場所) + ation" },
+      { "word": "harmony", "meaning": "調和", "etymology": "ギリシャ語harmonia(つなぎ合わせる)から" },
+      { "word": "atmosphere", "meaning": "大気、雰囲気", "etymology": "atmos(蒸気) + sphere(球体) = 地球を包む空気の層" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "pre2",
+    "english": "Charlotte volunteered at a marathon. Her job was to ________ water into cups and hand the cups to the runners.",
+    "japanese": "シャーロットはマラソンでボランティアをしました。彼女の仕事はカップに水を________、ランナーにカップを渡すことでした。",
+    "choices": ["steal", "pour", "lock", "fill"],
+    "correct": 1,
+    "explanation": "カップの中に水を「注ぐ」という動作です。pour が正解です [cite: 3, 34]。",
+    "word_details": [
+      { "word": "steal", "meaning": "盗む", "etymology": "古英語stelanから" },
+      { "word": "pour", "meaning": "注ぐ", "etymology": "語源不明確だが、液体が流れ落ちる様子から" },
+      { "word": "lock", "meaning": "鍵をかける", "etymology": "古英語loc(留め具)から" },
+      { "word": "fill", "meaning": "満たす", "etymology": "full(いっぱい)の動詞形" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "pre2",
+    "english": "Keisuke has been reading a novel in Spanish for three months. He is now on the ________ chapter of the book and only has a few pages left.",
+    "japanese": "ケイスケは3ヶ月間スペイン語の小説を読んでいます。彼は今、その本の________の章にいて、あと数ページしか残っていません。",
+    "choices": ["common", "foreign", "final", "national"],
+    "correct": 2,
+    "explanation": "「あと数ページしか残っていない」ことから、「最後の」章を読んでいると分かります。final が正解です [cite: 3, 35]。",
+    "word_details": [
+      { "word": "common", "meaning": "共通の、普通の", "etymology": "com(共に) + munis(義務) = 皆で共有している" },
+      { "word": "foreign", "meaning": "外国の", "etymology": "foris(外に)から = 領域の外の" },
+      { "word": "final", "meaning": "最後の", "etymology": "finis(終わり) + al" },
+      { "word": "national", "meaning": "国家の、国民の", "etymology": "nation(国家) + al" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "pre2",
+    "english": "A: I don't like it when Jim talks about his favorite soccer team. B: I know. He doesn't seem to understand that we don't ________ soccer. I wish he would talk about something else.",
+    "japanese": "A: ジムがお気に入りのサッカーチームについて話すのは好きじゃないな。 B: わかるよ。私たちがサッカーを________思っていないことを彼は分かっていないみたい。何か他のことについて話してくれたらいいのに。",
+    "choices": ["search for", "look after", "care about", "hear from"],
+    "correct": 2,
+    "explanation": "「サッカーについて話すのをやめてほしい」という文脈から、自分たちがサッカーを「気にかけていない、関心がない」ことが推測できます。「〜を気にかける」を意味する care about が正解です [cite: 3, 35]。",
+    "word_details": [
+      { "word": "search for", "meaning": "〜を探す", "etymology": "search(探す) + for(求めて)" },
+      { "word": "look after", "meaning": "〜の世話をする", "etymology": "look(目を向ける) + after(後ろから)" },
+      { "word": "care about", "meaning": "〜を気にかける", "etymology": "care(関心を持つ) + about(〜について)" },
+      { "word": "hear from", "meaning": "〜から連絡をもらう", "etymology": "hear(聞く) + from(〜から)" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "pre2",
+    "english": "A: Wow! You have some amazing photographs in your room, Tim. B: Thanks. Most of them ________ by my grandfather.",
+    "japanese": "A: わあ！部屋に素晴らしい写真がいくつかあるね、ティム。 B: ありがとう。それらのほとんどは私の祖父によって________んだ。",
+    "choices": ["are taking", "were taken", "had taken", "is taking"],
+    "correct": 1,
+    "explanation": "主語の「Most of them（写真のほとんど）」は「撮られた」側なので受動態（be動詞 + 過去分詞）になります。過去の事実なので過去受動態の were taken が正解です [cite: 3, 35]。",
+    "word_details": [
+      { "word": "were taken", "meaning": "撮られた", "etymology": "take(撮る)の過去受動態" }
+    ]
+  }
+]

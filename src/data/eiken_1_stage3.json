@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "grade": "1",
+    "english": "Margaret tried to ________ her cat down from the tree with a bowl of milk, but it refused to move.",
+    "japanese": "マーガレットはミルクのボウルで猫を木から________降ろそうとしましたが、猫は動こうとしませんでした。",
+    "choices": ["coax", "smear", "glide", "fling"],
+    "correct": 0,
+    "explanation": "ミルクを使って猫を「なだめすかして〜させる」という文脈です。coax が正解です。",
+    "word_details": [
+      { "word": "coax", "meaning": "なだめて〜させる", "etymology": "古英語cokes(愚か者)から。相手をおだてて思い通りに動かすこと" },
+      { "word": "smear", "meaning": "塗りつける、中傷する", "etymology": "古英語smeoru(脂肪、軟膏)から" },
+      { "word": "glide", "meaning": "滑るように動く", "etymology": "glid(滑らかな)から" },
+      { "word": "fling", "meaning": "ほうり投げる", "etymology": "古ノルド語flengja(鞭打つ)から" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "1",
+    "english": "Brendan has been an ________ supporter of the Greenville basketball team since he was a child. Every season, he goes to as many of their games as he can.",
+    "japanese": "ブレンダンは子供の頃からグリーンビル・バスケットボールチームの________なサポーターです。毎シーズン、彼はできるだけ多くの試合に行きます。",
+    "choices": ["elusive", "apathetic", "ornate", "ardent"],
+    "correct": 3,
+    "explanation": "毎シーズンできるだけ多くの試合を見に行くことから、「熱心な、情熱的な」を意味する ardent が正解です。",
+    "word_details": [
+      { "word": "elusive", "meaning": "捕まえにくい、理解しにくい", "etymology": "e(外に) + ludere(遊ぶ) = 逃げ回って捕まらない" },
+      { "word": "apathetic", "meaning": "無関心な", "etymology": "a(ない) + pathos(感情) = 感情がない" },
+      { "word": "ornate", "meaning": "飾り立てた", "etymology": "ornare(飾る)から" },
+      { "word": "ardent", "meaning": "熱心な、情熱的な", "etymology": "ardere(燃える) + ent = 心が燃えている" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "1",
+    "english": "The water in the pond was so ________ that it was impossible to see whether there were any fish in it or not.",
+    "japanese": "池の水はとても________だったので、魚がいるかどうかを確認することは不可能でした。",
+    "choices": ["wry", "intact", "sleek", "murky"],
+    "correct": 3,
+    "explanation": "水の中の魚が見えない理由なので、「濁った、暗い」を意味する murky が正解です。",
+    "word_details": [
+      { "word": "wry", "meaning": "顔をしかめた、皮肉な", "etymology": "writhe(身をよじる)と同語源" },
+      { "word": "intact", "meaning": "無傷の、手つかずの", "etymology": "in(否定) + tactus(触れられた) = 触られていない" },
+      { "word": "sleek", "meaning": "なめらかな、つやのある", "etymology": "slick(なめらかな)の変形" },
+      { "word": "murky", "meaning": "濁った、暗い", "etymology": "mirk(暗がり) + y = 泥などで視界が悪い状態" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "1",
+    "english": "Franklin was ________ by the news that his sister had won $50 million in the lottery. He never thought that anyone he knew would become so rich overnight.",
+    "japanese": "フランクリンは、妹が宝くじで5千万ドル当たったというニュースに________。彼は自分の知り合いが一夜にしてそんなにお金持ちになるとは思ってもみませんでした。",
+    "choices": ["blown away", "blasted off", "boiled over", "bashed in"],
+    "correct": 0,
+    "explanation": "妹が宝くじで大金を当てたニュースに対する反応です。「ひどく驚かされる、圧倒される」を意味する blown away が正解です。",
+    "word_details": [
+      { "word": "blown away", "meaning": "ひどく驚かされた、圧倒された", "etymology": "blow(吹き飛ばす) + away = 衝撃で吹き飛ばされるほど驚く" },
+      { "word": "blasted off", "meaning": "（ロケットが）打ち上げられた", "etymology": "blast(爆発) + off = 爆発的な力で離れる" },
+      { "word": "boiled over", "meaning": "吹きこぼれた、怒りが爆発した", "etymology": "boil(沸騰する) + over(越えて)" },
+      { "word": "bashed in", "meaning": "殴り壊された", "etymology": "bash(強く打つ) + in(中へ) = 凹むほど強く殴る" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "1",
+    "english": "The sculpture was praised for its beautifully ________ details and perfect proportions.",
+    "japanese": "その彫刻は、美しく________細部と完璧なプロポーションで賞賛されました。",
+    "choices": ["sedated", "wanton", "chiseled", "sporadic"],
+    "correct": 2,
+    "explanation": "彫刻(sculpture)の細部に関する形容詞です。「彫刻で彫られた、輪郭のはっきりした」を意味する chiseled が正解です。",
+    "word_details": [
+      { "word": "sedated", "meaning": "鎮静剤を与えられた", "etymology": "sedare(静める)から" },
+      { "word": "wanton", "meaning": "無慈悲な、理不尽な", "etymology": "wan(欠けている) + togen(しつけられた) = しつけられていない" },
+      { "word": "chiseled", "meaning": "彫りの深い、くっきりと彫られた", "etymology": "chisel(彫刻刀、のみ)で形作られた" },
+      { "word": "sporadic", "meaning": "散発的な、時々起こる", "etymology": "ギリシャ語sporadikos(散らばった)から" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "1",
+    "english": "In court, the bank robber's sister was sentenced for ________ him in the crime by helping him hide after the robbery.",
+    "japanese": "法廷で、銀行強盗の妹は、強盗後に彼が隠れるのを手伝うことで犯罪を________したとして有罪判決を受けました。",
+    "choices": ["remonstrating", "agonizing", "abetting", "disseminating"],
+    "correct": 2,
+    "explanation": "犯罪者が隠れるのを手伝うことは、犯罪を助長する行為です。「教唆する、ほう助する」を意味する abetting が正解です。",
+    "word_details": [
+      { "word": "remonstrating", "meaning": "抗議する", "etymology": "re(再び) + monstrare(見せる) = 反対の証拠を突きつける" },
+      { "word": "agonizing", "meaning": "苦悩させる", "etymology": "agon(苦闘、闘技)から" },
+      { "word": "abetting", "meaning": "（犯罪を）教唆する、ほう助する", "etymology": "ad(〜へ) + bet(噛みつくようけしかける) = 悪事をそそのかす" },
+      { "word": "disseminating", "meaning": "（情報などを）広める", "etymology": "dis(あちこちに) + semen(種) = 種をまき散らす" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "1",
+    "english": "Although he did not make any direct criticisms, Mayor Chapman's speech contained a considerable amount of ________ about the previous mayor's policies.",
+    "japanese": "チャップマン市長の演説には、直接的な批判はなかったものの、前市長の政策に対するかなりの________が含まれていました。",
+    "choices": ["innuendo", "placebo", "cove", "allegiance"],
+    "correct": 0,
+    "explanation": "直接的な批判(direct criticisms)ではないが、それに類するものです。「当てこすり、暗にほのめかすこと」を意味する innuendo が正解です。",
+    "word_details": [
+      { "word": "innuendo", "meaning": "当てこすり、暗号", "etymology": "in(〜に向かって) + nuere(うなずく) = 目配せでほのめかすこと" },
+      { "word": "placebo", "meaning": "偽薬、プラシーボ", "etymology": "ラテン語placebo(私は喜ばせるだろう)から" },
+      { "word": "cove", "meaning": "入り江", "etymology": "古英語cofa(部屋、洞窟)から" },
+      { "word": "allegiance", "meaning": "忠誠心", "etymology": "a(〜へ) + liege(君主) = 君主への誓い" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "1",
+    "english": "The man's long-term illness was causing him to look ________. Despite eating regularly, he could not seem to put on any weight.",
+    "japanese": "その男性の長期にわたる病気は、彼を________見えさせていました。定期的に食べているにもかかわらず、全く体重が増えないようでした。",
+    "choices": ["emaciated", "raucous", "fanatical", "condescending"],
+    "correct": 0,
+    "explanation": "食べているのに体重が増えないという文脈から、病気によって「やつれた、やせ衰えた」状態にあることがわかります。emaciated が正解です。",
+    "word_details": [
+      { "word": "emaciated", "meaning": "やつれた、やせ細った", "etymology": "e(外に) + macies(痩せ) = 極度に痩せ細る" },
+      { "word": "raucous", "meaning": "耳障りな、騒々しい", "etymology": "ラテン語raucus(しわがれ声の)から" },
+      { "word": "fanatical", "meaning": "狂信的な", "etymology": "fanum(神殿)から。神に憑りつかれたような" },
+      { "word": "condescending", "meaning": "見下すような", "etymology": "con(共に) + descendere(降りる) = 偉い人がわざわざ下に降りてやってやる態度" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "1",
+    "english": "The painters made good progress on the building at first, but then a bad storm ________ the work by several days. They were not able to finish on schedule.",
+    "japanese": "塗装工たちは最初、建物の作業を順調に進めていましたが、その後ひどい嵐によって作業が数日________。彼らは予定通りに終えることができませんでした。",
+    "choices": ["hinged on", "set back", "cleaned out", "pulled away"],
+    "correct": 1,
+    "explanation": "嵐によって予定通りに終わらなくなった原因です。「（進歩などを）遅らせる、妨げる」を意味する set back が正解です。",
+    "word_details": [
+      { "word": "hinged on", "meaning": "〜次第である", "etymology": "hinge(蝶番)で繋がってぶら下がっているイメージ" },
+      { "word": "set back", "meaning": "遅らせる、後退させる", "etymology": "set(置く) + back(後ろに) = 進行を後ろに押し戻す" },
+      { "word": "cleaned out", "meaning": "中を空にする、全財産を奪う", "etymology": "clean(綺麗にする) + out(完全に) = 何も残らない状態にする" },
+      { "word": "pulled away", "meaning": "引き離す、離れる", "etymology": "pull(引く) + away(遠くへ)" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "1",
+    "english": "A: Everything on the menu is so expensive, Ben. Are you sure we can afford this? B: We have to ________ ourselves now and then, Jane. Let's enjoy dinner tonight and worry about money another time.",
+    "japanese": "A: メニューの全部がすごく高いわ、ベン。本当にこれ払えるの？ B: ジェーン、時々は自分たちを________しないと。今夜はディナーを楽しんで、お金のことはまた今度心配しよう。",
+    "choices": ["exasperate", "deluge", "indulge", "abstain"],
+    "correct": 2,
+    "explanation": "「お金の心配は後回しにして楽しもう」という文脈です。「甘やかす、好きなようにさせる」を意味する indulge が正解です。",
+    "word_details": [
+      { "word": "exasperate", "meaning": "憤慨させる", "etymology": "ex(完全に) + asper(ザラザラした) = 神経を逆撫でして怒らせる" },
+      { "word": "deluge", "meaning": "殺到させる、水浸しにする", "etymology": "de(離れて) + lavere(洗う) = 大洪水で洗い流す" },
+      { "word": "indulge", "meaning": "甘やかす、ふける", "etymology": "in(中に) + dulcis(甘い) = 甘い状態に浸る" },
+      { "word": "abstain", "meaning": "控える", "etymology": "abs(離れて) + tenere(保つ) = 遠ざけておく" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "1",
+    "english": "Lucy sustained a mild ________ in the car accident and was treated at a local hospital. The doctor said her head would hurt for the next couple of weeks.",
+    "japanese": "ルーシーは自動車事故で軽い________を起こし、地元の病院で治療を受けました。医師は彼女の頭がここ数週間痛むだろうと言いました。",
+    "choices": ["conciliation", "conurbation", "contraption", "concussion"],
+    "correct": 3,
+    "explanation": "自動車事故で頭が痛む原因となる怪我です。「脳震盪（のうしんとう）」を意味する concussion が正解です。",
+    "word_details": [
+      { "word": "conciliation", "meaning": "調停、和解", "etymology": "conciliare(結びつける)から" },
+      { "word": "conurbation", "meaning": "集合都市、大都市圏", "etymology": "con(共に) + urbs(都市) = 複数の都市が繋がったもの" },
+      { "word": "contraption", "meaning": "奇妙な機械、仕掛け", "etymology": "contrive(考案する)の派生語。風変わりな装置" },
+      { "word": "concussion", "meaning": "脳震盪、激しい揺れ", "etymology": "con(共に) + quatere(揺さぶる) = 激しく揺さぶられて起きる症状" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "1",
+    "english": "No one wanted to play poker with Kate anymore after she was caught ________ cheating. Everyone saw her lean over in an attempt to see another player's cards.",
+    "japanese": "________いかさまをしているのを見つかった後、誰ももうケイトとポーカーをしたがらなくなりました。全員が彼女が他のプレイヤーのカードを見ようと身を乗り出すのを見たのです。",
+    "choices": ["blatantly", "tolerantly", "elusively", "incongruously"],
+    "correct": 0,
+    "explanation": "全員に見られるような、隠す気のないいかさまです。「露骨に、あからさまに」を意味する blatantly が正解です。",
+    "word_details": [
+      { "word": "blatantly", "meaning": "露骨に、あからさまに", "etymology": "blatire(ぺちゃくちゃ喋る)から。騒々しく目立つこと" },
+      { "word": "tolerantly", "meaning": "寛大に", "etymology": "tolerare(耐える)から。許容する様子" },
+      { "word": "elusively", "meaning": "捉えどころなく", "etymology": "e(外に) + ludere(遊ぶ) = するりと逃げていくように" },
+      { "word": "incongruously", "meaning": "不釣り合いに、不調和に", "etymology": "in(否定) + con(共に) + ruere(落ちる) = ぴったり合わない" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "1",
+    "english": "Connor spent over 10 years learning to be a top chef. All of his hard work ________ in success when he finally opened his own restaurant.",
+    "japanese": "コナーはトップシェフになるために10年以上の歳月を費やしました。彼が自分のレストランをようやくオープンさせた時、彼のすべての努力が実を結び成功________。",
+    "choices": ["rummaged", "floundered", "dwindled", "culminated"],
+    "correct": 3,
+    "explanation": "長年の努力がレストランのオープンという形で「頂点に達した、結果として実った」という文脈です。culminated が正解です。",
+    "word_details": [
+      { "word": "rummaged", "meaning": "引っかき回して探した", "etymology": "船の貨物室(roomage)を整理する（探す）ことから" },
+      { "word": "floundered", "meaning": "もがいた、あがいた", "etymology": "泥の中でバタバタもがくイメージ" },
+      { "word": "dwindled", "meaning": "だんだん減少した", "etymology": "古英語dwinan(消え去る)から" },
+      { "word": "culminated", "meaning": "頂点に達した、ついに〜となった", "etymology": "culmen(頂点) + ate = 一番高いところに到達する" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "1",
+    "english": "The climb to the top of the tower turned out to be more ________ than the tourists had expected. By the time they reached the top, most of them felt exhausted.",
+    "japanese": "塔の頂上までの登りは、観光客が予想していたよりも________であることがわかりました。頂上に着く頃には、彼らのほとんどが疲れ果てていました。",
+    "choices": ["arduous", "decrepit", "shattered", "barbarous"],
+    "correct": 0,
+    "explanation": "頂上に着く頃には疲れ果てたという文脈から、「困難な、骨の折れる」を意味する arduous が正解です。",
+    "word_details": [
+      { "word": "arduous", "meaning": "困難な、骨の折れる", "etymology": "ラテン語arduus(険しい、高い)から" },
+      { "word": "decrepit", "meaning": "老朽化した、老いぼれた", "etymology": "de(下へ) + crepare(きしむ) = きしんで崩れそうな" },
+      { "word": "shattered", "meaning": "打ち砕かれた", "etymology": "shatter(粉々にする)から" },
+      { "word": "barbarous", "meaning": "野蛮な、残酷な", "etymology": "ギリシャ語barbaros(外国の、野蛮な)から" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "1",
+    "english": "The champion wrestler has never been defeated, so most experts think it is unlikely the challenger can ________ a victory in the final.",
+    "japanese": "チャンピオンのレスラーは一度も負けたことがないため、ほとんどの専門家は挑戦者が決勝で勝利を________可能性は低いと考えています。",
+    "choices": ["pull off", "ease off", "burn out", "shoot back"],
+    "correct": 0,
+    "explanation": "困難な状況で勝利(a victory)を「やってのける、うまく成し遂げる」という意味の pull off が正解です。",
+    "word_details": [
+      { "word": "pull off", "meaning": "やってのける、見事に成し遂げる", "etymology": "pull(引く) + off(離して) = 困難な状況から結果を引き出す" },
+      { "word": "ease off", "meaning": "和らぐ、緩む", "etymology": "ease(楽にする) + off" },
+      { "word": "burn out", "meaning": "燃え尽きる", "etymology": "burn(燃える) + out(完全に)" },
+      { "word": "shoot back", "meaning": "素早く言い返す、撃ち返す", "etymology": "shoot(撃つ) + back" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "1",
+    "english": "In an effort to make himself ________, the famous actor usually flies in economy class, wears a cap, and dresses casually in jeans and a T-shirt.",
+    "japanese": "自分自身を________にするため、その有名な俳優は普段エコノミークラスに乗り、帽子をかぶり、ジーンズとTシャツというカジュアルな服装をしています。",
+    "choices": ["involuntary", "inverted", "inconspicuous", "inalienable"],
+    "correct": 2,
+    "explanation": "エコノミークラスに乗り、カジュアルな服装をするのは目立たないようにするためです。「目立たない、人目を引かない」を意味する inconspicuous が正解です。",
+    "word_details": [
+      { "word": "involuntary", "meaning": "無意識の、不本意の", "etymology": "in(否定) + voluntary(自発的な)" },
+      { "word": "inverted", "meaning": "逆の、反転した", "etymology": "in(中に) + vertere(向ける) = ひっくり返す" },
+      { "word": "inconspicuous", "meaning": "目立たない", "etymology": "in(否定) + conspicuous(目立つ)" },
+      { "word": "inalienable", "meaning": "譲渡できない、奪えない", "etymology": "in(否定) + alienable(譲渡できる)" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "1",
+    "english": "Despite being accused of serious crimes, the defendant looked on ________ throughout her trial. Many people were disturbed by her lack of emotion.",
+    "japanese": "重大な犯罪で告発されているにもかかわらず、被告人は裁判中ずっと________傍観していました。多くの人々は彼女の感情の欠如に不安を感じました。",
+    "choices": ["ruefully", "exquisitely", "impassively", "nominally"],
+    "correct": 2,
+    "explanation": "感情が欠如している(lack of emotion)とあるので、「無表情に、無感動に」を意味する impassively が正解です。",
+    "word_details": [
+      { "word": "ruefully", "meaning": "悲しそうに、後悔して", "etymology": "rue(後悔する) + ful + ly" },
+      { "word": "exquisitely", "meaning": "精巧に、非常に美しく", "etymology": "ex(外へ) + quaerere(求める) = 探し求められたほど素晴らしい" },
+      { "word": "impassively", "meaning": "無表情に、無感動に", "etymology": "im(否定) + passive(感情・受動的) + ly = 感情を表に出さない" },
+      { "word": "nominally", "meaning": "名目上は", "etymology": "nomen(名前) + al + ly = 名前だけで" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "1",
+    "english": "Duncan's antique pocket watch means everything to him. It was ________ to him by his grandfather when he passed away five years ago.",
+    "japanese": "ダンカンのアンティークの懐中時計は彼にとって全てを意味します。それは5年前に祖父が亡くなった時に彼に________されたものです。",
+    "choices": ["garnished", "chastised", "bequeathed", "precipitated"],
+    "correct": 2,
+    "explanation": "祖父が亡くなった時に残されたものなので、「遺贈する、後世に残す」を意味する bequeathed が正解です。",
+    "word_details": [
+      { "word": "garnished", "meaning": "添えられた、装飾された", "etymology": "古フランス語garnir(備える)から" },
+      { "word": "chastised", "meaning": "厳しく非難された、罰せられた", "etymology": "castus(純粋な)にするために罰する" },
+      { "word": "bequeathed", "meaning": "遺贈された", "etymology": "be(強意) + queth(言う) = 言い残す" },
+      { "word": "precipitated", "meaning": "引き起こされた、沈殿した", "etymology": "prae(前に) + caput(頭) = まっさかさまに落ちる" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "1",
+    "english": "In business, the most successful teams are ________ ones, so managers must promote teamwork and unity of purpose among employees.",
+    "japanese": "ビジネスにおいて、最も成功するチームは________なチームです。そのため、マネージャーは従業員間のチームワークと目的の統一を促進しなければなりません。",
+    "choices": ["obliterated", "abominable", "cohesive", "callous"],
+    "correct": 2,
+    "explanation": "「チームワークと目的の統一」が促進されているチームを表すため、「団結した、まとまりのある」を意味する cohesive が正解です。",
+    "word_details": [
+      { "word": "obliterated", "meaning": "完全に破壊された、消し去られた", "etymology": "ob(〜に対して) + litera(文字) = 文字を消す" },
+      { "word": "abominable", "meaning": "忌まわしい、ひどい", "etymology": "ab(離れて) + omen(兆し) = 不吉な兆しを避ける" },
+      { "word": "cohesive", "meaning": "団結した、粘着性のある", "etymology": "co(共に) + haerere(くっつく) = 一つにくっつく" },
+      { "word": "callous", "meaning": "無情な、冷淡な", "etymology": "callus(皮膚のタコ)のように心が硬くなった" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "1",
+    "english": "People tend to judge an academic institution by the success of its graduates, but that is not the only ________ for determining how good a school is.",
+    "japanese": "人々は卒業生の成功によって教育機関を評価する傾向がありますが、それが学校の良さを決定する唯一の________ではありません。",
+    "choices": ["yardstick", "allegory", "blurb", "exponent"],
+    "correct": 0,
+    "explanation": "学校の良さを決定するための「基準、尺度」という意味の yardstick が正解です。",
+    "word_details": [
+      { "word": "yardstick", "meaning": "基準、尺度", "etymology": "yard(ヤード・長さの単位) + stick(棒) = 測るための棒" },
+      { "word": "allegory", "meaning": "寓話、たとえ話", "etymology": "allos(他の) + agoreuein(公に話す) = 別の意味を持たせて話す" },
+      { "word": "blurb", "meaning": "推薦文、宣伝文句", "etymology": "1907年に作られた造語" },
+      { "word": "exponent", "meaning": "提唱者、代表者", "etymology": "ex(外へ) + ponere(置く) = 前に出る人" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "1",
+    "english": "A: The boss refused my request for leave to go to my sister's wedding in Canada. B: You should ask Tim for help. He has a lot of ________ with the boss. I'm sure he could get permission for you.",
+    "japanese": "A: ボスはカナダでの妹の結婚式に行くための休暇申請を却下したよ。B: ティムに助けを求めるべきだよ。彼はボスに対して大きな________を持っている。君の許可をもらえると確信しているよ。",
+    "choices": ["cavity", "clash", "clout", "cohort"],
+    "correct": 2,
+    "explanation": "上司に対して許可をもらえるほどの力を持っているという文脈から、「影響力、権力」を意味する clout が正解です。",
+    "word_details": [
+      { "word": "cavity", "meaning": "虫歯（の穴）、空洞", "etymology": "cavus(空っぽの)から" },
+      { "word": "clash", "meaning": "衝突、対立", "etymology": "何かがぶつかる擬音語から" },
+      { "word": "clout", "meaning": "影響力、権力", "etymology": "古い布切れや、殴ることから転じて政治的な力" },
+      { "word": "cohort", "meaning": "仲間、相棒", "etymology": "co(共に) + hort(囲い) = 同じ部隊の仲間" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "1",
+    "english": "Kevin is very shy, so his friend Susan had to ________ him into asking Miranda for a date. \"Kevin, if you don't ask her soon, someone else will,\" she said.",
+    "japanese": "ケビンはとてもシャイなので、友人のスーザンは彼を________ミランダをデートに誘わせなければなりませんでした。「ケビン、早く誘わないと他の誰かが誘っちゃうわよ」と彼女は言いました。",
+    "choices": ["regale", "pilfer", "goad", "flunk"],
+    "correct": 2,
+    "explanation": "臆病なケビンに発破をかけて誘わせるという文脈です。「goad A into B」で「Aをせき立ててBさせる」という意味になります。",
+    "word_details": [
+      { "word": "regale", "meaning": "もてなす、楽しませる", "etymology": "フランス語regalerから" },
+      { "word": "pilfer", "meaning": "くすねる、少し盗む", "etymology": "古フランス語pelfre(戦利品)から" },
+      { "word": "goad", "meaning": "せき立てる、刺激する", "etymology": "家畜を追う先の尖った棒から転じて刺激する" },
+      { "word": "flunk", "meaning": "（試験に）落第する、しくじる", "etymology": "語源不明確" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "1",
+    "english": "Joanne's new boss is the ________ of her old one. Her previous boss used to constantly make rude demands, but her new boss is always polite and respectful.",
+    "japanese": "ジョアンの新しいボスは、古いボスの________です。前のボスは絶えず無礼な要求をしていましたが、新しいボスは常に礼儀正しく敬意を払っています。",
+    "choices": ["protagonist", "prophet", "interlude", "antithesis"],
+    "correct": 3,
+    "explanation": "前のボス（無礼）と新しいボス（礼儀正しい）が正反対であるという文脈です。「正反対、対極」を意味する antithesis が正解です。",
+    "word_details": [
+      { "word": "protagonist", "meaning": "主人公、主唱者", "etymology": "protos(最初の) + agonistes(役者)" },
+      { "word": "prophet", "meaning": "預言者", "etymology": "pro(前に) + phanai(話す) = 未来を語る人" },
+      { "word": "interlude", "meaning": "幕間、合間", "etymology": "inter(間に) + ludus(遊び・劇)" },
+      { "word": "antithesis", "meaning": "正反対、対極", "etymology": "anti(反対の) + thesis(置くこと)" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "1",
+    "english": "Amanda tried to get the project's due date changed, but her supervisor refused to ________. The deadline must be met, he said.",
+    "japanese": "アマンダはプロジェクトの期限を変更してもらおうとしましたが、彼女の監督者は________ことを拒否しました。期限は守られなければならないと彼は言いました。",
+    "choices": ["pervade", "leer", "emulate", "budge"],
+    "correct": 3,
+    "explanation": "期限の変更を拒否され、「意見を変えない、譲歩しない」という文脈です。「（意見などを）少し変える、譲歩する」を意味する budge が正解です。（refused to budge = 譲歩を拒んだ）",
+    "word_details": [
+      { "word": "pervade", "meaning": "蔓延する、行き渡る", "etymology": "per(通して) + vadere(行く)" },
+      { "word": "leer", "meaning": "いやらしい目つきで見る", "etymology": "古英語hleor(頬)から" },
+      { "word": "emulate", "meaning": "模倣する、見習う", "etymology": "aemulus(張り合う)から" },
+      { "word": "budge", "meaning": "譲歩する、少し動く", "etymology": "フランス語bouger(動く)から" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "1",
+    "english": "Sajid is well known in the office for his ________ manner. He is always the first to welcome new staff, show them around, and help them relax.",
+    "japanese": "サジドはオフィスでその________な態度でよく知られています。彼はいつも新入社員を真っ先に歓迎し、案内し、彼らがリラックスするのを助けます。",
+    "choices": ["abominable", "dank", "affable", "bereft"],
+    "correct": 2,
+    "explanation": "新入社員を歓迎し、リラックスさせるような人柄です。「愛想の良い、親しみやすい」を意味する affable が正解です。",
+    "word_details": [
+      { "word": "abominable", "meaning": "忌まわしい、ひどい", "etymology": "ab(離れて) + omen(兆し)" },
+      { "word": "dank", "meaning": "じめじめした、冷たく湿った", "etymology": "北欧語由来" },
+      { "word": "affable", "meaning": "愛想の良い、親しみやすい", "etymology": "ad(〜へ) + fari(話す) + able = 話しかけやすい" },
+      { "word": "bereft", "meaning": "奪われた、失った", "etymology": "bereave(奪う)の過去分詞" }
+    ]
+  }
+]
