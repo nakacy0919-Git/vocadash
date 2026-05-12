@@ -1,26 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import CourseSelect from './pages/CourseSelect';
+import StageSelect from './pages/StageSelect';
 import Home from './pages/Home';
 import Settings from './pages/Settings';
 import Play from './pages/Play';
 import Result from './pages/Result';
 import BrowserGuide from './components/BrowserGuide';
 
-// ▼ 修正①：本番環境（GitHub Pages）でデータが消えないように、最初からすべてのJSONを読み込んでおく
+// ▼ 修正①：定期考査（regular）のデータだけは従来通り最初に読み込んでおく
 import regularData from './data/regular.json';
-import eikenPre2Data from './data/eiken_pre2.json';
-import eiken2Data from './data/eiken_2.json';
-import eikenPre1Data from './data/eiken_pre1.json';
-import eiken1Data from './data/eiken_1.json';
-
-// コースIDと読み込んだデータを紐づける
-const COURSE_DATA_MAP = {
-  'regular': regularData,
-  'eiken_pre2': eikenPre2Data,
-  'eiken_2': eiken2Data,
-  'eiken_pre1': eikenPre1Data,
-  'eiken_1': eiken1Data,
-};
 
 const COURSE_MAP = {
   regular: '定期考査 KICK OFF',
@@ -34,6 +22,8 @@ function App() {
   const [appState, setAppState] = useState('course_select'); 
   
   const [currentCourse, setCurrentCourse] = useState(null);
+  const [currentStage, setCurrentStage] = useState(null); 
+  
   const [questionsData, setQuestionsData] = useState([]);
   const [selectedQuestions, setSelectedQuestions] = useState([]);
   const [currentMode, setCurrentMode] = useState(null); 
@@ -41,18 +31,10 @@ function App() {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  // ▼ 修正②：スパルタモードの解答時間を固定（10000）から可変（State）に変更
   const [targetTime, setTargetTime] = useState(10000); 
   const [timeLeft, setTimeLeft] = useState(10000);
   const [isFailed, setIsFailed] = useState(false);
   const [sessionResults, setSessionResults] = useState([]);
-
-  useEffect(() => {
-    if (currentCourse) {
-      // 確実に取り込んだデータからセットする
-      setQuestionsData(COURSE_DATA_MAP[currentCourse] || []);
-    }
-  }, [currentCourse]);
 
   // タイマー処理
   useEffect(() => {
@@ -73,12 +55,45 @@ function App() {
 
   const goCourseSelect = () => {
     setCurrentCourse(null);
+    setCurrentStage(null);
     setAppState('course_select');
   };
 
+  // ▼ 修正②：コース選択時の条件分岐
   const onSelectCourse = (courseId) => {
     setCurrentCourse(courseId);
-    setAppState('home');
+    if (courseId === 'regular') {
+      // 定期考査の場合はステージ選択をスキップして即ホーム画面へ
+      setQuestionsData(regularData);
+      setCurrentStage(null);
+      setAppState('home');
+    } else {
+      // 英検の場合はステージ選択画面へ
+      setAppState('stage_select');
+    }
+  };
+
+  // ▼ 修正③：ホーム画面からの「戻る」ボタンの条件分岐
+  const goStageSelect = () => {
+    if (currentCourse === 'regular') {
+      goCourseSelect(); // 定期考査ならコース選択へ戻る
+    } else {
+      setCurrentStage(null);
+      setAppState('stage_select'); // 英検ならステージ選択へ戻る
+    }
+  };
+
+  // 英検のステージを選択した際の処理（JSONの動的読み込み）
+  const onSelectStage = async (stageNum) => {
+    setCurrentStage(stageNum);
+    try {
+      const module = await import(`./data/${currentCourse}_stage${stageNum}.json`);
+      setQuestionsData(module.default || module);
+      setAppState('home');
+    } catch (error) {
+      console.error("データの読み込みに失敗しました:", error);
+      alert(`Stage ${stageNum} のデータがまだありません。`);
+    }
   };
 
   const handleSelectMode = (modeType, value) => {
@@ -103,7 +118,6 @@ function App() {
     setAppState('settings'); 
   };
 
-  // ▼ 修正③：Settings画面から、ユーザーが設定した「秒数」を受け取れるようにする
   const startGame = (selectedPlayMode, selectedTimeMs = null) => {
     const time = selectedTimeMs || targetTime;
     setPlayMode(selectedPlayMode);
@@ -121,18 +135,22 @@ function App() {
 
     if (currentIndex < selectedQuestions.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setTimeLeft(targetTime); // ターゲット時間を復元
+      setTimeLeft(targetTime); 
     } else {
       saveStats(newResults);
       setAppState('result');
     }
   };
 
+  // ▼ 修正④：保存先キーの分岐（定期考査は従来通り、英検はStage別）
   const saveStats = (results) => {
     const correctCount = results.filter(r => r.isCorrect).length;
     const slaRate = Math.round((correctCount / results.length) * 100);
     
-    const historyKey = `vocaDashHistory_${currentCourse}`;
+    const historyKey = currentCourse === 'regular' 
+      ? `vocaDashHistory_${currentCourse}` 
+      : `vocaDashHistory_${currentCourse}_stage${currentStage}`;
+      
     const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
     history.push({
       date: new Date().toISOString(),
@@ -143,8 +161,12 @@ function App() {
     localStorage.setItem(historyKey, JSON.stringify(history));
   };
 
+  // ▼ 修正⑤：取得先キーの分岐
   const getChunkMasteryRate = (chunkIndex) => {
-    const historyKey = `vocaDashHistory_${currentCourse}`;
+    const historyKey = currentCourse === 'regular' 
+      ? `vocaDashHistory_${currentCourse}` 
+      : `vocaDashHistory_${currentCourse}_stage${currentStage}`;
+      
     const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
     const chunkId = `chunk-${chunkIndex}`;
     const chunkScores = history
@@ -161,20 +183,40 @@ function App() {
     return (total / validResults.length / 1000).toFixed(1);
   };
 
+  // ▼ 修正⑥：画面タイトルの出し分け（定期考査はStage表示なし）
+  const getDisplayTitle = () => {
+    return currentCourse === 'regular' 
+      ? COURSE_MAP[currentCourse] 
+      : `${COURSE_MAP[currentCourse]} - Stage ${currentStage}`;
+  };
+
   return (
     <div className="font-sans antialiased text-gray-900">
       <BrowserGuide />
-      {appState === 'course_select' && <CourseSelect onSelectCourse={onSelectCourse} />}
+      
+      {appState === 'course_select' && (
+        <CourseSelect onSelectCourse={onSelectCourse} />
+      )}
+
+      {appState === 'stage_select' && (
+        <StageSelect 
+          currentCourse={currentCourse} 
+          onSelectStage={onSelectStage}
+          goBack={goCourseSelect} 
+        />
+      )}
+
       {appState === 'home' && (
         <Home 
           handleSelectMode={handleSelectMode} 
           currentCourse={currentCourse}
-          courseTitle={COURSE_MAP[currentCourse]}
-          goCourseSelect={goCourseSelect}
+          courseTitle={getDisplayTitle()}
+          goCourseSelect={goStageSelect} 
           questionsData={questionsData}
           getChunkMasteryRate={getChunkMasteryRate}
         />
       )}
+
       {appState === 'settings' && (
         <Settings 
           currentMode={currentMode}
@@ -182,6 +224,7 @@ function App() {
           startGame={startGame}
         />
       )}
+
       {appState === 'play' && (
         <Play 
           playMode={playMode}
@@ -189,7 +232,7 @@ function App() {
           selectedQuestions={selectedQuestions}
           currentQuestion={selectedQuestions[currentIndex]}
           timeLeft={timeLeft}
-          targetTime={targetTime} // 可変のターゲット時間をPlayに渡す
+          targetTime={targetTime}
           isFailed={isFailed}
           submitRecord={submitRecord}
           handleFail={() => setIsFailed(true)}
@@ -198,6 +241,7 @@ function App() {
           calculateAverageTime={calculateAverageTime}
         />
       )}
+
       {appState === 'result' && (
         <Result 
           results={sessionResults}
@@ -205,7 +249,7 @@ function App() {
           goHome={() => setAppState('home')}
           playMode={playMode}
           calculateAverageTime={calculateAverageTime}
-          courseTitle={COURSE_MAP[currentCourse]}
+          courseTitle={getDisplayTitle()}
           currentMode={currentMode}
         />
       )}

@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "grade": "1",
+    "english": "When Mary got back to the office after her holiday, she found a huge ________ of e-mails waiting for her. It took her the whole day to work through them all.",
+    "japanese": "メアリーが休暇を終えてオフィスに戻ると、膨大な________のメールが彼女を待っていました。それらすべてを処理するのに丸一日かかりました。",
+    "choices": ["outlay", "precinct", "backlog", "updraft"],
+    "correct": 2,
+    "explanation": "休みの後に溜まっていたメールを処理するのに丸一日かかったという文脈から、「未処理の山、残務」を意味する backlog が正解です。",
+    "word_details": [
+      { "word": "outlay", "meaning": "支出、経費", "etymology": "out(外へ) + lay(置く) = お金を外に出すこと" },
+      { "word": "precinct", "meaning": "管区、選挙区", "etymology": "pre(前に) + cingere(囲む) = あらかじめ境界で囲まれた区域" },
+      { "word": "backlog", "meaning": "未処理の山、残務", "etymology": "back(後ろの) + log(丸太) = 暖炉の奥で燃え残る大きな丸太から転じて、たまった仕事" },
+      { "word": "updraft", "meaning": "上昇気流", "etymology": "up(上へ) + draft(引くこと・気流)" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "1",
+    "english": "Jacob wanted extra pocket money, so he tried to ________ his mother by saying how nice she looked. However, she knew right away that he wanted something.",
+    "japanese": "ジェイコブはお小遣いを追加で欲しかったので、母親がどれほど素敵に見えるかを言って彼女に________しようとしました。しかし、彼女は彼が何かを欲しがっていることにすぐ気づきました。",
+    "choices": ["pine for", "butter up", "dwell on", "hem in"],
+    "correct": 1,
+    "explanation": "お小遣いをもらうために母親を褒めているので、「おだてる、ゴマをする」という意味の句動詞 butter up が正解です。",
+    "word_details": [
+      { "word": "pine for", "meaning": "〜を切望する", "etymology": "古英語pinian(苦しむ)から。苦しむほど強く望む" },
+      { "word": "butter up", "meaning": "〜をおだてる", "etymology": "パンにバターを塗るように、甘い言葉で関係を滑らかにするイメージ" },
+      { "word": "dwell on", "meaning": "〜をくよくよ考える", "etymology": "古英語dwellan(とどまる) + on = 一つの考えにとどまり続ける" },
+      { "word": "hem in", "meaning": "〜を囲い込む", "etymology": "hem(衣服の縁) + in = 縁を縫うように周りを囲い込む" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "1",
+    "english": "When Roger tried to pick up his brother's baby for the first time, she ________ so much that Roger had trouble holding her properly.",
+    "japanese": "ロジャーが初めて兄の赤ちゃんを抱き上げようとした時、彼女はとても________ため、ロジャーは彼女をきちんと抱くのに苦労しました。",
+    "choices": ["squirmed", "cleaved", "lampooned", "scrounged"],
+    "correct": 0,
+    "explanation": "赤ちゃんを抱きかかえるのに苦労したという状況から、「体をよじる、もがく」を意味する squirmed が正解です。",
+    "word_details": [
+      { "word": "squirmed", "meaning": "体をよじった", "etymology": "虫がクネクネ動く様子を表す擬音・擬態語から" },
+      { "word": "cleaved", "meaning": "切り裂いた", "etymology": "古英語cleofan(切り裂く)から" },
+      { "word": "lampooned", "meaning": "風刺した", "etymology": "フランス語lampons(飲もう)に由来する宴会の風刺詩から" },
+      { "word": "scrounged", "meaning": "かき集めた", "etymology": "あちこち探して手に入れること" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "1",
+    "english": "In a recent speech, the mayor ________ the city's educators for failing to properly prepare students for national achievement exams.",
+    "japanese": "最近の演説で、市長は全国学力試験に向けて生徒たちを適切に準備させられなかったとして、市の教育者たちを________。",
+    "choices": ["squandered", "mitigated", "berated", "embossed"],
+    "correct": 2,
+    "explanation": "試験の準備不足を理由としているため、「激しく非難する、叱責する」という意味の berated が正解です。",
+    "word_details": [
+      { "word": "squandered", "meaning": "浪費した", "etymology": "まき散らすイメージから" },
+      { "word": "mitigated", "meaning": "和らげた", "etymology": "mitis(柔らかい) + agere(する) = 状況を柔らかくする" },
+      { "word": "berated", "meaning": "激しく非難した", "etymology": "be(強意) + rate(叱る) = 激しく叱りつける" },
+      { "word": "embossed", "meaning": "浮き彫りにした", "etymology": "em(中に) + boss(突起) = 表面を浮き上がらせる" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "1",
+    "english": "The power plant's representative ________ claims that the plant was polluting the local water system. He said there was no reliable evidence to support the charge.",
+    "japanese": "発電所の代表者は、工場が地元の水系を汚染しているという主張を________しました。彼はその告発を裏付ける信頼できる証拠はないと述べました。",
+    "choices": ["breached", "repudiated", "appropriated", "patented"],
+    "correct": 1,
+    "explanation": "「証拠がない」と述べて告発に反論しているため、「拒絶する、否認する」を意味する repudiated が正解です。",
+    "word_details": [
+      { "word": "breached", "meaning": "（違反して）破った", "etymology": "ゲルマン語由来。breakと同語源" },
+      { "word": "repudiated", "meaning": "拒絶した、否認した", "etymology": "re(後ろに) + pudium(恥) = 恥ずかしくて退ける" },
+      { "word": "appropriated", "meaning": "充当した、横領した", "etymology": "ad(〜へ) + proprius(自分自身の) = 自分のものにする" },
+      { "word": "patented", "meaning": "特許を取った", "etymology": "ラテン語patere(開いている) = 公開された権利" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "1",
+    "english": "In an effort to avoid an oncoming car, the driver ________ off the side of the road.",
+    "japanese": "対向車を避けようとして、そのドライバーは道路の脇へと________。",
+    "choices": ["cantered", "careened", "siphoned", "swaggered"],
+    "correct": 1,
+    "explanation": "対向車を避けるために車がコントロールを失って動く様子を表す、「傾いて疾走する」を意味する careened が正解です。",
+    "word_details": [
+      { "word": "cantered", "meaning": "駆け足で進んだ", "etymology": "カンタベリーへの巡礼者の馬の歩き方から" },
+      { "word": "careened", "meaning": "傾いて疾走した", "etymology": "carina(船の竜骨) = 船底を見せるほど傾いて進むこと" },
+      { "word": "siphoned", "meaning": "吸い上げた", "etymology": "ギリシャ語siphon(管)から" },
+      { "word": "swaggered", "meaning": "いばって歩いた", "etymology": "swag(揺れる) + ger = 体を揺らして威張って歩く" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "1",
+    "english": "The door was so ________ that when the boy kicked it, his foot went straight through the wooden panel.",
+    "japanese": "そのドアはとても________だったため、少年が蹴ると、彼の足は木のパネルを突き抜けてしまいました。",
+    "choices": ["fuzzy", "flimsy", "musty", "hazy"],
+    "correct": 1,
+    "explanation": "蹴った足が板を突き抜けてしまうほど脆かったという文脈から、「薄弱な、壊れやすい」を意味する flimsy が正解です。",
+    "word_details": [
+      { "word": "fuzzy", "meaning": "ぼやけた", "etymology": "ドイツ語fusig(綿毛のような)から" },
+      { "word": "flimsy", "meaning": "薄弱な、壊れやすい", "etymology": "film(薄膜)の変形という説あり。薄くて頼りない" },
+      { "word": "musty", "meaning": "かび臭い", "etymology": "must(ワインの搾り汁)から。湿ったカビのにおい" },
+      { "word": "hazy", "meaning": "かすんだ", "etymology": "haze(もや) + y" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "1",
+    "english": "A: What's taking so long with the sales project? B: Unfortunately, some unforeseen issues have ________, and it'll take a while to solve them.",
+    "japanese": "A: 営業プロジェクトにどうしてそんなに時間がかかっているの？ B: 残念ながら、予期せぬ問題がいくつか________、それを解決するのに少し時間がかかるんだ。",
+    "choices": ["dropped through", "floated around", "cropped up", "breezed in"],
+    "correct": 2,
+    "explanation": "予期せぬ問題が「突然現れる、発生する」という意味の句動詞 cropped up が正解です。",
+    "word_details": [
+      { "word": "dropped through", "meaning": "失敗に終わる", "etymology": "drop(落ちる) + through(通り抜けて)" },
+      { "word": "floated around", "meaning": "広まる", "etymology": "float(浮く) + around(あちこち)" },
+      { "word": "cropped up", "meaning": "突然現れる", "etymology": "crop(急に出る) + up = 作物が地面から顔を出すように現れる" },
+      { "word": "breezed in", "meaning": "軽快に入ってくる", "etymology": "breeze(そよ風)のようにふらっと来る" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "1",
+    "english": "While he was cleaning out his garage, Ken cut his hand on a sharp nail that was ________ from the wall.",
+    "japanese": "ガレージを片付けている間、ケンは壁から________いた鋭い釘で手を切ってしまいました。",
+    "choices": ["fretting", "replenishing", "mustering", "protruding"],
+    "correct": 3,
+    "explanation": "壁から釘が「突き出ている」状況です。「突き出る」を意味する protruding が正解です。",
+    "word_details": [
+      { "word": "fretting", "meaning": "思い悩む", "etymology": "古英語fretan(食い尽くす) = 心を食い荒らされる" },
+      { "word": "replenishing", "meaning": "補充する", "etymology": "re(再び) + plenus(満ちた)" },
+      { "word": "mustering", "meaning": "集める", "etymology": "monstrare(見せる)から。閲兵式のために集めること" },
+      { "word": "protruding", "meaning": "突き出ている", "etymology": "pro(前に) + trudere(押し出す)" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "1",
+    "english": "Experts now believe the ancient tribe had been ________, as new evidence suggests it did not live in any one region for any length of time.",
+    "japanese": "新しい証拠が、いかなる地域にも長期間住んでいなかったことを示唆しているため、専門家は現在、その古代の部族は________であったと信じています。",
+    "choices": ["contemptuous", "erudite", "innocuous", "nomadic"],
+    "correct": 3,
+    "explanation": "1つの場所に長期間定住しなかったという説明から、「遊牧の、放浪の」を意味する nomadic が正解です。",
+    "word_details": [
+      { "word": "contemptuous", "meaning": "軽蔑的な", "etymology": "con(完全に) + temnere(軽蔑する)" },
+      { "word": "erudite", "meaning": "博学な", "etymology": "e(外へ) + rudis(粗削りな) = 粗野な状態から抜け出した" },
+      { "word": "innocuous", "meaning": "無害な", "etymology": "in(否定) + nocere(害する)" },
+      { "word": "nomadic", "meaning": "遊牧の", "etymology": "ギリシャ語nomas(牧草を求めてさまよう)から" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "1",
+    "english": "The soldiers received details of their new posting overseas soon after completing their training. They were ordered to ________ to a base in West Africa.",
+    "japanese": "兵士たちは訓練を終えてすぐに、海外での新しい赴任地の詳細を受け取りました。彼らは西アフリカの基地へ________よう命じられました。",
+    "choices": ["nod off", "ship out", "ebb away", "chime in"],
+    "correct": 1,
+    "explanation": "海外の基地(base in West Africa)に向かうため、「（船や飛行機で）海外へ派遣される、出立する」を意味する ship out が正解です。",
+    "word_details": [
+      { "word": "nod off", "meaning": "居眠りする", "etymology": "nod(うなずく)ように頭を下げて眠りに落ちる" },
+      { "word": "ship out", "meaning": "海外へ派遣される", "etymology": "ship(船に乗せる) + out(外へ)" },
+      { "word": "ebb away", "meaning": "衰える", "etymology": "ebb(引き潮)のように引いていく" },
+      { "word": "chime in", "meaning": "相槌を打つ、会話に加わる", "etymology": "chime(鐘が鳴る)ように調子を合わせて入ってくる" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "1",
+    "english": "Researchers have found that sharing a traumatic experience can create a feeling of ________ between people, often leading to lifelong friendships.",
+    "japanese": "研究者は、トラウマになるような経験を共有することで、人々の間に________の感情が生まれ、しばしば生涯の友情につながることを発見しました。",
+    "choices": ["calamity", "defamation", "exuberance", "camaraderie"],
+    "correct": 3,
+    "explanation": "「生涯の友情(lifelong friendships)」に繋がるようなポジティブな感情なので、「友情、仲間意識」を意味する camaraderie が正解です。",
+    "word_details": [
+      { "word": "calamity", "meaning": "災難", "etymology": "ラテン語calamitas(損害)から" },
+      { "word": "defamation", "meaning": "中傷、名誉毀損", "etymology": "de(奪う) + fame(名声) + tion" },
+      { "word": "exuberance", "meaning": "熱狂、あふれる活力", "etymology": "ex(外へ) + uber(豊かな) = 豊かさがあふれ出る" },
+      { "word": "camaraderie", "meaning": "友情、仲間意識", "etymology": "フランス語camarade(同じ部屋の仲間)から" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "1",
+    "english": "The famous reporter was fired for ________ another journalist's work. His article was almost exactly the same as that of the other journalist.",
+    "japanese": "その有名な記者は、別のジャーナリストの作品を________したために解雇されました。彼の記事は、他のジャーナリストのものとほぼ全く同じでした。",
+    "choices": ["inoculating", "beleaguering", "plagiarizing", "alleviating"],
+    "correct": 2,
+    "explanation": "他人の記事とほぼ全く同じであったことから、「盗用する、剽窃する」を意味する plagiarizing が正解です。",
+    "word_details": [
+      { "word": "inoculating", "meaning": "予防接種をする", "etymology": "in(中に) + oculus(芽) = 接ぎ木をする → 予防接種" },
+      { "word": "beleaguering", "meaning": "包囲する", "etymology": "be(周囲を) + leger(陣営) = 陣営で囲い込む" },
+      { "word": "plagiarizing", "meaning": "盗用する", "etymology": "ラテン語plagiarius(誘拐犯) = 他人の言葉を誘拐する" },
+      { "word": "alleviating", "meaning": "軽減する", "etymology": "ad(〜へ) + levis(軽い) = 軽くする" } 
+    ]
+    },
+    {
+    "id": 14,
+    "grade": "1",
+    "english": "The conservative regime passed strict laws forbidding the ________ of communist ideas. Anyone accused of spreading such ideas was severely punished.",
+    "japanese": "保守政権は共産主義思想の________を禁じる厳しい法律を可決しました。そのような思想を広めたとして告発された者は厳しく罰せられました。",
+    "choices": ["recuperation", "injunction", "deregulation", "propagation"],
+    "correct": 3,
+    "explanation": "後ろの文の「spreading such ideas（思想を広めること）」の言い換えになっています。「普及、繁殖」を意味する propagation が正解です。",
+    "word_details": [
+      { "word": "recuperation", "meaning": "回復", "etymology": "re(再び) + capere(取る) = 健康などを再び取り戻す" },
+      { "word": "injunction", "meaning": "命令、差し止め", "etymology": "in(中に) + jungere(結びつける) = 法的な拘束を課す" },
+      { "word": "deregulation", "meaning": "規制緩和", "etymology": "de(解除) + regulation(規制)" },
+      { "word": "propagation", "meaning": "普及、繁殖", "etymology": "pro(前へ) + pangere(固定する) = 前方に苗を植え広げるイメージ" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "1",
+    "english": "The children were so ________ by the television show that none of them said a single word during the whole program.",
+    "japanese": "子供たちはテレビ番組にとても________されていたため、番組の最中、誰一人として一言も発しませんでした。",
+    "choices": ["dispelled", "constricted", "mesmerized", "undermined"],
+    "correct": 2,
+    "explanation": "番組の最中に一言も喋らないほど見入っている状態を表すため、「魅了された、釘付けにされた」を意味する mesmerized が正解です。",
+    "word_details": [
+      { "word": "dispelled", "meaning": "追い散らした", "etymology": "dis(離れて) + pellere(駆り立てる) = まき散らしてなくす" },
+      { "word": "constricted", "meaning": "圧縮された", "etymology": "con(共に) + stringere(引き締める) = ギュッと縛り付ける" },
+      { "word": "mesmerized", "meaning": "魅了された", "etymology": "動物磁気説を提唱した医師Mesmerの名から" },
+      { "word": "undermined", "meaning": "密かに傷つけられた", "etymology": "under(下を) + mine(掘る) = 下から掘り崩す" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "1",
+    "english": "The escaped prisoner, who had been on the run for weeks, finally turned himself in to the police. He said he did not want to live the rest of his life as a ________.",
+    "japanese": "何週間も逃亡していた脱走犯は、ついに警察に自首しました。彼は残りの人生を________として生きたくないと言いました。",
+    "choices": ["virtuoso", "fugitive", "socialite", "truant"],
+    "correct": 1,
+    "explanation": "「逃亡していた」「脱走犯」を言い換える名詞として、「逃亡者」を意味する fugitive が正解です。",
+    "word_details": [
+      { "word": "virtuoso", "meaning": "巨匠、達人", "etymology": "イタリア語virtuoso(徳の高い)から" },
+      { "word": "fugitive", "meaning": "逃亡者", "etymology": "ラテン語fugere(逃げる)から" },
+      { "word": "socialite", "meaning": "社交界の名士", "etymology": "social(社交の) + ite(人)" },
+      { "word": "truant", "meaning": "無断欠席者", "etymology": "古フランス語truant(物乞い、放浪者)から" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "1",
+    "english": "During the discussion on world history, the student eventually realized his own argument was ________ and he knew he could not win.",
+    "japanese": "世界史の議論の中で、その学生は最終的に自分自身の主張が________であることに気づき、勝てないことを悟りました。",
+    "choices": ["untenable", "nascent", "subliminal", "tenacious"],
+    "correct": 0,
+    "explanation": "議論に勝てないと悟った理由となるため、主張が「擁護できない、支持できない」を意味する untenable が正解です。",
+    "word_details": [
+      { "word": "untenable", "meaning": "擁護できない", "etymology": "un(否定) + tenere(保つ) + able = 保ち続けることができない" },
+      { "word": "nascent", "meaning": "初期の、発生しようとする", "etymology": "nasci(生まれる) + ent = 生まれつつある" },
+      { "word": "subliminal", "meaning": "潜在意識の", "etymology": "sub(下に) + limen(閾) + al = 意識の境界の下にある" },
+      { "word": "tenacious", "meaning": "粘り強い", "etymology": "tenere(保つ) = しっかりつかんで離さない" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "1",
+    "english": "Jordan decided to replace the damaged leg on his old wooden table. After that, he cleaned and ________ the wood, and the table looked almost new.",
+    "japanese": "ジョーダンは古い木製のテーブルの傷んだ脚を取り替えることにしました。その後、彼は木材をきれいにして________し、テーブルはほぼ新品のように見えました。",
+    "choices": ["varnished", "disparaged", "foraged", "relented"],
+    "correct": 0,
+    "explanation": "木製のテーブルを新品のように見せるための仕上げの作業なので、「ニスを塗る」を意味する varnished が正解です。",
+    "word_details": [
+      { "word": "varnished", "meaning": "ニスを塗った", "etymology": "ギリシャの都市名Berenice(ニスを輸出していた)に由来" },
+      { "word": "disparaged", "meaning": "けなした", "etymology": "dis(否定) + par(等しい) = 同等でないものとして扱う" },
+      { "word": "foraged", "meaning": "探し回った", "etymology": "古フランス語fourrage(飼料)から。食料を探すこと" },
+      { "word": "relented", "meaning": "和らいだ、折れた", "etymology": "re(再び) + lentare(曲げる) = 態度を緩める" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "1",
+    "english": "Kyle's back pain was so ________ that he had a hard time even getting out of bed in the morning.",
+    "japanese": "カイルの背中の痛みはとても________だったため、朝ベッドから起き上がるのさえ困難でした。",
+    "choices": ["excruciating", "derelict", "jocular", "endearing"],
+    "correct": 0,
+    "explanation": "起き上がれないほどの痛みを形容するため、「極めて苦痛な」を意味する excruciating が正解です。",
+    "word_details": [
+      { "word": "excruciating", "meaning": "極めて苦痛な", "etymology": "ex(完全に) + crux(十字架) = 十字架刑にされるほどの苦痛" },
+      { "word": "derelict", "meaning": "見捨てられた、怠慢な", "etymology": "de(完全に) + relinquere(残す) = 放置された" },
+      { "word": "jocular", "meaning": "ひょうきんな", "etymology": "jocus(冗談)から" },
+      { "word": "endearing", "meaning": "親愛の情を起こさせる", "etymology": "en(〜にする) + dear(親愛な)" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "1",
+    "english": "Martina and her husband ________ their daughter. They give her continuous praise and buy her just about anything she wants.",
+    "japanese": "マルティナと夫は娘を________しています。彼らは彼女を絶えず褒め、彼女が欲しがるものはほぼ何でも買ってあげます。",
+    "choices": ["dote on", "lay into", "root around", "gear up"],
+    "correct": 0,
+    "explanation": "絶えず褒め、何でも買ってあげるという行動から、「溺愛する」を意味する句動詞 dote on が正解です。",
+    "word_details": [
+      { "word": "dote on", "meaning": "〜を溺愛する", "etymology": "dote(老いぼれる、盲愛する) + on" },
+      { "word": "lay into", "meaning": "〜を激しく非難する", "etymology": "lay(置く・叩き込む) + into = 言葉や拳を叩き込む" },
+      { "word": "root around", "meaning": "探し回る", "etymology": "root(豚が鼻で土を掘る) + around" },
+      { "word": "gear up", "meaning": "準備する", "etymology": "gear(歯車)を一段上げるイメージ" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "1",
+    "english": "The new prime minister's economic policy focuses on ________ inflation. He has promised to get prices under control as quickly as possible.",
+    "japanese": "新しい首相の経済政策はインフレの________に焦点を当てています。彼は可能な限り早く物価を制御下に置くと約束しました。",
+    "choices": ["locking away", "reining in", "stitching up", "sounding out"],
+    "correct": 1,
+    "explanation": "「物価を制御下におく」の言い換えです。馬の手綱を引いて抑えるイメージから、「抑制する」を意味する reining in が正解です。",
+    "word_details": [
+      { "word": "locking away", "meaning": "しまい込む", "etymology": "lock(鍵をかける) + away(遠くへ)" },
+      { "word": "reining in", "meaning": "抑制する", "etymology": "rein(手綱) + in(引く) = 暴れる馬の手綱を引いて抑える" },
+      { "word": "stitching up", "meaning": "縫い合わせる", "etymology": "stitch(縫う) + up(完全に)" },
+      { "word": "sounding out", "meaning": "打診する", "etymology": "sound(音・水深を測る) + out = 音を出して深さを探る" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "1",
+    "english": "The official report said that foreign governments were using the Internet to ________ democracy. It pointed to fake news stories published on various popular websites to influence voters.",
+    "japanese": "公式報告書によると、外国政府は民主主義を________ためにインターネットを利用していました。有権者に影響を与えるために様々な人気サイトで公開されたフェイクニュースを指摘しました。",
+    "choices": ["hoist", "subvert", "placate", "salivate"],
+    "correct": 1,
+    "explanation": "フェイクニュースを使って民主主義にダメージを与える文脈なので、「覆す、打倒する」を意味する subvert が正解です。",
+    "word_details": [
+      { "word": "hoist", "meaning": "引き上げる", "etymology": "オランダ語hijsen(持ち上げる)から" },
+      { "word": "subvert", "meaning": "覆す、打倒する", "etymology": "sub(下から) + vertere(回す) = 下からひっくり返す" },
+      { "word": "placate", "meaning": "なだめる", "etymology": "placare(静める)から" },
+      { "word": "salivate", "meaning": "よだれを流す", "etymology": "saliva(唾液) + ate(する)" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "1",
+    "english": "After receiving poor grades on her midterm progress report, Rosalind realized she needed to ________ and study hard in the second half of the semester.",
+    "japanese": "中間成績表で悪い成績を取った後、ロザリンドは学期の後半は________して一生懸命勉強する必要があることに気づきました。",
+    "choices": ["dash down", "hype up", "buckle down", "trip up"],
+    "correct": 2,
+    "explanation": "成績が悪かったため、後半は「本腰を入れて取り組む」必要があります。ベルトのバックルを締めて気合を入れるイメージの buckle down が正解です。",
+    "word_details": [
+      { "word": "dash down", "meaning": "急いで書き留める", "etymology": "dash(突進する、叩きつける) + down" },
+      { "word": "hype up", "meaning": "誇大宣伝する", "etymology": "hype(誇大広告) + up" },
+      { "word": "buckle down", "meaning": "本腰を入れる", "etymology": "buckle(バックル)をしっかり締めて仕事に向かうイメージ" },
+      { "word": "trip up", "meaning": "つまずかせる", "etymology": "trip(つまずく) + up" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "1",
+    "english": "The king valued loyalty above all else, and he rewarded his generals' ________ by giving them land and money.",
+    "japanese": "王は何よりも忠誠心を重んじ、将軍たちの________に報いるために彼らに土地と金を与えました。",
+    "choices": ["fidelity", "vitality", "serenity", "ubiquity"],
+    "correct": 0,
+    "explanation": "「loyalty（忠誠）」の言い換えとなる名詞です。「忠誠、貞節」を意味する fidelity が正解です。",
+    "word_details": [
+      { "word": "fidelity", "meaning": "忠誠、貞節", "etymology": "fides(信仰、信頼) + ity" },
+      { "word": "vitality", "meaning": "活力", "etymology": "vita(生命) + ity" },
+      { "word": "serenity", "meaning": "静けさ、平穏", "etymology": "serenus(晴れ渡った、穏やかな) + ity" },
+      { "word": "ubiquity", "meaning": "遍在、どこにでもあること", "etymology": "ubique(どこにでも) + ity" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "1",
+    "english": "A: Tobias, have you had that ________ on your neck looked at by a doctor yet? It could be something serious, you know. B: It doesn't hurt, but I'll make an appointment today. Thanks for reminding me.",
+    "japanese": "A: トビアス、首にあるその________をもうお医者さんに診てもらった？深刻なものかもしれないよ。 B: 痛くはないけど、今日予約を取るよ。思い出させてくれてありがとう。",
+    "choices": ["crevice", "fiasco", "homage", "lesion"],
+    "correct": 3,
+    "explanation": "首にあって医者に診てもらうべきもの（深刻な病気かもしれないもの）なので、「病変、傷」を意味する lesion が正解です。",
+    "word_details": [
+      { "word": "crevice", "meaning": "割れ目、裂け目", "etymology": "ラテン語crepare(割れる)から" },
+      { "word": "fiasco", "meaning": "大失敗", "etymology": "イタリア語(瓶を作るのに失敗する言葉遊びから)" },
+      { "word": "homage", "meaning": "敬意", "etymology": "homo(人) = 主君の臣下（人）となる儀式から転じて敬意" },
+      { "word": "lesion", "meaning": "病変、傷", "etymology": "laedere(傷つける)から" }
+    ]
+  }
+]

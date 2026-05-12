@@ -1,0 +1,367 @@
+[
+  {
+    "id": 1,
+    "grade": "2",
+    "english": "The SOL-5 rocket will leave Earth tomorrow. The astronauts' ________ is to repair a weather satellite.",
+    "japanese": "SOL-5ロケットは明日地球を出発します。宇宙飛行士たちの________は、気象衛星を修理することです。",
+    "choices": ["foundation", "impression", "mission", "definition"],
+    "correct": 2,
+    "explanation": "宇宙飛行士が衛星を修理するという「任務、使命」の話です。mission が正解です。",
+    "word_details": [
+      { "word": "foundation", "meaning": "基礎、設立", "etymology": "fundus(底) + ation = 土台となるもの" },
+      { "word": "impression", "meaning": "印象", "etymology": "in(中に) + press(押す) = 心に押し付けられた跡" },
+      { "word": "mission", "meaning": "任務、使命", "etymology": "mittere(送る) = 目的を持って送り出されたもの" },
+      { "word": "definition", "meaning": "定義", "etymology": "de(完全に) + finis(終わり、境界) = 言葉の境界をはっきりさせること" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "2",
+    "english": "People around the world are afraid that the ________ between the two countries will cause a war.",
+    "japanese": "世界中の人々は、2国間の________が戦争を引き起こすのではないかと恐れています。",
+    "choices": ["conflict", "phrase", "patient", "courage"],
+    "correct": 0,
+    "explanation": "2国間で戦争を引き起こす恐れがあるものなので、「対立、紛争」を意味する conflict が正解です。",
+    "word_details": [
+      { "word": "conflict", "meaning": "対立、紛争", "etymology": "con(共に) + flict(打つ) = 互いにぶつかり合うこと" },
+      { "word": "phrase", "meaning": "フレーズ、言い回し", "etymology": "ギリシャ語phrasis(話し方)から" },
+      { "word": "patient", "meaning": "患者、忍耐強い", "etymology": "pati(耐える) + ent = 痛みなどに耐える人" },
+      { "word": "courage", "meaning": "勇気", "etymology": "cor(心) + age = 心の中にある強い力" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "2",
+    "english": "A heavy storm ________ in Montaine Valley last month. The farmers in the area could not sell their vegetables because they were damaged.",
+    "japanese": "先月、モンテインバレーで激しい嵐が________。その地域の農家は野菜がダメージを受けたため、売ることができませんでした。",
+    "choices": ["found fault", "took a break", "did a lot of harm", "had some difficulty"],
+    "correct": 2,
+    "explanation": "嵐が農作物にダメージを与えたという文脈から、「多大な害を与えた」を意味する did a lot of harm が正解です。do harm (to 〜) で「（〜に）害を与える」という2級の重要表現です。",
+    "word_details": [
+      { "word": "found fault", "meaning": "粗探しをした", "etymology": "find fault with 〜 (〜の粗探しをする) の過去形" },
+      { "word": "took a break", "meaning": "休憩した", "etymology": "take a break (休憩を取る) の過去形" },
+      { "word": "did a lot of harm", "meaning": "多大な害を与えた", "etymology": "do harm (害をもたらす) の過去形" },
+      { "word": "had some difficulty", "meaning": "少し苦労した", "etymology": "have difficulty in 〜ing (〜するのに苦労する) の過去形" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "2",
+    "english": "Although the art gallery wanted to ________ the painting right away, they had to wait until the owner gave his permission before they could display it.",
+    "japanese": "アートギャラリーはその絵をすぐに________したかったのですが、展示できるようになるまでオーナーが許可を出すのを待たなければなりませんでした。",
+    "choices": ["exhibit", "imitate", "overcome", "combine"],
+    "correct": 0,
+    "explanation": "「展示する(display)」の言い換えになる動詞です。アートギャラリーが絵画を「展示する」を意味する exhibit が正解です。",
+    "word_details": [
+      { "word": "exhibit", "meaning": "展示する", "etymology": "ex(外へ) + hibere(持つ) = 外に出して見せる" },
+      { "word": "imitate", "meaning": "模倣する", "etymology": "imago(似姿、イメージ)と同じ語源。真似をすること" },
+      { "word": "overcome", "meaning": "打ち勝つ、乗り越える", "etymology": "over(越えて) + come(来る) = 障害物を越えてやってくる" },
+      { "word": "combine", "meaning": "結合する", "etymology": "com(共に) + bini(2つずつ) = 2つ以上のものを一緒にする" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "2",
+    "english": "A: Sam, what time do you want me to ________ you off at the movie theater? B: The film starts at 7:00, so how about 6:45?",
+    "japanese": "A: サム、映画館に何時に君を________してほしい？ B: 映画は7時に始まるから、6時45分はどうかな？",
+    "choices": ["drop", "pick", "take", "mark"],
+    "correct": 0,
+    "explanation": "車から「降ろす」という意味の句動詞 drop off が正解です。pick up なら「拾う、車に乗せる」になります。",
+    "word_details": [
+      { "word": "drop off", "meaning": "（車から人を）降ろす、うとうとする", "etymology": "drop(落とす) + off(離して) = 目的地にポトッと置いていくイメージ" },
+      { "word": "pick up", "meaning": "拾う、車に乗せる", "etymology": "つまみ上げるイメージ" },
+      { "word": "take off", "meaning": "離陸する、脱ぐ", "etymology": "take(取る) + off(離して)" },
+      { "word": "mark down", "meaning": "値下げする、書き留める", "etymology": "mark(印をつける) + down(下に)" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "2",
+    "english": "A: I'm going to be away next week, so please ________ your assignment to Ms. Edwards. B: OK, Professor Clifton. I'll give it to her as soon as I'm done.",
+    "japanese": "A: 私は来週不在になるので、課題はエドワーズ先生に________してください。 B: わかりました、クリフトン教授。終わり次第彼女に渡します。",
+    "choices": ["convert", "submit", "beat", "imply"],
+    "correct": 1,
+    "explanation": "教授に対して課題(assignment)を「提出する」という文脈なので、submit が正解です。",
+    "word_details": [
+      { "word": "convert", "meaning": "変換する", "etymology": "con(完全に) + vertere(向ける) = 別の形にすっかり変える" },
+      { "word": "submit", "meaning": "提出する、服従する", "etymology": "sub(下に) + mittere(送る) = 目上の人の下に差し出す" },
+      { "word": "beat", "meaning": "打ち負かす、叩く", "etymology": "古英語beatan(打つ)から" },
+      { "word": "imply", "meaning": "ほのめかす", "etymology": "in(中に) + plicare(折り込む) = 言葉の中に意味を折り込んで隠す" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "2",
+    "english": "Arthur was going to sell his cafe. However, he ________ his decision because he started to get more customers after a new college opened nearby.",
+    "japanese": "アーサーは自分のカフェを売るつもりでした。しかし、近くに新しい大学が開設されて客が増え始めたため、彼はその決定を________しました。",
+    "choices": ["abused", "secured", "reversed", "stimulated"],
+    "correct": 2,
+    "explanation": "客が増えたため、カフェを売るという決定を「覆した、取り消した」という文脈です。reversed が正解です。",
+    "word_details": [
+      { "word": "abused", "meaning": "乱用した、虐待した", "etymology": "ab(離れて・誤って) + use(使う) = 間違った使い方をする" },
+      { "word": "secured", "meaning": "確保した、安全にした", "etymology": "se(〜なしに) + cura(心配) = 心配がない状態にする" },
+      { "word": "reversed", "meaning": "覆した、逆にした", "etymology": "re(後ろに) + vertere(向ける) = 反対方向に向きを変える" },
+      { "word": "stimulated", "meaning": "刺激した", "etymology": "stimulus(突き棒) + ate = つついて活発にさせる" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "2",
+    "english": "Somebody had broken one of the windows in Michelle's classroom. Michelle had not done it, but some of the other students looked at her ________ she had.",
+    "japanese": "誰かがミシェルの教室の窓の1つを割ってしまいました。ミシェルはやっていないのですが、他の数人の生徒は________彼女がやったかのように彼女を見ました。",
+    "choices": ["as if", "if not", "as to", "if only"],
+    "correct": 0,
+    "explanation": "自分がやったわけではないのに、他の生徒から「まるで彼女がやったかのように」見られたという文脈です。「まるで〜かのように」を意味する as if が正解です。",
+    "word_details": [
+      { "word": "as if", "meaning": "まるで〜かのように", "etymology": "仮定法と共によく使われる重要表現" },
+      { "word": "if not", "meaning": "もしそうでないなら", "etymology": "前の文脈を否定して条件を作る表現" },
+      { "word": "as to", "meaning": "〜に関して", "etymology": "about や concerning と同じ意味で使われる" },
+      { "word": "if only", "meaning": "〜でさえあればいいのに", "etymology": "強い願望を表す仮定法の表現" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "2",
+    "english": "Greg's father taught Greg how to fish, and Greg ________ plans to teach his son.",
+    "japanese": "グレッグの父親はグレッグに釣りの仕方を教え、グレッグは________自分の息子に教える予定です。",
+    "choices": ["in turn", "by heart", "in touch", "by chance"],
+    "correct": 0,
+    "explanation": "父親から教わったことを、今度はグレッグが「自分の番として」息子に教えるという文脈です。「今度は、順番に」を意味する in turn が正解です。",
+    "word_details": [
+      { "word": "in turn", "meaning": "今度は、順番に", "etymology": "turn(順番) + in = 順番のサイクルに入って" },
+      { "word": "by heart", "meaning": "暗記して", "etymology": "learn by heart で「心に刻み込んで覚える」" },
+      { "word": "in touch", "meaning": "連絡を取り合って", "etymology": "keep in touch で「触れ合う状態（連絡）を保つ」" },
+      { "word": "by chance", "meaning": "偶然に", "etymology": "chance(偶然の機会) + by = 意図せずたまたま" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "2",
+    "english": "It was so noisy at the concert that Jane struggled to ________. She had to shout to communicate with her friend.",
+    "japanese": "コンサートはとても騒がしかったので、ジェーンは________のに苦労しました。彼女は友人とコミュニケーションをとるために叫ばなければなりませんでした。",
+    "choices": ["make heard herself", "hearing herself made", "make herself heard", "herself made heard"],
+    "correct": 2,
+    "explanation": "「自分の声を（相手に）聞かせる」という意味の使役動詞の構文「make oneself heard」が正解です。「自分自身が聞かれる状態を作る」という成り立ちです。",
+    "word_details": [
+      { "word": "make oneself heard", "meaning": "自分の声を聞かせる", "etymology": "make(〜させる) + oneself(自分自身を) + heard(聞かれた状態に)" },
+      { "word": "make oneself understood", "meaning": "自分の考えを相手にわからせる", "etymology": "make(〜させる) + oneself(自分自身を) + understood(理解された状態に)" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "2",
+    "english": "A: What time does our train leave? B: In 20 minutes. It's time we ________ for the station.",
+    "japanese": "A: 私たちの電車は何時に出発するの？ B: 20分後だよ。もう駅に向かって________時間だね。",
+    "choices": ["had left", "left", "have left", "will have left"],
+    "correct": 1,
+    "explanation": "「もう〜してもよい時間だ」を表す『It's time ＋ 仮定法過去』の構文です。現在のことであっても、動詞は過去形を使うため left が正解です。",
+    "word_details": [
+      { "word": "It's time + 過去形", "meaning": "もう〜する時間だ", "etymology": "現実にはまだしていないことに対して「すでにしているべき時間だ」と仮定法で表現する" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "2",
+    "english": "Sean has an important meeting early tomorrow morning, so he ________ better not stay up late tonight.",
+    "japanese": "ショーンは明日の早朝に重要な会議があるので、今夜は夜更かししない________。",
+    "choices": ["would", "had", "should", "may"],
+    "correct": 1,
+    "explanation": "「〜しないほうがよい」という強い忠告を表す助動詞 had better の否定形、had better not の形になります。",
+    "word_details": [
+      { "word": "had better", "meaning": "〜した方がよい", "etymology": "従わないと悪い結果になるというニュアンスを含む強い忠告表現" },
+      { "word": "stay up late", "meaning": "夜更かしをする", "etymology": "stay(とどまる) + up(起きている状態で) + late(遅くまで)" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "2",
+    "english": "Sarah has been told to ________ running until her foot is better. Otherwise, she might make her injury worse.",
+    "japanese": "サラは足が良くなるまで走るのを________ように言われています。そうしなければ、怪我を悪化させるかもしれません。",
+    "choices": ["refrain from", "read through", "refer to", "reflect on"],
+    "correct": 0,
+    "explanation": "足が治るまで走るのを「控える」ように言われたという文脈です。「refrain from -ing」で「〜するのを控える」となります。",
+    "word_details": [
+      { "word": "refrain from", "meaning": "〜を控える、やめる", "etymology": "re(後ろへ) + frenare(手綱を引く) = 欲求を抑える" },
+      { "word": "read through", "meaning": "〜を通読する", "etymology": "read(読む) + through(最初から最後まで通して)" },
+      { "word": "refer to", "meaning": "〜を参照する、言及する", "etymology": "re(後ろへ) + ferre(運ぶ) = 情報を持ち帰る" },
+      { "word": "reflect on", "meaning": "〜を熟考する、反省する", "etymology": "re(後ろへ) + flectere(曲げる) = 考えを過去に向けて振り返る" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "2",
+    "english": "A: Excuse me. I'm looking for an electric heater for my kitchen. B: I recommend this one, ma'am. It's small, but it ________ plenty of heat. It should warm your kitchen in just a few minutes.",
+    "japanese": "A: すみません。キッチン用の電気ヒーターを探しているのですが。 B: 奥様、こちらをお勧めします。小型ですが、十分な熱を________。ほんの数分でキッチンを暖めてくれますよ。",
+    "choices": ["keeps off", "runs out", "drops out", "gives off"],
+    "correct": 3,
+    "explanation": "ヒーターが熱を「放出する、発する」という文脈です。give off で「（熱や光、匂いなどを）発する」という意味になります。",
+    "word_details": [
+      { "word": "keeps off", "meaning": "〜を近づけない、防ぐ", "etymology": "keep(保つ) + off(離して) = 離れた状態を保つ" },
+      { "word": "runs out", "meaning": "尽きる、使い果たす", "etymology": "run(走る) + out(外へ) = 中身が外へ流れ出てなくなる" },
+      { "word": "drops out", "meaning": "脱落する、中退する", "etymology": "drop(落ちる) + out(外へ) = 輪の中からこぼれ落ちる" },
+      { "word": "gives off", "meaning": "（熱・光・匂いなどを）発する", "etymology": "give(与える) + off(離して) = 自分から切り離して周囲に放つ" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "2",
+    "english": "As Liam walked down the dark street, he began to feel afraid. He had the ________ that someone was watching him.",
+    "japanese": "リアムは暗い通りを歩いていると、恐怖を感じ始めました。彼は誰かに見られているという________がしました。",
+    "choices": ["property", "feature", "translation", "sensation"],
+    "correct": 3,
+    "explanation": "暗い夜道で誰かに見られている「感覚、気配」がしたという文脈です。「感覚、感じ」を意味する sensation が正解です。",
+    "word_details": [
+      { "word": "property", "meaning": "財産、所有物、特性", "etymology": "proprius(自分自身のもの)から" },
+      { "word": "feature", "meaning": "特徴、顔立ち", "etymology": "facere(作る)から。作られた形、目立つ部分" },
+      { "word": "translation", "meaning": "翻訳", "etymology": "trans(越えて) + latus(運ばれた) = 言葉の壁を越えて運ぶこと" },
+      { "word": "sensation", "meaning": "感覚、大評判", "etymology": "sensus(感覚) + ation = 五感で感じ取ること" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "2",
+    "english": "Experts at the art gallery discovered that one of their paintings, which they had thought was a ________ Picasso, was actually just a copy.",
+    "japanese": "アートギャラリーの専門家たちは、________なピカソの作品だと思っていた絵画の1つが、実は単なるコピーであったことを発見しました。",
+    "choices": ["portable", "severe", "genuine", "logical"],
+    "correct": 2,
+    "explanation": "実はコピー(copy)だったということは、最初は「本物の」ピカソの作品だと思っていたことになります。「本物の、真の」を意味する genuine が正解です。",
+    "word_details": [
+      { "word": "portable", "meaning": "持ち運びできる", "etymology": "portare(運ぶ) + able = 運べる" },
+      { "word": "severe", "meaning": "厳しい、ひどい", "etymology": "ラテン語severus(厳格な)から" },
+      { "word": "genuine", "meaning": "本物の、真の", "etymology": "gignere(生む)から。生まれつきの、偽りがない" },
+      { "word": "logical", "meaning": "論理的な", "etymology": "logos(言葉、論理) + al" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "2",
+    "english": "During history class, Aiden noticed Risa did not have her notebook. He ________ some paper from his notebook and gave it to her so that she could take notes.",
+    "japanese": "歴史の授業中、エイデンはリサがノートを持っていないことに気づきました。彼は自分のノートから紙を________、彼女がメモを取れるように渡しました。",
+    "choices": ["tore off", "broke out", "relied on", "answered back"],
+    "correct": 0,
+    "explanation": "ノートの紙を「切り取って、破り取って」渡したという状況です。「tear off（〜を切り取る）」の過去形 tore off が正解です。",
+    "word_details": [
+      { "word": "tore off", "meaning": "切り取った、引きはがした", "etymology": "tear(引き裂く) + off(離して)" },
+      { "word": "broke out", "meaning": "勃発した、逃げ出した", "etymology": "break(壊す) + out(外へ) = 囲いを壊して外へ出る" },
+      { "word": "relied on", "meaning": "頼った", "etymology": "re(後ろに) + ligare(結ぶ) = しっかりと寄りかかる" },
+      { "word": "answered back", "meaning": "口答えした", "etymology": "answer(答える) + back(言い返す)" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "2",
+    "english": "A: I can't help ________ these peanuts. They're so delicious! B: I know. Once you start, it's very, very difficult to stop.",
+    "japanese": "A: このピーナッツを________のをやめられないよ。とても美味しいんだ！ B: わかるよ。一度始めたら、やめるのはとても難しいよね。",
+    "choices": ["eaten", "eat", "eating", "to eat"],
+    "correct": 2,
+    "explanation": "「cannot help -ing」で「〜せずにはいられない、〜するのを避けられない」という重要な動名詞の構文です。したがって eating が正解です。",
+    "word_details": [
+      { "word": "cannot help -ing", "meaning": "〜せずにはいられない", "etymology": "ここでの help は「避ける」という意味。避けることができない＝してしまう、となる" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "2",
+    "english": "A: I'm thinking of buying Dad some wine for his birthday. B: Well, he's very ________ about wine. You'd better ask him what kind he wants.",
+    "japanese": "A: お父さんの誕生日にワインを買おうと思っているの。 B: ええと、彼はお酒に関してはとても________だから。どんな種類が欲しいか聞いた方がいいよ。",
+    "choices": ["particular", "guilty", "enormous", "sweet"],
+    "correct": 0,
+    "explanation": "本人に種類を聞いた方がいい理由として、お父さんがワインに対して「好みがうるさい、こだわりがある」ことが推測できます。「be particular about 〜（〜について好みがうるさい）」という熟語になります。",
+    "word_details": [
+      { "word": "particular", "meaning": "特定の、好みがうるさい", "etymology": "part(部分)から。細部（部分）までこだわる様子" },
+      { "word": "guilty", "meaning": "有罪の、罪悪感のある", "etymology": "guilt(罪) + y" },
+      { "word": "enormous", "meaning": "巨大な、莫大な", "etymology": "e(外へ) + norma(基準) + ous = 基準をはるかに外れて大きい" },
+      { "word": "sweet", "meaning": "甘い、優しい", "etymology": "古英語sweteから" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "2",
+    "english": "Considering that Keiko has only been studying English for six months, she gave a ________ good English presentation at yesterday's contest. She got second prize.",
+    "japanese": "ケイコが英語を勉強し始めてわずか半年であることを考慮すると、彼女は昨日のコンテストで________素晴らしい英語のプレゼンテーションを行いました。彼女は2位を獲得しました。",
+    "choices": ["nervously", "remarkably", "suddenly", "carefully"],
+    "correct": 1,
+    "explanation": "たった半年しか勉強していないのに2位を取ったことから、「驚くほど、際立って」素晴らしいプレゼンだったことがわかります。remarkably が正解です。",
+    "word_details": [
+      { "word": "nervously", "meaning": "神経質に、イライラして", "etymology": "nerve(神経) + ous + ly" },
+      { "word": "remarkably", "meaning": "著しく、驚くほど", "etymology": "re(強意) + mark(印をつける) + ably = 印をつけて注目すべきほど" },
+      { "word": "suddenly", "meaning": "突然に", "etymology": "sudden(突然の) + ly" },
+      { "word": "carefully", "meaning": "注意深く", "etymology": "care(注意) + full(満ちた) + ly" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "2",
+    "english": "Johann's hobby is ________ music. He wrote a beautiful song for his wife's birthday and played it on the piano at her birthday party.",
+    "japanese": "ヨハンの趣味は音楽を________ことです。彼は妻の誕生日のために美しい曲を書き、彼女の誕生日パーティーでそれをピアノで演奏しました。",
+    "choices": ["flattering", "composing", "rescuing", "declaring"],
+    "correct": 1,
+    "explanation": "「美しい曲を書いた(wrote a beautiful song)」という文脈から、趣味は「作曲すること」です。composing が正解です。",
+    "word_details": [
+      { "word": "flattering", "meaning": "お世辞を言う、実物以上によく見せる", "etymology": "平らにする(flat)ように相手をなでて機嫌をとる" },
+      { "word": "composing", "meaning": "構成する、作曲する", "etymology": "com(共に) + ponere(置く) = 音符などを並べて組み立てる" },
+      { "word": "rescuing", "meaning": "救出する", "etymology": "re(再び) + excutere(追い払う) = 危険を追い払う" },
+      { "word": "declaring", "meaning": "宣言する", "etymology": "de(完全に) + clarare(明らかにする) = はっきりと公言する" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "2",
+    "english": "Good teachers always use ________ rather than threats to get their students to study.",
+    "japanese": "良い教師は、生徒に勉強させるために脅しよりも常に________を使います。",
+    "choices": ["immigration", "admission", "persuasion", "organization"],
+    "correct": 2,
+    "explanation": "「threats（脅し）」と対比される、ポジティブな動機付けの方法です。「説得、納得させること」を意味する persuasion が正解です。",
+    "word_details": [
+      { "word": "immigration", "meaning": "移住、入国管理", "etymology": "in(中へ) + migrare(移る) + tion" },
+      { "word": "admission", "meaning": "入場、入会、自白", "etymology": "ad(〜へ) + mittere(送る) + sion = 中に入れることを認める" },
+      { "word": "persuasion", "meaning": "説得", "etymology": "per(完全に) + suadere(勧める) + sion = 完全に勧めて納得させる" },
+      { "word": "organization", "meaning": "組織、団体", "etymology": "organ(器官) + ize(〜にする) + ation = 一つの生き物のようにまとめること" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "2",
+    "english": "Carrie wants her children to speak more ________, so she often reminds them to say \"please\" and \"thank you\" to other people.",
+    "japanese": "キャリーは自分の子供たちにもっと________話してほしいと思っているので、他の人に「お願いします」や「ありがとう」を言うようによく注意します。",
+    "choices": ["silently", "commonly", "luckily", "politely"],
+    "correct": 3,
+    "explanation": "「please」や「thank you」を使うような話し方なので、「礼儀正しく、丁寧に」を意味する politely が正解です。",
+    "word_details": [
+      { "word": "silently", "meaning": "静かに、黙って", "etymology": "silent(静かな) + ly" },
+      { "word": "commonly", "meaning": "一般に、共通して", "etymology": "common(共通の) + ly" },
+      { "word": "luckily", "meaning": "幸運にも", "etymology": "lucky(幸運な) + ly" },
+      { "word": "politely", "meaning": "礼儀正しく", "etymology": "polite(磨かれた、礼儀正しい) + ly" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "2",
+    "english": "Mother Teresa helped many sick people and gave food to many hungry children in India. She was known as a person who cared about ________.",
+    "japanese": "マザー・テレサはインドで多くの病人を助け、多くの飢えた子供たちに食べ物を与えました。彼女は________を気にかける人物として知られていました。",
+    "choices": ["gravity", "humanity", "hesitation", "generation"],
+    "correct": 1,
+    "explanation": "病人や飢えた子供たちを助ける行動から、彼女が「人類、人間愛」を気にかけていたことがわかります。humanity が正解です。",
+    "word_details": [
+      { "word": "gravity", "meaning": "重力、重大さ", "etymology": "gravis(重い) + ity" },
+      { "word": "humanity", "meaning": "人類、人間性、人間愛", "etymology": "human(人間の) + ity" },
+      { "word": "hesitation", "meaning": "ためらい、躊躇", "etymology": "haerere(くっつく) = 立ち止まって動かないこと" },
+      { "word": "generation", "meaning": "世代、発生", "etymology": "generare(生み出す) + tion" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "2",
+    "english": "A rare bird escaped from the zoo last week. It was finally ________ today and taken back to the zoo.",
+    "japanese": "先週、動物園から珍しい鳥が逃げ出しました。今日ついに________され、動物園に連れ戻されました。",
+    "choices": ["captured", "proved", "accused", "neglected"],
+    "correct": 0,
+    "explanation": "逃げ出した鳥が動物園に連れ戻された(taken back)ということから、ついに「捕獲された、捕まった」ことがわかります。captured が正解です。",
+    "word_details": [
+      { "word": "captured", "meaning": "捕獲した、捕まえた", "etymology": "capere(捕らえる) + ure = 捕まえること" },
+      { "word": "proved", "meaning": "証明した", "etymology": "probare(試す、良いと認める)から" },
+      { "word": "accused", "meaning": "非難した、告発した", "etymology": "ad(〜へ) + causa(理由・訴訟) = 理由を突きつけて責める" },
+      { "word": "neglected", "meaning": "無視した、怠った", "etymology": "nec(ない) + legere(選ぶ) = 選ばずに放っておく" }
+    ]
+  }
+]

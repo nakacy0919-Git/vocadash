@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "grade": "pre1",
+    "english": "After many poor performances, the rugby player was ________ from his club's first team to its second team.",
+    "japanese": "何度も不甲斐ないパフォーマンスをした後、そのラグビー選手はクラブの1軍から2軍へと________されました。",
+    "choices": ["demoted", "inclined", "clinched", "adapted"],
+    "correct": 0,
+    "explanation": "「1軍(first team)から2軍(second team)へ」落とされるという文脈なので、「降格させる」を意味する demote が正解です。対義語は promote（昇進させる）です。",
+    "word_details": [
+      { "word": "demoted", "meaning": "降格された", "etymology": "de(下に) + movere(動かす) = 地位を下に動かす" },
+      { "word": "inclined", "meaning": "傾いた、〜する傾向がある", "etymology": "in(〜へ向かって) + clinare(曲げる) = 心や体が傾く" },
+      { "word": "clinched", "meaning": "決着をつけた", "etymology": "clench(しっかり掴む)の変形" },
+      { "word": "adapted", "meaning": "適応した", "etymology": "ad(〜へ) + aptus(適した) = 適合させる" }
+    ]
+  },
+  {
+    "id": 2,
+    "grade": "pre1",
+    "english": "When the man approached the tiger's cage, the huge animal ________ deeply. The man stepped back in fear at the terrifying sound.",
+    "japanese": "男がトラの檻に近づくと、その巨大な動物は深く________。男はその恐ろしい音に恐怖で後ずさりしました。",
+    "choices": ["sparkled", "leered", "disproved", "growled"],
+    "correct": 3,
+    "explanation": "後ろの文に「恐ろしい音(terrifying sound)」とあるため、動物が出す音として適切な「うなる」を意味する growled が正解です。",
+    "word_details": [
+      { "word": "sparkled", "meaning": "輝いた、火花を散らした", "etymology": "spark(火花) + le(反復) = キラキラ光る" },
+      { "word": "leered", "meaning": "横目でにらんだ、いやらしい目つきで見た", "etymology": "古英語hleor(頬)から。頬を向けて流し目をする" },
+      { "word": "disproved", "meaning": "反証した、誤りを証明した", "etymology": "dis(否定) + prove(証明する)" },
+      { "word": "growled", "meaning": "うなった", "etymology": "犬や獣が喉の奥で鳴らす「グルル」という擬音語から" }
+    ]
+  },
+  {
+    "id": 3,
+    "grade": "pre1",
+    "english": "Good writers make every effort to ________ mistakes from their work, but occasionally they miss some errors and have to make corrections later.",
+    "japanese": "優れた作家は作品からミスを________するためにあらゆる努力をしますが、時折いくつかの間違いを見落とし、後で修正しなければなりません。",
+    "choices": ["expend", "oppress", "stabilize", "eliminate"],
+    "correct": 3,
+    "explanation": "「ミス(mistakes)」に対する行動として、ミスを「排除する、取り除く」文脈になるため、eliminate が正解です。",
+    "word_details": [
+      { "word": "expend", "meaning": "費やす、消費する", "etymology": "ex(外へ) + pendere(量る/支払う) = お金を外へ出す" },
+      { "word": "oppress", "meaning": "抑圧する、虐げる", "etymology": "ob(〜に対して) + premere(押す) = 力で押さえつける" },
+      { "word": "stabilize", "meaning": "安定させる", "etymology": "stable(安定した) + ize(〜にする)" },
+      { "word": "eliminate", "meaning": "排除する、取り除く", "etymology": "e(外へ) + limen(敷居) + ate = 敷居の外へ追い出す" }
+    ]
+  },
+  {
+    "id": 4,
+    "grade": "pre1",
+    "english": "Glenn had no choice but to borrow money from his father to pay his rent. He had ________ all his other options.",
+    "japanese": "グレンは家賃を払うために父親からお金を借りるしか選択肢がありませんでした。彼は他のすべての選択肢を________しまっていたのです。",
+    "choices": ["revolted", "delighted", "retraced", "exhausted"],
+    "correct": 3,
+    "explanation": "父親からお金を借りる「しかなかった(had no choice but to)」理由です。他の選択肢を「使い果たした」ためであり、exhausted が正解です。",
+    "word_details": [
+      { "word": "revolted", "meaning": "反乱を起こした、不快にさせた", "etymology": "re(再び/反対に) + volvere(巻く/回転する) = 状況をひっくり返す" },
+      { "word": "delighted", "meaning": "大喜びさせた", "etymology": "de(強意) + light(光/引き付ける) = 心を明るくする" },
+      { "word": "retraced", "meaning": "引き返した、遡った", "etymology": "re(再び) + trace(跡をたどる)" },
+      { "word": "exhausted", "meaning": "使い果たした、疲れ果てさせた", "etymology": "ex(外へ) + haurire(汲み出す) = 水などを一滴残らず汲み出す" }
+    ]
+  },
+  {
+    "id": 5,
+    "grade": "pre1",
+    "english": "The first time Dan tried skiing, he found it difficult, but on each ________ ski trip, he got better. Now he is an expert skier.",
+    "japanese": "ダンが初めてスキーに挑戦した時は難しく感じましたが、その________のスキー旅行のたびに上達しました。今では彼は熟練のスキーヤーです。",
+    "choices": ["arrogant", "sufficient", "subsequent", "prominent"],
+    "correct": 2,
+    "explanation": "「初めて(first time)」に続く旅行という時系列の流れから、「その次からの、それに続く」を意味する subsequent が正解です。",
+    "word_details": [
+      { "word": "arrogant", "meaning": "傲慢な、横柄な", "etymology": "ad(〜へ) + rogare(要求する) = 不当な権利を要求するような" },
+      { "word": "sufficient", "meaning": "十分な", "etymology": "sub(下に) + facere(作る) = 必要量を下から満たす" },
+      { "word": "subsequent", "meaning": "その後の、それに続く", "etymology": "sub(すぐ後ろに) + sequi(続く) = すぐ後に続く" },
+      { "word": "prominent", "meaning": "卓越した、目立つ", "etymology": "pro(前に) + minere(突き出る) = 他より前に突き出て目立つ" }
+    ]
+  },
+  {
+    "id": 6,
+    "grade": "pre1",
+    "english": "A: Honey, we may have to ________ the family picnic this week. The weather forecast is predicting rain. B: In that case, we can just have a pizza party at home instead.",
+    "japanese": "A: あなた、今週の家族のピクニックは________しなければならないかもしれないわ。天気予報が雨を予測しているの。B: その場合は、代わりに家でピザパーティーをすればいいね。",
+    "choices": ["get by", "play up", "call off", "opt for"],
+    "correct": 2,
+    "explanation": "雨の予報であり、代わりに家でパーティーをするという流れから、予定していたピクニックを「中止する」必要があります。call off が正解です。",
+    "word_details": [
+      { "word": "get by", "meaning": "何とかやっていく、通り抜ける", "etymology": "get(得る・至る) + by(そばを) = ギリギリの所を通り抜ける" },
+      { "word": "play up", "meaning": "誇張する、強調する", "etymology": "play(演じる) + up(大げさに) = 目立たせる" },
+      { "word": "call off", "meaning": "〜を中止する、取り消す", "etymology": "call(声をかけて) + off(離す) = 予定を呼び戻してなくす" },
+      { "word": "opt for", "meaning": "〜を選ぶ", "etymology": "option(選択肢)の動詞形 opt(選ぶ) + for" }
+    ]
+  },
+  {
+    "id": 7,
+    "grade": "pre1",
+    "english": "Marty spent many hours ________ the problem before he realized that the solution was much simpler than he thought.",
+    "japanese": "マーティはその解決策が自分が思っていたよりもはるかに単純であることに気づく前に、何時間もその問題と________。",
+    "choices": ["living down", "clearing out", "wrestling with", "snapping off"],
+    "correct": 2,
+    "explanation": "解決策に気づくまでの間、何時間も問題と「格闘する、悪戦苦闘する」という意味の句動詞 wrestling with が正解です。",
+    "word_details": [
+      { "word": "living down", "meaning": "（過去の失敗などを）立派な生活をして人に忘れさせる", "etymology": "live(生きる) + down(鎮める) = 生き方で過去の汚点を打ち消す" },
+      { "word": "clearing out", "meaning": "〜を片付ける、空にする", "etymology": "clear(綺麗にする) + out(外へ) = ゴミを外に出して綺麗にする" },
+      { "word": "wrestling with", "meaning": "〜と格闘する、〜に取り組む", "etymology": "wrestle(レスリングをする) + with(〜と)" },
+      { "word": "snapping off", "meaning": "ポキッと折る", "etymology": "snap(ポキッと音を立てる) + off(離れる)" }
+    ]
+  },
+  {
+    "id": 8,
+    "grade": "pre1",
+    "english": "The young politician has a small but ________ following. His supporters are extremely enthusiastic at his campaign events, and they travel long distances just to hear him speak.",
+    "japanese": "その若手政治家は、小規模ですが________な支持者を持っています。彼の支持者は選挙イベントで非常に熱狂的であり、彼の演説を聞くためだけ長距離を移動します。",
+    "choices": ["holistic", "fanatical", "illogical", "mellow"],
+    "correct": 1,
+    "explanation": "後半の「熱狂的(enthusiastic)で遠くまで足を運ぶ」という支持者の描写から、「熱狂的な、狂信的な」を意味する fanatical が正解です。",
+    "word_details": [
+      { "word": "holistic", "meaning": "全体論的な、包括的な", "etymology": "whole(全体)のギリシャ語源holosから" },
+      { "word": "fanatical", "meaning": "熱狂的な、狂信的な", "etymology": "fanatic(狂信者：fanの語源) + al" },
+      { "word": "illogical", "meaning": "非論理的な", "etymology": "il(否定) + logical(論理的な)" },
+      { "word": "mellow", "meaning": "まろやかな、落ち着いた", "etymology": "熟した果実の柔らかさを表す言葉から" }
+    ]
+  },
+  {
+    "id": 9,
+    "grade": "pre1",
+    "english": "Since the CEO's speech was so vague, it took Gina a while to ________ to the fact that the company was in serious financial trouble.",
+    "japanese": "CEOの演説が非常に曖昧だったため、ジーナが会社が深刻な財政難にあるという事実に________のにしばらく時間がかかりました。",
+    "choices": ["duck out", "catch on", "fill in", "give up"],
+    "correct": 1,
+    "explanation": "曖昧な話を聞いて、本当の状況を「理解する、気づく」という意味の句動詞 catch on (to) が正解です。",
+    "word_details": [
+      { "word": "duck out", "meaning": "こっそり逃げ出す、逃れる", "etymology": "duck(アヒルのようにサッと頭を下げる) + out = 見つからないように逃げる" },
+      { "word": "catch on", "meaning": "（意味を）理解する、流行する", "etymology": "catch(捕まえる) + on(接触) = 言葉の真意を掴み取る" },
+      { "word": "fill in", "meaning": "書き込む、代理を務める", "etymology": "fill(満たす) + in(中へ) = 空欄を埋める" },
+      { "word": "give up", "meaning": "諦める、放棄する", "etymology": "give(与える) + up(完全に) = 完全に手放す" }
+    ]
+  },
+  {
+    "id": 10,
+    "grade": "pre1",
+    "english": "Jocelyn could see the storm ________ from the west. The skies began to darken, and the wind gradually grew stronger.",
+    "japanese": "ジョセリンは西から嵐が________のを見ることができました。空は暗くなり始め、風は次第に強くなっていきました。",
+    "choices": ["adding up", "holding out", "passing down", "rolling in"],
+    "correct": 3,
+    "explanation": "空が暗くなり風が強くなる様子から、嵐や霧が「押し寄せる、近づいてくる」ことを意味する rolling in が正解です。",
+    "word_details": [
+      { "word": "adding up", "meaning": "つじつまが合う、合計する", "etymology": "add(加える) + up(完全に) = 計算がピッタリ合う" },
+      { "word": "holding out", "meaning": "持ちこたえる、長持ちする", "etymology": "hold(保つ) + out(外へ/最後まで) = 最後まで保つ" },
+      { "word": "passing down", "meaning": "（後世に）伝える", "etymology": "pass(渡す) + down(下の世代へ)" },
+      { "word": "rolling in", "meaning": "（嵐などが）押し寄せる、大量に転がり込む", "etymology": "roll(転がる) + in(中へ) = 波や雲がうねりながらやって来る様子" }
+    ]
+  },
+  {
+    "id": 11,
+    "grade": "pre1",
+    "english": "The factory had to completely halt production because of a severe ________ of raw materials caused by the recent trade restrictions.",
+    "japanese": "最近の貿易制限によって引き起こされた深刻な原材料の________のため、工場は生産を完全に停止しなければなりませんでした。",
+    "choices": ["shortage", "surplus", "monopoly", "blizzard"],
+    "correct": 0,
+    "explanation": "生産を停止しなければならなかった理由として、原材料が「不足している」状態が当てはまります。「不足、欠乏」を意味する shortage が正解です。",
+    "word_details": [
+      { "word": "shortage", "meaning": "不足、欠乏", "etymology": "short(足りない) + age(状態) = 足りない状態" },
+      { "word": "surplus", "meaning": "余剰、黒字", "etymology": "sur(超えて) + plus(プラス) = 必要な量を超えて余っていること" },
+      { "word": "monopoly", "meaning": "独占", "etymology": "mono(単一の) + polein(売る) = 1社だけで売りさばくこと" },
+      { "word": "blizzard", "meaning": "猛吹雪", "etymology": "語源不明確だが、激しく打つことを意味する方言から" }
+    ]
+  },
+  {
+    "id": 12,
+    "grade": "pre1",
+    "english": "The bomb squad successfully managed to ________ the explosive device before it could cause any damage to the building.",
+    "japanese": "爆発物処理班は、それが建物に何らかの被害をもたらす前に、爆発装置をうまく________することができました。",
+    "choices": ["ignite", "defuse", "inflate", "perplex"],
+    "correct": 1,
+    "explanation": "爆発装置（explosive device）に対する爆発物処理班の行動なので、信管を取り除いて「安全にする、爆発を防ぐ」を意味する defuse が正解です。",
+    "word_details": [
+      { "word": "ignite", "meaning": "点火する", "etymology": "ignis(火) + ate(する) = 火をつける" },
+      { "word": "defuse", "meaning": "信管を外す、緊張を和らげる", "etymology": "de(取り除く) + fuse(信管) = 爆発の元を取り除く" },
+      { "word": "inflate", "meaning": "膨らませる", "etymology": "in(中に) + flare(吹く) = 空気などを吹き込む" },
+      { "word": "perplex", "meaning": "当惑させる", "etymology": "per(完全に) + plexus(絡み合った) = 完全に絡まって混乱させる" }
+    ]
+  },
+  {
+    "id": 13,
+    "grade": "pre1",
+    "english": "Although the politician's speech was very long and filled with passionate words, critics argued that it lacked ________ and offered no real solutions.",
+    "japanese": "その政治家の演説は非常に長く、情熱的な言葉で満ちていましたが、批評家たちはそれに________が欠けており、真の解決策を提示していないと主張しました。",
+    "choices": ["altitude", "hygiene", "substance", "friction"],
+    "correct": 2,
+    "explanation": "「真の解決策を提示していない」という批判から、演説に欠けていたのは「実質、中身」です。「中身、物質」を意味する substance が正解です。",
+    "word_details": [
+      { "word": "altitude", "meaning": "高度、標高", "etymology": "altus(高い) + tude(状態)" },
+      { "word": "hygiene", "meaning": "衛生状態", "etymology": "ギリシャ神話の健康の女神Hygieiaから" },
+      { "word": "substance", "meaning": "実質、物質、中身", "etymology": "sub(下に) + stare(立つ) + ance = 根底に存在するもの" },
+      { "word": "friction", "meaning": "摩擦", "etymology": "fricare(こする) + tion = こすれ合うこと" }
+    ]
+  },
+  {
+    "id": 14,
+    "grade": "pre1",
+    "english": "The software company assured its customers that the new application is fully ________ with all older operating systems.",
+    "japanese": "そのソフトウェア会社は、新しいアプリケーションがすべての古いオペレーティングシステムと完全に________であると顧客に保証しました。",
+    "choices": ["indifferent", "vulnerable", "immune", "compatible"],
+    "correct": 3,
+    "explanation": "「新しいアプリと古いOS」の関係性において顧客を安心させる言葉なので、「互換性がある、適合する」を意味する compatible が正解です。",
+    "word_details": [
+      { "word": "indifferent", "meaning": "無関心な", "etymology": "in(否定) + different(違う) = 違いがない、どうでもいい" },
+      { "word": "vulnerable", "meaning": "傷つきやすい、脆弱な", "etymology": "vulnerare(傷つける) + able = 傷つけられやすい" },
+      { "word": "immune", "meaning": "免疫のある、免除された", "etymology": "im(否定) + munis(義務) = 義務や病気から免除されている" },
+      { "word": "compatible", "meaning": "互換性がある、気が合う", "etymology": "com(共に) + pati(耐える) + able = 一緒にやっていける" }
+    ]
+  },
+  {
+    "id": 15,
+    "grade": "pre1",
+    "english": "Due to the unprecedented heavy snow, the public transportation schedule was severely ________, causing thousands of commuters to be late.",
+    "japanese": "前例のない大雪のため、公共交通機関のスケジュールが深刻に________し、何千人もの通勤者が遅刻する事態となりました。",
+    "choices": ["disrupted", "amplified", "cultivated", "retained"],
+    "correct": 0,
+    "explanation": "大雪によって交通機関のスケジュールが「混乱させられた、中断された」という文脈です。disrupted が正解です。",
+    "word_details": [
+      { "word": "disrupted", "meaning": "混乱させた、中断させた", "etymology": "dis(バラバラに) + rumpere(壊す) = 引き裂いてめちゃくちゃにする" },
+      { "word": "amplified", "meaning": "増幅した", "etymology": "amplus(広い) + fy(〜にする) = 音などを大きく広げる" },
+      { "word": "cultivated", "meaning": "耕作した、養った", "etymology": "cultus(耕された) + ate = 土地を耕す、能力を磨く" },
+      { "word": "retained", "meaning": "保持した", "etymology": "re(後ろに) + tenere(保つ) = 手元に持ち続ける" }
+    ]
+  },
+  {
+    "id": 16,
+    "grade": "pre1",
+    "english": "The doctor strongly advised the patient to ________ from eating spicy or overly greasy food until his stomach had fully healed.",
+    "japanese": "医師は患者に対し、胃が完全に治癒するまで辛い食べ物や油っこい食べ物を食べるのを________よう強く勧めました。",
+    "choices": ["stray", "deduce", "refrain", "rebel"],
+    "correct": 2,
+    "explanation": "胃が治るまで特定の食べ物を「控える」ように助言したという文脈です。「refrain from 〜ing」で「〜するのを控える」となります。",
+    "word_details": [
+      { "word": "stray", "meaning": "はぐれる、迷い出る", "etymology": "ラテン語extravagari(外をさまよう)から" },
+      { "word": "deduce", "meaning": "推論する", "etymology": "de(下に) + ducere(導く) = 根拠から結論を導き出す" },
+      { "word": "refrain", "meaning": "控える、やめる", "etymology": "re(後ろへ) + frenare(手綱を引く) = 欲求の手綱を引いて抑える" },
+      { "word": "rebel", "meaning": "反逆する", "etymology": "re(再び) + bellum(戦争) = 支配者に対して戦いを起こす" }
+    ]
+  },
+  {
+    "id": 17,
+    "grade": "pre1",
+    "english": "The national museum's new exhibition features a wide variety of tools and artifacts from ________ cultures found in the Amazon basin.",
+    "japanese": "国立博物館の新しい展示では、アマゾン盆地で見つかった________文化の多種多様な道具や工芸品を特集しています。",
+    "choices": ["contagious", "indigenous", "unanimous", "spontaneous"],
+    "correct": 1,
+    "explanation": "アマゾンで見つかった文化についての形容詞です。「先住の、土着の」を意味する indigenous が正解です。",
+    "word_details": [
+      { "word": "contagious", "meaning": "伝染性の", "etymology": "con(共に) + tangere(触れる) + ious = 触れ合ってうつる" },
+      { "word": "indigenous", "meaning": "先住の、土着の", "etymology": "indi(中に) + gignere(生む) = その土地で生まれた" },
+      { "word": "unanimous", "meaning": "満場一致の", "etymology": "unus(1つの) + animus(心) = 全員の心が1つになること" },
+      { "word": "spontaneous", "meaning": "自発的な、自然発生的な", "etymology": "sponte(自発的に) + ous = 外部の力なしに起きる" }
+    ]
+  },
+  {
+    "id": 18,
+    "grade": "pre1",
+    "english": "To reduce operational costs and improve communication, the company decided to ________ its five smaller branches into one large headquarters.",
+    "japanese": "運営コストを削減し、コミュニケーションを改善するために、会社は5つの小さな支店を1つの大きな本社に________することを決定しました。",
+    "choices": ["consolidate", "evacuate", "diagnose", "formulate"],
+    "correct": 0,
+    "explanation": "5つの小さな支店を1つの大きな本社に「統合する、合併する」という文脈です。consolidate が正解です。",
+    "word_details": [
+      { "word": "consolidate", "meaning": "統合する、強固にする", "etymology": "con(共に) + solidare(固くする) = バラバラなものを1つに固める" },
+      { "word": "evacuate", "meaning": "避難させる", "etymology": "e(外へ) + vacuus(空の) = 人を外へ出して空間を空にする" },
+      { "word": "diagnose", "meaning": "診断する", "etymology": "dia(通して) + gignoskein(知る) = 症状を通して病気を知る" },
+      { "word": "formulate", "meaning": "考案する、公式化する", "etymology": "formula(公式、決まった形) + ate(する)" }
+    ]
+  },
+  {
+    "id": 19,
+    "grade": "pre1",
+    "english": "Despite losing in the first half, the coach's ________ speech during the break inspired the team to go back out and win the championship.",
+    "japanese": "前半で負けていたにもかかわらず、休憩中のコーチの________演説は、チームが再びフィールドに出て選手権を勝ち取るよう奮い立たせました。",
+    "choices": ["stale", "dismal", "shoddy", "rousing"],
+    "correct": 3,
+    "explanation": "チームを奮い立たせた(inspired)演説なので、ポジティブで熱気のある形容詞が入ります。「熱烈な、奮起させる」を意味する rousing が正解です。",
+    "word_details": [
+      { "word": "stale", "meaning": "新鮮でない、古くさい", "etymology": "古英語stalian(じっと置かれる)から。時間が経って古くなった状態" },
+      { "word": "dismal", "meaning": "陰鬱な、みじめな", "etymology": "ラテン語dies mali(不吉な日)から" },
+      { "word": "shoddy", "meaning": "粗悪な、安物の", "etymology": "古い毛糸の再生品(shoddy)から転じて、質が悪いこと" },
+      { "word": "rousing", "meaning": "熱烈な、奮起させる", "etymology": "rouse(目覚めさせる、奮い立たせる)の形容詞形" }
+    ]
+  },
+  {
+    "id": 20,
+    "grade": "pre1",
+    "english": "After interviewing several witnesses and examining the crime scene, the detective managed to ________ the sequence of events that led to the robbery.",
+    "japanese": "数人の目撃者にインタビューし、犯罪現場を調査した後、刑事は強盗につながった一連の出来事を何とか________ことができました。",
+    "choices": ["brush off", "boil down", "piece together", "tide over"],
+    "correct": 2,
+    "explanation": "目撃証言や現場の証拠などの断片的な情報を集めて「つなぎ合わせる、全体像を構成する」という意味の句動詞 piece together が正解です。",
+    "word_details": [
+      { "word": "brush off", "meaning": "無視する、はねつける", "etymology": "brush(ブラシではらう) + off(離して) = ほこりを払うように軽くあしらう" },
+      { "word": "boil down", "meaning": "要約する、煮詰める", "etymology": "boil(煮る) + down(減らす) = 水分を飛ばして核心だけを残す" },
+      { "word": "piece together", "meaning": "（事実などを）つなぎ合わせる", "etymology": "piece(断片)を together(一緒にする) = ジグソーパズルを完成させるイメージ" },
+      { "word": "tide over", "meaning": "（困難を）乗り切らせる", "etymology": "tide(潮) + over(越える) = 潮に乗って障害物を越える" }
+    ]
+  },
+  {
+    "id": 21,
+    "grade": "pre1",
+    "english": "The small company's profits have been ________ declining over the past three years, and experts warn it may face bankruptcy soon.",
+    "japanese": "その小さな会社の利益は過去3年間にわたって________減少し続けており、専門家は間もなく倒産に直面する可能性があると警告しています。",
+    "choices": ["recklessly", "steadily", "vaguely", "ironically"],
+    "correct": 1,
+    "explanation": "3年間にわたって利益が減少「し続けている」という継続的な変化を表す副詞です。「着実に、絶え間なく」を意味する steadily が正解です。",
+    "word_details": [
+      { "word": "recklessly", "meaning": "無謀にも", "etymology": "reck(気にかける) + less(ない) + ly = 結果を気にせずに行動する" },
+      { "word": "steadily", "meaning": "着実に、絶え間なく", "etymology": "steady(安定した、一定の) + ly" },
+      { "word": "vaguely", "meaning": "漠然と", "etymology": "vagus(さまよう) = 輪郭がはっきりせず曖昧な様子" },
+      { "word": "ironically", "meaning": "皮肉にも", "etymology": "ギリシャ語eironeia(よそよそしさ、皮肉)から" }
+    ]
+  },
+  {
+    "id": 22,
+    "grade": "pre1",
+    "english": "Many economists believe that the new tax law is actually ________ to the middle class, as it forces them to pay a higher percentage of their income.",
+    "japanese": "新しい税法は中産階級に収入のより高い割合を支払うことを強いるため、多くの経済学者はそれが実際には中産階級にとって________であると信じています。",
+    "choices": ["hospitable", "analogous", "detrimental", "susceptible"],
+    "correct": 2,
+    "explanation": "より多くの税金を払わせる法律なので、中産階級にとってはマイナスです。「有害な、不利益な」を意味する detrimental が正解です。",
+    "word_details": [
+      { "word": "hospitable", "meaning": "もてなしのよい、快適な", "etymology": "hospes(客、主人)から = 客を温かく迎える" },
+      { "word": "analogous", "meaning": "類似した", "etymology": "ana(応じて) + logos(比率) = 似た比率や関係性を持つ" },
+      { "word": "detrimental", "meaning": "有害な、不利益な", "etymology": "de(離れて) + terere(こする) = こすり減らして損なう" },
+      { "word": "susceptible", "meaning": "影響を受けやすい", "etymology": "sub(下から) + capere(取る) = 影響を容易に受け入れる" }
+    ]
+  },
+  {
+    "id": 23,
+    "grade": "pre1",
+    "english": "The student's essay was rejected by the professor because it was full of ________ mistakes that showed a lack of basic understanding of the topic.",
+    "japanese": "その学生のエッセイは、トピックに関する基本的な理解の欠如を示す________な間違いで満ちていたため、教授に却下されました。",
+    "choices": ["docile", "fragile", "serene", "blatant"],
+    "correct": 3,
+    "explanation": "基本的な理解の欠如を示すような「見え透いた、露骨な、ひどい」間違いという文脈です。blatant が正解です。",
+    "word_details": [
+      { "word": "docile", "meaning": "従順な、素直な", "etymology": "docere(教える) + ile(〜できる) = 教えやすい" },
+      { "word": "fragile", "meaning": "壊れやすい", "etymology": "frangere(壊す) + ile = 簡単に壊れる" },
+      { "word": "serene", "meaning": "穏やかな", "etymology": "ラテン語serenus(晴れ渡った)から" },
+      { "word": "blatant", "meaning": "露骨な、見え透いた", "etymology": "blatire(ぺちゃくちゃ喋る)から。騒々しく目立つこと" }
+    ]
+  },
+  {
+    "id": 24,
+    "grade": "pre1",
+    "english": "A: I'm sorry, but I can't ________ what you're saying because the music in this restaurant is too loud. B: Let's go outside so we can talk.",
+    "japanese": "A: ごめんなさい、このレストランの音楽がうるさすぎて、あなたの言っていることが________できないわ。 B: 話せるように外に出よう。",
+    "choices": ["let down", "pull through", "make out", "fall back on"],
+    "correct": 2,
+    "explanation": "音楽がうるさくて相手の言っていることが「聞き取れない、理解できない」という文脈です。「理解する、判読する」を意味する make out が正解です。",
+    "word_details": [
+      { "word": "let down", "meaning": "失望させる", "etymology": "let(させる) + down(下へ) = 期待から下へ落とす" },
+      { "word": "pull through", "meaning": "（困難や病気を）切り抜ける", "etymology": "pull(引く) + through(通して) = 困難な状況から引っ張り出す" },
+      { "word": "make out", "meaning": "理解する、判読する", "etymology": "make(作る) + out(外へ) = ぼんやりした情報から意味を作り出す" },
+      { "word": "fall back on", "meaning": "〜に頼る", "etymology": "fall back(後退する) + on(接触) = いざという時に後ろに寄りかかる" }
+    ]
+  },
+  {
+    "id": 25,
+    "grade": "pre1",
+    "english": "The city council announced that the old, abandoned hospital will be completely ________ next month to make way for a new shopping mall.",
+    "japanese": "市議会は、新しいショッピングモールを建設するため、来月、古く放棄された病院を完全に________すると発表しました。",
+    "choices": ["cherished", "demolished", "prolonged", "withheld"],
+    "correct": 1,
+    "explanation": "新しいショッピングモールを作るために古い建物を「取り壊す」必要があります。「解体する、破壊する」を意味する demolished が正解です。",
+    "word_details": [
+      { "word": "cherished", "meaning": "大切にした", "etymology": "フランス語cher(親愛な)から" },
+      { "word": "demolished", "meaning": "解体した、破壊した", "etymology": "de(下に) + moliri(建てる) = 建てたものを下へ崩す" },
+      { "word": "prolonged", "meaning": "長引かせた", "etymology": "pro(前へ) + longus(長い) = 時間を前に長く伸ばす" },
+      { "word": "withheld", "meaning": "保留した、与えないでおく", "etymology": "with(後ろへ) + hold(保つ) = 手元に抑えて渡さない" }
+    ]
+  }
+]
