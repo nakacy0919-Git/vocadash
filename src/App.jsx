@@ -213,7 +213,7 @@ function App() {
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-teal-600">業後補習用 - Lesson選択</h2>
           <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-            {[1, 2, 3, 4].map(num => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(num => (
               <button
                 key={num}
                 onClick={() => onSelectLesson(num)}
