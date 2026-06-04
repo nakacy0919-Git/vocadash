@@ -9,16 +9,18 @@ import BrowserGuide from './components/BrowserGuide';
 
 // 定期考査のデータ
 import regularData from './data/regular.json';
-// ▼ 修正①：新しく作ったLesson取りまとめファイルを読み込む
+import regular2Data from "./data/regular2.json"; // ← ★第2回のデータを追加
+// Lesson取りまとめファイルを読み込む
 import { readingLessons } from './data/lessons';
 
 const COURSE_MAP = {
-  regular: '定期考査 KICK OFF',
+  regular: '第1回 定期対策 KICK OFF', // ★画面表示が分かりやすいように名前を調整しました
+  regular2: '第2回 定期対策 KICK OFF', // ★追加
   eiken_pre2: '英検 準2級',
   eiken_2: '英検 2級',
   eiken_pre1: '英検 準1級',
   eiken_1: '英検 1級',
-  reading: '業後補習用（長文読解）', // ▼ 修正②：新コースを追加
+  reading: '業後補習用（長文読解）',
 };
 
 function App() {
@@ -61,24 +63,35 @@ function App() {
     setAppState('course_select');
   };
 
-  // ▼ 修正③：コース選択時の分岐に reading を追加
+  // ▼ 修正：コース選択時の分岐（定期考査を選んだらサブメニューへ）
   const onSelectCourse = (courseId) => {
-    setCurrentCourse(courseId);
     if (courseId === 'regular') {
-      setQuestionsData(regularData);
-      setCurrentStage(null);
-      setAppState('home');
+      setAppState('regular_select'); // 第1回・第2回の選択画面へ
     } else if (courseId === 'reading') {
-      setAppState('lesson_select'); // Lesson選択画面へ
+      setCurrentCourse(courseId);
+      setAppState('lesson_select');
     } else {
+      setCurrentCourse(courseId);
       setAppState('stage_select');
     }
   };
 
-  // ▼ 修正④：戻るボタンの分岐にも reading を追加
+  // ▼ 新規追加：定期考査の第1回・第2回が選ばれたときの処理
+  const onSelectRegular = (type) => {
+    setCurrentCourse(type);
+    if (type === 'regular') {
+      setQuestionsData(regularData);
+    } else if (type === 'regular2') {
+      setQuestionsData(regular2Data);
+    }
+    setCurrentStage(null);
+    setAppState('home');
+  };
+
+  // ▼ 修正：戻るボタンの分岐（定期考査ならサブメニューへ戻る）
   const goStageSelect = () => {
-    if (currentCourse === 'regular') {
-      goCourseSelect();
+    if (currentCourse === 'regular' || currentCourse === 'regular2') {
+      setAppState('regular_select');
     } else if (currentCourse === 'reading') {
       setCurrentStage(null);
       setAppState('lesson_select');
@@ -100,9 +113,8 @@ function App() {
     }
   };
 
-  // ▼ 修正⑤：Lessonを選択したときの処理（JSONを直接セットする）
   const onSelectLesson = (lessonNum) => {
-    setCurrentStage(lessonNum); // currentStageをLesson番号として代用
+    setCurrentStage(lessonNum); 
     setQuestionsData(readingLessons[lessonNum]);
     setAppState('home');
   };
@@ -153,9 +165,10 @@ function App() {
     }
   };
 
-  // ▼ 修正⑥：保存と取得用のキーを動的に生成する関数
+  // ▼ 修正：保存と取得用のキーに regular2 を追加
   const getHistoryKey = () => {
     if (currentCourse === 'regular') return `vocaDashHistory_regular`;
+    if (currentCourse === 'regular2') return `vocaDashHistory_regular2`;
     if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`;
     return `vocaDashHistory_${currentCourse}_stage${currentStage}`;
   };
@@ -193,9 +206,9 @@ function App() {
     return (total / validResults.length / 1000).toFixed(1);
   };
 
-  // ▼ 修正⑦：画面タイトルの出し分け
+  // ▼ 修正：画面タイトルの出し分けに regular2 を追加
   const getDisplayTitle = () => {
-    if (currentCourse === 'regular') return COURSE_MAP[currentCourse];
+    if (currentCourse === 'regular' || currentCourse === 'regular2') return COURSE_MAP[currentCourse];
     if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`;
     return `${COURSE_MAP[currentCourse]} - Stage ${currentStage}`;
   };
@@ -208,11 +221,39 @@ function App() {
         <CourseSelect onSelectCourse={onSelectCourse} />
       )}
 
-      {/* ▼ 修正⑧：長文読解専用のLesson選択画面を追加 */}
+      {/* ▼ 新規追加：定期考査専用の選択画面 */}
+      {appState === 'regular_select' && (
+        <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
+          <h2 className="text-2xl font-bold mb-6 text-blue-600">定期考査対策 - コース選択</h2>
+          <div className="flex flex-col gap-4 w-full max-w-md">
+            <button
+              onClick={() => onSelectRegular('regular')}
+              className="bg-white border-2 border-blue-500 text-blue-600 font-bold py-4 rounded-xl shadow-sm hover:bg-blue-50 transition"
+            >
+              第1回 定期対策
+            </button>
+            <button
+              onClick={() => onSelectRegular('regular2')}
+              className="bg-white border-2 border-blue-500 text-blue-600 font-bold py-4 rounded-xl shadow-sm hover:bg-blue-50 transition"
+            >
+              第2回 定期対策
+            </button>
+          </div>
+          <button
+            onClick={goCourseSelect}
+            className="mt-8 text-gray-500 underline"
+          >
+            コース選択に戻る
+          </button>
+        </div>
+      )}
+
+      {/* 長文読解専用のLesson選択画面 */}
       {appState === 'lesson_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-teal-600">業後補習用 - Lesson選択</h2>
-          <div className="grid grid-cols-2 gap-4 w-full max-w-md">
+          <div className="grid grid-cols-2 gap-4 w-full max-w-md h-[60vh] overflow-y-auto pr-2 pb-4">
+            {/* ※スクロールできるように overflow-y-auto などを追加しています */}
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(num => (
               <button
                 key={num}
@@ -225,7 +266,7 @@ function App() {
           </div>
           <button
             onClick={goCourseSelect}
-            className="mt-8 text-gray-500 underline"
+            className="mt-6 text-gray-500 underline"
           >
             コース選択に戻る
           </button>
