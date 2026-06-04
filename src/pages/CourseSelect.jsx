@@ -1,7 +1,7 @@
 import React from 'react';
 // アセットフォルダに配置したロゴ画像をインポート
 import titleLogo from '../assets/title-logo.png';
-import Footer from '../components/Footer'; // ★ 追加：フッターのインポート
+import Footer from '../components/Footer';
 
 const CATEGORIES = [
   { 
@@ -49,14 +49,23 @@ const CATEGORIES = [
     toColor: 'to-rose-600',
     shadowColor: 'shadow-rose-500/50' 
   },
+  // ▼ 新しく追加：業後補習用のボタン（App.jsxのLesson選択画面と同じTeal系カラーで統一）
+  { 
+    id: 'reading', 
+    title: '業後補習', 
+    subtitle: '長文読解',
+    badge: 'Reading', 
+    fromColor: 'from-teal-400', 
+    toColor: 'to-teal-600',
+    shadowColor: 'shadow-teal-500/50' 
+  }
 ];
 
 export default function CourseSelect({ onSelectCourse }) {
   return (
-    // ★ 修正：フッターが画面下部に追従するように min-h-screen を追加
     <div className="min-h-screen w-screen bg-macaron-gradient p-4 md:p-6 flex flex-col items-center justify-start overflow-y-auto font-sans">
       
-      {/* 上部の余白調整（縦並びの中央寄せから、上寄せ＋余白に変更） */}
+      {/* 上部の余白調整 */}
       <div className="pt-10 md:pt-16 flex flex-col items-center w-full max-w-4xl">
         {/* アプリタイトルロゴ */}
         <img 
@@ -69,7 +78,7 @@ export default function CourseSelect({ onSelectCourse }) {
           学習するコースを選択してください
         </p>
         
-        {/* コース選択グリッド（正方形ボタン） */}
+        {/* コース選択グリッド */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full px-2 md:px-4 mb-8">
           {CATEGORIES.map(cat => (
             <button
@@ -101,17 +110,17 @@ export default function CourseSelect({ onSelectCourse }) {
                   {cat.badge}
                 </span>
                 
-                {/* メインテキスト：スマホでは text-2xl に縮小し、改行を禁止(whitespace-nowrap) */}
+                {/* メインテキスト */}
                 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 md:mt-4 tracking-tighter leading-none drop-shadow-md whitespace-nowrap">
                   {cat.title}
                 </h2>
                 
-                {/* サブタイトル（級など）：こちらもはみ出さないように調整 */}
+                {/* サブタイトル */}
                 <p className="text-base sm:text-lg md:text-2xl font-black text-white/90 tracking-tight mt-1 md:mt-2 leading-tight drop-shadow-sm whitespace-nowrap">
                   {cat.subtitle}
                 </p>
                 
-                {/* 右下のアイコン装飾：スマホ画面では少し小さく・位置を調整 */}
+                {/* 右下のアイコン装飾 */}
                 <span className="absolute bottom-[-15px] md:bottom-[-25px] right-[-5px] md:right-[-10px] text-2xl md:text-4xl text-white/20 group-hover:text-white/50 transition-colors duration-300">
                   →
                 </span>
@@ -121,7 +130,6 @@ export default function CourseSelect({ onSelectCourse }) {
         </div>
       </div>
 
-      {/* ★ 追加：フッターを一番下に配置 */}
       <Footer />
     </div>
   );

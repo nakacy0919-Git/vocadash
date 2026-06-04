@@ -7,8 +7,10 @@ import Play from './pages/Play';
 import Result from './pages/Result';
 import BrowserGuide from './components/BrowserGuide';
 
-// ▼ 修正①：定期考査（regular）のデータだけは従来通り最初に読み込んでおく
+// 定期考査のデータ
 import regularData from './data/regular.json';
+// ▼ 修正①：新しく作ったLesson取りまとめファイルを読み込む
+import { readingLessons } from './data/lessons';
 
 const COURSE_MAP = {
   regular: '定期考査 KICK OFF',
@@ -16,6 +18,7 @@ const COURSE_MAP = {
   eiken_2: '英検 2級',
   eiken_pre1: '英検 準1級',
   eiken_1: '英検 1級',
+  reading: '業後補習用（長文読解）', // ▼ 修正②：新コースを追加
 };
 
 function App() {
@@ -36,14 +39,13 @@ function App() {
   const [isFailed, setIsFailed] = useState(false);
   const [sessionResults, setSessionResults] = useState([]);
 
-  // タイマー処理
   useEffect(() => {
     let timer;
     if (appState === 'play' && playMode === 'test' && !isFailed) {
       timer = setInterval(() => {
         setTimeLeft((prev) => {
           if (prev <= 100) {
-            setIsFailed(true); // 時間切れ
+            setIsFailed(true); 
             return 0;
           }
           return prev - 100;
@@ -59,31 +61,33 @@ function App() {
     setAppState('course_select');
   };
 
-  // ▼ 修正②：コース選択時の条件分岐
+  // ▼ 修正③：コース選択時の分岐に reading を追加
   const onSelectCourse = (courseId) => {
     setCurrentCourse(courseId);
     if (courseId === 'regular') {
-      // 定期考査の場合はステージ選択をスキップして即ホーム画面へ
       setQuestionsData(regularData);
       setCurrentStage(null);
       setAppState('home');
+    } else if (courseId === 'reading') {
+      setAppState('lesson_select'); // Lesson選択画面へ
     } else {
-      // 英検の場合はステージ選択画面へ
       setAppState('stage_select');
     }
   };
 
-  // ▼ 修正③：ホーム画面からの「戻る」ボタンの条件分岐
+  // ▼ 修正④：戻るボタンの分岐にも reading を追加
   const goStageSelect = () => {
     if (currentCourse === 'regular') {
-      goCourseSelect(); // 定期考査ならコース選択へ戻る
+      goCourseSelect();
+    } else if (currentCourse === 'reading') {
+      setCurrentStage(null);
+      setAppState('lesson_select');
     } else {
       setCurrentStage(null);
-      setAppState('stage_select'); // 英検ならステージ選択へ戻る
+      setAppState('stage_select');
     }
   };
 
-  // 英検のステージを選択した際の処理（JSONの動的読み込み）
   const onSelectStage = async (stageNum) => {
     setCurrentStage(stageNum);
     try {
@@ -94,6 +98,13 @@ function App() {
       console.error("データの読み込みに失敗しました:", error);
       alert(`Stage ${stageNum} のデータがまだありません。`);
     }
+  };
+
+  // ▼ 修正⑤：Lessonを選択したときの処理（JSONを直接セットする）
+  const onSelectLesson = (lessonNum) => {
+    setCurrentStage(lessonNum); // currentStageをLesson番号として代用
+    setQuestionsData(readingLessons[lessonNum]);
+    setAppState('home');
   };
 
   const handleSelectMode = (modeType, value) => {
@@ -142,14 +153,17 @@ function App() {
     }
   };
 
-  // ▼ 修正④：保存先キーの分岐（定期考査は従来通り、英検はStage別）
+  // ▼ 修正⑥：保存と取得用のキーを動的に生成する関数
+  const getHistoryKey = () => {
+    if (currentCourse === 'regular') return `vocaDashHistory_regular`;
+    if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`;
+    return `vocaDashHistory_${currentCourse}_stage${currentStage}`;
+  };
+
   const saveStats = (results) => {
     const correctCount = results.filter(r => r.isCorrect).length;
     const slaRate = Math.round((correctCount / results.length) * 100);
-    
-    const historyKey = currentCourse === 'regular' 
-      ? `vocaDashHistory_${currentCourse}` 
-      : `vocaDashHistory_${currentCourse}_stage${currentStage}`;
+    const historyKey = getHistoryKey();
       
     const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
     history.push({
@@ -161,12 +175,8 @@ function App() {
     localStorage.setItem(historyKey, JSON.stringify(history));
   };
 
-  // ▼ 修正⑤：取得先キーの分岐
   const getChunkMasteryRate = (chunkIndex) => {
-    const historyKey = currentCourse === 'regular' 
-      ? `vocaDashHistory_${currentCourse}` 
-      : `vocaDashHistory_${currentCourse}_stage${currentStage}`;
-      
+    const historyKey = getHistoryKey();
     const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
     const chunkId = `chunk-${chunkIndex}`;
     const chunkScores = history
@@ -183,11 +193,11 @@ function App() {
     return (total / validResults.length / 1000).toFixed(1);
   };
 
-  // ▼ 修正⑥：画面タイトルの出し分け（定期考査はStage表示なし）
+  // ▼ 修正⑦：画面タイトルの出し分け
   const getDisplayTitle = () => {
-    return currentCourse === 'regular' 
-      ? COURSE_MAP[currentCourse] 
-      : `${COURSE_MAP[currentCourse]} - Stage ${currentStage}`;
+    if (currentCourse === 'regular') return COURSE_MAP[currentCourse];
+    if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`;
+    return `${COURSE_MAP[currentCourse]} - Stage ${currentStage}`;
   };
 
   return (
@@ -196,6 +206,30 @@ function App() {
       
       {appState === 'course_select' && (
         <CourseSelect onSelectCourse={onSelectCourse} />
+      )}
+
+      {/* ▼ 修正⑧：長文読解専用のLesson選択画面を追加 */}
+      {appState === 'lesson_select' && (
+        <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
+          <h2 className="text-2xl font-bold mb-6 text-teal-600">業後補習用 - Lesson選択</h2>
+          <div className="grid grid-cols-2 gap-4 w-full max-w-md">
+            {[1, 2, 3, 4].map(num => (
+              <button
+                key={num}
+                onClick={() => onSelectLesson(num)}
+                className="bg-white border-2 border-teal-500 text-teal-600 font-bold py-4 rounded-xl shadow-sm hover:bg-teal-50 transition"
+              >
+                Lesson {num}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={goCourseSelect}
+            className="mt-8 text-gray-500 underline"
+          >
+            コース選択に戻る
+          </button>
+        </div>
       )}
 
       {appState === 'stage_select' && (
