@@ -23,36 +23,36 @@ const CATEGORIES = [
   },
   { 
     id: 'eiken_pre2', 
-    title: '英検', 
-    subtitle: '準2級',
-    badge: 'Eiken', 
+    title: '英語レベル', 
+    subtitle: '準2級相当',
+    badge: 'Level Pre-2', 
     fromColor: 'from-green-400', 
     toColor: 'to-green-600',
     shadowColor: 'shadow-green-500/50' 
   },
   { 
     id: 'eiken_2', 
-    title: '英検', 
-    subtitle: '2級',
-    badge: 'Eiken', 
+    title: '英語レベル', 
+    subtitle: '2級相当',
+    badge: 'Level 2', 
     fromColor: 'from-emerald-400', 
     toColor: 'to-emerald-600',
     shadowColor: 'shadow-emerald-500/50' 
   },
   { 
     id: 'eiken_pre1', 
-    title: '英検', 
-    subtitle: '準1級',
-    badge: 'Eiken', 
+    title: '英語レベル', 
+    subtitle: '準1級相当',
+    badge: 'Level Pre-1', 
     fromColor: 'from-purple-400', 
     toColor: 'to-purple-600',
     shadowColor: 'shadow-purple-500/50' 
   },
   { 
     id: 'eiken_1', 
-    title: '英検', 
-    subtitle: '1級',
-    badge: 'Eiken', 
+    title: '英語レベル', 
+    subtitle: '1級相当',
+    badge: 'Level 1', 
     fromColor: 'from-rose-400', 
     toColor: 'to-rose-600',
     shadowColor: 'shadow-rose-500/50' 
@@ -83,7 +83,7 @@ export default function CourseSelect({ onSelectCourse }) {
           学習するコースを選択してください
         </p>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full px-2 md:px-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full px-2 md:px-4 mb-12">
           {CATEGORIES.map(cat => (
             <button
               key={cat.id}
@@ -113,13 +113,16 @@ export default function CourseSelect({ onSelectCourse }) {
                 <p className="text-sm sm:text-base md:text-xl font-black text-white/90 tracking-tight mt-1 md:mt-2 leading-tight drop-shadow-sm whitespace-nowrap">
                   {cat.subtitle}
                 </p>
-                
-                <span className="absolute bottom-[-15px] md:bottom-[-25px] right-[-5px] md:right-[-10px] text-2xl md:text-4xl text-white/20 group-hover:text-white/50 transition-colors duration-300">
-                  →
-                </span>
               </div>
             </button>
           ))}
+        </div>
+        
+        {/* ★ 免責事項（注意書き）を追加 */}
+        <div className="w-full max-w-2xl bg-white/40 backdrop-blur-sm p-4 rounded-xl border border-white/50 text-center mb-8">
+          <p className="text-gray-500 text-[10px] md:text-xs leading-relaxed font-medium">
+            ※本アプリ内の「英語レベル」および「級」の表記は、各学習段階における語彙レベルの目安を示す独自の基準です。公益財団法人日本英語検定協会の承認、推奨、その他の検討を受けたものではありません。
+          </p>
         </div>
       </div>
       <Footer />
