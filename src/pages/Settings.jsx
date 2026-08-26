@@ -2,15 +2,12 @@ import React from 'react';
 
 export default function Settings({ currentMode, goHome, startGame, currentCourse }) {
   
-  // 1級マスター選択時かどうかで、高速モードの挙動を切り替える
   const isMasterCourse = currentCourse === 'eiken1_master';
 
   const handleHighSpeedStart = () => {
     if (isMasterCourse) {
-      // 1級マスターの場合は画像・音声・音読の Advanced モードへ
       startGame('advanced', null);
     } else {
-      // それ以外のコースの場合は、強制的に5秒制限のスパルタテキストモードへ
       startGame('test', 5000);
     }
   };
@@ -19,7 +16,6 @@ export default function Settings({ currentMode, goHome, startGame, currentCourse
     <div className="h-screen w-screen bg-macaron-gradient p-4 md:p-6 flex flex-col items-center justify-center font-sans overflow-y-auto">
       <div className="max-w-2xl w-full bg-white/80 backdrop-blur-xl p-6 md:p-10 rounded-[3rem] shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/60 relative">
         
-        {/* 戻るボタン */}
         <button 
           onClick={goHome} 
           className="absolute top-6 left-6 md:top-8 md:left-8 w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 text-gray-500 rounded-full font-bold active:scale-90 transition-all shadow-sm"
@@ -53,7 +49,7 @@ export default function Settings({ currentMode, goHome, startGame, currentCourse
             </p>
           </button>
 
-          {/* --- パターンB: 高速・高負荷学習 --- */}
+          {/* --- パターンB: 画像・発音マスター（旧：高速アサルト） --- */}
           <button
             onClick={handleHighSpeedStart}
             className="group relative flex flex-col items-center justify-center bg-gradient-to-br from-rose-500 to-orange-500 p-8 md:p-10 rounded-[2.5rem] shadow-lg hover:shadow-2xl active:scale-95 transition-all duration-300 border-t-[3px] border-white/30 overflow-hidden"
@@ -63,20 +59,20 @@ export default function Settings({ currentMode, goHome, startGame, currentCourse
               ⚡
             </div>
             <h3 className="text-2xl font-black text-white tracking-tight mb-2">
-              {isMasterCourse ? '高速アサルト' : 'スピード特訓'}
+              {/* ★ ここを分かりやすい名前に修正 */}
+              {isMasterCourse ? '画像・発音マスター' : 'スピード特訓'}
             </h3>
             <p className="text-rose-100 text-sm font-bold text-center leading-relaxed">
               {isMasterCourse 
-                ? <><span className="text-yellow-200">画像＆音声・音読</span><br/>脳に直接負荷をかける</>
+                ? <><span className="text-yellow-200">画像・音声・音読を駆使した</span><br/>実践的トレーニング</>
                 : <>極限の時間制限<br/>反射神経を鍛える</>
               }
             </p>
-            
-            {/* 装飾用のアニメーションエフェクト */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 bg-yellow-400/20 rounded-full blur-2xl group-hover:animate-pulse"></div>
           </button>
-
         </div>
+        
+        {/* 今後ここに「画像ギャラリーを見る」ボタンを追加する予定です */}
+
       </div>
     </div>
   );

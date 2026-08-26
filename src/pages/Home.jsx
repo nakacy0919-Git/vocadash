@@ -6,16 +6,29 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
   const [overallProgress, setOverallProgress] = useState(0);
   const [nextChunk, setNextChunk] = useState(null);
   const [remainingChunks, setRemainingChunks] = useState(0);
+  
+  // ★ 新規追加: ギャラリーモードの表示・非表示を管理するState
+  const [showGallery, setShowGallery] = useState(false);
 
   const chunkCount = Math.ceil((questionsData?.length || 0) / 10);
   const chunks = Array.from({ length: chunkCount }, (_, i) => i);
+
+  // ★ 新規追加: JSONのパスから画像(1.webp等)のパスを抽出する関数（ギャラリー用）
+  const getActualImagePath = (rawPath) => {
+    if (!rawPath) return '';
+    const parts = rawPath.split('/');
+    const fileName = parts.pop();
+    const dirPath = parts.join('/');
+    const match = fileName.match(/^(\d+)/);
+    if (match) return `${dirPath}/${match[1]}.webp`;
+    return encodeURI(rawPath);
+  };
 
   useEffect(() => {
     const historyKey = `vocaDashHistory_${currentCourse}`;
     const history = JSON.parse(localStorage.getItem(historyKey) || '[]');
     setTotalPlays(history.length);
 
-    // --- 1. 全体定着率と次やるべきセクションの計算 ---
     let totalMastery = 0;
     let nextSuggested = null;
     let uncompletedCount = 0;
@@ -26,7 +39,6 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
       
       if (mastery < 100) {
         uncompletedCount++;
-        // まだ100%になっていない最初のセクションを「次のミッション」にする
         if (nextSuggested === null) nextSuggested = chunkIndex;
       }
     });
@@ -36,15 +48,13 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
     setNextChunk(nextSuggested);
     setRemainingChunks(uncompletedCount);
 
-    // --- 2. 連続学習日数（ストリーク）の計算 ---
     if (history.length > 0) {
-      // YYYY-MM-DD の形式でユニークな日付のリストを作る
       const dates = [...new Set(history.map(h => {
         const d = new Date(h.date);
         return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
       }))];
       
-      dates.sort((a, b) => new Date(b) - new Date(a)); // 新しい順に並べる
+      dates.sort((a, b) => new Date(b) - new Date(a)); 
 
       const todayObj = new Date();
       const today = `${todayObj.getFullYear()}-${todayObj.getMonth() + 1}-${todayObj.getDate()}`;
@@ -54,7 +64,6 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
       const yesterday = `${yesterdayObj.getFullYear()}-${yesterdayObj.getMonth() + 1}-${yesterdayObj.getDate()}`;
 
       let streak = 0;
-      // 今日または昨日に学習していればストリーク継続
       if (dates[0] === today || dates[0] === yesterday) {
         streak = 1;
         let currentDateObj = new Date(dates[0]);
@@ -72,7 +81,6 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
     }
   }, [currentCourse, questionsData]);
 
-  // --- 3. 定着率に応じたランク（称号）の判定 ---
   const getRankInfo = (progress) => {
     if (progress === 100) return { title: 'レジェンド', icon: '👑', color: 'text-yellow-500', bg: 'bg-gradient-to-br from-yellow-100 to-amber-100', border: 'border-yellow-300' };
     if (progress >= 80) return { title: 'マスター', icon: '⭐', color: 'text-blue-500', bg: 'bg-gradient-to-br from-blue-50 to-blue-100', border: 'border-blue-200' };
@@ -83,11 +91,82 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
 
   const rank = getRankInfo(overallProgress);
 
+  // 🌟 ギャラリーモードの描画処理
+  if (showGallery) {
+    return (
+      <div className="min-h-screen w-screen bg-macaron-gradient p-4 md:p-8 flex flex-col items-center overflow-y-auto custom-scrollbar font-sans pb-20">
+        <div className="w-full max-w-6xl animate-fadeIn">
+          
+          <header className="mb-8 flex items-center justify-between sticky top-0 z-50 bg-white/60 backdrop-blur-md p-4 rounded-3xl border border-white/50 shadow-sm">
+            <button 
+              onClick={() => setShowGallery(false)}
+              className="text-sm font-black text-gray-500 bg-white px-5 py-2.5 rounded-full hover:bg-gray-50 transition-all shadow-sm active:scale-95 flex items-center gap-2"
+            >
+              ← ダッシュボードへ
+            </button>
+            <h1 className="text-xl md:text-2xl font-black text-gray-700 tracking-tighter drop-shadow-sm">
+              単語ギャラリー ({questionsData.length}語)
+            </h1>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {questionsData.map((q, idx) => (
+              <div key={idx} className="bg-white/80 backdrop-blur-sm rounded-[2rem] p-5 shadow-sm border border-white/60 flex flex-col hover:shadow-lg transition-all group">
+                
+                {q.image && (
+                  <div className="overflow-hidden rounded-[1.5rem] mb-4 aspect-video">
+                    <img src={getActualImagePath(q.image)} alt={q.targetWord} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                )}
+                
+                <div className="flex-1 flex flex-col">
+                  <span className="text-indigo-400 font-black text-xs mb-2 inline-block uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full self-start">
+                    No. {idx + 1}
+                  </span>
+                  
+                  <h3 className="text-lg font-black text-gray-800 mb-3 leading-snug">
+                    {q.english.split(' ').map((w, i) => {
+                      const clean = w.replace(/[.,!?'"]/g, '');
+                      // ターゲット語彙と一致したら青文字＋下線で強調
+                      if (q.targetWord && clean.toLowerCase() === q.targetWord.toLowerCase()) {
+                        return <span key={i} className="text-blue-600 border-b-2 border-blue-400/50">{w} </span>;
+                      }
+                      return <span key={i}>{w} </span>;
+                    })}
+                  </h3>
+                  
+                  <p className="text-gray-500 font-medium text-sm mb-6 mt-auto">
+                    {q.japanese}
+                  </p>
+                </div>
+
+                <button 
+                  onClick={() => {
+                    if (q.audio) {
+                      new Audio(encodeURI(q.audio)).play().catch(e => console.log(e));
+                    }
+                  }} 
+                  disabled={!q.audio}
+                  className="w-full bg-blue-50 hover:bg-blue-100 disabled:bg-gray-100 disabled:text-gray-400 text-blue-500 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors active:scale-95"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" /></svg>
+                  音声を再生
+                </button>
+
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </div>
+    );
+  }
+
+  // 🌟 通常のダッシュボード画面
   return (
     <div className="h-screen w-screen bg-macaron-gradient p-4 md:p-8 flex flex-col items-center overflow-y-auto custom-scrollbar font-sans pb-20">
       <div className="w-full max-w-3xl">
         
-        {/* --- ヘッダー領域 --- */}
         <header className="mb-6 mt-2 relative animate-fadeIn">
           <button 
             onClick={goCourseSelect}
@@ -106,7 +185,6 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
           </div>
         </header>
 
-        {/* --- ステータス・ダッシュボード（RPG風） --- */}
         <section className="glass-panel-light rounded-[2rem] p-6 mb-8 border border-white/60 shadow-xl relative overflow-hidden animate-fadeIn delay-100">
           
           <div className="flex justify-between items-start mb-6">
@@ -137,21 +215,18 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
               </div>
             </div>
             
-            {/* メインプログレスバー */}
             <div className="w-full bg-white/50 h-6 rounded-full overflow-hidden shadow-inner p-1 border border-white">
               <div 
                 className={`h-full rounded-full transition-all duration-1000 ease-out shadow-sm relative overflow-hidden
                   ${overallProgress === 100 ? 'bg-gradient-to-r from-green-400 to-emerald-500' : 'bg-gradient-to-r from-blue-400 to-indigo-500'}`} 
                 style={{ width: `${overallProgress}%` }}
               >
-                {/* プログレスバー内のキラキラアニメーション */}
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shimmer"></div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* --- 次のミッション（ナビゲーション） --- */}
         {remainingChunks > 0 && nextChunk !== null ? (
           <section className="mb-10 animate-fadeIn delay-200">
             <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2rem] p-6 text-white shadow-[0_15px_30px_-10px_rgba(99,102,241,0.5)] relative overflow-hidden border border-indigo-400/50">
@@ -193,7 +268,28 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
           </section>
         )}
 
-        {/* --- セクション学習（各チャンクの進捗） --- */}
+        {/* ★ 新規追加: ギャラリーモードへの入り口（画像がある場合のみ表示） */}
+        {questionsData && questionsData[0] && questionsData[0].image && (
+          <section className="mb-10 animate-fadeIn delay-300">
+             <button 
+               onClick={() => setShowGallery(true)}
+               className="w-full bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-500 hover:to-orange-500 text-white p-6 rounded-[2rem] shadow-lg flex items-center justify-between transition-all active:scale-95 border-t-2 border-white/40 group overflow-hidden relative"
+             >
+               <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+               <div className="flex items-center gap-4 relative z-10">
+                 <div className="text-4xl bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">
+                   🖼️
+                 </div>
+                 <div className="text-left">
+                   <h3 className="text-xl font-black mb-1">単語ギャラリーを見る</h3>
+                   <p className="text-amber-100 text-sm font-bold">画像・音声・意味を一覧でサクッと予習！</p>
+                 </div>
+               </div>
+               <span className="text-3xl text-white/50 group-hover:text-white transition-colors relative z-10">→</span>
+             </button>
+          </section>
+        )}
+
         <section className="mb-10 animate-fadeIn delay-300">
           <h2 className="text-xl font-black text-gray-700 mb-4 flex items-center gap-2">
             📚 セクション別 定着度
@@ -243,7 +339,6 @@ export default function Home({ handleSelectMode, currentCourse, courseTitle, goC
           </div>
         </section>
 
-        {/* --- ランダム特訓モード --- */}
         <section className="mb-8 animate-fadeIn delay-400">
            <h2 className="text-xl font-black text-gray-700 mb-4 flex items-center gap-2">
             🎲 ランダム特訓（総復習）

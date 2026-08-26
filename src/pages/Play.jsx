@@ -105,8 +105,18 @@ export default function Play({
     window.speechSynthesis.speak(utterance);
   };
 
-  // ★ 追加：すべてのボタンを「0秒反応」にする魔法の関数
-  // e.preventDefault()を入れることで「2回押されたと勘違いするバグ」も防ぎます
+  const playMainAudio = (fallbackText) => {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    
+    if (currentQuestion.audio) {
+      const audioUrl = encodeURI(currentQuestion.audio);
+      const audio = new Audio(audioUrl);
+      audio.play().catch(e => console.log("Audio play failed", e));
+    } else {
+      handleReadAloud(fallbackText);
+    }
+  };
+
   const instantTrigger = (action) => (e) => {
     if (e.cancelable) e.preventDefault(); 
     action();
@@ -224,8 +234,8 @@ export default function Play({
                        {completeSentence}
                      </span>
                      <button 
-                       onTouchStart={instantTrigger(() => handleReadAloud(completeSentence))}
-                       onMouseDown={instantTrigger(() => handleReadAloud(completeSentence))}
+                       onTouchStart={instantTrigger(() => playMainAudio(completeSentence))}
+                       onMouseDown={instantTrigger(() => playMainAudio(completeSentence))}
                        className="shrink-0 w-10 h-10 flex items-center justify-center bg-rose-100 text-rose-500 rounded-full shadow-sm active:scale-90 transition-transform active:bg-rose-200"
                      >
                        🔊
@@ -282,8 +292,8 @@ export default function Play({
 
               <div className="w-full flex justify-end mb-6">
                 <button 
-                  onTouchStart={instantTrigger(() => handleReadAloud(completeSentence))}
-                  onMouseDown={instantTrigger(() => handleReadAloud(completeSentence))}
+                  onTouchStart={instantTrigger(() => playMainAudio(completeSentence))}
+                  onMouseDown={instantTrigger(() => playMainAudio(completeSentence))}
                   className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
                 >
                   🔊
@@ -364,7 +374,6 @@ export default function Play({
 
             <div className="w-full flex items-center justify-between border-t border-gray-100 pt-6 mt-2 relative z-10 min-h-[4rem]">
               <button
-                // ★ 修正：Japaneseボタンも0秒反応化！
                 onTouchStart={instantTrigger(() => setShowJapanese(!showJapanese))}
                 onMouseDown={instantTrigger(() => setShowJapanese(!showJapanese))}
                 className={`flex items-center gap-2 px-5 py-2.5 font-bold rounded-full text-sm transition-all shadow-sm border active:scale-95 ${
@@ -377,9 +386,8 @@ export default function Play({
               </button>
               
               <button 
-                // ★ 修正：🔊アイコンも0秒反応化！
-                onTouchStart={instantTrigger(() => handleReadAloud(questionForSpeech))}
-                onMouseDown={instantTrigger(() => handleReadAloud(questionForSpeech))}
+                onTouchStart={instantTrigger(() => playMainAudio(questionForSpeech))}
+                onMouseDown={instantTrigger(() => playMainAudio(questionForSpeech))}
                 className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-500 rounded-full shadow-sm active:scale-95 transition-transform active:bg-blue-200 text-2xl"
               >
                 🔊
