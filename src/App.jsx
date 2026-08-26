@@ -10,11 +10,9 @@ import BrowserGuide from './components/BrowserGuide';
 // データのインポート
 import regularData from './data/regular.json';
 import regular2Data from "./data/regular2.json";
-import { readingLessons } from './data/lessons'; // 長文読解復活！
+import { readingLessons } from './data/lessons';
 
-// 英検1級マスターモード用のデータとコンポーネント
 import PlayAdvanced from './pages/PlayAdvanced';
-import eiken1VerbData from './data/eiken1_verb.json'; 
 
 const COURSE_MAP = {
   regular: '第1回 定期対策 KICK OFF',
@@ -23,7 +21,7 @@ const COURSE_MAP = {
   eiken_2: '英検 2級',
   eiken_pre1: '英検 準1級',
   eiken_1: '英検 1級',
-  reading: '業後補習用（長文読解）', // 長文読解復活！
+  reading: '業後補習用（長文読解）',
   eiken1_master: '英検1級 マスター',
 };
 
@@ -66,7 +64,7 @@ function App() {
   const onSelectCourse = (courseId) => {
     if (courseId === 'regular') {
       setAppState('regular_select'); 
-    } else if (courseId === 'reading') { // 長文読解復活！
+    } else if (courseId === 'reading') {
       setCurrentCourse(courseId);
       setAppState('lesson_select');
     } else if (courseId === 'eiken1_master') {
@@ -85,19 +83,24 @@ function App() {
     setAppState('home');
   };
 
-  const onSelectEiken1Master = (partOfSpeech) => {
+  // ▼ 変更：ファイルがない場合はアラートを出し、あれば読み込む安全な方式
+  const onSelectEiken1Master = async (partOfSpeech) => {
     setCurrentCourse('eiken1_master');
     setCurrentStage(partOfSpeech);
-    if (partOfSpeech === 'verb') {
-      setQuestionsData(eiken1VerbData);
+    try {
+      const module = await import(`./data/eiken1_${partOfSpeech}.json`);
+      setQuestionsData(module.default || module);
+      setAppState('home');
+    } catch (error) {
+      console.error("データの読み込みに失敗しました:", error);
+      alert(`まだ ${partOfSpeech} のデータファイルが src/data/ フォルダ内にありません。`);
     }
-    setAppState('home');
   };
 
   const goStageSelect = () => {
     if (currentCourse === 'regular' || currentCourse === 'regular2') {
       setAppState('regular_select');
-    } else if (currentCourse === 'reading') { // 長文読解復活！
+    } else if (currentCourse === 'reading') {
       setCurrentStage(null);
       setAppState('lesson_select');
     } else if (currentCourse === 'eiken1_master') {
@@ -121,7 +124,7 @@ function App() {
     }
   };
 
-  const onSelectLesson = (lessonNum) => { // 長文読解復活！
+  const onSelectLesson = (lessonNum) => {
     setCurrentStage(lessonNum);
     setQuestionsData(readingLessons[lessonNum]);
     setAppState('home');
@@ -176,7 +179,7 @@ function App() {
   const getHistoryKey = () => {
     if (currentCourse === 'regular') return `vocaDashHistory_regular`;
     if (currentCourse === 'regular2') return `vocaDashHistory_regular2`;
-    if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`; // 長文読解復活！
+    if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`;
     if (currentCourse === 'eiken1_master') return `vocaDashHistory_eiken1_master_${currentStage}`;
     return `vocaDashHistory_${currentCourse}_stage${currentStage}`;
   };
@@ -215,7 +218,7 @@ function App() {
 
   const getDisplayTitle = () => {
     if (currentCourse === 'regular' || currentCourse === 'regular2') return COURSE_MAP[currentCourse];
-    if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`; // 長文読解復活！
+    if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`;
     if (currentCourse === 'eiken1_master') {
       const typeMap = { verb: '動詞', adjective: '形容詞', noun: '名詞', phrasal_verb: '句動詞' };
       return `${COURSE_MAP[currentCourse]} - ${typeMap[currentStage]}`;
@@ -231,7 +234,6 @@ function App() {
         <CourseSelect onSelectCourse={onSelectCourse} />
       )}
 
-      {/* 定期考査専用の選択画面 */}
       {appState === 'regular_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-blue-600">定期考査対策 - コース選択</h2>
@@ -243,7 +245,6 @@ function App() {
         </div>
       )}
 
-      {/* 長文読解専用のLesson選択画面 (長文読解復活！) */}
       {appState === 'lesson_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-teal-600">業後補習用 - Lesson選択</h2>
@@ -258,7 +259,7 @@ function App() {
         </div>
       )}
 
-      {/* 英検1級マスター用の品詞選択画面 */}
+      {/* ▼ 変更：形容詞・名詞・句動詞のボタンをすべて有効化！ */}
       {appState === 'eiken1_master_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-purple-600">英検1級マスター - 品詞選択</h2>
@@ -266,14 +267,14 @@ function App() {
             <button onClick={() => onSelectEiken1Master('verb')} className="bg-white border-2 border-purple-500 text-purple-600 font-bold py-4 rounded-xl shadow-sm hover:bg-purple-50 transition">
               動詞 (100語)
             </button>
-            <button disabled className="bg-gray-200 border-2 border-gray-400 text-gray-400 font-bold py-4 rounded-xl opacity-60">
-              形容詞 (準備中)
+            <button onClick={() => onSelectEiken1Master('adjective')} className="bg-white border-2 border-purple-500 text-purple-600 font-bold py-4 rounded-xl shadow-sm hover:bg-purple-50 transition">
+              形容詞 (100語)
             </button>
-            <button disabled className="bg-gray-200 border-2 border-gray-400 text-gray-400 font-bold py-4 rounded-xl opacity-60">
-              名詞 (準備中)
+            <button onClick={() => onSelectEiken1Master('noun')} className="bg-white border-2 border-purple-500 text-purple-600 font-bold py-4 rounded-xl shadow-sm hover:bg-purple-50 transition">
+              名詞 (100語)
             </button>
-            <button disabled className="bg-gray-200 border-2 border-gray-400 text-gray-400 font-bold py-4 rounded-xl opacity-60">
-              句動詞 (準備中)
+            <button onClick={() => onSelectEiken1Master('phrasal_verb')} className="bg-white border-2 border-purple-500 text-purple-600 font-bold py-4 rounded-xl shadow-sm hover:bg-purple-50 transition">
+              句動詞 (100語)
             </button>
           </div>
           <button onClick={goCourseSelect} className="mt-8 text-gray-500 underline">コース選択に戻る</button>
@@ -304,7 +305,6 @@ function App() {
         />
       )}
 
-      {/* マスターモードの場合は PlayAdvanced を表示 */}
       {appState === 'play' && playMode === 'advanced' && (
         <PlayAdvanced 
           currentQuestion={selectedQuestions[currentIndex]}
@@ -315,7 +315,6 @@ function App() {
         />
       )}
 
-      {/* 従来モードの場合は Play を表示 */}
       {appState === 'play' && playMode !== 'advanced' && (
         <Play 
           playMode={playMode}

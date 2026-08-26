@@ -7,7 +7,7 @@ function PlayAdvanced({
   onNext, 
   goHome 
 }) {
-  const [phase, setPhase] = useState('listening'); // 'listening' または 'speaking'
+  const [phase, setPhase] = useState('listening');
   const [imageOptions, setImageOptions] = useState([]);
   const [dictPopup, setDictPopup] = useState(null);
   const [isListening, setIsListening] = useState(false);
@@ -17,20 +17,37 @@ function PlayAdvanced({
   const audioRef = useRef(null);
   const recognitionRef = useRef(null);
 
-  // 1. 問題が切り替わるたびに、ダミー画像を3つ選んで四択を生成＆音声再生
+  // ▼ 新規追加：JSONの長い画像パスから、先頭の数字だけを抜き出して正しいパス(例: 1.webp)を生成する関数
+  const getActualImagePath = (rawPath) => {
+    if (!rawPath) return '';
+    const parts = rawPath.split('/');
+    const fileName = parts.pop();
+    const dirPath = parts.join('/');
+    
+    // ファイル名の先頭にある数字の塊(1桁以上)を抽出
+    const match = fileName.match(/^(\d+)/);
+    if (match) {
+      // ディレクトリパス ＋ 抽出した数字 ＋ .webp に変換して返す
+      return `${dirPath}/${match[1]}.webp`;
+    }
+    // もし数字がなければエンコードしてそのまま返す
+    return encodeURI(rawPath);
+  };
+
   useEffect(() => {
     if (!currentQuestion) return;
 
-    // 正解の画像
-    const correctImage = currentQuestion.image;
-    // 他の問題からダミー画像を3つランダムに抽出
+    // 正解の画像（番号のみに変換）
+    const correctImage = getActualImagePath(currentQuestion.image);
+    
+    // ダミーの画像（番号のみに変換）
     const otherImages = allQuestions
       .filter(q => q.id !== currentQuestion.id)
-      .map(q => q.image)
+      .map(q => getActualImagePath(q.image))
       .sort(() => 0.5 - Math.random())
       .slice(0, 3);
 
-    // 正解1つ ＋ ダミー3つ をシャッフル
+    // 正解とダミーを混ぜてシャッフル
     const options = [correctImage, ...otherImages].sort(() => 0.5 - Math.random());
     
     setImageOptions(options);
@@ -39,7 +56,6 @@ function PlayAdvanced({
     setTranscript('');
     setFeedback('');
 
-    // 音声の自動再生
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.load();
@@ -47,13 +63,12 @@ function PlayAdvanced({
     }
   }, [currentQuestion, allQuestions, currentIndex]);
 
-  // 2. 音声認識（Web Speech API）のセットアップ
   useEffect(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (SpeechRecognition) {
       const recognition = new SpeechRecognition();
       recognition.lang = 'en-US';
-      recognition.interimResults = true; // 喋っている途中でも結果を返す
+      recognition.interimResults = true;
       recognition.continuous = true;
 
       recognition.onresult = (event) => {
@@ -74,27 +89,22 @@ function PlayAdvanced({
     }
   }, [currentQuestion]);
 
-  // 画像を選択したときの処理
   const handleImageClick = (imgSrc) => {
     if (phase !== 'listening') return;
     
-    if (imgSrc === currentQuestion.image) {
-      // 正解の場合、スピーキング（音読）フェーズへ
+    // クリックした画像が、正解の画像（パス変換後）と一致するか判定
+    if (imgSrc === getActualImagePath(currentQuestion.image)) {
       setPhase('speaking');
     } else {
-      // 不正解の場合は赤く光るなどのフィードバック（今回はアラート）
       alert('違います！音声をもう一度聞いてみましょう。');
       if (audioRef.current) audioRef.current.play();
     }
   };
 
-  // 音読の判定処理（正解の英文と部分一致すればクリア）
   const checkPronunciation = (spokenText) => {
     if (!currentQuestion) return;
     const targetText = currentQuestion.english.toLowerCase().replace(/[.,!?'"]/g, '');
     const spokenTextClean = spokenText.toLowerCase().replace(/[.,!?'"]/g, '');
-
-    // 喋った言葉の中に、ターゲットとなるチャンクが含まれていればOKとする（判定を少し甘めに）
     const targetChunk = currentQuestion.chunk.toLowerCase().replace(/[.,!?'"]/g, '');
 
     if (spokenTextClean.includes(targetChunk) || spokenTextClean.includes(targetText)) {
@@ -102,12 +112,11 @@ function PlayAdvanced({
       setIsListening(false);
       setFeedback('Excellent!! 発音バッチリです！');
       setTimeout(() => {
-        onNext(); // 次の問題へ
+        onNext(); 
       }, 1500);
     }
   };
 
-  // マイクのON/OFF切り替え
   const toggleListening = () => {
     if (isListening) {
       recognitionRef.current?.stop();
@@ -120,12 +129,10 @@ function PlayAdvanced({
     }
   };
 
-  // 辞書クリック用の文生成（記号を除去して辞書マッチング）
   const renderSentence = (sentence, dictionary) => {
     const words = sentence.split(' ');
     return words.map((word, index) => {
-      const cleanWord = word.replace(/[.,!?'"]/g, ''); // 記号を取り除く
-      // 辞書データと一致するかチェック（大文字小文字無視）
+      const cleanWord = word.replace(/[.,!?'"]/g, '');
       const dictKey = Object.keys(dictionary).find(k => k.toLowerCase() === cleanWord.toLowerCase());
       
       if (dictKey) {
@@ -147,10 +154,9 @@ function PlayAdvanced({
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center py-6 px-4">
-      {/* 隠しオーディオタグ（自動再生用） */}
+      {/* 音声ファイルのパス（001.mp3 の形式で読み込み） */}
       <audio ref={audioRef} src={currentQuestion.audio} />
 
-      {/* 上部ヘッダー */}
       <div className="w-full max-w-2xl flex justify-between items-center mb-6">
         <button onClick={goHome} className="text-gray-500 font-bold hover:text-gray-700">
           ◀ 中断して戻る
@@ -163,7 +169,6 @@ function PlayAdvanced({
         </button>
       </div>
 
-      {/* フェーズ１：画像四択（リスニング） */}
       {phase === 'listening' && (
         <div className="w-full max-w-2xl animate-fade-in flex flex-col items-center">
           <h2 className="text-xl font-bold text-gray-800 mb-4 text-center">
@@ -176,7 +181,7 @@ function PlayAdvanced({
                 onClick={() => handleImageClick(imgSrc)}
                 className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer border-4 border-transparent hover:border-teal-400 transition transform hover:scale-105 aspect-video flex items-center justify-center bg-gray-200"
               >
-                {/* 実際の画像ファイルがない場合はaltテキストが出ます。画像を用意したら表示されます */}
+                {/* 変換済みの画像パス(1.webp等)を表示 */}
                 <img src={imgSrc} alt={`option-${idx}`} className="object-cover w-full h-full" />
               </div>
             ))}
@@ -184,10 +189,10 @@ function PlayAdvanced({
         </div>
       )}
 
-      {/* フェーズ２：音読＆辞書確認（スピーキング） */}
       {phase === 'speaking' && (
         <div className="w-full max-w-2xl bg-white p-6 rounded-2xl shadow-lg animate-fade-in flex flex-col items-center text-center">
-          <img src={currentQuestion.image} alt="correct" className="h-48 object-cover rounded-lg mb-6 shadow" />
+          {/* スピーキングフェーズでも変換済みの正解画像を表示 */}
+          <img src={getActualImagePath(currentQuestion.image)} alt="correct" className="h-48 object-cover rounded-lg mb-6 shadow" />
           
           <p className="text-gray-500 mb-2 font-bold tracking-widest text-sm uppercase">TARGET SENTENCE</p>
           <div className="text-2xl font-medium text-gray-800 mb-4 leading-relaxed">
@@ -196,7 +201,6 @@ function PlayAdvanced({
 
           <p className="text-gray-600 mb-6">{currentQuestion.japanese}</p>
 
-          {/* 辞書ポップアップ */}
           {dictPopup && (
             <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 px-6 py-4 rounded-xl mb-6 shadow-sm w-full max-w-md relative">
               <button 
@@ -210,7 +214,6 @@ function PlayAdvanced({
             </div>
           )}
 
-          {/* マイク判定UI */}
           <div className="w-full bg-gray-50 p-4 rounded-xl flex flex-col items-center">
             <button 
               onClick={toggleListening}
