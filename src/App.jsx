@@ -9,13 +9,12 @@ import BrowserGuide from './components/BrowserGuide';
 
 // データのインポート
 import regularData from './data/regular.json';
-import regular2Data from "./data/regular2.json"; 
-import { readingLessons } from './data/lessons';
+import regular2Data from "./data/regular2.json";
+import { readingLessons } from './data/lessons'; // 長文読解復活！
 
-// ▼ 新規追加：英検1級マスターモード用のデータとコンポーネント
+// 英検1級マスターモード用のデータとコンポーネント
 import PlayAdvanced from './pages/PlayAdvanced';
 import eiken1VerbData from './data/eiken1_verb.json'; 
-// (後で形容詞や名詞ができたらここに追加インポートします)
 
 const COURSE_MAP = {
   regular: '第1回 定期対策 KICK OFF',
@@ -24,8 +23,8 @@ const COURSE_MAP = {
   eiken_2: '英検 2級',
   eiken_pre1: '英検 準1級',
   eiken_1: '英検 1級',
-  reading: '業後補習用（長文読解）',
-  eiken1_master: '英検1級 マスター', // ★追加
+  reading: '業後補習用（長文読解）', // 長文読解復活！
+  eiken1_master: '英検1級 マスター',
 };
 
 function App() {
@@ -64,15 +63,14 @@ function App() {
     setAppState('course_select');
   };
 
-  // ▼ コース選択時の分岐
   const onSelectCourse = (courseId) => {
     if (courseId === 'regular') {
       setAppState('regular_select'); 
-    } else if (courseId === 'reading') {
+    } else if (courseId === 'reading') { // 長文読解復活！
       setCurrentCourse(courseId);
       setAppState('lesson_select');
     } else if (courseId === 'eiken1_master') {
-      setAppState('eiken1_master_select'); // ★新メニューへ
+      setAppState('eiken1_master_select'); 
     } else {
       setCurrentCourse(courseId);
       setAppState('stage_select');
@@ -87,7 +85,6 @@ function App() {
     setAppState('home');
   };
 
-  // ▼ 英検1級マスターの品詞を選んだときの処理
   const onSelectEiken1Master = (partOfSpeech) => {
     setCurrentCourse('eiken1_master');
     setCurrentStage(partOfSpeech);
@@ -100,7 +97,7 @@ function App() {
   const goStageSelect = () => {
     if (currentCourse === 'regular' || currentCourse === 'regular2') {
       setAppState('regular_select');
-    } else if (currentCourse === 'reading') {
+    } else if (currentCourse === 'reading') { // 長文読解復活！
       setCurrentStage(null);
       setAppState('lesson_select');
     } else if (currentCourse === 'eiken1_master') {
@@ -124,8 +121,8 @@ function App() {
     }
   };
 
-  const onSelectLesson = (lessonNum) => {
-    setCurrentStage(lessonNum); 
+  const onSelectLesson = (lessonNum) => { // 長文読解復活！
+    setCurrentStage(lessonNum);
     setQuestionsData(readingLessons[lessonNum]);
     setAppState('home');
   };
@@ -179,7 +176,7 @@ function App() {
   const getHistoryKey = () => {
     if (currentCourse === 'regular') return `vocaDashHistory_regular`;
     if (currentCourse === 'regular2') return `vocaDashHistory_regular2`;
-    if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`;
+    if (currentCourse === 'reading') return `vocaDashHistory_reading_lesson${currentStage}`; // 長文読解復活！
     if (currentCourse === 'eiken1_master') return `vocaDashHistory_eiken1_master_${currentStage}`;
     return `vocaDashHistory_${currentCourse}_stage${currentStage}`;
   };
@@ -216,10 +213,9 @@ function App() {
     return (total / validResults.length / 1000).toFixed(1);
   };
 
-  // ▼ タイトル出し分け（英検1級マスターに対応）
   const getDisplayTitle = () => {
     if (currentCourse === 'regular' || currentCourse === 'regular2') return COURSE_MAP[currentCourse];
-    if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`;
+    if (currentCourse === 'reading') return `${COURSE_MAP[currentCourse]} - Lesson ${currentStage}`; // 長文読解復活！
     if (currentCourse === 'eiken1_master') {
       const typeMap = { verb: '動詞', adjective: '形容詞', noun: '名詞', phrasal_verb: '句動詞' };
       return `${COURSE_MAP[currentCourse]} - ${typeMap[currentStage]}`;
@@ -247,7 +243,7 @@ function App() {
         </div>
       )}
 
-      {/* 長文読解専用のLesson選択画面 */}
+      {/* 長文読解専用のLesson選択画面 (長文読解復活！) */}
       {appState === 'lesson_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-teal-600">業後補習用 - Lesson選択</h2>
@@ -262,7 +258,7 @@ function App() {
         </div>
       )}
 
-      {/* ▼ 新規追加：英検1級マスター用の品詞選択画面 */}
+      {/* 英検1級マスター用の品詞選択画面 */}
       {appState === 'eiken1_master_select' && (
         <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-gray-800">
           <h2 className="text-2xl font-bold mb-6 text-purple-600">英検1級マスター - 品詞選択</h2>
@@ -304,22 +300,22 @@ function App() {
           currentMode={currentMode}
           goHome={() => setAppState('home')}
           startGame={startGame}
-          currentCourse={currentCourse} // Settingsにコース情報を渡す
+          currentCourse={currentCourse} 
         />
       )}
 
-      {/* ▼ 新規追加：マスターモードの場合は PlayAdvanced を表示 */}
+      {/* マスターモードの場合は PlayAdvanced を表示 */}
       {appState === 'play' && playMode === 'advanced' && (
         <PlayAdvanced 
           currentQuestion={selectedQuestions[currentIndex]}
           allQuestions={questionsData}
           currentIndex={currentIndex}
-          onNext={() => submitRecord(true, 5000)} // 便宜上、クリアしたら「正解・5秒」として記録
+          onNext={() => submitRecord(true, 5000)} 
           goHome={() => setAppState('home')}
         />
       )}
 
-      {/* 従来モードの場合は Play を表示（英検1級データなら対象語彙を________に自動置換！） */}
+      {/* 従来モードの場合は Play を表示 */}
       {appState === 'play' && playMode !== 'advanced' && (
         <Play 
           playMode={playMode}
