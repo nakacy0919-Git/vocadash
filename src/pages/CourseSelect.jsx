@@ -1,7 +1,7 @@
 import React from 'react';
 // アセットフォルダに配置したロゴ画像をインポート
 import titleLogo from '../assets/title-logo.png';
-import Footer from '../components/Footer'; // ★ 追加：フッターのインポート
+import Footer from '../components/Footer'; // フッターのインポート
 
 const CATEGORIES = [
   { 
@@ -12,6 +12,15 @@ const CATEGORIES = [
     fromColor: 'from-blue-400', 
     toColor: 'to-blue-600',
     shadowColor: 'shadow-blue-500/50' 
+  },
+  { 
+    id: 'reading', 
+    title: '長文読解', 
+    subtitle: '業後補習',
+    badge: 'Reading', 
+    fromColor: 'from-teal-400', 
+    toColor: 'to-teal-600',
+    shadowColor: 'shadow-teal-500/50' 
   },
   { 
     id: 'eiken_pre2', 
@@ -49,15 +58,23 @@ const CATEGORIES = [
     toColor: 'to-rose-600',
     shadowColor: 'shadow-rose-500/50' 
   },
+  { 
+    id: 'eiken1_master', 
+    title: '1級マスター', 
+    subtitle: '画像・音声・音読',
+    badge: 'Advanced', 
+    fromColor: 'from-amber-400', 
+    toColor: 'to-amber-600',
+    shadowColor: 'shadow-amber-500/50' 
+  },
 ];
 
 export default function CourseSelect({ onSelectCourse }) {
   return (
-    // ★ 修正：フッターが画面下部に追従するように min-h-screen を追加
     <div className="min-h-screen w-screen bg-macaron-gradient p-4 md:p-6 flex flex-col items-center justify-start overflow-y-auto font-sans">
       
-      {/* 上部の余白調整（縦並びの中央寄せから、上寄せ＋余白に変更） */}
-      <div className="pt-10 md:pt-16 flex flex-col items-center w-full max-w-4xl">
+      {/* 上部の余白調整 */}
+      <div className="pt-10 md:pt-16 flex flex-col items-center w-full max-w-4xl flex-grow">
         {/* アプリタイトルロゴ */}
         <img 
           src={titleLogo} 
@@ -102,16 +119,16 @@ export default function CourseSelect({ onSelectCourse }) {
                 </span>
                 
                 {/* メインテキスト：スマホでは text-2xl に縮小し、改行を禁止(whitespace-nowrap) */}
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mt-2 md:mt-4 tracking-tighter leading-none drop-shadow-md whitespace-nowrap">
+                <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black text-white mt-2 md:mt-4 tracking-tighter leading-none drop-shadow-md whitespace-nowrap">
                   {cat.title}
                 </h2>
                 
                 {/* サブタイトル（級など）：こちらもはみ出さないように調整 */}
-                <p className="text-base sm:text-lg md:text-2xl font-black text-white/90 tracking-tight mt-1 md:mt-2 leading-tight drop-shadow-sm whitespace-nowrap">
+                <p className="text-sm sm:text-base md:text-xl font-black text-white/90 tracking-tight mt-1 md:mt-2 leading-tight drop-shadow-sm whitespace-nowrap">
                   {cat.subtitle}
                 </p>
                 
-                {/* 右下のアイコン装飾：スマホ画面では少し小さく・位置を調整 */}
+                {/* 右下のアイコン装飾 */}
                 <span className="absolute bottom-[-15px] md:bottom-[-25px] right-[-5px] md:right-[-10px] text-2xl md:text-4xl text-white/20 group-hover:text-white/50 transition-colors duration-300">
                   →
                 </span>
@@ -121,7 +138,6 @@ export default function CourseSelect({ onSelectCourse }) {
         </div>
       </div>
 
-      {/* ★ 追加：フッターを一番下に配置 */}
       <Footer />
     </div>
   );
