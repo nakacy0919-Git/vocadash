@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { CATALOG, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage } from './learning.js';
+import { CATALOG, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
 
 test('all catalog entries define study units', () => {
   assert.equal(CATALOG.length, 7);
@@ -40,4 +40,25 @@ test('spaced repetition records cards separately and schedules due dates', () =>
 test('converts media filenames without losing ordinary paths', () => {
   assert.equal(assetImage('/images/verb/1 example word.webp'),'/images/verb/1.webp');
   assert.equal(assetImage('/images/verb/1.webp'),'/images/verb/1.webp');
+});
+
+
+test('dialogue quiz separates speakers while preserving blanks and wording', () => {
+  const example = "A: Fran, why don't you ＿＿＿＿ some brownies? B: Good idea, Ken.";
+  assert.deepEqual(splitDialogueTurns(example), [
+    { speaker: 'A', text: "Fran, why don't you ＿＿＿＿ some brownies?" },
+    { speaker: 'B', text: "Good idea, Ken." }
+  ]);
+  assert.deepEqual(splitDialogueTurns('A: Hello. B: Hi. A: How are you?'), [
+    { speaker: 'A', text: 'Hello.' },
+    { speaker: 'B', text: 'Hi.' },
+    { speaker: 'A', text: 'How are you?' }
+  ]);
+  assert.deepEqual(splitDialogueTurns('A: Hello.\nB: Hi.'), [
+    { speaker: 'A', text: 'Hello.' },
+    { speaker: 'B', text: 'Hi.' }
+  ]);
+  assert.equal(splitDialogueTurns('We will meet at 10:30 tomorrow.'), null);
+  assert.equal(splitDialogueTurns('A: A single utterance.'), null);
+  assert.equal(splitDialogueTurns('The answer is A: but this is not a dialogue. B: Still text.'), null);
 });
