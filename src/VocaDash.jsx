@@ -204,7 +204,7 @@ export default function VocaDash() {
   useEffect(() => {
     const handler = e => {
       if (quizReviewOpen) {
-        if (e.key === 'Enter' || e.key === 'Escape') { e.preventDefault(); next(); }
+        if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
       if (mode === 'quiz' && feedback !== null) return;
