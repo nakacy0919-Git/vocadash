@@ -3,6 +3,40 @@ import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, s
 import './VocaDash.css';
 
 const MODULES = import.meta.glob('./data/*.json');
+
+let quizEffectsAudioContext;
+function playQuizFeedbackSound(correct, enabled) {
+  if (!enabled || typeof window === 'undefined') return;
+  const Context = window.AudioContext || window.webkitAudioContext;
+  if (!Context) return;
+  try {
+    if (!quizEffectsAudioContext) quizEffectsAudioContext = new Context();
+    if (quizEffectsAudioContext.state === 'suspended') {
+      quizEffectsAudioContext.resume().catch(() => {});
+    }
+    const now = quizEffectsAudioContext.currentTime;
+    const notes = correct
+      ? [[659.25, 0], [783.99, 0.105], [987.77, 0.21]]
+      : [[392, 0], [329.63, 0.15]];
+    notes.forEach(([frequency, delay]) => {
+      const oscillator = quizEffectsAudioContext.createOscillator();
+      const volume = quizEffectsAudioContext.createGain();
+      const start = now + delay;
+      oscillator.type = 'sine';
+      oscillator.frequency.setValueAtTime(frequency, start);
+      volume.gain.setValueAtTime(0.0001, start);
+      volume.gain.exponentialRampToValueAtTime(correct ? 0.075 : 0.052, start + 0.025);
+      volume.gain.exponentialRampToValueAtTime(0.0001, start + (correct ? 0.28 : 0.31));
+      oscillator.connect(volume);
+      volume.connect(quizEffectsAudioContext.destination);
+      oscillator.start(start);
+      oscillator.stop(start + 0.34);
+    });
+  } catch {
+    // Audio may be unavailable or blocked; the visual result always remains available.
+  }
+}
+
 const modes = [{ id: 'study', label: '覚える', icon: '▣' }, { id: 'quiz', label: '確認テスト', icon: '✦' }, { id: 'review', label: '復習', icon: '↻' }];
 const icons = {
   speaker: <><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></>,
@@ -58,6 +92,8 @@ export default function VocaDash() {
   const [cursor, setCursor] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [feedback, setFeedback] = useState(null);
+  const [quizCelebration, setQuizCelebration] = useState(null);
+  const [quizReviewOpen, setQuizReviewOpen] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [wordListOpen, setWordListOpen] = useState(false);
   const [wordQuery, setWordQuery] = useState('');
@@ -82,10 +118,19 @@ export default function VocaDash() {
     if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
   }, []);
   useEffect(() => () => { clearTimeout(quizTimer.current); stopAudio(); }, [stopAudio]);
-  const resetCard = () => { clearTimeout(quizTimer.current); stopAudio(); setRevealed(false); setFeedback(null); setImageError(false); };
+  const resetCard = () => {
+    clearTimeout(quizTimer.current);
+    stopAudio();
+    setRevealed(false);
+    setFeedback(null);
+    setQuizCelebration(null);
+    setQuizReviewOpen(false);
+    setImageError(false);
+  };
   useEffect(() => {
     setQueue(words); setCursor(0); setMode('study'); setRevealed(false);
-    setFeedback(null); setAutoplay(false); setSession({ answered: 0, correct: 0 });
+    setFeedback(null); setQuizCelebration(null); setQuizReviewOpen(false);
+    setAutoplay(false); setSession({ answered: 0, correct: 0 });
   }, [words]);
 
   const selectCourse = id => {
@@ -114,10 +159,21 @@ export default function VocaDash() {
   };
   const answer = option => {
     if (feedback !== null || !current) return;
+    clearTimeout(quizTimer.current);
     setFeedback(option.id);
+    setQuizCelebration(option.correct ? 'correct' : 'incorrect');
+    playQuizFeedbackSound(option.correct, store.settings.sound);
     setStore(prev => updateRecord(prev, current.id, option.correct));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
-    quizTimer.current = setTimeout(next, option.correct ? 900 : 1900);
+    if (option.correct) {
+      quizTimer.current = setTimeout(next, 1450);
+    } else {
+      // Never move past a wrong answer before the learner reads the translation.
+      quizTimer.current = setTimeout(() => {
+        setQuizCelebration(null);
+        setQuizReviewOpen(true);
+      }, 750);
+    }
   };
   const speak = (item = current, sentence = false) => {
     if (!item || !store.settings.sound) return;
@@ -147,6 +203,11 @@ export default function VocaDash() {
 
   useEffect(() => {
     const handler = e => {
+      if (quizReviewOpen) {
+        if (e.key === 'Escape') { e.preventDefault(); next(); }
+        return;
+      }
+      if (mode === 'quiz' && feedback !== null) return;
       if (wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); previous(); }
@@ -198,7 +259,38 @@ export default function VocaDash() {
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
             isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
-            mode === 'quiz' ? <div className="vd-quiz-body"><div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div><QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/><div className="vd-choice-grid">{options.map((opt, i) => <button disabled={feedback !== null} key={opt.id} onClick={() => answer(opt)} className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}><span>{i + 1}</span><strong>{opt.text}</strong>{feedback !== null && opt.correct && <Icon name="check"/>}</button>)}</div>{feedback !== null && <div className="vd-quiz-feedback" role="status"><strong>{options.find(o => o.id === feedback)?.correct ? '正解！' : '間違えた単語をもう一度確認'}</strong><span>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</span>{current.explanation && <small>{current.explanation}</small>}</div>}<div className="vd-quiz-next"><button onClick={next}>スキップ <Icon name="arrow" size={16}/></button></div></div> :
+            mode === 'quiz' ? (
+              <div className="vd-quiz-body">
+                <div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div>
+                <QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
+                <div className="vd-choice-grid">
+                  {options.map((opt, i) => (
+                    <button
+                      disabled={feedback !== null}
+                      key={opt.id}
+                      onClick={() => answer(opt)}
+                      className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}
+                    >
+                      <span>{i + 1}</span><strong>{opt.text}</strong>
+                      {feedback !== null && opt.correct && <Icon name="check"/>}
+                    </button>
+                  ))}
+                </div>
+                {quizCelebration && (
+                  <div className={'vd-quiz-burst vd-quiz-burst-' + quizCelebration} role="status" aria-live="polite">
+                    <div className="vd-quiz-burst-content">
+                      <div className="vd-quiz-result-symbol" aria-hidden="true">
+                        {quizCelebration === 'correct' ? '✓' : '×'}
+                      </div>
+                      <strong>{quizCelebration === 'correct' ? '正解！' : 'もう一度確認しよう'}</strong>
+                    </div>
+                  </div>
+                )}
+                <div className="vd-quiz-next">
+                  <button disabled={feedback !== null} onClick={next}>スキップ <Icon name="arrow" size={16}/></button>
+                </div>
+              </div>
+            ) :
             <div className="vd-card-area">
               <div className="vd-word-card"><div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
                 <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
@@ -231,6 +323,50 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
+    {quizReviewOpen && mode === 'quiz' && current && (
+      <div className="vd-quiz-review-backdrop">
+        <section className="vd-quiz-review-dialog" role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
+          <header className="vd-quiz-review-header">
+            <span className="vd-quiz-review-symbol" aria-hidden="true">×</span>
+            <div>
+              <div className="vd-quiz-review-eyebrow">LEARN FROM YOUR ANSWER</div>
+              <h2 id="vd-quiz-review-title">日本語訳を確認しよう</h2>
+              <p id="vd-quiz-review-description">正しい英文と訳を読んで、次の問題に進みましょう。</p>
+            </div>
+          </header>
+          <div className="vd-quiz-review-scroll">
+            <div className="vd-quiz-review-word">
+              <span>正解の単語</span>
+              <strong>{current.word}</strong>
+              {current.meaning && <p>{current.meaning}</p>}
+            </div>
+            <div className="vd-quiz-review-section">
+              <span>COMPLETE SENTENCE</span>
+              <div className="vd-quiz-review-english"><QuizSentence text={current.english}/></div>
+            </div>
+            <div className="vd-quiz-review-section vd-quiz-review-translation">
+              <span>日本語訳</span>
+              <p>{current.japanese || 'この例文の日本語訳はまだ登録されていません。'}</p>
+            </div>
+            {current.explanation && (
+              <div className="vd-quiz-review-section vd-quiz-review-hint">
+                <span>解き方のヒント</span>
+                <p>{current.explanation}</p>
+              </div>
+            )}
+            {!current.explanation && current.etymology && (
+              <div className="vd-quiz-review-section vd-quiz-review-hint">
+                <span>語源・使い方のヒント</span>
+                <p>{current.etymology}</p>
+              </div>
+            )}
+          </div>
+          <footer className="vd-quiz-review-footer">
+            <button autoFocus onClick={next}>訳を確認した・次の問題へ <Icon name="arrow" size={18}/></button>
+          </footer>
+        </section>
+      </div>
+    )}
     {savedError && <div role="alert" className="vd-save-warning">学習記録を保存できません。ブラウザの設定をご確認ください。<button onClick={() => setSavedError(false)}>閉じる</button></div>}
     {wordListOpen && <div className="vd-modal-overlay" onClick={() => setWordListOpen(false)}><div className="vd-modal" role="dialog" aria-modal="true" aria-label="単語一覧" onClick={e => e.stopPropagation()}><div className="vd-modal-header"><div><div className="vd-overline">{course.label} / {unit.label}</div><h2>単語一覧 <small>{words.length}語</small></h2></div><button onClick={() => setWordListOpen(false)} aria-label="閉じる"><Icon name="close"/></button></div><input className="vd-search" autoFocus placeholder="英単語・日本語から探す" value={wordQuery} onChange={e => setWordQuery(e.target.value)}/><div className="vd-word-list">{filtered.map((w, i) => <button key={w.id} onClick={() => jumpTo(w)}><span className="vd-word-index">{i + 1}</span><span className="vd-word-list-label"><strong>{w.word}</strong><small>{w.meaning || '例文で確認'}</small></span><span className={'vd-learning-dot ' + ((store.records[w.id]?.level || 0) >= 2 ? 'known' : isDue(store.records[w.id]) ? 'due' : '')}/><Icon name="arrow" size={16}/></button>)}{filtered.length === 0 && <p className="vd-no-results">一致する単語がありません。</p>}</div></div></div>}
   </div>;

@@ -62,3 +62,16 @@ test('dialogue quiz separates speakers while preserving blanks and wording', () 
   assert.equal(splitDialogueTurns('A: A single utterance.'), null);
   assert.equal(splitDialogueTurns('The answer is A: but this is not a dialogue. B: Still text.'), null);
 });
+
+
+test('full Japanese translations survive vocabulary normalization for review', () => {
+  const input = [{
+    id: 'translation', english: 'She ________ the decision.',
+    japanese: '彼女はその決定を惜しんだ。', choices: ['begrudged','drew','sang','lost'],
+    correct: 0, meaning: '不満に思う'
+  }];
+  const [word] = normalizeWords(input, 'eiken_1', '1');
+  assert.equal(word.english, 'She begrudged the decision.');
+  assert.equal(word.japanese, '彼女はその決定を惜しんだ。');
+  assert.equal(word.word, 'begrudged');
+});
