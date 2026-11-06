@@ -40,11 +40,12 @@ export function normalizeWords(raw, courseId, unitId) {
     const word = String(item.targetWord || choices[validIndex] || '').trim();
     const detail = (item.word_details || []).find(d => String(d.word).toLowerCase() === word.toLowerCase());
     const meaning = String(item.meaning || detail?.meaning || item.dictionary?.[word] || '').trim();
-    const english = String(item.english || '').replace('________', word);
+    const prompt = String(item.english || '');
+    const english = prompt.replace('________', word);
     const japanese = String(item.japanese || '').replace('________', meaning || '（空欄）');
     return {
       id: courseId + ':' + unitId + ':' + (item.id == null ? index : item.id),
-      word, meaning, english, japanese, explanation: item.explanation || '',
+      word, meaning, english, prompt, japanese, explanation: item.explanation || '',
       etymology: item.etymology || detail?.etymology || '',
       pronunciation: item.pronunciation || '',
       image: item.image || '', audio: item.audio || '',
