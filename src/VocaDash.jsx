@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled } from './lib/learning';
+import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns } from './lib/learning';
 import './VocaDash.css';
 
 const MODULES = import.meta.glob('./data/*.json');
@@ -17,6 +17,19 @@ const icons = {
 };
 function Icon({ name, size = 19 }) {
   return <svg width={size} height={size} viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" aria-hidden="true">{icons[name] || icons.cards}</svg>;
+}
+function QuizSentence({ text }) {
+  const turns = splitDialogueTurns(text);
+  return (
+    <h2 className={'vd-quiz-sentence' + (turns ? ' vd-quiz-dialogue' : '')}>
+      {turns ? turns.map((turn, index) => (
+        <span className="vd-quiz-turn" key={index}>
+          <span className="vd-quiz-speaker">{turn.speaker}:</span>
+          <span className="vd-quiz-utterance">{turn.text}</span>
+        </span>
+      )) : text}
+    </h2>
+  );
 }
 function Brand() { return <div className="vd-brand"><span className="vd-brandmark"><Icon name="cards" size={23}/></span><div><strong>VocaDash</strong><small>VOCABULARY STUDIO</small></div></div>; }
 function useVocabulary(selection) {
@@ -185,7 +198,7 @@ export default function VocaDash() {
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
             isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
-            mode === 'quiz' ? <div className="vd-quiz-body"><div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div><h2 className="vd-quiz-sentence">{current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}</h2><div className="vd-choice-grid">{options.map((opt, i) => <button disabled={feedback !== null} key={opt.id} onClick={() => answer(opt)} className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}><span>{i + 1}</span><strong>{opt.text}</strong>{feedback !== null && opt.correct && <Icon name="check"/>}</button>)}</div>{feedback !== null && <div className="vd-quiz-feedback" role="status"><strong>{options.find(o => o.id === feedback)?.correct ? '正解！' : '間違えた単語をもう一度確認'}</strong><span>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</span>{current.explanation && <small>{current.explanation}</small>}</div>}<div className="vd-quiz-next"><button onClick={next}>スキップ <Icon name="arrow" size={16}/></button></div></div> :
+            mode === 'quiz' ? <div className="vd-quiz-body"><div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div><QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/><div className="vd-choice-grid">{options.map((opt, i) => <button disabled={feedback !== null} key={opt.id} onClick={() => answer(opt)} className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}><span>{i + 1}</span><strong>{opt.text}</strong>{feedback !== null && opt.correct && <Icon name="check"/>}</button>)}</div>{feedback !== null && <div className="vd-quiz-feedback" role="status"><strong>{options.find(o => o.id === feedback)?.correct ? '正解！' : '間違えた単語をもう一度確認'}</strong><span>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</span>{current.explanation && <small>{current.explanation}</small>}</div>}<div className="vd-quiz-next"><button onClick={next}>スキップ <Icon name="arrow" size={16}/></button></div></div> :
             <div className="vd-card-area">
               <div className="vd-word-card"><div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
                 <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
