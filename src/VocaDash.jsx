@@ -126,10 +126,11 @@ export default function VocaDash() {
 
   useEffect(() => {
     if (!autoplay || mode !== 'study' || !current) return;
+    if (store.settings.sound) speak(current, true);
     const show = setTimeout(() => setRevealed(true), 1600);
     const advance = setTimeout(() => { setCursor(n => n + 1); setRevealed(false); }, 4900);
     return () => { clearTimeout(show); clearTimeout(advance); };
-  }, [autoplay, mode, cursor, current?.id]);
+  }, [autoplay, mode, cursor, current?.id, store.settings.sound, store.settings.speed]);
 
   useEffect(() => {
     const handler = e => {
@@ -184,7 +185,7 @@ export default function VocaDash() {
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
             isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
-            mode === 'quiz' ? <div className="vd-quiz-body"><div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div><h2 className="vd-quiz-sentence">{current.english.replace('________', '＿＿＿＿').replace(current.word, '＿＿＿＿')}</h2><div className="vd-choice-grid">{options.map((opt, i) => <button disabled={feedback !== null} key={opt.id} onClick={() => answer(opt)} className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}><span>{i + 1}</span><strong>{opt.text}</strong>{feedback !== null && opt.correct && <Icon name="check"/>}</button>)}</div>{feedback !== null && <div className="vd-quiz-feedback" role="status"><strong>{options.find(o => o.id === feedback)?.correct ? '正解！' : '間違えた単語をもう一度確認'}</strong><span>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</span>{current.explanation && <small>{current.explanation}</small>}</div>}<div className="vd-quiz-next"><button onClick={next}>スキップ <Icon name="arrow" size={16}/></button></div></div> :
+            mode === 'quiz' ? <div className="vd-quiz-body"><div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div><h2 className="vd-quiz-sentence">{current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}</h2><div className="vd-choice-grid">{options.map((opt, i) => <button disabled={feedback !== null} key={opt.id} onClick={() => answer(opt)} className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}><span>{i + 1}</span><strong>{opt.text}</strong>{feedback !== null && opt.correct && <Icon name="check"/>}</button>)}</div>{feedback !== null && <div className="vd-quiz-feedback" role="status"><strong>{options.find(o => o.id === feedback)?.correct ? '正解！' : '間違えた単語をもう一度確認'}</strong><span>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</span>{current.explanation && <small>{current.explanation}</small>}</div>}<div className="vd-quiz-next"><button onClick={next}>スキップ <Icon name="arrow" size={16}/></button></div></div> :
             <div className="vd-card-area">
               <div className="vd-word-card"><div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
                 <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
