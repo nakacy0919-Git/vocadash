@@ -121,3 +121,25 @@ export function shuffled(items) {
   }
   return copy;
 }
+
+
+/**
+ * Split short labeled dialogues (A:/B:, Q:/A:, etc.) into turns.
+ * Null means a normal sentence, so existing question layout is preserved.
+ */
+export function splitDialogueTurns(value) {
+  const text = String(value ?? '').trim();
+  const markers = [...text.matchAll(/(^|\s)([A-DQ])\s*:\s*/gi)].map(match => ({
+    start: match.index + match[1].length,
+    end: match.index + match[0].length,
+    speaker: match[2]
+  }));
+  if (markers.length < 2 || markers[0].start !== 0 ||
+      new Set(markers.map(marker => marker.speaker.toUpperCase())).size < 2) return null;
+
+  const turns = markers.map((marker, index) => ({
+    speaker: marker.speaker,
+    text: text.slice(marker.end, markers[index + 1]?.start ?? text.length).trim()
+  }));
+  return turns.every(turn => turn.text) ? turns : null;
+}
