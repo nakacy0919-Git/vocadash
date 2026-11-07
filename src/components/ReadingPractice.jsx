@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { READING_LEVELS, READING_PASS_PERCENT, maskReadingSentence, scoreReading, calculateEffectiveWPM } from '../lib/reading';
+import { READING_LEVELS, READING_PASS_PERCENT, READING_SCORE_VERSION, maskReadingSentence, scoreReading, calculateEffectiveWPM } from '../lib/reading';
 import { assetImage, splitDialogueTurns } from '../lib/learning';
 import './ReadingPractice.css';
 
@@ -57,8 +57,9 @@ export default function ReadingPractice({
   const session = useRef(null);
   const celebrationTimer = useRef(null);
 
-  const cleared = Math.max(0, Number(record.readingClearedLevel) || 0);
-  const best = (record.readingBestByLevel || [])[level-1] || 0;
+  const verified = record.readingScoreVersion === READING_SCORE_VERSION;
+  const cleared = verified ? Math.max(0, Number(record.readingClearedLevel)||0) : 0;
+  const best = verified ? ((record.readingBestByLevel || [])[level-1] || 0) : 0;
   const spokenDisplay = useMemo(() => {
     const turns=splitDialogueTurns(item.english);
     return turns ? turns.map(turn=>turn.speaker+': '+turn.text).join('\n') : item.english;
