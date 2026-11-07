@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { READING_LEVELS, READING_PASS_PERCENT, maskReadingSentence, scoreReading } from '../lib/reading';
+import { READING_LEVELS, READING_PASS_PERCENT, maskReadingSentence, scoreReading, calculateEffectiveWPM } from '../lib/reading';
 import { assetImage, splitDialogueTurns } from '../lib/learning';
 import './ReadingPractice.css';
 
@@ -100,7 +100,7 @@ export default function ReadingPractice({
     setPhase('idle');
     setTranscript(heard);
     setScore(result);
-    setWpm(Math.round(result.matchCount*60/seconds));
+    setWpm(calculateEffectiveWPM(result, seconds*1000));
     if(!heard) {
       setStatus('音声が認識されませんでした。マイクの許可を確認し、もう一度音読してください。');
       return;
