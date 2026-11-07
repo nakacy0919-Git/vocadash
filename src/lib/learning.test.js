@@ -1,6 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { READING_LEVELS, READING_PASS_PERCENT, readingWords, scoreReading, maskReadingSentence, saveReadingProgress } from './reading.js';
 import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
 
 test('all catalog entries define study units', () => {
@@ -121,4 +122,45 @@ test('every grade 1 master multimedia item has an existing image and model audio
       assert.ok(existsSync(new URL('../../public/' + audio, import.meta.url)), item.id + ': missing audio ' + audio);
     }
   }
+});
+
+
+test('Copeak-style ordered speech agreement supports dialogue labels and contractions', () => {
+  assert.equal(READING_LEVELS.length, 5);
+  assert.equal(READING_PASS_PERCENT, 80);
+  assert.equal(scoreReading('A: Good morning. B: Hi there.', 'Good morning hi there').percent,100);
+  assert.equal(scoreReading("I don't like the rain.", 'I do not like the rain').percent,100);
+  const partial=scoreReading('I like apples very much.', 'I like apples very');
+  assert.equal(partial.percent,80);
+  assert.equal(partial.passed,true);
+  assert.deepEqual(partial.missedWords,['much']);
+  assert.equal(scoreReading('I like apples very much.', 'I like cats').passed,false);
+  assert.equal(scoreReading('I like apples very much.','').percent,0);
+  assert.deepEqual(readingWords("we've"),{original:["we've"],tokens:['we','have'],indices:[0,0]});
+});
+
+test('five reading stages mask words without altering original sentence', () => {
+  const sentence='We should read books every single day to improve our English.';
+  const first=maskReadingSentence(sentence,1);
+  const fifth=maskReadingSentence(sentence,5);
+  assert.equal(first.some(piece=>piece.hidden),false);
+  assert.equal(fifth.some(piece=>piece.hidden),true);
+  assert.equal(first.map(piece=>piece.text).join(''),sentence);
+  assert.equal(fifth.map(piece=>piece.text).join(''),sentence);
+});
+
+test('reading accuracy milestones persist without changing vocabulary quiz totals',()=>{
+  const original={records:{},totalAnswers:7};
+  const pass=saveReadingProgress(original,'word1',1,80,Date.UTC(2026,10,7));
+  assert.equal(pass.records.word1.readingClearedLevel,1);
+  assert.equal(pass.records.word1.readingAttempts,1);
+  assert.equal(pass.records.word1.readingBest,80);
+  const fail=saveReadingProgress(pass,'word1',2,60,Date.UTC(2026,10,8));
+  assert.equal(fail.records.word1.readingClearedLevel,1);
+  assert.deepEqual(fail.records.word1.readingBestByLevel,[80,60,0,0,0]);
+  const top=saveReadingProgress(fail,'word1',2,100);
+  assert.equal(top.records.word1.readingClearedLevel,2);
+  assert.equal(top.records.word1.readingBest,100);
+  assert.equal(original.records.word1,undefined);
+  assert.equal(top.totalAnswers,7);
 });
