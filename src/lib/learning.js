@@ -158,3 +158,33 @@ export function makeSessionQueue(words, mode, records = {}, settings = {}) {
   const count = Number(settings.questionCount);
   return Number.isInteger(count) && count > 0 ? ordered.slice(0, count) : ordered;
 }
+
+
+/**
+ * Presentation-only target highlighting. Exact whole words (and multiword
+ * phrases) are emphasized without touching substrings of unrelated words.
+ * The original sentence, punctuation and spaces remain intact.
+ */
+export function splitTargetSegments(sentence, targetWord) {
+  const text = String(sentence ?? '');
+  const target = String(targetWord ?? '').trim();
+  if (!target) return [{ text, highlighted: false }];
+  const escaped = target.replace(/[()[\]{}.*+?^$|\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+  const matcher = new RegExp(escaped, 'giu');
+  const segments = [];
+  let cursor = 0;
+  for (const match of text.matchAll(matcher)) {
+    const start = match.index;
+    const end = start + match[0].length;
+    // A match inside a larger word (e.g. art in party) is not the target.
+    if ((start > 0 && /[\p{L}\p{N}_]/u.test(text[start - 1])) ||
+        (end < text.length && /[\p{L}\p{N}_]/u.test(text[end]))) continue;
+    if (start > cursor) segments.push({ text: text.slice(cursor, start), highlighted: false });
+    segments.push({ text: match[0], highlighted: true });
+    cursor = end;
+  }
+  if (cursor < text.length || segments.length === 0) {
+    segments.push({ text: text.slice(cursor), highlighted: false });
+  }
+  return segments;
+}
