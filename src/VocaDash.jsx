@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue } from './lib/learning';
 import './VocaDash.css';
 import ReadingPractice from './components/ReadingPractice';
-import { saveReadingProgress } from './lib/reading';
+import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
 
@@ -125,7 +125,7 @@ export default function VocaDash() {
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
   const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
   const readingPassed = useMemo(
-    () => words.filter(w => (store.records[w.id]?.readingClearedLevel || 0) >= 1).length,
+    () => words.filter(w => store.records[w.id]?.readingScoreVersion === READING_SCORE_VERSION && (store.records[w.id]?.readingClearedLevel || 0) >= 1).length,
     [words,store.records]
   );
   const readingPercent = stats.total ? Math.round(readingPassed / stats.total * 100) : 0;
