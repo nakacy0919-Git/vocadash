@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue } from './lib/learning';
 import './VocaDash.css';
+import ReadingPractice from './components/ReadingPractice';
+import { saveReadingProgress } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
 
@@ -40,6 +42,7 @@ function playQuizFeedbackSound(correct, enabled) {
 const modes = [
   { id: 'study', label: '単語で覚える', icon: '▣' },
   { id: 'sentence', label: '例文で覚える', icon: '▤' },
+  { id: 'reading', label: '例文を音読', icon: '◉' },
   { id: 'quiz', label: '確認テスト', icon: '✦' },
   { id: 'listening', label: '音声×画像', icon: '♫', masterOnly: true },
   { id: 'review', label: '復習', icon: '↻' }
@@ -110,6 +113,7 @@ export default function VocaDash() {
   const [session, setSession] = useState({ answered: 0, correct: 0 });
   const audio = useRef(null), quizTimer = useRef(null);
   const swipeStart = useRef(null);
+  const readingCounted = useRef(new Set());
 
   const course = CATALOG.find(c => c.id === selection.courseId) || CATALOG.find(c => c.id === 'eiken_2');
   const unit = course.units.find(u => u.id === selection.unitId) || course.units[0];
@@ -119,6 +123,11 @@ export default function VocaDash() {
   const today = useMemo(() => Object.values(store.records).filter(r => r?.lastSeenAt && new Date(r.lastSeenAt).toDateString() === new Date().toDateString()).length, [store.records]);
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
   const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
+  const readingPassed = useMemo(
+    () => words.filter(w => (store.records[w.id]?.readingClearedLevel || 0) >= 1).length,
+    [words,store.records]
+  );
+  const readingPercent = stats.total ? Math.round(readingPassed / stats.total * 100) : 0;
   const filtered = useMemo(() => words.filter(w => (w.word + ' ' + w.meaning).toLowerCase().includes(wordQuery.toLowerCase())), [words, wordQuery]);
   const options = useMemo(() => current ? shuffled(current.choices.map((text, i) => ({ id: i, text, correct: i === current.correctIndex }))) : [], [current]);
   const imageOptions = useMemo(() => {
@@ -151,19 +160,31 @@ export default function VocaDash() {
   }, [words]);
 
   const selectCourse = id => {
-    resetCard(); setAutoplay(false); setDashboardOpen(false);
+    resetCard(); readingCounted.current.clear(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: id, unitId: firstUnit(id) };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const selectUnit = id => {
-    resetCard(); setAutoplay(false); setDashboardOpen(false);
+    resetCard(); readingCounted.current.clear(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: course.id, unitId: id };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const startMode = name => {
-    resetCard(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
+    resetCard(); readingCounted.current.clear(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
     setSession({ answered: 0, correct: 0 });
     setQueue(makeSessionQueue(words, name, store.records, store.settings));
+  };
+  const openReadingFromSentence = () => {
+    resetCard();setAutoplay(false);setMode('reading');
+    readingCounted.current.clear();
+    setSession({answered:0,correct:0});
+  };
+  const onReadingResult = (wordId,level,percent) => {
+    setStore(previous => saveReadingProgress(previous,wordId,level,percent));
+    if(percent >= 80 && !readingCounted.current.has(wordId)){
+      readingCounted.current.add(wordId);
+      setSession(previous=>({answered:previous.answered+1,correct:previous.correct+1}));
+    }
   };
   const next = () => { resetCard(); setCursor(n => n + 1); };
   const previous = () => { resetCard(); setCursor(n => Math.max(0, n - 1)); };
@@ -175,7 +196,7 @@ export default function VocaDash() {
     const start = swipeStart.current;
     swipeStart.current = null;
     const point = event.changedTouches[0];
-    if (!start || !point || advancedOpen || wordListOpen || quizReviewOpen || autoplay || feedback !== null) return;
+    if (!start || !point || mode === 'reading' || advancedOpen || wordListOpen || quizReviewOpen || autoplay || feedback !== null) return;
     const dx = point.clientX - start.x, dy = point.clientY - start.y;
     if (Math.abs(dx) < 85 || Math.abs(dx) < Math.abs(dy) * 1.45) return;
     if (dx < 0 && cursor < queue.length - 1) next();
@@ -243,6 +264,7 @@ export default function VocaDash() {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
+      if (mode === 'reading') return;
       if ((mode === 'quiz' || mode === 'listening') && feedback !== null) return;
       if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
@@ -296,11 +318,15 @@ export default function VocaDash() {
               <div className="vd-dashboard-donut" style={{'--progress': masteryPercent + '%'}}>
                 <div><strong>{masteryPercent}%</strong><small>定着率</small></div>
               </div>
+              <div className="vd-dashboard-donut vd-dashboard-reading-donut" style={{'--progress': readingPercent + '%'}}>
+                <div><strong>{readingPercent}%</strong><small>音読合格</small></div>
+              </div>
               <div className="vd-dashboard-summary-text">
                 <span className="vd-overline">{course.label} / {unit.label}</span>
                 <h2>このユニットの進捗</h2>
                 <p>学習済み <strong>{stats.seen}</strong> / {stats.total}語　·　復習待ち <strong>{stats.due}</strong>語</p>
                 <div className="vd-dashboard-metrics">
+                  <span>音読合格 <strong>{readingPassed}/{stats.total}</strong></span>
                   <span>正答率 <strong>{stats.accuracy}%</strong></span>
                   <span>累計回答 <strong>{store.totalAnswers}</strong></span>
                   <span>1回の学習 <strong>{store.settings.questionCount === 'all' ? '全問' : (store.settings.questionCount ?? 10) + '問'}</strong></span>
@@ -324,14 +350,26 @@ export default function VocaDash() {
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>
           <div className="vd-tabs" aria-label="学習モード">{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
         <div className="vd-columns"><section className="vd-study-panel" onTouchStart={handleSwipeStart} onTouchEnd={handleSwipeEnd}>
-          <div className="vd-panel-head"><span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span><button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button></div>
+          <div className="vd-panel-head"><span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? 'SENTENCE READING' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span><button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button></div>
           <div className="vd-progress"><span style={{ width: progress + '%' }}/></div>
-          <div className="vd-panel-counter"><small>{mode === 'study' ? 'WORD CARD' : mode === 'sentence' ? 'SENTENCE CARD' : mode === 'quiz' ? '4 CHOICE QUIZ' : mode === 'listening' ? 'IMAGE LISTENING' : 'REVIEW CARD'}</small><strong>{queue.length ? Math.min(cursor + 1, queue.length) : 0}<span> / {queue.length}</span></strong></div>
+          <div className="vd-panel-counter"><small>{mode === 'study' ? 'WORD CARD' : mode === 'sentence' ? 'SENTENCE CARD' : mode === 'reading' ? 'READ ALOUD' : mode === 'quiz' ? '4 CHOICE QUIZ' : mode === 'listening' ? 'IMAGE LISTENING' : 'REVIEW CARD'}</small><strong>{queue.length ? Math.min(cursor + 1, queue.length) : 0}<span> / {queue.length}</span></strong></div>
           {loading ? <div className="vd-empty"><div className="vd-spinner"/><h2>教材を準備しています</h2></div> :
             error ? <div className="vd-empty"><h2>読み込めませんでした</h2><p>{error}</p><button className="vd-primary" onClick={retry}>再試行</button></div> :
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
-            isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
+            isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{mode === 'reading' ? '音読合格 ' + session.correct + '語（80%以上）' : session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
+            mode === 'reading' ? (
+              <ReadingPractice
+                key={current.id}
+                item={current}
+                record={store.records[current.id] || {}}
+                soundEnabled={store.settings.sound}
+                onModelAudio={(item) => speak(item,true)}
+                onBeforeRecording={stopAudio}
+                onResult={onReadingResult}
+                onNext={next}
+              />
+            ) :
             (mode === 'quiz' || mode === 'listening') ? (
               <div className="vd-quiz-body">
                 {mode === 'listening' ? (
@@ -387,7 +425,10 @@ export default function VocaDash() {
                     {current.image && !imageError && <img className="vd-sentence-picture" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                     <div className="vd-sentence-content">
                       <QuizSentence text={current.english}/>
-                      <button className="vd-sentence-audio" disabled={!store.settings.sound} onClick={() => speak(current, true)}><Icon name="speaker" size={19}/> 例文を聞く</button>
+                      <div className="vd-sentence-tools">
+                        <button className="vd-sentence-audio" disabled={!store.settings.sound} onClick={() => speak(current, true)}><Icon name="speaker" size={19}/> 例文を聞く</button>
+                        <button className="vd-sentence-read-link" onClick={openReadingFromSentence}><Icon name="arrow" size={16}/> この例文を音読する</button>
+                      </div>
                     </div>
                     {revealed && (
                       <div className="vd-sentence-meaning">
@@ -420,6 +461,11 @@ export default function VocaDash() {
         </section>
         <aside className="vd-stats">
           <div className="vd-info-card"><div className="vd-info-head"><div><span className="vd-overline">YOUR PROGRESS</span><h3>学習の進み具合</h3></div><span className="vd-info-icon">✦</span></div><div className="vd-mastered"><strong>{stats.known}</strong><span>/ {stats.total} 語</span></div><small>2回以上の成功で定着扱い</small><div className="vd-mini-progress"><span style={{ width: (stats.total ? stats.known * 100 / stats.total : 0) + '%' }}/></div><div className="vd-stat-row"><div><strong>{stats.seen}</strong><small>学習済み</small></div><div><strong>{stats.due}</strong><small>復習待ち</small></div><div><strong>{stats.accuracy}%</strong><small>回答正答率</small></div></div></div>
+          <div className="vd-reading-side-progress">
+              <div><strong>音読ミッション</strong><span>{readingPassed} / {stats.total}語 合格</span></div>
+              <div className="vd-reading-side-track"><span style={{width:readingPercent+'%'}}/></div>
+              <button onClick={() => startMode('reading')}>例文を音読する <Icon name="arrow" size={16}/></button>
+            </div>
           <div className="vd-info-card vd-tool-card"><div className="vd-info-head"><div><span className="vd-overline">STUDY TOOLS</span><h3>自分好みに学習</h3></div><button className="vd-settings-expand" aria-label="詳細設定を開く" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={20}/></button></div>
             <button className="vd-settings-summary" onClick={() => setAdvancedOpen(true)}>出題数 <strong>{store.settings.questionCount === 'all' ? '全問' : (store.settings.questionCount ?? 10) + '問'}</strong> · 出題順 <strong>{store.settings.randomOrder ? 'ランダム' : '順番どおり'}</strong> <Icon name="arrow" size={15}/></button>
             <label className="vd-setting"><span><strong>発音・モデル音声</strong><small>既存音声を優先</small></span><input type="checkbox" checked={store.settings.sound} onChange={e => setSetting('sound', e.target.checked)}/></label>
