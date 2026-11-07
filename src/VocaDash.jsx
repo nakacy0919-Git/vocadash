@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue } from './lib/learning';
+import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments } from './lib/learning';
 import './VocaDash.css';
 import ReadingPractice from './components/ReadingPractice';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
@@ -61,16 +61,23 @@ const icons = {
 function Icon({ name, size = 19 }) {
   return <svg width={size} height={size} viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" aria-hidden="true">{icons[name] || icons.cards}</svg>;
 }
-function QuizSentence({ text }) {
+function HighlightedExample({ text, word }) {
+  return splitTargetSegments(text, word).map((part, index) =>
+    part.highlighted
+      ? <mark className="vd-target-highlight" key={index}>{part.text}</mark>
+      : <React.Fragment key={index}>{part.text}</React.Fragment>
+  );
+}
+function QuizSentence({ text, highlightWord }) {
   const turns = splitDialogueTurns(text);
   return (
     <h2 className={'vd-quiz-sentence' + (turns ? ' vd-quiz-dialogue' : '')}>
       {turns ? turns.map((turn, index) => (
         <span className="vd-quiz-turn" key={index}>
           <span className="vd-quiz-speaker">{turn.speaker}:</span>
-          <span className="vd-quiz-utterance">{turn.text}</span>
+          <span className="vd-quiz-utterance"><HighlightedExample text={turn.text} word={highlightWord}/></span>
         </span>
-      )) : text}
+      )) : <HighlightedExample text={text} word={highlightWord}/>}
     </h2>
   );
 }
@@ -481,7 +488,7 @@ export default function VocaDash() {
                     <div className="vd-word-eyebrow"><span>LEARN IN CONTEXT</span><span className="vd-course-badge">{course.short}</span></div>
                     {current.image && !imageError && <img className="vd-sentence-picture" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                     <div className="vd-sentence-content">
-                      <QuizSentence text={current.english}/>
+                      <QuizSentence text={current.english} highlightWord={current.word}/>
                       <div className="vd-sentence-tools">
                         <button className="vd-sentence-audio" disabled={!store.settings.sound} onClick={() => speak(current, true)}><Icon name="speaker" size={19}/> 例文を聞く</button>
                         <button className="vd-sentence-read-link" onClick={openReadingFromSentence}><Icon name="arrow" size={16}/> この例文を音読する</button>
@@ -502,7 +509,7 @@ export default function VocaDash() {
                 {current.pronunciation && <p className="vd-phonetic">{current.pronunciation}</p>}
                 {revealed ? <div className="vd-word-detail"><div className="vd-meaning-caption">MEANING</div><h3>{current.meaning || current.japanese}</h3>
                   {current.image && !imageError && <img className="vd-word-image" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
-                  <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p>{current.english}</p><small>{current.japanese}</small></div>
+                  <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p><HighlightedExample text={current.english} word={current.word}/></p><small>{current.japanese}</small></div>
                   {current.etymology && <p className="vd-etymology"><strong>語源・ヒント</strong> {current.etymology}</p>}
                 </div> : <div className="vd-card-unrevealed" onClick={() => setRevealed(true)}><span>✧</span><p>意味を思い浮かべてから確認しましょう</p></div>}
                   </>
@@ -563,7 +570,7 @@ export default function VocaDash() {
             </div>
             <div className="vd-quiz-review-section">
               <span>COMPLETE SENTENCE</span>
-              <div className="vd-quiz-review-english"><QuizSentence text={current.english}/></div>
+              <div className="vd-quiz-review-english"><QuizSentence text={current.english} highlightWord={current.word}/></div>
             </div>
             <div className="vd-quiz-review-section vd-quiz-review-translation">
               <span>日本語訳</span>
