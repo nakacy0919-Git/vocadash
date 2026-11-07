@@ -1,9 +1,18 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { READING_LEVELS, READING_PASS_PERCENT, maskReadingSentence, scoreReading } from '../lib/reading';
-import { assetImage } from '../lib/learning';
+import { assetImage, splitDialogueTurns } from '../lib/learning';
 import './ReadingPractice.css';
 
 let successAudioContext;
+function primeReadingAudio(enabled) {
+  if (!enabled || typeof window === 'undefined') return;
+  const Context=window.AudioContext || window.webkitAudioContext;
+  if (!Context) return;
+  try {
+    if (!successAudioContext) successAudioContext=new Context();
+    if (successAudioContext.state === 'suspended') successAudioContext.resume().catch(()=>{});
+  } catch { /* Browser may block sound; visual pass feedback still works. */ }
+}
 function playReadingSuccessSound(enabled, percent) {
   if (!enabled || typeof window === 'undefined') return;
   const Context = window.AudioContext || window.webkitAudioContext;
@@ -50,7 +59,11 @@ export default function ReadingPractice({
 
   const cleared = Math.max(0, Number(record.readingClearedLevel) || 0);
   const best = (record.readingBestByLevel || [])[level-1] || 0;
-  const parts = useMemo(() => maskReadingSentence(item.english, level), [item.english, level]);
+  const spokenDisplay = useMemo(() => {
+    const turns=splitDialogueTurns(item.english);
+    return turns ? turns.map(turn=>turn.speaker+': '+turn.text).join('\n') : item.english;
+  },[item.english]);
+  const parts = useMemo(() => maskReadingSentence(spokenDisplay, level), [spokenDisplay, level]);
 
   const releaseMic = useCallback(() => {
     token.current++;
@@ -111,6 +124,7 @@ export default function ReadingPractice({
       setStatus('このブラウザーでは音声認識を利用できません。Chromeまたは対応するSafariでマイクの許可を確認してください。');
       return;
     }
+    primeReadingAudio(soundEnabled);
     onBeforeRecording();
     releaseMic();
     clearTimeout(celebrationTimer.current);
@@ -190,6 +204,7 @@ export default function ReadingPractice({
   function stopSpeech() {
     const s=session.current;
     if(phase!=='listening'||!s||s.stopping)return;
+    primeReadingAudio(soundEnabled);
     s.stopping=true;
     setPhase('stopping');
     setStatus('認識結果を確定して、Accuracyを計算しています…');
