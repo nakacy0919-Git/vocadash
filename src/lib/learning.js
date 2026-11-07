@@ -21,7 +21,7 @@ export const STORAGE_KEY = 'vocadash-learning-v2';
 export const INTERVALS_DAYS = [0, 1, 3, 7, 14, 30, 60, 120];
 
 export function firstUnit(courseId) {
-  return (CATALOG.find(course => course.id === courseId) || CATALOG[0]).units[0].id;
+  return (CATALOG.find(course => course.id === courseId) || CATALOG.find(course => course.id === 'eiken_2')).units[0].id;
 }
 
 export function sourcePath(courseId, unitId) {
