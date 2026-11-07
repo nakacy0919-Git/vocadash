@@ -94,13 +94,13 @@ export default function ReadingPractice({
     if(!s || !s.stopping || token.current!==expectedToken || s.finished) return;
     s.finished=true;
     const heard=[s.base,s.final,s.interim].filter(Boolean).join(' ').trim();
-    const seconds=Math.max(1,(Date.now()-s.startAt)/1000);
+    const seconds=Math.max(1,((s.stopAt || Date.now())-s.startAt)/1000);
     const result=scoreReading(item.english,heard);
     releaseMic();
     setPhase('idle');
     setTranscript(heard);
     setScore(result);
-    setWpm(Math.round(result.recognizedCount*60/seconds));
+    setWpm(Math.round(result.matchCount*60/seconds));
     if(!heard) {
       setStatus('音声が認識されませんでした。マイクの許可を確認し、もう一度音読してください。');
       return;
@@ -206,6 +206,7 @@ export default function ReadingPractice({
     if(phase!=='listening'||!s||s.stopping)return;
     primeReadingAudio(soundEnabled);
     s.stopping=true;
+    s.stopAt=Date.now();
     setPhase('stopping');
     setStatus('認識結果を確定して、Accuracyを計算しています…');
     clearTimeout(s.restartTimer);
@@ -280,15 +281,60 @@ export default function ReadingPractice({
           {score?.wordMatches?.length?
             <p lang="en">{score.wordMatches.map((w,i)=><span key={i} className={w.matched?'vd-reading-word-ok':'vd-reading-word-missed'}>{i?' ':''}{w.value}</span>)}</p>:
             <p className="vd-reading-placeholder" lang={transcript?'en':'ja'}>{transcript||'音読すると、認識された英語がここに表示されます。'}</p>}
-          {score?.missedWords?.length>0 && <div className="vd-reading-missed"><strong>読み落とし・不一致候補</strong> {score.missedWords.slice(0,12).join(' · ')}</div>}
+          {score && (score.missedWords.length>0 || score.extraWords.length>0) && (
+            <div className="vd-reading-missed">
+              {score.missedWords.length>0 && <div><strong>読み落とし・不一致</strong> {score.missedWords.slice(0,12).join(' · ')}</div>}
+              {score.extraWords.length>0 && <div><strong>追加・語順不一致</strong> {score.extraWords.slice(0,12).join(' · ')}</div>}
+            </div>
+          )}
         </div>
         <div className="vd-reading-score">
-          <div className="vd-reading-section-label">ACCURACY <small>単語一致率</small></div>
-          <div className={'vd-reading-score-ring'+(score?.passed?' is-pass':'')} style={{'--score':(score?.percent||0)+'%'}} role="meter" aria-valuemin={0} aria-valuemax={100} aria-valuenow={score?.percent||0} aria-label="音読単語一致率">
-            <div><strong>{score?score.percent+'%':'—'}</strong><small>{score?.passed?'CLEAR!':'目標 80%'}</small></div>
+          <div className="vd-reading-section-label">ACCURACY <small>語順・追加語も判定</small></div>
+          <div className={'vd-reading-gauge'+(score?.passed?' is-pass':'')} role="meter"
+            aria-valuemin={0} aria-valuemax={100} aria-valuenow={score?.percent||0}
+            aria-valuetext={score ? '語順と追加語を含むAccuracy '+score.percent+'%' : '未判定'}
+            aria-label="音読 Accuracy（語順・追加語も判定）">
+            <svg viewBox="0 0 240 142" className="vd-reading-gauge-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="vd-gauge-green" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#15ac8d"/>
+                  <stop offset="46%" stopColor="#3fe6b6"/>
+                  <stop offset="100%" stopColor="#13b98d"/>
+                </linearGradient>
+                <linearGradient id="vd-gauge-blue" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#5469da"/>
+                  <stop offset="55%" stopColor="#6cbafb"/>
+                  <stop offset="100%" stopColor="#4f85ef"/>
+                </linearGradient>
+                <linearGradient id="vd-gauge-shine" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stopColor="#ffffff" stopOpacity=".68"/>
+                  <stop offset="100%" stopColor="#ffffff" stopOpacity="0"/>
+                </linearGradient>
+                <filter id="vd-gauge-soft-shadow" x="-50%" y="-70%" width="200%" height="240%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                  <feOffset dy="3"/>
+                  <feComponentTransfer><feFuncA type="linear" slope=".16"/></feComponentTransfer>
+                  <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <path d="M 26 115 A 94 94 0 0 1 214 115" className="vd-reading-gauge-track" pathLength="100"/>
+              <path d="M 26 115 A 94 94 0 0 1 214 115"
+                className="vd-reading-gauge-fill" pathLength="100"
+                stroke={score?.passed ? 'url(#vd-gauge-green)' : 'url(#vd-gauge-blue)'}
+                strokeDasharray={String(score?.percent||0)+' 100'}
+                filter="url(#vd-gauge-soft-shadow)"/>
+              <path d="M 26 115 A 94 94 0 0 1 214 115"
+                className="vd-reading-gauge-gloss" pathLength="100"
+                strokeDasharray={String(score?.percent||0)+' 100'}
+                stroke="url(#vd-gauge-shine)"/>
+            </svg>
+            <div className="vd-reading-gauge-value">
+              <strong>{score ? score.percent+'%' : '—'}</strong>
+              <small>{score?.passed ? '✓ CLEAR' : '合格 80%'}</small>
+            </div>
           </div>
-          {score && <div className="vd-reading-wpm">WPM {wpm} <span>・語順一致 {score.matchCount}/{score.targetCount}</span></div>}
-          <p title="認識された単語と語順の一致率で、発音の質や抑揚の採点ではありません。">※ 単語一致率（発音採点ではありません）</p>
+          {score && <div className="vd-reading-wpm"><strong>有効WPM {wpm}</strong> <span>一致 {score.matchCount}/{score.targetCount}語 · 追加 {score.insertions}語</span></div>}
+          <p title="Accuracyは単語の挿入・抜け・置換・語順違いを減点。有効WPMは正しく照合できた語数÷音読時間。発音の自然さや抑揚は採点しません。">語順・追加語を評価 / WPMは一致語で算出</p>
           {best>0 && <span className="vd-reading-best">このレベルのBEST {best}%</span>}
         </div>
       </div>
