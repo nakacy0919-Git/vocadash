@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { READING_LEVELS, READING_PASS_PERCENT, readingWords, scoreReading, maskReadingSentence, saveReadingProgress } from './reading.js';
+import { READING_LEVELS, READING_PASS_PERCENT, readingWords, scoreReading, maskReadingSentence, saveReadingProgress, calculateEffectiveWPM } from './reading.js';
 import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
 
 test('all catalog entries define study units', () => {
@@ -163,4 +163,39 @@ test('reading accuracy milestones persist without changing vocabulary quiz total
   assert.equal(top.records.word1.readingBest,100);
   assert.equal(original.records.word1,undefined);
   assert.equal(top.totalAnswers,7);
+});
+
+
+test('reading Accuracy must penalize extra words even when the full target follows', () => {
+  const target = 'I borrowed a book from the library.';
+  const perfect = scoreReading(target, 'I borrowed a book from the library');
+  assert.equal(perfect.percent,100);
+  assert.equal(perfect.editDistance,0);
+  assert.equal(perfect.extraWords.length,0);
+
+  // Screenshot regression: "I bought I borrowed ..." previously earned 100%.
+  const withExtras = scoreReading(target, 'I bought I borrowed a book from the library');
+  assert.equal(withExtras.percent,78);
+  assert.equal(withExtras.passed,false);
+  assert.equal(withExtras.insertions,2);
+  assert.equal(withExtras.matchCount,7);
+  assert.equal(withExtras.targetCount,7);
+  assert.deepEqual(withExtras.extraWords,['i','bought']);
+  assert.equal(withExtras.wordMatches.filter(word=>!word.matched).length,2);
+  assert.equal(calculateEffectiveWPM(withExtras,12000),35);
+
+  const swapped=scoreReading(target,'I borrowed book a from the library');
+  assert.ok(swapped.percent<100,'wrong word order must not earn 100%');
+  assert.equal(swapped.substitutions,2);
+  const appended=scoreReading(target,'I borrowed a book from the library today');
+  assert.equal(appended.insertions,1);
+  assert.ok(appended.percent<100);
+  const omitted=scoreReading(target,'I borrowed a book from library');
+  assert.equal(omitted.deletions,1);
+  assert.ok(omitted.percent<100);
+  const substituted=scoreReading(target,'I borrowed a car from the library');
+  assert.equal(substituted.substitutions,1);
+  assert.ok(substituted.percent<100);
+  assert.equal(calculateEffectiveWPM(perfect,60000),7);
+  assert.equal(calculateEffectiveWPM({matchCount:0},1000),0);
 });
