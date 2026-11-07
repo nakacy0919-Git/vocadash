@@ -393,3 +393,78 @@
 @media (max-width:1160px){.vd-dashboard-summary{flex-wrap:wrap;gap:14px;}.vd-dashboard-summary-text{flex-basis:100%;}}
 @media (max-width:700px){.vd-dashboard-summary{align-items:center;flex-direction:row;justify-content:center;}.vd-dashboard-summary .vd-dashboard-donut{width:134px;height:134px;}.vd-dashboard-summary-text{width:100%;text-align:center;}}
 @media(prefers-reduced-motion:reduce){.vd-rating-celebration,.vd-rating-symbol{animation:none;}}
+
+
+/* Reading focus: a single-screen desktop / iPad workspace, without duplicate panels. */
+.vd-panel-head-actions{display:flex;align-items:center;gap:9px;}
+.vd-reading-session-count{font-size:14px;font-weight:850;color:#4a6895;white-space:nowrap;line-height:1;}
+.vd-reading-session-count span{color:#9aa9c0;font-size:11px;}
+.vd-reading-settings-button{height:32px;width:35px;display:grid;place-items:center;background:#eef3ff;border:0;border-radius:9px;color:#5372cb;cursor:pointer;}
+.vd-reading-settings-button:hover{background:#e0e9ff;}
+.vd-settings-audio-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;}
+.vd-settings-audio-row label{display:flex;justify-content:space-between;align-items:center;gap:9px;padding:11px 12px;border:1px solid #e4eaf4;border-radius:12px;color:#566b8b;font-size:12px;font-weight:800;white-space:nowrap;}
+.vd-settings-audio-row select{border:1px solid #dfe6f1;border-radius:8px;padding:6px;color:#4e68a6;background:#f7faff;min-width:66px;}
+.vd-settings-audio-row input{width:19px;height:19px;accent-color:#5474dc;}
+.vd-app.is-reading-view{height:100dvh;min-height:0;overflow:hidden;}
+.vd-app.is-reading-view .vd-main{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.vd-app.is-reading-view .vd-topbar{height:49px;min-height:49px;padding:0 17px;flex-shrink:0;}
+.vd-app.is-reading-view .vd-top-right>span,.vd-app.is-reading-view .vd-top-right>small{display:none;}
+.vd-app.is-reading-view .vd-page{flex:1;min-height:0;display:flex;flex-direction:column;max-width:none;width:100%;overflow:hidden;padding:8px 14px 10px;}
+.vd-app.is-reading-view .vd-toolbar{flex:0 0 auto;min-height:0;margin:3px 0 9px;gap:9px;flex-direction:row;align-items:center;justify-content:stretch;}
+.vd-app.is-reading-view .vd-unit{min-width:152px;max-width:185px;flex:0 0 auto;padding:4px 7px;border-radius:11px;}
+.vd-app.is-reading-view .vd-unit label{display:none;}
+.vd-app.is-reading-view .vd-unit select{width:100%;min-width:0;font-size:12px;padding:6px 7px;}
+.vd-app.is-reading-view .vd-tabs{min-width:0;flex:1;display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 5px;gap:2px;border-radius:10px;}
+.vd-app.is-reading-view .vd-tabs::-webkit-scrollbar{display:none;}
+.vd-app.is-reading-view .vd-tabs button{min-width:max-content;flex:0 0 auto;padding:9px 10px;font-size:11px;gap:5px;border-radius:8px;}
+.vd-app.is-reading-view .vd-tabs button span{font-size:14px;}
+.vd-app.is-reading-view .vd-columns{flex:1;min-height:0;grid-template-columns:minmax(0,1fr) minmax(250px,.38fr);gap:12px;align-items:stretch;}
+.vd-app.is-reading-view .vd-study-panel{min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;border-radius:17px;}
+.vd-app.is-reading-view .vd-panel-head{min-height:40px;height:40px;flex-shrink:0;padding:0 13px;}
+.vd-app.is-reading-view .vd-panel-head>span{font-size:11px;letter-spacing:.3px;color:#5679a5;}
+.vd-app.is-reading-view .vd-list-button{padding:7px 9px;font-size:11px;}
+.vd-app.is-reading-view .vd-list-button svg{height:14px;width:14px;}
+.vd-app.is-reading-view .vd-progress{height:3px;flex-shrink:0;}
+.vd-app.is-reading-view .vd-panel-counter{display:none;}
+.vd-app.is-reading-view .vd-under-card,.vd-app.is-reading-view .vd-footer{display:none;}
+.vd-app.is-reading-view .vd-stats{min-height:0;overflow:hidden;gap:0;display:block;}
+.vd-app.is-reading-view .vd-stats>.vd-info-card:first-child,
+.vd-app.is-reading-view .vd-reading-side-progress,
+.vd-app.is-reading-view .vd-review-link{display:none;}
+.vd-app.is-reading-view .vd-info-card.vd-tool-card{padding:15px;box-shadow:none;max-height:100%;overflow:auto;}
+.vd-app.is-reading-view .vd-tool-card .vd-info-head{margin-bottom:5px;}
+.vd-app.is-reading-view .vd-tool-card .vd-info-head h3{margin-top:2px;}
+.vd-app.is-reading-view .vd-tool-card .vd-setting{padding:10px 0;}
+.vd-app.is-reading-view .vd-tool-card .vd-settings-summary{margin:8px 0;}
+.vd-app.is-reading-view .vd-tool-card .vd-setting-note{font-size:10px;line-height:1.5;}
+.vd-app.is-reading-view .vd-sidebar-bottom{display:none;}
+/* An iPad needs the whole panel, rather than a second column repeating progress. */
+@media(max-width:1240px){
+  .vd-app.is-reading-view .vd-columns{grid-template-columns:minmax(0,1fr);}
+  .vd-app.is-reading-view .vd-stats{display:none;}
+  .vd-app.is-reading-view .vd-toolbar{margin:3px 0 7px;}
+}
+@media(max-width:940px){
+  .vd-app.is-reading-view .vd-mobile-course{display:flex;flex:0 0 auto;margin:0 0 4px;padding:3px 9px;border-radius:10px;min-height:33px;}
+  .vd-app.is-reading-view .vd-mobile-course label{font-size:10px;}
+  .vd-app.is-reading-view .vd-mobile-course select{padding:4px;font-size:12px;}
+  .vd-app.is-reading-view .vd-page{padding:6px 10px 8px;}
+}
+@media(max-width:720px){
+  .vd-app.is-reading-view .vd-topbar{height:43px;min-height:43px;}
+  .vd-app.is-reading-view .vd-brandmark{height:30px;width:30px;flex-basis:30px;}
+  .vd-app.is-reading-view .vd-brand strong{font-size:15px;}
+  .vd-app.is-reading-view .vd-brand small{display:none;}
+  .vd-app.is-reading-view .vd-toolbar{gap:5px;}
+  .vd-app.is-reading-view .vd-unit{min-width:110px;max-width:130px;}
+  .vd-app.is-reading-view .vd-tabs button{font-size:10px;padding:8px;}
+  .vd-settings-audio-row{grid-template-columns:1fr;}
+}
+/* Short phone screens may legitimately scroll; do not clip text or buttons. */
+@media(max-height:610px),(max-width:550px){
+  .vd-app.is-reading-view{min-height:100dvh;height:auto;overflow:visible;}
+  .vd-app.is-reading-view .vd-main{min-height:100dvh;height:auto;overflow:visible;}
+  .vd-app.is-reading-view .vd-page{overflow:visible;}
+  .vd-app.is-reading-view .vd-study-panel{height:auto;min-height:570px;overflow:visible;}
+  .vd-app.is-reading-view .vd-columns{display:block;}
+}
