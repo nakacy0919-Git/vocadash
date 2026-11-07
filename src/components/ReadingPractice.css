@@ -242,3 +242,83 @@
   .vd-app.is-reading-view .vd-reading-actions{flex-wrap:wrap;}
   .vd-app.is-reading-view .vd-reading-bottom{min-height:40px;}
 }
+
+
+/* Premium half-dial Accuracy: glowing gradient, glass highlight, strong numerals. */
+.vd-reading-gauge {
+  position:relative;
+  width:min(100%,215px);
+  height:128px;
+  margin:0 auto;
+  flex:0 0 auto;
+  overflow:visible;
+  isolation:isolate;
+  filter:drop-shadow(0 5px 8px rgba(52,108,125,.08));
+}
+.vd-reading-gauge-svg { width:100%; height:100%; display:block; overflow:visible; }
+.vd-reading-gauge-track,.vd-reading-gauge-fill,.vd-reading-gauge-gloss {
+  fill:none; stroke-linecap:round;
+}
+.vd-reading-gauge-track {stroke:#e1ebf1;stroke-width:21;}
+.vd-reading-gauge-fill {stroke-width:20;transition:stroke-dasharray .6s cubic-bezier(.19,.87,.25,1);}
+.vd-reading-gauge-gloss {stroke-width:7;opacity:.85;transform:translateY(-5px);pointer-events:none;transition:stroke-dasharray .6s cubic-bezier(.19,.87,.25,1);}
+.vd-reading-gauge-value {
+  position:absolute;inset:auto 0 0;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  gap:0;text-align:center;pointer-events:none;
+}
+.vd-reading-gauge-value strong {
+  color:#315879;font-size:clamp(29px,2.6vw,36px);font-weight:900;
+  letter-spacing:-1.6px;line-height:1.1;font-variant-numeric:tabular-nums;
+  text-shadow:0 2px 0 #fff;
+}
+.vd-reading-gauge-value small {color:#8499ad;font-size:10px;font-weight:900;letter-spacing:1.15px;line-height:1.35;}
+.vd-reading-gauge.is-pass .vd-reading-gauge-value strong {color:#0c906c;}
+.vd-reading-gauge.is-pass .vd-reading-gauge-value small {color:#19ab7d;}
+.vd-reading-wpm{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:2px 7px;}
+.vd-reading-wpm strong{color:#3a7191;font-size:13px;}
+.vd-reading-missed>div + div{margin-top:4px;padding-top:4px;border-top:1px solid rgba(176,90,90,.12);}
+.vd-reading-missed strong{display:inline;}
+/* Avoid forcing internal scrollbars on iPad; use available width instead. */
+.vd-app.is-reading-view .vd-reading-score {
+  justify-content:flex-start;
+  overflow:hidden;
+}
+.vd-app.is-reading-view .vd-reading-gauge {
+  width:min(100%,180px);
+  height:108px;
+}
+.vd-app.is-reading-view .vd-reading-gauge-value strong{font-size:29px;}
+.vd-app.is-reading-view .vd-reading-wpm{font-size:11px;}
+.vd-app.is-reading-view .vd-reading-wpm strong{font-size:12px;}
+.vd-app.is-reading-view .vd-reading-transcript{
+  overflow-y:auto;
+  min-width:0;
+}
+/* Landscape iPad: hide duplicate guidance and prioritize sentence and feedback. */
+@media (min-width:700px) and (max-width:1240px) and (max-height:900px) {
+  .vd-app.is-reading-view .vd-reading { 
+    grid-template-rows:30px minmax(150px,1.2fr) 38px auto minmax(128px,.87fr) 34px;
+    gap:4px;padding:7px 11px 8px;
+  }
+  .vd-app.is-reading-view .vd-reading-level {padding:5px 10px;}
+  .vd-app.is-reading-view .vd-reading-english {font-size:clamp(16px,1.85vw,23px);line-height:1.4;}
+  .vd-app.is-reading-view .vd-reading-japanese {font-size:11px;line-height:1.4;}
+  .vd-app.is-reading-view .vd-reading-gauge {width:168px;height:100px;}
+  .vd-app.is-reading-view .vd-reading-gauge-value strong{font-size:27px;}
+  .vd-app.is-reading-view .vd-reading-score>p{display:none;}
+  .vd-app.is-reading-view .vd-reading-score .vd-reading-best{font-size:9px;}
+  .vd-app.is-reading-view .vd-reading-transcript p{line-height:1.42;}
+}
+/* Tall portrait iPad can use a larger dial without extra rows. */
+@media (min-width:700px) and (max-width:1100px) and (min-height:901px) {
+  .vd-app.is-reading-view .vd-reading-gauge {width:205px;height:123px;}
+  .vd-app.is-reading-view .vd-reading-gauge-value strong{font-size:34px;}
+}
+@media (max-width:699px) {
+  .vd-reading-gauge {width:176px;height:105px;}
+  .vd-reading-gauge-value strong{font-size:28px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .vd-reading-gauge-fill,.vd-reading-gauge-gloss{transition:none;}
+}
