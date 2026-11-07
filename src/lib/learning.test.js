@@ -2,7 +2,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { READING_LEVELS, READING_PASS_PERCENT, READING_SCORE_VERSION, readingWords, scoreReading, maskReadingSentence, saveReadingProgress, calculateEffectiveWPM } from './reading.js';
-import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
+import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns, splitTargetSegments } from './learning.js';
 
 test('all catalog entries define study units', () => {
   assert.equal(CATALOG.length, 9);
@@ -217,4 +217,36 @@ test('legacy LCS-based 100 percent BEST is excluded under strict scoring version
   const cleared=saveReadingProgress(revised,'sample',1,85);
   assert.equal(cleared.records.sample.readingBest,85);
   assert.equal(cleared.records.sample.readingClearedLevel,1);
+});
+
+
+test('target highlighting preserves text and emphasizes only whole words/phrases', () => {
+  const samples = [
+    ["I'm going to invite my friends to the party.", 'invite', ['invite']],
+    ['The artist admired the art.', 'art', ['art']],
+    ['RECOMMENCE it, recommence later.', 'recommence', ['RECOMMENCE','recommence']],
+    ['Do not give   up now.', 'give up', ['give   up']],
+    ['A take-off can take off quickly.', 'take off', ['take off']],
+    ['Please (re)start today.', '(re)start', ['(re)start']],
+    ['An Invitation to the party', 'invite', []],
+    ['買う invite in Japanese.', 'invite', ['invite']],
+    ['No target here.', '', []]
+  ];
+  for (const [sentence, word, expectedHits] of samples) {
+    const parts = splitTargetSegments(sentence, word);
+    assert.equal(parts.map(part => part.text).join(''), sentence, 'original sentence is unchanged');
+    assert.deepEqual(parts.filter(part => part.highlighted).map(part=>part.text), expectedHits);
+  }
+});
+
+test('highlighting finds the inserted answer from every normalized cloze example', () => {
+  for (const level of [3,4]) {
+    for (const stage of [1,2]) {
+      const entries = JSON.parse(readFileSync(new URL('../data/eiken_' + level + '_stage' + stage + '.json', import.meta.url)));
+      const normalized = normalizeWords(entries,'eiken_'+level,String(stage));
+      for (const item of normalized) {
+        assert.ok(splitTargetSegments(item.english,item.word).some(part=>part.highlighted),item.id);
+      }
+    }
+  }
 });
