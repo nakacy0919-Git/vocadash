@@ -104,6 +104,7 @@ export default function VocaDash() {
   const [revealed, setRevealed] = useState(false);
   const [feedback, setFeedback] = useState(null);
   const [quizCelebration, setQuizCelebration] = useState(null);
+  const [ratingFeedback, setRatingFeedback] = useState(null);
   const [quizReviewOpen, setQuizReviewOpen] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [wordListOpen, setWordListOpen] = useState(false);
@@ -150,12 +151,13 @@ export default function VocaDash() {
     setRevealed(false);
     setFeedback(null);
     setQuizCelebration(null);
+    setRatingFeedback(null);
     setQuizReviewOpen(false);
     setImageError(false);
   };
   useEffect(() => {
     setQueue(makeSessionQueue(words, 'study', store.records, store.settings)); setCursor(0); setMode('study'); setRevealed(false);
-    setFeedback(null); setQuizCelebration(null); setQuizReviewOpen(false);
+    setFeedback(null); setQuizCelebration(null); setRatingFeedback(null); setQuizReviewOpen(false);
     setAutoplay(false); setSession({ answered: 0, correct: 0 });
   }, [words]);
 
@@ -203,11 +205,14 @@ export default function VocaDash() {
     if (dx > 0 && cursor > 0) previous();
   };
   const rate = remembered => {
-    if (!current) return;
+    if (!current || ratingFeedback !== null) return;
+    clearTimeout(quizTimer.current);
+    setRatingFeedback(remembered ? 'correct' : 'retry');
+    playQuizFeedbackSound(remembered,store.settings.sound);
     setStore(prev => updateRecord(prev, current.id, remembered));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (remembered ? 1 : 0) }));
     if (mode === 'review' && !remembered && queue.length < words.length * 3) setQueue(prev => [...prev, current]);
-    next();
+    quizTimer.current=setTimeout(next,remembered?1150:800);
   };
   const answer = option => {
     if (feedback !== null || !current) return;
@@ -264,7 +269,7 @@ export default function VocaDash() {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
-      if (mode === 'reading') return;
+      if (mode === 'reading' || ratingFeedback !== null) return;
       if ((mode === 'quiz' || mode === 'listening') && feedback !== null) return;
       if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
@@ -451,9 +456,15 @@ export default function VocaDash() {
                   </>
                 )}
               </div>
+              {ratingFeedback && (
+                <div className={'vd-rating-celebration'+(ratingFeedback === 'retry'?' is-retry':'')} role="status" aria-live="polite">
+                  <div className="vd-rating-symbol" aria-hidden="true">{ratingFeedback === 'correct'?'✓':'↻'}</div>
+                  <strong>{ratingFeedback === 'correct'?'CORRECT!':'もう一度！'}</strong>
+                </div>
+              )}
               <div className="vd-actions">{autoplay ? <div className="vd-autoplay-running"><span>● 連続再生中 · 習得判定なし</span><button onClick={() => setAutoplay(false)}>停止</button></div> : !revealed ?
                 <button className="vd-reveal" onClick={() => setRevealed(true)}><Icon name="cards" size={21}/> 意味を見る <kbd>SPACE</kbd></button> :
-                <div className="vd-ratings"><button className="vd-again" onClick={() => rate(false)}><Icon name="repeat"/> もう一度 <kbd>1</kbd></button><button className="vd-remember" onClick={() => rate(true)}><Icon name="check"/> 覚えた！ <kbd>2</kbd></button></div>}
+                <div className="vd-ratings"><button className="vd-again" disabled={ratingFeedback !== null} onClick={() => rate(false)}><Icon name="repeat"/> もう一度 <kbd>1</kbd></button><button className="vd-remember" disabled={ratingFeedback !== null} onClick={() => rate(true)}><Icon name="check"/> 覚えた！ <kbd>2</kbd></button></div>}
                 <div className="vd-card-navigation"><button disabled={cursor === 0} onClick={previous}><Icon name="back" size={17}/> 前へ</button><span>{autoplay ? '自動再生では記録しません' : '自分のペースで、確実に。'}</span><button onClick={next}>スキップ <Icon name="arrow" size={17}/></button></div>
               </div>
             </div>
