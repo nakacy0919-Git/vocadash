@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns } from './lib/learning';
+import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue } from './lib/learning';
 import './VocaDash.css';
 
 const MODULES = import.meta.glob('./data/*.json');
@@ -37,7 +37,13 @@ function playQuizFeedbackSound(correct, enabled) {
   }
 }
 
-const modes = [{ id: 'study', label: '覚える', icon: '▣' }, { id: 'quiz', label: '確認テスト', icon: '✦' }, { id: 'review', label: '復習', icon: '↻' }];
+const modes = [
+  { id: 'study', label: '単語で覚える', icon: '▣' },
+  { id: 'sentence', label: '例文で覚える', icon: '▤' },
+  { id: 'quiz', label: '確認テスト', icon: '✦' },
+  { id: 'listening', label: '音声×画像', icon: '♫', masterOnly: true },
+  { id: 'review', label: '復習', icon: '↻' }
+];
 const icons = {
   speaker: <><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></>,
   arrow: <path d="M5 12h14m-6-6 6 6-6 6"/>,
@@ -88,6 +94,8 @@ export default function VocaDash() {
   const [selection, setSelection] = useState(() => store.lastSelection);
   const { words, loading, error, retry } = useVocabulary(selection);
   const [mode, setMode] = useState('study');
+  const [dashboardOpen, setDashboardOpen] = useState(true);
+  const [advancedOpen, setAdvancedOpen] = useState(false);
   const [queue, setQueue] = useState([]);
   const [cursor, setCursor] = useState(0);
   const [revealed, setRevealed] = useState(false);
@@ -101,6 +109,7 @@ export default function VocaDash() {
   const [savedError, setSavedError] = useState(false);
   const [session, setSession] = useState({ answered: 0, correct: 0 });
   const audio = useRef(null), quizTimer = useRef(null);
+  const swipeStart = useRef(null);
 
   const course = CATALOG.find(c => c.id === selection.courseId) || CATALOG[1];
   const unit = course.units.find(u => u.id === selection.unitId) || course.units[0];
@@ -109,8 +118,16 @@ export default function VocaDash() {
   const stats = useMemo(() => summaryFor(words, store.records), [words, store.records]);
   const today = useMemo(() => Object.values(store.records).filter(r => r?.lastSeenAt && new Date(r.lastSeenAt).toDateString() === new Date().toDateString()).length, [store.records]);
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
+  const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
   const filtered = useMemo(() => words.filter(w => (w.word + ' ' + w.meaning).toLowerCase().includes(wordQuery.toLowerCase())), [words, wordQuery]);
   const options = useMemo(() => current ? shuffled(current.choices.map((text, i) => ({ id: i, text, correct: i === current.correctIndex }))) : [], [current]);
+  const imageOptions = useMemo(() => {
+    if (!current?.image || mode !== 'listening') return [];
+    const distractors = shuffled(words.filter(w => w.id !== current.id && w.image && w.image !== current.image));
+    return shuffled([current, ...distractors.slice(0, 3)]).map(w => ({
+      id: w.id, image: assetImage(w.image), correct: w.id === current.id, text: w.word
+    }));
+  }, [mode, current, words]);
 
   useEffect(() => { if (!safeSave(store)) setSavedError(true); }, [store]);
   const stopAudio = useCallback(() => {
@@ -128,28 +145,42 @@ export default function VocaDash() {
     setImageError(false);
   };
   useEffect(() => {
-    setQueue(words); setCursor(0); setMode('study'); setRevealed(false);
+    setQueue(makeSessionQueue(words, 'study', store.records, store.settings)); setCursor(0); setMode('study'); setRevealed(false);
     setFeedback(null); setQuizCelebration(null); setQuizReviewOpen(false);
     setAutoplay(false); setSession({ answered: 0, correct: 0 });
   }, [words]);
 
   const selectCourse = id => {
-    resetCard(); setAutoplay(false);
+    resetCard(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: id, unitId: firstUnit(id) };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const selectUnit = id => {
-    resetCard(); setAutoplay(false);
+    resetCard(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: course.id, unitId: id };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const startMode = name => {
-    resetCard(); setAutoplay(false); setMode(name); setCursor(0);
+    resetCard(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
     setSession({ answered: 0, correct: 0 });
-    setQueue(name === 'review' ? shuffled(words.filter(w => isDue(store.records[w.id]))) : name === 'quiz' ? shuffled(words) : words);
+    setQueue(makeSessionQueue(words, name, store.records, store.settings));
   };
   const next = () => { resetCard(); setCursor(n => n + 1); };
   const previous = () => { resetCard(); setCursor(n => Math.max(0, n - 1)); };
+  const handleSwipeStart = event => {
+    const point = event.touches[0];
+    swipeStart.current = point ? { x: point.clientX, y: point.clientY } : null;
+  };
+  const handleSwipeEnd = event => {
+    const start = swipeStart.current;
+    swipeStart.current = null;
+    const point = event.changedTouches[0];
+    if (!start || !point || advancedOpen || wordListOpen || quizReviewOpen || autoplay || feedback !== null) return;
+    const dx = point.clientX - start.x, dy = point.clientY - start.y;
+    if (Math.abs(dx) < 85 || Math.abs(dx) < Math.abs(dy) * 1.45) return;
+    if (dx < 0 && cursor < queue.length - 1) next();
+    if (dx > 0 && cursor > 0) previous();
+  };
   const rate = remembered => {
     if (!current) return;
     setStore(prev => updateRecord(prev, current.id, remembered));
@@ -192,9 +223,14 @@ export default function VocaDash() {
     } else fallback();
   };
   const setSetting = (key, value) => setStore(prev => ({ ...prev, settings: { ...prev.settings, [key]: value } }));
+  useEffect(() => {
+    if (mode !== 'listening' || !current || !store.settings.sound) return;
+    const timer = setTimeout(() => speak(current, true), 200);
+    return () => clearTimeout(timer);
+  }, [mode, cursor, current?.id, store.settings.sound, store.settings.speed]);
 
   useEffect(() => {
-    if (!autoplay || mode !== 'study' || !current) return;
+    if (!autoplay || !['study','sentence'].includes(mode) || !current) return;
     if (store.settings.sound) speak(current, true);
     const show = setTimeout(() => setRevealed(true), 1600);
     const advance = setTimeout(() => { setCursor(n => n + 1); setRevealed(false); }, 4900);
@@ -208,12 +244,12 @@ export default function VocaDash() {
         return;
       }
       if (mode === 'quiz' && feedback !== null) return;
-      if (wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
+      if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); previous(); }
-      if (e.code === 'Space' && current && mode === 'study') { e.preventDefault(); setRevealed(true); }
-      if (mode === 'study' && revealed && current && !autoplay && e.key === '1') rate(false);
-      if (mode === 'study' && revealed && current && !autoplay && e.key === '2') rate(true);
+      if (e.code === 'Space' && current && (mode === 'study' || mode === 'sentence')) { e.preventDefault(); setRevealed(true); }
+      if ((mode === 'study' || mode === 'sentence') && revealed && current && !autoplay && e.key === '1') rate(false);
+      if ((mode === 'study' || mode === 'sentence') && revealed && current && !autoplay && e.key === '2') rate(true);
       if (mode === 'quiz' && feedback === null && /^[1-4]$/.test(e.key)) {
         const opt = options[Number(e.key) - 1]; if (opt) answer(opt);
       }
@@ -224,7 +260,7 @@ export default function VocaDash() {
 
   const jumpTo = word => {
     setWordListOpen(false); setAutoplay(false); setMode('study'); setQueue(words);
-    setCursor(words.findIndex(w => w.id === word.id)); resetCard();
+    setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
   return <div className="vd-app">
