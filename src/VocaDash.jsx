@@ -474,10 +474,10 @@ export default function VocaDash() {
                 </div>
               </div>
             ) :
-            <div className="vd-card-area">
+            <div className={'vd-card-area '+(mode === 'sentence' ? 'is-sentence-card' : 'is-word-card')}>
               <div className="vd-word-card">
                 {mode === 'sentence' ? (
-                  <div className="vd-sentence-study">
+                  <div className={'vd-sentence-study'+(current.image && !imageError ? ' has-image' : '')}>
                     <div className="vd-word-eyebrow"><span>LEARN IN CONTEXT</span><span className="vd-course-badge">{course.short}</span></div>
                     {current.image && !imageError && <img className="vd-sentence-picture" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                     <div className="vd-sentence-content">
