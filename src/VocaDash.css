@@ -1064,3 +1064,128 @@
   }
   .vd-app.is-compact-card .vd-actions{flex-wrap:wrap;}
 }
+
+
+/* Study-card refinement: restore comfortable breathing room, without the old
+   empty full-height panels or far-away action buttons. */
+.vd-target-highlight {
+  color:#1f58c3;
+  font-weight:900;
+  padding:.025em .14em .065em;
+  margin:0 -.015em;
+  background:linear-gradient(180deg,#eef5ff 0%,#dfeaff 100%);
+  border-radius:5px;
+  box-shadow:inset 0 -1px 0 #b9d2fc;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+.vd-app.is-compact-card .vd-study-panel {
+  width:min(100%,1150px);
+  max-width:1150px;
+}
+.vd-app.is-compact-card .vd-card-area {
+  padding:0 22px 18px;
+}
+.vd-app.is-compact-card .vd-word-card {
+  padding:12px 14px 9px;
+  max-height:calc(100dvh - 285px);
+}
+.vd-app.is-compact-card .vd-word-heading {
+  margin:6px auto 3px;
+  gap:13px;
+}
+.vd-app.is-compact-card .vd-word-heading h2 {
+  font-size:clamp(37px,3.6vw,54px);
+  line-height:1.18;
+}
+.vd-app.is-compact-card .vd-word-detail {
+  margin:12px auto 0;
+}
+.vd-app.is-compact-card .vd-word-detail>h3 {
+  margin:6px 0 15px;
+  font-size:clamp(19px,2vw,26px);
+  line-height:1.42;
+}
+.vd-app.is-compact-card .vd-example {
+  padding:16px 19px;
+}
+.vd-app.is-compact-card .vd-example p {
+  margin:9px 0 7px;
+  font-size:clamp(15px,1.55vw,19px);
+  line-height:1.58;
+}
+.vd-app.is-compact-card .vd-example small {
+  font-size:clamp(12px,1.1vw,14px);
+  line-height:1.6;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+  grid-template-columns:minmax(195px,260px) minmax(0,1fr);
+  gap:12px 18px;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-word-image{
+  height:clamp(135px,21vh,200px);
+}
+.vd-app.is-compact-card .vd-sentence-study {gap:12px;}
+.vd-app.is-compact-card .vd-sentence-study.has-image {
+  grid-template-columns:minmax(245px,38%) minmax(0,1fr);
+  column-gap:22px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+  height:clamp(175px,26vh,250px);
+}
+.vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence {
+  font-size:clamp(18px,1.9vw,25px);
+  line-height:1.5;
+}
+.vd-app.is-compact-card .vd-actions{
+  margin:15px 0 0;
+  gap:10px;
+}
+.vd-app.is-compact-card .vd-reveal,
+.vd-app.is-compact-card .vd-ratings button,
+.vd-app.is-compact-card .vd-card-navigation button {
+  min-height:46px;
+}
+.vd-app.is-compact-card .vd-card-navigation {gap:9px;}
+@media(max-width:980px){
+  .vd-app.is-compact-card .vd-word-card {
+    padding:10px 11px 8px;
+    max-height:calc(100dvh - 255px);
+  }
+  .vd-app.is-compact-card .vd-card-area{padding:0 15px 14px;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image {
+    grid-template-columns:minmax(205px,36%) minmax(0,1fr);
+    column-gap:13px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+    height:clamp(145px,22vh,210px);
+  }
+  .vd-app.is-compact-card .vd-example{padding:13px 15px;}
+  .vd-app.is-compact-card .vd-example p{font-size:clamp(15px,1.8vw,18px);}
+  .vd-app.is-compact-card .vd-actions{margin-top:12px;}
+}
+@media(max-width:700px){
+  .vd-app.is-compact-card .vd-word-card{padding:9px 7px;max-height:calc(100dvh - 265px);}
+  .vd-app.is-compact-card .vd-card-area{padding:0 10px 11px;}
+  .vd-app.is-compact-card .vd-word-heading h2{font-size:clamp(32px,5.1vw,45px);}
+  .vd-app.is-compact-card .vd-word-detail>h3{margin:4px 0 10px;}
+  .vd-app.is-compact-card .vd-example{padding:11px 12px;}
+  .vd-app.is-compact-card .vd-example p{margin:5px 0;font-size:15px;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image {
+    grid-template-columns:minmax(145px,37%) minmax(0,1fr);
+    column-gap:9px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+    height:clamp(120px,18vh,175px);
+  }
+  .vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+    font-size:clamp(15px,2.5vw,18px);
+  }
+  .vd-app.is-compact-card .vd-reveal,
+  .vd-app.is-compact-card .vd-ratings button,
+  .vd-app.is-compact-card .vd-card-navigation button {min-height:40px;}
+  .vd-app.is-compact-card .vd-actions{margin-top:9px;gap:7px;}
+}
+@media(max-height:550px){
+  .vd-app.is-compact-card .vd-word-card{max-height:none;}
+}
