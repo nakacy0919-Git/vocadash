@@ -468,3 +468,284 @@
   .vd-app.is-reading-view .vd-study-panel{height:auto;min-height:570px;overflow:visible;}
   .vd-app.is-reading-view .vd-columns{display:block;}
 }
+
+
+/* Premium progress medallions: precise SVG progress, glossy ring and calm typography */
+.vd-dashboard-page {padding-top:7px;}
+.vd-dashboard-summary {
+  gap:30px;
+  border:1px solid #dce6f6;
+  background:linear-gradient(133deg,#fff 0%,#f7faff 52%,#eff5ff 100%);
+  box-shadow:0 16px 40px rgba(58,84,143,.08),inset 0 1px 0 #fff;
+}
+.vd-medallion-group {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(143px,1fr));
+  align-items:start;
+  gap:11px;
+  flex:0 1 390px;
+  min-width:290px;
+}
+.vd-progress-medallion{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px 10px 13px;
+  border-radius:18px;
+  border:1px solid rgba(215,226,245,.9);
+  background:linear-gradient(160deg,#ffffffeb,#f1f6ffbd);
+  box-shadow:inset 0 2px 0 #fff,0 7px 22px rgba(43,71,128,.065);
+}
+.vd-progress-medallion.is-reading{background:linear-gradient(160deg,#ffffff,#effbf7);}
+.vd-medallion-visual{position:relative;width:min(100%,172px);aspect-ratio:1;filter:drop-shadow(0 8px 9px rgba(37,89,140,.09));}
+.vd-medallion-svg{width:100%;height:100%;display:block;overflow:visible;}
+.vd-medallion-progress,.vd-medallion-reflection{transition:stroke-dasharray .7s cubic-bezier(.2,.9,.28,1);}
+.vd-medallion-value{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;pointer-events:none;padding-top:7px;}
+.vd-medallion-value strong{color:#3459b6;font-size:clamp(28px,3vw,39px);font-weight:900;letter-spacing:-2.1px;line-height:1.1;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 #fff;}
+.vd-medallion-value strong span{font-size:.58em;letter-spacing:-1px;}
+.vd-progress-medallion.is-reading .vd-medallion-value strong{color:#149879;}
+.vd-medallion-value small{font-size:8px;color:#8399bc;font-weight:900;letter-spacing:1.6px;margin-top:3px;}
+.vd-progress-medallion.is-reading .vd-medallion-value small{color:#5faba0;}
+.vd-medallion-label{font-size:13px;color:#3c5280;font-weight:900;line-height:1.4;margin-top:-2px;}
+.vd-progress-medallion.is-reading .vd-medallion-label{color:#257b69;}
+.vd-medallion-subtitle{font-size:10px;color:#9baac1;line-height:1.35;margin-top:4px;}
+.vd-dashboard-summary-text {flex:1 1 280px;}
+.vd-dashboard-metrics span{background:#eef3fd;}
+.vd-dashboard-course-heading{margin-top:24px;}
+@media(max-width:1100px){
+  .vd-dashboard-summary{flex-wrap:wrap;justify-content:center;padding:20px;}
+  .vd-dashboard-summary-text{flex-basis:100%;text-align:center;}
+  .vd-medallion-group{flex:0 1 385px;}
+  .vd-dashboard-metrics{justify-content:center;}
+}
+@media(max-width:550px){
+  .vd-medallion-group{min-width:0;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+  .vd-progress-medallion{padding:8px 3px 11px;}
+  .vd-medallion-label{font-size:11px;}
+  .vd-dashboard-summary{gap:11px;padding:14px;}
+}
+/* All study types, including regular school-test and long-reading vocabulary,
+   use the same viewport as sentence reading instead of a scrollable long page. */
+.vd-app.is-focus-view{height:100dvh;min-height:0;overflow:hidden;}
+.vd-app.is-focus-view .vd-main{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.vd-app.is-focus-view .vd-topbar{height:46px;min-height:46px;padding:0 16px;flex-shrink:0;}
+.vd-app.is-focus-view .vd-page{
+  flex:1;min-height:0;
+  display:flex;flex-direction:column;
+  max-width:none;width:100%;overflow:hidden;
+  padding:8px 14px 10px;
+}
+.vd-app.is-focus-view .vd-toolbar{
+  display:flex;flex:0 0 auto;min-height:0;align-items:center;justify-content:stretch;
+  gap:10px;margin:3px 0 9px;
+  flex-direction:row;
+}
+.vd-app.is-focus-view .vd-unit{
+  min-width:160px;max-width:215px;flex:0 0 auto;padding:4px 8px;border-radius:10px;
+}
+.vd-app.is-focus-view .vd-unit label{display:none;}
+.vd-app.is-focus-view .vd-unit select{width:100%;min-width:0;padding:6px;font-size:12px;}
+.vd-app.is-focus-view .vd-tabs{
+  flex:1;min-width:0;
+  display:flex;align-items:center;justify-content:flex-start;
+  gap:2px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+  padding:4px;border-radius:11px;
+}
+.vd-app.is-focus-view .vd-tabs::-webkit-scrollbar{display:none;}
+.vd-app.is-focus-view .vd-tabs button{
+  flex:0 0 auto;min-width:max-content;font-size:11px;
+  gap:6px;padding:9px 10px;border-radius:8px;white-space:nowrap;
+}
+.vd-app.is-focus-view .vd-tabs button span{font-size:14px;}
+.vd-app.is-focus-view .vd-columns{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:minmax(0,1fr);
+  align-items:stretch;gap:0;
+}
+.vd-app.is-focus-view .vd-stats{display:none;}
+.vd-app.is-focus-view .vd-study-panel{
+  min-height:0;height:100%;max-height:100%;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-radius:17px;
+}
+.vd-app.is-focus-view .vd-panel-head{
+  min-height:40px;height:40px;flex-shrink:0;
+  padding:0 16px;
+}
+.vd-app.is-focus-view .vd-panel-head>span{
+  letter-spacing:.5px;font-size:10px;
+}
+.vd-app.is-focus-view .vd-panel-counter{
+  flex-shrink:0;
+  height:27px;min-height:27px;
+  align-items:center;
+  padding:4px 18px 0;
+}
+.vd-app.is-focus-view .vd-panel-counter strong{font-size:13px;}
+.vd-app.is-focus-view .vd-progress{height:3px;flex-shrink:0;}
+.vd-app.is-focus-view .vd-under-card,
+.vd-app.is-focus-view .vd-footer{display:none;}
+.vd-app.is-focus-view .vd-sidebar-bottom{display:none;}
+.vd-app.is-focus-view .vd-list-button{padding:7px 9px;font-size:11px;}
+.vd-app.is-focus-view .vd-list-button svg{width:15px;height:15px;}
+/* Four-choice quiz: fixed 2x2 options and a visible skip button at every viewport size. */
+.vd-app.is-focus-view .vd-quiz-body{
+  flex:1;min-height:0;overflow:hidden;
+  display:flex;flex-direction:column;
+  padding:9px 17px 11px;
+  gap:5px;
+}
+.vd-app.is-focus-view .vd-quiz-instruction{
+  text-align:left;
+  flex:0 0 auto;
+  font-size:11px;
+  letter-spacing:.3px;
+  line-height:1.4;
+}
+.vd-app.is-focus-view .vd-quiz-sentence{
+  flex:0 1 auto;
+  min-height:0;
+  max-height:min(36vh,39%);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  font-size:clamp(18px,1.8vw,25px);
+  line-height:1.42;
+  font-weight:800;
+  text-align:left;
+  margin:3px 0 7px;
+  padding:0;
+  letter-spacing:-.35px;
+}
+.vd-app.is-focus-view .vd-quiz-sentence.vd-quiz-dialogue{
+  max-height:min(39vh,42%);
+}
+.vd-app.is-focus-view .vd-quiz-turn + .vd-quiz-turn{margin-top:.35em;}
+.vd-app.is-focus-view .vd-choice-grid{
+  flex:1 1 auto;
+  min-height:120px;
+  max-height:clamp(150px,29vh,270px);
+  margin:3px 0 5px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:9px;
+}
+.vd-app.is-focus-view .vd-choice{
+  min-height:0;
+  min-width:0;
+  height:100%;
+  padding:10px 15px;
+  gap:10px;
+  border-radius:11px;
+  font-size:clamp(13px,1.35vw,16px);
+}
+.vd-app.is-focus-view .vd-choice>span{width:26px;height:26px;}
+.vd-app.is-focus-view .vd-quiz-next{
+  flex:0 0 26px;
+  margin-top:auto;
+  min-height:26px;
+  align-items:center;
+  padding:0;
+}
+.vd-app.is-focus-view .vd-quiz-next button{font-size:12px;padding:5px 7px;}
+/* Listening mode: retain squarely visible four pictures inside the same screen. */
+.vd-app.is-focus-view .vd-listening-intro{
+  margin:0 0 6px;
+  min-height:37px;
+  flex:0 0 auto;
+}
+.vd-app.is-focus-view .vd-listening-replay{padding:9px 13px;}
+.vd-app.is-focus-view .vd-listening-grid{
+  flex:1;
+  min-height:0;
+  max-height:calc(100% - 90px);
+  margin:2px 0 6px;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+}
+.vd-app.is-focus-view .vd-image-choice{height:100%;aspect-ratio:auto;}
+/* Flashcard / sentence workbench: context, picture and action buttons stay visible. */
+.vd-app.is-focus-view .vd-card-area{
+  flex:1;min-height:0;
+  padding:0 17px 9px;
+  overflow:hidden;
+}
+.vd-app.is-focus-view .vd-word-card{
+  min-height:0;
+  flex:1;overflow-y:auto;
+  padding:10px 7px 8px;
+  overscroll-behavior:contain;
+}
+.vd-app.is-focus-view .vd-word-eyebrow{margin-bottom:7px;}
+.vd-app.is-focus-view .vd-word-heading h2{font-size:clamp(30px,3.3vw,52px);line-height:1.12;}
+.vd-app.is-focus-view .vd-sound{width:39px;height:39px;}
+.vd-app.is-focus-view .vd-phonetic{margin:6px 0 0;font-size:12px;}
+.vd-app.is-focus-view .vd-word-detail{margin:7px auto 0;}
+.vd-app.is-focus-view .vd-word-detail>h3{margin:5px 0 10px;font-size:clamp(17px,2vw,23px);}
+.vd-app.is-focus-view .vd-word-image{height:clamp(95px,16vh,170px);margin-bottom:8px;}
+.vd-app.is-focus-view .vd-example{padding:10px 13px;}
+.vd-app.is-focus-view .vd-example p{margin:4px 0;font-size:clamp(12px,1.2vw,15px);line-height:1.45;}
+.vd-app.is-focus-view .vd-example small{font-size:11px;line-height:1.45;}
+.vd-app.is-focus-view .vd-etymology{font-size:10px;line-height:1.45;padding-top:4px;}
+.vd-app.is-focus-view .vd-card-unrevealed{min-height:85px;}
+.vd-app.is-focus-view .vd-actions{flex:0 0 auto;}
+.vd-app.is-focus-view .vd-reveal,
+.vd-app.is-focus-view .vd-ratings button{padding:10px 12px;font-size:13px;}
+.vd-app.is-focus-view .vd-card-navigation{margin-top:6px;padding-top:6px;}
+.vd-app.is-focus-view .vd-sentence-study{min-height:0;gap:7px;}
+.vd-app.is-focus-view .vd-sentence-picture{max-height:clamp(110px,20vh,215px);}
+.vd-app.is-focus-view .vd-sentence-content .vd-quiz-sentence{
+  max-height:none;
+  font-size:clamp(17px,1.85vw,24px);
+  line-height:1.45;
+}
+.vd-app.is-focus-view .vd-sentence-meaning{padding:8px 3px;margin-top:3px;}
+.vd-app.is-focus-view .vd-sentence-meaning p{font-size:13px;line-height:1.5;}
+/* Tablet landscape and portrait: extend the study space across the screen. */
+@media(max-width:1240px){
+  .vd-app.is-focus-view .vd-sidebar{display:none;}
+  .vd-app.is-focus-view .vd-mobile-brand{display:block;}
+  .vd-app.is-focus-view .vd-breadcrumb{display:none;}
+  .vd-app.is-focus-view .vd-topbar{padding:0 14px;}
+  .vd-app.is-focus-view .vd-page{padding:6px 10px 7px;}
+  .vd-app.is-focus-view .vd-mobile-course{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e8ecf2;padding:5px 9px;border-radius:10px;margin:0 0 5px;flex:0 0 auto;}
+  .vd-app.is-focus-view .vd-mobile-course select{padding:3px;font-size:11px;}
+  .vd-app.is-focus-view .vd-toolbar{margin:2px 0 6px;gap:6px;}
+  .vd-app.is-focus-view .vd-choice-grid{max-height:clamp(144px,28vh,250px);}
+}
+@media(max-width:740px){
+  .vd-app.is-focus-view .vd-topbar{height:41px;min-height:41px;}
+  .vd-app.is-focus-view .vd-toolbar{gap:5px;}
+  .vd-app.is-focus-view .vd-unit{min-width:110px;max-width:130px;}
+  .vd-app.is-focus-view .vd-tabs button{padding:8px;font-size:10px;}
+  .vd-app.is-focus-view .vd-panel-head{min-height:37px;height:37px;padding:0 10px;}
+  .vd-app.is-focus-view .vd-quiz-body{padding:8px 11px 10px;}
+  .vd-app.is-focus-view .vd-quiz-sentence{font-size:clamp(16px,2.4vw,20px);line-height:1.4;}
+  .vd-app.is-focus-view .vd-choice{font-size:12px;padding:8px;gap:7px;}
+  .vd-app.is-focus-view .vd-choice-grid{gap:7px;}
+}
+@media(max-height:730px) and (min-width:551px){
+  .vd-app.is-focus-view .vd-topbar{height:40px;min-height:40px;}
+  .vd-app.is-focus-view .vd-page{padding-top:4px;padding-bottom:4px;}
+  .vd-app.is-focus-view .vd-mobile-course{margin-bottom:3px;padding:2px 7px;}
+  .vd-app.is-focus-view .vd-toolbar{margin:1px 0 5px;}
+  .vd-app.is-focus-view .vd-quiz-body{padding-top:6px;padding-bottom:6px;}
+  .vd-app.is-focus-view .vd-choice-grid{max-height:clamp(126px,26vh,205px);}
+  .vd-app.is-focus-view .vd-panel-head{min-height:36px;height:36px;}
+  .vd-app.is-focus-view .vd-word-image{height:95px;}
+}
+/* For phones and very short displays, preserve legibility rather than cropping text. */
+@media(max-width:550px),(max-height:550px){
+  .vd-app.is-focus-view{height:auto;min-height:100dvh;overflow:visible;}
+  .vd-app.is-focus-view .vd-main{height:auto;min-height:100dvh;overflow:visible;}
+  .vd-app.is-focus-view .vd-page{overflow:visible;}
+  .vd-app.is-focus-view .vd-columns{display:block;}
+  .vd-app.is-focus-view .vd-study-panel{height:auto;min-height:490px;max-height:none;}
+  .vd-app.is-focus-view .vd-quiz-sentence{max-height:none;overflow:visible;}
+  .vd-app.is-focus-view .vd-quiz-body{overflow:visible;min-height:440px;}
+  .vd-app.is-focus-view .vd-choice-grid{flex:none;max-height:none;height:170px;}
+  .vd-app.is-focus-view .vd-card-area{overflow:visible;}
+  .vd-app.is-focus-view .vd-word-card{overflow:visible;}
+  .vd-app.is-focus-view .vd-sentence-study{min-height:0;}
+}
+@media(prefers-reduced-motion:reduce){.vd-medallion-progress,.vd-medallion-reflection{transition:none;}}
