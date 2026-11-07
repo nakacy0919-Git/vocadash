@@ -74,6 +74,53 @@ function QuizSentence({ text }) {
     </h2>
   );
 }
+
+function ProgressMedallion({ value, title, detail, variant }) {
+  const percent = Math.max(0, Math.min(100, Number(value) || 0));
+  const circumference = 2 * Math.PI * 67;
+  const dash = circumference * percent / 100;
+  const id = variant === 'reading' ? 'vd-reading' : 'vd-mastery';
+  return (
+    <div className={'vd-progress-medallion '+(variant === 'reading' ? 'is-reading' : 'is-mastery')}
+      role="meter" aria-label={title} aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}>
+      <div className="vd-medallion-visual">
+        <svg className="vd-medallion-svg" viewBox="0 0 180 180" aria-hidden="true">
+          <defs>
+            <linearGradient id={id+'-fill'} x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor={variant === 'reading' ? '#0e9b83' : '#425ed5'}/>
+              <stop offset="47%" stopColor={variant === 'reading' ? '#43eac0' : '#7dccff'}/>
+              <stop offset="100%" stopColor={variant === 'reading' ? '#0fba89' : '#5971ec'}/>
+            </linearGradient>
+            <linearGradient id={id+'-glass'} x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#fff" stopOpacity=".78"/>
+              <stop offset="100%" stopColor="#fff" stopOpacity="0"/>
+            </linearGradient>
+            <radialGradient id={id+'-face'} cx="35%" cy="15%" r="85%">
+              <stop offset="0%" stopColor="#ffffff"/>
+              <stop offset="100%" stopColor={variant === 'reading' ? '#f1faf7' : '#f1f5ff'}/>
+            </radialGradient>
+          </defs>
+          <circle cx="90" cy="90" r="79" fill="none" stroke="#fff" strokeWidth="2" opacity=".85"/>
+          <circle cx="90" cy="90" r="67" fill="none" stroke="#dce6f3" strokeWidth="15" />
+          <circle cx="90" cy="90" r="67" fill="none" stroke={'url(#'+id+'-fill)'} strokeWidth="15"
+            strokeLinecap="round" strokeDasharray={dash+' '+circumference}
+            transform="rotate(-90 90 90)" className="vd-medallion-progress"/>
+          <circle cx="90" cy="90" r="67" fill="none" stroke={'url(#'+id+'-glass)'}
+            strokeWidth="5" strokeDasharray={dash+' '+circumference} transform="rotate(-90 90 90) translate(0 -3)"
+            className="vd-medallion-reflection"/>
+          <circle cx="90" cy="90" r="54" fill={'url(#'+id+'-face)'} stroke="#fff" strokeWidth="2"/>
+          <ellipse cx="90" cy="65" rx="43" ry="17" fill="#fff" opacity=".4"/>
+        </svg>
+        <div className="vd-medallion-value">
+          <strong>{percent}<span>%</span></strong>
+          <small>{detail}</small>
+        </div>
+      </div>
+      <strong className="vd-medallion-label">{title}</strong>
+      <span className="vd-medallion-subtitle">{percent === 100 ? '目標達成！' : percent > 0 ? '積み重ねが成果に' : 'ここからスタート'}</span>
+    </div>
+  );
+}
 function Brand() { return <div className="vd-brand"><span className="vd-brandmark"><Icon name="cards" size={23}/></span><div><strong>VocaDash</strong><small>VOCABULARY STUDIO</small></div></div>; }
 function useVocabulary(selection) {
   const [data, setData] = useState({ words: [], loading: true, error: '' });
@@ -290,7 +337,7 @@ export default function VocaDash() {
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
-  return <div className={'vd-app'+(!dashboardOpen && mode === 'reading' ? ' is-reading-view' : '')}>
+  return <div className={'vd-app'+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')}>
     <aside className="vd-sidebar">
       <Brand/>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
@@ -310,7 +357,7 @@ export default function VocaDash() {
       <header className="vd-topbar">
         <div className="vd-mobile-brand"><Brand/></div>
         <div className="vd-breadcrumb"><span>LEARNING SPACE</span><b>/</b><strong>{course.label}</strong></div>
-        <div className="vd-top-right"><button className="vd-top-dashboard" onClick={() => setDashboardOpen(true)}>◉ 進捗</button><span>✦ 今日の学習 <strong>{today}語</strong></span><small>● 端末内に保存</small></div>
+
       </header>
       <div className="vd-page">
         {dashboardOpen ? (
@@ -320,11 +367,9 @@ export default function VocaDash() {
               <span className="vd-dashboard-today">今日の学習 <strong>{today}語</strong></span>
             </div>
             <div className="vd-dashboard-summary">
-              <div className="vd-dashboard-donut" style={{'--progress': masteryPercent + '%'}}>
-                <div><strong>{masteryPercent}%</strong><small>定着率</small></div>
-              </div>
-              <div className="vd-dashboard-donut vd-dashboard-reading-donut" style={{'--progress': readingPercent + '%'}}>
-                <div><strong>{readingPercent}%</strong><small>音読合格</small></div>
+              <div className="vd-medallion-group">
+                <ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/>
+                <ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/>
               </div>
               <div className="vd-dashboard-summary-text">
                 <span className="vd-overline">{course.label} / {unit.label}</span>
@@ -358,10 +403,8 @@ export default function VocaDash() {
           <div className="vd-panel-head">
             <span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? '音読 · 80%以上で合格' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span>
             <div className="vd-panel-head-actions">
-              {mode === 'reading' && <>
-                <strong className="vd-reading-session-count">{queue.length ? Math.min(cursor+1,queue.length) : 0}<span> / {queue.length}</span></strong>
-                <button className="vd-reading-settings-button" aria-label="音声・学習設定" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={17}/></button>
-              </>}
+              {mode === 'reading' && <strong className="vd-reading-session-count">{queue.length ? Math.min(cursor+1,queue.length) : 0}<span> / {queue.length}</span></strong>}
+              <button className="vd-reading-settings-button" aria-label="学習の詳細設定を開く" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={17}/></button>
               <button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button>
             </div>
           </div>
