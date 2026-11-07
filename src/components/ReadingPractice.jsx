@@ -227,10 +227,7 @@ export default function ReadingPractice({
   const allowedNextLevel=level<5&&cleared>=level;
   return (
     <div className="vd-reading">
-      <div className="vd-reading-toolbar">
-        <div><span className="vd-overline">SENTENCE READING</span><h2>例文を音読する</h2></div>
-        <span className="vd-reading-goal">合格基準 {READING_PASS_PERCENT}% 以上</span>
-      </div>
+      <h2 className="vd-reading-accessible-title">例文を音読する — Accuracy {READING_PASS_PERCENT}%で合格</h2>
       <div className="vd-reading-levels" aria-label="音読レベル">
         {READING_LEVELS.map(entry=>(
           <button type="button" key={entry.level}
@@ -244,19 +241,23 @@ export default function ReadingPractice({
       </div>
       <div className="vd-reading-sentence">
         <div className="vd-reading-sentence-top">
-          <span>基本例文 · Level {level} / 5</span>
+          <span>基本例文</span>
           <button type="button" disabled={phase!=='idle'||!soundEnabled} onClick={()=>onModelAudio(item)}>
             <span aria-hidden="true">♫</span> お手本を聞く
           </button>
         </div>
-        {item.image && <img className="vd-reading-picture" src={assetImage(item.image)} alt={item.word+'の例文イメージ'}/>}
-        <p className="vd-reading-english" lang="en">
-          {parts.map((part,i)=>part.hidden?
-            <span key={i} className="vd-reading-mask" role="img" aria-label="隠された単語"
-              style={{'--mask-length':Math.min(13,Math.max(2,part.text.length))+'ch'}}/>:
-            <React.Fragment key={i}>{part.text}</React.Fragment>)}
-        </p>
-        <p className="vd-reading-japanese">{item.japanese}</p>
+        <div className={'vd-reading-content'+(item.image?' has-image':'')}>
+          {item.image && <img className="vd-reading-picture" src={assetImage(item.image)} alt={item.word+'の例文イメージ'}/>}
+          <div className="vd-reading-copy">
+            <p className="vd-reading-english" lang="en">
+              {parts.map((part,i)=>part.hidden?
+                <span key={i} className="vd-reading-mask" role="img" aria-label="隠された単語"
+                  style={{'--mask-length':Math.min(13,Math.max(2,part.text.length))+'ch'}}/>:
+                <React.Fragment key={i}>{part.text}</React.Fragment>)}
+            </p>
+            <p className="vd-reading-japanese">{item.japanese}</p>
+          </div>
+        </div>
       </div>
       <div className="vd-reading-actions">
         <button type="button"
@@ -287,12 +288,12 @@ export default function ReadingPractice({
             <div><strong>{score?score.percent+'%':'—'}</strong><small>{score?.passed?'CLEAR!':'目標 80%'}</small></div>
           </div>
           {score && <div className="vd-reading-wpm">WPM {wpm} <span>・語順一致 {score.matchCount}/{score.targetCount}</span></div>}
-          <p>認識された単語と語順の一致率です。発音の質や抑揚の採点ではありません。</p>
+          <p title="認識された単語と語順の一致率で、発音の質や抑揚の採点ではありません。">※ 単語一致率（発音採点ではありません）</p>
           {best>0 && <span className="vd-reading-best">このレベルのBEST {best}%</span>}
         </div>
       </div>
       <div className="vd-reading-bottom">
-        {cleared>=5?<span className="vd-reading-all-clear">✓ LEVEL 5 COMPLETE</span>:<span>左から右に段階的にチャレンジできます。</span>}
+        {cleared>=5 && <span className="vd-reading-all-clear">✓ 全レベル達成</span>}
         <button type="button" disabled={phase!=='idle'} onClick={onNext}>次の英文へ →</button>
       </div>
       {celebrate && <div className="vd-reading-celebration" role="status" aria-live="polite">
