@@ -121,7 +121,7 @@ export default function VocaDash() {
   const current = queue[cursor];
   const isFinished = !loading && queue.length > 0 && cursor >= queue.length;
   const stats = useMemo(() => summaryFor(words, store.records), [words, store.records]);
-  const today = useMemo(() => Object.values(store.records).filter(r => r?.lastSeenAt && new Date(r.lastSeenAt).toDateString() === new Date().toDateString()).length, [store.records]);
+  const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
   const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
   const readingPassed = useMemo(
