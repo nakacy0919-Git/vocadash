@@ -290,7 +290,7 @@ export default function VocaDash() {
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
-  return <div className="vd-app">
+  return <div className={'vd-app'+(!dashboardOpen && mode === 'reading' ? ' is-reading-view' : '')}>
     <aside className="vd-sidebar">
       <Brand/>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
@@ -355,7 +355,16 @@ export default function VocaDash() {
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>
           <div className="vd-tabs" aria-label="学習モード">{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
         <div className="vd-columns"><section className="vd-study-panel" onTouchStart={handleSwipeStart} onTouchEnd={handleSwipeEnd}>
-          <div className="vd-panel-head"><span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? 'SENTENCE READING' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span><button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button></div>
+          <div className="vd-panel-head">
+            <span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? '音読 · 80%以上で合格' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span>
+            <div className="vd-panel-head-actions">
+              {mode === 'reading' && <>
+                <strong className="vd-reading-session-count">{queue.length ? Math.min(cursor+1,queue.length) : 0}<span> / {queue.length}</span></strong>
+                <button className="vd-reading-settings-button" aria-label="音声・学習設定" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={17}/></button>
+              </>}
+              <button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button>
+            </div>
+          </div>
           <div className="vd-progress"><span style={{ width: progress + '%' }}/></div>
           <div className="vd-panel-counter"><small>{mode === 'study' ? 'WORD CARD' : mode === 'sentence' ? 'SENTENCE CARD' : mode === 'reading' ? 'READ ALOUD' : mode === 'quiz' ? '4 CHOICE QUIZ' : mode === 'listening' ? 'IMAGE LISTENING' : 'REVIEW CARD'}</small><strong>{queue.length ? Math.min(cursor + 1, queue.length) : 0}<span> / {queue.length}</span></strong></div>
           {loading ? <div className="vd-empty"><div className="vd-spinner"/><h2>教材を準備しています</h2></div> :
@@ -544,6 +553,16 @@ export default function VocaDash() {
             <button aria-label="設定を閉じる" onClick={() => setAdvancedOpen(false)}><Icon name="close"/></button>
           </div>
           <div className="vd-settings-modal-body">
+            <div className="vd-settings-audio-row">
+              <label>再生速度
+                <select aria-label="モデル音声の速度" value={store.settings.speed} onChange={e => setSetting('speed',Number(e.target.value))}>
+                  <option value="0.65">0.65×</option><option value="0.85">0.85×</option><option value="1">1.0×</option><option value="1.2">1.2×</option>
+                </select>
+              </label>
+              <label>お手本・効果音
+                <input type="checkbox" checked={store.settings.sound} onChange={e => setSetting('sound',e.target.checked)}/>
+              </label>
+            </div>
             <h3>1回に出題する問題数</h3>
             <p>英検1級マスターの100問も、少しずつ進められます。</p>
             <div className="vd-count-options">
@@ -561,7 +580,11 @@ export default function VocaDash() {
             </label>
             <p className="vd-settings-hint">設定はこの端末に保存されます。変更後に開始すると、新しい問題数が適用されます。</p>
           </div>
-          <div className="vd-settings-modal-foot"><button onClick={() => {setAdvancedOpen(false);startMode(dashboardOpen ? 'study' : mode);}}>この設定で学習を開始 <Icon name="arrow"/></button></div>
+          <div className="vd-settings-modal-foot"><button onClick={() => {
+              setAdvancedOpen(false);
+              if (dashboardOpen) startMode('study');
+              else if (mode !== 'reading') startMode(mode);
+            }}>{mode === 'reading' && !dashboardOpen ? '設定を適用して戻る' : 'この設定で学習を開始'} <Icon name="arrow"/></button></div>
         </section>
       </div>
     )}
