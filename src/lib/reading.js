@@ -15,6 +15,7 @@ const EXPAND = {
   "haven't":"have not","hadn't":"had not","let's":"let us"
 };
 export const READING_PASS_PERCENT = 80;
+export const READING_SCORE_VERSION = 2; // Strict alignment: insertion/deletion/reordering penalized
 export const READING_LEVELS = [
   {level:1,label:'全文表示',hidden:0},
   {level:2,label:'20%を隠す',hidden:.2},
@@ -109,15 +110,21 @@ export function maskReadingSentence(sentence,level) {
 }
 export function saveReadingProgress(store,wordId,level,percent,now=Date.now()) {
   const record=store.records[wordId]||{};
+  // Older scores used LCS and could award 100% with extra spoken words.
+  // Preserve legacy fields in storage, but restart best scores and unlocks
+  // under version 2 instead of allowing old, inflated scores to dominate.
+  const valid = record.readingScoreVersion === READING_SCORE_VERSION;
   const passed=Number(percent)>=READING_PASS_PERCENT;
-  const bestByLevel=Array.from({length:5},(_,i)=>Number(record.readingBestByLevel?.[i])||0);
+  const bestByLevel=Array.from({length:5},(_,i)=>valid ? (Number(record.readingBestByLevel?.[i])||0) : 0);
   const index=Math.min(4,Math.max(0,Number(level)-1||0));
   bestByLevel[index]=Math.max(bestByLevel[index],Number(percent)||0);
   const updated={
-    ...record,readingAttempts:(record.readingAttempts||0)+1,
-    readingBest:Math.max(record.readingBest||0,Number(percent)||0),
+    ...record,
+    readingScoreVersion:READING_SCORE_VERSION,
+    readingAttempts:(record.readingAttempts||0)+1,
+    readingBest:Math.max(valid?(Number(record.readingBest)||0):0,Number(percent)||0),
     readingLast:Number(percent)||0,readingLastAt:now,readingBestByLevel:bestByLevel,
-    readingClearedLevel:passed?Math.max(record.readingClearedLevel||0,Number(level)||1):record.readingClearedLevel||0
+    readingClearedLevel:passed?Math.max(valid?(Number(record.readingClearedLevel)||0):0,Number(level)||1):(valid?(Number(record.readingClearedLevel)||0):0)
   };
   return {...store,records:{...store.records,[wordId]:updated}};
 }
