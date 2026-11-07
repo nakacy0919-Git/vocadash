@@ -1,6 +1,8 @@
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
+  { id: 'eiken_4', label: '英検 4級', short: '4級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
+  { id: 'eiken_3', label: '英検 3級', short: '3級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre2', label: '英検 準2級', short: '準2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_2', label: '英検 2級', short: '2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre1', label: '英検 準1級', short: '準1級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
@@ -19,7 +21,7 @@ export const STORAGE_KEY = 'vocadash-learning-v2';
 export const INTERVALS_DAYS = [0, 1, 3, 7, 14, 30, 60, 120];
 
 export function firstUnit(courseId) {
-  return (CATALOG.find(course => course.id === courseId) || CATALOG[0]).units[0].id;
+  return (CATALOG.find(course => course.id === courseId) || CATALOG.find(course => course.id === 'eiken_2')).units[0].id;
 }
 
 export function sourcePath(courseId, unitId) {
@@ -64,11 +66,11 @@ export function assetImage(path) {
 }
 
 export function safeLoad() {
-  const empty = { records: {}, totalAnswers: 0, lastSelection: { courseId: 'eiken_2', unitId: '1' }, settings: { sound: true, speed: 0.85 } };
+  const empty = { records: {}, totalAnswers: 0, lastSelection: { courseId: 'eiken_2', unitId: '1' }, settings: { sound: true, speed: 0.85, questionCount: 10, randomOrder: false } };
   try {
     const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
     if (!parsed || typeof parsed !== 'object') return empty;
-    const course = CATALOG.find(c => c.id === parsed.lastSelection?.courseId) || CATALOG[1];
+    const course = CATALOG.find(c => c.id === parsed.lastSelection?.courseId) || CATALOG.find(c => c.id === 'eiken_2');
     const validUnit = course.units.find(u => u.id === parsed.lastSelection?.unitId);
     return {
       records: parsed.records && typeof parsed.records === 'object' && !Array.isArray(parsed.records) ? parsed.records : {},
@@ -142,4 +144,17 @@ export function splitDialogueTurns(value) {
     text: text.slice(marker.end, markers[index + 1]?.start ?? text.length).trim()
   }));
   return turns.every(turn => turn.text) ? turns : null;
+}
+
+
+/** Reusable session selection. Count applies to both quizzes and study cards. */
+export function makeSessionQueue(words, mode, records = {}, settings = {}) {
+  const source = Array.isArray(words) ? words : [];
+  let eligible = source;
+  if (mode === 'review') eligible = source.filter(w => isDue(records[w.id]));
+  if (mode === 'listening') eligible = source.filter(w => Boolean(w.image && w.audio));
+  const random = settings.randomOrder === true || mode === 'quiz' || mode === 'listening' || mode === 'review';
+  const ordered = random ? shuffled(eligible) : [...eligible];
+  const count = Number(settings.questionCount);
+  return Number.isInteger(count) && count > 0 ? ordered.slice(0, count) : ordered;
 }
