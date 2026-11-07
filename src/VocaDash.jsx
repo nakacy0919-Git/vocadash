@@ -250,8 +250,8 @@ export default function VocaDash() {
       if (e.code === 'Space' && current && (mode === 'study' || mode === 'sentence')) { e.preventDefault(); setRevealed(true); }
       if ((mode === 'study' || mode === 'sentence') && revealed && current && !autoplay && e.key === '1') rate(false);
       if ((mode === 'study' || mode === 'sentence') && revealed && current && !autoplay && e.key === '2') rate(true);
-      if (mode === 'quiz' && feedback === null && /^[1-4]$/.test(e.key)) {
-        const opt = options[Number(e.key) - 1]; if (opt) answer(opt);
+      if ((mode === 'quiz' || mode === 'listening') && feedback === null && /^[1-4]$/.test(e.key)) {
+        const opt = (mode === 'listening' ? imageOptions : options)[Number(e.key) - 1]; if (opt) answer(opt);
       }
     };
     window.addEventListener('keydown', handler);
@@ -332,19 +332,34 @@ export default function VocaDash() {
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
             isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
-            mode === 'quiz' ? (
+            (mode === 'quiz' || mode === 'listening') ? (
               <div className="vd-quiz-body">
-                <div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div>
-                <QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
-                <div className="vd-choice-grid">
-                  {options.map((opt, i) => (
+                {mode === 'listening' ? (
+                  <div className="vd-listening-intro">
+                    <span>モデル音声を聞いて、合う画像を選びましょう</span>
+                    <button className="vd-listening-replay" onClick={() => speak(current, true)} disabled={!store.settings.sound}>
+                      <Icon name="speaker" size={23}/> もう一度聞く
+                    </button>
+                  </div>
+                ) : (
+                  <>
+                    <div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div>
+                    <QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
+                  </>
+                )}
+                <div className={mode === 'listening' ? 'vd-listening-grid' : 'vd-choice-grid'}>
+                  {(mode === 'listening' ? imageOptions : options).map((opt, i) => (
                     <button
                       disabled={feedback !== null}
                       key={opt.id}
                       onClick={() => answer(opt)}
-                      className={'vd-choice ' + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}
+                      className={(mode === 'listening' ? 'vd-image-choice ' : 'vd-choice ') + (feedback !== null && opt.correct ? 'is-correct' : '') + (feedback === opt.id && !opt.correct ? 'is-wrong' : '')}
                     >
-                      <span>{i + 1}</span><strong>{opt.text}</strong>
+                      {mode === 'listening' ? (
+                        <><span className="vd-image-letter">{String.fromCharCode(65 + i)}</span><img src={opt.image} alt={'選択肢 ' + String.fromCharCode(65 + i)}/></>
+                      ) : (
+                        <><span>{i + 1}</span><strong>{opt.text}</strong></>
+                      )}
                       {feedback !== null && opt.correct && <Icon name="check"/>}
                     </button>
                   ))}
@@ -365,7 +380,26 @@ export default function VocaDash() {
               </div>
             ) :
             <div className="vd-card-area">
-              <div className="vd-word-card"><div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
+              <div className="vd-word-card">
+                {mode === 'sentence' ? (
+                  <div className="vd-sentence-study">
+                    <div className="vd-word-eyebrow"><span>LEARN IN CONTEXT</span><span className="vd-course-badge">{course.short}</span></div>
+                    {current.image && !imageError && <img className="vd-sentence-picture" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
+                    <div className="vd-sentence-content">
+                      <QuizSentence text={current.english}/>
+                      <button className="vd-sentence-audio" disabled={!store.settings.sound} onClick={() => speak(current, true)}><Icon name="speaker" size={19}/> 例文を聞く</button>
+                    </div>
+                    {revealed && (
+                      <div className="vd-sentence-meaning">
+                        <strong>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</strong>
+                        <p>{current.japanese}</p>
+                        {current.explanation && <small>{current.explanation}</small>}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <>
+                <div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
                 <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
                 {current.pronunciation && <p className="vd-phonetic">{current.pronunciation}</p>}
                 {revealed ? <div className="vd-word-detail"><div className="vd-meaning-caption">MEANING</div><h3>{current.meaning || current.japanese}</h3>
@@ -373,6 +407,8 @@ export default function VocaDash() {
                   <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p>{current.english}</p><small>{current.japanese}</small></div>
                   {current.etymology && <p className="vd-etymology"><strong>語源・ヒント</strong> {current.etymology}</p>}
                 </div> : <div className="vd-card-unrevealed" onClick={() => setRevealed(true)}><span>✧</span><p>意味を思い浮かべてから確認しましょう</p></div>}
+                  </>
+                )}
               </div>
               <div className="vd-actions">{autoplay ? <div className="vd-autoplay-running"><span>● 連続再生中 · 習得判定なし</span><button onClick={() => setAutoplay(false)}>停止</button></div> : !revealed ?
                 <button className="vd-reveal" onClick={() => setRevealed(true)}><Icon name="cards" size={21}/> 意味を見る <kbd>SPACE</kbd></button> :
@@ -384,10 +420,11 @@ export default function VocaDash() {
         </section>
         <aside className="vd-stats">
           <div className="vd-info-card"><div className="vd-info-head"><div><span className="vd-overline">YOUR PROGRESS</span><h3>学習の進み具合</h3></div><span className="vd-info-icon">✦</span></div><div className="vd-mastered"><strong>{stats.known}</strong><span>/ {stats.total} 語</span></div><small>2回以上の成功で定着扱い</small><div className="vd-mini-progress"><span style={{ width: (stats.total ? stats.known * 100 / stats.total : 0) + '%' }}/></div><div className="vd-stat-row"><div><strong>{stats.seen}</strong><small>学習済み</small></div><div><strong>{stats.due}</strong><small>復習待ち</small></div><div><strong>{stats.accuracy}%</strong><small>回答正答率</small></div></div></div>
-          <div className="vd-info-card vd-tool-card"><div className="vd-info-head"><div><span className="vd-overline">STUDY TOOLS</span><h3>自分好みに学習</h3></div><Icon name="sliders" size={19}/></div>
+          <div className="vd-info-card vd-tool-card"><div className="vd-info-head"><div><span className="vd-overline">STUDY TOOLS</span><h3>自分好みに学習</h3></div><button className="vd-settings-expand" aria-label="詳細設定を開く" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={20}/></button></div>
+            <button className="vd-settings-summary" onClick={() => setAdvancedOpen(true)}>出題数 <strong>{store.settings.questionCount === 'all' ? '全問' : store.settings.questionCount ?? 10}問</strong> · 出題順 <strong>{store.settings.randomOrder ? 'ランダム' : '順番どおり'}</strong> <Icon name="arrow" size={15}/></button>
             <label className="vd-setting"><span><strong>発音・モデル音声</strong><small>既存音声を優先</small></span><input type="checkbox" checked={store.settings.sound} onChange={e => setSetting('sound', e.target.checked)}/></label>
             <div className="vd-setting"><span><strong>再生速度</strong><small>ゆっくり音声にも対応</small></span><select aria-label="再生速度" value={store.settings.speed} onChange={e => setSetting('speed', Number(e.target.value))}><option value="0.65">0.65×</option><option value="0.85">0.85×</option><option value="1">1.0×</option><option value="1.2">1.2×</option></select></div>
-            <label className="vd-setting"><span><strong>連続再生モード</strong><small>自動で意味を表示・次へ</small></span><input type="checkbox" disabled={mode !== 'study' || !current} checked={autoplay} onChange={e => {setAutoplay(e.target.checked); if(e.target.checked) setRevealed(false);}}/></label>
+            <label className="vd-setting"><span><strong>連続再生モード</strong><small>自動で意味を表示・次へ</small></span><input type="checkbox" disabled={(mode !== 'study' && mode !== 'sentence') || !current} checked={autoplay} onChange={e => {setAutoplay(e.target.checked); if(e.target.checked) setRevealed(false);}}/></label>
             <p className="vd-setting-note">連続再生では覚えた扱いにしません。記憶の確認には4択テストをご利用ください。</p>
           </div>
           <button className="vd-review-link" onClick={() => startMode('review')}><span className="vd-review-icon"><Icon name="repeat" size={24}/></span><span><strong>苦手な単語を復習</strong><small>{stats.due}語が復習のタイミング</small></span><Icon name="arrow" size={18}/></button>
@@ -398,7 +435,7 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
-    {quizReviewOpen && mode === 'quiz' && current && (
+    {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className="vd-quiz-review-dialog" role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
           <header className="vd-quiz-review-header">
