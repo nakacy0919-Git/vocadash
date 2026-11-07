@@ -89,6 +89,12 @@ export function scoreReading(targetText, transcript) {
     recognizedCount:n,editDistance:distance,insertions,deletions,substitutions
   };
 }
+/** Effective WPM counts exact words matched in the correct order, not extras. */
+export function calculateEffectiveWPM(result, elapsedMs) {
+  const minutes = Math.max(1000, Number(elapsedMs) || 1000) / 60000;
+  return Math.round(Math.max(0, Number(result?.matchCount) || 0) / minutes);
+}
+
 export function maskReadingSentence(sentence,level) {
   const hidden=READING_LEVELS[Math.max(0,Math.min(4,Number(level)-1||0))].hidden;
   const pieces=String(sentence||'').split(/(\s+)/);
