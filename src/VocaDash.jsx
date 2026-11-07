@@ -337,7 +337,7 @@ export default function VocaDash() {
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
-  return <div className={'vd-app'+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')}>
+  return <div className={'vd-app'+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <aside className="vd-sidebar">
       <Brand/>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
