@@ -36,31 +36,57 @@ export function readingWords(input) {
   });
   return {original,tokens,indices};
 }
-export function scoreReading(targetText,transcript) {
-  const t=readingWords(targetText),s=readingWords(transcript);
-  const A=t.tokens,B=s.tokens,m=A.length,n=B.length;
-  const dp=Array.from({length:m+1},()=>new Uint16Array(n+1));
-  for(let i=m-1;i>=0;i--) {
-    for(let j=n-1;j>=0;j--) {
-      dp[i][j]=A[i]===B[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+/**
+ * Order-sensitive word accuracy. Insertions, deletions, substitutions and
+ * swapped words all lower the score. An extra spoken word cannot yield 100%.
+ * Alignment is token-level Levenshtein (cost 1 per word edit), with preferred
+ * exact diagonal matches for transparent red/green transcript highlighting.
+ */
+export function scoreReading(targetText, transcript) {
+  const target = readingWords(targetText);
+  const spoken = readingWords(transcript);
+  const A = target.tokens, B = spoken.tokens;
+  const m = A.length, n = B.length;
+  const dp = Array.from({length:m+1},()=>new Uint16Array(n+1));
+  for (let i=0; i<=m; i++) dp[i][0] = i;
+  for (let j=0; j<=n; j++) dp[0][j] = j;
+  for (let i=1; i<=m; i++) {
+    for (let j=1; j<=n; j++) {
+      const cost = A[i-1] === B[j-1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i-1][j] + 1,         // skipped source word
+        dp[i][j-1] + 1,         // extra spoken word
+        dp[i-1][j-1] + cost     // exact word or substitution
+      );
     }
   }
-  const matchedTarget=new Set(),matchedSpoken=new Set();
-  let i=0,j=0;
-  while(i<m&&j<n) {
-    if(A[i]===B[j]) {
-      matchedTarget.add(t.indices[i]);matchedSpoken.add(s.indices[j]);i++;j++;
-    } else if(dp[i+1][j]>=dp[i][j+1]) i++;
-    else j++;
+  const matchedTarget = new Set(), matchedSpoken = new Set();
+  let i=m, j=n, insertions=0, deletions=0, substitutions=0;
+  while (i>0 || j>0) {
+    if (i>0 && j>0 && A[i-1] === B[j-1] && dp[i][j] === dp[i-1][j-1]) {
+      matchedTarget.add(target.indices[i-1]);
+      matchedSpoken.add(spoken.indices[j-1]);
+      i--; j--;
+    } else if (i>0 && j>0 && dp[i][j] === dp[i-1][j-1]+1) {
+      substitutions++; i--; j--;
+    } else if (j>0 && dp[i][j] === dp[i][j-1]+1) {
+      insertions++; j--;
+    } else {
+      deletions++; i--;
+    }
   }
-  const percent=m?Math.min(100,Math.round(dp[0][0]/m*100)):0;
+  const distance=dp[m][n];
+  const denominator=Math.max(m,n);
+  const percent=denominator ? Math.max(0,Math.round(100*(1-distance/denominator))) : 0;
+  const matchedTokenCount = Math.max(0, m - deletions - substitutions);
   return {
-    percent, passed: m>0 && n>0 && percent>=READING_PASS_PERCENT,
-    matchCount:dp[0][0],targetCount:m,
+    percent,passed:m>0&&n>0&&percent>=READING_PASS_PERCENT,
+    matchCount:matchedTokenCount,targetCount:m,
     transcript:String(transcript||''),
-    wordMatches:s.original.map((value,k)=>({value,matched:matchedSpoken.has(k)})),
-    missedWords:t.original.filter((value,k)=>!matchedTarget.has(k)),
-    recognizedCount:n
+    wordMatches:spoken.original.map((value,k)=>({value,matched:matchedSpoken.has(k)})),
+    missedWords:target.original.filter((value,k)=>!matchedTarget.has(k)),
+    extraWords:spoken.original.filter((value,k)=>!matchedSpoken.has(k)),
+    recognizedCount:n,editDistance:distance,insertions,deletions,substitutions
   };
 }
 export function maskReadingSentence(sentence,level) {
