@@ -266,6 +266,10 @@ export default function VocaDash() {
   return <div className="vd-app">
     <aside className="vd-sidebar">
       <Brand/>
+      <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
+        onClick={() => { resetCard(); setAutoplay(false); setDashboardOpen(true); }}>
+        <span aria-hidden="true">◉</span> ダッシュボード
+      </button>
       <div className="vd-overline vd-library-label">YOUR LIBRARY</div>
       {['英検対策', '発展学習', '学校教材'].map(group => <nav key={group} aria-label={group} className="vd-nav-group">
         <h3>{group}</h3>
@@ -279,17 +283,50 @@ export default function VocaDash() {
       <header className="vd-topbar">
         <div className="vd-mobile-brand"><Brand/></div>
         <div className="vd-breadcrumb"><span>LEARNING SPACE</span><b>/</b><strong>{course.label}</strong></div>
-        <div className="vd-top-right"><span>✦ 今日の学習 <strong>{today}語</strong></span><small>● 端末内に保存</small></div>
+        <div className="vd-top-right"><button className="vd-top-dashboard" onClick={() => setDashboardOpen(true)}>◉ 進捗</button><span>✦ 今日の学習 <strong>{today}語</strong></span><small>● 端末内に保存</small></div>
       </header>
       <div className="vd-page">
-        <div className="vd-hero"><div><div className="vd-overline">MAKE EVERY WORD COUNT</div><h1>単語学習を、もっと自由に。</h1><p>覚える、確かめる、忘れたらもう一度。無理なく続くボキャブラリー学習。</p></div><div className="vd-hero-graphic">A<span>+</span></div></div>
+        {dashboardOpen ? (
+          <div className="vd-dashboard-page">
+            <div className="vd-dashboard-title">
+              <div><span className="vd-overline">YOUR LEARNING DASHBOARD</span><h1>学習ダッシュボード</h1><p>学ぶ級を選ぶと、すぐに学習を始められます。</p></div>
+              <span className="vd-dashboard-today">今日の学習 <strong>{today}語</strong></span>
+            </div>
+            <div className="vd-dashboard-summary">
+              <div className="vd-dashboard-donut" style={{'--progress': masteryPercent + '%'}}>
+                <div><strong>{masteryPercent}%</strong><small>定着率</small></div>
+              </div>
+              <div className="vd-dashboard-summary-text">
+                <span className="vd-overline">{course.label} / {unit.label}</span>
+                <h2>このユニットの進捗</h2>
+                <p>学習済み <strong>{stats.seen}</strong> / {stats.total}語　·　復習待ち <strong>{stats.due}</strong>語</p>
+                <div className="vd-dashboard-metrics">
+                  <span>正答率 <strong>{stats.accuracy}%</strong></span>
+                  <span>累計回答 <strong>{store.totalAnswers}</strong></span>
+                  <span>1回の学習 <strong>{store.settings.questionCount === 'all' ? '全問' : (store.settings.questionCount ?? 10) + '問'}</strong></span>
+                </div>
+                <button className="vd-dashboard-primary" onClick={() => startMode('study')}>この教材で学習を始める <Icon name="arrow"/></button>
+              </div>
+            </div>
+            <div className="vd-dashboard-course-heading"><h2>教材を選ぶ</h2><button onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={16}/> 学習設定</button></div>
+            <div className="vd-dashboard-courses">
+              {CATALOG.map(item => (
+                <button key={item.id} onClick={() => selectCourse(item.id)}>
+                  <span className="vd-dashboard-course-icon">{item.id === 'eiken1_master' ? '✧' : 'A'}</span>
+                  <strong>{item.label}</strong><small>{item.units.length}ユニット</small><Icon name="arrow" size={18}/>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>
-          <div className="vd-tabs" aria-label="学習モード">{modes.map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
-        <div className="vd-columns"><section className="vd-study-panel">
-          <div className="vd-panel-head"><span><i/> {mode === 'study' ? 'LEARN & REMEMBER' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : 'SPACED REVIEW'}</span><button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button></div>
+          <div className="vd-tabs" aria-label="学習モード">{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
+        <div className="vd-columns"><section className="vd-study-panel" onTouchStart={handleSwipeStart} onTouchEnd={handleSwipeEnd}>
+          <div className="vd-panel-head"><span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span><button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button></div>
           <div className="vd-progress"><span style={{ width: progress + '%' }}/></div>
-          <div className="vd-panel-counter"><small>{mode === 'study' ? 'WORD CARD' : mode === 'quiz' ? '4 CHOICE QUIZ' : 'REVIEW CARD'}</small><strong>{queue.length ? Math.min(cursor + 1, queue.length) : 0}<span> / {queue.length}</span></strong></div>
+          <div className="vd-panel-counter"><small>{mode === 'study' ? 'WORD CARD' : mode === 'sentence' ? 'SENTENCE CARD' : mode === 'quiz' ? '4 CHOICE QUIZ' : mode === 'listening' ? 'IMAGE LISTENING' : 'REVIEW CARD'}</small><strong>{queue.length ? Math.min(cursor + 1, queue.length) : 0}<span> / {queue.length}</span></strong></div>
           {loading ? <div className="vd-empty"><div className="vd-spinner"/><h2>教材を準備しています</h2></div> :
             error ? <div className="vd-empty"><h2>読み込めませんでした</h2><p>{error}</p><button className="vd-primary" onClick={retry}>再試行</button></div> :
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
@@ -356,6 +393,8 @@ export default function VocaDash() {
           <button className="vd-review-link" onClick={() => startMode('review')}><span className="vd-review-icon"><Icon name="repeat" size={24}/></span><span><strong>苦手な単語を復習</strong><small>{stats.due}語が復習のタイミング</small></span><Icon name="arrow" size={18}/></button>
         </aside></div>
         <div className="vd-under-card"><span>✦ すばやく、何度でも。間違えた単語は復習に残ります。</span><small>← → カード移動 · SPACE 意味を表示</small></div>
+          </>
+        )}
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
