@@ -749,3 +749,318 @@
   .vd-app.is-focus-view .vd-sentence-study{min-height:0;}
 }
 @media(prefers-reduced-motion:reduce){.vd-medallion-progress,.vd-medallion-reflection{transition:none;}}
+
+
+/* Compact vocabulary/sentence/review cards: action controls follow content,
+   not the bottom edge of a full-height viewport. Quiz and reading are unchanged. */
+.vd-app.is-compact-card .vd-columns{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:0;
+  overflow:hidden;
+}
+.vd-app.is-compact-card .vd-study-panel{
+  flex:0 1 auto;
+  align-self:center;
+  width:min(100%,1050px);
+  max-width:1050px;
+  height:auto;
+  min-height:0;
+  max-height:100%;
+  border-radius:17px;
+  overflow:hidden;
+  box-shadow:0 15px 36px rgba(33,52,96,.07);
+}
+.vd-app.is-compact-card .vd-panel-head{
+  height:38px;
+  min-height:38px;
+}
+.vd-app.is-compact-card .vd-panel-counter{
+  height:23px;
+  min-height:23px;
+  padding:3px 17px 0;
+}
+.vd-app.is-compact-card .vd-panel-counter small{display:none;}
+.vd-app.is-compact-card .vd-panel-counter strong{margin-left:auto;font-size:12px;}
+.vd-app.is-compact-card .vd-card-area{
+  flex:0 1 auto;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  max-height:calc(100dvh - 175px);
+  padding:0 18px 13px;
+  overflow:hidden;
+}
+.vd-app.is-compact-card .vd-word-card{
+  flex:0 1 auto;
+  min-height:0;
+  max-height:calc(100dvh - 275px);
+  overflow-y:auto;
+  padding:4px 7px 2px;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+}
+.vd-app.is-compact-card .vd-word-eyebrow{display:none;}
+.vd-app.is-compact-card .vd-word-heading{
+  margin:2px auto 0;
+  gap:10px;
+  justify-content:center;
+}
+.vd-app.is-compact-card .vd-word-heading h2{
+  font-size:clamp(32px,3.3vw,49px);
+  line-height:1.13;
+}
+.vd-app.is-compact-card .vd-phonetic{margin-top:4px;}
+.vd-app.is-compact-card .vd-meaning-caption{display:none;}
+.vd-app.is-compact-card .vd-word-detail{
+  width:100%;
+  margin:5px auto 0;
+}
+.vd-app.is-compact-card .vd-word-detail>h3{
+  margin:3px 0 10px;
+  font-size:clamp(18px,1.8vw,24px);
+  line-height:1.35;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+  display:grid;
+  grid-template-columns:minmax(190px,240px) minmax(0,1fr);
+  gap:8px 14px;
+  align-items:center;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>h3{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-word-image{
+  grid-column:1;
+  grid-row:2;
+  width:100%;
+  height:clamp(112px,19vh,170px);
+  max-width:100%;
+  margin:0;
+  object-fit:contain;
+  background:#edf3fa;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-example{
+  grid-column:2;
+  grid-row:2;
+  min-width:0;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-etymology{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-example{
+  padding:11px 14px;
+  border-radius:12px;
+  text-align:left;
+}
+.vd-app.is-compact-card .vd-example p{
+  font-size:clamp(13px,1.35vw,17px);
+  line-height:1.5;
+  margin:5px 0;
+}
+.vd-app.is-compact-card .vd-example small{
+  display:block;
+  font-size:12px;
+  line-height:1.5;
+}
+.vd-app.is-compact-card .vd-etymology{
+  margin:2px 0 0;
+  padding:4px 0 0;
+}
+.vd-app.is-compact-card .vd-card-unrevealed{display:none;}
+/* Sentence master: enlarged contextual picture beside the English and its tools. */
+.vd-app.is-compact-card .vd-sentence-study{
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  gap:8px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image{
+  display:grid;
+  grid-template-columns:minmax(235px,35%) minmax(0,1fr);
+  align-items:center;
+  column-gap:20px;
+  row-gap:8px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+  grid-column:1;
+  grid-row:1;
+  display:block;
+  margin:0;
+  width:100%;
+  height:clamp(165px,24vh,232px);
+  max-height:none;
+  object-fit:contain;
+  background:#eaf0f8;
+  border-radius:12px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-content{
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:12px;
+}
+.vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+  margin:0;
+  padding:0;
+  overflow:visible;
+  max-height:none;
+  text-align:left;
+  font-size:clamp(17px,1.85vw,23px);
+  font-weight:750;
+  line-height:1.46;
+}
+.vd-app.is-compact-card .vd-sentence-tools{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.vd-app.is-compact-card .vd-sentence-audio,
+.vd-app.is-compact-card .vd-sentence-read-link{
+  padding:9px 12px;
+  min-height:38px;
+  font-size:12px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-meaning{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-sentence-meaning{
+  margin:4px 0 0;
+  padding:8px 10px 5px;
+  background:#f5f8fe;
+  border:1px solid #e6ecf6;
+  border-radius:11px;
+}
+.vd-app.is-compact-card .vd-sentence-meaning p{
+  margin:4px 0;
+  font-size:13px;
+  line-height:1.5;
+}
+/* Keep the four most-used controls in one close, reachable cluster. */
+.vd-app.is-compact-card .vd-actions{
+  flex:0 0 auto;
+  margin:10px 0 0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:0 7px;
+}
+.vd-app.is-compact-card .vd-reveal{
+  width:min(100%,240px);
+  min-height:43px;
+  padding:10px 15px;
+  margin:0;
+  font-size:13px;
+  border-radius:11px;
+}
+.vd-app.is-compact-card .vd-ratings{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.vd-app.is-compact-card .vd-ratings button{
+  flex:0 1 auto;
+  min-width:142px;
+  min-height:43px;
+  padding:10px 13px;
+  font-size:13px;
+  border-radius:10px;
+  white-space:nowrap;
+}
+.vd-app.is-compact-card .vd-card-navigation{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.vd-app.is-compact-card .vd-card-navigation>span{display:none;}
+.vd-app.is-compact-card .vd-card-navigation button{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-width:80px;
+  min-height:43px;
+  padding:9px 13px;
+  border:1px solid #e5ebf5;
+  border-radius:10px;
+  color:#637c9e;
+  background:#f7f9fd;
+  font-size:12px;
+  cursor:pointer;
+}
+.vd-app.is-compact-card .vd-card-navigation button:hover:not(:disabled){
+  background:#edf2ff;
+  border-color:#cddcf7;
+}
+.vd-app.is-compact-card .vd-card-navigation button:disabled{opacity:.35;cursor:default;}
+.vd-app.is-compact-card .vd-autoplay-running{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+/* iPad portrait: keep the picture and its sentence closely adjacent. */
+@media(max-width:980px){
+  .vd-app.is-compact-card .vd-study-panel{width:min(100%,920px);}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{
+    grid-template-columns:minmax(205px,34%) minmax(0,1fr);
+    column-gap:13px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    height:clamp(145px,20vh,205px);
+  }
+  .vd-app.is-compact-card .vd-word-card{
+    max-height:calc(100dvh - 260px);
+  }
+}
+@media(max-width:700px){
+  .vd-app.is-compact-card .vd-card-area{padding:0 10px 11px;}
+  .vd-app.is-compact-card .vd-word-card{padding:4px;max-height:calc(100dvh - 265px);}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{
+    grid-template-columns:minmax(145px,37%) minmax(0,1fr);
+    gap:9px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    height:clamp(120px,18vh,170px);
+  }
+  .vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+    font-size:clamp(15px,2.5vw,18px);
+    line-height:1.4;
+  }
+  .vd-app.is-compact-card .vd-sentence-tools button{font-size:11px;padding:7px 9px;}
+  .vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+    grid-template-columns:minmax(120px,34%) minmax(0,1fr);
+    gap:8px;
+  }
+  .vd-app.is-compact-card .vd-actions{gap:6px;margin-top:8px;}
+  .vd-app.is-compact-card .vd-ratings button{min-width:120px;min-height:40px;padding:8px;}
+  .vd-app.is-compact-card .vd-card-navigation button{min-width:66px;min-height:40px;padding:8px;}
+  .vd-app.is-compact-card .vd-reveal{min-height:40px;}
+}
+/* Small phones may stack buttons, never hide mandatory actions. */
+@media(max-width:550px),(max-height:550px){
+  .vd-app.is-compact-card .vd-study-panel{height:auto;max-height:none;}
+  .vd-app.is-compact-card .vd-card-area{max-height:none;overflow:visible;}
+  .vd-app.is-compact-card .vd-word-card{max-height:none;overflow:visible;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{display:flex;flex-direction:column;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    max-height:140px;height:140px;width:100%;
+  }
+  .vd-app.is-compact-card .vd-actions{flex-wrap:wrap;}
+}
