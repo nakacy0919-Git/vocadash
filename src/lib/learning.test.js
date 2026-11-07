@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { READING_LEVELS, READING_PASS_PERCENT, readingWords, scoreReading, maskReadingSentence, saveReadingProgress, calculateEffectiveWPM } from './reading.js';
+import { READING_LEVELS, READING_PASS_PERCENT, READING_SCORE_VERSION, readingWords, scoreReading, maskReadingSentence, saveReadingProgress, calculateEffectiveWPM } from './reading.js';
 import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
 
 test('all catalog entries define study units', () => {
@@ -198,4 +198,23 @@ test('reading Accuracy must penalize extra words even when the full target follo
   assert.ok(substituted.percent<100);
   assert.equal(calculateEffectiveWPM(perfect,60000),7);
   assert.equal(calculateEffectiveWPM({matchCount:0},1000),0);
+});
+
+
+test('legacy LCS-based 100 percent BEST is excluded under strict scoring version 2',()=>{
+  assert.equal(READING_SCORE_VERSION,2);
+  const legacy={records:{
+    sample:{readingBest:100,readingClearedLevel:5,readingBestByLevel:[100,100,100,100,100],readingAttempts:9}
+  },totalAnswers:17};
+  const revised=saveReadingProgress(legacy,'sample',1,78,Date.UTC(2026,10,7));
+  assert.equal(revised.records.sample.readingScoreVersion,2);
+  assert.equal(revised.records.sample.readingBest,78);
+  assert.deepEqual(revised.records.sample.readingBestByLevel,[78,0,0,0,0]);
+  assert.equal(revised.records.sample.readingClearedLevel,0);
+  assert.equal(revised.records.sample.readingAttempts,10);
+  assert.equal(revised.totalAnswers,17);
+  assert.equal(legacy.records.sample.readingBest,100);
+  const cleared=saveReadingProgress(revised,'sample',1,85);
+  assert.equal(cleared.records.sample.readingBest,85);
+  assert.equal(cleared.records.sample.readingClearedLevel,1);
 });
