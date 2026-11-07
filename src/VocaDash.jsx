@@ -243,7 +243,7 @@ export default function VocaDash() {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
-      if (mode === 'quiz' && feedback !== null) return;
+      if ((mode === 'quiz' || mode === 'listening') && feedback !== null) return;
       if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
       if (e.key === 'ArrowLeft') { e.preventDefault(); previous(); }
@@ -476,6 +476,35 @@ export default function VocaDash() {
           <footer className="vd-quiz-review-footer">
             <button autoFocus onClick={next}>訳を確認した・次の問題へ <Icon name="arrow" size={18}/></button>
           </footer>
+        </section>
+      </div>
+    )}
+    {advancedOpen && (
+      <div className="vd-modal-overlay" onClick={() => setAdvancedOpen(false)}>
+        <section className="vd-settings-modal" role="dialog" aria-modal="true" aria-labelledby="vd-settings-title" onClick={e => e.stopPropagation()}>
+          <div className="vd-settings-modal-head">
+            <div><div className="vd-overline">PERSONALIZE YOUR SESSION</div><h2 id="vd-settings-title">学習の詳細設定</h2></div>
+            <button aria-label="設定を閉じる" onClick={() => setAdvancedOpen(false)}><Icon name="close"/></button>
+          </div>
+          <div className="vd-settings-modal-body">
+            <h3>1回に出題する問題数</h3>
+            <p>英検1級マスターの100問も、少しずつ進められます。</p>
+            <div className="vd-count-options">
+              {[5,10,20,25,50,100,'all'].map(count => (
+                <button key={count} aria-pressed={String(store.settings.questionCount ?? 10) === String(count)}
+                  className={String(store.settings.questionCount ?? 10) === String(count) ? 'selected' : ''}
+                  onClick={() => setSetting('questionCount',count)}>
+                  {count === 'all' ? '全問' : count + '問'}
+                </button>
+              ))}
+            </div>
+            <label className="vd-random-setting">
+              <span><strong>問題の順番をランダムにする</strong><small>確認テストとリスニングは毎回シャッフルされます</small></span>
+              <input type="checkbox" checked={Boolean(store.settings.randomOrder)} onChange={e=>setSetting('randomOrder',e.target.checked)}/>
+            </label>
+            <p className="vd-settings-hint">設定はこの端末に保存されます。変更後に開始すると、新しい問題数が適用されます。</p>
+          </div>
+          <div className="vd-settings-modal-foot"><button onClick={() => {setAdvancedOpen(false);startMode(dashboardOpen ? 'study' : mode);}}>この設定で学習を開始 <Icon name="arrow"/></button></div>
         </section>
       </div>
     )}
