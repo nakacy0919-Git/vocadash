@@ -168,23 +168,66 @@ export function makeSessionQueue(words, mode, records = {}, settings = {}) {
 export function splitTargetSegments(sentence, targetWord) {
   const text = String(sentence ?? '');
   const target = String(targetWord ?? '').trim();
-  if (!target) return [{ text, highlighted: false }];
-  const escaped = target.replace(/[()[\]{}.*+?^$|\\]/g, '\\$&').replace(/\s+/g, '\\s+');
-  const matcher = new RegExp(escaped, 'giu');
-  const segments = [];
-  let cursor = 0;
-  for (const match of text.matchAll(matcher)) {
-    const start = match.index;
-    const end = start + match[0].length;
-    // A match inside a larger word (e.g. art in party) is not the target.
-    if ((start > 0 && /[\p{L}\p{N}_]/u.test(text[start - 1])) ||
-        (end < text.length && /[\p{L}\p{N}_]/u.test(text[end]))) continue;
-    if (start > cursor) segments.push({ text: text.slice(cursor, start), highlighted: false });
-    segments.push({ text: match[0], highlighted: true });
-    cursor = end;
+  if (!target) return [{text, highlighted:false}];
+  const escape = value => value.replace(/[()[\]{}.*+?^$|\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+  const wordChar = char => Boolean(char && /[\p{L}\p{N}_]/u.test(char));
+  const boundary = (a,b) => !wordChar(text[a-1]) && !wordChar(text[b]);
+  const ranges = [];
+  const find = needle => {
+    for (const match of text.matchAll(new RegExp(escape(needle), 'giu'))) {
+      const a=match.index,b=a+match[0].length;
+      if (boundary(a,b)) ranges.push([a,b]);
+    }
+  };
+  if (target.includes('...')) {
+    // Separable phrasal verbs: "get ... over with" -> get [the ordeal] over with.
+    // Color only the phrasal-verb parts, not the inserted object.
+    const parts = target.split(/\s*\.{3}\s*/).map(part=>part.trim()).filter(Boolean);
+    if (parts.length===2) {
+      const heads=[...text.matchAll(new RegExp(escape(parts[0]), 'giu'))];
+      const tails=[...text.matchAll(new RegExp(escape(parts[1]), 'giu'))];
+      let usedUntil=0;
+      for (const head of heads) {
+        const a=head.index,b=a+head[0].length;
+        if (a<usedUntil || !boundary(a,b)) continue;
+        const tail=tails.find(item=>{
+          const c=item.index,d=c+item[0].length;
+          if (c<=b || c-b>90 || !boundary(c,d)) return false;
+          const between=text.slice(b,c).trim();
+          return between.length>0 && between.split(/\s+/).length<=9;
+        });
+        if (!tail) continue;
+        ranges.push([a,b],[tail.index,tail.index+tail[0].length]);
+        usedUntil=tail.index+tail[0].length;
+      }
+    }
+  } else {
+    find(target);
+    if (!ranges.length && /^[\p{L}]+$/u.test(target)) {
+      // Highlight a regular inflected form when the dictionary form is absent
+      // (pummel -> pummeled, invite -> inviting), but never a partial word.
+      const base = target.toLowerCase();
+      const candidates = new Set([
+        base+'s',base+'es',base+'ed',base+'ing',
+        base.endsWith('e')?base.slice(0,-1)+'ing':'',
+        base.endsWith('e')?base+'d':'',
+        base.endsWith('y')?base.slice(0,-1)+'ies':'',
+        base.endsWith('y')?base.slice(0,-1)+'ied':''
+      ]);
+      candidates.delete('');
+      for (const variant of candidates) find(variant);
+    }
   }
-  if (cursor < text.length || segments.length === 0) {
-    segments.push({ text: text.slice(cursor), highlighted: false });
+  ranges.sort((a,b)=>a[0]-b[0] || b[1]-a[1]);
+  if (!ranges.length) return [{text,highlighted:false}];
+  const segments=[];
+  let cursor=0;
+  for (const [a,b] of ranges) {
+    if (a<cursor) continue;
+    if (a>cursor) segments.push({text:text.slice(cursor,a),highlighted:false});
+    segments.push({text:text.slice(a,b),highlighted:true});
+    cursor=b;
   }
+  if (cursor<text.length) segments.push({text:text.slice(cursor),highlighted:false});
   return segments;
 }
