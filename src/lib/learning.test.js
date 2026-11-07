@@ -1,3 +1,4 @@
+import { readFileSync, existsSync } from 'node:fs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
@@ -87,4 +88,37 @@ test('learning sessions are limited and listening needs both image and audio', (
   assert.equal(makeSessionQueue(words,'study',{}, {questionCount:'all'}).length,12);
   const r={'w0':{seen:1,dueAt:0},'w1':{seen:1,dueAt:Date.now()+999999}};
   assert.deepEqual(makeSessionQueue(words,'review',r,{questionCount:10}).map(w=>w.id),['w0']);
+});
+
+
+test('original grade 3 and grade 4 questions have exactly one correct option and complete translations', () => {
+  for (const level of [3,4]) {
+    for (const stage of [1,2]) {
+      const entries = JSON.parse(readFileSync(new URL('../data/eiken_' + level + '_stage' + stage + '.json', import.meta.url)));
+      assert.equal(entries.length,20);
+      const words = normalizeWords(entries,'eiken_' + level,String(stage));
+      assert.equal(words.length,20);
+      for (const entry of entries) {
+        assert.equal(entry.choices.length,4);
+        assert.equal(new Set(entry.choices).size,4);
+        assert.equal(entry.choices[entry.correct],entry.targetWord);
+        assert.ok(entry.english.includes('________'));
+        assert.ok(entry.japanese.length > 8);
+        assert.ok(entry.explanation.length > 8);
+      }
+    }
+  }
+});
+
+test('every grade 1 master multimedia item has an existing image and model audio', () => {
+  for (const name of ['eiken1_verb','eiken1_adjective','eiken1_noun','eiken_phrasal_verb']) {
+    const entries = JSON.parse(readFileSync(new URL('../data/' + name + '.json',import.meta.url)));
+    assert.equal(entries.length,100);
+    for (const item of entries) {
+      const image = assetImage(item.image).replace(/^\//,'');
+      const audio = String(item.audio||'').replace(/^\//,'');
+      assert.ok(existsSync(new URL('../../public/' + image, import.meta.url)), item.id + ': missing image ' + image);
+      assert.ok(existsSync(new URL('../../public/' + audio, import.meta.url)), item.id + ': missing audio ' + audio);
+    }
+  }
 });
