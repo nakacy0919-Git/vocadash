@@ -1,10 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { CATALOG, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
+import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns } from './learning.js';
 
 test('all catalog entries define study units', () => {
-  assert.equal(CATALOG.length, 7);
+  assert.equal(CATALOG.length, 9);
   for (const course of CATALOG) assert.ok(course.units.length > 0);
+  assert.equal(sourcePath('eiken_4','1'),'./data/eiken_4_stage1.json');
+  assert.equal(sourcePath('eiken_3','2'),'./data/eiken_3_stage2.json');
   assert.equal(sourcePath('eiken_pre1','2'),'./data/eiken_pre1_stage2.json');
   assert.equal(sourcePath('eiken1_master','phrasal_verb'),'./data/eiken_phrasal_verb.json');
   assert.equal(sourcePath('reading','15'),'./data/lesson15_30words.json');
@@ -74,4 +76,15 @@ test('full Japanese translations survive vocabulary normalization for review', (
   assert.equal(word.english, 'She begrudged the decision.');
   assert.equal(word.japanese, '彼女はその決定を惜しんだ。');
   assert.equal(word.word, 'begrudged');
+});
+
+
+test('learning sessions are limited and listening needs both image and audio', () => {
+  const words = Array.from({length: 12},(_,i)=>({ id:'w'+i, image:i<5?'/image.webp':'', audio:i<5?'/audio.mp3':'' }));
+  assert.equal(makeSessionQueue(words,'study',{}, {questionCount:5}).length,5);
+  assert.equal(makeSessionQueue(words,'quiz',{}, {questionCount:10}).length,10);
+  assert.equal(makeSessionQueue(words,'listening',{}, {questionCount:10}).length,5);
+  assert.equal(makeSessionQueue(words,'study',{}, {questionCount:'all'}).length,12);
+  const r={'w0':{seen:1,dueAt:0},'w1':{seen:1,dueAt:Date.now()+999999}};
+  assert.deepEqual(makeSessionQueue(words,'review',r,{questionCount:10}).map(w=>w.id),['w0']);
 });
