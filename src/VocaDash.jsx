@@ -111,7 +111,7 @@ export default function VocaDash() {
   const audio = useRef(null), quizTimer = useRef(null);
   const swipeStart = useRef(null);
 
-  const course = CATALOG.find(c => c.id === selection.courseId) || CATALOG[1];
+  const course = CATALOG.find(c => c.id === selection.courseId) || CATALOG.find(c => c.id === 'eiken_2');
   const unit = course.units.find(u => u.id === selection.unitId) || course.units[0];
   const current = queue[cursor];
   const isFinished = !loading && queue.length > 0 && cursor >= queue.length;
@@ -421,7 +421,7 @@ export default function VocaDash() {
         <aside className="vd-stats">
           <div className="vd-info-card"><div className="vd-info-head"><div><span className="vd-overline">YOUR PROGRESS</span><h3>学習の進み具合</h3></div><span className="vd-info-icon">✦</span></div><div className="vd-mastered"><strong>{stats.known}</strong><span>/ {stats.total} 語</span></div><small>2回以上の成功で定着扱い</small><div className="vd-mini-progress"><span style={{ width: (stats.total ? stats.known * 100 / stats.total : 0) + '%' }}/></div><div className="vd-stat-row"><div><strong>{stats.seen}</strong><small>学習済み</small></div><div><strong>{stats.due}</strong><small>復習待ち</small></div><div><strong>{stats.accuracy}%</strong><small>回答正答率</small></div></div></div>
           <div className="vd-info-card vd-tool-card"><div className="vd-info-head"><div><span className="vd-overline">STUDY TOOLS</span><h3>自分好みに学習</h3></div><button className="vd-settings-expand" aria-label="詳細設定を開く" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={20}/></button></div>
-            <button className="vd-settings-summary" onClick={() => setAdvancedOpen(true)}>出題数 <strong>{store.settings.questionCount === 'all' ? '全問' : store.settings.questionCount ?? 10}問</strong> · 出題順 <strong>{store.settings.randomOrder ? 'ランダム' : '順番どおり'}</strong> <Icon name="arrow" size={15}/></button>
+            <button className="vd-settings-summary" onClick={() => setAdvancedOpen(true)}>出題数 <strong>{store.settings.questionCount === 'all' ? '全問' : (store.settings.questionCount ?? 10) + '問'}</strong> · 出題順 <strong>{store.settings.randomOrder ? 'ランダム' : '順番どおり'}</strong> <Icon name="arrow" size={15}/></button>
             <label className="vd-setting"><span><strong>発音・モデル音声</strong><small>既存音声を優先</small></span><input type="checkbox" checked={store.settings.sound} onChange={e => setSetting('sound', e.target.checked)}/></label>
             <div className="vd-setting"><span><strong>再生速度</strong><small>ゆっくり音声にも対応</small></span><select aria-label="再生速度" value={store.settings.speed} onChange={e => setSetting('speed', Number(e.target.value))}><option value="0.65">0.65×</option><option value="0.85">0.85×</option><option value="1">1.0×</option><option value="1.2">1.2×</option></select></div>
             <label className="vd-setting"><span><strong>連続再生モード</strong><small>自動で意味を表示・次へ</small></span><input type="checkbox" disabled={(mode !== 'study' && mode !== 'sentence') || !current} checked={autoplay} onChange={e => {setAutoplay(e.target.checked); if(e.target.checked) setRevealed(false);}}/></label>
