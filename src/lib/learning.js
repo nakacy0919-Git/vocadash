@@ -1,6 +1,8 @@
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
+  { id: 'eiken_4', label: '英検 4級', short: '4級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
+  { id: 'eiken_3', label: '英検 3級', short: '3級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre2', label: '英検 準2級', short: '準2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_2', label: '英検 2級', short: '2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre1', label: '英検 準1級', short: '準1級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
@@ -19,7 +21,7 @@ export const STORAGE_KEY = 'vocadash-learning-v2';
 export const INTERVALS_DAYS = [0, 1, 3, 7, 14, 30, 60, 120];
 
 export function firstUnit(courseId) {
-  return (CATALOG.find(course => course.id === courseId) || CATALOG[0]).units[0].id;
+  return (CATALOG.find(course => course.id === courseId) || CATALOG.find(course => course.id === 'eiken_2')).units[0].id;
 }
 
 export function sourcePath(courseId, unitId) {
@@ -64,11 +66,11 @@ export function assetImage(path) {
 }
 
 export function safeLoad() {
-  const empty = { records: {}, totalAnswers: 0, lastSelection: { courseId: 'eiken_2', unitId: '1' }, settings: { sound: true, speed: 0.85 } };
+  const empty = { records: {}, totalAnswers: 0, lastSelection: { courseId: 'eiken_2', unitId: '1' }, settings: { sound: true, speed: 0.85, questionCount: 10, randomOrder: false } };
   try {
     const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
     if (!parsed || typeof parsed !== 'object') return empty;
-    const course = CATALOG.find(c => c.id === parsed.lastSelection?.courseId) || CATALOG[1];
+    const course = CATALOG.find(c => c.id === parsed.lastSelection?.courseId) || CATALOG.find(c => c.id === 'eiken_2');
     const validUnit = course.units.find(u => u.id === parsed.lastSelection?.unitId);
     return {
       records: parsed.records && typeof parsed.records === 'object' && !Array.isArray(parsed.records) ? parsed.records : {},
@@ -142,4 +144,90 @@ export function splitDialogueTurns(value) {
     text: text.slice(marker.end, markers[index + 1]?.start ?? text.length).trim()
   }));
   return turns.every(turn => turn.text) ? turns : null;
+}
+
+
+/** Reusable session selection. Count applies to both quizzes and study cards. */
+export function makeSessionQueue(words, mode, records = {}, settings = {}) {
+  const source = Array.isArray(words) ? words : [];
+  let eligible = source;
+  if (mode === 'review') eligible = source.filter(w => isDue(records[w.id]));
+  if (mode === 'listening') eligible = source.filter(w => Boolean(w.image && w.audio));
+  const random = settings.randomOrder === true || mode === 'quiz' || mode === 'listening' || mode === 'review';
+  const ordered = random ? shuffled(eligible) : [...eligible];
+  const count = Number(settings.questionCount);
+  return Number.isInteger(count) && count > 0 ? ordered.slice(0, count) : ordered;
+}
+
+
+/**
+ * Presentation-only target highlighting. Exact whole words (and multiword
+ * phrases) are emphasized without touching substrings of unrelated words.
+ * The original sentence, punctuation and spaces remain intact.
+ */
+export function splitTargetSegments(sentence, targetWord) {
+  const text = String(sentence ?? '');
+  const target = String(targetWord ?? '').trim();
+  if (!target) return [{text, highlighted:false}];
+  const escape = value => value.replace(/[()[\]{}.*+?^$|\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+  const wordChar = char => Boolean(char && /[\p{L}\p{N}_]/u.test(char));
+  const boundary = (a,b) => !wordChar(text[a-1]) && !wordChar(text[b]);
+  const ranges = [];
+  const find = needle => {
+    for (const match of text.matchAll(new RegExp(escape(needle), 'giu'))) {
+      const a=match.index,b=a+match[0].length;
+      if (boundary(a,b)) ranges.push([a,b]);
+    }
+  };
+  if (target.includes('...')) {
+    // Separable phrasal verbs: "get ... over with" -> get [the ordeal] over with.
+    // Color only the phrasal-verb parts, not the inserted object.
+    const parts = target.split(/\s*\.{3}\s*/).map(part=>part.trim()).filter(Boolean);
+    if (parts.length===2) {
+      const heads=[...text.matchAll(new RegExp(escape(parts[0]), 'giu'))];
+      const tails=[...text.matchAll(new RegExp(escape(parts[1]), 'giu'))];
+      let usedUntil=0;
+      for (const head of heads) {
+        const a=head.index,b=a+head[0].length;
+        if (a<usedUntil || !boundary(a,b)) continue;
+        const tail=tails.find(item=>{
+          const c=item.index,d=c+item[0].length;
+          if (c<=b || c-b>90 || !boundary(c,d)) return false;
+          const between=text.slice(b,c).trim();
+          return between.length>0 && between.split(/\s+/).length<=9;
+        });
+        if (!tail) continue;
+        ranges.push([a,b],[tail.index,tail.index+tail[0].length]);
+        usedUntil=tail.index+tail[0].length;
+      }
+    }
+  } else {
+    find(target);
+    if (!ranges.length && /^[\p{L}]+$/u.test(target)) {
+      // Highlight a regular inflected form when the dictionary form is absent
+      // (pummel -> pummeled, invite -> inviting), but never a partial word.
+      const base = target.toLowerCase();
+      const candidates = new Set([
+        base+'s',base+'es',base+'ed',base+'ing',
+        base.endsWith('e')?base.slice(0,-1)+'ing':'',
+        base.endsWith('e')?base+'d':'',
+        base.endsWith('y')?base.slice(0,-1)+'ies':'',
+        base.endsWith('y')?base.slice(0,-1)+'ied':''
+      ]);
+      candidates.delete('');
+      for (const variant of candidates) find(variant);
+    }
+  }
+  ranges.sort((a,b)=>a[0]-b[0] || b[1]-a[1]);
+  if (!ranges.length) return [{text,highlighted:false}];
+  const segments=[];
+  let cursor=0;
+  for (const [a,b] of ranges) {
+    if (a<cursor) continue;
+    if (a>cursor) segments.push({text:text.slice(cursor,a),highlighted:false});
+    segments.push({text:text.slice(a,b),highlighted:true});
+    cursor=b;
+  }
+  if (cursor<text.length) segments.push({text:text.slice(cursor),highlighted:false});
+  return segments;
 }

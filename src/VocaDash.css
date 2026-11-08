@@ -228,3 +228,964 @@
 @media (prefers-reduced-motion: reduce) {
   .vd-quiz-burst,.vd-quiz-burst-content,.vd-quiz-review-dialog { animation: none; }
 }
+
+
+/* VocaDash 2.1: compact dashboard, course-first navigation, and responsive modes */
+.vd-page { padding-top: 16px; }
+.vd-dashboard-nav {
+  width: 100%;display:flex;align-items:center;gap:12px;margin:19px 0 20px;padding:13px 16px;
+  border:1px solid #e6ebf4;border-radius:13px;background:#f7f9fe;
+  color:#536780;font-weight:850;font-size:13px;text-align:left;cursor:pointer;
+}
+.vd-dashboard-nav span { color:#5974df;font-size:21px;line-height:1; }
+.vd-dashboard-nav:hover,.vd-dashboard-nav.is-active { background:#ebf0ff;color:#4163c8;border-color:#d7e1fa; }
+.vd-top-dashboard { background:#edf2ff;border:0;border-radius:9px;color:#5370c5;padding:8px 11px;font-weight:850;font-size:12px;cursor:pointer; }
+.vd-dashboard-page { padding:12px 0 28px; }
+.vd-dashboard-title { display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px; }
+.vd-dashboard-title h1 { font-size:clamp(23px,2.7vw,32px);letter-spacing:-.8px;margin:5px 0 7px;color:#34445e; }
+.vd-dashboard-title p { font-size:13px;color:#8492aa;margin:0; }
+.vd-dashboard-today { background:#fff;border:1px solid #e9edf5;border-radius:15px;padding:13px 18px;font-size:12px;color:#7e8ca3;white-space:nowrap; }
+.vd-dashboard-today strong { color:#4767cd;font-size:17px; }
+.vd-dashboard-summary {
+  display:flex;align-items:center;gap:34px;padding:28px 33px;background:linear-gradient(125deg,#fff,#f7faff);
+  border:1px solid #e7ecf5;border-radius:21px;box-shadow:0 9px 35px #273e6210;
+}
+.vd-dashboard-donut {
+  flex:0 0 auto;width:clamp(148px,17vw,193px);height:clamp(148px,17vw,193px);
+  border-radius:50%;padding:15px;background:conic-gradient(#5876e3 var(--progress),#e8edf8 0);
+  box-shadow:0 12px 28px #4960bb10;
+}
+.vd-dashboard-donut>div { width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:#fff; }
+.vd-dashboard-donut strong { color:#4766ce;font-size:clamp(33px,4.5vw,49px);letter-spacing:-1.6px;line-height:1.2; }
+.vd-dashboard-donut small { color:#8c9ab2;font-size:12px;font-weight:800; }
+.vd-dashboard-summary-text { min-width:0; }
+.vd-dashboard-summary-text h2 { margin:7px 0;font-size:clamp(18px,2.2vw,23px);color:#3b4c68; }
+.vd-dashboard-summary-text p { font-size:13px;color:#7a8aa3;margin:4px 0 17px; }
+.vd-dashboard-summary-text p strong { color:#3a5fc8; }
+.vd-dashboard-metrics { display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px; }
+.vd-dashboard-metrics span { background:#eef3fe;border-radius:11px;color:#7d90ae;padding:9px 13px;font-size:12px;white-space:nowrap; }
+.vd-dashboard-metrics strong { color:#3d5cbd;font-size:14px;margin-left:4px; }
+.vd-dashboard-primary {
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;border:0;
+  background:#506cdb;color:#fff;padding:13px 20px;border-radius:12px;font-weight:850;font-size:13px;cursor:pointer;
+}
+.vd-dashboard-course-heading { display:flex;justify-content:space-between;align-items:center;margin:30px 0 12px; }
+.vd-dashboard-course-heading h2 { color:#35465e;font-size:19px;margin:0; }
+.vd-dashboard-course-heading button { display:flex;gap:7px;align-items:center;border:0;background:#eef2ff;color:#4f6ad0;font-weight:850;padding:10px 13px;border-radius:11px;cursor:pointer; }
+.vd-dashboard-courses { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px; }
+.vd-dashboard-courses button {
+  display:flex;align-items:center;gap:9px;text-align:left;min-width:0;background:#fff;border:1px solid #e7edf5;
+  border-radius:15px;padding:17px 15px;color:#3c4d6b;box-shadow:0 7px 18px #2f467309;cursor:pointer;
+}
+.vd-dashboard-courses button:hover { border-color:#b9cafa;background:#fafcff;transform:translateY(-1px); }
+.vd-dashboard-course-icon { width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#edf2ff;color:#5975d4;font-size:19px;font-weight:850;flex-shrink:0; }
+.vd-dashboard-courses strong { font-size:13px;flex:1;line-height:1.4; }
+.vd-dashboard-courses small { font-size:10px;color:#a1aec0;white-space:nowrap; }
+.vd-dashboard-courses svg { color:#96a7c8;flex-shrink:0; }
+.vd-tabs { flex-wrap:wrap;justify-content:flex-end;max-width:100%; }
+.vd-tabs button { min-width:0;white-space:nowrap;padding:11px 12px; }
+.vd-study-panel { touch-action:pan-y; }
+.vd-settings-expand {
+  width:37px;height:37px;display:grid;place-items:center;border:1px solid #e0e9f6;background:#f3f6fd;
+  border-radius:10px;color:#5574d3;cursor:pointer;flex-shrink:0;
+}
+.vd-settings-expand:hover,.vd-settings-summary:hover { background:#e9effe; }
+.vd-settings-summary {
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px;width:100%;margin:14px 0 10px;
+  border:1px solid #e4eafa;border-radius:10px;background:#f5f7fe;color:#8292ac;font-size:11px;
+  padding:10px;cursor:pointer;text-align:left;
+}
+.vd-settings-summary strong { color:#4967c9; }
+/* Sentence-first mode keeps context and translation separate until reveal. */
+.vd-sentence-study { display:flex;flex-direction:column;gap:10px;min-height:270px; }
+.vd-sentence-picture { width:100%;max-height:190px;object-fit:contain;background:#f1f5fb;border-radius:14px;border:1px solid #ebeff6; }
+.vd-sentence-content { display:flex;flex-direction:column;gap:6px; }
+.vd-sentence-content .vd-quiz-sentence { text-align:left;font-size:clamp(19px,2vw,26px);margin:0;padding:0;color:#334865; }
+.vd-sentence-audio { align-self:flex-start;display:flex;align-items:center;gap:8px;border:0;border-radius:9px;background:#edf3fe;color:#5471d0;padding:9px 13px;font-size:12px;font-weight:850;cursor:pointer; }
+.vd-sentence-audio:disabled,.vd-listening-replay:disabled { opacity:.55;cursor:not-allowed; }
+.vd-sentence-meaning { border-top:1px solid #e8edf5;margin-top:8px;padding:14px 4px;animation:vd-quiz-fade-in .25s ease-out; }
+.vd-sentence-meaning strong { color:#4773b3;font-size:17px; }
+.vd-sentence-meaning p { color:#4b5e79;font-size:15px;line-height:1.8;margin:6px 0; }
+.vd-sentence-meaning small { color:#8a95a5;line-height:1.65; }
+/* Image listening only for existing 400 Eiken grade-one master image+audio assets. */
+.vd-listening-intro { display:flex;align-items:center;justify-content:space-between;gap:13px;margin:9px 0 19px; }
+.vd-listening-intro>span { font-size:13px;font-weight:800;color:#6a7c99;line-height:1.5; }
+.vd-listening-replay { display:flex;align-items:center;justify-content:center;gap:9px;border:1px solid #cbdaf6;border-radius:12px;background:#ebf2ff;padding:12px 15px;color:#426ac8;font-weight:850;white-space:nowrap;cursor:pointer; }
+.vd-listening-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:6px 0 18px; }
+.vd-image-choice { position:relative;display:flex;justify-content:center;align-items:center;min-width:0;aspect-ratio:16/9;overflow:hidden;padding:0;border:3px solid #e8edf6;border-radius:15px;background:#eff3f9;cursor:pointer;transition:border-color .18s,transform .18s,box-shadow .18s; }
+.vd-image-choice img { width:100%;height:100%;object-fit:cover;display:block; }
+.vd-image-choice:hover:not(:disabled) { transform:translateY(-2px);border-color:#90b1f4;box-shadow:0 9px 16px #40568b15; }
+.vd-image-letter { position:absolute;z-index:2;top:9px;left:10px;display:grid;place-items:center;background:#fffef4;color:#43609b;border:1px solid #e8edf3;border-radius:9px;box-shadow:0 2px 8px #263a5519;font-size:17px;font-weight:900;width:37px;height:37px; }
+.vd-image-choice.is-correct { border-color:#20bc82;box-shadow:0 0 0 2px #a5e6cb; }
+.vd-image-choice.is-wrong { border-color:#e86a70;box-shadow:0 0 0 2px #f7bec6; }
+.vd-image-choice>svg { position:absolute;right:12px;top:12px;z-index:3;color:#168d5e;background:#fff;border-radius:50%;width:28px;height:28px;padding:4px; }
+.vd-image-choice:disabled { cursor:default; }
+/* Compact advanced-settings modal. */
+.vd-settings-modal { display:flex;flex-direction:column;width:min(540px,100%);max-height:90dvh;border-radius:22px;background:white;box-shadow:0 22px 70px #17284242;overflow:hidden; }
+.vd-settings-modal-head { display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #e9edf5;padding:24px 26px; }
+.vd-settings-modal-head h2 { color:#334766;font-size:22px;margin:7px 0 0; }
+.vd-settings-modal-head>button { display:grid;place-items:center;border:0;border-radius:50%;background:#f2f5fc;color:#63718a;width:37px;height:37px;cursor:pointer; }
+.vd-settings-modal-body { overflow:auto;padding:24px 26px; }
+.vd-settings-modal-body h3 { font-size:17px;margin:0 0 7px;color:#334765; }
+.vd-settings-modal-body>p { color:#8a96aa;font-size:12px;line-height:1.6;margin:0 0 14px; }
+.vd-count-options { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:16px 0 23px; }
+.vd-count-options button { border-radius:11px;padding:14px 2px;border:1px solid #e1e7f3;background:#f9fbff;color:#536786;font-size:14px;font-weight:850;cursor:pointer; }
+.vd-count-options button.selected { background:#4d6fdf;border-color:#4d6fdf;color:white;box-shadow:0 7px 16px #5274db31; }
+.vd-random-setting { display:flex;align-items:center;justify-content:space-between;gap:14px;border-top:1px solid #e9edf6;padding:20px 0;cursor:pointer; }
+.vd-random-setting span { display:flex;flex-direction:column;gap:4px; }
+.vd-random-setting strong { font-size:13px;color:#405572; }
+.vd-random-setting small { color:#93a0b3;font-size:11px;line-height:1.5; }
+.vd-random-setting input { accent-color:#5474dc;flex-shrink:0;transform:scale(1.3); }
+.vd-settings-modal-body>.vd-settings-hint { margin:0;background:#f3f6ff;padding:12px;border-radius:10px;color:#7e91b2; }
+.vd-settings-modal-foot { border-top:1px solid #e9edf5;padding:16px 26px; }
+.vd-settings-modal-foot button { border:0;width:100%;display:flex;align-items:center;justify-content:center;gap:12px;padding:15px;background:#506cdd;color:white;border-radius:12px;font-weight:850;cursor:pointer; }
+@media (max-width: 1120px) {
+  .vd-toolbar { flex-direction:column;align-items:stretch; }
+  .vd-tabs { justify-content:flex-start; }
+  .vd-dashboard-courses { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 700px) {
+  .vd-dashboard-page { padding-top:6px; }
+  .vd-dashboard-summary { flex-direction:column;text-align:center;align-items:center;gap:17px;padding:22px 17px; }
+  .vd-dashboard-metrics { justify-content:center; }
+  .vd-dashboard-title { align-items:flex-start; }
+  .vd-dashboard-today { display:none; }
+  .vd-dashboard-courses { grid-template-columns:1fr; }
+  .vd-dashboard-courses button { padding:13px; }
+  .vd-tabs { flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none; }
+  .vd-tabs button { flex-shrink:0; }
+  .vd-listening-intro { flex-direction:column;align-items:stretch; }
+  .vd-listening-replay { align-self:flex-start; }
+  .vd-listening-grid { gap:8px; }
+  .vd-image-choice { border-width:2px;border-radius:11px; }
+  .vd-image-letter { top:6px;left:6px;width:29px;height:29px;font-size:13px; }
+  .vd-count-options { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .vd-settings-modal-head,.vd-settings-modal-body,.vd-settings-modal-foot { padding:17px; }
+  .vd-top-dashboard { font-size:11px;padding:7px; }
+}
+@media (prefers-reduced-motion: reduce) { .vd-dashboard-courses button:hover,.vd-image-choice:hover { transform:none; } }
+
+
+/* Two independent progress rings: vocabulary mastery and 80%-pass reading. */
+.vd-dashboard-reading-donut{background:conic-gradient(#20b480 var(--progress),#e0efe8 0);}
+.vd-dashboard-reading-donut strong{color:#198963;}
+.vd-dashboard-summary{gap:20px;}
+.vd-dashboard-summary .vd-dashboard-donut{width:clamp(133px,14.5vw,172px);height:clamp(133px,14.5vw,172px);padding:12px;}
+.vd-dashboard-summary .vd-dashboard-donut strong{font-size:clamp(29px,3.5vw,42px);}
+.vd-reading-side-progress{padding:18px 20px;background:linear-gradient(125deg,#f5fff9,#f1faff);border:1px solid #dcefe5;border-radius:16px;}
+.vd-reading-side-progress>div:first-child{display:flex;align-items:baseline;justify-content:space-between;gap:6px;}
+.vd-reading-side-progress strong{font-size:14px;color:#257e5f;}
+.vd-reading-side-progress span{font-size:12px;color:#729a88;white-space:nowrap;}
+.vd-reading-side-track{width:100%;height:7px;background:#dcefe6;border-radius:20px;overflow:hidden;margin:12px 0;}
+.vd-reading-side-track span{display:block;height:100%;background:linear-gradient(90deg,#39cb92,#1b9d73);border-radius:20px;transition:width .3s;}
+.vd-reading-side-progress>button{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;border:0;border-radius:9px;background:#e0f7e9;color:#238761;padding:11px;font-size:12px;font-weight:850;}
+.vd-sentence-tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+.vd-sentence-read-link{display:flex;align-items:center;gap:7px;border:1px solid #b7e1ca;border-radius:9px;background:#e8f8f0;color:#278966;padding:9px 13px;font-size:12px;font-weight:850;cursor:pointer;}
+/* A word marked "覚えた" now receives the same positive feedback as the quiz. */
+.vd-card-area{position:relative;}
+.vd-rating-celebration{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;border-radius:14px;background:#fffffff0;backdrop-filter:blur(4px);pointer-events:none;animation:vd-quiz-fade-in .18s ease-out;}
+.vd-rating-symbol{display:grid;place-items:center;width:clamp(108px,13vw,148px);height:clamp(108px,13vw,148px);border-radius:50%;background:linear-gradient(140deg,#55dba2,#1a9c6b);box-shadow:0 17px 42px #239e753c;color:white;font-size:clamp(73px,9vw,107px);font-weight:850;line-height:1;animation:vd-quiz-pop .52s cubic-bezier(.2,1.2,.27,1);}
+.vd-rating-celebration strong{font-size:clamp(21px,3vw,29px);color:#218d63;font-weight:900;letter-spacing:1.5px;}
+.vd-rating-celebration.is-retry .vd-rating-symbol{background:linear-gradient(140deg,#f5a57f,#df806a);box-shadow:0 15px 36px #df806a30;font-size:72px;}
+.vd-rating-celebration.is-retry strong{color:#bd705b;}
+.vd-ratings .vd-remember{font-weight:900;}
+.vd-ratings .vd-remember:active{background:#2eb481;color:#fff;}
+@media (max-width:1160px){.vd-dashboard-summary{flex-wrap:wrap;gap:14px;}.vd-dashboard-summary-text{flex-basis:100%;}}
+@media (max-width:700px){.vd-dashboard-summary{align-items:center;flex-direction:row;justify-content:center;}.vd-dashboard-summary .vd-dashboard-donut{width:134px;height:134px;}.vd-dashboard-summary-text{width:100%;text-align:center;}}
+@media(prefers-reduced-motion:reduce){.vd-rating-celebration,.vd-rating-symbol{animation:none;}}
+
+
+/* Reading focus: a single-screen desktop / iPad workspace, without duplicate panels. */
+.vd-panel-head-actions{display:flex;align-items:center;gap:9px;}
+.vd-reading-session-count{font-size:14px;font-weight:850;color:#4a6895;white-space:nowrap;line-height:1;}
+.vd-reading-session-count span{color:#9aa9c0;font-size:11px;}
+.vd-reading-settings-button{height:32px;width:35px;display:grid;place-items:center;background:#eef3ff;border:0;border-radius:9px;color:#5372cb;cursor:pointer;}
+.vd-reading-settings-button:hover{background:#e0e9ff;}
+.vd-settings-audio-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 22px;}
+.vd-settings-audio-row label{display:flex;justify-content:space-between;align-items:center;gap:9px;padding:11px 12px;border:1px solid #e4eaf4;border-radius:12px;color:#566b8b;font-size:12px;font-weight:800;white-space:nowrap;}
+.vd-settings-audio-row select{border:1px solid #dfe6f1;border-radius:8px;padding:6px;color:#4e68a6;background:#f7faff;min-width:66px;}
+.vd-settings-audio-row input{width:19px;height:19px;accent-color:#5474dc;}
+.vd-app.is-reading-view{height:100dvh;min-height:0;overflow:hidden;}
+.vd-app.is-reading-view .vd-main{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.vd-app.is-reading-view .vd-topbar{height:49px;min-height:49px;padding:0 17px;flex-shrink:0;}
+.vd-app.is-reading-view .vd-top-right>span,.vd-app.is-reading-view .vd-top-right>small{display:none;}
+.vd-app.is-reading-view .vd-page{flex:1;min-height:0;display:flex;flex-direction:column;max-width:none;width:100%;overflow:hidden;padding:8px 14px 10px;}
+.vd-app.is-reading-view .vd-toolbar{flex:0 0 auto;min-height:0;margin:3px 0 9px;gap:9px;flex-direction:row;align-items:center;justify-content:stretch;}
+.vd-app.is-reading-view .vd-unit{min-width:152px;max-width:185px;flex:0 0 auto;padding:4px 7px;border-radius:11px;}
+.vd-app.is-reading-view .vd-unit label{display:none;}
+.vd-app.is-reading-view .vd-unit select{width:100%;min-width:0;font-size:12px;padding:6px 7px;}
+.vd-app.is-reading-view .vd-tabs{min-width:0;flex:1;display:flex;align-items:center;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 5px;gap:2px;border-radius:10px;}
+.vd-app.is-reading-view .vd-tabs::-webkit-scrollbar{display:none;}
+.vd-app.is-reading-view .vd-tabs button{min-width:max-content;flex:0 0 auto;padding:9px 10px;font-size:11px;gap:5px;border-radius:8px;}
+.vd-app.is-reading-view .vd-tabs button span{font-size:14px;}
+.vd-app.is-reading-view .vd-columns{flex:1;min-height:0;grid-template-columns:minmax(0,1fr) minmax(250px,.38fr);gap:12px;align-items:stretch;}
+.vd-app.is-reading-view .vd-study-panel{min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;border-radius:17px;}
+.vd-app.is-reading-view .vd-panel-head{min-height:40px;height:40px;flex-shrink:0;padding:0 13px;}
+.vd-app.is-reading-view .vd-panel-head>span{font-size:11px;letter-spacing:.3px;color:#5679a5;}
+.vd-app.is-reading-view .vd-list-button{padding:7px 9px;font-size:11px;}
+.vd-app.is-reading-view .vd-list-button svg{height:14px;width:14px;}
+.vd-app.is-reading-view .vd-progress{height:3px;flex-shrink:0;}
+.vd-app.is-reading-view .vd-panel-counter{display:none;}
+.vd-app.is-reading-view .vd-under-card,.vd-app.is-reading-view .vd-footer{display:none;}
+.vd-app.is-reading-view .vd-stats{min-height:0;overflow:hidden;gap:0;display:block;}
+.vd-app.is-reading-view .vd-stats>.vd-info-card:first-child,
+.vd-app.is-reading-view .vd-reading-side-progress,
+.vd-app.is-reading-view .vd-review-link{display:none;}
+.vd-app.is-reading-view .vd-info-card.vd-tool-card{padding:15px;box-shadow:none;max-height:100%;overflow:auto;}
+.vd-app.is-reading-view .vd-tool-card .vd-info-head{margin-bottom:5px;}
+.vd-app.is-reading-view .vd-tool-card .vd-info-head h3{margin-top:2px;}
+.vd-app.is-reading-view .vd-tool-card .vd-setting{padding:10px 0;}
+.vd-app.is-reading-view .vd-tool-card .vd-settings-summary{margin:8px 0;}
+.vd-app.is-reading-view .vd-tool-card .vd-setting-note{font-size:10px;line-height:1.5;}
+.vd-app.is-reading-view .vd-sidebar-bottom{display:none;}
+/* An iPad needs the whole panel, rather than a second column repeating progress. */
+@media(max-width:1240px){
+  .vd-app.is-reading-view .vd-columns{grid-template-columns:minmax(0,1fr);}
+  .vd-app.is-reading-view .vd-stats{display:none;}
+  .vd-app.is-reading-view .vd-toolbar{margin:3px 0 7px;}
+}
+@media(max-width:940px){
+  .vd-app.is-reading-view .vd-mobile-course{display:flex;flex:0 0 auto;margin:0 0 4px;padding:3px 9px;border-radius:10px;min-height:33px;}
+  .vd-app.is-reading-view .vd-mobile-course label{font-size:10px;}
+  .vd-app.is-reading-view .vd-mobile-course select{padding:4px;font-size:12px;}
+  .vd-app.is-reading-view .vd-page{padding:6px 10px 8px;}
+}
+@media(max-width:720px){
+  .vd-app.is-reading-view .vd-topbar{height:43px;min-height:43px;}
+  .vd-app.is-reading-view .vd-brandmark{height:30px;width:30px;flex-basis:30px;}
+  .vd-app.is-reading-view .vd-brand strong{font-size:15px;}
+  .vd-app.is-reading-view .vd-brand small{display:none;}
+  .vd-app.is-reading-view .vd-toolbar{gap:5px;}
+  .vd-app.is-reading-view .vd-unit{min-width:110px;max-width:130px;}
+  .vd-app.is-reading-view .vd-tabs button{font-size:10px;padding:8px;}
+  .vd-settings-audio-row{grid-template-columns:1fr;}
+}
+/* Short phone screens may legitimately scroll; do not clip text or buttons. */
+@media(max-height:610px),(max-width:550px){
+  .vd-app.is-reading-view{min-height:100dvh;height:auto;overflow:visible;}
+  .vd-app.is-reading-view .vd-main{min-height:100dvh;height:auto;overflow:visible;}
+  .vd-app.is-reading-view .vd-page{overflow:visible;}
+  .vd-app.is-reading-view .vd-study-panel{height:auto;min-height:570px;overflow:visible;}
+  .vd-app.is-reading-view .vd-columns{display:block;}
+}
+
+
+/* Premium progress medallions: precise SVG progress, glossy ring and calm typography */
+.vd-dashboard-page {padding-top:7px;}
+.vd-dashboard-summary {
+  gap:30px;
+  border:1px solid #dce6f6;
+  background:linear-gradient(133deg,#fff 0%,#f7faff 52%,#eff5ff 100%);
+  box-shadow:0 16px 40px rgba(58,84,143,.08),inset 0 1px 0 #fff;
+}
+.vd-medallion-group {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(143px,1fr));
+  align-items:start;
+  gap:11px;
+  flex:0 1 390px;
+  min-width:290px;
+}
+.vd-progress-medallion{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:10px 10px 13px;
+  border-radius:18px;
+  border:1px solid rgba(215,226,245,.9);
+  background:linear-gradient(160deg,#ffffffeb,#f1f6ffbd);
+  box-shadow:inset 0 2px 0 #fff,0 7px 22px rgba(43,71,128,.065);
+}
+.vd-progress-medallion.is-reading{background:linear-gradient(160deg,#ffffff,#effbf7);}
+.vd-medallion-visual{position:relative;width:min(100%,172px);aspect-ratio:1;filter:drop-shadow(0 8px 9px rgba(37,89,140,.09));}
+.vd-medallion-svg{width:100%;height:100%;display:block;overflow:visible;}
+.vd-medallion-progress,.vd-medallion-reflection{transition:stroke-dasharray .7s cubic-bezier(.2,.9,.28,1);}
+.vd-medallion-value{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;pointer-events:none;padding-top:7px;}
+.vd-medallion-value strong{color:#3459b6;font-size:clamp(28px,3vw,39px);font-weight:900;letter-spacing:-2.1px;line-height:1.1;font-variant-numeric:tabular-nums;text-shadow:0 1px 0 #fff;}
+.vd-medallion-value strong span{font-size:.58em;letter-spacing:-1px;}
+.vd-progress-medallion.is-reading .vd-medallion-value strong{color:#149879;}
+.vd-medallion-value small{font-size:8px;color:#8399bc;font-weight:900;letter-spacing:1.6px;margin-top:3px;}
+.vd-progress-medallion.is-reading .vd-medallion-value small{color:#5faba0;}
+.vd-medallion-label{font-size:13px;color:#3c5280;font-weight:900;line-height:1.4;margin-top:-2px;}
+.vd-progress-medallion.is-reading .vd-medallion-label{color:#257b69;}
+.vd-medallion-subtitle{font-size:10px;color:#9baac1;line-height:1.35;margin-top:4px;}
+.vd-dashboard-summary-text {flex:1 1 280px;}
+.vd-dashboard-metrics span{background:#eef3fd;}
+.vd-dashboard-course-heading{margin-top:24px;}
+@media(max-width:1100px){
+  .vd-dashboard-summary{flex-wrap:wrap;justify-content:center;padding:20px;}
+  .vd-dashboard-summary-text{flex-basis:100%;text-align:center;}
+  .vd-medallion-group{flex:0 1 385px;}
+  .vd-dashboard-metrics{justify-content:center;}
+}
+@media(max-width:550px){
+  .vd-medallion-group{min-width:0;width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+  .vd-progress-medallion{padding:8px 3px 11px;}
+  .vd-medallion-label{font-size:11px;}
+  .vd-dashboard-summary{gap:11px;padding:14px;}
+}
+/* All study types, including regular school-test and long-reading vocabulary,
+   use the same viewport as sentence reading instead of a scrollable long page. */
+.vd-app.is-focus-view{height:100dvh;min-height:0;overflow:hidden;}
+.vd-app.is-focus-view .vd-main{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden;}
+.vd-app.is-focus-view .vd-topbar{height:46px;min-height:46px;padding:0 16px;flex-shrink:0;}
+.vd-app.is-focus-view .vd-page{
+  flex:1;min-height:0;
+  display:flex;flex-direction:column;
+  max-width:none;width:100%;overflow:hidden;
+  padding:8px 14px 10px;
+}
+.vd-app.is-focus-view .vd-toolbar{
+  display:flex;flex:0 0 auto;min-height:0;align-items:center;justify-content:stretch;
+  gap:10px;margin:3px 0 9px;
+  flex-direction:row;
+}
+.vd-app.is-focus-view .vd-unit{
+  min-width:160px;max-width:215px;flex:0 0 auto;padding:4px 8px;border-radius:10px;
+}
+.vd-app.is-focus-view .vd-unit label{display:none;}
+.vd-app.is-focus-view .vd-unit select{width:100%;min-width:0;padding:6px;font-size:12px;}
+.vd-app.is-focus-view .vd-tabs{
+  flex:1;min-width:0;
+  display:flex;align-items:center;justify-content:flex-start;
+  gap:2px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+  padding:4px;border-radius:11px;
+}
+.vd-app.is-focus-view .vd-tabs::-webkit-scrollbar{display:none;}
+.vd-app.is-focus-view .vd-tabs button{
+  flex:0 0 auto;min-width:max-content;font-size:11px;
+  gap:6px;padding:9px 10px;border-radius:8px;white-space:nowrap;
+}
+.vd-app.is-focus-view .vd-tabs button span{font-size:14px;}
+.vd-app.is-focus-view .vd-columns{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:minmax(0,1fr);
+  align-items:stretch;gap:0;
+}
+.vd-app.is-focus-view .vd-stats{display:none;}
+.vd-app.is-focus-view .vd-study-panel{
+  min-height:0;height:100%;max-height:100%;
+  overflow:hidden;display:flex;flex-direction:column;
+  border-radius:17px;
+}
+.vd-app.is-focus-view .vd-panel-head{
+  min-height:40px;height:40px;flex-shrink:0;
+  padding:0 16px;
+}
+.vd-app.is-focus-view .vd-panel-head>span{
+  letter-spacing:.5px;font-size:10px;
+}
+.vd-app.is-focus-view .vd-panel-counter{
+  flex-shrink:0;
+  height:27px;min-height:27px;
+  align-items:center;
+  padding:4px 18px 0;
+}
+.vd-app.is-focus-view .vd-panel-counter strong{font-size:13px;}
+.vd-app.is-focus-view .vd-progress{height:3px;flex-shrink:0;}
+.vd-app.is-focus-view .vd-under-card,
+.vd-app.is-focus-view .vd-footer{display:none;}
+.vd-app.is-focus-view .vd-sidebar-bottom{display:none;}
+.vd-app.is-focus-view .vd-list-button{padding:7px 9px;font-size:11px;}
+.vd-app.is-focus-view .vd-list-button svg{width:15px;height:15px;}
+/* Four-choice quiz: fixed 2x2 options and a visible skip button at every viewport size. */
+.vd-app.is-focus-view .vd-quiz-body{
+  flex:1;min-height:0;overflow:hidden;
+  display:flex;flex-direction:column;
+  padding:9px 17px 11px;
+  gap:5px;
+}
+.vd-app.is-focus-view .vd-quiz-instruction{
+  text-align:left;
+  flex:0 0 auto;
+  font-size:11px;
+  letter-spacing:.3px;
+  line-height:1.4;
+}
+.vd-app.is-focus-view .vd-quiz-sentence{
+  flex:0 1 auto;
+  min-height:0;
+  max-height:min(36vh,39%);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  font-size:clamp(18px,1.8vw,25px);
+  line-height:1.42;
+  font-weight:800;
+  text-align:left;
+  margin:3px 0 7px;
+  padding:0;
+  letter-spacing:-.35px;
+}
+.vd-app.is-focus-view .vd-quiz-sentence.vd-quiz-dialogue{
+  max-height:min(39vh,42%);
+}
+.vd-app.is-focus-view .vd-quiz-turn + .vd-quiz-turn{margin-top:.35em;}
+.vd-app.is-focus-view .vd-choice-grid{
+  flex:1 1 auto;
+  min-height:120px;
+  max-height:clamp(150px,29vh,270px);
+  margin:3px 0 5px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:9px;
+}
+.vd-app.is-focus-view .vd-choice{
+  min-height:0;
+  min-width:0;
+  height:100%;
+  padding:10px 15px;
+  gap:10px;
+  border-radius:11px;
+  font-size:clamp(13px,1.35vw,16px);
+}
+.vd-app.is-focus-view .vd-choice>span{width:26px;height:26px;}
+.vd-app.is-focus-view .vd-quiz-next{
+  flex:0 0 26px;
+  margin-top:auto;
+  min-height:26px;
+  align-items:center;
+  padding:0;
+}
+.vd-app.is-focus-view .vd-quiz-next button{font-size:12px;padding:5px 7px;}
+/* Listening mode: retain squarely visible four pictures inside the same screen. */
+.vd-app.is-focus-view .vd-listening-intro{
+  margin:0 0 6px;
+  min-height:37px;
+  flex:0 0 auto;
+}
+.vd-app.is-focus-view .vd-listening-replay{padding:9px 13px;}
+.vd-app.is-focus-view .vd-listening-grid{
+  flex:1;
+  min-height:0;
+  max-height:calc(100% - 90px);
+  margin:2px 0 6px;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+}
+.vd-app.is-focus-view .vd-image-choice{height:100%;aspect-ratio:auto;}
+/* Flashcard / sentence workbench: context, picture and action buttons stay visible. */
+.vd-app.is-focus-view .vd-card-area{
+  flex:1;min-height:0;
+  padding:0 17px 9px;
+  overflow:hidden;
+}
+.vd-app.is-focus-view .vd-word-card{
+  min-height:0;
+  flex:1;overflow-y:auto;
+  padding:10px 7px 8px;
+  overscroll-behavior:contain;
+}
+.vd-app.is-focus-view .vd-word-eyebrow{margin-bottom:7px;}
+.vd-app.is-focus-view .vd-word-heading h2{font-size:clamp(30px,3.3vw,52px);line-height:1.12;}
+.vd-app.is-focus-view .vd-sound{width:39px;height:39px;}
+.vd-app.is-focus-view .vd-phonetic{margin:6px 0 0;font-size:12px;}
+.vd-app.is-focus-view .vd-word-detail{margin:7px auto 0;}
+.vd-app.is-focus-view .vd-word-detail>h3{margin:5px 0 10px;font-size:clamp(17px,2vw,23px);}
+.vd-app.is-focus-view .vd-word-image{height:clamp(95px,16vh,170px);margin-bottom:8px;}
+.vd-app.is-focus-view .vd-example{padding:10px 13px;}
+.vd-app.is-focus-view .vd-example p{margin:4px 0;font-size:clamp(12px,1.2vw,15px);line-height:1.45;}
+.vd-app.is-focus-view .vd-example small{font-size:11px;line-height:1.45;}
+.vd-app.is-focus-view .vd-etymology{font-size:10px;line-height:1.45;padding-top:4px;}
+.vd-app.is-focus-view .vd-card-unrevealed{min-height:85px;}
+.vd-app.is-focus-view .vd-actions{flex:0 0 auto;}
+.vd-app.is-focus-view .vd-reveal,
+.vd-app.is-focus-view .vd-ratings button{padding:10px 12px;font-size:13px;}
+.vd-app.is-focus-view .vd-card-navigation{margin-top:6px;padding-top:6px;}
+.vd-app.is-focus-view .vd-sentence-study{min-height:0;gap:7px;}
+.vd-app.is-focus-view .vd-sentence-picture{max-height:clamp(110px,20vh,215px);}
+.vd-app.is-focus-view .vd-sentence-content .vd-quiz-sentence{
+  max-height:none;
+  font-size:clamp(17px,1.85vw,24px);
+  line-height:1.45;
+}
+.vd-app.is-focus-view .vd-sentence-meaning{padding:8px 3px;margin-top:3px;}
+.vd-app.is-focus-view .vd-sentence-meaning p{font-size:13px;line-height:1.5;}
+/* Tablet landscape and portrait: extend the study space across the screen. */
+@media(max-width:1240px){
+  .vd-app.is-focus-view .vd-sidebar{display:none;}
+  .vd-app.is-focus-view .vd-mobile-brand{display:block;}
+  .vd-app.is-focus-view .vd-breadcrumb{display:none;}
+  .vd-app.is-focus-view .vd-topbar{padding:0 14px;}
+  .vd-app.is-focus-view .vd-page{padding:6px 10px 7px;}
+  .vd-app.is-focus-view .vd-mobile-course{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e8ecf2;padding:5px 9px;border-radius:10px;margin:0 0 5px;flex:0 0 auto;}
+  .vd-app.is-focus-view .vd-mobile-course select{padding:3px;font-size:11px;}
+  .vd-app.is-focus-view .vd-toolbar{margin:2px 0 6px;gap:6px;}
+  .vd-app.is-focus-view .vd-choice-grid{max-height:clamp(144px,28vh,250px);}
+}
+@media(max-width:740px){
+  .vd-app.is-focus-view .vd-topbar{height:41px;min-height:41px;}
+  .vd-app.is-focus-view .vd-toolbar{gap:5px;}
+  .vd-app.is-focus-view .vd-unit{min-width:110px;max-width:130px;}
+  .vd-app.is-focus-view .vd-tabs button{padding:8px;font-size:10px;}
+  .vd-app.is-focus-view .vd-panel-head{min-height:37px;height:37px;padding:0 10px;}
+  .vd-app.is-focus-view .vd-quiz-body{padding:8px 11px 10px;}
+  .vd-app.is-focus-view .vd-quiz-sentence{font-size:clamp(16px,2.4vw,20px);line-height:1.4;}
+  .vd-app.is-focus-view .vd-choice{font-size:12px;padding:8px;gap:7px;}
+  .vd-app.is-focus-view .vd-choice-grid{gap:7px;}
+}
+@media(max-height:730px) and (min-width:551px){
+  .vd-app.is-focus-view .vd-topbar{height:40px;min-height:40px;}
+  .vd-app.is-focus-view .vd-page{padding-top:4px;padding-bottom:4px;}
+  .vd-app.is-focus-view .vd-mobile-course{margin-bottom:3px;padding:2px 7px;}
+  .vd-app.is-focus-view .vd-toolbar{margin:1px 0 5px;}
+  .vd-app.is-focus-view .vd-quiz-body{padding-top:6px;padding-bottom:6px;}
+  .vd-app.is-focus-view .vd-choice-grid{max-height:clamp(126px,26vh,205px);}
+  .vd-app.is-focus-view .vd-panel-head{min-height:36px;height:36px;}
+  .vd-app.is-focus-view .vd-word-image{height:95px;}
+}
+/* For phones and very short displays, preserve legibility rather than cropping text. */
+@media(max-width:550px),(max-height:550px){
+  .vd-app.is-focus-view{height:auto;min-height:100dvh;overflow:visible;}
+  .vd-app.is-focus-view .vd-main{height:auto;min-height:100dvh;overflow:visible;}
+  .vd-app.is-focus-view .vd-page{overflow:visible;}
+  .vd-app.is-focus-view .vd-columns{display:block;}
+  .vd-app.is-focus-view .vd-study-panel{height:auto;min-height:490px;max-height:none;}
+  .vd-app.is-focus-view .vd-quiz-sentence{max-height:none;overflow:visible;}
+  .vd-app.is-focus-view .vd-quiz-body{overflow:visible;min-height:440px;}
+  .vd-app.is-focus-view .vd-choice-grid{flex:none;max-height:none;height:170px;}
+  .vd-app.is-focus-view .vd-card-area{overflow:visible;}
+  .vd-app.is-focus-view .vd-word-card{overflow:visible;}
+  .vd-app.is-focus-view .vd-sentence-study{min-height:0;}
+}
+@media(prefers-reduced-motion:reduce){.vd-medallion-progress,.vd-medallion-reflection{transition:none;}}
+
+
+/* Compact vocabulary/sentence/review cards: action controls follow content,
+   not the bottom edge of a full-height viewport. Quiz and reading are unchanged. */
+.vd-app.is-compact-card .vd-columns{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:0;
+  overflow:hidden;
+}
+.vd-app.is-compact-card .vd-study-panel{
+  flex:0 1 auto;
+  align-self:center;
+  width:min(100%,1050px);
+  max-width:1050px;
+  height:auto;
+  min-height:0;
+  max-height:100%;
+  border-radius:17px;
+  overflow:hidden;
+  box-shadow:0 15px 36px rgba(33,52,96,.07);
+}
+.vd-app.is-compact-card .vd-panel-head{
+  height:38px;
+  min-height:38px;
+}
+.vd-app.is-compact-card .vd-panel-counter{
+  height:23px;
+  min-height:23px;
+  padding:3px 17px 0;
+}
+.vd-app.is-compact-card .vd-panel-counter small{display:none;}
+.vd-app.is-compact-card .vd-panel-counter strong{margin-left:auto;font-size:12px;}
+.vd-app.is-compact-card .vd-card-area{
+  flex:0 1 auto;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  max-height:calc(100dvh - 175px);
+  padding:0 18px 13px;
+  overflow:hidden;
+}
+.vd-app.is-compact-card .vd-word-card{
+  flex:0 1 auto;
+  min-height:0;
+  max-height:calc(100dvh - 275px);
+  overflow-y:auto;
+  padding:4px 7px 2px;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+}
+.vd-app.is-compact-card .vd-word-eyebrow{display:none;}
+.vd-app.is-compact-card .vd-word-heading{
+  margin:2px auto 0;
+  gap:10px;
+  justify-content:center;
+}
+.vd-app.is-compact-card .vd-word-heading h2{
+  font-size:clamp(32px,3.3vw,49px);
+  line-height:1.13;
+}
+.vd-app.is-compact-card .vd-phonetic{margin-top:4px;}
+.vd-app.is-compact-card .vd-meaning-caption{display:none;}
+.vd-app.is-compact-card .vd-word-detail{
+  width:100%;
+  margin:5px auto 0;
+}
+.vd-app.is-compact-card .vd-word-detail>h3{
+  margin:3px 0 10px;
+  font-size:clamp(18px,1.8vw,24px);
+  line-height:1.35;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+  display:grid;
+  grid-template-columns:minmax(190px,240px) minmax(0,1fr);
+  gap:8px 14px;
+  align-items:center;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>h3{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-word-image{
+  grid-column:1;
+  grid-row:2;
+  width:100%;
+  height:clamp(112px,19vh,170px);
+  max-width:100%;
+  margin:0;
+  object-fit:contain;
+  background:#edf3fa;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-example{
+  grid-column:2;
+  grid-row:2;
+  min-width:0;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-etymology{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-example{
+  padding:11px 14px;
+  border-radius:12px;
+  text-align:left;
+}
+.vd-app.is-compact-card .vd-example p{
+  font-size:clamp(13px,1.35vw,17px);
+  line-height:1.5;
+  margin:5px 0;
+}
+.vd-app.is-compact-card .vd-example small{
+  display:block;
+  font-size:12px;
+  line-height:1.5;
+}
+.vd-app.is-compact-card .vd-etymology{
+  margin:2px 0 0;
+  padding:4px 0 0;
+}
+.vd-app.is-compact-card .vd-card-unrevealed{display:none;}
+/* Sentence master: enlarged contextual picture beside the English and its tools. */
+.vd-app.is-compact-card .vd-sentence-study{
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  gap:8px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image{
+  display:grid;
+  grid-template-columns:minmax(235px,35%) minmax(0,1fr);
+  align-items:center;
+  column-gap:20px;
+  row-gap:8px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+  grid-column:1;
+  grid-row:1;
+  display:block;
+  margin:0;
+  width:100%;
+  height:clamp(165px,24vh,232px);
+  max-height:none;
+  object-fit:contain;
+  background:#eaf0f8;
+  border-radius:12px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-content{
+  grid-column:2;
+  grid-row:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:12px;
+}
+.vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+  margin:0;
+  padding:0;
+  overflow:visible;
+  max-height:none;
+  text-align:left;
+  font-size:clamp(17px,1.85vw,23px);
+  font-weight:750;
+  line-height:1.46;
+}
+.vd-app.is-compact-card .vd-sentence-tools{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.vd-app.is-compact-card .vd-sentence-audio,
+.vd-app.is-compact-card .vd-sentence-read-link{
+  padding:9px 12px;
+  min-height:38px;
+  font-size:12px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-meaning{
+  grid-column:1/-1;
+}
+.vd-app.is-compact-card .vd-sentence-meaning{
+  margin:4px 0 0;
+  padding:8px 10px 5px;
+  background:#f5f8fe;
+  border:1px solid #e6ecf6;
+  border-radius:11px;
+}
+.vd-app.is-compact-card .vd-sentence-meaning p{
+  margin:4px 0;
+  font-size:13px;
+  line-height:1.5;
+}
+/* Keep the four most-used controls in one close, reachable cluster. */
+.vd-app.is-compact-card .vd-actions{
+  flex:0 0 auto;
+  margin:10px 0 0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:0 7px;
+}
+.vd-app.is-compact-card .vd-reveal{
+  width:min(100%,240px);
+  min-height:43px;
+  padding:10px 15px;
+  margin:0;
+  font-size:13px;
+  border-radius:11px;
+}
+.vd-app.is-compact-card .vd-ratings{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.vd-app.is-compact-card .vd-ratings button{
+  flex:0 1 auto;
+  min-width:142px;
+  min-height:43px;
+  padding:10px 13px;
+  font-size:13px;
+  border-radius:10px;
+  white-space:nowrap;
+}
+.vd-app.is-compact-card .vd-card-navigation{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.vd-app.is-compact-card .vd-card-navigation>span{display:none;}
+.vd-app.is-compact-card .vd-card-navigation button{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  min-width:80px;
+  min-height:43px;
+  padding:9px 13px;
+  border:1px solid #e5ebf5;
+  border-radius:10px;
+  color:#637c9e;
+  background:#f7f9fd;
+  font-size:12px;
+  cursor:pointer;
+}
+.vd-app.is-compact-card .vd-card-navigation button:hover:not(:disabled){
+  background:#edf2ff;
+  border-color:#cddcf7;
+}
+.vd-app.is-compact-card .vd-card-navigation button:disabled{opacity:.35;cursor:default;}
+.vd-app.is-compact-card .vd-autoplay-running{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+}
+/* iPad portrait: keep the picture and its sentence closely adjacent. */
+@media(max-width:980px){
+  .vd-app.is-compact-card .vd-study-panel{width:min(100%,920px);}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{
+    grid-template-columns:minmax(205px,34%) minmax(0,1fr);
+    column-gap:13px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    height:clamp(145px,20vh,205px);
+  }
+  .vd-app.is-compact-card .vd-word-card{
+    max-height:calc(100dvh - 260px);
+  }
+}
+@media(max-width:700px){
+  .vd-app.is-compact-card .vd-card-area{padding:0 10px 11px;}
+  .vd-app.is-compact-card .vd-word-card{padding:4px;max-height:calc(100dvh - 265px);}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{
+    grid-template-columns:minmax(145px,37%) minmax(0,1fr);
+    gap:9px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    height:clamp(120px,18vh,170px);
+  }
+  .vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+    font-size:clamp(15px,2.5vw,18px);
+    line-height:1.4;
+  }
+  .vd-app.is-compact-card .vd-sentence-tools button{font-size:11px;padding:7px 9px;}
+  .vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+    grid-template-columns:minmax(120px,34%) minmax(0,1fr);
+    gap:8px;
+  }
+  .vd-app.is-compact-card .vd-actions{gap:6px;margin-top:8px;}
+  .vd-app.is-compact-card .vd-ratings button{min-width:120px;min-height:40px;padding:8px;}
+  .vd-app.is-compact-card .vd-card-navigation button{min-width:66px;min-height:40px;padding:8px;}
+  .vd-app.is-compact-card .vd-reveal{min-height:40px;}
+}
+/* Small phones may stack buttons, never hide mandatory actions. */
+@media(max-width:550px),(max-height:550px){
+  .vd-app.is-compact-card .vd-study-panel{height:auto;max-height:none;}
+  .vd-app.is-compact-card .vd-card-area{max-height:none;overflow:visible;}
+  .vd-app.is-compact-card .vd-word-card{max-height:none;overflow:visible;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image{display:flex;flex-direction:column;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture{
+    max-height:140px;height:140px;width:100%;
+  }
+  .vd-app.is-compact-card .vd-actions{flex-wrap:wrap;}
+}
+
+
+/* Study-card refinement: restore comfortable breathing room, without the old
+   empty full-height panels or far-away action buttons. */
+.vd-target-highlight {
+  color:#1f58c3;
+  font-weight:900;
+  padding:.025em .14em .065em;
+  margin:0 -.015em;
+  background:linear-gradient(180deg,#eef5ff 0%,#dfeaff 100%);
+  border-radius:5px;
+  box-shadow:inset 0 -1px 0 #b9d2fc;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+.vd-app.is-compact-card .vd-study-panel {
+  width:min(100%,1150px);
+  max-width:1150px;
+}
+.vd-app.is-compact-card .vd-card-area {
+  padding:0 22px 18px;
+}
+.vd-app.is-compact-card .vd-word-card {
+  padding:12px 14px 9px;
+  max-height:calc(100dvh - 285px);
+}
+.vd-app.is-compact-card .vd-word-heading {
+  margin:6px auto 3px;
+  gap:13px;
+}
+.vd-app.is-compact-card .vd-word-heading h2 {
+  font-size:clamp(37px,3.6vw,54px);
+  line-height:1.18;
+}
+.vd-app.is-compact-card .vd-word-detail {
+  margin:12px auto 0;
+}
+.vd-app.is-compact-card .vd-word-detail>h3 {
+  margin:6px 0 15px;
+  font-size:clamp(19px,2vw,26px);
+  line-height:1.42;
+}
+.vd-app.is-compact-card .vd-example {
+  padding:16px 19px;
+}
+.vd-app.is-compact-card .vd-example p {
+  margin:9px 0 7px;
+  font-size:clamp(15px,1.55vw,19px);
+  line-height:1.58;
+}
+.vd-app.is-compact-card .vd-example small {
+  font-size:clamp(12px,1.1vw,14px);
+  line-height:1.6;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image){
+  grid-template-columns:minmax(195px,260px) minmax(0,1fr);
+  gap:12px 18px;
+}
+.vd-app.is-compact-card .vd-word-detail:has(.vd-word-image)>.vd-word-image{
+  height:clamp(135px,21vh,200px);
+}
+.vd-app.is-compact-card .vd-sentence-study {gap:12px;}
+.vd-app.is-compact-card .vd-sentence-study.has-image {
+  grid-template-columns:minmax(245px,38%) minmax(0,1fr);
+  column-gap:22px;
+}
+.vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+  height:clamp(175px,26vh,250px);
+}
+.vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence {
+  font-size:clamp(18px,1.9vw,25px);
+  line-height:1.5;
+}
+.vd-app.is-compact-card .vd-actions{
+  margin:15px 0 0;
+  gap:10px;
+}
+.vd-app.is-compact-card .vd-reveal,
+.vd-app.is-compact-card .vd-ratings button,
+.vd-app.is-compact-card .vd-card-navigation button {
+  min-height:46px;
+}
+.vd-app.is-compact-card .vd-card-navigation {gap:9px;}
+@media(max-width:980px){
+  .vd-app.is-compact-card .vd-word-card {
+    padding:10px 11px 8px;
+    max-height:calc(100dvh - 255px);
+  }
+  .vd-app.is-compact-card .vd-card-area{padding:0 15px 14px;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image {
+    grid-template-columns:minmax(205px,36%) minmax(0,1fr);
+    column-gap:13px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+    height:clamp(145px,22vh,210px);
+  }
+  .vd-app.is-compact-card .vd-example{padding:13px 15px;}
+  .vd-app.is-compact-card .vd-example p{font-size:clamp(15px,1.8vw,18px);}
+  .vd-app.is-compact-card .vd-actions{margin-top:12px;}
+}
+@media(max-width:700px){
+  .vd-app.is-compact-card .vd-word-card{padding:9px 7px;max-height:calc(100dvh - 265px);}
+  .vd-app.is-compact-card .vd-card-area{padding:0 10px 11px;}
+  .vd-app.is-compact-card .vd-word-heading h2{font-size:clamp(32px,5.1vw,45px);}
+  .vd-app.is-compact-card .vd-word-detail>h3{margin:4px 0 10px;}
+  .vd-app.is-compact-card .vd-example{padding:11px 12px;}
+  .vd-app.is-compact-card .vd-example p{margin:5px 0;font-size:15px;}
+  .vd-app.is-compact-card .vd-sentence-study.has-image {
+    grid-template-columns:minmax(145px,37%) minmax(0,1fr);
+    column-gap:9px;
+  }
+  .vd-app.is-compact-card .vd-sentence-study.has-image .vd-sentence-picture {
+    height:clamp(120px,18vh,175px);
+  }
+  .vd-app.is-compact-card .vd-sentence-content .vd-quiz-sentence{
+    font-size:clamp(15px,2.5vw,18px);
+  }
+  .vd-app.is-compact-card .vd-reveal,
+  .vd-app.is-compact-card .vd-ratings button,
+  .vd-app.is-compact-card .vd-card-navigation button {min-height:40px;}
+  .vd-app.is-compact-card .vd-actions{margin-top:9px;gap:7px;}
+}
+@media(max-height:550px){
+  .vd-app.is-compact-card .vd-word-card{max-height:none;}
+}
