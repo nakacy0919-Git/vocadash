@@ -173,6 +173,7 @@ export default function VocaDash() {
   const course = CATALOG.find(c => c.id === selection.courseId) || CATALOG.find(c => c.id === 'eiken_2');
   const unit = course.units.find(u => u.id === selection.unitId) || course.units[0];
   const current = queue[cursor];
+  const quizAnswerCorrect = feedback !== null && (mode === 'listening' ? feedback === current?.id : feedback === current?.correctIndex);
   const isFinished = !loading && queue.length > 0 && cursor >= queue.length;
   const stats = useMemo(() => summaryFor(words, store.records), [words, store.records]);
   const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
@@ -276,15 +277,11 @@ export default function VocaDash() {
     playQuizFeedbackSound(option.correct, store.settings.sound);
     setStore(prev => updateRecord(prev, current.id, option.correct));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
-    if (option.correct) {
-      quizTimer.current = setTimeout(next, 1450);
-    } else {
-      // Never move past a wrong answer before the learner reads the translation.
-      quizTimer.current = setTimeout(() => {
-        setQuizCelebration(null);
-        setQuizReviewOpen(true);
-      }, 750);
-    }
+    // Show the explanation for every answer; advance only when the learner chooses to.
+    quizTimer.current = setTimeout(() => {
+      setQuizCelebration(null);
+      setQuizReviewOpen(true);
+    }, option.correct ? 1000 : 750);
   };
   const speak = (item = current, sentence = false) => {
     if (!item || !store.settings.sound) return;
@@ -553,12 +550,12 @@ export default function VocaDash() {
     </main>
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
-        <section className="vd-quiz-review-dialog" role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
+        <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
           <header className="vd-quiz-review-header">
-            <span className="vd-quiz-review-symbol" aria-hidden="true">×</span>
+            <span className="vd-quiz-review-symbol" aria-hidden="true">{quizAnswerCorrect ? '✓' : '×'}</span>
             <div>
               <div className="vd-quiz-review-eyebrow">LEARN FROM YOUR ANSWER</div>
-              <h2 id="vd-quiz-review-title">日本語訳を確認しよう</h2>
+              <h2 id="vd-quiz-review-title">{quizAnswerCorrect ? '正解！ 解説を確認しよう' : '日本語訳と解説を確認しよう'}</h2>
               <p id="vd-quiz-review-description">正しい英文と訳を読んで、次の問題に進みましょう。</p>
             </div>
           </header>
@@ -590,7 +587,7 @@ export default function VocaDash() {
             )}
           </div>
           <footer className="vd-quiz-review-footer">
-            <button autoFocus onClick={next}>訳を確認した・次の問題へ <Icon name="arrow" size={18}/></button>
+            <button autoFocus onClick={next}>解説を確認した・次の問題へ <Icon name="arrow" size={18}/></button>
           </footer>
         </section>
       </div>
