@@ -127,6 +127,17 @@
   letter-spacing: 1.7px;
   color: #b26770;
 }
+/* The review modal reflects the answer while preserving the same explanation flow. */
+.vd-quiz-review-dialog.is-correct .vd-quiz-review-header {
+  background: linear-gradient(125deg,#effaf3,#fff 72%);
+}
+.vd-quiz-review-dialog.is-correct .vd-quiz-review-symbol {
+  background: #d9f4e5;
+  color: #278461;
+}
+.vd-quiz-review-dialog.is-correct .vd-quiz-review-eyebrow {
+  color: #278461;
+}
 .vd-quiz-review-header h2 {
   font-size: clamp(20px,3vw,25px);
   color: #354867;
