@@ -158,6 +158,14 @@ export default function VoiceControl({current,words,universeOpen,onOpenUniverse,
    {!entry.records?.length&&showExamples&&entry.examples?.map((e,i)=><div key={i}><p>{e.en} <button onClick={()=>speak(e.en)}>♫</button></p>{showJa&&<small>{e.ja}</small>}</div>)}</div>}
    <details><summary>Voice command examples</summary><p>Show me connect · Open the universe · Expand synonyms · Show me word families · Focus on connection · Show me collocations · Show word forms · Next page · Go back · Read it aloud · Hey Voca · Voca · Go to sleep · Stop listening</p></details>
   </section>}
-  <div className="vd-voice-bottom">{enabled&&!open&&<button type="button" className="vd-voice-button" onClick={()=>setOpen(true)}>{phase==='standby'?'Waiting for Voca…':'Listening…'}</button>}<button type="button" className={'vd-voice-button'+(enabled?(phase==='standby'?' standby':' listening'):'')} aria-pressed={enabled} onClick={()=>{if(!open&&!enabled){setOpen(true);return;}setOpen(true);start();}}><span aria-hidden="true">🎙</span> {enabled?'Stop mic':open?'Enable mic':'Voice Control'}</button></div>
+  <div className="vd-voice-bottom">
+   {enabled&&!open&&<button type="button" className="vd-voice-status-chip" onClick={()=>setOpen(true)}>{phase==='standby'?'Waiting for Voca…':'Listening…'}</button>}
+   <div className="vd-voice-launch">
+    <button type="button" className={'vd-voice-button vd-voice-round'+(enabled?(phase==='standby'?' standby':' listening'):'')} aria-label={enabled?'Stop microphone':open?'Enable microphone':'Open Voice Control'} title={enabled?'Stop microphone':open?'Enable microphone':'Voice Control'} aria-pressed={enabled} aria-expanded={open} onClick={()=>{if(!open&&!enabled){setOpen(true);return;}setOpen(true);start();}}>
+     <svg viewBox="0 0 24 24" width="29" height="29" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{enabled?<rect x="6.5" y="6.5" width="11" height="11" rx="2" fill="currentColor" stroke="none"/>:<><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3.5M8.5 21.5h7"/></>}</svg>
+    </button>
+    <span className="vd-voice-launch-label">{enabled?(phase==='standby'?'Standby':'Stop mic'):open?'Enable mic':'Voice Control'}</span>
+   </div>
+  </div>
  </div>,document.body);
 }
