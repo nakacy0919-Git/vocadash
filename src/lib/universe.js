@@ -1,3 +1,7 @@
+import schoolReadingC from '../data/universe-school-reading-c.js';
+import schoolReadingD from '../data/universe-school-reading-d.js';
+import originalA1A from '../data/universe-original-a1-a.js';
+import readingNotes from '../data/universe-reading-notes.js';
 import schoolContext from '../data/universe-school-context.js';
 import schoolRegular from '../data/universe-school-regular.js';
 import schoolReadingA from '../data/universe-school-reading-a.js';
@@ -71,7 +75,7 @@ function addAuthored(word,entry) {
 }
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
-for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal,schoolRegular,schoolReadingA,schoolReadingB,schoolContext])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
+for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal,schoolRegular,schoolReadingA,schoolReadingB,schoolContext,schoolReadingC,schoolReadingD,originalA1A])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
 for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
@@ -95,7 +99,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
