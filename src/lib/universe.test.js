@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,9 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainReadingCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads,links:26096+added.links});
+ const lexical=familyCollocationCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads,links:26096+added.links+lexical.links});
+ assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
@@ -194,4 +196,17 @@ test('domain reading mega batch keeps contextual links and bilingual distinction
    assert.ok(link&&link.note&&link.example&&link.translation);
  }
  assert.equal(getRelations(lookupUniverse('thermohaline circulation')).find(x=>x.word==='deep water formation').type,'related');
+});
+
+test('curated word families and collocations are separately discoverable',()=>{
+ for(const [head,phrase] of [['analyze','analyze survey data'],['participate','participate in a survey'],['allocate','allocate sufficient time'],['persist','persist despite difficulties']]){
+   const link=getRelations(lookupUniverse(head)).find(x=>x.word===phrase);
+   assert.ok(link&&link.type==='collocation'&&link.meaning,head+' -> '+phrase);
+   assert.ok(lookupUniverse(phrase)?.relatedWords.some(x=>x.word===head),phrase+' -> '+head);
+ }
+ for(const [head,related] of [['assess','assessable'],['verify','unverified'],['quantify','quantifiable'],['justify','justifiable']]){
+   assert.ok(getRelations(lookupUniverse(head)).some(x=>x.word===related&&x.type==='family'),head+' -> '+related);
+ }
+ assert.ok(getRelations(lookupUniverse('contribute')).some(x=>x.word==='contribution'&&x.note&&x.example&&x.translation));
+ assert.ok(getRelations(lookupUniverse('articulate')).some(x=>x.word==='articulate speaker'&&x.type==='collocation'));
 });
