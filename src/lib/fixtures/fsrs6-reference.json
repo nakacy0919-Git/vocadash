@@ -1,0 +1,3033 @@
+{
+  "source": "ts-fsrs@6.0.0",
+  "options": {
+    "enable_fuzz": false,
+    "enable_short_term": true
+  },
+  "cases": [
+    {
+      "state": null,
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 6.4133,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 5.11217071,
+        "stability": 1.2931
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 2.11810397,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 8.2956
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 6.4133,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 5.11217071,
+        "stability": 1.2931
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 2.11810397,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 8.2956
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 6.4133,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 5.11217071,
+        "stability": 1.2931
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 2.11810397,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 8.2956
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 6.4133,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 5.11217071,
+        "stability": 1.2931
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 2.11810397,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": null,
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 8.2956
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.00165534
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.00284768
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 0.08548085
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.14147365
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.2640931
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 0.10085921
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.16704458
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.31198489
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 0.11619054
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.19253731
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.35973022
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 0.00165534
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 0.00284768
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 0.03986119
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 0.06561788
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 0.12202283
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 0.04693524
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 0.07738051
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 0.14405305
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 0.05398765
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 0.08910716
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 0.1660159
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.00165534
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.00284768
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.00944809
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.01504737
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.02730931
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.01098592
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.01760446
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.03209849
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.001
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.01251905
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.02015373
+      }
+    },
+    {
+      "state": {
+        "stability": 0.001,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.03687302
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.08335672
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.24668919
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 0.42437996
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.11307974
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 2.40795194
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 3.86339996
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 7.05070699
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.15313426
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 4.44718182
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 7.25420456
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 13.40134492
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.20176634
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 6.86142792
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 11.26858118
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 20.91987089
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.08335672
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 0.24668919
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 0.42437996
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.10089865
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 1.22213789
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 1.89164398
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 3.35780522
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.13663844
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 2.16018364
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 3.4514141
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 6.27909866
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.18622113
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 3.27073684
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 5.29802734
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 9.73762061
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.08335672
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.212
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.24668919
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.42437996
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.09817136
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.43159519
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.57714
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.8958707
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.13294511
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.63551818
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.91622046
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 1.53093449
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.18118757
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.87694279
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 1.31765812
+      }
+    },
+    {
+      "state": {
+        "stability": 0.212,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.28278709
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.77508398
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 3.94605407
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.59824181
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 5.6979974
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 7.94583722
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 12.86841468
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 0.75170691
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 15.24256907
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 23.81642529
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 42.59243908
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 1.11735176
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 34.52704804
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 55.88240295
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 102.64880864
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.77508398
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 3.94605407
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.53379845
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 3.86658881
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 4.90059512
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 7.16498075
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.6707321
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 8.25709177
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 12.20106563
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 20.83803198
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 0.99698923
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 17.1279521
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 26.95141536
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 48.46396197
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.77508398
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.3065
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 3.94605407
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.51936988
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.64564974
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.87043372
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 3.36269147
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.65260221
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 3.60010691
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 4.45749253
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 6.33509391
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 0.97004061
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 5.5285548
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 7.6640903
+      }
+    },
+    {
+      "state": {
+        "stability": 2.3065,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 12.34073086
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 8.51538557
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 43.35294316
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 2.19334379
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 32.62612997
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 34.36669433
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 38.17838181
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 2.29058925
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 46.77541697
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 57.89394242
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 82.24256476
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 2.97862002
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 139.0709512
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 211.36174128
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 369.67240524
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 8.51538557
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 43.35294316
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 1.95707406
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 31.20801979
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 32.00867939
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 33.76205563
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 2.04384411
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 37.71669181
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 42.83121351
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 54.03157979
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 2.65775935
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 80.17263755
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 113.42640099
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 186.24930641
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 8.51538557
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 30
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 43.35294316
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 1.90417435
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 30.262613
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 30.43666943
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 30.81783818
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 1.988599
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 31.6775417
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 32.78939424
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 35.22425648
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 2.58592012
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 40.90709512
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 48.13617413
+      }
+    },
+    {
+      "state": {
+        "stability": 30,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 63.96724052
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 87.89651071
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 447.49264764
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 5.52233728
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 366.75851263
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 367.92403164
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 370.47641886
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 5.54472528
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 377.20864952
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 385.30038164
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 403.02058478
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 7.02698957,
+        "stability": 5.82547051
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 4.01060897,
+        "stability": 506.44518729
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 1,
+        "stability": 600.1931947
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 1
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 1,
+        "stability": 805.49333435
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 87.89651071
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 447.49264764
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 4.9274642
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 365.80891581
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 366.34505455
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 367.51915268
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 4.94744053
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 370.61597878
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 374.33817556
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 382.489469
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 8.80193285,
+        "stability": 5.19794353
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 7.59538061,
+        "stability": 430.06478615
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 6.38882837,
+        "stability": 473.18886956
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 6.4
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 5.18227613,
+        "stability": 567.6269338
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 87.89651071
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 365
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 0,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 447.49264764
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 4.79427485
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 365.17585126
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 365.29240316
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 1,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 365.54764189
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 4.81371122
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 366.22086495
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 367.03003816
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 7,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 368.80205848
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 1,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 5.05744313
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 2,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 379.14451873
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 3,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 388.51931947
+      }
+    },
+    {
+      "state": {
+        "stability": 365,
+        "difficulty": 10
+      },
+      "elapsed": 90,
+      "grade": 4,
+      "expected": {
+        "difficulty": 9.98522837,
+        "stability": 409.04933344
+      }
+    }
+  ]
+}
