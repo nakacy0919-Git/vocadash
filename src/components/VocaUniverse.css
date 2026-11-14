@@ -27,3 +27,5 @@
 .vu-full-list section{display:flex;flex-direction:column;gap:6px;min-width:0}.vu-full-list h3{font-size:14px;margin:6px 0;color:#b9d7eb}.vu-full-list h3 small{font-size:11px}
 .vu-full-list button{width:100%;text-align:left;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere}.vu-full-list button span{font-size:11px;color:#b8cce0}
 @media(max-width:560px){.vu-full-list{grid-template-columns:1fr}.vu-map{min-width:490px}.vu-center{padding:9px}.vu-detail-image{width:160px}}
+
+.vu-map-sense{font-size:12px;color:#bcd8e8;margin:10px 0 0}.vu-toolbar{flex-wrap:wrap}.vu-dialog{max-width:100%;box-sizing:border-box}.vu-map-scroll{max-width:100%}
