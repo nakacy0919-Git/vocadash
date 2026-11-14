@@ -1,3 +1,4 @@
+import collocationReadingMega, {collocationReadingNotes} from '../data/universe-collocation-reading-mega.js';
 import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
 import everydayAbstractMega, {everydayAbstractNotes} from '../data/universe-everyday-abstract-mega.js';
 import adjectiveMega from '../data/universe-adjective-mega.js';
@@ -135,6 +136,8 @@ function addCompatibleBatch(batch) {
 }
 const unifiedReadingAdded=addCompatibleBatch(domainReadingMega);
 const everydayAbstractAdded=addCompatibleBatch(everydayAbstractMega);
+const collocationReadingAdded=addCompatibleBatch(collocationReadingMega);
+export function collocationReadingCoverage(){return {...collocationReadingAdded};}
 export function unifiedReadingCoverage(){return {...unifiedReadingAdded};}
 export function everydayAbstractCoverage(){return {...everydayAbstractAdded};}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
@@ -159,7 +162,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
