@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:4362,links:16182});
+ assert.deepEqual(universeCoverage(),{heads:5235,links:19674});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -158,4 +158,14 @@ test('general and school vocabulary expansion has contextual links, explicit dis
  assert.ok(getRelations(lookupUniverse("homophone")).some(x=>x.word==="homograph"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("dictation")).some(x=>x.word==="shadowing"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse('mimic')).some(x=>x.word==='imitate'&&x.type==='synonym'));
+});
+
+test('foundation mega batch keeps contextual links and spelling variants',()=>{
+ for(const w of ["applaud","appreciation","architect","ashamed","barely","bilingualism","brief","careless","abundant","accidental","acquaintance","aloud"])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse("applaud")).some(x=>x.word==="applause"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("appreciation")).some(x=>x.word==="admiration"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("appoint")).some(x=>x.word==="nominate"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("architect")).some(x=>x.word==="architecture"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("ashamed")).some(x=>x.word==="shame"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("assist")).some(x=>x.word==="assistance"&&x.note&&x.example));
 });
