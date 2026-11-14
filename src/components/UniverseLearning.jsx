@@ -1,0 +1,28 @@
+import React,{useEffect,useMemo,useRef,useState} from 'react';
+import {checkRelationAnswer,memoryLabels,planetState,relationQuestion} from '../lib/universeMemory.js';
+const PAGE=18;
+export default function UniverseLearning({center,catalog,words,records,adapter,links,onExplore,snapshot,onSnapshot,onClose,command}){
+ const [mode,setMode]=useState('explore'),[page,setPage]=useState(0),[notice,setNotice]=useState(''),[question,setQuestion]=useState(null),[answer,setAnswer]=useState(''),[result,setResult]=useState(null),[hint,setHint]=useState(false),[busy,setBusy]=useState(false),[clock,setClock]=useState(Date.now());
+ const [visited,setVisited]=useState(()=>new Set([center.word]));
+ const turns=useRef({});
+ const started=useRef(0),lock=useRef(false),epoch=useRef(0);
+ useEffect(()=>{setVisited(v=>new Set([...v,center.word]));setQuestion(null);setResult(null);epoch.current++;lock.current=false;setBusy(false);},[center.word]);
+ useEffect(()=>{const tick=()=>{if(!document.hidden)setClock(Date.now());};const id=setInterval(tick,60000);document.addEventListener('visibilitychange',tick);return()=>{clearInterval(id);document.removeEventListener('visibilitychange',tick);};},[]);
+ const entries=useMemo(()=>{const map=new Map(catalog.map(w=>[w.word.toLowerCase(),w]));words.forEach(w=>map.set(w.word.toLowerCase(),w));Object.entries(snapshot).forEach(([id,row])=>{if(row.word){const key=row.word.toLowerCase();map.set(key,{...map.get(key),word:row.word,id:row.wordId||map.get(key)?.id||id,meaning:row.meaning||map.get(key)?.meaning||''});}});return [...map.values()].map(w=>({...w,planet:planetState(w,records,snapshot,clock)}));},[catalog,words,records,snapshot,clock]);
+ const learned=useMemo(()=>entries.filter(w=>w.planet.status!=='new'),[entries]);
+ const weak=useMemo(()=>learned.filter(w=>['weak','fading'].includes(w.planet.status)),[learned]);
+ const pool=mode==='weak'?weak:learned,pages=Math.max(1,Math.ceil(pool.length/PAGE)),safePage=Math.min(page,pages-1);
+ function start(type='synonym'){const key=center.word+':'+type;const q=relationQuestion(center,links,type,turns.current[key]||0);turns.current[key]=(turns.current[key]||0)+1;if(!q){setNotice('この種類のクイズ教材は未登録です。別の種類を選んでください。');return;}epoch.current++;lock.current=false;setQuestion(q);setAnswer('');setResult(null);setHint(false);setNotice('');started.current=Date.now();}
+ useEffect(()=>{if(!command)return;const kind=command.kind;if(['personal','weak','mission'].includes(kind)){setMode(kind);setPage(0);}if(['review','quiz'].includes(kind))start();},[command]);
+
+ async function submit(e){e.preventDefault();if(lock.current||!question)return;lock.current=true;const token=epoch.current,ok=checkRelationAnswer(answer,question.answer);setResult({ok});if(!adapter?.recordAttempt){setNotice('練習結果のみ表示しています。定着度への反映には記憶エンジンの接続が必要です。');return;}setBusy(true);try{await adapter.recordAttempt({version:1,attemptId:globalThis.crypto?.randomUUID?.()||`${Date.now()}-${Math.random()}`,source:'universe',wordId:center.id||null,word:center.word,targetWord:question.answer,kind:question.kind,correct:ok,responseMs:Math.max(0,Date.now()-started.current),hintUsed:hint,answeredAt:Date.now()});if(token===epoch.current)setNotice('記憶エンジンに記録しました。');try{const fresh=await adapter.getSnapshot({version:1,now:Date.now()});if(token===epoch.current)onSnapshot(fresh||{});}catch{if(token===epoch.current)setNotice('回答は保存しましたが、記憶状態の再取得に失敗しました。');}}catch{if(token===epoch.current)setNotice('結果を保存できませんでした。定着度は更新されていません。');}finally{if(token===epoch.current)setBusy(false);}}
+ return <aside className="vu-learning" aria-label="個人のVocabulary Universe"><nav aria-label="学習空間"><button aria-label="学習パネルを閉じる" onClick={onClose}>✕</button>{[['explore','探索'],['personal',`My宇宙 ${learned.length}`],['weak',`苦手・復習 ${weak.length}`],['mission','ミッション']].map(([id,label])=><button key={id} aria-pressed={mode===id} onClick={()=>{setMode(id);setPage(0);}}>{label}</button>)}</nav>
+ <div className="vu-learning-body">
+ {mode==='explore'&&<p>惑星の光：定着 ✦ ／ 学習済み ◉ ／ 復習時期 ◔ ／ 苦手 △ ／ 未学習 ○。定着判定は記憶エンジンから取得します。</p>}
+ {['personal','weak'].includes(mode)&&<><p>このブラウザの学習記録 · {pool.length}語</p><div className="vu-personal-map">{pool.slice(safePage*PAGE,(safePage+1)*PAGE).map(w=><button key={w.word} data-memory={w.planet.status} onClick={()=>onExplore(w)}><strong>{w.word}</strong><small>{memoryLabels[w.planet.status]}</small></button>)}</div>{!pool.length&&<p>まだ該当する記録がありません。語彙学習を進めると惑星が現れます。</p>}{pages>1&&<div><button disabled={!safePage} onClick={()=>setPage(safePage-1)}>前へ</button> {safePage+1} / {pages} <button disabled={safePage===pages-1} onClick={()=>setPage(safePage+1)}>次へ</button></div>}</>}
+ {mode==='mission'&&<><h3>3つの惑星を探索しよう</h3><p>{Math.min(3,visited.size)} / 3 訪問 · {visited.size>=3?'ミッション達成！次は関連語を復習しよう。':'関連語の惑星をタップしてワープ。'}</p><p>類義語・派生語・コロケーションを1種類ずつ探してみよう。</p></>}
+ <h3>{center.word} を復習</h3><div className="vu-quiz-types">{[['synonym','類義語'],['family','派生語'],['collocation','コロケーション']].map(([id,label])=><button key={id} disabled={busy} onClick={()=>start(id)}>{label}クイズ</button>)}</div>
+ {question&&<form onSubmit={submit}><label htmlFor="vu-recall-answer">{question.prompt}（登録された表現を入力）</label><input id="vu-recall-answer" value={answer} disabled={!!result} onChange={e=>setAnswer(e.target.value)} autoComplete="off" autoCapitalize="none"/><button type="button" disabled={!!result} onClick={()=>setHint(true)}>ヒント</button>{hint&&<p>{question.answer[0]}…（{question.answer.length}文字）</p>}<button disabled={!answer.trim()||!!result||busy}>回答</button>{result&&<p role="status">{result.ok?'正解！':'登録された表現：'+question.answer} · {question.meaning}</p>}</form>}
+ {notice&&<p role="status">{notice}</p>}
+ </div></aside>;
+}
