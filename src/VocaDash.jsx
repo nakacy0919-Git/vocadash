@@ -1,5 +1,6 @@
+import {recordClassroom, startQuestion} from './classroom/client';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments } from './lib/learning';
+import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
 import './VocaDash.css';
 import MemoryTrainer from './components/MemoryTrainer.jsx';
 import {reviewMemory} from './lib/memoryEngine.js';
@@ -214,9 +215,10 @@ function useVocabulary(selection) {
   return { ...data, retry: () => setRetryCount(n => n + 1) };
 }
 
-export default function VocaDash() {
-  const [store, setStore] = useState(safeLoad);
-  const [selection, setSelection] = useState(() => store.lastSelection);
+export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
+  const storageKey = classroomUserId ? STORAGE_KEY + ':classroom:' + classroomUserId : STORAGE_KEY;
+  const [store, setStore] = useState(() => safeLoad(storageKey));
+  const [selection, setSelection] = useState(() => classroomAssignment ? {courseId:classroomAssignment.course,unitId:classroomAssignment.unit} : store.lastSelection);
   const { words, loading, error, retry, key:loadedKey } = useVocabulary(selection);
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
@@ -269,7 +271,7 @@ export default function VocaDash() {
     }));
   }, [mode, current, words]);
 
-  useEffect(() => { if (!safeSave(store)) setSavedError(true); }, [store]);
+  useEffect(() => { if (!safeSave(store, storageKey)) setSavedError(true); }, [store, storageKey]);
   const stopAudio = useCallback(() => {
     if (audio.current) { audio.current.pause(); audio.current = null; }
     if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
@@ -353,11 +355,13 @@ export default function VocaDash() {
     if (dx < 0 && cursor < queue.length - 1) next();
     if (dx > 0 && cursor > 0) previous();
   };
+  useEffect(() => { startQuestion(); }, [current?.id, mode]);
   const rate = remembered => {
     if (!current || ratingFeedback !== null) return;
     clearTimeout(quizTimer.current);
     setRatingFeedback(remembered ? 'correct' : 'retry');
     playQuizFeedbackSound(remembered,store.settings.sound);
+    recordClassroom(current, remembered, mode, selection);
     setStore(prev => updateRecord(prev, current.id, remembered));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (remembered ? 1 : 0) }));
     if (mode === 'review' && !remembered && queue.length < words.length * 3) setQueue(prev => [...prev, current]);
@@ -369,6 +373,7 @@ export default function VocaDash() {
     setFeedback(option.id);
     setQuizCelebration(option.correct ? 'correct' : 'incorrect');
     playQuizFeedbackSound(option.correct, store.settings.sound);
+    recordClassroom(current, option.correct, mode, selection);
     setStore(prev => updateRecord(prev, current.id, option.correct));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
     // Show the explanation for every answer; advance only when the learner chooses to.
@@ -454,6 +459,7 @@ export default function VocaDash() {
     <Opening/>
     <aside className="vd-sidebar">
       <Brand/>
+      <a className="vd-dashboard-nav" href="/?classroom=1">Classroom</a>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
         onClick={() => { resetCard(); setAutoplay(false); setDashboardOpen(true);setQuizStudioOpen(false); }}>
         <span aria-hidden="true">◉</span> ダッシュボード
