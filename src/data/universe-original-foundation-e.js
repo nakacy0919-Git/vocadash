@@ -1,4 +1,4 @@
-// Original G–K maps, pending catalog deduplication and integration.
+// Original editorial G–K and late F vocabulary maps. Priority tiers are instructional, not measured frequency.
 export default {
   "full stop": {
     "meaning": "文の終止符（英）",
@@ -409,29 +409,6 @@ export default {
       {
         "word": "elderly gentleman",
         "meaning": "年配の紳士",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "geography": {
-    "meaning": "地理・地理学",
-    "links": [
-      {
-        "word": "geographical",
-        "meaning": "地理の",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "cartography",
-        "meaning": "地図学",
-        "type": "related",
-        "tier": "extended"
-      },
-      {
-        "word": "physical geography",
-        "meaning": "自然地理学",
         "type": "collocation",
         "tier": "related"
       }
@@ -2783,29 +2760,6 @@ export default {
       }
     ]
   },
-  "immediately": {
-    "meaning": "すぐに",
-    "links": [
-      {
-        "word": "at once",
-        "meaning": "直ちに",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "instantly",
-        "meaning": "即座に",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "immediate",
-        "meaning": "即時の",
-        "type": "family",
-        "tier": "core"
-      }
-    ]
-  },
   "immigrate": {
     "meaning": "移住する（国外から）",
     "links": [
@@ -3312,29 +3266,6 @@ export default {
       }
     ]
   },
-  "injury": {
-    "meaning": "けが・負傷",
-    "links": [
-      {
-        "word": "injure",
-        "meaning": "負傷させる",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "wound",
-        "meaning": "傷",
-        "type": "related",
-        "tier": "related"
-      },
-      {
-        "word": "serious injury",
-        "meaning": "重傷",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "ink": {
     "meaning": "インク",
     "links": [
@@ -3445,29 +3376,6 @@ export default {
       {
         "word": "safety inspection",
         "meaning": "安全点検",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "instead of": {
-    "meaning": "〜の代わりに",
-    "links": [
-      {
-        "word": "rather than",
-        "meaning": "〜ではなく",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "in place of",
-        "meaning": "〜に代えて",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "instead of driving",
-        "meaning": "運転する代わりに",
         "type": "collocation",
         "tier": "related"
       }
@@ -4277,5 +4185,98 @@ export default {
         "tier": "related"
       }
     ]
+  }
+};
+export const foundationENotes = {
+  "generous": {
+    "stingy": {
+      "note": "generous は惜しみなく与えること、stingy はお金などを出し惜しむことを表す。",
+      "example": "The local business made a generous donation to the school.",
+      "translation": "地元企業は学校に惜しみない寄付をした。"
+    }
+  },
+  "genetic": {
+    "hereditary": {
+      "note": "genetic は遺伝子に関わるという意味で、hereditary は親から子へ受け継がれる性質に重点がある。",
+      "example": "Not every genetic condition is inherited from a parent.",
+      "translation": "すべての遺伝子に関わる疾患が親から受け継がれるわけではない。"
+    }
+  },
+  "grab": {
+    "grasp": {
+      "note": "grab は素早くつかむ、grasp はしっかり握ることや内容を理解することにも使う。",
+      "example": "She grabbed her bag and hurried to the station.",
+      "translation": "彼女はかばんをつかんで駅へ急いだ。"
+    }
+  },
+  "gratitude": {
+    "thankfulness": {
+      "note": "どちらも感謝の気持ちを表すが、gratitude は感謝を表明する改まった文脈にもよく使われる。",
+      "example": "We expressed our gratitude to the volunteers.",
+      "translation": "私たちはボランティアの人々に感謝の気持ちを伝えた。"
+    }
+  },
+  "hardship": {
+    "adversity": {
+      "note": "hardship は生活上の苦難など、adversity は不運や逆境を広く表す。",
+      "example": "The community showed remarkable strength in the face of adversity.",
+      "translation": "地域社会は逆境に直面しても並外れた強さを示した。"
+    }
+  },
+  "hasty": {
+    "rash": {
+      "note": "hasty は急ぎすぎること、rash は危険や結果を十分に考慮しない軽率さを強調する。",
+      "example": "Do not make a hasty decision without checking the facts.",
+      "translation": "事実を確認せずに早まった決断をしてはいけない。"
+    }
+  },
+  "heal": {
+    "recover": {
+      "note": "heal は傷や組織が治ること、recover は病気やけがなどから回復することを広く表す。",
+      "example": "It took several weeks for the wound to heal.",
+      "translation": "傷が治るまでに数週間かかった。"
+    }
+  },
+  "historic": {
+    "historical": {
+      "note": "historic は歴史上重要な出来事など、historical は歴史や過去に関係するものを表す。",
+      "example": "The museum displays historical documents from a historic period.",
+      "translation": "その博物館は歴史的に重要な時代の史料を展示している。"
+    }
+  },
+  "humid": {
+    "muggy": {
+      "note": "humid は湿度が高いという比較的中立的な表現、muggy は蒸し暑く不快な感じを含む。",
+      "example": "The air was so muggy that we opened all the windows.",
+      "translation": "空気がとても蒸し暑かったので窓をすべて開けた。"
+    }
+  },
+  "immigrate": {
+    "emigrate": {
+      "note": "immigrate はある国へ移住する視点、emigrate はある国から移住する視点。",
+      "example": "Her grandparents emigrated from Italy and immigrated to Canada.",
+      "translation": "彼女の祖父母はイタリアを離れカナダに移住した。"
+    }
+  },
+  "inform": {
+    "notify": {
+      "note": "inform は情報を知らせること全般、notify は正式な通知や特定の事実の連絡に使われることが多い。",
+      "example": "The school will notify students of any schedule changes.",
+      "translation": "学校は日程変更があれば生徒に通知する。"
+    }
+  },
+  "intensive": {
+    "intense": {
+      "note": "intensive は時間や労力を集中させること、intense は強度や感情の強さを表す。",
+      "example": "She enrolled in an intensive English course.",
+      "translation": "彼女は集中的な英語講座に申し込んだ。"
+    }
+  },
+  "jealous": {
+    "envious": {
+      "note": "envious は他人の持つものや状況をうらやむ意味が中心。jealous は嫉妬や大切な関係を失う不安にも使う。",
+      "example": "He was envious of his friend's ability to speak several languages.",
+      "translation": "彼は友人が数か国語を話せることをうらやましく思った。"
+    }
   }
 };

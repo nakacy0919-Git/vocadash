@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:1662,links:6131});
+ assert.deepEqual(universeCoverage(),{heads:1844,links:6677});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -108,4 +108,11 @@ test('E–F original vocabulary links and explanations',()=>{
  for(const w of ['endanger','essence','extinct','fascinate','fitness','fortnight'])assert.ok(lookupUniverse(w).relatedWords.length>=3);
  assert.ok(getRelations(lookupUniverse('extinct')).some(x=>x.word==='endangered'&&x.note));
  assert.ok(getRelations(lookupUniverse('flavor')).some(x=>x.word==='flavour'));
+});
+
+test('G–K original vocabulary links and contextual comparisons',()=>{
+ for(const w of ['genetics','gratitude','historic','humid','immigrate','intensive','kitten'])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse('historic')).some(x=>x.word==='historical'&&x.note));
+ assert.ok(getRelations(lookupUniverse('harbour')).some(x=>x.word==='harbor'&&x.type==='synonym'));
+ assert.ok(getRelations(lookupUniverse('immigrate')).some(x=>x.word==='emigrate'&&x.note));
 });
