@@ -627,8 +627,8 @@ test('searchable expansion deduplicates and separates words from expressions',()
  const s=lexicalExpansionCoverage();
  assert.equal(s.editorial.candidates,172);
  assert.equal(s.editorial.heads+s.editorial.compatible+s.editorial.skippedSense,172);
- assert.equal(s.after.heads-s.before.heads,s.editorial.heads+s.nominal.heads+s.promoted.singleWords+s.promoted.expressions);
- assert.equal(s.after.links-s.before.links,s.editorial.links+s.nominal.links+s.promoted.links);
+ assert.equal(s.after.heads-s.before.heads,s.editorial.heads+s.nominal.heads+s.synonym.heads+s.promoted.singleWords+s.promoted.expressions);
+ assert.equal(s.after.links-s.before.links,s.editorial.links+s.nominal.links+s.synonym.links+s.promoted.links);
  assert.ok(s.after.singleWords>=s.before.singleWords);
  assert.ok(s.promoted.singleWords+s.promoted.expressions>0);
  assert.ok(s.promoted.conflictingGloss>=0);
@@ -652,4 +652,25 @@ test('nominal expansion preserves curated bilingual relation types',()=>{
  assert.ok(nominalExpansion['cogent'].links.some(l=>l.word==='cogent argument'&&l.type==='collocation'));
  assert.ok(nominalExpansion['dissonance'].links.some(l=>l.word==='dissonant'&&l.type==='family'));
  assert.ok(nominalExpansion['tenacity'].links.some(l=>l.word==='persistence'&&l.type==='synonym'));
+});
+
+import synonymExpansion from '../data/universe-synonym-expansion.js';
+import {synonymExpansionCoverage, registrationCoverage} from './universe.js';
+test('explicit synonym clusters preserve senses and provide exact registration totals',()=>{
+ assert.equal(synonymExpansion.length,279);
+ assert.equal(synonymExpansion.reduce((n,g)=>n+g.options.length,0),837);
+ for(const g of synonymExpansion){
+  assert.ok(g.meaning&&g.sense.length);
+  assert.equal(new Set(g.options.map(o=>o.word)).size,g.options.length);
+  for(const o of g.options)assert.ok(o.meaning&&o.sense.length&&o.word!==g.head&&['synonym','related'].includes(o.type));
+ }
+ const s=synonymExpansionCoverage(), total=registrationCoverage();
+ assert.equal(s.pairs,s.acceptedPairs+s.skippedSensePairs);
+ assert.equal(s.after.links-s.before.links,s.addedSynonyms+s.addedRelated);
+ assert.equal(s.after.byType.synonym.links-s.before.byType.synonym.links,s.addedSynonyms+s.upgradedSynonyms);
+ assert.equal(total.links,Object.values(total.byType).reduce((n,t)=>n+t.links,0)+total.unknown);
+ assert.equal(total.heads,total.singleWords+total.expressions);
+ assert.equal(total.heads,universeCoverage().heads);
+ assert.equal(total.links,universeCoverage().links);
+ assert.ok(s.addedSynonyms+s.upgradedSynonyms>0);
 });
