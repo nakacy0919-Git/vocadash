@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -219,4 +219,31 @@ test('descriptive clusters contain four distinct contextual relations',()=>{
   assert.equal(new Set(e.links.map(l=>l.word)).size,4);
   assert.ok(e.links.every(l=>l.word!==word&&l.meaning&&l.type==='related'));
  }
+});
+
+import domainReadingMega from '../data/universe-domain-reading-mega.js';
+import everydayAbstractMega from '../data/universe-everyday-abstract-mega.js';
+test('unified reading and everyday networks retain complete candidate maps without overwriting senses',()=>{
+ for(const [batch,stats,total] of [[domainReadingMega,unifiedReadingCoverage(),1218],[everydayAbstractMega,everydayAbstractCoverage(),725]]){
+  assert.equal(Object.keys(batch).length,total);
+  assert.equal(stats.candidates,total);
+  assert.equal(stats.heads+stats.compatible+stats.skippedSense,total);
+  assert.ok(stats.heads>0);
+  assert.ok(stats.links>0);
+  for(const [word,entry] of Object.entries(batch)){
+   assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+   assert.ok(entry.links.length>=4);
+   const normalized=entry.links.map(l=>l.word.trim().toLowerCase());
+   assert.equal(new Set(normalized).size,normalized.length);
+   assert.ok(entry.links.every(l=>l.meaning&&l.word.trim().toLowerCase()!==word.trim().toLowerCase()&&l.type==='related'));
+  }
+ }
+});
+test('new everyday clusters provide contextual rather than inferred synonym links',()=>{
+ for(const [word,entry] of Object.entries(everydayAbstractMega)){
+  assert.equal(entry.links.length,4);
+  assert.ok(entry.links.every(l=>l.type==='related'&&l.tier==='related'));
+ }
+ assert.equal(everydayAbstractMega['read between the lines'].meaning,'行間を読む');
+ assert.equal(everydayAbstractMega['pillowcase'].links.length,4);
 });
