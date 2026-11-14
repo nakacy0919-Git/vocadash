@@ -1,4 +1,4 @@
-// Editorial E–F vocabulary batch; pending integration and cross-catalog duplicate validation.
+// Original editorial E–F vocabulary maps; no corpus-frequency measurements.
 export default {
   "edge": {
     "meaning": "端・縁",
@@ -2920,5 +2920,77 @@ export default {
         "tier": "related"
       }
     ]
+  }
+};
+export const foundationDNotes = {
+  "embarrassed": {
+    "abashed": {
+      "note": "embarrassed は恥ずかしさや気まずさ全般、abashed は恥じて気後れした様子を表すやや改まった語。",
+      "example": "He looked abashed after forgetting her name.",
+      "translation": "彼女の名前を忘れて彼は恥ずかしそうだった。"
+    }
+  },
+  "emerge": {
+    "appear": {
+      "note": "appear は現れること全般、emerge は隠れた場所や状況から姿を現す、または新しい事実が明らかになること。",
+      "example": "New evidence emerged during the investigation.",
+      "translation": "調査中に新たな証拠が明らかになった。"
+    }
+  },
+  "evident": {
+    "apparent": {
+      "note": "evident は証拠などから明白な、apparent は見たところそうであるという意味にもなる。",
+      "example": "It soon became evident that the plan needed revision.",
+      "translation": "その計画に修正が必要だとすぐに明らかになった。"
+    }
+  },
+  "expense": {
+    "expenditure": {
+      "note": "expense は個別の費用にも使う。expenditure は支出行為や支出総額を表す改まった語。",
+      "example": "The school reviewed its annual expenditure.",
+      "translation": "学校は年間支出を見直した。"
+    }
+  },
+  "extinct": {
+    "endangered": {
+      "note": "extinct はすでに絶滅した、endangered は絶滅の危機にあるがまだ生存する。",
+      "example": "The species is endangered, but it is not extinct.",
+      "translation": "その種は絶滅の危機にあるが、絶滅してはいない。"
+    }
+  },
+  "fascinate": {
+    "captivate": {
+      "note": "fascinate は知的な興味を強く引くことにも使う。captivate は人の注意や心を奪うことを強調する。",
+      "example": "The night sky fascinated the young researchers.",
+      "translation": "夜空は若い研究者たちを魅了した。"
+    }
+  },
+  "fake": {
+    "counterfeit": {
+      "note": "fake は偽物全般、counterfeit は本物と見せかけるために偽造されたものによく使う。",
+      "example": "The shop refused to accept counterfeit banknotes.",
+      "translation": "その店は偽造紙幣の受け取りを拒んだ。"
+    }
+  },
+  "fetch": {
+    "bring": {
+      "note": "fetch は取りに行って持ち帰る、bring は話し手や指定された場所に持ってくる。",
+      "example": "Could you fetch a chair from the next room?",
+      "translation": "隣の部屋から椅子を取ってきてくれますか？"
+    }
+  },
+  "fondness": {
+    "affection": {
+      "note": "fondness は人や物への好みや愛着、affection は暖かな愛情を表す。",
+      "example": "She has a special fondness for old photographs.",
+      "translation": "彼女は古い写真に特別な愛着を持っている。"
+    }
+  },
+  "flavor": {
+    "taste": {
+      "note": "flavor は味と香りが組み合わさった風味にも使う。taste は味覚や舌で感じる味を広く表す。",
+      "example": "Fresh herbs give the soup a rich flavor.",
+      "translation": "新鮮なハーブはスープに豊かな風味を与える。"
+    }
   }
 };

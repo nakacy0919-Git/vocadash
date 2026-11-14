@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:1535,links:5750});
+ assert.deepEqual(universeCoverage(),{heads:1662,links:6131});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -102,4 +102,10 @@ test('foundation maps distinguish usage, word families and spelling variants',()
  assert.ok(getRelations(lookupUniverse('despite')).some(x=>x.word==='in spite of'&&x.note));
  assert.ok(getRelations(lookupUniverse('defence')).some(x=>x.word==='defense'&&x.type==='synonym'));
  assert.ok(getRelations(lookupUniverse('diligent')).some(x=>x.word==='diligence'&&x.type==='family'));
+});
+
+test('E–F original vocabulary links and explanations',()=>{
+ for(const w of ['endanger','essence','extinct','fascinate','fitness','fortnight'])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse('extinct')).some(x=>x.word==='endangered'&&x.note));
+ assert.ok(getRelations(lookupUniverse('flavor')).some(x=>x.word==='flavour'));
 });
