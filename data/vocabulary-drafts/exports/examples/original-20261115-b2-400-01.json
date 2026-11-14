@@ -1,0 +1,3611 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatches": [
+    "batches/original-20261115-b2-400-01.json"
+  ],
+  "derived": true,
+  "status": "draft-unreviewed",
+  "kind": "examples",
+  "records": [
+    {
+      "wordId": "VD-04634",
+      "headword": "bikini",
+      "senseId": "VDO-261115-B2N-00001",
+      "id": "VDO-261115-B2N-00001-e01",
+      "en": "She packed a bikini for the beach.",
+      "ja": "彼女は海辺用にビキニを詰めました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04634",
+      "headword": "bikini",
+      "senseId": "VDO-261115-B2N-00001",
+      "id": "VDO-261115-B2N-00001-e02",
+      "en": "The shop sells bikinis and other swimwear.",
+      "ja": "店はビキニなどの水着を売っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04671",
+      "headword": "bourbon",
+      "senseId": "VDO-261115-B2N-00002",
+      "id": "VDO-261115-B2N-00002-e01",
+      "en": "The museum explains how bourbon is made.",
+      "ja": "博物館はバーボンの製造を説明しています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04671",
+      "headword": "bourbon",
+      "senseId": "VDO-261115-B2N-00002",
+      "id": "VDO-261115-B2N-00002-e02",
+      "en": "The menu lists bourbon among the spirits.",
+      "ja": "メニューは蒸留酒の中にバーボンを載せています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04681",
+      "headword": "brewery",
+      "senseId": "VDO-261115-B2N-00003",
+      "id": "VDO-261115-B2N-00003-e01",
+      "en": "The old brewery became an art centre.",
+      "ja": "古い醸造所は芸術施設になりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04681",
+      "headword": "brewery",
+      "senseId": "VDO-261115-B2N-00003",
+      "id": "VDO-261115-B2N-00003-e02",
+      "en": "The brewery offers a historical tour.",
+      "ja": "醸造所は歴史見学を行っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04693",
+      "headword": "bulimia",
+      "senseId": "VDO-261115-B2N-00004",
+      "id": "VDO-261115-B2N-00004-e01",
+      "en": "The lecture discussed bulimia without blaming patients.",
+      "ja": "講義は患者を責めずに神経性過食症を扱いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04693",
+      "headword": "bulimia",
+      "senseId": "VDO-261115-B2N-00004",
+      "id": "VDO-261115-B2N-00004-e02",
+      "en": "The article distinguishes bulimia from other eating disorders.",
+      "ja": "記事は神経性過食症を他の摂食障害と区別しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04695",
+      "headword": "bum",
+      "senseId": "VDO-261115-B2N-00005",
+      "id": "VDO-261115-B2N-00005-e01",
+      "en": "The child landed on his bum.",
+      "ja": "子どもは尻もちをつきました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04695",
+      "headword": "bum",
+      "senseId": "VDO-261115-B2N-00005",
+      "id": "VDO-261115-B2N-00005-e02",
+      "en": "After the long ride, his bum felt sore.",
+      "ja": "長く乗った後、お尻が痛みました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04712",
+      "headword": "cannonball",
+      "senseId": "VDO-261115-B2N-00006",
+      "id": "VDO-261115-B2N-00006-e01",
+      "en": "The museum displays an iron cannonball.",
+      "ja": "博物館は鉄の砲弾を展示しています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04712",
+      "headword": "cannonball",
+      "senseId": "VDO-261115-B2N-00006",
+      "id": "VDO-261115-B2N-00006-e02",
+      "en": "A cannonball was found near the old fort.",
+      "ja": "古い砦の近くで砲弾が見つかりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04713",
+      "headword": "canon",
+      "senseId": "VDO-261115-B2N-00007",
+      "id": "VDO-261115-B2N-00007-e01",
+      "en": "The course questions the traditional literary canon.",
+      "ja": "講座は伝統的な文学の正典を問い直します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04713",
+      "headword": "canon",
+      "senseId": "VDO-261115-B2N-00007",
+      "id": "VDO-261115-B2N-00007-e02",
+      "en": "The anthology broadens the canon with new voices.",
+      "ja": "選集は新しい書き手を加えて正典の範囲を広げます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04732",
+      "headword": "catalog/catalogue",
+      "senseId": "VDO-261115-B2N-00008",
+      "id": "VDO-261115-B2N-00008-e01",
+      "en": "The catalog lists every item in the exhibition.",
+      "ja": "目録は展示の全品を載せています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04732",
+      "headword": "catalog/catalogue",
+      "senseId": "VDO-261115-B2N-00008",
+      "id": "VDO-261115-B2N-00008-e02",
+      "en": "We searched the library catalogue.",
+      "ja": "図書館の目録を調べました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04788",
+      "headword": "cocktail",
+      "senseId": "VDO-261115-B2N-00009",
+      "id": "VDO-261115-B2N-00009-e01",
+      "en": "The menu offers a fruit cocktail without alcohol.",
+      "ja": "メニューにはノンアルコールのフルーツカクテルがあります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04788",
+      "headword": "cocktail",
+      "senseId": "VDO-261115-B2N-00009",
+      "id": "VDO-261115-B2N-00009-e02",
+      "en": "The bartender decorated the cocktail with lime.",
+      "ja": "バーテンダーはカクテルにライムを添えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04919",
+      "headword": "cripple",
+      "senseId": "VDO-261115-B2N-00010",
+      "id": "VDO-261115-B2N-00010-e01",
+      "en": "The old text uses cripple as a label for a person.",
+      "ja": "古い文章は人の呼称にcrippleを使っています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04919",
+      "headword": "cripple",
+      "senseId": "VDO-261115-B2N-00010",
+      "id": "VDO-261115-B2N-00010-e02",
+      "en": "The editor replaced cripple with respectful wording.",
+      "ja": "編集者はcrippleを敬意ある表現に置き換えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-04943",
+      "headword": "damn",
+      "senseId": "VDO-261115-B2N-00011",
+      "id": "VDO-261115-B2N-00011-e01",
+      "en": "He muttered damn when the file vanished.",
+      "ja": "ファイルが消え、彼はしまったとつぶやきました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-04943",
+      "headword": "damn",
+      "senseId": "VDO-261115-B2N-00011",
+      "id": "VDO-261115-B2N-00011-e02",
+      "en": "The teacher explained why damn sounds informal.",
+      "ja": "先生はdamnがくだけて聞こえる理由を説明しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-05093",
+      "headword": "dumb",
+      "senseId": "VDO-261115-B2N-00012",
+      "id": "VDO-261115-B2N-00012-e01",
+      "en": "Calling a question dumb discourages learners.",
+      "ja": "質問をdumbと呼ぶと学習者を萎縮させます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-05093",
+      "headword": "dumb",
+      "senseId": "VDO-261115-B2N-00012",
+      "id": "VDO-261115-B2N-00012-e02",
+      "en": "The editor removed dumb from the personal criticism.",
+      "ja": "編集者は個人批判からdumbを削除しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-05353",
+      "headword": "gook",
+      "senseId": "VDO-261115-B2N-00013",
+      "id": "VDO-261115-B2N-00013-e01",
+      "en": "The historical source contains the racial slur gook.",
+      "ja": "その史料には人種差別語gookが含まれています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-05353",
+      "headword": "gook",
+      "senseId": "VDO-261115-B2N-00013",
+      "id": "VDO-261115-B2N-00013-e02",
+      "en": "The teacher discussed why gook must not label people.",
+      "ja": "先生はgookを人の呼称にしてはいけない理由を説明しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-05418",
+      "headword": "hone",
+      "senseId": "VDO-261115-B2N-00014",
+      "id": "VDO-261115-B2N-00014-e01",
+      "en": "She honed her speaking skills through practice.",
+      "ja": "彼女は練習で話す力を磨きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-05418",
+      "headword": "hone",
+      "senseId": "VDO-261115-B2N-00014",
+      "id": "VDO-261115-B2N-00014-e02",
+      "en": "The craftsperson honed the blade carefully.",
+      "ja": "職人は刃を慎重に研ぎました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06161",
+      "headword": "ravage",
+      "senseId": "VDO-261115-B2N-00015",
+      "id": "VDO-261115-B2N-00015-e01",
+      "en": "The building shows the ravages of time.",
+      "ja": "建物には年月による傷みがあります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06161",
+      "headword": "ravage",
+      "senseId": "VDO-261115-B2N-00015",
+      "id": "VDO-261115-B2N-00015-e02",
+      "en": "The report describes the ravages of the storm.",
+      "ja": "報告は嵐の甚大な被害を説明しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06163",
+      "headword": "readily",
+      "senseId": "VDO-261115-B2N-00016",
+      "id": "VDO-261115-B2N-00016-e01",
+      "en": "The information is readily available.",
+      "ja": "情報は容易に入手できます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06163",
+      "headword": "readily",
+      "senseId": "VDO-261115-B2N-00016",
+      "id": "VDO-261115-B2N-00016-e02",
+      "en": "She readily agreed to help.",
+      "ja": "彼女は快く手伝いを承諾しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06164",
+      "headword": "real estate",
+      "senseId": "VDO-261115-B2N-00017",
+      "id": "VDO-261115-B2N-00017-e01",
+      "en": "She works in real estate.",
+      "ja": "彼女は不動産の仕事をしています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06164",
+      "headword": "real estate",
+      "senseId": "VDO-261115-B2N-00017",
+      "id": "VDO-261115-B2N-00017-e02",
+      "en": "The report compares real estate prices.",
+      "ja": "報告は不動産価格を比較します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06165",
+      "headword": "realization/realisation",
+      "senseId": "VDO-261115-B2N-00018",
+      "id": "VDO-261115-B2N-00018-e01",
+      "en": "The realization changed his decision.",
+      "ja": "その気付きで彼の決定は変わりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06165",
+      "headword": "realization/realisation",
+      "senseId": "VDO-261115-B2N-00018",
+      "id": "VDO-261115-B2N-00018-e02",
+      "en": "She came to the realisation that practice mattered.",
+      "ja": "彼女は練習の大切さを認識しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06166",
+      "headword": "rear",
+      "senseId": "VDO-261115-B2N-00019",
+      "id": "VDO-261115-B2N-00019-e01",
+      "en": "Use the rear entrance.",
+      "ja": "裏の入口を使ってください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06166",
+      "headword": "rear",
+      "senseId": "VDO-261115-B2N-00019",
+      "id": "VDO-261115-B2N-00019-e02",
+      "en": "The rear window was open.",
+      "ja": "後ろの窓は開いていました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06167",
+      "headword": "reasonably",
+      "senseId": "VDO-261115-B2N-00020",
+      "id": "VDO-261115-B2N-00020-e01",
+      "en": "The room is reasonably quiet.",
+      "ja": "部屋はまずまず静かです。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06167",
+      "headword": "reasonably",
+      "senseId": "VDO-261115-B2N-00020",
+      "id": "VDO-261115-B2N-00020-e02",
+      "en": "She responded reasonably to the criticism.",
+      "ja": "彼女は批判に理性的に応じました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06168",
+      "headword": "rebel",
+      "senseId": "VDO-261115-B2N-00021",
+      "id": "VDO-261115-B2N-00021-e01",
+      "en": "The novel follows a young rebel.",
+      "ja": "小説は若い反逆者を描きます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06168",
+      "headword": "rebel",
+      "senseId": "VDO-261115-B2N-00021",
+      "id": "VDO-261115-B2N-00021-e02",
+      "en": "The rebel challenged the ruler's decision.",
+      "ja": "反逆者は支配者の決定に異議を唱えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06169",
+      "headword": "rebellious",
+      "senseId": "VDO-261115-B2N-00022",
+      "id": "VDO-261115-B2N-00022-e01",
+      "en": "The character becomes rebellious at school.",
+      "ja": "登場人物は学校で反抗的になります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06169",
+      "headword": "rebellious",
+      "senseId": "VDO-261115-B2N-00022",
+      "id": "VDO-261115-B2N-00022-e02",
+      "en": "Her rebellious attitude worries the headteacher.",
+      "ja": "反抗的な態度に校長は心配しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06170",
+      "headword": "recession",
+      "senseId": "VDO-261115-B2N-00023",
+      "id": "VDO-261115-B2N-00023-e01",
+      "en": "The town lost jobs during the recession.",
+      "ja": "町では景気後退中に雇用が失われました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06170",
+      "headword": "recession",
+      "senseId": "VDO-261115-B2N-00023",
+      "id": "VDO-261115-B2N-00023-e02",
+      "en": "The chapter explains how a recession affects trade.",
+      "ja": "章は景気後退の貿易への影響を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06171",
+      "headword": "recipe",
+      "senseId": "VDO-261115-B2N-00024",
+      "id": "VDO-261115-B2N-00024-e01",
+      "en": "The recipe uses seasonal vegetables.",
+      "ja": "レシピは旬の野菜を使います。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06171",
+      "headword": "recipe",
+      "senseId": "VDO-261115-B2N-00024",
+      "id": "VDO-261115-B2N-00024-e02",
+      "en": "We shared a family recipe.",
+      "ja": "家伝のレシピを共有しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06172",
+      "headword": "reckon",
+      "senseId": "VDO-261115-B2N-00025",
+      "id": "VDO-261115-B2N-00025-e01",
+      "en": "I reckon we have enough time.",
+      "ja": "時間は足りると思います。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06172",
+      "headword": "reckon",
+      "senseId": "VDO-261115-B2N-00025",
+      "id": "VDO-261115-B2N-00025-e02",
+      "en": "They reckoned the repair would take a day.",
+      "ja": "修理に一日かかると見積もりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06173",
+      "headword": "recognition",
+      "senseId": "VDO-261115-B2N-00026",
+      "id": "VDO-261115-B2N-00026-e01",
+      "en": "Her work received international recognition.",
+      "ja": "彼女の仕事は国際的評価を受けました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06173",
+      "headword": "recognition",
+      "senseId": "VDO-261115-B2N-00026",
+      "id": "VDO-261115-B2N-00026-e02",
+      "en": "The app uses voice recognition.",
+      "ja": "アプリは音声認識を使います。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06174",
+      "headword": "recollect",
+      "senseId": "VDO-261115-B2N-00027",
+      "id": "VDO-261115-B2N-00027-e01",
+      "en": "I cannot recollect the exact date.",
+      "ja": "正確な日付を思い出せません。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06174",
+      "headword": "recollect",
+      "senseId": "VDO-261115-B2N-00027",
+      "id": "VDO-261115-B2N-00027-e02",
+      "en": "She recollected meeting him at school.",
+      "ja": "彼女は学校で彼に会ったことを思い出しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06175",
+      "headword": "recollection",
+      "senseId": "VDO-261115-B2N-00028",
+      "id": "VDO-261115-B2N-00028-e01",
+      "en": "My recollection of the trip is clear.",
+      "ja": "旅行の記憶は鮮明です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06175",
+      "headword": "recollection",
+      "senseId": "VDO-261115-B2N-00028",
+      "id": "VDO-261115-B2N-00028-e02",
+      "en": "She has no recollection of the announcement.",
+      "ja": "彼女は放送を覚えていません。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06176",
+      "headword": "recommendable",
+      "senseId": "VDO-261115-B2N-00029",
+      "id": "VDO-261115-B2N-00029-e01",
+      "en": "The guidebook is recommendable for its clear maps.",
+      "ja": "案内書は地図が分かりやすいのでお勧めできます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06176",
+      "headword": "recommendable",
+      "senseId": "VDO-261115-B2N-00029",
+      "id": "VDO-261115-B2N-00029-e02",
+      "en": "The reviewer found the quiet hotel highly recommendable.",
+      "ja": "評論家は静かなホテルを強くお勧めできるとしました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06177",
+      "headword": "recommendation",
+      "senseId": "VDO-261115-B2N-00030",
+      "id": "VDO-261115-B2N-00030-e01",
+      "en": "We followed the guide's recommendation.",
+      "ja": "案内人の勧めに従いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06177",
+      "headword": "recommendation",
+      "senseId": "VDO-261115-B2N-00030",
+      "id": "VDO-261115-B2N-00030-e02",
+      "en": "The report makes three recommendations.",
+      "ja": "報告は三つの提言をしています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06178",
+      "headword": "reconsider",
+      "senseId": "VDO-261115-B2N-00031",
+      "id": "VDO-261115-B2N-00031-e01",
+      "en": "We reconsidered the outdoor plan.",
+      "ja": "屋外の計画を考え直しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06178",
+      "headword": "reconsider",
+      "senseId": "VDO-261115-B2N-00031",
+      "id": "VDO-261115-B2N-00031-e02",
+      "en": "Please reconsider before cancelling.",
+      "ja": "中止前に考え直してください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06179",
+      "headword": "recreation",
+      "senseId": "VDO-261115-B2N-00032",
+      "id": "VDO-261115-B2N-00032-e01",
+      "en": "The park provides space for recreation.",
+      "ja": "公園は余暇活動の場所を提供します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06179",
+      "headword": "recreation",
+      "senseId": "VDO-261115-B2N-00032",
+      "id": "VDO-261115-B2N-00032-e02",
+      "en": "Walking is her favourite form of recreation.",
+      "ja": "散歩は彼女の好きな余暇活動です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06181",
+      "headword": "rectangular",
+      "senseId": "VDO-261115-B2N-00033",
+      "id": "VDO-261115-B2N-00033-e01",
+      "en": "The hall is rectangular.",
+      "ja": "ホールは長方形です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06181",
+      "headword": "rectangular",
+      "senseId": "VDO-261115-B2N-00033",
+      "id": "VDO-261115-B2N-00033-e02",
+      "en": "Cut a rectangular piece of card.",
+      "ja": "長方形の厚紙を切ってください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06182",
+      "headword": "redo",
+      "senseId": "VDO-261115-B2N-00034",
+      "id": "VDO-261115-B2N-00034-e01",
+      "en": "We redid the recording.",
+      "ja": "録音をやり直しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06182",
+      "headword": "redo",
+      "senseId": "VDO-261115-B2N-00034",
+      "id": "VDO-261115-B2N-00034-e02",
+      "en": "She will redo the final paragraph.",
+      "ja": "彼女は最後の段落を書き直します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06183",
+      "headword": "redundant",
+      "senseId": "VDO-261115-B2N-00035",
+      "id": "VDO-261115-B2N-00035-e01",
+      "en": "Remove redundant words from the summary.",
+      "ja": "要約から余分な語を削ってください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06183",
+      "headword": "redundant",
+      "senseId": "VDO-261115-B2N-00035",
+      "id": "VDO-261115-B2N-00035-e02",
+      "en": "The old system became redundant.",
+      "ja": "古い仕組みは不要になりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06184",
+      "headword": "reed",
+      "senseId": "VDO-261115-B2N-00036",
+      "id": "VDO-261115-B2N-00036-e01",
+      "en": "Reeds grew beside the pond.",
+      "ja": "池のそばにアシが生えていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06184",
+      "headword": "reed",
+      "senseId": "VDO-261115-B2N-00036",
+      "id": "VDO-261115-B2N-00036-e02",
+      "en": "The musician replaced the reed.",
+      "ja": "演奏家はリードを替えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06185",
+      "headword": "reference",
+      "senseId": "VDO-261115-B2N-00037",
+      "id": "VDO-261115-B2N-00037-e01",
+      "en": "Keep the guide for reference.",
+      "ja": "参照用に案内を保管してください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06185",
+      "headword": "reference",
+      "senseId": "VDO-261115-B2N-00037",
+      "id": "VDO-261115-B2N-00037-e02",
+      "en": "The speech included a reference to our school.",
+      "ja": "演説には学校への言及がありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06186",
+      "headword": "referent",
+      "senseId": "VDO-261115-B2N-00038",
+      "id": "VDO-261115-B2N-00038-e01",
+      "en": "The pronoun has no clear referent.",
+      "ja": "代名詞の指示対象が不明です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06186",
+      "headword": "referent",
+      "senseId": "VDO-261115-B2N-00038",
+      "id": "VDO-261115-B2N-00038-e02",
+      "en": "Identify the referent of this in the passage.",
+      "ja": "文章中のthisの指示対象を特定してください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06187",
+      "headword": "refinery",
+      "senseId": "VDO-261115-B2N-00039",
+      "id": "VDO-261115-B2N-00039-e01",
+      "en": "The refinery stands near the port.",
+      "ja": "精製所は港の近くにあります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06187",
+      "headword": "refinery",
+      "senseId": "VDO-261115-B2N-00039",
+      "id": "VDO-261115-B2N-00039-e02",
+      "en": "The diagram explains the refinery's process.",
+      "ja": "図は精製所の工程を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06188",
+      "headword": "reflective",
+      "senseId": "VDO-261115-B2N-00040",
+      "id": "VDO-261115-B2N-00040-e01",
+      "en": "She wrote a reflective journal.",
+      "ja": "彼女は振り返り日記を書きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06188",
+      "headword": "reflective",
+      "senseId": "VDO-261115-B2N-00040",
+      "id": "VDO-261115-B2N-00040-e02",
+      "en": "The jacket has reflective strips.",
+      "ja": "上着には反射帯があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06189",
+      "headword": "reform",
+      "senseId": "VDO-261115-B2N-00041",
+      "id": "VDO-261115-B2N-00041-e01",
+      "en": "The article discusses education reform.",
+      "ja": "記事は教育改革を論じます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06189",
+      "headword": "reform",
+      "senseId": "VDO-261115-B2N-00041",
+      "id": "VDO-261115-B2N-00041-e02",
+      "en": "The reforms changed the examination system.",
+      "ja": "改革は試験制度を変えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06190",
+      "headword": "refrain",
+      "senseId": "VDO-261115-B2N-00042",
+      "id": "VDO-261115-B2N-00042-e01",
+      "en": "The class sang the refrain together.",
+      "ja": "クラスは反復部分を一緒に歌いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06190",
+      "headword": "refrain",
+      "senseId": "VDO-261115-B2N-00042",
+      "id": "VDO-261115-B2N-00042-e02",
+      "en": "The poem ends with a familiar refrain.",
+      "ja": "詩はなじみの繰り返し句で終わります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06191",
+      "headword": "refresh",
+      "senseId": "VDO-261115-B2N-00043",
+      "id": "VDO-261115-B2N-00043-e01",
+      "en": "Refresh the page to see the result.",
+      "ja": "ページを更新して結果を見てください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06191",
+      "headword": "refresh",
+      "senseId": "VDO-261115-B2N-00043",
+      "id": "VDO-261115-B2N-00043-e02",
+      "en": "A short walk refreshed us.",
+      "ja": "短い散歩で元気が戻りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06192",
+      "headword": "refuge",
+      "senseId": "VDO-261115-B2N-00044",
+      "id": "VDO-261115-B2N-00044-e01",
+      "en": "The cave offered refuge from the storm.",
+      "ja": "洞窟は嵐を避ける場所になりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06192",
+      "headword": "refuge",
+      "senseId": "VDO-261115-B2N-00044",
+      "id": "VDO-261115-B2N-00044-e02",
+      "en": "They sought refuge in the library.",
+      "ja": "彼らは図書館に避難しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06193",
+      "headword": "refugee",
+      "senseId": "VDO-261115-B2N-00045",
+      "id": "VDO-261115-B2N-00045-e01",
+      "en": "The exhibition shares stories told by refugees.",
+      "ja": "展示は難民本人の語りを紹介します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06193",
+      "headword": "refugee",
+      "senseId": "VDO-261115-B2N-00045",
+      "id": "VDO-261115-B2N-00045-e02",
+      "en": "The centre supports refugee families.",
+      "ja": "施設は難民の家族を支援します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06194",
+      "headword": "refute",
+      "senseId": "VDO-261115-B2N-00046",
+      "id": "VDO-261115-B2N-00046-e01",
+      "en": "The data refute that claim.",
+      "ja": "データはその主張を反証します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06194",
+      "headword": "refute",
+      "senseId": "VDO-261115-B2N-00046",
+      "id": "VDO-261115-B2N-00046-e02",
+      "en": "She refuted the argument with a clear example.",
+      "ja": "彼女は明確な例で議論を反証しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06195",
+      "headword": "regardless",
+      "senseId": "VDO-261115-B2N-00047",
+      "id": "VDO-261115-B2N-00047-e01",
+      "en": "The game continued regardless of the rain.",
+      "ja": "雨にかかわらず試合は続きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06195",
+      "headword": "regardless",
+      "senseId": "VDO-261115-B2N-00047",
+      "id": "VDO-261115-B2N-00047-e02",
+      "en": "We welcome everyone regardless of experience.",
+      "ja": "経験を問わず全員を歓迎します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06196",
+      "headword": "reggae",
+      "senseId": "VDO-261115-B2N-00048",
+      "id": "VDO-261115-B2N-00048-e01",
+      "en": "The band played reggae.",
+      "ja": "バンドはレゲエを演奏しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06196",
+      "headword": "reggae",
+      "senseId": "VDO-261115-B2N-00048",
+      "id": "VDO-261115-B2N-00048-e02",
+      "en": "The lesson explored reggae's distinctive rhythm.",
+      "ja": "授業はレゲエ独特のリズムを扱いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06197",
+      "headword": "regime",
+      "senseId": "VDO-261115-B2N-00049",
+      "id": "VDO-261115-B2N-00049-e01",
+      "en": "The chapter describes a change of regime.",
+      "ja": "章は体制の変化を説明します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06197",
+      "headword": "regime",
+      "senseId": "VDO-261115-B2N-00049",
+      "id": "VDO-261115-B2N-00049-e02",
+      "en": "The regime restricted the press.",
+      "ja": "その政権は報道を制限しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06198",
+      "headword": "regrettably",
+      "senseId": "VDO-261115-B2N-00050",
+      "id": "VDO-261115-B2N-00050-e01",
+      "en": "Regrettably, the visit was postponed.",
+      "ja": "残念ながら訪問は延期されました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06198",
+      "headword": "regrettably",
+      "senseId": "VDO-261115-B2N-00050",
+      "id": "VDO-261115-B2N-00050-e02",
+      "en": "The recording is regrettably incomplete.",
+      "ja": "残念ながら録音は不完全です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06200",
+      "headword": "rehearsal",
+      "senseId": "VDO-261115-B2N-00051",
+      "id": "VDO-261115-B2N-00051-e01",
+      "en": "The rehearsal begins at four.",
+      "ja": "リハーサルは4時に始まります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06200",
+      "headword": "rehearsal",
+      "senseId": "VDO-261115-B2N-00051",
+      "id": "VDO-261115-B2N-00051-e02",
+      "en": "We held a short rehearsal online.",
+      "ja": "オンラインで短いリハーサルをしました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06201",
+      "headword": "reinforce",
+      "senseId": "VDO-261115-B2N-00052",
+      "id": "VDO-261115-B2N-00052-e01",
+      "en": "The builders reinforced the bridge.",
+      "ja": "作業員は橋を補強しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06201",
+      "headword": "reinforce",
+      "senseId": "VDO-261115-B2N-00052",
+      "id": "VDO-261115-B2N-00052-e02",
+      "en": "The examples reinforce the main point.",
+      "ja": "例は要点を強めます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06202",
+      "headword": "reinforcement",
+      "senseId": "VDO-261115-B2N-00053",
+      "id": "VDO-261115-B2N-00053-e01",
+      "en": "The roof needs reinforcement.",
+      "ja": "屋根は補強が必要です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06202",
+      "headword": "reinforcement",
+      "senseId": "VDO-261115-B2N-00053",
+      "id": "VDO-261115-B2N-00053-e02",
+      "en": "Positive reinforcement encouraged participation.",
+      "ja": "肯定的な働きかけは参加を促しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06203",
+      "headword": "rejection",
+      "senseId": "VDO-261115-B2N-00054",
+      "id": "VDO-261115-B2N-00054-e01",
+      "en": "The proposal met with rejection.",
+      "ja": "提案は拒否されました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06203",
+      "headword": "rejection",
+      "senseId": "VDO-261115-B2N-00054",
+      "id": "VDO-261115-B2N-00054-e02",
+      "en": "She learned from the rejection letter.",
+      "ja": "彼女は不採用通知から学びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06204",
+      "headword": "rejoin",
+      "senseId": "VDO-261115-B2N-00055",
+      "id": "VDO-261115-B2N-00055-e01",
+      "en": "She rejoined the group after lunch.",
+      "ja": "昼食後に彼女はグループへ戻りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06204",
+      "headword": "rejoin",
+      "senseId": "VDO-261115-B2N-00055",
+      "id": "VDO-261115-B2N-00055-e02",
+      "en": "He hopes to rejoin the team.",
+      "ja": "彼はチームへの復帰を望んでいます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06205",
+      "headword": "related",
+      "senseId": "VDO-261115-B2N-00056",
+      "id": "VDO-261115-B2N-00056-e01",
+      "en": "The two questions are related.",
+      "ja": "二つの質問は関連しています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06205",
+      "headword": "related",
+      "senseId": "VDO-261115-B2N-00056",
+      "id": "VDO-261115-B2N-00056-e02",
+      "en": "Are these two writers related?",
+      "ja": "この作家二人は親族ですか。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06206",
+      "headword": "relativity",
+      "senseId": "VDO-261115-B2N-00057",
+      "id": "VDO-261115-B2N-00057-e01",
+      "en": "The course introduces the idea of relativity.",
+      "ja": "講座は相対性の考えを紹介します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06206",
+      "headword": "relativity",
+      "senseId": "VDO-261115-B2N-00057",
+      "id": "VDO-261115-B2N-00057-e02",
+      "en": "The museum has a display on relativity.",
+      "ja": "博物館には相対性理論の展示があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06207",
+      "headword": "relaxation",
+      "senseId": "VDO-261115-B2N-00058",
+      "id": "VDO-261115-B2N-00058-e01",
+      "en": "The room is designed for relaxation.",
+      "ja": "部屋は休息向けに作られています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06207",
+      "headword": "relaxation",
+      "senseId": "VDO-261115-B2N-00058",
+      "id": "VDO-261115-B2N-00058-e02",
+      "en": "The plan allows a relaxation of the rules.",
+      "ja": "計画は規則の緩和を認めます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06208",
+      "headword": "relay",
+      "senseId": "VDO-261115-B2N-00059",
+      "id": "VDO-261115-B2N-00059-e01",
+      "en": "Our team won the relay.",
+      "ja": "チームはリレーで勝ちました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06208",
+      "headword": "relay",
+      "senseId": "VDO-261115-B2N-00059",
+      "id": "VDO-261115-B2N-00059-e02",
+      "en": "Each relay runner carried a baton.",
+      "ja": "各走者はバトンを持ちました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06209",
+      "headword": "relevant",
+      "senseId": "VDO-261115-B2N-00060",
+      "id": "VDO-261115-B2N-00060-e01",
+      "en": "Choose a relevant example.",
+      "ja": "関連する例を選んでください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06209",
+      "headword": "relevant",
+      "senseId": "VDO-261115-B2N-00060",
+      "id": "VDO-261115-B2N-00060-e02",
+      "en": "This evidence is relevant to the question.",
+      "ja": "証拠は質問に関係します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06210",
+      "headword": "relic",
+      "senseId": "VDO-261115-B2N-00061",
+      "id": "VDO-261115-B2N-00061-e01",
+      "en": "The museum displays a Roman relic.",
+      "ja": "博物館はローマ時代の遺物を展示します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06210",
+      "headword": "relic",
+      "senseId": "VDO-261115-B2N-00061",
+      "id": "VDO-261115-B2N-00061-e02",
+      "en": "The machine is a relic of early computing.",
+      "ja": "機械は初期の計算機時代の遺物です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06211",
+      "headword": "relief",
+      "senseId": "VDO-261115-B2N-00062",
+      "id": "VDO-261115-B2N-00062-e01",
+      "en": "We felt relief when everyone arrived.",
+      "ja": "全員が到着して安堵しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06211",
+      "headword": "relief",
+      "senseId": "VDO-261115-B2N-00062",
+      "id": "VDO-261115-B2N-00062-e02",
+      "en": "The shade offered relief from the heat.",
+      "ja": "日陰は暑さを和らげました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06213",
+      "headword": "relieved",
+      "senseId": "VDO-261115-B2N-00063",
+      "id": "VDO-261115-B2N-00063-e01",
+      "en": "She was relieved to find the file.",
+      "ja": "ファイルが見つかり彼女は安心しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06213",
+      "headword": "relieved",
+      "senseId": "VDO-261115-B2N-00063",
+      "id": "VDO-261115-B2N-00063-e02",
+      "en": "We felt relieved after the announcement.",
+      "ja": "発表後に安心しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06214",
+      "headword": "reluctant",
+      "senseId": "VDO-261115-B2N-00064",
+      "id": "VDO-261115-B2N-00064-e01",
+      "en": "He was reluctant to speak first.",
+      "ja": "彼は最初に話すのに気が進みませんでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06214",
+      "headword": "reluctant",
+      "senseId": "VDO-261115-B2N-00064",
+      "id": "VDO-261115-B2N-00064-e02",
+      "en": "She gave a reluctant nod.",
+      "ja": "彼女はしぶしぶうなずきました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06215",
+      "headword": "remaining",
+      "senseId": "VDO-261115-B2N-00065",
+      "id": "VDO-261115-B2N-00065-e01",
+      "en": "Use the remaining time to check.",
+      "ja": "残り時間を確認に使ってください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06215",
+      "headword": "remaining",
+      "senseId": "VDO-261115-B2N-00065",
+      "id": "VDO-261115-B2N-00065-e02",
+      "en": "The remaining visitors left together.",
+      "ja": "残った訪問者は一緒に帰りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06216",
+      "headword": "remains",
+      "senseId": "VDO-261115-B2N-00066",
+      "id": "VDO-261115-B2N-00066-e01",
+      "en": "We visited the remains of a castle.",
+      "ja": "城の遺跡を訪れました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06216",
+      "headword": "remains",
+      "senseId": "VDO-261115-B2N-00066",
+      "id": "VDO-261115-B2N-00066-e02",
+      "en": "The remains of the bridge lay nearby.",
+      "ja": "橋の残骸が近くにありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06217",
+      "headword": "remarkably",
+      "senseId": "VDO-261115-B2N-00067",
+      "id": "VDO-261115-B2N-00067-e01",
+      "en": "The room was remarkably quiet.",
+      "ja": "部屋は驚くほど静かでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06217",
+      "headword": "remarkably",
+      "senseId": "VDO-261115-B2N-00067",
+      "id": "VDO-261115-B2N-00067-e02",
+      "en": "She improved remarkably during the course.",
+      "ja": "彼女は講座中に著しく上達しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06218",
+      "headword": "reminder",
+      "senseId": "VDO-261115-B2N-00068",
+      "id": "VDO-261115-B2N-00068-e01",
+      "en": "I set a reminder for the meeting.",
+      "ja": "会合の通知を設定しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06218",
+      "headword": "reminder",
+      "senseId": "VDO-261115-B2N-00068",
+      "id": "VDO-261115-B2N-00068-e02",
+      "en": "The photo is a reminder of our visit.",
+      "ja": "写真は訪問を思い出させます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06219",
+      "headword": "rental",
+      "senseId": "VDO-261115-B2N-00069",
+      "id": "VDO-261115-B2N-00069-e01",
+      "en": "The price includes bicycle rental.",
+      "ja": "料金には自転車の貸し出しが含まれます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06219",
+      "headword": "rental",
+      "senseId": "VDO-261115-B2N-00069",
+      "id": "VDO-261115-B2N-00069-e02",
+      "en": "We compared local rental costs.",
+      "ja": "地域の賃貸費用を比べました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06220",
+      "headword": "reorganize/reorganise",
+      "senseId": "VDO-261115-B2N-00070",
+      "id": "VDO-261115-B2N-00070-e01",
+      "en": "We reorganized the classroom.",
+      "ja": "教室の配置を変えました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06220",
+      "headword": "reorganize/reorganise",
+      "senseId": "VDO-261115-B2N-00070",
+      "id": "VDO-261115-B2N-00070-e02",
+      "en": "She reorganised the files by date.",
+      "ja": "彼女はファイルを日付順に並べ直しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06221",
+      "headword": "repaint",
+      "senseId": "VDO-261115-B2N-00071",
+      "id": "VDO-261115-B2N-00071-e01",
+      "en": "They repainted the old gate.",
+      "ja": "古い門を塗り直しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06221",
+      "headword": "repaint",
+      "senseId": "VDO-261115-B2N-00071",
+      "id": "VDO-261115-B2N-00071-e02",
+      "en": "We will repaint the classroom walls.",
+      "ja": "教室の壁を塗り直します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06222",
+      "headword": "repertoire",
+      "senseId": "VDO-261115-B2N-00072",
+      "id": "VDO-261115-B2N-00072-e01",
+      "en": "The band expanded its repertoire.",
+      "ja": "バンドは持ち曲を増やしました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06222",
+      "headword": "repertoire",
+      "senseId": "VDO-261115-B2N-00072",
+      "id": "VDO-261115-B2N-00072-e02",
+      "en": "The teacher has a wide repertoire of activities.",
+      "ja": "先生には多様な活動の引き出しがあります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06223",
+      "headword": "repetition",
+      "senseId": "VDO-261115-B2N-00073",
+      "id": "VDO-261115-B2N-00073-e01",
+      "en": "Repetition helped us remember the rhythm.",
+      "ja": "反復でリズムを覚えました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06223",
+      "headword": "repetition",
+      "senseId": "VDO-261115-B2N-00073",
+      "id": "VDO-261115-B2N-00073-e02",
+      "en": "Avoid unnecessary repetition in the essay.",
+      "ja": "小論文では不要な繰り返しを避けてください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06224",
+      "headword": "replacement",
+      "senseId": "VDO-261115-B2N-00074",
+      "id": "VDO-261115-B2N-00074-e01",
+      "en": "The shop sent a replacement.",
+      "ja": "店は交換品を送りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06224",
+      "headword": "replacement",
+      "senseId": "VDO-261115-B2N-00074",
+      "id": "VDO-261115-B2N-00074-e02",
+      "en": "We need a replacement for this cable.",
+      "ja": "このケーブルの代わりが必要です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06225",
+      "headword": "replica",
+      "senseId": "VDO-261115-B2N-00075",
+      "id": "VDO-261115-B2N-00075-e01",
+      "en": "The model is a replica of the tower.",
+      "ja": "模型は塔の複製です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06225",
+      "headword": "replica",
+      "senseId": "VDO-261115-B2N-00075",
+      "id": "VDO-261115-B2N-00075-e02",
+      "en": "The museum displayed a replica coin.",
+      "ja": "博物館は複製硬貨を展示しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06226",
+      "headword": "repress",
+      "senseId": "VDO-261115-B2N-00076",
+      "id": "VDO-261115-B2N-00076-e01",
+      "en": "He tried to repress a smile.",
+      "ja": "彼は笑みを抑えようとしました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06226",
+      "headword": "repress",
+      "senseId": "VDO-261115-B2N-00076",
+      "id": "VDO-261115-B2N-00076-e02",
+      "en": "The regime repressed public criticism.",
+      "ja": "政権は公の批判を抑圧しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06227",
+      "headword": "repression",
+      "senseId": "VDO-261115-B2N-00077",
+      "id": "VDO-261115-B2N-00077-e01",
+      "en": "The novel explores political repression.",
+      "ja": "小説は政治的抑圧を扱います。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06227",
+      "headword": "repression",
+      "senseId": "VDO-261115-B2N-00077",
+      "id": "VDO-261115-B2N-00077-e02",
+      "en": "The archive records years of repression.",
+      "ja": "記録は長年の抑圧を示します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06228",
+      "headword": "reprint",
+      "senseId": "VDO-261115-B2N-00078",
+      "id": "VDO-261115-B2N-00078-e01",
+      "en": "The library bought a reprint.",
+      "ja": "図書館は再版本を買いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06228",
+      "headword": "reprint",
+      "senseId": "VDO-261115-B2N-00078",
+      "id": "VDO-261115-B2N-00078-e02",
+      "en": "The reprint includes a new introduction.",
+      "ja": "再版には新しい序文があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06229",
+      "headword": "reprove",
+      "senseId": "VDO-261115-B2N-00079",
+      "id": "VDO-261115-B2N-00079-e01",
+      "en": "The teacher reproved him for shouting.",
+      "ja": "先生は大声を出した彼をたしなめました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06229",
+      "headword": "reprove",
+      "senseId": "VDO-261115-B2N-00079",
+      "id": "VDO-261115-B2N-00079-e02",
+      "en": "She gently reproved the careless remark.",
+      "ja": "彼女は軽率な発言を優しくたしなめました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06230",
+      "headword": "residence",
+      "senseId": "VDO-261115-B2N-00080",
+      "id": "VDO-261115-B2N-00080-e01",
+      "en": "The building was once a royal residence.",
+      "ja": "建物はかつて王室の住居でした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06230",
+      "headword": "residence",
+      "senseId": "VDO-261115-B2N-00080",
+      "id": "VDO-261115-B2N-00080-e02",
+      "en": "The form asks for country of residence.",
+      "ja": "用紙は居住国を尋ねています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06231",
+      "headword": "resign",
+      "senseId": "VDO-261115-B2N-00081",
+      "id": "VDO-261115-B2N-00081-e01",
+      "en": "She resigned from the committee.",
+      "ja": "彼女は委員を辞めました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06231",
+      "headword": "resign",
+      "senseId": "VDO-261115-B2N-00081",
+      "id": "VDO-261115-B2N-00081-e02",
+      "en": "The manager decided to resign.",
+      "ja": "管理者は辞職を決めました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06232",
+      "headword": "resignation",
+      "senseId": "VDO-261115-B2N-00082",
+      "id": "VDO-261115-B2N-00082-e01",
+      "en": "He submitted his resignation.",
+      "ja": "彼は辞表を提出しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06232",
+      "headword": "resignation",
+      "senseId": "VDO-261115-B2N-00082",
+      "id": "VDO-261115-B2N-00082-e02",
+      "en": "She accepted the delay with resignation.",
+      "ja": "彼女は遅れをあきらめて受け入れました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06233",
+      "headword": "resistance",
+      "senseId": "VDO-261115-B2N-00083",
+      "id": "VDO-261115-B2N-00083-e01",
+      "en": "The plan met strong resistance.",
+      "ja": "計画は強い抵抗に遭いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06233",
+      "headword": "resistance",
+      "senseId": "VDO-261115-B2N-00083",
+      "id": "VDO-261115-B2N-00083-e02",
+      "en": "The material has resistance to heat.",
+      "ja": "素材は熱に対する抵抗性があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06234",
+      "headword": "resolution",
+      "senseId": "VDO-261115-B2N-00084",
+      "id": "VDO-261115-B2N-00084-e01",
+      "en": "She made a resolution to practice daily.",
+      "ja": "彼女は毎日練習する決意をしました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06234",
+      "headword": "resolution",
+      "senseId": "VDO-261115-B2N-00084",
+      "id": "VDO-261115-B2N-00084-e02",
+      "en": "Increase the image resolution.",
+      "ja": "画像の解像度を上げてください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06235",
+      "headword": "resonant",
+      "senseId": "VDO-261115-B2N-00085",
+      "id": "VDO-261115-B2N-00085-e01",
+      "en": "He spoke in a resonant voice.",
+      "ja": "彼はよく響く声で話しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06235",
+      "headword": "resonant",
+      "senseId": "VDO-261115-B2N-00085",
+      "id": "VDO-261115-B2N-00085-e02",
+      "en": "The hall has a resonant acoustic quality.",
+      "ja": "ホールは音が豊かに響きます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06236",
+      "headword": "respectably",
+      "senseId": "VDO-261115-B2N-00086",
+      "id": "VDO-261115-B2N-00086-e01",
+      "en": "The team performed respectably.",
+      "ja": "チームはまずまずの成績でした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06236",
+      "headword": "respectably",
+      "senseId": "VDO-261115-B2N-00086",
+      "id": "VDO-261115-B2N-00086-e02",
+      "en": "She dressed respectably for the occasion.",
+      "ja": "彼女は場にふさわしくきちんと装いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06237",
+      "headword": "respected",
+      "senseId": "VDO-261115-B2N-00087",
+      "id": "VDO-261115-B2N-00087-e01",
+      "en": "A respected scholar led the talk.",
+      "ja": "尊敬される学者が講演しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06237",
+      "headword": "respected",
+      "senseId": "VDO-261115-B2N-00087",
+      "id": "VDO-261115-B2N-00087-e02",
+      "en": "She is respected throughout the community.",
+      "ja": "彼女は地域全体から尊敬されています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06238",
+      "headword": "respiration",
+      "senseId": "VDO-261115-B2N-00088",
+      "id": "VDO-261115-B2N-00088-e01",
+      "en": "The diagram explains respiration in plants.",
+      "ja": "図は植物の呼吸を説明します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06238",
+      "headword": "respiration",
+      "senseId": "VDO-261115-B2N-00088",
+      "id": "VDO-261115-B2N-00088-e02",
+      "en": "The textbook distinguishes respiration from photosynthesis.",
+      "ja": "教科書は呼吸と光合成を区別します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06239",
+      "headword": "respiratory",
+      "senseId": "VDO-261115-B2N-00089",
+      "id": "VDO-261115-B2N-00089-e01",
+      "en": "The diagram shows the respiratory system.",
+      "ja": "図は呼吸器系を示します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06239",
+      "headword": "respiratory",
+      "senseId": "VDO-261115-B2N-00089",
+      "id": "VDO-261115-B2N-00089-e02",
+      "en": "The lecture introduced respiratory anatomy.",
+      "ja": "講義は呼吸器の解剖を紹介しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06240",
+      "headword": "restriction",
+      "senseId": "VDO-261115-B2N-00090",
+      "id": "VDO-261115-B2N-00090-e01",
+      "en": "There is a restriction on entry.",
+      "ja": "入場には制限があります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06240",
+      "headword": "restriction",
+      "senseId": "VDO-261115-B2N-00090",
+      "id": "VDO-261115-B2N-00090-e02",
+      "en": "The restrictions apply during construction.",
+      "ja": "工事中は制限が適用されます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06241",
+      "headword": "resume",
+      "senseId": "VDO-261115-B2N-00091",
+      "id": "VDO-261115-B2N-00091-e01",
+      "en": "We resumed the discussion after lunch.",
+      "ja": "昼食後に話し合いを再開しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06241",
+      "headword": "resume",
+      "senseId": "VDO-261115-B2N-00091",
+      "id": "VDO-261115-B2N-00091-e02",
+      "en": "The service will resume tomorrow.",
+      "ja": "運行は明日再開します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06242",
+      "headword": "retailer",
+      "senseId": "VDO-261115-B2N-00092",
+      "id": "VDO-261115-B2N-00092-e01",
+      "en": "The retailer offers repair services.",
+      "ja": "小売業者は修理サービスを提供します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06242",
+      "headword": "retailer",
+      "senseId": "VDO-261115-B2N-00092",
+      "id": "VDO-261115-B2N-00092-e02",
+      "en": "Local retailers joined the festival.",
+      "ja": "地域の小売店が祭りに参加しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06243",
+      "headword": "retard",
+      "senseId": "VDO-261115-B2N-00093",
+      "id": "VDO-261115-B2N-00093-e01",
+      "en": "The coating retards the spread of moisture.",
+      "ja": "被膜は湿気の広がりを遅らせます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06243",
+      "headword": "retard",
+      "senseId": "VDO-261115-B2N-00093",
+      "id": "VDO-261115-B2N-00093-e02",
+      "en": "Low temperatures retarded the reaction.",
+      "ja": "低温は反応を遅くしました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06244",
+      "headword": "retina",
+      "senseId": "VDO-261115-B2N-00094",
+      "id": "VDO-261115-B2N-00094-e01",
+      "en": "The model shows the retina clearly.",
+      "ja": "模型は網膜を明確に示します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06244",
+      "headword": "retina",
+      "senseId": "VDO-261115-B2N-00094",
+      "id": "VDO-261115-B2N-00094-e02",
+      "en": "The diagram labels the retina and lens.",
+      "ja": "図は網膜と水晶体に名称を付けています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06245",
+      "headword": "retirement",
+      "senseId": "VDO-261115-B2N-00095",
+      "id": "VDO-261115-B2N-00095-e01",
+      "en": "She moved here after retirement.",
+      "ja": "彼女は退職後にここへ移りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06245",
+      "headword": "retirement",
+      "senseId": "VDO-261115-B2N-00095",
+      "id": "VDO-261115-B2N-00095-e02",
+      "en": "The club held a retirement celebration.",
+      "ja": "部は退職祝いを開きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06246",
+      "headword": "retreat",
+      "senseId": "VDO-261115-B2N-00096",
+      "id": "VDO-261115-B2N-00096-e01",
+      "en": "The animals retreated into the forest.",
+      "ja": "動物は森へ退きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06246",
+      "headword": "retreat",
+      "senseId": "VDO-261115-B2N-00096",
+      "id": "VDO-261115-B2N-00096-e02",
+      "en": "The army retreated at dawn.",
+      "ja": "軍は夜明けに後退しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06248",
+      "headword": "revelation",
+      "senseId": "VDO-261115-B2N-00097",
+      "id": "VDO-261115-B2N-00097-e01",
+      "en": "The diary contained an unexpected revelation.",
+      "ja": "日記には意外な新事実がありました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06248",
+      "headword": "revelation",
+      "senseId": "VDO-261115-B2N-00097",
+      "id": "VDO-261115-B2N-00097-e02",
+      "en": "The result was a revelation to us.",
+      "ja": "結果は私たちにとって新鮮な発見でした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06249",
+      "headword": "revenge",
+      "senseId": "VDO-261115-B2N-00098",
+      "id": "VDO-261115-B2N-00098-e01",
+      "en": "The story questions the desire for revenge.",
+      "ja": "物語は復讐心を問い直します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06249",
+      "headword": "revenge",
+      "senseId": "VDO-261115-B2N-00098",
+      "id": "VDO-261115-B2N-00098-e02",
+      "en": "He chose forgiveness instead of revenge.",
+      "ja": "彼は復讐ではなく許しを選びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06250",
+      "headword": "revenue",
+      "senseId": "VDO-261115-B2N-00099",
+      "id": "VDO-261115-B2N-00099-e01",
+      "en": "Ticket sales increased the museum's revenue.",
+      "ja": "チケット販売で博物館の収入が増えました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06250",
+      "headword": "revenue",
+      "senseId": "VDO-261115-B2N-00099",
+      "id": "VDO-261115-B2N-00099-e02",
+      "en": "The report compares revenue and costs.",
+      "ja": "報告は収入と費用を比較します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06251",
+      "headword": "reverence",
+      "senseId": "VDO-261115-B2N-00100",
+      "id": "VDO-261115-B2N-00100-e01",
+      "en": "They treated the old text with reverence.",
+      "ja": "古い文書を深い敬意で扱いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06251",
+      "headword": "reverence",
+      "senseId": "VDO-261115-B2N-00100",
+      "id": "VDO-261115-B2N-00100-e02",
+      "en": "The ceremony expresses reverence for nature.",
+      "ja": "式は自然への敬意を表します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06252",
+      "headword": "reverse",
+      "senseId": "VDO-261115-B2N-00101",
+      "id": "VDO-261115-B2N-00101-e01",
+      "en": "Reverse the order of the cards.",
+      "ja": "カードの順序を逆にしてください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06252",
+      "headword": "reverse",
+      "senseId": "VDO-261115-B2N-00101",
+      "id": "VDO-261115-B2N-00101-e02",
+      "en": "The committee reversed its decision.",
+      "ja": "委員会は決定を覆しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06253",
+      "headword": "revival",
+      "senseId": "VDO-261115-B2N-00102",
+      "id": "VDO-261115-B2N-00102-e01",
+      "en": "The festival led to a revival of local crafts.",
+      "ja": "祭りは地元工芸の再興につながりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06253",
+      "headword": "revival",
+      "senseId": "VDO-261115-B2N-00102",
+      "id": "VDO-261115-B2N-00102-e02",
+      "en": "The theatre staged a revival of the play.",
+      "ja": "劇場はその劇を再演しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06254",
+      "headword": "revive",
+      "senseId": "VDO-261115-B2N-00103",
+      "id": "VDO-261115-B2N-00103-e01",
+      "en": "The project revived interest in the language.",
+      "ja": "企画は言語への関心を復活させました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06254",
+      "headword": "revive",
+      "senseId": "VDO-261115-B2N-00103",
+      "id": "VDO-261115-B2N-00103-e02",
+      "en": "A short break revived our energy.",
+      "ja": "短い休憩で元気が戻りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06255",
+      "headword": "revolution",
+      "senseId": "VDO-261115-B2N-00104",
+      "id": "VDO-261115-B2N-00104-e01",
+      "en": "The chapter describes a peaceful revolution.",
+      "ja": "章は平和的革命を説明します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06255",
+      "headword": "revolution",
+      "senseId": "VDO-261115-B2N-00104",
+      "id": "VDO-261115-B2N-00104-e02",
+      "en": "Printing caused a revolution in communication.",
+      "ja": "印刷は伝達に大変革をもたらしました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06256",
+      "headword": "revolutionary",
+      "senseId": "VDO-261115-B2N-00105",
+      "id": "VDO-261115-B2N-00105-e01",
+      "en": "The invention was revolutionary.",
+      "ja": "発明は革命的でした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06256",
+      "headword": "revolutionary",
+      "senseId": "VDO-261115-B2N-00105",
+      "id": "VDO-261115-B2N-00105-e02",
+      "en": "We studied revolutionary movements.",
+      "ja": "革命運動を学びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06257",
+      "headword": "revolutionize/revolutionise",
+      "senseId": "VDO-261115-B2N-00106",
+      "id": "VDO-261115-B2N-00106-e01",
+      "en": "The tool revolutionized their workflow.",
+      "ja": "ツールは作業の流れを一変させました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06257",
+      "headword": "revolutionize/revolutionise",
+      "senseId": "VDO-261115-B2N-00106",
+      "id": "VDO-261115-B2N-00106-e02",
+      "en": "The railway revolutionised travel.",
+      "ja": "鉄道は移動を一変させました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06258",
+      "headword": "revolve",
+      "senseId": "VDO-261115-B2N-00107",
+      "id": "VDO-261115-B2N-00107-e01",
+      "en": "The display revolves slowly.",
+      "ja": "展示はゆっくり回転します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06258",
+      "headword": "revolve",
+      "senseId": "VDO-261115-B2N-00107",
+      "id": "VDO-261115-B2N-00107-e02",
+      "en": "The discussion revolved around one question.",
+      "ja": "話し合いは一つの質問を中心に進みました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06259",
+      "headword": "rhinoceros",
+      "senseId": "VDO-261115-B2N-00108",
+      "id": "VDO-261115-B2N-00108-e01",
+      "en": "The rhinoceros rested in the shade.",
+      "ja": "サイは日陰で休みました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06259",
+      "headword": "rhinoceros",
+      "senseId": "VDO-261115-B2N-00108",
+      "id": "VDO-261115-B2N-00108-e02",
+      "en": "The film follows a young rhinoceros.",
+      "ja": "映画は若いサイを追います。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06260",
+      "headword": "rhyme",
+      "senseId": "VDO-261115-B2N-00109",
+      "id": "VDO-261115-B2N-00109-e01",
+      "en": "Light rhymes with night.",
+      "ja": "lightはnightと韻を踏みます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06260",
+      "headword": "rhyme",
+      "senseId": "VDO-261115-B2N-00109",
+      "id": "VDO-261115-B2N-00109-e02",
+      "en": "The final words rhyme neatly.",
+      "ja": "最後の語はきれいに韻を踏みます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06261",
+      "headword": "rhythmic",
+      "senseId": "VDO-261115-B2N-00110",
+      "id": "VDO-261115-B2N-00110-e01",
+      "en": "We clapped in a rhythmic pattern.",
+      "ja": "リズムに合わせて手をたたきました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06261",
+      "headword": "rhythmic",
+      "senseId": "VDO-261115-B2N-00110",
+      "id": "VDO-261115-B2N-00110-e02",
+      "en": "The poem has a rhythmic flow.",
+      "ja": "詩にはリズミカルな流れがあります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06262",
+      "headword": "rib",
+      "senseId": "VDO-261115-B2N-00111",
+      "id": "VDO-261115-B2N-00111-e01",
+      "en": "The model shows each rib.",
+      "ja": "模型は各肋骨を示します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06262",
+      "headword": "rib",
+      "senseId": "VDO-261115-B2N-00111",
+      "id": "VDO-261115-B2N-00111-e02",
+      "en": "He pointed to a rib on the diagram.",
+      "ja": "彼は図の肋骨を指しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06263",
+      "headword": "rider",
+      "senseId": "VDO-261115-B2N-00112",
+      "id": "VDO-261115-B2N-00112-e01",
+      "en": "The rider slowed near the gate.",
+      "ja": "乗り手は門の近くで減速しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06263",
+      "headword": "rider",
+      "senseId": "VDO-261115-B2N-00112",
+      "id": "VDO-261115-B2N-00112-e02",
+      "en": "Each rider checked the bicycle.",
+      "ja": "各乗り手は自転車を確認しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06264",
+      "headword": "ridge",
+      "senseId": "VDO-261115-B2N-00113",
+      "id": "VDO-261115-B2N-00113-e01",
+      "en": "We followed the mountain ridge.",
+      "ja": "山の尾根を進みました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06264",
+      "headword": "ridge",
+      "senseId": "VDO-261115-B2N-00113",
+      "id": "VDO-261115-B2N-00113-e02",
+      "en": "A ridge runs across the rock.",
+      "ja": "岩に隆起が走っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06265",
+      "headword": "righteousness",
+      "senseId": "VDO-261115-B2N-00114",
+      "id": "VDO-261115-B2N-00114-e01",
+      "en": "The story explores righteousness and mercy.",
+      "ja": "物語は正義と慈悲を扱います。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06265",
+      "headword": "righteousness",
+      "senseId": "VDO-261115-B2N-00114",
+      "id": "VDO-261115-B2N-00114-e02",
+      "en": "His certainty of his own righteousness troubled her.",
+      "ja": "自分の正しさへの確信が彼女を困らせました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06266",
+      "headword": "rightly",
+      "senseId": "VDO-261115-B2N-00115",
+      "id": "VDO-261115-B2N-00115-e01",
+      "en": "She rightly questioned the unclear data.",
+      "ja": "彼女は当然ながら不明瞭なデータを疑いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06266",
+      "headword": "rightly",
+      "senseId": "VDO-261115-B2N-00115",
+      "id": "VDO-261115-B2N-00115-e02",
+      "en": "The team was rightly proud.",
+      "ja": "チームが誇りを持つのは当然でした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06267",
+      "headword": "rim",
+      "senseId": "VDO-261115-B2N-00116",
+      "id": "VDO-261115-B2N-00116-e01",
+      "en": "The cup has a blue rim.",
+      "ja": "カップには青い縁があります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06267",
+      "headword": "rim",
+      "senseId": "VDO-261115-B2N-00116",
+      "id": "VDO-261115-B2N-00116-e02",
+      "en": "Water reached the rim of the bowl.",
+      "ja": "水は器の縁まで達しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06268",
+      "headword": "rip",
+      "senseId": "VDO-261115-B2N-00117",
+      "id": "VDO-261115-B2N-00117-e01",
+      "en": "He ripped the paper by accident.",
+      "ja": "彼はうっかり紙を破りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06268",
+      "headword": "rip",
+      "senseId": "VDO-261115-B2N-00117",
+      "id": "VDO-261115-B2N-00117-e02",
+      "en": "The bag ripped at the seam.",
+      "ja": "かばんは縫い目で裂けました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06269",
+      "headword": "risky",
+      "senseId": "VDO-261115-B2N-00118",
+      "id": "VDO-261115-B2N-00118-e01",
+      "en": "Crossing there would be risky.",
+      "ja": "そこで渡るのは危険でしょう。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06269",
+      "headword": "risky",
+      "senseId": "VDO-261115-B2N-00118",
+      "id": "VDO-261115-B2N-00118-e02",
+      "en": "The plan was too risky.",
+      "ja": "計画は危険が大きすぎました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06270",
+      "headword": "rite",
+      "senseId": "VDO-261115-B2N-00119",
+      "id": "VDO-261115-B2N-00119-e01",
+      "en": "The book describes a traditional rite.",
+      "ja": "本は伝統的な儀礼を説明します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06270",
+      "headword": "rite",
+      "senseId": "VDO-261115-B2N-00119",
+      "id": "VDO-261115-B2N-00119-e02",
+      "en": "The rite marks the start of adulthood.",
+      "ja": "儀礼は成人の始まりを示します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06271",
+      "headword": "ritual",
+      "senseId": "VDO-261115-B2N-00120",
+      "id": "VDO-261115-B2N-00120-e01",
+      "en": "The ritual begins at sunrise.",
+      "ja": "儀式は日の出に始まります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06271",
+      "headword": "ritual",
+      "senseId": "VDO-261115-B2N-00120",
+      "id": "VDO-261115-B2N-00120-e02",
+      "en": "Tea became our evening ritual.",
+      "ja": "お茶は夕方の決まった習慣になりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06272",
+      "headword": "rival",
+      "senseId": "VDO-261115-B2N-00121",
+      "id": "VDO-261115-B2N-00121-e01",
+      "en": "The rivals shook hands after the match.",
+      "ja": "競争相手同士は試合後に握手しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06272",
+      "headword": "rival",
+      "senseId": "VDO-261115-B2N-00121",
+      "id": "VDO-261115-B2N-00121-e02",
+      "en": "The two companies are rivals.",
+      "ja": "二つの会社は競争相手です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06273",
+      "headword": "roam",
+      "senseId": "VDO-261115-B2N-00122",
+      "id": "VDO-261115-B2N-00122-e01",
+      "en": "The animals roam across the grassland.",
+      "ja": "動物は草原を歩き回ります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06273",
+      "headword": "roam",
+      "senseId": "VDO-261115-B2N-00122",
+      "id": "VDO-261115-B2N-00122-e02",
+      "en": "We roamed the old streets.",
+      "ja": "古い通りを歩き回りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06274",
+      "headword": "roar",
+      "senseId": "VDO-261115-B2N-00123",
+      "id": "VDO-261115-B2N-00123-e01",
+      "en": "The lion roared in the distance.",
+      "ja": "遠くでライオンがほえました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06274",
+      "headword": "roar",
+      "senseId": "VDO-261115-B2N-00123",
+      "id": "VDO-261115-B2N-00123-e02",
+      "en": "The engine roared into life.",
+      "ja": "エンジンは大きな音で動き出しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06275",
+      "headword": "rocket",
+      "senseId": "VDO-261115-B2N-00124",
+      "id": "VDO-261115-B2N-00124-e01",
+      "en": "The rocket rose above the clouds.",
+      "ja": "ロケットは雲の上へ上がりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06275",
+      "headword": "rocket",
+      "senseId": "VDO-261115-B2N-00124",
+      "id": "VDO-261115-B2N-00124-e02",
+      "en": "Students built a model rocket.",
+      "ja": "生徒たちは模型ロケットを作りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06276",
+      "headword": "rocky",
+      "senseId": "VDO-261115-B2N-00125",
+      "id": "VDO-261115-B2N-00125-e01",
+      "en": "The beach is rocky near the cliffs.",
+      "ja": "崖の近くの海岸は岩が多いです。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06276",
+      "headword": "rocky",
+      "senseId": "VDO-261115-B2N-00125",
+      "id": "VDO-261115-B2N-00125-e02",
+      "en": "We followed a rocky path.",
+      "ja": "岩の多い道を進みました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06277",
+      "headword": "roommate",
+      "senseId": "VDO-261115-B2N-00126",
+      "id": "VDO-261115-B2N-00126-e01",
+      "en": "My roommate studies engineering.",
+      "ja": "同室者は工学を学んでいます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06277",
+      "headword": "roommate",
+      "senseId": "VDO-261115-B2N-00126",
+      "id": "VDO-261115-B2N-00126-e02",
+      "en": "She left a note for her roommate.",
+      "ja": "彼女は同室者にメモを残しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06278",
+      "headword": "rosy",
+      "senseId": "VDO-261115-B2N-00127",
+      "id": "VDO-261115-B2N-00127-e01",
+      "en": "Her cheeks were rosy after the walk.",
+      "ja": "散歩後に頬が赤くなっていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06278",
+      "headword": "rosy",
+      "senseId": "VDO-261115-B2N-00127",
+      "id": "VDO-261115-B2N-00127-e02",
+      "en": "The report paints a rosy picture.",
+      "ja": "報告は楽観的な見通しを描きます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06279",
+      "headword": "route",
+      "senseId": "VDO-261115-B2N-00128",
+      "id": "VDO-261115-B2N-00128-e01",
+      "en": "We chose the coastal route.",
+      "ja": "海岸沿いの経路を選びました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06279",
+      "headword": "route",
+      "senseId": "VDO-261115-B2N-00128",
+      "id": "VDO-261115-B2N-00128-e02",
+      "en": "The map shows an alternative route.",
+      "ja": "地図は別の経路を示します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06280",
+      "headword": "royalty",
+      "senseId": "VDO-261115-B2N-00129",
+      "id": "VDO-261115-B2N-00129-e01",
+      "en": "The palace once housed royalty.",
+      "ja": "宮殿はかつて王族の住まいでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06280",
+      "headword": "royalty",
+      "senseId": "VDO-261115-B2N-00129",
+      "id": "VDO-261115-B2N-00129-e02",
+      "en": "The exhibition explores the lives of royalty.",
+      "ja": "展示は王族の生活を扱います。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06281",
+      "headword": "rub",
+      "senseId": "VDO-261115-B2N-00130",
+      "id": "VDO-261115-B2N-00130-e01",
+      "en": "Rub the mark gently.",
+      "ja": "印をそっとこすってください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06281",
+      "headword": "rub",
+      "senseId": "VDO-261115-B2N-00130",
+      "id": "VDO-261115-B2N-00130-e02",
+      "en": "She rubbed her cold hands together.",
+      "ja": "彼女は冷えた手をこすり合わせました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06282",
+      "headword": "rubble",
+      "senseId": "VDO-261115-B2N-00131",
+      "id": "VDO-261115-B2N-00131-e01",
+      "en": "Workers cleared the rubble.",
+      "ja": "作業員はがれきを撤去しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06282",
+      "headword": "rubble",
+      "senseId": "VDO-261115-B2N-00131",
+      "id": "VDO-261115-B2N-00131-e02",
+      "en": "The old wall collapsed into rubble.",
+      "ja": "古い壁は崩れてがれきになりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06283",
+      "headword": "rug",
+      "senseId": "VDO-261115-B2N-00132",
+      "id": "VDO-261115-B2N-00132-e01",
+      "en": "A woven rug covered the floor.",
+      "ja": "織物の敷物が床にありました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06283",
+      "headword": "rug",
+      "senseId": "VDO-261115-B2N-00132",
+      "id": "VDO-261115-B2N-00132-e02",
+      "en": "We shook the rug outside.",
+      "ja": "外で敷物をはたきました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06284",
+      "headword": "ruinous",
+      "senseId": "VDO-261115-B2N-00133",
+      "id": "VDO-261115-B2N-00133-e01",
+      "en": "The repairs had a ruinous cost.",
+      "ja": "修理には破滅的な費用がかかりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06284",
+      "headword": "ruinous",
+      "senseId": "VDO-261115-B2N-00133",
+      "id": "VDO-261115-B2N-00133-e02",
+      "en": "The building was in a ruinous state.",
+      "ja": "建物は荒廃していました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06286",
+      "headword": "rush hour",
+      "senseId": "VDO-261115-B2N-00134",
+      "id": "VDO-261115-B2N-00134-e01",
+      "en": "Avoid the station during rush hour.",
+      "ja": "ラッシュ時の駅を避けてください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06286",
+      "headword": "rush hour",
+      "senseId": "VDO-261115-B2N-00134",
+      "id": "VDO-261115-B2N-00134-e02",
+      "en": "Rush hour traffic delayed the bus.",
+      "ja": "通勤渋滞でバスは遅れました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06287",
+      "headword": "rusty",
+      "senseId": "VDO-261115-B2N-00135",
+      "id": "VDO-261115-B2N-00135-e01",
+      "en": "The gate has a rusty lock.",
+      "ja": "門にはさびた錠があります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06287",
+      "headword": "rusty",
+      "senseId": "VDO-261115-B2N-00135",
+      "id": "VDO-261115-B2N-00135-e02",
+      "en": "My French is a little rusty.",
+      "ja": "フランス語の腕が少し鈍っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06288",
+      "headword": "sack",
+      "senseId": "VDO-261115-B2N-00136",
+      "id": "VDO-261115-B2N-00136-e01",
+      "en": "The company sacked the manager.",
+      "ja": "会社は管理者を解雇しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06288",
+      "headword": "sack",
+      "senseId": "VDO-261115-B2N-00136",
+      "id": "VDO-261115-B2N-00136-e02",
+      "en": "The story begins when he is sacked.",
+      "ja": "物語は彼の解雇で始まります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06289",
+      "headword": "sag",
+      "senseId": "VDO-261115-B2N-00137",
+      "id": "VDO-261115-B2N-00137-e01",
+      "en": "The shelf sagged under the books.",
+      "ja": "棚は本の重みでたわみました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06289",
+      "headword": "sag",
+      "senseId": "VDO-261115-B2N-00137",
+      "id": "VDO-261115-B2N-00137-e02",
+      "en": "The old fence began to sag.",
+      "ja": "古い柵はたるみ始めました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06290",
+      "headword": "sage",
+      "senseId": "VDO-261115-B2N-00138",
+      "id": "VDO-261115-B2N-00138-e01",
+      "en": "The tale follows a village sage.",
+      "ja": "物語は村の賢人を描きます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06290",
+      "headword": "sage",
+      "senseId": "VDO-261115-B2N-00138",
+      "id": "VDO-261115-B2N-00138-e02",
+      "en": "We added sage to the soup.",
+      "ja": "スープにセージを加えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06291",
+      "headword": "sail",
+      "senseId": "VDO-261115-B2N-00139",
+      "id": "VDO-261115-B2N-00139-e01",
+      "en": "We sailed across the bay.",
+      "ja": "湾を船で渡りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06291",
+      "headword": "sail",
+      "senseId": "VDO-261115-B2N-00139",
+      "id": "VDO-261115-B2N-00139-e02",
+      "en": "The boat sailed before sunrise.",
+      "ja": "船は日の出前に出航しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06292",
+      "headword": "salary",
+      "senseId": "VDO-261115-B2N-00140",
+      "id": "VDO-261115-B2N-00140-e01",
+      "en": "The job offers a fixed salary.",
+      "ja": "仕事は固定給です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06292",
+      "headword": "salary",
+      "senseId": "VDO-261115-B2N-00140",
+      "id": "VDO-261115-B2N-00140-e02",
+      "en": "She discussed the salary at the interview.",
+      "ja": "彼女は面接で給料について話しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06293",
+      "headword": "salesmanship",
+      "senseId": "VDO-261115-B2N-00141",
+      "id": "VDO-261115-B2N-00141-e01",
+      "en": "The workshop develops salesmanship.",
+      "ja": "講座は販売の技術を育てます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06293",
+      "headword": "salesmanship",
+      "senseId": "VDO-261115-B2N-00141",
+      "id": "VDO-261115-B2N-00141-e02",
+      "en": "Her success depended on patient salesmanship.",
+      "ja": "成功は忍耐強い販売技術によるものでした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06294",
+      "headword": "salesperson",
+      "senseId": "VDO-261115-B2N-00142",
+      "id": "VDO-261115-B2N-00142-e01",
+      "en": "The salesperson explained the features.",
+      "ja": "販売員は特徴を説明しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06294",
+      "headword": "salesperson",
+      "senseId": "VDO-261115-B2N-00142",
+      "id": "VDO-261115-B2N-00142-e02",
+      "en": "Ask a salesperson about delivery.",
+      "ja": "配送を販売員に尋ねてください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06295",
+      "headword": "saleswoman",
+      "senseId": "VDO-261115-B2N-00143",
+      "id": "VDO-261115-B2N-00143-e01",
+      "en": "The saleswoman demonstrated the camera.",
+      "ja": "女性販売員はカメラを実演しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06295",
+      "headword": "saleswoman",
+      "senseId": "VDO-261115-B2N-00143",
+      "id": "VDO-261115-B2N-00143-e02",
+      "en": "She thanked the saleswoman for her advice.",
+      "ja": "彼女は助言にお礼を言いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06296",
+      "headword": "salon",
+      "senseId": "VDO-261115-B2N-00144",
+      "id": "VDO-261115-B2N-00144-e01",
+      "en": "The salon opened beside the station.",
+      "ja": "美容室は駅のそばに開店しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06296",
+      "headword": "salon",
+      "senseId": "VDO-261115-B2N-00144",
+      "id": "VDO-261115-B2N-00144-e02",
+      "en": "The novel describes a literary salon.",
+      "ja": "小説は文学の談話会を描きます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06297",
+      "headword": "salsa",
+      "senseId": "VDO-261115-B2N-00145",
+      "id": "VDO-261115-B2N-00145-e01",
+      "en": "We served the chips with salsa.",
+      "ja": "チップスにサルサを添えました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06297",
+      "headword": "salsa",
+      "senseId": "VDO-261115-B2N-00145",
+      "id": "VDO-261115-B2N-00145-e02",
+      "en": "The band played salsa.",
+      "ja": "バンドはサルサを演奏しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06298",
+      "headword": "salty",
+      "senseId": "VDO-261115-B2N-00146",
+      "id": "VDO-261115-B2N-00146-e01",
+      "en": "The soup was too salty.",
+      "ja": "スープは塩辛すぎました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06298",
+      "headword": "salty",
+      "senseId": "VDO-261115-B2N-00146",
+      "id": "VDO-261115-B2N-00146-e02",
+      "en": "We tasted the salty sea air.",
+      "ja": "潮の塩気を感じました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06299",
+      "headword": "sandstone",
+      "senseId": "VDO-261115-B2N-00147",
+      "id": "VDO-261115-B2N-00147-e01",
+      "en": "The walls are built of sandstone.",
+      "ja": "壁は砂岩でできています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06299",
+      "headword": "sandstone",
+      "senseId": "VDO-261115-B2N-00147",
+      "id": "VDO-261115-B2N-00147-e02",
+      "en": "The guide pointed to a sandstone cliff.",
+      "ja": "案内人は砂岩の崖を指しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06300",
+      "headword": "sanitary",
+      "senseId": "VDO-261115-B2N-00148",
+      "id": "VDO-261115-B2N-00148-e01",
+      "en": "The kitchen meets sanitary standards.",
+      "ja": "台所は衛生基準を満たします。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06300",
+      "headword": "sanitary",
+      "senseId": "VDO-261115-B2N-00148",
+      "id": "VDO-261115-B2N-00148-e02",
+      "en": "The report describes poor sanitary conditions.",
+      "ja": "報告は悪い衛生状態を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06301",
+      "headword": "sanitation",
+      "senseId": "VDO-261115-B2N-00149",
+      "id": "VDO-261115-B2N-00149-e01",
+      "en": "The project improves local sanitation.",
+      "ja": "事業は地域の衛生設備を改善します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06301",
+      "headword": "sanitation",
+      "senseId": "VDO-261115-B2N-00149",
+      "id": "VDO-261115-B2N-00149-e02",
+      "en": "The exhibition explains water and sanitation.",
+      "ja": "展示は水と衛生管理を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06302",
+      "headword": "satisfactory",
+      "senseId": "VDO-261115-B2N-00150",
+      "id": "VDO-261115-B2N-00150-e01",
+      "en": "The final result was satisfactory.",
+      "ja": "最終結果は満足のいくものでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06302",
+      "headword": "satisfactory",
+      "senseId": "VDO-261115-B2N-00150",
+      "id": "VDO-261115-B2N-00150-e02",
+      "en": "We found a satisfactory solution.",
+      "ja": "満足できる解決策を見つけました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06303",
+      "headword": "saving/savings",
+      "senseId": "VDO-261115-B2N-00151",
+      "id": "VDO-261115-B2N-00151-e01",
+      "en": "The change produced a saving in energy costs.",
+      "ja": "変更でエネルギー費用を節約できました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06303",
+      "headword": "saving/savings",
+      "senseId": "VDO-261115-B2N-00151",
+      "id": "VDO-261115-B2N-00151-e02",
+      "en": "She used her savings for the course.",
+      "ja": "彼女は講座に貯金を使いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06304",
+      "headword": "scandal",
+      "senseId": "VDO-261115-B2N-00152",
+      "id": "VDO-261115-B2N-00152-e01",
+      "en": "The scandal led to an investigation.",
+      "ja": "不祥事で調査が始まりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06304",
+      "headword": "scandal",
+      "senseId": "VDO-261115-B2N-00152",
+      "id": "VDO-261115-B2N-00152-e02",
+      "en": "The novel centres on a political scandal.",
+      "ja": "小説は政治的醜聞が中心です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06305",
+      "headword": "scar",
+      "senseId": "VDO-261115-B2N-00153",
+      "id": "VDO-261115-B2N-00153-e01",
+      "en": "A scar crossed his hand.",
+      "ja": "手に傷痕がありました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06305",
+      "headword": "scar",
+      "senseId": "VDO-261115-B2N-00153",
+      "id": "VDO-261115-B2N-00153-e02",
+      "en": "The fire left a scar on the landscape.",
+      "ja": "火災は景観に傷痕を残しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06306",
+      "headword": "scarcely",
+      "senseId": "VDO-261115-B2N-00154",
+      "id": "VDO-261115-B2N-00154-e01",
+      "en": "We could scarcely hear the guide.",
+      "ja": "案内人の声がほぼ聞こえませんでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06306",
+      "headword": "scarcely",
+      "senseId": "VDO-261115-B2N-00154",
+      "id": "VDO-261115-B2N-00154-e02",
+      "en": "There was scarcely any time left.",
+      "ja": "時間はほとんど残っていませんでした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06307",
+      "headword": "scarlet",
+      "senseId": "VDO-261115-B2N-00155",
+      "id": "VDO-261115-B2N-00155-e01",
+      "en": "The leaves turned scarlet.",
+      "ja": "葉は鮮紅色になりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06307",
+      "headword": "scarlet",
+      "senseId": "VDO-261115-B2N-00155",
+      "id": "VDO-261115-B2N-00155-e02",
+      "en": "She chose scarlet for the banner.",
+      "ja": "彼女は旗に鮮紅色を選びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06308",
+      "headword": "scent",
+      "senseId": "VDO-261115-B2N-00156",
+      "id": "VDO-261115-B2N-00156-e01",
+      "en": "The flowers gave off a sweet scent.",
+      "ja": "花は甘い香りを放ちました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06308",
+      "headword": "scent",
+      "senseId": "VDO-261115-B2N-00156",
+      "id": "VDO-261115-B2N-00156-e02",
+      "en": "The dog followed the scent.",
+      "ja": "犬はにおいの跡を追いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06309",
+      "headword": "scheduled",
+      "senseId": "VDO-261115-B2N-00157",
+      "id": "VDO-261115-B2N-00157-e01",
+      "en": "The scheduled departure is at noon.",
+      "ja": "予定の出発時刻は正午です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06309",
+      "headword": "scheduled",
+      "senseId": "VDO-261115-B2N-00157",
+      "id": "VDO-261115-B2N-00157-e02",
+      "en": "We arrived before the scheduled meeting.",
+      "ja": "予定の会合より前に着きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06310",
+      "headword": "scheme",
+      "senseId": "VDO-261115-B2N-00158",
+      "id": "VDO-261115-B2N-00158-e01",
+      "en": "The town introduced a recycling scheme.",
+      "ja": "町はリサイクル制度を導入しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06310",
+      "headword": "scheme",
+      "senseId": "VDO-261115-B2N-00158",
+      "id": "VDO-261115-B2N-00158-e02",
+      "en": "The scheme supports local artists.",
+      "ja": "制度は地域の芸術家を支援します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06311",
+      "headword": "scholasticism",
+      "senseId": "VDO-261115-B2N-00159",
+      "id": "VDO-261115-B2N-00159-e01",
+      "en": "The course introduces scholasticism.",
+      "ja": "講座はスコラ哲学を紹介します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06311",
+      "headword": "scholasticism",
+      "senseId": "VDO-261115-B2N-00159",
+      "id": "VDO-261115-B2N-00159-e02",
+      "en": "The essay compares scholasticism with later thought.",
+      "ja": "小論文はスコラ哲学と後世の思想を比べます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06312",
+      "headword": "schoolgirl",
+      "senseId": "VDO-261115-B2N-00160",
+      "id": "VDO-261115-B2N-00160-e01",
+      "en": "The schoolgirl wrote about her village.",
+      "ja": "女子生徒は村について書きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06312",
+      "headword": "schoolgirl",
+      "senseId": "VDO-261115-B2N-00160",
+      "id": "VDO-261115-B2N-00160-e02",
+      "en": "The photo shows two schoolgirls walking home.",
+      "ja": "写真は帰宅する女子生徒二人を写します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06313",
+      "headword": "scientifically",
+      "senseId": "VDO-261115-B2N-00161",
+      "id": "VDO-261115-B2N-00161-e01",
+      "en": "The claim has not been tested scientifically.",
+      "ja": "主張は科学的に検証されていません。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06313",
+      "headword": "scientifically",
+      "senseId": "VDO-261115-B2N-00161",
+      "id": "VDO-261115-B2N-00161-e02",
+      "en": "We examined the results scientifically.",
+      "ja": "結果を科学的に検討しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06314",
+      "headword": "scooter",
+      "senseId": "VDO-261115-B2N-00162",
+      "id": "VDO-261115-B2N-00162-e01",
+      "en": "She rode a scooter to the park.",
+      "ja": "彼女はスクーターで公園へ行きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06314",
+      "headword": "scooter",
+      "senseId": "VDO-261115-B2N-00162",
+      "id": "VDO-261115-B2N-00162-e02",
+      "en": "The scooter was parked beside the gate.",
+      "ja": "スクーターは門のそばに止めてありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06315",
+      "headword": "scramble",
+      "senseId": "VDO-261115-B2N-00163",
+      "id": "VDO-261115-B2N-00163-e01",
+      "en": "We scrambled up the rocky slope.",
+      "ja": "岩だらけの斜面をよじ登りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06315",
+      "headword": "scramble",
+      "senseId": "VDO-261115-B2N-00163",
+      "id": "VDO-261115-B2N-00163-e02",
+      "en": "They scrambled to finish before noon.",
+      "ja": "正午までに終えようと大急ぎでした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06316",
+      "headword": "scribble",
+      "senseId": "VDO-261115-B2N-00164",
+      "id": "VDO-261115-B2N-00164-e01",
+      "en": "The note was an unreadable scribble.",
+      "ja": "メモは読めない走り書きでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06316",
+      "headword": "scribble",
+      "senseId": "VDO-261115-B2N-00164",
+      "id": "VDO-261115-B2N-00164-e02",
+      "en": "I found a scribble in the margin.",
+      "ja": "余白に走り書きがありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06317",
+      "headword": "scrooge",
+      "senseId": "VDO-261115-B2N-00165",
+      "id": "VDO-261115-B2N-00165-e01",
+      "en": "Don't be a scrooge about sharing supplies.",
+      "ja": "備品を分けるのにけちにならないでください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06317",
+      "headword": "scrooge",
+      "senseId": "VDO-261115-B2N-00165",
+      "id": "VDO-261115-B2N-00165-e02",
+      "en": "The story shows a scrooge learning generosity.",
+      "ja": "物語はけちな人が寛大さを学ぶ様子を描きます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06318",
+      "headword": "scuba",
+      "senseId": "VDO-261115-B2N-00166",
+      "id": "VDO-261115-B2N-00166-e01",
+      "en": "The diver checked the scuba equipment.",
+      "ja": "潜水士はスキューバ装置を確認しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06318",
+      "headword": "scuba",
+      "senseId": "VDO-261115-B2N-00166",
+      "id": "VDO-261115-B2N-00166-e02",
+      "en": "The display explains the development of scuba.",
+      "ja": "展示はスキューバ装置の発達を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06319",
+      "headword": "scythe",
+      "senseId": "VDO-261115-B2N-00167",
+      "id": "VDO-261115-B2N-00167-e01",
+      "en": "The farmer cut grass with a scythe.",
+      "ja": "農家の人は大鎌で草を刈りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06319",
+      "headword": "scythe",
+      "senseId": "VDO-261115-B2N-00167",
+      "id": "VDO-261115-B2N-00167-e02",
+      "en": "An old scythe hung in the shed.",
+      "ja": "古い大鎌が物置に掛かっていました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06320",
+      "headword": "seal",
+      "senseId": "VDO-261115-B2N-00168",
+      "id": "VDO-261115-B2N-00168-e01",
+      "en": "Check the seal on the container.",
+      "ja": "容器の密閉部を確認してください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06320",
+      "headword": "seal",
+      "senseId": "VDO-261115-B2N-00168",
+      "id": "VDO-261115-B2N-00168-e02",
+      "en": "The envelope had a wax seal.",
+      "ja": "封筒には封ろうがありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06321",
+      "headword": "seasonal",
+      "senseId": "VDO-261115-B2N-00169",
+      "id": "VDO-261115-B2N-00169-e01",
+      "en": "The café uses seasonal fruit.",
+      "ja": "カフェは旬の果物を使います。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06321",
+      "headword": "seasonal",
+      "senseId": "VDO-261115-B2N-00169",
+      "id": "VDO-261115-B2N-00169-e02",
+      "en": "The report explains seasonal changes.",
+      "ja": "報告は季節変化を説明します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06322",
+      "headword": "second person",
+      "senseId": "VDO-261115-B2N-00170",
+      "id": "VDO-261115-B2N-00170-e01",
+      "en": "You is a second person pronoun.",
+      "ja": "youは二人称の代名詞です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06322",
+      "headword": "second person",
+      "senseId": "VDO-261115-B2N-00170",
+      "id": "VDO-261115-B2N-00170-e02",
+      "en": "The instructions use the second person.",
+      "ja": "指示文は二人称を使っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06323",
+      "headword": "secondary",
+      "senseId": "VDO-261115-B2N-00171",
+      "id": "VDO-261115-B2N-00171-e01",
+      "en": "Cost was a secondary concern.",
+      "ja": "費用は二次的な懸念でした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06323",
+      "headword": "secondary",
+      "senseId": "VDO-261115-B2N-00171",
+      "id": "VDO-261115-B2N-00171-e02",
+      "en": "She teaches at a secondary school.",
+      "ja": "彼女は中等学校で教えています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06324",
+      "headword": "secondly",
+      "senseId": "VDO-261115-B2N-00172",
+      "id": "VDO-261115-B2N-00172-e01",
+      "en": "Secondly, consider the audience.",
+      "ja": "第二に聞き手を考えてください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06324",
+      "headword": "secondly",
+      "senseId": "VDO-261115-B2N-00172",
+      "id": "VDO-261115-B2N-00172-e02",
+      "en": "Secondly, we need a clear schedule.",
+      "ja": "第二に明確な予定が必要です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06326",
+      "headword": "seesaw",
+      "senseId": "VDO-261115-B2N-00173",
+      "id": "VDO-261115-B2N-00173-e01",
+      "en": "The children played on a seesaw.",
+      "ja": "子どもたちはシーソーで遊びました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06326",
+      "headword": "seesaw",
+      "senseId": "VDO-261115-B2N-00173",
+      "id": "VDO-261115-B2N-00173-e02",
+      "en": "The seesaw stood beside the slide.",
+      "ja": "シーソーは滑り台の隣でした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06327",
+      "headword": "segment",
+      "senseId": "VDO-261115-B2N-00174",
+      "id": "VDO-261115-B2N-00174-e01",
+      "en": "The film has three segments.",
+      "ja": "映画は三つの部分から成ります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06327",
+      "headword": "segment",
+      "senseId": "VDO-261115-B2N-00174",
+      "id": "VDO-261115-B2N-00174-e02",
+      "en": "The final segment introduces local food.",
+      "ja": "最後の部分は郷土料理を紹介します。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06328",
+      "headword": "seldom",
+      "senseId": "VDO-261115-B2N-00175",
+      "id": "VDO-261115-B2N-00175-e01",
+      "en": "We seldom visit in winter.",
+      "ja": "冬はめったに訪れません。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06328",
+      "headword": "seldom",
+      "senseId": "VDO-261115-B2N-00175",
+      "id": "VDO-261115-B2N-00175-e02",
+      "en": "She seldom misses a meeting.",
+      "ja": "彼女は会合をめったに欠席しません。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06329",
+      "headword": "self-confidence",
+      "senseId": "VDO-261115-B2N-00176",
+      "id": "VDO-261115-B2N-00176-e01",
+      "en": "The exchange built her self-confidence.",
+      "ja": "交流は彼女の自信を育てました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06329",
+      "headword": "self-confidence",
+      "senseId": "VDO-261115-B2N-00176",
+      "id": "VDO-261115-B2N-00176-e02",
+      "en": "Practice increased our self-confidence.",
+      "ja": "練習で自信が増しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06330",
+      "headword": "self-confident",
+      "senseId": "VDO-261115-B2N-00177",
+      "id": "VDO-261115-B2N-00177-e01",
+      "en": "She sounded self-confident during the talk.",
+      "ja": "講演中、彼女は自信があるようでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06330",
+      "headword": "self-confident",
+      "senseId": "VDO-261115-B2N-00177",
+      "id": "VDO-261115-B2N-00177-e02",
+      "en": "The self-confident student welcomed questions.",
+      "ja": "自信のある生徒は質問を歓迎しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06331",
+      "headword": "selfless",
+      "senseId": "VDO-261115-B2N-00178",
+      "id": "VDO-261115-B2N-00178-e01",
+      "en": "Her selfless help inspired the group.",
+      "ja": "献身的な助けにグループは励まされました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06331",
+      "headword": "selfless",
+      "senseId": "VDO-261115-B2N-00178",
+      "id": "VDO-261115-B2N-00178-e02",
+      "en": "The story celebrates a selfless act.",
+      "ja": "物語は利他的な行為をたたえます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06332",
+      "headword": "seller",
+      "senseId": "VDO-261115-B2N-00179",
+      "id": "VDO-261115-B2N-00179-e01",
+      "en": "The seller described the camera's condition.",
+      "ja": "売り手はカメラの状態を説明しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06332",
+      "headword": "seller",
+      "senseId": "VDO-261115-B2N-00179",
+      "id": "VDO-261115-B2N-00179-e02",
+      "en": "We contacted the seller before paying.",
+      "ja": "支払い前に売り手に連絡しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06333",
+      "headword": "semi-final",
+      "senseId": "VDO-261115-B2N-00180",
+      "id": "VDO-261115-B2N-00180-e01",
+      "en": "The team reached the semi-final.",
+      "ja": "チームは準決勝に進みました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06333",
+      "headword": "semi-final",
+      "senseId": "VDO-261115-B2N-00180",
+      "id": "VDO-261115-B2N-00180-e02",
+      "en": "We watched both semi-finals.",
+      "ja": "準決勝を二試合とも見ました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06334",
+      "headword": "semicolon",
+      "senseId": "VDO-261115-B2N-00181",
+      "id": "VDO-261115-B2N-00181-e01",
+      "en": "A semicolon connects the two clauses.",
+      "ja": "セミコロンが二つの節を結びます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06334",
+      "headword": "semicolon",
+      "senseId": "VDO-261115-B2N-00181",
+      "id": "VDO-261115-B2N-00181-e02",
+      "en": "She replaced the comma with a semicolon.",
+      "ja": "彼女はコンマをセミコロンに替えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06335",
+      "headword": "seminar",
+      "senseId": "VDO-261115-B2N-00182",
+      "id": "VDO-261115-B2N-00182-e01",
+      "en": "The seminar focused on language learning.",
+      "ja": "講習会は言語学習を扱いました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06335",
+      "headword": "seminar",
+      "senseId": "VDO-261115-B2N-00182",
+      "id": "VDO-261115-B2N-00182-e02",
+      "en": "Each seminar includes group discussion.",
+      "ja": "各ゼミにはグループ討論があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06336",
+      "headword": "senator",
+      "senseId": "VDO-261115-B2N-00183",
+      "id": "VDO-261115-B2N-00183-e01",
+      "en": "The senator spoke about education.",
+      "ja": "上院議員は教育について話しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06336",
+      "headword": "senator",
+      "senseId": "VDO-261115-B2N-00183",
+      "id": "VDO-261115-B2N-00183-e02",
+      "en": "The class read a senator's speech.",
+      "ja": "クラスは上院議員の演説を読みました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06337",
+      "headword": "sensible",
+      "senseId": "VDO-261115-B2N-00184",
+      "id": "VDO-261115-B2N-00184-e01",
+      "en": "That is a sensible suggestion.",
+      "ja": "それは理にかなう提案です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06337",
+      "headword": "sensible",
+      "senseId": "VDO-261115-B2N-00184",
+      "id": "VDO-261115-B2N-00184-e02",
+      "en": "Wear sensible shoes for the walk.",
+      "ja": "歩きやすい実用的な靴を履いてください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06338",
+      "headword": "sensitive",
+      "senseId": "VDO-261115-B2N-00185",
+      "id": "VDO-261115-B2N-00185-e01",
+      "en": "The microphone is very sensitive.",
+      "ja": "マイクは非常に敏感です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06338",
+      "headword": "sensitive",
+      "senseId": "VDO-261115-B2N-00185",
+      "id": "VDO-261115-B2N-00185-e02",
+      "en": "We discussed a sensitive topic respectfully.",
+      "ja": "慎重さが必要な話題を敬意を持って話しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06339",
+      "headword": "separately",
+      "senseId": "VDO-261115-B2N-00186",
+      "id": "VDO-261115-B2N-00186-e01",
+      "en": "Submit the two files separately.",
+      "ja": "二つのファイルは別々に提出してください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06339",
+      "headword": "separately",
+      "senseId": "VDO-261115-B2N-00186",
+      "id": "VDO-261115-B2N-00186-e02",
+      "en": "Each part is sold separately.",
+      "ja": "各部品は別売りです。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06340",
+      "headword": "serene",
+      "senseId": "VDO-261115-B2N-00187",
+      "id": "VDO-261115-B2N-00187-e01",
+      "en": "The lake looked serene at dawn.",
+      "ja": "夜明けの湖は穏やかでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06340",
+      "headword": "serene",
+      "senseId": "VDO-261115-B2N-00187",
+      "id": "VDO-261115-B2N-00187-e02",
+      "en": "Her serene manner reassured us.",
+      "ja": "穏やかな態度で安心しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06341",
+      "headword": "serial",
+      "senseId": "VDO-261115-B2N-00188",
+      "id": "VDO-261115-B2N-00188-e01",
+      "en": "Each device has a serial number.",
+      "ja": "各機器には製造番号があります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06341",
+      "headword": "serial",
+      "senseId": "VDO-261115-B2N-00188",
+      "id": "VDO-261115-B2N-00188-e02",
+      "en": "The magazine published a serial story.",
+      "ja": "雑誌は連載小説を掲載しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06342",
+      "headword": "servant",
+      "senseId": "VDO-261115-B2N-00189",
+      "id": "VDO-261115-B2N-00189-e01",
+      "en": "The historical novel follows a household servant.",
+      "ja": "歴史小説は家の使用人を描きます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06342",
+      "headword": "servant",
+      "senseId": "VDO-261115-B2N-00189",
+      "id": "VDO-261115-B2N-00189-e02",
+      "en": "The servant carried a tray into the room.",
+      "ja": "使用人は盆を部屋に運びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06343",
+      "headword": "setback",
+      "senseId": "VDO-261115-B2N-00190",
+      "id": "VDO-261115-B2N-00190-e01",
+      "en": "The lost recording was a setback.",
+      "ja": "録音の紛失は痛手でした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06343",
+      "headword": "setback",
+      "senseId": "VDO-261115-B2N-00190",
+      "id": "VDO-261115-B2N-00190-e02",
+      "en": "The team recovered from the setback.",
+      "ja": "チームは困難から立ち直りました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06344",
+      "headword": "sexism",
+      "senseId": "VDO-261115-B2N-00191",
+      "id": "VDO-261115-B2N-00191-e01",
+      "en": "The article examines sexism in advertising.",
+      "ja": "記事は広告の性差別を検討します。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06344",
+      "headword": "sexism",
+      "senseId": "VDO-261115-B2N-00191",
+      "id": "VDO-261115-B2N-00191-e02",
+      "en": "Students discussed how to challenge sexism.",
+      "ja": "生徒たちは性差別にどう向き合うか話しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06345",
+      "headword": "sexual",
+      "senseId": "VDO-261115-B2N-00192",
+      "id": "VDO-261115-B2N-00192-e01",
+      "en": "The policy prohibits sexual harassment.",
+      "ja": "規定はセクハラを禁じています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06345",
+      "headword": "sexual",
+      "senseId": "VDO-261115-B2N-00192",
+      "id": "VDO-261115-B2N-00192-e02",
+      "en": "The course includes sexual health education.",
+      "ja": "講座には性の健康教育があります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06346",
+      "headword": "sexy",
+      "senseId": "VDO-261115-B2N-00193",
+      "id": "VDO-261115-B2N-00193-e01",
+      "en": "The review used sexy to describe the costume.",
+      "ja": "評論は衣装をsexyと表現しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06346",
+      "headword": "sexy",
+      "senseId": "VDO-261115-B2N-00193",
+      "id": "VDO-261115-B2N-00193-e02",
+      "en": "The editor removed sexy from the school advertisement.",
+      "ja": "編集者は学校広告からsexyを削除しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06347",
+      "headword": "shabby",
+      "senseId": "VDO-261115-B2N-00194",
+      "id": "VDO-261115-B2N-00194-e01",
+      "en": "The old chair looked shabby.",
+      "ja": "古い椅子はくたびれて見えました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06347",
+      "headword": "shabby",
+      "senseId": "VDO-261115-B2N-00194",
+      "id": "VDO-261115-B2N-00194-e02",
+      "en": "They repaired the shabby entrance.",
+      "ja": "古びた入口を修理しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06348",
+      "headword": "shaken",
+      "senseId": "VDO-261115-B2N-00195",
+      "id": "VDO-261115-B2N-00195-e01",
+      "en": "She was shaken by the incident.",
+      "ja": "彼女は事件に動揺していました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06348",
+      "headword": "shaken",
+      "senseId": "VDO-261115-B2N-00195",
+      "id": "VDO-261115-B2N-00195-e02",
+      "en": "He sounded shaken during the call.",
+      "ja": "電話で彼は動揺しているようでした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06349",
+      "headword": "Shakespearean",
+      "senseId": "VDO-261115-B2N-00196",
+      "id": "VDO-261115-B2N-00196-e01",
+      "en": "The class performed a Shakespearean scene.",
+      "ja": "クラスはシェイクスピア劇の一場面を演じました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06349",
+      "headword": "Shakespearean",
+      "senseId": "VDO-261115-B2N-00196",
+      "id": "VDO-261115-B2N-00196-e02",
+      "en": "We studied Shakespearean language.",
+      "ja": "シェイクスピアの言葉を学びました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06350",
+      "headword": "shaky",
+      "senseId": "VDO-261115-B2N-00197",
+      "id": "VDO-261115-B2N-00197-e01",
+      "en": "The table has a shaky leg.",
+      "ja": "テーブルの脚はぐらつきます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06350",
+      "headword": "shaky",
+      "senseId": "VDO-261115-B2N-00197",
+      "id": "VDO-261115-B2N-00197-e02",
+      "en": "Her first explanation was shaky.",
+      "ja": "最初の説明は確かでありませんでした。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06351",
+      "headword": "sharply",
+      "senseId": "VDO-261115-B2N-00198",
+      "id": "VDO-261115-B2N-00198-e01",
+      "en": "Prices rose sharply.",
+      "ja": "価格は急上昇しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06351",
+      "headword": "sharply",
+      "senseId": "VDO-261115-B2N-00198",
+      "id": "VDO-261115-B2N-00198-e02",
+      "en": "The path turns sharply left.",
+      "ja": "道は急に左へ曲がります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06352",
+      "headword": "shatter",
+      "senseId": "VDO-261115-B2N-00199",
+      "id": "VDO-261115-B2N-00199-e01",
+      "en": "The glass shattered on the floor.",
+      "ja": "ガラスは床で粉々になりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06352",
+      "headword": "shatter",
+      "senseId": "VDO-261115-B2N-00199",
+      "id": "VDO-261115-B2N-00199-e02",
+      "en": "The news shattered their hopes.",
+      "ja": "知らせは希望を打ち砕きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-06353",
+      "headword": "shed",
+      "senseId": "VDO-261115-B2N-00200",
+      "id": "VDO-261115-B2N-00200-e01",
+      "en": "The tree sheds leaves in autumn.",
+      "ja": "木は秋に葉を落とします。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-06353",
+      "headword": "shed",
+      "senseId": "VDO-261115-B2N-00200",
+      "id": "VDO-261115-B2N-00200-e02",
+      "en": "The snake shed its skin.",
+      "ja": "ヘビは脱皮しました。",
+      "context": "alternate"
+    }
+  ]
+}
