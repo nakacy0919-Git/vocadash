@@ -458,7 +458,7 @@ export default function VocaDash() {
     </aside>
     <main className="vd-main">
       <header className="vd-topbar">
-        <div className="vd-mobile-brand"><Brand/></div>
+        <div className="vd-mobile-brand"><Brand/></div>{!dashboardOpen&&<button className="vd-return-home" onClick={()=>{resetCard();setAutoplay(false);setDashboardOpen(true);}}>⌂ ホーム</button>}
         <div className="vd-breadcrumb"><span>LEARNING SPACE</span><b>/</b><strong>{course.label}</strong></div>
 
       </header>
@@ -470,7 +470,7 @@ export default function VocaDash() {
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
-            onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
+            onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
         ) : (
           <>
@@ -516,8 +516,8 @@ export default function VocaDash() {
                   </div>
                 ) : (
                   <>
-                    <div className="vd-quiz-instruction">空欄に入る英単語を選んでください</div>
-                    <QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
+                    <div className="vd-quiz-instruction">{categoryCourse(course.id)?'日本語の意味に合う語を選んでください':'空欄に入る英単語を選んでください'}</div>
+                    {categoryCourse(course.id)&&<div className="vd-quiz-instruction" style={{fontSize:19,color:"#344b74",marginTop:8}}>{current.meaning}</div>}<QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
                   </>
                 )}
                 <div className={mode === 'listening' ? 'vd-listening-grid' : 'vd-choice-grid'}>
