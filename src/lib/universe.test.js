@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads,links:26096+added.links+actionMegaCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -204,6 +204,19 @@ test('advanced action clusters retain distinct related terms',()=>{
   assert.ok(e.meaning&&lookupUniverse(word));
   assert.equal(e.links.length,5);
   assert.equal(new Set(e.links.map(l=>l.word)).size,5);
+  assert.ok(e.links.every(l=>l.word!==word&&l.meaning&&l.type==='related'));
+ }
+});
+
+import adjectiveMega from '../data/universe-adjective-mega.js';
+test('descriptive clusters contain four distinct contextual relations',()=>{
+ const stats=adjectiveMegaCoverage();
+ assert.equal(stats.candidates,1079);
+ assert.equal(stats.links,4*stats.heads);
+ for(const [word,e] of Object.entries(adjectiveMega)){
+  assert.ok(e.meaning&&lookupUniverse(word));
+  assert.equal(e.links.length,4);
+  assert.equal(new Set(e.links.map(l=>l.word)).size,4);
   assert.ok(e.links.every(l=>l.word!==word&&l.meaning&&l.type==='related'));
  }
 });
