@@ -1,5 +1,4 @@
-// Original editorial contextual synonym groups. Membership denotes approximate equivalence in the specified Japanese sense, never transitive synonymy across groups.
-// Each group is explicitly authored; some members are paraphrases rather than single words.
+// Original editorial contextual near-synonym groups. Group membership is limited to the Japanese sense, not general interchangeability or transitive synonymy. Some members are paraphrases.
 export default [
   [
     "弱まる・勢いが衰える",
@@ -867,9 +866,7 @@ export default [
     [
       "refute",
       "disprove",
-      "rebut",
       "debunk",
-      "contradict",
       "show to be false"
     ]
   ],
@@ -923,7 +920,6 @@ export default [
       "disavow",
       "disclaim",
       "repudiate",
-      "refute the allegation of",
       "reject the claim of"
     ]
   ],
@@ -1037,8 +1033,7 @@ export default [
       "win over",
       "bring around",
       "talk into",
-      "sway",
-      "induce"
+      "sway"
     ]
   ],
   [
@@ -1060,7 +1055,6 @@ export default [
       "command",
       "direct",
       "instruct",
-      "tell to",
       "issue an order to"
     ]
   ],
@@ -1129,7 +1123,6 @@ export default [
     [
       "agree",
       "concur",
-      "assent",
       "see eye to eye",
       "be of one mind",
       "share the view"
@@ -1485,8 +1478,7 @@ export default [
       "supply",
       "furnish",
       "offer",
-      "make available",
-      "equip with"
+      "make available"
     ]
   ],
   [
@@ -1612,8 +1604,7 @@ export default [
       "sack",
       "discharge",
       "terminate employment",
-      "let go",
-      "lay off"
+      "let go"
     ]
   ],
   [
@@ -1656,7 +1647,7 @@ export default [
       "rule",
       "administer",
       "exercise authority over",
-      "be in power over"
+      "rule over"
     ]
   ],
   [
@@ -1932,7 +1923,6 @@ export default [
       "curve",
       "flex",
       "bow",
-      "warp",
       "make curved"
     ]
   ],
@@ -1940,7 +1930,6 @@ export default [
     "壊す・破損させる",
     [
       "break",
-      "damage",
       "smash",
       "shatter",
       "wreck",
@@ -2053,8 +2042,7 @@ export default [
       "doze",
       "nap",
       "snooze",
-      "get some sleep",
-      "take a rest"
+      "get some sleep"
     ]
   ],
   [
@@ -2074,7 +2062,6 @@ export default [
       "wander",
       "roam",
       "ramble",
-      "stroll about",
       "rove",
       "meander",
       "walk aimlessly"
@@ -2096,7 +2083,6 @@ export default [
     [
       "hurry",
       "rush",
-      "haste",
       "make haste",
       "be quick",
       "speed along"
@@ -2130,7 +2116,6 @@ export default [
       "listen",
       "pay attention to",
       "hear out",
-      "give an ear to",
       "listen attentively to"
     ]
   ],
@@ -2142,8 +2127,7 @@ export default [
       "scream",
       "cry out",
       "bellow",
-      "holler",
-      "raise one's voice"
+      "holler"
     ]
   ],
   [
@@ -2162,7 +2146,6 @@ export default [
     [
       "mutter",
       "mumble",
-      "grumble",
       "murmur",
       "speak indistinctly",
       "talk under one's breath"
@@ -2367,7 +2350,7 @@ export default [
       "refine",
       "polish",
       "perfect",
-      "fine tune",
+      "fine-tune",
       "hone",
       "improve the details of"
     ]
@@ -2400,7 +2383,6 @@ export default [
       "advance",
       "foster",
       "expedite",
-      "aid",
       "help along"
     ]
   ],
@@ -2410,7 +2392,6 @@ export default [
       "stimulate",
       "spur",
       "galvanize",
-      "activate",
       "energize",
       "invigorate",
       "stir up"
@@ -2530,7 +2511,6 @@ export default [
     [
       "distract",
       "divert attention",
-      "deflect attention",
       "draw attention away",
       "break concentration"
     ]
@@ -2562,7 +2542,6 @@ export default [
       "forget",
       "fail to remember",
       "lose recollection of",
-      "let slip one's mind",
       "not recall"
     ]
   ],
@@ -2618,7 +2597,7 @@ export default [
       "gorgeous",
       "pretty",
       "stunning",
-      "good looking"
+      "good-looking"
     ]
   ],
   [
@@ -2705,7 +2684,7 @@ export default [
       "lengthy",
       "prolonged",
       "extended",
-      "long lasting",
+      "long-lasting",
       "drawn out",
       "of long duration"
     ]
@@ -2717,7 +2696,7 @@ export default [
       "short",
       "fleeting",
       "transient",
-      "short lived",
+      "short-lived",
       "momentary"
     ]
   ],
@@ -2729,7 +2708,7 @@ export default [
       "rapid",
       "swift",
       "speedy",
-      "high speed"
+      "high-speed"
     ]
   ],
   [
@@ -2740,7 +2719,7 @@ export default [
       "leisurely",
       "unhurried",
       "laggard",
-      "low speed"
+      "low-speed"
     ]
   ],
   [
@@ -2795,8 +2774,8 @@ export default [
       "robust",
       "tough",
       "resilient",
-      "long lasting",
-      "hard wearing"
+      "long-lasting",
+      "hard-wearing"
     ]
   ],
   [
@@ -2839,7 +2818,6 @@ export default [
       "sleek",
       "even",
       "polished",
-      "unrough",
       "free of bumps"
     ]
   ],
@@ -2904,9 +2882,7 @@ export default [
     [
       "transparent",
       "clear",
-      "see through",
-      "diaphanous",
-      "translucent",
+      "see-through",
       "light transmitting"
     ]
   ],
@@ -2915,7 +2891,6 @@ export default [
     [
       "opaque",
       "nontransparent",
-      "impenetrable to light",
       "not see through"
     ]
   ],
@@ -3053,8 +3028,7 @@ export default [
       "hushed",
       "silent",
       "still",
-      "noiseless",
-      "peaceful"
+      "noiseless"
     ]
   ],
   [
@@ -3107,8 +3081,7 @@ export default [
       "correct",
       "exact",
       "precise",
-      "error free",
-      "faultless"
+      "error-free"
     ]
   ],
   [
@@ -3129,8 +3102,7 @@ export default [
       "factual",
       "veridical",
       "accurate",
-      "correct",
-      "truthful"
+      "correct"
     ]
   ],
   [
@@ -3141,7 +3113,6 @@ export default [
       "spurious",
       "counterfeit",
       "phony",
-      "sham",
       "inauthentic"
     ]
   ],
@@ -3164,8 +3135,7 @@ export default [
       "evident",
       "plain",
       "manifest",
-      "patent",
-      "self evident"
+      "self-evident"
     ]
   ],
   [
@@ -3187,7 +3157,7 @@ export default [
       "unambiguous",
       "definite",
       "unequivocal",
-      "well defined"
+      "well-defined"
     ]
   ],
   [
@@ -3264,7 +3234,7 @@ export default [
       "voluntary",
       "discretionary",
       "elective",
-      "nonmandatory",
+      "non-mandatory",
       "not compulsory"
     ]
   ],
@@ -3318,8 +3288,8 @@ export default [
       "efficient",
       "economical",
       "streamlined",
-      "resource efficient",
-      "well optimized"
+      "resource-efficient",
+      "well-optimized"
     ]
   ],
   [
@@ -3329,8 +3299,7 @@ export default [
       "fruitless",
       "unproductive",
       "pointless",
-      "ineffectual",
-      "in vain"
+      "ineffectual"
     ]
   ],
   [
@@ -3418,7 +3387,7 @@ export default [
       "drowsy",
       "dozy",
       "somnolent",
-      "heavy eyed",
+      "heavy-eyed",
       "ready to doze"
     ]
   ],
@@ -3555,18 +3524,8 @@ export default [
       "embarrassed",
       "abashed",
       "flustered",
-      "self conscious",
-      "mortified",
-      "awkward"
-    ]
-  ],
-  [
-    "誇りに思う・自負する",
-    [
-      "proud",
-      "pleased with oneself",
-      "take pride in",
-      "feel proud of"
+      "self-conscious",
+      "mortified"
     ]
   ],
   [
@@ -3588,7 +3547,7 @@ export default [
       "tedious",
       "monotonous",
       "uninteresting",
-      "mind numbing",
+      "mind-numbing",
       "wearisome"
     ]
   ],
@@ -3624,7 +3583,7 @@ export default [
       "caring",
       "benevolent",
       "compassionate",
-      "good hearted"
+      "good-hearted"
     ]
   ],
   [
@@ -3646,7 +3605,7 @@ export default [
       "bountiful",
       "openhanded",
       "magnanimous",
-      "big hearted"
+      "big-hearted"
     ]
   ],
   [
@@ -3714,7 +3673,7 @@ export default [
       "bright",
       "astute",
       "sharp",
-      "quick witted"
+      "quick-witted"
     ]
   ],
   [
@@ -3725,7 +3684,7 @@ export default [
       "unwise",
       "imprudent",
       "senseless",
-      "ill advised"
+      "ill-advised"
     ]
   ],
   [
@@ -3736,7 +3695,6 @@ export default [
       "prudent",
       "circumspect",
       "wary",
-      "discreet",
       "guarded"
     ]
   ],
@@ -3769,7 +3727,7 @@ export default [
       "idle",
       "indolent",
       "slothful",
-      "work shy",
+      "work-shy",
       "averse to work"
     ]
   ],
@@ -3790,7 +3748,7 @@ export default [
       "ambitious",
       "aspiring",
       "driven",
-      "goal oriented",
+      "goal-oriented",
       "motivated",
       "enterprising"
     ]
@@ -3823,7 +3781,7 @@ export default [
       "patient",
       "forbearing",
       "tolerant",
-      "long suffering",
+      "long-suffering",
       "uncomplaining",
       "able to wait calmly"
     ]
@@ -3844,7 +3802,7 @@ export default [
       "humble",
       "unassuming",
       "unpretentious",
-      "self effacing"
+      "self-effacing"
     ]
   ],
   [
@@ -3856,7 +3814,7 @@ export default [
       "supercilious",
       "overbearing",
       "proud",
-      "high handed"
+      "high-handed"
     ]
   ],
   [
@@ -3864,7 +3822,7 @@ export default [
     [
       "polite",
       "courteous",
-      "well mannered",
+      "well-mannered",
       "civil",
       "respectful",
       "considerate"
@@ -3877,7 +3835,7 @@ export default [
       "impolite",
       "discourteous",
       "uncivil",
-      "ill mannered",
+      "ill-mannered",
       "disrespectful"
     ]
   ],
@@ -3964,7 +3922,7 @@ export default [
       "wealthy",
       "rich",
       "affluent",
-      "well off",
+      "well-off",
       "prosperous",
       "moneyed"
     ]
@@ -3985,10 +3943,10 @@ export default [
     [
       "cheap",
       "inexpensive",
-      "low priced",
+      "low-priced",
       "affordable",
       "economical",
-      "budget friendly"
+      "budget-friendly"
     ]
   ],
   [
@@ -3997,7 +3955,7 @@ export default [
       "expensive",
       "costly",
       "pricey",
-      "high priced",
+      "high-priced",
       "dear",
       "prohibitive"
     ]
@@ -4061,7 +4019,7 @@ export default [
     "人気のある・多くの人に好まれる",
     [
       "popular",
-      "well liked",
+      "well-liked",
       "in demand",
       "fashionable",
       "favored",
@@ -4075,7 +4033,7 @@ export default [
       "renowned",
       "celebrated",
       "noted",
-      "well known",
+      "well-known",
       "illustrious",
       "prominent"
     ]
@@ -4107,8 +4065,8 @@ export default [
     [
       "old",
       "aged",
-      "age old",
-      "long established",
+      "age-old",
+      "long-established",
       "of long standing"
     ]
   ],
@@ -4119,7 +4077,7 @@ export default [
       "obsolete",
       "antiquated",
       "outmoded",
-      "old fashioned",
+      "old-fashioned",
       "behind the times"
     ]
   ],
@@ -4130,7 +4088,7 @@ export default [
       "contemporary",
       "up to date",
       "current",
-      "present day",
+      "present-day",
       "of our time"
     ]
   ],
@@ -4141,8 +4099,7 @@ export default [
       "enduring",
       "lasting",
       "perpetual",
-      "everlasting",
-      "immutable"
+      "everlasting"
     ]
   ],
   [
@@ -4152,7 +4109,7 @@ export default [
       "transient",
       "provisional",
       "interim",
-      "short term",
+      "short-term",
       "impermanent"
     ]
   ],
@@ -4172,8 +4129,6 @@ export default [
     [
       "infrequent",
       "rare",
-      "sporadic",
-      "occasional",
       "seldom occurring",
       "uncommon"
     ]
@@ -4183,7 +4138,6 @@ export default [
     [
       "immediate",
       "instant",
-      "prompt",
       "instantaneous",
       "without delay",
       "at once"
@@ -4332,10 +4286,9 @@ export default [
     "人工の・人が作った",
     [
       "artificial",
-      "man made",
-      "synthetic",
+      "man-made",
       "manufactured",
-      "human made",
+      "human-made",
       "not natural"
     ]
   ],
@@ -4343,8 +4296,6 @@ export default [
     "自然の・人為的でない",
     [
       "natural",
-      "organic",
-      "unartificial",
       "occurring naturally",
       "not man made"
     ]
@@ -4354,8 +4305,8 @@ export default [
     [
       "local",
       "regional",
-      "area specific",
-      "community based",
+      "area-specific",
+      "community-based",
       "of the locality"
     ]
   ],
@@ -4364,8 +4315,6 @@ export default [
     [
       "global",
       "worldwide",
-      "international",
-      "universal",
       "world spanning",
       "across the world"
     ]
@@ -4377,7 +4326,7 @@ export default [
       "general",
       "aggregate",
       "holistic",
-      "all encompassing",
+      "all-encompassing",
       "comprehensive"
     ]
   ],
@@ -4388,7 +4337,7 @@ export default [
       "thorough",
       "exhaustive",
       "comprehensive",
-      "in depth",
+      "in-depth",
       "elaborate"
     ]
   ],
@@ -4409,7 +4358,7 @@ export default [
       "wordy",
       "verbose",
       "prolix",
-      "long winded",
+      "long-winded",
       "rambling",
       "overlong"
     ]
@@ -4442,7 +4391,6 @@ export default [
       "cause",
       "source",
       "origin",
-      "reason",
       "root cause",
       "causative factor"
     ]
@@ -4530,8 +4478,7 @@ export default [
       "proposal",
       "suggestion",
       "recommendation",
-      "proposition",
-      "put forward idea"
+      "proposition"
     ]
   ],
   [
@@ -4540,8 +4487,7 @@ export default [
       "option",
       "alternative",
       "choice",
-      "possibility",
-      "available course"
+      "possibility"
     ]
   ],
   [
@@ -4602,7 +4548,6 @@ export default [
     [
       "safety",
       "security",
-      "protection",
       "freedom from danger",
       "absence of danger"
     ]
@@ -4624,7 +4569,6 @@ export default [
       "development",
       "progress",
       "advancement",
-      "evolution",
       "improvement",
       "growth"
     ]
@@ -4721,7 +4665,7 @@ export default [
     [
       "delay",
       "lag",
-      "hold up",
+      "hold-up",
       "setback",
       "postponement",
       "deferral"
@@ -4744,7 +4688,6 @@ export default [
       "failure",
       "defeat",
       "flop",
-      "breakdown",
       "unsuccessful attempt",
       "shortfall"
     ]
@@ -4788,7 +4731,6 @@ export default [
       "competition",
       "rivalry",
       "contest",
-      "contention",
       "struggle for supremacy"
     ]
   ],
@@ -4865,8 +4807,7 @@ export default [
       "obligation",
       "responsibility",
       "commitment",
-      "requirement",
-      "onerous task"
+      "requirement"
     ]
   ],
   [
@@ -4887,8 +4828,7 @@ export default [
       "regulation",
       "requirement",
       "ordinance",
-      "stipulation",
-      "provision"
+      "stipulation"
     ]
   ],
   [
@@ -4929,7 +4869,7 @@ export default [
       "liberty",
       "independence",
       "autonomy",
-      "self determination"
+      "self-determination"
     ]
   ],
   [
@@ -4980,7 +4920,6 @@ export default [
       "details",
       "data",
       "facts",
-      "intelligence",
       "particulars"
     ]
   ],
@@ -4992,7 +4931,7 @@ export default [
       "awareness",
       "learning",
       "expertise",
-      "know how"
+      "know-how"
     ]
   ],
   [
@@ -5031,8 +4970,7 @@ export default [
       "imagination",
       "fancy",
       "visualization",
-      "mental imagery",
-      "creativity"
+      "mental imagery"
     ]
   ],
   [
@@ -5074,7 +5012,6 @@ export default [
       "doubt",
       "uncertainty",
       "suspicion",
-      "skepticism",
       "misgiving",
       "reservation"
     ]
@@ -5118,7 +5055,7 @@ export default [
       "synopsis",
       "abstract",
       "recap",
-      "précis"
+      "precis"
     ]
   ],
   [
@@ -5258,7 +5195,6 @@ export default [
       "specialist",
       "authority",
       "professional",
-      "practitioner",
       "connoisseur"
     ]
   ],
@@ -5290,8 +5226,7 @@ export default [
       "employee",
       "worker",
       "staff member",
-      "member of staff",
-      "personnel member"
+      "member of staff"
     ]
   ],
   [
@@ -5344,8 +5279,7 @@ export default [
       "earnings",
       "revenue",
       "receipts",
-      "financial inflow",
-      "proceeds"
+      "financial inflow"
     ]
   ],
   [
@@ -5373,8 +5307,6 @@ export default [
     "損失・失った金額",
     [
       "loss",
-      "deficit",
-      "shortfall",
       "negative return",
       "financial loss"
     ]
@@ -5478,7 +5410,6 @@ export default [
     "廃棄物・不要になった物",
     [
       "waste",
-      "refuse",
       "rubbish",
       "garbage",
       "trash",
@@ -5522,8 +5453,7 @@ export default [
       "recovery",
       "recuperation",
       "convalescence",
-      "restoration",
-      "rehabilitation"
+      "restoration"
     ]
   ],
   [
@@ -5670,8 +5600,8 @@ export default [
     "自信・自分の力を信じること",
     [
       "confidence",
-      "self assurance",
-      "self confidence",
+      "self-assurance",
+      "self-confidence",
       "assurance",
       "belief in oneself"
     ]
@@ -5896,7 +5826,6 @@ export default [
     [
       "voice",
       "vocal sound",
-      "utterance",
       "vocalization"
     ]
   ],
@@ -5945,8 +5874,7 @@ export default [
     [
       "heat",
       "warmth",
-      "hotness",
-      "thermal energy"
+      "hotness"
     ]
   ],
   [
@@ -6066,8 +5994,7 @@ export default [
       "ratio",
       "proportion",
       "relative share",
-      "rate",
-      "quotient"
+      "rate"
     ]
   ],
   [
@@ -6075,7 +6002,6 @@ export default [
     [
       "average",
       "mean",
-      "arithmetic mean",
       "mean value"
     ]
   ],
@@ -6083,19 +6009,15 @@ export default [
     "最大・最も大きい値",
     [
       "maximum",
-      "upper limit",
       "highest value",
-      "peak",
-      "ceiling"
+      "peak"
     ]
   ],
   [
     "最小・最も小さい値",
     [
       "minimum",
-      "lower limit",
       "lowest value",
-      "floor",
       "least amount"
     ]
   ],
@@ -6145,7 +6067,7 @@ export default [
       "custom",
       "heritage",
       "convention",
-      "time honored practice"
+      "time-honored practice"
     ]
   ],
   [
@@ -6253,7 +6175,6 @@ export default [
       "manual",
       "handbook",
       "instruction book",
-      "guidebook",
       "user guide"
     ]
   ],
@@ -6282,8 +6203,7 @@ export default [
       "photograph",
       "photo",
       "snapshot",
-      "picture",
-      "camera image"
+      "picture"
     ]
   ],
   [
@@ -6292,7 +6212,6 @@ export default [
       "election",
       "poll",
       "vote",
-      "ballot",
       "electoral contest"
     ]
   ],
@@ -6304,15 +6223,6 @@ export default [
       "agent",
       "deputy",
       "proxy"
-    ]
-  ],
-  [
-    "市民・国や地域の構成員",
-    [
-      "citizen",
-      "civic member",
-      "member of the polity",
-      "member of the community"
     ]
   ],
   [
@@ -6350,7 +6260,6 @@ export default [
     "住所・居住場所を示す情報",
     [
       "address",
-      "place of residence",
       "residential address",
       "home address"
     ]
@@ -6362,8 +6271,7 @@ export default [
       "dwelling",
       "residence",
       "abode",
-      "habitation",
-      "place of residence"
+      "habitation"
     ]
   ],
   [
@@ -6597,7 +6505,7 @@ export default [
       "affluence",
       "flourishing",
       "success",
-      "well being"
+      "well-being"
     ]
   ],
   [
@@ -6865,7 +6773,6 @@ export default [
       "normally",
       "ordinarily",
       "typically",
-      "as usual",
       "as a rule"
     ]
   ],
@@ -6916,7 +6823,6 @@ export default [
     "決してない・一度もない",
     [
       "never",
-      "not ever",
       "at no time",
       "on no occasion",
       "under no circumstances"
@@ -6963,8 +6869,7 @@ export default [
       "ultimately",
       "finally",
       "in the end",
-      "at last",
-      "over time"
+      "at last"
     ]
   ],
   [
@@ -7166,8 +7071,7 @@ export default [
       "accidentally",
       "unintentionally",
       "inadvertently",
-      "by accident",
-      "by chance"
+      "by accident"
     ]
   ],
   [
@@ -7258,10 +7162,8 @@ export default [
     "大声で・音量を上げて",
     [
       "loudly",
-      "aloud",
       "at high volume",
-      "in a loud voice",
-      "out loud"
+      "in a loud voice"
     ]
   ],
   [
@@ -7291,7 +7193,6 @@ export default [
       "honestly",
       "truthfully",
       "candidly",
-      "frankly",
       "forthrightly",
       "with candor"
     ]
@@ -7302,7 +7203,6 @@ export default [
       "sincerely",
       "genuinely",
       "earnestly",
-      "wholeheartedly",
       "in all sincerity"
     ]
   ],
@@ -7311,7 +7211,6 @@ export default [
     [
       "fairly",
       "impartially",
-      "justly",
       "equitably",
       "without bias",
       "evenhandedly"
@@ -7343,7 +7242,6 @@ export default [
       "efficiently",
       "economically",
       "without waste",
-      "resourcefully",
       "with minimal waste"
     ]
   ],
@@ -7447,17 +7345,14 @@ export default [
       "subsequently",
       "thereafter",
       "later",
-      "after that",
-      "following that"
+      "after that"
     ]
   ],
   [
     "以前に・それより前に",
     [
       "previously",
-      "beforehand",
       "earlier",
-      "formerly",
       "prior to that"
     ]
   ],
