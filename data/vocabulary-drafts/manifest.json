@@ -53,13 +53,14 @@
     "batches/original-20261114-b2-mega-05b.json",
     "batches/original-20261114-b2-mega-05c.json",
     "batches/original-20261114-b2-mega-05d.json",
-    "batches/original-20261114-b2-mega-06a.json"
+    "batches/original-20261114-b2-mega-06a.json",
+    "batches/original-20261115-c2-z-01.json"
   ],
   "totals": {
-    "distinctHeadwords": 4567,
-    "senses": 5262,
-    "examples": 10524,
-    "distinctExamples": 10524
+    "distinctHeadwords": 4622,
+    "senses": 5317,
+    "examples": 10634,
+    "distinctExamples": 10634
   },
   "quality": {
     "humanReviewed": false,
@@ -72,22 +73,17 @@
     "liveAppConnected": false
   },
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
-  "lastUpdated": "2026-11-14",
+  "lastUpdated": "2026-11-15",
   "recentWork": {
-    "source": "original B2 learner vocabulary definitions, contextual synonyms, bilingual examples",
+    "source": "Original C2 vocabulary with bilingual examples",
     "newBatches": [
-      "original-20261114-b2-mega-06a"
+      "original-20261115-c2-z-01"
     ],
-    "headwordsAdded": 190,
-    "sensesAdded": 190,
-    "translatedExamplesAdded": 380,
-    "synonymOrParaphraseCandidatesAdded": 340,
+    "headwordsAdded": 55,
+    "sensesAdded": 55,
+    "translatedExamplesAdded": 110,
     "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 48,
-    "derivedExports": [
-      "exports/examples/original-20261114-b2-mega-06a.json",
-      "exports/synonyms/original-20261114-b2-mega-06a.json"
-    ],
+    "existingBatchesChecked": 49,
     "editorialStatus": "draft-unreviewed; human review pending"
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
