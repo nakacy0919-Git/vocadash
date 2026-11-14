@@ -1,9 +1,11 @@
-import React, {useEffect,useId,useMemo,useRef,useState} from 'react';
+import React, {lazy,Suspense,useEffect,useId,useMemo,useRef,useState} from 'react';
 import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VocaUniverse.css';
+const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  const [center,setCenter]=useState(entry);
+ const [draftOpen,setDraftOpen]=useState(false);
  const [trail,setTrail]=useState([]);
  const [query,setQuery]=useState('');
  const catalog=useMemo(()=>universeEntries(),[]);
@@ -45,6 +47,8 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  return <div className="vu-overlay" onClick={onClose}>
   <section className="vu-dialog" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><button ref={close} onClick={onClose} aria-label="閉じる">✕</button></header>
+   {!draftOpen&&<div className="vu-draft-nav"><button onClick={()=>setDraftOpen(true)}>✧ 語義別オリジナル教材を探索（開発版）</button></div>}
+   {draftOpen?<Suspense fallback={<p className="vu-empty">語義データを読み込み中…</p>}><UniverseSenseExplorer initialWord={center.word} onSpeak={onSpeak} sound={sound} onBack={()=>setDraftOpen(false)}/></Suspense>:<>
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);setPage(0);}}>{label}</button>)}</div>
    <div className="vu-search-wrap"><label htmlFor={titleId+'-search'}>ネットワーク内の語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off"/>{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>{setTrail(t=>[...t,center]);change({...item,...(index.get(item.word)||{}),word:item.word,meaning:item.meaning});}}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>登録済みの中心語が見つかりません。</p>}</div>}</div>
@@ -64,5 +68,6 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    {!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
    {active&&<div className="vu-detail"><div><small>{types[active.type]} · {tierLabels[active.tier]}</small><h3>{active.word}</h3><p>{active.meaning||target?.meaning||'日本語の意味は準備中'}</p>{target?.english&&<p>{target.english}</p>}{target?.japanese&&<small>{target.japanese}</small>}{active.note&&<div className="vu-usage-note"><strong>使い分け・語感</strong><p>{active.note}</p>{active.example&&<p lang="en">{active.example}</p>}{active.translation&&<small>{active.translation}</small>}</div>}{active.reverse&&<p className="vu-reverse">登録済みの語からの逆方向リンク</p>}</div>{showImages&&target?.image&&targetImageError!==target.image&&<img className="vu-detail-image" src={assetImage(target.image)} alt={active.word+' の参考画像'} onError={()=>setTargetImageError(target.image)}/>}<div className="vu-detail-actions"><button disabled={!sound} onClick={()=>onSpeak(target)}>♫ 発音</button><button disabled={!canExplore} onClick={()=>{setTrail(t=>[...t,center]);change(target);}}>中心にする →</button></div></div>}
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} aria-pressed={selected===n.word} onClick={()=>setSelected(n.word)} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
+   </>}
   </section></div>;
 }
