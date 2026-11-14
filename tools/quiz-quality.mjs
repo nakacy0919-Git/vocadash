@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {FORMATS,buildQuestions,sentenceQuestions,validateQuestion} from '../src/lib/quiz/engine.js';
+const dir=new URL('../data/vocabulary-drafts/batches/',import.meta.url);
+const records=[...new Map(fs.readdirSync(dir).filter(f=>f.endsWith('.json')).flatMap(f=>JSON.parse(fs.readFileSync(new URL(f,dir))).records||[]).map(r=>[r.senseId,r])).values()];
+const authored=JSON.parse(fs.readFileSync(new URL('../src/data/quiz-authored.json',import.meta.url)));
+const bank=buildQuestions(records,authored,{random:()=>.5});
+const all=[...bank.questions,...records.flatMap(sentenceQuestions)];
+const failures=all.flatMap(q=>validateQuestion(q).map(error=>({id:q.id,error})));
+const report={senses:records.length,wordIds:new Set(records.map(r=>r.wordId)).size,questions:all.length,authored:authored.length,formats:Object.fromEntries(Object.keys(FORMATS).map(k=>[k,all.filter(q=>q.format===k).length])),rejected:bank.rejected,failures,duplicateIds:all.length-new Set(all.map(q=>q.id)).size,notes:['Structural validation is not semantic certification. Draft content remains draft.','Image recall uses one verified illustration; relation questions require authored evidence.']};
+console.log(JSON.stringify(report,null,2));
+if(failures.length || report.duplicateIds || bank.rejected.length)process.exitCode=1;

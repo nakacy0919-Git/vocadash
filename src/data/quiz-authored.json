@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "VD-00110-n-01:authored:en-ja",
+    "wordId": "VD-00110",
+    "senseId": "VD-00110-n-01",
+    "format": "en-ja",
+    "prompt": "book (noun)：読むためにページを綴じたもの",
+    "answers": [
+      "本"
+    ],
+    "explanation": "英英定義と名詞語義を明示。本の意味に限定。",
+    "evidence": {
+      "source": "VD-00110-n-01",
+      "reviewed": true,
+      "rationale": "英英定義と名詞語義を明示。本の意味に限定。"
+    },
+    "options": [
+      "本",
+      "時計",
+      "窓",
+      "靴"
+    ]
+  },
+  {
+    "id": "VD-00110-n-01:authored:ja-en",
+    "wordId": "VD-00110",
+    "senseId": "VD-00110-n-01",
+    "format": "ja-en",
+    "prompt": "本：読むためにページを綴じたものを表す名詞",
+    "answers": [
+      "book"
+    ],
+    "explanation": "同じ具体名詞の選択肢。book の予約するという動詞語義とは区別。",
+    "evidence": {
+      "source": "VD-00110-n-01",
+      "reviewed": true,
+      "rationale": "同じ具体名詞の選択肢。book の予約するという動詞語義とは区別。"
+    },
+    "options": [
+      "book",
+      "clock",
+      "window",
+      "shoe"
+    ]
+  },
+  {
+    "id": "VD-00424-n2-162:authored:synonym",
+    "wordId": "VD-00424",
+    "senseId": "VD-00424-n2-162",
+    "format": "synonym",
+    "prompt": "happy（うれしい）に最も近い形容詞は？",
+    "answers": [
+      "joyful"
+    ],
+    "explanation": "登録類義語 joyful は喜びを感じていること。他の選択肢は異なる状態。",
+    "evidence": {
+      "source": "VD-00424-n2-162",
+      "reviewed": true,
+      "rationale": "登録類義語 joyful は喜びを感じていること。他の選択肢は異なる状態。"
+    },
+    "options": [
+      "joyful",
+      "angry",
+      "sleepy",
+      "hungry"
+    ]
+  },
+  {
+    "id": "VD-00424-n2-162:authored:antonym",
+    "wordId": "VD-00424",
+    "senseId": "VD-00424-n2-162",
+    "format": "antonym",
+    "prompt": "happy（幸せな）と反対の状態を表す語は？",
+    "answers": [
+      "unhappy"
+    ],
+    "explanation": "否定接頭辞 un- によって幸せでない状態を明示。",
+    "evidence": {
+      "source": "VD-00424-n2-162",
+      "reviewed": true,
+      "rationale": "否定接頭辞 un- によって幸せでない状態を明示。"
+    },
+    "options": [
+      "unhappy",
+      "careful",
+      "famous",
+      "ready"
+    ]
+  },
+  {
+    "id": "VD-BULK-261114-A1-00064:authored:nuance",
+    "wordId": "VD-00095",
+    "senseId": "VD-BULK-261114-A1-00064",
+    "format": "nuance",
+    "prompt": "big / large はどちらも「大きい」。くだけた表現「姉・兄」で使う組み合わせは？",
+    "answers": [
+      "big sister"
+    ],
+    "explanation": "big sister は姉。large sister は体格を述べる表現になり、年上という意味を表さない。",
+    "evidence": {
+      "source": "VD-BULK-261114-A1-00064",
+      "reviewed": true,
+      "rationale": "big sister は姉。large sister は体格を述べる表現になり、年上という意味を表さない。"
+    },
+    "options": [
+      "big sister",
+      "large sister"
+    ]
+  },
+  {
+    "id": "VD-00560-v-01:authored:collocation",
+    "wordId": "VD-00560",
+    "senseId": "VD-00560-v-01",
+    "format": "collocation",
+    "prompt": "「決定を下す」：_____ a decision（動詞の原形）",
+    "answers": [
+      "make"
+    ],
+    "explanation": "標準的な組み合わせは make a decision。do a decision とは言わない。",
+    "evidence": {
+      "source": "VD-00560-v-01",
+      "reviewed": true,
+      "rationale": "標準的な組み合わせは make a decision。do a decision とは言わない。"
+    },
+    "options": [
+      "make",
+      "do",
+      "give",
+      "put"
+    ]
+  },
+  {
+    "id": "VD-01364-n2-145:authored:derivation",
+    "wordId": "VD-01364",
+    "senseId": "VD-01364-n2-145",
+    "format": "derivation",
+    "prompt": "decide の派生語：「決定」という意味の名詞を入力",
+    "answers": [
+      "decision"
+    ],
+    "explanation": "decide（動詞）から decision（名詞）へ。deciding はこの名詞化課題の対象外。",
+    "evidence": {
+      "source": "VD-01364-n2-145",
+      "reviewed": true,
+      "rationale": "decide（動詞）から decision（名詞）へ。deciding はこの名詞化課題の対象外。"
+    },
+    "hint": "de… / 8文字"
+  },
+  {
+    "id": "VD-00387-v-01:authored:inflection",
+    "wordId": "VD-00387",
+    "senseId": "VD-00387-v-01",
+    "format": "inflection",
+    "prompt": "go の不規則な過去形を入力（過去分詞ではありません）",
+    "answers": [
+      "went"
+    ],
+    "explanation": "go / went / gone。既存例文 My sister went to Osaka by train. の形。",
+    "evidence": {
+      "source": "VD-00387-v-01",
+      "reviewed": true,
+      "rationale": "go / went / gone。既存例文 My sister went to Osaka by train. の形。"
+    },
+    "hint": "w…"
+  },
+  {
+    "id": "VD-00110-n-01:authored:image",
+    "wordId": "VD-00110",
+    "senseId": "VD-00110-n-01",
+    "format": "image",
+    "prompt": "画像の物を表す英単語を入力：b… / 4文字",
+    "answers": [
+      "book"
+    ],
+    "explanation": "ラベルのない本の図。book の単数形を文字数と頭文字で指定。",
+    "evidence": {
+      "source": "VD-00110-n-01",
+      "reviewed": true,
+      "rationale": "ラベルのない本の図。book の単数形を文字数と頭文字で指定。",
+      "imageVerified": true
+    },
+    "image": "/quiz-assets/object-01.svg"
+  },
+  {
+    "id": "VD-00829-n2-169:curated:en-ja:9",
+    "wordId": "VD-00829",
+    "senseId": "VD-00829-n2-169",
+    "format": "en-ja",
+    "prompt": "small の登録語義として適切なのは？",
+    "answers": [
+      "小さい"
+    ],
+    "explanation": "既存オリジナル語義を再利用。small はこの課題では「小さい」の意味。",
+    "evidence": {
+      "source": "VD-00829-n2-169",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。small はこの課題では「小さい」の意味。"
+    },
+    "options": [
+      "小さい",
+      "速い",
+      "静かな",
+      "早い"
+    ]
+  },
+  {
+    "id": "VD-00829-n2-169:curated:ja-en:10",
+    "wordId": "VD-00829",
+    "senseId": "VD-00829-n2-169",
+    "format": "ja-en",
+    "prompt": "「小さい」を表す英単語を選んでください。",
+    "answers": [
+      "small"
+    ],
+    "explanation": "選択肢の中で「小さい」に対応するのは small。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00829-n2-169",
+      "reviewed": true,
+      "rationale": "選択肢の中で「小さい」に対応するのは small。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "small",
+      "fast",
+      "quiet",
+      "easy"
+    ]
+  },
+  {
+    "id": "VD-00322-n2-178:curated:en-ja:11",
+    "wordId": "VD-00322",
+    "senseId": "VD-00322-n2-178",
+    "format": "en-ja",
+    "prompt": "fast の登録語義として適切なのは？",
+    "answers": [
+      "速い"
+    ],
+    "explanation": "既存オリジナル語義を再利用。fast はこの課題では「速い」の意味。",
+    "evidence": {
+      "source": "VD-00322-n2-178",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。fast はこの課題では「速い」の意味。"
+    },
+    "options": [
+      "速い",
+      "小さい",
+      "静かな",
+      "簡単な"
+    ]
+  },
+  {
+    "id": "VD-00322-n2-178:curated:ja-en:12",
+    "wordId": "VD-00322",
+    "senseId": "VD-00322-n2-178",
+    "format": "ja-en",
+    "prompt": "「速い」を表す英単語を選んでください。",
+    "answers": [
+      "fast"
+    ],
+    "explanation": "選択肢の中で「速い」に対応するのは fast。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00322-n2-178",
+      "reviewed": true,
+      "rationale": "選択肢の中で「速い」に対応するのは fast。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "fast",
+      "small",
+      "quiet",
+      "easy"
+    ]
+  },
+  {
+    "id": "VD-00282-n2-174:curated:en-ja:13",
+    "wordId": "VD-00282",
+    "senseId": "VD-00282-n2-174",
+    "format": "en-ja",
+    "prompt": "easy の登録語義として適切なのは？",
+    "answers": [
+      "簡単な"
+    ],
+    "explanation": "既存オリジナル語義を再利用。easy はこの課題では「簡単な」の意味。",
+    "evidence": {
+      "source": "VD-00282-n2-174",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。easy はこの課題では「簡単な」の意味。"
+    },
+    "options": [
+      "簡単な",
+      "小さい",
+      "静かな",
+      "早い"
+    ]
+  },
+  {
+    "id": "VD-00282-n2-174:curated:ja-en:14",
+    "wordId": "VD-00282",
+    "senseId": "VD-00282-n2-174",
+    "format": "ja-en",
+    "prompt": "「簡単な」を表す英単語を選んでください。",
+    "answers": [
+      "easy"
+    ],
+    "explanation": "選択肢の中で「簡単な」に対応するのは easy。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00282-n2-174",
+      "reviewed": true,
+      "rationale": "選択肢の中で「簡単な」に対応するのは easy。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "easy",
+      "small",
+      "quiet",
+      "fast"
+    ]
+  },
+  {
+    "id": "VD-00733-n2-167:curated:en-ja:15",
+    "wordId": "VD-00733",
+    "senseId": "VD-00733-n2-167",
+    "format": "en-ja",
+    "prompt": "quiet の登録語義として適切なのは？",
+    "answers": [
+      "静かな"
+    ],
+    "explanation": "既存オリジナル語義を再利用。quiet はこの課題では「静かな」の意味。",
+    "evidence": {
+      "source": "VD-00733-n2-167",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。quiet はこの課題では「静かな」の意味。"
+    },
+    "options": [
+      "静かな",
+      "簡単な",
+      "速い",
+      "小さい"
+    ]
+  },
+  {
+    "id": "VD-00733-n2-167:curated:ja-en:16",
+    "wordId": "VD-00733",
+    "senseId": "VD-00733-n2-167",
+    "format": "ja-en",
+    "prompt": "「静かな」を表す英単語を選んでください。",
+    "answers": [
+      "quiet"
+    ],
+    "explanation": "選択肢の中で「静かな」に対応するのは quiet。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00733-n2-167",
+      "reviewed": true,
+      "rationale": "選択肢の中で「静かな」に対応するのは quiet。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "quiet",
+      "easy",
+      "small",
+      "fast"
+    ]
+  },
+  {
+    "id": "VD-00144-n2-112:curated:en-ja:17",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "en-ja",
+    "prompt": "buy の登録語義として適切なのは？",
+    "answers": [
+      "買う"
+    ],
+    "explanation": "既存オリジナル語義を再利用。buy はこの課題では「買う」の意味。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。buy はこの課題では「買う」の意味。"
+    },
+    "options": [
+      "買う",
+      "教える",
+      "勉強する",
+      "始める"
+    ]
+  },
+  {
+    "id": "VD-00144-n2-112:curated:ja-en:18",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "ja-en",
+    "prompt": "「買う」を表す英単語を選んでください。",
+    "answers": [
+      "buy"
+    ],
+    "explanation": "選択肢の中で「買う」に対応するのは buy。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "選択肢の中で「買う」に対応するのは buy。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "buy",
+      "teach",
+      "study",
+      "begin"
+    ]
+  },
+  {
+    "id": "VD-00908-v-01:curated:en-ja:19",
+    "wordId": "VD-00908",
+    "senseId": "VD-00908-v-01",
+    "format": "en-ja",
+    "prompt": "teach の登録語義として適切なのは？",
+    "answers": [
+      "教える"
+    ],
+    "explanation": "既存オリジナル語義を再利用。teach はこの課題では「教える」の意味。",
+    "evidence": {
+      "source": "VD-00908-v-01",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。teach はこの課題では「教える」の意味。"
+    },
+    "options": [
+      "教える",
+      "買う",
+      "勉強する",
+      "始める"
+    ]
+  },
+  {
+    "id": "VD-00908-v-01:curated:ja-en:20",
+    "wordId": "VD-00908",
+    "senseId": "VD-00908-v-01",
+    "format": "ja-en",
+    "prompt": "「教える」を表す英単語を選んでください。",
+    "answers": [
+      "teach"
+    ],
+    "explanation": "選択肢の中で「教える」に対応するのは teach。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00908-v-01",
+      "reviewed": true,
+      "rationale": "選択肢の中で「教える」に対応するのは teach。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "teach",
+      "buy",
+      "study",
+      "begin"
+    ]
+  },
+  {
+    "id": "VD-00879-n2-095:curated:en-ja:21",
+    "wordId": "VD-00879",
+    "senseId": "VD-00879-n2-095",
+    "format": "en-ja",
+    "prompt": "study の登録語義として適切なのは？",
+    "answers": [
+      "勉強する"
+    ],
+    "explanation": "既存オリジナル語義を再利用。study はこの課題では「勉強する」の意味。",
+    "evidence": {
+      "source": "VD-00879-n2-095",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。study はこの課題では「勉強する」の意味。"
+    },
+    "options": [
+      "勉強する",
+      "買う",
+      "教える",
+      "始める"
+    ]
+  },
+  {
+    "id": "VD-00879-n2-095:curated:ja-en:22",
+    "wordId": "VD-00879",
+    "senseId": "VD-00879-n2-095",
+    "format": "ja-en",
+    "prompt": "「勉強する」を表す英単語を選んでください。",
+    "answers": [
+      "study"
+    ],
+    "explanation": "選択肢の中で「勉強する」に対応するのは study。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00879-n2-095",
+      "reviewed": true,
+      "rationale": "選択肢の中で「勉強する」に対応するのは study。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "study",
+      "buy",
+      "teach",
+      "begin"
+    ]
+  },
+  {
+    "id": "VD-00175-n2-065:curated:en-ja:23",
+    "wordId": "VD-00175",
+    "senseId": "VD-00175-n2-065",
+    "format": "en-ja",
+    "prompt": "child の登録語義として適切なのは？",
+    "answers": [
+      "子ども"
+    ],
+    "explanation": "既存オリジナル語義を再利用。child はこの課題では「子ども」の意味。",
+    "evidence": {
+      "source": "VD-00175-n2-065",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。child はこの課題では「子ども」の意味。"
+    },
+    "options": [
+      "子ども",
+      "本",
+      "窓",
+      "時計"
+    ]
+  },
+  {
+    "id": "VD-00175-n2-065:curated:ja-en:24",
+    "wordId": "VD-00175",
+    "senseId": "VD-00175-n2-065",
+    "format": "ja-en",
+    "prompt": "「子ども」を表す英単語を選んでください。",
+    "answers": [
+      "child"
+    ],
+    "explanation": "選択肢の中で「子ども」に対応するのは child。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-00175-n2-065",
+      "reviewed": true,
+      "rationale": "選択肢の中で「子ども」に対応するのは child。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "child",
+      "book",
+      "window",
+      "clock"
+    ]
+  },
+  {
+    "id": "VD-02135-n-5-050:curated:en-ja:25",
+    "wordId": "VD-02135",
+    "senseId": "VD-02135-n-5-050",
+    "format": "en-ja",
+    "prompt": "success の登録語義として適切なのは？",
+    "answers": [
+      "成功"
+    ],
+    "explanation": "既存オリジナル語義を再利用。success はこの課題では「成功」の意味。",
+    "evidence": {
+      "source": "VD-02135-n-5-050",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。success はこの課題では「成功」の意味。"
+    },
+    "options": [
+      "成功",
+      "興味",
+      "知識",
+      "終わり"
+    ]
+  },
+  {
+    "id": "VD-02135-n-5-050:curated:ja-en:26",
+    "wordId": "VD-02135",
+    "senseId": "VD-02135-n-5-050",
+    "format": "ja-en",
+    "prompt": "「成功」を表す英単語を選んでください。",
+    "answers": [
+      "success"
+    ],
+    "explanation": "選択肢の中で「成功」に対応するのは success。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-02135-n-5-050",
+      "reviewed": true,
+      "rationale": "選択肢の中で「成功」に対応するのは success。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "success",
+      "interest",
+      "knowledge",
+      "end"
+    ]
+  },
+  {
+    "id": "VD3-00054:curated:en-ja:27",
+    "wordId": "VD-01669",
+    "senseId": "VD3-00054",
+    "format": "en-ja",
+    "prompt": "knowledge の登録語義として適切なのは？",
+    "answers": [
+      "知識"
+    ],
+    "explanation": "既存オリジナル語義を再利用。knowledge はこの課題では「知識」の意味。",
+    "evidence": {
+      "source": "VD3-00054",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。knowledge はこの課題では「知識」の意味。"
+    },
+    "options": [
+      "知識",
+      "成功",
+      "興味",
+      "終わり"
+    ]
+  },
+  {
+    "id": "VD3-00054:curated:ja-en:28",
+    "wordId": "VD-01669",
+    "senseId": "VD3-00054",
+    "format": "ja-en",
+    "prompt": "「知識」を表す英単語を選んでください。",
+    "answers": [
+      "knowledge"
+    ],
+    "explanation": "選択肢の中で「知識」に対応するのは knowledge。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD3-00054",
+      "reviewed": true,
+      "rationale": "選択肢の中で「知識」に対応するのは knowledge。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "knowledge",
+      "success",
+      "interest",
+      "end"
+    ]
+  },
+  {
+    "id": "VD-01646-n-01:curated:en-ja:29",
+    "wordId": "VD-01646",
+    "senseId": "VD-01646-n-01",
+    "format": "en-ja",
+    "prompt": "interest の登録語義として適切なのは？",
+    "answers": [
+      "興味・関心"
+    ],
+    "explanation": "既存オリジナル語義を再利用。interest はこの課題では「興味・関心」の意味。",
+    "evidence": {
+      "source": "VD-01646-n-01",
+      "reviewed": true,
+      "rationale": "既存オリジナル語義を再利用。interest はこの課題では「興味・関心」の意味。"
+    },
+    "options": [
+      "興味・関心",
+      "成功",
+      "知識",
+      "終わり"
+    ]
+  },
+  {
+    "id": "VD-01646-n-01:curated:ja-en:30",
+    "wordId": "VD-01646",
+    "senseId": "VD-01646-n-01",
+    "format": "ja-en",
+    "prompt": "「興味・関心」を表す英単語を選んでください。",
+    "answers": [
+      "interest"
+    ],
+    "explanation": "選択肢の中で「興味・関心」に対応するのは interest。他の選択肢は別の登録語義。",
+    "evidence": {
+      "source": "VD-01646-n-01",
+      "reviewed": true,
+      "rationale": "選択肢の中で「興味・関心」に対応するのは interest。他の選択肢は別の登録語義。"
+    },
+    "options": [
+      "interest",
+      "knowledge",
+      "success",
+      "end"
+    ]
+  },
+  {
+    "id": "VD-00829-n2-169:curated:synonym:31",
+    "wordId": "VD-00829",
+    "senseId": "VD-00829-n2-169",
+    "format": "synonym",
+    "prompt": "small の意味に最も近い語を選んでください。",
+    "answers": [
+      "little"
+    ],
+    "explanation": "大きさを表す small と little。little には量が少ないという用法もある。",
+    "evidence": {
+      "source": "VD-00829-n2-169",
+      "reviewed": true,
+      "rationale": "大きさを表す small と little。little には量が少ないという用法もある。"
+    },
+    "options": [
+      "little",
+      "huge",
+      "noisy",
+      "rapid"
+    ]
+  },
+  {
+    "id": "VD-00322-n2-178:curated:synonym:32",
+    "wordId": "VD-00322",
+    "senseId": "VD-00322-n2-178",
+    "format": "synonym",
+    "prompt": "fast の意味に最も近い語を選んでください。",
+    "answers": [
+      "quick"
+    ],
+    "explanation": "速さを表す形容詞 fast と quick。全ての文脈で置き換えられるわけではない。",
+    "evidence": {
+      "source": "VD-00322-n2-178",
+      "reviewed": true,
+      "rationale": "速さを表す形容詞 fast と quick。全ての文脈で置き換えられるわけではない。"
+    },
+    "options": [
+      "quick",
+      "silent",
+      "tiny",
+      "simple"
+    ]
+  },
+  {
+    "id": "VD-00282-n2-174:curated:synonym:33",
+    "wordId": "VD-00282",
+    "senseId": "VD-00282-n2-174",
+    "format": "synonym",
+    "prompt": "easy の意味に最も近い語を選んでください。",
+    "answers": [
+      "simple"
+    ],
+    "explanation": "難しくないという語義で近い。simple は構造が単純という意味にもなる。",
+    "evidence": {
+      "source": "VD-00282-n2-174",
+      "reviewed": true,
+      "rationale": "難しくないという語義で近い。simple は構造が単純という意味にもなる。"
+    },
+    "options": [
+      "simple",
+      "difficult",
+      "noisy",
+      "late"
+    ]
+  },
+  {
+    "id": "VD-00733-n2-167:curated:synonym:34",
+    "wordId": "VD-00733",
+    "senseId": "VD-00733-n2-167",
+    "format": "synonym",
+    "prompt": "quiet の意味に最も近い語を選んでください。",
+    "answers": [
+      "silent"
+    ],
+    "explanation": "音が小さい quiet に対し silent は音がないという、より強い表現。",
+    "evidence": {
+      "source": "VD-00733-n2-167",
+      "reviewed": true,
+      "rationale": "音が小さい quiet に対し silent は音がないという、より強い表現。"
+    },
+    "options": [
+      "silent",
+      "loud",
+      "quick",
+      "tiny"
+    ]
+  },
+  {
+    "id": "VD-BULK-261114-A1-00057:curated:synonym:35",
+    "wordId": "VD-00085",
+    "senseId": "VD-BULK-261114-A1-00057",
+    "format": "synonym",
+    "prompt": "begin の意味に最も近い語を選んでください。",
+    "answers": [
+      "start"
+    ],
+    "explanation": "開始するという意味で begin と start が近い。",
+    "evidence": {
+      "source": "VD-BULK-261114-A1-00057",
+      "reviewed": true,
+      "rationale": "開始するという意味で begin と start が近い。"
+    },
+    "options": [
+      "start",
+      "finish",
+      "purchase",
+      "teach"
+    ]
+  },
+  {
+    "id": "VD-00144-n2-112:curated:synonym:36",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "synonym",
+    "prompt": "buy の意味に最も近い語を選んでください。",
+    "answers": [
+      "purchase"
+    ],
+    "explanation": "purchase は buy より改まった表現。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "purchase は buy より改まった表現。"
+    },
+    "options": [
+      "purchase",
+      "sell",
+      "lend",
+      "teach"
+    ]
+  },
+  {
+    "id": "VD-00829-n2-169:curated:antonym:37",
+    "wordId": "VD-00829",
+    "senseId": "VD-00829-n2-169",
+    "format": "antonym",
+    "prompt": "small と対照的な意味の語を選んでください。",
+    "answers": [
+      "large"
+    ],
+    "explanation": "大きさの対比：small は小さい、large は大きい。",
+    "evidence": {
+      "source": "VD-00829-n2-169",
+      "reviewed": true,
+      "rationale": "大きさの対比：small は小さい、large は大きい。"
+    },
+    "options": [
+      "large",
+      "quiet",
+      "early",
+      "easy"
+    ]
+  },
+  {
+    "id": "VD-00322-n2-178:curated:antonym:38",
+    "wordId": "VD-00322",
+    "senseId": "VD-00322-n2-178",
+    "format": "antonym",
+    "prompt": "fast と対照的な意味の語を選んでください。",
+    "answers": [
+      "slow"
+    ],
+    "explanation": "速さの対比：fast は速い、slow は遅い。",
+    "evidence": {
+      "source": "VD-00322-n2-178",
+      "reviewed": true,
+      "rationale": "速さの対比：fast は速い、slow は遅い。"
+    },
+    "options": [
+      "slow",
+      "small",
+      "quiet",
+      "easy"
+    ]
+  },
+  {
+    "id": "VD-00282-n2-174:curated:antonym:39",
+    "wordId": "VD-00282",
+    "senseId": "VD-00282-n2-174",
+    "format": "antonym",
+    "prompt": "easy と対照的な意味の語を選んでください。",
+    "answers": [
+      "difficult"
+    ],
+    "explanation": "難易度の対比：easy は簡単、difficult は難しい。",
+    "evidence": {
+      "source": "VD-00282-n2-174",
+      "reviewed": true,
+      "rationale": "難易度の対比：easy は簡単、difficult は難しい。"
+    },
+    "options": [
+      "difficult",
+      "early",
+      "quiet",
+      "small"
+    ]
+  },
+  {
+    "id": "VD-00281-n2-180:curated:antonym:40",
+    "wordId": "VD-00281",
+    "senseId": "VD-00281-n2-180",
+    "format": "antonym",
+    "prompt": "early と対照的な意味の語を選んでください。",
+    "answers": [
+      "late"
+    ],
+    "explanation": "時期の対比：early は早い、late は遅い。",
+    "evidence": {
+      "source": "VD-00281-n2-180",
+      "reviewed": true,
+      "rationale": "時期の対比：early は早い、late は遅い。"
+    },
+    "options": [
+      "late",
+      "quiet",
+      "easy",
+      "small"
+    ]
+  },
+  {
+    "id": "VD-00733-n2-167:curated:antonym:41",
+    "wordId": "VD-00733",
+    "senseId": "VD-00733-n2-167",
+    "format": "antonym",
+    "prompt": "quiet と対照的な意味の語を選んでください。",
+    "answers": [
+      "noisy"
+    ],
+    "explanation": "音の対比：quiet は静か、noisy は騒がしい。",
+    "evidence": {
+      "source": "VD-00733-n2-167",
+      "reviewed": true,
+      "rationale": "音の対比：quiet は静か、noisy は騒がしい。"
+    },
+    "options": [
+      "noisy",
+      "small",
+      "easy",
+      "early"
+    ]
+  },
+  {
+    "id": "VD-00144-n2-112:curated:antonym:42",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "antonym",
+    "prompt": "buy と対照的な意味の語を選んでください。",
+    "answers": [
+      "sell"
+    ],
+    "explanation": "取引の視点の対比：buy は買う側、sell は売る側。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "取引の視点の対比：buy は買う側、sell は売る側。"
+    },
+    "options": [
+      "sell",
+      "teach",
+      "study",
+      "begin"
+    ]
+  },
+  {
+    "id": "VD-00879-n2-095:curated:collocation:43",
+    "wordId": "VD-00879",
+    "senseId": "VD-00879-n2-095",
+    "format": "collocation",
+    "prompt": "「試験に向けて勉強する」：study _____ an exam",
+    "answers": [
+      "for"
+    ],
+    "explanation": "study for an exam が試験のために勉強するという組み合わせ。",
+    "evidence": {
+      "source": "VD-00879-n2-095",
+      "reviewed": true,
+      "rationale": "study for an exam が試験のために勉強するという組み合わせ。"
+    },
+    "options": [
+      "for",
+      "at",
+      "by",
+      "of"
+    ]
+  },
+  {
+    "id": "VD-01646-n-01:curated:collocation:44",
+    "wordId": "VD-01646",
+    "senseId": "VD-01646-n-01",
+    "format": "collocation",
+    "prompt": "「音楽への関心」：an interest _____ music",
+    "answers": [
+      "in"
+    ],
+    "explanation": "an interest in + 対象。関心の対象は in で示す。",
+    "evidence": {
+      "source": "VD-01646-n-01",
+      "reviewed": true,
+      "rationale": "an interest in + 対象。関心の対象は in で示す。"
+    },
+    "options": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ]
+  },
+  {
+    "id": "VD-00424-n2-162:curated:collocation:45",
+    "wordId": "VD-00424",
+    "senseId": "VD-00424-n2-162",
+    "format": "collocation",
+    "prompt": "「その結果に満足している」：happy _____ the result",
+    "answers": [
+      "with"
+    ],
+    "explanation": "happy with the result は結果に満足していることを表す。",
+    "evidence": {
+      "source": "VD-00424-n2-162",
+      "reviewed": true,
+      "rationale": "happy with the result は結果に満足していることを表す。"
+    },
+    "options": [
+      "with",
+      "from",
+      "by",
+      "of"
+    ]
+  },
+  {
+    "id": "VD-BULK-261114-A1-00081:curated:collocation:46",
+    "wordId": "VD-00113",
+    "senseId": "VD-BULK-261114-A1-00081",
+    "format": "collocation",
+    "prompt": "「図書館から本を借りる」：borrow a book _____ the library",
+    "answers": [
+      "from"
+    ],
+    "explanation": "borrow ... from ... は借りる元を示す。",
+    "evidence": {
+      "source": "VD-BULK-261114-A1-00081",
+      "reviewed": true,
+      "rationale": "borrow ... from ... は借りる元を示す。"
+    },
+    "options": [
+      "from",
+      "to",
+      "by",
+      "of"
+    ]
+  },
+  {
+    "id": "VD-01364-n2-145:curated:collocation:47",
+    "wordId": "VD-01364",
+    "senseId": "VD-01364-n2-145",
+    "format": "collocation",
+    "prompt": "「早く出発することに決める」：decide _____ leave early",
+    "answers": [
+      "to"
+    ],
+    "explanation": "decide to + 動詞の原形。",
+    "evidence": {
+      "source": "VD-01364-n2-145",
+      "reviewed": true,
+      "rationale": "decide to + 動詞の原形。"
+    },
+    "options": [
+      "to",
+      "for",
+      "at",
+      "of"
+    ]
+  },
+  {
+    "id": "VD-00424-n2-162:curated:derivation:48",
+    "wordId": "VD-00424",
+    "senseId": "VD-00424-n2-162",
+    "format": "derivation",
+    "prompt": "happy から派生した「幸福」を表す名詞を入力",
+    "answers": [
+      "happiness"
+    ],
+    "explanation": "happy の y を i に変え -ness をつける。",
+    "evidence": {
+      "source": "VD-00424-n2-162",
+      "reviewed": true,
+      "rationale": "happy の y を i に変え -ness をつける。"
+    }
+  },
+  {
+    "id": "VD-01334-v-5-001:curated:derivation:49",
+    "wordId": "VD-01334",
+    "senseId": "VD-01334-v-5-001",
+    "format": "derivation",
+    "prompt": "create から派生した「創造的な」を表す形容詞を入力",
+    "answers": [
+      "creative"
+    ],
+    "explanation": "create（創造する）から creative（創造的な）。",
+    "evidence": {
+      "source": "VD-01334-v-5-001",
+      "reviewed": true,
+      "rationale": "create（創造する）から creative（創造的な）。"
+    }
+  },
+  {
+    "id": "VD-01377-v-01:curated:derivation:50",
+    "wordId": "VD-01377",
+    "senseId": "VD-01377-v-01",
+    "format": "derivation",
+    "prompt": "develop から派生した「発展・開発」を表す名詞を入力",
+    "answers": [
+      "development"
+    ],
+    "explanation": "develop に -ment を付ける。",
+    "evidence": {
+      "source": "VD-01377-v-01",
+      "reviewed": true,
+      "rationale": "develop に -ment を付ける。"
+    }
+  },
+  {
+    "id": "VD-02135-n-5-050:curated:derivation:51",
+    "wordId": "VD-02135",
+    "senseId": "VD-02135-n-5-050",
+    "format": "derivation",
+    "prompt": "success から派生した「成功した」を表す形容詞を入力",
+    "answers": [
+      "successful"
+    ],
+    "explanation": "success に -ful を付ける。",
+    "evidence": {
+      "source": "VD-02135-n-5-050",
+      "reviewed": true,
+      "rationale": "success に -ful を付ける。"
+    }
+  },
+  {
+    "id": "VD-00908-v-01:curated:derivation:52",
+    "wordId": "VD-00908",
+    "senseId": "VD-00908-v-01",
+    "format": "derivation",
+    "prompt": "teach から派生した「教師」を表す名詞を入力",
+    "answers": [
+      "teacher"
+    ],
+    "explanation": "teach に行為者を表す -er を付ける。",
+    "evidence": {
+      "source": "VD-00908-v-01",
+      "reviewed": true,
+      "rationale": "teach に行為者を表す -er を付ける。"
+    }
+  },
+  {
+    "id": "VD-00144-n2-112:curated:inflection:53",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "inflection",
+    "prompt": "buy の過去形を入力",
+    "answers": [
+      "bought"
+    ],
+    "explanation": "buy / bought / bought。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "buy / bought / bought。"
+    }
+  },
+  {
+    "id": "VD-00908-v-01:curated:inflection:54",
+    "wordId": "VD-00908",
+    "senseId": "VD-00908-v-01",
+    "format": "inflection",
+    "prompt": "teach の過去形を入力",
+    "answers": [
+      "taught"
+    ],
+    "explanation": "teach / taught / taught。",
+    "evidence": {
+      "source": "VD-00908-v-01",
+      "reviewed": true,
+      "rationale": "teach / taught / taught。"
+    }
+  },
+  {
+    "id": "VD-00175-n2-065:curated:inflection:55",
+    "wordId": "VD-00175",
+    "senseId": "VD-00175-n2-065",
+    "format": "inflection",
+    "prompt": "child の複数形を入力",
+    "answers": [
+      "children"
+    ],
+    "explanation": "不規則な複数形。childs ではない。",
+    "evidence": {
+      "source": "VD-00175-n2-065",
+      "reviewed": true,
+      "rationale": "不規則な複数形。childs ではない。"
+    }
+  },
+  {
+    "id": "VD-00879-n2-095:curated:inflection:56",
+    "wordId": "VD-00879",
+    "senseId": "VD-00879-n2-095",
+    "format": "inflection",
+    "prompt": "study の三人称単数現在形を入力",
+    "answers": [
+      "studies"
+    ],
+    "explanation": "子音字 + y で終わるので y を i に変えて -es。",
+    "evidence": {
+      "source": "VD-00879-n2-095",
+      "reviewed": true,
+      "rationale": "子音字 + y で終わるので y を i に変えて -es。"
+    }
+  },
+  {
+    "id": "VD-00560-v-01:curated:inflection:57",
+    "wordId": "VD-00560",
+    "senseId": "VD-00560-v-01",
+    "format": "inflection",
+    "prompt": "make の過去形を入力",
+    "answers": [
+      "made"
+    ],
+    "explanation": "既存例文 We made sandwiches for lunch. の made。",
+    "evidence": {
+      "source": "VD-00560-v-01",
+      "reviewed": true,
+      "rationale": "既存例文 We made sandwiches for lunch. の made。"
+    }
+  },
+  {
+    "id": "VD-BULK-261114-A1-00064:curated:inflection:58",
+    "wordId": "VD-00095",
+    "senseId": "VD-BULK-261114-A1-00064",
+    "format": "inflection",
+    "prompt": "big の比較級（1語）を入力",
+    "answers": [
+      "bigger"
+    ],
+    "explanation": "語末の g を重ねて -er。",
+    "evidence": {
+      "source": "VD-BULK-261114-A1-00064",
+      "reviewed": true,
+      "rationale": "語末の g を重ねて -er。"
+    }
+  },
+  {
+    "id": "VD-00282-n2-174:curated:inflection:59",
+    "wordId": "VD-00282",
+    "senseId": "VD-00282-n2-174",
+    "format": "inflection",
+    "prompt": "easy の比較級（1語）を入力",
+    "answers": [
+      "easier"
+    ],
+    "explanation": "y を i に変えて -er。",
+    "evidence": {
+      "source": "VD-00282-n2-174",
+      "reviewed": true,
+      "rationale": "y を i に変えて -er。"
+    }
+  },
+  {
+    "id": "VD-00144-n2-112:curated:nuance:60",
+    "wordId": "VD-00144",
+    "senseId": "VD-00144-n2-112",
+    "format": "nuance",
+    "prompt": "buy / purchase：日常会話で、よりくだけた基本語は？",
+    "answers": [
+      "buy"
+    ],
+    "explanation": "buy は日常的。purchase はより改まった文体で使われる。",
+    "evidence": {
+      "source": "VD-00144-n2-112",
+      "reviewed": true,
+      "rationale": "buy は日常的。purchase はより改まった文体で使われる。"
+    },
+    "options": [
+      "buy",
+      "purchase"
+    ]
+  },
+  {
+    "id": "VD-00733-n2-167:curated:nuance:61",
+    "wordId": "VD-00733",
+    "senseId": "VD-00733-n2-167",
+    "format": "nuance",
+    "prompt": "quiet / silent：「音が全くしない」に近い、より強い表現は？",
+    "answers": [
+      "silent"
+    ],
+    "explanation": "quiet は静かな、silent は無音の・沈黙した。",
+    "evidence": {
+      "source": "VD-00733-n2-167",
+      "reviewed": true,
+      "rationale": "quiet は静かな、silent は無音の・沈黙した。"
+    },
+    "options": [
+      "quiet",
+      "silent"
+    ]
+  },
+  {
+    "id": "VD-00829-n2-169:curated:nuance:62",
+    "wordId": "VD-00829",
+    "senseId": "VD-00829-n2-169",
+    "format": "nuance",
+    "prompt": "small / little：「時間がほとんどない」には _____ time のどちらを使う？",
+    "answers": [
+      "little"
+    ],
+    "explanation": "little は不可算名詞の量が少ないことを表せる。small time はこの意味では使わない。",
+    "evidence": {
+      "source": "VD-00829-n2-169",
+      "reviewed": true,
+      "rationale": "little は不可算名詞の量が少ないことを表せる。small time はこの意味では使わない。"
+    },
+    "options": [
+      "small",
+      "little"
+    ]
+  }
+]
