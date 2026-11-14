@@ -3,7 +3,7 @@ import {createPortal} from 'react-dom';
 import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VocaUniverse.css';
-export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
+export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=true,onToggleEffects}) {
  const [center,setCenter]=useState(entry);
  const [trail,setTrail]=useState([]);
  const [query,setQuery]=useState('');
@@ -53,7 +53,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  return createPortal(<div ref={overlay} className="vu-overlay vu-portal-open" onClick={onClose}>
   <div className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>ENTERING VOCA UNIVERSE</span></div>
   <section className="vu-dialog vu-dialog-warp" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
-   <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
+   <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button className="vu-effects-toggle" aria-pressed={effects} onClick={onToggleEffects} aria-label={effects?"ワープ効果音をオフ":"ワープ効果音をオン"}>{effects?"♫ 効果音 ON":"♪ 効果音 OFF"}</button><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
    <div className="vu-controls">
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);setPage(0);}}>{label}</button>)}</div>
@@ -61,7 +61,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
    </div>
-   <div className={"vu-workspace"+(active?" has-detail":"")}> <div className="vu-stage"> 
+   <div className={"vu-workspace"+(active?" has-detail":"")}> <div className={"vu-stage"+(view==="list"?" is-list":"")}> 
    {view==='map' && <><div className="vu-map-scroll"><div className="vu-map" key={center.word}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" className="vu-orbits">
       {ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
