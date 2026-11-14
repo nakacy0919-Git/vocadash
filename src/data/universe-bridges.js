@@ -1,12 +1,6 @@
-// Editorial cross-level bridges; related is not synonymous.
+// Vetted explicit learning bridges; related is not synonymous.
 export default {
   "library": [
-    {
-      "word": "bookstore",
-      "meaning": "書店",
-      "type": "related",
-      "tier": "core"
-    },
     {
       "word": "museum",
       "meaning": "博物館",
@@ -78,30 +72,6 @@ export default {
       "tier": "related"
     }
   ],
-  "favorite": [
-    {
-      "word": "popular",
-      "meaning": "人気のある",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "quiet": [
-    {
-      "word": "quietly",
-      "meaning": "静かに",
-      "type": "family",
-      "tier": "core"
-    }
-  ],
-  "early": [
-    {
-      "word": "punctuality",
-      "meaning": "時間を守ること",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "bicycle": [
     {
       "word": "repair",
@@ -132,28 +102,12 @@ export default {
       "tier": "core"
     }
   ],
-  "cloudy": [
-    {
-      "word": "murky",
-      "meaning": "濁った",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "careful": [
     {
       "word": "avoid",
       "meaning": "避ける",
       "type": "related",
       "tier": "core"
-    }
-  ],
-  "hungry": [
-    {
-      "word": "shortage",
-      "meaning": "不足",
-      "type": "related",
-      "tier": "related"
     }
   ],
   "expensive": [
@@ -202,48 +156,10 @@ export default {
       "tier": "core"
     }
   ],
-  "decide": [
-    {
-      "word": "deliberate",
-      "meaning": "熟考する",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "protect": [
-    {
-      "word": "rescue",
-      "meaning": "救助する",
-      "type": "related",
-      "tier": "core"
-    }
-  ],
   "experience": [
     {
       "word": "proficient",
       "meaning": "熟達した",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "necessary": [
-    {
-      "word": "adequate",
-      "meaning": "十分な",
-      "type": "related",
-      "tier": "related"
-    },
-    {
-      "word": "compulsory",
-      "meaning": "義務的な",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "interested": [
-    {
-      "word": "acquainted",
-      "meaning": "精通した",
       "type": "related",
       "tier": "related"
     }
@@ -292,14 +208,6 @@ export default {
       "tier": "core"
     }
   ],
-  "suggest": [
-    {
-      "word": "points to",
-      "meaning": "〜を指し示す",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "prepare": [
     {
       "word": "assignment",
@@ -318,24 +226,10 @@ export default {
   ],
   "volunteer": [
     {
-      "word": "humanity",
-      "meaning": "人間性・人間愛",
-      "type": "related",
-      "tier": "related"
-    },
-    {
       "word": "rescue",
       "meaning": "救助する",
       "type": "related",
       "tier": "core"
-    }
-  ],
-  "foreign": [
-    {
-      "word": "indigenous",
-      "meaning": "先住の・土着の",
-      "type": "related",
-      "tier": "related"
     }
   ],
   "popular": [
@@ -400,14 +294,6 @@ export default {
       "tier": "core"
     }
   ],
-  "immediately": [
-    {
-      "word": "subsequent",
-      "meaning": "その後の",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "choose": [
     {
       "word": "picked out",
@@ -456,22 +342,6 @@ export default {
       "tier": "core"
     }
   ],
-  "exchange": [
-    {
-      "word": "translate",
-      "meaning": "翻訳する",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "worried": [
-    {
-      "word": "defuse",
-      "meaning": "緊張を和らげる",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "unlikely": [
     {
       "word": "probability",
@@ -486,14 +356,6 @@ export default {
       "meaning": "礼儀正しく",
       "type": "related",
       "tier": "core"
-    }
-  ],
-  "courage": [
-    {
-      "word": "arduous",
-      "meaning": "骨の折れる",
-      "type": "related",
-      "tier": "related"
     }
   ],
   "friendship": [
@@ -644,14 +506,6 @@ export default {
       "tier": "related"
     }
   ],
-  "adequate": [
-    {
-      "word": "shortage",
-      "meaning": "不足",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "exhausted": [
     {
       "word": "grueling",
@@ -674,22 +528,6 @@ export default {
       "meaning": "露骨に",
       "type": "family",
       "tier": "core"
-    }
-  ],
-  "encounter": [
-    {
-      "word": "unexpected",
-      "meaning": "予期しない",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "paraphrase": [
-    {
-      "word": "translate",
-      "meaning": "翻訳する",
-      "type": "related",
-      "tier": "related"
     }
   ],
   "proficient": [
@@ -740,34 +578,10 @@ export default {
       "tier": "related"
     }
   ],
-  "emaciated": [
-    {
-      "word": "hungry",
-      "meaning": "空腹の",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "yardstick": [
-    {
-      "word": "method",
-      "meaning": "方法",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
   "clout": [
     {
       "word": "parliament",
       "meaning": "議会",
-      "type": "related",
-      "tier": "related"
-    }
-  ],
-  "affable": [
-    {
-      "word": "polite",
-      "meaning": "礼儀正しい",
       "type": "related",
       "tier": "related"
     }
