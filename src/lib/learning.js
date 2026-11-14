@@ -51,6 +51,11 @@ export function normalizeWords(raw, courseId, unitId) {
       etymology: item.etymology || detail?.etymology || '',
       pronunciation: item.pronunciation || '',
       image: item.image || '', audio: item.audio || '',
+      relatedWords: item.relatedWords || detail?.relatedWords || item.related_words || detail?.related_words || [],
+      synonyms: item.synonyms || detail?.synonyms || [],
+      antonyms: item.antonyms || detail?.antonyms || [],
+      wordFamily: item.wordFamily || detail?.wordFamily || item.word_family || detail?.word_family || [],
+      collocations: item.collocations || detail?.collocations || [],
       choices, correctIndex, sourceIndex: index
     };
   }).filter(entry => entry.word);
