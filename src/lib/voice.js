@@ -93,3 +93,7 @@ export function speechSegments(event){
  for(let i=event?.resultIndex||0;i<results.length;i++){const r=results[i];const alt=Array.from(r||[]).map(x=>x.transcript).filter(Boolean);if(r.isFinal){if(alt.length)final.push(alt);}else if(alt[0])interim.push(alt[0]);}
  return {final,interim:interim.join(' ')};
 }
+
+// A vocabulary query opens the semantic explorer by default; explicit example requests remain separate.
+export function opensVoiceUniverse(kind,value){return Boolean(value)&&['search','focus','universe'].includes(kind);}
+export function quickVoiceEntry(value,words,lookup){for(const key of wordCandidates(value)){const local=words.find(w=>String(w.word||'').toLowerCase().trim()===key),map=lookup(key);if(map||local)return {...map,...local,word:local?.word||map.word,meaning:local?.meaning||map?.meaning||''};}return null;}

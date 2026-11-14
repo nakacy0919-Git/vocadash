@@ -51,9 +51,9 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
     if(kind==='next'){setPage(p=>Math.min(p+1,pageCount-1));setSelected(null);done();return;}
     if(kind==='back'){if(trail.length){change(trail.at(-1));setTrail(t=>t.slice(0,-1));}else{setPage(p=>Math.max(0,p-1));}done();return;}
     if(['focus','search','universe'].includes(kind)&&value){
-     const k=value.trim().toLowerCase(),link=links.find(x=>x.word.toLowerCase()===k),item=lookupUniverse(k),local=index.get(k);
-     if(!link&&!item&&!local){done('未登録: '+value);return;}
-     setTrail(t=>[...t,center]);change({...link,...item,...local,word:local?.word||item?.word||link?.word||k,meaning:local?.meaning||item?.meaning||link?.meaning||''});done('Focus: '+k);return;
+     const k=value.trim().toLowerCase(),link=links.find(x=>x.word.toLowerCase()===k),item=lookupUniverse(k),local=index.get(k),resolved=c.resolvedEntry;
+     if(!link&&!item&&!local&&!resolved){done('未登録: '+value);return;}
+     if(center.word.toLowerCase()!==k)setTrail(t=>[...t,center]);change({...link,...item,...local,...resolved,word:resolved?.word||local?.word||item?.word||link?.word||k,meaning:resolved?.meaning||local?.meaning||item?.meaning||link?.meaning||''});setView('map');done('Focus: '+k);return;
     }
     if(kind==='read'){const item=target||center;if(!sound){done('音声設定がオフです');return;}if(value){if(value==='first'&&item.english){const u=new SpeechSynthesisUtterance(item.english);u.lang='en-US';window.speechSynthesis.speak(u);}else{done('この画面にはその例文がありません');return;}}else onSpeak(item);done();return;}
     if(kind==='meaning'||kind==='examples'){c.entry=target||center;done();return;}

@@ -1,6 +1,6 @@
 import React,{useEffect,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments} from '../lib/voice.js';
+import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry} from '../lib/voice.js';
 import {lookupUniverse,universeEntries} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
@@ -70,20 +70,27 @@ export default function VoiceControl({current,words,universeOpen,onOpenUniverse,
     if(kind==='quiz')stop();
     onAppCommand(kind);setStatus(kind==='close'?'VocaDash に戻りました':'画面を切り替えました');return;
    }
-   if(universeOpen&&['filter','focus','back','next','list','map','images','read','examples','meaning','search','universe'].includes(kind)){
+   const directUniverse=opensVoiceUniverse(kind,value);
+   if(universeOpen&&!directUniverse&&!(kind==='examples'&&value)&&['filter','focus','back','next','list','map','images','read','examples','meaning','search','universe'].includes(kind)){
     const cleaned=wordCandidates(value);const detail={...cmd,value:cleaned.length>1&&!lookupUniverse(cleaned[0])?cleaned.at(-1):value,handled:false,message:''};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));
     if(detail.handled){if(detail.entry){const result=await resolve(detail.entry.word);if(!valid())return;setEntry(result||detail.entry);setShowExamples(kind==='examples');setShowEntryInUniverse(true);setResultOpen(true);}else if(kind==='focus'||kind==='search'||kind==='universe'||kind==='back'||kind==='filter'){setShowEntryInUniverse(false);setResultOpen(false);}if(detail.message?.includes('未登録'))flash(detail.message);else flash(detail.message||'Done');return;}
    }
    if(kind==='next'||kind==='back'){setCompact(true);setEntry(null);setResultOpen(false);onAppCommand(kind);setStatus('OK');return;}
    if(kind==='search'||kind==='focus'||(kind==='universe'&&value)||(kind==='examples'&&value)){
-    let result=await resolve(value);
+    // Registered networks are already in memory; open immediately instead of loading every course/draft batch.
+    let result=(directUniverse&&quickVoiceEntry(value,words,lookupUniverse))||await resolve(value);
     // Only alternate recognitions of the same command may supply a different search term.
-    if(!result)for(const alt of alternatives){const addressed=extractWake(alt);const c=parseVoice(addressed?.command||alt);if(c.kind!==kind||!c.value||c.value===value)continue;result=await resolve(c.value);if(result)break;}
+    if(!result)for(const alt of alternatives){const addressed=extractWake(alt);const c=parseVoice(addressed?.command||alt);if(c.kind!==kind||!c.value||c.value===value)continue;result=(directUniverse&&quickVoiceEntry(c.value,words,lookupUniverse))||await resolve(c.value);if(result)break;}
     if(!valid())return;
     if(!result){const guesses=await candidates(value);if(!valid())return;setSuggestions(guesses);flash(guesses.length?'Did you mean…?':'I couldn’t find “'+value+'”. Try again.');return;}
-    setEntry(result);setShowExamples(true);setResultOpen(kind!=='universe'&&kind!=='focus');
-    if(kind==='universe'||kind==='focus')onOpenUniverse(result);
-    flash(result.word+' found');return;
+    setEntry(result);setShowExamples(true);setCompact(true);
+    if(directUniverse){
+     setResultOpen(false);setShowEntryInUniverse(false);
+     if(universeOpen){const detail={kind:'search',value:result.word,resolvedEntry:result,handled:false};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));}
+     else onOpenUniverse(result);
+     flash('Opening '+result.word+' universe');
+    }else{setShowEntryInUniverse(universeOpen);setResultOpen(true);flash(result.word+' found');}
+    return;
    }
    const target=selected();
    if(kind==='universe'||kind==='filter'){if(!target){setStatus('まず単語を指定してください');return;}
@@ -160,7 +167,7 @@ export default function VoiceControl({current,words,universeOpen,onOpenUniverse,
   {helpOpen&&<section className="vd-voice-panel vd-voice-help" aria-label="Voice help">
    <header><strong>Voice commands</strong><button type="button" onClick={()=>setHelpOpen(false)} aria-label="Close help">×</button></header>
    <p>{status}</p><form onSubmit={e=>{e.preventDefault();if(typed.trim()){const addressed=extractWake(typed.trim());if(addressed){if(wanted.current)activate();if(addressed.command)execute(addressed.command);}else execute(typed.trim());setTyped('');setHelpOpen(false);}}}><input aria-label="Type a voice command" value={typed} onChange={e=>setTyped(e.target.value)} placeholder="Show me beautiful"/><button type="submit">Go</button></form>
-   <p>Show me beautiful · Open the universe · Expand synonyms · Go to sleep · Stop listening</p><p className="vd-voice-privacy">待機中もマイクを使用します。ブラウザによっては外部の音声認識サービスを利用します。</p>
+   <p>Show me beautiful (opens Universe) · Expand synonyms · Go to sleep · Stop listening</p><p className="vd-voice-privacy">待機中もマイクを使用します。ブラウザによっては外部の音声認識サービスを利用します。</p>
   </section>}
   {resultOpen&&entry&&(!universeOpen||showEntryInUniverse)&&<section className="vd-voice-panel vd-voice-result" aria-label="Vocabulary search result"><header><small>VOCABULARY RESULT</small><button type="button" onClick={()=>setResultOpen(false)} aria-label="Close result">×</button></header>
    {entry&&(!universeOpen||showEntryInUniverse)&&<div className="vd-voice-entry"><h3>{entry.word}</h3>{showJa&&<p>{entry.meaning}</p>}{entry.image&&showImage&&<img src={assetImage(entry.image)} alt=""/>}<button onClick={()=>speak(entry.word)}>♫ Pronounce</button><button onClick={()=>{setResultOpen(false);onOpenUniverse(entry);}}>◉ Universe</button>
