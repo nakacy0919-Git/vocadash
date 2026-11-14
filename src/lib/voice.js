@@ -101,3 +101,21 @@ export function opensVoiceUniverse(kind,value){return Boolean(value)&&['search',
 export function quickVoiceEntry(value,words,lookup){for(const key of wordCandidates(value)){const local=words.find(w=>String(w.word||'').toLowerCase().trim()===key),map=lookup(key);if(map||local)return {...map,...local,word:local?.word||map.word,meaning:local?.meaning||map?.meaning||''};}return null;}
 
 export function returnsToAssistant(kind,universeOpen){return kind==='close'||kind==='back'&&universeOpen;}
+
+/** Resolve authored maps, original course words and draft entries without requiring a network. */
+export async function resolveVocabularyEntry(raw,{words=[],lookup=()=>null,getDrafts=async()=>new Map(),getCourse=async()=>null}={}){
+ const keys=wordCandidates(raw);
+ for(const k of keys){const map=lookup(k),local=words.find(w=>String(w.word||'').toLowerCase().trim()===k);if(map||local)return {...map,...local,word:local?.word||map?.word||k,meaning:local?.meaning||map?.meaning||''};}
+ if(!keys.length)return null;
+ const drafts=await Promise.resolve().then(getDrafts).catch(()=>new Map());
+ for(const k of keys){
+  const records=drafts.get(k)||[];
+  if(records.length){
+   const first=records[0],examples=records.flatMap(r=>(r.examples||[]).map(e=>({...e,senseId:r.senseId})));
+   // Do not present unreviewed paraphrases as verified semantic edges.
+   return {word:k,meaning:first.meaningJa,records,examples,english:examples[0]?.en||'',japanese:examples[0]?.ja||'',draft:true};
+  }
+ }
+ for(const k of keys){const course=await Promise.resolve().then(()=>getCourse(k)).catch(()=>null);if(course)return {...course,examples:course.english?[{en:course.english,ja:course.japanese}]:[]};}
+ return null;
+}
