@@ -53,13 +53,23 @@
     "batches/original-20261114-b2-mega-05b.json",
     "batches/original-20261114-b2-mega-05c.json",
     "batches/original-20261114-b2-mega-05d.json",
-    "batches/original-20261114-b2-mega-06a.json"
+    "batches/original-20261114-b2-mega-06a.json",
+    "batches/original-20261114-gap-a1.json",
+    "batches/original-20261114-gap-b1.json",
+    "batches/original-20261115-a2-500-01.json",
+    "batches/original-20261115-a2-500-02.json",
+    "batches/original-20261115-a2-complete-01.json",
+    "batches/original-20261115-a2-complete-02.json",
+    "batches/original-20261115-b2-400-01.json",
+    "batches/original-20261115-b2-400-02.json",
+    "batches/original-20261115-b2-finish-292.json",
+    "batches/original-20261115-c1-start-108.json"
   ],
   "totals": {
-    "distinctHeadwords": 4567,
-    "senses": 5262,
-    "examples": 10524,
-    "distinctExamples": 10524
+    "distinctHeadwords": 7019,
+    "senses": 7714,
+    "examples": 15428,
+    "distinctExamples": 15428
   },
   "quality": {
     "humanReviewed": false,
@@ -72,23 +82,21 @@
     "liveAppConnected": false
   },
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
-  "lastUpdated": "2026-11-14",
+  "lastUpdated": "2026-11-15",
   "recentWork": {
-    "source": "original B2 learner vocabulary definitions, contextual synonyms, bilingual examples",
+    "source": "Complete B2 headword draft coverage and start C1 expansion",
     "newBatches": [
-      "original-20261114-b2-mega-06a"
+      "batches/original-20261115-b2-finish-292.json",
+      "batches/original-20261115-c1-start-108.json"
     ],
-    "headwordsAdded": 190,
-    "sensesAdded": 190,
-    "translatedExamplesAdded": 380,
-    "synonymOrParaphraseCandidatesAdded": 340,
-    "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 48,
-    "derivedExports": [
-      "exports/examples/original-20261114-b2-mega-06a.json",
-      "exports/synonyms/original-20261114-b2-mega-06a.json"
-    ],
-    "editorialStatus": "draft-unreviewed; human review pending"
+    "headwordsAdded": 400,
+    "sensesAdded": 400,
+    "translatedExamplesAdded": 800,
+    "contextualSynonymFieldsAdded": 238,
+    "collocationFieldsAdded": 400,
+    "usageNotesAdded": 400,
+    "editorialStatus": "draft-unreviewed; full editorial approval pending",
+    "publication": "private snapshot only; no push or deployment"
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
 }
