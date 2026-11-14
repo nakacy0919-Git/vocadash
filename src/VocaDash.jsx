@@ -499,7 +499,7 @@ export default function VocaDash() {
                         <strong>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</strong>
                         <p>{current.japanese}</p>
                         {current.explanation && <small>{current.explanation}</small>}
-                      <button className="vu-launch" onClick={()=>{setAutoplay(false);setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
+                      <button className="vu-launch" onClick={()=>{setAutoplay(false);stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
                       </div>
                     )}
                   </div>
@@ -512,7 +512,7 @@ export default function VocaDash() {
                   {current.image && !imageError && <img className="vd-word-image" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                   <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p><HighlightedExample text={current.english} word={current.word}/></p><small>{current.japanese}</small></div>
                   {current.etymology && <p className="vd-etymology"><strong>語源・ヒント</strong> {current.etymology}</p>}
-                  <button className="vu-launch" onClick={()=>{setAutoplay(false);setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
+                  <button className="vu-launch" onClick={()=>{setAutoplay(false);stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
                 </div> : <div className="vd-card-unrevealed" onClick={() => setRevealed(true)}><span>✧</span><p>意味を思い浮かべてから確認しましょう</p></div>}
                   </>
                 )}
@@ -553,7 +553,7 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
-    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>setUniverseEntry(null)} onSpeak={item=>speak(item)} sound={store.settings.sound}/>}
+    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>{stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
@@ -570,6 +570,7 @@ export default function VocaDash() {
               <span>正解の単語</span>
               <strong>{current.word}</strong>
               {current.meaning && <p>{current.meaning}</p>}
+              <button className="vu-launch" onClick={()=>{stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
             </div>
             <div className="vd-quiz-review-section">
               <span>COMPLETE SENTENCE</span>
