@@ -256,8 +256,8 @@ export default {
       {
         "word": "contaminate",
         "meaning": "汚染する",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "adulteration",
@@ -912,8 +912,8 @@ export default {
       {
         "word": "formal censure",
         "meaning": "正式な非難",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -1069,8 +1069,8 @@ export default {
       {
         "word": "commemorative ceremony",
         "meaning": "記念式典",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -1214,8 +1214,8 @@ export default {
       {
         "word": "negative connotation",
         "meaning": "否定的な含意",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -1440,8 +1440,8 @@ export default {
       {
         "word": "discredit",
         "meaning": "信用を失わせる",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "debunking",
@@ -1649,8 +1649,8 @@ export default {
       {
         "word": "derogation",
         "meaning": "権利などの制限・毀損",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "derogatory remark",
@@ -1823,8 +1823,8 @@ export default {
       {
         "word": "disgrace",
         "meaning": "不名誉にする",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "discredited",
@@ -2374,8 +2374,8 @@ export default {
       {
         "word": "acquit",
         "meaning": "無罪とする",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "exoneration",
@@ -2705,8 +2705,8 @@ export default {
       {
         "word": "frayed nerves",
         "meaning": "すり減った神経",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "fray at the edges",
@@ -3094,8 +3094,8 @@ export default {
       {
         "word": "inoculate laboratory cultures",
         "meaning": "実験室の培養物に接種する",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -3378,8 +3378,8 @@ export default {
       {
         "word": "libel lawsuit",
         "meaning": "名誉毀損訴訟",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "libelous statement",
@@ -3859,8 +3859,8 @@ export default {
       {
         "word": "credibility",
         "meaning": "信憑性",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "plausible",
@@ -3923,8 +3923,8 @@ export default {
       {
         "word": "precipitation",
         "meaning": "沈殿・降水",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "precipitate a financial crisis",
@@ -4254,8 +4254,8 @@ export default {
       {
         "word": "seek redress",
         "meaning": "救済を求める",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -4422,8 +4422,8 @@ export default {
       {
         "word": "issue a formal reprimand",
         "meaning": "正式な戒告を出す",
-        "type": "collocation",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
@@ -4874,8 +4874,8 @@ export default {
       {
         "word": "exonerate",
         "meaning": "無実を証明する",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "vindication",
@@ -4932,8 +4932,8 @@ export default {
       {
         "word": "justify",
         "meaning": "正当化する",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "warranted",
@@ -4961,8 +4961,8 @@ export default {
       {
         "word": "retain",
         "meaning": "保持する",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "withholding",
