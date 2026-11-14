@@ -1,3 +1,4 @@
+import synonymExpansion from '../data/universe-synonym-expansion.js';
 import lexicalExpansion from '../data/universe-lexical-expansion.js';
 import nominalExpansion from '../data/universe-nominal-expansion.js';
 import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
@@ -334,6 +335,75 @@ const countLexicalHeads=()=>({ ...universeCoverage(),singleWords:[...authored.ke
 const lexicalBefore=countLexicalHeads();
 const lexicalEditorial=addCompatibleBatch(lexicalExpansion);
 const nominalEditorial=addCompatibleBatch(nominalExpansion);
+// Counts are directed, normalized, deduplicated authored edges (not inferred reverse edges).
+export function registrationCoverage(){
+ const kinds=['synonym','family','collocation','related','contrast'];
+ const byType=Object.fromEntries(kinds.map(type=>[type,{links:0,heads:0,distinctTerms:0}]));
+ const targets=Object.fromEntries(kinds.map(type=>[type,new Set()]));
+ const formTargets=new Set(),allTargets=new Set();let forms=0,headsWithForms=0,links=0,other=0,unknown=0;
+ for(const [head,entry] of authored){
+  const seen=new Set();let hasForm=false;
+  for(const l of entry.links){
+   const w=normalize(l.word);if(!w)continue;
+   links++;allTargets.add(w);
+   if(Object.hasOwn(byType,l.type)){byType[l.type].links++;targets[l.type].add(w);seen.add(l.type);}else unknown++;
+   if(l.type==='family'&&((l.morphology||[]).some(x=>!['派生・語族','基となる語'].includes(x))||/三単現|過去形|過去分詞|現在分詞|動名詞|複数形|比較級|最上級/.test(l.meaning||''))){
+    forms++;formTargets.add(w);hasForm=true;
+   }
+  }
+  for(const t of seen)byType[t].heads++;
+  if(hasForm)headsWithForms++;
+  if(!isLexicalWord(head))other++;
+ }
+ for(const t of kinds)byType[t].distinctTerms=targets[t].size;
+ return {heads:authored.size,singleWords:authored.size-other,expressions:other,links,unknown,distinctLinkedTerms:allTargets.size,byType,forms:{links:forms,heads:headsWithForms,distinctTerms:formTargets.size}};
+}
+
+// Original explicit synonym spokes. Never infer synonymy within an entire cluster.
+function matchesEditorialSense(entry, candidate){
+ if(!entry)return true;
+ const gloss=String(entry.meaning||'');
+ if(gloss===candidate.meaning)return true;
+ return candidate.sense.some(mark=>mark&&gloss.includes(mark)&&!gloss.includes(mark+'でない')&&!gloss.includes(mark+'ではない')&&!gloss.includes(mark+'でなく'));
+}
+function applySynonymExpansion(groups){
+ const before=registrationCoverage();
+ const pairs=new Map();
+ for(const g of groups)for(const option of g.options){
+  const a={word:normalize(g.head),meaning:g.meaning,sense:g.sense};
+  const b={word:normalize(option.word),meaning:option.meaning,sense:option.sense};
+  if(!a.word||!b.word||a.word===b.word)continue;
+  const key=[a.word,b.word].sort().join('\u0000');
+  const current=pairs.get(key);
+  if(current){if(option.type==='related')current.type='related';current.variants.push({a,b});}
+  else pairs.set(key,{type:option.type,variants:[{a,b}]});
+ }
+ const stats={groups:groups.length,pairs:pairs.size,acceptedPairs:0,skippedSensePairs:0,addedSynonyms:0,addedRelated:0,upgradedSynonyms:0,alreadyRegistered:0,protectedExisting:0};
+ function addEdge(a,b,type){
+  const prior=authored.get(a.word);
+  const found=prior?.links.find(l=>normalize(l.word)===b.word);
+  if(found){
+   if(found.type==='related'&&type==='synonym'&&matchesEditorialSense({meaning:found.meaning},b)){
+    found.type='synonym';found.tier='core';stats.upgradedSynonyms++;
+   }else if(found.type===type)stats.alreadyRegistered++;
+   else stats.protectedExisting++;
+   return;
+  }
+  addAuthored(a.word,{meaning:a.meaning,links:[{word:b.word,meaning:b.meaning,type,tier:type==='synonym'?'core':'related'}]});
+  if(type==='synonym')stats.addedSynonyms++;else stats.addedRelated++;
+ }
+ for(const {type,variants} of pairs.values()){
+  const match=variants.find(({a,b})=>matchesEditorialSense(authored.get(a.word),a)&&matchesEditorialSense(authored.get(b.word),b));
+  if(!match){stats.skippedSensePairs++;continue;}
+  stats.acceptedPairs++;
+  addEdge(match.a,match.b,type);addEdge(match.b,match.a,type);
+ }
+ return {...stats,before,after:registrationCoverage()};
+}
+const nominalEditorialAfter=countLexicalHeads();
+const synonymEditorial=applySynonymExpansion(synonymExpansion);
+export function synonymExpansionCoverage(){return JSON.parse(JSON.stringify(synonymEditorial));}
+
 const lexicalEditorialAfter=countLexicalHeads();
 const lexicalCandidates=new Map();
 function collectLexicalLinks(head,entry){
@@ -366,7 +436,7 @@ for(const [word,c] of lexicalCandidates){
  lexicalPromoted.links+=authored.get(word).links.length;
 }
 const lexicalAfter=countLexicalHeads();
-export function lexicalExpansionCoverage(){return {editorial:{...lexicalEditorial},nominal:{...nominalEditorial},editorialAfter:{...lexicalEditorialAfter},promoted:{...lexicalPromoted},before:{...lexicalBefore},after:{...lexicalAfter}};}
+export function lexicalExpansionCoverage(){return {editorial:{...lexicalEditorial},nominal:{...nominalEditorial},synonym:{heads:synonymEditorial.after.heads-synonymEditorial.before.heads,links:synonymEditorial.after.links-synonymEditorial.before.links},editorialAfter:{...lexicalEditorialAfter},promoted:{...lexicalPromoted},before:{...lexicalBefore},after:{...lexicalAfter}};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
