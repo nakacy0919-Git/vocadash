@@ -1,3 +1,5 @@
+import verbMorphologyReview, {verbParadigms} from '../data/universe-verb-morphology-review.js';
+import nounAdjectiveReview, {adjectiveNounParadigms} from '../data/universe-noun-adjective-review.js';
 import familyCollocationMega, {familyCollocationNotes} from '../data/universe-families-collocations-mega.js';
 import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
 import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
@@ -119,6 +121,79 @@ for(const [word,entry] of Object.entries(familyCollocationMega)){
 const familyAfter=universeCoverage();
 export function familyCollocationCoverage(){
   return {heads:familyAfter.heads-familyBefore.heads,links:familyAfter.links-familyBefore.links,refined:refinedLexicalLinks};
+}
+// Review all previous headwords, then enrich entries with explicit lexical evidence.
+function lexicalAudit(){
+  const stats={heads:authored.size,links:0,family:0,collocation:0,forms:0,headsWithFamily:0,headsWithCollocations:0,headsWithForms:0};
+  for(const {links} of authored.values()){
+    stats.links+=links.length;
+    let family=false,collocation=false,forms=false;
+    for(const link of links){
+      if(link.type==='family'){stats.family++;family=true;}
+      if(link.type==='collocation'){stats.collocation++;collocation=true;}
+      if(link.morphology?.some(x=>!['派生・語族','基となる語'].includes(x))){stats.forms++;forms=true;}
+    }
+    if(family)stats.headsWithFamily++;
+    if(collocation)stats.headsWithCollocations++;
+    if(forms)stats.headsWithForms++;
+  }
+  return stats;
+}
+const reviewBefore=lexicalAudit();
+const priorReviewHeads=new Set(authored.keys());
+const revisedPriorHeads=new Set();
+let refinedReviewLinks=0, annotatedReviewLinks=0;
+for(const batch of [verbMorphologyReview,nounAdjectiveReview]){
+  for(const [word,entry] of Object.entries(batch)){
+    const key=normalize(word);
+    const prior=authored.get(key);
+    const previousKeys=new Set((prior?.links||[]).map(l=>normalize(l.word)));
+    if(prior){
+      const additions=new Map(entry.links.map(l=>[normalize(l.word),l]));
+      const links=prior.links.map(link=>{
+        const addition=additions.get(normalize(link.word));
+        if(!addition)return link;
+        let next=link;
+        if(link.type==='related'&&['family','collocation'].includes(addition.type)){
+          next={...next,type:addition.type,tier:addition.tier};
+          refinedReviewLinks++;
+        }
+        if(addition.morphology){
+          const labels=[...new Set([...(link.morphology||[]),...addition.morphology])];
+          if(labels.length!==(link.morphology||[]).length||!link.lemma){
+            next={...next,morphology:labels,lemma:link.lemma||addition.lemma};
+            annotatedReviewLinks++;
+          }
+        }
+        if(next!==link&&priorReviewHeads.has(key))revisedPriorHeads.add(key);
+        return next;
+      });
+      authored.set(key,{...prior,links});
+    }
+    if(priorReviewHeads.has(key)&&entry.links.some(l=>!previousKeys.has(normalize(l.word))))revisedPriorHeads.add(key);
+    addAuthored(word,entry);
+  }
+}
+const reviewAfter=lexicalAudit();
+export function lexicalReviewCoverage(){
+  return {heads:reviewAfter.heads-reviewBefore.heads,links:reviewAfter.links-reviewBefore.links,
+    existingHeadsUpdated:revisedPriorHeads.size,refined:refinedReviewLinks,annotated:annotatedReviewLinks,
+    before:{...reviewBefore},after:{...reviewAfter}};
+}
+export function getWordForms(word){
+  const key=normalize(word);
+  const rows=[];
+  const verb=verbParadigms[key];
+  const adj=adjectiveNounParadigms.adjectives[key];
+  const noun=adjectiveNounParadigms.nouns[key];
+  const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
+  if(verb){
+    add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
+    add('過去形',verb.past);add('過去分詞',verb.pastParticiple);add('現在分詞・動名詞',verb.presentParticiple);
+  }
+  if(adj){add('形容詞・原級',[adj.base]);add('比較級',adj.comparative);add('最上級',adj.superlative);}
+  if(noun){add('名詞・単数形',[noun.singular]);add('複数形',noun.plural);}
+  return rows;
 }
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
