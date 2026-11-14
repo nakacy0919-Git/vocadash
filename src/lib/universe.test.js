@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,getWordForms} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,getWordForms} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -18,7 +18,8 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainReadingCoverage();
  const lexical=familyCollocationCoverage();
  const review=lexicalReviewCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads,links:26096+added.links+lexical.links+review.links});
+ const advanced=advancedReviewCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads+advanced.heads,links:26096+added.links+lexical.links+review.links+advanced.links});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -256,4 +257,29 @@ test('academic verb and adjective expansion has explicit forms and productive ph
    const link=getRelations(lookupUniverse(head)).find(x=>x.word===derivative);
    assert.ok(link?.morphology?.includes('派生・語族'),head+' -> '+derivative);
  }
+});
+
+test('advanced lexical review supplements previous entries and preserves distinct forms',()=>{
+ const form=(word,label)=>getWordForms(word).find(x=>x.label===label)?.forms;
+ assert.deepEqual(form('compel','過去形'),['compelled']);
+ assert.deepEqual(form('defer','現在分詞・動名詞'),['deferring']);
+ assert.ok(form('submit','過去分詞').includes('submitted'));
+ assert.ok(form('discrepancy','複数形').includes('discrepancies'));
+ assert.ok(form('subtle','比較級').includes('subtler'));
+ assert.ok(form('reliable','比較級').includes('more reliable'));
+ assert.ok(form('stable','比較級').includes('more stable'));
+ assert.ok(form('go','過去形').includes('went'));
+ assert.ok(form('child','複数形').includes('children'));
+ assert.ok(!form('expertise','複数形'));
+ for(const [h,w] of [['derive','derive meaning from context'],['deter','deter crime'],['mitigate','mitigate adverse effects'],['scrutiny','under close scrutiny'],['robust','robust methodology']]){
+  const l=getRelations(lookupUniverse(h)).find(x=>x.word===w);
+  assert.ok(l&&l.type==='collocation'&&l.meaning,h+' -> '+w);
+  assert.ok(lookupUniverse(w)?.relatedWords.some(x=>x.word===h));
+ }
+ const oldStyle=getRelations({word:'compel',relatedWords:[{word:'compelled',type:'related'}]}).find(x=>x.word==='compelled');
+ assert.ok(oldStyle?.morphology?.includes('過去形')&&oldStyle.type==='family');
+ const {before,after,existingHeadsUpdated,heads,links}=advancedReviewCoverage();
+ assert.ok(existingHeadsUpdated>0&&heads>0&&links>0);
+ assert.ok(after.headsWithFamily>=before.headsWithFamily&&after.headsWithCollocations>=before.headsWithCollocations&&after.headsWithForms>before.headsWithForms);
+ assert.ok(usageFor('derive','derive meaning from context')?.example);
 });
