@@ -76,6 +76,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
     onAppCommand(kind);setStatus(kind==='close'?'VocaDash に戻りました':'画面を切り替えました');return;
    }
    const directUniverse=opensVoiceUniverse(kind,value);
+   if(universeOpen&&directUniverse){for(const candidate of wordCandidates(value)){const detail={kind:'search',value:candidate,localOnly:true,handled:false};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));if(detail.handled){if(detail.entry)setEntry(detail.entry);setResultOpen(false);setShowEntryInUniverse(false);setCompact(true);flash(detail.message||'Done');return;}}}
    if(universeOpen&&!directUniverse&&!(kind==='examples'&&value)&&['filter','focus','previous','pageBack','next','list','map','images','read','examples','meaning','search','universe'].includes(kind)){
     const cleaned=wordCandidates(value);const detail={...cmd,value:cleaned.length>1&&!lookupUniverse(cleaned[0])?cleaned.at(-1):value,handled:false,message:''};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));
     if(detail.handled){if(detail.entry){const result=await resolve(detail.entry.word);if(!valid())return;setEntry(result||detail.entry);setShowExamples(kind==='examples');setShowEntryInUniverse(true);setResultOpen(true);}else if(kind==='focus'||kind==='search'||kind==='universe'||kind==='previous'||kind==='filter'){setShowEntryInUniverse(false);setResultOpen(false);}if(detail.message?.includes('未登録'))flash(detail.message);else flash(detail.message||'Done');return;}

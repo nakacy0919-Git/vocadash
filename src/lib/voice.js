@@ -24,7 +24,7 @@ export function parseVoice(raw) {
  ['next',/^(next( word| page| question)?|skip)$/],
  ['universe',/^(open|show|launch)( me)? (the |voca )?universe(?: (of|for) (.+))?$/],
  ['filter',/^(?:(show|expand|display|hide) (me )?(the )?)?(synonyms?|similar words|antonyms?|opposites?|word famil(?:y|ies)|derivatives?|derivations?|collocations?|related words|related terms|all relations|all words|all|everything|word forms|inflections)$/],
- ['focus',/^(focus on|center on|centre on|explore|expand|expand on) (.+)$/],
+ ['focus',/^(focus on|center on|centre on|explore|expand on|expand) (.+)$/],
  ['examples',/^(give me|show me|show|give|read) (?:some |the |an? |two |three |[23] )?(?:examples?|example sentences?)(?: (?:of|for) (.+))?$/],
  ['read',/^(read (it|the word|aloud)|pronounce( it)?|say it|read the (first|second|third) (sentence|example))$/],
  ['meaning',/^(show (me )?(the )?meaning|show definition|what does it mean|reveal)$/],
