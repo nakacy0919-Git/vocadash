@@ -1,3 +1,4 @@
+import concreteWorldMega, {concreteWorldNotes} from '../data/universe-concrete-world-mega.js';
 import everydayPhrasesMega, {everydayPhrasesNotes} from '../data/universe-everyday-phrases-mega.js';
 import thematicReadingMega, {thematicReadingNotes} from '../data/universe-thematic-reading-mega.js';
 import nuanceFamilyMega, {nuanceFamilyNotes} from '../data/universe-nuance-family-mega.js';
@@ -143,6 +144,8 @@ const collocationReadingAdded=addCompatibleBatch(collocationReadingMega);
 const nuanceFamilyAdded=addCompatibleBatch(nuanceFamilyMega);
 const thematicReadingAdded=addCompatibleBatch(thematicReadingMega);
 const everydayPhrasesAdded=addCompatibleBatch(everydayPhrasesMega);
+const concreteWorldAdded=addCompatibleBatch(concreteWorldMega);
+export function concreteWorldCoverage(){return {...concreteWorldAdded};}
 export function everydayPhrasesCoverage(){return {...everydayPhrasesAdded};}
 export function thematicReadingCoverage(){return {...thematicReadingAdded};}
 export function nuanceFamilyCoverage(){return {...nuanceFamilyAdded};}
@@ -171,7 +174,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
