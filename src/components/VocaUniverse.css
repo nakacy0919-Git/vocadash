@@ -29,3 +29,5 @@
 @media(max-width:560px){.vu-full-list{grid-template-columns:1fr}.vu-map{min-width:490px}.vu-center{padding:9px}.vu-detail-image{width:160px}}
 
 .vu-map-sense{font-size:12px;color:#bcd8e8;margin:10px 0 0}.vu-toolbar{flex-wrap:wrap}.vu-dialog{max-width:100%;box-sizing:border-box}.vu-map-scroll{max-width:100%}
+
+.vu-search-wrap{margin:10px 0;display:grid;gap:6px}.vu-search-wrap label{font-size:12px;color:#bcd8e8}.vu-search-wrap input{box-sizing:border-box;width:100%;border:1px solid #45617c;background:#0a172c;color:#f3faff;border-radius:10px;padding:10px;font:inherit}.vu-search-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:6px}.vu-search-results button{display:flex;flex-direction:column;gap:3px;text-align:left;overflow-wrap:anywhere}.vu-search-results small{color:#bcd8e8}.vu-usage-note{margin-top:12px;background:#122940;border:1px solid #39617e;border-radius:10px;padding:10px;line-height:1.5}.vu-usage-note strong{color:#a5f3fc;font-size:12px}.vu-usage-note p[lang=en]{color:#e6f5ff;font-weight:600}
