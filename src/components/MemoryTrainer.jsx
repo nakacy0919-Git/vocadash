@@ -2,10 +2,10 @@ import React,{useState,useRef,useEffect} from 'react';
 import {recall,mastery,reviewMemory,normalizeAnswer,buildQuestion,enqueueRetry,gradeAnswer,dailyPlan,weakWords,isMastered} from '../lib/memoryEngine.js';
 import './MemoryTrainer.css';
 
-const labels={meaning:'意味を選ぶ',typing:'英単語を選ぶ','typing-choice':'英単語を選ぶ','listening-choice':'聞き取り・選択',cloze:'例文穴埋め',listening:'聞き取り・スペリング',recall:'意味を思い出す'};
+const labels={meaning:'意味を選ぶ',typing:'英単語を選ぶ','typing-choice':'英単語を選ぶ','listening-choice':'聞き取り・選択',cloze:'例文穴埋め',listening:'聞き取り・選択',recall:'意味を思い出す'};
 export default function MemoryTrainer({words,store,onRecord,onExit,loading,error,title,onRetry,savedError}){
- const [queue,setQueue]=useState([]),[i,setI]=useState(0),[question,setQuestion]=useState(null),[result,setResult]=useState(null),[input,setInput]=useState(''),[count,setCount]=useState(5),[phase,setPhase]=useState('ready'),[tally,setTally]=useState({total:0,correct:0}),[audioError,setAudioError]=useState(''),[intro,setIntro]=useState(false),[hint,setHint]=useState(false);
- const lock=useRef(false),baseAttempts=useRef({}),localAttempts=useRef({}),answerRef=useRef(null),startedAt=useRef(null);
+ const [queue,setQueue]=useState([]),[i,setI]=useState(0),[question,setQuestion]=useState(null),[result,setResult]=useState(null),[count,setCount]=useState(5),[phase,setPhase]=useState('ready'),[tally,setTally]=useState({total:0,correct:0}),[audioError,setAudioError]=useState(''),[intro,setIntro]=useState(false),[hint,setHint]=useState(false);
+ const lock=useRef(false),baseAttempts=useRef({}),localAttempts=useRef({}),startedAt=useRef(null);
  const item=queue[i],w=item?.word,records=store.records,now=Date.now();
  const memory=w?records[w.id]?.memory:null;
  const eligible=words.filter(x=>x.id&&x.word&&x.meaning);
@@ -15,7 +15,7 @@ export default function MemoryTrainer({words,store,onRecord,onExit,loading,error
  const plan=dailyPlan(words,records,now,{minutes:count}),weak=weakWords(words,records,now);
  useEffect(()=>{const invalidate=()=>{startedAt.current=null;};document.addEventListener('visibilitychange',invalidate);return ()=>document.removeEventListener('visibilitychange',invalidate);},[]);
  useEffect(()=>()=>{if(typeof window!=='undefined')window.speechSynthesis?.cancel();},[]);
- function load(entry){const past=localAttempts.current[entry.word.id]||0;const prior=baseAttempts.current[entry.word.id]||0;setQuestion(buildQuestion(entry.word,words,prior+past,Math.random,records[entry.word.id]?.memory));setInput('');setResult(null);setAudioError('');setHint(false);setIntro(prior===0&&past===0&&entry.retry===0);lock.current=false;startedAt.current=performance.now();}
+ function load(entry){const past=localAttempts.current[entry.word.id]||0;const prior=baseAttempts.current[entry.word.id]||0;setQuestion(buildQuestion(entry.word,words,prior+past,Math.random,records[entry.word.id]?.memory));setResult(null);setAudioError('');setHint(false);setIntro(prior===0&&past===0&&entry.retry===0);lock.current=false;startedAt.current=performance.now();}
  const canStart=plan.words.length>0;
  function start(){const next=dailyPlan(words,records,Date.now(),{minutes:count}).words.map(word=>({word,retry:0}));if(!next.length)return;baseAttempts.current=Object.fromEntries(next.map(({word})=>[word.id,records[word.id]?.memory?.attempts||0]));localAttempts.current={};setQueue(next);setI(0);setTally({total:0,correct:0});load(next[0]);setPhase('quiz');}
  function speak(){try{if(!window.speechSynthesis||!question?.answer)throw Error();const u=new SpeechSynthesisUtterance(question.answer);u.lang='en-US';u.rate=.85;u.onerror=()=>setAudioError('音声を再生できません。スキップできます。');window.speechSynthesis.cancel();window.speechSynthesis.speak(u);}catch{setAudioError('このブラウザでは音声を再生できません。スキップできます。');}}

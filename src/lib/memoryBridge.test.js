@@ -17,3 +17,5 @@ test('Universe reviews use exact course identity when available and isolate unre
  const s=memorySnapshot(b.records,[],100000);
  assert.equal(s['course:1:2'].weak,true);assert.equal(s['universe:other'].attempts,1);
 });
+
+test('listening choice is not recorded as free production',()=>{const attempt=quizMemoryAttempt({senseId:'s',format:'listening',correct:true,hintCount:0,answeredAt:100000});assert.equal(attempt.kind,'listening-choice');});

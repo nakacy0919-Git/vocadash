@@ -28,16 +28,17 @@ export function validateQuestion(q) {
   if(q.options!==undefined && !Array.isArray(q.options)) return ['invalid-options'];
   if(!q.evidence?.source || !q.evidence?.rationale) errors.push('missing-evidence');
   if(q.options?.length){
+    if(q.options.some(o=>typeof o!=='string'||!normalize(o)))errors.push('invalid-options');
     const keys=q.options.map(normalize);
     if(keys.length!==4 || new Set(keys).size!==keys.length) errors.push('duplicate-or-insufficient-options');
     if(keys.filter(k=>q.answers.map(normalize).includes(k)).length!==1) errors.push('ambiguous-options');
     if(q.options.some(o=>q.forbiddenDistractors?.map(normalize).includes(normalize(o)) && !q.answers.map(normalize).includes(normalize(o)))) errors.push('related-distractor');
   }
   if(q.format!=='reorder' && q.options?.length!==4) errors.push('four-choices-required');
-  if(q.format==='image' && (!q.image || !q.evidence.imageVerified)) errors.push('unverified-image');
+  if(q.format==='image' && (!q.image || !q.evidence?.imageVerified)) errors.push('unverified-image');
   if(q.format==='listening' && !q.audioText) errors.push('missing-audio');
   if(q.format==='reorder' && (!q.tokens?.length || normalize(q.tokens.join(' '))!==normalize(q.answers[0]))) errors.push('token-mismatch');
-  if(['synonym','antonym','nuance','collocation','derivation','inflection'].includes(q.format) && !q.evidence.reviewed) errors.push('review-required');
+  if(['synonym','antonym','nuance','collocation','derivation','inflection'].includes(q.format) && !q.evidence?.reviewed) errors.push('review-required');
   return errors;
 }
 // Specialist items are authored; basic recognition uses screened lexical or spelling distractors.
