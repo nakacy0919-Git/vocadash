@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments } from './lib/learning';
 import './VocaDash.css';
 import ReadingPractice from './components/ReadingPractice';
+import VocaUniverse from './components/VocaUniverse';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
@@ -162,6 +163,7 @@ export default function VocaDash() {
   const [quizReviewOpen, setQuizReviewOpen] = useState(false);
   const [autoplay, setAutoplay] = useState(false);
   const [wordListOpen, setWordListOpen] = useState(false);
+  const [universeEntry, setUniverseEntry] = useState(null);
   const [wordQuery, setWordQuery] = useState('');
   const [imageError, setImageError] = useState(false);
   const [savedError, setSavedError] = useState(false);
@@ -316,6 +318,7 @@ export default function VocaDash() {
 
   useEffect(() => {
     const handler = e => {
+      if (universeEntry) return;
       if (quizReviewOpen) {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
@@ -496,6 +499,7 @@ export default function VocaDash() {
                         <strong>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</strong>
                         <p>{current.japanese}</p>
                         {current.explanation && <small>{current.explanation}</small>}
+                      <button className="vu-launch" onClick={()=>{setAutoplay(false);setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
                       </div>
                     )}
                   </div>
@@ -508,6 +512,7 @@ export default function VocaDash() {
                   {current.image && !imageError && <img className="vd-word-image" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                   <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p><HighlightedExample text={current.english} word={current.word}/></p><small>{current.japanese}</small></div>
                   {current.etymology && <p className="vd-etymology"><strong>語源・ヒント</strong> {current.etymology}</p>}
+                  <button className="vu-launch" onClick={()=>{setAutoplay(false);setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
                 </div> : <div className="vd-card-unrevealed" onClick={() => setRevealed(true)}><span>✧</span><p>意味を思い浮かべてから確認しましょう</p></div>}
                   </>
                 )}
@@ -548,6 +553,7 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
+    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>setUniverseEntry(null)} onSpeak={item=>speak(item)} sound={store.settings.sound}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
