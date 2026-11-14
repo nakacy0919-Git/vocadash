@@ -1,15 +1,18 @@
 import React,{useEffect,useRef} from 'react';
 import './VoiceOrb.css';
+import {createEnergyRenderer} from '../lib/voiceEnergyRenderer.js';
 const particles=Array.from({length:480},(_,i)=>{const arm=i%5,j=Math.floor(i/5),t=j/95;return {arm,t,angle:t*10.8+arm*Math.PI*2/5,seed:Math.sin(i*127.1)*43758.5453%1,weight:.45+(i%7)*.14};});
 const stars=Array.from({length:100},(_,i)=>({x:(Math.sin(i*87.31)*43758.5453%1+1)%1,y:(Math.sin(i*42.78+7)*26378.72%1+1)%1,r:.3+(i%4)*.25}));
 export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
- const canvas=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
+ const canvas=useRef(null),cinematic=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
  useEffect(()=>{
   if(!enabled||!canvas.current)return;
   const el=canvas.current,ctx=el.getContext('2d');if(!ctx)return;
-  let w=1,h=1,frame=0,energy=0,rotation=0,last=0,stopped=false;
+  const film=full?cinematic.current:null;let gpu=null;try{if(film)gpu=createEnergyRenderer(film);}catch{}
+  if(film)film.style.visibility=gpu?'visible':'hidden';
+  let w=1,h=1,frame=0,energy=0,rotation=0,last=0,stopped=false,painted=0;
   const reduce=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  const resize=()=>{const b=el.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);w=Math.max(1,b.width);h=Math.max(1,b.height);el.width=Math.round(w*d);el.height=Math.round(h*d);ctx.setTransform(d,0,0,d,0,0);};
+  const resize=()=>{const b=el.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);w=Math.max(1,b.width);h=Math.max(1,b.height);el.width=Math.round(w*d);el.height=Math.round(h*d);ctx.setTransform(d,0,0,d,0,0);gpu?.resize(w,h);};
   resize();const ro=typeof ResizeObserver!=='undefined'?new ResizeObserver(resize):null;ro?.observe(el);window.addEventListener('resize',resize);
   function draw(now){
    if(stopped)return;const dt=last?Math.min(50,now-last):16;last=now;
@@ -17,7 +20,8 @@ export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterRe
    const measured=state.meterReady?meter.current?.read()||0:(active&&speaking ? .22 : 0);
    const target=active?measured:0;energy+=(target-energy)*(target>energy?.24:.085);
    if(!reduce)rotation+=dt*.00024*(1+energy*2.8+(state.busy?1.2:0));
-   const time=reduce?0:now*.001,cx=w*.5,cy=full?h*.48:h*.5,base=Math.min(w,h)*.43;
+   const time=reduce?0:now*.001,cx=w*.5,cy=full?h*.48:h*.5,base=Math.min(w,h)*.48;
+   if(gpu){if(now-painted>=30){painted=now;if(!gpu.draw(time,energy,state.busy)){gpu.dispose();gpu=null;if(film)film.style.visibility='hidden';}}if(gpu){frame=requestAnimationFrame(draw);return;}}
    ctx.clearRect(0,0,w,h);
    if(full){
     const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.69);bg.addColorStop(0,'#101a38');bg.addColorStop(.43,'#080f24');bg.addColorStop(1,'#03050d');ctx.fillStyle=bg;ctx.fillRect(0,0,w,h);
@@ -41,14 +45,15 @@ export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterRe
    ctx.globalCompositeOperation='source-over';frame=requestAnimationFrame(draw);
   }
   frame=requestAnimationFrame(draw);
-  return()=>{stopped=true;cancelAnimationFrame(frame);ro?.disconnect();window.removeEventListener('resize',resize);};
+  return()=>{stopped=true;cancelAnimationFrame(frame);ro?.disconnect();gpu?.dispose();if(film)film.style.visibility='hidden';window.removeEventListener('resize',resize);};
  },[enabled,full,meter]);
  if(!enabled&&!notice&&!suggestions.length)return null;
  const state=busy?'thinking':phase==='standby'?'standby':micState;
  const label=busy?'Processing…':phase==='standby'?'Waiting for Voca…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Voice Control';
  return <div className={'vd-orb-overlay '+(full?'vd-orb-full ':'vd-orb-compact ')+'vd-orb-'+state}>
   {enabled&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
-  {enabled&&full&&<div className="vd-orb-top"><span>VOCA<span className="vd-orb-brand-accent"> ASSISTANT</span></span><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button></div>}
+  {enabled&&full&&<canvas ref={cinematic} className="vd-orb-canvas vd-orb-cinematic" aria-hidden="true"/>}
+  {enabled&&full&&<div className="vd-orb-top"><span>VOCA<span className="vd-orb-brand-accent"> ASSISTANT</span><small className="vd-orb-edition">NEURAL ENERGY SYSTEM</small></span><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button></div>}
   <div className="vd-orb-copy">
    {enabled&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
    {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
