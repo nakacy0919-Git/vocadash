@@ -54,3 +54,34 @@ test('universe hands-free commands distinguish assistant return, map history, fi
 import {centerFromRelation} from './universeNavigation.js';
 test('Dash is the wake name; old Voca wake phrase is retired',()=>{assert.deepEqual(extractWake('Dash Assistant, show me beautiful'),{command:'show me beautiful'});assert.deepEqual(parseVoice('Dash, expand synonyms'),{kind:'filter',value:'synonym'});assert.equal(extractWake('Hey Voca'),null);assert.equal(extractWake('Dashboard'),null);assert.equal(parseVoice('Back to Dash Assistant').kind,'back');});
 test('direct related-node navigation supports existing and leaf words',()=>{const map=word=>word==='beauty'?{word,meaning:'美しさ',relatedWords:[{word:'beautiful'}]}:null;const a=centerFromRelation({word:'beauty',meaning:'美'},map,new Map());assert.equal(a.meaning,'美しさ');assert.equal(a.relatedWords[0].word,'beautiful');const b=centerFromRelation({word:'new phrase',meaning:'新しい表現'},map,new Map());assert.equal(b.word,'new phrase');assert.equal(b.meaning,'新しい表現');});
+
+import {resolveVocabularyEntry} from './voice.js';
+test('voice search finds draft-only and course-only nouns verbs adjectives and spelling variants',async()=>{
+ const record={headword:'organize/organise',senseId:'s1',meaningJa:'整理する',examples:[{en:'We organize events.',ja:'行事を企画する。'}]};
+ const drafts=new Map([['organize',[record]],['organise',[record]],['constraint',[{headword:'constraint',senseId:'s2',meaningJa:'制約',examples:[]}]]]);
+ const getCourse=async k=>k==='pragmatic'?{word:k,meaning:'実際的な',english:'They chose a pragmatic solution.'}:null;
+ for(const [raw,word] of [['Show me organise','organise'],['Show me constraint','constraint'],['Show me pragmatic','pragmatic']]){
+  const cmd=parseVoice(raw),out=await resolveVocabularyEntry(cmd.value,{getDrafts:async()=>drafts,getCourse});
+  assert.equal(out?.word,word);
+ }
+ assert.equal((await resolveVocabularyEntry('pragmatic',{getDrafts:async()=>{throw Error('chunk failed')},getCourse}))?.word,'pragmatic');
+ assert.equal(await resolveVocabularyEntry('unregistered',{getDrafts:async()=>drafts,getCourse}),null);
+});
+test('standby rejects an unaddressed command and accepts addressed words of any class',()=>{
+ for(const word of ['develop','evidence','sustainable','gradually']){
+  assert.equal(routeVoice(['Show me '+word],'standby'),null);
+  const routed=routeVoice(['Dash show me '+word],'standby');assert.equal(parseVoice(routed.command).value,word);
+ }
+});
+import {CATEGORY_WORDS,CATEGORY_CATALOG,categoryUnit} from './category.js';
+import {normalizeWords,makeSessionQueue} from './learning.js';
+test('category courses cover 100 unique words across 15 courses and retain shared IDs',()=>{
+ assert.equal(CATEGORY_WORDS.length,100);assert.equal(new Set(CATEGORY_WORDS.map(w=>w.word)).size,100);assert.equal(CATEGORY_CATALOG.length,15);
+ const memberships=new Map();
+ for(const course of CATEGORY_CATALOG)for(const unit of course.units){
+  const raw=categoryUnit(course.id,unit.id),words=normalizeWords(raw,course.id,unit.id);assert.ok(words.length>0&&words.length<=10);
+  for(const w of words){assert.equal(w.choices.length,4);assert.equal(new Set(w.choices).size,4);assert.ok(w.english.toLowerCase().includes(w.word));assert.equal(w.id,'category:'+w.word);memberships.set(w.id,(memberships.get(w.id)||0)+1);}
+  assert.deepEqual(makeSessionQueue(words,'study',{}, {questionCount:'all',randomOrder:false}).map(w=>w.id),words.map(w=>w.id));
+ }
+ assert.equal(memberships.size,100);assert.ok([...memberships.values()].every(n=>n===3));
+});
