@@ -1,3 +1,4 @@
+import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
 import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
 import productiveVerbMega, {productiveVerbNotes} from '../data/universe-productive-verbs-mega.js';
 import concreteWorldMega, {concreteWorldNotes} from '../data/universe-concrete-world-mega.js';
@@ -149,6 +150,21 @@ const everydayPhrasesAdded=addCompatibleBatch(everydayPhrasesMega);
 const concreteWorldAdded=addCompatibleBatch(concreteWorldMega);
 const productiveVerbAdded=addCompatibleBatch(productiveVerbMega);
 const adjectiveNounAdded=addCompatibleBatch(adjectiveNounMega);
+// Promote only generic earlier relations, and only under an exact sense match.
+// Earlier curated synonyms/contrasts and all established head glosses remain unchanged.
+const derivationCollocationAdded={...addCompatibleBatch(derivationCollocationMega),upgraded:0};
+for(const [word,entry] of Object.entries(derivationCollocationMega)){
+ const current=authored.get(normalize(word));
+ if(!current||current.meaning!==entry.meaning)continue;
+ const preferred=new Map(entry.links.filter(x=>x.type==='family'||x.type==='collocation').map(x=>[normalize(x.word),x]));
+ for(let i=0;i<current.links.length;i++){
+  const old=current.links[i],next=preferred.get(normalize(old.word));
+  if(old.type!=='related'||!next||old.meaning!==next.meaning)continue;
+  current.links[i]={...old,type:next.type,tier:next.tier};
+  derivationCollocationAdded.upgraded++;
+ }
+}
+export function derivationCollocationCoverage(){return {...derivationCollocationAdded};}
 export function adjectiveNounCoverage(){return {...adjectiveNounAdded};}
 export function productiveVerbCoverage(){return {...productiveVerbAdded};}
 export function concreteWorldCoverage(){return {...concreteWorldAdded};}
@@ -180,7 +196,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes,productiveVerbNotes,adjectiveNounNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes,productiveVerbNotes,adjectiveNounNotes,derivationCollocationNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
