@@ -2,6 +2,7 @@
 import a from '../data/universe-sense-draft-01.js';
 import b from '../data/universe-sense-draft-02.js';
 import c from '../data/universe-sense-draft-03.js';
+import editorial from '../data/universe-sense-editorial-01.js';
 const normalize = x => String(x??'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
 const records = new Map(), byWord = new Map(), inbound = new Map();
 for(const chunk of [a,b,c]){
@@ -21,6 +22,10 @@ export function candidateTerms(entry){
  const parts=typeof entry?.rawSynonyms==='string'?entry.rawSynonyms.split(/[;；,、]/):[];
  const seen=new Set(entry?.word?.split('/').map(normalize)||[]);
  const result=[];
+ for(const link of (editorial[entry?.id]||[])){
+  const key=normalize(link.word);if(!key||seen.has(key))continue;
+  seen.add(key);result.push({...link,candidate:true});
+ }
  for(const raw of parts){
   const label=raw.trim();if(!label)continue;
   const match=label.match(/^(.+?)\s*\(([^()]*)\)$/);
@@ -52,6 +57,7 @@ export function searchSenses(query,limit=30){
 export function senseNetworkStats(){
  return {senses:records.size,headwords:new Set([...records.values()].map(x=>normalize(x.word))).size,
   examples:[...records.values()].reduce((n,x)=>n+x.examples.length,0),
+  editorialSenses:Object.keys(editorial).length,editorialLinks:Object.values(editorial).flat().length,
   candidateLinks:[...records.values()].reduce((n,x)=>n+candidateTerms(x).length,0),
   mappedSenses:[...records.values()].filter(x=>candidateTerms(x).length>0).length,
   linkedCandidates:[...records.values()].reduce((n,x)=>n+candidateTerms(x).filter(t=>candidateTargets(t).length>0).length,0)};
