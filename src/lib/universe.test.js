@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:96,links:555});
+ assert.deepEqual(universeCoverage(),{heads:333,links:1504});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -34,4 +34,24 @@ test('paged orbits never discard links',()=>{
  assert.equal(all.length,links.length);
  assert.equal(new Set(all.map(x=>x.word)).size,links.length);
  assert.ok(all.every(x=>x.x>=10-1e-8&&x.x<=90+1e-8&&x.y>=10-1e-8&&x.y<=90+1e-8));
+});
+
+test('bulk catalog is valid and connects cross-level authored heads',()=>{
+ const heads=universeEntries();
+ const keys=new Set(heads.map(x=>x.word));
+ assert.equal(keys.size,heads.length);
+ let cross=0;
+ for(const head of heads){
+  assert.ok(head.meaning);
+  const seen=new Set();
+  for(const rel of head.relatedWords){
+   const key=rel.word.trim().toLowerCase();
+   assert.ok(rel.meaning && !seen.has(key) && key!==head.word);
+   seen.add(key);if(keys.has(key))cross++;
+  }
+ }
+ assert.ok(cross>=100);
+ assert.ok(getRelations(lookupUniverse('borrow')).some(x=>x.word==='lend'&&x.note));
+ assert.ok(usageFor('call off','put off').example);
+ assert.ok(getRelations({word:'library'}).some(x=>x.word==='bookstore'&&x.reverse));
 });
