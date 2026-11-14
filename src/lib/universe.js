@@ -1,3 +1,4 @@
+import domainMega from '../data/universe-domain-mega.js';
 import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
 import foundationMega, {foundationMegaNotes} from '../data/universe-foundation-mega.js';
 import generalNetwork, {generalNetworkNotes} from '../data/universe-general-network.js';
@@ -88,6 +89,15 @@ function addAuthored(word,entry) {
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
 for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal,schoolRegular,schoolReadingA,schoolReadingB,schoolContext,schoolReadingC,schoolReadingD,originalA1A,originalFoundationB,originalFoundationC,originalFoundationD,originalFoundationE,originalFoundationF,originalFoundationG,supplementOZ,academicNetwork,generalNetwork,foundationMega,academicFamilies])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
+// Add domain maps only for missing heads; a prior sense must not acquire unrelated links.
+const domainMegaAdded = {heads:0,links:0};
+for(const [word,entry] of Object.entries(domainMega)) {
+  if(authored.has(normalize(word)))continue;
+  addAuthored(word,entry);
+  domainMegaAdded.heads++;
+  domainMegaAdded.links+=authored.get(normalize(word)).links.length;
+}
+export function domainMegaCoverage(){return {...domainMegaAdded,candidates:Object.keys(domainMega).length};}
 for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
