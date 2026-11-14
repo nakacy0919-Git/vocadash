@@ -309,6 +309,22 @@ export function collocationReadingCoverage(){return {...collocationReadingAdded}
 export function unifiedReadingCoverage(){return {...unifiedReadingAdded};}
 export function everydayAbstractCoverage(){return {...everydayAbstractAdded};}
 
+// Common classroom voice queries must have an authored head, not just a reverse link.
+const voiceEssentials={
+ beautiful:{meaning:'美しい・きれいな',links:rows([
+ ['pretty','かわいらしい・きれいな','synonym','core'],['attractive','魅力的な','synonym','core'],['gorgeous','非常に美しい・華麗な','synonym','related'],['lovely','すてきな','synonym','related'],['stunning','息をのむほど美しい','synonym','extended'],['beauty','美しさ','family','core'],['beautifully','美しく','family','core'],['beautify','美しくする','family','extended'],['ugly','醜い','contrast','core'],['beautiful scenery','美しい景色','collocation','core'],['beautiful smile','美しい笑顔','collocation','related'],['beautiful place','美しい場所','collocation','related'],['more beautiful','より美しい','family','related'],['most beautiful','最も美しい','family','related']])},
+ happiness:{meaning:'幸福・幸せ',links:rows([
+ ['joy','喜び','synonym','core'],['contentment','満足感','synonym','related'],['delight','大きな喜び','synonym','related'],['happy','幸せな','family','core'],['happily','幸せそうに','family','core'],['unhappiness','不幸・不満','contrast','core'],['sadness','悲しみ','contrast','related'],['find happiness','幸せを見つける','collocation','core'],['pursuit of happiness','幸福の追求','collocation','related'],['bring happiness','幸せをもたらす','collocation','related']])}
+};
+const voiceEssentialAdded={heads:0,links:0};
+for(const [word,entry] of Object.entries(voiceEssentials)){
+ const prior=authored.get(word);
+ if(prior)continue;
+ addAuthored(word,entry);
+ voiceEssentialAdded.heads++;voiceEssentialAdded.links+=authored.get(word).links.length;
+}
+export function voiceEssentialCoverage(){return {...voiceEssentialAdded};}
+
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();

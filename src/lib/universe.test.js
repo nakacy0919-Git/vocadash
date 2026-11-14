@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,balancedReviewCoverage,cumulativeLexicalCoverage,getWordForms,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage,concreteWorldCoverage,productiveVerbCoverage,adjectiveNounCoverage,derivationCollocationCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,balancedReviewCoverage,cumulativeLexicalCoverage,getWordForms,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage,concreteWorldCoverage,productiveVerbCoverage,adjectiveNounCoverage,derivationCollocationCoverage,voiceEssentialCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'__test_fixture_unregistered__',choices:['wrong'],relatedWords:[{word:'__test_fixture_unregistered__'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -23,7 +23,7 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const extended=extendedReviewCoverage();
  const balanced=balancedReviewCoverage();
  const extra=[domainMegaCoverage(),actionMegaCoverage(),adjectiveMegaCoverage(),unifiedReadingCoverage(),everydayAbstractCoverage(),collocationReadingCoverage(),nuanceFamilyCoverage(),thematicReadingCoverage(),everydayPhrasesCoverage(),concreteWorldCoverage(),productiveVerbCoverage(),adjectiveNounCoverage(),derivationCollocationCoverage()].reduce((a,b)=>({heads:a.heads+b.heads,links:a.links+b.links}),{heads:0,links:0});
- assert.deepEqual(universeCoverage(),{heads:extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads,links:extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links});
+ assert.deepEqual(universeCoverage(),{heads:voiceEssentialCoverage().heads+extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads,links:voiceEssentialCoverage().links+extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -606,3 +606,5 @@ test('word families and collocations prioritize lexical anchors and protect exis
  assert.ok(derivationCollocationMega['pronunciation'].links.some(l=>l.word==='pronunciation of unstressed syllables'&&l.type==='collocation'));
  assert.ok(derivationCollocationMega['resistant'].links.some(l=>l.word==='moisture-resistant material for outdoor use'&&l.type==='collocation'));
 });
+
+test('common voice query beautiful has balanced authored relations',()=>{const entry=lookupUniverse('beautiful');assert.ok(entry);for(const type of ['synonym','family','contrast','collocation'])assert.ok(getRelations(entry).some(l=>l.type===type));assert.ok(lookupUniverse('happiness'));});
