@@ -48,3 +48,22 @@ export function parseVoice(raw) {
  }
  return {kind:'unknown',value:t};
 }
+
+/** Route recognition alternatives without requiring a wake word during an active session. */
+export function routeVoice(alternatives,phase) {
+ const texts=(Array.isArray(alternatives)?alternatives:[]).filter(t=>typeof t==='string'&&t.trim());
+ if(phase==='off'||!texts.length)return null;
+ // Prefer the browser's top result when it already matches a supported command.
+ const first=texts[0],wake=extractWake(first);
+ if(wake)return {kind:'wake',command:wake.command};
+ const parsed=parseVoice(first);
+ if(parsed.kind==='stop')return {kind:'command',command:first};
+ if(phase==='active'&&parsed.kind!=='unknown')return {kind:'command',command:first};
+ // Alternatives can recover a recognition variation, but standby accepts only wake phrases.
+ for(const t of texts.slice(1)){
+  const w=extractWake(t);
+  if(w)return {kind:'wake',command:w.command};
+  if(phase==='active'&&parseVoice(t).kind!=='unknown')return {kind:'command',command:t};
+ }
+ return phase==='active'?{kind:'command',command:first}:null;
+}

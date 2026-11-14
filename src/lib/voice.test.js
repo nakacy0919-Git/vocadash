@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseVoice,extractWake} from './voice.js';
+import {parseVoice,extractWake,routeVoice} from './voice.js';
 test('voice commands',()=>{for(const [input,kind,value] of [['Show me connect','search','connect'],['Open the universe of connect','universe','connect'],['Expand synonyms','filter','synonym'],['Focus on connection','focus','connection'],['Read the second sentence','read','second'],['Show me collocations','filter','collocation'],['Stop listening','stop','']])assert.deepEqual(parseVoice(input),{kind,value});});
 
 test('wake word supports both phrases, one-shot commands and individual preferences',()=>{
@@ -14,4 +14,17 @@ test('wake word supports both phrases, one-shot commands and individual preferen
  assert.equal(extractWake('Hey Voca','short'),null);
  assert.equal(parseVoice('Go to sleep').kind,'sleep');
  assert.equal(parseVoice('Stop listening').kind,'stop');
+});
+
+test('one tap active session accepts direct and addressed commands; standby is optional',()=>{
+ assert.deepEqual(routeVoice(['Show me connect'],'active'),{kind:'command',command:'Show me connect'});
+ assert.deepEqual(routeVoice(['Voca, expand synonyms'],'active'),{kind:'wake',command:'expand synonyms'});
+ assert.deepEqual(routeVoice(['Hey Voca'],'active'),{kind:'wake',command:''});
+ assert.deepEqual(routeVoice(['Go to sleep'],'active'),{kind:'command',command:'Go to sleep'});
+ assert.equal(routeVoice(['Show me connect'],'standby'),null);
+ assert.deepEqual(routeVoice(['Voca show me connect'],'standby'),{kind:'wake',command:'show me connect'});
+ assert.deepEqual(routeVoice(['Hey, Voca!'],'standby'),{kind:'wake',command:''});
+ assert.deepEqual(routeVoice(['Stop listening'],'standby'),{kind:'command',command:'Stop listening'});
+ assert.equal(routeVoice(['Hey Voca'],'off'),null);
+ assert.deepEqual(routeVoice(['noise','Expand synonyms'],'active'),{kind:'command',command:'Expand synonyms'});
 });
