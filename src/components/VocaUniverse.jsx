@@ -35,11 +35,11 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  return <div className="vu-overlay" onClick={onClose}>
   <section className="vu-dialog" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><button ref={close} onClick={onClose} aria-label="閉じる">✕</button></header>
-   <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}<span>距離は教材上の学習優先度（実測頻度ではありません）</span></div>
+   <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);}}>{label}</button>)}</div>
    <div className="vu-map-scroll"><div className="vu-map" key={center.word}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" className="vu-orbits">
-      {[20,34,44].map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
+      {[21,32,40].map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
       {nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={'vu-line '+n.type}/>)}
     </svg>
     <div className="vu-center">{center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
