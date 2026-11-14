@@ -6,9 +6,14 @@ import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
 import LearningSpace,{Opening} from './components/LearningSpace';
 import {lookupUniverse} from './lib/universe';
+import {categoryUnit,categoryCourse} from './lib/category.js';
+import {findVocabulary,searchVocabulary} from './lib/vocabularyLookup.js';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
+function unitLoader(c,u){const data=categoryUnit(c,u);return data?()=>Promise.resolve({default:data}):MODULES[sourcePath(c,u)];}
+let courseIndexPromise;
+function courseIndex(){if(!courseIndexPromise){const units=CATALOG.flatMap(c=>c.units.map(u=>({c:c.id,u:u.id,load:unitLoader(c.id,u.id)}))).filter(x=>x.load);courseIndexPromise=Promise.allSettled(units.map(async x=>normalizeWords((await x.load()).default,x.c,x.u))).then(results=>{const index=new Map();for(const r of results)if(r.status==='fulfilled')for(const w of r.value){const key=w.word.toLowerCase().trim();if(!index.has(key))index.set(key,w);}if(results.some(r=>r.status==='rejected'))courseIndexPromise=null;return index;}).catch(e=>{courseIndexPromise=null;throw e;});}return courseIndexPromise;}
 
 let quizEffectsAudioContext;
 function playQuizFeedbackSound(correct, enabled) {
@@ -194,7 +199,7 @@ function useVocabulary(selection) {
   useEffect(() => {
     let active = true;
     const key=selection.courseId+':'+selection.unitId;
-    const loader = MODULES[sourcePath(selection.courseId, selection.unitId)];
+    const loader = unitLoader(selection.courseId, selection.unitId);
     setData({ words: [], loading: true, error: '', key });
     if (!loader) { setData({ words: [], loading: false, error: '教材データが見つかりません。', key }); return; }
     loader().then(mod => {
@@ -213,6 +218,8 @@ export default function VocaDash() {
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
   const [dashboardOpen, setDashboardOpen] = useState(true);
+  const [homeCategory,setHomeCategory]=useState(null);
+  const goCategory=group=>{setDashboardOpen(true);setHomeCategory({group,stamp:Date.now()});};
   const [advancedOpen, setAdvancedOpen] = useState(false);
   const [queue, setQueue] = useState([]);
   const [cursor, setCursor] = useState(0);
@@ -283,7 +290,7 @@ export default function VocaDash() {
     if(pending&&(loading||loadedKey!==pending.key))return;
     const nextMode=pending?.mode||'study';
     if(pending)pendingMode.current=null;
-    setQueue(makeSessionQueue(words, nextMode, store.records, store.settings)); setCursor(0); setMode(nextMode); setRevealed(false);
+    setQueue(makeSessionQueue(words, nextMode, store.records, categoryCourse(selection.courseId)?{...store.settings,questionCount:'all',randomOrder:false}:store.settings)); setCursor(0); setMode(nextMode); setRevealed(false);
     setFeedback(null); setQuizCelebration(null); setRatingFeedback(null); setQuizReviewOpen(false);
     setAutoplay(false); setSession({ answered: 0, correct: 0 });
   }, [words]);
@@ -304,10 +311,10 @@ export default function VocaDash() {
     pendingMode.current=null;
     resetCard(); readingCounted.current.clear(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
     setSession({ answered: 0, correct: 0 });
-    setQueue(makeSessionQueue(words, name, store.records, store.settings));
+    setQueue(makeSessionQueue(words, name, store.records, categoryCourse(selection.courseId)?{...store.settings,questionCount:'all',randomOrder:false}:store.settings));
   };
   const startGuided = (courseId,unitId,name) => {
-    if(!MODULES[sourcePath(courseId,unitId)])return;
+    if(!unitLoader(courseId,unitId))return;
     if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(name);return;}
     resetCard(); readingCounted.current.clear(); setAutoplay(false);setDashboardOpen(false);setQueue([]);setCursor(0);setMode(name);setSession({answered:0,correct:0});
     pendingMode.current={key:courseId+':'+unitId,mode:name};
@@ -425,24 +432,11 @@ export default function VocaDash() {
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
-  const voiceCourseSearch=async key=>{
-    for(const c of CATALOG)for(const u of c.units){
-      const load=MODULES[sourcePath(c.id,u.id)];if(!load)continue;
-      const mod=await load();const match=normalizeWords(mod.default||mod,c.id,u.id).find(w=>w.word.toLowerCase()===key);
-      if(match)return match;
-    }return null;
-  };
-  const exploreFromHome=async raw=>{
-    const key=raw.trim().toLowerCase();if(!key)return false;
-    const map=lookupUniverse(key),local=words.find(w=>w.word.toLowerCase()===key);
-    const item=map||local?{...map,...local,word:local?.word||map?.word||key,meaning:local?.meaning||map?.meaning||''}:await voiceCourseSearch(key);
-    if(!item)return false;openUniverse(item);return true;
-  };
-  const launchDash=()=>{
-    const btn=document.querySelector('.vd-voice-button');
-    if(btn?.getAttribute('aria-pressed')==='true'){document.querySelector('.vd-voice-help-button')?.click();return;}
-    btn?.click();
-  };
+  const voiceCourseSearch=async key=>(await courseIndex()).get(key)||null;
+  const resolveVocabulary=raw=>findVocabulary(raw,{words,loadCourseWords:voiceCourseSearch});
+  const exploreFromHome=async raw=>{const item=await resolveVocabulary(raw);if(!item)return false;openUniverse(item);return true;};
+  const searchAll=raw=>searchVocabulary(raw,courseIndex);
+  const launchDash=()=>{document.querySelector('.vd-voice-help-button')?.click();};
   const voiceAppCommand=kind=>{
     if(universeEntry){stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}
     if(kind==='close')return;
@@ -458,13 +452,8 @@ export default function VocaDash() {
         onClick={() => { resetCard(); setAutoplay(false); setDashboardOpen(true); }}>
         <span aria-hidden="true">◉</span> ダッシュボード
       </button>
-      <div className="vd-overline vd-library-label">YOUR LIBRARY</div>
-      {['英検対策', '発展学習', '学校教材'].map(group => <nav key={group} aria-label={group} className="vd-nav-group">
-        <h3>{group}</h3>
-        {CATALOG.filter(c => c.group === group).map(c => <button key={c.id} className={'vd-nav-item ' + (course.id === c.id ? 'is-active' : '')} onClick={() => selectCourse(c.id)}>
-          <span className="vd-nav-glyph">{c.id === 'eiken1_master' ? '✧' : c.id === 'reading' ? '▤' : c.id === 'regular' ? '▦' : 'A'}</span><span>{c.label}</span>{course.id === c.id && <span className="vd-nav-dot"/>}
-        </button>)}
-      </nav>)}
+      <div className="vd-overline vd-library-label">LEARNING LIBRARY</div>
+      <nav aria-label="教材カテゴリー" className="vd-nav-group">{[['学年・入試','▤'],['英検対策','◎'],['ジャンル別','◈'],['品詞別','Aa'],['発展学習','✦'],['学校教材','▦']].map(([group,icon])=><button key={group} className="vd-nav-item" onClick={()=>{resetCard();setAutoplay(false);goCategory(group);}}><span className="vd-nav-glyph">{icon}</span><span>{group==='英検対策'?'資格・英検対策':group}</span></button>)}</nav>
       <div className="vd-sidebar-bottom"><span>✦</span><strong>Small steps. Big words.</strong><p>毎日少しずつ、確かな語彙力へ。</p></div>
     </aside>
     <main className="vd-main">
@@ -481,7 +470,7 @@ export default function VocaDash() {
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
-            onExplore={exploreFromHome} onDash={launchDash} unitAvailable={(c,u)=>Boolean(MODULES[sourcePath(c,u)])}
+            onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
         ) : (
           <>
@@ -503,7 +492,7 @@ export default function VocaDash() {
             error ? <div className="vd-empty"><h2>読み込めませんでした</h2><p>{error}</p><button className="vd-primary" onClick={retry}>再試行</button></div> :
             mode === 'review' && !queue.length ? <div className="vd-empty"><div className="vd-confetti">✦</div><h2>今の復習は完了です！</h2><p>復習時期の単語はありません。新しい語彙に進みましょう。</p><button className="vd-primary" onClick={() => startMode('study')}>単語を覚える <Icon name="arrow"/></button></div> :
             !queue.length ? <div className="vd-empty"><h2>このユニットには問題がありません</h2><p>ほかのユニットを選択してください。</p></div> :
-            isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{mode === 'reading' ? '音読合格 ' + session.correct + '語（80%以上）' : session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button></div></div> :
+            isFinished ? <div className="vd-empty vd-finished"><div className="vd-done"><Icon name="check" size={38}/></div><div className="vd-overline">SESSION COMPLETE</div><h2>おつかれさまでした！</h2><p>{queue.length}枚のカードを確認しました。{mode === 'reading' ? '音読合格 ' + session.correct + '語（80%以上）' : session.answered ? '回答 ' + session.answered + '語 · 正解／覚えた ' + session.correct + '語' : '自動再生やスキップは習得判定されません。'}</p><div className="vd-finished-actions"><button className="vd-secondary" onClick={() => startMode('study')}>もう一度</button><button className="vd-primary" onClick={() => startMode('review')}>復習する <Icon name="arrow"/></button>{course.units[course.units.findIndex(u=>u.id===unit.id)+1]&&<button className="vd-primary" onClick={()=>startGuided(course.id,course.units[course.units.findIndex(u=>u.id===unit.id)+1].id,mode==='review'?'study':mode)}>次のユニット →</button>}</div></div> :
             mode === 'reading' ? (
               <ReadingPractice
                 key={current.id}
@@ -633,11 +622,11 @@ export default function VocaDash() {
         <div className="vd-under-card"><span>✦ すばやく、何度でも。間違えた単語は復習に残ります。</span><small>← → カード移動 · SPACE 意味を表示</small></div>
           </>
         )}
-        <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
+        {!dashboardOpen&&<footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>}
       </div>
     </main>
-    <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen} suspended={mode==='reading'&&!dashboardOpen}/>
+    {universeEntry && <VocaUniverse onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
