@@ -6,6 +6,7 @@ import {reviewMemory} from './lib/memoryEngine.js';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
+import QuizStudio from './components/QuizStudio';
 import LearningSpace,{Opening} from './components/LearningSpace';
 import {lookupUniverse} from './lib/universe';
 import {categoryUnit,categoryCourse} from './lib/category.js';
@@ -219,9 +220,10 @@ export default function VocaDash() {
   const { words, loading, error, retry, key:loadedKey } = useVocabulary(selection);
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
+  const [quizStudioOpen,setQuizStudioOpen]=useState(false);
   const [dashboardOpen, setDashboardOpen] = useState(true);
   const [homeCategory,setHomeCategory]=useState(null);
-  const goCategory=group=>{setDashboardOpen(true);setHomeCategory({group,stamp:Date.now()});};
+  const goCategory=group=>{setDashboardOpen(true);setQuizStudioOpen(false);setHomeCategory({group,stamp:Date.now()});};
   const [advancedOpen, setAdvancedOpen] = useState(false);
   const [queue, setQueue] = useState([]);
   const [cursor, setCursor] = useState(0);
@@ -408,7 +410,7 @@ export default function VocaDash() {
 
   useEffect(() => {
     const handler = e => {
-      if (universeEntry) return;
+      if (universeEntry || quizStudioOpen) return;
       if (quizReviewOpen) {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
@@ -442,7 +444,8 @@ export default function VocaDash() {
   const voiceAppCommand=kind=>{
     if(universeEntry){stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}
     if(kind==='close')return;
-    if(kind==='home'){resetCard();setAutoplay(false);setDashboardOpen(true);return;}
+    if(quizStudioOpen && kind!=='home')return;
+    if(kind==='home'){resetCard();setAutoplay(false);setDashboardOpen(true);setQuizStudioOpen(false);return;}
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
@@ -452,7 +455,7 @@ export default function VocaDash() {
     <aside className="vd-sidebar">
       <Brand/>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
-        onClick={() => { resetCard(); setAutoplay(false); setDashboardOpen(true); }}>
+        onClick={() => { resetCard(); setAutoplay(false); setDashboardOpen(true);setQuizStudioOpen(false); }}>
         <span aria-hidden="true">◉</span> ダッシュボード
       </button>
       <div className="vd-overline vd-library-label">LEARNING LIBRARY</div>
@@ -466,9 +469,9 @@ export default function VocaDash() {
 
       </header>
       <div className="vd-page">
-        {dashboardOpen ? (
+        {quizStudioOpen ? <QuizStudio onClose={()=>setQuizStudioOpen(false)}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onResume={()=>startMode('study')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioOpen(true);}} onResume={()=>startMode('study')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
