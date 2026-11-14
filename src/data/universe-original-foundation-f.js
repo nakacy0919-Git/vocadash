@@ -1,4 +1,4 @@
-// Original L–N vocabulary maps; pending deduplication and integration.
+// Original editorial L–N vocabulary maps. Priority tiers are instructional, not measured frequency.
 export default {
   "lab": {
     "meaning": "実験室（略）",
@@ -131,9 +131,9 @@ export default {
         "tier": "core"
       },
       {
-        "word": "lately I've been busy",
-        "meaning": "最近忙しい",
-        "type": "collocation",
+        "word": "have been busy lately",
+        "meaning": "最近ずっと忙しい",
+        "type": "related",
         "tier": "related"
       }
     ]
@@ -1565,7 +1565,7 @@ export default {
     ]
   },
   "mediterranean": {
-    "meaning": "地中海",
+    "meaning": "地中海（Mediterranean）",
     "links": [
       {
         "word": "Mediterranean Sea",
@@ -2139,29 +2139,6 @@ export default {
       }
     ]
   },
-  "mission": {
-    "meaning": "使命・任務",
-    "links": [
-      {
-        "word": "assignment",
-        "meaning": "任務",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "purpose",
-        "meaning": "目的",
-        "type": "related",
-        "tier": "related"
-      },
-      {
-        "word": "carry out a mission",
-        "meaning": "任務を遂行する",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "misty": {
     "meaning": "霧のかかった",
     "links": [
@@ -2439,7 +2416,7 @@ export default {
     ]
   },
   "moral": {
-    "meaning": "道徳的な・教訓",
+    "meaning": "道徳的な",
     "links": [
       {
         "word": "ethical",
@@ -2523,8 +2500,8 @@ export default {
         "tier": "related"
       },
       {
-        "word": "grow moss",
-        "meaning": "コケが生える",
+        "word": "covered in moss",
+        "meaning": "コケに覆われた",
         "type": "collocation",
         "tier": "related"
       }
@@ -3570,7 +3547,7 @@ export default {
     "links": [
       {
         "word": "neither",
-        "meaning": "〜もまた…ない",
+        "meaning": "どちらも〜ない",
         "type": "related",
         "tier": "related"
       },
@@ -3656,5 +3633,105 @@ export default {
         "tier": "related"
       }
     ]
+  }
+};
+export const foundationFNotes = {
+  "lasting": {
+    "enduring": {
+      "note": "lasting は効果や印象などが長く続くこと、enduring は時間や困難を経ても持続することを表す。",
+      "example": "The exchange program left a lasting impression on the students.",
+      "translation": "その交流プログラムは生徒たちに長く残る印象を与えた。"
+    }
+  },
+  "lawful": {
+    "legal": {
+      "note": "どちらも合法という意味で使える。legal は法律に関するという広い意味も持つ。lawful は法律で認められていることを強調する。",
+      "example": "The organization sought legal advice before taking action.",
+      "translation": "その団体は行動を起こす前に法律上の助言を求めた。"
+    }
+  },
+  "lessen": {
+    "alleviate": {
+      "note": "lessen は程度や強さを減らす幅広い意味。alleviate は苦痛や問題などを軽減する際によく使う。",
+      "example": "The new policy may help alleviate financial pressure on families.",
+      "translation": "新しい政策は家庭の経済的負担を軽減する助けになるかもしれない。"
+    }
+  },
+  "likeness": {
+    "resemblance": {
+      "note": "likeness は似ていることや似顔・肖像を意味する。resemblance は外見や性質などの類似を表す。",
+      "example": "There is a striking resemblance between the two paintings.",
+      "translation": "その二枚の絵には驚くほどの類似がある。"
+    }
+  },
+  "loyalty": {
+    "allegiance": {
+      "note": "loyalty は人や組織への変わらぬ支持、allegiance は国家や組織などへの忠誠・帰属を強調する改まった語。",
+      "example": "The company earned the loyalty of its customers through reliable service.",
+      "translation": "その会社は信頼できるサービスを通じて顧客の支持を得た。"
+    }
+  },
+  "maintenance": {
+    "upkeep": {
+      "note": "maintenance は機械・設備などの維持管理全般。upkeep は建物や設備を良好な状態に保つ手入れや費用に焦点を当てることが多い。",
+      "example": "Regular maintenance extends the life of school equipment.",
+      "translation": "定期的な保守は学校の設備の寿命を延ばす。"
+    }
+  },
+  "meaningful": {
+    "significant": {
+      "note": "meaningful は意義や価値を感じられること。significant は重要性や影響の大きさを表し、統計的に有意という意味もある。",
+      "example": "Students had meaningful conversations with their overseas partners.",
+      "translation": "生徒たちは海外の交流相手と有意義な会話をした。"
+    }
+  },
+  "memorize": {
+    "memorise": {
+      "note": "同じ意味の英米綴り。memorize は米国で一般的で、英国でも使われる。memorise は英国で広く使われる。",
+      "example": "Try to memorize the expressions by using them in sentences.",
+      "translation": "表現を文の中で使いながら暗記してみよう。"
+    }
+  },
+  "mend": {
+    "repair": {
+      "note": "mend は衣服などの修繕や関係を修復することにも使う。repair は機械や建物など幅広い対象の修理を表す。",
+      "example": "My grandmother taught me how to mend a torn shirt.",
+      "translation": "祖母は破れたシャツの繕い方を教えてくれた。"
+    }
+  },
+  "mislead": {
+    "deceive": {
+      "note": "mislead は誤った認識へ導くこと。deceive は意図的に人をだます意味が中心。",
+      "example": "An incomplete graph can mislead readers even when the data is correct.",
+      "translation": "データ自体が正しくても、不完全なグラフは読者に誤解を与えることがある。"
+    }
+  },
+  "modify": {
+    "alter": {
+      "note": "modify は目的に合わせて一部を変更すること。alter は形や状態などを変えることを広く表す。",
+      "example": "We modified the lesson plan to meet the students' needs.",
+      "translation": "生徒たちの必要に応じて授業計画を修正した。"
+    }
+  },
+  "motivate": {
+    "inspire": {
+      "note": "motivate は行動への意欲を生み出すこと。inspire は感動や刺激によって考えや行動を促すこと。",
+      "example": "The speaker inspired the students to pursue their own goals.",
+      "translation": "講演者は生徒たちが自分の目標を追うよう刺激を与えた。"
+    }
+  },
+  "nevertheless": {
+    "nonetheless": {
+      "note": "どちらも逆接を表す副詞で、前の内容にもかかわらず結果が成り立つことを示す。一般に置き換え可能。",
+      "example": "The task was difficult; nevertheless, the team completed it on time.",
+      "translation": "課題は難しかったが、それでもチームは時間内に終えた。"
+    }
+  },
+  "newcomer": {
+    "beginner": {
+      "note": "newcomer はある場所や集団に新しく加わった人。beginner はある技能や活動を始めたばかりの人。",
+      "example": "The club welcomed newcomers regardless of their experience.",
+      "translation": "そのクラブは経験に関係なく新しく加わった人々を歓迎した。"
+    }
   }
 };
