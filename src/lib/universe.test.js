@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,getWordForms} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -17,7 +17,8 @@ test('missing data is honest; authored core is closer',()=>{
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainReadingCoverage();
  const lexical=familyCollocationCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads,links:26096+added.links+lexical.links});
+ const review=lexicalReviewCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads,links:26096+added.links+lexical.links+review.links});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -209,4 +210,29 @@ test('curated word families and collocations are separately discoverable',()=>{
  }
  assert.ok(getRelations(lookupUniverse('contribute')).some(x=>x.word==='contribution'&&x.note&&x.example&&x.translation));
  assert.ok(getRelations(lookupUniverse('articulate')).some(x=>x.word==='articulate speaker'&&x.type==='collocation'));
+});
+
+test('core verb forms, irregular plurals and comparison forms are explicit',()=>{
+ const form=(word,label)=>getWordForms(word).find(x=>x.label===label)?.forms;
+ assert.deepEqual(form('be','その他の現在形'),['am','are']);
+ assert.deepEqual(form('go','過去形'),['went']);
+ assert.deepEqual(form('get','過去分詞'),['got','gotten']);
+ assert.deepEqual(form('read','過去分詞'),['read']);
+ assert.deepEqual(form('good','比較級'),['better']);
+ assert.deepEqual(form('child','複数形'),['children']);
+ assert.deepEqual(form('criterion','複数形'),['criteria']);
+ assert.deepEqual(form('species','複数形'),['species']);
+ for(const [base,related,label] of [['go','went','過去形'],['take','taken','過去分詞'],['child','children','複数形'],['good','better','比較級']]){
+   const link=getRelations(lookupUniverse(base)).find(x=>x.word===related);
+   assert.ok(link?.morphology?.includes(label),base+' -> '+related);
+ }
+ for(const [head,phrase] of [['take','take responsibility for'],['cope','cope with a heavy workload'],['clear','clear instructions'],['criterion','selection criteria']]){
+   const related=getRelations(lookupUniverse(head)).find(x=>x.word===phrase);
+   assert.ok(related?.meaning&&related.type==='collocation',head+' -> '+phrase);
+   assert.ok(lookupUniverse(phrase)?.relatedWords.some(x=>x.word===head));
+ }
+ const {before,after,existingHeadsUpdated,heads,links}=lexicalReviewCoverage();
+ assert.ok(existingHeadsUpdated>0&&heads>0&&links>0);
+ assert.ok(after.headsWithForms>before.headsWithForms);
+ assert.ok(after.headsWithFamily>=before.headsWithFamily&&after.headsWithCollocations>=before.headsWithCollocations);
 });
