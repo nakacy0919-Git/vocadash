@@ -34,13 +34,14 @@
     "batches/original-20261114-b1-10.json",
     "batches/original-20261114-b1-11.json",
     "batches/original-20261114-b1-12.json",
-    "batches/original-20261114-b1-13.json"
+    "batches/original-20261114-b1-13.json",
+    "batches/original-20261114-b1-mega-01.json"
   ],
   "totals": {
-    "distinctHeadwords": 1997,
-    "senses": 2492,
-    "examples": 4984,
-    "distinctExamples": 4984
+    "distinctHeadwords": 2220,
+    "senses": 2748,
+    "examples": 5496,
+    "distinctExamples": 5496
   },
   "quality": {
     "humanReviewed": false,
@@ -57,30 +58,11 @@
   "recentWork": {
     "source": "new original English-Japanese learning examples",
     "newBatches": [
-      "original-20261114-b1-13"
+      "original-20261114-b1-mega-01"
     ],
-    "headwordsAdded": 58,
-    "sensesAdded": 66,
-    "translatedExamplesAdded": 132,
-    "excludedExistingHeadwords": [
-      "ignore",
-      "illuminate",
-      "immediate",
-      "immigration",
-      "income",
-      "independent",
-      "inevitable",
-      "ingredient",
-      "initial",
-      "inject",
-      "insight",
-      "insist",
-      "inspire",
-      "intend",
-      "intense",
-      "intention",
-      "internal"
-    ],
+    "headwordsAdded": 223,
+    "sensesAdded": 256,
+    "translatedExamplesAdded": 512,
     "newExamplesDuplicatingPrior": 0
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
