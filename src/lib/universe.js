@@ -1,3 +1,5 @@
+import advancedVerbReview, {advancedVerbParadigms,advancedVerbNotes} from '../data/universe-advanced-verb-review.js';
+import advancedNominalReview, {advancedNominalParadigms} from '../data/universe-advanced-nominal-review.js';
 import academicVerbReview, {academicVerbParadigms} from '../data/universe-academic-verb-review-mega.js';
 import academicAdjectiveReview, {academicAdjectiveParadigms} from '../data/universe-academic-adjective-review-mega.js';
 import verbMorphologyReview, {verbParadigms} from '../data/universe-verb-morphology-review.js';
@@ -141,8 +143,9 @@ function lexicalAudit(){
   }
   return stats;
 }
-const reviewBefore=lexicalAudit();
-const priorReviewHeads=new Set(authored.keys());
+function applyLexicalReview(batches){
+ const before=lexicalAudit();
+ const priorReviewHeads=new Set(authored.keys());
 const revisedPriorHeads=new Set();
 let refinedReviewLinks=0, annotatedReviewLinks=0;
 for(const batch of [verbMorphologyReview,nounAdjectiveReview,academicVerbReview,academicAdjectiveReview]){
@@ -176,26 +179,38 @@ for(const batch of [verbMorphologyReview,nounAdjectiveReview,academicVerbReview,
     addAuthored(word,entry);
   }
 }
-const reviewAfter=lexicalAudit();
-export function lexicalReviewCoverage(){
-  return {heads:reviewAfter.heads-reviewBefore.heads,links:reviewAfter.links-reviewBefore.links,
-    existingHeadsUpdated:revisedPriorHeads.size,refined:refinedReviewLinks,annotated:annotatedReviewLinks,
-    before:{...reviewBefore},after:{...reviewAfter}};
+
+ const after=lexicalAudit();
+ return {heads:after.heads-before.heads,links:after.links-before.links,existingHeadsUpdated:revisedPriorHeads.size,refined:refinedReviewLinks,annotated:annotatedReviewLinks,before,after};
+}
+const earlierReview=applyLexicalReview([verbMorphologyReview,nounAdjectiveReview]);
+const advancedReview=applyLexicalReview([advancedVerbReview,advancedNominalReview]);
+function copyReview(r){return {...r,before:{...r.before},after:{...r.after}};}
+export function lexicalReviewCoverage(){return copyReview(earlierReview);}
+export function advancedReviewCoverage(){return copyReview(advancedReview);}
+function mergeParadigm(a,b){
+ if(!a)return b||null;
+ if(!b)return a;
+ const result={...a,...b};
+ for(const field of new Set([...Object.keys(a),...Object.keys(b)])){
+   if(Array.isArray(a[field])||Array.isArray(b[field]))result[field]=[...new Set([...(a[field]||[]),...(b[field]||[])])];
+ }
+ return result;
 }
 export function getWordForms(word){
-  const key=normalize(word);
-  const rows=[];
-  const verb=verbParadigms[key]||academicVerbParadigms[key];
-  const adj=adjectiveNounParadigms.adjectives[key]||academicAdjectiveParadigms[key];
-  const noun=adjectiveNounParadigms.nouns[key];
-  const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
-  if(verb){
-    add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
-    add('過去形',verb.past);add('過去分詞',verb.pastParticiple);add('現在分詞・動名詞',verb.presentParticiple);
-  }
-  if(adj){add('形容詞・原級',[adj.base]);add('比較級',adj.comparative);add('最上級',adj.superlative);}
-  if(noun){add('名詞・単数形',[noun.singular]);add('複数形',noun.plural);}
-  return rows;
+ const key=normalize(word);
+ const rows=[];
+ const verb=mergeParadigm(verbParadigms[key],advancedVerbParadigms[key]);
+ const adj=mergeParadigm(adjectiveNounParadigms.adjectives[key],advancedNominalParadigms.adjectives[key]);
+ const noun=mergeParadigm(adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key]);
+ const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
+ if(verb){
+   add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
+   add('過去形',verb.past);add('過去分詞',verb.pastParticiple);add('現在分詞・動名詞',verb.presentParticiple);
+ }
+ if(adj){add('形容詞・原級',[adj.base]);add('比較級',adj.comparative);add('最上級',adj.superlative);}
+ if(noun){add('名詞・単数形',[noun.singular]);add('複数形',noun.plural);}
+ return rows;
 }
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
@@ -219,7 +234,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes,advancedVerbNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
@@ -242,8 +257,18 @@ export function getRelations(entry,{includeReverse=true}={}) {
   const seen = new Set([normalize(entry.word)]);
   const links = [];
   const key=normalize(entry.word);
-  for (const raw of [...explicit,...(authored.get(key)?.links || []),...aliases,...(includeReverse ? reverse.get(key)||[] : [])]) {
-    const item = typeof raw === 'string' ? {word:raw} : raw;
+  const savedLinks=authored.get(key)?.links||[];
+  const savedByKey=new Map(savedLinks.map(link=>[normalize(link.word),link]));
+  for (const raw of [...explicit,...savedLinks,...aliases,...(includeReverse ? reverse.get(key)||[] : [])]) {
+    let item = typeof raw === 'string' ? {word:raw} : raw;
+    if(item&&typeof item.word==='string'){
+      const saved=savedByKey.get(normalize(item.word));
+      if(saved&&saved!==item){
+        const type=(!item.type||item.type==='related')?saved.type:item.type;
+        const morphology=[...new Set([...(saved.morphology||[]),...(item.morphology||[])])];
+        item={...saved,...item,type,tier:(type===saved.type&&item.type!==saved.type)?saved.tier:(item.tier||saved.tier),...(morphology.length?{morphology}:{}),lemma:item.lemma||saved.lemma};
+      }
+    }
     if (!item || typeof item.word !== 'string') continue;
     const key = normalize(item.word);
     if (!key || seen.has(key)) continue;
