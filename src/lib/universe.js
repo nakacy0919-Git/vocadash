@@ -1,3 +1,4 @@
+import familyCollocationMega, {familyCollocationNotes} from '../data/universe-families-collocations-mega.js';
 import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
 import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
 import foundationMega, {foundationMegaNotes} from '../data/universe-foundation-mega.js';
@@ -97,6 +98,28 @@ const domainAfter=universeCoverage();
 export function domainReadingCoverage() {
   return {heads:domainAfter.heads-domainBefore.heads,links:domainAfter.links-domainBefore.links};
 }
+// Explicit lexical relationships can refine a previously generic related edge.
+// Keep existing specific classifications, meanings and other authored information.
+const familyBefore=universeCoverage();
+let refinedLexicalLinks=0;
+for(const [word,entry] of Object.entries(familyCollocationMega)){
+  const prior=authored.get(normalize(word));
+  if(prior){
+    const specific=new Map(entry.links.filter(l=>l.type==='family'||l.type==='collocation').map(l=>[normalize(l.word),l]));
+    const links=prior.links.map(link=>{
+      const refinement=specific.get(normalize(link.word));
+      if(link.type!=='related'||!refinement)return link;
+      refinedLexicalLinks++;
+      return {...link,type:refinement.type,tier:refinement.tier};
+    });
+    authored.set(normalize(word),{...prior,links});
+  }
+  addAuthored(word,entry);
+}
+const familyAfter=universeCoverage();
+export function familyCollocationCoverage(){
+  return {heads:familyAfter.heads-familyBefore.heads,links:familyAfter.links-familyBefore.links,refined:refinedLexicalLinks};
+}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
@@ -119,7 +142,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
