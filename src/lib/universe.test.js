@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage,concreteWorldCoverage,productiveVerbCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage,concreteWorldCoverage,productiveVerbCoverage,adjectiveNounCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads+nuanceFamilyCoverage().heads+thematicReadingCoverage().heads+everydayPhrasesCoverage().heads+concreteWorldCoverage().heads+productiveVerbCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links+nuanceFamilyCoverage().links+thematicReadingCoverage().links+everydayPhrasesCoverage().links+concreteWorldCoverage().links+productiveVerbCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads+nuanceFamilyCoverage().heads+thematicReadingCoverage().heads+everydayPhrasesCoverage().heads+concreteWorldCoverage().heads+productiveVerbCoverage().heads+adjectiveNounCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links+nuanceFamilyCoverage().links+thematicReadingCoverage().links+everydayPhrasesCoverage().links+concreteWorldCoverage().links+productiveVerbCoverage().links+adjectiveNounCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -394,4 +394,28 @@ test('productive verbs have typed derivational and collocation edges',()=>{
  assert.ok(productiveVerbMega['adapt'].links.some(l=>l.word==='adaptability'&&l.type==='family'));
  assert.ok(productiveVerbMega['contribute'].links.some(l=>l.word==='contribute original ideas to a group project'&&l.type==='collocation'));
  assert.ok(productiveVerbMega['graduate'].links.some(l=>l.word==='graduate student'&&l.type==='related'));
+});
+
+import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
+test('adjective and noun networks distinguish derivations and contextual combinations',()=>{
+ const stats=adjectiveNounCoverage();
+ assert.equal(stats.candidates,1613);
+ assert.equal(stats.heads+stats.compatible+stats.skippedSense,stats.candidates);
+ assert.ok(stats.heads>0&&stats.links>0);
+ const entries=Object.entries(adjectiveNounMega);
+ assert.equal(entries.length,1613);
+ assert.equal(entries.reduce((s,[,e])=>s+e.links.length,0),8094);
+ for(const [word,entry] of entries){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.ok(entry.links.length>0);
+  assert.equal(new Set(entry.links.map(l=>l.word)).size,entry.links.length);
+  assert.ok(entry.links.every(l=>l.meaning&&l.word!==word&&['related','family','collocation'].includes(l.type)&&adjectiveNounMega[l.word]));
+ }
+ for(const [head,ns] of Object.entries(adjectiveNounNotes))for(const [word,note] of Object.entries(ns)){
+  assert.ok(adjectiveNounMega[head].links.some(l=>l.word===word));
+  assert.ok(note.note&&note.example&&note.translation);
+ }
+ assert.ok(adjectiveNounMega['equitable'].links.some(l=>l.word==='equity'&&l.type==='family'));
+ assert.ok(adjectiveNounMega['evidence'].links.some(l=>l.word==='independent evidence from multiple sources'&&l.type==='collocation'));
+ assert.ok(adjectiveNounMega['confident'].links.some(l=>l.word==='confidently'&&l.type==='family'));
 });
