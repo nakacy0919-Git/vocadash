@@ -11,21 +11,43 @@
     "batches/batch-04.json",
     "batches/batch-05.json",
     "batches/batch-06.json",
-    "batches/batch-07.json"
+    "batches/batch-07.json",
+    "batches/batch-08.json",
+    "batches/batch-09.json",
+    "batches/batch-10.json",
+    "batches/batch-11.json",
+    "batches/bulk-20261114-a1.json",
+    "batches/bulk-20261114-b1-a.json",
+    "batches/bulk-20261114-b1-b.json"
   ],
   "totals": {
-    "distinctHeadwords": 594,
-    "senses": 899,
-    "examples": 1798,
-    "distinctExamples": 1796
+    "distinctHeadwords": 1225,
+    "senses": 1615,
+    "examples": 3230,
+    "distinctExamples": 3230
   },
   "quality": {
     "humanReviewed": false,
     "imagesGenerated": 0,
-    "exactDuplicateExamplePairs": 2
+    "exactDuplicateExamplePairs": 0,
+    "requiredFieldMissing": 0,
+    "duplicateSenseIds": 0
   },
   "publication": {
     "liveAppConnected": false
   },
-  "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here."
+  "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
+  "lastUpdated": "2026-11-14",
+  "recentWork": {
+    "newBatches": [
+      "bulk-20261114-a1",
+      "bulk-20261114-b1-a",
+      "bulk-20261114-b1-b"
+    ],
+    "newUniqueHeadwords": 365,
+    "newSenses": 392,
+    "newExamplesWithJa": 784,
+    "liveAppConnected": false
+  },
+  "notes": "Exact duplicate sentences and missing-field checks pass. Semantic, grammatical, image, and source-rights review still required before release."
 }

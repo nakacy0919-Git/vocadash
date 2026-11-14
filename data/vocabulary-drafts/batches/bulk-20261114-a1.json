@@ -1,0 +1,2973 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "bulk-20261114-a1",
+  "sourceTab": null,
+  "sourceKind": "github-original",
+  "records": [
+    {
+      "senseId": "VD-BULK-261114-A1-00001",
+      "wordId": "VD-00008",
+      "headword": "action",
+      "partOfSpeech": "noun",
+      "meaningJa": "行動・対策",
+      "definitionEn": "something that someone does to achieve a result",
+      "synonyms": "step",
+      "cefrHeadword": "A1",
+      "imageHint": "ごみ拾い活動",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00001-e01",
+          "en": "Quick action prevented a serious accident.",
+          "ja": "素早い対応によって重大な事故を防げました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00001-e02",
+          "en": "The students took action to reduce plastic waste.",
+          "ja": "生徒たちはプラスチックごみを減らすために行動しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00002",
+      "wordId": "VD-00009",
+      "headword": "activity",
+      "partOfSpeech": "noun",
+      "meaningJa": "活動",
+      "definitionEn": "something that people do for work or enjoyment",
+      "synonyms": "task",
+      "cefrHeadword": "A1",
+      "imageHint": "屋外で活動する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00002-e01",
+          "en": "The club plans a new activity every month.",
+          "ja": "その部活動は毎月新しい活動を計画します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00002-e02",
+          "en": "Outdoor activities help children stay active.",
+          "ja": "屋外活動は子どもたちが活発に過ごす助けになります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00003",
+      "wordId": "VD-00010",
+      "headword": "actor",
+      "partOfSpeech": "noun",
+      "meaningJa": "俳優",
+      "definitionEn": "a person who plays characters in films or plays",
+      "synonyms": "performer",
+      "cefrHeadword": "A1",
+      "imageHint": "舞台で演技する俳優",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00003-e01",
+          "en": "The actor appeared in a popular film.",
+          "ja": "その俳優は人気映画に出演しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00003-e02",
+          "en": "My cousin hopes to become an actor.",
+          "ja": "いとこは俳優になることを希望しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00004",
+      "wordId": "VD-00011",
+      "headword": "add",
+      "partOfSpeech": "verb",
+      "meaningJa": "加える・足す",
+      "definitionEn": "to put something together with something else",
+      "synonyms": "include",
+      "cefrHeadword": "A1",
+      "imageHint": "スープに牛乳を加える",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00004-e01",
+          "en": "Add some milk to the soup.",
+          "ja": "スープに牛乳を少し加えてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00004-e02",
+          "en": "Please add your name to the list.",
+          "ja": "一覧に名前を追加してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00005",
+      "wordId": "VD-00011",
+      "headword": "add",
+      "partOfSpeech": "verb",
+      "meaningJa": "足し算する",
+      "definitionEn": "to calculate the total of two or more numbers",
+      "synonyms": "sum",
+      "cefrHeadword": "A1",
+      "imageHint": "数を足す黒板",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00005-e01",
+          "en": "Add seven and eight to get fifteen.",
+          "ja": "7と8を足すと15になります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00005-e02",
+          "en": "We added the costs of all the tickets.",
+          "ja": "私たちはすべての切符の代金を合計しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00006",
+      "wordId": "VD-00012",
+      "headword": "address",
+      "partOfSpeech": "noun",
+      "meaningJa": "住所",
+      "definitionEn": "the details that show where someone lives or a place is located",
+      "synonyms": "location",
+      "cefrHeadword": "A1",
+      "imageHint": "住所を書く伝票",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00006-e01",
+          "en": "Write your address on the form.",
+          "ja": "用紙に住所を書いてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00006-e02",
+          "en": "The package was sent to the wrong address.",
+          "ja": "荷物は間違った住所に送られました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00007",
+      "wordId": "VD-00012",
+      "headword": "address",
+      "partOfSpeech": "verb",
+      "meaningJa": "問題に対処する",
+      "definitionEn": "to deal with a problem or important issue",
+      "synonyms": "deal with",
+      "cefrHeadword": "A1",
+      "imageHint": "食品ロスを話し合う",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00007-e01",
+          "en": "The town needs to address flooding risks.",
+          "ja": "その町は洪水の危険に対処する必要があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00007-e02",
+          "en": "Our class addressed the problem of food waste.",
+          "ja": "私たちのクラスは食品ロスの問題に取り組みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00008",
+      "wordId": "VD-00013",
+      "headword": "afraid",
+      "partOfSpeech": "adjective",
+      "meaningJa": "怖がって・恐れて",
+      "definitionEn": "feeling fear about something",
+      "synonyms": "scared",
+      "cefrHeadword": "A1",
+      "imageHint": "暗闇で不安な子",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00008-e01",
+          "en": "The child is afraid of the dark.",
+          "ja": "その子どもは暗闇を怖がっています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00008-e02",
+          "en": "I was afraid to speak in front of everyone.",
+          "ja": "私はみんなの前で話すのが怖かったです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00009",
+      "wordId": "VD-00015",
+      "headword": "afternoon",
+      "partOfSpeech": "noun",
+      "meaningJa": "午後",
+      "definitionEn": "the part of the day between noon and evening",
+      "synonyms": "later in the day",
+      "cefrHeadword": "A1",
+      "imageHint": "午後の教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00009-e01",
+          "en": "We have science class this afternoon.",
+          "ja": "私たちは今日の午後に理科の授業があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00009-e02",
+          "en": "It rained throughout the afternoon.",
+          "ja": "午後の間ずっと雨が降っていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00010",
+      "wordId": "VD-00017",
+      "headword": "age",
+      "partOfSpeech": "noun",
+      "meaningJa": "年齢",
+      "definitionEn": "the number of years someone has lived",
+      "synonyms": "years old (expression)",
+      "cefrHeadword": "A1",
+      "imageHint": "年齢の違う子ども",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00010-e01",
+          "en": "What is the age of the youngest player?",
+          "ja": "最も若い選手の年齢はいくつですか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00010-e02",
+          "en": "Children of different ages joined the event.",
+          "ja": "さまざまな年齢の子どもたちが行事に参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00011",
+      "wordId": "VD-00022",
+      "headword": "album",
+      "partOfSpeech": "noun",
+      "meaningJa": "アルバム・写真集",
+      "definitionEn": "a book or collection that holds photographs",
+      "synonyms": "photo collection",
+      "cefrHeadword": "A1",
+      "imageHint": "旅行の写真アルバム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00011-e01",
+          "en": "I made an album of our school trip.",
+          "ja": "私は修学旅行の写真をアルバムにまとめました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00011-e02",
+          "en": "My grandmother showed me an old photo album.",
+          "ja": "祖母は私に古い写真アルバムを見せてくれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00012",
+      "wordId": "VD-00022",
+      "headword": "album",
+      "partOfSpeech": "noun",
+      "meaningJa": "音楽アルバム",
+      "definitionEn": "a collection of songs released together",
+      "synonyms": "record (music)",
+      "cefrHeadword": "A1",
+      "imageHint": "音楽アルバムの画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00012-e01",
+          "en": "The band released a new album in June.",
+          "ja": "そのバンドは6月に新しいアルバムを発売しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00012-e02",
+          "en": "I listened to the whole album on the train.",
+          "ja": "私は電車の中でアルバムを全曲聴きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00013",
+      "wordId": "VD-00025",
+      "headword": "almost",
+      "partOfSpeech": "adverb",
+      "meaningJa": "ほとんど・もう少しで",
+      "definitionEn": "very nearly but not completely",
+      "synonyms": "nearly",
+      "cefrHeadword": "A1",
+      "imageHint": "満席に近いバス",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00013-e01",
+          "en": "I have almost finished my homework.",
+          "ja": "私は宿題をほとんど終えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00013-e02",
+          "en": "The bus was almost full when we got on.",
+          "ja": "私たちが乗ったときバスはほぼ満員でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00014",
+      "wordId": "VD-00027",
+      "headword": "along",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～に沿って",
+      "definitionEn": "following the length of something",
+      "synonyms": "beside (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "川沿いを歩く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00014-e01",
+          "en": "We walked along the river.",
+          "ja": "私たちは川に沿って歩きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00014-e02",
+          "en": "Cherry trees stand along the road.",
+          "ja": "その道路沿いには桜の木が並んでいます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00015",
+      "wordId": "VD-00028",
+      "headword": "already",
+      "partOfSpeech": "adverb",
+      "meaningJa": "すでに・もう",
+      "definitionEn": "before now or earlier than expected",
+      "synonyms": "by now",
+      "cefrHeadword": "A1",
+      "imageHint": "提出完了画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00015-e01",
+          "en": "She has already submitted the report.",
+          "ja": "彼女はすでにレポートを提出しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00015-e02",
+          "en": "The train had already left when we arrived.",
+          "ja": "私たちが到着したとき電車はもう出発していました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00016",
+      "wordId": "VD-00029",
+      "headword": "also",
+      "partOfSpeech": "adverb",
+      "meaningJa": "～もまた",
+      "definitionEn": "in addition to something else",
+      "synonyms": "too",
+      "cefrHeadword": "A1",
+      "imageHint": "読書する姉妹",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00016-e01",
+          "en": "My sister also enjoys reading.",
+          "ja": "妹も読書を楽しみます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00016-e02",
+          "en": "The library is quiet and also very comfortable.",
+          "ja": "その図書館は静かで、しかもとても快適です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00017",
+      "wordId": "VD-00030",
+      "headword": "always",
+      "partOfSpeech": "adverb",
+      "meaningJa": "いつも",
+      "definitionEn": "at all times or on every occasion",
+      "synonyms": "every time (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "手洗いする人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00017-e01",
+          "en": "He always arrives before the bell.",
+          "ja": "彼はいつもチャイムの前に到着します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00017-e02",
+          "en": "Always wash your hands before cooking.",
+          "ja": "料理の前には必ず手を洗ってください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00018",
+      "wordId": "VD-00036",
+      "headword": "another",
+      "partOfSpeech": "determiner",
+      "meaningJa": "もう一つの・別の",
+      "definitionEn": "one more or a different one",
+      "synonyms": "one more",
+      "cefrHeadword": "A1",
+      "imageHint": "別の道を選ぶ地図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00018-e01",
+          "en": "Could I have another piece of paper?",
+          "ja": "もう1枚紙をいただけますか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00018-e02",
+          "en": "We chose another route because of the rain.",
+          "ja": "雨のため別の経路を選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00019",
+      "wordId": "VD-00040",
+      "headword": "anyone",
+      "partOfSpeech": "pronoun",
+      "meaningJa": "誰でも・誰か",
+      "definitionEn": "any person at all",
+      "synonyms": "anybody",
+      "cefrHeadword": "A1",
+      "imageHint": "読書クラブの勧誘",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00019-e01",
+          "en": "Anyone can join the reading club.",
+          "ja": "誰でも読書クラブに参加できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00019-e02",
+          "en": "Did anyone see my blue notebook?",
+          "ja": "誰か私の青いノートを見ましたか。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00020",
+      "wordId": "VD-00041",
+      "headword": "anything",
+      "partOfSpeech": "pronoun",
+      "meaningJa": "何でも・何か",
+      "definitionEn": "any thing at all",
+      "synonyms": "something (questions)",
+      "cefrHeadword": "A1",
+      "imageHint": "空箱を調べる人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00020-e01",
+          "en": "You can ask me anything about the project.",
+          "ja": "プロジェクトについて何でも質問してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00020-e02",
+          "en": "I couldn't find anything in the empty box.",
+          "ja": "私は空の箱の中に何も見つけられませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00021",
+      "wordId": "VD-00043",
+      "headword": "April",
+      "partOfSpeech": "noun",
+      "meaningJa": "4月",
+      "definitionEn": "the fourth month of the year",
+      "synonyms": "fourth month",
+      "cefrHeadword": "A1",
+      "imageHint": "4月の桜",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00021-e01",
+          "en": "Our school year begins in April.",
+          "ja": "私たちの学校年度は4月に始まります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00021-e02",
+          "en": "The flowers usually bloom in early April.",
+          "ja": "その花は通常4月上旬に咲きます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00022",
+      "wordId": "VD-00044",
+      "headword": "apron",
+      "partOfSpeech": "noun",
+      "meaningJa": "エプロン",
+      "definitionEn": "a piece of clothing worn over clothes to keep them clean",
+      "synonyms": "protective garment",
+      "cefrHeadword": "A1",
+      "imageHint": "絵の具のエプロン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00022-e01",
+          "en": "She put on an apron before cooking.",
+          "ja": "彼女は料理の前にエプロンを着けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00022-e02",
+          "en": "The art teacher wore an apron covered in paint.",
+          "ja": "美術の先生は絵の具の付いたエプロンを着けていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00023",
+      "wordId": "VD-00046",
+      "headword": "arm",
+      "partOfSpeech": "noun",
+      "meaningJa": "腕",
+      "definitionEn": "the part of the body from the shoulder to the hand",
+      "synonyms": "upper limb",
+      "cefrHeadword": "A1",
+      "imageHint": "質問で手を挙げる生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00023-e01",
+          "en": "He raised his arm to ask a question.",
+          "ja": "彼は質問するために手を挙げました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00023-e02",
+          "en": "She carried the baby in her arms.",
+          "ja": "彼女は赤ちゃんを腕に抱いていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00024",
+      "wordId": "VD-00047",
+      "headword": "around",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～の周りに",
+      "definitionEn": "on all sides of a person or thing",
+      "synonyms": "surrounding",
+      "cefrHeadword": "A1",
+      "imageHint": "丸いテーブルを囲む",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00024-e01",
+          "en": "The children sat around the table.",
+          "ja": "子どもたちはテーブルの周りに座りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00024-e02",
+          "en": "A fence was built around the garden.",
+          "ja": "庭の周りに柵が作られました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00025",
+      "wordId": "VD-00047",
+      "headword": "around",
+      "partOfSpeech": "adverb",
+      "meaningJa": "およそ・約",
+      "definitionEn": "approximately a particular number or amount",
+      "synonyms": "approximately",
+      "cefrHeadword": "A1",
+      "imageHint": "約20分の徒歩案内",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00025-e01",
+          "en": "Around fifty people attended the event.",
+          "ja": "約50人が行事に参加しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00025-e02",
+          "en": "The walk takes around twenty minutes.",
+          "ja": "徒歩で約20分かかります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00026",
+      "wordId": "VD-00049",
+      "headword": "art",
+      "partOfSpeech": "noun",
+      "meaningJa": "美術・芸術",
+      "definitionEn": "the making of paintings or other creative works",
+      "synonyms": "visual arts",
+      "cefrHeadword": "A1",
+      "imageHint": "美術館の展示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00026-e01",
+          "en": "Art is my favorite subject at school.",
+          "ja": "美術は私が学校で一番好きな教科です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00026-e02",
+          "en": "The museum displays art from several countries.",
+          "ja": "その博物館は複数の国の美術作品を展示しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00027",
+      "wordId": "VD-00050",
+      "headword": "article",
+      "partOfSpeech": "noun",
+      "meaningJa": "記事",
+      "definitionEn": "a piece of writing in a newspaper or on a website",
+      "synonyms": "report (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "ニュース記事を読む生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00027-e01",
+          "en": "I read an article about renewable energy.",
+          "ja": "私は再生可能エネルギーについての記事を読みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00027-e02",
+          "en": "The students discussed a news article in class.",
+          "ja": "生徒たちは授業でニュース記事について話し合いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00028",
+      "wordId": "VD-00050",
+      "headword": "article",
+      "partOfSpeech": "noun",
+      "meaningJa": "冠詞",
+      "definitionEn": "a word such as a, an, or the used before a noun",
+      "synonyms": "determiner (broader)",
+      "cefrHeadword": "A1",
+      "imageHint": "a an theの文法説明",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00028-e01",
+          "en": "Use the article an before apple.",
+          "ja": "appleの前には冠詞anを使います。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00028-e02",
+          "en": "Our teacher explained the difference between articles.",
+          "ja": "先生は冠詞の使い分けを説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00029",
+      "wordId": "VD-00054",
+      "headword": "August",
+      "partOfSpeech": "noun",
+      "meaningJa": "8月",
+      "definitionEn": "the eighth month of the year",
+      "synonyms": "eighth month",
+      "cefrHeadword": "A1",
+      "imageHint": "8月の夏祭り",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00029-e01",
+          "en": "We visited our cousins in August.",
+          "ja": "私たちは8月にいとこたちを訪ねました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00029-e02",
+          "en": "The festival takes place every August.",
+          "ja": "その祭りは毎年8月に開催されます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00030",
+      "wordId": "VD-00055",
+      "headword": "aunt",
+      "partOfSpeech": "noun",
+      "meaningJa": "おば",
+      "definitionEn": "a sister of your mother or father, or an uncle's wife",
+      "synonyms": "family member",
+      "cefrHeadword": "A1",
+      "imageHint": "親戚を訪問する",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00030-e01",
+          "en": "My aunt lives near the sea.",
+          "ja": "私のおばは海の近くに住んでいます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00030-e02",
+          "en": "We visited our aunt during the holidays.",
+          "ja": "休暇中におばを訪ねました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00031",
+      "wordId": "VD-00056",
+      "headword": "autumn",
+      "partOfSpeech": "noun",
+      "meaningJa": "秋",
+      "definitionEn": "the season between summer and winter",
+      "synonyms": "fall (US)",
+      "cefrHeadword": "A1",
+      "imageHint": "紅葉した山",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00031-e01",
+          "en": "The mountains turn red and yellow in autumn.",
+          "ja": "秋には山々が赤や黄色に色づきます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00031-e02",
+          "en": "Our class plans a hike in autumn.",
+          "ja": "私たちのクラスは秋にハイキングを計画しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00032",
+      "wordId": "VD-00057",
+      "headword": "awake",
+      "partOfSpeech": "adjective",
+      "meaningJa": "目が覚めている",
+      "definitionEn": "not sleeping",
+      "synonyms": "conscious (related)",
+      "cefrHeadword": "A1",
+      "imageHint": "起きている赤ちゃん",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00032-e01",
+          "en": "The baby is still awake.",
+          "ja": "赤ちゃんはまだ起きています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00032-e02",
+          "en": "I stayed awake to finish the story.",
+          "ja": "私は物語を読み終えるために起きていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00033",
+      "wordId": "VD-00058",
+      "headword": "away",
+      "partOfSpeech": "adverb",
+      "meaningJa": "離れて・不在で",
+      "definitionEn": "at a distance from a particular place",
+      "synonyms": "elsewhere",
+      "cefrHeadword": "A1",
+      "imageHint": "駅までの距離",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00033-e01",
+          "en": "The station is five minutes away.",
+          "ja": "駅は5分離れたところにあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00033-e02",
+          "en": "My parents are away this weekend.",
+          "ja": "両親は今週末留守にしています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00034",
+      "wordId": "VD-00059",
+      "headword": "baby",
+      "partOfSpeech": "noun",
+      "meaningJa": "赤ちゃん",
+      "definitionEn": "a very young child",
+      "synonyms": "infant",
+      "cefrHeadword": "A1",
+      "imageHint": "眠っている赤ちゃん",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00034-e01",
+          "en": "The baby smiled at her mother.",
+          "ja": "赤ちゃんは母親にほほえみました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00034-e02",
+          "en": "Please speak quietly because the baby is sleeping.",
+          "ja": "赤ちゃんが寝ているので静かに話してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00035",
+      "wordId": "VD-00060",
+      "headword": "back",
+      "partOfSpeech": "noun",
+      "meaningJa": "背中",
+      "definitionEn": "the part of your body opposite your chest",
+      "synonyms": "rear of body",
+      "cefrHeadword": "A1",
+      "imageHint": "背中のリュックサック",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00035-e01",
+          "en": "My back hurts after carrying the bags.",
+          "ja": "荷物を運んだあと背中が痛みます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00035-e02",
+          "en": "The backpack felt heavy on his back.",
+          "ja": "リュックサックが彼の背中で重く感じられました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00036",
+      "wordId": "VD-00060",
+      "headword": "back",
+      "partOfSpeech": "adverb",
+      "meaningJa": "戻って",
+      "definitionEn": "toward the place you were before",
+      "synonyms": "returning",
+      "cefrHeadword": "A1",
+      "imageHint": "本を棚に戻す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00036-e01",
+          "en": "We came back before sunset.",
+          "ja": "私たちは日没前に戻りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00036-e02",
+          "en": "Please put the books back on the shelf.",
+          "ja": "本を棚に戻してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00037",
+      "wordId": "VD-00061",
+      "headword": "bad",
+      "partOfSpeech": "adjective",
+      "meaningJa": "悪い・よくない",
+      "definitionEn": "not good or of poor quality",
+      "synonyms": "poor",
+      "cefrHeadword": "A1",
+      "imageHint": "雨の悪天候",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00037-e01",
+          "en": "The weather was bad yesterday.",
+          "ja": "昨日は天気が悪かったです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00037-e02",
+          "en": "We made a bad decision and missed the train.",
+          "ja": "私たちは判断を誤り、電車に乗り遅れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00038",
+      "wordId": "VD-00062",
+      "headword": "bag",
+      "partOfSpeech": "noun",
+      "meaningJa": "かばん・袋",
+      "definitionEn": "a container made of flexible material used to carry things",
+      "synonyms": "sack (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "ごみ収集袋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00038-e01",
+          "en": "She put her lunch in her bag.",
+          "ja": "彼女は弁当をかばんに入れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00038-e02",
+          "en": "We collected trash in a large bag.",
+          "ja": "私たちは大きな袋にごみを集めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00039",
+      "wordId": "VD-00063",
+      "headword": "ball",
+      "partOfSpeech": "noun",
+      "meaningJa": "ボール・球",
+      "definitionEn": "a round object used in games or sports",
+      "synonyms": "sphere (shape)",
+      "cefrHeadword": "A1",
+      "imageHint": "グラウンドのボール",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00039-e01",
+          "en": "The ball rolled under the desk.",
+          "ja": "ボールは机の下に転がりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00039-e02",
+          "en": "He kicked the ball across the field.",
+          "ja": "彼はグラウンドの向こうまでボールを蹴りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00040",
+      "wordId": "VD-00065",
+      "headword": "band",
+      "partOfSpeech": "noun",
+      "meaningJa": "音楽バンド",
+      "definitionEn": "a group of musicians who perform together",
+      "synonyms": "music group",
+      "cefrHeadword": "A1",
+      "imageHint": "舞台のバンド演奏",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00040-e01",
+          "en": "Her brother plays guitar in a band.",
+          "ja": "彼女の兄はバンドでギターを弾いています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00040-e02",
+          "en": "The school band performed at the festival.",
+          "ja": "学校のバンドは祭りで演奏しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00041",
+      "wordId": "VD-00067",
+      "headword": "bar",
+      "partOfSpeech": "noun",
+      "meaningJa": "棒・横木",
+      "definitionEn": "a long narrow piece of metal or wood",
+      "synonyms": "rod",
+      "cefrHeadword": "A1",
+      "imageHint": "棒をつかむ体操選手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00041-e01",
+          "en": "The gymnast held the bar firmly.",
+          "ja": "体操選手は棒をしっかり握りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00041-e02",
+          "en": "A metal bar supported the shelf.",
+          "ja": "金属の棒が棚を支えていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00042",
+      "wordId": "VD-00067",
+      "headword": "bar",
+      "partOfSpeech": "noun",
+      "meaningJa": "飲み物を出す店",
+      "definitionEn": "a place where people buy and drink beverages",
+      "synonyms": "pub (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "ホテルのバー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00042-e01",
+          "en": "The hotel has a small bar near the lobby.",
+          "ja": "そのホテルにはロビーの近くに小さなバーがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00042-e02",
+          "en": "They met at a quiet bar after work.",
+          "ja": "彼らは仕事のあと静かなバーで会いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00043",
+      "wordId": "VD-00068",
+      "headword": "baseball",
+      "partOfSpeech": "noun",
+      "meaningJa": "野球",
+      "definitionEn": "a team game in which players hit a ball with a bat",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "野球の試合",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00043-e01",
+          "en": "My brother plays baseball on Saturdays.",
+          "ja": "弟は土曜日に野球をします。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00043-e02",
+          "en": "We watched a baseball game at the stadium.",
+          "ja": "私たちは球場で野球の試合を観戦しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00044",
+      "wordId": "VD-00069",
+      "headword": "basketball",
+      "partOfSpeech": "noun",
+      "meaningJa": "バスケットボール",
+      "definitionEn": "a team sport in which players try to throw a ball through a high hoop",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "バスケットの試合",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00044-e01",
+          "en": "She practices basketball after school.",
+          "ja": "彼女は放課後にバスケットボールの練習をします。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00044-e02",
+          "en": "Our school won the basketball tournament.",
+          "ja": "私たちの学校はバスケットボール大会で優勝しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00045",
+      "wordId": "VD-00071",
+      "headword": "bath",
+      "partOfSpeech": "noun",
+      "meaningJa": "入浴・風呂",
+      "definitionEn": "washing your body in a container filled with water",
+      "synonyms": "soak (related)",
+      "cefrHeadword": "A1",
+      "imageHint": "浴槽のある浴室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00045-e01",
+          "en": "I usually take a bath before bed.",
+          "ja": "私はふつう寝る前にお風呂に入ります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00045-e02",
+          "en": "A warm bath helped him relax.",
+          "ja": "温かいお風呂は彼をくつろがせました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00046",
+      "wordId": "VD-00072",
+      "headword": "bathroom",
+      "partOfSpeech": "noun",
+      "meaningJa": "浴室・トイレ",
+      "definitionEn": "a room containing a bath or a toilet",
+      "synonyms": "restroom (US)",
+      "cefrHeadword": "A1",
+      "imageHint": "浴室と洗面台",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00046-e01",
+          "en": "The bathroom is at the end of the hall.",
+          "ja": "浴室は廊下の突き当たりにあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00046-e02",
+          "en": "Could you tell me where the bathroom is?",
+          "ja": "トイレがどこにあるか教えていただけますか。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00047",
+      "wordId": "VD-00075",
+      "headword": "bean",
+      "partOfSpeech": "noun",
+      "meaningJa": "豆",
+      "definitionEn": "an edible seed that grows in a pod",
+      "synonyms": "legume seed",
+      "cefrHeadword": "A1",
+      "imageHint": "さやに入った豆",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00047-e01",
+          "en": "We planted beans in the school garden.",
+          "ja": "私たちは学校の菜園に豆を植えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00047-e02",
+          "en": "The soup contains several kinds of beans.",
+          "ja": "そのスープには数種類の豆が入っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00048",
+      "wordId": "VD-00076",
+      "headword": "bear",
+      "partOfSpeech": "noun",
+      "meaningJa": "クマ",
+      "definitionEn": "a large wild animal with thick fur and a strong body",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "森のクマ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00048-e01",
+          "en": "A bear was seen near the mountain road.",
+          "ja": "山道の近くでクマが目撃されました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00048-e02",
+          "en": "Bears often search for food before winter.",
+          "ja": "クマは冬の前に食べ物を探すことがよくあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00049",
+      "wordId": "VD-00076",
+      "headword": "bear",
+      "partOfSpeech": "verb",
+      "meaningJa": "耐える・我慢する",
+      "definitionEn": "to accept something painful or difficult without giving up",
+      "synonyms": "endure",
+      "cefrHeadword": "A1",
+      "imageHint": "冷たい風を受ける登山者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00049-e01",
+          "en": "I can't bear the loud noise anymore.",
+          "ja": "私はその大きな騒音にもう耐えられません。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00049-e02",
+          "en": "The hikers had to bear the cold wind.",
+          "ja": "登山者たちは冷たい風に耐えなければなりませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00050",
+      "wordId": "VD-00078",
+      "headword": "because",
+      "partOfSpeech": "conjunction",
+      "meaningJa": "なぜなら・～なので",
+      "definitionEn": "used to give the reason for something",
+      "synonyms": "since (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "雨で屋内にいる人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00050-e01",
+          "en": "We stayed inside because it was raining.",
+          "ja": "雨が降っていたので私たちは室内にいました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00050-e02",
+          "en": "She smiled because her friend returned.",
+          "ja": "友人が戻ってきたので彼女はほほえみました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00051",
+      "wordId": "VD-00079",
+      "headword": "become",
+      "partOfSpeech": "verb",
+      "meaningJa": "～になる",
+      "definitionEn": "to start to have a new state or quality",
+      "synonyms": "grow into",
+      "cefrHeadword": "A1",
+      "imageHint": "教師になる夢",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00051-e01",
+          "en": "The sky became dark before the storm.",
+          "ja": "嵐の前に空が暗くなりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00051-e02",
+          "en": "He wants to become a science teacher.",
+          "ja": "彼は理科の先生になりたいと思っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00052",
+      "wordId": "VD-00080",
+      "headword": "bed",
+      "partOfSpeech": "noun",
+      "meaningJa": "ベッド",
+      "definitionEn": "a piece of furniture used for sleeping",
+      "synonyms": "sleeping place",
+      "cefrHeadword": "A1",
+      "imageHint": "整えたベッド",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00052-e01",
+          "en": "The cat is sleeping on my bed.",
+          "ja": "猫は私のベッドで寝ています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00052-e02",
+          "en": "I made my bed before breakfast.",
+          "ja": "私は朝食前にベッドを整えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00053",
+      "wordId": "VD-00081",
+      "headword": "bedroom",
+      "partOfSpeech": "noun",
+      "meaningJa": "寝室",
+      "definitionEn": "a room used mainly for sleeping",
+      "synonyms": "sleeping room",
+      "cefrHeadword": "A1",
+      "imageHint": "青い壁の寝室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00053-e01",
+          "en": "My bedroom has a small window.",
+          "ja": "私の寝室には小さな窓があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00053-e02",
+          "en": "She painted her bedroom walls blue.",
+          "ja": "彼女は寝室の壁を青く塗りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00054",
+      "wordId": "VD-00082",
+      "headword": "bee",
+      "partOfSpeech": "noun",
+      "meaningJa": "ミツバチ",
+      "definitionEn": "a small flying insect that makes honey and visits flowers",
+      "synonyms": "honeybee (species)",
+      "cefrHeadword": "A1",
+      "imageHint": "花にとまるミツバチ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00054-e01",
+          "en": "A bee landed on the yellow flower.",
+          "ja": "ミツバチが黄色い花にとまりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00054-e02",
+          "en": "Bees help some plants produce fruit.",
+          "ja": "ミツバチは一部の植物が実をつけるのを助けます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00055",
+      "wordId": "VD-00083",
+      "headword": "beef",
+      "partOfSpeech": "noun",
+      "meaningJa": "牛肉",
+      "definitionEn": "meat from a cow used as food",
+      "synonyms": "cow meat",
+      "cefrHeadword": "A1",
+      "imageHint": "牛肉のシチュー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00055-e01",
+          "en": "We cooked beef with vegetables.",
+          "ja": "私たちは牛肉を野菜と一緒に調理しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00055-e02",
+          "en": "The restaurant serves beef stew on Fridays.",
+          "ja": "そのレストランは金曜日にビーフシチューを出します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00056",
+      "wordId": "VD-00084",
+      "headword": "before",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～の前に",
+      "definitionEn": "earlier than a time or event",
+      "synonyms": "prior to",
+      "cefrHeadword": "A1",
+      "imageHint": "昼食前の手洗い",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00056-e01",
+          "en": "Wash your hands before lunch.",
+          "ja": "昼食の前に手を洗ってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00056-e02",
+          "en": "We finished the work before the deadline.",
+          "ja": "私たちは締め切り前に作業を終えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00057",
+      "wordId": "VD-00085",
+      "headword": "begin",
+      "partOfSpeech": "verb",
+      "meaningJa": "始まる・始める",
+      "definitionEn": "to start doing or happening",
+      "synonyms": "start",
+      "cefrHeadword": "A1",
+      "imageHint": "授業開始の時計",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00057-e01",
+          "en": "The lesson begins at eight thirty.",
+          "ja": "授業は8時30分に始まります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00057-e02",
+          "en": "She began learning the piano last year.",
+          "ja": "彼女は昨年ピアノを習い始めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00058",
+      "wordId": "VD-00086",
+      "headword": "behind",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～の後ろに",
+      "definitionEn": "at the back of someone or something",
+      "synonyms": "at the rear of",
+      "cefrHeadword": "A1",
+      "imageHint": "家の裏の自転車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00058-e01",
+          "en": "The bicycle is behind the house.",
+          "ja": "自転車は家の裏にあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00058-e02",
+          "en": "The sun disappeared behind the hills.",
+          "ja": "太陽は丘の向こうに隠れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00059",
+      "wordId": "VD-00088",
+      "headword": "bell",
+      "partOfSpeech": "noun",
+      "meaningJa": "ベル・鐘",
+      "definitionEn": "an object that makes a ringing sound when struck",
+      "synonyms": "chime (related)",
+      "cefrHeadword": "A1",
+      "imageHint": "学校の鐘",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00059-e01",
+          "en": "The bell rang at the end of class.",
+          "ja": "授業の終わりにベルが鳴りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00059-e02",
+          "en": "Someone rang the bell at the front door.",
+          "ja": "誰かが玄関のベルを鳴らしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00060",
+      "wordId": "VD-00089",
+      "headword": "below",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～の下に",
+      "definitionEn": "in a lower position than something else",
+      "synonyms": "under",
+      "cefrHeadword": "A1",
+      "imageHint": "山のふもとの村",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00060-e01",
+          "en": "The village lies below the mountain.",
+          "ja": "村は山の下にあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00060-e02",
+          "en": "Write your answer below the picture.",
+          "ja": "絵の下に答えを書いてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00061",
+      "wordId": "VD-00090",
+      "headword": "beside",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～のそばに",
+      "definitionEn": "next to a person or thing",
+      "synonyms": "next to",
+      "cefrHeadword": "A1",
+      "imageHint": "ベッド脇のランプ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00061-e01",
+          "en": "My friend sat beside me on the bus.",
+          "ja": "友達はバスで私の隣に座りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00061-e02",
+          "en": "A small lamp stands beside the bed.",
+          "ja": "ベッドの横に小さなランプがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00062",
+      "wordId": "VD-00092",
+      "headword": "better",
+      "partOfSpeech": "adjective",
+      "meaningJa": "よりよい",
+      "definitionEn": "of a higher quality or more suitable than something else",
+      "synonyms": "improved",
+      "cefrHeadword": "A1",
+      "imageHint": "自転車向けの道",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00062-e01",
+          "en": "This route is better for cyclists.",
+          "ja": "この道は自転車に乗る人にとってよりよいです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00062-e02",
+          "en": "I feel better after a good night's sleep.",
+          "ja": "ぐっすり眠ると気分がよくなります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00063",
+      "wordId": "VD-00093",
+      "headword": "between",
+      "partOfSpeech": "preposition",
+      "meaningJa": "～の間に",
+      "definitionEn": "in the space separating two things or people",
+      "synonyms": "in the middle of",
+      "cefrHeadword": "A1",
+      "imageHint": "二つの建物の間",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00063-e01",
+          "en": "The library is between the bank and the park.",
+          "ja": "図書館は銀行と公園の間にあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00063-e02",
+          "en": "She sat between her two friends.",
+          "ja": "彼女は2人の友達の間に座りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00064",
+      "wordId": "VD-00095",
+      "headword": "big",
+      "partOfSpeech": "adjective",
+      "meaningJa": "大きい",
+      "definitionEn": "large in size or amount",
+      "synonyms": "large",
+      "cefrHeadword": "A1",
+      "imageHint": "校門脇の大木",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00064-e01",
+          "en": "There is a big tree outside our school.",
+          "ja": "学校の外には大きな木があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00064-e02",
+          "en": "The city faces a big challenge.",
+          "ja": "その都市は大きな課題に直面しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00065",
+      "wordId": "VD-00096",
+      "headword": "bike",
+      "partOfSpeech": "noun",
+      "meaningJa": "自転車",
+      "definitionEn": "a vehicle with two wheels moved by pedals",
+      "synonyms": "bicycle",
+      "cefrHeadword": "A1",
+      "imageHint": "修理中の自転車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00065-e01",
+          "en": "I go to school by bike.",
+          "ja": "私は自転車で学校に通います。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00065-e02",
+          "en": "She repaired her bike before the trip.",
+          "ja": "彼女は旅行の前に自転車を修理しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00066",
+      "wordId": "VD-00098",
+      "headword": "birth",
+      "partOfSpeech": "noun",
+      "meaningJa": "誕生・出産",
+      "definitionEn": "the event of a baby being born",
+      "synonyms": "arrival (figurative)",
+      "cefrHeadword": "A1",
+      "imageHint": "赤ちゃんの誕生",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00066-e01",
+          "en": "The family celebrated the birth of a baby girl.",
+          "ja": "家族は女の子の赤ちゃんの誕生を祝いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00066-e02",
+          "en": "The zoo announced the birth of two pandas.",
+          "ja": "動物園は2頭のパンダの誕生を発表しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00067",
+      "wordId": "VD-00099",
+      "headword": "birthday",
+      "partOfSpeech": "noun",
+      "meaningJa": "誕生日",
+      "definitionEn": "the day each year that has the same date as when you were born",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "誕生日のケーキ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00067-e01",
+          "en": "My birthday is in September.",
+          "ja": "私の誕生日は9月です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00067-e02",
+          "en": "We baked a cake for her birthday.",
+          "ja": "私たちは彼女の誕生日にケーキを焼きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00068",
+      "wordId": "VD-00100",
+      "headword": "biscuit",
+      "partOfSpeech": "noun",
+      "meaningJa": "ビスケット",
+      "definitionEn": "a small baked food that is usually sweet or crisp",
+      "synonyms": "cookie (US, contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "焼きたてのビスケット",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00068-e01",
+          "en": "She ate a biscuit with her tea.",
+          "ja": "彼女は紅茶と一緒にビスケットを食べました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00068-e02",
+          "en": "We made biscuits in cooking class.",
+          "ja": "私たちは調理実習でビスケットを作りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00069",
+      "wordId": "VD-00101",
+      "headword": "black",
+      "partOfSpeech": "adjective",
+      "meaningJa": "黒い",
+      "definitionEn": "having the darkest color",
+      "synonyms": "dark-colored",
+      "cefrHeadword": "A1",
+      "imageHint": "黒い猫",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00069-e01",
+          "en": "The cat has black fur.",
+          "ja": "その猫の毛は黒いです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00069-e02",
+          "en": "He wore black shoes to the ceremony.",
+          "ja": "彼は式典に黒い靴を履いていきました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00070",
+      "wordId": "VD-00102",
+      "headword": "blank",
+      "partOfSpeech": "adjective",
+      "meaningJa": "空白の・何も書かれていない",
+      "definitionEn": "having no writing or marks",
+      "synonyms": "empty",
+      "cefrHeadword": "A1",
+      "imageHint": "空白の用紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00070-e01",
+          "en": "Please write your name on the blank line.",
+          "ja": "空欄に名前を書いてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00070-e02",
+          "en": "She handed me a blank sheet of paper.",
+          "ja": "彼女は何も書かれていない紙を私に渡しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00071",
+      "wordId": "VD-00103",
+      "headword": "block",
+      "partOfSpeech": "noun",
+      "meaningJa": "かたまり・ブロック",
+      "definitionEn": "a solid piece of material with flat sides",
+      "synonyms": "chunk",
+      "cefrHeadword": "A1",
+      "imageHint": "積み木の塔",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00071-e01",
+          "en": "The children built a tower with wooden blocks.",
+          "ja": "子どもたちは木のブロックで塔を作りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00071-e02",
+          "en": "He cut the ice into small blocks.",
+          "ja": "彼は氷を小さなかたまりに切りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00072",
+      "wordId": "VD-00103",
+      "headword": "block",
+      "partOfSpeech": "verb",
+      "meaningJa": "ふさぐ・妨げる",
+      "definitionEn": "to stop movement or access through a place",
+      "synonyms": "obstruct",
+      "cefrHeadword": "A1",
+      "imageHint": "倒木がふさぐ道",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00072-e01",
+          "en": "A fallen tree blocked the road.",
+          "ja": "倒れた木が道路をふさいでいました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00072-e02",
+          "en": "Please don't block the emergency exit.",
+          "ja": "非常口をふさがないでください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00073",
+      "wordId": "VD-00104",
+      "headword": "blow",
+      "partOfSpeech": "verb",
+      "meaningJa": "風が吹く・息を吹く",
+      "definitionEn": "to move air or make air move",
+      "synonyms": "send air",
+      "cefrHeadword": "A1",
+      "imageHint": "ろうそくを吹き消す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00073-e01",
+          "en": "A cold wind blew across the field.",
+          "ja": "冷たい風が野原を吹き抜けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00073-e02",
+          "en": "She blew out the candles on the cake.",
+          "ja": "彼女はケーキのろうそくを吹き消しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00074",
+      "wordId": "VD-00105",
+      "headword": "blue",
+      "partOfSpeech": "adjective",
+      "meaningJa": "青い",
+      "definitionEn": "having the color of a clear daytime sky",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "青空と青いノート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00074-e01",
+          "en": "The sky is bright blue today.",
+          "ja": "今日は空が鮮やかな青色です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00074-e02",
+          "en": "She chose a blue notebook for science.",
+          "ja": "彼女は理科用に青いノートを選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00075",
+      "wordId": "VD-00106",
+      "headword": "board",
+      "partOfSpeech": "noun",
+      "meaningJa": "板・掲示板",
+      "definitionEn": "a flat piece of wood or other material",
+      "synonyms": "panel",
+      "cefrHeadword": "A1",
+      "imageHint": "掲示板のお知らせ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00075-e01",
+          "en": "The teacher wrote the date on the board.",
+          "ja": "先生は黒板に日付を書きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00075-e02",
+          "en": "They put the notice on the information board.",
+          "ja": "彼らは掲示板にお知らせを貼りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00076",
+      "wordId": "VD-00107",
+      "headword": "boat",
+      "partOfSpeech": "noun",
+      "meaningJa": "ボート・船",
+      "definitionEn": "a small vehicle used for traveling on water",
+      "synonyms": "small vessel",
+      "cefrHeadword": "A1",
+      "imageHint": "湖の小舟",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00076-e01",
+          "en": "We crossed the lake by boat.",
+          "ja": "私たちはボートで湖を渡りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00076-e02",
+          "en": "The fishermen pulled their boat onto the beach.",
+          "ja": "漁師たちは船を浜辺に引き上げました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00077",
+      "wordId": "VD-00108",
+      "headword": "body",
+      "partOfSpeech": "noun",
+      "meaningJa": "体・身体",
+      "definitionEn": "the whole physical structure of a person or animal",
+      "synonyms": "physical form",
+      "cefrHeadword": "A1",
+      "imageHint": "運動する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00077-e01",
+          "en": "Exercise keeps your body strong.",
+          "ja": "運動は体を強く保ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00077-e02",
+          "en": "The bird's body is covered with feathers.",
+          "ja": "鳥の体は羽毛で覆われています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00078",
+      "wordId": "VD-00109",
+      "headword": "bone",
+      "partOfSpeech": "noun",
+      "meaningJa": "骨",
+      "definitionEn": "a hard part of the structure inside the body",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "骨格模型",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00078-e01",
+          "en": "The doctor examined the broken bone.",
+          "ja": "医師は折れた骨を診察しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00078-e02",
+          "en": "Dogs sometimes bury bones in the garden.",
+          "ja": "犬は時々庭に骨を埋めます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00079",
+      "wordId": "VD-00111",
+      "headword": "bookstore",
+      "partOfSpeech": "noun",
+      "meaningJa": "書店・本屋",
+      "definitionEn": "a shop where books are sold",
+      "synonyms": "bookshop",
+      "cefrHeadword": "A1",
+      "imageHint": "書店の本棚",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00079-e01",
+          "en": "We bought a dictionary at the bookstore.",
+          "ja": "私たちは書店で辞書を買いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00079-e02",
+          "en": "The bookstore has a section for children's books.",
+          "ja": "その書店には児童書のコーナーがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00080",
+      "wordId": "VD-00112",
+      "headword": "boring",
+      "partOfSpeech": "adjective",
+      "meaningJa": "退屈な",
+      "definitionEn": "not interesting or exciting",
+      "synonyms": "dull",
+      "cefrHeadword": "A1",
+      "imageHint": "退屈な会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00080-e01",
+          "en": "The film was boring at first.",
+          "ja": "その映画は最初は退屈でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00080-e02",
+          "en": "Long meetings can be boring without discussion.",
+          "ja": "話し合いのない長い会議は退屈になりがちです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00081",
+      "wordId": "VD-00113",
+      "headword": "borrow",
+      "partOfSpeech": "verb",
+      "meaningJa": "借りる",
+      "definitionEn": "to take something for a time and return it later",
+      "synonyms": "take on loan",
+      "cefrHeadword": "A1",
+      "imageHint": "図書館で本を借りる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00081-e01",
+          "en": "Can I borrow your pen for a minute?",
+          "ja": "少しの間ペンを借りてもいいですか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00081-e02",
+          "en": "She borrowed three books from the library.",
+          "ja": "彼女は図書館で3冊の本を借りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00082",
+      "wordId": "VD-00114",
+      "headword": "both",
+      "partOfSpeech": "determiner",
+      "meaningJa": "両方の",
+      "definitionEn": "the two people or things together",
+      "synonyms": "the two",
+      "cefrHeadword": "A1",
+      "imageHint": "赤と青のシャツ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00082-e01",
+          "en": "Both students answered correctly.",
+          "ja": "2人の生徒はどちらも正しく答えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00082-e02",
+          "en": "I like both the red and the blue shirts.",
+          "ja": "私は赤いシャツも青いシャツも両方好きです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00083",
+      "wordId": "VD-00115",
+      "headword": "bottle",
+      "partOfSpeech": "noun",
+      "meaningJa": "瓶・ボトル",
+      "definitionEn": "a container with a narrow opening used for liquids",
+      "synonyms": "flask (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "水のボトル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00083-e01",
+          "en": "Fill the bottle with clean water.",
+          "ja": "ボトルにきれいな水を入れてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00083-e02",
+          "en": "We collected plastic bottles for recycling.",
+          "ja": "私たちはリサイクルのためペットボトルを集めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00084",
+      "wordId": "VD-00116",
+      "headword": "bottom",
+      "partOfSpeech": "noun",
+      "meaningJa": "底・一番下",
+      "definitionEn": "the lowest part of something",
+      "synonyms": "base",
+      "cefrHeadword": "A1",
+      "imageHint": "かばんの底の鍵",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00084-e01",
+          "en": "The keys were at the bottom of the bag.",
+          "ja": "鍵はかばんの底にありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00084-e02",
+          "en": "Sign your name at the bottom of the page.",
+          "ja": "ページの一番下に署名してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00085",
+      "wordId": "VD-00117",
+      "headword": "bowl",
+      "partOfSpeech": "noun",
+      "meaningJa": "鉢・ボウル",
+      "definitionEn": "a round deep dish used for food or liquids",
+      "synonyms": "deep dish",
+      "cefrHeadword": "A1",
+      "imageHint": "果物の入ったボウル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00085-e01",
+          "en": "She filled a bowl with fruit.",
+          "ja": "彼女はボウルに果物を入れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00085-e02",
+          "en": "The soup was served in a small bowl.",
+          "ja": "スープは小さな器に入れて出されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00086",
+      "wordId": "VD-00118",
+      "headword": "box",
+      "partOfSpeech": "noun",
+      "meaningJa": "箱",
+      "definitionEn": "a container with flat sides used for keeping things",
+      "synonyms": "container",
+      "cefrHeadword": "A1",
+      "imageHint": "おもちゃ箱",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00086-e01",
+          "en": "The package arrived in a large box.",
+          "ja": "荷物は大きな箱に入って届きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00086-e02",
+          "en": "Please put the toys back in the box.",
+          "ja": "おもちゃを箱に戻してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00087",
+      "wordId": "VD-00119",
+      "headword": "boy",
+      "partOfSpeech": "noun",
+      "meaningJa": "男の子・少年",
+      "definitionEn": "a male child",
+      "synonyms": "male child",
+      "cefrHeadword": "A1",
+      "imageHint": "川辺の少年",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00087-e01",
+          "en": "A boy was playing near the river.",
+          "ja": "男の子が川の近くで遊んでいました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00087-e02",
+          "en": "The boy helped his friend carry a heavy bag.",
+          "ja": "その少年は友達が重いかばんを運ぶのを手伝いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00088",
+      "wordId": "VD-00120",
+      "headword": "boyfriend",
+      "partOfSpeech": "noun",
+      "meaningJa": "彼氏・恋人",
+      "definitionEn": "a male person someone is in a romantic relationship with",
+      "synonyms": "male partner",
+      "cefrHeadword": "A1",
+      "imageHint": "家族に恋人を紹介",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00088-e01",
+          "en": "Her boyfriend enjoys cooking.",
+          "ja": "彼女の彼氏は料理が好きです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00088-e02",
+          "en": "She introduced her boyfriend to her family.",
+          "ja": "彼女は家族に彼氏を紹介しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00089",
+      "wordId": "VD-00121",
+      "headword": "brain",
+      "partOfSpeech": "noun",
+      "meaningJa": "脳",
+      "definitionEn": "the organ in your head that controls thought and movement",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "脳の模型",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00089-e01",
+          "en": "The brain needs rest after long periods of study.",
+          "ja": "長時間勉強したあとは脳に休息が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00089-e02",
+          "en": "Scientists study how the brain learns languages.",
+          "ja": "科学者たちは脳が言語を学ぶ仕組みを研究しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00090",
+      "wordId": "VD-00125",
+      "headword": "breathe",
+      "partOfSpeech": "verb",
+      "meaningJa": "呼吸する・息をする",
+      "definitionEn": "to move air into and out of your lungs",
+      "synonyms": "inhale and exhale",
+      "cefrHeadword": "A1",
+      "imageHint": "深呼吸する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00090-e01",
+          "en": "Breathe slowly before your speech.",
+          "ja": "スピーチの前にゆっくり呼吸してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00090-e02",
+          "en": "It's hard to breathe in the smoky room.",
+          "ja": "煙の充満した部屋では息をするのが難しいです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00091",
+      "wordId": "VD-00126",
+      "headword": "bridge",
+      "partOfSpeech": "noun",
+      "meaningJa": "橋",
+      "definitionEn": "a structure built over a river or road so people can cross",
+      "synonyms": "crossing",
+      "cefrHeadword": "A1",
+      "imageHint": "川に架かる橋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00091-e01",
+          "en": "The bridge connects the two villages.",
+          "ja": "その橋は2つの村をつないでいます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00091-e02",
+          "en": "We walked across the old stone bridge.",
+          "ja": "私たちは古い石橋を歩いて渡りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00092",
+      "wordId": "VD-00129",
+      "headword": "broken",
+      "partOfSpeech": "adjective",
+      "meaningJa": "壊れた・故障した",
+      "definitionEn": "damaged and no longer working properly",
+      "synonyms": "damaged",
+      "cefrHeadword": "A1",
+      "imageHint": "故障した腕時計",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00092-e01",
+          "en": "My watch is broken.",
+          "ja": "私の腕時計は壊れています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00092-e02",
+          "en": "They replaced a broken window after the storm.",
+          "ja": "彼らは嵐のあと割れた窓を交換しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00093",
+      "wordId": "VD-00131",
+      "headword": "brown",
+      "partOfSpeech": "adjective",
+      "meaningJa": "茶色い",
+      "definitionEn": "having the color of soil or wood",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "茶色のかばん",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00093-e01",
+          "en": "The dog has brown ears.",
+          "ja": "その犬の耳は茶色です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00093-e02",
+          "en": "He bought a brown leather bag.",
+          "ja": "彼は茶色の革のかばんを買いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00094",
+      "wordId": "VD-00132",
+      "headword": "brush",
+      "partOfSpeech": "noun",
+      "meaningJa": "ブラシ・はけ",
+      "definitionEn": "a tool with many hairs used for cleaning or painting",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "靴用ブラシ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00094-e01",
+          "en": "Use a soft brush to clean the shoes.",
+          "ja": "柔らかいブラシで靴をきれいにしてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00094-e02",
+          "en": "The painter washed her brushes after class.",
+          "ja": "画家は授業後に絵筆を洗いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00095",
+      "wordId": "VD-00132",
+      "headword": "brush",
+      "partOfSpeech": "verb",
+      "meaningJa": "ブラシをかける・磨く",
+      "definitionEn": "to clean or arrange something by moving a brush over it",
+      "synonyms": "clean with a brush",
+      "cefrHeadword": "A1",
+      "imageHint": "歯を磨く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00095-e01",
+          "en": "Brush your teeth before bed.",
+          "ja": "寝る前に歯を磨いてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00095-e02",
+          "en": "She brushed the dust off her jacket.",
+          "ja": "彼女は上着のほこりをブラシで払い落としました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00096",
+      "wordId": "VD-00133",
+      "headword": "bucket",
+      "partOfSpeech": "noun",
+      "meaningJa": "バケツ",
+      "definitionEn": "an open container with a handle used for carrying water or other materials",
+      "synonyms": "pail",
+      "cefrHeadword": "A1",
+      "imageHint": "雨水の入ったバケツ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00096-e01",
+          "en": "The bucket was full of rainwater.",
+          "ja": "バケツは雨水でいっぱいでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00096-e02",
+          "en": "We carried sand to the garden in a bucket.",
+          "ja": "私たちはバケツで庭に砂を運びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00097",
+      "wordId": "VD-00135",
+      "headword": "building",
+      "partOfSpeech": "noun",
+      "meaningJa": "建物",
+      "definitionEn": "a structure with walls and a roof that people use",
+      "synonyms": "structure",
+      "cefrHeadword": "A1",
+      "imageHint": "4階建ての校舎",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00097-e01",
+          "en": "The new school building has four floors.",
+          "ja": "新しい校舎は4階建てです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00097-e02",
+          "en": "That old building is now a museum.",
+          "ja": "あの古い建物は今は博物館です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00098",
+      "wordId": "VD-00136",
+      "headword": "burger",
+      "partOfSpeech": "noun",
+      "meaningJa": "ハンバーガー",
+      "definitionEn": "a sandwich with a cooked patty inside a sliced bun",
+      "synonyms": "hamburger",
+      "cefrHeadword": "A1",
+      "imageHint": "野菜バーガー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00098-e01",
+          "en": "I ordered a vegetable burger for lunch.",
+          "ja": "私は昼食に野菜バーガーを注文しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00098-e02",
+          "en": "The cafe sells burgers made with local beef.",
+          "ja": "そのカフェは地元の牛肉を使ったバーガーを売っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00099",
+      "wordId": "VD-00138",
+      "headword": "business",
+      "partOfSpeech": "noun",
+      "meaningJa": "事業・会社",
+      "definitionEn": "an organization or activity that sells goods or services",
+      "synonyms": "enterprise",
+      "cefrHeadword": "A1",
+      "imageHint": "小さな店の経営",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00099-e01",
+          "en": "Her parents run a small business.",
+          "ja": "彼女の両親は小さな会社を経営しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00099-e02",
+          "en": "The new business creates jobs in the town.",
+          "ja": "新しい事業は町に雇用を生み出しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00100",
+      "wordId": "VD-00141",
+      "headword": "butter",
+      "partOfSpeech": "noun",
+      "meaningJa": "バター",
+      "definitionEn": "a soft yellow food made from cream",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "パンのバター",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00100-e01",
+          "en": "Spread butter on the warm bread.",
+          "ja": "温かいパンにバターを塗ってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00100-e02",
+          "en": "We used butter to make the cookies.",
+          "ja": "私たちはクッキーを作るのにバターを使いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00101",
+      "wordId": "VD-00142",
+      "headword": "butterfly",
+      "partOfSpeech": "noun",
+      "meaningJa": "チョウ",
+      "definitionEn": "an insect with two pairs of large colorful wings",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "花にとまるチョウ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00101-e01",
+          "en": "A butterfly landed on the flower.",
+          "ja": "チョウが花にとまりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00101-e02",
+          "en": "We watched butterflies fly through the garden.",
+          "ja": "私たちは庭を飛ぶチョウたちを観察しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00102",
+      "wordId": "VD-00143",
+      "headword": "button",
+      "partOfSpeech": "noun",
+      "meaningJa": "ボタン",
+      "definitionEn": "a small object pressed to operate a machine or fasten clothing",
+      "synonyms": "switch (device)",
+      "cefrHeadword": "A1",
+      "imageHint": "機器の緑ボタン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00102-e01",
+          "en": "Press the green button to start.",
+          "ja": "開始するには緑のボタンを押してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00102-e02",
+          "en": "She sewed a button back onto her coat.",
+          "ja": "彼女はコートにボタンを縫い付け直しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00103",
+      "wordId": "VD-00148",
+      "headword": "cake",
+      "partOfSpeech": "noun",
+      "meaningJa": "ケーキ",
+      "definitionEn": "a sweet baked food often eaten as dessert",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "誕生日ケーキ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00103-e01",
+          "en": "We shared a chocolate cake after dinner.",
+          "ja": "私たちは夕食後にチョコレートケーキを分けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00103-e02",
+          "en": "She baked a small cake for her father's birthday.",
+          "ja": "彼女は父の誕生日に小さなケーキを焼きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00104",
+      "wordId": "VD-00151",
+      "headword": "camp",
+      "partOfSpeech": "verb",
+      "meaningJa": "キャンプする",
+      "definitionEn": "to stay outdoors in tents for a short time",
+      "synonyms": "stay in a tent",
+      "cefrHeadword": "A1",
+      "imageHint": "湖畔のテント",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00104-e01",
+          "en": "We camped near the lake last summer.",
+          "ja": "私たちは去年の夏、湖の近くでキャンプしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00104-e02",
+          "en": "They plan to camp in the mountains next weekend.",
+          "ja": "彼らは来週末に山でキャンプする予定です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00105",
+      "wordId": "VD-00151",
+      "headword": "camp",
+      "partOfSpeech": "noun",
+      "meaningJa": "キャンプ場・合宿",
+      "definitionEn": "a place or period where people stay for outdoor or group activities",
+      "synonyms": "campsite (place)",
+      "cefrHeadword": "A1",
+      "imageHint": "自然体験合宿",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00105-e01",
+          "en": "Our class attended a science camp.",
+          "ja": "私たちのクラスは科学合宿に参加しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00105-e02",
+          "en": "The camp has a large dining hall.",
+          "ja": "そのキャンプ施設には大きな食堂があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00106",
+      "wordId": "VD-00153",
+      "headword": "candy",
+      "partOfSpeech": "noun",
+      "meaningJa": "キャンディー・飴",
+      "definitionEn": "a small sweet made mainly from sugar",
+      "synonyms": "sweets",
+      "cefrHeadword": "A1",
+      "imageHint": "色とりどりの飴",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00106-e01",
+          "en": "The shop sells colorful candy.",
+          "ja": "その店は色とりどりのキャンディーを売っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00106-e02",
+          "en": "He gave his sister a piece of candy.",
+          "ja": "彼は妹に飴を1つあげました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00107",
+      "wordId": "VD-00154",
+      "headword": "cap",
+      "partOfSpeech": "noun",
+      "meaningJa": "帽子・キャップ",
+      "definitionEn": "a soft hat with a front part that protects the eyes from sunlight",
+      "synonyms": "hat",
+      "cefrHeadword": "A1",
+      "imageHint": "野球帽",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00107-e01",
+          "en": "He wore a cap during the baseball game.",
+          "ja": "彼は野球の試合でキャップをかぶっていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00107-e02",
+          "en": "Please take off your cap indoors.",
+          "ja": "屋内では帽子を脱いでください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00108",
+      "wordId": "VD-00156",
+      "headword": "card",
+      "partOfSpeech": "noun",
+      "meaningJa": "カード・札",
+      "definitionEn": "a small piece of paper or plastic with words or pictures",
+      "synonyms": null,
+      "cefrHeadword": "A1",
+      "imageHint": "英語の絵カード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00108-e01",
+          "en": "She sent a birthday card to her friend.",
+          "ja": "彼女は友達に誕生日カードを送りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00108-e02",
+          "en": "We used picture cards to practice English.",
+          "ja": "私たちは英語の練習に絵カードを使いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00109",
+      "wordId": "VD-00159",
+      "headword": "carefully",
+      "partOfSpeech": "adverb",
+      "meaningJa": "注意深く・丁寧に",
+      "definitionEn": "with care to avoid mistakes or danger",
+      "synonyms": "cautiously",
+      "cefrHeadword": "A1",
+      "imageHint": "説明を読む人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00109-e01",
+          "en": "Read the instructions carefully.",
+          "ja": "指示を注意深く読んでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00109-e02",
+          "en": "She carefully placed the glass on the table.",
+          "ja": "彼女はコップを注意深くテーブルに置きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00110",
+      "wordId": "VD-00161",
+      "headword": "cartoon",
+      "partOfSpeech": "noun",
+      "meaningJa": "漫画・アニメーション",
+      "definitionEn": "a funny drawing or short animated program",
+      "synonyms": "animated show (contextual)",
+      "cefrHeadword": "A1",
+      "imageHint": "新聞の風刺漫画",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00110-e01",
+          "en": "My little brother loves this cartoon.",
+          "ja": "弟はこのアニメが大好きです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00110-e02",
+          "en": "The newspaper published a cartoon about city life.",
+          "ja": "新聞は都市生活についての漫画を掲載しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00111",
+      "wordId": "VD-00162",
+      "headword": "case",
+      "partOfSpeech": "noun",
+      "meaningJa": "箱・入れ物",
+      "definitionEn": "a container designed to hold or protect something",
+      "synonyms": "container",
+      "cefrHeadword": "A1",
+      "imageHint": "眼鏡ケース",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00111-e01",
+          "en": "The camera is in its case.",
+          "ja": "カメラはケースに入っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00111-e02",
+          "en": "She bought a new case for her glasses.",
+          "ja": "彼女は眼鏡用の新しいケースを買いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00112",
+      "wordId": "VD-00162",
+      "headword": "case",
+      "partOfSpeech": "noun",
+      "meaningJa": "場合・事例",
+      "definitionEn": "a particular situation or example",
+      "synonyms": "instance",
+      "cefrHeadword": "A1",
+      "imageHint": "協力成功の事例",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00112-e01",
+          "en": "In this case, we should ask the teacher.",
+          "ja": "この場合は先生に尋ねるべきです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00112-e02",
+          "en": "The report describes a case of successful cooperation.",
+          "ja": "その報告書は協力が成功した事例を紹介しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00113",
+      "wordId": "VD-00164",
+      "headword": "catch",
+      "partOfSpeech": "verb",
+      "meaningJa": "つかまえる・受け止める",
+      "definitionEn": "to stop and hold something moving through the air",
+      "synonyms": "grab",
+      "cefrHeadword": "A1",
+      "imageHint": "ボールを受け止める",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00113-e01",
+          "en": "Can you catch the ball with one hand?",
+          "ja": "片手でボールをキャッチできますか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00113-e02",
+          "en": "The goalkeeper caught the ball safely.",
+          "ja": "ゴールキーパーはボールをしっかり受け止めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-A1-00114",
+      "wordId": "VD-00164",
+      "headword": "catch",
+      "partOfSpeech": "verb",
+      "meaningJa": "乗り物に間に合う・乗る",
+      "definitionEn": "to get on a bus, train, or other vehicle before it leaves",
+      "synonyms": "board (transport)",
+      "cefrHeadword": "A1",
+      "imageHint": "バスに急ぐ生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-A1-00114-e01",
+          "en": "We need to catch the first train.",
+          "ja": "私たちは始発電車に乗る必要があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-A1-00114-e02",
+          "en": "She ran to catch the school bus.",
+          "ja": "彼女はスクールバスに間に合うよう走りました。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ],
+  "originDraft": "batch-08"
+}

@@ -1,0 +1,2349 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "bulk-20261114-b1-a",
+  "sourceTab": null,
+  "sourceKind": "github-original",
+  "records": [
+    {
+      "senseId": "VD-BULK-261114-B1-A-00001",
+      "wordId": "VD-02308",
+      "headword": "abandon",
+      "partOfSpeech": "verb",
+      "meaningJa": "放棄する・見捨てる",
+      "definitionEn": "to leave something behind and stop trying to use or complete it",
+      "synonyms": "give up",
+      "cefrHeadword": "B1",
+      "imageHint": "冠水した道路の車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00001-e01",
+          "en": "The team abandoned the plan after the storm.",
+          "ja": "チームは嵐のあとその計画を断念しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00001-e02",
+          "en": "They had to abandon their car on the flooded road.",
+          "ja": "彼らは冠水した道路に車を置いていかなければなりませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00002",
+      "wordId": "VD-02310",
+      "headword": "abnormal",
+      "partOfSpeech": "adjective",
+      "meaningJa": "異常な・通常と違う",
+      "definitionEn": "different from what is usual or expected",
+      "synonyms": "unusual",
+      "cefrHeadword": "B1",
+      "imageHint": "異常な測定グラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00002-e01",
+          "en": "The machine made an abnormal noise.",
+          "ja": "その機械は異常な音を立てました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00002-e02",
+          "en": "Doctors noticed an abnormal change in the test results.",
+          "ja": "医師たちは検査結果の異常な変化に気づきました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00003",
+      "wordId": "VD-02311",
+      "headword": "aboard",
+      "partOfSpeech": "adverb",
+      "meaningJa": "乗り物に乗って",
+      "definitionEn": "on or into a ship, train, aircraft, or other vehicle",
+      "synonyms": "on board",
+      "cefrHeadword": "B1",
+      "imageHint": "フェリーに乗る人々",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00003-e01",
+          "en": "All passengers are now aboard.",
+          "ja": "乗客全員が現在乗っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00003-e02",
+          "en": "We climbed aboard the ferry at noon.",
+          "ja": "私たちは正午にフェリーに乗り込みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00004",
+      "wordId": "VD-02313",
+      "headword": "absence",
+      "partOfSpeech": "noun",
+      "meaningJa": "不在・欠席",
+      "definitionEn": "a time when someone is not present",
+      "synonyms": "nonattendance",
+      "cefrHeadword": "B1",
+      "imageHint": "空席のある教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00004-e01",
+          "en": "Her absence surprised the other students.",
+          "ja": "彼女の欠席はほかの生徒を驚かせました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00004-e02",
+          "en": "The teacher explained the rules for reporting an absence.",
+          "ja": "教師は欠席連絡の規則を説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00005",
+      "wordId": "VD-02314",
+      "headword": "absent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "欠席している・不在の",
+      "definitionEn": "not present at a place where expected",
+      "synonyms": "missing",
+      "cefrHeadword": "B1",
+      "imageHint": "欠席欄のある名簿",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00005-e01",
+          "en": "Two students were absent today.",
+          "ja": "今日は2人の生徒が欠席しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00005-e02",
+          "en": "My father was absent from the meeting.",
+          "ja": "父は会議に出席していませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00006",
+      "wordId": "VD-02315",
+      "headword": "absolute",
+      "partOfSpeech": "adjective",
+      "meaningJa": "完全な・絶対的な",
+      "definitionEn": "complete and not limited by conditions",
+      "synonyms": "total",
+      "cefrHeadword": "B1",
+      "imageHint": "静かな実験室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00006-e01",
+          "en": "The experiment requires absolute silence.",
+          "ja": "その実験には完全な静けさが必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00006-e02",
+          "en": "No one can offer an absolute guarantee of success.",
+          "ja": "誰も成功を絶対に保証することはできません。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00007",
+      "wordId": "VD-02316",
+      "headword": "absolutely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "完全に・まったく",
+      "definitionEn": "completely or without any doubt",
+      "synonyms": "completely",
+      "cefrHeadword": "B1",
+      "imageHint": "静まり返るホール",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00007-e01",
+          "en": "I am absolutely certain about the date.",
+          "ja": "私はその日付について完全に確信しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00007-e02",
+          "en": "The hall was absolutely silent during the speech.",
+          "ja": "スピーチ中、ホールはまったく静かでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00008",
+      "wordId": "VD-02317",
+      "headword": "absorb",
+      "partOfSpeech": "verb",
+      "meaningJa": "吸収する",
+      "definitionEn": "to take in liquid, heat, or another substance",
+      "synonyms": "soak up",
+      "cefrHeadword": "B1",
+      "imageHint": "水を吸うタオル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00008-e01",
+          "en": "This towel absorbs water quickly.",
+          "ja": "このタオルは水をすばやく吸収します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00008-e02",
+          "en": "Dark surfaces absorb more sunlight.",
+          "ja": "暗い色の表面はより多くの日光を吸収します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00009",
+      "wordId": "VD-02317",
+      "headword": "absorb",
+      "partOfSpeech": "verb",
+      "meaningJa": "理解して身につける",
+      "definitionEn": "to take in information or ideas and learn them",
+      "synonyms": "take in",
+      "cefrHeadword": "B1",
+      "imageHint": "語彙を学ぶ生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00009-e01",
+          "en": "Children absorb new words through conversation.",
+          "ja": "子どもたちは会話を通して新しい単語を吸収します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00009-e02",
+          "en": "It takes time to absorb so much information.",
+          "ja": "これほど多くの情報を理解するには時間がかかります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00010",
+      "wordId": "VD-02318",
+      "headword": "abstract",
+      "partOfSpeech": "adjective",
+      "meaningJa": "抽象的な",
+      "definitionEn": "relating to ideas rather than physical objects",
+      "synonyms": "theoretical (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "抽象概念を説明する図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00010-e01",
+          "en": "Justice is an abstract idea.",
+          "ja": "正義は抽象的な考えです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00010-e02",
+          "en": "The teacher used pictures to explain an abstract concept.",
+          "ja": "先生は抽象的な概念を説明するために絵を使いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00011",
+      "wordId": "VD-02318",
+      "headword": "abstract",
+      "partOfSpeech": "noun",
+      "meaningJa": "論文の要旨",
+      "definitionEn": "a short summary at the beginning of a research paper",
+      "synonyms": "summary",
+      "cefrHeadword": "B1",
+      "imageHint": "論文の要旨ページ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00011-e01",
+          "en": "Read the abstract before the full article.",
+          "ja": "論文全体を読む前に要旨を読んでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00011-e02",
+          "en": "She wrote a short abstract of her research.",
+          "ja": "彼女は自分の研究について短い要旨を書きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00012",
+      "wordId": "VD-02319",
+      "headword": "abundance",
+      "partOfSpeech": "noun",
+      "meaningJa": "豊富さ・大量",
+      "definitionEn": "a very large amount of something",
+      "synonyms": "plenty",
+      "cefrHeadword": "B1",
+      "imageHint": "豊作のトマト",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00012-e01",
+          "en": "The island has an abundance of fresh water.",
+          "ja": "その島には豊富な淡水があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00012-e02",
+          "en": "The garden produced an abundance of tomatoes.",
+          "ja": "その庭では大量のトマトが実りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00013",
+      "wordId": "VD-02320",
+      "headword": "abundant",
+      "partOfSpeech": "adjective",
+      "meaningJa": "豊富な",
+      "definitionEn": "existing in large amounts",
+      "synonyms": "plentiful",
+      "cefrHeadword": "B1",
+      "imageHint": "水資源が豊富な川",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00013-e01",
+          "en": "Fresh water is abundant in this region.",
+          "ja": "この地域には淡水が豊富にあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00013-e02",
+          "en": "The forest provides abundant food for birds.",
+          "ja": "その森には鳥の食べ物が豊富にあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00014",
+      "wordId": "VD-02321",
+      "headword": "academic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "学問の・学校教育の",
+      "definitionEn": "connected with studying, research, or education",
+      "synonyms": "scholarly",
+      "cefrHeadword": "B1",
+      "imageHint": "研究発表の会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00014-e01",
+          "en": "She improved her academic writing skills.",
+          "ja": "彼女は学術的な文章を書く力を伸ばしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00014-e02",
+          "en": "The conference brought together academic researchers.",
+          "ja": "その会議には学術研究者たちが集まりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00015",
+      "wordId": "VD-02322",
+      "headword": "academy",
+      "partOfSpeech": "noun",
+      "meaningJa": "専門学校・教育機関",
+      "definitionEn": "a school or organization for special training or study",
+      "synonyms": "training institute",
+      "cefrHeadword": "B1",
+      "imageHint": "音楽学校の授業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00015-e01",
+          "en": "He joined a music academy in the city.",
+          "ja": "彼は市内の音楽学校に入りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00015-e02",
+          "en": "The academy offers courses in digital design.",
+          "ja": "その教育機関ではデジタルデザインの講座を開いています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00016",
+      "wordId": "VD-02323",
+      "headword": "accent",
+      "partOfSpeech": "noun",
+      "meaningJa": "アクセント・話し方の特徴",
+      "definitionEn": "a way of pronouncing words associated with a place or group",
+      "synonyms": "pronunciation style",
+      "cefrHeadword": "B1",
+      "imageHint": "世界の発音を聞く生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00016-e01",
+          "en": "She speaks English with a regional accent.",
+          "ja": "彼女は地域特有のアクセントで英語を話します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00016-e02",
+          "en": "The students compared accents from several countries.",
+          "ja": "生徒たちはいくつかの国のアクセントを比べました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00017",
+      "wordId": "VD-02324",
+      "headword": "acceptance",
+      "partOfSpeech": "noun",
+      "meaningJa": "受け入れ・容認",
+      "definitionEn": "the act of agreeing to accept something",
+      "synonyms": "approval",
+      "cefrHeadword": "B1",
+      "imageHint": "合格通知の手紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00017-e01",
+          "en": "Acceptance of different opinions is important.",
+          "ja": "異なる意見を受け入れることは重要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00017-e02",
+          "en": "The school sent her a letter of acceptance.",
+          "ja": "学校は彼女に合格通知を送りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00018",
+      "wordId": "VD-02325",
+      "headword": "access",
+      "partOfSpeech": "noun",
+      "meaningJa": "利用・接近する機会",
+      "definitionEn": "the ability or right to enter or use something",
+      "synonyms": "entry",
+      "cefrHeadword": "B1",
+      "imageHint": "入口のスロープ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00018-e01",
+          "en": "All students need access to reliable information.",
+          "ja": "すべての生徒に信頼できる情報へのアクセスが必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00018-e02",
+          "en": "The new ramp improves access to the building.",
+          "ja": "新しいスロープは建物への出入りをしやすくします。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00019",
+      "wordId": "VD-02325",
+      "headword": "access",
+      "partOfSpeech": "verb",
+      "meaningJa": "アクセスする・利用する",
+      "definitionEn": "to open or use information, a service, or a place",
+      "synonyms": "reach",
+      "cefrHeadword": "B1",
+      "imageHint": "タブレットで教材を開く",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00019-e01",
+          "en": "You can access the lessons on a tablet.",
+          "ja": "タブレットで教材にアクセスできます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00019-e02",
+          "en": "The librarian helped me access the online database.",
+          "ja": "司書は私がオンラインデータベースを利用するのを助けました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00020",
+      "wordId": "VD-02326",
+      "headword": "accessible",
+      "partOfSpeech": "adjective",
+      "meaningJa": "利用しやすい・入れる",
+      "definitionEn": "easy for people to reach, enter, or use",
+      "synonyms": "easy to reach",
+      "cefrHeadword": "B1",
+      "imageHint": "段差のない駅入口",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00020-e01",
+          "en": "The website is accessible on older phones.",
+          "ja": "そのウェブサイトは古い携帯電話でも利用できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00020-e02",
+          "en": "The station is accessible to wheelchair users.",
+          "ja": "その駅は車椅子利用者も利用できます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00021",
+      "wordId": "VD-02327",
+      "headword": "accessory",
+      "partOfSpeech": "noun",
+      "meaningJa": "付属品・装飾品",
+      "definitionEn": "an extra item used with clothing or equipment",
+      "synonyms": "additional item",
+      "cefrHeadword": "B1",
+      "imageHint": "カメラの付属品",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00021-e01",
+          "en": "She chose a small accessory for her bag.",
+          "ja": "彼女はかばん用の小さな飾りを選びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00021-e02",
+          "en": "This camera accessory protects the lens.",
+          "ja": "このカメラの付属品はレンズを保護します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00022",
+      "wordId": "VD-02328",
+      "headword": "accidental",
+      "partOfSpeech": "adjective",
+      "meaningJa": "偶然の・意図しない",
+      "definitionEn": "happening by chance rather than by intention",
+      "synonyms": "unintentional",
+      "cefrHeadword": "B1",
+      "imageHint": "誤操作する指",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00022-e01",
+          "en": "The damage was accidental.",
+          "ja": "その損傷は故意ではありませんでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00022-e02",
+          "en": "An accidental click deleted the message.",
+          "ja": "誤ってクリックしたためメッセージが消えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00023",
+      "wordId": "VD-02329",
+      "headword": "accidentally",
+      "partOfSpeech": "adverb",
+      "meaningJa": "うっかり・偶然に",
+      "definitionEn": "without planning or meaning to do something",
+      "synonyms": "by mistake",
+      "cefrHeadword": "B1",
+      "imageHint": "電車に残された傘",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00023-e01",
+          "en": "I accidentally left my umbrella on the train.",
+          "ja": "私はうっかり電車に傘を忘れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00023-e02",
+          "en": "She accidentally sent the file to the wrong group.",
+          "ja": "彼女は誤って別のグループにファイルを送りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00024",
+      "wordId": "VD-02333",
+      "headword": "accountant",
+      "partOfSpeech": "noun",
+      "meaningJa": "会計士・経理担当者",
+      "definitionEn": "a person who prepares or checks financial records",
+      "synonyms": "financial professional",
+      "cefrHeadword": "B1",
+      "imageHint": "会計帳簿を確認する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00024-e01",
+          "en": "The accountant checked the company's expenses.",
+          "ja": "会計担当者は会社の経費を確認しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00024-e02",
+          "en": "My cousin works as an accountant at a hospital.",
+          "ja": "いとこは病院で経理担当者として働いています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00025",
+      "wordId": "VD-02336",
+      "headword": "accurately",
+      "partOfSpeech": "adverb",
+      "meaningJa": "正確に",
+      "definitionEn": "in a way that avoids errors",
+      "synonyms": "precisely",
+      "cefrHeadword": "B1",
+      "imageHint": "部屋を測る巻尺",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00025-e01",
+          "en": "She measured the room accurately.",
+          "ja": "彼女は部屋を正確に測りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00025-e02",
+          "en": "The program can accurately identify the sound.",
+          "ja": "そのプログラムはその音を正確に識別できます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00026",
+      "wordId": "VD-02337",
+      "headword": "accuse",
+      "partOfSpeech": "verb",
+      "meaningJa": "非難する・告発する",
+      "definitionEn": "to say that someone did something wrong",
+      "synonyms": "blame",
+      "cefrHeadword": "B1",
+      "imageHint": "新聞の告発記事",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00026-e01",
+          "en": "The newspaper accused the company of hiding information.",
+          "ja": "新聞は会社が情報を隠したと非難しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00026-e02",
+          "en": "He was wrongly accused of stealing the bicycle.",
+          "ja": "彼は自転車を盗んだと誤って疑われました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00027",
+      "wordId": "VD-02338",
+      "headword": "accustom",
+      "partOfSpeech": "verb",
+      "meaningJa": "慣れさせる",
+      "definitionEn": "to make someone familiar with a new situation",
+      "synonyms": "habituate",
+      "cefrHeadword": "B1",
+      "imageHint": "新しい時間割",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00027-e01",
+          "en": "The coach accustomed the team to early practice.",
+          "ja": "コーチはチームを早朝練習に慣れさせました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00027-e02",
+          "en": "We gradually accustomed ourselves to the new schedule.",
+          "ja": "私たちは新しい日程に少しずつ慣れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00028",
+      "wordId": "VD-02339",
+      "headword": "ache",
+      "partOfSpeech": "noun",
+      "meaningJa": "鈍い痛み",
+      "definitionEn": "a continuous dull pain in part of the body",
+      "synonyms": "pain",
+      "cefrHeadword": "B1",
+      "imageHint": "肩を押さえる人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00028-e01",
+          "en": "He had an ache in his shoulder.",
+          "ja": "彼は肩に鈍い痛みを感じていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00028-e02",
+          "en": "A dull ache kept her awake at night.",
+          "ja": "鈍い痛みのため彼女は夜眠れませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00029",
+      "wordId": "VD-02339",
+      "headword": "ache",
+      "partOfSpeech": "verb",
+      "meaningJa": "痛む",
+      "definitionEn": "to feel a continuous dull pain",
+      "synonyms": "hurt",
+      "cefrHeadword": "B1",
+      "imageHint": "歩いたあと痛む足",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00029-e01",
+          "en": "My legs ache after the long walk.",
+          "ja": "長い散歩のあと足が痛みます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00029-e02",
+          "en": "Her back ached after moving the furniture.",
+          "ja": "家具を動かしたあと彼女は背中が痛みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00030",
+      "wordId": "VD-02343",
+      "headword": "acquaintance",
+      "partOfSpeech": "noun",
+      "meaningJa": "知人・顔見知り",
+      "definitionEn": "a person you know but who is not a close friend",
+      "synonyms": "person one knows",
+      "cefrHeadword": "B1",
+      "imageHint": "駅で知人に会う",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00030-e01",
+          "en": "I met an old acquaintance at the station.",
+          "ja": "駅で昔の知人に会いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00030-e02",
+          "en": "She introduced me to an acquaintance from university.",
+          "ja": "彼女は大学時代の知人を私に紹介しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00031",
+      "wordId": "VD-02345",
+      "headword": "active",
+      "partOfSpeech": "adjective",
+      "meaningJa": "活動的な・活発な",
+      "definitionEn": "doing many things or moving often",
+      "synonyms": "energetic",
+      "cefrHeadword": "B1",
+      "imageHint": "活発な討論",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00031-e01",
+          "en": "My grandmother remains active every day.",
+          "ja": "祖母は毎日活動的に過ごしています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00031-e02",
+          "en": "Students took an active role in the discussion.",
+          "ja": "生徒たちは話し合いに積極的に参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00032",
+      "wordId": "VD-02346",
+      "headword": "actress",
+      "partOfSpeech": "noun",
+      "meaningJa": "女優",
+      "definitionEn": "a woman who acts in films, television, or plays",
+      "synonyms": "female actor",
+      "cefrHeadword": "B1",
+      "imageHint": "舞台の女優",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00032-e01",
+          "en": "The actress answered questions after the film.",
+          "ja": "女優は映画のあと質問に答えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00032-e02",
+          "en": "She became a famous actress through her stage work.",
+          "ja": "彼女は舞台での仕事を通して有名な女優になりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00033",
+      "wordId": "VD-02347",
+      "headword": "ad",
+      "partOfSpeech": "noun",
+      "meaningJa": "広告",
+      "definitionEn": "a short advertisement for a product or service",
+      "synonyms": "advertisement",
+      "cefrHeadword": "B1",
+      "imageHint": "新聞の広告",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00033-e01",
+          "en": "I saw an ad for a language course.",
+          "ja": "語学講座の広告を見ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00033-e02",
+          "en": "The newspaper printed an ad for the festival.",
+          "ja": "新聞は祭りの広告を掲載しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00034",
+      "wordId": "VD-02349",
+      "headword": "addressee",
+      "partOfSpeech": "noun",
+      "meaningJa": "受取人",
+      "definitionEn": "the person to whom a letter or message is sent",
+      "synonyms": "recipient",
+      "cefrHeadword": "B1",
+      "imageHint": "宛名を書く封筒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00034-e01",
+          "en": "The addressee's name was missing from the envelope.",
+          "ja": "封筒には受取人の名前がありませんでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00034-e02",
+          "en": "Check the addressee before sending the email.",
+          "ja": "メールを送る前に受取人を確認してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00035",
+      "wordId": "VD-02350",
+      "headword": "administration",
+      "partOfSpeech": "noun",
+      "meaningJa": "管理・運営",
+      "definitionEn": "the work of organizing and managing an institution",
+      "synonyms": "management",
+      "cefrHeadword": "B1",
+      "imageHint": "行事の運営会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00035-e01",
+          "en": "The administration of the event took several weeks.",
+          "ja": "行事の運営には数週間かかりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00035-e02",
+          "en": "She works in school administration.",
+          "ja": "彼女は学校の事務運営に携わっています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00036",
+      "wordId": "VD-02351",
+      "headword": "admiration",
+      "partOfSpeech": "noun",
+      "meaningJa": "感嘆・尊敬",
+      "definitionEn": "a feeling of respect or approval for someone",
+      "synonyms": "respect",
+      "cefrHeadword": "B1",
+      "imageHint": "演奏後の拍手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00036-e01",
+          "en": "I feel admiration for her dedication.",
+          "ja": "私は彼女の献身的な姿勢に敬意を抱いています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00036-e02",
+          "en": "The audience expressed admiration for the dancers.",
+          "ja": "観客は踊り手たちへの称賛を示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00037",
+      "wordId": "VD-02352",
+      "headword": "admission",
+      "partOfSpeech": "noun",
+      "meaningJa": "入学・入場の許可",
+      "definitionEn": "permission to enter an institution or place",
+      "synonyms": "entry",
+      "cefrHeadword": "B1",
+      "imageHint": "大学の入学案内",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00037-e01",
+          "en": "She applied for admission to the university.",
+          "ja": "彼女は大学への入学を出願しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00037-e02",
+          "en": "Admission to the museum is free on Sundays.",
+          "ja": "その博物館は日曜日の入場料が無料です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00038",
+      "wordId": "VD-02352",
+      "headword": "admission",
+      "partOfSpeech": "noun",
+      "meaningJa": "認めること・自白",
+      "definitionEn": "a statement acknowledging that something is true",
+      "synonyms": "confession (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "間違いを認める会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00038-e01",
+          "en": "His admission of the mistake surprised everyone.",
+          "ja": "彼が間違いを認めたことは皆を驚かせました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00038-e02",
+          "en": "The statement included an admission of responsibility.",
+          "ja": "その声明には責任を認める内容が含まれていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00039",
+      "wordId": "VD-02354",
+      "headword": "adorable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "とてもかわいい",
+      "definitionEn": "very attractive or charming in a sweet way",
+      "synonyms": "cute",
+      "cefrHeadword": "B1",
+      "imageHint": "かわいい子犬",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00039-e01",
+          "en": "The puppy is absolutely adorable.",
+          "ja": "その子犬は本当にかわいいです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00039-e02",
+          "en": "She showed us an adorable photo of her baby.",
+          "ja": "彼女は赤ちゃんのとてもかわいい写真を見せてくれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00040",
+      "wordId": "VD-02356",
+      "headword": "adverb",
+      "partOfSpeech": "noun",
+      "meaningJa": "副詞",
+      "definitionEn": "a word that gives more information about a verb, adjective, or sentence",
+      "synonyms": null,
+      "cefrHeadword": "B1",
+      "imageHint": "副詞を色分けした英文",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00040-e01",
+          "en": "Quickly is an adverb in this sentence.",
+          "ja": "この文ではquicklyは副詞です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00040-e02",
+          "en": "The teacher asked us to find an adverb.",
+          "ja": "先生は私たちに副詞を探すように言いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00041",
+      "wordId": "VD-02357",
+      "headword": "adverbial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "副詞的な",
+      "definitionEn": "working like an adverb in a sentence",
+      "synonyms": "adverb-like",
+      "cefrHeadword": "B1",
+      "imageHint": "副詞句の文法図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00041-e01",
+          "en": "The phrase has an adverbial function.",
+          "ja": "その句は副詞的な働きを持ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00041-e02",
+          "en": "She identified an adverbial expression in the text.",
+          "ja": "彼女は本文の副詞的表現を見つけました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00042",
+      "wordId": "VD-02358",
+      "headword": "advert",
+      "partOfSpeech": "noun",
+      "meaningJa": "広告（英）",
+      "definitionEn": "a short notice designed to promote something",
+      "synonyms": "advertisement",
+      "cefrHeadword": "B1",
+      "imageHint": "コンサートの広告",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00042-e01",
+          "en": "We saw an advert for the concert.",
+          "ja": "私たちはコンサートの広告を見ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00042-e02",
+          "en": "The magazine contains several colorful adverts.",
+          "ja": "その雑誌には色鮮やかな広告がいくつか載っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00043",
+      "wordId": "VD-02359",
+      "headword": "advertise",
+      "partOfSpeech": "verb",
+      "meaningJa": "宣伝する・広告する",
+      "definitionEn": "to tell people about something to attract interest",
+      "synonyms": "promote",
+      "cefrHeadword": "B1",
+      "imageHint": "イベントポスター",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00043-e01",
+          "en": "The shop advertises its products online.",
+          "ja": "その店はオンラインで商品を宣伝しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00043-e02",
+          "en": "Our club advertised the event with posters.",
+          "ja": "私たちの部活動はポスターで行事を宣伝しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00044",
+      "wordId": "VD-02360",
+      "headword": "adviser/advisor",
+      "partOfSpeech": "noun",
+      "meaningJa": "助言者・顧問",
+      "definitionEn": "a person who gives guidance or advice",
+      "synonyms": "counselor (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "生徒に助言する顧問",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00044-e01",
+          "en": "The student met with her academic adviser.",
+          "ja": "生徒は学習面の指導担当者に相談しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00044-e02",
+          "en": "Our club advisor helped us organize the event.",
+          "ja": "部活動の顧問は行事の準備を手伝ってくれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00045",
+      "wordId": "VD-02361",
+      "headword": "aerobics",
+      "partOfSpeech": "noun",
+      "meaningJa": "エアロビクス運動",
+      "definitionEn": "physical exercise performed to rhythmic music",
+      "synonyms": "fitness exercise",
+      "cefrHeadword": "B1",
+      "imageHint": "音楽に合わせた運動",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00045-e01",
+          "en": "My aunt takes an aerobics class on Mondays.",
+          "ja": "おばは月曜日にエアロビクスの教室に通っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00045-e02",
+          "en": "Aerobics can improve physical fitness.",
+          "ja": "エアロビクスは体力の向上に役立つことがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00046",
+      "wordId": "VD-02363",
+      "headword": "affection",
+      "partOfSpeech": "noun",
+      "meaningJa": "愛情・親しみ",
+      "definitionEn": "a warm feeling of love or care for someone",
+      "synonyms": "fondness",
+      "cefrHeadword": "B1",
+      "imageHint": "犬をかわいがる子",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00046-e01",
+          "en": "The child showed affection for the dog.",
+          "ja": "その子は犬への愛情を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00046-e02",
+          "en": "She spoke about her hometown with great affection.",
+          "ja": "彼女は故郷について深い愛着を込めて話しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00047",
+      "wordId": "VD-02365",
+      "headword": "afterward",
+      "partOfSpeech": "adverb",
+      "meaningJa": "その後で",
+      "definitionEn": "at a later time after something happened",
+      "synonyms": "later",
+      "cefrHeadword": "B1",
+      "imageHint": "会議後に話す人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00047-e01",
+          "en": "We ate lunch and went shopping afterward.",
+          "ja": "昼食をとり、そのあと買い物に行きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00047-e02",
+          "en": "The meeting ended, and we talked afterward.",
+          "ja": "会議が終わり、そのあと私たちは話しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00048",
+      "wordId": "VD-02366",
+      "headword": "afterwards",
+      "partOfSpeech": "adverb",
+      "meaningJa": "その後で（英）",
+      "definitionEn": "after an event or action has finished",
+      "synonyms": "later",
+      "cefrHeadword": "B1",
+      "imageHint": "清掃後の休憩",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00048-e01",
+          "en": "We cleaned the classroom and rested afterwards.",
+          "ja": "教室を掃除し、そのあと休憩しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00048-e02",
+          "en": "She read the article and discussed it afterwards.",
+          "ja": "彼女は記事を読み、そのあとそれについて話し合いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00049",
+      "wordId": "VD-02368",
+      "headword": "aggressive",
+      "partOfSpeech": "adjective",
+      "meaningJa": "攻撃的な・強引な",
+      "definitionEn": "ready to attack or behave in a forceful way",
+      "synonyms": "hostile (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "威嚇する犬",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00049-e01",
+          "en": "The dog became aggressive when frightened.",
+          "ja": "その犬は怖がると攻撃的になりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00049-e02",
+          "en": "The company used an aggressive sales strategy.",
+          "ja": "その会社は積極的で強引な販売戦略を使いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00050",
+      "wordId": "VD-02369",
+      "headword": "agreement",
+      "partOfSpeech": "noun",
+      "meaningJa": "合意・取り決め",
+      "definitionEn": "a decision accepted by two or more sides",
+      "synonyms": "deal",
+      "cefrHeadword": "B1",
+      "imageHint": "合意書への署名",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00050-e01",
+          "en": "The two schools reached an agreement.",
+          "ja": "2つの学校は合意に達しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00050-e02",
+          "en": "We signed an agreement about the exchange program.",
+          "ja": "私たちは交流プログラムについての協定書に署名しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00051",
+      "wordId": "VD-02372",
+      "headword": "aid",
+      "partOfSpeech": "noun",
+      "meaningJa": "援助・支援",
+      "definitionEn": "help given to people who need it",
+      "synonyms": "assistance",
+      "cefrHeadword": "B1",
+      "imageHint": "被災地への支援物資",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00051-e01",
+          "en": "The group sent aid to families after the flood.",
+          "ja": "その団体は洪水後の家族に支援物資を送りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00051-e02",
+          "en": "International aid helped rebuild the school.",
+          "ja": "国際支援は学校の再建に役立ちました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00052",
+      "wordId": "VD-02372",
+      "headword": "aid",
+      "partOfSpeech": "verb",
+      "meaningJa": "援助する・助ける",
+      "definitionEn": "to help someone do something",
+      "synonyms": "assist",
+      "cefrHeadword": "B1",
+      "imageHint": "読解を助ける教材",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00052-e01",
+          "en": "The guide aided visitors who were lost.",
+          "ja": "案内人は道に迷った訪問者を助けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00052-e02",
+          "en": "The new tools aid students with reading.",
+          "ja": "新しい道具は生徒の読解を助けます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00053",
+      "wordId": "VD-02373",
+      "headword": "aim",
+      "partOfSpeech": "noun",
+      "meaningJa": "目的・目標",
+      "definitionEn": "something that a person wants to achieve",
+      "synonyms": "goal",
+      "cefrHeadword": "B1",
+      "imageHint": "プロジェクトの目標",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00053-e01",
+          "en": "Our aim is to reduce paper waste.",
+          "ja": "私たちの目標は紙のごみを減らすことです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00053-e02",
+          "en": "The main aim of the project is cultural exchange.",
+          "ja": "そのプロジェクトの主な目的は文化交流です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00054",
+      "wordId": "VD-02373",
+      "headword": "aim",
+      "partOfSpeech": "verb",
+      "meaningJa": "目指す・狙う",
+      "definitionEn": "to plan or try to achieve something",
+      "synonyms": "intend",
+      "cefrHeadword": "B1",
+      "imageHint": "発音練習の目標",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00054-e01",
+          "en": "We aim to finish the project this month.",
+          "ja": "私たちは今月中にプロジェクトを終えることを目指しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00054-e02",
+          "en": "She aims to improve her pronunciation.",
+          "ja": "彼女は発音を改善することを目標にしています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00055",
+      "wordId": "VD-02374",
+      "headword": "air conditioning",
+      "partOfSpeech": "noun",
+      "meaningJa": "冷暖房・空調",
+      "definitionEn": "a system that controls the temperature of indoor air",
+      "synonyms": "climate control",
+      "cefrHeadword": "B1",
+      "imageHint": "空調のある教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00055-e01",
+          "en": "The classroom has air conditioning.",
+          "ja": "その教室には空調設備があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00055-e02",
+          "en": "We turned on the air conditioning during the heat wave.",
+          "ja": "熱波の間、私たちは空調をつけました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00056",
+      "wordId": "VD-02375",
+      "headword": "air force",
+      "partOfSpeech": "noun",
+      "meaningJa": "空軍",
+      "definitionEn": "the part of a country's military that uses aircraft",
+      "synonyms": null,
+      "cefrHeadword": "B1",
+      "imageHint": "救援物資を運ぶ航空機",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00056-e01",
+          "en": "The air force transported emergency supplies.",
+          "ja": "空軍は緊急物資を輸送しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00056-e02",
+          "en": "She studied the history of the air force.",
+          "ja": "彼女は空軍の歴史を学びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00057",
+      "wordId": "VD-02376",
+      "headword": "airline",
+      "partOfSpeech": "noun",
+      "meaningJa": "航空会社",
+      "definitionEn": "a company that carries people or goods by aircraft",
+      "synonyms": "air carrier",
+      "cefrHeadword": "B1",
+      "imageHint": "空港のチェックイン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00057-e01",
+          "en": "The airline canceled the flight because of fog.",
+          "ja": "その航空会社は霧のため便を欠航にしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00057-e02",
+          "en": "I checked the airline's baggage rules online.",
+          "ja": "私は航空会社の手荷物規定をオンラインで確認しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00058",
+      "wordId": "VD-02377",
+      "headword": "alcohol",
+      "partOfSpeech": "noun",
+      "meaningJa": "アルコール",
+      "definitionEn": "a chemical substance found in certain drinks and cleaning products",
+      "synonyms": "ethanol (chemical context)",
+      "cefrHeadword": "B1",
+      "imageHint": "研究室の消毒液",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00058-e01",
+          "en": "The sanitizer contains alcohol.",
+          "ja": "その消毒液にはアルコールが含まれています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00058-e02",
+          "en": "The laboratory stores alcohol in a safe cabinet.",
+          "ja": "研究室はアルコールを安全な保管庫に置いています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00059",
+      "wordId": "VD-02378",
+      "headword": "alcoholic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "アルコールを含む",
+      "definitionEn": "containing alcohol",
+      "synonyms": null,
+      "cefrHeadword": "B1",
+      "imageHint": "成分表示のラベル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00059-e01",
+          "en": "This product contains an alcoholic solution.",
+          "ja": "この製品にはアルコールを含む溶液が使われています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00059-e02",
+          "en": "The label clearly marks alcoholic ingredients.",
+          "ja": "ラベルにはアルコールを含む成分が明確に示されています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00060",
+      "wordId": "VD-02379",
+      "headword": "alike",
+      "partOfSpeech": "adjective",
+      "meaningJa": "よく似ている",
+      "definitionEn": "similar in appearance or character",
+      "synonyms": "similar",
+      "cefrHeadword": "B1",
+      "imageHint": "似た二軒の家",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00060-e01",
+          "en": "The two sisters look alike.",
+          "ja": "その姉妹はよく似ています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00060-e02",
+          "en": "The houses on this street are all alike.",
+          "ja": "この通りの家々はどれもよく似ています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00061",
+      "wordId": "VD-02380",
+      "headword": "allergic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "アレルギーのある",
+      "definitionEn": "having a physical reaction to a substance",
+      "synonyms": "sensitive (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "食品アレルギー表示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00061-e01",
+          "en": "She is allergic to peanuts.",
+          "ja": "彼女はピーナッツにアレルギーがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00061-e02",
+          "en": "Some students are allergic to certain foods.",
+          "ja": "特定の食べ物にアレルギーのある生徒もいます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00062",
+      "wordId": "VD-02381",
+      "headword": "allowance",
+      "partOfSpeech": "noun",
+      "meaningJa": "お小遣い・手当",
+      "definitionEn": "money given regularly for personal spending or a special purpose",
+      "synonyms": "regular payment",
+      "cefrHeadword": "B1",
+      "imageHint": "貯金箱とお小遣い",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00062-e01",
+          "en": "He saves half of his weekly allowance.",
+          "ja": "彼は毎週のお小遣いの半分を貯金します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00062-e02",
+          "en": "The workers receive a travel allowance.",
+          "ja": "その労働者たちは交通費手当を受け取ります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00063",
+      "wordId": "VD-02382",
+      "headword": "aloud",
+      "partOfSpeech": "adverb",
+      "meaningJa": "声に出して",
+      "definitionEn": "in a voice that others can hear",
+      "synonyms": "out loud",
+      "cefrHeadword": "B1",
+      "imageHint": "音読する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00063-e01",
+          "en": "Please read the paragraph aloud.",
+          "ja": "その段落を声に出して読んでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00063-e02",
+          "en": "She practiced aloud before the presentation.",
+          "ja": "彼女は発表前に声に出して練習しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00064",
+      "wordId": "VD-02383",
+      "headword": "alphabet",
+      "partOfSpeech": "noun",
+      "meaningJa": "アルファベット",
+      "definitionEn": "a set of letters used to write a language",
+      "synonyms": "letters",
+      "cefrHeadword": "B1",
+      "imageHint": "アルファベット表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00064-e01",
+          "en": "The English alphabet has twenty-six letters.",
+          "ja": "英語のアルファベットには26文字あります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00064-e02",
+          "en": "She wrote the names in alphabetical order.",
+          "ja": "彼女は名前をアルファベット順に書きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00065",
+      "wordId": "VD-02385",
+      "headword": "altogether",
+      "partOfSpeech": "adverb",
+      "meaningJa": "合計で・全部で",
+      "definitionEn": "when everything is added together",
+      "synonyms": "in total",
+      "cefrHeadword": "B1",
+      "imageHint": "合計人数の表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00065-e01",
+          "en": "Altogether, sixty people joined the event.",
+          "ja": "合計60人が行事に参加しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00065-e02",
+          "en": "The tickets cost three thousand yen altogether.",
+          "ja": "切符代は全部で3,000円でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00066",
+      "wordId": "VD-02386",
+      "headword": "amazed",
+      "partOfSpeech": "adjective",
+      "meaningJa": "驚いた",
+      "definitionEn": "feeling great surprise",
+      "synonyms": "astonished",
+      "cefrHeadword": "B1",
+      "imageHint": "ロボットに驚く子",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00066-e01",
+          "en": "I was amazed by the beautiful view.",
+          "ja": "私は美しい景色に驚きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00066-e02",
+          "en": "The children were amazed to see the robot move.",
+          "ja": "子どもたちはロボットが動くのを見て驚きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00067",
+      "wordId": "VD-02387",
+      "headword": "amazing",
+      "partOfSpeech": "adjective",
+      "meaningJa": "驚くほどすばらしい",
+      "definitionEn": "causing strong surprise or admiration",
+      "synonyms": "wonderful",
+      "cefrHeadword": "B1",
+      "imageHint": "見事な滝",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00067-e01",
+          "en": "The students gave an amazing performance.",
+          "ja": "生徒たちはすばらしい発表をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00067-e02",
+          "en": "We saw an amazing waterfall on the trip.",
+          "ja": "旅行中に見事な滝を見ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00068",
+      "wordId": "VD-02388",
+      "headword": "ambitious",
+      "partOfSpeech": "adjective",
+      "meaningJa": "野心的な・意欲的な",
+      "definitionEn": "having a strong desire to achieve difficult goals",
+      "synonyms": "aspiring",
+      "cefrHeadword": "B1",
+      "imageHint": "高い目標を掲げる生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00068-e01",
+          "en": "The team set an ambitious target for the year.",
+          "ja": "チームはその年に意欲的な目標を立てました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00068-e02",
+          "en": "She is ambitious about studying medicine.",
+          "ja": "彼女は医学の学習に強い意欲を持っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00069",
+      "wordId": "VD-02389",
+      "headword": "ambulance",
+      "partOfSpeech": "noun",
+      "meaningJa": "救急車",
+      "definitionEn": "a vehicle that takes sick or injured people to medical care",
+      "synonyms": "emergency vehicle",
+      "cefrHeadword": "B1",
+      "imageHint": "救急車に道を譲る車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00069-e01",
+          "en": "An ambulance arrived within minutes.",
+          "ja": "救急車が数分以内に到着しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00069-e02",
+          "en": "The driver moved aside to let the ambulance pass.",
+          "ja": "運転手は救急車を通すために道を譲りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00070",
+      "wordId": "VD-02390",
+      "headword": "amount",
+      "partOfSpeech": "noun",
+      "meaningJa": "量・金額",
+      "definitionEn": "how much of something there is",
+      "synonyms": "quantity",
+      "cefrHeadword": "B1",
+      "imageHint": "レシートの合計金額",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00070-e01",
+          "en": "Use a small amount of salt.",
+          "ja": "少量の塩を使ってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00070-e02",
+          "en": "The total amount was written on the receipt.",
+          "ja": "合計金額はレシートに書かれていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00071",
+      "wordId": "VD-02391",
+      "headword": "amusing",
+      "partOfSpeech": "adjective",
+      "meaningJa": "面白い・愉快な",
+      "definitionEn": "making people laugh or smile",
+      "synonyms": "funny",
+      "cefrHeadword": "B1",
+      "imageHint": "笑っている聴衆",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00071-e01",
+          "en": "The speaker told an amusing story.",
+          "ja": "話し手は愉快な話をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00071-e02",
+          "en": "We watched an amusing video in class.",
+          "ja": "私たちは授業で面白い動画を見ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00072",
+      "wordId": "VD-02392",
+      "headword": "analysis",
+      "partOfSpeech": "noun",
+      "meaningJa": "分析",
+      "definitionEn": "a careful study of information to understand it",
+      "synonyms": "examination",
+      "cefrHeadword": "B1",
+      "imageHint": "調査グラフの分析",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00072-e01",
+          "en": "The analysis showed a clear pattern.",
+          "ja": "分析は明確な傾向を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00072-e02",
+          "en": "Students wrote an analysis of the survey results.",
+          "ja": "生徒たちは調査結果の分析を書きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00073",
+      "wordId": "VD-02393",
+      "headword": "analyze/analyse",
+      "partOfSpeech": "verb",
+      "meaningJa": "分析する",
+      "definitionEn": "to examine information carefully to understand it",
+      "synonyms": "examine",
+      "cefrHeadword": "B1",
+      "imageHint": "実験データを分析する",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00073-e01",
+          "en": "We analyzed the data from the experiment.",
+          "ja": "私たちは実験データを分析しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00073-e02",
+          "en": "The class analysed different opinions in the article.",
+          "ja": "クラスは記事中の異なる意見を分析しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00074",
+      "wordId": "VD-02394",
+      "headword": "anger",
+      "partOfSpeech": "noun",
+      "meaningJa": "怒り",
+      "definitionEn": "a strong feeling of being upset about something",
+      "synonyms": "rage",
+      "cefrHeadword": "B1",
+      "imageHint": "不公平な決定への反応",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00074-e01",
+          "en": "He tried to control his anger.",
+          "ja": "彼は怒りを抑えようとしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00074-e02",
+          "en": "The unfair decision caused anger among residents.",
+          "ja": "不公平な決定は住民の怒りを招きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00075",
+      "wordId": "VD-02395",
+      "headword": "angle",
+      "partOfSpeech": "noun",
+      "meaningJa": "角度",
+      "definitionEn": "the space between two lines that meet",
+      "synonyms": null,
+      "cefrHeadword": "B1",
+      "imageHint": "分度器で角度を測る",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00075-e01",
+          "en": "Measure the angle with a ruler and protractor.",
+          "ja": "定規と分度器で角度を測ってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00075-e02",
+          "en": "The solar panel works best at this angle.",
+          "ja": "太陽光パネルはこの角度で最もよく働きます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00076",
+      "wordId": "VD-02396",
+      "headword": "animated",
+      "partOfSpeech": "adjective",
+      "meaningJa": "アニメーションの・動く絵の",
+      "definitionEn": "made using a series of drawings or computer images",
+      "synonyms": "cartoon (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "水の循環アニメ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00076-e01",
+          "en": "The class watched an animated film.",
+          "ja": "クラスはアニメ映画を見ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00076-e02",
+          "en": "She created an animated explanation of the water cycle.",
+          "ja": "彼女は水の循環を説明するアニメーションを作りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00077",
+      "wordId": "VD-02397",
+      "headword": "animation",
+      "partOfSpeech": "noun",
+      "meaningJa": "アニメーション",
+      "definitionEn": "moving images created from drawings or computer graphics",
+      "synonyms": "moving pictures",
+      "cefrHeadword": "B1",
+      "imageHint": "心臓のしくみのアニメ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00077-e01",
+          "en": "He studies animation at college.",
+          "ja": "彼は大学でアニメーションを学んでいます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00077-e02",
+          "en": "The animation explains how the heart works.",
+          "ja": "そのアニメーションは心臓の働きを説明しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00078",
+      "wordId": "VD-02399",
+      "headword": "announcement",
+      "partOfSpeech": "noun",
+      "meaningJa": "発表・知らせ",
+      "definitionEn": "a public or official statement giving information",
+      "synonyms": "notice",
+      "cefrHeadword": "B1",
+      "imageHint": "校内放送の場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00078-e01",
+          "en": "The principal made an important announcement.",
+          "ja": "校長は重要な発表をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00078-e02",
+          "en": "I heard the train announcement at the station.",
+          "ja": "駅で電車についてのアナウンスを聞きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00079",
+      "wordId": "VD-02400",
+      "headword": "annoyance",
+      "partOfSpeech": "noun",
+      "meaningJa": "いらだち・迷惑",
+      "definitionEn": "a feeling caused by something unpleasant or repeated",
+      "synonyms": "irritation",
+      "cefrHeadword": "B1",
+      "imageHint": "騒音に困る人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00079-e01",
+          "en": "The noise was a constant annoyance.",
+          "ja": "その騒音は絶え間ない迷惑でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00079-e02",
+          "en": "She showed her annoyance by leaving the room.",
+          "ja": "彼女は部屋を出ることでいらだちを示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00080",
+      "wordId": "VD-02401",
+      "headword": "annoyed",
+      "partOfSpeech": "adjective",
+      "meaningJa": "いらいらした",
+      "definitionEn": "slightly angry because of something unpleasant",
+      "synonyms": "irritated",
+      "cefrHeadword": "B1",
+      "imageHint": "遅延に困る乗客",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00080-e01",
+          "en": "He was annoyed by the repeated calls.",
+          "ja": "彼は何度もかかる電話にいらいらしていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00080-e02",
+          "en": "I felt annoyed when the train was delayed again.",
+          "ja": "電車がまた遅れたとき、私はいらいらしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00081",
+      "wordId": "VD-02402",
+      "headword": "annual",
+      "partOfSpeech": "adjective",
+      "meaningJa": "毎年の・年に1回の",
+      "definitionEn": "happening once every year",
+      "synonyms": "yearly",
+      "cefrHeadword": "B1",
+      "imageHint": "年次報告書の表紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00081-e01",
+          "en": "The school holds an annual music festival.",
+          "ja": "学校は毎年音楽祭を開きます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00081-e02",
+          "en": "We published our annual report in March.",
+          "ja": "私たちは3月に年次報告書を発行しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00082",
+      "wordId": "VD-02403",
+      "headword": "annually",
+      "partOfSpeech": "adverb",
+      "meaningJa": "毎年",
+      "definitionEn": "once every year",
+      "synonyms": "yearly",
+      "cefrHeadword": "B1",
+      "imageHint": "年ごとの行事予定",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00082-e01",
+          "en": "The museum is inspected annually.",
+          "ja": "その博物館は毎年点検を受けます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00082-e02",
+          "en": "The club elects a new leader annually.",
+          "ja": "その部活動は毎年新しい代表を選びます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00083",
+      "wordId": "VD-02404",
+      "headword": "ant",
+      "partOfSpeech": "noun",
+      "meaningJa": "アリ",
+      "definitionEn": "a small insect that lives in organized groups",
+      "synonyms": null,
+      "cefrHeadword": "B1",
+      "imageHint": "葉を運ぶアリ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00083-e01",
+          "en": "An ant carried a leaf across the path.",
+          "ja": "アリが葉を運んで道を横切りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00083-e02",
+          "en": "We observed ants building their nest.",
+          "ja": "私たちはアリが巣を作る様子を観察しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00084",
+      "wordId": "VD-02406",
+      "headword": "antique",
+      "partOfSpeech": "noun",
+      "meaningJa": "骨董品",
+      "definitionEn": "an old object valued for its age or craftsmanship",
+      "synonyms": "old collectible",
+      "cefrHeadword": "B1",
+      "imageHint": "古い骨董時計",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00084-e01",
+          "en": "The shop sells antique clocks.",
+          "ja": "その店は骨董の時計を売っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00084-e02",
+          "en": "My grandfather owns an antique wooden chair.",
+          "ja": "祖父は骨董の木製の椅子を持っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00085",
+      "wordId": "VD-02407",
+      "headword": "antonym",
+      "partOfSpeech": "noun",
+      "meaningJa": "反意語",
+      "definitionEn": "a word with a meaning opposite to another word",
+      "synonyms": "opposite word",
+      "cefrHeadword": "B1",
+      "imageHint": "hotとcoldの対比",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00085-e01",
+          "en": "Hot is an antonym of cold.",
+          "ja": "hotはcoldの反意語です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00085-e02",
+          "en": "Write an antonym for each adjective.",
+          "ja": "それぞれの形容詞の反意語を書いてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00086",
+      "wordId": "VD-02408",
+      "headword": "anxiety",
+      "partOfSpeech": "noun",
+      "meaningJa": "不安・心配",
+      "definitionEn": "a strong feeling of worry about what may happen",
+      "synonyms": "worry",
+      "cefrHeadword": "B1",
+      "imageHint": "面接前の緊張",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00086-e01",
+          "en": "She felt anxiety before the interview.",
+          "ja": "彼女は面接の前に不安を感じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00086-e02",
+          "en": "Talking with a teacher helped reduce his anxiety.",
+          "ja": "先生と話すことで彼の不安が和らぎました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00087",
+      "wordId": "VD-02409",
+      "headword": "anxiously",
+      "partOfSpeech": "adverb",
+      "meaningJa": "不安そうに",
+      "definitionEn": "in a way that shows worry or fear",
+      "synonyms": "nervously",
+      "cefrHeadword": "B1",
+      "imageHint": "結果を待つ生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00087-e01",
+          "en": "He waited anxiously for the test result.",
+          "ja": "彼は試験結果を不安そうに待ちました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00087-e02",
+          "en": "The parents looked anxiously toward the door.",
+          "ja": "両親は不安そうにドアの方を見ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00088",
+      "wordId": "VD-02410",
+      "headword": "anyhow",
+      "partOfSpeech": "adverb",
+      "meaningJa": "とにかく・いずれにせよ",
+      "definitionEn": "used to continue despite a problem or change the topic",
+      "synonyms": "anyway",
+      "cefrHeadword": "B1",
+      "imageHint": "悪天候でも出発",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00088-e01",
+          "en": "The weather was poor, but we went anyhow.",
+          "ja": "天気は悪かったですが、それでも私たちは行きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00088-e02",
+          "en": "Anyhow, we should discuss the plan tomorrow.",
+          "ja": "とにかく、その計画は明日話し合うべきです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00089",
+      "wordId": "VD-02411",
+      "headword": "ape",
+      "partOfSpeech": "noun",
+      "meaningJa": "類人猿",
+      "definitionEn": "a large primate without a tail, such as a chimpanzee",
+      "synonyms": "great ape (type)",
+      "cefrHeadword": "B1",
+      "imageHint": "類人猿の観察",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00089-e01",
+          "en": "We saw an ape at the wildlife center.",
+          "ja": "私たちは野生動物センターで類人猿を見ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00089-e02",
+          "en": "Scientists study how apes communicate.",
+          "ja": "科学者は類人猿のコミュニケーションを研究しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-BULK-261114-B1-A-00090",
+      "wordId": "VD-02412",
+      "headword": "apology",
+      "partOfSpeech": "noun",
+      "meaningJa": "謝罪・おわび",
+      "definitionEn": "words or an action showing that you are sorry",
+      "synonyms": "expression of regret",
+      "cefrHeadword": "B1",
+      "imageHint": "謝罪の手紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-BULK-261114-B1-A-00090-e01",
+          "en": "He wrote an apology to his teacher.",
+          "ja": "彼は先生に謝罪の手紙を書きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD-BULK-261114-B1-A-00090-e02",
+          "en": "She accepted his apology after they talked.",
+          "ja": "話し合いのあと、彼女は彼の謝罪を受け入れました。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ],
+  "originDraft": "batch-09"
+}
