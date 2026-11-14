@@ -4,7 +4,7 @@ import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,univer
 import {assetImage} from '../lib/learning';
 import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
-export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all'}) {
+export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all'}) {
  const [center,setCenter]=useState(entry);
  const [trail,setTrail]=useState([]);
  const [query,setQuery]=useState('');
@@ -17,7 +17,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
  const [view,setView]=useState(initialFilter==='forms'?'list':'map');
  const [page,setPage]=useState(0);
  const dialog=useRef(null), close=useRef(null), overlay=useRef(null), titleId=useId();
- const [searchOpen,setSearchOpen]=useState(false);
+ const [searchOpen,setSearchOpen]=useState(false),[searchBusy,setSearchBusy]=useState(false),[searchNotice,setSearchNotice]=useState('');
  const index=useMemo(()=>new Map(words.map(w=>[w.word.toLowerCase(),w])),[words]);
  const links=useMemo(()=>getRelations(center),[center]);
  const mapSense=lookupUniverse(center.word)?.meaning;
@@ -38,6 +38,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
  },[]);
 
  const change=(next)=>{if(!next)return;const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
+ const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(item.word.toLowerCase()!==center.word.toLowerCase())setTrail(t=>[...t,center]);change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(next.word.toLowerCase()!==center.word.toLowerCase())setTrail(t=>[...t,center]);change(next);setView('map');};
  useLayoutEffect(()=>{
    const handler=e=>{
@@ -81,7 +82,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
    <div className="vu-controls">
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setPage(0);}}>{label}</button>)}</div>
-   {searchOpen&&<div className="vu-search-wrap" id={titleId+"-search-panel"}><label htmlFor={titleId+'-search'}>ネットワーク内の語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off"/>{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>explore(item)}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>登録済みの中心語が見つかりません。</p>}</div>}</div>}
+   {searchOpen&&<div className="vu-search-wrap" id={titleId+"-search-panel"}><label htmlFor={titleId+'-search'}>登録済みの語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off" onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();searchFull();}}}/><button type="button" disabled={searchBusy||!query.trim()} onClick={searchFull}>{searchBusy?'検索中…':'全教材から検索'}</button>{searchNotice&&<p role="status">{searchNotice}</p>}{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>explore(item)}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>ネットワークの候補なし。全教材から検索できます。</p>}</div>}</div>}
    
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
    </div>
@@ -97,7 +98,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
    <div className="vu-rings"><span>{visible.length}件の関連語</span><span>内側：最優先</span><span>中間：関連</span><span>外側：発展</span></div>
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);}}>次へ →</button></div>}</>}
    {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
-   {!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
+   {center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
    
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} onClick={()=>explore(n)} aria-label={n.word+" を中心に表示"} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
   </div>
