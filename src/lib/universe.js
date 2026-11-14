@@ -1,3 +1,4 @@
+import foundationNotes from '../data/universe-foundation-notes.js';
 import originalFoundationB from '../data/universe-original-foundation-b.js';
 import originalFoundationC from '../data/universe-original-foundation-c.js';
 import schoolReadingC from '../data/universe-school-reading-c.js';
@@ -101,7 +102,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
