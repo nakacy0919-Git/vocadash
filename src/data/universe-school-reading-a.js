@@ -1,4 +1,4 @@
-// Original editorial relations for reading lessons 1–4.
+// Original editorial vocabulary maps; distance is pedagogical priority, not corpus frequency.
 export default {
   "underway": {
     "meaning": "進行中で",
@@ -48,7 +48,7 @@ export default {
         "word": "unearth",
         "meaning": "掘り出す",
         "type": "contrast",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "bury underground",
@@ -77,7 +77,7 @@ export default {
         "word": "quantify",
         "meaning": "数量化する",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "measure the distance",
@@ -141,7 +141,7 @@ export default {
         "word": "scrutinize",
         "meaning": "精査する",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       }
     ]
   },
@@ -181,7 +181,7 @@ export default {
         "word": "minuscule",
         "meaning": "ごく小さい",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "small",
@@ -419,7 +419,7 @@ export default {
         "word": "ascertain",
         "meaning": "確認する",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "determination",
@@ -500,7 +500,7 @@ export default {
         "word": "equilibrium",
         "meaning": "均衡",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "imbalance",
@@ -628,7 +628,7 @@ export default {
         "word": "contamination",
         "meaning": "汚染",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "air pollution",
@@ -651,7 +651,7 @@ export default {
         "word": "indigenous",
         "meaning": "先住の",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "native speaker",
@@ -721,7 +721,7 @@ export default {
         "word": "sustainable development",
         "meaning": "持続可能な開発",
         "type": "collocation",
-        "tier": "related"
+        "tier": "extended"
       }
     ]
   },
@@ -883,7 +883,7 @@ export default {
         "word": "astrophysics",
         "meaning": "天体物理学",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "telescope",
@@ -1027,7 +1027,7 @@ export default {
       {
         "word": "supply",
         "meaning": "供給",
-        "type": "related",
+        "type": "contrast",
         "tier": "related"
       },
       {
@@ -1231,7 +1231,7 @@ export default {
         "word": "indispensable",
         "meaning": "不可欠な",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "nonessential",
@@ -1382,7 +1382,7 @@ export default {
         "word": "repercussion",
         "meaning": "波及的影響",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "serious consequence",
@@ -1428,7 +1428,7 @@ export default {
         "word": "immense",
         "meaning": "巨大な",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "enormous",
@@ -1678,7 +1678,7 @@ export default {
         "word": "investigative journalism",
         "meaning": "調査報道",
         "type": "collocation",
-        "tier": "related"
+        "tier": "extended"
       }
     ]
   },
