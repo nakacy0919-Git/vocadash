@@ -1,0 +1,2453 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-08",
+  "topic": "Core, multiple-meaning and high-value verbs",
+  "createdOn": "2026-11-14",
+  "sourceKind": "original-draft",
+  "records": [
+    {
+      "senseId": "VD8-00001",
+      "wordId": "VD-00218",
+      "headword": "correct",
+      "partOfSpeech": "verb",
+      "meaningJa": "訂正する・直す",
+      "definitionEn": "to change something that is wrong so it becomes right",
+      "synonyms": "fix",
+      "cefrHeadword": "A1",
+      "imageHint": "ノートの間違いを訂正する",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00001-e01",
+          "en": "Please correct the spelling mistakes in this paragraph.",
+          "ja": "この段落のつづりの間違いを直してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00001-e02",
+          "en": "The scientist corrected an error in the calculation.",
+          "ja": "科学者は計算の誤りを訂正しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00002",
+      "wordId": "VD-00218",
+      "headword": "correct",
+      "partOfSpeech": "adjective",
+      "meaningJa": "正しい・正確な",
+      "definitionEn": "free from mistakes or errors",
+      "synonyms": "right",
+      "cefrHeadword": "A1",
+      "imageHint": "正しい答えを確認",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00002-e01",
+          "en": "Only one of these answers is correct.",
+          "ja": "これらの答えのうち正しいものは1つだけです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00002-e02",
+          "en": "Please check that the address is correct.",
+          "ja": "住所が正しいか確認してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00003",
+      "wordId": "VD-02804",
+      "headword": "define",
+      "partOfSpeech": "verb",
+      "meaningJa": "定義する・意味を明確にする",
+      "definitionEn": "to explain exactly what a word or idea means",
+      "synonyms": "explain",
+      "cefrHeadword": "B1",
+      "imageHint": "用語の意味を説明する黒板",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00003-e01",
+          "en": "Can you define the term in simple English?",
+          "ja": "その用語をやさしい英語で定義できますか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00003-e02",
+          "en": "The report clearly defines its main goal.",
+          "ja": "報告書は主な目標を明確に定義しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00004",
+      "wordId": "VD-02819",
+      "headword": "demonstrate",
+      "partOfSpeech": "verb",
+      "meaningJa": "実演する・やり方を示す",
+      "definitionEn": "to show someone how to do something by doing it",
+      "synonyms": "show",
+      "cefrHeadword": "B1",
+      "imageHint": "顕微鏡を実演する教師",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00004-e01",
+          "en": "The coach demonstrated the correct movement.",
+          "ja": "コーチは正しい動きを実演しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00004-e02",
+          "en": "Our teacher demonstrated how to use the microscope.",
+          "ja": "先生は顕微鏡の使い方を実演しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00005",
+      "wordId": "VD-02819",
+      "headword": "demonstrate",
+      "partOfSpeech": "verb",
+      "meaningJa": "証拠を示して明らかにする",
+      "definitionEn": "to show that something is true with evidence",
+      "synonyms": "prove",
+      "cefrHeadword": "B1",
+      "imageHint": "植物と光の実験結果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00005-e01",
+          "en": "The results demonstrate the value of daily exercise.",
+          "ja": "結果は毎日の運動の価値を示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00005-e02",
+          "en": "The experiment demonstrated that plants need light.",
+          "ja": "その実験は植物には光が必要なことを示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00006",
+      "wordId": "VD-07130",
+      "headword": "elevate",
+      "partOfSpeech": "verb",
+      "meaningJa": "高める・引き上げる",
+      "definitionEn": "to raise the level or position of something",
+      "synonyms": "raise",
+      "cefrHeadword": "C1",
+      "imageHint": "一段高い演台",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00006-e01",
+          "en": "The new platform elevates the speaker above the audience.",
+          "ja": "新しい演台は話し手を聴衆より高い位置に置きます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00006-e02",
+          "en": "The campaign helped elevate awareness of road safety.",
+          "ja": "その運動は交通安全への意識を高めるのに役立ちました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00007",
+      "wordId": "VD-02976",
+      "headword": "ensure",
+      "partOfSpeech": "verb",
+      "meaningJa": "確実にする・保証する",
+      "definitionEn": "to make certain that something happens or is true",
+      "synonyms": "make sure",
+      "cefrHeadword": "B1",
+      "imageHint": "安全点検のリスト",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00007-e01",
+          "en": "Teachers ensure that every student knows the rules.",
+          "ja": "教師は全員の生徒が規則を理解するようにします。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00007-e02",
+          "en": "A final check will ensure the data are complete.",
+          "ja": "最終確認によってデータの欠損がないことを確実にします。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00008",
+      "wordId": "VD-07156",
+      "headword": "expedite",
+      "partOfSpeech": "verb",
+      "meaningJa": "早める・迅速に進める",
+      "definitionEn": "to make a process happen more quickly",
+      "synonyms": "speed up",
+      "cefrHeadword": "C1",
+      "imageHint": "受付を速くする電子フォーム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00008-e01",
+          "en": "Digital forms can expedite registration.",
+          "ja": "電子フォームは登録を迅速にできます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00008-e02",
+          "en": "The team expedited repairs before the festival.",
+          "ja": "チームは祭りの前に修理を急いで進めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00009",
+      "wordId": "VD-05225",
+      "headword": "facilitate",
+      "partOfSpeech": "verb",
+      "meaningJa": "容易にする・促進する",
+      "definitionEn": "to help a process happen more easily",
+      "synonyms": "make easier",
+      "cefrHeadword": "B2",
+      "imageHint": "町を結ぶ新しい橋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00009-e01",
+          "en": "Clear instructions facilitate group activities.",
+          "ja": "明確な指示はグループ活動を円滑にします。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00009-e02",
+          "en": "The new bridge facilitates travel between the towns.",
+          "ja": "新しい橋は町同士の移動を容易にします。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00010",
+      "wordId": "VD-05473",
+      "headword": "implement",
+      "partOfSpeech": "verb",
+      "meaningJa": "実行する・導入する",
+      "definitionEn": "to put a plan or decision into action",
+      "synonyms": "carry out",
+      "cefrHeadword": "B2",
+      "imageHint": "新しい資源回収制度",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00010-e01",
+          "en": "The city implemented a recycling program.",
+          "ja": "市はリサイクル計画を導入しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00010-e02",
+          "en": "Our school will implement the changes next term.",
+          "ja": "学校は来学期にその変更を実施します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00011",
+      "wordId": "VD-05479",
+      "headword": "impose",
+      "partOfSpeech": "verb",
+      "meaningJa": "課す・義務づける",
+      "definitionEn": "to force people to accept a rule or limit",
+      "synonyms": "enforce",
+      "cefrHeadword": "B2",
+      "imageHint": "入園人数の制限表示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00011-e01",
+          "en": "The park imposed a limit on visitor numbers.",
+          "ja": "公園は入園者数に制限を設けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00011-e02",
+          "en": "The government imposed a tax on plastic bags.",
+          "ja": "政府はレジ袋に税金を課しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00012",
+      "wordId": "VD-03317",
+      "headword": "inject",
+      "partOfSpeech": "verb",
+      "meaningJa": "注射する・注入する",
+      "definitionEn": "to put a liquid into something using a needle",
+      "synonyms": "insert by needle",
+      "cefrHeadword": "B1",
+      "imageHint": "注射器を使う医療者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00012-e01",
+          "en": "The nurse injected the medicine slowly.",
+          "ja": "看護師は薬をゆっくり注射しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00012-e02",
+          "en": "Engineers injected water into the pipe to test it.",
+          "ja": "技術者たちは試験のため管に水を注入しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00013",
+      "wordId": "VD-03317",
+      "headword": "inject",
+      "partOfSpeech": "verb",
+      "meaningJa": "（活力・資金などを）投入する",
+      "definitionEn": "to introduce energy, money, or ideas into a situation",
+      "synonyms": "add",
+      "cefrHeadword": "B1",
+      "imageHint": "図書館への新しい投資",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00013-e01",
+          "en": "The project injected new energy into the community.",
+          "ja": "その計画は地域に新たな活力を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00013-e02",
+          "en": "The city injected more funding into public libraries.",
+          "ja": "市は公共図書館に追加資金を投入しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00014",
+      "wordId": "VD-05541",
+      "headword": "inspect",
+      "partOfSpeech": "verb",
+      "meaningJa": "点検する・詳しく調べる",
+      "definitionEn": "to examine something carefully for problems",
+      "synonyms": "check",
+      "cefrHeadword": "B2",
+      "imageHint": "橋を点検する技術者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00014-e01",
+          "en": "The engineer inspected the bridge for damage.",
+          "ja": "技術者は橋の損傷を点検しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00014-e02",
+          "en": "Please inspect the equipment before using it.",
+          "ja": "使用前に機器を点検してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00015",
+      "wordId": "VD-05548",
+      "headword": "instruct",
+      "partOfSpeech": "verb",
+      "meaningJa": "指示する・教える",
+      "definitionEn": "to tell someone what to do or teach them how",
+      "synonyms": "direct",
+      "cefrHeadword": "B2",
+      "imageHint": "応急手当の授業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00015-e01",
+          "en": "The guide instructed us to stay together.",
+          "ja": "案内人は一緒に行動するよう私たちに指示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00015-e02",
+          "en": "The teacher instructed students in basic first aid.",
+          "ja": "教師は生徒に応急手当の基本を教えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00016",
+      "wordId": "VD-05551",
+      "headword": "integrate",
+      "partOfSpeech": "verb",
+      "meaningJa": "統合する・組み合わせる",
+      "definitionEn": "to combine separate parts so they work together",
+      "synonyms": "combine",
+      "cefrHeadword": "B2",
+      "imageHint": "画像と音声を合わせた教材",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00016-e01",
+          "en": "The app integrates pictures with speaking practice.",
+          "ja": "そのアプリは画像とスピーキング練習を統合しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00016-e02",
+          "en": "The school integrated art into its science lessons.",
+          "ja": "学校は理科の授業に美術を取り入れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00017",
+      "wordId": "VD-05558",
+      "headword": "interpret",
+      "partOfSpeech": "verb",
+      "meaningJa": "意味を解釈する",
+      "definitionEn": "to decide what information or an event means",
+      "synonyms": "understand",
+      "cefrHeadword": "B2",
+      "imageHint": "同じ図表に異なる解釈",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00017-e01",
+          "en": "Students interpreted the chart in different ways.",
+          "ja": "生徒たちはその図表を異なる方法で解釈しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00017-e02",
+          "en": "It is important to interpret statistics carefully.",
+          "ja": "統計を注意深く解釈することが重要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00018",
+      "wordId": "VD-05558",
+      "headword": "interpret",
+      "partOfSpeech": "verb",
+      "meaningJa": "通訳する",
+      "definitionEn": "to translate spoken words into another language",
+      "synonyms": "translate orally",
+      "cefrHeadword": "B2",
+      "imageHint": "学校間オンライン通訳",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00018-e01",
+          "en": "She interpreted the meeting between two schools.",
+          "ja": "彼女は2校の会議で通訳しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00018-e02",
+          "en": "An interpreter helped the patient explain her symptoms.",
+          "ja": "通訳者が患者が症状を説明するのを手伝いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00019",
+      "wordId": "VD-05573",
+      "headword": "investigate",
+      "partOfSpeech": "verb",
+      "meaningJa": "調査する・原因を調べる",
+      "definitionEn": "to examine facts carefully to learn what happened",
+      "synonyms": "look into",
+      "cefrHeadword": "B2",
+      "imageHint": "河川の水質調査",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00019-e01",
+          "en": "The students investigated pollution in the river.",
+          "ja": "生徒たちは川の汚染を調査しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00019-e02",
+          "en": "Police investigated the cause of the fire.",
+          "ja": "警察は火事の原因を調査しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00020",
+      "wordId": "VD-03564",
+      "headword": "negotiate",
+      "partOfSpeech": "verb",
+      "meaningJa": "交渉する",
+      "definitionEn": "to discuss a problem to reach an agreement",
+      "synonyms": "bargain",
+      "cefrHeadword": "B1",
+      "imageHint": "日程を話し合う先生たち",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00020-e01",
+          "en": "The schools negotiated the dates of the exchange.",
+          "ja": "2校は交流の日程について交渉しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00020-e02",
+          "en": "The workers negotiated better safety conditions.",
+          "ja": "労働者たちはより安全な労働環境について交渉しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00021",
+      "wordId": "VD-07393",
+      "headword": "oblige",
+      "partOfSpeech": "verb",
+      "meaningJa": "義務づける・余儀なくさせる",
+      "definitionEn": "to require someone to do something",
+      "synonyms": "require",
+      "cefrHeadword": "C1",
+      "imageHint": "ヘルメット着用の指示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00021-e01",
+          "en": "The rules oblige all visitors to wear helmets.",
+          "ja": "規則はすべての訪問者にヘルメット着用を義務づけています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00021-e02",
+          "en": "Bad weather obliged us to change our route.",
+          "ja": "悪天候のため私たちは経路の変更を余儀なくされました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00022",
+      "wordId": "VD-05984",
+      "headword": "perceive",
+      "partOfSpeech": "verb",
+      "meaningJa": "知覚する・感じ取る",
+      "definitionEn": "to notice or understand something through the senses",
+      "synonyms": "sense",
+      "cefrHeadword": "B2",
+      "imageHint": "暗い部屋で異なる色の見え方",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00022-e01",
+          "en": "We perceive colors differently in poor light.",
+          "ja": "光が弱いと色の見え方が異なります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00022-e02",
+          "en": "She perceived a change in the speaker's mood.",
+          "ja": "彼女は話し手の気分の変化を感じ取りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00023",
+      "wordId": "VD-05990",
+      "headword": "persist",
+      "partOfSpeech": "verb",
+      "meaningJa": "続く・持続する",
+      "definitionEn": "to continue despite difficulty or attempts to stop",
+      "synonyms": "continue",
+      "cefrHeadword": "B2",
+      "imageHint": "止まらない騒音",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00023-e01",
+          "en": "The noise persisted until late at night.",
+          "ja": "騒音は夜遅くまで続きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00023-e02",
+          "en": "If the problem persists, contact the office.",
+          "ja": "問題が続く場合は事務室に連絡してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00024",
+      "wordId": "VD-05990",
+      "headword": "persist",
+      "partOfSpeech": "verb",
+      "meaningJa": "粘り強く続ける",
+      "definitionEn": "to keep trying despite difficulties",
+      "synonyms": "persevere",
+      "cefrHeadword": "B2",
+      "imageHint": "何度も実験を繰り返す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00024-e01",
+          "en": "She persisted with her studies after several failures.",
+          "ja": "彼女は何度か失敗しても勉強を続けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00024-e02",
+          "en": "The team persisted until it found a solution.",
+          "ja": "チームは解決策が見つかるまで粘り強く取り組みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00025",
+      "wordId": "VD-03847",
+      "headword": "rank",
+      "partOfSpeech": "verb",
+      "meaningJa": "順位をつける・位置づける",
+      "definitionEn": "to place people or things in an order of quality or importance",
+      "synonyms": "rate",
+      "cefrHeadword": "B1",
+      "imageHint": "優先順位を並べるカード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00025-e01",
+          "en": "The students ranked the solutions by cost.",
+          "ja": "生徒たちは解決策を費用順に並べました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00025-e02",
+          "en": "The survey ranks public transport as a top priority.",
+          "ja": "その調査では公共交通機関が最優先事項の一つとされています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00026",
+      "wordId": "VD-03924",
+      "headword": "resist",
+      "partOfSpeech": "verb",
+      "meaningJa": "抵抗する・反対する",
+      "definitionEn": "to refuse to accept or obey something",
+      "synonyms": "oppose",
+      "cefrHeadword": "B1",
+      "imageHint": "住民の意見交換",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00026-e01",
+          "en": "Residents resisted the plan to close the park.",
+          "ja": "住民は公園を閉鎖する計画に反対しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00026-e02",
+          "en": "Some people resist changes to familiar routines.",
+          "ja": "慣れた習慣の変更に抵抗する人もいます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00027",
+      "wordId": "VD-03924",
+      "headword": "resist",
+      "partOfSpeech": "verb",
+      "meaningJa": "耐える・防ぐ",
+      "definitionEn": "to remain unaffected by something harmful",
+      "synonyms": "withstand",
+      "cefrHeadword": "B1",
+      "imageHint": "強風に耐える建物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00027-e01",
+          "en": "This material resists heat and moisture.",
+          "ja": "この材料は熱と湿気に強いです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00027-e02",
+          "en": "The walls were designed to resist strong winds.",
+          "ja": "壁は強風に耐えられるよう設計されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00028",
+      "wordId": "VD-03925",
+      "headword": "resolve",
+      "partOfSpeech": "verb",
+      "meaningJa": "解決する",
+      "definitionEn": "to find a satisfactory answer to a problem",
+      "synonyms": "solve",
+      "cefrHeadword": "B1",
+      "imageHint": "話し合って和解する人々",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00028-e01",
+          "en": "The support team resolved the login issue.",
+          "ja": "サポートチームはログインの問題を解決しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00028-e02",
+          "en": "The two groups resolved their disagreement peacefully.",
+          "ja": "2つのグループは意見の対立を平和的に解決しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00029",
+      "wordId": "VD-03925",
+      "headword": "resolve",
+      "partOfSpeech": "verb",
+      "meaningJa": "決意する・固く決める",
+      "definitionEn": "to make a firm decision to do something",
+      "synonyms": "decide firmly",
+      "cefrHeadword": "B1",
+      "imageHint": "学習目標を書く生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00029-e01",
+          "en": "She resolved to read every day.",
+          "ja": "彼女は毎日読書することを決意しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00029-e02",
+          "en": "After the accident, he resolved to be more careful.",
+          "ja": "事故のあと、彼はもっと注意しようと固く決めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00030",
+      "wordId": "VD-06247",
+      "headword": "retrieve",
+      "partOfSpeech": "verb",
+      "meaningJa": "取り戻す・取り出す",
+      "definitionEn": "to get something back from where it was stored or lost",
+      "synonyms": "get back",
+      "cefrHeadword": "B2",
+      "imageHint": "保管庫から資料を取り出す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00030-e01",
+          "en": "The diver retrieved the camera from the lake.",
+          "ja": "ダイバーは湖からカメラを回収しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00030-e02",
+          "en": "I retrieved the document from the archive.",
+          "ja": "私は保管庫からその文書を取り出しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00031",
+      "wordId": "VD-03942",
+      "headword": "revise",
+      "partOfSpeech": "verb",
+      "meaningJa": "修正する・見直す",
+      "definitionEn": "to change something to improve it",
+      "synonyms": "edit",
+      "cefrHeadword": "B1",
+      "imageHint": "作文の修正前後",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00031-e01",
+          "en": "Please revise your essay after the feedback.",
+          "ja": "フィードバックのあと作文を修正してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00031-e02",
+          "en": "The committee revised the safety guidelines.",
+          "ja": "委員会は安全指針を改訂しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00032",
+      "wordId": "VD-03942",
+      "headword": "revise",
+      "partOfSpeech": "verb",
+      "meaningJa": "復習する（主に英）",
+      "definitionEn": "to study something again before a test",
+      "synonyms": "review",
+      "cefrHeadword": "B1",
+      "imageHint": "試験前の復習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00032-e01",
+          "en": "She revised vocabulary before the exam.",
+          "ja": "彼女は試験前に語彙を復習しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00032-e02",
+          "en": "We revised the main points together.",
+          "ja": "私たちは重要事項を一緒に復習しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00033",
+      "wordId": "VD-04003",
+      "headword": "select",
+      "partOfSpeech": "verb",
+      "meaningJa": "選ぶ・選択する",
+      "definitionEn": "to choose one or more items from a group",
+      "synonyms": "choose",
+      "cefrHeadword": "B1",
+      "imageHint": "答えを選択する画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00033-e01",
+          "en": "Select the correct answer on the screen.",
+          "ja": "画面上で正しい答えを選んでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00033-e02",
+          "en": "The judges selected three projects for the final.",
+          "ja": "審査員は決勝に進む3つの企画を選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00034",
+      "wordId": "VD-06433",
+      "headword": "specify",
+      "partOfSpeech": "verb",
+      "meaningJa": "明記する・指定する",
+      "definitionEn": "to say exactly which thing or amount you mean",
+      "synonyms": "state precisely",
+      "cefrHeadword": "B2",
+      "imageHint": "時間を指定するフォーム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00034-e01",
+          "en": "Please specify your preferred meeting time.",
+          "ja": "希望する会議時間を明記してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00034-e02",
+          "en": "The instructions specify a limit of two pages.",
+          "ja": "指示には2ページという制限が明記されています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00035",
+      "wordId": "VD-02170",
+      "headword": "target",
+      "partOfSpeech": "verb",
+      "meaningJa": "対象にする・狙う",
+      "definitionEn": "to direct an action at a particular group or result",
+      "synonyms": "aim at",
+      "cefrHeadword": "A2",
+      "imageHint": "若者向け安全キャンペーン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00035-e01",
+          "en": "The campaign targets young drivers.",
+          "ja": "そのキャンペーンは若い運転者を対象にしています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00035-e02",
+          "en": "The training targets common pronunciation problems.",
+          "ja": "その研修はよくある発音の問題に焦点を当てています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00036",
+      "wordId": "VD-02170",
+      "headword": "target",
+      "partOfSpeech": "noun",
+      "meaningJa": "目標・標的",
+      "definitionEn": "a result you want to reach or an object you aim at",
+      "synonyms": "goal",
+      "cefrHeadword": "A2",
+      "imageHint": "目標と弓矢の的",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00036-e01",
+          "en": "Our target is to reduce waste by twenty percent.",
+          "ja": "私たちの目標はごみを20パーセント減らすことです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00036-e02",
+          "en": "The arrow missed the target.",
+          "ja": "矢は的を外れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00037",
+      "wordId": "VD-04287",
+      "headword": "trigger",
+      "partOfSpeech": "verb",
+      "meaningJa": "引き起こす・きっかけとなる",
+      "definitionEn": "to cause an event or reaction to begin",
+      "synonyms": "set off",
+      "cefrHeadword": "B1",
+      "imageHint": "雨による土砂崩れ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00037-e01",
+          "en": "The heavy rain triggered a landslide.",
+          "ja": "大雨が土砂崩れを引き起こしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00037-e02",
+          "en": "One question triggered a lively debate.",
+          "ja": "一つの質問が活発な討論のきっかけになりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00038",
+      "wordId": "VD-04287",
+      "headword": "trigger",
+      "partOfSpeech": "noun",
+      "meaningJa": "引き金・きっかけ",
+      "definitionEn": "a thing that starts an action or event",
+      "synonyms": "cause",
+      "cefrHeadword": "B1",
+      "imageHint": "警報装置の起動ボタン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00038-e01",
+          "en": "Stress can be a trigger for headaches.",
+          "ja": "ストレスは頭痛の引き金になることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00038-e02",
+          "en": "The alarm has a small trigger button.",
+          "ja": "その警報装置には小さな起動ボタンがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00039",
+      "wordId": "VD-01070",
+      "headword": "account",
+      "partOfSpeech": "noun",
+      "meaningJa": "口座・アカウント",
+      "definitionEn": "a record for money or access to an online service",
+      "synonyms": "user account",
+      "cefrHeadword": "A2",
+      "imageHint": "銀行口座とログイン画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00039-e01",
+          "en": "I opened a savings account at the bank.",
+          "ja": "私は銀行で貯蓄口座を開きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00039-e02",
+          "en": "Students need an account to enter the learning site.",
+          "ja": "生徒は学習サイトに入るためアカウントが必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00040",
+      "wordId": "VD-01070",
+      "headword": "account",
+      "partOfSpeech": "verb",
+      "meaningJa": "説明する・割合を占める（account for）",
+      "definitionEn": "to explain a cause or make up a particular share",
+      "synonyms": "explain; represent",
+      "cefrHeadword": "A2",
+      "imageHint": "売上割合の円グラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00040-e01",
+          "en": "How can we account for this sudden change?",
+          "ja": "この突然の変化をどう説明できるでしょうか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00040-e02",
+          "en": "Online sales account for half of the total.",
+          "ja": "オンライン販売が全体の半分を占めています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00041",
+      "wordId": "VD-02330",
+      "headword": "accompany",
+      "partOfSpeech": "verb",
+      "meaningJa": "付き添う・一緒に行く",
+      "definitionEn": "to go somewhere with another person",
+      "synonyms": "go with",
+      "cefrHeadword": "B1",
+      "imageHint": "博物館に付き添う教師",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00041-e01",
+          "en": "A teacher accompanied the students to the museum.",
+          "ja": "教師が生徒たちに付き添って博物館へ行きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00041-e02",
+          "en": "Children under twelve must be accompanied by an adult.",
+          "ja": "12歳未満の子どもには大人の付き添いが必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00042",
+      "wordId": "VD-02440",
+      "headword": "assign",
+      "partOfSpeech": "verb",
+      "meaningJa": "割り当てる・任せる",
+      "definitionEn": "to give someone a particular task or job",
+      "synonyms": "allocate",
+      "cefrHeadword": "B1",
+      "imageHint": "班の役割分担表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00042-e01",
+          "en": "The leader assigned each member a role.",
+          "ja": "リーダーは各メンバーに役割を割り当てました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00042-e02",
+          "en": "Our teacher assigned a short writing task.",
+          "ja": "先生は短いライティング課題を出しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00043",
+      "wordId": "VD-02440",
+      "headword": "assign",
+      "partOfSpeech": "verb",
+      "meaningJa": "指定・配属する",
+      "definitionEn": "to decide where someone or something belongs",
+      "synonyms": "designate",
+      "cefrHeadword": "B1",
+      "imageHint": "教室の割り当て表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00043-e01",
+          "en": "The school assigned us to different classrooms.",
+          "ja": "学校は私たちを別々の教室に割り当てました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00043-e02",
+          "en": "Each student was assigned a unique number.",
+          "ja": "各生徒には固有の番号が与えられました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00044",
+      "wordId": "VD-02453",
+      "headword": "attain",
+      "partOfSpeech": "verb",
+      "meaningJa": "達成する・到達する",
+      "definitionEn": "to succeed in reaching a goal or level",
+      "synonyms": "achieve",
+      "cefrHeadword": "B1",
+      "imageHint": "目標達成の進捗バー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00044-e01",
+          "en": "She attained the required language level.",
+          "ja": "彼女は必要な語学レベルに到達しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00044-e02",
+          "en": "The team attained its fundraising goal.",
+          "ja": "チームは募金の目標を達成しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00045",
+      "wordId": "VD-02574",
+      "headword": "calculate",
+      "partOfSpeech": "verb",
+      "meaningJa": "計算する・算出する",
+      "definitionEn": "to work out a number using mathematics",
+      "synonyms": "compute",
+      "cefrHeadword": "B1",
+      "imageHint": "計算機で平均を求める",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00045-e01",
+          "en": "Students calculated the average temperature.",
+          "ja": "生徒たちは平均気温を計算しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00045-e02",
+          "en": "The app calculates a score after each test.",
+          "ja": "そのアプリは各テストのあとスコアを算出します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00046",
+      "wordId": "VD-02592",
+      "headword": "capture",
+      "partOfSpeech": "verb",
+      "meaningJa": "写真・映像に収める",
+      "definitionEn": "to record a moment using a camera or device",
+      "synonyms": "record",
+      "cefrHeadword": "B1",
+      "imageHint": "飛ぶ鳥を撮るカメラ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00046-e01",
+          "en": "The camera captured the bird in flight.",
+          "ja": "カメラは飛んでいる鳥を撮影しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00046-e02",
+          "en": "She captured the sunset on her phone.",
+          "ja": "彼女は携帯電話で夕日を撮影しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00047",
+      "wordId": "VD-02592",
+      "headword": "capture",
+      "partOfSpeech": "verb",
+      "meaningJa": "捕らえる・確保する",
+      "definitionEn": "to catch a person or animal that is trying to escape",
+      "synonyms": "catch",
+      "cefrHeadword": "B1",
+      "imageHint": "犬を安全に保護する職員",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00047-e01",
+          "en": "The rescue team captured the injured dog safely.",
+          "ja": "救助隊はけがをした犬を安全に捕獲しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00047-e02",
+          "en": "The police captured the escaped prisoner.",
+          "ja": "警察は脱走した囚人を捕らえました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00048",
+      "wordId": "VD-02592",
+      "headword": "capture",
+      "partOfSpeech": "verb",
+      "meaningJa": "関心をつかむ",
+      "definitionEn": "to attract and hold someone's attention",
+      "synonyms": "engage",
+      "cefrHeadword": "B1",
+      "imageHint": "集中している観客",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00048-e01",
+          "en": "The opening scene captured the audience's attention.",
+          "ja": "冒頭の場面は観客の注意を引きつけました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00048-e02",
+          "en": "A surprising question can capture students' interest.",
+          "ja": "意外な質問は生徒の関心をつかむことがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00049",
+      "wordId": "VD-06976",
+      "headword": "cite",
+      "partOfSpeech": "verb",
+      "meaningJa": "引用する・根拠として示す",
+      "definitionEn": "to mention a source as evidence or support",
+      "synonyms": "refer to",
+      "cefrHeadword": "C1",
+      "imageHint": "参考文献を記載した作文",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00049-e01",
+          "en": "Please cite two reliable sources in your essay.",
+          "ja": "作文では信頼できる資料を2つ引用してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00049-e02",
+          "en": "The researcher cited a recent study.",
+          "ja": "研究者は最近の研究を引用しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00050",
+      "wordId": "VD-02659",
+      "headword": "collapse",
+      "partOfSpeech": "verb",
+      "meaningJa": "崩れる・倒壊する",
+      "definitionEn": "to fall down suddenly because support is lost",
+      "synonyms": "fall down",
+      "cefrHeadword": "B1",
+      "imageHint": "倒壊した古い壁",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00050-e01",
+          "en": "The old wall collapsed during the storm.",
+          "ja": "古い壁は嵐の間に崩れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00050-e02",
+          "en": "The bridge collapsed after the flood.",
+          "ja": "その橋は洪水のあとに崩落しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00051",
+      "wordId": "VD-02659",
+      "headword": "collapse",
+      "partOfSpeech": "verb",
+      "meaningJa": "（計画・経済などが）破綻する",
+      "definitionEn": "to fail suddenly and completely",
+      "synonyms": "fail",
+      "cefrHeadword": "B1",
+      "imageHint": "合意に至らない交渉",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00051-e01",
+          "en": "The negotiations collapsed without an agreement.",
+          "ja": "交渉は合意に至らず決裂しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00051-e02",
+          "en": "The company collapsed after years of losses.",
+          "ja": "その会社は長年の損失のあと倒産しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00052",
+      "wordId": "VD-02699",
+      "headword": "conflict",
+      "partOfSpeech": "noun",
+      "meaningJa": "対立・衝突",
+      "definitionEn": "a serious disagreement between people or groups",
+      "synonyms": "disagreement",
+      "cefrHeadword": "B1",
+      "imageHint": "対話する二つのグループ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00052-e01",
+          "en": "The conflict began over access to water.",
+          "ja": "その対立は水の利用をめぐって始まりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00052-e02",
+          "en": "The school encourages students to resolve conflicts through dialogue.",
+          "ja": "学校は生徒が対話によって対立を解決するよう促しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00053",
+      "wordId": "VD-02699",
+      "headword": "conflict",
+      "partOfSpeech": "verb",
+      "meaningJa": "矛盾する・食い違う",
+      "definitionEn": "to be incompatible with another idea or requirement",
+      "synonyms": "clash",
+      "cefrHeadword": "B1",
+      "imageHint": "時間が重なる予定表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00053-e01",
+          "en": "The two reports conflict on several important points.",
+          "ja": "その2つの報告書はいくつかの重要な点で食い違っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00053-e02",
+          "en": "My class schedule conflicts with the meeting time.",
+          "ja": "授業予定と会議時間が重なっています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00054",
+      "wordId": "VD-04859",
+      "headword": "consult",
+      "partOfSpeech": "verb",
+      "meaningJa": "相談する・助言を求める",
+      "definitionEn": "to ask someone for information or professional advice",
+      "synonyms": "seek advice",
+      "cefrHeadword": "B2",
+      "imageHint": "住民に相談する委員",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00054-e01",
+          "en": "You should consult a doctor if the pain continues.",
+          "ja": "痛みが続く場合は医師に相談すべきです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00054-e02",
+          "en": "The committee consulted local residents before deciding.",
+          "ja": "委員会は決定前に地域住民に意見を聞きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00055",
+      "wordId": "VD-04875",
+      "headword": "convert",
+      "partOfSpeech": "verb",
+      "meaningJa": "変換する・転換する",
+      "definitionEn": "to change something from one form or use to another",
+      "synonyms": "transform",
+      "cefrHeadword": "B2",
+      "imageHint": "音声を文字に変える端末",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00055-e01",
+          "en": "The tool converts speech into text.",
+          "ja": "そのツールは音声を文字に変換します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00055-e02",
+          "en": "The factory was converted into an art center.",
+          "ja": "その工場は美術センターに転用されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00056",
+      "wordId": "VD-04875",
+      "headword": "convert",
+      "partOfSpeech": "verb",
+      "meaningJa": "（単位・通貨を）換算する",
+      "definitionEn": "to change an amount into another unit or currency",
+      "synonyms": "change units",
+      "cefrHeadword": "B2",
+      "imageHint": "単位を換算するノート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00056-e01",
+          "en": "Please convert the distance into kilometers.",
+          "ja": "距離をキロメートルに換算してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00056-e02",
+          "en": "We converted the price from euros to yen.",
+          "ja": "私たちは価格をユーロから円に換算しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00057",
+      "wordId": "VD-04977",
+      "headword": "delegate",
+      "partOfSpeech": "verb",
+      "meaningJa": "委任する・仕事を任せる",
+      "definitionEn": "to give someone else responsibility for a task",
+      "synonyms": "entrust",
+      "cefrHeadword": "B2",
+      "imageHint": "仕事を分担するチーム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00057-e01",
+          "en": "The manager delegated the scheduling task to her assistant.",
+          "ja": "管理者は日程調整を助手に任せました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00057-e02",
+          "en": "Good leaders know when to delegate responsibilities.",
+          "ja": "優れたリーダーはいつ責任を委ねるべきかを知っています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00058",
+      "wordId": "VD-07073",
+      "headword": "depict",
+      "partOfSpeech": "verb",
+      "meaningJa": "描写する・描く",
+      "definitionEn": "to show something in a picture or describe it in words",
+      "synonyms": "portray",
+      "cefrHeadword": "C1",
+      "imageHint": "村の生活を描いた絵",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00058-e01",
+          "en": "The painting depicts life in a small village.",
+          "ja": "その絵は小さな村での暮らしを描いています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00058-e02",
+          "en": "The book depicts the challenges faced by migrants.",
+          "ja": "その本は移住者が直面する課題を描写しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00059",
+      "wordId": "VD-05065",
+      "headword": "dominate",
+      "partOfSpeech": "verb",
+      "meaningJa": "支配する・優勢になる",
+      "definitionEn": "to have more power or influence than others",
+      "synonyms": "control",
+      "cefrHeadword": "B2",
+      "imageHint": "市場の大きなシェア",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00059-e01",
+          "en": "One company dominates the local market.",
+          "ja": "1つの企業が地域市場を支配しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00059-e02",
+          "en": "The taller team dominated the second half.",
+          "ja": "背の高い選手が多いチームが後半を圧倒しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00060",
+      "wordId": "VD-05065",
+      "headword": "dominate",
+      "partOfSpeech": "verb",
+      "meaningJa": "目立つ・大部分を占める",
+      "definitionEn": "to be the most noticeable part of a place or scene",
+      "synonyms": "stand out",
+      "cefrHeadword": "B2",
+      "imageHint": "山が目立つ景色",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00060-e01",
+          "en": "A huge mountain dominates the view.",
+          "ja": "巨大な山が景色の中でひときわ目立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00060-e02",
+          "en": "Green fields dominate the landscape in spring.",
+          "ja": "春には緑の畑が風景の大部分を占めます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00061",
+      "wordId": "VD-02945",
+      "headword": "eliminate",
+      "partOfSpeech": "verb",
+      "meaningJa": "取り除く・なくす",
+      "definitionEn": "to remove something completely",
+      "synonyms": "remove",
+      "cefrHeadword": "B1",
+      "imageHint": "空気フィルターの清掃",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00061-e01",
+          "en": "The new filter eliminates most of the dust.",
+          "ja": "新しいフィルターはほとんどのほこりを除去します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00061-e02",
+          "en": "We hope to eliminate unnecessary steps.",
+          "ja": "私たちは不要な手順をなくしたいと考えています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00062",
+      "wordId": "VD-02960",
+      "headword": "encounter",
+      "partOfSpeech": "verb",
+      "meaningJa": "偶然出会う・遭遇する",
+      "definitionEn": "to meet or experience something unexpectedly",
+      "synonyms": "come across",
+      "cefrHeadword": "B1",
+      "imageHint": "山道でシカに出会う",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00062-e01",
+          "en": "We encountered wild deer on the trail.",
+          "ja": "私たちは山道で野生のシカに遭遇しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00062-e02",
+          "en": "The research team encountered unexpected difficulties.",
+          "ja": "研究チームは予想外の困難に直面しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00063",
+      "wordId": "VD-02960",
+      "headword": "encounter",
+      "partOfSpeech": "noun",
+      "meaningJa": "出会い・遭遇",
+      "definitionEn": "an unexpected meeting or experience",
+      "synonyms": "meeting",
+      "cefrHeadword": "B1",
+      "imageHint": "旅先での出会い",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00063-e01",
+          "en": "Their first encounter happened at a volunteer event.",
+          "ja": "2人の最初の出会いはボランティア行事でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00063-e02",
+          "en": "The travelers described an unusual encounter with a fox.",
+          "ja": "旅行者たちはキツネとの珍しい遭遇について話しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00064",
+      "wordId": "VD-02977",
+      "headword": "entertain",
+      "partOfSpeech": "verb",
+      "meaningJa": "楽しませる",
+      "definitionEn": "to make people enjoy themselves",
+      "synonyms": "amuse",
+      "cefrHeadword": "B1",
+      "imageHint": "祭りのステージ演奏",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00064-e01",
+          "en": "The magician entertained the children with simple tricks.",
+          "ja": "手品師は簡単な手品で子どもたちを楽しませました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00064-e02",
+          "en": "The band entertained visitors at the festival.",
+          "ja": "バンドは祭りの来場者を楽しませました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00065",
+      "wordId": "VD-02977",
+      "headword": "entertain",
+      "partOfSpeech": "verb",
+      "meaningJa": "（考え・可能性を）考慮する",
+      "definitionEn": "to consider an idea as a possibility",
+      "synonyms": "consider",
+      "cefrHeadword": "B1",
+      "imageHint": "代替案を比較する会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00065-e01",
+          "en": "The committee entertained several alternative plans.",
+          "ja": "委員会はいくつかの代替案を検討しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00065-e02",
+          "en": "She would not entertain the idea of canceling the trip.",
+          "ja": "彼女は旅行を中止するという考えを受け入れようとしませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00066",
+      "wordId": "VD-05217",
+      "headword": "extract",
+      "partOfSpeech": "verb",
+      "meaningJa": "取り出す・抜き取る",
+      "definitionEn": "to remove something from a larger thing",
+      "synonyms": "remove",
+      "cefrHeadword": "B2",
+      "imageHint": "実験試料から成分を抽出",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00066-e01",
+          "en": "The scientist extracted DNA from the sample.",
+          "ja": "科学者は試料からDNAを抽出しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00066-e02",
+          "en": "The dentist extracted the damaged tooth.",
+          "ja": "歯科医は傷んだ歯を抜きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00067",
+      "wordId": "VD-05217",
+      "headword": "extract",
+      "partOfSpeech": "verb",
+      "meaningJa": "（情報を）抜き出す",
+      "definitionEn": "to obtain particular information from a source",
+      "synonyms": "pull out",
+      "cefrHeadword": "B2",
+      "imageHint": "記事から重要語を抽出",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00067-e01",
+          "en": "The program extracts keywords from each article.",
+          "ja": "そのプログラムは各記事から重要語を抽出します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00067-e02",
+          "en": "Students extracted the main facts from the report.",
+          "ja": "生徒たちは報告書から主な事実を抜き出しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00068",
+      "wordId": "VD-05460",
+      "headword": "illustrate",
+      "partOfSpeech": "verb",
+      "meaningJa": "図で説明する・挿絵を付ける",
+      "definitionEn": "to explain or decorate something with pictures",
+      "synonyms": "show visually",
+      "cefrHeadword": "B2",
+      "imageHint": "挿絵のある本",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00068-e01",
+          "en": "The chart illustrates how energy use changed.",
+          "ja": "そのグラフはエネルギー使用量の変化を示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00068-e02",
+          "en": "The author illustrated the story with drawings.",
+          "ja": "著者はその物語に挿絵を付けました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00069",
+      "wordId": "VD-05460",
+      "headword": "illustrate",
+      "partOfSpeech": "verb",
+      "meaningJa": "具体例で説明する",
+      "definitionEn": "to make a point clear by giving examples",
+      "synonyms": "exemplify",
+      "cefrHeadword": "B2",
+      "imageHint": "二つの例文がある黒板",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00069-e01",
+          "en": "This case illustrates the need for better training.",
+          "ja": "この事例はよりよい研修の必要性を示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00069-e02",
+          "en": "The teacher illustrated the rule with two sentences.",
+          "ja": "教師は2つの文を使ってその規則を説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00070",
+      "wordId": "VD-03330",
+      "headword": "inspire",
+      "partOfSpeech": "verb",
+      "meaningJa": "刺激を与える・やる気にさせる",
+      "definitionEn": "to make someone want to do something positive",
+      "synonyms": "motivate",
+      "cefrHeadword": "B1",
+      "imageHint": "講演に聞き入る生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00070-e01",
+          "en": "Her speech inspired students to volunteer.",
+          "ja": "彼女のスピーチは生徒がボランティアをするきっかけになりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00070-e02",
+          "en": "The scientist's story inspired me to study physics.",
+          "ja": "その科学者の話に刺激を受け、私は物理を学びたいと思いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00071",
+      "wordId": "VD-03354",
+      "headword": "invest",
+      "partOfSpeech": "verb",
+      "meaningJa": "投資する",
+      "definitionEn": "to put money into something to gain a future benefit",
+      "synonyms": "put money into",
+      "cefrHeadword": "B1",
+      "imageHint": "新しい公共バス",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00071-e01",
+          "en": "The city invested in new public buses.",
+          "ja": "市は新しい公共バスに投資しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00071-e02",
+          "en": "The company invested heavily in research.",
+          "ja": "その会社は研究に多額の投資をしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00072",
+      "wordId": "VD-03354",
+      "headword": "invest",
+      "partOfSpeech": "verb",
+      "meaningJa": "（時間・労力を）注ぐ",
+      "definitionEn": "to spend time or effort on a goal",
+      "synonyms": "devote",
+      "cefrHeadword": "B1",
+      "imageHint": "学習に時間を注ぐ人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00072-e01",
+          "en": "She invested many hours in the project.",
+          "ja": "彼女はそのプロジェクトに何時間も費やしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00072-e02",
+          "en": "We should invest more time in reading carefully.",
+          "ja": "私たちは丁寧に読むことにもっと時間をかけるべきです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00073",
+      "wordId": "VD-03650",
+      "headword": "outline",
+      "partOfSpeech": "verb",
+      "meaningJa": "要点を述べる・概説する",
+      "definitionEn": "to explain only the main points of something",
+      "synonyms": "summarize",
+      "cefrHeadword": "B1",
+      "imageHint": "要点を箇条書きにする",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00073-e01",
+          "en": "Please outline your plan in three sentences.",
+          "ja": "計画の要点を3文で述べてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00073-e02",
+          "en": "The guide outlined the history of the building.",
+          "ja": "案内人はその建物の歴史を概説しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00074",
+      "wordId": "VD-03650",
+      "headword": "outline",
+      "partOfSpeech": "noun",
+      "meaningJa": "概要・輪郭",
+      "definitionEn": "a short description of main points or the outer shape of an object",
+      "synonyms": "summary; shape",
+      "cefrHeadword": "B1",
+      "imageHint": "霧の中の島の輪郭",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00074-e01",
+          "en": "I wrote an outline before my presentation.",
+          "ja": "発表前に概要を書きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00074-e02",
+          "en": "We could see the outline of the island in the fog.",
+          "ja": "霧の中に島の輪郭が見えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00075",
+      "wordId": "VD-05918",
+      "headword": "overturn",
+      "partOfSpeech": "verb",
+      "meaningJa": "ひっくり返す・転覆させる",
+      "definitionEn": "to cause something to turn over",
+      "synonyms": "turn over",
+      "cefrHeadword": "B2",
+      "imageHint": "転覆した小舟",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00075-e01",
+          "en": "The strong wind overturned several chairs.",
+          "ja": "強風でいくつかの椅子が倒れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00075-e02",
+          "en": "A large wave overturned the small boat.",
+          "ja": "大波が小さな舟を転覆させました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00076",
+      "wordId": "VD-05918",
+      "headword": "overturn",
+      "partOfSpeech": "verb",
+      "meaningJa": "（決定・判決を）覆す",
+      "definitionEn": "to officially reverse an earlier decision",
+      "synonyms": "reverse",
+      "cefrHeadword": "B2",
+      "imageHint": "再検討する委員会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00076-e01",
+          "en": "The court overturned the previous ruling.",
+          "ja": "裁判所は以前の判決を覆しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00076-e02",
+          "en": "The committee overturned its decision after new evidence emerged.",
+          "ja": "委員会は新たな証拠を受けて決定を覆しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00077",
+      "wordId": "VD-03772",
+      "headword": "preserve",
+      "partOfSpeech": "verb",
+      "meaningJa": "保存する・守る",
+      "definitionEn": "to keep something in its original or good condition",
+      "synonyms": "protect",
+      "cefrHeadword": "B1",
+      "imageHint": "伝統衣装を保管する博物館",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00077-e01",
+          "en": "The museum preserves traditional clothing.",
+          "ja": "博物館は伝統衣装を保存しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00077-e02",
+          "en": "We should preserve old buildings when possible.",
+          "ja": "可能な限り古い建物を保存すべきです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00078",
+      "wordId": "VD-03772",
+      "headword": "preserve",
+      "partOfSpeech": "verb",
+      "meaningJa": "（食品を）保存する",
+      "definitionEn": "to stop food from going bad",
+      "synonyms": "keep fresh",
+      "cefrHeadword": "B1",
+      "imageHint": "干して保存する果物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00078-e01",
+          "en": "Salt helps preserve some foods.",
+          "ja": "塩は一部の食品の保存に役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00078-e02",
+          "en": "They preserved the fruit by drying it.",
+          "ja": "彼らは果物を乾燥させて保存しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00079",
+      "wordId": "VD-03787",
+      "headword": "process",
+      "partOfSpeech": "verb",
+      "meaningJa": "処理する・加工する",
+      "definitionEn": "to deal with information or materials using a set of steps",
+      "synonyms": "handle",
+      "cefrHeadword": "B1",
+      "imageHint": "リサイクルガラスの加工",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00079-e01",
+          "en": "The computer processes the test scores automatically.",
+          "ja": "コンピューターはテストの得点を自動処理します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00079-e02",
+          "en": "The factory processes recycled glass.",
+          "ja": "その工場は回収されたガラスを加工します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00080",
+      "wordId": "VD-03787",
+      "headword": "process",
+      "partOfSpeech": "noun",
+      "meaningJa": "過程・工程",
+      "definitionEn": "a series of steps that lead to a result",
+      "synonyms": "procedure",
+      "cefrHeadword": "B1",
+      "imageHint": "工程を示す矢印図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00080-e01",
+          "en": "Learning a language is a long process.",
+          "ja": "言語を学ぶことは長い過程です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00080-e02",
+          "en": "The diagram explains the process of recycling.",
+          "ja": "その図はリサイクルの工程を説明しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00081",
+      "wordId": "VD-06099",
+      "headword": "prohibit",
+      "partOfSpeech": "verb",
+      "meaningJa": "禁止する",
+      "definitionEn": "to officially say that an action is not allowed",
+      "synonyms": "forbid",
+      "cefrHeadword": "B2",
+      "imageHint": "撮影禁止の標識",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00081-e01",
+          "en": "The school prohibits smoking on campus.",
+          "ja": "学校は敷地内での喫煙を禁止しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00081-e02",
+          "en": "The rules prohibit taking photographs here.",
+          "ja": "規則はここでの写真撮影を禁止しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00082",
+      "wordId": "VD-07509",
+      "headword": "reassure",
+      "partOfSpeech": "verb",
+      "meaningJa": "安心させる",
+      "definitionEn": "to make someone less worried by giving comfort or information",
+      "synonyms": "comfort",
+      "cefrHeadword": "C1",
+      "imageHint": "緊張した子に話す看護師",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00082-e01",
+          "en": "The nurse reassured the nervous child.",
+          "ja": "看護師は緊張している子どもを安心させました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00082-e02",
+          "en": "The guide reassured us that the path was safe.",
+          "ja": "案内人はその道は安全だと伝えて私たちを安心させました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00083",
+      "wordId": "VD-06199",
+      "headword": "regulate",
+      "partOfSpeech": "verb",
+      "meaningJa": "規制する・調整する",
+      "definitionEn": "to control an activity by rules or standards",
+      "synonyms": "control",
+      "cefrHeadword": "B2",
+      "imageHint": "室温調節の装置",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00083-e01",
+          "en": "The government regulates food labeling.",
+          "ja": "政府は食品表示を規制しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00083-e02",
+          "en": "This device regulates the room temperature.",
+          "ja": "この装置は室温を調整します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00084",
+      "wordId": "VD-06212",
+      "headword": "relieve",
+      "partOfSpeech": "verb",
+      "meaningJa": "和らげる・軽減する",
+      "definitionEn": "to make pain or worry less severe",
+      "synonyms": "ease",
+      "cefrHeadword": "B2",
+      "imageHint": "休んで頭痛を和らげる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00084-e01",
+          "en": "A short rest relieved my headache.",
+          "ja": "少し休んだら頭痛が和らぎました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00084-e02",
+          "en": "The new shelter relieved some of the families' worries.",
+          "ja": "新しい避難所は家族たちの不安をいくらか軽減しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00085",
+      "wordId": "VD-06212",
+      "headword": "relieve",
+      "partOfSpeech": "verb",
+      "meaningJa": "（人を）交代させる",
+      "definitionEn": "to replace someone so they can rest",
+      "synonyms": "take over from",
+      "cefrHeadword": "B2",
+      "imageHint": "交代する看護師",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00085-e01",
+          "en": "A second guard relieved the first at midnight.",
+          "ja": "真夜中に2人目の警備員が最初の警備員と交代しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00085-e02",
+          "en": "Another nurse relieved her after a long shift.",
+          "ja": "長い勤務のあと別の看護師が彼女と交代しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00086",
+      "wordId": "VD-03912",
+      "headword": "reproduce",
+      "partOfSpeech": "verb",
+      "meaningJa": "再現する・複製する",
+      "definitionEn": "to make a copy or cause the same result to happen again",
+      "synonyms": "replicate",
+      "cefrHeadword": "B1",
+      "imageHint": "同じ実験の再現",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00086-e01",
+          "en": "The scientists reproduced the experiment's results.",
+          "ja": "科学者たちは実験結果を再現しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00086-e02",
+          "en": "The printer reproduces the photographs clearly.",
+          "ja": "そのプリンターは写真を鮮明に複製します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00087",
+      "wordId": "VD-03912",
+      "headword": "reproduce",
+      "partOfSpeech": "verb",
+      "meaningJa": "繁殖する",
+      "definitionEn": "to produce new living things of the same kind",
+      "synonyms": "breed",
+      "cefrHeadword": "B1",
+      "imageHint": "種子なしで増える植物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00087-e01",
+          "en": "Many insects reproduce quickly in warm weather.",
+          "ja": "多くの昆虫は暖かい天候では素早く繁殖します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00087-e02",
+          "en": "Some plants can reproduce without seeds.",
+          "ja": "一部の植物は種子がなくても繁殖できます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00088",
+      "wordId": "VD-07555",
+      "headword": "rotate",
+      "partOfSpeech": "verb",
+      "meaningJa": "回転する・回す",
+      "definitionEn": "to move or turn around a central point",
+      "synonyms": "turn",
+      "cefrHeadword": "C1",
+      "imageHint": "地球の自転を示す図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00088-e01",
+          "en": "The Earth rotates once every twenty-four hours.",
+          "ja": "地球は約24時間で1回自転します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00088-e02",
+          "en": "Rotate the image until it faces the right way.",
+          "ja": "画像が正しい向きになるまで回転させてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00089",
+      "wordId": "VD-07555",
+      "headword": "rotate",
+      "partOfSpeech": "verb",
+      "meaningJa": "交代する・持ち回りにする",
+      "definitionEn": "to change jobs or positions in a regular order",
+      "synonyms": "take turns",
+      "cefrHeadword": "C1",
+      "imageHint": "班長を持ち回りにする",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00089-e01",
+          "en": "Group members rotate the leader role each week.",
+          "ja": "グループのメンバーは毎週リーダー役を交代します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00089-e02",
+          "en": "The farm rotates crops to protect the soil.",
+          "ja": "その農場は土を守るため作物を輪作しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00090",
+      "wordId": "VD-03966",
+      "headword": "safeguard",
+      "partOfSpeech": "verb",
+      "meaningJa": "保護する・守る",
+      "definitionEn": "to protect something important from harm",
+      "synonyms": "protect",
+      "cefrHeadword": "B1",
+      "imageHint": "個人情報の保護",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00090-e01",
+          "en": "Strong passwords safeguard personal information.",
+          "ja": "強いパスワードは個人情報を守ります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00090-e02",
+          "en": "The law safeguards children's rights.",
+          "ja": "その法律は子どもの権利を保護します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00091",
+      "wordId": "VD-04266",
+      "headword": "trace",
+      "partOfSpeech": "verb",
+      "meaningJa": "たどる・追跡する",
+      "definitionEn": "to follow the path or development of something",
+      "synonyms": "track",
+      "cefrHeadword": "B1",
+      "imageHint": "川をさかのぼる地図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00091-e01",
+          "en": "The students traced the river to its source.",
+          "ja": "生徒たちは川を水源までたどりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00091-e02",
+          "en": "Scientists traced the disease to a water supply.",
+          "ja": "科学者たちは病気の原因を水の供給源まで追跡しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00092",
+      "wordId": "VD-04266",
+      "headword": "trace",
+      "partOfSpeech": "noun",
+      "meaningJa": "痕跡・わずかな形跡",
+      "definitionEn": "a small sign that something was present",
+      "synonyms": "sign",
+      "cefrHeadword": "B1",
+      "imageHint": "部屋に残る小さな痕跡",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00092-e01",
+          "en": "The team found traces of smoke in the room.",
+          "ja": "チームは部屋で煙の痕跡を見つけました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00092-e02",
+          "en": "There was no trace of the missing document.",
+          "ja": "なくなった文書の形跡はどこにもありませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00093",
+      "wordId": "VD-06634",
+      "headword": "transmit",
+      "partOfSpeech": "verb",
+      "meaningJa": "送信する・伝達する",
+      "definitionEn": "to send information or a signal from one place to another",
+      "synonyms": "send",
+      "cefrHeadword": "B2",
+      "imageHint": "衛星から地球への信号",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00093-e01",
+          "en": "The satellite transmits weather data to Earth.",
+          "ja": "衛星は気象データを地球に送信します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00093-e02",
+          "en": "The radio station transmitted the announcement.",
+          "ja": "ラジオ局はその知らせを放送しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD8-00094",
+      "wordId": "VD-06634",
+      "headword": "transmit",
+      "partOfSpeech": "verb",
+      "meaningJa": "（病気などを）うつす",
+      "definitionEn": "to pass a disease or substance from one person or thing to another",
+      "synonyms": "pass on",
+      "cefrHeadword": "B2",
+      "imageHint": "蚊が病気を媒介する図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD8-00094-e01",
+          "en": "Mosquitoes can transmit certain diseases.",
+          "ja": "蚊は特定の病気を媒介することがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD8-00094-e02",
+          "en": "The virus can be transmitted through close contact.",
+          "ja": "そのウイルスは濃厚な接触によって感染することがあります。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
