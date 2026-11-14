@@ -40,6 +40,35 @@ function playQuizFeedbackSound(correct, enabled) {
   }
 }
 
+// One short click and frequency sweep; triggered directly by the user's tap.
+function playUniverseLaunchSound(enabled) {
+  if (!enabled || typeof window === 'undefined') return;
+  const Context=window.AudioContext||window.webkitAudioContext;
+  if(!Context)return;
+  try{
+    if(!quizEffectsAudioContext||quizEffectsAudioContext.state==='closed')quizEffectsAudioContext=new Context();
+    const ctx=quizEffectsAudioContext;
+    if(ctx.state==='suspended')ctx.resume().catch(()=>{});
+    const now=ctx.currentTime;
+    const tone=(type,from,to,start,duration,peak)=>{
+      const osc=ctx.createOscillator(),gain=ctx.createGain();
+      osc.type=type;osc.frequency.setValueAtTime(from,start);osc.frequency.exponentialRampToValueAtTime(to,start+duration);
+      gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(peak,start+.015);gain.gain.exponentialRampToValueAtTime(.0001,start+duration);
+      osc.connect(gain);gain.connect(ctx.destination);osc.start(start);osc.stop(start+duration+.02);
+      osc.onended=()=>{osc.disconnect();gain.disconnect();};
+    };
+    tone('triangle',1100,190,now,.07,.045);
+    tone('sine',95,590,now+.07,.52,.06);
+    tone('sine',180,880,now+.11,.43,.025);
+  }catch{/* Visual experience still works without audio. */}
+}
+function UniverseLaunchButton({entry,onLaunch}) {
+  return <button type="button" className="vu-launch" onClick={()=>onLaunch(entry)} aria-label={entry.word+' の Voca Universe 関連語マップを開く'} aria-haspopup="dialog">
+    <span className="vu-launch-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="5" fill="currentColor"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(-35 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(55 24 24)"/><circle cx="36" cy="13" r="2.5" fill="currentColor"/><circle cx="11" cy="30" r="2" fill="currentColor"/></svg></span>
+    <span className="vu-launch-text"><strong>VOCA UNIVERSE</strong><small>関連語の宇宙へ</small></span><span className="vu-launch-arrow" aria-hidden="true">↗</span>
+  </button>;
+}
+
 const modes = [
   { id: 'study', label: '単語で覚える', icon: '▣' },
   { id: 'sentence', label: '例文で覚える', icon: '▤' },
@@ -202,6 +231,10 @@ export default function VocaDash() {
     if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
   }, []);
   useEffect(() => () => { clearTimeout(quizTimer.current); stopAudio(); }, [stopAudio]);
+  const openUniverse = item => {
+    if(!item||universeEntry)return;
+    setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.sound);setUniverseEntry(item);
+  };
   const resetCard = () => {
     clearTimeout(quizTimer.current);
     stopAudio();
@@ -492,6 +525,7 @@ export default function VocaDash() {
                       <div className="vd-sentence-tools">
                         <button className="vd-sentence-audio" disabled={!store.settings.sound} onClick={() => speak(current, true)}><Icon name="speaker" size={19}/> 例文を聞く</button>
                         <button className="vd-sentence-read-link" onClick={openReadingFromSentence}><Icon name="arrow" size={16}/> この例文を音読する</button>
+                        <UniverseLaunchButton entry={current} onLaunch={openUniverse}/>
                       </div>
                     </div>
                     {revealed && (
@@ -499,7 +533,7 @@ export default function VocaDash() {
                         <strong>{current.word}{current.meaning ? ' — ' + current.meaning : ''}</strong>
                         <p>{current.japanese}</p>
                         {current.explanation && <small>{current.explanation}</small>}
-                      <button className="vu-launch" onClick={()=>{setAutoplay(false);stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
+                      
                       </div>
                     )}
                   </div>
@@ -508,11 +542,12 @@ export default function VocaDash() {
                 <div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
                 <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
                 {current.pronunciation && <p className="vd-phonetic">{current.pronunciation}</p>}
+                <UniverseLaunchButton entry={current} onLaunch={openUniverse}/>
                 {revealed ? <div className="vd-word-detail"><div className="vd-meaning-caption">MEANING</div><h3>{current.meaning || current.japanese}</h3>
                   {current.image && !imageError && <img className="vd-word-image" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                   <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p><HighlightedExample text={current.english} word={current.word}/></p><small>{current.japanese}</small></div>
                   {current.etymology && <p className="vd-etymology"><strong>語源・ヒント</strong> {current.etymology}</p>}
-                  <button className="vu-launch" onClick={()=>{setAutoplay(false);stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
+                  
                 </div> : <div className="vd-card-unrevealed" onClick={() => setRevealed(true)}><span>✧</span><p>意味を思い浮かべてから確認しましょう</p></div>}
                   </>
                 )}
@@ -570,7 +605,7 @@ export default function VocaDash() {
               <span>正解の単語</span>
               <strong>{current.word}</strong>
               {current.meaning && <p>{current.meaning}</p>}
-              <button className="vu-launch" onClick={()=>{stopAudio();setUniverseEntry(current);}}>✦ Voca Universe · 関連語マップ</button>
+              <UniverseLaunchButton entry={current} onLaunch={openUniverse}/>
             </div>
             <div className="vd-quiz-review-section">
               <span>COMPLETE SENTENCE</span>
