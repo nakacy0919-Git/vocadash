@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:2720,links:9305});
+ assert.deepEqual(universeCoverage(),{heads:3430,links:12299});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -138,4 +138,12 @@ test('supplemental O–Z maps and original usage comparisons',()=>{
  assert.ok(getRelations(lookupUniverse("overlook")).some(x=>x.word==="neglect"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("pamphlet")).some(x=>x.word==="brochure"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("partially")).some(x=>x.word==="partly"&&x.note&&x.example));
+});
+
+test('academic topics have contextual links, explicit contrasts and bridges to familiar words',()=>{
+ for(const w of ['correlation','phonology','morbidity','deforestation','liquidity','photosynthesis','solvent','perseverance'])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse('correlation')).some(x=>x.word==='causation'&&x.type==='related'&&x.note));
+ assert.ok(getRelations(lookupUniverse('acute')).some(x=>x.word==='chronic'&&x.type==='contrast'&&x.note));
+ assert.ok(getRelations(lookupUniverse('phonology')).some(x=>x.word==='pronunciation'));
+ assert.ok(getRelations(lookupUniverse('pronunciation')).some(x=>x.word==='phonology'&&x.reverse));
 });
