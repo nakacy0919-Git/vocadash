@@ -23,7 +23,8 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const extended=extendedReviewCoverage();
  const balanced=balancedReviewCoverage();
  const extra=[domainMegaCoverage(),actionMegaCoverage(),adjectiveMegaCoverage(),unifiedReadingCoverage(),everydayAbstractCoverage(),collocationReadingCoverage(),nuanceFamilyCoverage(),thematicReadingCoverage(),everydayPhrasesCoverage(),concreteWorldCoverage(),productiveVerbCoverage(),adjectiveNounCoverage(),derivationCollocationCoverage()].reduce((a,b)=>({heads:a.heads+b.heads,links:a.links+b.links}),{heads:0,links:0});
- assert.deepEqual(universeCoverage(),{heads:voiceEssentialCoverage().heads+extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads,links:voiceEssentialCoverage().links+extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links});
+ const expansion=lexicalExpansionCoverage(),mega1=synonymMegaCoverage(),mega2=synonymMega2Coverage();
+ assert.deepEqual(universeCoverage(),{heads:voiceEssentialCoverage().heads+extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads+(expansion.after.heads-expansion.before.heads)+mega1.headsAdded+mega2.headsAdded,links:voiceEssentialCoverage().links+extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links+(expansion.after.links-expansion.before.links)+mega1.linksAdded+mega2.linksAdded});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -673,4 +674,72 @@ test('explicit synonym clusters preserve senses and provide exact registration t
  assert.equal(total.heads,universeCoverage().heads);
  assert.equal(total.links,universeCoverage().links);
  assert.ok(s.addedSynonyms+s.upgradedSynonyms>0);
+});
+
+import synonymMega from '../data/universe-synonym-mega.js';
+import {addSynonymMega,synonymCandidateKeys} from './universe-synonym-mega.js';
+import {synonymMegaCoverage,synonymMega2Coverage} from './universe.js';
+import synonymMega2 from '../data/universe-synonym-mega-2.js';
+test('contextual synonym batch adds 5000 distinct pairs without replacing prior relations',()=>{
+ const stats=synonymMegaCoverage();
+ assert.equal(stats.addedPairs,5000);
+ assert.equal(stats.linksAdded,5000);
+ assert.equal(stats.afterSynonyms-stats.beforeSynonyms,5000);
+ assert.equal(stats.afterLinks-stats.beforeLinks,5000);
+ assert.ok(synonymMega.every(([sense,words])=>sense&&words.length>=3&&new Set(words).size===words.length));
+ const seen=new Set();
+ for(const {word,relatedWords} of universeEntries()){
+  for(const edge of relatedWords.filter(x=>x.synonymBatch===1)){
+   const key=[word,edge.word].sort().join('|');
+   assert.ok(!seen.has(key));seen.add(key);
+   assert.equal(edge.type,'synonym');assert.ok(edge.synonymContext&&edge.note);
+   assert.ok(getRelations(lookupUniverse(edge.word)).some(x=>x.word===word&&x.type==='synonym'&&x.reverse&&x.synonymContext===edge.synonymContext));
+  }
+ }
+ assert.equal(seen.size,5000);
+});
+test('synonym helper preserves existing relations in either direction and excludes duplicates',()=>{
+ const entries=new Map([['rise',{meaning:'上がる',links:[{word:'fall',meaning:'下がる',type:'contrast',tier:'core'}]}],['climb',{meaning:'上昇する',links:[{word:'rise',meaning:'上がる',type:'synonym',tier:'core'}]}]]);
+ const result=addSynonymMega(entries,[['上昇する',['rise','climb','go up']],['別の文脈',['rise','fall','go up']]],2);
+ assert.equal(result.addedPairs,2);
+ assert.equal(result.skippedExisting,2);
+ assert.equal(entries.get('rise').links.find(l=>l.word==='fall').type,'contrast');
+ assert.equal(entries.get('climb').links.find(l=>l.word==='rise').tier,'core');
+ assert.equal(result.afterSynonyms-result.beforeSynonyms,2);
+});
+
+test('second synonym batch adds another 5000 unique contextual pairs with single-word priority',()=>{
+ const first=synonymMegaCoverage(),second=synonymMega2Coverage();
+ assert.equal(second.addedPairs,5000);
+ assert.equal(second.linksAdded,5000);
+ assert.equal(second.beforeLinks,first.afterLinks);
+ assert.equal(second.beforeSynonyms,first.afterSynonyms);
+ assert.equal(second.afterSynonyms-first.beforeSynonyms,10000);
+ assert.equal(second.afterLinks-first.beforeLinks,10000);
+ assert.ok(second.singleWordPairs>=3500);
+ assert.ok(synonymMega2.every(([sense,words])=>sense&&words.length>=3&&words.every(w=>w.trim()===w&&w.toLowerCase()===w)&&new Set(words).size===words.length));
+ const firstCandidates=synonymCandidateKeys(synonymMega);
+ const seen=new Set();
+ const counts={1:0,2:0};
+ for(const {word,relatedWords} of universeEntries()){
+  for(const edge of relatedWords.filter(x=>x.synonymMega)){
+   const key=[word,edge.word].sort().join('\u0000');
+   assert.ok(!seen.has(key));seen.add(key);
+   counts[edge.synonymBatch]++;
+   if(edge.synonymBatch===2)assert.ok(!firstCandidates.has(key));
+   assert.equal(edge.type,'synonym');assert.ok(edge.synonymContext&&edge.note);
+   if(edge.synonymBatch===2)assert.ok(getRelations(lookupUniverse(edge.word)).some(x=>x.word===word&&x.type==='synonym'&&x.reverse&&x.synonymContext===edge.synonymContext&&x.synonymBatch===2));
+  }
+ }
+ assert.deepEqual(counts,{1:5000,2:5000});
+});
+test('second-batch selection prioritizes lexical pairs and excludes first-batch candidates',()=>{
+ const map=new Map();
+ const excluded=synonymCandidateKeys([['除外する',['alpha','beta']]]);
+ const stats=addSynonymMega(map,[['例',['alpha','beta','gamma','long phrase']]],2,{batch:2,prioritizeSingle:true,excludeCandidates:excluded});
+ assert.equal(stats.singleWordPairs,2);
+ assert.equal(stats.skippedPriorCandidates,1);
+ assert.equal(stats.addedPairs,2);
+ assert.equal(map.has('long phrase'),false);
+ assert.ok([...map.values()].flatMap(x=>x.links).every(l=>l.synonymBatch===2));
 });
