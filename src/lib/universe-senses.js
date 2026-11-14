@@ -11,7 +11,7 @@ for(const chunk of [a,b,c]){
   if(records.has(id))throw new Error('Duplicate sense: '+id);
   const entry={id,word,pos,meaning,definition,cefr,rawSynonyms,examples,imageHint,batch,status:'draft-unreviewed'};
   records.set(id,entry);
-  for(const spelling of word.split('/').map(normalize).filter(Boolean)){
+  for(const spelling of new Set([normalize(word),...word.split('/').map(normalize)].filter(Boolean))){
    const entries=byWord.get(spelling)||[];entries.push(entry);byWord.set(spelling,entries);
   }
  }
