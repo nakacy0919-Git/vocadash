@@ -1,3 +1,5 @@
+import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
+import everydayAbstractMega, {everydayAbstractNotes} from '../data/universe-everyday-abstract-mega.js';
 import adjectiveMega from '../data/universe-adjective-mega.js';
 import advancedActionMega from '../data/universe-advanced-action-mega.js';
 import domainMega from '../data/universe-domain-mega.js';
@@ -117,6 +119,24 @@ for(const [word,entry] of Object.entries(adjectiveMega)){
  adjectiveMegaAdded.links+=authored.get(normalize(word)).links.length;
 }
 export function adjectiveMegaCoverage(){return {...adjectiveMegaAdded,candidates:Object.keys(adjectiveMega).length};}
+// Merge parallel content safely. A new sense cannot replace an earlier head's meaning.
+// Exact matching Japanese glosses may receive additional contextual edges.
+function addCompatibleBatch(batch) {
+ const counts={candidates:Object.keys(batch).length,heads:0,links:0,compatible:0,skippedSense:0};
+ for(const [word,entry] of Object.entries(batch)){
+  const key=normalize(word),prior=authored.get(key);
+  if(prior&&prior.meaning!==entry.meaning){counts.skippedSense++;continue;}
+  const previous=prior?.links.length||0;
+  addAuthored(word,entry);
+  if(!prior)counts.heads++;else counts.compatible++;
+  counts.links+=authored.get(key).links.length-previous;
+ }
+ return counts;
+}
+const unifiedReadingAdded=addCompatibleBatch(domainReadingMega);
+const everydayAbstractAdded=addCompatibleBatch(everydayAbstractMega);
+export function unifiedReadingCoverage(){return {...unifiedReadingAdded};}
+export function everydayAbstractCoverage(){return {...everydayAbstractAdded};}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
@@ -139,7 +159,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
