@@ -1,3 +1,6 @@
+import coreBulk from '../data/universe-core-bulk.js';
+import advancedBulk from '../data/universe-advanced-bulk.js';
+import usageNotes from '../data/universe-usage-notes.js';
 import stageOne, {headMeanings} from '../data/universeStageOne.js';
 import {stageOneUniverse} from '../data/universe-stage1.js';
 // Voca Universe: authored semantic links, never quiz distractors.
@@ -57,15 +60,16 @@ function addAuthored(word,entry) {
 }
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
+for(const batch of [coreBulk,advancedBulk])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
 for (const [head,entry] of authored) {
   for (const link of entry.links) {
-    if (!['synonym','family','contrast'].includes(link.type)) continue;
+    if (!['synonym','family','contrast','related'].includes(link.type)) continue;
     const key=normalize(link.word);
     const list=reverse.get(key)||[];
-    list.push({word:head,meaning:entry.meaning,type:link.type,tier:link.tier,reverse:true});
+    list.push({word:head,meaning:entry.meaning,type:link.type,tier:link.tier==='extended'?'extended':'related',reverse:true});
     reverse.set(key,list);
   }
 }
@@ -73,6 +77,14 @@ export function lookupUniverse(word) {
   const key=normalize(word);
   const entry=authored.get(key);
   return entry ? {word:key,meaning:entry.meaning,relatedWords:entry.links} : null;
+}
+export function universeEntries() {
+  return [...authored].map(([word,entry])=>({word,meaning:entry.meaning,relatedWords:entry.links}));
+}
+export function usageFor(head,word) {
+  const a=normalize(head),b=normalize(word);
+  const notes=Object.hasOwn(usageNotes,a)?usageNotes[a]:null;
+  return notes&&Object.hasOwn(notes,b)?notes[b]:null;
 }
 export function universeCoverage() {
   return {heads:authored.size,links:[...authored.values()].reduce((n,v)=>n+v.links.length,0)};
@@ -99,7 +111,7 @@ export function getRelations(entry,{includeReverse=true}={}) {
     seen.add(key);
     const type = Object.hasOwn(types,item.type) ? item.type : 'related';
     const tier = relationTier(item);
-    links.push({...item,word:item.word.trim(),type,tier});
+    links.push({...item,word:item.word.trim(),type,tier,...(usageFor(entry.word,item.word)||{})});
   }
   return links.sort((a,b)=>tiers.indexOf(a.tier)-tiers.indexOf(b.tier));
 }
