@@ -1,7 +1,7 @@
 // A wake word is recognized only at the start of a final utterance.
 export function extractWake(raw,mode='both') {
  const t=String(raw||'').trim();
- const m=t.match(/^(hey[\s,]+)?(?:voca(?:\s*dash)?|voka)\b[\s,.:!?-]*(.*)$/i);
+ const m=t.match(/^(hey[\s,]+)?dash(?:\s+assistant)?\b[\s,.:!?-]*(.*)$/i);
  if(!m)return null;
  if(mode==='hey'&&!m[1]||mode==='short'&&m[1])return null;
  const command=m[2].trim();
@@ -11,14 +11,14 @@ export function extractWake(raw,mode='both') {
 }
 
 export function parseVoice(raw) {
- const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(hey )?(voca dash|vocadash)[ ,:]*/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
  const rules=[
  ['stop',/^(stop listening|stop|stop the microphone|turn off (?:the )?(?:mic|microphone|voice)|voice off|stop voice)$/],
- ['sleep',/^(go to sleep|stand by|standby|sleep mode|goodbye voca)$/],
+ ['sleep',/^(go to sleep|stand by|standby|sleep mode|goodbye dash)$/],
  ['help',/^(help|show commands|what can i say)$/],
  ['home',/^(go home|home|back to dashboard)$/],
  ['close',/^(close (the )?universe|go back to (voca dash|vocadash)|close map|exit universe)$/],
- ['back',/^(go back|back|return|return to (?:the )?(?:assistant|voice assistant)|back to (?:the )?assistant|go back to (?:the )?assistant)$/],
+ ['back',/^(go back|back|return|return to (?:the )?(?:assistant|voice assistant|dash assistant)|back to (?:the )?(?:dash )?assistant|go back to (?:the )?(?:dash )?assistant)$/],
  ['previous',/^(previous word|go to the previous word|previous node)$/],
  ['pageBack',/^(previous page|back one page|go to the previous page)$/],
  ['next',/^(next( word| page| question)?|skip)$/],

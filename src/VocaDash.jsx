@@ -631,7 +631,7 @@ export default function VocaDash() {
       </div>
     </main>
     <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    {universeEntry && <VocaUniverse onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">

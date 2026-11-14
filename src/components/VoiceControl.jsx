@@ -35,7 +35,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  const recognition=useRef(null),running=useRef(false),wanted=useRef(false),timer=useRef(null),processing=useRef(false),latest=useRef(null),suspendRef=useRef(suspended);
  const [supports]=useState(()=>typeof window!=='undefined'&&Boolean(window.SpeechRecognition||window.webkitSpeechRecognition));
  const changePhase=value=>{phaseRef.current=value;setPhase(value);};
- const standby=()=>{changePhase('standby');setTranscript('');setStatus('Waiting for Hey, Voca / Voca…');};
+ const standby=()=>{changePhase('standby');setTranscript('');setStatus('Waiting for Hey, Dash / Dash…');};
  const stop=()=>{releaseMeter();wanted.current=false;commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);clearTimeout(noticeTimer.current);setNotice('');setSuggestions([]);setTranscript('');setResultOpen(false);setHelpOpen(false);clearTimeout(timer.current);setMicState('off');setInterim('');setBusy(false);changePhase('off');const r=recognition.current;recognition.current=null;try{r?.abort();}catch{}setEnabled(false);};
  const returnAssistant=()=>{setResultOpen(false);setShowEntryInUniverse(false);setHelpOpen(false);setCompact(false);setTranscript('');setInterim('');setSuggestions([]);clearTimeout(noticeTimer.current);setNotice('');if(wanted.current){changePhase('active');setStatus("I'm listening…");}onAppCommand('close');};
  const activate=()=>{setCompact(false);changePhase('active');setStatus("I'm listening…");};
@@ -136,7 +136,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   wanted.current=true;setEnabled(true);setMicState('starting');
   changePhase('active');
   setStatus('マイクを許可してください');
-  r.onstart=()=>{if(recognition.current!==r||!wanted.current)return;running.current=true;setMicState('listening');restartFailures.current=0;setStatus(phaseRef.current==='standby'?'Waiting for Hey, Voca / Voca…':"I'm listening…");};
+  r.onstart=()=>{if(recognition.current!==r||!wanted.current)return;running.current=true;setMicState('listening');restartFailures.current=0;setStatus(phaseRef.current==='standby'?'Waiting for Hey, Dash / Dash…':"I'm listening…");};
   r.onspeechstart=()=>{if(recognition.current===r&&wanted.current)setMicState('speaking');};
   r.onspeechend=()=>{if(recognition.current===r&&wanted.current)setMicState('listening');};
   r.onresult=e=>{
@@ -151,7 +151,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
     const wasStandby=phaseRef.current==='standby';
     activate();
     if(routed.command)latest.current?.(routed.command,alternatives);
-    else{if(wasStandby)wakeChime();setTranscript('Voca');}
+    else{if(wasStandby)wakeChime();setTranscript('Dash');}
     return;
    }
    latest.current?.(routed.command,alternatives);
@@ -172,9 +172,9 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  },[]);
  return createPortal(<div className={"vd-voice-shell"+(universeOpen?" in-universe":"")}>
   {(!universeOpen||!voiceDock)&&<VoiceOrb enabled={enabled} phase={phase} micState={micState} busy={busy} full={enabled&&!compact&&!resultOpen&&!universeOpen&&!helpOpen} meter={meter} meterReady={meterReady} onMinimize={()=>setCompact(true)} onExpand={()=>{setResultOpen(false);setHelpOpen(false);setCompact(false);}} onStop={()=>{stop();setResultOpen(false);setSuggestions([]);setHelpOpen(false);setNotice('');}} transcript={interim||transcript} interim={Boolean(interim)} notice={notice} suggestions={suggestions} onChoose={word=>{setSuggestions([]);execute('Show me '+word);}}/>}
-  {universeOpen&&voiceDock&&enabled&&createPortal(<div className="vu-live-voice"><span className="vu-live-indicator" data-state={micState}/><span role="status" className="vu-live-copy"><strong>{busy?'Processing…':phase==='standby'?'Waiting for Voca…':micState==='reconnecting'?'Reconnecting…':micState==='speaking'?'Listening to you…':'Listening…'}</strong>{(notice||interim||transcript)&&<small>{notice||interim||transcript}</small>}</span><button type="button" onClick={returnAssistant} aria-label="Return to full-screen voice assistant">↩ Assistant</button><button type="button" className="vu-live-stop" onClick={()=>{stop();setStatus('音声操作を停止しました');}} aria-label="Stop listening">■</button>{suggestions.length>0&&<div className="vu-live-suggestions">{suggestions.map(word=><button key={word} onClick={()=>execute('Show me '+word)}>{word}</button>)}</div>}</div>,voiceDock)}
+  {universeOpen&&voiceDock&&enabled&&createPortal(<div className="vu-live-voice"><span className="vu-live-indicator" data-state={micState}/><span role="status" className="vu-live-copy"><strong>{busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='reconnecting'?'Reconnecting…':micState==='speaking'?'Listening to you…':'Listening…'}</strong>{(notice||interim||transcript)&&<small>{notice||interim||transcript}</small>}</span><button type="button" onClick={returnAssistant} aria-label="Return to full-screen Dash Assistant">↩ Dash</button><button type="button" className="vu-live-stop" onClick={()=>{stop();setStatus('音声操作を停止しました');}} aria-label="Stop listening">■</button>{suggestions.length>0&&<div className="vu-live-suggestions">{suggestions.map(word=><button key={word} onClick={()=>execute('Show me '+word)}>{word}</button>)}</div>}</div>,voiceDock)}
   {helpOpen&&<section className="vd-voice-panel vd-voice-help" aria-label="Voice help">
-   <header><strong>Voice commands</strong><button type="button" onClick={()=>setHelpOpen(false)} aria-label="Close help">×</button></header>
+   <header><strong>Dash Assistant · Commands</strong><button type="button" onClick={()=>setHelpOpen(false)} aria-label="Close help">×</button></header>
    <p>{status}</p><form onSubmit={e=>{e.preventDefault();if(typed.trim()){const addressed=extractWake(typed.trim());if(addressed){if(wanted.current)activate();if(addressed.command)execute(addressed.command);}else execute(typed.trim());setTyped('');setHelpOpen(false);}}}><input aria-label="Type a voice command" value={typed} onChange={e=>setTyped(e.target.value)} placeholder="Show me beautiful"/><button type="submit">Go</button></form>
    <p>Show me beautiful (opens Universe) · Expand synonyms · Expand beauty · Back · Previous word · Go to sleep · Stop listening</p><p className="vd-voice-privacy">待機中もマイクを使用します。ブラウザによっては外部の音声認識サービスを利用します。</p>
   </section>}
