@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -15,7 +15,9 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:6842,links:26096});
+ const added=domainReadingCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads,links:26096+added.links});
+ assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -178,4 +180,18 @@ test('academic family maps preserve contextual links and usage explanations',()=
  assert.ok(getRelations(lookupUniverse("pretext")).some(x=>x.word==="excuse"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("comprise")).some(x=>x.word==="consist of"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("demotion")).some(x=>x.word==="promotion"&&x.note&&x.example));
+});
+
+test('domain reading mega batch keeps contextual links and bilingual distinctions',()=>{
+ for(const w of ['carbon sequestration','phonemic awareness','inter-rater reliability','thermohaline circulation','pseudonymization','stratified sampling','spatial interpolation','data provenance']) {
+   const entry=lookupUniverse(w);
+   assert.ok(entry&&entry.meaning);
+   assert.ok(entry.relatedWords.length>=5);
+   assert.equal(new Set(entry.relatedWords.map(x=>x.word.trim().toLowerCase())).size,entry.relatedWords.length);
+ }
+ for(const [head,related] of [['incidence rate','prevalence rate'],['climate adaptation','climate mitigation'],['formative assessment','summative assessment'],['anode','cathode'],['overfitting','underfitting']]){
+   const link=getRelations(lookupUniverse(head)).find(x=>x.word===related);
+   assert.ok(link&&link.note&&link.example&&link.translation);
+ }
+ assert.equal(getRelations(lookupUniverse('thermohaline circulation')).find(x=>x.word==='deep water formation').type,'related');
 });
