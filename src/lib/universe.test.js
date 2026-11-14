@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads+nuanceFamilyCoverage().heads+thematicReadingCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links+nuanceFamilyCoverage().links+thematicReadingCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads+nuanceFamilyCoverage().heads+thematicReadingCoverage().heads+everydayPhrasesCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links+nuanceFamilyCoverage().links+thematicReadingCoverage().links+everydayPhrasesCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -322,4 +322,28 @@ test('interdisciplinary vocabulary and expressions have valid contextual edges',
  assert.ok(thematicReadingMega['climate justice'].links.some(l=>l.word==='just transition'));
  assert.ok(thematicReadingMega['take precedence over'].links.some(l=>l.word==='give priority to safety'));
  assert.ok(thematicReadingMega['lexical coverage'].links.some(l=>l.word==='depth of vocabulary knowledge'));
+});
+
+import everydayPhrasesMega, {everydayPhrasesNotes} from '../data/universe-everyday-phrases-mega.js';
+test('everyday expressions and phrasal verb contexts preserve unique related edges',()=>{
+ const stats=everydayPhrasesCoverage();
+ assert.equal(stats.candidates,1428);
+ assert.equal(stats.heads+stats.compatible+stats.skippedSense,stats.candidates);
+ assert.ok(stats.heads>0&&stats.links>0);
+ const entries=Object.entries(everydayPhrasesMega);
+ assert.equal(entries.length,1428);
+ assert.equal(entries.reduce((s,[,e])=>s+e.links.length,0),7140);
+ for(const [word,entry] of entries){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.equal(entry.links.length,5);
+  assert.equal(new Set(entry.links.map(l=>l.word)).size,5);
+  assert.ok(entry.links.every(l=>l.meaning&&l.word!==word&&l.type==='related'&&l.tier==='related'));
+ }
+ for(const [head,ns] of Object.entries(everydayPhrasesNotes))for(const [word,note] of Object.entries(ns)){
+  assert.ok(everydayPhrasesMega[head].links.some(l=>l.word===word));
+  assert.ok(note.note&&note.example&&note.translation);
+ }
+ assert.ok(everydayPhrasesMega['look up a word'].links.some(l=>l.word==='consult an online dictionary'));
+ assert.ok(everydayPhrasesMega['look up to someone'].links.some(l=>l.word==='admire a role model'));
+ assert.ok(everydayPhrasesMega['at the expense of quality'].links.some(l=>l.word==='prioritize speed over accuracy'));
 });
