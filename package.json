@@ -6,9 +6,9 @@
   "homepage": "https://vocadash.pic-speak-story.com/",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node --test src/lib/learning.test.js",
+    "prebuild": "node --test src/lib/learning.test.js src/lib/universe.test.js",
     "build": "vite build",
-    "test": "node --test src/lib/learning.test.js",
+    "test": "node --test src/lib/learning.test.js src/lib/universe.test.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
