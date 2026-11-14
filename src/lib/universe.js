@@ -26,6 +26,15 @@ export const universeSeed = {
 };
 export const types = {synonym:'類義語',family:'派生・語形',collocation:'コロケーション',related:'関連語',contrast:'対義・対照'};
 const tiers = ['core','related','extended'];
+// Optional curated strength and usage bands. Unknown usage never implies rarity.
+// These bands are editorial estimates unless a corpus source is attached.
+export function relationTier(item) {
+  if (tiers.includes(item.tier)) return item.tier;
+  const score = typeof item.strength === 'number' && Number.isFinite(item.strength) ? Math.max(0,Math.min(1,item.strength)) : null;
+  if (score === null) return 'related';
+  const adjusted = score - (item.usageBand === 'rare' ? .22 : item.usageBand === 'common' ? 0 : item.usageBand === 'occasional' ? .10 : 0);
+  return adjusted >= .75 ? 'core' : adjusted >= .45 ? 'related' : 'extended';
+}
 export const tierLabels = {core:'最優先',related:'関連',extended:'発展'};
 const normalize = value => String(value || '').trim().toLowerCase();
 function asArray(value) { return Array.isArray(value) ? value : []; }
@@ -48,7 +57,7 @@ export function getRelations(entry) {
     if (!key || seen.has(key)) continue;
     seen.add(key);
     const type = Object.hasOwn(types,item.type) ? item.type : 'related';
-    const tier = tiers.includes(item.tier) ? item.tier : 'related';
+    const tier = relationTier(item);
     links.push({...item,word:item.word.trim(),type,tier});
   }
   return links.sort((a,b)=>tiers.indexOf(a.tier)-tiers.indexOf(b.tier));
@@ -57,7 +66,7 @@ export function orbitNodes(links) {
   const result = [];
   tiers.forEach((tier,i)=>{
     const group=links.filter(x=>x.tier===tier).slice(0, i === 0 ? 3 : 4);
-    const radius=[20,34,44][i];
+    const radius=[21,32,40][i];
     group.forEach((item,k)=>{
       const angle=(-90+i*48+k*360/group.length)*Math.PI/180;
       result.push({...item,x:50+radius*Math.cos(angle),y:50+radius*Math.sin(angle)});
