@@ -31,3 +31,29 @@
 .vu-map-sense{font-size:12px;color:#bcd8e8;margin:10px 0 0}.vu-toolbar{flex-wrap:wrap}.vu-dialog{max-width:100%;box-sizing:border-box}.vu-map-scroll{max-width:100%}
 
 .vu-search-wrap{margin:10px 0;display:grid;gap:6px}.vu-search-wrap label{font-size:12px;color:#bcd8e8}.vu-search-wrap input{box-sizing:border-box;width:100%;border:1px solid #45617c;background:#0a172c;color:#f3faff;border-radius:10px;padding:10px;font:inherit}.vu-search-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:6px}.vu-search-results button{display:flex;flex-direction:column;gap:3px;text-align:left;overflow-wrap:anywhere}.vu-search-results small{color:#bcd8e8}.vu-usage-note{margin-top:12px;background:#122940;border:1px solid #39617e;border-radius:10px;padding:10px;line-height:1.5}.vu-usage-note strong{color:#a5f3fc;font-size:12px}.vu-usage-note p[lang=en]{color:#e6f5ff;font-weight:600}
+
+/* Arrival sequence: the dialog remains mounted and operable throughout. */
+.vu-launch{position:relative;display:inline-flex;align-items:center;justify-content:flex-start;gap:10px;max-width:100%;min-height:50px;border:1px solid #4ccbf9;border-radius:14px;padding:8px 13px;background:linear-gradient(115deg,#081529,#17364e 58%,#12395b);color:#f2fbff;box-shadow:0 4px 16px #0ea5e935,inset 0 0 14px #0ea5e920;text-align:left;transition:transform .18s ease,box-shadow .18s ease}
+.vu-launch:hover{box-shadow:0 0 22px #22d3ee70;filter:none;transform:translateY(-1px)}
+.vu-launch:active{transform:scale(.97)}
+.vu-launch:focus-visible{outline:3px solid #38bdf8;outline-offset:3px}
+.vu-launch-symbol{display:grid;place-items:center;width:36px;height:36px;flex:0 0 36px;color:#9ef3ff;filter:drop-shadow(0 0 5px #22d3ee)}
+.vu-launch-symbol svg{width:36px;height:36px}.vu-launch-text{display:grid;gap:3px}.vu-launch-text strong{font-size:12px;letter-spacing:.12em;line-height:1.1;color:#e6fbff}.vu-launch-text small{font-size:11px;font-weight:500;color:#b3d9ef}.vu-launch-arrow{margin-left:5px;color:#8de4ff;font-size:20px}
+.vu-overlay{z-index:2147483000;overflow:hidden}
+.vu-dialog-warp{position:relative;animation:vu-arrive .54s cubic-bezier(.2,.85,.25,1) both}
+.vu-warp{position:absolute;inset:0;z-index:4;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,#16476a,#060d21 70%);pointer-events:none;animation:vu-warp-out .65s ease-out both}
+.vu-warp-core{position:absolute;width:18vmin;height:18vmin;border:1px solid #79dbf7;border-radius:50%;box-shadow:0 0 45px #67e8f97a,inset 0 0 24px #38bdf855;animation:vu-warp-core .58s ease-out both}
+.vu-warp i{position:absolute;top:50%;left:50%;width:var(--vu-length);height:1px;background:linear-gradient(90deg,transparent,#6ddbf9);transform-origin:0 50%;animation:vu-stars .48s ease-in var(--vu-delay) both}
+.vu-warp span{position:absolute;top:calc(50% + 15vmin);font-size:clamp(10px,2vw,15px);letter-spacing:.24em;color:#b8e8fb;text-align:center}
+.vu-map{container-type:inline-size}
+.vu-dialog .vu-node{animation:vu-orbit-arrival .52s cubic-bezier(.21,.85,.3,1) both}
+.vu-center{animation:vu-core-arrival .4s ease-out both}
+.vu-ring,.vu-line{animation:vu-ring-arrival .65s ease-out both}
+@keyframes vu-arrive{0%{opacity:0;transform:scale(.94)}60%{opacity:.85}100%{opacity:1;transform:scale(1)}}
+@keyframes vu-warp-out{0%,48%{opacity:1}100%{opacity:0;visibility:hidden}}
+@keyframes vu-warp-core{0%{opacity:.9;transform:scale(.1)}75%{opacity:.85;transform:scale(3.5)}100%{opacity:0;transform:scale(6)}}
+@keyframes vu-stars{0%{opacity:0;transform:rotate(var(--vu-angle)) translateX(2vmin) scaleX(.1)}40%{opacity:.65}100%{opacity:0;transform:rotate(var(--vu-angle)) translateX(55vmin) scaleX(2.4)}}
+@keyframes vu-orbit-arrival{0%{opacity:0;translate:var(--vu-from-x,0px) var(--vu-from-y,0px);scale:.4}100%{opacity:1;translate:0 0;scale:1}}
+@keyframes vu-core-arrival{from{opacity:.3;scale:.78}to{opacity:1;scale:1}}
+@keyframes vu-ring-arrival{from{opacity:0}to{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.vu-warp{display:none}.vu-dialog-warp,.vu-dialog .vu-node,.vu-center,.vu-ring,.vu-line{animation:none!important}.vu-launch{transition:none}}
