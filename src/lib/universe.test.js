@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:726,links:2762});
+ assert.deepEqual(universeCoverage(),{heads:727,links:2769});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -64,4 +64,10 @@ test('master maps link verbs, adjectives, nouns and phrasal verbs',()=>{
  assert.ok(getRelations(lookupUniverse('reimburse')).some(x=>x.word==='reimbursement'));
  assert.ok(getRelations(lookupUniverse('phase out')).some(x=>x.word==='abolish'&&x.example));
  assert.ok(getRelations(lookupUniverse('stave off')).some(x=>x.word==='fend off'&&x.note));
+});
+
+test('eradicate is a full center with tiered learning links',()=>{
+ const links=getRelations(lookupUniverse('eradicate'));
+ assert.ok(links.some(x=>x.word==='eradication'&&x.type==='family'&&x.tier==='core'));
+ assert.ok(links.some(x=>x.word==='extirpate'&&x.tier==='extended'));
 });
