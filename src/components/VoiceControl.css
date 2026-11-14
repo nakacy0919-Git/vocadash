@@ -8,3 +8,5 @@
 .vd-voice-shell{pointer-events:none}.vd-voice-bottom,.vd-voice-panel{pointer-events:auto}.vd-voice-help-button{width:28px;height:28px;border-radius:50%;border:1px solid #9ab5e6;background:#162943;color:white;font:700 15px system-ui;cursor:pointer;align-self:center}.vd-voice-result{max-height:min(58dvh,520px);margin-bottom:clamp(116px,22vh,190px);width:min(440px,calc(100vw - 28px));background:#101d34f5}.vd-voice-help{margin-bottom:clamp(116px,22vh,190px)}
 
 .vd-voice-bottom,.vd-voice-panel{position:relative;z-index:3}.vd-voice-shell:has(.vd-orb-full) .vd-voice-bottom{visibility:hidden}.vd-voice-result,.vd-voice-help{z-index:4}
+
+.vd-voice-shell.in-universe{z-index:2147483001}.vd-voice-bottom.vd-voice-docked{display:none}.vd-voice-shell.in-universe .vd-voice-result,.vd-voice-shell.in-universe .vd-voice-help{margin-bottom:0}

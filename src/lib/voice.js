@@ -11,18 +11,20 @@ export function extractWake(raw,mode='both') {
 }
 
 export function parseVoice(raw) {
- const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(hey )?(voca dash|vocadash)[ ,:]*/,'').replace(/^(please |can you |could you )/,'');
+ const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(hey )?(voca dash|vocadash)[ ,:]*/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
  const rules=[
- ['stop',/^(stop listening|turn off voice|voice off|stop voice)$/],
+ ['stop',/^(stop listening|stop|stop the microphone|turn off (?:the )?(?:mic|microphone|voice)|voice off|stop voice)$/],
  ['sleep',/^(go to sleep|stand by|standby|sleep mode|goodbye voca)$/],
  ['help',/^(help|show commands|what can i say)$/],
  ['home',/^(go home|home|back to dashboard)$/],
  ['close',/^(close (the )?universe|go back to (voca dash|vocadash)|close map|exit universe)$/],
- ['back',/^(go back|back|previous word)$/],
+ ['back',/^(go back|back|return|return to (?:the )?(?:assistant|voice assistant)|back to (?:the )?assistant|go back to (?:the )?assistant)$/],
+ ['previous',/^(previous word|go to the previous word|previous node)$/],
+ ['pageBack',/^(previous page|back one page|go to the previous page)$/],
  ['next',/^(next( word| page| question)?|skip)$/],
  ['universe',/^(open|show|launch)( me)? (the |voca )?universe(?: (of|for) (.+))?$/],
- ['filter',/^(?:(show|expand|display|hide) (me )?(the )?)?(synonyms?|similar words|antonyms?|opposites?|word famil(?:y|ies)|derivatives?|collocations?|related words|all relations|all words|word forms|inflections)$/],
- ['focus',/^(focus on|center on|centre on|explore) (.+)$/],
+ ['filter',/^(?:(show|expand|display|hide) (me )?(the )?)?(synonyms?|similar words|antonyms?|opposites?|word famil(?:y|ies)|derivatives?|derivations?|collocations?|related words|related terms|all relations|all words|all|everything|word forms|inflections)$/],
+ ['focus',/^(focus on|center on|centre on|explore|expand|expand on) (.+)$/],
  ['examples',/^(give me|show me|show|give|read) (?:some |the |an? |two |three |[23] )?(?:examples?|example sentences?)(?: (?:of|for) (.+))?$/],
  ['read',/^(read (it|the word|aloud)|pronounce( it)?|say it|read the (first|second|third) (sentence|example))$/],
  ['meaning',/^(show (me )?(the )?meaning|show definition|what does it mean|reveal)$/],
@@ -42,7 +44,7 @@ export function parseVoice(raw) {
  if(kind==='search')value=m[1];
  if(kind==='examples')value=m[2]||'';
  if(kind==='read')value=m[4]||'';
- if(kind==='filter'){const x=m[4];value=/synonym|similar/.test(x)?'synonym':/antonym|opposite/.test(x)?'contrast':/famil|derivative/.test(x)?'family':/collocation/.test(x)?'collocation':/forms|inflections/.test(x)?'forms':/related/.test(x)?'related':'all';}
+ if(kind==='filter'){const x=m[4];value=/synonym|similar/.test(x)?'synonym':/antonym|opposite/.test(x)?'contrast':/famil|deriv/.test(x)?'family':/collocation/.test(x)?'collocation':/forms|inflections/.test(x)?'forms':/related/.test(x)?'related':'all';}
  if(kind==='images'||kind==='translation')value=m[1];
  return {kind,value};
  }
@@ -97,3 +99,5 @@ export function speechSegments(event){
 // A vocabulary query opens the semantic explorer by default; explicit example requests remain separate.
 export function opensVoiceUniverse(kind,value){return Boolean(value)&&['search','focus','universe'].includes(kind);}
 export function quickVoiceEntry(value,words,lookup){for(const key of wordCandidates(value)){const local=words.find(w=>String(w.word||'').toLowerCase().trim()===key),map=lookup(key);if(map||local)return {...map,...local,word:local?.word||map.word,meaning:local?.meaning||map?.meaning||''};}return null;}
+
+export function returnsToAssistant(kind,universeOpen){return kind==='close'||kind==='back'&&universeOpen;}

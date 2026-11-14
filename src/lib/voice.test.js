@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseVoice,extractWake,routeVoice,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry} from './voice.js';
+import {parseVoice,extractWake,routeVoice,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant} from './voice.js';
 test('voice commands',()=>{for(const [input,kind,value] of [['Show me connect','search','connect'],['Open the universe of connect','universe','connect'],['Expand synonyms','filter','synonym'],['Focus on connection','focus','connection'],['Read the second sentence','read','second'],['Show me collocations','filter','collocation'],['Stop listening','stop','']])assert.deepEqual(parseVoice(input),{kind,value});});
 
 test('wake word supports both phrases, one-shot commands and individual preferences',()=>{
@@ -48,3 +48,5 @@ test('voice visualizer measures signal RMS and ignores silence',()=>{assert.equa
 
 import {lookupUniverse} from './universe.js';
 test('Show me beautiful launches a registered Universe entry directly, with or without an article',()=>{for(const raw of ['Show me beautiful','Show me the beautiful','Voca, show me beautiful','Hey Voca, show me beautiful']){const cmd=parseVoice(extractWake(raw)?.command||raw);assert.equal(opensVoiceUniverse(cmd.kind,cmd.value),true);const item=quickVoiceEntry(cmd.value,[],lookupUniverse);assert.equal(item?.word,'beautiful');assert.ok(item.relatedWords.length>0);}assert.equal(opensVoiceUniverse('examples','beautiful'),false);assert.equal(opensVoiceUniverse('filter','synonym'),false);});
+
+test('universe hands-free commands distinguish assistant return, map history, filters and polite microphone stop',()=>{for(const [raw,kind,value] of [['Back','back',''],['Go back','back',''],['Previous word','previous',''],['Previous page','pageBack',''],['Expand synonyms','filter','synonym'],['Expand the collocations','filter','collocation'],['Expand derivatives','filter','family'],['Expand all','filter','all'],['Expand beautiful','focus','beautiful'],['Expand on beauty','focus','beauty'],['Thank you stop listening','stop',''],['Stop listening please','stop',''],['Can you expand synonyms please','filter','synonym']])assert.deepEqual(parseVoice(raw),{kind,value});assert.equal(returnsToAssistant('back',true),true);assert.equal(returnsToAssistant('close',true),true);assert.equal(returnsToAssistant('previous',true),false);assert.equal(returnsToAssistant('pageBack',true),false);assert.deepEqual(routeVoice(['Thank you stop listening'],'standby'),{kind:'command',command:'Thank you stop listening'});});

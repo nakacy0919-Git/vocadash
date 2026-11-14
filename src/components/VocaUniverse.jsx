@@ -1,9 +1,9 @@
-import React, {useEffect,useId,useMemo,useRef,useState} from 'react';
+import React, {useEffect,useLayoutEffect,useId,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels,getWordForms} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VocaUniverse.css';
-export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=true,onToggleEffects,initialFilter='all'}) {
+export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=true,onToggleEffects,voiceDockRef,initialFilter='all'}) {
  const [center,setCenter]=useState(entry);
  const [trail,setTrail]=useState([]);
  const [query,setQuery]=useState('');
@@ -41,15 +41,17 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
  },[]);
 
  const change=(next)=>{setCenter(next);setSelected(null);setFilter('all');setBadImage(false);setTargetImageError('');setPage(0);setQuery('');setSearchOpen(false);};
- useEffect(()=>{
+ useLayoutEffect(()=>{
    const handler=e=>{
     const c=e.detail, kind=c.kind,value=c.value;
     const done=msg=>{c.handled=true;c.message=msg||'OK';};
-    if(kind==='filter'){if(value==='forms'){setView('list');setFilter('all');}else{setFilter(value);setView('map');}setPage(0);setSelected(null);done();return;}
+    if(kind==='filter'){if(value==='forms'){setView('list');setFilter('all');}else{setFilter(value);setView('map');}setPage(0);setSelected(null);done(value==='forms'?'Word forms':value==='all'?'All relations':(types[value]||value)+' · '+links.filter(x=>x.type===value).length);return;}
     if(kind==='list'||kind==='map'){setView(kind);done();return;}
     if(kind==='images'){setShowImages(value==='show');done();return;}
     if(kind==='next'){setPage(p=>Math.min(p+1,pageCount-1));setSelected(null);done();return;}
-    if(kind==='back'){if(trail.length){change(trail.at(-1));setTrail(t=>t.slice(0,-1));}else{setPage(p=>Math.max(0,p-1));}done();return;}
+    if(kind==='previous'){if(trail.length){change(trail.at(-1));setTrail(t=>t.slice(0,-1));done('Previous word');}else done('No previous word');return;}
+    if(kind==='pageBack'){setPage(p=>Math.max(0,p-1));setSelected(null);done('Previous page');return;}
+    if(kind==='back'||kind==='close'){onClose();done('Back to Voca Assistant');return;}
     if(['focus','search','universe'].includes(kind)&&value){
      const k=value.trim().toLowerCase(),link=links.find(x=>x.word.toLowerCase()===k),item=lookupUniverse(k),local=index.get(k),resolved=c.resolvedEntry;
      if(!link&&!item&&!local&&!resolved){done('未登録: '+value);return;}
@@ -76,6 +78,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
   <div className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>ENTERING VOCA UNIVERSE</span></div>
   <section className="vu-dialog vu-dialog-warp" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button className="vu-effects-toggle" aria-pressed={effects} onClick={onToggleEffects} aria-label={effects?"ワープ効果音をオフ":"ワープ効果音をオン"}>{effects?"♫ 効果音 ON":"♪ 効果音 OFF"}</button><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
+   <div ref={voiceDockRef} className="vu-voice-dock"/>
    <div className="vu-controls">
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);setPage(0);}}>{label}</button>)}</div>
