@@ -69,6 +69,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
    if(kind==='help'){setCompact(true);setHelpOpen(true);return;}
    if(kind==='translation'){setShowJa(value==='show');setStatus('Translation '+(value==='show'?'on':'off'));return;}
    if(kind==='images'&&!universeOpen){setShowImage(value==='show');setStatus('Images '+(value==='show'?'on':'off'));return;}
+   if(universeOpen&&['personal','weak','mission','review','quiz'].includes(kind)){const detail={kind,value,handled:false};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));if(detail.handled){flash('Universe learning');return;}}
    if(kind==='home'||kind==='quiz'||kind==='study'||kind==='sentence'||kind==='review'){
     if(universeOpen)skipAutoReturn.current=true;
     if(kind!=='close')setEntry(null);setShowEntryInUniverse(false);setResultOpen(false);setCompact(true);

@@ -85,3 +85,10 @@ test('category courses cover 100 unique words across 15 courses and retain share
  }
  assert.equal(memberships.size,100);assert.ok([...memberships.values()].every(n=>n===3));
 });
+
+test('personal Universe commands use explicit Dash wake gating',()=>{
+ assert.equal(parseVoice('show my universe').kind,'personal');
+ assert.equal(parseVoice('show weak words').kind,'weak');
+ assert.equal(parseVoice('start mission').kind,'mission');
+ assert.equal(extractWake('Dash show my universe').command,'show my universe');
+});

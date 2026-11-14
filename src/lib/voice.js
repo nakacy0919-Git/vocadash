@@ -13,6 +13,9 @@ export function extractWake(raw,mode='both') {
 export function parseVoice(raw) {
  const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
  const rules=[
+ ['personal',/^(my universe|show my universe|personal universe)$/],
+ ['weak',/^(show weak words|weak words|fading planets)$/],
+ ['mission',/^(start mission|exploration mission|show missions)$/],
  ['stop',/^(stop listening|stop|stop the microphone|turn off (?:the )?(?:mic|microphone|voice)|voice off|stop voice)$/],
  ['sleep',/^(go to sleep|stand by|standby|sleep mode|goodbye dash)$/],
  ['help',/^(help|show commands|what can i say)$/],
