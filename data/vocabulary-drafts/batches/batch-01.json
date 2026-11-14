@@ -1,0 +1,2465 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-01",
+  "sourceTab": "例文データ_第1弾",
+  "sourceKind": "example",
+  "records": [
+    {
+      "senseId": "VD-00110-n-01",
+      "wordId": "VD-00110",
+      "headword": "book",
+      "partOfSpeech": "noun",
+      "meaningJa": "本",
+      "definitionEn": "a set of pages bound together for reading",
+      "synonyms": "volume; publication",
+      "cefrHeadword": "A1",
+      "imageHint": "本を読む・借りる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00110-n-01-e01",
+          "en": "This book is easy to read.",
+          "ja": "この本は読みやすいです。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00110-n-01-e02",
+          "en": "I borrowed two books from the library.",
+          "ja": "私は図書館から本を2冊借りました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 2
+    },
+    {
+      "senseId": "VD-00110-v-01",
+      "wordId": "VD-00110",
+      "headword": "book",
+      "partOfSpeech": "verb",
+      "meaningJa": "予約する",
+      "definitionEn": "to arrange in advance to have a place or service",
+      "synonyms": "reserve",
+      "cefrHeadword": "A1",
+      "imageHint": "レストラン予約・予約画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00110-v-01-e01",
+          "en": "I booked a table for two.",
+          "ja": "私は2人用の席を予約しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00110-v-01-e02",
+          "en": "We need to book our tickets online.",
+          "ja": "私たちはオンラインでチケットを予約する必要があります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 4
+    },
+    {
+      "senseId": "VD-00767-v-01",
+      "wordId": "VD-00767",
+      "headword": "run",
+      "partOfSpeech": "verb",
+      "meaningJa": "走る",
+      "definitionEn": "to move quickly on foot",
+      "synonyms": "jog; sprint",
+      "cefrHeadword": "A1",
+      "imageHint": "走る人物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00767-v-01-e01",
+          "en": "I run in the park every morning.",
+          "ja": "私は毎朝公園を走ります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00767-v-01-e02",
+          "en": "The children ran toward the bus stop.",
+          "ja": "子どもたちはバス停に向かって走りました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 6
+    },
+    {
+      "senseId": "VD-00767-v-02",
+      "wordId": "VD-00767",
+      "headword": "run",
+      "partOfSpeech": "verb",
+      "meaningJa": "経営する",
+      "definitionEn": "to manage and control a business",
+      "synonyms": "manage; operate",
+      "cefrHeadword": "A1",
+      "imageHint": "小さな店舗の経営",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00767-v-02-e01",
+          "en": "Her parents run a bakery.",
+          "ja": "彼女の両親はパン屋を経営しています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00767-v-02-e02",
+          "en": "It takes time to run a small business well.",
+          "ja": "小さな事業をうまく経営するには時間がかかります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 8
+    },
+    {
+      "senseId": "VD-00767-v-03",
+      "wordId": "VD-00767",
+      "headword": "run",
+      "partOfSpeech": "verb",
+      "meaningJa": "作動する",
+      "definitionEn": "to work or operate as a machine or program",
+      "synonyms": "operate; function",
+      "cefrHeadword": "A1",
+      "imageHint": "動く機械",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00767-v-03-e01",
+          "en": "This washing machine runs quietly.",
+          "ja": "この洗濯機は静かに作動します。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00767-v-03-e02",
+          "en": "The program runs on most computers.",
+          "ja": "そのプログラムはほとんどのコンピューターで動きます。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 10
+    },
+    {
+      "senseId": "VD-00767-v-04",
+      "wordId": "VD-00767",
+      "headword": "run",
+      "partOfSpeech": "verb",
+      "meaningJa": "立候補する",
+      "definitionEn": "to compete in an election for a position",
+      "synonyms": "stand for election",
+      "cefrHeadword": "A1",
+      "imageHint": "選挙ポスターと候補者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00767-v-04-e01",
+          "en": "She plans to run for class president.",
+          "ja": "彼女は学級委員長に立候補する予定です。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00767-v-04-e02",
+          "en": "He ran for mayor last year.",
+          "ja": "彼は昨年、市長選に立候補しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 12
+    },
+    {
+      "senseId": "VD-00767-n-01",
+      "wordId": "VD-00767",
+      "headword": "run",
+      "partOfSpeech": "noun",
+      "meaningJa": "走ること",
+      "definitionEn": "an occasion of running for exercise",
+      "synonyms": "jog",
+      "cefrHeadword": "A1",
+      "imageHint": "ジョギング",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00767-n-01-e01",
+          "en": "I went for a run before breakfast.",
+          "ja": "私は朝食前にひと走りしました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00767-n-01-e02",
+          "en": "A short run helps me clear my mind.",
+          "ja": "短く走ると気分がすっきりします。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 14
+    },
+    {
+      "senseId": "VD-00537-n-01",
+      "wordId": "VD-00537",
+      "headword": "light",
+      "partOfSpeech": "noun",
+      "meaningJa": "光・明かり",
+      "definitionEn": "brightness that allows people to see",
+      "synonyms": "illumination; brightness",
+      "cefrHeadword": "A1",
+      "imageHint": "窓からの光",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00537-n-01-e01",
+          "en": "The light came through the window.",
+          "ja": "窓から光が差し込みました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00537-n-01-e02",
+          "en": "Please turn off the light when you leave.",
+          "ja": "出かけるときは明かりを消してください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 16
+    },
+    {
+      "senseId": "VD-00537-adj-01",
+      "wordId": "VD-00537",
+      "headword": "light",
+      "partOfSpeech": "adjective",
+      "meaningJa": "軽い",
+      "definitionEn": "not weighing much",
+      "synonyms": "lightweight",
+      "cefrHeadword": "A1",
+      "imageHint": "荷物の重さ比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00537-adj-01-e01",
+          "en": "This bag is light enough to carry.",
+          "ja": "このバッグは持ち運べるほど軽いです。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00537-adj-01-e02",
+          "en": "We chose a lighter suitcase for the trip.",
+          "ja": "私たちは旅行用にもっと軽いスーツケースを選びました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 18
+    },
+    {
+      "senseId": "VD-00537-v-01",
+      "wordId": "VD-00537",
+      "headword": "light",
+      "partOfSpeech": "verb",
+      "meaningJa": "火をつける",
+      "definitionEn": "to cause something to begin burning",
+      "synonyms": "ignite",
+      "cefrHeadword": "A1",
+      "imageHint": "ろうそくに火をつける",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00537-v-01-e01",
+          "en": "Dad lit a candle during the blackout.",
+          "ja": "停電中、父はろうそくに火をつけました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00537-v-01-e02",
+          "en": "Can you light the campfire safely?",
+          "ja": "安全にキャンプファイヤーに火をつけられますか。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 20
+    },
+    {
+      "senseId": "VD-00703-v-01",
+      "wordId": "VD-00703",
+      "headword": "play",
+      "partOfSpeech": "verb",
+      "meaningJa": "スポーツをする",
+      "definitionEn": "to take part in a sport or game",
+      "synonyms": "compete",
+      "cefrHeadword": "A1",
+      "imageHint": "スポーツ場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00703-v-01-e01",
+          "en": "We play basketball after school.",
+          "ja": "私たちは放課後にバスケットボールをします。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00703-v-01-e02",
+          "en": "My sister played tennis with her friend.",
+          "ja": "妹は友達とテニスをしました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 22
+    },
+    {
+      "senseId": "VD-00703-v-02",
+      "wordId": "VD-00703",
+      "headword": "play",
+      "partOfSpeech": "verb",
+      "meaningJa": "楽器を演奏する",
+      "definitionEn": "to produce music with an instrument",
+      "synonyms": "perform",
+      "cefrHeadword": "A1",
+      "imageHint": "楽器演奏",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00703-v-02-e01",
+          "en": "She plays the piano very well.",
+          "ja": "彼女はピアノをとても上手に弾きます。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00703-v-02-e02",
+          "en": "He learned to play the guitar last summer.",
+          "ja": "彼は昨年の夏にギターの演奏を習いました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 24
+    },
+    {
+      "senseId": "VD-00703-n-01",
+      "wordId": "VD-00703",
+      "headword": "play",
+      "partOfSpeech": "noun",
+      "meaningJa": "劇・演劇",
+      "definitionEn": "a story performed by actors",
+      "synonyms": "drama",
+      "cefrHeadword": "A1",
+      "imageHint": "舞台劇",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00703-n-01-e01",
+          "en": "Our class performed a short play.",
+          "ja": "私たちのクラスは短い劇を上演しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00703-n-01-e02",
+          "en": "The play begins at seven tonight.",
+          "ja": "その劇は今夜7時に始まります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 26
+    },
+    {
+      "senseId": "VD-01012-v-01",
+      "wordId": "VD-01012",
+      "headword": "watch",
+      "partOfSpeech": "verb",
+      "meaningJa": "注意して見る",
+      "definitionEn": "to look carefully for a period of time",
+      "synonyms": "observe; monitor",
+      "cefrHeadword": "A1",
+      "imageHint": "鳥の観察",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01012-v-01-e01",
+          "en": "Watch the road when you cross.",
+          "ja": "道路を渡るときは周りをよく見てください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01012-v-01-e02",
+          "en": "We watched the birds build a nest.",
+          "ja": "私たちは鳥が巣を作る様子を観察しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 28
+    },
+    {
+      "senseId": "VD-01012-n-01",
+      "wordId": "VD-01012",
+      "headword": "watch",
+      "partOfSpeech": "noun",
+      "meaningJa": "腕時計",
+      "definitionEn": "a small clock worn on the wrist",
+      "synonyms": "wristwatch",
+      "cefrHeadword": "A1",
+      "imageHint": "腕時計",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01012-n-01-e01",
+          "en": "My watch stopped this morning.",
+          "ja": "私の腕時計は今朝止まりました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01012-n-01-e02",
+          "en": "He checked his watch before the meeting.",
+          "ja": "彼は会議の前に腕時計を確認しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 30
+    },
+    {
+      "senseId": "VD-01044-v-01",
+      "wordId": "VD-01044",
+      "headword": "work",
+      "partOfSpeech": "verb",
+      "meaningJa": "働く",
+      "definitionEn": "to do tasks as a job",
+      "synonyms": "labor; be employed",
+      "cefrHeadword": "A1",
+      "imageHint": "職場と在宅勤務",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01044-v-01-e01",
+          "en": "My mother works at a hospital.",
+          "ja": "母は病院で働いています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01044-v-01-e02",
+          "en": "Many people work from home on Fridays.",
+          "ja": "多くの人は金曜日に自宅で働いています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 32
+    },
+    {
+      "senseId": "VD-01044-v-02",
+      "wordId": "VD-01044",
+      "headword": "work",
+      "partOfSpeech": "verb",
+      "meaningJa": "うまく機能する",
+      "definitionEn": "to function as intended",
+      "synonyms": "function; operate",
+      "cefrHeadword": "A1",
+      "imageHint": "鍵・機能する道具",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01044-v-02-e01",
+          "en": "This key doesn't work in the door.",
+          "ja": "この鍵はそのドアには使えません。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01044-v-02-e02",
+          "en": "The new study method worked for me.",
+          "ja": "その新しい勉強法は私には効果がありました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 34
+    },
+    {
+      "senseId": "VD-01044-n-01",
+      "wordId": "VD-01044",
+      "headword": "work",
+      "partOfSpeech": "noun",
+      "meaningJa": "仕事・作業",
+      "definitionEn": "activities requiring effort to complete",
+      "synonyms": "task; job",
+      "cefrHeadword": "A1",
+      "imageHint": "作業するチーム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01044-n-01-e01",
+          "en": "I have a lot of work to finish.",
+          "ja": "私には終わらせるべき仕事がたくさんあります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01044-n-01-e02",
+          "en": "The team divided the work into three parts.",
+          "ja": "チームは作業を3つに分けました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 36
+    },
+    {
+      "senseId": "VD-01044-n-02",
+      "wordId": "VD-01044",
+      "headword": "work",
+      "partOfSpeech": "noun",
+      "meaningJa": "作品",
+      "definitionEn": "something produced by an artist or writer",
+      "synonyms": "creation; piece",
+      "cefrHeadword": "A1",
+      "imageHint": "絵画作品",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01044-n-02-e01",
+          "en": "This painting is her best work.",
+          "ja": "この絵は彼女の最高の作品です。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01044-n-02-e02",
+          "en": "We studied several works by the artist.",
+          "ja": "私たちはその芸術家の作品をいくつか学びました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 38
+    },
+    {
+      "senseId": "VD-00757-adj-01",
+      "wordId": "VD-00757",
+      "headword": "right",
+      "partOfSpeech": "adjective",
+      "meaningJa": "正しい",
+      "definitionEn": "true or appropriate in the situation",
+      "synonyms": "correct; accurate",
+      "cefrHeadword": "A1",
+      "imageHint": "正解・選択場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00757-adj-01-e01",
+          "en": "Your answer is right.",
+          "ja": "あなたの答えは正しいです。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00757-adj-01-e02",
+          "en": "It is important to make the right choice.",
+          "ja": "正しい選択をすることは重要です。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 40
+    },
+    {
+      "senseId": "VD-00757-adj-02",
+      "wordId": "VD-00757",
+      "headword": "right",
+      "partOfSpeech": "adjective",
+      "meaningJa": "右側の",
+      "definitionEn": "on the side opposite the left",
+      "synonyms": "right-hand",
+      "cefrHeadword": "A1",
+      "imageHint": "右と左を対比",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00757-adj-02-e01",
+          "en": "The exit is on the right side of the building.",
+          "ja": "出口は建物の右側にあります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00757-adj-02-e02",
+          "en": "My right hand is stronger than my left.",
+          "ja": "私の右手は左手より力が強いです。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 42
+    },
+    {
+      "senseId": "VD-00757-n-01",
+      "wordId": "VD-00757",
+      "headword": "right",
+      "partOfSpeech": "noun",
+      "meaningJa": "権利",
+      "definitionEn": "a moral or legal freedom to do something",
+      "synonyms": "entitlement",
+      "cefrHeadword": "A1",
+      "imageHint": "発言の権利",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00757-n-01-e01",
+          "en": "Everyone has the right to learn.",
+          "ja": "誰もが学ぶ権利を持っています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00757-n-01-e02",
+          "en": "Students have a right to express their opinions.",
+          "ja": "生徒には自分の意見を表明する権利があります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 44
+    },
+    {
+      "senseId": "VD-00123-v-01",
+      "wordId": "VD-00123",
+      "headword": "break",
+      "partOfSpeech": "verb",
+      "meaningJa": "壊す",
+      "definitionEn": "to damage something so it stops working or separates",
+      "synonyms": "damage; smash",
+      "cefrHeadword": "A1",
+      "imageHint": "壊れたガラス",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00123-v-01-e01",
+          "en": "Be careful not to break the glass.",
+          "ja": "そのコップを割らないように気をつけてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00123-v-01-e02",
+          "en": "The strong wind broke a window.",
+          "ja": "強い風で窓が割れました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 46
+    },
+    {
+      "senseId": "VD-00123-v-02",
+      "wordId": "VD-00123",
+      "headword": "break",
+      "partOfSpeech": "verb",
+      "meaningJa": "規則・約束を破る",
+      "definitionEn": "to fail to obey a rule or keep a promise",
+      "synonyms": "violate; disobey",
+      "cefrHeadword": "A1",
+      "imageHint": "ルール違反場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00123-v-02-e01",
+          "en": "You must not break the rules.",
+          "ja": "規則を破ってはいけません。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00123-v-02-e02",
+          "en": "He apologized for breaking his promise.",
+          "ja": "彼は約束を破ったことを謝りました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 48
+    },
+    {
+      "senseId": "VD-00123-n-01",
+      "wordId": "VD-00123",
+      "headword": "break",
+      "partOfSpeech": "noun",
+      "meaningJa": "休憩",
+      "definitionEn": "a short period of rest during an activity",
+      "synonyms": "rest; pause",
+      "cefrHeadword": "A1",
+      "imageHint": "休憩中の生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00123-n-01-e01",
+          "en": "Let's take a short break.",
+          "ja": "少し休憩しましょう。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00123-n-01-e02",
+          "en": "After an hour of study, we had a break.",
+          "ja": "1時間勉強したあと、私たちは休憩を取りました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 50
+    },
+    {
+      "senseId": "VD-00123-v-03",
+      "wordId": "VD-00123",
+      "headword": "break",
+      "partOfSpeech": "verb",
+      "meaningJa": "記録を更新する",
+      "definitionEn": "to achieve a better result than an existing record",
+      "synonyms": "surpass; beat",
+      "cefrHeadword": "A1",
+      "imageHint": "陸上の記録",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00123-v-03-e01",
+          "en": "She broke the school record.",
+          "ja": "彼女は学校記録を更新しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00123-v-03-e02",
+          "en": "The athlete hopes to break the world record.",
+          "ja": "その選手は世界記録を更新したいと考えています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 52
+    },
+    {
+      "senseId": "VD-00170-v-01",
+      "wordId": "VD-00170",
+      "headword": "change",
+      "partOfSpeech": "verb",
+      "meaningJa": "変える",
+      "definitionEn": "to make something different",
+      "synonyms": "alter; modify",
+      "cefrHeadword": "A1",
+      "imageHint": "予定変更",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00170-v-01-e01",
+          "en": "We changed our plans because of the rain.",
+          "ja": "雨のため、私たちは予定を変更しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00170-v-01-e02",
+          "en": "Learning a new language can change your life.",
+          "ja": "新しい言語を学ぶことは人生を変えることがあります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 54
+    },
+    {
+      "senseId": "VD-00170-n-01",
+      "wordId": "VD-00170",
+      "headword": "change",
+      "partOfSpeech": "noun",
+      "meaningJa": "変化",
+      "definitionEn": "the process or result of becoming different",
+      "synonyms": "shift; alteration",
+      "cefrHeadword": "A1",
+      "imageHint": "変化の前後",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00170-n-01-e01",
+          "en": "There has been a big change in the weather.",
+          "ja": "天候に大きな変化がありました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00170-n-01-e02",
+          "en": "Small changes can make a difference.",
+          "ja": "小さな変化が大きな違いを生むことがあります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 56
+    },
+    {
+      "senseId": "VD-00170-n-02",
+      "wordId": "VD-00170",
+      "headword": "change",
+      "partOfSpeech": "noun",
+      "meaningJa": "小銭・お釣り",
+      "definitionEn": "coins or money returned after a payment",
+      "synonyms": "coins; money back",
+      "cefrHeadword": "A1",
+      "imageHint": "小銭",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00170-n-02-e01",
+          "en": "Keep the change.",
+          "ja": "お釣りは取っておいてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00170-n-02-e02",
+          "en": "Do you have any change for the bus?",
+          "ja": "バス用の小銭を持っていますか。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 58
+    },
+    {
+      "senseId": "VD-00149-v-01",
+      "wordId": "VD-00149",
+      "headword": "call",
+      "partOfSpeech": "verb",
+      "meaningJa": "電話する",
+      "definitionEn": "to contact someone by telephone",
+      "synonyms": "phone; telephone",
+      "cefrHeadword": "A1",
+      "imageHint": "電話する場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00149-v-01-e01",
+          "en": "Please call me after school.",
+          "ja": "放課後に電話してください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00149-v-01-e02",
+          "en": "I called my grandmother on Sunday.",
+          "ja": "日曜日に祖母に電話しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 60
+    },
+    {
+      "senseId": "VD-00149-v-02",
+      "wordId": "VD-00149",
+      "headword": "call",
+      "partOfSpeech": "verb",
+      "meaningJa": "呼ぶ・名付ける",
+      "definitionEn": "to give someone or something a particular name",
+      "synonyms": "name; refer to as",
+      "cefrHeadword": "A1",
+      "imageHint": "人物の紹介",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00149-v-02-e01",
+          "en": "People call him Ken.",
+          "ja": "人々は彼をケンと呼びます。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00149-v-02-e02",
+          "en": "We call this activity a mystery game.",
+          "ja": "私たちはこの活動をミステリーゲームと呼びます。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 62
+    },
+    {
+      "senseId": "VD-00149-n-01",
+      "wordId": "VD-00149",
+      "headword": "call",
+      "partOfSpeech": "noun",
+      "meaningJa": "電話・呼び出し",
+      "definitionEn": "an occasion of contacting someone by phone",
+      "synonyms": "phone call",
+      "cefrHeadword": "A1",
+      "imageHint": "着信画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00149-n-01-e01",
+          "en": "I got a call from my teacher.",
+          "ja": "先生から電話がありました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00149-n-01-e02",
+          "en": "She missed an important call during class.",
+          "ja": "彼女は授業中に大事な電話に出られませんでした。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 64
+    },
+    {
+      "senseId": "VD-00653-v-01",
+      "wordId": "VD-00653",
+      "headword": "open",
+      "partOfSpeech": "verb",
+      "meaningJa": "開ける",
+      "definitionEn": "to move something so it is no longer closed",
+      "synonyms": "unclose",
+      "cefrHeadword": "A1",
+      "imageHint": "窓と箱を開ける",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00653-v-01-e01",
+          "en": "Please open the window.",
+          "ja": "窓を開けてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00653-v-01-e02",
+          "en": "He opened the box carefully.",
+          "ja": "彼は箱を注意深く開けました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 66
+    },
+    {
+      "senseId": "VD-00653-adj-01",
+      "wordId": "VD-00653",
+      "headword": "open",
+      "partOfSpeech": "adjective",
+      "meaningJa": "開いている・営業している",
+      "definitionEn": "available for visitors or business",
+      "synonyms": "operating; accessible",
+      "cefrHeadword": "A1",
+      "imageHint": "営業中の店舗",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00653-adj-01-e01",
+          "en": "The museum is open on Sundays.",
+          "ja": "その博物館は日曜日も開いています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00653-adj-01-e02",
+          "en": "Is this café still open?",
+          "ja": "このカフェはまだ営業していますか。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 68
+    },
+    {
+      "senseId": "VD-00189-v-01",
+      "wordId": "VD-00189",
+      "headword": "close",
+      "partOfSpeech": "verb",
+      "meaningJa": "閉める",
+      "definitionEn": "to shut an opening",
+      "synonyms": "shut",
+      "cefrHeadword": "A1",
+      "imageHint": "ドア・閉店場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00189-v-01-e01",
+          "en": "Close the door quietly, please.",
+          "ja": "静かにドアを閉めてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00189-v-01-e02",
+          "en": "The shop closes at six.",
+          "ja": "その店は6時に閉まります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 70
+    },
+    {
+      "senseId": "VD-00189-adj-01",
+      "wordId": "VD-00189",
+      "headword": "close",
+      "partOfSpeech": "adjective",
+      "meaningJa": "近い",
+      "definitionEn": "not far away in distance or time",
+      "synonyms": "near; nearby",
+      "cefrHeadword": "A1",
+      "imageHint": "近接する建物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00189-adj-01-e01",
+          "en": "Our school is close to the station.",
+          "ja": "私たちの学校は駅の近くにあります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00189-adj-01-e02",
+          "en": "The library is close enough to walk to.",
+          "ja": "図書館は歩いて行けるほど近いです。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 72
+    },
+    {
+      "senseId": "VD-00189-adj-02",
+      "wordId": "VD-00189",
+      "headword": "close",
+      "partOfSpeech": "adjective",
+      "meaningJa": "親しい",
+      "definitionEn": "having a strong and friendly relationship",
+      "synonyms": "intimate; dear",
+      "cefrHeadword": "A1",
+      "imageHint": "親しい友人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00189-adj-02-e01",
+          "en": "They are close friends.",
+          "ja": "彼らは親しい友達です。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00189-adj-02-e02",
+          "en": "I became close to my host family.",
+          "ja": "私はホストファミリーと親しくなりました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 74
+    },
+    {
+      "senseId": "VD-00977-v-01",
+      "wordId": "VD-00977",
+      "headword": "turn",
+      "partOfSpeech": "verb",
+      "meaningJa": "回す・向きを変える",
+      "definitionEn": "to move into a different direction or position",
+      "synonyms": "rotate; twist",
+      "cefrHeadword": "A1",
+      "imageHint": "取っ手・方向転換",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00977-v-01-e01",
+          "en": "Turn the handle slowly.",
+          "ja": "取っ手をゆっくり回してください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00977-v-01-e02",
+          "en": "The car turned left at the light.",
+          "ja": "車は信号のところで左に曲がりました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 76
+    },
+    {
+      "senseId": "VD-00977-v-02",
+      "wordId": "VD-00977",
+      "headword": "turn",
+      "partOfSpeech": "verb",
+      "meaningJa": "〜になる",
+      "definitionEn": "to become different in color or condition",
+      "synonyms": "become; grow",
+      "cefrHeadword": "A1",
+      "imageHint": "紅葉の色変化",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00977-v-02-e01",
+          "en": "The sky turned dark before the storm.",
+          "ja": "嵐の前に空が暗くなりました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00977-v-02-e02",
+          "en": "The leaves turn red in autumn.",
+          "ja": "秋には葉が赤くなります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 78
+    },
+    {
+      "senseId": "VD-00977-n-01",
+      "wordId": "VD-00977",
+      "headword": "turn",
+      "partOfSpeech": "noun",
+      "meaningJa": "順番",
+      "definitionEn": "the occasion when a person should act",
+      "synonyms": "go",
+      "cefrHeadword": "A1",
+      "imageHint": "順番に発言する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00977-n-01-e01",
+          "en": "It's your turn to speak.",
+          "ja": "次はあなたが話す番です。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00977-n-01-e02",
+          "en": "We took turns reading the story.",
+          "ja": "私たちは交代でその物語を読みました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 80
+    },
+    {
+      "senseId": "VD-00312-n-01",
+      "wordId": "VD-00312",
+      "headword": "face",
+      "partOfSpeech": "noun",
+      "meaningJa": "顔",
+      "definitionEn": "the front part of the head with eyes and a mouth",
+      "synonyms": "countenance",
+      "cefrHeadword": "A1",
+      "imageHint": "表情の比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00312-n-01-e01",
+          "en": "She washed her face.",
+          "ja": "彼女は顔を洗いました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00312-n-01-e02",
+          "en": "His face showed surprise.",
+          "ja": "彼の顔には驚きの表情が浮かんでいました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 82
+    },
+    {
+      "senseId": "VD-00312-v-01",
+      "wordId": "VD-00312",
+      "headword": "face",
+      "partOfSpeech": "verb",
+      "meaningJa": "直面する",
+      "definitionEn": "to deal with a difficult situation",
+      "synonyms": "confront; encounter",
+      "cefrHeadword": "A1",
+      "imageHint": "課題に向き合う人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00312-v-01-e01",
+          "en": "We face many challenges at school.",
+          "ja": "私たちは学校で多くの課題に直面します。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00312-v-01-e02",
+          "en": "The town is facing a shortage of workers.",
+          "ja": "その町は働き手不足に直面しています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 84
+    },
+    {
+      "senseId": "VD-02096-n-01",
+      "wordId": "VD-02096",
+      "headword": "sound",
+      "partOfSpeech": "noun",
+      "meaningJa": "音",
+      "definitionEn": "something that can be heard",
+      "synonyms": "noise; audio",
+      "cefrHeadword": "A2",
+      "imageHint": "雨音・音源",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02096-n-01-e01",
+          "en": "I heard a strange sound outside.",
+          "ja": "外から変な音が聞こえました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02096-n-01-e02",
+          "en": "The sound of rain helped me relax.",
+          "ja": "雨の音は私をリラックスさせてくれました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 86
+    },
+    {
+      "senseId": "VD-02096-v-01",
+      "wordId": "VD-02096",
+      "headword": "sound",
+      "partOfSpeech": "verb",
+      "meaningJa": "〜のように聞こえる",
+      "definitionEn": "to give an impression when heard or described",
+      "synonyms": "seem",
+      "cefrHeadword": "A2",
+      "imageHint": "提案を聞く場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02096-v-01-e01",
+          "en": "That sounds exciting.",
+          "ja": "それはわくわくしそうですね。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02096-v-01-e02",
+          "en": "Your idea sounds good to me.",
+          "ja": "あなたの考えは私にはよさそうに思えます。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 88
+    },
+    {
+      "senseId": "VD-02096-adj-01",
+      "wordId": "VD-02096",
+      "headword": "sound",
+      "partOfSpeech": "adjective",
+      "meaningJa": "健全な・確かな",
+      "definitionEn": "based on good judgment and likely to be reliable",
+      "synonyms": "solid; reliable",
+      "cefrHeadword": "A2",
+      "imageHint": "計画を相談",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02096-adj-01-e01",
+          "en": "She gave me sound advice.",
+          "ja": "彼女は私に的確な助言をくれました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02096-adj-01-e02",
+          "en": "We need a sound plan before we begin.",
+          "ja": "始める前にしっかりした計画が必要です。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 90
+    },
+    {
+      "senseId": "VD-00572-v-01",
+      "wordId": "VD-00572",
+      "headword": "mean",
+      "partOfSpeech": "verb",
+      "meaningJa": "意味する",
+      "definitionEn": "to express or represent an idea",
+      "synonyms": "signify; indicate",
+      "cefrHeadword": "A1",
+      "imageHint": "標識の意味",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00572-v-01-e01",
+          "en": "What does this word mean?",
+          "ja": "この単語はどういう意味ですか。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00572-v-01-e02",
+          "en": "A red sign can mean danger.",
+          "ja": "赤い標識は危険を意味することがあります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 92
+    },
+    {
+      "senseId": "VD-00572-v-02",
+      "wordId": "VD-00572",
+      "headword": "mean",
+      "partOfSpeech": "verb",
+      "meaningJa": "意図する",
+      "definitionEn": "to intend to say or do something",
+      "synonyms": "intend",
+      "cefrHeadword": "A1",
+      "imageHint": "意図を説明する会話",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00572-v-02-e01",
+          "en": "I didn't mean to hurt you.",
+          "ja": "あなたを傷つけるつもりはありませんでした。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00572-v-02-e02",
+          "en": "What did you mean by that comment?",
+          "ja": "その発言はどういう意図でしたか。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 94
+    },
+    {
+      "senseId": "VD-00572-adj-01",
+      "wordId": "VD-00572",
+      "headword": "mean",
+      "partOfSpeech": "adjective",
+      "meaningJa": "意地悪な",
+      "definitionEn": "unkind or deliberately hurtful",
+      "synonyms": "unkind; cruel",
+      "cefrHeadword": "A1",
+      "imageHint": "友人への気遣い",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00572-adj-01-e01",
+          "en": "It was mean of him to laugh at her.",
+          "ja": "彼女を笑うなんて彼は意地悪でした。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00572-adj-01-e02",
+          "en": "Don't be mean to your classmates.",
+          "ja": "クラスメートに意地悪をしないでください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 96
+    },
+    {
+      "senseId": "VD-00565-n-01",
+      "wordId": "VD-00565",
+      "headword": "match",
+      "partOfSpeech": "noun",
+      "meaningJa": "試合",
+      "definitionEn": "a sports event in which people compete",
+      "synonyms": "game; contest",
+      "cefrHeadword": "A1",
+      "imageHint": "サッカー試合",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00565-n-01-e01",
+          "en": "We won the soccer match.",
+          "ja": "私たちはサッカーの試合に勝ちました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00565-n-01-e02",
+          "en": "The match ended in a draw.",
+          "ja": "その試合は引き分けで終わりました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 98
+    },
+    {
+      "senseId": "VD-00565-v-01",
+      "wordId": "VD-00565",
+      "headword": "match",
+      "partOfSpeech": "verb",
+      "meaningJa": "合う・一致する",
+      "definitionEn": "to correspond or go well with something",
+      "synonyms": "correspond; fit",
+      "cefrHeadword": "A1",
+      "imageHint": "服の色合わせ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00565-v-01-e01",
+          "en": "Your shoes match your shirt.",
+          "ja": "あなたの靴はシャツと合っています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00565-v-01-e02",
+          "en": "The answer must match the question.",
+          "ja": "答えは質問と対応していなければなりません。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 100
+    },
+    {
+      "senseId": "VD-00565-n-02",
+      "wordId": "VD-00565",
+      "headword": "match",
+      "partOfSpeech": "noun",
+      "meaningJa": "マッチ・火をつける棒",
+      "definitionEn": "a small stick used to make a flame",
+      "synonyms": "matchstick",
+      "cefrHeadword": "A1",
+      "imageHint": "マッチ棒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00565-n-02-e01",
+          "en": "He struck a match in the dark.",
+          "ja": "彼は暗闇でマッチを擦りました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00565-n-02-e02",
+          "en": "Keep matches away from young children.",
+          "ja": "マッチは幼い子どもの手の届かない所に置いてください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 102
+    },
+    {
+      "senseId": "VD-01825-v-01",
+      "wordId": "VD-01825",
+      "headword": "pass",
+      "partOfSpeech": "verb",
+      "meaningJa": "試験に合格する",
+      "definitionEn": "to achieve the required standard in an exam",
+      "synonyms": "succeed in",
+      "cefrHeadword": "A2",
+      "imageHint": "合格通知",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01825-v-01-e01",
+          "en": "I passed the English test.",
+          "ja": "私は英語のテストに合格しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01825-v-01-e02",
+          "en": "She studied hard to pass the entrance exam.",
+          "ja": "彼女は入学試験に合格するために一生懸命勉強しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 104
+    },
+    {
+      "senseId": "VD-01825-v-02",
+      "wordId": "VD-01825",
+      "headword": "pass",
+      "partOfSpeech": "verb",
+      "meaningJa": "手渡す",
+      "definitionEn": "to give something to another person",
+      "synonyms": "hand; give",
+      "cefrHeadword": "A2",
+      "imageHint": "物を手渡す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01825-v-02-e01",
+          "en": "Please pass me the salt.",
+          "ja": "塩を取ってください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01825-v-02-e02",
+          "en": "He passed the ball to his teammate.",
+          "ja": "彼はチームメートにボールを渡しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 106
+    },
+    {
+      "senseId": "VD-01825-v-03",
+      "wordId": "VD-01825",
+      "headword": "pass",
+      "partOfSpeech": "verb",
+      "meaningJa": "通り過ぎる",
+      "definitionEn": "to move beyond a person or place",
+      "synonyms": "go by",
+      "cefrHeadword": "A2",
+      "imageHint": "通過する列車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01825-v-03-e01",
+          "en": "We passed the station on our way home.",
+          "ja": "帰宅途中に駅を通り過ぎました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01825-v-03-e02",
+          "en": "A train passed us at high speed.",
+          "ja": "列車が高速で私たちのそばを通過しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 108
+    },
+    {
+      "senseId": "VD-01825-n-01",
+      "wordId": "VD-01825",
+      "headword": "pass",
+      "partOfSpeech": "noun",
+      "meaningJa": "通行証・入場券",
+      "definitionEn": "a document permitting someone to enter a place",
+      "synonyms": "permit; admission card",
+      "cefrHeadword": "A2",
+      "imageHint": "入場パス",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01825-n-01-e01",
+          "en": "Show your pass at the gate.",
+          "ja": "門で通行証を見せてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01825-n-01-e02",
+          "en": "Students need a library pass after school.",
+          "ja": "生徒は放課後に図書館利用許可証が必要です。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 110
+    },
+    {
+      "senseId": "VD-00709-n-01",
+      "wordId": "VD-00709",
+      "headword": "point",
+      "partOfSpeech": "noun",
+      "meaningJa": "要点・主張",
+      "definitionEn": "an important idea in an explanation or argument",
+      "synonyms": "argument; idea",
+      "cefrHeadword": "A1",
+      "imageHint": "議論の要点",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00709-n-01-e01",
+          "en": "I understand your main point.",
+          "ja": "あなたの主な言いたいことはわかります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00709-n-01-e02",
+          "en": "She made an important point during the discussion.",
+          "ja": "彼女は討論中に重要な点を指摘しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 112
+    },
+    {
+      "senseId": "VD-00709-v-01",
+      "wordId": "VD-00709",
+      "headword": "point",
+      "partOfSpeech": "verb",
+      "meaningJa": "指さす",
+      "definitionEn": "to direct a finger toward something",
+      "synonyms": "indicate; gesture",
+      "cefrHeadword": "A1",
+      "imageHint": "地図を指さす",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00709-v-01-e01",
+          "en": "He pointed at the map.",
+          "ja": "彼は地図を指さしました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00709-v-01-e02",
+          "en": "Please point to the correct answer.",
+          "ja": "正しい答えを指さしてください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 114
+    },
+    {
+      "senseId": "VD-00709-n-02",
+      "wordId": "VD-00709",
+      "headword": "point",
+      "partOfSpeech": "noun",
+      "meaningJa": "得点",
+      "definitionEn": "a unit of score in a game or competition",
+      "synonyms": "score unit",
+      "cefrHeadword": "A1",
+      "imageHint": "スコアボード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00709-n-02-e01",
+          "en": "Our team scored ten points.",
+          "ja": "私たちのチームは10点を取りました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00709-n-02-e02",
+          "en": "She earned an extra point for her answer.",
+          "ja": "彼女は答えによって追加の1点を得ました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 116
+    },
+    {
+      "senseId": "VD-00267-v-01",
+      "wordId": "VD-00267",
+      "headword": "draw",
+      "partOfSpeech": "verb",
+      "meaningJa": "絵を描く",
+      "definitionEn": "to make a picture using lines",
+      "synonyms": "sketch; illustrate",
+      "cefrHeadword": "A1",
+      "imageHint": "スケッチ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00267-v-01-e01",
+          "en": "Can you draw a cat?",
+          "ja": "猫の絵を描けますか。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00267-v-01-e02",
+          "en": "She drew a picture of her hometown.",
+          "ja": "彼女は故郷の絵を描きました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 118
+    },
+    {
+      "senseId": "VD-00267-v-02",
+      "wordId": "VD-00267",
+      "headword": "draw",
+      "partOfSpeech": "verb",
+      "meaningJa": "引きつける",
+      "definitionEn": "to attract people or attention",
+      "synonyms": "attract",
+      "cefrHeadword": "A1",
+      "imageHint": "大勢が集まるイベント",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00267-v-02-e01",
+          "en": "The festival draws many visitors.",
+          "ja": "その祭りには多くの来場者が集まります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00267-v-02-e02",
+          "en": "His speech drew everyone's attention.",
+          "ja": "彼のスピーチは皆の注意を引きました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 120
+    },
+    {
+      "senseId": "VD-00267-n-01",
+      "wordId": "VD-00267",
+      "headword": "draw",
+      "partOfSpeech": "noun",
+      "meaningJa": "引き分け",
+      "definitionEn": "a game in which neither side wins",
+      "synonyms": "tie",
+      "cefrHeadword": "A1",
+      "imageHint": "同点の試合",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00267-n-01-e01",
+          "en": "The final result was a draw.",
+          "ja": "最終結果は引き分けでした。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00267-n-01-e02",
+          "en": "Both teams were satisfied with the draw.",
+          "ja": "両チームとも引き分けという結果に満足していました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 122
+    },
+    {
+      "senseId": "VD-02621-v-01",
+      "wordId": "VD-02621",
+      "headword": "charge",
+      "partOfSpeech": "verb",
+      "meaningJa": "料金を請求する",
+      "definitionEn": "to ask a customer to pay a price or fee",
+      "synonyms": "bill",
+      "cefrHeadword": "B1",
+      "imageHint": "料金表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02621-v-01-e01",
+          "en": "They charge five dollars for delivery.",
+          "ja": "彼らは配達料として5ドル請求します。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02621-v-01-e02",
+          "en": "The hotel charged us for breakfast.",
+          "ja": "ホテルは私たちに朝食代を請求しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 124
+    },
+    {
+      "senseId": "VD-02621-v-02",
+      "wordId": "VD-02621",
+      "headword": "charge",
+      "partOfSpeech": "verb",
+      "meaningJa": "充電する",
+      "definitionEn": "to put electrical energy into a battery",
+      "synonyms": "recharge",
+      "cefrHeadword": "B1",
+      "imageHint": "充電中の端末",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02621-v-02-e01",
+          "en": "I need to charge my phone.",
+          "ja": "携帯電話を充電する必要があります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02621-v-02-e02",
+          "en": "She charged her tablet overnight.",
+          "ja": "彼女は夜の間にタブレットを充電しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 126
+    },
+    {
+      "senseId": "VD-02621-n-01",
+      "wordId": "VD-02621",
+      "headword": "charge",
+      "partOfSpeech": "noun",
+      "meaningJa": "料金",
+      "definitionEn": "money asked for a product or service",
+      "synonyms": "fee; cost",
+      "cefrHeadword": "B1",
+      "imageHint": "料金明細",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-02621-n-01-e01",
+          "en": "There is no extra charge for students.",
+          "ja": "生徒に追加料金はかかりません。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-02621-n-01-e02",
+          "en": "The delivery charge is included in the price.",
+          "ja": "配達料金は価格に含まれています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 128
+    },
+    {
+      "senseId": "VD-01944-n-01",
+      "wordId": "VD-01944",
+      "headword": "record",
+      "partOfSpeech": "noun",
+      "meaningJa": "記録",
+      "definitionEn": "information kept about something that happened",
+      "synonyms": "document; account",
+      "cefrHeadword": "A2",
+      "imageHint": "記録帳",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01944-n-01-e01",
+          "en": "The teacher kept a record of attendance.",
+          "ja": "先生は出席の記録をつけました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01944-n-01-e02",
+          "en": "We need a clear record of our results.",
+          "ja": "私たちには結果の明確な記録が必要です。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 130
+    },
+    {
+      "senseId": "VD-01944-v-01",
+      "wordId": "VD-01944",
+      "headword": "record",
+      "partOfSpeech": "verb",
+      "meaningJa": "録音・録画する",
+      "definitionEn": "to store sound or images for later use",
+      "synonyms": "film; tape",
+      "cefrHeadword": "A2",
+      "imageHint": "録音マイク",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01944-v-01-e01",
+          "en": "We recorded our English presentation.",
+          "ja": "私たちは英語の発表を録画しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01944-v-01-e02",
+          "en": "Please record your voice for homework.",
+          "ja": "宿題用に自分の声を録音してください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 132
+    },
+    {
+      "senseId": "VD-01944-n-02",
+      "wordId": "VD-01944",
+      "headword": "record",
+      "partOfSpeech": "noun",
+      "meaningJa": "最高記録",
+      "definitionEn": "the best result officially achieved in an activity",
+      "synonyms": "best-ever result",
+      "cefrHeadword": "A2",
+      "imageHint": "スポーツの記録",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01944-n-02-e01",
+          "en": "He set a new school record.",
+          "ja": "彼は学校の新記録を樹立しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01944-n-02-e02",
+          "en": "The runner wants to beat the national record.",
+          "ja": "その走者は国内記録を破りたいと思っています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 134
+    },
+    {
+      "senseId": "VD-00720-n-01",
+      "wordId": "VD-00720",
+      "headword": "present",
+      "partOfSpeech": "noun",
+      "meaningJa": "贈り物",
+      "definitionEn": "something given to another person as a gift",
+      "synonyms": "gift",
+      "cefrHeadword": "A1",
+      "imageHint": "贈り物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00720-n-01-e01",
+          "en": "I bought a present for my friend.",
+          "ja": "私は友達に贈り物を買いました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00720-n-01-e02",
+          "en": "The children opened their presents together.",
+          "ja": "子どもたちは一緒に贈り物を開けました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 136
+    },
+    {
+      "senseId": "VD-00720-adj-01",
+      "wordId": "VD-00720",
+      "headword": "present",
+      "partOfSpeech": "adjective",
+      "meaningJa": "現在の",
+      "definitionEn": "existing or happening now",
+      "synonyms": "current",
+      "cefrHeadword": "A1",
+      "imageHint": "現在の状況",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00720-adj-01-e01",
+          "en": "Our present plan is to meet on Friday.",
+          "ja": "現在の私たちの予定は金曜日に集まることです。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00720-adj-01-e02",
+          "en": "We must consider the present situation.",
+          "ja": "私たちは現在の状況を考えなければなりません。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 138
+    },
+    {
+      "senseId": "VD-00720-v-01",
+      "wordId": "VD-00720",
+      "headword": "present",
+      "partOfSpeech": "verb",
+      "meaningJa": "発表する・提示する",
+      "definitionEn": "to show or explain information formally",
+      "synonyms": "deliver; introduce",
+      "cefrHeadword": "A1",
+      "imageHint": "プレゼンテーション",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00720-v-01-e01",
+          "en": "She presented her research in English.",
+          "ja": "彼女は研究を英語で発表しました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00720-v-01-e02",
+          "en": "The group will present its ideas tomorrow.",
+          "ja": "そのグループは明日考えを発表します。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 140
+    },
+    {
+      "senseId": "VD-01646-n-01",
+      "wordId": "VD-01646",
+      "headword": "interest",
+      "partOfSpeech": "noun",
+      "meaningJa": "興味・関心",
+      "definitionEn": "a desire to know more about something",
+      "synonyms": "curiosity",
+      "cefrHeadword": "A2",
+      "imageHint": "望遠鏡・音楽",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01646-n-01-e01",
+          "en": "I have an interest in astronomy.",
+          "ja": "私は天文学に興味があります。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01646-n-01-e02",
+          "en": "Her interest in music began at school.",
+          "ja": "彼女の音楽への関心は学校で始まりました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 142
+    },
+    {
+      "senseId": "VD-01646-n-02",
+      "wordId": "VD-01646",
+      "headword": "interest",
+      "partOfSpeech": "noun",
+      "meaningJa": "利子・金利",
+      "definitionEn": "money paid for using borrowed money or earned on savings",
+      "synonyms": "interest payment",
+      "cefrHeadword": "A2",
+      "imageHint": "貯金・銀行",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01646-n-02-e01",
+          "en": "The bank pays interest on savings.",
+          "ja": "銀行は預金に利子を支払います。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01646-n-02-e02",
+          "en": "Higher interest rates can increase borrowing costs.",
+          "ja": "金利が高いと借入費用が増えることがあります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 144
+    },
+    {
+      "senseId": "VD-01646-v-01",
+      "wordId": "VD-01646",
+      "headword": "interest",
+      "partOfSpeech": "verb",
+      "meaningJa": "興味を持たせる",
+      "definitionEn": "to make someone want to know more",
+      "synonyms": "engage; attract",
+      "cefrHeadword": "A2",
+      "imageHint": "ドキュメンタリーを見る",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01646-v-01-e01",
+          "en": "This topic interests many students.",
+          "ja": "この話題は多くの生徒の興味を引きます。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01646-v-01-e02",
+          "en": "The documentary interested me in ocean life.",
+          "ja": "そのドキュメンタリーをきっかけに海の生物に興味を持ちました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 146
+    },
+    {
+      "senseId": "VD-01929-v-01",
+      "wordId": "VD-01929",
+      "headword": "raise",
+      "partOfSpeech": "verb",
+      "meaningJa": "上げる",
+      "definitionEn": "to move something to a higher position",
+      "synonyms": "lift; elevate",
+      "cefrHeadword": "A2",
+      "imageHint": "手を挙げる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01929-v-01-e01",
+          "en": "Raise your hand if you know the answer.",
+          "ja": "答えがわかる人は手を挙げてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01929-v-01-e02",
+          "en": "They raised the flag at sunrise.",
+          "ja": "彼らは日の出に旗を掲げました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 148
+    },
+    {
+      "senseId": "VD-01929-v-02",
+      "wordId": "VD-01929",
+      "headword": "raise",
+      "partOfSpeech": "verb",
+      "meaningJa": "育てる",
+      "definitionEn": "to care for someone or something while it grows",
+      "synonyms": "bring up; grow",
+      "cefrHeadword": "A2",
+      "imageHint": "子育て・栽培",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01929-v-02-e01",
+          "en": "Her grandparents raised three children.",
+          "ja": "彼女の祖父母は3人の子どもを育てました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01929-v-02-e02",
+          "en": "The family raises vegetables in its garden.",
+          "ja": "その家族は庭で野菜を育てています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 150
+    },
+    {
+      "senseId": "VD-01929-v-03",
+      "wordId": "VD-01929",
+      "headword": "raise",
+      "partOfSpeech": "verb",
+      "meaningJa": "資金を集める",
+      "definitionEn": "to collect money for a purpose",
+      "synonyms": "collect; fundraise",
+      "cefrHeadword": "A2",
+      "imageHint": "募金",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-01929-v-03-e01",
+          "en": "We raised money for the library.",
+          "ja": "私たちは図書館のためにお金を集めました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-01929-v-03-e02",
+          "en": "The event aims to raise funds for disaster relief.",
+          "ja": "その催しは災害支援の資金集めを目的としています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 152
+    },
+    {
+      "senseId": "VD-00775-v-01",
+      "wordId": "VD-00775",
+      "headword": "save",
+      "partOfSpeech": "verb",
+      "meaningJa": "お金を貯める",
+      "definitionEn": "to keep money instead of spending it",
+      "synonyms": "put aside; accumulate",
+      "cefrHeadword": "A1",
+      "imageHint": "貯金箱",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00775-v-01-e01",
+          "en": "I save a little money every week.",
+          "ja": "私は毎週少しずつお金を貯めます。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00775-v-01-e02",
+          "en": "She is saving for a new computer.",
+          "ja": "彼女は新しいコンピューターのために貯金しています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 154
+    },
+    {
+      "senseId": "VD-00775-v-02",
+      "wordId": "VD-00775",
+      "headword": "save",
+      "partOfSpeech": "verb",
+      "meaningJa": "救う",
+      "definitionEn": "to protect someone from danger or death",
+      "synonyms": "rescue; protect",
+      "cefrHeadword": "A1",
+      "imageHint": "救助場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00775-v-02-e01",
+          "en": "The lifeguard saved the child.",
+          "ja": "監視員はその子どもを救いました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00775-v-02-e02",
+          "en": "Wearing a helmet can save lives.",
+          "ja": "ヘルメットをかぶることで命が救われることがあります。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 156
+    },
+    {
+      "senseId": "VD-00775-v-03",
+      "wordId": "VD-00775",
+      "headword": "save",
+      "partOfSpeech": "verb",
+      "meaningJa": "保存する",
+      "definitionEn": "to store a file for later use",
+      "synonyms": "store; keep",
+      "cefrHeadword": "A1",
+      "imageHint": "保存ボタン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00775-v-03-e01",
+          "en": "Don't forget to save your file.",
+          "ja": "ファイルの保存を忘れないでください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00775-v-03-e02",
+          "en": "I saved the photo on my tablet.",
+          "ja": "私はその写真をタブレットに保存しました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 158
+    },
+    {
+      "senseId": "VD-00223-v-01",
+      "wordId": "VD-00223",
+      "headword": "cover",
+      "partOfSpeech": "verb",
+      "meaningJa": "覆う",
+      "definitionEn": "to put something over a surface",
+      "synonyms": "conceal; blanket",
+      "cefrHeadword": "A1",
+      "imageHint": "雪に覆われた山",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00223-v-01-e01",
+          "en": "Snow covered the mountain.",
+          "ja": "雪が山を覆いました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00223-v-01-e02",
+          "en": "She covered the food with a clean cloth.",
+          "ja": "彼女は食べ物を清潔な布で覆いました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 160
+    },
+    {
+      "senseId": "VD-00223-v-02",
+      "wordId": "VD-00223",
+      "headword": "cover",
+      "partOfSpeech": "verb",
+      "meaningJa": "扱う・取り上げる",
+      "definitionEn": "to include or discuss a topic",
+      "synonyms": "deal with; address",
+      "cefrHeadword": "A1",
+      "imageHint": "授業資料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00223-v-02-e01",
+          "en": "The lesson covers environmental problems.",
+          "ja": "その授業は環境問題を扱います。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00223-v-02-e02",
+          "en": "The report covers three different countries.",
+          "ja": "その報告書は3つの異なる国を取り上げています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 162
+    },
+    {
+      "senseId": "VD-00223-n-01",
+      "wordId": "VD-00223",
+      "headword": "cover",
+      "partOfSpeech": "noun",
+      "meaningJa": "表紙・カバー",
+      "definitionEn": "an outer part placed over something",
+      "synonyms": "wrapper; lid",
+      "cefrHeadword": "A1",
+      "imageHint": "本の表紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00223-n-01-e01",
+          "en": "The book has a blue cover.",
+          "ja": "その本には青い表紙がついています。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00223-n-01-e02",
+          "en": "Please put the cover back on the box.",
+          "ja": "箱にふたを戻してください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 164
+    },
+    {
+      "senseId": "VD-00505-v-01",
+      "wordId": "VD-00505",
+      "headword": "keep",
+      "partOfSpeech": "verb",
+      "meaningJa": "保持する・取っておく",
+      "definitionEn": "to continue to have something",
+      "synonyms": "retain",
+      "cefrHeadword": "A1",
+      "imageHint": "ノートの保管",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00505-v-01-e01",
+          "en": "You can keep this photo.",
+          "ja": "この写真を取っておいていいですよ。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00505-v-01-e02",
+          "en": "I keep my notes in a folder.",
+          "ja": "私はノートをフォルダーに保管しています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 166
+    },
+    {
+      "senseId": "VD-00505-v-02",
+      "wordId": "VD-00505",
+      "headword": "keep",
+      "partOfSpeech": "verb",
+      "meaningJa": "〜の状態を保つ",
+      "definitionEn": "to cause something to stay in a condition",
+      "synonyms": "maintain; preserve",
+      "cefrHeadword": "A1",
+      "imageHint": "清潔な教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00505-v-02-e01",
+          "en": "Please keep the classroom clean.",
+          "ja": "教室をきれいに保ってください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00505-v-02-e02",
+          "en": "Exercise helps keep us healthy.",
+          "ja": "運動は健康を保つのに役立ちます。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 168
+    },
+    {
+      "senseId": "VD-00505-v-03",
+      "wordId": "VD-00505",
+      "headword": "keep",
+      "partOfSpeech": "verb",
+      "meaningJa": "〜し続ける",
+      "definitionEn": "to continue doing an activity",
+      "synonyms": "continue; carry on",
+      "cefrHeadword": "A1",
+      "imageHint": "練習する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00505-v-03-e01",
+          "en": "Keep practicing every day.",
+          "ja": "毎日練習を続けてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00505-v-03-e02",
+          "en": "He kept asking questions until he understood.",
+          "ja": "彼は理解するまで質問し続けました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 170
+    },
+    {
+      "senseId": "VD-00790-v-01",
+      "wordId": "VD-00790",
+      "headword": "set",
+      "partOfSpeech": "verb",
+      "meaningJa": "置く",
+      "definitionEn": "to put something in a position",
+      "synonyms": "place; put",
+      "cefrHeadword": "A1",
+      "imageHint": "テーブルに置く",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00790-v-01-e01",
+          "en": "She set the cup on the table.",
+          "ja": "彼女はカップをテーブルに置きました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00790-v-01-e02",
+          "en": "He set his bag beside the chair.",
+          "ja": "彼はかばんを椅子の横に置きました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 172
+    },
+    {
+      "senseId": "VD-00790-v-02",
+      "wordId": "VD-00790",
+      "headword": "set",
+      "partOfSpeech": "verb",
+      "meaningJa": "設定する・決める",
+      "definitionEn": "to decide a time, value, or goal",
+      "synonyms": "establish; determine",
+      "cefrHeadword": "A1",
+      "imageHint": "アラーム設定",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00790-v-02-e01",
+          "en": "We set a goal for this month.",
+          "ja": "私たちは今月の目標を決めました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00790-v-02-e02",
+          "en": "Please set the alarm for six.",
+          "ja": "アラームを6時に設定してください。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 174
+    },
+    {
+      "senseId": "VD-00790-n-01",
+      "wordId": "VD-00790",
+      "headword": "set",
+      "partOfSpeech": "noun",
+      "meaningJa": "一式・セット",
+      "definitionEn": "a group of things that belong together",
+      "synonyms": "collection; group",
+      "cefrHeadword": "A1",
+      "imageHint": "色鉛筆セット",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00790-n-01-e01",
+          "en": "I bought a set of colored pencils.",
+          "ja": "私は色鉛筆のセットを買いました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00790-n-01-e02",
+          "en": "The teacher gave us a new set of questions.",
+          "ja": "先生は私たちに新しい問題一式を配りました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 176
+    },
+    {
+      "senseId": "VD-00657-n-01",
+      "wordId": "VD-00657",
+      "headword": "order",
+      "partOfSpeech": "noun",
+      "meaningJa": "順序",
+      "definitionEn": "the way things are arranged one after another",
+      "synonyms": "sequence; arrangement",
+      "cefrHeadword": "A1",
+      "imageHint": "順序カード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00657-n-01-e01",
+          "en": "Put the pictures in the correct order.",
+          "ja": "絵を正しい順序に並べてください。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00657-n-01-e02",
+          "en": "The events are shown in time order.",
+          "ja": "出来事は時間順に示されています。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 178
+    },
+    {
+      "senseId": "VD-00657-n-02",
+      "wordId": "VD-00657",
+      "headword": "order",
+      "partOfSpeech": "noun",
+      "meaningJa": "注文",
+      "definitionEn": "a request to buy goods or services",
+      "synonyms": "purchase request",
+      "cefrHeadword": "A1",
+      "imageHint": "料理の注文",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00657-n-02-e01",
+          "en": "Our order arrived late.",
+          "ja": "私たちの注文品は遅れて届きました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00657-n-02-e02",
+          "en": "The restaurant got our order wrong.",
+          "ja": "そのレストランは私たちの注文を間違えました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 180
+    },
+    {
+      "senseId": "VD-00657-v-01",
+      "wordId": "VD-00657",
+      "headword": "order",
+      "partOfSpeech": "verb",
+      "meaningJa": "命令する・指示する",
+      "definitionEn": "to tell someone firmly to do something",
+      "synonyms": "command; instruct",
+      "cefrHeadword": "A1",
+      "imageHint": "指示を出す人物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD-00657-v-01-e01",
+          "en": "The coach ordered the team to stop.",
+          "ja": "監督はチームに止まるよう命じました。",
+          "context": "基本文脈"
+        },
+        {
+          "id": "VD-00657-v-01-e02",
+          "en": "The officer ordered everyone to leave the area.",
+          "ja": "その警官は全員にその場所を離れるよう命じました。",
+          "context": "別文脈"
+        }
+      ],
+      "sourceRowStart": 182
+    }
+  ]
+}
