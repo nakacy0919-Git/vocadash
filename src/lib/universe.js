@@ -1,7 +1,9 @@
+import stageOne from '../data/universeStageOne.js';
 import {stageOneUniverse} from '../data/universe-stage1.js';
 // Voca Universe: authored semantic links, never quiz distractors.
 const rows = (values) => values.map(([word, meaning, type, tier]) => ({word, meaning, type, tier}));
 export const universeSeed = {
+  ...stageOne,
   distribute: rows([
     ['hand out','配る','synonym','core'],['distribution','分配・流通','family','core'],['deliver','届ける','related','core'],
     ['allocate','割り当てる','synonym','related'],['share','分け合う','related','related'],['distribute supplies','物資を配布する','collocation','related'],
