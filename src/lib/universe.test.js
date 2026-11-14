@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:727,links:2769});
+ assert.deepEqual(universeCoverage(),{heads:978,links:3773});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -70,4 +70,12 @@ test('eradicate is a full center with tiered learning links',()=>{
  const links=getRelations(lookupUniverse('eradicate'));
  assert.ok(links.some(x=>x.word==='eradication'&&x.type==='family'&&x.tier==='core'));
  assert.ok(links.some(x=>x.word==='extirpate'&&x.tier==='extended'));
+});
+
+test('school maps connect learning vocabulary across levels',()=>{
+ for(const w of ['reduce','evidence','examine','health','creative','laboratory','construct','approximately'])assert.ok(lookupUniverse(w).relatedWords.length>=4);
+ assert.ok(getRelations(lookupUniverse('examine')).some(x=>x.word==='scrutinize'&&x.tier==='extended'&&x.note));
+ assert.ok(getRelations(lookupUniverse('arrive')).some(x=>x.word==='reach'&&x.example));
+ assert.ok(getRelations(lookupUniverse('demand')).some(x=>x.word==='supply'&&x.type==='contrast'));
+ assert.ok(getRelations(lookupUniverse('pollution')).some(x=>x.word==='pollutant'&&x.type==='family'));
 });
