@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:978,links:3773});
+ assert.deepEqual(universeCoverage(),{heads:1022,links:3949});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -78,4 +78,12 @@ test('school maps connect learning vocabulary across levels',()=>{
  assert.ok(getRelations(lookupUniverse('arrive')).some(x=>x.word==='reach'&&x.example));
  assert.ok(getRelations(lookupUniverse('demand')).some(x=>x.word==='supply'&&x.type==='contrast'));
  assert.ok(getRelations(lookupUniverse('pollution')).some(x=>x.word==='pollutant'&&x.type==='family'));
+});
+
+test('school examples retain contextual meanings for inflections and phrases',()=>{
+ assert.equal(lookupUniverse('left').meaning,'出発した');
+ assert.ok(getRelations(lookupUniverse('left')).some(x=>x.word==='leave'&&x.type==='family'));
+ assert.ok(getRelations(lookupUniverse('account')).some(x=>x.word==='account for'&&x.type==='collocation'));
+ assert.ok(getRelations(lookupUniverse('across')).some(x=>x.word==='get across'));
+ assert.ok(getRelations(lookupUniverse('obliged')).some(x=>x.word==='obligation'&&x.type==='family'));
 });
