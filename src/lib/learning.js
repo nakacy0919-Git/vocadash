@@ -1,3 +1,4 @@
+import {CATEGORY_CATALOG} from './category.js';
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
@@ -15,6 +16,7 @@ export const CATALOG = [
     { id: 'regular', label: '第1回 KICK OFF' }, { id: 'regular2', label: '第2回 KICK OFF' },
   ] },
   { id: 'reading', label: '長文読解 語彙', short: '長文語彙', group: '学校教材', units: Array.from({ length: 15 }, (_, i) => ({ id: String(i + 1), label: 'Lesson ' + (i + 1) })) },
+  ...CATEGORY_CATALOG,
 ];
 
 export const STORAGE_KEY = 'vocadash-learning-v2';
@@ -46,7 +48,7 @@ export function normalizeWords(raw, courseId, unitId) {
     const english = prompt.replace('________', word);
     const japanese = String(item.japanese || '').replace('________', meaning || '（空欄）');
     return {
-      id: courseId + ':' + unitId + ':' + (item.id == null ? index : item.id),
+      id: item.learningId || courseId + ':' + unitId + ':' + (item.id == null ? index : item.id),
       word, meaning, english, prompt, japanese, explanation: item.explanation || '',
       etymology: item.etymology || detail?.etymology || '',
       pronunciation: item.pronunciation || '',
