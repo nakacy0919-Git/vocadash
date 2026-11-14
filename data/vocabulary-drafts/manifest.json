@@ -33,13 +33,14 @@
     "batches/original-20261114-b1-09.json",
     "batches/original-20261114-b1-10.json",
     "batches/original-20261114-b1-11.json",
-    "batches/original-20261114-b1-12.json"
+    "batches/original-20261114-b1-12.json",
+    "batches/original-20261114-b1-13.json"
   ],
   "totals": {
-    "distinctHeadwords": 1939,
-    "senses": 2426,
-    "examples": 4852,
-    "distinctExamples": 4852
+    "distinctHeadwords": 1997,
+    "senses": 2492,
+    "examples": 4984,
+    "distinctExamples": 4984
   },
   "quality": {
     "humanReviewed": false,
@@ -56,26 +57,29 @@
   "recentWork": {
     "source": "new original English-Japanese learning examples",
     "newBatches": [
-      "original-20261114-b1-07",
-      "original-20261114-b1-08",
-      "original-20261114-b1-09",
-      "original-20261114-b1-10",
-      "original-20261114-b1-11",
-      "original-20261114-b1-12"
+      "original-20261114-b1-13"
     ],
-    "headwordsAdded": 224,
-    "sensesAdded": 259,
-    "translatedExamplesAdded": 518,
+    "headwordsAdded": 58,
+    "sensesAdded": 66,
+    "translatedExamplesAdded": 132,
     "excludedExistingHeadwords": [
-      "financial",
-      "forecast",
-      "forgive",
-      "foundation",
-      "gain",
-      "generate",
-      "global",
-      "govern",
-      "habitat"
+      "ignore",
+      "illuminate",
+      "immediate",
+      "immigration",
+      "income",
+      "independent",
+      "inevitable",
+      "ingredient",
+      "initial",
+      "inject",
+      "insight",
+      "insist",
+      "inspire",
+      "intend",
+      "intense",
+      "intention",
+      "internal"
     ],
     "newExamplesDuplicatingPrior": 0
   },
