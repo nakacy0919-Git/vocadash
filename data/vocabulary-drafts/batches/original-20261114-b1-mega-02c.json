@@ -1,0 +1,4765 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261114-b1-mega-02c",
+  "sourceKind": "github-original",
+  "records": [
+    {
+      "senseId": "VDO-261114-MEGA2C-00001",
+      "wordId": "VD-03891",
+      "headword": "relate",
+      "partOfSpeech": "verb",
+      "meaningJa": "関連づける",
+      "definitionEn": "to connect one thing to another",
+      "synonyms": "associate",
+      "cefrHeadword": "B1",
+      "imageHint": "二つの事象を結ぶ図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00001-e01",
+          "en": "Relate the findings to your original question.",
+          "ja": "結果を最初の問いと関連づけてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00001-e02",
+          "en": "She related the story to her own experience.",
+          "ja": "彼女は物語を自分の経験と結びつけました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00002",
+      "wordId": "VD-03892",
+      "headword": "relation",
+      "partOfSpeech": "noun",
+      "meaningJa": "関係・関連",
+      "definitionEn": "a connection between people or things",
+      "synonyms": "connection",
+      "cefrHeadword": "B1",
+      "imageHint": "二つのデータの関係",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00002-e01",
+          "en": "The chart shows the relation between rainfall and crop growth.",
+          "ja": "図は降水量と作物の成長の関係を示します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00002-e02",
+          "en": "The two nations have close trade relations.",
+          "ja": "両国は緊密な貿易関係にあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00003",
+      "wordId": "VD-03893",
+      "headword": "relationship",
+      "partOfSpeech": "noun",
+      "meaningJa": "関係・人間関係",
+      "definitionEn": "the way people or things are connected",
+      "synonyms": "connection",
+      "cefrHeadword": "B1",
+      "imageHint": "協力する友人たち",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00003-e01",
+          "en": "Trust strengthens a relationship.",
+          "ja": "信頼は人間関係を強くします。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00003-e02",
+          "en": "We examined the relationship between exercise and sleep.",
+          "ja": "運動と睡眠の関係を調べました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00004",
+      "wordId": "VD-03894",
+      "headword": "relative",
+      "partOfSpeech": "noun",
+      "meaningJa": "親戚",
+      "definitionEn": "a member of one's extended family",
+      "synonyms": "family member",
+      "cefrHeadword": "B1",
+      "imageHint": "親戚の集まり",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00004-e01",
+          "en": "Several relatives came to our house.",
+          "ja": "数人の親戚が家に来ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00004-e02",
+          "en": "She stayed with a relative during the trip.",
+          "ja": "彼女は旅行中に親戚の家に泊まりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00005",
+      "wordId": "VD-03894",
+      "headword": "relative",
+      "partOfSpeech": "adjective",
+      "meaningJa": "相対的な",
+      "definitionEn": "considered in comparison with something else",
+      "synonyms": "comparative",
+      "cefrHeadword": "B1",
+      "imageHint": "二つの物を比較する図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00005-e01",
+          "en": "The graph compares the relative sizes of the planets.",
+          "ja": "グラフは惑星の相対的な大きさを比較しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00005-e02",
+          "en": "The relative importance of each factor varies.",
+          "ja": "それぞれの要因の相対的な重要性は異なります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00006",
+      "wordId": "VD-03895",
+      "headword": "relatively",
+      "partOfSpeech": "adverb",
+      "meaningJa": "比較的",
+      "definitionEn": "to a degree considered in comparison with others",
+      "synonyms": "comparatively",
+      "cefrHeadword": "B1",
+      "imageHint": "比較的穏やかな海",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00006-e01",
+          "en": "The water was relatively calm.",
+          "ja": "水面は比較的穏やかでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00006-e02",
+          "en": "The instructions were relatively easy to follow.",
+          "ja": "説明書は比較的理解しやすかったです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00007",
+      "wordId": "VD-03896",
+      "headword": "relaxing",
+      "partOfSpeech": "adjective",
+      "meaningJa": "くつろげる",
+      "definitionEn": "making someone feel calm and less tense",
+      "synonyms": "soothing",
+      "cefrHeadword": "B1",
+      "imageHint": "静かな庭で休む人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00007-e01",
+          "en": "We spent a relaxing afternoon in the garden.",
+          "ja": "庭でくつろげる午後を過ごしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00007-e02",
+          "en": "The gentle music was relaxing.",
+          "ja": "穏やかな音楽でリラックスできました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00008",
+      "wordId": "VD-03898",
+      "headword": "religion",
+      "partOfSpeech": "noun",
+      "meaningJa": "宗教",
+      "definitionEn": "a system of spiritual beliefs and practices",
+      "synonyms": "faith (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "宗教文化の展示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00008-e01",
+          "en": "The course explores religion and society.",
+          "ja": "講座は宗教と社会について探究します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00008-e02",
+          "en": "People of different religions attended the event.",
+          "ja": "異なる宗教の人々がその行事に参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00009",
+      "wordId": "VD-03899",
+      "headword": "religious",
+      "partOfSpeech": "adjective",
+      "meaningJa": "宗教の・信仰深い",
+      "definitionEn": "connected with religion or showing devotion to it",
+      "synonyms": "faith-related",
+      "cefrHeadword": "B1",
+      "imageHint": "宗教的建造物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00009-e01",
+          "en": "The building is used for religious ceremonies.",
+          "ja": "その建物は宗教儀式に使われています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00009-e02",
+          "en": "We learned about several religious traditions.",
+          "ja": "いくつかの宗教的伝統を学びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00010",
+      "wordId": "VD-03901",
+      "headword": "remainder",
+      "partOfSpeech": "noun",
+      "meaningJa": "残り",
+      "definitionEn": "the part left after the rest is removed",
+      "synonyms": "rest",
+      "cefrHeadword": "B1",
+      "imageHint": "残りの材料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00010-e01",
+          "en": "Store the remainder in the refrigerator.",
+          "ja": "残りは冷蔵庫に保管してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00010-e02",
+          "en": "We spent the remainder of the day reading.",
+          "ja": "残りの一日は読書をして過ごしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00011",
+      "wordId": "VD-03902",
+      "headword": "remark",
+      "partOfSpeech": "noun",
+      "meaningJa": "発言・意見",
+      "definitionEn": "a spoken or written comment",
+      "synonyms": "comment",
+      "cefrHeadword": "B1",
+      "imageHint": "会議での発言",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00011-e01",
+          "en": "Her remark started an interesting discussion.",
+          "ja": "彼女の発言から興味深い議論が始まりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00011-e02",
+          "en": "I appreciated his encouraging remarks.",
+          "ja": "彼の励ましの言葉がありがたかったです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00012",
+      "wordId": "VD-03902",
+      "headword": "remark",
+      "partOfSpeech": "verb",
+      "meaningJa": "述べる",
+      "definitionEn": "to say something as a comment",
+      "synonyms": "comment",
+      "cefrHeadword": "B1",
+      "imageHint": "景色について話す人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00012-e01",
+          "en": "She remarked that the sky looked unusually clear.",
+          "ja": "彼女は空がいつになく澄んでいると述べました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00012-e02",
+          "en": "The guide remarked on the age of the trees.",
+          "ja": "ガイドは木々の樹齢について述べました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00013",
+      "wordId": "VD-03903",
+      "headword": "remarkable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "注目すべき・すばらしい",
+      "definitionEn": "unusual enough to attract attention",
+      "synonyms": "extraordinary",
+      "cefrHeadword": "B1",
+      "imageHint": "優れた発明品",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00013-e01",
+          "en": "The invention was a remarkable achievement.",
+          "ja": "その発明は注目すべき成果でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00013-e02",
+          "en": "We witnessed a remarkable change in the landscape.",
+          "ja": "景色の著しい変化を目にしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00014",
+      "wordId": "VD-03905",
+      "headword": "remembrance",
+      "partOfSpeech": "noun",
+      "meaningJa": "追悼・思い出すこと",
+      "definitionEn": "the act of remembering a person or event",
+      "synonyms": "commemoration",
+      "cefrHeadword": "B1",
+      "imageHint": "追悼の花束",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00014-e01",
+          "en": "The town held a ceremony of remembrance.",
+          "ja": "町は追悼式を開きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00014-e02",
+          "en": "They planted a tree in remembrance of their teacher.",
+          "ja": "先生をしのんで木を植えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00015",
+      "wordId": "VD-03906",
+      "headword": "remote control",
+      "partOfSpeech": "noun",
+      "meaningJa": "リモコン",
+      "definitionEn": "a device for controlling equipment from a distance",
+      "synonyms": "remote",
+      "cefrHeadword": "B1",
+      "imageHint": "テレビのリモコン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00015-e01",
+          "en": "The remote control was under the cushion.",
+          "ja": "リモコンはクッションの下にありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00015-e02",
+          "en": "Use the remote control to adjust the volume.",
+          "ja": "リモコンで音量を調整してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00016",
+      "wordId": "VD-03907",
+      "headword": "remove",
+      "partOfSpeech": "verb",
+      "meaningJa": "取り除く・外す",
+      "definitionEn": "to take something away from a place",
+      "synonyms": "take away",
+      "cefrHeadword": "B1",
+      "imageHint": "ラベルをはがす手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00016-e01",
+          "en": "Remove the protective film before use.",
+          "ja": "使用前に保護フィルムをはがしてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00016-e02",
+          "en": "We removed the weeds around the seedlings.",
+          "ja": "苗の周りの雑草を取り除きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00017",
+      "wordId": "VD-03908",
+      "headword": "renew",
+      "partOfSpeech": "verb",
+      "meaningJa": "更新する・新たにする",
+      "definitionEn": "to make something valid or active again",
+      "synonyms": "extend (validity)",
+      "cefrHeadword": "B1",
+      "imageHint": "更新された会員証",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00017-e01",
+          "en": "I need to renew my library card.",
+          "ja": "図書館のカードを更新する必要があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00017-e02",
+          "en": "The experience renewed her interest in science.",
+          "ja": "その経験で彼女の科学への関心が再び高まりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00018",
+      "wordId": "VD-03909",
+      "headword": "repay",
+      "partOfSpeech": "verb",
+      "meaningJa": "返済する・恩に報いる",
+      "definitionEn": "to pay back money or return a kindness",
+      "synonyms": "pay back",
+      "cefrHeadword": "B1",
+      "imageHint": "借金を返済する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00018-e01",
+          "en": "He repaid the loan in small installments.",
+          "ja": "彼は借金を少しずつ返済しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00018-e02",
+          "en": "We wanted to repay their kindness.",
+          "ja": "彼らの親切に報いたいと思いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00019",
+      "wordId": "VD-03910",
+      "headword": "repeatedly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "繰り返し",
+      "definitionEn": "many times",
+      "synonyms": "again and again",
+      "cefrHeadword": "B1",
+      "imageHint": "繰り返し練習する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00019-e01",
+          "en": "She practiced the difficult passage repeatedly.",
+          "ja": "彼女は難しい部分を繰り返し練習しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00019-e02",
+          "en": "The alarm sounded repeatedly throughout the test.",
+          "ja": "試験中ずっと警報が繰り返し鳴りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00020",
+      "wordId": "VD-03911",
+      "headword": "representative",
+      "partOfSpeech": "noun",
+      "meaningJa": "代表者",
+      "definitionEn": "a person chosen to speak or act for others",
+      "synonyms": "delegate",
+      "cefrHeadword": "B1",
+      "imageHint": "代表者が集まる会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00020-e01",
+          "en": "Each group sent a representative to the meeting.",
+          "ja": "各グループは会議に代表者を送りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00020-e02",
+          "en": "A company representative answered our questions.",
+          "ja": "会社の代表者が質問に答えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00021",
+      "wordId": "VD-03913",
+      "headword": "republic",
+      "partOfSpeech": "noun",
+      "meaningJa": "共和国",
+      "definitionEn": "a state whose head is not a hereditary monarch",
+      "synonyms": "republican state",
+      "cefrHeadword": "B1",
+      "imageHint": "共和国の議事堂",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00021-e01",
+          "en": "The country became a republic after independence.",
+          "ja": "その国は独立後に共和国になりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00021-e02",
+          "en": "The textbook compares a republic with a monarchy.",
+          "ja": "教科書は共和国と君主国を比較しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00022",
+      "wordId": "VD-03914",
+      "headword": "reputation",
+      "partOfSpeech": "noun",
+      "meaningJa": "評判・名声",
+      "definitionEn": "the general opinion people have of someone or something",
+      "synonyms": "standing",
+      "cefrHeadword": "B1",
+      "imageHint": "評判の良い店",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00022-e01",
+          "en": "The bakery has a reputation for fresh bread.",
+          "ja": "そのパン屋は焼きたてのパンで評判です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00022-e02",
+          "en": "The team's reputation grew through hard work.",
+          "ja": "チームの評判は努力によって高まりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00023",
+      "wordId": "VD-03916",
+      "headword": "requirement",
+      "partOfSpeech": "noun",
+      "meaningJa": "要件・必要条件",
+      "definitionEn": "something that must be provided or satisfied",
+      "synonyms": "condition",
+      "cefrHeadword": "B1",
+      "imageHint": "応募要件の一覧",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00023-e01",
+          "en": "An essay is a requirement for the application.",
+          "ja": "作文は応募の必須条件です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00023-e02",
+          "en": "The device meets all safety requirements.",
+          "ja": "その機器は安全要件をすべて満たしています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00024",
+      "wordId": "VD-03917",
+      "headword": "rescue",
+      "partOfSpeech": "noun",
+      "meaningJa": "救助",
+      "definitionEn": "the act of saving someone from danger",
+      "synonyms": "saving",
+      "cefrHeadword": "B1",
+      "imageHint": "救助隊の活動",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00024-e01",
+          "en": "The rescue took several hours.",
+          "ja": "救助には数時間かかりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00024-e02",
+          "en": "The film describes a dramatic mountain rescue.",
+          "ja": "映画は劇的な山岳救助を描いています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00025",
+      "wordId": "VD-03917",
+      "headword": "rescue",
+      "partOfSpeech": "verb",
+      "meaningJa": "救助する",
+      "definitionEn": "to save someone or something from danger",
+      "synonyms": "save",
+      "cefrHeadword": "B1",
+      "imageHint": "動物を救助する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00025-e01",
+          "en": "The crew rescued a stranded sailor.",
+          "ja": "乗組員は立ち往生した船員を救助しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00025-e02",
+          "en": "Volunteers rescued the kitten from the drain.",
+          "ja": "ボランティアは排水溝から子猫を救助しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00026",
+      "wordId": "VD-03918",
+      "headword": "researcher",
+      "partOfSpeech": "noun",
+      "meaningJa": "研究者",
+      "definitionEn": "a person who investigates a subject systematically",
+      "synonyms": "investigator",
+      "cefrHeadword": "B1",
+      "imageHint": "実験する研究者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00026-e01",
+          "en": "The researcher collected water samples.",
+          "ja": "研究者は水の試料を採取しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00026-e02",
+          "en": "A young researcher presented the findings.",
+          "ja": "若い研究者が研究結果を発表しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00027",
+      "wordId": "VD-03919",
+      "headword": "resemble",
+      "partOfSpeech": "verb",
+      "meaningJa": "似ている",
+      "definitionEn": "to look or be like someone or something",
+      "synonyms": "look like",
+      "cefrHeadword": "B1",
+      "imageHint": "似ている二つの葉",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00027-e01",
+          "en": "The leaves resemble small hearts.",
+          "ja": "葉は小さなハートに似ています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00027-e02",
+          "en": "His drawing closely resembles the original photograph.",
+          "ja": "彼の絵は元の写真によく似ています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00028",
+      "wordId": "VD-03920",
+      "headword": "reservation",
+      "partOfSpeech": "noun",
+      "meaningJa": "予約",
+      "definitionEn": "an arrangement to keep a place or service for someone",
+      "synonyms": "booking",
+      "cefrHeadword": "B1",
+      "imageHint": "ホテルの予約確認",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00028-e01",
+          "en": "We made a reservation for six people.",
+          "ja": "6人分の予約をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00028-e02",
+          "en": "Please confirm your reservation by email.",
+          "ja": "メールで予約を確認してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00029",
+      "wordId": "VD-03920",
+      "headword": "reservation",
+      "partOfSpeech": "noun",
+      "meaningJa": "懸念・留保",
+      "definitionEn": "a doubt about accepting an idea completely",
+      "synonyms": "doubt",
+      "cefrHeadword": "B1",
+      "imageHint": "提案に慎重な人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00029-e01",
+          "en": "She expressed reservations about the plan.",
+          "ja": "彼女はその計画に懸念を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00029-e02",
+          "en": "I support the idea, with one reservation.",
+          "ja": "一つ懸念はありますが、その考えを支持します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00030",
+      "wordId": "VD-03921",
+      "headword": "reserve",
+      "partOfSpeech": "verb",
+      "meaningJa": "予約する・取っておく",
+      "definitionEn": "to arrange for something to be kept for later use",
+      "synonyms": "book (booking)",
+      "cefrHeadword": "B1",
+      "imageHint": "予約された座席",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00030-e01",
+          "en": "We reserved a room for the workshop.",
+          "ja": "講習会用に部屋を予約しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00030-e02",
+          "en": "Reserve some dough for the decoration.",
+          "ja": "飾り付け用に生地を少し取っておいてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00031",
+      "wordId": "VD-03921",
+      "headword": "reserve",
+      "partOfSpeech": "noun",
+      "meaningJa": "備え・蓄え",
+      "definitionEn": "a supply kept for future need",
+      "synonyms": "stock (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "備蓄された食料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00031-e01",
+          "en": "The village keeps a reserve of drinking water.",
+          "ja": "村は飲料水を備蓄しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00031-e02",
+          "en": "The battery provides a small energy reserve.",
+          "ja": "電池は少量の予備エネルギーを供給します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00032",
+      "wordId": "VD-03922",
+      "headword": "resident",
+      "partOfSpeech": "noun",
+      "meaningJa": "住民",
+      "definitionEn": "a person who lives in a particular place",
+      "synonyms": "inhabitant",
+      "cefrHeadword": "B1",
+      "imageHint": "町の住民",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00032-e01",
+          "en": "Residents gathered to discuss the park.",
+          "ja": "住民は公園について話し合うために集まりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00032-e02",
+          "en": "Every resident received a copy of the notice.",
+          "ja": "住民全員にお知らせが配られました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00033",
+      "wordId": "VD-03922",
+      "headword": "resident",
+      "partOfSpeech": "adjective",
+      "meaningJa": "居住している・常駐の",
+      "definitionEn": "living or working regularly at a place",
+      "synonyms": "based (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "常駐するスタッフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00033-e01",
+          "en": "The center has a resident artist.",
+          "ja": "施設には常駐の芸術家がいます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00033-e02",
+          "en": "Resident staff can answer questions after hours.",
+          "ja": "常駐職員は営業時間外にも質問に答えられます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00034",
+      "wordId": "VD-03923",
+      "headword": "residential",
+      "partOfSpeech": "adjective",
+      "meaningJa": "住宅の・居住用の",
+      "definitionEn": "relating to places where people live",
+      "synonyms": "housing-related",
+      "cefrHeadword": "B1",
+      "imageHint": "静かな住宅地",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00034-e01",
+          "en": "The school is in a residential area.",
+          "ja": "学校は住宅地にあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00034-e02",
+          "en": "The city plans a new residential development.",
+          "ja": "市は新しい住宅開発を計画しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00035",
+      "wordId": "VD-03926",
+      "headword": "resort",
+      "partOfSpeech": "noun",
+      "meaningJa": "保養地・リゾート",
+      "definitionEn": "a place people visit for recreation or holidays",
+      "synonyms": "holiday destination",
+      "cefrHeadword": "B1",
+      "imageHint": "山のリゾート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00035-e01",
+          "en": "The mountain resort offers hiking trails.",
+          "ja": "山のリゾートにはハイキングコースがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00035-e02",
+          "en": "We stayed at a quiet seaside resort.",
+          "ja": "静かな海辺のリゾートに滞在しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00036",
+      "wordId": "VD-03926",
+      "headword": "resort",
+      "partOfSpeech": "verb",
+      "meaningJa": "頼る・訴える",
+      "definitionEn": "to use something as a last or unpleasant option",
+      "synonyms": "turn to",
+      "cefrHeadword": "B1",
+      "imageHint": "困難な問題への対処",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00036-e01",
+          "en": "They resorted to borrowing equipment.",
+          "ja": "彼らはやむを得ず機材を借りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00036-e02",
+          "en": "We solved the disagreement without resorting to threats.",
+          "ja": "脅しに訴えずに意見の違いを解決しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00037",
+      "wordId": "VD-03928",
+      "headword": "respect",
+      "partOfSpeech": "noun",
+      "meaningJa": "尊敬・尊重",
+      "definitionEn": "admiration or consideration for someone or something",
+      "synonyms": "regard",
+      "cefrHeadword": "B1",
+      "imageHint": "意見を尊重する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00037-e01",
+          "en": "The students showed respect for different opinions.",
+          "ja": "生徒たちは異なる意見を尊重しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00037-e02",
+          "en": "Her work earned the respect of her colleagues.",
+          "ja": "彼女の仕事は同僚の尊敬を得ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00038",
+      "wordId": "VD-03928",
+      "headword": "respect",
+      "partOfSpeech": "verb",
+      "meaningJa": "尊重する・敬う",
+      "definitionEn": "to treat someone or something with consideration",
+      "synonyms": "honor",
+      "cefrHeadword": "B1",
+      "imageHint": "規則を守る選手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00038-e01",
+          "en": "Please respect the privacy of other guests.",
+          "ja": "他の宿泊客のプライバシーを尊重してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00038-e02",
+          "en": "Both players respected each other's abilities.",
+          "ja": "両選手は互いの能力を尊重しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00039",
+      "wordId": "VD-03929",
+      "headword": "respectable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "立派な・まともな",
+      "definitionEn": "considered worthy of respect or reasonably good",
+      "synonyms": "reputable (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "立派な成果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00039-e01",
+          "en": "The runner achieved a respectable time.",
+          "ja": "走者は立派なタイムを記録しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00039-e02",
+          "en": "It is a respectable way to earn a living.",
+          "ja": "それは立派な生計の立て方です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00040",
+      "wordId": "VD-03932",
+      "headword": "responsible",
+      "partOfSpeech": "adjective",
+      "meaningJa": "責任がある・責任感のある",
+      "definitionEn": "having a duty or acting with good judgment",
+      "synonyms": "accountable",
+      "cefrHeadword": "B1",
+      "imageHint": "担当を確認する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00040-e01",
+          "en": "Who is responsible for organizing the event?",
+          "ja": "行事を企画する責任者は誰ですか。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00040-e02",
+          "en": "She is a responsible member of the team.",
+          "ja": "彼女は責任感のあるチームの一員です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00041",
+      "wordId": "VD-03933",
+      "headword": "rest",
+      "partOfSpeech": "noun",
+      "meaningJa": "残り",
+      "definitionEn": "the remaining part of a group or amount",
+      "synonyms": "remainder",
+      "cefrHeadword": "B1",
+      "imageHint": "残ったケーキ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00041-e01",
+          "en": "Save the rest for tomorrow.",
+          "ja": "残りは明日のために取っておいてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00041-e02",
+          "en": "The rest of the group arrived later.",
+          "ja": "グループの残りの人たちは後から到着しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00042",
+      "wordId": "VD-03933",
+      "headword": "rest",
+      "partOfSpeech": "noun",
+      "meaningJa": "休息",
+      "definitionEn": "a period of relaxation or reduced activity",
+      "synonyms": "break",
+      "cefrHeadword": "B1",
+      "imageHint": "ベンチで休む人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00042-e01",
+          "en": "A short rest helped us recover.",
+          "ja": "短い休息で元気を取り戻せました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00042-e02",
+          "en": "You deserve a rest after all that work.",
+          "ja": "あれだけ働いたのですから休息が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00043",
+      "wordId": "VD-03933",
+      "headword": "rest",
+      "partOfSpeech": "verb",
+      "meaningJa": "休む",
+      "definitionEn": "to stop activity in order to recover",
+      "synonyms": "relax",
+      "cefrHeadword": "B1",
+      "imageHint": "木陰で休む人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00043-e01",
+          "en": "We rested beneath a large tree.",
+          "ja": "大きな木の下で休みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00043-e02",
+          "en": "Rest your legs after the long walk.",
+          "ja": "長い散歩の後は脚を休めてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00044",
+      "wordId": "VD-03935",
+      "headword": "restrict",
+      "partOfSpeech": "verb",
+      "meaningJa": "制限する",
+      "definitionEn": "to limit the amount or freedom of something",
+      "synonyms": "limit",
+      "cefrHeadword": "B1",
+      "imageHint": "立ち入り制限の標識",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00044-e01",
+          "en": "The rules restrict access to the laboratory.",
+          "ja": "規則は実験室への立ち入りを制限しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00044-e02",
+          "en": "The narrow path restricts vehicle movement.",
+          "ja": "狭い道は車両の通行を制限します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00045",
+      "wordId": "VD-03936",
+      "headword": "retail",
+      "partOfSpeech": "noun",
+      "meaningJa": "小売",
+      "definitionEn": "the business of selling goods directly to consumers",
+      "synonyms": "retailing",
+      "cefrHeadword": "B1",
+      "imageHint": "小売店の売り場",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00045-e01",
+          "en": "She has worked in retail for ten years.",
+          "ja": "彼女は10年間小売業で働いています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00045-e02",
+          "en": "The course covers the basics of retail.",
+          "ja": "講座は小売業の基礎を扱います。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00046",
+      "wordId": "VD-03937",
+      "headword": "retain",
+      "partOfSpeech": "verb",
+      "meaningJa": "保持する・維持する",
+      "definitionEn": "to keep something rather than lose it",
+      "synonyms": "keep",
+      "cefrHeadword": "B1",
+      "imageHint": "熱を保つ容器",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00046-e01",
+          "en": "The container retains heat for a long time.",
+          "ja": "容器は長時間熱を保ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00046-e02",
+          "en": "Regular review helps learners retain vocabulary.",
+          "ja": "定期的な復習は語彙の定着を助けます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00047",
+      "wordId": "VD-03938",
+      "headword": "retell",
+      "partOfSpeech": "verb",
+      "meaningJa": "語り直す",
+      "definitionEn": "to tell a story again",
+      "synonyms": "recount",
+      "cefrHeadword": "B1",
+      "imageHint": "絵を見て話す生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00047-e01",
+          "en": "Retell the story in your own words.",
+          "ja": "自分の言葉で物語を語り直してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00047-e02",
+          "en": "The children retold the legend using pictures.",
+          "ja": "子どもたちは絵を使って伝説を語り直しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00048",
+      "wordId": "VD-03939",
+      "headword": "retrospect",
+      "partOfSpeech": "noun",
+      "meaningJa": "回顧・振り返り",
+      "definitionEn": "consideration of past events",
+      "synonyms": "hindsight",
+      "cefrHeadword": "B1",
+      "imageHint": "過去の写真を見る人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00048-e01",
+          "en": "In retrospect, the decision was reasonable.",
+          "ja": "振り返ってみると、その判断は合理的でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00048-e02",
+          "en": "The mistake seems obvious in retrospect.",
+          "ja": "後から考えると、その誤りは明らかに思えます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00049",
+      "wordId": "VD-03940",
+      "headword": "reunification",
+      "partOfSpeech": "noun",
+      "meaningJa": "再統一・再結合",
+      "definitionEn": "the process of bringing separated parts together again",
+      "synonyms": "reunion (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "分断された地域が結びつく地図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00049-e01",
+          "en": "The documentary examines political reunification.",
+          "ja": "ドキュメンタリーは政治的な再統一を考察します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00049-e02",
+          "en": "The families waited for reunification after the crisis.",
+          "ja": "家族は危機の後、再び一緒になれるのを待ちました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00050",
+      "wordId": "VD-03941",
+      "headword": "reunify",
+      "partOfSpeech": "verb",
+      "meaningJa": "再統一する",
+      "definitionEn": "to bring separated parts together again",
+      "synonyms": "reunite",
+      "cefrHeadword": "B1",
+      "imageHint": "分かれた地域を結ぶ図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00050-e01",
+          "en": "The agreement aimed to reunify the divided region.",
+          "ja": "合意は分断された地域の再統一を目指しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00050-e02",
+          "en": "The program helps reunify separated families.",
+          "ja": "プログラムは離れ離れになった家族が再び一緒になるのを支援します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00051",
+      "wordId": "VD-03943",
+      "headword": "revision",
+      "partOfSpeech": "noun",
+      "meaningJa": "修正・改訂",
+      "definitionEn": "a change made to improve a text or plan",
+      "synonyms": "amendment",
+      "cefrHeadword": "B1",
+      "imageHint": "文章を修正する手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00051-e01",
+          "en": "The essay needed one final revision.",
+          "ja": "作文には最後の修正が一つ必要でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00051-e02",
+          "en": "The latest revision includes clearer examples.",
+          "ja": "最新の改訂にはより明確な例が含まれています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00052",
+      "wordId": "VD-03943",
+      "headword": "revision",
+      "partOfSpeech": "noun",
+      "meaningJa": "復習（英）",
+      "definitionEn": "studying material again before an examination",
+      "synonyms": "review",
+      "cefrHeadword": "B1",
+      "imageHint": "試験前の復習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00052-e01",
+          "en": "We scheduled a revision session before the exam.",
+          "ja": "試験前に復習時間を設けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00052-e02",
+          "en": "Her revision focused on difficult vocabulary.",
+          "ja": "彼女の復習は難しい語彙に集中していました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00053",
+      "wordId": "VD-03944",
+      "headword": "reward",
+      "partOfSpeech": "noun",
+      "meaningJa": "報酬・ご褒美",
+      "definitionEn": "something given in return for effort or achievement",
+      "synonyms": "prize (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "努力に対する賞状",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00053-e01",
+          "en": "The certificate was a reward for months of practice.",
+          "ja": "証明書は数か月の練習への報酬でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00053-e02",
+          "en": "Helping others can be its own reward.",
+          "ja": "人を助けること自体が喜びになり得ます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00054",
+      "wordId": "VD-03944",
+      "headword": "reward",
+      "partOfSpeech": "verb",
+      "meaningJa": "報いる・褒美を与える",
+      "definitionEn": "to give something in recognition of effort",
+      "synonyms": "recompense",
+      "cefrHeadword": "B1",
+      "imageHint": "努力を表彰する先生",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00054-e01",
+          "en": "The competition rewards original thinking.",
+          "ja": "競技は独創的な思考を評価します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00054-e02",
+          "en": "The manager rewarded the staff for their hard work.",
+          "ja": "責任者は職員の努力に報いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00055",
+      "wordId": "VD-03945",
+      "headword": "rewrite",
+      "partOfSpeech": "verb",
+      "meaningJa": "書き直す",
+      "definitionEn": "to write something again in a different or improved form",
+      "synonyms": "revise",
+      "cefrHeadword": "B1",
+      "imageHint": "原稿を直す生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00055-e01",
+          "en": "Rewrite the paragraph using simpler language.",
+          "ja": "もっと簡潔な言葉で段落を書き直してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00055-e02",
+          "en": "She rewrote the ending after the discussion.",
+          "ja": "彼女は話し合いの後で結末を書き直しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00056",
+      "wordId": "VD-03946",
+      "headword": "rid",
+      "partOfSpeech": "verb",
+      "meaningJa": "取り除く",
+      "definitionEn": "to free someone or something from an unwanted thing",
+      "synonyms": "free (from)",
+      "cefrHeadword": "B1",
+      "imageHint": "不要な物を片付ける人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00056-e01",
+          "en": "We need to rid the garden of invasive plants.",
+          "ja": "庭から侵入植物を取り除く必要があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00056-e02",
+          "en": "He tried to get rid of unnecessary files.",
+          "ja": "彼は不要なファイルを削除しようとしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00057",
+      "wordId": "VD-03947",
+      "headword": "riddle",
+      "partOfSpeech": "noun",
+      "meaningJa": "なぞなぞ・謎",
+      "definitionEn": "a question or puzzle with a clever hidden answer",
+      "synonyms": "puzzle",
+      "cefrHeadword": "B1",
+      "imageHint": "なぞなぞを解く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00057-e01",
+          "en": "The guide gave us a riddle to solve.",
+          "ja": "ガイドはなぞなぞを出しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00057-e02",
+          "en": "The answer to the riddle made everyone laugh.",
+          "ja": "なぞなぞの答えで皆が笑いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00058",
+      "wordId": "VD-03947",
+      "headword": "riddle",
+      "partOfSpeech": "verb",
+      "meaningJa": "穴だらけにする・散りばめる",
+      "definitionEn": "to fill something with holes or unwanted features",
+      "synonyms": "perforate (literal)",
+      "cefrHeadword": "B1",
+      "imageHint": "穴の多い木板",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00058-e01",
+          "en": "Insects had riddled the old wood with holes.",
+          "ja": "虫が古い木材を穴だらけにしていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00058-e02",
+          "en": "The first draft was riddled with errors.",
+          "ja": "最初の原稿は誤りだらけでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00059",
+      "wordId": "VD-03948",
+      "headword": "ridiculous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "ばかげた",
+      "definitionEn": "extremely unreasonable or silly",
+      "synonyms": "absurd",
+      "cefrHeadword": "B1",
+      "imageHint": "非現実的な予定表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00059-e01",
+          "en": "That is a ridiculous price for a pencil.",
+          "ja": "鉛筆にしてはばかげた価格です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00059-e02",
+          "en": "The suggestion sounded ridiculous at first.",
+          "ja": "その提案は最初はばかげて聞こえました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00060",
+      "wordId": "VD-03949",
+      "headword": "ripe",
+      "partOfSpeech": "adjective",
+      "meaningJa": "熟した",
+      "definitionEn": "fully developed and ready to eat",
+      "synonyms": "mature (fruit)",
+      "cefrHeadword": "B1",
+      "imageHint": "熟したイチゴ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00060-e01",
+          "en": "These strawberries are ripe and sweet.",
+          "ja": "これらのイチゴは熟して甘いです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00060-e02",
+          "en": "Wait until the peaches are ripe.",
+          "ja": "桃が熟すまで待ってください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00061",
+      "wordId": "VD-03951",
+      "headword": "risk",
+      "partOfSpeech": "noun",
+      "meaningJa": "危険・リスク",
+      "definitionEn": "the possibility of harm or loss",
+      "synonyms": "hazard (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "危険度を示す標識",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00061-e01",
+          "en": "There is a risk of falling rocks.",
+          "ja": "落石の危険があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00061-e02",
+          "en": "The team assessed the risks before starting.",
+          "ja": "作業開始前にチームはリスクを評価しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00062",
+      "wordId": "VD-03951",
+      "headword": "risk",
+      "partOfSpeech": "verb",
+      "meaningJa": "危険を冒す",
+      "definitionEn": "to expose something to possible harm or loss",
+      "synonyms": "endanger",
+      "cefrHeadword": "B1",
+      "imageHint": "危険を避ける登山者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00062-e01",
+          "en": "Don't risk your safety for a photograph.",
+          "ja": "写真のために安全を危険にさらさないでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00062-e02",
+          "en": "We risk losing time if we take that route.",
+          "ja": "その経路を選ぶと時間を失う恐れがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00063",
+      "wordId": "VD-03952",
+      "headword": "roadside",
+      "partOfSpeech": "noun",
+      "meaningJa": "道路脇",
+      "definitionEn": "the area immediately beside a road",
+      "synonyms": "road edge",
+      "cefrHeadword": "B1",
+      "imageHint": "道路脇に咲く花",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00063-e01",
+          "en": "Wildflowers grew along the roadside.",
+          "ja": "道路脇に野草の花が咲いていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00063-e02",
+          "en": "We stopped at a roadside stand.",
+          "ja": "道路脇の売店に立ち寄りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00064",
+      "wordId": "VD-03953",
+      "headword": "robot",
+      "partOfSpeech": "noun",
+      "meaningJa": "ロボット",
+      "definitionEn": "a machine able to perform tasks automatically or under control",
+      "synonyms": "automaton (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "作業するロボット",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00064-e01",
+          "en": "The robot sorted the objects by color.",
+          "ja": "ロボットは物を色別に分類しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00064-e02",
+          "en": "Students designed a robot that could follow a line.",
+          "ja": "生徒たちは線に沿って走れるロボットを設計しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00065",
+      "wordId": "VD-03954",
+      "headword": "rolling",
+      "partOfSpeech": "adjective",
+      "meaningJa": "なだらかに起伏する",
+      "definitionEn": "having a series of gentle rises and falls",
+      "synonyms": "undulating",
+      "cefrHeadword": "B1",
+      "imageHint": "起伏のある丘",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00065-e01",
+          "en": "The path crossed rolling hills.",
+          "ja": "道はなだらかに起伏する丘を横切っていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00065-e02",
+          "en": "We watched sheep grazing in the rolling countryside.",
+          "ja": "起伏のある田園で羊が草を食べるのを見ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00066",
+      "wordId": "VD-03955",
+      "headword": "rotten",
+      "partOfSpeech": "adjective",
+      "meaningJa": "腐った",
+      "definitionEn": "decayed and no longer fresh",
+      "synonyms": "spoiled",
+      "cefrHeadword": "B1",
+      "imageHint": "腐った果物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00066-e01",
+          "en": "Throw away the rotten apples.",
+          "ja": "腐ったリンゴを捨ててください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00066-e02",
+          "en": "The fence had several rotten boards.",
+          "ja": "柵には腐った板が数枚ありました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00067",
+      "wordId": "VD-03956",
+      "headword": "rough",
+      "partOfSpeech": "adjective",
+      "meaningJa": "粗い・でこぼこした",
+      "definitionEn": "having an uneven or unpleasant surface",
+      "synonyms": "uneven",
+      "cefrHeadword": "B1",
+      "imageHint": "粗い木材",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00067-e01",
+          "en": "The wall felt rough to the touch.",
+          "ja": "壁は触るとざらざらしていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00067-e02",
+          "en": "The path became rough near the mountain summit.",
+          "ja": "山頂付近では道がでこぼこになりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00068",
+      "wordId": "VD-03956",
+      "headword": "rough",
+      "partOfSpeech": "adjective",
+      "meaningJa": "おおよその",
+      "definitionEn": "not exact or fully finished",
+      "synonyms": "approximate",
+      "cefrHeadword": "B1",
+      "imageHint": "下書きのスケッチ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00068-e01",
+          "en": "We made a rough estimate of the costs.",
+          "ja": "費用のおおよその見積もりを出しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00068-e02",
+          "en": "Draw a rough sketch before adding details.",
+          "ja": "細部を加える前に大まかなスケッチを描いてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00069",
+      "wordId": "VD-03957",
+      "headword": "routine",
+      "partOfSpeech": "noun",
+      "meaningJa": "日課・決まった手順",
+      "definitionEn": "a regular series of actions",
+      "synonyms": "habit (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "朝の日課",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00069-e01",
+          "en": "Stretching is part of my morning routine.",
+          "ja": "ストレッチは朝の日課の一部です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00069-e02",
+          "en": "The staff followed their usual safety routine.",
+          "ja": "職員はいつもの安全確認の手順に従いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00070",
+      "wordId": "VD-03958",
+      "headword": "rubber",
+      "partOfSpeech": "noun",
+      "meaningJa": "ゴム",
+      "definitionEn": "an elastic material used in many products",
+      "synonyms": "elastic material",
+      "cefrHeadword": "B1",
+      "imageHint": "ゴム製品",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00070-e01",
+          "en": "The soles are made of rubber.",
+          "ja": "靴底はゴムでできています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00070-e02",
+          "en": "We used a rubber band to hold the cards together.",
+          "ja": "輪ゴムでカードをまとめました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00071",
+      "wordId": "VD-03958",
+      "headword": "rubber",
+      "partOfSpeech": "noun",
+      "meaningJa": "消しゴム（英）",
+      "definitionEn": "an object used to remove pencil marks",
+      "synonyms": "eraser",
+      "cefrHeadword": "B1",
+      "imageHint": "鉛筆と消しゴム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00071-e01",
+          "en": "Can I borrow your rubber for a moment?",
+          "ja": "少し消しゴムを借りてもいいですか。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00071-e02",
+          "en": "She put a rubber in her pencil case.",
+          "ja": "彼女は筆箱に消しゴムを入れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00072",
+      "wordId": "VD-03959",
+      "headword": "rubbish",
+      "partOfSpeech": "noun",
+      "meaningJa": "ごみ・くだらないこと",
+      "definitionEn": "waste material or worthless talk",
+      "synonyms": "garbage (waste)",
+      "cefrHeadword": "B1",
+      "imageHint": "分別されたごみ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00072-e01",
+          "en": "Please put your rubbish in the bin.",
+          "ja": "ごみはごみ箱に入れてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00072-e02",
+          "en": "The claim turned out to be rubbish.",
+          "ja": "その主張はくだらないでたらめだと分かりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00073",
+      "wordId": "VD-03960",
+      "headword": "rudely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "失礼に",
+      "definitionEn": "in an impolite manner",
+      "synonyms": "impolitely",
+      "cefrHeadword": "B1",
+      "imageHint": "失礼な態度の会話",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00073-e01",
+          "en": "He rudely interrupted the speaker.",
+          "ja": "彼は失礼にも話し手を遮りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00073-e02",
+          "en": "The customer complained rudely to the cashier.",
+          "ja": "客はレジ係に失礼な態度で苦情を言いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00074",
+      "wordId": "VD-03961",
+      "headword": "runaway",
+      "partOfSpeech": "noun",
+      "meaningJa": "逃亡者・家出人",
+      "definitionEn": "a person who has run away from home or a place",
+      "synonyms": "fugitive (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "逃亡者を探す物語",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00074-e01",
+          "en": "The novel follows a young runaway.",
+          "ja": "小説は若い家出人を描きます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00074-e02",
+          "en": "The charity helps runaways find safe shelter.",
+          "ja": "慈善団体は家出人が安全な避難場所を見つけるのを支援します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00075",
+      "wordId": "VD-03962",
+      "headword": "runway",
+      "partOfSpeech": "noun",
+      "meaningJa": "滑走路",
+      "definitionEn": "a long surface used for aircraft takeoff and landing",
+      "synonyms": "airstrip",
+      "cefrHeadword": "B1",
+      "imageHint": "空港の滑走路",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00075-e01",
+          "en": "The plane waited beside the runway.",
+          "ja": "飛行機は滑走路の脇で待機しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00075-e02",
+          "en": "Heavy snow covered the runway.",
+          "ja": "大雪が滑走路を覆いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00076",
+      "wordId": "VD-03962",
+      "headword": "runway",
+      "partOfSpeech": "noun",
+      "meaningJa": "ファッションショーの花道",
+      "definitionEn": "a raised passage used by models to display clothes",
+      "synonyms": "catwalk",
+      "cefrHeadword": "B1",
+      "imageHint": "ファッションショー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00076-e01",
+          "en": "The model walked slowly down the runway.",
+          "ja": "モデルはゆっくり花道を歩きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00076-e02",
+          "en": "The students designed outfits for the school runway show.",
+          "ja": "生徒たちは学校のファッションショー用の衣装をデザインしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00077",
+      "wordId": "VD-03963",
+      "headword": "sacred",
+      "partOfSpeech": "adjective",
+      "meaningJa": "神聖な",
+      "definitionEn": "considered holy or worthy of deep respect",
+      "synonyms": "holy",
+      "cefrHeadword": "B1",
+      "imageHint": "神聖な森",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00077-e01",
+          "en": "The mountain is sacred to the local community.",
+          "ja": "その山は地域の人々にとって神聖です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00077-e02",
+          "en": "Visitors were asked to respect the sacred site.",
+          "ja": "訪問者は聖地を尊重するよう求められました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00078",
+      "wordId": "VD-03964",
+      "headword": "sadness",
+      "partOfSpeech": "noun",
+      "meaningJa": "悲しみ",
+      "definitionEn": "the feeling of being unhappy",
+      "synonyms": "sorrow",
+      "cefrHeadword": "B1",
+      "imageHint": "悲しみを表す絵",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00078-e01",
+          "en": "The song expresses sadness and hope.",
+          "ja": "その歌は悲しみと希望を表現しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00078-e02",
+          "en": "She felt sadness when the exchange ended.",
+          "ja": "交流が終わって彼女は寂しさを感じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00079",
+      "wordId": "VD-03965",
+      "headword": "safari",
+      "partOfSpeech": "noun",
+      "meaningJa": "野生動物観察旅行",
+      "definitionEn": "a journey to observe wild animals in their natural habitat",
+      "synonyms": "wildlife tour",
+      "cefrHeadword": "B1",
+      "imageHint": "サファリの車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00079-e01",
+          "en": "We saw elephants on a safari.",
+          "ja": "サファリでゾウを見ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00079-e02",
+          "en": "The safari guide explained the animals' behavior.",
+          "ja": "サファリのガイドは動物の行動を説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00080",
+      "wordId": "VD-03967",
+      "headword": "safely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "安全に",
+      "definitionEn": "without danger or harm",
+      "synonyms": "securely (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "安全に横断する子ども",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00080-e01",
+          "en": "The climbers returned safely before dark.",
+          "ja": "登山者は暗くなる前に無事戻りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00080-e02",
+          "en": "Store the glass safely away from the edge.",
+          "ja": "ガラスは端から離れた安全な場所に保管してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00081",
+      "wordId": "VD-03968",
+      "headword": "safety",
+      "partOfSpeech": "noun",
+      "meaningJa": "安全",
+      "definitionEn": "the condition of being protected from harm",
+      "synonyms": "security (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "安全確認をする作業者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00081-e01",
+          "en": "Safety is our first priority.",
+          "ja": "安全が最優先です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00081-e02",
+          "en": "The instructor reviewed the laboratory safety rules.",
+          "ja": "講師は実験室の安全規則を確認しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00082",
+      "wordId": "VD-03969",
+      "headword": "salesman",
+      "partOfSpeech": "noun",
+      "meaningJa": "男性販売員",
+      "definitionEn": "a man who sells goods or services",
+      "synonyms": "salesperson",
+      "cefrHeadword": "B1",
+      "imageHint": "店頭の販売員",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00082-e01",
+          "en": "The salesman explained the features of the bicycle.",
+          "ja": "販売員は自転車の特徴を説明しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00082-e02",
+          "en": "A salesman helped us choose a printer.",
+          "ja": "販売員がプリンター選びを手伝ってくれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00083",
+      "wordId": "VD-03970",
+      "headword": "salmon",
+      "partOfSpeech": "noun",
+      "meaningJa": "サケ",
+      "definitionEn": "a fish that often migrates between fresh and salt water",
+      "synonyms": "salmon fish",
+      "cefrHeadword": "B1",
+      "imageHint": "川を遡上するサケ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00083-e01",
+          "en": "Salmon return to rivers to reproduce.",
+          "ja": "サケは繁殖するため川に戻ります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00083-e02",
+          "en": "We baked salmon with lemon and herbs.",
+          "ja": "サケをレモンとハーブで焼きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00084",
+      "wordId": "VD-03971",
+      "headword": "sand",
+      "partOfSpeech": "noun",
+      "meaningJa": "砂",
+      "definitionEn": "small loose particles of rock or minerals",
+      "synonyms": "grains (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "砂浜の砂",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00084-e01",
+          "en": "The children built towers out of sand.",
+          "ja": "子どもたちは砂で塔を作りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00084-e02",
+          "en": "Sand collected inside my shoes.",
+          "ja": "靴の中に砂がたまりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00085",
+      "wordId": "VD-03972",
+      "headword": "sandal",
+      "partOfSpeech": "noun",
+      "meaningJa": "サンダル",
+      "definitionEn": "an open shoe held by straps",
+      "synonyms": "open shoe",
+      "cefrHeadword": "B1",
+      "imageHint": "夏のサンダル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00085-e01",
+          "en": "One of my sandals broke during the walk.",
+          "ja": "散歩中にサンダルの片方が壊れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00085-e02",
+          "en": "She wore sandals to the beach.",
+          "ja": "彼女は浜辺へサンダルを履いていきました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00086",
+      "wordId": "VD-03973",
+      "headword": "satellite",
+      "partOfSpeech": "noun",
+      "meaningJa": "人工衛星・衛星",
+      "definitionEn": "an object that orbits a planet or other larger body",
+      "synonyms": "orbiter (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "地球を回る人工衛星",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00086-e01",
+          "en": "A satellite photographed the coastline.",
+          "ja": "人工衛星が海岸線を撮影しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00086-e02",
+          "en": "The Moon is Earth's natural satellite.",
+          "ja": "月は地球の天然の衛星です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00087",
+      "wordId": "VD-03974",
+      "headword": "satisfaction",
+      "partOfSpeech": "noun",
+      "meaningJa": "満足",
+      "definitionEn": "a feeling of pleasure when a need or goal is met",
+      "synonyms": "contentment",
+      "cefrHeadword": "B1",
+      "imageHint": "完成品に満足する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00087-e01",
+          "en": "Finishing the model gave me great satisfaction.",
+          "ja": "模型の完成は大きな満足感を与えてくれました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00087-e02",
+          "en": "The survey measured visitor satisfaction.",
+          "ja": "アンケートは来場者の満足度を測定しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00088",
+      "wordId": "VD-03975",
+      "headword": "satisfied",
+      "partOfSpeech": "adjective",
+      "meaningJa": "満足した",
+      "definitionEn": "pleased because something meets expectations",
+      "synonyms": "content",
+      "cefrHeadword": "B1",
+      "imageHint": "結果に満足する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00088-e01",
+          "en": "Are you satisfied with your final draft?",
+          "ja": "最終原稿に満足していますか。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00088-e02",
+          "en": "The customers were satisfied with the service.",
+          "ja": "客はサービスに満足していました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00089",
+      "wordId": "VD-03976",
+      "headword": "saucepan",
+      "partOfSpeech": "noun",
+      "meaningJa": "片手鍋",
+      "definitionEn": "a deep cooking pan with a handle",
+      "synonyms": "pot (broader)",
+      "cefrHeadword": "B1",
+      "imageHint": "片手鍋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00089-e01",
+          "en": "Heat the milk in a small saucepan.",
+          "ja": "小さな片手鍋で牛乳を温めてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00089-e02",
+          "en": "The saucepan was still warm after cooking.",
+          "ja": "調理後も片手鍋は温かかったです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00090",
+      "wordId": "VD-03977",
+      "headword": "saucer",
+      "partOfSpeech": "noun",
+      "meaningJa": "受け皿",
+      "definitionEn": "a small plate placed under a cup",
+      "synonyms": "small plate",
+      "cefrHeadword": "B1",
+      "imageHint": "カップの受け皿",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00090-e01",
+          "en": "She placed the cup on its saucer.",
+          "ja": "彼女はカップを受け皿に置きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00090-e02",
+          "en": "A teaspoon rested on the saucer.",
+          "ja": "受け皿にはティースプーンが載っていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00091",
+      "wordId": "VD-03978",
+      "headword": "scan",
+      "partOfSpeech": "verb",
+      "meaningJa": "ざっと見る",
+      "definitionEn": "to look over something quickly for information",
+      "synonyms": "skim",
+      "cefrHeadword": "B1",
+      "imageHint": "文章を素早く読む人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00091-e01",
+          "en": "Scan the article for dates and names.",
+          "ja": "記事をざっと読んで日付と名前を探してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00091-e02",
+          "en": "He scanned the timetable for the next train.",
+          "ja": "次の列車を探すため時刻表に目を通しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00092",
+      "wordId": "VD-03978",
+      "headword": "scan",
+      "partOfSpeech": "verb",
+      "meaningJa": "読み取る・走査する",
+      "definitionEn": "to examine or capture something using a device",
+      "synonyms": "digitize (documents)",
+      "cefrHeadword": "B1",
+      "imageHint": "QRコードを読み取る人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00092-e01",
+          "en": "Scan the code to open the worksheet.",
+          "ja": "コードを読み取ってワークシートを開いてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00092-e02",
+          "en": "We scanned the old photographs for the archive.",
+          "ja": "保存用に古い写真をスキャンしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00093",
+      "wordId": "VD-03978",
+      "headword": "scan",
+      "partOfSpeech": "noun",
+      "meaningJa": "スキャン画像・検査",
+      "definitionEn": "an examination or image made by a scanning device",
+      "synonyms": "imaging (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "医療画像を見る医師",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00093-e01",
+          "en": "The doctor reviewed the scan.",
+          "ja": "医師は検査画像を確認しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00093-e02",
+          "en": "A scan of the document was stored online.",
+          "ja": "書類のスキャン画像がオンラインに保存されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00094",
+      "wordId": "VD-03979",
+      "headword": "scare",
+      "partOfSpeech": "verb",
+      "meaningJa": "怖がらせる",
+      "definitionEn": "to make someone feel frightened",
+      "synonyms": "frighten",
+      "cefrHeadword": "B1",
+      "imageHint": "突然の音に驚く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00094-e01",
+          "en": "The loud thunder scared the puppy.",
+          "ja": "大きな雷鳴が子犬を怖がらせました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00094-e02",
+          "en": "Try not to scare the birds near the nest.",
+          "ja": "巣の近くの鳥を怖がらせないようにしてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00095",
+      "wordId": "VD-03980",
+      "headword": "scared",
+      "partOfSpeech": "adjective",
+      "meaningJa": "怖がっている",
+      "definitionEn": "feeling afraid",
+      "synonyms": "frightened",
+      "cefrHeadword": "B1",
+      "imageHint": "初めて舞台に立つ生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00095-e01",
+          "en": "I was scared before my first speech.",
+          "ja": "初めてのスピーチ前は怖かったです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00095-e02",
+          "en": "The kitten looked scared in the unfamiliar room.",
+          "ja": "子猫は見知らぬ部屋で怖がっているようでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00096",
+      "wordId": "VD-03981",
+      "headword": "scary",
+      "partOfSpeech": "adjective",
+      "meaningJa": "恐ろしい",
+      "definitionEn": "causing fear",
+      "synonyms": "frightening",
+      "cefrHeadword": "B1",
+      "imageHint": "暗いトンネル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00096-e01",
+          "en": "The story was too scary for the children.",
+          "ja": "その物語は子どもたちには怖すぎました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00096-e02",
+          "en": "The sudden noise sounded scary in the dark.",
+          "ja": "暗闇で突然の音は恐ろしく聞こえました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00097",
+      "wordId": "VD-03982",
+      "headword": "scatter",
+      "partOfSpeech": "verb",
+      "meaningJa": "まき散らす・散らばる",
+      "definitionEn": "to spread in different directions",
+      "synonyms": "disperse",
+      "cefrHeadword": "B1",
+      "imageHint": "風に散る葉",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00097-e01",
+          "en": "The wind scattered leaves across the road.",
+          "ja": "風は道路に葉を散らしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00097-e02",
+          "en": "The birds scattered when the gate opened.",
+          "ja": "門が開くと鳥は散り散りになりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00098",
+      "wordId": "VD-03983",
+      "headword": "scenic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "景色の美しい",
+      "definitionEn": "having attractive natural views",
+      "synonyms": "picturesque",
+      "cefrHeadword": "B1",
+      "imageHint": "景色の美しい海岸道路",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00098-e01",
+          "en": "We took the scenic route along the coast.",
+          "ja": "景色の美しい海岸沿いの道を通りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00098-e02",
+          "en": "The hotel overlooks a scenic valley.",
+          "ja": "ホテルから美しい谷を見渡せます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00099",
+      "wordId": "VD-03984",
+      "headword": "scholar",
+      "partOfSpeech": "noun",
+      "meaningJa": "学者・研究者",
+      "definitionEn": "a person with extensive knowledge of an academic subject",
+      "synonyms": "academic",
+      "cefrHeadword": "B1",
+      "imageHint": "研究書を読む学者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00099-e01",
+          "en": "A scholar translated the ancient poem.",
+          "ja": "学者が古代の詩を翻訳しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00099-e02",
+          "en": "The lecture attracted scholars from several countries.",
+          "ja": "講義には数か国から学者が集まりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00100",
+      "wordId": "VD-03985",
+      "headword": "scholarship",
+      "partOfSpeech": "noun",
+      "meaningJa": "奨学金",
+      "definitionEn": "financial support for a student's education",
+      "synonyms": "study grant",
+      "cefrHeadword": "B1",
+      "imageHint": "奨学金を受け取る生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00100-e01",
+          "en": "She applied for a scholarship to study abroad.",
+          "ja": "彼女は留学のため奨学金に応募しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00100-e02",
+          "en": "The scholarship covered part of his tuition.",
+          "ja": "奨学金は彼の授業料の一部をまかないました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00101",
+      "wordId": "VD-03986",
+      "headword": "schoolmate",
+      "partOfSpeech": "noun",
+      "meaningJa": "学校の仲間",
+      "definitionEn": "a person who attends or attended the same school",
+      "synonyms": "fellow student",
+      "cefrHeadword": "B1",
+      "imageHint": "学校で再会する仲間",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00101-e01",
+          "en": "I met a former schoolmate at the station.",
+          "ja": "駅で昔の学校の仲間に会いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00101-e02",
+          "en": "She worked on the project with two schoolmates.",
+          "ja": "彼女は学校の仲間二人と企画に取り組みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00102",
+      "wordId": "VD-03987",
+      "headword": "schoolteacher",
+      "partOfSpeech": "noun",
+      "meaningJa": "学校の先生",
+      "definitionEn": "a person who teaches at a school",
+      "synonyms": "teacher",
+      "cefrHeadword": "B1",
+      "imageHint": "教室で指導する先生",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00102-e01",
+          "en": "Her father is a retired schoolteacher.",
+          "ja": "彼女の父は退職した学校教師です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00102-e02",
+          "en": "The story was written by a schoolteacher.",
+          "ja": "その物語は学校の先生によって書かれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00103",
+      "wordId": "VD-03988",
+      "headword": "science fiction",
+      "partOfSpeech": "noun",
+      "meaningJa": "SF・科学小説",
+      "definitionEn": "fiction involving imagined science or future technology",
+      "synonyms": "sci-fi",
+      "cefrHeadword": "B1",
+      "imageHint": "宇宙を舞台にした小説",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00103-e01",
+          "en": "We read a science fiction story about an ocean planet.",
+          "ja": "海の惑星についてのSF小説を読みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00103-e02",
+          "en": "Science fiction often explores the effects of new inventions.",
+          "ja": "SFはしばしば新しい発明の影響を探究します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00104",
+      "wordId": "VD-03989",
+      "headword": "scold",
+      "partOfSpeech": "verb",
+      "meaningJa": "叱る",
+      "definitionEn": "to speak angrily to someone about wrongdoing",
+      "synonyms": "reprimand",
+      "cefrHeadword": "B1",
+      "imageHint": "注意する保護者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00104-e01",
+          "en": "The coach scolded the players for leaving early.",
+          "ja": "コーチは早く帰った選手たちを叱りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00104-e02",
+          "en": "She tried to explain the mistake rather than scold him.",
+          "ja": "彼を叱るよりも間違いを説明しようとしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00105",
+      "wordId": "VD-03991",
+      "headword": "score",
+      "partOfSpeech": "noun",
+      "meaningJa": "得点・点数",
+      "definitionEn": "the number of points achieved in a game or test",
+      "synonyms": "result",
+      "cefrHeadword": "B1",
+      "imageHint": "得点板",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00105-e01",
+          "en": "The final score appeared on the screen.",
+          "ja": "最終得点が画面に表示されました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00105-e02",
+          "en": "Compare your score with your previous result.",
+          "ja": "今回の点数を前回の結果と比べてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00106",
+      "wordId": "VD-03991",
+      "headword": "score",
+      "partOfSpeech": "verb",
+      "meaningJa": "得点する",
+      "definitionEn": "to gain points or goals",
+      "synonyms": "earn points",
+      "cefrHeadword": "B1",
+      "imageHint": "ゴールを決める選手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00106-e01",
+          "en": "Our team scored just before halftime.",
+          "ja": "私たちのチームは前半終了直前に得点しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00106-e02",
+          "en": "She scored full marks on the quiz.",
+          "ja": "彼女は小テストで満点を取りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00107",
+      "wordId": "VD-03991",
+      "headword": "score",
+      "partOfSpeech": "noun",
+      "meaningJa": "楽譜・総譜",
+      "definitionEn": "written notation for a piece of music",
+      "synonyms": "sheet music",
+      "cefrHeadword": "B1",
+      "imageHint": "指揮者の楽譜",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00107-e01",
+          "en": "The conductor studied the score before rehearsal.",
+          "ja": "指揮者は練習前に総譜を研究しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00107-e02",
+          "en": "The composer revised the score for a smaller orchestra.",
+          "ja": "作曲家は小編成の楽団向けに楽譜を改訂しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00108",
+      "wordId": "VD-03992",
+      "headword": "scratch",
+      "partOfSpeech": "noun",
+      "meaningJa": "ひっかき傷",
+      "definitionEn": "a thin mark on a surface caused by something sharp",
+      "synonyms": "scrape",
+      "cefrHeadword": "B1",
+      "imageHint": "机のひっかき傷",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00108-e01",
+          "en": "There was a scratch on the wooden table.",
+          "ja": "木の机にひっかき傷がありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00108-e02",
+          "en": "The screen protector prevented several scratches.",
+          "ja": "画面保護フィルムがいくつかの傷を防ぎました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00109",
+      "wordId": "VD-03992",
+      "headword": "scratch",
+      "partOfSpeech": "verb",
+      "meaningJa": "ひっかく・かく",
+      "definitionEn": "to rub or mark a surface with something sharp",
+      "synonyms": "scrape",
+      "cefrHeadword": "B1",
+      "imageHint": "猫が爪を立てる場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00109-e01",
+          "en": "The cat scratched the chair leg.",
+          "ja": "猫は椅子の脚をひっかきました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00109-e02",
+          "en": "Try not to scratch the itchy spot.",
+          "ja": "かゆい場所をかかないようにしてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00110",
+      "wordId": "VD-03993",
+      "headword": "sculpture",
+      "partOfSpeech": "noun",
+      "meaningJa": "彫刻",
+      "definitionEn": "a three-dimensional artwork made by shaping materials",
+      "synonyms": "statue (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "公園の彫刻",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00110-e01",
+          "en": "The sculpture was made from recycled metal.",
+          "ja": "彫刻は再生金属で作られていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00110-e02",
+          "en": "We admired a stone sculpture in the garden.",
+          "ja": "庭の石の彫刻に見とれました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00111",
+      "wordId": "VD-03994",
+      "headword": "season",
+      "partOfSpeech": "noun",
+      "meaningJa": "季節・時期",
+      "definitionEn": "a period of the year with particular conditions or activities",
+      "synonyms": "period",
+      "cefrHeadword": "B1",
+      "imageHint": "四季の風景",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00111-e01",
+          "en": "Autumn is my favorite season.",
+          "ja": "秋は私の一番好きな季節です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00111-e02",
+          "en": "The team prepared for the new season.",
+          "ja": "チームは新シーズンに備えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00112",
+      "wordId": "VD-03995",
+      "headword": "seawater",
+      "partOfSpeech": "noun",
+      "meaningJa": "海水",
+      "definitionEn": "water from the sea containing dissolved salts",
+      "synonyms": "saltwater",
+      "cefrHeadword": "B1",
+      "imageHint": "海水を採取する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00112-e01",
+          "en": "The researchers collected seawater near the reef.",
+          "ja": "研究者は礁の近くで海水を採取しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00112-e02",
+          "en": "The equipment removes salt from seawater.",
+          "ja": "装置は海水から塩分を取り除きます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00113",
+      "wordId": "VD-03996",
+      "headword": "seaweed",
+      "partOfSpeech": "noun",
+      "meaningJa": "海藻",
+      "definitionEn": "algae growing in the sea",
+      "synonyms": "marine algae",
+      "cefrHeadword": "B1",
+      "imageHint": "海辺の海藻",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00113-e01",
+          "en": "Seaweed washed onto the shore.",
+          "ja": "海藻が岸に打ち上げられました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00113-e02",
+          "en": "We added dried seaweed to the soup.",
+          "ja": "スープに乾燥海藻を加えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00114",
+      "wordId": "VD-03997",
+      "headword": "second-hand",
+      "partOfSpeech": "adjective",
+      "meaningJa": "中古の",
+      "definitionEn": "previously owned or used by someone else",
+      "synonyms": "used",
+      "cefrHeadword": "B1",
+      "imageHint": "中古の自転車",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00114-e01",
+          "en": "She bought a second-hand bicycle.",
+          "ja": "彼女は中古の自転車を買いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00114-e02",
+          "en": "The shop sells second-hand instruments.",
+          "ja": "その店は中古楽器を販売しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00115",
+      "wordId": "VD-03997",
+      "headword": "second-hand",
+      "partOfSpeech": "adverb",
+      "meaningJa": "中古で・間接的に",
+      "definitionEn": "after previous ownership or through another person",
+      "synonyms": "indirectly (information)",
+      "cefrHeadword": "B1",
+      "imageHint": "中古品を購入する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00115-e01",
+          "en": "I bought the camera second-hand.",
+          "ja": "カメラを中古で買いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00115-e02",
+          "en": "We heard the news second-hand.",
+          "ja": "その知らせは人づてに聞きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00116",
+      "wordId": "VD-03998",
+      "headword": "secondary school",
+      "partOfSpeech": "noun",
+      "meaningJa": "中等学校",
+      "definitionEn": "a school for pupils after primary education",
+      "synonyms": "secondary-level school",
+      "cefrHeadword": "B1",
+      "imageHint": "中等学校の校舎",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00116-e01",
+          "en": "My cousin attends a secondary school nearby.",
+          "ja": "いとこは近くの中等学校に通っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00116-e02",
+          "en": "The exchange program links two secondary schools.",
+          "ja": "交換交流プログラムは二つの中等学校をつなぎます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00117",
+      "wordId": "VD-03999",
+      "headword": "secretly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "ひそかに",
+      "definitionEn": "without other people knowing",
+      "synonyms": "in secret",
+      "cefrHeadword": "B1",
+      "imageHint": "サプライズの準備",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00117-e01",
+          "en": "They secretly prepared a birthday card.",
+          "ja": "彼らはひそかに誕生日カードを準備しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00117-e02",
+          "en": "She secretly hoped to join the orchestra.",
+          "ja": "彼女はひそかにオーケストラに入りたいと思っていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00118",
+      "wordId": "VD-04002",
+      "headword": "seize",
+      "partOfSpeech": "verb",
+      "meaningJa": "つかむ・奪う",
+      "definitionEn": "to take hold of something suddenly or by force",
+      "synonyms": "grasp",
+      "cefrHeadword": "B1",
+      "imageHint": "機会をつかむ人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00118-e01",
+          "en": "The goalkeeper seized the loose ball.",
+          "ja": "ゴールキーパーはこぼれ球をつかみました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00118-e02",
+          "en": "Seize every opportunity to practice speaking.",
+          "ja": "話す練習の機会を一つ残らず活用してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00119",
+      "wordId": "VD-04004",
+      "headword": "selection",
+      "partOfSpeech": "noun",
+      "meaningJa": "選択・品ぞろえ",
+      "definitionEn": "the act of choosing or a set of available choices",
+      "synonyms": "choice",
+      "cefrHeadword": "B1",
+      "imageHint": "選べる本の棚",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00119-e01",
+          "en": "The library has a wide selection of novels.",
+          "ja": "図書館には幅広い種類の小説があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00119-e02",
+          "en": "The selection of team members took an hour.",
+          "ja": "チームのメンバー選びには1時間かかりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00120",
+      "wordId": "VD-04005",
+      "headword": "self-service",
+      "partOfSpeech": "adjective",
+      "meaningJa": "セルフサービスの",
+      "definitionEn": "allowing customers to serve themselves",
+      "synonyms": "self-serve",
+      "cefrHeadword": "B1",
+      "imageHint": "セルフサービスの食堂",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00120-e01",
+          "en": "We ate at a self-service cafeteria.",
+          "ja": "セルフサービスの食堂で食事をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00120-e02",
+          "en": "The station has self-service ticket machines.",
+          "ja": "駅にはセルフサービスの券売機があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00121",
+      "wordId": "VD-04006",
+      "headword": "selfish",
+      "partOfSpeech": "adjective",
+      "meaningJa": "利己的な・自分勝手な",
+      "definitionEn": "caring mainly about one's own interests",
+      "synonyms": "self-centered",
+      "cefrHeadword": "B1",
+      "imageHint": "自分だけ先に取る人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00121-e01",
+          "en": "It was selfish to take all the materials.",
+          "ja": "材料を全部取るのは自分勝手でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00121-e02",
+          "en": "The character gradually becomes less selfish.",
+          "ja": "登場人物は次第に自分勝手でなくなります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00122",
+      "wordId": "VD-04007",
+      "headword": "sensation",
+      "partOfSpeech": "noun",
+      "meaningJa": "感覚",
+      "definitionEn": "a physical feeling produced by something",
+      "synonyms": "feeling",
+      "cefrHeadword": "B1",
+      "imageHint": "冷たい水に触れる手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00122-e01",
+          "en": "The cold water caused a tingling sensation.",
+          "ja": "冷たい水でピリピリする感覚が生じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00122-e02",
+          "en": "She felt a strange sensation in her fingers.",
+          "ja": "彼女は指に奇妙な感覚を覚えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00123",
+      "wordId": "VD-04007",
+      "headword": "sensation",
+      "partOfSpeech": "noun",
+      "meaningJa": "大評判・センセーション",
+      "definitionEn": "something that attracts widespread excitement",
+      "synonyms": "success (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "話題の舞台",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00123-e01",
+          "en": "The performance became an overnight sensation.",
+          "ja": "その公演は一夜にして大評判となりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00123-e02",
+          "en": "The small bakery caused a sensation online.",
+          "ja": "小さなパン屋がオンラインで大きな話題になりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00124",
+      "wordId": "VD-04008",
+      "headword": "separation",
+      "partOfSpeech": "noun",
+      "meaningJa": "分離・別離",
+      "definitionEn": "the act or state of keeping things or people apart",
+      "synonyms": "division",
+      "cefrHeadword": "B1",
+      "imageHint": "分別された材料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00124-e01",
+          "en": "The mixture requires careful separation.",
+          "ja": "混合物には慎重な分離が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00124-e02",
+          "en": "The long separation made their reunion emotional.",
+          "ja": "長い別離の後の再会は感動的でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00125",
+      "wordId": "VD-04009",
+      "headword": "sequence",
+      "partOfSpeech": "noun",
+      "meaningJa": "順序・連続",
+      "definitionEn": "a series of things arranged in an order",
+      "synonyms": "order",
+      "cefrHeadword": "B1",
+      "imageHint": "順番に並ぶカード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00125-e01",
+          "en": "Put the pictures in the correct sequence.",
+          "ja": "絵を正しい順序に並べてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00125-e02",
+          "en": "The video shows a sequence of simple movements.",
+          "ja": "動画は一連の簡単な動きを示しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00126",
+      "wordId": "VD-04010",
+      "headword": "series",
+      "partOfSpeech": "noun",
+      "meaningJa": "一連・シリーズ",
+      "definitionEn": "a set of related events or things",
+      "synonyms": "sequence",
+      "cefrHeadword": "B1",
+      "imageHint": "連続講座",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00126-e01",
+          "en": "The museum offers a series of evening lectures.",
+          "ja": "博物館は一連の夜間講座を開いています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00126-e02",
+          "en": "We watched a series of short documentaries.",
+          "ja": "短いドキュメンタリーをシリーズで見ました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00127",
+      "wordId": "VD-04011",
+      "headword": "serious",
+      "partOfSpeech": "adjective",
+      "meaningJa": "深刻な・真剣な",
+      "definitionEn": "important and requiring careful attention",
+      "synonyms": "grave (problem)",
+      "cefrHeadword": "B1",
+      "imageHint": "真剣な話し合い",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00127-e01",
+          "en": "The broken bridge created a serious problem.",
+          "ja": "橋の破損は深刻な問題を生みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00127-e02",
+          "en": "He is serious about improving his English.",
+          "ja": "彼は真剣に英語力を伸ばそうとしています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00128",
+      "wordId": "VD-04012",
+      "headword": "server",
+      "partOfSpeech": "noun",
+      "meaningJa": "サーバー",
+      "definitionEn": "a computer or program supplying services to other computers",
+      "synonyms": "host (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "サーバー機器",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00128-e01",
+          "en": "The files are stored on a secure server.",
+          "ja": "ファイルは安全なサーバーに保存されています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00128-e02",
+          "en": "The server was restarted after maintenance.",
+          "ja": "保守作業後にサーバーが再起動されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00129",
+      "wordId": "VD-04012",
+      "headword": "server",
+      "partOfSpeech": "noun",
+      "meaningJa": "給仕係",
+      "definitionEn": "a person who serves food or drinks",
+      "synonyms": "waiter (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "料理を運ぶ店員",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00129-e01",
+          "en": "The server brought us a menu.",
+          "ja": "給仕係がメニューを持ってきてくれました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00129-e02",
+          "en": "We asked the server about the ingredients.",
+          "ja": "給仕係に食材について尋ねました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00130",
+      "wordId": "VD-04013",
+      "headword": "service",
+      "partOfSpeech": "noun",
+      "meaningJa": "サービス・業務",
+      "definitionEn": "work provided to meet people's needs",
+      "synonyms": "assistance (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "公共サービスの窓口",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00130-e01",
+          "en": "The library offers a free delivery service.",
+          "ja": "図書館は無料の配送サービスを提供します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00130-e02",
+          "en": "The hotel is known for its friendly service.",
+          "ja": "そのホテルは親切な接客で知られています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00131",
+      "wordId": "VD-04013",
+      "headword": "service",
+      "partOfSpeech": "verb",
+      "meaningJa": "点検・整備する",
+      "definitionEn": "to inspect and maintain a machine",
+      "synonyms": "maintain",
+      "cefrHeadword": "B1",
+      "imageHint": "自転車を整備する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00131-e01",
+          "en": "The mechanic services the school buses regularly.",
+          "ja": "整備士は学校のバスを定期的に整備します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00131-e02",
+          "en": "We had the heater serviced before winter.",
+          "ja": "冬の前に暖房器具を点検してもらいました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00132",
+      "wordId": "VD-04014",
+      "headword": "session",
+      "partOfSpeech": "noun",
+      "meaningJa": "授業・会合の時間",
+      "definitionEn": "a period devoted to a particular activity",
+      "synonyms": "meeting (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "オンライン交流の授業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00132-e01",
+          "en": "Each practice session lasts thirty minutes.",
+          "ja": "練習時間は毎回30分です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00132-e02",
+          "en": "The online session included students from four countries.",
+          "ja": "オンライン交流には4か国の生徒が参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00133",
+      "wordId": "VD-04015",
+      "headword": "setting",
+      "partOfSpeech": "noun",
+      "meaningJa": "舞台・環境",
+      "definitionEn": "the place or situation in which something happens",
+      "synonyms": "context",
+      "cefrHeadword": "B1",
+      "imageHint": "物語の舞台となる町",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00133-e01",
+          "en": "The novel has a rural setting.",
+          "ja": "小説の舞台は田舎です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00133-e02",
+          "en": "The garden provides a peaceful setting for reading.",
+          "ja": "庭は読書に穏やかな環境を提供します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00134",
+      "wordId": "VD-04015",
+      "headword": "setting",
+      "partOfSpeech": "noun",
+      "meaningJa": "設定",
+      "definitionEn": "a choice controlling how a device or program works",
+      "synonyms": "configuration",
+      "cefrHeadword": "B1",
+      "imageHint": "端末の設定画面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00134-e01",
+          "en": "Change the brightness setting on the tablet.",
+          "ja": "タブレットの明るさ設定を変えてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00134-e02",
+          "en": "The camera has a setting for night scenes.",
+          "ja": "カメラには夜景用の設定があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00135",
+      "wordId": "VD-04017",
+      "headword": "settlement",
+      "partOfSpeech": "noun",
+      "meaningJa": "和解・解決",
+      "definitionEn": "an agreement that ends a dispute",
+      "synonyms": "agreement",
+      "cefrHeadword": "B1",
+      "imageHint": "和解の握手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00135-e01",
+          "en": "Both sides agreed to a settlement.",
+          "ja": "双方は和解に合意しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00135-e02",
+          "en": "The settlement ended months of disagreement.",
+          "ja": "その和解は数か月の対立を終わらせました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00136",
+      "wordId": "VD-04017",
+      "headword": "settlement",
+      "partOfSpeech": "noun",
+      "meaningJa": "集落・定住地",
+      "definitionEn": "a place where people establish a community",
+      "synonyms": "community (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "古い集落",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00136-e01",
+          "en": "Archaeologists discovered an ancient settlement.",
+          "ja": "考古学者は古代の集落を発見しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00136-e02",
+          "en": "The settlement grew near a freshwater spring.",
+          "ja": "集落は淡水の湧き水の近くで発展しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00137",
+      "wordId": "VD-04018",
+      "headword": "settler",
+      "partOfSpeech": "noun",
+      "meaningJa": "入植者・定住者",
+      "definitionEn": "someone who moves to a new place to live permanently",
+      "synonyms": "colonist (historical)",
+      "cefrHeadword": "B1",
+      "imageHint": "開拓地の歴史資料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00137-e01",
+          "en": "The museum tells the stories of early settlers.",
+          "ja": "博物館は初期の入植者たちの物語を伝えます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00137-e02",
+          "en": "Settlers built homes beside the river.",
+          "ja": "入植者は川のそばに家を建てました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00138",
+      "wordId": "VD-04019",
+      "headword": "severe",
+      "partOfSpeech": "adjective",
+      "meaningJa": "深刻な・厳しい",
+      "definitionEn": "very serious or intense",
+      "synonyms": "harsh",
+      "cefrHeadword": "B1",
+      "imageHint": "激しい嵐",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00138-e01",
+          "en": "The storm caused severe damage to the roof.",
+          "ja": "嵐は屋根に深刻な損傷を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00138-e02",
+          "en": "The region experienced a severe drought.",
+          "ja": "その地域は深刻な干ばつに見舞われました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00139",
+      "wordId": "VD-04020",
+      "headword": "severely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "深刻に・厳しく",
+      "definitionEn": "to a very serious or intense degree",
+      "synonyms": "seriously",
+      "cefrHeadword": "B1",
+      "imageHint": "大きく損傷した橋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00139-e01",
+          "en": "The bridge was severely damaged.",
+          "ja": "橋は大きく損傷しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00139-e02",
+          "en": "The drought severely affected local farms.",
+          "ja": "干ばつは地元農場に深刻な影響を与えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00140",
+      "wordId": "VD-04021",
+      "headword": "sex",
+      "partOfSpeech": "noun",
+      "meaningJa": "生物学的な性",
+      "definitionEn": "a classification associated with reproductive biology",
+      "synonyms": "biological sex",
+      "cefrHeadword": "B1",
+      "imageHint": "生物学の授業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00140-e01",
+          "en": "The study recorded the sex of each animal.",
+          "ja": "研究は各動物の性を記録しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00140-e02",
+          "en": "The biologist explained how sex is determined in different species.",
+          "ja": "生物学者は種によって性がどう決まるか説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00141",
+      "wordId": "VD-04022",
+      "headword": "shadowy",
+      "partOfSpeech": "adjective",
+      "meaningJa": "影の多い・薄暗い",
+      "definitionEn": "filled with shadows or not clearly visible",
+      "synonyms": "dim",
+      "cefrHeadword": "B1",
+      "imageHint": "薄暗い林",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00141-e01",
+          "en": "We walked through a shadowy passage.",
+          "ja": "薄暗い通路を歩きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00141-e02",
+          "en": "The forest looked shadowy at dusk.",
+          "ja": "夕暮れの森は薄暗く見えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00142",
+      "wordId": "VD-04023",
+      "headword": "shallow",
+      "partOfSpeech": "adjective",
+      "meaningJa": "浅い",
+      "definitionEn": "not extending far below the surface",
+      "synonyms": "not deep",
+      "cefrHeadword": "B1",
+      "imageHint": "浅い小川",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00142-e01",
+          "en": "We crossed a shallow stream.",
+          "ja": "浅い小川を渡りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00142-e02",
+          "en": "Use a shallow dish for the seeds.",
+          "ja": "種には浅い皿を使ってください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00143",
+      "wordId": "VD-04024",
+      "headword": "shame",
+      "partOfSpeech": "noun",
+      "meaningJa": "恥・残念なこと",
+      "definitionEn": "a feeling of embarrassment or regret",
+      "synonyms": "embarrassment",
+      "cefrHeadword": "B1",
+      "imageHint": "失敗を恥じる人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00143-e01",
+          "en": "He felt shame after breaking his promise.",
+          "ja": "約束を破った後、彼は恥を感じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00143-e02",
+          "en": "It's a shame that the concert was canceled.",
+          "ja": "コンサートが中止になったのは残念です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00144",
+      "wordId": "VD-04025",
+      "headword": "shameful",
+      "partOfSpeech": "adjective",
+      "meaningJa": "恥ずべき・不名誉な",
+      "definitionEn": "deserving strong disapproval",
+      "synonyms": "disgraceful",
+      "cefrHeadword": "B1",
+      "imageHint": "不公平な行為を振り返る人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00144-e01",
+          "en": "The committee condemned the shameful behavior.",
+          "ja": "委員会は恥ずべき行動を非難しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00144-e02",
+          "en": "The article examines a shameful episode in local history.",
+          "ja": "記事は地域史の不名誉な出来事を考察します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00145",
+      "wordId": "VD-04026",
+      "headword": "sharp",
+      "partOfSpeech": "adjective",
+      "meaningJa": "鋭い・とがった",
+      "definitionEn": "having a fine edge or point capable of cutting",
+      "synonyms": "keen (edge)",
+      "cefrHeadword": "B1",
+      "imageHint": "鋭い鉛筆",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00145-e01",
+          "en": "Handle the sharp tools with care.",
+          "ja": "鋭い道具は注意して扱ってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00145-e02",
+          "en": "The rock had a sharp edge.",
+          "ja": "その岩には鋭い縁がありました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00146",
+      "wordId": "VD-04026",
+      "headword": "sharp",
+      "partOfSpeech": "adjective",
+      "meaningJa": "急激な・明確な",
+      "definitionEn": "sudden, strong, or clearly noticeable",
+      "synonyms": "abrupt (change)",
+      "cefrHeadword": "B1",
+      "imageHint": "急激に下がるグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00146-e01",
+          "en": "The chart shows a sharp fall in sales.",
+          "ja": "図は売上の急激な減少を示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00146-e02",
+          "en": "There was a sharp contrast between the two pictures.",
+          "ja": "二枚の絵の間には明確な対照がありました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00147",
+      "wordId": "VD-04026",
+      "headword": "sharp",
+      "partOfSpeech": "adverb",
+      "meaningJa": "きっかりに",
+      "definitionEn": "exactly at a specified time",
+      "synonyms": "precisely",
+      "cefrHeadword": "B1",
+      "imageHint": "時計が示す正午",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00147-e01",
+          "en": "The meeting starts at nine sharp.",
+          "ja": "会議は9時きっかりに始まります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00147-e02",
+          "en": "Meet me at noon sharp.",
+          "ja": "正午きっかりに会いましょう。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00148",
+      "wordId": "VD-04027",
+      "headword": "shave",
+      "partOfSpeech": "verb",
+      "meaningJa": "ひげをそる・毛をそる",
+      "definitionEn": "to remove hair close to the skin",
+      "synonyms": "remove hair",
+      "cefrHeadword": "B1",
+      "imageHint": "洗面台でひげをそる人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00148-e01",
+          "en": "He shaved before the graduation ceremony.",
+          "ja": "彼は卒業式の前にひげをそりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00148-e02",
+          "en": "The swimmer shaved his head for the competition.",
+          "ja": "その水泳選手は大会のため頭の毛をそりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00149",
+      "wordId": "VD-04028",
+      "headword": "sheer",
+      "partOfSpeech": "adjective",
+      "meaningJa": "全くの・純然たる",
+      "definitionEn": "complete or absolute, used for emphasis",
+      "synonyms": "utter",
+      "cefrHeadword": "B1",
+      "imageHint": "大喜びする人々",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00149-e01",
+          "en": "The children shouted with sheer delight.",
+          "ja": "子どもたちは純粋な喜びで叫びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00149-e02",
+          "en": "We succeeded through sheer determination.",
+          "ja": "私たちはひたすら強い決意で成功しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00150",
+      "wordId": "VD-04028",
+      "headword": "sheer",
+      "partOfSpeech": "adjective",
+      "meaningJa": "切り立った",
+      "definitionEn": "rising or falling almost vertically",
+      "synonyms": "steep",
+      "cefrHeadword": "B1",
+      "imageHint": "切り立った崖",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00150-e01",
+          "en": "A sheer cliff rose above the beach.",
+          "ja": "浜辺の上には切り立った崖がそびえていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00150-e02",
+          "en": "The path ran beside a sheer drop.",
+          "ja": "道は切り立った崖のそばに続いていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00151",
+      "wordId": "VD-04029",
+      "headword": "sheet",
+      "partOfSpeech": "noun",
+      "meaningJa": "一枚の紙・板",
+      "definitionEn": "a thin flat piece of material",
+      "synonyms": "piece (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "一枚の紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00151-e01",
+          "en": "Write your answer on a separate sheet.",
+          "ja": "別の用紙に答えを書いてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00151-e02",
+          "en": "The roof was covered with sheets of metal.",
+          "ja": "屋根は金属板で覆われていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00152",
+      "wordId": "VD-04029",
+      "headword": "sheet",
+      "partOfSpeech": "noun",
+      "meaningJa": "シーツ",
+      "definitionEn": "a large piece of cloth used on a bed",
+      "synonyms": "bed linen",
+      "cefrHeadword": "B1",
+      "imageHint": "ベッドのシーツ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00152-e01",
+          "en": "The hotel provided clean sheets.",
+          "ja": "ホテルは清潔なシーツを用意しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00152-e02",
+          "en": "Hang the wet sheets outside to dry.",
+          "ja": "ぬれたシーツは外に干してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00153",
+      "wordId": "VD-04030",
+      "headword": "shelter",
+      "partOfSpeech": "noun",
+      "meaningJa": "避難所・保護",
+      "definitionEn": "a place or condition that protects from danger or weather",
+      "synonyms": "refuge",
+      "cefrHeadword": "B1",
+      "imageHint": "雨宿りするバス停",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00153-e01",
+          "en": "We found shelter under a large roof.",
+          "ja": "大きな屋根の下で雨宿りをしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00153-e02",
+          "en": "The town opened a temporary shelter after the storm.",
+          "ja": "町は嵐の後に一時避難所を開設しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00154",
+      "wordId": "VD-04031",
+      "headword": "sheriff",
+      "partOfSpeech": "noun",
+      "meaningJa": "保安官",
+      "definitionEn": "a law enforcement official in certain jurisdictions",
+      "synonyms": "law officer",
+      "cefrHeadword": "B1",
+      "imageHint": "歴史展示の保安官バッジ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00154-e01",
+          "en": "The sheriff investigated the missing horse.",
+          "ja": "保安官は行方不明の馬を調査しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00154-e02",
+          "en": "The museum displays an old sheriff's badge.",
+          "ja": "博物館は古い保安官のバッジを展示しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00155",
+      "wordId": "VD-04033",
+      "headword": "shiny",
+      "partOfSpeech": "adjective",
+      "meaningJa": "光沢のある・ぴかぴかした",
+      "definitionEn": "reflecting light from a smooth surface",
+      "synonyms": "gleaming",
+      "cefrHeadword": "B1",
+      "imageHint": "光沢のある靴",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00155-e01",
+          "en": "His shoes were clean and shiny.",
+          "ja": "彼の靴はきれいでぴかぴかでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00155-e02",
+          "en": "The shiny surface reflected the lights.",
+          "ja": "光沢のある表面は照明を反射しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00156",
+      "wordId": "VD-04034",
+      "headword": "shiver",
+      "partOfSpeech": "verb",
+      "meaningJa": "震える",
+      "definitionEn": "to shake slightly because of cold or fear",
+      "synonyms": "tremble",
+      "cefrHeadword": "B1",
+      "imageHint": "寒さに震える人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00156-e01",
+          "en": "We shivered in the cold morning air.",
+          "ja": "冷たい朝の空気で震えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00156-e02",
+          "en": "The unexpected sound made her shiver.",
+          "ja": "予想外の音で彼女は身震いしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00157",
+      "wordId": "VD-04035",
+      "headword": "shocked",
+      "partOfSpeech": "adjective",
+      "meaningJa": "衝撃を受けた",
+      "definitionEn": "very surprised or upset",
+      "synonyms": "stunned",
+      "cefrHeadword": "B1",
+      "imageHint": "予想外の知らせを聞く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00157-e01",
+          "en": "We were shocked by the amount of waste.",
+          "ja": "ごみの量に衝撃を受けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00157-e02",
+          "en": "She looked shocked when the result appeared.",
+          "ja": "結果が表示されると彼女は衝撃を受けた様子でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00158",
+      "wordId": "VD-04036",
+      "headword": "shocking",
+      "partOfSpeech": "adjective",
+      "meaningJa": "衝撃的な",
+      "definitionEn": "causing strong surprise or distress",
+      "synonyms": "disturbing (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "衝撃的な調査結果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00158-e01",
+          "en": "The report revealed a shocking level of pollution.",
+          "ja": "報告書は衝撃的な汚染レベルを明らかにしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00158-e02",
+          "en": "The sudden ending of the play was shocking.",
+          "ja": "芝居の突然の結末は衝撃的でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00159",
+      "wordId": "VD-04037",
+      "headword": "shopper",
+      "partOfSpeech": "noun",
+      "meaningJa": "買い物客",
+      "definitionEn": "a person buying or looking for goods",
+      "synonyms": "customer",
+      "cefrHeadword": "B1",
+      "imageHint": "市場の買い物客",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00159-e01",
+          "en": "Shoppers crowded the market before noon.",
+          "ja": "正午前に買い物客が市場に集まりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00159-e02",
+          "en": "The shopper compared the two products.",
+          "ja": "買い物客は二つの商品を比較しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00160",
+      "wordId": "VD-04038",
+      "headword": "shortage",
+      "partOfSpeech": "noun",
+      "meaningJa": "不足",
+      "definitionEn": "a situation in which there is not enough of something",
+      "synonyms": "scarcity",
+      "cefrHeadword": "B1",
+      "imageHint": "水不足の地域",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00160-e01",
+          "en": "The dry summer caused a water shortage.",
+          "ja": "乾燥した夏で水不足が起きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00160-e02",
+          "en": "The school faced a shortage of classroom space.",
+          "ja": "学校は教室不足に直面しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00161",
+      "wordId": "VD-04039",
+      "headword": "shortly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "まもなく・すぐに",
+      "definitionEn": "after a short time",
+      "synonyms": "soon",
+      "cefrHeadword": "B1",
+      "imageHint": "出発を待つ人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00161-e01",
+          "en": "The next bus will arrive shortly.",
+          "ja": "次のバスはまもなく到着します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00161-e02",
+          "en": "She called shortly after the meeting ended.",
+          "ja": "会議が終わってすぐに彼女は電話をかけました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00162",
+      "wordId": "VD-04040",
+      "headword": "shrimp",
+      "partOfSpeech": "noun",
+      "meaningJa": "エビ",
+      "definitionEn": "a small aquatic animal with a curved body and shell",
+      "synonyms": "prawn (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "エビ料理",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00162-e01",
+          "en": "We added shrimp to the rice.",
+          "ja": "ご飯にエビを加えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00162-e02",
+          "en": "Tiny shrimp lived among the rocks.",
+          "ja": "小さなエビが岩の間に生息していました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00163",
+      "wordId": "VD-04041",
+      "headword": "sickness",
+      "partOfSpeech": "noun",
+      "meaningJa": "病気・吐き気",
+      "definitionEn": "illness or the feeling of needing to vomit",
+      "synonyms": "illness",
+      "cefrHeadword": "B1",
+      "imageHint": "体調を崩した人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00163-e01",
+          "en": "He missed school because of sickness.",
+          "ja": "彼は病気で学校を休みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00163-e02",
+          "en": "Some passengers experienced motion sickness.",
+          "ja": "乗客の中には乗り物酔いをした人もいました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00164",
+      "wordId": "VD-04042",
+      "headword": "sidewalk",
+      "partOfSpeech": "noun",
+      "meaningJa": "歩道（米）",
+      "definitionEn": "a paved path for people beside a road",
+      "synonyms": "pavement (British)",
+      "cefrHeadword": "B1",
+      "imageHint": "歩道を歩く人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00164-e01",
+          "en": "Keep your bicycle off the crowded sidewalk.",
+          "ja": "混雑した歩道では自転車に乗り入れないでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00164-e02",
+          "en": "The city repaired the damaged sidewalk.",
+          "ja": "市は傷んだ歩道を修理しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00165",
+      "wordId": "VD-04043",
+      "headword": "sigh",
+      "partOfSpeech": "verb",
+      "meaningJa": "ため息をつく",
+      "definitionEn": "to let out a long breath showing a feeling",
+      "synonyms": "exhale audibly",
+      "cefrHeadword": "B1",
+      "imageHint": "ため息をつく人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00165-e01",
+          "en": "He sighed with relief after the exam.",
+          "ja": "試験後に彼はほっとしてため息をつきました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00165-e02",
+          "en": "She sighed when she saw the long queue.",
+          "ja": "長い列を見て彼女はため息をつきました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00166",
+      "wordId": "VD-04043",
+      "headword": "sigh",
+      "partOfSpeech": "noun",
+      "meaningJa": "ため息",
+      "definitionEn": "a long audible breath expressing emotion",
+      "synonyms": "long breath",
+      "cefrHeadword": "B1",
+      "imageHint": "ほっとする生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00166-e01",
+          "en": "The news brought a sigh of relief.",
+          "ja": "その知らせに安堵のため息が出ました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00166-e02",
+          "en": "With a quiet sigh, he closed the book.",
+          "ja": "静かにため息をついて彼は本を閉じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00167",
+      "wordId": "VD-04044",
+      "headword": "signal",
+      "partOfSpeech": "noun",
+      "meaningJa": "合図・信号",
+      "definitionEn": "a sign or transmitted message giving information",
+      "synonyms": "sign",
+      "cefrHeadword": "B1",
+      "imageHint": "信号機",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00167-e01",
+          "en": "The referee gave the signal to begin.",
+          "ja": "審判が開始の合図を出しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00167-e02",
+          "en": "The phone lost its signal in the tunnel.",
+          "ja": "トンネルで携帯電話の電波が途切れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00168",
+      "wordId": "VD-04044",
+      "headword": "signal",
+      "partOfSpeech": "verb",
+      "meaningJa": "合図する・示す",
+      "definitionEn": "to communicate through a sign or gesture",
+      "synonyms": "indicate",
+      "cefrHeadword": "B1",
+      "imageHint": "手で合図する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00168-e01",
+          "en": "The guide signaled us to stop.",
+          "ja": "ガイドは私たちに止まるよう合図しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00168-e02",
+          "en": "The new data may signal a change in behavior.",
+          "ja": "新しいデータは行動の変化を示しているかもしれません。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00169",
+      "wordId": "VD-04045",
+      "headword": "signature",
+      "partOfSpeech": "noun",
+      "meaningJa": "署名",
+      "definitionEn": "a person's written name used to identify or approve something",
+      "synonyms": "autograph (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "書類に署名する手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00169-e01",
+          "en": "The form requires your signature.",
+          "ja": "用紙には署名が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00169-e02",
+          "en": "Her signature was at the bottom of the letter.",
+          "ja": "手紙の下部に彼女の署名がありました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00170",
+      "wordId": "VD-04046",
+      "headword": "significance",
+      "partOfSpeech": "noun",
+      "meaningJa": "重要性・意味",
+      "definitionEn": "the importance or meaning of something",
+      "synonyms": "importance",
+      "cefrHeadword": "B1",
+      "imageHint": "歴史的な史料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00170-e01",
+          "en": "The guide explained the significance of the monument.",
+          "ja": "ガイドは記念碑の重要性を説明しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00170-e02",
+          "en": "We discussed the significance of the discovery.",
+          "ja": "発見の意義について話し合いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00171",
+      "wordId": "VD-04047",
+      "headword": "signpost",
+      "partOfSpeech": "noun",
+      "meaningJa": "道標・標識",
+      "definitionEn": "a sign showing directions to places",
+      "synonyms": "direction sign",
+      "cefrHeadword": "B1",
+      "imageHint": "分かれ道の道標",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00171-e01",
+          "en": "A wooden signpost pointed toward the lake.",
+          "ja": "木の道標は湖の方向を示していました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00171-e02",
+          "en": "We followed the signposts through the forest.",
+          "ja": "森の中を道標に従って進みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00172",
+      "wordId": "VD-04048",
+      "headword": "silent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "静かな・無言の",
+      "definitionEn": "making no sound or not speaking",
+      "synonyms": "quiet",
+      "cefrHeadword": "B1",
+      "imageHint": "静かな図書室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00172-e01",
+          "en": "The classroom fell silent during the announcement.",
+          "ja": "アナウンス中に教室は静まり返りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00172-e02",
+          "en": "He remained silent throughout the discussion.",
+          "ja": "彼は話し合いの間ずっと無言でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00173",
+      "wordId": "VD-04049",
+      "headword": "silk",
+      "partOfSpeech": "noun",
+      "meaningJa": "絹・シルク",
+      "definitionEn": "a fine fiber or fabric made from silkworm cocoons",
+      "synonyms": "silk fabric",
+      "cefrHeadword": "B1",
+      "imageHint": "絹の布地",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00173-e01",
+          "en": "The scarf was made of silk.",
+          "ja": "スカーフは絹で作られていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00173-e02",
+          "en": "The museum explains how silk was produced.",
+          "ja": "博物館は絹がどのように生産されたか説明します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00174",
+      "wordId": "VD-04050",
+      "headword": "similarity",
+      "partOfSpeech": "noun",
+      "meaningJa": "類似点・類似性",
+      "definitionEn": "a way in which things are alike",
+      "synonyms": "resemblance",
+      "cefrHeadword": "B1",
+      "imageHint": "よく似た模様",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00174-e01",
+          "en": "We found several similarities between the stories.",
+          "ja": "物語の間にいくつかの類似点を見つけました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00174-e02",
+          "en": "The similarity in shape surprised the researchers.",
+          "ja": "形状の類似性は研究者を驚かせました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00175",
+      "wordId": "VD-04051",
+      "headword": "similarly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "同様に",
+      "definitionEn": "in a similar way",
+      "synonyms": "likewise",
+      "cefrHeadword": "B1",
+      "imageHint": "同じ傾向の二つのグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00175-e01",
+          "en": "The second group performed similarly.",
+          "ja": "第二グループも同様の成績でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00175-e02",
+          "en": "This plant grows well in shade; similarly, the other species prefers cool places.",
+          "ja": "この植物は日陰でよく育ち、同様に別の種も涼しい場所を好みます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00176",
+      "wordId": "VD-04053",
+      "headword": "simultaneously",
+      "partOfSpeech": "adverb",
+      "meaningJa": "同時に",
+      "definitionEn": "at the same time",
+      "synonyms": "concurrently",
+      "cefrHeadword": "B1",
+      "imageHint": "同時に動く二つの装置",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00176-e01",
+          "en": "The two alarms sounded simultaneously.",
+          "ja": "二つの警報が同時に鳴りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00176-e02",
+          "en": "Students can work on several tasks simultaneously.",
+          "ja": "生徒は複数の課題に同時に取り組めます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00177",
+      "wordId": "VD-04054",
+      "headword": "skeleton",
+      "partOfSpeech": "noun",
+      "meaningJa": "骨格",
+      "definitionEn": "the framework of bones in a body",
+      "synonyms": "bony framework",
+      "cefrHeadword": "B1",
+      "imageHint": "人体骨格の模型",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00177-e01",
+          "en": "The museum exhibits a dinosaur skeleton.",
+          "ja": "博物館は恐竜の骨格を展示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00177-e02",
+          "en": "We studied the human skeleton in biology.",
+          "ja": "生物の授業で人体の骨格を学びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00178",
+      "wordId": "VD-04055",
+      "headword": "skin",
+      "partOfSpeech": "noun",
+      "meaningJa": "皮膚・皮",
+      "definitionEn": "the outer covering of a body or fruit",
+      "synonyms": "outer layer",
+      "cefrHeadword": "B1",
+      "imageHint": "果物の皮",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00178-e01",
+          "en": "The peach has soft, fuzzy skin.",
+          "ja": "桃には柔らかく毛のある皮があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00178-e02",
+          "en": "The cream protects dry skin.",
+          "ja": "クリームは乾燥した皮膚を保護します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00179",
+      "wordId": "VD-04056",
+      "headword": "skyscraper",
+      "partOfSpeech": "noun",
+      "meaningJa": "超高層ビル",
+      "definitionEn": "a very tall building with many floors",
+      "synonyms": "high-rise (broader)",
+      "cefrHeadword": "B1",
+      "imageHint": "街の高層ビル",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00179-e01",
+          "en": "A skyscraper towered above the station.",
+          "ja": "超高層ビルが駅の上にそびえていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00179-e02",
+          "en": "From the skyscraper, we could see the harbor.",
+          "ja": "超高層ビルから港が見えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00180",
+      "wordId": "VD-04057",
+      "headword": "slavery",
+      "partOfSpeech": "noun",
+      "meaningJa": "奴隷制・奴隷状態",
+      "definitionEn": "a system in which people are treated as property and forced to work",
+      "synonyms": "enslavement",
+      "cefrHeadword": "B1",
+      "imageHint": "奴隷制の歴史展示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00180-e01",
+          "en": "The lesson examined the history of slavery.",
+          "ja": "授業では奴隷制の歴史を考察しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00180-e02",
+          "en": "The museum documents the struggle against slavery.",
+          "ja": "博物館は奴隷制に反対する闘いを記録しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00181",
+      "wordId": "VD-04058",
+      "headword": "sleeve",
+      "partOfSpeech": "noun",
+      "meaningJa": "袖",
+      "definitionEn": "the part of a garment covering the arm",
+      "synonyms": "arm covering",
+      "cefrHeadword": "B1",
+      "imageHint": "シャツの袖",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00181-e01",
+          "en": "Roll up your sleeves before washing the dishes.",
+          "ja": "皿を洗う前に袖をまくってください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00181-e02",
+          "en": "The jacket has a pocket on its sleeve.",
+          "ja": "上着の袖にはポケットが付いています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00182",
+      "wordId": "VD-04059",
+      "headword": "slight",
+      "partOfSpeech": "adjective",
+      "meaningJa": "わずかな・軽微な",
+      "definitionEn": "small in amount or degree",
+      "synonyms": "minor",
+      "cefrHeadword": "B1",
+      "imageHint": "わずかな上昇を示すグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00182-e01",
+          "en": "There was a slight increase in attendance.",
+          "ja": "出席率がわずかに上昇しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00182-e02",
+          "en": "The machine made a slight vibration.",
+          "ja": "機械はわずかに振動しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-MEGA2C-00183",
+      "wordId": "VD-04059",
+      "headword": "slight",
+      "partOfSpeech": "noun",
+      "meaningJa": "軽視・侮辱",
+      "definitionEn": "an act showing a lack of respect",
+      "synonyms": "snub",
+      "cefrHeadword": "B1",
+      "imageHint": "挨拶を無視する場面",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-MEGA2C-00183-e01",
+          "en": "He regarded the omission as a slight.",
+          "ja": "彼はその省略を軽視だと受け取りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-MEGA2C-00183-e02",
+          "en": "She ignored the slight and continued her work.",
+          "ja": "彼女はその侮辱を気にせず仕事を続けました。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
