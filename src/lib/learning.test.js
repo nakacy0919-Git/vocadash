@@ -5,7 +5,9 @@ import { READING_LEVELS, READING_PASS_PERCENT, READING_SCORE_VERSION, readingWor
 import { CATALOG, makeSessionQueue, sourcePath, normalizeWords, updateRecord, summaryFor, isDue, assetImage, splitDialogueTurns, splitTargetSegments } from './learning.js';
 
 test('all catalog entries define study units', () => {
-  assert.equal(CATALOG.length, 9);
+  assert.equal(CATALOG.length, 24);
+  assert.equal(CATALOG.filter(c=>! /^(level|topic|pos)_/.test(c.id)).length,9);
+  assert.deepEqual(CATALOG.filter(c=>/^(level|topic|pos)_/.test(c.id)).reduce((groups,c)=>({...groups,[c.group]:(groups[c.group]||0)+1}),{}),{'学年・入試':5,'ジャンル別':6,'品詞別':4});
   for (const course of CATALOG) assert.ok(course.units.length > 0);
   assert.equal(sourcePath('eiken_4','1'),'./data/eiken_4_stage1.json');
   assert.equal(sourcePath('eiken_3','2'),'./data/eiken_3_stage2.json');
