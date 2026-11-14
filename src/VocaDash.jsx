@@ -4,6 +4,8 @@ import './VocaDash.css';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
+import LearningSpace,{Opening} from './components/LearningSpace';
+import {lookupUniverse} from './lib/universe';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
@@ -187,17 +189,18 @@ function ProgressMedallion({ value, title, detail, variant }) {
 }
 function Brand() { return <div className="vd-brand"><span className="vd-brandmark"><Icon name="cards" size={23}/></span><div><strong>VocaDash</strong><small>VOCABULARY STUDIO</small></div></div>; }
 function useVocabulary(selection) {
-  const [data, setData] = useState({ words: [], loading: true, error: '' });
+  const [data, setData] = useState({ words: [], loading: true, error: '', key: '' });
   const [retryCount, setRetryCount] = useState(0);
   useEffect(() => {
     let active = true;
+    const key=selection.courseId+':'+selection.unitId;
     const loader = MODULES[sourcePath(selection.courseId, selection.unitId)];
-    setData({ words: [], loading: true, error: '' });
-    if (!loader) { setData({ words: [], loading: false, error: '教材データが見つかりません。' }); return; }
+    setData({ words: [], loading: true, error: '', key });
+    if (!loader) { setData({ words: [], loading: false, error: '教材データが見つかりません。', key }); return; }
     loader().then(mod => {
       if (!active) return;
-      setData({ words: normalizeWords(mod.default || mod, selection.courseId, selection.unitId), loading: false, error: '' });
-    }).catch(() => { if (active) setData({ words: [], loading: false, error: '教材の読み込みに失敗しました。' }); });
+      setData({ words: normalizeWords(mod.default || mod, selection.courseId, selection.unitId), loading: false, error: '', key });
+    }).catch(() => { if (active) setData({ words: [], loading: false, error: '教材の読み込みに失敗しました。', key }); });
     return () => { active = false; };
   }, [selection.courseId, selection.unitId, retryCount]);
   return { ...data, retry: () => setRetryCount(n => n + 1) };
@@ -206,7 +209,8 @@ function useVocabulary(selection) {
 export default function VocaDash() {
   const [store, setStore] = useState(safeLoad);
   const [selection, setSelection] = useState(() => store.lastSelection);
-  const { words, loading, error, retry } = useVocabulary(selection);
+  const { words, loading, error, retry, key:loadedKey } = useVocabulary(selection);
+  const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
   const [dashboardOpen, setDashboardOpen] = useState(true);
   const [advancedOpen, setAdvancedOpen] = useState(false);
@@ -275,25 +279,40 @@ export default function VocaDash() {
     setImageError(false);
   };
   useEffect(() => {
-    setQueue(makeSessionQueue(words, 'study', store.records, store.settings)); setCursor(0); setMode('study'); setRevealed(false);
+    const pending=pendingMode.current;
+    if(pending&&(loading||loadedKey!==pending.key))return;
+    const nextMode=pending?.mode||'study';
+    if(pending)pendingMode.current=null;
+    setQueue(makeSessionQueue(words, nextMode, store.records, store.settings)); setCursor(0); setMode(nextMode); setRevealed(false);
     setFeedback(null); setQuizCelebration(null); setRatingFeedback(null); setQuizReviewOpen(false);
     setAutoplay(false); setSession({ answered: 0, correct: 0 });
   }, [words]);
 
   const selectCourse = id => {
+    pendingMode.current=null;
     resetCard(); readingCounted.current.clear(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: id, unitId: firstUnit(id) };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const selectUnit = id => {
+    pendingMode.current=null;
     resetCard(); readingCounted.current.clear(); setAutoplay(false); setDashboardOpen(false);
     const next = { courseId: course.id, unitId: id };
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const startMode = name => {
+    pendingMode.current=null;
     resetCard(); readingCounted.current.clear(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
     setSession({ answered: 0, correct: 0 });
     setQueue(makeSessionQueue(words, name, store.records, store.settings));
+  };
+  const startGuided = (courseId,unitId,name) => {
+    if(!MODULES[sourcePath(courseId,unitId)])return;
+    if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(name);return;}
+    resetCard(); readingCounted.current.clear(); setAutoplay(false);setDashboardOpen(false);setQueue([]);setCursor(0);setMode(name);setSession({answered:0,correct:0});
+    pendingMode.current={key:courseId+':'+unitId,mode:name};
+    const next={courseId,unitId};setSelection(next);setStore(prev=>({...prev,lastSelection:next}));
+    if(courseId===selection.courseId&&unitId===selection.unitId)retry();
   };
   const openReadingFromSentence = () => {
     resetCard();setAutoplay(false);setMode('reading');
@@ -413,6 +432,17 @@ export default function VocaDash() {
       if(match)return match;
     }return null;
   };
+  const exploreFromHome=async raw=>{
+    const key=raw.trim().toLowerCase();if(!key)return false;
+    const map=lookupUniverse(key),local=words.find(w=>w.word.toLowerCase()===key);
+    const item=map||local?{...map,...local,word:local?.word||map?.word||key,meaning:local?.meaning||map?.meaning||''}:await voiceCourseSearch(key);
+    if(!item)return false;openUniverse(item);return true;
+  };
+  const launchDash=()=>{
+    const btn=document.querySelector('.vd-voice-button');
+    if(btn?.getAttribute('aria-pressed')==='true'){document.querySelector('.vd-voice-help-button')?.click();return;}
+    btn?.click();
+  };
   const voiceAppCommand=kind=>{
     if(universeEntry){stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}
     if(kind==='close')return;
@@ -420,7 +450,8 @@ export default function VocaDash() {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
-  return <div className={'vd-app'+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
+  return <div className={'vd-app'+(dashboardOpen?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
+    <Opening/>
     <aside className="vd-sidebar">
       <Brand/>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
@@ -444,39 +475,14 @@ export default function VocaDash() {
       </header>
       <div className="vd-page">
         {dashboardOpen ? (
-          <div className="vd-dashboard-page">
-            <div className="vd-dashboard-title">
-              <div><span className="vd-overline">YOUR LEARNING DASHBOARD</span><h1>学習ダッシュボード</h1><p>学ぶ級を選ぶと、すぐに学習を始められます。</p></div>
-              <span className="vd-dashboard-today">今日の学習 <strong>{today}語</strong></span>
-            </div>
-            <div className="vd-dashboard-summary">
-              <div className="vd-medallion-group">
-                <ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/>
-                <ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/>
-              </div>
-              <div className="vd-dashboard-summary-text">
-                <span className="vd-overline">{course.label} / {unit.label}</span>
-                <h2>このユニットの進捗</h2>
-                <p>学習済み <strong>{stats.seen}</strong> / {stats.total}語　·　復習待ち <strong>{stats.due}</strong>語</p>
-                <div className="vd-dashboard-metrics">
-                  <span>音読合格 <strong>{readingPassed}/{stats.total}</strong></span>
-                  <span>正答率 <strong>{stats.accuracy}%</strong></span>
-                  <span>累計回答 <strong>{store.totalAnswers}</strong></span>
-                  <span>1回の学習 <strong>{store.settings.questionCount === 'all' ? '全問' : (store.settings.questionCount ?? 10) + '問'}</strong></span>
-                </div>
-                <button className="vd-dashboard-primary" onClick={() => startMode('study')}>この教材で学習を始める <Icon name="arrow"/></button>
-              </div>
-            </div>
-            <div className="vd-dashboard-course-heading"><h2>教材を選ぶ</h2><button onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={16}/> 学習設定</button></div>
-            <div className="vd-dashboard-courses">
-              {CATALOG.map(item => (
-                <button key={item.id} onClick={() => selectCourse(item.id)}>
-                  <span className="vd-dashboard-course-icon">{item.id === 'eiken1_master' ? '✧' : 'A'}</span>
-                  <strong>{item.label}</strong><small>{item.units.length}ユニット</small><Icon name="arrow" size={18}/>
-                </button>
-              ))}
-            </div>
-          </div>
+          <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
+            onResume={()=>startMode('study')} onSettings={()=>setAdvancedOpen(true)}
+            courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
+            totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
+            allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
+            questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
+            onExplore={exploreFromHome} onDash={launchDash} unitAvailable={(c,u)=>Boolean(MODULES[sourcePath(c,u)])}
+            progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
         ) : (
           <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
