@@ -67,3 +67,29 @@ export function routeVoice(alternatives,phase) {
  }
  return phase==='active'?{kind:'command',command:first}:null;
 }
+
+export function wordCandidates(raw){
+ const word=String(raw||'').toLowerCase().trim().replace(/^[“"'‘]+|[”"'’?.!,]+$/g,'').replace(/\s+/g,' ');
+ if(!word)return [];
+ const stripped=word.replace(/^(?:the word|the term|a word|the|an|a)\s+/,'').replace(/\s+please$/,'').trim();
+ return [...new Set([word,stripped].filter(Boolean))];
+}
+function editDistance(a,b){
+ let prev=Array.from({length:b.length+1},(_,i)=>i);
+ for(let i=1;i<=a.length;i++){const row=[i];for(let j=1;j<=b.length;j++)row[j]=Math.min(row[j-1]+1,prev[j]+1,prev[j-1]+Number(a[i-1]!==b[j-1]));prev=row;}
+ return prev[b.length];
+}
+// Suggestions are never executed automatically. Preserve real words and distinct meanings.
+export function suggestVoiceWords(raw,words,limit=4){
+ const q=wordCandidates(raw).at(-1)||'';
+ if(q.length<4||q.length>50)return [];
+ const max=q.length>=8?2:1;
+ return [...new Set(words)].filter(w=>typeof w==='string'&&w!==q&&Math.abs(w.length-q.length)<=max)
+  .map(w=>({word:w,d:editDistance(q,w)})).filter(x=>x.d<=max)
+  .sort((a,b)=>a.d-b.d||Math.abs(a.word.length-q.length)-Math.abs(b.word.length-q.length)||a.word.localeCompare(b.word)).slice(0,limit).map(x=>x.word);
+}
+export function speechSegments(event){
+ const results=event?.results||[],final=[],interim=[];
+ for(let i=event?.resultIndex||0;i<results.length;i++){const r=results[i];const alt=Array.from(r||[]).map(x=>x.transcript).filter(Boolean);if(r.isFinal){if(alt.length)final.push(alt);}else if(alt[0])interim.push(alt[0]);}
+ return {final,interim:interim.join(' ')};
+}
