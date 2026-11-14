@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:2348,links:8189});
+ assert.deepEqual(universeCoverage(),{heads:2720,links:9305});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -129,4 +129,13 @@ test('N–S large vocabulary batch retains authored links and usage distinctions
  assert.ok(getRelations(lookupUniverse('revenue')).some(x=>x.word==='profit'&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse('organisation')).some(x=>x.word==='organization'&&x.type==='synonym'));
  assert.ok(getRelations(lookupUniverse('sympathy')).some(x=>x.word==='empathy'&&x.note));
+});
+
+test('supplemental O–Z maps and original usage comparisons',()=>{
+ for(const w of ["oath","pamphlet","random","salary","translator","upstairs","vocabulary","wooden","zucchini"])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse("oath")).some(x=>x.word==="pledge"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("odds")).some(x=>x.word==="probability"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("overlook")).some(x=>x.word==="neglect"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("pamphlet")).some(x=>x.word==="brochure"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("partially")).some(x=>x.word==="partly"&&x.note&&x.example));
 });
