@@ -1,3 +1,4 @@
+import balancedLexicalReview, {balancedLexicalNotes,balancedLexicalParadigms} from '../data/universe-balanced-lexical-review.js';
 import extendedVerbReview, {extendedVerbParadigms} from '../data/universe-extended-verb-review.js';
 import extendedNounReview, {extendedNounParadigms} from '../data/universe-extended-noun-review.js';
 import advancedVerbReview, {advancedVerbParadigms,advancedVerbNotes} from '../data/universe-advanced-verb-review.js';
@@ -130,15 +131,17 @@ export function familyCollocationCoverage(){
 }
 // Review all previous headwords, then enrich entries with explicit lexical evidence.
 function lexicalAudit(){
-  const stats={heads:authored.size,links:0,family:0,collocation:0,forms:0,headsWithFamily:0,headsWithCollocations:0,headsWithForms:0};
+  const stats={heads:authored.size,links:0,synonym:0,family:0,collocation:0,forms:0,headsWithSynonyms:0,headsWithFamily:0,headsWithCollocations:0,headsWithForms:0};
   for(const {links} of authored.values()){
     stats.links+=links.length;
-    let family=false,collocation=false,forms=false;
+    let synonym=false,family=false,collocation=false,forms=false;
     for(const link of links){
+      if(link.type==='synonym'){stats.synonym++;synonym=true;}
       if(link.type==='family'){stats.family++;family=true;}
       if(link.type==='collocation'){stats.collocation++;collocation=true;}
       if(link.morphology?.some(x=>!['派生・語族','基となる語'].includes(x))){stats.forms++;forms=true;}
     }
+    if(synonym)stats.headsWithSynonyms++;
     if(family)stats.headsWithFamily++;
     if(collocation)stats.headsWithCollocations++;
     if(forms)stats.headsWithForms++;
@@ -161,7 +164,7 @@ for(const batch of batches){
         const addition=additions.get(normalize(link.word));
         if(!addition)return link;
         let next=link;
-        if(link.type==='related'&&['family','collocation'].includes(addition.type)){
+        if(link.type==='related'&&['family','collocation','synonym'].includes(addition.type)){
           next={...next,type:addition.type,tier:addition.tier};
           refinedReviewLinks++;
         }
@@ -189,11 +192,13 @@ const earlierReview=applyLexicalReview([verbMorphologyReview,nounAdjectiveReview
 const academicReview=applyLexicalReview([academicVerbReview,academicAdjectiveReview]);
 const advancedReview=applyLexicalReview([advancedVerbReview,advancedNominalReview]);
 const extendedReview=applyLexicalReview([extendedVerbReview,extendedNounReview]);
+const balancedReview=applyLexicalReview([balancedLexicalReview]);
 function copyReview(r){return {...r,before:{...r.before},after:{...r.after}};}
 export function lexicalReviewCoverage(){return copyReview(earlierReview);}
 export function advancedReviewCoverage(){return copyReview(advancedReview);}
 export function academicReviewCoverage(){return copyReview(academicReview);}
 export function extendedReviewCoverage(){return copyReview(extendedReview);}
+export function balancedReviewCoverage(){return copyReview(balancedReview);}
 export function cumulativeLexicalCoverage(){return {...lexicalAudit()};}
 function mergeParadigm(a,b){
  if(!a)return b||null;
@@ -207,9 +212,9 @@ function mergeParadigm(a,b){
 export function getWordForms(word){
  const key=normalize(word);
  const rows=[];
- const verb=[verbParadigms[key],academicVerbParadigms[key],advancedVerbParadigms[key],extendedVerbParadigms[key]].reduce(mergeParadigm,null);
- const adj=[adjectiveNounParadigms.adjectives[key],academicAdjectiveParadigms[key],advancedNominalParadigms.adjectives[key]].reduce(mergeParadigm,null);
- const noun=[adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key],extendedNounParadigms[key]].reduce(mergeParadigm,null);
+ const verb=[verbParadigms[key],academicVerbParadigms[key],advancedVerbParadigms[key],extendedVerbParadigms[key],balancedLexicalParadigms.verbs[key]].reduce(mergeParadigm,null);
+ const adj=[adjectiveNounParadigms.adjectives[key],academicAdjectiveParadigms[key],advancedNominalParadigms.adjectives[key],balancedLexicalParadigms.adjectives[key]].reduce(mergeParadigm,null);
+ const noun=[adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key],extendedNounParadigms[key],balancedLexicalParadigms.nouns[key]].reduce(mergeParadigm,null);
  const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
  if(verb){
    add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
@@ -241,7 +246,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes,advancedVerbNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes,advancedVerbNotes,balancedLexicalNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
