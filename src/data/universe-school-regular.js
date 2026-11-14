@@ -1,4 +1,4 @@
-// Original editorial relations for existing school assessment vocabulary. Tiers are editorial, not corpus frequencies.
+// Original editorial vocabulary maps; distance is pedagogical priority, not corpus frequency.
 export default {
   "improved": {
     "meaning": "回復した・向上した",
@@ -54,7 +54,7 @@ export default {
         "word": "paradigm shift",
         "meaning": "パラダイム転換",
         "type": "collocation",
-        "tier": "related"
+        "tier": "extended"
       }
     ]
   },
@@ -355,7 +355,7 @@ export default {
         "word": "quest",
         "meaning": "探索",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "seek",
@@ -396,7 +396,7 @@ export default {
         "word": "biodiversity",
         "meaning": "生物多様性",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "marine ecology",
@@ -425,7 +425,7 @@ export default {
         "word": "impersonal",
         "meaning": "非個人的な",
         "type": "contrast",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "personal opinion",
@@ -651,7 +651,7 @@ export default {
         "word": "expenditure",
         "meaning": "支出",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "wasted",
@@ -686,7 +686,7 @@ export default {
         "word": "adolescence",
         "meaning": "思春期",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "legal guardian",
@@ -1353,7 +1353,7 @@ export default {
         "word": "respiration",
         "meaning": "呼吸",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "take a deep breath",
@@ -1404,8 +1404,8 @@ export default {
       {
         "word": "content",
         "meaning": "内容",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "container",
@@ -1456,8 +1456,8 @@ export default {
       {
         "word": "medicine",
         "meaning": "医学・薬",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "clinical",
@@ -1492,7 +1492,7 @@ export default {
         "word": "unprocessed",
         "meaning": "未加工の",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "processed",
@@ -1643,7 +1643,7 @@ export default {
         "word": "empirical evidence",
         "meaning": "実証的証拠",
         "type": "collocation",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "present evidence",
@@ -1660,7 +1660,7 @@ export default {
         "word": "alleviate",
         "meaning": "軽減する",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "ease",
@@ -1891,8 +1891,8 @@ export default {
       {
         "word": "mind",
         "meaning": "精神",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "psychological",
@@ -2042,8 +2042,8 @@ export default {
       {
         "word": "memory",
         "meaning": "記憶",
-        "type": "family",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "forget",
