@@ -1,3 +1,8 @@
+import masterVerbs from '../data/universe-master-verbs.js';
+import masterAdjectives from '../data/universe-master-adjectives.js';
+import masterNouns from '../data/universe-master-nouns.js';
+import masterPhrasal from '../data/universe-master-phrasal.js';
+import masterNotes from '../data/universe-master-notes.js';
 import bridges from '../data/universe-bridges.js';
 import coreBulk from '../data/universe-core-bulk.js';
 import advancedBulk from '../data/universe-advanced-bulk.js';
@@ -61,7 +66,7 @@ function addAuthored(word,entry) {
 }
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
-for(const batch of [coreBulk,advancedBulk])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
+for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
 for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
@@ -85,8 +90,11 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  const notes=Object.hasOwn(usageNotes,a)?usageNotes[a]:null;
-  return notes&&Object.hasOwn(notes,b)?notes[b]:null;
+  for(const source of [usageNotes,masterNotes]) {
+    const notes=Object.hasOwn(source,a)?source[a]:null;
+    if(notes&&Object.hasOwn(notes,b))return notes[b];
+  }
+  return null;
 }
 export function universeCoverage() {
   return {heads:authored.size,links:[...authored.values()].reduce((n,v)=>n+v.links.length,0)};
