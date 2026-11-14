@@ -35,13 +35,16 @@
     "batches/original-20261114-b1-11.json",
     "batches/original-20261114-b1-12.json",
     "batches/original-20261114-b1-13.json",
-    "batches/original-20261114-b1-mega-01.json"
+    "batches/original-20261114-b1-mega-01.json",
+    "batches/original-20261114-b1-mega-02a.json",
+    "batches/original-20261114-b1-mega-02b.json",
+    "batches/original-20261114-b1-mega-02c.json"
   ],
   "totals": {
-    "distinctHeadwords": 2220,
-    "senses": 2748,
-    "examples": 5496,
-    "distinctExamples": 5496
+    "distinctHeadwords": 2631,
+    "senses": 3231,
+    "examples": 6462,
+    "distinctExamples": 6462
   },
   "quality": {
     "humanReviewed": false,
@@ -56,14 +59,17 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-14",
   "recentWork": {
-    "source": "new original English-Japanese learning examples",
+    "source": "original English-Japanese learning examples, consolidated N–S",
     "newBatches": [
-      "original-20261114-b1-mega-01"
+      "original-20261114-b1-mega-02a",
+      "original-20261114-b1-mega-02b",
+      "original-20261114-b1-mega-02c"
     ],
-    "headwordsAdded": 223,
-    "sensesAdded": 256,
-    "translatedExamplesAdded": 512,
-    "newExamplesDuplicatingPrior": 0
+    "headwordsAdded": 411,
+    "sensesAdded": 483,
+    "translatedExamplesAdded": 966,
+    "newExamplesDuplicatingPrior": 0,
+    "existingBatchesChecked": 31
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
 }
