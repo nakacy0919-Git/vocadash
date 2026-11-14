@@ -50,7 +50,7 @@ const plasmaFS = [
 '}'
 ].join('\n');
 const debrisVS = [
-'precision highp float; attribute vec4 data; attribute vec2 extra; uniform vec2 res; uniform float time,energy,scale; varying float light,kind,spin,seed;',
+'precision highp float; attribute vec4 data; attribute vec2 extra; uniform vec2 res; uniform float time,energy,scale; varying mediump float light,kind,spin,seed;',
 'void main(){float t=time,az=data.x+t*(.06+extra.x*.12),h=data.y,rr=data.z;float s=sqrt(max(0.,1.-h*h));',
 ' vec3 p=vec3(cos(az)*s,h,sin(az)*s)*rr;',
 ' p.y+=sin(t*.75+extra.y*31.)*.035; p*=1.+energy*(.05+.15*extra.x);',
@@ -60,7 +60,7 @@ const debrisVS = [
 ' gl_PointSize=clamp((kind>.5?6.+extra.x*18.:1.1+extra.x*3.8)*scale*perspective*(1.+energy*.35),1.,42.);}'
 ].join('\n');
 const debrisFS = [
-'precision mediump float; varying float light,kind,spin,seed;',
+'precision mediump float; varying mediump float light,kind,spin,seed;',
 'void main(){vec2 p=gl_PointCoord*2.-1.;float c=cos(spin),s=sin(spin);p=mat2(c,-s,s,c)*p;',
 ' if(kind<.5){float d=length(p);float a=exp(-d*d*5.5)*light;gl_FragColor=vec4(mix(vec3(.19,.43,.95),vec3(.82,.95,1.),seed),a*.8);}',
 ' else{float shape=max(abs(p.x)*.91+abs(p.y)*.24,abs(p.y)*1.2+abs(p.x)*.17);if(shape>.85)discard;float facet=step(p.x*.63,p.y);vec3 dark=vec3(.14,.25,.46);vec3 bright=mix(vec3(.48,.73,1.),vec3(1.,.97,.85),step(.72,seed));vec3 col=mix(dark,bright,facet*.65+.25);float edge=1.-smoothstep(.62,.85,shape);gl_FragColor=vec4(col*(.7+light*.6),edge*(.45+light*.55));}}'
