@@ -3,6 +3,7 @@ import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, s
 import './VocaDash.css';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
+import VoiceControl from './components/VoiceControl';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
 const MODULES = import.meta.glob('./data/*.json');
@@ -219,6 +220,7 @@ export default function VocaDash() {
   const [autoplay, setAutoplay] = useState(false);
   const [wordListOpen, setWordListOpen] = useState(false);
   const [universeEntry, setUniverseEntry] = useState(null);
+  const [universeInitialFilter,setUniverseInitialFilter]=useState('all');
   const [wordQuery, setWordQuery] = useState('');
   const [imageError, setImageError] = useState(false);
   const [savedError, setSavedError] = useState(false);
@@ -257,9 +259,9 @@ export default function VocaDash() {
     if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
   }, []);
   useEffect(() => () => { clearTimeout(quizTimer.current); stopAudio(); }, [stopAudio]);
-  const openUniverse = item => {
+  const openUniverse = (item,filter='all') => {
     if(!item||universeEntry)return;
-    setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.universeSound!==false);setUniverseEntry(item);
+    setUniverseInitialFilter(filter);setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.universeSound!==false);setUniverseEntry(item);
   };
   const resetCard = () => {
     clearTimeout(quizTimer.current);
@@ -403,6 +405,20 @@ export default function VocaDash() {
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
+  const voiceCourseSearch=async key=>{
+    for(const c of CATALOG)for(const u of c.units){
+      const load=MODULES[sourcePath(c.id,u.id)];if(!load)continue;
+      const mod=await load();const match=normalizeWords(mod.default||mod,c.id,u.id).find(w=>w.word.toLowerCase()===key);
+      if(match)return match;
+    }return null;
+  };
+  const voiceAppCommand=kind=>{
+    if(universeEntry){stopUniverseLaunchSound();setUniverseEntry(null);}
+    if(kind==='close')return;
+    if(kind==='home'){resetCard();setAutoplay(false);setDashboardOpen(true);return;}
+    if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
+    if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
+  };
   return <div className={'vd-app'+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <aside className="vd-sidebar">
       <Brand/>
@@ -613,7 +629,8 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
-    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    <VoiceControl current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} suspended={mode==='reading'&&!dashboardOpen}/>
+    {universeEntry && <VocaUniverse initialFilter={universeInitialFilter} entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">

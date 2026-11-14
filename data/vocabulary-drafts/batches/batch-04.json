@@ -1,0 +1,2060 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-04",
+  "sourceTab": "語義・例文_第3弾_学術語彙",
+  "sourceKind": "sense",
+  "records": [
+    {
+      "senseId": "VD3-00001",
+      "wordId": "VD-04563",
+      "headword": "assess",
+      "partOfSpeech": "verb",
+      "meaningJa": "評価する",
+      "definitionEn": "to judge the quality or importance of something",
+      "synonyms": "evaluate",
+      "cefrHeadword": "B2",
+      "imageHint": "評価表とリスク検討",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00001-e01",
+          "en": "Teachers assess students in different ways.",
+          "ja": "教師はさまざまな方法で生徒を評価します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00001-e02",
+          "en": "We assessed the risks before starting the trip.",
+          "ja": "私たちは旅行を始める前に危険性を評価しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 2
+    },
+    {
+      "senseId": "VD3-00002",
+      "wordId": "VD-05169",
+      "headword": "evaluate",
+      "partOfSpeech": "verb",
+      "meaningJa": "評価する・検討する",
+      "definitionEn": "to examine something carefully and decide how good or useful it is",
+      "synonyms": "assess",
+      "cefrHeadword": "B2",
+      "imageHint": "選択肢を比較検討",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00002-e01",
+          "en": "The team evaluated three possible solutions.",
+          "ja": "チームは3つの解決策を評価しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00002-e02",
+          "en": "Please evaluate the evidence before making a decision.",
+          "ja": "判断する前に証拠をよく検討してください。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 3
+    },
+    {
+      "senseId": "VD3-00003",
+      "wordId": "VD-01461",
+      "headword": "evidence",
+      "partOfSpeech": "noun",
+      "meaningJa": "証拠・根拠",
+      "definitionEn": "facts or information that support a claim",
+      "synonyms": "proof (contextual)",
+      "cefrHeadword": "A2",
+      "imageHint": "研究資料・証拠",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00003-e01",
+          "en": "The scientist collected evidence for her theory.",
+          "ja": "その科学者は自分の理論の根拠を集めました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00003-e02",
+          "en": "There is little evidence to support that idea.",
+          "ja": "その考えを裏付ける証拠はほとんどありません。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 4
+    },
+    {
+      "senseId": "VD3-00004",
+      "wordId": "VD-01272",
+      "headword": "claim",
+      "partOfSpeech": "verb",
+      "meaningJa": "主張する",
+      "definitionEn": "to say that something is true, especially without proving it",
+      "synonyms": "assert",
+      "cefrHeadword": "A2",
+      "imageHint": "主張する人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00004-e01",
+          "en": "The company claims that the product saves energy.",
+          "ja": "その会社は製品が省エネルギーにつながると主張しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00004-e02",
+          "en": "He claimed that he had seen the accident.",
+          "ja": "彼はその事故を目撃したと主張しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 5
+    },
+    {
+      "senseId": "VD3-00005",
+      "wordId": "VD-01272",
+      "headword": "claim",
+      "partOfSpeech": "noun",
+      "meaningJa": "主張",
+      "definitionEn": "a statement that something is true",
+      "synonyms": "assertion",
+      "cefrHeadword": "A2",
+      "imageHint": "主張と証拠",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00005-e01",
+          "en": "Her claim needs more evidence.",
+          "ja": "彼女の主張にはさらに根拠が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00005-e02",
+          "en": "The article makes a surprising claim about sleep.",
+          "ja": "その記事は睡眠について驚くべき主張をしています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 6
+    },
+    {
+      "senseId": "VD3-00006",
+      "wordId": "VD-01131",
+      "headword": "argue",
+      "partOfSpeech": "verb",
+      "meaningJa": "論じる・主張する",
+      "definitionEn": "to give reasons for a particular opinion",
+      "synonyms": "contend",
+      "cefrHeadword": "A2",
+      "imageHint": "理由を挙げる討論",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00006-e01",
+          "en": "The students argued that public transport should improve.",
+          "ja": "生徒たちは公共交通機関を改善すべきだと論じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00006-e02",
+          "en": "She argues that reading helps people think critically.",
+          "ja": "彼女は読書が批判的思考に役立つと主張しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 7
+    },
+    {
+      "senseId": "VD3-00007",
+      "wordId": "VD-01131",
+      "headword": "argue",
+      "partOfSpeech": "verb",
+      "meaningJa": "口論する",
+      "definitionEn": "to speak angrily because of disagreement",
+      "synonyms": "quarrel",
+      "cefrHeadword": "A2",
+      "imageHint": "口論する兄弟",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00007-e01",
+          "en": "The brothers argued about the TV remote.",
+          "ja": "兄弟はテレビのリモコンをめぐって口論しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00007-e02",
+          "en": "Try not to argue when you disagree.",
+          "ja": "意見が合わないときも口論にならないようにしましょう。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 8
+    },
+    {
+      "senseId": "VD3-00008",
+      "wordId": "VD-01363",
+      "headword": "debate",
+      "partOfSpeech": "noun",
+      "meaningJa": "討論・議論",
+      "definitionEn": "a formal discussion of different opinions on a subject",
+      "synonyms": "discussion",
+      "cefrHeadword": "A2",
+      "imageHint": "教室でのディベート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00008-e01",
+          "en": "Our class held a debate about school uniforms.",
+          "ja": "私たちのクラスは制服について討論しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00008-e02",
+          "en": "The debate continued for more than an hour.",
+          "ja": "討論は1時間以上続きました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 9
+    },
+    {
+      "senseId": "VD3-00009",
+      "wordId": "VD-01363",
+      "headword": "debate",
+      "partOfSpeech": "verb",
+      "meaningJa": "討論する",
+      "definitionEn": "to discuss different sides of an issue formally",
+      "synonyms": "discuss",
+      "cefrHeadword": "A2",
+      "imageHint": "政策討論",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00009-e01",
+          "en": "We debated whether phones should be allowed in class.",
+          "ja": "私たちは授業中の携帯電話の使用を認めるべきか討論しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00009-e02",
+          "en": "The candidates debated education policy.",
+          "ja": "候補者たちは教育政策について討論しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 10
+    },
+    {
+      "senseId": "VD3-00010",
+      "wordId": "VD-00255",
+      "headword": "discuss",
+      "partOfSpeech": "verb",
+      "meaningJa": "話し合う",
+      "definitionEn": "to talk about something with other people to exchange ideas",
+      "synonyms": "talk over",
+      "cefrHeadword": "A1",
+      "imageHint": "グループで協議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00010-e01",
+          "en": "Let's discuss the plan after lunch.",
+          "ja": "昼食後にその計画について話し合いましょう。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00010-e02",
+          "en": "The group discussed how to reduce waste.",
+          "ja": "グループはごみを減らす方法を話し合いました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 11
+    },
+    {
+      "senseId": "VD3-00011",
+      "wordId": "VD-01965",
+      "headword": "research",
+      "partOfSpeech": "noun",
+      "meaningJa": "研究・調査",
+      "definitionEn": "careful study to discover information or new knowledge",
+      "synonyms": "investigation",
+      "cefrHeadword": "A2",
+      "imageHint": "研究ノート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00011-e01",
+          "en": "Her research focuses on marine life.",
+          "ja": "彼女の研究は海洋生物に焦点を当てています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00011-e02",
+          "en": "The report is based on recent research.",
+          "ja": "その報告書は最近の研究に基づいています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 12
+    },
+    {
+      "senseId": "VD3-00012",
+      "wordId": "VD-01965",
+      "headword": "research",
+      "partOfSpeech": "verb",
+      "meaningJa": "研究・調査する",
+      "definitionEn": "to study a subject carefully to find information",
+      "synonyms": "investigate",
+      "cefrHeadword": "A2",
+      "imageHint": "資料を調べる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00012-e01",
+          "en": "We researched the history of the town.",
+          "ja": "私たちはその町の歴史を調べました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00012-e02",
+          "en": "She is researching ways to save water.",
+          "ja": "彼女は水を節約する方法を研究しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 13
+    },
+    {
+      "senseId": "VD3-00013",
+      "wordId": "VD-01743",
+      "headword": "method",
+      "partOfSpeech": "noun",
+      "meaningJa": "方法",
+      "definitionEn": "a particular way of doing something",
+      "synonyms": "approach",
+      "cefrHeadword": "A2",
+      "imageHint": "異なる実験方法",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00013-e01",
+          "en": "This method helps me remember new words.",
+          "ja": "この方法は新しい単語を覚えるのに役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00013-e02",
+          "en": "The researchers tested a different method.",
+          "ja": "研究者たちは別の方法を試しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 14
+    },
+    {
+      "senseId": "VD3-00014",
+      "wordId": "VD-00751",
+      "headword": "result",
+      "partOfSpeech": "noun",
+      "meaningJa": "結果",
+      "definitionEn": "something that happens because of an action or situation",
+      "synonyms": "outcome",
+      "cefrHeadword": "A1",
+      "imageHint": "結果の発表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00014-e01",
+          "en": "We discussed the results of the experiment.",
+          "ja": "私たちは実験の結果について話し合いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00014-e02",
+          "en": "Hard work does not always produce immediate results.",
+          "ja": "努力がすぐに結果につながるとは限りません。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 15
+    },
+    {
+      "senseId": "VD3-00015",
+      "wordId": "VD-01239",
+      "headword": "cause",
+      "partOfSpeech": "verb",
+      "meaningJa": "引き起こす",
+      "definitionEn": "to make something happen",
+      "synonyms": "bring about",
+      "cefrHeadword": "A2",
+      "imageHint": "原因と結果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00015-e01",
+          "en": "Heavy rain caused delays on the trains.",
+          "ja": "大雨が列車の遅れを引き起こしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00015-e02",
+          "en": "The mistake caused a serious problem.",
+          "ja": "その間違いが深刻な問題を引き起こしました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 16
+    },
+    {
+      "senseId": "VD3-00016",
+      "wordId": "VD-01239",
+      "headword": "cause",
+      "partOfSpeech": "noun",
+      "meaningJa": "原因",
+      "definitionEn": "the reason why something happens",
+      "synonyms": "reason",
+      "cefrHeadword": "A2",
+      "imageHint": "原因を調査",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00016-e01",
+          "en": "The cause of the fire is still unknown.",
+          "ja": "火事の原因はまだわかっていません。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00016-e02",
+          "en": "We need to find the cause of the error.",
+          "ja": "私たちはそのエラーの原因を見つける必要があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 17
+    },
+    {
+      "senseId": "VD3-00017",
+      "wordId": "VD-01429",
+      "headword": "effect",
+      "partOfSpeech": "noun",
+      "meaningJa": "影響・効果",
+      "definitionEn": "a change caused by something else",
+      "synonyms": "impact",
+      "cefrHeadword": "A2",
+      "imageHint": "睡眠と記憶",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00017-e01",
+          "en": "More sleep had a positive effect on her concentration.",
+          "ja": "睡眠時間を増やしたことは彼女の集中力によい影響を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00017-e02",
+          "en": "Lack of sleep can have an effect on memory.",
+          "ja": "睡眠不足は記憶に影響することがあります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 18
+    },
+    {
+      "senseId": "VD3-00018",
+      "wordId": "VD-01636",
+      "headword": "influence",
+      "partOfSpeech": "verb",
+      "meaningJa": "影響を与える",
+      "definitionEn": "to change how someone thinks or behaves",
+      "synonyms": "affect",
+      "cefrHeadword": "A2",
+      "imageHint": "進路を考える",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00018-e01",
+          "en": "Friends can influence our choices.",
+          "ja": "友人は私たちの選択に影響を与えることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00018-e02",
+          "en": "The story influenced her decision to volunteer.",
+          "ja": "その物語は彼女がボランティアをする決断に影響しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 19
+    },
+    {
+      "senseId": "VD3-00019",
+      "wordId": "VD-01636",
+      "headword": "influence",
+      "partOfSpeech": "noun",
+      "meaningJa": "影響力",
+      "definitionEn": "the power to affect people's actions or ideas",
+      "synonyms": "impact",
+      "cefrHeadword": "A2",
+      "imageHint": "SNSの影響",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00019-e01",
+          "en": "Her teacher had a strong influence on her life.",
+          "ja": "先生は彼女の人生に大きな影響を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00019-e02",
+          "en": "Social media has an influence on buying habits.",
+          "ja": "SNSは購買習慣に影響を与えています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 20
+    },
+    {
+      "senseId": "VD3-00020",
+      "wordId": "VD-01621",
+      "headword": "impact",
+      "partOfSpeech": "noun",
+      "meaningJa": "大きな影響",
+      "definitionEn": "a strong effect on something or someone",
+      "synonyms": "effect",
+      "cefrHeadword": "A2",
+      "imageHint": "観光客の増加",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00020-e01",
+          "en": "The project had a major impact on the community.",
+          "ja": "その事業は地域社会に大きな影響を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00020-e02",
+          "en": "We studied the impact of tourism on the island.",
+          "ja": "私たちは観光がその島に与える影響を調べました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 21
+    },
+    {
+      "senseId": "VD3-00021",
+      "wordId": "VD-01621",
+      "headword": "impact",
+      "partOfSpeech": "verb",
+      "meaningJa": "大きな影響を与える",
+      "definitionEn": "to affect something strongly",
+      "synonyms": "affect",
+      "cefrHeadword": "A2",
+      "imageHint": "道路閉鎖と商店",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00021-e01",
+          "en": "Climate change impacts farming in many regions.",
+          "ja": "気候変動は多くの地域の農業に大きな影響を与えます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00021-e02",
+          "en": "The road closure impacted local businesses.",
+          "ja": "道路の通行止めは地元の商店に影響しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 22
+    },
+    {
+      "senseId": "VD3-00022",
+      "wordId": "VD-02502",
+      "headword": "benefit",
+      "partOfSpeech": "noun",
+      "meaningJa": "利益・恩恵",
+      "definitionEn": "a good result or advantage from something",
+      "synonyms": "advantage",
+      "cefrHeadword": "B1",
+      "imageHint": "運動の効果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00022-e01",
+          "en": "Exercise has many benefits for health.",
+          "ja": "運動には健康上の利点がたくさんあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00022-e02",
+          "en": "One benefit of online classes is flexibility.",
+          "ja": "オンライン授業の利点の1つは柔軟性です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 23
+    },
+    {
+      "senseId": "VD3-00023",
+      "wordId": "VD-02502",
+      "headword": "benefit",
+      "partOfSpeech": "verb",
+      "meaningJa": "恩恵を受ける・役立つ",
+      "definitionEn": "to gain something good from an activity or change",
+      "synonyms": "profit from",
+      "cefrHeadword": "B1",
+      "imageHint": "公園の利用者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00023-e01",
+          "en": "Young children benefit from reading aloud with adults.",
+          "ja": "幼い子どもは大人と一緒に音読することで恩恵を受けます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00023-e02",
+          "en": "The new park will benefit local families.",
+          "ja": "新しい公園は地元の家族の役に立つでしょう。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 24
+    },
+    {
+      "senseId": "VD3-00024",
+      "wordId": "VD-01083",
+      "headword": "advantage",
+      "partOfSpeech": "noun",
+      "meaningJa": "利点・有利な点",
+      "definitionEn": "something that makes a situation better or easier",
+      "synonyms": "benefit",
+      "cefrHeadword": "A2",
+      "imageHint": "移動手段比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00024-e01",
+          "en": "A major advantage of cycling is its low cost.",
+          "ja": "自転車の大きな利点は費用があまりかからないことです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00024-e02",
+          "en": "Speaking two languages can be an advantage at work.",
+          "ja": "2つの言語を話せることは仕事で有利になる場合があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 25
+    },
+    {
+      "senseId": "VD3-00025",
+      "wordId": "VD-01390",
+      "headword": "disadvantage",
+      "partOfSpeech": "noun",
+      "meaningJa": "不利な点・欠点",
+      "definitionEn": "something that creates difficulty or makes a choice less attractive",
+      "synonyms": "drawback",
+      "cefrHeadword": "A2",
+      "imageHint": "長距離通学",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00025-e01",
+          "en": "One disadvantage of this phone is its short battery life.",
+          "ja": "この携帯電話の欠点の1つは電池の持ちが短いことです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00025-e02",
+          "en": "Living far from a station has some disadvantages.",
+          "ja": "駅から遠くに住むことにはいくつか不利な点があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 26
+    },
+    {
+      "senseId": "VD3-00026",
+      "wordId": "VD-01249",
+      "headword": "challenge",
+      "partOfSpeech": "noun",
+      "meaningJa": "課題・難題",
+      "definitionEn": "something difficult that requires effort or skill",
+      "synonyms": "difficulty",
+      "cefrHeadword": "A2",
+      "imageHint": "地域の課題",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00026-e01",
+          "en": "Learning to speak confidently is a challenge.",
+          "ja": "自信を持って話せるようになることは難しい課題です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00026-e02",
+          "en": "The city faces the challenge of an aging population.",
+          "ja": "その都市は人口の高齢化という課題に直面しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 27
+    },
+    {
+      "senseId": "VD3-00027",
+      "wordId": "VD-01249",
+      "headword": "challenge",
+      "partOfSpeech": "verb",
+      "meaningJa": "挑戦する",
+      "definitionEn": "to try to do something difficult",
+      "synonyms": "attempt",
+      "cefrHeadword": "A2",
+      "imageHint": "英語スピーチへの挑戦",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00027-e01",
+          "en": "She challenged herself to give a speech in English.",
+          "ja": "彼女は英語でスピーチすることに挑戦しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00027-e02",
+          "en": "Our team will challenge the strongest school.",
+          "ja": "私たちのチームは最も強い学校に挑みます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 28
+    },
+    {
+      "senseId": "VD3-00028",
+      "wordId": "VD-01805",
+      "headword": "opportunity",
+      "partOfSpeech": "noun",
+      "meaningJa": "機会",
+      "definitionEn": "a situation that makes something possible",
+      "synonyms": "chance",
+      "cefrHeadword": "A2",
+      "imageHint": "国際交流の機会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00028-e01",
+          "en": "The exchange program gave me an opportunity to make friends.",
+          "ja": "交流プログラムは友達を作る機会をくれました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00028-e02",
+          "en": "Don't miss the opportunity to ask questions.",
+          "ja": "質問する機会を逃さないでください。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 29
+    },
+    {
+      "senseId": "VD3-00029",
+      "wordId": "VD-02092",
+      "headword": "solution",
+      "partOfSpeech": "noun",
+      "meaningJa": "解決策",
+      "definitionEn": "a way of solving a problem",
+      "synonyms": "answer",
+      "cefrHeadword": "A2",
+      "imageHint": "食品ロス解決策",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00029-e01",
+          "en": "We found a simple solution to the problem.",
+          "ja": "私たちはその問題の簡単な解決策を見つけました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00029-e02",
+          "en": "The students proposed several solutions to food waste.",
+          "ja": "生徒たちは食品ロスに対していくつかの解決策を提案しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 30
+    },
+    {
+      "senseId": "VD3-00030",
+      "wordId": "VD-01652",
+      "headword": "issue",
+      "partOfSpeech": "noun",
+      "meaningJa": "問題・論点",
+      "definitionEn": "an important topic that people discuss or disagree about",
+      "synonyms": "matter",
+      "cefrHeadword": "A2",
+      "imageHint": "水不足・プライバシー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00030-e01",
+          "en": "Water shortages are an important issue in some areas.",
+          "ja": "水不足は一部の地域で重要な問題です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00030-e02",
+          "en": "The class discussed the issue of online privacy.",
+          "ja": "クラスはオンラインのプライバシー問題について話し合いました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 31
+    },
+    {
+      "senseId": "VD3-00031",
+      "wordId": "VD-00725",
+      "headword": "problem",
+      "partOfSpeech": "noun",
+      "meaningJa": "問題",
+      "definitionEn": "something that causes difficulty and needs a solution",
+      "synonyms": "difficulty",
+      "cefrHeadword": "A1",
+      "imageHint": "交通渋滞",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00031-e01",
+          "en": "We had a problem with the projector.",
+          "ja": "私たちはプロジェクターに問題がありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00031-e02",
+          "en": "Traffic is a serious problem in the city center.",
+          "ja": "交通は市の中心部で深刻な問題です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 32
+    },
+    {
+      "senseId": "VD3-00032",
+      "wordId": "VD-05151",
+      "headword": "environment",
+      "partOfSpeech": "noun",
+      "meaningJa": "環境・自然環境",
+      "definitionEn": "the natural world and the conditions around living things",
+      "synonyms": "surroundings (contextual)",
+      "cefrHeadword": "B2",
+      "imageHint": "自然とごみ問題",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00032-e01",
+          "en": "Plastic waste can harm the environment.",
+          "ja": "プラスチックごみは環境に害を与えることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00032-e02",
+          "en": "We want to protect the local environment.",
+          "ja": "私たちは地域の環境を守りたいと考えています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 33
+    },
+    {
+      "senseId": "VD3-00033",
+      "wordId": "VD-02650",
+      "headword": "climate",
+      "partOfSpeech": "noun",
+      "meaningJa": "気候",
+      "definitionEn": "the usual weather conditions of a place over many years",
+      "synonyms": "—",
+      "cefrHeadword": "B1",
+      "imageHint": "季節と気候",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00033-e01",
+          "en": "The island has a warm climate.",
+          "ja": "その島は温暖な気候です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00033-e02",
+          "en": "Farmers must adapt to changes in the climate.",
+          "ja": "農家は気候の変化に適応しなければなりません。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 34
+    },
+    {
+      "senseId": "VD3-00034",
+      "wordId": "VD-00710",
+      "headword": "pollution",
+      "partOfSpeech": "noun",
+      "meaningJa": "汚染",
+      "definitionEn": "harmful substances or damage in air water or land",
+      "synonyms": "contamination",
+      "cefrHeadword": "A1",
+      "imageHint": "汚染された川",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00034-e01",
+          "en": "Air pollution is a serious health concern.",
+          "ja": "大気汚染は健康上の深刻な懸念です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00034-e02",
+          "en": "The river suffered from pollution for years.",
+          "ja": "その川は長年汚染に苦しみました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 35
+    },
+    {
+      "senseId": "VD3-00035",
+      "wordId": "VD-05140",
+      "headword": "energy",
+      "partOfSpeech": "noun",
+      "meaningJa": "エネルギー",
+      "definitionEn": "power used for heat movement or electricity",
+      "synonyms": "power (contextual)",
+      "cefrHeadword": "B2",
+      "imageHint": "太陽光発電",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00035-e01",
+          "en": "Solar panels produce energy from sunlight.",
+          "ja": "太陽光パネルは日光からエネルギーを生み出します。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00035-e02",
+          "en": "We should use less energy at home.",
+          "ja": "私たちは家庭でのエネルギー使用量を減らすべきです。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 36
+    },
+    {
+      "senseId": "VD3-00036",
+      "wordId": "VD-05140",
+      "headword": "energy",
+      "partOfSpeech": "noun",
+      "meaningJa": "元気・活力",
+      "definitionEn": "the strength and willingness to do things",
+      "synonyms": "vigor",
+      "cefrHeadword": "B2",
+      "imageHint": "活動する子供",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00036-e01",
+          "en": "After a good sleep, I had more energy.",
+          "ja": "よく眠ったあと、私はより元気になりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00036-e02",
+          "en": "The children were full of energy at the festival.",
+          "ja": "子どもたちは祭りで元気いっぱいでした。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 37
+    },
+    {
+      "senseId": "VD3-00037",
+      "wordId": "VD-03927",
+      "headword": "resource",
+      "partOfSpeech": "noun",
+      "meaningJa": "資源",
+      "definitionEn": "something useful that people can use to achieve a goal",
+      "synonyms": "asset",
+      "cefrHeadword": "B1",
+      "imageHint": "水と図書館資料",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00037-e01",
+          "en": "Fresh water is an important natural resource.",
+          "ja": "淡水は重要な天然資源です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00037-e02",
+          "en": "The library provides useful learning resources.",
+          "ja": "図書館は役立つ学習資料を提供しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 38
+    },
+    {
+      "senseId": "VD3-00038",
+      "wordId": "VD-07664",
+      "headword": "sustainable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "持続可能な",
+      "definitionEn": "able to continue without using up resources or causing lasting harm",
+      "synonyms": "long-lasting (contextual)",
+      "cefrHeadword": "C1",
+      "imageHint": "持続可能な暮らし",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00038-e01",
+          "en": "Our school wants to promote sustainable living.",
+          "ja": "私たちの学校は持続可能な暮らしを広めたいと考えています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00038-e02",
+          "en": "The village needs a sustainable source of clean water.",
+          "ja": "その村には持続可能な清潔な水の供給源が必要です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 39
+    },
+    {
+      "senseId": "VD3-00039",
+      "wordId": "VD-01945",
+      "headword": "recycle",
+      "partOfSpeech": "verb",
+      "meaningJa": "再利用のために回収・処理する",
+      "definitionEn": "to turn used materials into materials that can be used again",
+      "synonyms": "process for reuse",
+      "cefrHeadword": "A2",
+      "imageHint": "分別回収",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00039-e01",
+          "en": "Our town recycles glass bottles separately.",
+          "ja": "私たちの町ではガラスびんを分別してリサイクルしています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00039-e02",
+          "en": "These bottles can be recycled into new products.",
+          "ja": "これらのボトルは新しい製品に再生できます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 40
+    },
+    {
+      "senseId": "VD3-00040",
+      "wordId": "VD-03873",
+      "headword": "reduce",
+      "partOfSpeech": "verb",
+      "meaningJa": "減らす",
+      "definitionEn": "to make something smaller in amount or size",
+      "synonyms": "decrease",
+      "cefrHeadword": "B1",
+      "imageHint": "ごみ削減",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00040-e01",
+          "en": "We should reduce food waste at home.",
+          "ja": "私たちは家庭で食品ロスを減らすべきです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00040-e02",
+          "en": "Using public transport can reduce pollution.",
+          "ja": "公共交通機関を使うと汚染を減らせる場合があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 41
+    },
+    {
+      "senseId": "VD3-00041",
+      "wordId": "VD-01630",
+      "headword": "increase",
+      "partOfSpeech": "verb",
+      "meaningJa": "増やす・増える",
+      "definitionEn": "to become or make something greater in amount",
+      "synonyms": "rise; grow",
+      "cefrHeadword": "A2",
+      "imageHint": "増加するグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00041-e01",
+          "en": "The school increased the number of exchange events.",
+          "ja": "学校は交流イベントの回数を増やしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00041-e02",
+          "en": "The temperature increases during the day.",
+          "ja": "日中は気温が上がります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 42
+    },
+    {
+      "senseId": "VD3-00042",
+      "wordId": "VD-01630",
+      "headword": "increase",
+      "partOfSpeech": "noun",
+      "meaningJa": "増加",
+      "definitionEn": "a rise in amount or number",
+      "synonyms": "rise",
+      "cefrHeadword": "A2",
+      "imageHint": "利用者増加",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00042-e01",
+          "en": "There was an increase in library use this year.",
+          "ja": "今年は図書館の利用が増えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00042-e02",
+          "en": "The city reported an increase in visitors.",
+          "ja": "市は訪問者の増加を報告しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 43
+    },
+    {
+      "senseId": "VD3-00043",
+      "wordId": "VD-02796",
+      "headword": "decrease",
+      "partOfSpeech": "verb",
+      "meaningJa": "減らす・減少する",
+      "definitionEn": "to become or make something smaller in amount",
+      "synonyms": "decline; reduce",
+      "cefrHeadword": "B1",
+      "imageHint": "減少するグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00043-e01",
+          "en": "The number of accidents decreased last year.",
+          "ja": "昨年、事故の件数は減少しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00043-e02",
+          "en": "We need to decrease our use of plastic bags.",
+          "ja": "私たちはレジ袋の使用を減らす必要があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 44
+    },
+    {
+      "senseId": "VD3-00044",
+      "wordId": "VD-02796",
+      "headword": "decrease",
+      "partOfSpeech": "noun",
+      "meaningJa": "減少",
+      "definitionEn": "a reduction in size number or amount",
+      "synonyms": "decline",
+      "cefrHeadword": "B1",
+      "imageHint": "降水量減少",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00044-e01",
+          "en": "There has been a decrease in rainfall.",
+          "ja": "降水量が減少しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00044-e02",
+          "en": "The report shows a decrease in traffic.",
+          "ja": "その報告書は交通量の減少を示しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 45
+    },
+    {
+      "senseId": "VD3-00045",
+      "wordId": "VD-03158",
+      "headword": "global",
+      "partOfSpeech": "adjective",
+      "meaningJa": "世界的な",
+      "definitionEn": "related to the whole world",
+      "synonyms": "worldwide",
+      "cefrHeadword": "B1",
+      "imageHint": "世界地図とつながり",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00045-e01",
+          "en": "Climate change is a global problem.",
+          "ja": "気候変動は世界的な問題です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00045-e02",
+          "en": "The company works with global partners.",
+          "ja": "その会社は世界各地の協力先と仕事をしています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 46
+    },
+    {
+      "senseId": "VD3-00046",
+      "wordId": "VD-01703",
+      "headword": "local",
+      "partOfSpeech": "adjective",
+      "meaningJa": "地元の・地域の",
+      "definitionEn": "related to a particular nearby area",
+      "synonyms": "regional (contextual)",
+      "cefrHeadword": "A2",
+      "imageHint": "地元の市場",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00046-e01",
+          "en": "We visited a local market on Saturday.",
+          "ja": "私たちは土曜日に地元の市場を訪れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00046-e02",
+          "en": "The students interviewed local residents.",
+          "ja": "生徒たちは地域の住民にインタビューしました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 47
+    },
+    {
+      "senseId": "VD3-00047",
+      "wordId": "VD-04808",
+      "headword": "community",
+      "partOfSpeech": "noun",
+      "meaningJa": "地域社会",
+      "definitionEn": "people living in or connected to the same place",
+      "synonyms": "neighborhood (contextual)",
+      "cefrHeadword": "B2",
+      "imageHint": "地域清掃",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00047-e01",
+          "en": "The community organized a clean-up day.",
+          "ja": "地域の人たちは清掃活動の日を企画しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00047-e02",
+          "en": "Our school works with the local community.",
+          "ja": "私たちの学校は地域社会と協力しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 48
+    },
+    {
+      "senseId": "VD3-00048",
+      "wordId": "VD-02084",
+      "headword": "society",
+      "partOfSpeech": "noun",
+      "meaningJa": "社会",
+      "definitionEn": "people living together within a country or community",
+      "synonyms": "community (contextual)",
+      "cefrHeadword": "A2",
+      "imageHint": "さまざまな人の社会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00048-e01",
+          "en": "Technology is changing our society.",
+          "ja": "技術は私たちの社会を変えています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00048-e02",
+          "en": "Education plays an important role in society.",
+          "ja": "教育は社会で重要な役割を果たします。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 49
+    },
+    {
+      "senseId": "VD3-00049",
+      "wordId": "VD-00228",
+      "headword": "culture",
+      "partOfSpeech": "noun",
+      "meaningJa": "文化",
+      "definitionEn": "the customs beliefs arts and ways of life of a group",
+      "synonyms": "way of life",
+      "cefrHeadword": "A1",
+      "imageHint": "国際文化交流",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00049-e01",
+          "en": "Food is an important part of culture.",
+          "ja": "食べ物は文化の重要な一部です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00049-e02",
+          "en": "We learned about another culture during the exchange.",
+          "ja": "私たちは交流を通じて別の文化について学びました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 50
+    },
+    {
+      "senseId": "VD3-00050",
+      "wordId": "VD-02209",
+      "headword": "tradition",
+      "partOfSpeech": "noun",
+      "meaningJa": "伝統",
+      "definitionEn": "a belief or custom passed from one generation to the next",
+      "synonyms": "custom",
+      "cefrHeadword": "A2",
+      "imageHint": "伝統行事",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00050-e01",
+          "en": "Our town has a tradition of summer festivals.",
+          "ja": "私たちの町には夏祭りの伝統があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00050-e02",
+          "en": "The family keeps an old New Year tradition.",
+          "ja": "その家族は昔からの正月の伝統を守っています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 51
+    },
+    {
+      "senseId": "VD3-00051",
+      "wordId": "VD-07104",
+      "headword": "diversity",
+      "partOfSpeech": "noun",
+      "meaningJa": "多様性",
+      "definitionEn": "the presence of many different kinds of people or things",
+      "synonyms": "variety",
+      "cefrHeadword": "C1",
+      "imageHint": "多文化の人々",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00051-e01",
+          "en": "Cultural diversity makes our classroom interesting.",
+          "ja": "文化の多様性は私たちの教室を面白くしています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00051-e02",
+          "en": "The company values diversity in its staff.",
+          "ja": "その会社は社員の多様性を重視しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 52
+    },
+    {
+      "senseId": "VD3-00052",
+      "wordId": "VD-02988",
+      "headword": "equality",
+      "partOfSpeech": "noun",
+      "meaningJa": "平等",
+      "definitionEn": "the state of having equal rights or opportunities",
+      "synonyms": "fairness (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "平等な機会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00052-e01",
+          "en": "We discussed equality in education.",
+          "ja": "私たちは教育における平等を話し合いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00052-e02",
+          "en": "Equal pay is an issue of equality in the workplace.",
+          "ja": "同じ仕事への同じ賃金は職場の平等に関する問題です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 53
+    },
+    {
+      "senseId": "VD3-00053",
+      "wordId": "VD-01427",
+      "headword": "education",
+      "partOfSpeech": "noun",
+      "meaningJa": "教育",
+      "definitionEn": "the process of teaching and learning",
+      "synonyms": "schooling",
+      "cefrHeadword": "A2",
+      "imageHint": "教室の教育",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00053-e01",
+          "en": "Education can change people's lives.",
+          "ja": "教育は人々の人生を変えることができます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00053-e02",
+          "en": "Every child deserves access to education.",
+          "ja": "すべての子どもには教育を受ける機会が必要です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 54
+    },
+    {
+      "senseId": "VD3-00054",
+      "wordId": "VD-01669",
+      "headword": "knowledge",
+      "partOfSpeech": "noun",
+      "meaningJa": "知識",
+      "definitionEn": "information and understanding gained through learning",
+      "synonyms": "understanding",
+      "cefrHeadword": "A2",
+      "imageHint": "本を読む",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00054-e01",
+          "en": "She has deep knowledge of local history.",
+          "ja": "彼女は地域の歴史について深い知識を持っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00054-e02",
+          "en": "Reading helps us expand our knowledge.",
+          "ja": "読書は知識を広げるのに役立ちます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 55
+    },
+    {
+      "senseId": "VD3-00055",
+      "wordId": "VD-00824",
+      "headword": "skill",
+      "partOfSpeech": "noun",
+      "meaningJa": "技能・技術",
+      "definitionEn": "an ability developed through learning and practice",
+      "synonyms": "ability (related)",
+      "cefrHeadword": "A1",
+      "imageHint": "スキル練習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00055-e01",
+          "en": "Communication is an important skill.",
+          "ja": "コミュニケーションは重要な技能です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00055-e02",
+          "en": "You can improve this skill through daily practice.",
+          "ja": "この技能は毎日の練習で向上させることができます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 56
+    },
+    {
+      "senseId": "VD3-00056",
+      "wordId": "VD-01065",
+      "headword": "ability",
+      "partOfSpeech": "noun",
+      "meaningJa": "能力",
+      "definitionEn": "the power or skill to do something",
+      "synonyms": "capability",
+      "cefrHeadword": "A2",
+      "imageHint": "問題を解く生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00056-e01",
+          "en": "She has the ability to solve difficult problems.",
+          "ja": "彼女には難しい問題を解く能力があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00056-e02",
+          "en": "This activity improves students' speaking ability.",
+          "ja": "この活動は生徒のスピーキング能力を伸ばします。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 57
+    },
+    {
+      "senseId": "VD3-00057",
+      "wordId": "VD-01430",
+      "headword": "effort",
+      "partOfSpeech": "noun",
+      "meaningJa": "努力",
+      "definitionEn": "the physical or mental work needed to achieve something",
+      "synonyms": "hard work",
+      "cefrHeadword": "A2",
+      "imageHint": "努力して練習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00057-e01",
+          "en": "Learning a language takes time and effort.",
+          "ja": "言語を学ぶには時間と努力が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00057-e02",
+          "en": "Her efforts helped the team succeed.",
+          "ja": "彼女の努力はチームの成功に役立ちました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 58
+    },
+    {
+      "senseId": "VD3-00058",
+      "wordId": "VD-02340",
+      "headword": "achievement",
+      "partOfSpeech": "noun",
+      "meaningJa": "達成・成果",
+      "definitionEn": "something important that has been done successfully",
+      "synonyms": "accomplishment",
+      "cefrHeadword": "B1",
+      "imageHint": "プロジェクト完成",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00058-e01",
+          "en": "Finishing the project was a great achievement.",
+          "ja": "そのプロジェクトを完成させたことは大きな成果でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00058-e02",
+          "en": "She felt proud of her academic achievements.",
+          "ja": "彼女は学業上の成果を誇りに思いました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 59
+    },
+    {
+      "senseId": "VD3-00059",
+      "wordId": "VD-03794",
+      "headword": "progress",
+      "partOfSpeech": "noun",
+      "meaningJa": "進歩・進捗",
+      "definitionEn": "improvement or movement toward a goal",
+      "synonyms": "improvement",
+      "cefrHeadword": "B1",
+      "imageHint": "学習進捗",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00059-e01",
+          "en": "I can see progress in my English speaking.",
+          "ja": "英語のスピーキングが上達しているのがわかります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00059-e02",
+          "en": "We checked our progress at the end of the week.",
+          "ja": "私たちは週末に進捗を確認しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 60
+    },
+    {
+      "senseId": "VD3-00060",
+      "wordId": "VD-00388",
+      "headword": "goal",
+      "partOfSpeech": "noun",
+      "meaningJa": "目標",
+      "definitionEn": "something you want to achieve",
+      "synonyms": "aim",
+      "cefrHeadword": "A1",
+      "imageHint": "目標を書く",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00060-e01",
+          "en": "My goal is to speak English more confidently.",
+          "ja": "私の目標はもっと自信を持って英語を話すことです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00060-e02",
+          "en": "The team set a goal for the next month.",
+          "ja": "チームは来月の目標を設定しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 61
+    },
+    {
+      "senseId": "VD3-00061",
+      "wordId": "VD-01918",
+      "headword": "purpose",
+      "partOfSpeech": "noun",
+      "meaningJa": "目的",
+      "definitionEn": "the reason why something is done",
+      "synonyms": "aim",
+      "cefrHeadword": "A2",
+      "imageHint": "調査の目的",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00061-e01",
+          "en": "The purpose of this survey is to learn students' opinions.",
+          "ja": "この調査の目的は生徒の意見を知ることです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00061-e02",
+          "en": "Explain the purpose of your project clearly.",
+          "ja": "自分のプロジェクトの目的を明確に説明してください。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 62
+    },
+    {
+      "senseId": "VD3-00062",
+      "wordId": "VD-03931",
+      "headword": "responsibility",
+      "partOfSpeech": "noun",
+      "meaningJa": "責任",
+      "definitionEn": "a duty to take care of something or do something properly",
+      "synonyms": "duty",
+      "cefrHeadword": "B1",
+      "imageHint": "リーダーの役割",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00062-e01",
+          "en": "It is our responsibility to keep the room clean.",
+          "ja": "部屋をきれいに保つことは私たちの責任です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00062-e02",
+          "en": "The team leader took responsibility for the decision.",
+          "ja": "チームリーダーはその決定に責任を持ちました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 63
+    },
+    {
+      "senseId": "VD3-00063",
+      "wordId": "VD-01296",
+      "headword": "communication",
+      "partOfSpeech": "noun",
+      "meaningJa": "意思疎通・コミュニケーション",
+      "definitionEn": "the act of sharing ideas and information with others",
+      "synonyms": "exchange (related)",
+      "cefrHeadword": "A2",
+      "imageHint": "オンライン会話",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00063-e01",
+          "en": "Good communication helps avoid misunderstandings.",
+          "ja": "よいコミュニケーションは誤解を防ぐのに役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00063-e02",
+          "en": "Online communication connects students overseas.",
+          "ja": "オンラインのやり取りは海外の生徒同士をつなぎます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 64
+    },
+    {
+      "senseId": "VD3-00064",
+      "wordId": "VD-04878",
+      "headword": "cooperation",
+      "partOfSpeech": "noun",
+      "meaningJa": "協力",
+      "definitionEn": "working together toward the same purpose",
+      "synonyms": "teamwork",
+      "cefrHeadword": "B2",
+      "imageHint": "協力するチーム",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00064-e01",
+          "en": "The event succeeded thanks to everyone's cooperation.",
+          "ja": "その行事は皆の協力のおかげで成功しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00064-e02",
+          "en": "International cooperation is needed to protect the oceans.",
+          "ja": "海を守るには国際協力が必要です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 65
+    },
+    {
+      "senseId": "VD3-00065",
+      "wordId": "VD-03682",
+      "headword": "participate",
+      "partOfSpeech": "verb",
+      "meaningJa": "参加する",
+      "definitionEn": "to take part in an activity or event",
+      "synonyms": "take part",
+      "cefrHeadword": "B1",
+      "imageHint": "オンライン交流",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00065-e01",
+          "en": "Everyone can participate in the discussion.",
+          "ja": "誰でもその話し合いに参加できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00065-e02",
+          "en": "Our class participated in an online exchange.",
+          "ja": "私たちのクラスはオンライン交流に参加しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 66
+    },
+    {
+      "senseId": "VD3-00066",
+      "wordId": "VD-02728",
+      "headword": "contribute",
+      "partOfSpeech": "verb",
+      "meaningJa": "貢献する",
+      "definitionEn": "to help make something happen or succeed",
+      "synonyms": "help; add to",
+      "cefrHeadword": "B1",
+      "imageHint": "社会貢献",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00066-e01",
+          "en": "Students can contribute to their communities.",
+          "ja": "生徒は地域社会に貢献できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00066-e02",
+          "en": "Her research contributed to a better understanding of the issue.",
+          "ja": "彼女の研究はその問題への理解を深めることに貢献しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 67
+    },
+    {
+      "senseId": "VD3-00067",
+      "wordId": "VD-04387",
+      "headword": "volunteer",
+      "partOfSpeech": "noun",
+      "meaningJa": "ボランティア",
+      "definitionEn": "a person who offers to help without being paid",
+      "synonyms": "helper (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "地域ボランティア",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00067-e01",
+          "en": "Many volunteers helped after the flood.",
+          "ja": "洪水のあと、多くのボランティアが支援しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00067-e02",
+          "en": "Our school needs volunteers for the festival.",
+          "ja": "私たちの学校は祭りのボランティアを募集しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 68
+    },
+    {
+      "senseId": "VD3-00068",
+      "wordId": "VD-04387",
+      "headword": "volunteer",
+      "partOfSpeech": "verb",
+      "meaningJa": "自ら進んで引き受ける",
+      "definitionEn": "to offer willingly to do something",
+      "synonyms": "offer",
+      "cefrHeadword": "B1",
+      "imageHint": "進んで手を挙げる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00068-e01",
+          "en": "She volunteered to lead the group.",
+          "ja": "彼女は自ら進んでグループのリーダーを引き受けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00068-e02",
+          "en": "Several students volunteered to clean the park.",
+          "ja": "数人の生徒が公園清掃に自ら参加を申し出ました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 69
+    },
+    {
+      "senseId": "VD3-00069",
+      "wordId": "VD-01469",
+      "headword": "experience",
+      "partOfSpeech": "noun",
+      "meaningJa": "経験",
+      "definitionEn": "knowledge or skill gained from doing something",
+      "synonyms": "practice (related)",
+      "cefrHeadword": "A2",
+      "imageHint": "体験学習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00069-e01",
+          "en": "The trip was a valuable learning experience.",
+          "ja": "その旅行は貴重な学習経験でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00069-e02",
+          "en": "She has experience working with children.",
+          "ja": "彼女には子どもと働いた経験があります。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 70
+    },
+    {
+      "senseId": "VD3-00070",
+      "wordId": "VD-01469",
+      "headword": "experience",
+      "partOfSpeech": "verb",
+      "meaningJa": "経験する",
+      "definitionEn": "to have something happen to you or feel something directly",
+      "synonyms": "undergo",
+      "cefrHeadword": "A2",
+      "imageHint": "文化体験",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00070-e01",
+          "en": "The town experienced heavy snowfall last winter.",
+          "ja": "その町は昨冬、大雪に見舞われました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00070-e02",
+          "en": "Students experienced a different culture during the visit.",
+          "ja": "生徒たちは訪問中に異なる文化を体験しました。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 71
+    },
+    {
+      "senseId": "VD3-00071",
+      "wordId": "VD-00911",
+      "headword": "technology",
+      "partOfSpeech": "noun",
+      "meaningJa": "科学技術・テクノロジー",
+      "definitionEn": "scientific knowledge and tools used to solve practical problems",
+      "synonyms": "—",
+      "cefrHeadword": "A1",
+      "imageHint": "ICTと医療",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00071-e01",
+          "en": "Technology helps people communicate across borders.",
+          "ja": "技術は人々が国境を越えて交流するのに役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00071-e02",
+          "en": "The hospital uses new technology to support patients.",
+          "ja": "その病院は患者を支援するため新しい技術を使っています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 72
+    },
+    {
+      "senseId": "VD3-00072",
+      "wordId": "VD-05536",
+      "headword": "innovation",
+      "partOfSpeech": "noun",
+      "meaningJa": "革新・新しい工夫",
+      "definitionEn": "a new idea method or product that improves things",
+      "synonyms": "new development",
+      "cefrHeadword": "B2",
+      "imageHint": "新しい技術",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00072-e01",
+          "en": "Innovation can make education more accessible.",
+          "ja": "技術革新は教育をより身近なものにできます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00072-e02",
+          "en": "The company encourages innovation among its workers.",
+          "ja": "その会社は社員の新しい工夫を奨励しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 73
+    },
+    {
+      "senseId": "VD3-00073",
+      "wordId": "VD-04947",
+      "headword": "data",
+      "partOfSpeech": "noun",
+      "meaningJa": "データ・資料",
+      "definitionEn": "facts or figures collected for analysis",
+      "synonyms": "information (related)",
+      "cefrHeadword": "B2",
+      "imageHint": "グラフデータ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00073-e01",
+          "en": "We collected data from fifty students.",
+          "ja": "私たちは50人の生徒からデータを集めました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00073-e02",
+          "en": "The data show a rise in average temperature.",
+          "ja": "そのデータは平均気温の上昇を示しています。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 74
+    },
+    {
+      "senseId": "VD3-00074",
+      "wordId": "VD-00478",
+      "headword": "information",
+      "partOfSpeech": "noun",
+      "meaningJa": "情報",
+      "definitionEn": "facts or details about something",
+      "synonyms": "details",
+      "cefrHeadword": "A1",
+      "imageHint": "情報を集める",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00074-e01",
+          "en": "Please check the information on the website.",
+          "ja": "ウェブサイトの情報を確認してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00074-e02",
+          "en": "We need more information before choosing a school.",
+          "ja": "学校を選ぶ前にさらに情報が必要です。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 75
+    },
+    {
+      "senseId": "VD3-00075",
+      "wordId": "VD-04001",
+      "headword": "security",
+      "partOfSpeech": "noun",
+      "meaningJa": "安全対策・セキュリティー",
+      "definitionEn": "measures used to keep people or information safe",
+      "synonyms": "protection",
+      "cefrHeadword": "B1",
+      "imageHint": "入口とパスワード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00075-e01",
+          "en": "The school improved security at the entrance.",
+          "ja": "学校は入口の安全対策を改善しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00075-e02",
+          "en": "Strong passwords improve online security.",
+          "ja": "強いパスワードはオンラインの安全性を高めます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 76
+    },
+    {
+      "senseId": "VD3-00076",
+      "wordId": "VD-03783",
+      "headword": "privacy",
+      "partOfSpeech": "noun",
+      "meaningJa": "プライバシー",
+      "definitionEn": "the right to keep personal information or activities private",
+      "synonyms": "confidentiality (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "個人情報の保護",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD3-00076-e01",
+          "en": "You should protect your privacy online.",
+          "ja": "オンラインでは自分のプライバシーを守るべきです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD3-00076-e02",
+          "en": "The app asks permission before using personal data.",
+          "ja": "そのアプリは個人データを使う前に許可を求めます。",
+          "context": "alternate"
+        }
+      ],
+      "sourceRowStart": 77
+    }
+  ]
+}

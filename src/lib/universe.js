@@ -1,3 +1,47 @@
+import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
+import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
+import productiveVerbMega, {productiveVerbNotes} from '../data/universe-productive-verbs-mega.js';
+import concreteWorldMega, {concreteWorldNotes} from '../data/universe-concrete-world-mega.js';
+import everydayPhrasesMega, {everydayPhrasesNotes} from '../data/universe-everyday-phrases-mega.js';
+import thematicReadingMega, {thematicReadingNotes} from '../data/universe-thematic-reading-mega.js';
+import nuanceFamilyMega, {nuanceFamilyNotes} from '../data/universe-nuance-family-mega.js';
+import collocationReadingMega, {collocationReadingNotes} from '../data/universe-collocation-reading-mega.js';
+import everydayAbstractMega, {everydayAbstractNotes} from '../data/universe-everyday-abstract-mega.js';
+import adjectiveMega from '../data/universe-adjective-mega.js';
+import advancedActionMega from '../data/universe-advanced-action-mega.js';
+import domainMega from '../data/universe-domain-mega.js';
+import balancedLexicalReview, {balancedLexicalNotes,balancedLexicalParadigms} from '../data/universe-balanced-lexical-review.js';
+import extendedVerbReview, {extendedVerbParadigms} from '../data/universe-extended-verb-review.js';
+import extendedNounReview, {extendedNounParadigms} from '../data/universe-extended-noun-review.js';
+import advancedVerbReview, {advancedVerbParadigms,advancedVerbNotes} from '../data/universe-advanced-verb-review.js';
+import advancedNominalReview, {advancedNominalParadigms} from '../data/universe-advanced-nominal-review.js';
+import academicVerbReview, {academicVerbParadigms} from '../data/universe-academic-verb-review-mega.js';
+import academicAdjectiveReview, {academicAdjectiveParadigms} from '../data/universe-academic-adjective-review-mega.js';
+import verbMorphologyReview, {verbParadigms} from '../data/universe-verb-morphology-review.js';
+import nounAdjectiveReview, {adjectiveNounParadigms} from '../data/universe-noun-adjective-review.js';
+import familyCollocationMega, {familyCollocationNotes} from '../data/universe-families-collocations-mega.js';
+import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
+import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
+import foundationMega, {foundationMegaNotes} from '../data/universe-foundation-mega.js';
+import generalNetwork, {generalNetworkNotes} from '../data/universe-general-network.js';
+import academicNetwork, {academicNetworkNotes} from '../data/universe-academic-network.js';
+import supplementOZ, {supplementOZNotes} from '../data/universe-original-supplement-oz.js';
+import originalFoundationG, {foundationGNotes} from '../data/universe-original-foundation-g.js';
+import originalFoundationF, {foundationFNotes} from '../data/universe-original-foundation-f.js';
+import originalFoundationE, {foundationENotes} from '../data/universe-original-foundation-e.js';
+import originalFoundationD, {foundationDNotes} from '../data/universe-original-foundation-d.js';
+import foundationNotes from '../data/universe-foundation-notes.js';
+import originalFoundationB from '../data/universe-original-foundation-b.js';
+import originalFoundationC from '../data/universe-original-foundation-c.js';
+import schoolReadingC from '../data/universe-school-reading-c.js';
+import schoolReadingD from '../data/universe-school-reading-d.js';
+import originalA1A from '../data/universe-original-a1-a.js';
+import readingNotes from '../data/universe-reading-notes.js';
+import schoolContext from '../data/universe-school-context.js';
+import schoolRegular from '../data/universe-school-regular.js';
+import schoolReadingA from '../data/universe-school-reading-a.js';
+import schoolReadingB from '../data/universe-school-reading-b.js';
+import schoolNotes from '../data/universe-school-notes.js';
 import masterVerbs from '../data/universe-master-verbs.js';
 import masterAdjectives from '../data/universe-master-adjectives.js';
 import masterNouns from '../data/universe-master-nouns.js';
@@ -66,8 +110,205 @@ function addAuthored(word,entry) {
 }
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
-for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
+for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal,schoolRegular,schoolReadingA,schoolReadingB,schoolContext,schoolReadingC,schoolReadingD,originalA1A,originalFoundationB,originalFoundationC,originalFoundationD,originalFoundationE,originalFoundationF,originalFoundationG,supplementOZ,academicNetwork,generalNetwork,foundationMega,academicFamilies])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
 for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
+// Keep earlier authored meanings and link classifications; add only unseen edges.
+const domainBefore=universeCoverage();
+for(const [word,entry] of Object.entries(domainReadingMega))addAuthored(word,entry);
+const domainAfter=universeCoverage();
+export function domainReadingCoverage() {
+  return {heads:domainAfter.heads-domainBefore.heads,links:domainAfter.links-domainBefore.links};
+}
+// Explicit lexical relationships can refine a previously generic related edge.
+// Keep existing specific classifications, meanings and other authored information.
+const familyBefore=universeCoverage();
+let refinedLexicalLinks=0;
+for(const [word,entry] of Object.entries(familyCollocationMega)){
+  const prior=authored.get(normalize(word));
+  if(prior){
+    const specific=new Map(entry.links.filter(l=>l.type==='family'||l.type==='collocation').map(l=>[normalize(l.word),l]));
+    const links=prior.links.map(link=>{
+      const refinement=specific.get(normalize(link.word));
+      if(link.type!=='related'||!refinement)return link;
+      refinedLexicalLinks++;
+      return {...link,type:refinement.type,tier:refinement.tier};
+    });
+    authored.set(normalize(word),{...prior,links});
+  }
+  addAuthored(word,entry);
+}
+const familyAfter=universeCoverage();
+export function familyCollocationCoverage(){
+  return {heads:familyAfter.heads-familyBefore.heads,links:familyAfter.links-familyBefore.links,refined:refinedLexicalLinks};
+}
+// Review all previous headwords, then enrich entries with explicit lexical evidence.
+function lexicalAudit(){
+  const stats={heads:authored.size,links:0,synonym:0,family:0,collocation:0,forms:0,headsWithSynonyms:0,headsWithFamily:0,headsWithCollocations:0,headsWithForms:0};
+  for(const {links} of authored.values()){
+    stats.links+=links.length;
+    let synonym=false,family=false,collocation=false,forms=false;
+    for(const link of links){
+      if(link.type==='synonym'){stats.synonym++;synonym=true;}
+      if(link.type==='family'){stats.family++;family=true;}
+      if(link.type==='collocation'){stats.collocation++;collocation=true;}
+      if(link.morphology?.some(x=>!['派生・語族','基となる語'].includes(x))){stats.forms++;forms=true;}
+    }
+    if(synonym)stats.headsWithSynonyms++;
+    if(family)stats.headsWithFamily++;
+    if(collocation)stats.headsWithCollocations++;
+    if(forms)stats.headsWithForms++;
+  }
+  return stats;
+}
+function applyLexicalReview(batches){
+ const before=lexicalAudit();
+ const priorReviewHeads=new Set(authored.keys());
+const revisedPriorHeads=new Set();
+let refinedReviewLinks=0, annotatedReviewLinks=0;
+for(const batch of batches){
+  for(const [word,entry] of Object.entries(batch)){
+    const key=normalize(word);
+    const prior=authored.get(key);
+    const previousKeys=new Set((prior?.links||[]).map(l=>normalize(l.word)));
+    if(prior){
+      const additions=new Map(entry.links.map(l=>[normalize(l.word),l]));
+      const links=prior.links.map(link=>{
+        const addition=additions.get(normalize(link.word));
+        if(!addition)return link;
+        let next=link;
+        if(link.type==='related'&&['family','collocation','synonym'].includes(addition.type)){
+          next={...next,type:addition.type,tier:addition.tier};
+          refinedReviewLinks++;
+        }
+        if(addition.morphology){
+          const labels=[...new Set([...(link.morphology||[]),...addition.morphology])];
+          if(labels.length!==(link.morphology||[]).length||!link.lemma){
+            next={...next,morphology:labels,lemma:link.lemma||addition.lemma};
+            annotatedReviewLinks++;
+          }
+        }
+        if(next!==link&&priorReviewHeads.has(key))revisedPriorHeads.add(key);
+        return next;
+      });
+      authored.set(key,{...prior,links});
+    }
+    if(priorReviewHeads.has(key)&&entry.links.some(l=>!previousKeys.has(normalize(l.word))))revisedPriorHeads.add(key);
+    addAuthored(word,entry);
+  }
+}
+
+ const after=lexicalAudit();
+ return {heads:after.heads-before.heads,links:after.links-before.links,existingHeadsUpdated:revisedPriorHeads.size,refined:refinedReviewLinks,annotated:annotatedReviewLinks,before,after};
+}
+const earlierReview=applyLexicalReview([verbMorphologyReview,nounAdjectiveReview]);
+const academicReview=applyLexicalReview([academicVerbReview,academicAdjectiveReview]);
+const advancedReview=applyLexicalReview([advancedVerbReview,advancedNominalReview]);
+const extendedReview=applyLexicalReview([extendedVerbReview,extendedNounReview]);
+const balancedReview=applyLexicalReview([balancedLexicalReview]);
+function copyReview(r){return {...r,before:{...r.before},after:{...r.after}};}
+export function lexicalReviewCoverage(){return copyReview(earlierReview);}
+export function advancedReviewCoverage(){return copyReview(advancedReview);}
+export function academicReviewCoverage(){return copyReview(academicReview);}
+export function extendedReviewCoverage(){return copyReview(extendedReview);}
+export function balancedReviewCoverage(){return copyReview(balancedReview);}
+export function cumulativeLexicalCoverage(){return {...lexicalAudit()};}
+function mergeParadigm(a,b){
+ if(!a)return b||null;
+ if(!b)return a;
+ const result={...a,...b};
+ for(const field of new Set([...Object.keys(a),...Object.keys(b)])){
+   if(Array.isArray(a[field])||Array.isArray(b[field]))result[field]=[...new Set([...(a[field]||[]),...(b[field]||[])])];
+ }
+ return result;
+}
+export function getWordForms(word){
+ const key=normalize(word);
+ const rows=[];
+ const verb=[verbParadigms[key],academicVerbParadigms[key],advancedVerbParadigms[key],extendedVerbParadigms[key],balancedLexicalParadigms.verbs[key]].reduce(mergeParadigm,null);
+ const adj=[adjectiveNounParadigms.adjectives[key],academicAdjectiveParadigms[key],advancedNominalParadigms.adjectives[key],balancedLexicalParadigms.adjectives[key]].reduce(mergeParadigm,null);
+ const noun=[adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key],extendedNounParadigms[key],balancedLexicalParadigms.nouns[key]].reduce(mergeParadigm,null);
+ const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
+ if(verb){
+   add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
+   add('過去形',verb.past);add('過去分詞',verb.pastParticiple);add('現在分詞・動名詞',verb.presentParticiple);
+ }
+ if(adj){add('形容詞・原級',[adj.base]);add('比較級',adj.comparative);add('最上級',adj.superlative);}
+ if(noun){add('名詞・単数形',[noun.singular]);add('複数形',noun.plural);}
+ return rows;
+}
+// Add domain maps only for missing heads; a prior sense must not acquire unrelated links.
+const domainMegaAdded = {heads:0,links:0};
+for(const [word,entry] of Object.entries(domainMega)) {
+  if(authored.has(normalize(word)))continue;
+  addAuthored(word,entry);
+  domainMegaAdded.heads++;
+  domainMegaAdded.links+=authored.get(normalize(word)).links.length;
+}
+export function domainMegaCoverage(){return {...domainMegaAdded,candidates:Object.keys(domainMega).length};}
+const actionMegaAdded={heads:0,links:0};
+for(const [word,entry] of Object.entries(advancedActionMega)){
+ if(authored.has(normalize(word)))continue;
+ addAuthored(word,entry);
+ actionMegaAdded.heads++;
+ actionMegaAdded.links+=authored.get(normalize(word)).links.length;
+}
+export function actionMegaCoverage(){return {...actionMegaAdded,candidates:Object.keys(advancedActionMega).length};}
+const adjectiveMegaAdded={heads:0,links:0};
+for(const [word,entry] of Object.entries(adjectiveMega)){
+ if(authored.has(normalize(word)))continue;
+ addAuthored(word,entry);
+ adjectiveMegaAdded.heads++;
+ adjectiveMegaAdded.links+=authored.get(normalize(word)).links.length;
+}
+export function adjectiveMegaCoverage(){return {...adjectiveMegaAdded,candidates:Object.keys(adjectiveMega).length};}
+// Merge parallel content safely. A new sense cannot replace an earlier head's meaning.
+// Exact matching Japanese glosses may receive additional contextual edges.
+function addCompatibleBatch(batch) {
+ const counts={candidates:Object.keys(batch).length,heads:0,links:0,compatible:0,skippedSense:0};
+ for(const [word,entry] of Object.entries(batch)){
+  const key=normalize(word),prior=authored.get(key);
+  if(prior&&prior.meaning!==entry.meaning){counts.skippedSense++;continue;}
+  const previous=prior?.links.length||0;
+  addAuthored(word,entry);
+  if(!prior)counts.heads++;else counts.compatible++;
+  counts.links+=authored.get(key).links.length-previous;
+ }
+ return counts;
+}
+const unifiedReadingAdded=addCompatibleBatch(domainReadingMega);
+const everydayAbstractAdded=addCompatibleBatch(everydayAbstractMega);
+const collocationReadingAdded=addCompatibleBatch(collocationReadingMega);
+const nuanceFamilyAdded=addCompatibleBatch(nuanceFamilyMega);
+const thematicReadingAdded=addCompatibleBatch(thematicReadingMega);
+const everydayPhrasesAdded=addCompatibleBatch(everydayPhrasesMega);
+const concreteWorldAdded=addCompatibleBatch(concreteWorldMega);
+const productiveVerbAdded=addCompatibleBatch(productiveVerbMega);
+const adjectiveNounAdded=addCompatibleBatch(adjectiveNounMega);
+// Promote only generic earlier relations, and only under an exact sense match.
+// Earlier curated synonyms/contrasts and all established head glosses remain unchanged.
+const derivationCollocationAdded={...addCompatibleBatch(derivationCollocationMega),upgraded:0};
+for(const [word,entry] of Object.entries(derivationCollocationMega)){
+ const current=authored.get(normalize(word));
+ if(!current||current.meaning!==entry.meaning)continue;
+ const preferred=new Map(entry.links.filter(x=>x.type==='family'||x.type==='collocation').map(x=>[normalize(x.word),x]));
+ for(let i=0;i<current.links.length;i++){
+  const old=current.links[i],next=preferred.get(normalize(old.word));
+  if(old.type!=='related'||!next||old.meaning!==next.meaning)continue;
+  current.links[i]={...old,type:next.type,tier:next.tier};
+  derivationCollocationAdded.upgraded++;
+ }
+}
+export function derivationCollocationCoverage(){return {...derivationCollocationAdded};}
+export function adjectiveNounCoverage(){return {...adjectiveNounAdded};}
+export function productiveVerbCoverage(){return {...productiveVerbAdded};}
+export function concreteWorldCoverage(){return {...concreteWorldAdded};}
+export function everydayPhrasesCoverage(){return {...everydayPhrasesAdded};}
+export function thematicReadingCoverage(){return {...thematicReadingAdded};}
+export function nuanceFamilyCoverage(){return {...nuanceFamilyAdded};}
+export function collocationReadingCoverage(){return {...collocationReadingAdded};}
+export function unifiedReadingCoverage(){return {...unifiedReadingAdded};}
+export function everydayAbstractCoverage(){return {...everydayAbstractAdded};}
+
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
@@ -90,7 +331,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,familyCollocationNotes,advancedVerbNotes,balancedLexicalNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes,productiveVerbNotes,adjectiveNounNotes,derivationCollocationNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
@@ -113,8 +354,18 @@ export function getRelations(entry,{includeReverse=true}={}) {
   const seen = new Set([normalize(entry.word)]);
   const links = [];
   const key=normalize(entry.word);
-  for (const raw of [...explicit,...(authored.get(key)?.links || []),...aliases,...(includeReverse ? reverse.get(key)||[] : [])]) {
-    const item = typeof raw === 'string' ? {word:raw} : raw;
+  const savedLinks=authored.get(key)?.links||[];
+  const savedByKey=new Map(savedLinks.map(link=>[normalize(link.word),link]));
+  for (const raw of [...explicit,...savedLinks,...aliases,...(includeReverse ? reverse.get(key)||[] : [])]) {
+    let item = typeof raw === 'string' ? {word:raw} : raw;
+    if(item&&typeof item.word==='string'){
+      const saved=savedByKey.get(normalize(item.word));
+      if(saved&&saved!==item){
+        const type=(!item.type||item.type==='related')?saved.type:item.type;
+        const morphology=[...new Set([...(saved.morphology||[]),...(item.morphology||[])])];
+        item={...saved,...item,type,tier:(type===saved.type&&item.type!==saved.type)?saved.tier:(item.tier||saved.tier),...(morphology.length?{morphology}:{}),lemma:item.lemma||saved.lemma};
+      }
+    }
     if (!item || typeof item.word !== 'string') continue;
     const key = normalize(item.word);
     if (!key || seen.has(key)) continue;
