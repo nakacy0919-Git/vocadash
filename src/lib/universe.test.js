@@ -606,3 +606,28 @@ test('word families and collocations prioritize lexical anchors and protect exis
  assert.ok(derivationCollocationMega['pronunciation'].links.some(l=>l.word==='pronunciation of unstressed syllables'&&l.type==='collocation'));
  assert.ok(derivationCollocationMega['resistant'].links.some(l=>l.word==='moisture-resistant material for outdoor use'&&l.type==='collocation'));
 });
+
+import lexicalExpansion from '../data/universe-lexical-expansion.js';
+import {lexicalExpansionCoverage} from './universe.js';
+test('editorial expansion preserves classified, unique bilingual edges',()=>{
+ assert.equal(Object.keys(lexicalExpansion).length,172);
+ const counts={synonym:0,family:0,collocation:0,related:0};
+ for(const [word,entry] of Object.entries(lexicalExpansion)){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.equal(new Set(entry.links.map(l=>l.word)).size,entry.links.length);
+  for(const link of entry.links){assert.ok(link.meaning&&link.word!==word&&Object.hasOwn(counts,link.type));counts[link.type]++;}
+ }
+ assert.deepEqual(counts,{synonym:163,family:177,collocation:336,related:20});
+ assert.ok(lexicalExpansion.scrutinize.links.some(l=>l.word==='scrutinize the evidence'&&l.type==='collocation'));
+ assert.ok(lexicalExpansion.procrastinate.links.some(l=>l.word==='procrastination'&&l.type==='family'));
+});
+test('searchable expansion deduplicates and separates words from expressions',()=>{
+ const s=lexicalExpansionCoverage();
+ assert.equal(s.editorial.candidates,172);
+ assert.equal(s.editorial.heads+s.editorial.compatible+s.editorial.skippedSense,172);
+ assert.equal(s.after.heads-s.before.heads,s.editorial.heads+s.promoted.singleWords+s.promoted.expressions);
+ assert.equal(s.after.links-s.before.links,s.editorial.links+s.promoted.links);
+ assert.ok(s.after.singleWords>=s.before.singleWords);
+ assert.ok(s.promoted.singleWords+s.promoted.expressions>0);
+ assert.ok(s.promoted.conflictingGloss>=0);
+});
