@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -246,4 +246,30 @@ test('new everyday clusters provide contextual rather than inferred synonym link
  }
  assert.equal(everydayAbstractMega['read between the lines'].meaning,'行間を読む');
  assert.equal(everydayAbstractMega['pillowcase'].links.length,4);
+});
+
+import collocationReadingMega, {collocationReadingNotes} from '../data/universe-collocation-reading-mega.js';
+test('entrance exam collocation maps contain complete, deduplicated usage groups',()=>{
+ const stats=collocationReadingCoverage();
+ assert.equal(stats.candidates,1254);
+ assert.equal(stats.heads+stats.compatible+stats.skippedSense,stats.candidates);
+ assert.ok(stats.heads>0&&stats.links>0);
+ const entries=Object.entries(collocationReadingMega);
+ assert.equal(entries.length,1254);
+ assert.equal(entries.filter(([,e])=>e.links.every(l=>l.type==='collocation')).length,209);
+ for(const [word,entry] of entries){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.equal(entry.links.length,5);
+  const normalized=entry.links.map(l=>l.word.trim().toLowerCase());
+  assert.equal(new Set(normalized).size,5);
+  assert.ok(entry.links.every(l=>l.meaning&&l.word!==word&&['related','collocation'].includes(l.type)));
+  const isRoot=entry.links.every(l=>l.type==='collocation');
+  assert.ok(entry.links.every(l=>isRoot?l.tier==='core':l.type==='related'));
+ }
+ for(const [head,notes] of Object.entries(collocationReadingNotes))for(const [phrase,note] of Object.entries(notes)){
+  assert.ok(collocationReadingMega[head].links.some(l=>l.word===phrase));
+  assert.ok(note.note&&note.example&&note.translation);
+ }
+ assert.equal(collocationReadingMega['substitute paper for plastic'].meaning,'プラスチックの代わりに紙を使う');
+ assert.ok(collocationReadingMega['distinguish'].links.some(l=>l.word==='distinguish fact from opinion'&&l.type==='collocation'));
 });
