@@ -1,5 +1,4 @@
-// Editorial contextual near-synonyms and paraphrases, limited to each Japanese sense.
-// Do not infer synonymy transitively between different sense groups.
+// Editorial contextual near-synonyms and paraphrases; group meaning is the restricted sense, never unrestricted interchangeability.
 export default [
   [
     "厳しく叱る・過ちをとがめる",
@@ -8,8 +7,6 @@ export default [
       "rebuke",
       "scold",
       "chide",
-      "berate",
-      "remonstrate with",
       "take to task"
     ]
   ],
@@ -39,9 +36,7 @@ export default [
     [
       "abolish",
       "abrogate",
-      "rescind",
       "repeal",
-      "annul",
       "do away with"
     ]
   ],
@@ -52,7 +47,6 @@ export default [
       "retract",
       "take back",
       "recant",
-      "renege on",
       "revoke"
     ]
   ],
@@ -73,9 +67,7 @@ export default [
       "deprive",
       "dispossess",
       "strip",
-      "divest",
-      "rob of",
-      "take away from"
+      "divest"
     ]
   ],
   [
@@ -83,8 +75,7 @@ export default [
     [
       "confiscate",
       "seize",
-      "impound",
-      "take possession of"
+      "impound"
     ]
   ],
   [
@@ -94,8 +85,7 @@ export default [
       "loot",
       "pillage",
       "despoil",
-      "rob",
-      "raid"
+      "rob"
     ]
   ],
   [
@@ -104,7 +94,6 @@ export default [
       "abduct",
       "kidnap",
       "carry off by force",
-      "take hostage",
       "snatch"
     ]
   ],
@@ -133,7 +122,6 @@ export default [
     "仲裁する・争いに介入する",
     [
       "mediate",
-      "arbitrate",
       "intervene as a mediator",
       "broker a settlement",
       "act as intermediary"
@@ -156,9 +144,7 @@ export default [
       "enrage",
       "infuriate",
       "incense",
-      "provoke to anger",
-      "make furious",
-      "drive mad"
+      "make furious"
     ]
   ],
   [
@@ -201,7 +187,6 @@ export default [
       "defame",
       "slander",
       "libel",
-      "vilify",
       "calumniate",
       "smear"
     ]
@@ -223,8 +208,7 @@ export default [
       "understate",
       "minimize",
       "downplay",
-      "play down",
-      "make light of"
+      "play down"
     ]
   ],
   [
@@ -242,8 +226,6 @@ export default [
     [
       "embellish",
       "embroider",
-      "ornament",
-      "adorn",
       "decorate with details"
     ]
   ],
@@ -273,7 +255,6 @@ export default [
     [
       "feign",
       "pretend",
-      "simulate",
       "make believe",
       "put on an act",
       "affect"
@@ -307,8 +288,7 @@ export default [
       "fawn on",
       "toady to",
       "butter up",
-      "curry favor with",
-      "ingratiate oneself with"
+      "curry favor with"
     ]
   ],
   [
@@ -418,7 +398,6 @@ export default [
       "perceive",
       "see through",
       "recognize",
-      "detect",
       "make out"
     ]
   ],
@@ -440,8 +419,7 @@ export default [
       "anticipate",
       "foreknow",
       "predict",
-      "see coming",
-      "have a premonition of"
+      "see coming"
     ]
   ],
   [
@@ -483,7 +461,6 @@ export default [
       "depict",
       "portray",
       "delineate",
-      "characterize",
       "set forth"
     ]
   ],
@@ -513,8 +490,6 @@ export default [
     "引用する・言葉をそのまま引く",
     [
       "quote",
-      "cite",
-      "excerpt",
       "repeat verbatim",
       "recite the words of"
     ]
@@ -597,11 +572,9 @@ export default [
     "補償する・損失を埋め合わせる",
     [
       "compensate",
-      "reimburse",
       "indemnify",
       "make amends for",
-      "make good",
-      "repay"
+      "make good"
     ]
   ],
   [
@@ -621,7 +594,6 @@ export default [
       "calibrate",
       "recalibrate",
       "adjust to a standard",
-      "standardize the readings",
       "set to a reference"
     ]
   ],
@@ -630,7 +602,6 @@ export default [
     [
       "optimize",
       "maximize efficiency",
-      "improve performance",
       "make optimal",
       "make as effective as possible"
     ]
@@ -639,8 +610,6 @@ export default [
     "自動化する・機械やソフトで自動処理する",
     [
       "automate",
-      "mechanize",
-      "computerize",
       "make automatic",
       "convert to automated operation"
     ]
@@ -651,8 +620,6 @@ export default [
       "experiment",
       "test out",
       "try out",
-      "trial",
-      "pilot",
       "conduct a trial"
     ]
   ],
@@ -704,7 +671,6 @@ export default [
     [
       "search for",
       "look up",
-      "retrieve",
       "look for",
       "seek out",
       "locate"
@@ -786,7 +752,6 @@ export default [
     [
       "cure",
       "heal",
-      "remedy",
       "restore to health",
       "bring about recovery"
     ]
@@ -807,8 +772,7 @@ export default [
       "prevent",
       "ward off",
       "protect against",
-      "guard against",
-      "reduce the risk of"
+      "guard against"
     ]
   ],
   [
@@ -826,9 +790,7 @@ export default [
     [
       "disinfect",
       "sanitize",
-      "decontaminate",
-      "cleanse of germs",
-      "render hygienic"
+      "cleanse of germs"
     ]
   ],
   [
@@ -911,10 +873,8 @@ export default [
     [
       "permeate",
       "penetrate",
-      "pervade",
       "soak into",
-      "seep into",
-      "infiltrate"
+      "seep into"
     ]
   ],
   [
@@ -924,8 +884,7 @@ export default [
       "assimilate",
       "take in",
       "soak up",
-      "imbibe",
-      "incorporate"
+      "imbibe"
     ]
   ],
   [
@@ -946,7 +905,6 @@ export default [
       "disperse",
       "spread",
       "disseminate",
-      "radiate",
       "scatter"
     ]
   ],
@@ -1139,7 +1097,6 @@ export default [
     [
       "dissolve",
       "solubilize",
-      "go into solution",
       "put into solution",
       "bring into solution"
     ]
@@ -1170,9 +1127,7 @@ export default [
     [
       "thaw",
       "defrost",
-      "unfreeze",
-      "deice",
-      "remove frost from"
+      "unfreeze"
     ]
   ],
   [
@@ -1190,8 +1145,7 @@ export default [
       "simmer",
       "stew",
       "cook slowly",
-      "cook over low heat",
-      "gently boil"
+      "cook over low heat"
     ]
   ],
   [
@@ -1228,7 +1182,6 @@ export default [
     [
       "chew",
       "masticate",
-      "gnaw",
       "bite repeatedly",
       "grind with the teeth"
     ]
@@ -1238,8 +1191,6 @@ export default [
     [
       "swallow",
       "gulp down",
-      "down",
-      "ingest",
       "take down the throat"
     ]
   ],
@@ -1302,8 +1253,7 @@ export default [
     [
       "grimace",
       "make a face",
-      "pull a face",
-      "contort one's face"
+      "pull a face"
     ]
   ],
   [
@@ -1331,8 +1281,7 @@ export default [
       "stoop",
       "crouch",
       "bend down",
-      "duck down",
-      "hunch over"
+      "duck down"
     ]
   ],
   [
@@ -1349,7 +1298,6 @@ export default [
     [
       "jump",
       "leap",
-      "hop",
       "spring",
       "bound"
     ]
@@ -1430,8 +1378,6 @@ export default [
     "浮く・液体や空中に浮かぶ",
     [
       "float",
-      "drift",
-      "hover",
       "remain buoyant",
       "stay afloat"
     ]
@@ -1440,7 +1386,6 @@ export default [
     "沈む・水面下へ進む",
     [
       "sink",
-      "submerge",
       "go under",
       "descend beneath the surface",
       "go to the bottom"
@@ -1521,7 +1466,6 @@ export default [
   [
     "移住する・別の場所へ住み移る",
     [
-      "migrate",
       "relocate",
       "move",
       "settle elsewhere",
@@ -1625,7 +1569,6 @@ export default [
     "解体する・構造物を取り壊す",
     [
       "demolish",
-      "dismantle",
       "tear down",
       "pull down",
       "knock down",
@@ -1718,8 +1661,6 @@ export default [
     [
       "filter",
       "strain",
-      "sieve",
-      "screen",
       "pass through a filter"
     ]
   ],
@@ -1758,7 +1699,6 @@ export default [
   [
     "断念する・実現を諦める",
     [
-      "forsake",
       "abandon",
       "relinquish",
       "give up",
@@ -1773,7 +1713,6 @@ export default [
       "reiterate",
       "redo",
       "do again",
-      "reproduce",
       "perform again"
     ]
   ],
@@ -1834,7 +1773,6 @@ export default [
     [
       "standardize",
       "regularize",
-      "normalize",
       "bring into conformity",
       "make uniform"
     ]
@@ -1883,7 +1821,6 @@ export default [
   [
     "分散させる・集中を解く",
     [
-      "decentralize",
       "disperse",
       "distribute",
       "spread out",
@@ -1927,8 +1864,6 @@ export default [
     [
       "delegate",
       "entrust",
-      "authorize",
-      "empower",
       "vest authority in"
     ]
   ],
@@ -1937,7 +1872,6 @@ export default [
     [
       "appoint",
       "designate",
-      "nominate",
       "assign to office",
       "name to a post"
     ]
@@ -1977,7 +1911,6 @@ export default [
     [
       "install",
       "induct",
-      "inaugurate",
       "swear in",
       "put into office"
     ]
@@ -1987,9 +1920,7 @@ export default [
     [
       "succeed",
       "take over from",
-      "follow in office",
-      "replace as successor",
-      "assume the post of"
+      "follow in office"
     ]
   ],
   [
@@ -2069,7 +2000,6 @@ export default [
     "訴える・裁判を起こす",
     [
       "sue",
-      "litigate",
       "bring an action against",
       "file suit against",
       "take legal action against"
@@ -2081,7 +2011,6 @@ export default [
       "accuse",
       "charge",
       "indict",
-      "arraign",
       "bring charges against"
     ]
   ],
@@ -2099,8 +2028,6 @@ export default [
     "無罪とする・罪に問わない",
     [
       "acquit",
-      "exonerate",
-      "absolve",
       "clear of charges",
       "find not guilty"
     ]
@@ -2140,7 +2067,6 @@ export default [
     [
       "deport",
       "expel",
-      "banish",
       "remove from the country",
       "send into exile"
     ]
@@ -2171,7 +2097,6 @@ export default [
     "差別する・不公平に扱う",
     [
       "discriminate against",
-      "prejudice against",
       "treat unfairly",
       "show bias against",
       "subject to unequal treatment"
@@ -2203,7 +2128,6 @@ export default [
     [
       "embezzle",
       "misappropriate",
-      "defalcate",
       "steal entrusted funds",
       "misuse entrusted funds"
     ]
@@ -2224,7 +2148,6 @@ export default [
       "threaten",
       "menace",
       "intimidate",
-      "terrorize",
       "issue threats to"
     ]
   ],
@@ -2232,7 +2155,6 @@ export default [
     "恐喝する・脅して金などを取る",
     [
       "extort",
-      "blackmail",
       "shake down",
       "obtain by threats",
       "coerce payment from"
@@ -2252,8 +2174,6 @@ export default [
     "襲撃する・突然攻撃する",
     [
       "raid",
-      "storm",
-      "ambush",
       "attack suddenly",
       "launch a surprise attack on"
     ]
@@ -2264,7 +2184,6 @@ export default [
       "surround",
       "encircle",
       "encompass",
-      "besiege",
       "ring",
       "hem in"
     ]
@@ -2543,7 +2462,6 @@ export default [
     [
       "repay",
       "pay back",
-      "refund",
       "settle a debt",
       "discharge a loan"
     ]
@@ -2624,7 +2542,6 @@ export default [
     "飢餓・食物の深刻な不足",
     [
       "starvation",
-      "famine",
       "extreme hunger",
       "severe food deprivation"
     ]
@@ -2645,15 +2562,6 @@ export default [
       "pestilence",
       "outbreak of disease",
       "widespread outbreak"
-    ]
-  ],
-  [
-    "感染・病原体が体に入ること",
-    [
-      "infection",
-      "contagion",
-      "transmission of infection",
-      "communicable infection"
     ]
   ],
   [
@@ -2699,7 +2607,6 @@ export default [
     "治癒可能な・治すことができる",
     [
       "curable",
-      "treatable",
       "remediable",
       "capable of being cured"
     ]
@@ -2708,7 +2615,6 @@ export default [
     "不治の・治癒できない",
     [
       "incurable",
-      "irrecoverable",
       "beyond cure",
       "not amenable to cure"
     ]
@@ -2717,19 +2623,8 @@ export default [
     "先天性の・出生時から存在する",
     [
       "congenital",
-      "inborn",
       "present at birth",
       "existing from birth"
-    ]
-  ],
-  [
-    "遺伝性の・遺伝によって伝わる",
-    [
-      "hereditary",
-      "inherited",
-      "genetic",
-      "genetically transmitted",
-      "passed down genetically"
     ]
   ],
   [
@@ -2739,15 +2634,6 @@ export default [
       "resistant",
       "protected against infection",
       "not susceptible to infection"
-    ]
-  ],
-  [
-    "無菌の・微生物が存在しない",
-    [
-      "sterile",
-      "aseptic",
-      "germ-free",
-      "free of microorganisms"
     ]
   ],
   [
@@ -2765,18 +2651,8 @@ export default [
     [
       "toxic",
       "poisonous",
-      "venomous",
       "noxious",
       "deleterious to health"
-    ]
-  ],
-  [
-    "可燃性の・火がつきやすい",
-    [
-      "flammable",
-      "inflammable",
-      "combustible",
-      "easily ignited"
     ]
   ],
   [
@@ -2900,7 +2776,6 @@ export default [
     [
       "universal",
       "all-embracing",
-      "all-inclusive",
       "applicable to all"
     ]
   ],
@@ -2908,8 +2783,6 @@ export default [
     "地域固有の・ある地域特有の",
     [
       "endemic",
-      "indigenous",
-      "native",
       "peculiar to a region",
       "restricted to a locality"
     ]
@@ -2937,9 +2810,7 @@ export default [
   [
     "外来の・自国ではない場所に由来する",
     [
-      "exotic",
       "foreign",
-      "nonindigenous",
       "non-native",
       "from abroad"
     ]
@@ -2959,9 +2830,7 @@ export default [
     [
       "homogeneous",
       "uniform",
-      "consistent",
-      "of like composition",
-      "of the same kind"
+      "consistent"
     ]
   ],
   [
@@ -3198,7 +3067,6 @@ export default [
     "偏りのない・先入観で判断しない",
     [
       "objective",
-      "dispassionate",
       "impartial",
       "unprejudiced",
       "neutral"
@@ -3220,7 +3088,6 @@ export default [
       "dogmatic",
       "doctrinaire",
       "opinionated",
-      "peremptory",
       "assertive without evidence"
     ]
   ],
@@ -3736,8 +3603,6 @@ export default [
     "選択的な・一部を選び取る",
     [
       "selective",
-      "discriminating",
-      "choosy",
       "particular",
       "carefully chosen"
     ]
@@ -3768,8 +3633,7 @@ export default [
       "overelaborate",
       "overdetailed",
       "excessively detailed",
-      "needlessly elaborate",
-      "cumbersome"
+      "needlessly elaborate"
     ]
   ],
   [
@@ -3788,7 +3652,6 @@ export default [
       "sketchy",
       "rough",
       "summary",
-      "outline-level",
       "general"
     ]
   ],
@@ -3846,7 +3709,6 @@ export default [
     "反復的な・同じことが繰り返される",
     [
       "repetitive",
-      "recurrent",
       "recurring",
       "iterative"
     ]
@@ -3947,7 +3809,6 @@ export default [
       "inevitable",
       "unavoidable",
       "inescapable",
-      "inexorable",
       "bound to happen"
     ]
   ],
@@ -4005,8 +3866,7 @@ export default [
       "experimental",
       "exploratory",
       "pilot",
-      "trial",
-      "test-stage"
+      "trial"
     ]
   ],
   [
@@ -4015,8 +3875,7 @@ export default [
       "rudimentary",
       "elementary",
       "basic",
-      "foundational",
-      "incipient"
+      "foundational"
     ]
   ],
   [
@@ -4060,26 +3919,6 @@ export default [
     ]
   ],
   [
-    "資格のある・要件を満たす",
-    [
-      "qualified",
-      "eligible",
-      "certified",
-      "credentialed",
-      "entitled"
-    ]
-  ],
-  [
-    "資格のない・要件を満たさない",
-    [
-      "ineligible",
-      "unqualified",
-      "disqualified",
-      "not entitled",
-      "not eligible"
-    ]
-  ],
-  [
     "無能な・必要な能力が足りない",
     [
       "incompetent",
@@ -4095,8 +3934,7 @@ export default [
       "competent",
       "capable",
       "able",
-      "proficient",
-      "effective"
+      "proficient"
     ]
   ],
   [
@@ -4112,10 +3950,8 @@ export default [
     "評判の悪い・名声を損なった",
     [
       "disreputable",
-      "infamous",
       "notorious",
-      "ill-famed",
-      "of bad repute"
+      "ill-famed"
     ]
   ],
   [
@@ -4123,7 +3959,6 @@ export default [
     [
       "notorious",
       "infamous",
-      "disgraced",
       "ill-famed",
       "known for wrongdoing"
     ]
@@ -4154,7 +3989,6 @@ export default [
       "reprehensible",
       "blameworthy",
       "censurable",
-      "detestable",
       "culpable"
     ]
   ],
@@ -4324,8 +4158,7 @@ export default [
       "defective",
       "faulty",
       "flawed",
-      "malfunctioning",
-      "impaired"
+      "malfunctioning"
     ]
   ],
   [
@@ -4422,9 +4255,7 @@ export default [
     [
       "equilibrium",
       "balance",
-      "poise",
-      "stasis",
-      "even distribution"
+      "poise"
     ]
   ],
   [
@@ -4452,7 +4283,6 @@ export default [
     [
       "self-sufficiency",
       "self-reliance",
-      "independence",
       "autarky",
       "ability to provide for oneself"
     ]
@@ -4513,8 +4343,7 @@ export default [
       "resentment",
       "grudge",
       "bitterness",
-      "rancor",
-      "acrimony"
+      "rancor"
     ]
   ],
   [
@@ -4532,8 +4361,7 @@ export default [
     [
       "envy",
       "jealousy",
-      "covetousness",
-      "resentful admiration"
+      "covetousness"
     ]
   ],
   [
@@ -4579,9 +4407,7 @@ export default [
     "罪悪感・過ちを悔いる気持ち",
     [
       "guilt",
-      "remorse",
       "self-reproach",
-      "contrition",
       "feelings of guilt"
     ]
   ],
@@ -4590,7 +4416,6 @@ export default [
     [
       "grief",
       "sorrow",
-      "anguish",
       "heartbreak",
       "bereavement-related sorrow"
     ]
@@ -4639,9 +4464,7 @@ export default [
     [
       "boredom",
       "ennui",
-      "tedium",
-      "weariness",
-      "monotony"
+      "tedium"
     ]
   ],
   [
@@ -4660,7 +4483,6 @@ export default [
       "apathy",
       "indifference",
       "listlessness",
-      "lethargy",
       "unconcern"
     ]
   ],
@@ -4690,8 +4512,7 @@ export default [
       "excitement",
       "exhilaration",
       "thrill",
-      "elation",
-      "stimulation"
+      "elation"
     ]
   ],
   [
@@ -4829,7 +4650,6 @@ export default [
     [
       "impulse",
       "urge",
-      "compulsion",
       "instinctive urge",
       "spontaneous desire"
     ]
@@ -4842,16 +4662,6 @@ export default [
       "partiality",
       "fondness",
       "predilection"
-    ]
-  ],
-  [
-    "傾倒・強く好んで打ち込むこと",
-    [
-      "devotion",
-      "dedication",
-      "commitment",
-      "attachment",
-      "allegiance"
     ]
   ],
   [
@@ -4888,8 +4698,6 @@ export default [
     "偽善・本心と異なる善意を装うこと",
     [
       "hypocrisy",
-      "insincerity",
-      "duplicity",
       "pretense of virtue",
       "false piety"
     ]
@@ -4920,8 +4728,7 @@ export default [
       "conspiracy",
       "plot",
       "intrigue",
-      "machination",
-      "collusion"
+      "machination"
     ]
   ],
   [
@@ -4969,8 +4776,6 @@ export default [
     [
       "confidentiality",
       "secrecy",
-      "privacy",
-      "discretion",
       "restricted disclosure"
     ]
   ],
@@ -5019,8 +4824,6 @@ export default [
     [
       "authenticity",
       "genuineness",
-      "veracity",
-      "originality",
       "being genuine"
     ]
   ],
@@ -5039,9 +4842,7 @@ export default [
     [
       "precision",
       "exactness",
-      "accuracy",
-      "meticulousness",
-      "specificity"
+      "accuracy"
     ]
   ],
   [
@@ -5208,7 +5009,6 @@ export default [
       "erudition",
       "learning",
       "scholarship",
-      "knowledgeability",
       "extensive learning"
     ]
   ],
@@ -5326,8 +5126,6 @@ export default [
     "絶滅・種などが完全に消えること",
     [
       "extinction",
-      "extermination",
-      "eradication",
       "total disappearance",
       "dying out"
     ]
@@ -5447,7 +5245,6 @@ export default [
       "restitution",
       "restoration",
       "return",
-      "repayment",
       "handing back"
     ]
   ],
@@ -5456,9 +5253,7 @@ export default [
     [
       "compensation",
       "indemnity",
-      "reimbursement",
-      "recompense",
-      "damages"
+      "recompense"
     ]
   ],
   [
@@ -5526,8 +5321,7 @@ export default [
     [
       "bequest",
       "legacy",
-      "testamentary gift",
-      "inheritance by will"
+      "testamentary gift"
     ]
   ],
   [
@@ -5563,7 +5357,6 @@ export default [
   [
     "信用・返済能力への信頼",
     [
-      "credit",
       "creditworthiness",
       "financial credibility",
       "ability to obtain credit"
@@ -5574,19 +5367,7 @@ export default [
     [
       "collateral",
       "security",
-      "pledge",
-      "guarantee asset",
       "security for a loan"
-    ]
-  ],
-  [
-    "破産・支払い不能の法的状態",
-    [
-      "bankruptcy",
-      "insolvency",
-      "financial ruin",
-      "financial collapse",
-      "business failure"
     ]
   ],
   [
@@ -5653,7 +5434,6 @@ export default [
     [
       "production",
       "manufacture",
-      "output",
       "creation",
       "generation"
     ]
@@ -5808,16 +5588,6 @@ export default [
     ]
   ],
   [
-    "停戦・戦闘を一時停止する合意",
-    [
-      "ceasefire",
-      "truce",
-      "armistice",
-      "suspension of hostilities",
-      "cessation of fighting"
-    ]
-  ],
-  [
     "同盟・共通目的のための結び付き",
     [
       "alliance",
@@ -5852,7 +5622,6 @@ export default [
     [
       "sovereignty",
       "supreme authority",
-      "self-rule",
       "independent authority"
     ]
   ],
@@ -5902,8 +5671,7 @@ export default [
       "anarchy",
       "lawlessness",
       "chaos",
-      "disorder",
-      "absence of government"
+      "disorder"
     ]
   ],
   [
@@ -5921,7 +5689,6 @@ export default [
     [
       "riot",
       "disturbance",
-      "uprising",
       "violent disorder",
       "civil disorder"
     ]
@@ -6050,8 +5817,6 @@ export default [
     [
       "influx",
       "inflow",
-      "incursion",
-      "arrival",
       "incoming flow"
     ]
   ],
@@ -6060,9 +5825,7 @@ export default [
     [
       "outflow",
       "efflux",
-      "exodus",
-      "drain",
-      "departure"
+      "drain"
     ]
   ],
   [
@@ -6088,8 +5851,6 @@ export default [
     "亡命・国外に逃れて住むこと",
     [
       "exile",
-      "expatriation",
-      "banishment",
       "asylum abroad",
       "living in exile"
     ]
@@ -6108,18 +5869,8 @@ export default [
     "亡命者・故国を離れて暮らす人",
     [
       "exile",
-      "expatriate",
       "political exile",
       "person in exile"
-    ]
-  ],
-  [
-    "難民・迫害や紛争から逃れた人",
-    [
-      "refugee",
-      "displaced person",
-      "person fleeing persecution",
-      "forced migrant"
     ]
   ],
   [
@@ -6166,8 +5917,7 @@ export default [
       "descendant",
       "offspring",
       "progeny",
-      "posterity",
-      "issue"
+      "posterity"
     ]
   ],
   [
@@ -6176,8 +5926,7 @@ export default [
       "lineage",
       "ancestry",
       "descent",
-      "pedigree",
-      "genealogy"
+      "pedigree"
     ]
   ],
   [
@@ -6196,7 +5945,6 @@ export default [
       "compatriot",
       "fellow citizen",
       "countryman",
-      "co-national",
       "fellow national"
     ]
   ],
@@ -6214,7 +5962,6 @@ export default [
     "同級生・同じ学級の生徒",
     [
       "classmate",
-      "schoolmate",
       "fellow pupil",
       "fellow student in class"
     ]
@@ -6243,8 +5990,6 @@ export default [
     [
       "eyewitness",
       "witness",
-      "observer",
-      "onlooker",
       "person who saw the event"
     ]
   ],
@@ -6311,7 +6056,6 @@ export default [
     "後継者・地位を継ぐ人",
     [
       "successor",
-      "heir",
       "replacement",
       "following officeholder",
       "person who takes over"
@@ -6330,7 +6074,6 @@ export default [
     "仲裁人・争いを仲介する人",
     [
       "mediator",
-      "arbitrator",
       "conciliator",
       "intermediary",
       "peacemaker"
@@ -6362,8 +6105,7 @@ export default [
       "scholar",
       "academic",
       "learned person",
-      "research scholar",
-      "intellectual"
+      "research scholar"
     ]
   ],
   [
@@ -6407,7 +6149,6 @@ export default [
     "自伝・自分の生涯を記した文章",
     [
       "autobiography",
-      "memoir",
       "personal life story",
       "account of one's own life"
     ]
@@ -6447,15 +6188,12 @@ export default [
     [
       "paper",
       "article",
-      "thesis",
-      "dissertation",
       "scholarly treatise"
     ]
   ],
   [
     "論説・意見を論じた文章",
     [
-      "essay",
       "commentary",
       "opinion piece",
       "editorial",
@@ -6487,9 +6225,7 @@ export default [
     [
       "proclamation",
       "edict",
-      "decree",
-      "official announcement",
-      "public declaration"
+      "decree"
     ]
   ],
   [
@@ -6577,7 +6313,6 @@ export default [
     [
       "diagram",
       "schematic",
-      "chart",
       "plan",
       "graphic representation"
     ]
@@ -6608,8 +6343,7 @@ export default [
       "model",
       "replica",
       "mock-up",
-      "scale model",
-      "representation"
+      "scale model"
     ]
   ],
   [
@@ -6657,7 +6391,6 @@ export default [
     [
       "specimen",
       "sample",
-      "representative example",
       "test sample"
     ]
   ],
@@ -6733,7 +6466,6 @@ export default [
     [
       "vapor",
       "vapour",
-      "steam",
       "gaseous form"
     ]
   ],
@@ -6742,8 +6474,6 @@ export default [
     [
       "fog",
       "mist",
-      "haze",
-      "murk",
       "low-lying cloud"
     ]
   ],
@@ -6782,9 +6512,7 @@ export default [
     [
       "earthquake",
       "quake",
-      "tremor",
-      "seismic event",
-      "earth tremor"
+      "seismic event"
     ]
   ],
   [
@@ -6801,18 +6529,7 @@ export default [
     [
       "storm",
       "tempest",
-      "squall",
-      "gale",
       "violent weather"
-    ]
-  ],
-  [
-    "旋風・回転する風",
-    [
-      "whirlwind",
-      "vortex",
-      "twister",
-      "rotating wind"
     ]
   ],
   [
@@ -6870,7 +6587,6 @@ export default [
       "cliff",
       "precipice",
       "escarpment",
-      "bluff",
       "steep rock face"
     ]
   ],
@@ -6895,25 +6611,6 @@ export default [
     ]
   ],
   [
-    "湖沼・陸に囲まれた水域",
-    [
-      "lake",
-      "pond",
-      "inland body of water",
-      "standing water body"
-    ]
-  ],
-  [
-    "湿地・水分の多い土地",
-    [
-      "wetland",
-      "marsh",
-      "swamp",
-      "bog",
-      "waterlogged land"
-    ]
-  ],
-  [
     "荒野・人の住まない土地",
     [
       "wilderness",
@@ -6931,16 +6628,6 @@ export default [
       "woodland",
       "wooded area",
       "tree-covered land"
-    ]
-  ],
-  [
-    "草原・草の多い開けた土地",
-    [
-      "grassland",
-      "prairie",
-      "meadow",
-      "steppe",
-      "grassy plain"
     ]
   ],
   [
@@ -7017,9 +6704,7 @@ export default [
     [
       "passage",
       "passageway",
-      "corridor",
-      "aisle",
-      "gangway"
+      "corridor"
     ]
   ],
   [
@@ -7048,8 +6733,7 @@ export default [
       "stairs",
       "staircase",
       "stairway",
-      "flight of stairs",
-      "steps"
+      "flight of stairs"
     ]
   ],
   [
@@ -7183,8 +6867,6 @@ export default [
     "食堂・食事をする施設",
     [
       "dining hall",
-      "cafeteria",
-      "canteen",
       "refectory",
       "eating hall"
     ]
@@ -7215,7 +6897,6 @@ export default [
       "conference",
       "meeting",
       "convention",
-      "summit",
       "formal gathering"
     ]
   ],
@@ -7245,7 +6926,6 @@ export default [
       "ceremony",
       "observance",
       "rite",
-      "function",
       "formal occasion"
     ]
   ],
@@ -7478,16 +7158,6 @@ export default [
     ]
   ],
   [
-    "自発的な・準備なく自然に起こる",
-    [
-      "spontaneous",
-      "unplanned",
-      "impromptu",
-      "unpremeditated",
-      "unrehearsed"
-    ]
-  ],
-  [
     "即興の・事前の準備がない",
     [
       "impromptu",
@@ -7558,15 +7228,6 @@ export default [
     ]
   ],
   [
-    "同時の・同じ時間に起こる",
-    [
-      "simultaneous",
-      "concurrent",
-      "coincident",
-      "contemporaneous"
-    ]
-  ],
-  [
     "連続する・順に続く",
     [
       "successive",
@@ -7610,8 +7271,6 @@ export default [
     "古代の・遠い過去の",
     [
       "ancient",
-      "antique",
-      "archaic",
       "of antiquity",
       "of ancient times"
     ]
@@ -7639,7 +7298,6 @@ export default [
     [
       "recent",
       "latter-day",
-      "of recent origin",
       "from recent years"
     ]
   ],
@@ -7729,7 +7387,6 @@ export default [
       "symmetrical",
       "symmetric",
       "balanced",
-      "mirror-symmetrical",
       "evenly proportioned"
     ]
   ],
@@ -7758,7 +7415,6 @@ export default [
     [
       "horizontal",
       "level",
-      "flat",
       "parallel to the horizon"
     ]
   ],
@@ -7767,7 +7423,6 @@ export default [
     [
       "oblique",
       "slanting",
-      "diagonal",
       "inclined",
       "sloping"
     ]
@@ -7824,7 +7479,6 @@ export default [
     "長方形の・長方形の形をした",
     [
       "rectangular",
-      "oblong",
       "rectangle-shaped",
       "four-sided with right angles"
     ]
@@ -7852,7 +7506,6 @@ export default [
     "多孔質の・小さな穴が多い",
     [
       "porous",
-      "permeable",
       "full of pores",
       "spongelike"
     ]
@@ -7863,8 +7516,7 @@ export default [
       "sealed",
       "airtight",
       "hermetically sealed",
-      "closed tight",
-      "leakproof"
+      "closed tight"
     ]
   ],
   [
@@ -7874,15 +7526,6 @@ export default [
       "watertight",
       "impervious to water",
       "water-impermeable"
-    ]
-  ],
-  [
-    "耐火性の・火に耐える",
-    [
-      "fire-resistant",
-      "fireproof",
-      "flame-resistant",
-      "heat-resistant"
     ]
   ],
   [
@@ -8020,7 +7663,6 @@ export default [
       "unpalatable",
       "distasteful",
       "unappetizing",
-      "insipid",
       "poor-tasting"
     ]
   ],
@@ -8030,8 +7672,7 @@ export default [
       "bland",
       "insipid",
       "tasteless",
-      "flavorless",
-      "unseasoned"
+      "flavorless"
     ]
   ],
   [
@@ -8059,7 +7700,6 @@ export default [
     [
       "sweet",
       "sugary",
-      "saccharine",
       "sweet-tasting"
     ]
   ],
@@ -8068,7 +7708,6 @@ export default [
     [
       "salty",
       "briny",
-      "saline",
       "over-salted"
     ]
   ],
@@ -8087,7 +7726,6 @@ export default [
     [
       "bitter",
       "acerbic",
-      "acrid",
       "bitter-tasting"
     ]
   ],
@@ -8137,7 +7775,6 @@ export default [
       "fresh",
       "newly harvested",
       "newly prepared",
-      "unspoiled",
       "recently prepared"
     ]
   ],
@@ -8432,7 +8069,6 @@ export default [
     "表面的に・深く考えず",
     [
       "superficially",
-      "perfunctorily",
       "cursorily",
       "shallowly",
       "without depth"
@@ -8483,7 +8119,6 @@ export default [
     [
       "continuously",
       "uninterruptedly",
-      "consecutively",
       "in an unbroken sequence",
       "without interruption"
     ]
@@ -8547,7 +8182,6 @@ export default [
     "強制的に・自由意志によらず",
     [
       "forcibly",
-      "compulsorily",
       "coercively",
       "under compulsion",
       "by force"
@@ -8578,7 +8212,6 @@ export default [
     [
       "randomly",
       "at random",
-      "arbitrarily",
       "by random selection",
       "without a fixed pattern"
     ]
@@ -8706,7 +8339,6 @@ export default [
     [
       "empirically",
       "observationally",
-      "from experience",
       "based on observation",
       "on empirical grounds"
     ]
@@ -9175,7 +8807,6 @@ export default [
   [
     "それにもかかわらず・逆接として",
     [
-      "despite that",
       "nevertheless",
       "nonetheless",
       "still"
@@ -9226,9 +8857,7 @@ export default [
     [
       "despite",
       "in spite of",
-      "notwithstanding",
-      "regardless of",
-      "irrespective of"
+      "notwithstanding"
     ]
   ],
   [
@@ -9294,7 +8923,6 @@ export default [
   [
     "〜のおかげで・原因として",
     [
-      "thanks to",
       "due to",
       "because of",
       "owing to",
@@ -9336,19 +8964,7 @@ export default [
     [
       "during",
       "in the course of",
-      "throughout",
-      "in the midst of",
-      "over the course of"
-    ]
-  ],
-  [
-    "〜に向けて・目的方向として",
-    [
-      "toward",
-      "towards",
-      "in the direction of",
-      "heading for",
-      "bound for"
+      "in the midst of"
     ]
   ],
   [
@@ -9436,7 +9052,6 @@ export default [
     [
       "in light of",
       "in view of",
-      "given",
       "considering",
       "taking into account"
     ]
@@ -9455,8 +9070,6 @@ export default [
     "〜の場合に備えて・条件への備え",
     [
       "in case of",
-      "in the event of",
-      "should there be",
       "in anticipation of",
       "as a precaution against"
     ]
@@ -9486,7 +9099,6 @@ export default [
     [
       "be likely to",
       "be apt to",
-      "be expected to",
       "stand a good chance of",
       "have a high probability of"
     ]
@@ -9516,9 +9128,7 @@ export default [
     [
       "be accustomed to",
       "be used to",
-      "be familiar with",
-      "be habituated to",
-      "be comfortable with"
+      "be habituated to"
     ]
   ],
   [
@@ -10449,16 +10059,6 @@ export default [
     ]
   ],
   [
-    "〜を満たす",
-    [
-      "fill",
-      "load",
-      "pack",
-      "top up",
-      "fill up"
-    ]
-  ],
-  [
     "〜を空にする",
     [
       "empty",
@@ -10753,7 +10353,6 @@ export default [
     [
       "drop",
       "let fall",
-      "release one's hold on",
       "allow to fall"
     ]
   ],
@@ -11289,8 +10888,7 @@ export default [
       "accept",
       "come to terms with",
       "reconcile oneself to",
-      "acknowledge",
-      "take on board"
+      "acknowledge"
     ]
   ],
   [
@@ -11664,23 +11262,12 @@ export default [
     ]
   ],
   [
-    "〜を認証する",
-    [
-      "authenticate",
-      "verify the identity of",
-      "validate the identity of",
-      "establish authenticity of",
-      "confirm genuineness of"
-    ]
-  ],
-  [
     "〜を許可する・アクセス権を与える",
     [
       "authorize",
       "permit",
       "grant access to",
-      "allow",
-      "enable access to"
+      "allow"
     ]
   ],
   [
@@ -11698,7 +11285,6 @@ export default [
     [
       "encrypt",
       "encipher",
-      "encode cryptographically",
       "put into cipher",
       "convert into encrypted form"
     ]
@@ -11708,7 +11294,6 @@ export default [
     [
       "decrypt",
       "decipher",
-      "decode",
       "restore plaintext from",
       "convert ciphertext into plaintext"
     ]
