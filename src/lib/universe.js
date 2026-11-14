@@ -1,3 +1,5 @@
+import extendedVerbReview, {extendedVerbParadigms} from '../data/universe-extended-verb-review.js';
+import extendedNounReview, {extendedNounParadigms} from '../data/universe-extended-noun-review.js';
 import advancedVerbReview, {advancedVerbParadigms,advancedVerbNotes} from '../data/universe-advanced-verb-review.js';
 import advancedNominalReview, {advancedNominalParadigms} from '../data/universe-advanced-nominal-review.js';
 import academicVerbReview, {academicVerbParadigms} from '../data/universe-academic-verb-review-mega.js';
@@ -148,7 +150,7 @@ function applyLexicalReview(batches){
  const priorReviewHeads=new Set(authored.keys());
 const revisedPriorHeads=new Set();
 let refinedReviewLinks=0, annotatedReviewLinks=0;
-for(const batch of [verbMorphologyReview,nounAdjectiveReview,academicVerbReview,academicAdjectiveReview]){
+for(const batch of batches){
   for(const [word,entry] of Object.entries(batch)){
     const key=normalize(word);
     const prior=authored.get(key);
@@ -184,10 +186,15 @@ for(const batch of [verbMorphologyReview,nounAdjectiveReview,academicVerbReview,
  return {heads:after.heads-before.heads,links:after.links-before.links,existingHeadsUpdated:revisedPriorHeads.size,refined:refinedReviewLinks,annotated:annotatedReviewLinks,before,after};
 }
 const earlierReview=applyLexicalReview([verbMorphologyReview,nounAdjectiveReview]);
+const academicReview=applyLexicalReview([academicVerbReview,academicAdjectiveReview]);
 const advancedReview=applyLexicalReview([advancedVerbReview,advancedNominalReview]);
+const extendedReview=applyLexicalReview([extendedVerbReview,extendedNounReview]);
 function copyReview(r){return {...r,before:{...r.before},after:{...r.after}};}
 export function lexicalReviewCoverage(){return copyReview(earlierReview);}
 export function advancedReviewCoverage(){return copyReview(advancedReview);}
+export function academicReviewCoverage(){return copyReview(academicReview);}
+export function extendedReviewCoverage(){return copyReview(extendedReview);}
+export function cumulativeLexicalCoverage(){return {...lexicalAudit()};}
 function mergeParadigm(a,b){
  if(!a)return b||null;
  if(!b)return a;
@@ -200,9 +207,9 @@ function mergeParadigm(a,b){
 export function getWordForms(word){
  const key=normalize(word);
  const rows=[];
- const verb=mergeParadigm(verbParadigms[key],advancedVerbParadigms[key]);
- const adj=mergeParadigm(adjectiveNounParadigms.adjectives[key],advancedNominalParadigms.adjectives[key]);
- const noun=mergeParadigm(adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key]);
+ const verb=[verbParadigms[key],academicVerbParadigms[key],advancedVerbParadigms[key],extendedVerbParadigms[key]].reduce(mergeParadigm,null);
+ const adj=[adjectiveNounParadigms.adjectives[key],academicAdjectiveParadigms[key],advancedNominalParadigms.adjectives[key]].reduce(mergeParadigm,null);
+ const noun=[adjectiveNounParadigms.nouns[key],advancedNominalParadigms.nouns[key],extendedNounParadigms[key]].reduce(mergeParadigm,null);
  const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
  if(verb){
    add('動詞・原形',[verb.base]);add('三単現',verb.thirdPerson);add('その他の現在形',verb.otherPresent);
