@@ -4,7 +4,7 @@ const W=[0.212,1.2931,2.3065,8.2956,6.4133,0.8334,3.0194,0.001,1.8722,0.1666,0.7
 const clamp=(n,a,b)=>Math.min(b,Math.max(a,n));
 export function recall(m,now=Date.now()){return m?.stability>0&&Number.isFinite(m.lastAt)?(1+FACTOR*Math.max(0,(now-m.lastAt)/DAY)/m.stability)**(-W[20]):0}
 
-export function mastery(m,now=Date.now()){if(!m?.attempts)return 0;const horizon=(1+FACTOR*30/Math.max(.001,m.stability))**(-W[20]);return Math.min(m.lastGrade===1?45:100,m.spacedSuccesses<1?49:m.spacedSuccesses<3?79:100,Math.round(100*horizon*recall(m,now)))}
+export function mastery(m,now=Date.now()){if(!m?.attempts||!m.correct)return 0;const horizon=(1+FACTOR*30/Math.max(.001,m.stability))**(-W[20]);return Math.min(m.lastGrade===1?Math.min(45,m.lapseCeiling??45):100,m.spacedSuccesses<1?49:m.spacedSuccesses<3?79:100,Math.round(100*horizon*recall(m,now)))}
 
 export function reviewMemory(old,grade,kind,now=Date.now()){
   if(![1,2,3,4].includes(grade))throw new Error('Invalid grade');
@@ -24,6 +24,7 @@ export function reviewMemory(old,grade,kind,now=Date.now()){
   s=clamp(s,.001,36500);d=clamp(d,1,10);
   const spaced=grade>=3&&m&&t>=1?1:0;
   const next={stability:s,difficulty:d,lastAt:now,lastGrade:grade,attempts:(m?.attempts||0)+1,correct:(m?.correct||0)+(grade>=2?1:0),lapses:(m?.lapses||0)+(grade===1?1:0),spacedSuccesses:grade===1?0:(m?.spacedSuccesses||0)+spaced,skills:{...m?.skills,[kind]:(m?.skills?.[kind]||0)+1}};
+  if(grade===1)next.lapseCeiling=Math.max(0,mastery(m,now)-5);
   next.dueAt=now+(grade===1?10*60000:grade===2?60*60000:Math.max(1,Math.round(s))*DAY);
   return next;
 }
