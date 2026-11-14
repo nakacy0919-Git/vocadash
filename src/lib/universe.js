@@ -1,3 +1,4 @@
+import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
 import productiveVerbMega, {productiveVerbNotes} from '../data/universe-productive-verbs-mega.js';
 import concreteWorldMega, {concreteWorldNotes} from '../data/universe-concrete-world-mega.js';
 import everydayPhrasesMega, {everydayPhrasesNotes} from '../data/universe-everyday-phrases-mega.js';
@@ -147,6 +148,8 @@ const thematicReadingAdded=addCompatibleBatch(thematicReadingMega);
 const everydayPhrasesAdded=addCompatibleBatch(everydayPhrasesMega);
 const concreteWorldAdded=addCompatibleBatch(concreteWorldMega);
 const productiveVerbAdded=addCompatibleBatch(productiveVerbMega);
+const adjectiveNounAdded=addCompatibleBatch(adjectiveNounMega);
+export function adjectiveNounCoverage(){return {...adjectiveNounAdded};}
 export function productiveVerbCoverage(){return {...productiveVerbAdded};}
 export function concreteWorldCoverage(){return {...concreteWorldAdded};}
 export function everydayPhrasesCoverage(){return {...everydayPhrasesAdded};}
@@ -177,7 +180,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes,productiveVerbNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes,thematicReadingNotes,everydayPhrasesNotes,concreteWorldNotes,productiveVerbNotes,adjectiveNounNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
