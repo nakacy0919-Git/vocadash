@@ -41,32 +41,58 @@ function playQuizFeedbackSound(correct, enabled) {
 }
 
 // One short click and frequency sweep; triggered directly by the user's tap.
-function playUniverseLaunchSound(enabled) {
-  if (!enabled || typeof window === 'undefined') return;
-  const Context=window.AudioContext||window.webkitAudioContext;
-  if(!Context)return;
-  try{
-    if(!quizEffectsAudioContext||quizEffectsAudioContext.state==='closed')quizEffectsAudioContext=new Context();
-    const ctx=quizEffectsAudioContext;
-    if(ctx.state==='suspended')ctx.resume().catch(()=>{});
-    const now=ctx.currentTime;
-    const tone=(type,from,to,start,duration,peak)=>{
-      const osc=ctx.createOscillator(),gain=ctx.createGain();
-      osc.type=type;osc.frequency.setValueAtTime(from,start);osc.frequency.exponentialRampToValueAtTime(to,start+duration);
-      gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(peak,start+.015);gain.gain.exponentialRampToValueAtTime(.0001,start+duration);
-      osc.connect(gain);gain.connect(ctx.destination);osc.start(start);osc.stop(start+duration+.02);
-      osc.onended=()=>{osc.disconnect();gain.disconnect();};
-    };
-    tone('triangle',1100,190,now,.07,.045);
-    tone('sine',95,590,now+.07,.52,.06);
-    tone('sine',180,880,now+.11,.43,.025);
-  }catch{/* Visual experience still works without audio. */}
+// Render a short original click + acceleration effect into a PCM WAV.
+// HTMLAudio plays from the actual tap; Web Audio is a secondary route.
+let universeEffectAudio, universeEffectContext, universeEffectSamples;
+function universeEffectBuffer() {
+  if(universeEffectSamples)return universeEffectSamples;
+  const rate=24000,length=Math.floor(rate*.68),samples=new Float32Array(length);
+  let phase=0,phase2=0,seed=1234567,low=0;
+  for(let i=0;i<length;i++){
+    const t=i/rate;seed=(Math.imul(seed,1664525)+1013904223)>>>0;
+    const noise=seed/4294967296*2-1;low=low*.83+noise*.17;
+    const click=t<.085?(.42*Math.sin(2*Math.PI*(1150*t-3600*t*t))+.24*noise)*Math.exp(-t*68):0;
+    const u=(t-.055)/.625;
+    let sweep=0;
+    if(u>0&&u<1){
+      const env=Math.sin(Math.PI*u)**1.1;
+      phase+=2*Math.PI*(115*Math.pow(12,u))/rate;phase2+=2*Math.PI*(190*Math.pow(9,u))/rate;
+      sweep=env*(.38*Math.sin(phase)+.16*Math.sin(phase2)+.21*(noise-low));
+    }
+    samples[i]=Math.max(-.95,Math.min(.95,click+sweep));
+  }
+  universeEffectSamples={rate,samples};return universeEffectSamples;
 }
+function universeEffectUrl(){
+  const {rate,samples}=universeEffectBuffer(),buf=new ArrayBuffer(44+samples.length*2),v=new DataView(buf);
+  const tag=(p,k)=>{for(let i=0;i<k.length;i++)v.setUint8(p+i,k.charCodeAt(i));};
+  tag(0,'RIFF');v.setUint32(4,buf.byteLength-8,true);tag(8,'WAVE');tag(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,rate,true);v.setUint32(28,rate*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);tag(36,'data');v.setUint32(40,samples.length*2,true);
+  for(let i=0;i<samples.length;i++)v.setInt16(44+i*2,Math.round(samples[i]*32767),true);
+  return URL.createObjectURL(new Blob([buf],{type:'audio/wav'}));
+}
+function playUniverseLaunchSound(enabled) {
+  if(!enabled||typeof window==='undefined')return;
+  try{
+    const Context=window.AudioContext||window.webkitAudioContext;
+    if(Context&&(!universeEffectContext||universeEffectContext.state==='closed'))universeEffectContext=new Context();
+    const ctx=universeEffectContext;
+    // Resume within the gesture so WebKit can unlock the fallback.
+    const resumed=ctx&&ctx.state!=='running'?ctx.resume().catch(()=>{}):Promise.resolve();
+    const fallback=()=>resumed.then(()=>{
+      if(!ctx||ctx.state!=='running')return;
+      const {rate,samples}=universeEffectBuffer(),buffer=ctx.createBuffer(1,samples.length,rate);buffer.getChannelData(0).set(samples);
+      const source=ctx.createBufferSource(),gain=ctx.createGain();source.buffer=buffer;gain.gain.value=.8;source.connect(gain);gain.connect(ctx.destination);source.start();source.onended=()=>{source.disconnect();gain.disconnect();};
+    }).catch(()=>{});
+    if(!universeEffectAudio){universeEffectAudio=new Audio(universeEffectUrl());universeEffectAudio.preload='auto';universeEffectAudio.volume=.85;}
+    universeEffectAudio.pause();universeEffectAudio.currentTime=0;
+    const played=universeEffectAudio.play();if(played?.catch)played.catch(fallback);
+  }catch{/* effect must never block the learning workspace */}
+}
+function stopUniverseLaunchSound(){try{universeEffectAudio?.pause();}catch{/* no-op */}}
 function UniverseLaunchButton({entry,onLaunch}) {
-  return <button type="button" className="vu-launch" onClick={()=>onLaunch(entry)} aria-label={entry.word+' の Voca Universe 関連語マップを開く'} aria-haspopup="dialog">
+  return <span className="vu-launch-wrap"><button type="button" className="vu-launch vu-launch-round" onClick={()=>onLaunch(entry)} aria-label={entry.word+' の Voca Universe 関連語マップを開く'} aria-haspopup="dialog">
     <span className="vu-launch-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="5" fill="currentColor"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(-35 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(55 24 24)"/><circle cx="36" cy="13" r="2.5" fill="currentColor"/><circle cx="11" cy="30" r="2" fill="currentColor"/></svg></span>
-    <span className="vu-launch-text"><strong>VOCA UNIVERSE</strong><small>関連語の宇宙へ</small></span><span className="vu-launch-arrow" aria-hidden="true">↗</span>
-  </button>;
+    </button><span className="vu-launch-label" aria-hidden="true">VOCA UNIVERSE</span></span>;
 }
 
 const modes = [
@@ -233,7 +259,7 @@ export default function VocaDash() {
   useEffect(() => () => { clearTimeout(quizTimer.current); stopAudio(); }, [stopAudio]);
   const openUniverse = item => {
     if(!item||universeEntry)return;
-    setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.sound);setUniverseEntry(item);
+    setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.universeSound!==false);setUniverseEntry(item);
   };
   const resetCard = () => {
     clearTimeout(quizTimer.current);
@@ -540,9 +566,8 @@ export default function VocaDash() {
                 ) : (
                   <>
                 <div className="vd-word-eyebrow"><span>TODAY’S VOCABULARY</span><span className="vd-course-badge">{course.short}</span></div>
-                <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button></div>
+                <div className="vd-word-heading"><h2>{current.word}</h2><button className="vd-sound" disabled={!store.settings.sound} aria-label="単語の発音を聞く" onClick={() => speak(current)}><Icon name="speaker" size={26}/></button><UniverseLaunchButton entry={current} onLaunch={openUniverse}/></div>
                 {current.pronunciation && <p className="vd-phonetic">{current.pronunciation}</p>}
-                <UniverseLaunchButton entry={current} onLaunch={openUniverse}/>
                 {revealed ? <div className="vd-word-detail"><div className="vd-meaning-caption">MEANING</div><h3>{current.meaning || current.japanese}</h3>
                   {current.image && !imageError && <img className="vd-word-image" src={assetImage(current.image)} alt={current.word + ' の参考画像'} onError={() => setImageError(true)}/>}
                   <div className="vd-example"><div><span>EXAMPLE SENTENCE</span><button disabled={!store.settings.sound} aria-label="例文を再生" onClick={() => speak(current, true)}><Icon name="speaker" size={17}/></button></div><p><HighlightedExample text={current.english} word={current.word}/></p><small>{current.japanese}</small></div>
@@ -588,7 +613,7 @@ export default function VocaDash() {
         <footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>
       </div>
     </main>
-    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>{stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound}/>}
+    {universeEntry && <VocaUniverse entry={universeEntry} words={words} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
