@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -16,7 +16,7 @@ test('missing data is honest; authored core is closer',()=>{
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainMegaCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links});
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+actionMegaCoverage().heads+adjectiveMegaCoverage().heads+unifiedReadingCoverage().heads+everydayAbstractCoverage().heads+collocationReadingCoverage().heads+nuanceFamilyCoverage().heads,links:26096+added.links+actionMegaCoverage().links+adjectiveMegaCoverage().links+unifiedReadingCoverage().links+everydayAbstractCoverage().links+collocationReadingCoverage().links+nuanceFamilyCoverage().links});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -272,4 +272,30 @@ test('entrance exam collocation maps contain complete, deduplicated usage groups
  }
  assert.equal(collocationReadingMega['substitute paper for plastic'].meaning,'プラスチックの代わりに紙を使う');
  assert.ok(collocationReadingMega['distinguish'].links.some(l=>l.word==='distinguish fact from opinion'&&l.type==='collocation'));
+});
+
+import nuanceFamilyMega, {nuanceFamilyNotes} from '../data/universe-nuance-family-mega.js';
+test('advanced nuance vocabulary uses explicitly typed family and contrast links',()=>{
+ const stats=nuanceFamilyCoverage();
+ assert.equal(stats.candidates,1795);
+ assert.equal(stats.heads+stats.compatible+stats.skippedSense,stats.candidates);
+ assert.ok(stats.heads>0&&stats.links>0);
+ const entries=Object.entries(nuanceFamilyMega);
+ assert.equal(entries.length,1795);
+ assert.equal(entries.reduce((n,[,e])=>n+e.links.length,0),7249);
+ for(const [word,entry] of entries){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.ok(entry.links.length>0);
+  const normalized=entry.links.map(l=>l.word.trim().toLowerCase());
+  assert.equal(new Set(normalized).size,normalized.length);
+  assert.ok(entry.links.every(l=>l.meaning&&l.word!==word&&['related','synonym','family','contrast'].includes(l.type)));
+ }
+ for(const [head,notes] of Object.entries(nuanceFamilyNotes))for(const [word,note] of Object.entries(notes)){
+  assert.ok(nuanceFamilyMega[head].links.some(l=>l.word===word));
+  assert.ok(note.note&&note.example&&note.translation);
+ }
+ assert.ok(nuanceFamilyMega['ubiquitous'].links.some(l=>l.word==='ubiquity'&&l.type==='family'));
+ assert.ok(nuanceFamilyMega['implicit'].links.some(l=>l.word==='explicit'&&l.type==='contrast'));
+ assert.ok(nuanceFamilyMega['lucid'].links.some(l=>l.word==='clear'&&l.type==='synonym'));
+ assert.equal(nuanceFamilyMega['fortuitous'].links.find(l=>l.word==='happenstance').type,'related');
 });
