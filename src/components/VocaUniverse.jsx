@@ -1,6 +1,6 @@
 import React, {useEffect,useId,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels} from '../lib/universe';
+import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels,getWordForms} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VocaUniverse.css';
 export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=true,onToggleEffects}) {
@@ -21,6 +21,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
  const index=useMemo(()=>new Map(words.map(w=>[w.word.toLowerCase(),w])),[words]);
  const links=useMemo(()=>getRelations(center),[center]);
  const mapSense=lookupUniverse(center.word)?.meaning;
+ const formRows=getWordForms(center.word);
  const visible=links.filter(x=>filter==='all'||x.type===filter);
  const pageCount=orbitPageCount(visible);
  const nodes=orbitNodes(visible,Math.min(page,pageCount-1));
@@ -72,11 +73,11 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
    </div></div>
    <div className="vu-rings"><span>{visible.length}件の関連語</span><span>内側：最優先</span><span>中間：関連</span><span>外側：発展</span></div>
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);setSelected(null);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);setSelected(null);}}>次へ →</button></div>}</>}
-   {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button></section>}
+   {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
    {!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
    
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} aria-pressed={selected===n.word} onClick={()=>setSelected(n.word)} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
-  </div>{active&&<aside className="vu-detail" aria-label="関連語の詳細"><button className="vu-detail-close" onClick={()=>setSelected(null)} aria-label="詳細を閉じる">✕</button><div><small>{types[active.type]} · {tierLabels[active.tier]}</small><h3>{active.word}</h3><p>{active.meaning||target?.meaning||'日本語の意味は準備中'}</p>{target?.english&&<p>{target.english}</p>}{target?.japanese&&<small>{target.japanese}</small>}{active.note&&<div className="vu-usage-note"><strong>使い分け・語感</strong><p>{active.note}</p>{active.example&&<p lang="en">{active.example}</p>}{active.translation&&<small>{active.translation}</small>}</div>}{active.reverse&&<p className="vu-reverse">登録済みの語からの逆方向リンク</p>}</div>{showImages&&target?.image&&targetImageError!==target.image&&<img className="vu-detail-image" src={assetImage(target.image)} alt={active.word+' の参考画像'} onError={()=>setTargetImageError(target.image)}/>}<div className="vu-detail-actions"><button disabled={!sound} onClick={()=>onSpeak(target)}>♫ 発音</button><button disabled={!canExplore} onClick={()=>{setTrail(t=>[...t,center]);change(target);}}>中心にする →</button></div></aside>}
+  </div>{active&&<aside className="vu-detail" aria-label="関連語の詳細"><button className="vu-detail-close" onClick={()=>setSelected(null)} aria-label="詳細を閉じる">✕</button><div><small>{types[active.type]} · {tierLabels[active.tier]}</small><h3>{active.word}</h3>{active.morphology?.length>0&&<p className="vu-reverse">{active.morphology.join("・")}{active.lemma&&<> · 原語: {active.lemma}</>}</p>}<p>{active.meaning||target?.meaning||'日本語の意味は準備中'}</p>{target?.english&&<p>{target.english}</p>}{target?.japanese&&<small>{target.japanese}</small>}{active.note&&<div className="vu-usage-note"><strong>使い分け・語感</strong><p>{active.note}</p>{active.example&&<p lang="en">{active.example}</p>}{active.translation&&<small>{active.translation}</small>}</div>}{active.reverse&&<p className="vu-reverse">登録済みの語からの逆方向リンク</p>}</div>{showImages&&target?.image&&targetImageError!==target.image&&<img className="vu-detail-image" src={assetImage(target.image)} alt={active.word+' の参考画像'} onError={()=>setTargetImageError(target.image)}/>}<div className="vu-detail-actions"><button disabled={!sound} onClick={()=>onSpeak(target)}>♫ 発音</button><button disabled={!canExplore} onClick={()=>{setTrail(t=>[...t,center]);change(target);}}>中心にする →</button></div></aside>}
   </div>
   </section></div>,document.body);
 }
