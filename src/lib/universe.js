@@ -1,3 +1,4 @@
+import bridges from '../data/universe-bridges.js';
 import coreBulk from '../data/universe-core-bulk.js';
 import advancedBulk from '../data/universe-advanced-bulk.js';
 import usageNotes from '../data/universe-usage-notes.js';
@@ -61,6 +62,7 @@ function addAuthored(word,entry) {
 for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entry);
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
 for(const batch of [coreBulk,advancedBulk])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
+for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
