@@ -236,3 +236,24 @@ test('core verb forms, irregular plurals and comparison forms are explicit',()=>
  assert.ok(after.headsWithForms>before.headsWithForms);
  assert.ok(after.headsWithFamily>=before.headsWithFamily&&after.headsWithCollocations>=before.headsWithCollocations);
 });
+
+test('academic verb and adjective expansion has explicit forms and productive phrase links',()=>{
+ const form=(word,label)=>getWordForms(word).find(x=>x.label===label)?.forms;
+ for(const [word,expected] of [['submit','submitted'],['transfer','transferred'],['deter','deterred'],['confer','conferred'],['accompany','accompanied']]){
+   assert.ok(form(word,'過去形')?.includes(expected),word);
+ }
+ assert.deepEqual(form('guarantee','現在分詞・動名詞'),['guaranteeing']);
+ assert.ok(form('benefit','過去分詞')?.includes('benefitted'));
+ assert.deepEqual(form('reliable','比較級'),['more reliable']);
+ assert.deepEqual(form('subtle','最上級'),['subtlest']);
+ assert.equal(form('identical','比較級'),undefined);
+ for(const [head,phrase] of [['adhere','adhere to guidelines'],['attribute','attribute success to effort'],['deprive','deprive children of opportunities'],['mitigate','mitigate adverse effects'],['compatible','compatible with existing devices'],['reluctant','reluctant to speak'],['vulnerable','vulnerable to exploitation']]){
+   const link=getRelations(lookupUniverse(head)).find(x=>x.word===phrase);
+   assert.ok(link&&link.meaning&&link.type==='collocation',head+' -> '+phrase);
+   assert.ok(lookupUniverse(phrase)?.relatedWords.some(x=>x.word===head));
+ }
+ for(const [head,derivative] of [['corroborate','corroboration'],['facilitate','facilitation'],['ambiguous','ambiguity'],['resilient','resilience']]){
+   const link=getRelations(lookupUniverse(head)).find(x=>x.word===derivative);
+   assert.ok(link?.morphology?.includes('派生・語族'),head+' -> '+derivative);
+ }
+});
