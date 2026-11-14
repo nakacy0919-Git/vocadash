@@ -1,0 +1,929 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatches": [
+    "batches/original-20261114-gap-b1.json"
+  ],
+  "derived": true,
+  "status": "draft-unreviewed",
+  "kind": "examples",
+  "records": [
+    {
+      "wordId": "VD-02309",
+      "headword": "able",
+      "senseId": "VDO-261114-GAP-00524",
+      "id": "VDO-261114-GAP-00524-e01",
+      "en": "She is able to explain the idea clearly.",
+      "ja": "彼女はその考えを明確に説明できます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02309",
+      "headword": "able",
+      "senseId": "VDO-261114-GAP-00524",
+      "id": "VDO-261114-GAP-00524-e02",
+      "en": "Will you be able to join us tomorrow?",
+      "ja": "明日参加できそうですか。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02312",
+      "headword": "aborigine",
+      "senseId": "VDO-261114-GAP-00525",
+      "id": "VDO-261114-GAP-00525-e01",
+      "en": "The old text used the word aborigine for an Indigenous person.",
+      "ja": "その古い文章は先住民にaborigineという語を使っていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02312",
+      "headword": "aborigine",
+      "senseId": "VDO-261114-GAP-00525",
+      "id": "VDO-261114-GAP-00525-e02",
+      "en": "The editor replaced aborigine with the community's preferred name.",
+      "ja": "編集者はaborigineをその共同体が望む呼称に置き換えました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02332",
+      "headword": "according to",
+      "senseId": "VDO-261114-GAP-00526",
+      "id": "VDO-261114-GAP-00526-e01",
+      "en": "According to the schedule, the tour starts at ten.",
+      "ja": "予定表によると、見学は10時に始まります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02332",
+      "headword": "according to",
+      "senseId": "VDO-261114-GAP-00526",
+      "id": "VDO-261114-GAP-00526-e02",
+      "en": "According to the report, fewer students use the bus now.",
+      "ja": "報告によると、今はバスを使う生徒が減っています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02341",
+      "headword": "acknowledge",
+      "senseId": "VDO-261114-GAP-00527",
+      "id": "VDO-261114-GAP-00527-e01",
+      "en": "He acknowledged that the instructions were unclear.",
+      "ja": "彼は指示が不明確だったと認めました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02341",
+      "headword": "acknowledge",
+      "senseId": "VDO-261114-GAP-00527",
+      "id": "VDO-261114-GAP-00527-e02",
+      "en": "Please acknowledge receipt of this message.",
+      "ja": "このメッセージを受け取ったことをお知らせください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02342",
+      "headword": "acknowledgment/acknowledgement",
+      "senseId": "VDO-261114-GAP-00528",
+      "id": "VDO-261114-GAP-00528-e01",
+      "en": "The apology was an acknowledgment of the mistake.",
+      "ja": "その謝罪は間違いを認めるものでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02342",
+      "headword": "acknowledgment/acknowledgement",
+      "senseId": "VDO-261114-GAP-00528",
+      "id": "VDO-261114-GAP-00528-e02",
+      "en": "Her letter included an acknowledgement of our contribution.",
+      "ja": "彼女の手紙には私たちの貢献を認める言葉がありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02348",
+      "headword": "adapt",
+      "senseId": "VDO-261114-GAP-00529",
+      "id": "VDO-261114-GAP-00529-e01",
+      "en": "It took time to adapt to the new timetable.",
+      "ja": "新しい時間割に慣れるには時間がかかりました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02348",
+      "headword": "adapt",
+      "senseId": "VDO-261114-GAP-00529",
+      "id": "VDO-261114-GAP-00529-e02",
+      "en": "We adapted the activity for younger learners.",
+      "ja": "年少の学習者向けに活動を調整しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02405",
+      "headword": "anti",
+      "senseId": "VDO-261114-GAP-00530",
+      "id": "VDO-261114-GAP-00530-e01",
+      "en": "Some members are pro, while others are anti.",
+      "ja": "賛成の会員もいれば、反対の会員もいます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02405",
+      "headword": "anti",
+      "senseId": "VDO-261114-GAP-00530",
+      "id": "VDO-261114-GAP-00530-e02",
+      "en": "When asked about the proposal, she said she was anti.",
+      "ja": "提案について尋ねられ、彼女は反対だと言いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02455",
+      "headword": "attract",
+      "senseId": "VDO-261114-GAP-00531",
+      "id": "VDO-261114-GAP-00531-e01",
+      "en": "The festival attracts visitors from nearby towns.",
+      "ja": "その祭りは近隣の町から観光客を呼び込みます。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02455",
+      "headword": "attract",
+      "senseId": "VDO-261114-GAP-00531",
+      "id": "VDO-261114-GAP-00531-e02",
+      "en": "Bright flowers attract insects.",
+      "ja": "明るい色の花は虫を引きつけます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02483",
+      "headword": "barman",
+      "senseId": "VDO-261114-GAP-00532",
+      "id": "VDO-261114-GAP-00532-e01",
+      "en": "The barman offered us water while we waited.",
+      "ja": "待っている間、バーテンダーが水を出してくれました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02483",
+      "headword": "barman",
+      "senseId": "VDO-261114-GAP-00532",
+      "id": "VDO-261114-GAP-00532-e02",
+      "en": "He works as a barman at a hotel.",
+      "ja": "彼はホテルでバーテンダーとして働いています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02510",
+      "headword": "bishop",
+      "senseId": "VDO-261114-GAP-00533",
+      "id": "VDO-261114-GAP-00533-e01",
+      "en": "The bishop visited the local church.",
+      "ja": "司教が地元の教会を訪れました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02510",
+      "headword": "bishop",
+      "senseId": "VDO-261114-GAP-00533",
+      "id": "VDO-261114-GAP-00533-e02",
+      "en": "A portrait of the former bishop hangs in the hall.",
+      "ja": "前任の司教の肖像画が広間に掛かっています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02523",
+      "headword": "bomb",
+      "senseId": "VDO-261114-GAP-00534",
+      "id": "VDO-261114-GAP-00534-e01",
+      "en": "The museum displayed a photograph of an unexploded bomb.",
+      "ja": "博物館には不発弾の写真が展示されていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02523",
+      "headword": "bomb",
+      "senseId": "VDO-261114-GAP-00534",
+      "id": "VDO-261114-GAP-00534-e02",
+      "en": "The area was cleared after a bomb was discovered.",
+      "ja": "爆弾が見つかった後、その区域から人々が避難しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02538",
+      "headword": "brass",
+      "senseId": "VDO-261114-GAP-00535",
+      "id": "VDO-261114-GAP-00535-e01",
+      "en": "The door has a handle made of brass.",
+      "ja": "そのドアには真ちゅう製の取っ手が付いています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02538",
+      "headword": "brass",
+      "senseId": "VDO-261114-GAP-00535",
+      "id": "VDO-261114-GAP-00535-e02",
+      "en": "She polished the brass until it shone.",
+      "ja": "彼女は真ちゅうが輝くまで磨きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02539",
+      "headword": "bravely",
+      "senseId": "VDO-261114-GAP-00536",
+      "id": "VDO-261114-GAP-00536-e01",
+      "en": "She bravely spoke about a difficult experience.",
+      "ja": "彼女はつらい体験について勇気を持って話しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02539",
+      "headword": "bravely",
+      "senseId": "VDO-261114-GAP-00536",
+      "id": "VDO-261114-GAP-00536-e02",
+      "en": "The team faced the challenge bravely.",
+      "ja": "チームは勇敢に課題に向き合いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02541",
+      "headword": "breast",
+      "senseId": "VDO-261114-GAP-00537",
+      "id": "VDO-261114-GAP-00537-e01",
+      "en": "The bird has a bright red breast.",
+      "ja": "その鳥は胸が鮮やかな赤色です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02541",
+      "headword": "breast",
+      "senseId": "VDO-261114-GAP-00537",
+      "id": "VDO-261114-GAP-00537-e02",
+      "en": "The recipe uses a skinless chicken breast.",
+      "ja": "そのレシピには皮を除いた鶏胸肉を使います。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02545",
+      "headword": "breeding",
+      "senseId": "VDO-261114-GAP-00538",
+      "id": "VDO-261114-GAP-00538-e01",
+      "en": "The island is an important breeding site for seabirds.",
+      "ja": "その島は海鳥にとって重要な繁殖地です。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02545",
+      "headword": "breeding",
+      "senseId": "VDO-261114-GAP-00538",
+      "id": "VDO-261114-GAP-00538-e02",
+      "en": "The zoo runs a breeding programme for rare animals.",
+      "ja": "動物園は希少動物の繁殖計画を実施しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02554",
+      "headword": "brotherhood",
+      "senseId": "VDO-261114-GAP-00539",
+      "id": "VDO-261114-GAP-00539-e01",
+      "en": "Shared work created a sense of brotherhood among the volunteers.",
+      "ja": "共同作業がボランティアの間に仲間としての連帯感を生みました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02554",
+      "headword": "brotherhood",
+      "senseId": "VDO-261114-GAP-00539",
+      "id": "VDO-261114-GAP-00539-e02",
+      "en": "The novel explores brotherhood in difficult times.",
+      "ja": "その小説は困難な時代の仲間の絆を描いています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02558",
+      "headword": "bull",
+      "senseId": "VDO-261114-GAP-00540",
+      "id": "VDO-261114-GAP-00540-e01",
+      "en": "The bull stood in a separate field.",
+      "ja": "雄牛は別の牧草地にいました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02558",
+      "headword": "bull",
+      "senseId": "VDO-261114-GAP-00540",
+      "id": "VDO-261114-GAP-00540-e02",
+      "en": "We watched the bull from behind the fence.",
+      "ja": "柵の後ろから雄牛を見ました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02559",
+      "headword": "bullet",
+      "senseId": "VDO-261114-GAP-00541",
+      "id": "VDO-261114-GAP-00541-e01",
+      "en": "The display showed a bullet found at the historic site.",
+      "ja": "展示には史跡で見つかった弾丸が示されていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02559",
+      "headword": "bullet",
+      "senseId": "VDO-261114-GAP-00541",
+      "id": "VDO-261114-GAP-00541-e02",
+      "en": "A bullet hole remained in the old wall.",
+      "ja": "古い壁には弾痕が残っていました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02560",
+      "headword": "bulletin",
+      "senseId": "VDO-261114-GAP-00542",
+      "id": "VDO-261114-GAP-00542-e01",
+      "en": "The school bulletin lists next week's events.",
+      "ja": "学校の広報には来週の行事が載っています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02560",
+      "headword": "bulletin",
+      "senseId": "VDO-261114-GAP-00542",
+      "id": "VDO-261114-GAP-00542-e02",
+      "en": "We listened to a news bulletin on the radio.",
+      "ja": "ラジオで短いニュース放送を聞きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02561",
+      "headword": "bump",
+      "senseId": "VDO-261114-GAP-00543",
+      "id": "VDO-261114-GAP-00543-e01",
+      "en": "I bumped my knee against the desk.",
+      "ja": "机に膝をぶつけました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02561",
+      "headword": "bump",
+      "senseId": "VDO-261114-GAP-00543",
+      "id": "VDO-261114-GAP-00543-e02",
+      "en": "The cart bumped into the door.",
+      "ja": "荷車がドアにぶつかりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02564",
+      "headword": "bureau",
+      "senseId": "VDO-261114-GAP-00544",
+      "id": "VDO-261114-GAP-00544-e01",
+      "en": "The tourist bureau gave us a map.",
+      "ja": "観光案内所で地図をもらいました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02564",
+      "headword": "bureau",
+      "senseId": "VDO-261114-GAP-00544",
+      "id": "VDO-261114-GAP-00544-e02",
+      "en": "The bureau collects data from local offices.",
+      "ja": "その局は地方の事務所からデータを集めます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02565",
+      "headword": "burglar",
+      "senseId": "VDO-261114-GAP-00545",
+      "id": "VDO-261114-GAP-00545-e01",
+      "en": "The alarm frightened the burglar away.",
+      "ja": "警報で侵入窃盗犯は逃げ去りました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02565",
+      "headword": "burglar",
+      "senseId": "VDO-261114-GAP-00545",
+      "id": "VDO-261114-GAP-00545-e02",
+      "en": "The burglar entered through a broken window.",
+      "ja": "泥棒は壊れた窓から侵入しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02566",
+      "headword": "burning",
+      "senseId": "VDO-261114-GAP-00546",
+      "id": "VDO-261114-GAP-00546-e01",
+      "en": "Keep away from the burning building.",
+      "ja": "燃えている建物から離れてください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02566",
+      "headword": "burning",
+      "senseId": "VDO-261114-GAP-00546",
+      "id": "VDO-261114-GAP-00546-e02",
+      "en": "The smell of burning wood filled the air.",
+      "ja": "木の燃えるにおいが辺りに広がりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02567",
+      "headword": "burst",
+      "senseId": "VDO-261114-GAP-00547",
+      "id": "VDO-261114-GAP-00547-e01",
+      "en": "The balloon burst when it touched the sharp branch.",
+      "ja": "風船はとがった枝に触れて割れました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02567",
+      "headword": "burst",
+      "senseId": "VDO-261114-GAP-00547",
+      "id": "VDO-261114-GAP-00547-e02",
+      "en": "A water pipe burst during the cold night.",
+      "ja": "寒い夜に水道管が破裂しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02568",
+      "headword": "bust",
+      "senseId": "VDO-261114-GAP-00548",
+      "id": "VDO-261114-GAP-00548-e01",
+      "en": "I dropped my phone and busted the screen.",
+      "ja": "携帯電話を落として画面を壊してしまいました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02568",
+      "headword": "bust",
+      "senseId": "VDO-261114-GAP-00548",
+      "id": "VDO-261114-GAP-00548-e02",
+      "en": "The old machine busted during the test.",
+      "ja": "古い機械は試運転中に壊れました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02569",
+      "headword": "butcher",
+      "senseId": "VDO-261114-GAP-00549",
+      "id": "VDO-261114-GAP-00549-e01",
+      "en": "The butcher cut the meat into small pieces.",
+      "ja": "精肉店の人が肉を小さく切ってくれました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02569",
+      "headword": "butcher",
+      "senseId": "VDO-261114-GAP-00549",
+      "id": "VDO-261114-GAP-00549-e02",
+      "en": "We bought fresh chicken from the butcher.",
+      "ja": "精肉店で新鮮な鶏肉を買いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02570",
+      "headword": "buyer",
+      "senseId": "VDO-261114-GAP-00550",
+      "id": "VDO-261114-GAP-00550-e01",
+      "en": "The buyer asked about the bicycle's condition.",
+      "ja": "買い手は自転車の状態を尋ねました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02570",
+      "headword": "buyer",
+      "senseId": "VDO-261114-GAP-00550",
+      "id": "VDO-261114-GAP-00550-e02",
+      "en": "Online buyers can compare prices easily.",
+      "ja": "オンラインの購入者は簡単に価格を比較できます。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02608",
+      "headword": "CD-ROM",
+      "senseId": "VDO-261114-GAP-00551",
+      "id": "VDO-261114-GAP-00551-e01",
+      "en": "The old textbook came with a CD-ROM.",
+      "ja": "その古い教科書にはCD-ROMが付いていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02608",
+      "headword": "CD-ROM",
+      "senseId": "VDO-261114-GAP-00551",
+      "id": "VDO-261114-GAP-00551-e02",
+      "en": "We copied the permitted files from the CD-ROM.",
+      "ja": "CD-ROMから使用を許可されたファイルをコピーしました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02622",
+      "headword": "chariot",
+      "senseId": "VDO-261114-GAP-00552",
+      "id": "VDO-261114-GAP-00552-e01",
+      "en": "The painting shows a chariot pulled by two horses.",
+      "ja": "その絵には2頭の馬が引く二輪馬車が描かれています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02622",
+      "headword": "chariot",
+      "senseId": "VDO-261114-GAP-00552",
+      "id": "VDO-261114-GAP-00552-e02",
+      "en": "A model chariot stood in the museum display.",
+      "ja": "博物館の展示には古代の二輪馬車の模型がありました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02626",
+      "headword": "chat show",
+      "senseId": "VDO-261114-GAP-00553",
+      "id": "VDO-261114-GAP-00553-e01",
+      "en": "The author appeared on a chat show.",
+      "ja": "その作家はトーク番組に出演しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02626",
+      "headword": "chat show",
+      "senseId": "VDO-261114-GAP-00553",
+      "id": "VDO-261114-GAP-00553-e02",
+      "en": "We watched a chat show about life abroad.",
+      "ja": "海外生活についてのトーク番組を見ました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02627",
+      "headword": "check-in counter/check-in",
+      "senseId": "VDO-261114-GAP-00554",
+      "id": "VDO-261114-GAP-00554-e01",
+      "en": "We arrived at the check-in counter two hours early.",
+      "ja": "搭乗手続きカウンターに2時間早く着きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02627",
+      "headword": "check-in counter/check-in",
+      "senseId": "VDO-261114-GAP-00554",
+      "id": "VDO-261114-GAP-00554-e02",
+      "en": "The sign directed us to the check-in counter.",
+      "ja": "標識が搭乗手続きカウンターへ案内していました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02628",
+      "headword": "check-in desk/check-in",
+      "senseId": "VDO-261114-GAP-00555",
+      "id": "VDO-261114-GAP-00555-e01",
+      "en": "A staff member helped us at the check-in desk.",
+      "ja": "係員が搭乗手続きカウンターで手伝ってくれました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02628",
+      "headword": "check-in desk/check-in",
+      "senseId": "VDO-261114-GAP-00555",
+      "id": "VDO-261114-GAP-00555-e02",
+      "en": "Our group met beside the check-in desk.",
+      "ja": "私たちのグループは搭乗手続きカウンターのそばに集まりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02629",
+      "headword": "checkout",
+      "senseId": "VDO-261114-GAP-00556",
+      "id": "VDO-261114-GAP-00556-e01",
+      "en": "There was a long queue at the checkout.",
+      "ja": "レジに長い列ができていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02629",
+      "headword": "checkout",
+      "senseId": "VDO-261114-GAP-00556",
+      "id": "VDO-261114-GAP-00556-e02",
+      "en": "Please take your basket to the checkout.",
+      "ja": "かごをレジへ持っていってください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02631",
+      "headword": "chemist",
+      "senseId": "VDO-261114-GAP-00557",
+      "id": "VDO-261114-GAP-00557-e01",
+      "en": "A chemist tested the river water.",
+      "ja": "化学者が川の水を検査しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02631",
+      "headword": "chemist",
+      "senseId": "VDO-261114-GAP-00557",
+      "id": "VDO-261114-GAP-00557-e02",
+      "en": "The chemist explained why the liquid changed colour.",
+      "ja": "化学者は液体の色が変わった理由を説明しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02634",
+      "headword": "chest of drawers",
+      "senseId": "VDO-261114-GAP-00558",
+      "id": "VDO-261114-GAP-00558-e01",
+      "en": "She keeps her socks in a chest of drawers.",
+      "ja": "彼女は靴下を引き出し付きのたんすに入れています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02634",
+      "headword": "chest of drawers",
+      "senseId": "VDO-261114-GAP-00558",
+      "id": "VDO-261114-GAP-00558-e02",
+      "en": "The chest of drawers fits beside the bed.",
+      "ja": "そのたんすはベッドの横に収まります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02635",
+      "headword": "chewing gum",
+      "senseId": "VDO-261114-GAP-00559",
+      "id": "VDO-261114-GAP-00559-e01",
+      "en": "Please put used chewing gum in the bin.",
+      "ja": "かみ終わったガムはごみ箱に入れてください。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02635",
+      "headword": "chewing gum",
+      "senseId": "VDO-261114-GAP-00559",
+      "id": "VDO-261114-GAP-00559-e02",
+      "en": "He bought a packet of chewing gum.",
+      "ja": "彼はガムを1包み買いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02638",
+      "headword": "choke",
+      "senseId": "VDO-261114-GAP-00560",
+      "id": "VDO-261114-GAP-00560-e01",
+      "en": "He began to choke on a piece of dry bread.",
+      "ja": "彼は乾いたパンの一切れでむせ始めました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02638",
+      "headword": "choke",
+      "senseId": "VDO-261114-GAP-00560",
+      "id": "VDO-261114-GAP-00560-e02",
+      "en": "The thick smoke made us choke.",
+      "ja": "濃い煙で私たちは息が詰まりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02639",
+      "headword": "Christian",
+      "senseId": "VDO-261114-GAP-00561",
+      "id": "VDO-261114-GAP-00561-e01",
+      "en": "The museum has a collection of Christian art.",
+      "ja": "その博物館にはキリスト教美術の収蔵品があります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02639",
+      "headword": "Christian",
+      "senseId": "VDO-261114-GAP-00561",
+      "id": "VDO-261114-GAP-00561-e02",
+      "en": "They discussed the history of Christian communities in the region.",
+      "ja": "その地域のキリスト教共同体の歴史を話し合いました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02648",
+      "headword": "classify",
+      "senseId": "VDO-261114-GAP-00562",
+      "id": "VDO-261114-GAP-00562-e01",
+      "en": "We classified the words by part of speech.",
+      "ja": "語を品詞別に分類しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02648",
+      "headword": "classify",
+      "senseId": "VDO-261114-GAP-00562",
+      "id": "VDO-261114-GAP-00562-e02",
+      "en": "The students classified the leaves by shape.",
+      "ja": "生徒たちは葉を形で分類しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02658",
+      "headword": "coffin",
+      "senseId": "VDO-261114-GAP-00563",
+      "id": "VDO-261114-GAP-00563-e01",
+      "en": "The painting shows people carrying a coffin.",
+      "ja": "その絵には人々が棺を運ぶ様子が描かれています。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02658",
+      "headword": "coffin",
+      "senseId": "VDO-261114-GAP-00563",
+      "id": "VDO-261114-GAP-00563-e02",
+      "en": "A wooden coffin was discovered at the ancient burial site.",
+      "ja": "古代の埋葬地で木製の棺が見つかりました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02672",
+      "headword": "commit",
+      "senseId": "VDO-261114-GAP-00564",
+      "id": "VDO-261114-GAP-00564-e01",
+      "en": "She committed herself to finishing the project.",
+      "ja": "彼女はその企画を完成させることに力を尽くすと決めました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02672",
+      "headword": "commit",
+      "senseId": "VDO-261114-GAP-00564",
+      "id": "VDO-261114-GAP-00564-e02",
+      "en": "The club committed to reducing waste.",
+      "ja": "その部はごみの削減に取り組むと約束しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02695",
+      "headword": "conduct",
+      "senseId": "VDO-261114-GAP-00565",
+      "id": "VDO-261114-GAP-00565-e01",
+      "en": "We conducted a survey about school lunches.",
+      "ja": "学校給食について調査を実施しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02695",
+      "headword": "conduct",
+      "senseId": "VDO-261114-GAP-00565",
+      "id": "VDO-261114-GAP-00565-e02",
+      "en": "The researchers conducted the experiment twice.",
+      "ja": "研究者たちは実験を2回実施しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02709",
+      "headword": "conservative",
+      "senseId": "VDO-261114-GAP-00566",
+      "id": "VDO-261114-GAP-00566-e01",
+      "en": "The committee took a conservative approach to the redesign.",
+      "ja": "委員会は改設計に保守的な姿勢で臨みました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02709",
+      "headword": "conservative",
+      "senseId": "VDO-261114-GAP-00566",
+      "id": "VDO-261114-GAP-00566-e02",
+      "en": "He is conservative about changing the school's traditions.",
+      "ja": "彼は学校の伝統を変えることには慎重です。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02718",
+      "headword": "consume",
+      "senseId": "VDO-261114-GAP-00567",
+      "id": "VDO-261114-GAP-00567-e01",
+      "en": "This machine consumes less electricity than the old one.",
+      "ja": "この機械は古いものより消費電力が少ないです。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02718",
+      "headword": "consume",
+      "senseId": "VDO-261114-GAP-00567",
+      "id": "VDO-261114-GAP-00567-e02",
+      "en": "The journey consumed most of our fuel.",
+      "ja": "移動で燃料の大部分を消費しました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02724",
+      "headword": "continually",
+      "senseId": "VDO-261114-GAP-00568",
+      "id": "VDO-261114-GAP-00568-e01",
+      "en": "The schedule was continually changing.",
+      "ja": "予定は繰り返し変更されていました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02724",
+      "headword": "continually",
+      "senseId": "VDO-261114-GAP-00568",
+      "id": "VDO-261114-GAP-00568-e02",
+      "en": "We continually review our teaching methods.",
+      "ja": "私たちは指導方法を継続的に見直しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02725",
+      "headword": "continuous",
+      "senseId": "VDO-261114-GAP-00569",
+      "id": "VDO-261114-GAP-00569-e01",
+      "en": "The machine ran for eight continuous hours.",
+      "ja": "機械は8時間連続で動きました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02725",
+      "headword": "continuous",
+      "senseId": "VDO-261114-GAP-00569",
+      "id": "VDO-261114-GAP-00569-e02",
+      "en": "A continuous line marks the edge of the road.",
+      "ja": "途切れない線が道路の端を示しています。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02931",
+      "headword": "ecstasy",
+      "senseId": "VDO-261114-GAP-00570",
+      "id": "VDO-261114-GAP-00570-e01",
+      "en": "She was in ecstasy when she heard the result.",
+      "ja": "結果を聞いて彼女は大喜びでした。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02931",
+      "headword": "ecstasy",
+      "senseId": "VDO-261114-GAP-00570",
+      "id": "VDO-261114-GAP-00570-e02",
+      "en": "The crowd cheered in ecstasy after the final goal.",
+      "ja": "最後のゴールの後、観客は歓喜して声を上げました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-02955",
+      "headword": "emphasize/emphasize",
+      "senseId": "VDO-261114-GAP-00571",
+      "id": "VDO-261114-GAP-00571-e01",
+      "en": "The speaker emphasized the importance of listening.",
+      "ja": "話し手は聞くことの大切さを強調しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-02955",
+      "headword": "emphasize/emphasize",
+      "senseId": "VDO-261114-GAP-00571",
+      "id": "VDO-261114-GAP-00571-e02",
+      "en": "Use one example to emphasize your main point.",
+      "ja": "中心点を強調するために例を一つ使ってください。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-03129",
+      "headword": "gall",
+      "senseId": "VDO-261114-GAP-00572",
+      "id": "VDO-261114-GAP-00572-e01",
+      "en": "He had the gall to blame others for his own mistake.",
+      "ja": "彼は自分の間違いを他人のせいにする厚かましさを見せました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-03129",
+      "headword": "gall",
+      "senseId": "VDO-261114-GAP-00572",
+      "id": "VDO-261114-GAP-00572-e02",
+      "en": "She couldn't believe the gall of the request.",
+      "ja": "彼女はその依頼の厚かましさに驚きました。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-03224",
+      "headword": "hearted",
+      "senseId": "VDO-261114-GAP-00573",
+      "id": "VDO-261114-GAP-00573-e01",
+      "en": "The kind-hearted student welcomed the new arrival.",
+      "ja": "心の優しい生徒が新しく来た人を歓迎しました。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-03224",
+      "headword": "hearted",
+      "senseId": "VDO-261114-GAP-00573",
+      "id": "VDO-261114-GAP-00573-e02",
+      "en": "Even a cold-hearted character can change in a story.",
+      "ja": "物語では冷酷な人物でも変わることがあります。",
+      "context": "alternate"
+    },
+    {
+      "wordId": "VD-03569",
+      "headword": "ness",
+      "senseId": "VDO-261114-GAP-00574",
+      "id": "VDO-261114-GAP-00574-e01",
+      "en": "Adding -ness to kind gives us kindness.",
+      "ja": "kindに接尾辞-nessを付けるとkindnessになります。",
+      "context": "basic"
+    },
+    {
+      "wordId": "VD-03569",
+      "headword": "ness",
+      "senseId": "VDO-261114-GAP-00574",
+      "id": "VDO-261114-GAP-00574-e02",
+      "en": "In happiness, -ness turns an adjective into a noun.",
+      "ja": "happinessでは接尾辞-nessが形容詞を名詞に変えています。",
+      "context": "alternate"
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatches": [
+    "batches/original-20261114-gap-b1.json"
+  ],
+  "derived": true,
+  "status": "draft-unreviewed",
+  "kind": "synonyms-and-definitions",
+  "records": [
+    {
+      "wordId": "VD-02309",
+      "headword": "able",
+      "senseId": "VDO-261114-GAP-00524",
+      "partOfSpeech": "adjective",
+      "meaningJa": "〜できる",
+      "definitionEn": "having the ability or opportunity to do something",
+      "synonyms": "capable (different grammar)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "be able to＋動詞の原形。capableは通常ofを伴う。",
+      "collocations": [
+        {
+          "en": "be able to",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02312",
+      "headword": "aborigine",
+      "senseId": "VDO-261114-GAP-00525",
+      "partOfSpeech": "noun",
+      "meaningJa": "先住民を指す古い呼称",
+      "definitionEn": "an older term for an Indigenous person, especially in historical writing",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "現在は避けられることが多い語として理解用に収録し、本人・共同体が望む呼称を尊重する。",
+      "collocations": [
+        {
+          "en": "an older term",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02332",
+      "headword": "according to",
+      "senseId": "VDO-261114-GAP-00526",
+      "partOfSpeech": "preposition",
+      "meaningJa": "〜によると",
+      "definitionEn": "as stated or reported by someone or something",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "情報源を示す。自分の意見を述べるaccording to meは通常避ける。",
+      "collocations": [
+        {
+          "en": "according to the report",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02341",
+      "headword": "acknowledge",
+      "senseId": "VDO-261114-GAP-00527",
+      "partOfSpeech": "verb",
+      "meaningJa": "認める・受け取ったことを知らせる",
+      "definitionEn": "to accept that something is true or confirm that it has been received",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "事実の承認と受領確認の用法がある。",
+      "collocations": [
+        {
+          "en": "acknowledge receipt",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02342",
+      "headword": "acknowledgment/acknowledgement",
+      "senseId": "VDO-261114-GAP-00528",
+      "partOfSpeech": "noun",
+      "meaningJa": "承認・認めること",
+      "definitionEn": "an act of accepting or expressing that something is true",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "二つは綴りの異形であり別語義ではない。",
+      "collocations": [
+        {
+          "en": "an acknowledgment of",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02348",
+      "headword": "adapt",
+      "senseId": "VDO-261114-GAP-00529",
+      "partOfSpeech": "verb",
+      "meaningJa": "適応する・適合させる",
+      "definitionEn": "to change or become suitable for new conditions",
+      "synonyms": "adjust (some contexts)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "adapt to＋環境、adapt something for＋用途。",
+      "collocations": [
+        {
+          "en": "adapt to",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02405",
+      "headword": "anti",
+      "senseId": "VDO-261114-GAP-00530",
+      "partOfSpeech": "adjective",
+      "meaningJa": "反対の",
+      "definitionEn": "opposed to a particular idea or proposal",
+      "synonyms": "opposed (different grammar)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "単独ではくだけた用法。anti-warなどの接頭辞用法と区別する。",
+      "collocations": [
+        {
+          "en": "pro and anti",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02455",
+      "headword": "attract",
+      "senseId": "VDO-261114-GAP-00531",
+      "partOfSpeech": "verb",
+      "meaningJa": "引きつける・呼び込む",
+      "definitionEn": "to make people or animals interested in or come toward something",
+      "synonyms": "draw (interest or visitors)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "他動詞。attractiveは形容詞。",
+      "collocations": [
+        {
+          "en": "attract attention",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02483",
+      "headword": "barman",
+      "senseId": "VDO-261114-GAP-00532",
+      "partOfSpeech": "noun",
+      "meaningJa": "男性のバーテンダー",
+      "definitionEn": "a man whose job is serving drinks at a bar",
+      "synonyms": "bartender (gender-neutral)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "主に英語。性別を示さないbartenderも使う。",
+      "collocations": [
+        {
+          "en": "a hotel barman",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02510",
+      "headword": "bishop",
+      "senseId": "VDO-261114-GAP-00533",
+      "partOfSpeech": "noun",
+      "meaningJa": "司教・主教",
+      "definitionEn": "a senior Christian religious leader responsible for an area",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "日本語の名称は教派により異なる。チェスの駒の意味もある。",
+      "collocations": [
+        {
+          "en": "a local bishop",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02523",
+      "headword": "bomb",
+      "senseId": "VDO-261114-GAP-00534",
+      "partOfSpeech": "noun",
+      "meaningJa": "爆弾",
+      "definitionEn": "a weapon that explodes and causes damage",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "可算名詞。動詞用法もある。",
+      "collocations": [
+        {
+          "en": "an unexploded bomb",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02538",
+      "headword": "brass",
+      "senseId": "VDO-261114-GAP-00535",
+      "partOfSpeech": "noun",
+      "meaningJa": "真ちゅう",
+      "definitionEn": "a yellow metal made by combining copper and zinc",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "材料として不可算。金管楽器をまとめて指す意味もある。",
+      "collocations": [
+        {
+          "en": "made of brass",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02539",
+      "headword": "bravely",
+      "senseId": "VDO-261114-GAP-00536",
+      "partOfSpeech": "adverb",
+      "meaningJa": "勇敢に",
+      "definitionEn": "in a way that shows courage",
+      "synonyms": "courageously",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "braveから派生した副詞。",
+      "collocations": [
+        {
+          "en": "act bravely",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02541",
+      "headword": "breast",
+      "senseId": "VDO-261114-GAP-00537",
+      "partOfSpeech": "noun",
+      "meaningJa": "胸・胸肉",
+      "definitionEn": "the front part of the upper body, or meat from that part of a bird",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "人の乳房を指す語義もある。",
+      "collocations": [
+        {
+          "en": "chicken breast",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02545",
+      "headword": "breeding",
+      "senseId": "VDO-261114-GAP-00538",
+      "partOfSpeech": "noun",
+      "meaningJa": "繁殖・飼育繁殖",
+      "definitionEn": "the production of young animals, naturally or under human management",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "通常不可算名詞。",
+      "collocations": [
+        {
+          "en": "a breeding season",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02554",
+      "headword": "brotherhood",
+      "senseId": "VDO-261114-GAP-00539",
+      "partOfSpeech": "noun",
+      "meaningJa": "仲間としての連帯感",
+      "definitionEn": "a feeling of close connection and mutual support",
+      "synonyms": "fellowship; solidarity (some contexts)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "宗教団体・同業者組織を指す語義もある。",
+      "collocations": [
+        {
+          "en": "a sense of brotherhood",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02558",
+      "headword": "bull",
+      "senseId": "VDO-261114-GAP-00540",
+      "partOfSpeech": "noun",
+      "meaningJa": "雄牛",
+      "definitionEn": "an adult male bovine animal",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "他の大型動物の雄を指すこともある。",
+      "collocations": [
+        {
+          "en": "a large bull",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02559",
+      "headword": "bullet",
+      "senseId": "VDO-261114-GAP-00541",
+      "partOfSpeech": "noun",
+      "meaningJa": "弾丸",
+      "definitionEn": "a small metal object fired from a gun",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "箇条書きの点を指す語義もある。",
+      "collocations": [
+        {
+          "en": "a bullet hole",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02560",
+      "headword": "bulletin",
+      "senseId": "VDO-261114-GAP-00542",
+      "partOfSpeech": "noun",
+      "meaningJa": "公報・短い報告",
+      "definitionEn": "a short official report or announcement",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a news bulletin",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02561",
+      "headword": "bump",
+      "senseId": "VDO-261114-GAP-00543",
+      "partOfSpeech": "verb",
+      "meaningJa": "ぶつかる・ぶつける",
+      "definitionEn": "to hit something by accident",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "bump intoは偶然会うという語義もある。",
+      "collocations": [
+        {
+          "en": "bump into",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02564",
+      "headword": "bureau",
+      "senseId": "VDO-261114-GAP-00544",
+      "partOfSpeech": "noun",
+      "meaningJa": "局・事務局",
+      "definitionEn": "an office or organization that provides information or handles particular work",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "家具の一種を指す語義もある。",
+      "collocations": [
+        {
+          "en": "a tourist bureau",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02565",
+      "headword": "burglar",
+      "senseId": "VDO-261114-GAP-00545",
+      "partOfSpeech": "noun",
+      "meaningJa": "侵入窃盗犯・泥棒",
+      "definitionEn": "a person who enters a building illegally to steal",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "thiefは盗む人全般で、より広い語。",
+      "collocations": [
+        {
+          "en": "a burglar alarm",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02566",
+      "headword": "burning",
+      "senseId": "VDO-261114-GAP-00546",
+      "partOfSpeech": "adjective",
+      "meaningJa": "燃えている",
+      "definitionEn": "producing flames or being on fire",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "熱烈な・緊急の、という比喩的用法もある。",
+      "collocations": [
+        {
+          "en": "a burning building",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02567",
+      "headword": "burst",
+      "senseId": "VDO-261114-GAP-00547",
+      "partOfSpeech": "verb",
+      "meaningJa": "破裂する",
+      "definitionEn": "to break open suddenly because of pressure",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "活用burst–burst–burst。",
+      "collocations": [
+        {
+          "en": "a pipe bursts",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02568",
+      "headword": "bust",
+      "senseId": "VDO-261114-GAP-00548",
+      "partOfSpeech": "verb",
+      "meaningJa": "壊す・壊れる",
+      "definitionEn": "to break something or stop working, in informal use",
+      "synonyms": "break (neutral)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "くだけた用法。胸像の名詞とは別。",
+      "collocations": [
+        {
+          "en": "bust a machine",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02569",
+      "headword": "butcher",
+      "senseId": "VDO-261114-GAP-00549",
+      "partOfSpeech": "noun",
+      "meaningJa": "精肉店の人・食肉処理をする人",
+      "definitionEn": "a person who prepares or sells meat",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "店を指すときはthe butcher'sとも言う。",
+      "collocations": [
+        {
+          "en": "a local butcher",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02570",
+      "headword": "buyer",
+      "senseId": "VDO-261114-GAP-00550",
+      "partOfSpeech": "noun",
+      "meaningJa": "買い手・購入者",
+      "definitionEn": "a person or organization that buys something",
+      "synonyms": "purchaser (formal)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "buyから派生した可算名詞。",
+      "collocations": [
+        {
+          "en": "a potential buyer",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02608",
+      "headword": "CD-ROM",
+      "senseId": "VDO-261114-GAP-00551",
+      "partOfSpeech": "noun",
+      "meaningJa": "読み出し専用のコンパクトディスク",
+      "definitionEn": "a compact disc containing data that a computer can read but not change",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "機器によっては読み取り用ドライブが必要。",
+      "collocations": [
+        {
+          "en": "a CD-ROM drive",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02622",
+      "headword": "chariot",
+      "senseId": "VDO-261114-GAP-00552",
+      "partOfSpeech": "noun",
+      "meaningJa": "古代の二輪馬車",
+      "definitionEn": "a two-wheeled vehicle pulled by horses and used in ancient times",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a horse-drawn chariot",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02626",
+      "headword": "chat show",
+      "senseId": "VDO-261114-GAP-00553",
+      "partOfSpeech": "noun",
+      "meaningJa": "トーク番組",
+      "definitionEn": "a television or radio programme featuring conversations with guests",
+      "synonyms": "talk show (American English)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "主に英語。",
+      "collocations": [
+        {
+          "en": "a television chat show",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02627",
+      "headword": "check-in counter/check-in",
+      "senseId": "VDO-261114-GAP-00554",
+      "partOfSpeech": "noun",
+      "meaningJa": "搭乗手続きカウンター",
+      "definitionEn": "a desk at an airport where passengers register and hand over luggage",
+      "synonyms": "check-in desk",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "check inは動詞、check-inは名詞・修飾語。",
+      "collocations": [
+        {
+          "en": "at the check-in counter",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02628",
+      "headword": "check-in desk/check-in",
+      "senseId": "VDO-261114-GAP-00555",
+      "partOfSpeech": "noun",
+      "meaningJa": "搭乗手続きカウンター",
+      "definitionEn": "a desk where passengers complete registration for a flight",
+      "synonyms": "check-in counter",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "counterとdeskはこの文脈で異形表現。語義重複として後工程で統合可能。",
+      "collocations": [
+        {
+          "en": "at the check-in desk",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02629",
+      "headword": "checkout",
+      "senseId": "VDO-261114-GAP-00556",
+      "partOfSpeech": "noun",
+      "meaningJa": "会計場所・レジ",
+      "definitionEn": "the place in a shop where customers pay",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "ホテルのチェックアウトとは別の語義。",
+      "collocations": [
+        {
+          "en": "at the checkout",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02631",
+      "headword": "chemist",
+      "senseId": "VDO-261114-GAP-00557",
+      "partOfSpeech": "noun",
+      "meaningJa": "化学者",
+      "definitionEn": "a scientist who studies substances and their reactions",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "英語では薬剤師・薬局を指す語義もある。",
+      "collocations": [
+        {
+          "en": "a research chemist",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02634",
+      "headword": "chest of drawers",
+      "senseId": "VDO-261114-GAP-00558",
+      "partOfSpeech": "noun",
+      "meaningJa": "引き出し付きのたんす",
+      "definitionEn": "a piece of furniture with several drawers for storing clothes",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "複数形はchests of drawers。",
+      "collocations": [
+        {
+          "en": "a wooden chest of drawers",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02635",
+      "headword": "chewing gum",
+      "senseId": "VDO-261114-GAP-00559",
+      "partOfSpeech": "noun",
+      "meaningJa": "チューインガム",
+      "definitionEn": "a soft sweet substance chewed but not usually swallowed",
+      "synonyms": "gum (short form)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "通常不可算名詞。",
+      "collocations": [
+        {
+          "en": "a piece of chewing gum",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02638",
+      "headword": "choke",
+      "senseId": "VDO-261114-GAP-00560",
+      "partOfSpeech": "verb",
+      "meaningJa": "むせる・息が詰まる",
+      "definitionEn": "to have difficulty breathing because something blocks or irritates the throat",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "自動詞・他動詞の用法がある。",
+      "collocations": [
+        {
+          "en": "choke on",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02639",
+      "headword": "Christian",
+      "senseId": "VDO-261114-GAP-00561",
+      "partOfSpeech": "adjective",
+      "meaningJa": "キリスト教の",
+      "definitionEn": "relating to Christianity",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "大文字で始める。名詞ではキリスト教徒。",
+      "collocations": [
+        {
+          "en": "Christian art",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02648",
+      "headword": "classify",
+      "senseId": "VDO-261114-GAP-00562",
+      "partOfSpeech": "verb",
+      "meaningJa": "分類する",
+      "definitionEn": "to arrange things into groups based on shared features",
+      "synonyms": "categorize",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "classify–classified。classificationは名詞。",
+      "collocations": [
+        {
+          "en": "classify by",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02658",
+      "headword": "coffin",
+      "senseId": "VDO-261114-GAP-00563",
+      "partOfSpeech": "noun",
+      "meaningJa": "棺",
+      "definitionEn": "a container in which a dead person's body is placed for burial or cremation",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a wooden coffin",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02672",
+      "headword": "commit",
+      "senseId": "VDO-261114-GAP-00564",
+      "partOfSpeech": "verb",
+      "meaningJa": "専念することを約束する",
+      "definitionEn": "to promise or decide firmly to give time or effort to something",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "toは前置詞。committed・committingとtを重ねる。犯罪を犯す用法もある。",
+      "collocations": [
+        {
+          "en": "commit to doing",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02695",
+      "headword": "conduct",
+      "senseId": "VDO-261114-GAP-00565",
+      "partOfSpeech": "verb",
+      "meaningJa": "実施する",
+      "definitionEn": "to organize and carry out an activity",
+      "synonyms": "carry out",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "動詞は後半に強勢。行動という名詞は前半に強勢。",
+      "collocations": [
+        {
+          "en": "conduct a survey",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02709",
+      "headword": "conservative",
+      "senseId": "VDO-261114-GAP-00566",
+      "partOfSpeech": "adjective",
+      "meaningJa": "保守的な",
+      "definitionEn": "preferring established ideas or practices to major change",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "政治的立場・控えめな見積もりの語義もある。",
+      "collocations": [
+        {
+          "en": "a conservative approach",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02718",
+      "headword": "consume",
+      "senseId": "VDO-261114-GAP-00567",
+      "partOfSpeech": "verb",
+      "meaningJa": "消費する",
+      "definitionEn": "to use up resources, energy or goods",
+      "synonyms": "use up",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "飲食するという語義もある。",
+      "collocations": [
+        {
+          "en": "consume energy",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02724",
+      "headword": "continually",
+      "senseId": "VDO-261114-GAP-00568",
+      "partOfSpeech": "adverb",
+      "meaningJa": "繰り返し・たえず",
+      "definitionEn": "again and again, often with interruptions",
+      "synonyms": "repeatedly",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "一般に反復を表す。continuousは中断がないことを強調しやすい。",
+      "collocations": [
+        {
+          "en": "continually change",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02725",
+      "headword": "continuous",
+      "senseId": "VDO-261114-GAP-00569",
+      "partOfSpeech": "adjective",
+      "meaningJa": "途切れない・連続した",
+      "definitionEn": "continuing without a break",
+      "synonyms": "uninterrupted",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "continualとの使い分けに注意。",
+      "collocations": [
+        {
+          "en": "continuous use",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02931",
+      "headword": "ecstasy",
+      "senseId": "VDO-261114-GAP-00570",
+      "partOfSpeech": "noun",
+      "meaningJa": "大きな喜び・恍惚",
+      "definitionEn": "an extremely strong feeling of joy",
+      "synonyms": "elation (some contexts)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "ここでは感情の語義。薬物を指す別用法もある。",
+      "collocations": [
+        {
+          "en": "in ecstasy",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-02955",
+      "headword": "emphasize/emphasize",
+      "senseId": "VDO-261114-GAP-00571",
+      "partOfSpeech": "verb",
+      "meaningJa": "強調する",
+      "definitionEn": "to give special importance or attention to something",
+      "synonyms": "stress (verb)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "原マスターの異形欄に同じ綴りが重複。表示形はemphasizeに正規化し、IDを保持する。",
+      "collocations": [
+        {
+          "en": "emphasize a point",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-03129",
+      "headword": "gall",
+      "senseId": "VDO-261114-GAP-00572",
+      "partOfSpeech": "noun",
+      "meaningJa": "厚かましさ",
+      "definitionEn": "rude confidence in doing something unreasonable",
+      "synonyms": "nerve (informal)",
+      "synonymNoteJa": "この語義での候補。括弧内の文体・文法・意味の制限とusageNoteJaを参照。",
+      "usageNoteJa": "通常不可算。胆汁・植物の虫こぶなどの語義とは別。",
+      "collocations": [
+        {
+          "en": "have the gall to",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-03224",
+      "headword": "hearted",
+      "senseId": "VDO-261114-GAP-00573",
+      "partOfSpeech": "combining form",
+      "meaningJa": "〜な心を持つ",
+      "definitionEn": "used with another word to describe someone's feelings or character",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "通常単独では使わず、kind-heartedなどの複合形で使う。",
+      "collocations": [
+        {
+          "en": "kind-hearted",
+          "status": "draft-unreviewed"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-03569",
+      "headword": "ness",
+      "senseId": "VDO-261114-GAP-00574",
+      "partOfSpeech": "suffix",
+      "meaningJa": "性質・状態を表す接尾辞",
+      "definitionEn": "added to an adjective to form a noun naming a quality or state",
+      "synonyms": "",
+      "synonymNoteJa": "直接置き換えられる単語を設定せず、文法や語義の説明で学ぶ。",
+      "usageNoteJa": "独立した名詞ではなく接尾辞として学ぶ。happyではyがiに変わる。",
+      "collocations": [
+        {
+          "en": "kindness",
+          "status": "draft-unreviewed"
+        }
+      ]
+    }
+  ]
+}

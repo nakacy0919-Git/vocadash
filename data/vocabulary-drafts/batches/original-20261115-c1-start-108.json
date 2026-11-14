@@ -1,0 +1,3703 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261115-c1-start-108",
+  "sourceKind": "original-authored",
+  "authoringNote": "Original sense-focused definitions, examples and translations; master IDs retained. All content is unreviewed and not deployed.",
+  "records": [
+    {
+      "senseId": "VDO-261115-CORE-00293",
+      "wordId": "VD-06864",
+      "headword": "abound",
+      "partOfSpeech": "verb",
+      "meaningJa": "豊富にある",
+      "definitionEn": "to exist in large numbers",
+      "synonyms": "be plentiful (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "谷には野の花が豊富です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常自動詞。abound withの形もある。",
+      "collocations": [
+        {
+          "en": "abound in",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00293-e01",
+          "en": "Wild flowers abound in the valley.",
+          "ja": "谷には野の花が豊富です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00293-e02",
+          "en": "Opportunities for practice abound here.",
+          "ja": "ここには練習の機会が豊富です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00294",
+      "wordId": "VD-06865",
+      "headword": "abstraction",
+      "partOfSpeech": "noun",
+      "meaningJa": "抽象概念",
+      "definitionEn": "a general idea separated from specific examples",
+      "synonyms": "abstract concept (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "自由は抽象概念に思えることがあります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "抽象化という行為の語義もある。",
+      "collocations": [
+        {
+          "en": "an abstract concept",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00294-e01",
+          "en": "Freedom can seem like an abstraction.",
+          "ja": "自由は抽象概念に思えることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00294-e02",
+          "en": "She explained the abstraction with a concrete example.",
+          "ja": "彼女は具体例で抽象概念を説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00295",
+      "wordId": "VD-06866",
+      "headword": "accustomed",
+      "partOfSpeech": "adjective",
+      "meaningJa": "慣れた",
+      "definitionEn": "familiar through repeated experience",
+      "synonyms": "used (with to)",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は早朝出発に慣れています。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "toは前置詞。",
+      "collocations": [
+        {
+          "en": "accustomed to doing",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00295-e01",
+          "en": "She is accustomed to early starts.",
+          "ja": "彼女は早朝出発に慣れています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00295-e02",
+          "en": "We became accustomed to working together.",
+          "ja": "一緒の作業に慣れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00296",
+      "wordId": "VD-06867",
+      "headword": "acidic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "酸性の",
+      "definitionEn": "having the properties of an acid",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "土は弱酸性です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "acidは名詞・形容詞。",
+      "collocations": [
+        {
+          "en": "acidic soil",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00296-e01",
+          "en": "The soil is slightly acidic.",
+          "ja": "土は弱酸性です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00296-e02",
+          "en": "The test compared two acidic solutions.",
+          "ja": "試験は二つの酸性溶液を比較しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00297",
+      "wordId": "VD-06868",
+      "headword": "acoustic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "音響の",
+      "definitionEn": "relating to sound or its transmission",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "ホールは音響設計が優れています。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "非電気式楽器などの語義もある。",
+      "collocations": [
+        {
+          "en": "acoustic properties",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00297-e01",
+          "en": "The hall has good acoustic design.",
+          "ja": "ホールは音響設計が優れています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00297-e02",
+          "en": "We compared the rooms' acoustic properties.",
+          "ja": "部屋の音響特性を比べました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00298",
+      "wordId": "VD-06869",
+      "headword": "acoustically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "音響的に",
+      "definitionEn": "in relation to sound",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "部屋は音響的に異なります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "acousticは形容詞。",
+      "collocations": [
+        {
+          "en": "acoustically isolated",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00298-e01",
+          "en": "The rooms differ acoustically.",
+          "ja": "部屋は音響的に異なります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00298-e02",
+          "en": "The curtain separates the spaces acoustically.",
+          "ja": "カーテンは音響的に空間を分けます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00299",
+      "wordId": "VD-06870",
+      "headword": "acoustics",
+      "partOfSpeech": "noun",
+      "meaningJa": "音響特性",
+      "definitionEn": "the way sound behaves in a place",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "ホールの音響は優れています。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "この意味は複数扱い。音響学は単数扱い。",
+      "collocations": [
+        {
+          "en": "room acoustics",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00299-e01",
+          "en": "The hall's acoustics are excellent.",
+          "ja": "ホールの音響は優れています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00299-e02",
+          "en": "We tested the acoustics before recording.",
+          "ja": "録音前に音響を試しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00300",
+      "wordId": "VD-06871",
+      "headword": "acre",
+      "partOfSpeech": "noun",
+      "meaningJa": "エーカー",
+      "definitionEn": "a unit of land area equal to 4,840 square yards",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "農場は数エーカーあります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "日本の面積単位とは区別する。",
+      "collocations": [
+        {
+          "en": "an acre of land",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00300-e01",
+          "en": "The farm covers several acres.",
+          "ja": "農場は数エーカーあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00300-e02",
+          "en": "The guide gave the area in acres.",
+          "ja": "案内人は面積をエーカーで示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00301",
+      "wordId": "VD-06872",
+      "headword": "acutely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "強く・鋭く",
+      "definitionEn": "to a high or intense degree",
+      "synonyms": "intensely; keenly",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は沈黙を強く意識しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "acuteは形容詞。",
+      "collocations": [
+        {
+          "en": "acutely aware",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00301-e01",
+          "en": "She was acutely aware of the silence.",
+          "ja": "彼女は沈黙を強く意識しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00301-e02",
+          "en": "The shortage was acutely felt.",
+          "ja": "不足は痛感されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00302",
+      "wordId": "VD-06873",
+      "headword": "adjoin",
+      "partOfSpeech": "verb",
+      "meaningJa": "隣接する",
+      "definitionEn": "to be next to and connected with",
+      "synonyms": "border; be next to (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "庭は学校に隣接しています。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "直接目的語を取る。",
+      "collocations": [
+        {
+          "en": "adjoin a building",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00302-e01",
+          "en": "The garden adjoins the school.",
+          "ja": "庭は学校に隣接しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00302-e02",
+          "en": "Two classrooms adjoin the hall.",
+          "ja": "教室二つはホールに隣接します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00303",
+      "wordId": "VD-06874",
+      "headword": "adjoining",
+      "partOfSpeech": "adjective",
+      "meaningJa": "隣接した",
+      "definitionEn": "next to and connected with",
+      "synonyms": "adjacent",
+      "cefrHeadword": "C1",
+      "imageHint": "隣接する部屋を使いました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "adjoinに由来。",
+      "collocations": [
+        {
+          "en": "an adjoining room",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00303-e01",
+          "en": "We used the adjoining room.",
+          "ja": "隣接する部屋を使いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00303-e02",
+          "en": "The adjoining buildings share a wall.",
+          "ja": "隣接する建物は壁を共有します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00304",
+      "wordId": "VD-06875",
+      "headword": "adjustable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "調節できる",
+      "definitionEn": "able to be changed to fit a need",
+      "synonyms": "adaptable (some settings)",
+      "cefrHeadword": "C1",
+      "imageHint": "椅子は高さを調節できます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "adjustは動詞。",
+      "collocations": [
+        {
+          "en": "an adjustable seat",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00304-e01",
+          "en": "The chair has adjustable height.",
+          "ja": "椅子は高さを調節できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00304-e02",
+          "en": "We chose adjustable microphone stands.",
+          "ja": "調節できるマイク台を選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00305",
+      "wordId": "VD-06876",
+      "headword": "adrenaline",
+      "partOfSpeech": "noun",
+      "meaningJa": "アドレナリン",
+      "definitionEn": "a hormone involved in the body's rapid stress response",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "教科書はアドレナリンを紹介します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "医学・生理学用語の理解用。",
+      "collocations": [
+        {
+          "en": "an adrenaline response",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00305-e01",
+          "en": "The textbook introduces adrenaline.",
+          "ja": "教科書はアドレナリンを紹介します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00305-e02",
+          "en": "The lecture explains adrenaline's role.",
+          "ja": "講義はアドレナリンの役割を説明します。",
+          "context": "alternate"
+        }
+      ],
+      "referenceChecks": [
+        {
+          "url": "https://medlineplus.gov/lab-tests/catecholamine-tests/",
+          "checkedOn": "2026-11-15",
+          "purpose": "Selected meaning verification; definition and bilingual examples independently authored."
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00306",
+      "wordId": "VD-06877",
+      "headword": "advantageous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "有利な",
+      "definitionEn": "providing a benefit",
+      "synonyms": "beneficial",
+      "cefrHeadword": "C1",
+      "imageHint": "立地は来訪者に便利です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "advantageは名詞。",
+      "collocations": [
+        {
+          "en": "advantageous to",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00306-e01",
+          "en": "The location is advantageous for visitors.",
+          "ja": "立地は来訪者に便利です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00306-e02",
+          "en": "The agreement proved advantageous to both schools.",
+          "ja": "合意は両校に有利でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00307",
+      "wordId": "VD-06878",
+      "headword": "adversary",
+      "partOfSpeech": "noun",
+      "meaningJa": "対抗者",
+      "definitionEn": "a person or group opposing another",
+      "synonyms": "opponent",
+      "cefrHeadword": "C1",
+      "imageHint": "討論は経験ある対抗者を組ませました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "複数形adversaries。",
+      "collocations": [
+        {
+          "en": "a political adversary",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00307-e01",
+          "en": "The debate paired experienced adversaries.",
+          "ja": "討論は経験ある対抗者を組ませました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00307-e02",
+          "en": "He respected his adversary.",
+          "ja": "彼は相手を尊敬しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00308",
+      "wordId": "VD-06879",
+      "headword": "advisory",
+      "partOfSpeech": "adjective",
+      "meaningJa": "助言の",
+      "definitionEn": "providing advice rather than decisions",
+      "synonyms": "consultative",
+      "cefrHeadword": "C1",
+      "imageHint": "学校は助言グループを作りました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "名詞では勧告・注意報など。",
+      "collocations": [
+        {
+          "en": "an advisory committee",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00308-e01",
+          "en": "The school formed an advisory group.",
+          "ja": "学校は助言グループを作りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00308-e02",
+          "en": "She serves in an advisory role.",
+          "ja": "彼女は助言役を務めます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00309",
+      "wordId": "VD-06880",
+      "headword": "aesthetic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "美的な",
+      "definitionEn": "relating to beauty or artistic judgement",
+      "synonyms": "artistic (some judgements)",
+      "cefrHeadword": "C1",
+      "imageHint": "設計には美的価値があります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "aestheticallyは副詞。",
+      "collocations": [
+        {
+          "en": "aesthetic appeal",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00309-e01",
+          "en": "The design has aesthetic value.",
+          "ja": "設計には美的価値があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00309-e02",
+          "en": "We discussed the building's aesthetic qualities.",
+          "ja": "建物の美的特性を話しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00310",
+      "wordId": "VD-06881",
+      "headword": "aesthetically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "美的に",
+      "definitionEn": "in terms of beauty or visual appeal",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "ページは見た目に美しいです。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "aestheticは形容詞。",
+      "collocations": [
+        {
+          "en": "aesthetically attractive",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00310-e01",
+          "en": "The page is aesthetically pleasing.",
+          "ja": "ページは見た目に美しいです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00310-e02",
+          "en": "The two designs differ aesthetically.",
+          "ja": "二つの設計は美的に異なります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00311",
+      "wordId": "VD-06882",
+      "headword": "agonize",
+      "partOfSpeech": "verb",
+      "meaningJa": "思い悩む",
+      "definitionEn": "to think anxiously for a long time",
+      "synonyms": "worry deeply (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は決断に思い悩みました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "英語ではagoniseも使う。",
+      "collocations": [
+        {
+          "en": "agonize over",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00311-e01",
+          "en": "She agonized over the decision.",
+          "ja": "彼女は決断に思い悩みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00311-e02",
+          "en": "We agonized about the final wording.",
+          "ja": "最終的な表現に悩みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00312",
+      "wordId": "VD-06883",
+      "headword": "agreeable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "快い",
+      "definitionEn": "pleasant and acceptable",
+      "synonyms": "pleasant",
+      "cefrHeadword": "C1",
+      "imageHint": "快い午後を過ごしました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "同意する気があるという別義もある。",
+      "collocations": [
+        {
+          "en": "an agreeable experience",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00312-e01",
+          "en": "We had an agreeable afternoon.",
+          "ja": "快い午後を過ごしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00312-e02",
+          "en": "The weather was agreeable for walking.",
+          "ja": "散歩に快い天気でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00313",
+      "wordId": "VD-06884",
+      "headword": "aimless",
+      "partOfSpeech": "adjective",
+      "meaningJa": "目的のない",
+      "definitionEn": "without a clear purpose",
+      "synonyms": "purposeless",
+      "cefrHeadword": "C1",
+      "imageHint": "物語は目的のない旅を描きます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "aimは目的という名詞。",
+      "collocations": [
+        {
+          "en": "an aimless walk",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00313-e01",
+          "en": "The story follows an aimless journey.",
+          "ja": "物語は目的のない旅を描きます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00313-e02",
+          "en": "We replaced aimless browsing with a task.",
+          "ja": "漫然とした閲覧を課題に替えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00314",
+      "wordId": "VD-06885",
+      "headword": "aimlessly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "あてもなく",
+      "definitionEn": "without direction or purpose",
+      "synonyms": "without direction (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "彼は町をあてもなく歩きました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "aimlessは形容詞。",
+      "collocations": [
+        {
+          "en": "wander aimlessly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00314-e01",
+          "en": "He wandered aimlessly through town.",
+          "ja": "彼は町をあてもなく歩きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00314-e02",
+          "en": "The boat drifted aimlessly.",
+          "ja": "船はあてもなく漂いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00315",
+      "wordId": "VD-06886",
+      "headword": "alienate",
+      "partOfSpeech": "verb",
+      "meaningJa": "疎外する",
+      "definitionEn": "to make someone feel excluded or distant",
+      "synonyms": "estrange",
+      "cefrHeadword": "C1",
+      "imageHint": "分かりにくい規則は新人を疎外しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "alienationは名詞。",
+      "collocations": [
+        {
+          "en": "alienate someone",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00315-e01",
+          "en": "The confusing rules alienated newcomers.",
+          "ja": "分かりにくい規則は新人を疎外しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00315-e02",
+          "en": "Harsh criticism can alienate learners.",
+          "ja": "厳しい批判は学習者を遠ざけ得ます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00316",
+      "wordId": "VD-06887",
+      "headword": "align",
+      "partOfSpeech": "verb",
+      "meaningJa": "整列させる",
+      "definitionEn": "to place along a line or consistent position",
+      "synonyms": "line up",
+      "cefrHeadword": "C1",
+      "imageHint": "カードを縁にそろえてください。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "方針の一致という比喩もある。",
+      "collocations": [
+        {
+          "en": "align with",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00316-e01",
+          "en": "Align the cards with the edge.",
+          "ja": "カードを縁にそろえてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00316-e02",
+          "en": "She aligned the two images.",
+          "ja": "彼女は二つの画像をそろえました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00317",
+      "wordId": "VD-06888",
+      "headword": "alignment",
+      "partOfSpeech": "noun",
+      "meaningJa": "整列・配置の一致",
+      "definitionEn": "the arrangement of things in a line or matching position",
+      "synonyms": "lining up (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "文字の配置を確認してください。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "in alignment",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00317-e01",
+          "en": "Check the text alignment.",
+          "ja": "文字の配置を確認してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00317-e02",
+          "en": "The images were out of alignment.",
+          "ja": "画像の位置はずれていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00318",
+      "wordId": "VD-06889",
+      "headword": "allege",
+      "partOfSpeech": "verb",
+      "meaningJa": "主張する・申し立てる",
+      "definitionEn": "to state something without yet proving it",
+      "synonyms": "claim (not yet proved)",
+      "cefrHeadword": "C1",
+      "imageHint": "目撃者は記録の欠落を主張しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "主張を事実と断定する語ではない。",
+      "collocations": [
+        {
+          "en": "allege that",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00318-e01",
+          "en": "The witness alleged that records were missing.",
+          "ja": "目撃者は記録の欠落を主張しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00318-e02",
+          "en": "The article alleges unfair treatment.",
+          "ja": "記事は不当な扱いを申し立てます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00319",
+      "wordId": "VD-06891",
+      "headword": "altruism",
+      "partOfSpeech": "noun",
+      "meaningJa": "利他主義",
+      "definitionEn": "concern for others without seeking personal reward",
+      "synonyms": "selflessness",
+      "cefrHeadword": "C1",
+      "imageHint": "小論文は利他主義を扱います。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "an act of altruism",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00319-e01",
+          "en": "The essay explores altruism.",
+          "ja": "小論文は利他主義を扱います。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00319-e02",
+          "en": "The project was motivated by altruism.",
+          "ja": "企画は利他的な思いからでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00320",
+      "wordId": "VD-06892",
+      "headword": "altruistic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "利他的な",
+      "definitionEn": "concerned with others' welfare",
+      "synonyms": "selfless",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は利他的に選びました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "altruismは名詞。",
+      "collocations": [
+        {
+          "en": "an altruistic act",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00320-e01",
+          "en": "She made an altruistic choice.",
+          "ja": "彼女は利他的に選びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00320-e02",
+          "en": "The story celebrates altruistic behaviour.",
+          "ja": "物語は利他的行動をたたえます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00321",
+      "wordId": "VD-06893",
+      "headword": "amateur",
+      "partOfSpeech": "noun",
+      "meaningJa": "愛好家・アマチュア",
+      "definitionEn": "a person doing an activity without being a paid professional",
+      "synonyms": "nonprofessional (not necessarily unskilled)",
+      "cefrHeadword": "C1",
+      "imageHint": "クラブはアマチュアを歓迎します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "低技能を必ずしも意味しない。",
+      "collocations": [
+        {
+          "en": "an amateur photographer",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00321-e01",
+          "en": "The club welcomes amateurs.",
+          "ja": "クラブはアマチュアを歓迎します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00321-e02",
+          "en": "A talented amateur won the competition.",
+          "ja": "才能あるアマチュアが優勝しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00322",
+      "wordId": "VD-06894",
+      "headword": "amid",
+      "partOfSpeech": "preposition",
+      "meaningJa": "〜の中で",
+      "definitionEn": "in the middle of something",
+      "synonyms": "amidst",
+      "cefrHeadword": "C1",
+      "imageHint": "拍手の中で交流は始まりました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "やや改まった語。",
+      "collocations": [
+        {
+          "en": "amid uncertainty",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00322-e01",
+          "en": "The session began amid applause.",
+          "ja": "拍手の中で交流は始まりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00322-e02",
+          "en": "A garden lies amid the buildings.",
+          "ja": "建物の間に庭があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00323",
+      "wordId": "VD-06895",
+      "headword": "amplification",
+      "partOfSpeech": "noun",
+      "meaningJa": "増幅",
+      "definitionEn": "making a sound or signal stronger",
+      "synonyms": "boosting (signal)",
+      "cefrHeadword": "C1",
+      "imageHint": "ホールは音の増幅が必要です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "amplifyは動詞。",
+      "collocations": [
+        {
+          "en": "sound amplification",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00323-e01",
+          "en": "The hall needs sound amplification.",
+          "ja": "ホールは音の増幅が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00323-e02",
+          "en": "The test measured signal amplification.",
+          "ja": "試験は信号増幅を測りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00324",
+      "wordId": "VD-06896",
+      "headword": "amply",
+      "partOfSpeech": "adverb",
+      "meaningJa": "十分に",
+      "definitionEn": "more than sufficiently",
+      "synonyms": "more than sufficiently",
+      "cefrHeadword": "C1",
+      "imageHint": "結果は十分記録されました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "ampleは形容詞。",
+      "collocations": [
+        {
+          "en": "amply demonstrated",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00324-e01",
+          "en": "The result was amply documented.",
+          "ja": "結果は十分記録されました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00324-e02",
+          "en": "Her patience was amply rewarded.",
+          "ja": "忍耐は十分報われました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00325",
+      "wordId": "VD-06897",
+      "headword": "anchored",
+      "partOfSpeech": "adjective",
+      "meaningJa": "固定された",
+      "definitionEn": "firmly secured in position",
+      "synonyms": "secured",
+      "cefrHeadword": "C1",
+      "imageHint": "船は沖に停泊したままでした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "比喩的に根差すとも使う。",
+      "collocations": [
+        {
+          "en": "anchored to",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00325-e01",
+          "en": "The boat remained anchored offshore.",
+          "ja": "船は沖に停泊したままでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00325-e02",
+          "en": "The tent was securely anchored.",
+          "ja": "テントはしっかり固定されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00326",
+      "wordId": "VD-06898",
+      "headword": "animatedly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "生き生きと",
+      "definitionEn": "with energy and interest",
+      "synonyms": "lively (different grammar); energetically",
+      "cefrHeadword": "C1",
+      "imageHint": "生徒たちは生き生きと話しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "animatedは形容詞。",
+      "collocations": [
+        {
+          "en": "discuss animatedly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00326-e01",
+          "en": "The students talked animatedly.",
+          "ja": "生徒たちは生き生きと話しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00326-e02",
+          "en": "She described the visit animatedly.",
+          "ja": "彼女は訪問を活発に語りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00327",
+      "wordId": "VD-06899",
+      "headword": "anthropologist",
+      "partOfSpeech": "noun",
+      "meaningJa": "人類学者",
+      "definitionEn": "a researcher studying human cultures or human development",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "人類学者は地域の物語を記録しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "anthropologyは学問名。",
+      "collocations": [
+        {
+          "en": "a cultural anthropologist",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00327-e01",
+          "en": "The anthropologist recorded local stories.",
+          "ja": "人類学者は地域の物語を記録しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00327-e02",
+          "en": "We interviewed an anthropologist about fieldwork.",
+          "ja": "調査について人類学者に取材しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00328",
+      "wordId": "VD-06900",
+      "headword": "anthropology",
+      "partOfSpeech": "noun",
+      "meaningJa": "人類学",
+      "definitionEn": "the study of humans, including culture and biological development",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は大学で人類学を学びます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "social anthropology",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00328-e01",
+          "en": "She studies anthropology at university.",
+          "ja": "彼女は大学で人類学を学びます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00328-e02",
+          "en": "The course introduces cultural anthropology.",
+          "ja": "講座は文化人類学を紹介します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00329",
+      "wordId": "VD-06901",
+      "headword": "anticlimactic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "期待外れな結末の",
+      "definitionEn": "less exciting than expected after a build-up",
+      "synonyms": "disappointing after a build-up (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "結末は拍子抜けでした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "anticlimaxは名詞。",
+      "collocations": [
+        {
+          "en": "an anticlimactic ending",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00329-e01",
+          "en": "The ending felt anticlimactic.",
+          "ja": "結末は拍子抜けでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00329-e02",
+          "en": "The quiet announcement was anticlimactic.",
+          "ja": "静かな発表は期待外れでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00330",
+      "wordId": "VD-06902",
+      "headword": "antics",
+      "partOfSpeech": "noun",
+      "meaningJa": "ふざけた行動",
+      "definitionEn": "playful or silly actions",
+      "synonyms": "playful behaviour (different grammar)",
+      "cefrHeadword": "C1",
+      "imageHint": "子犬のふざけた行動に笑いました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常複数形。",
+      "collocations": [
+        {
+          "en": "playful antics",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00330-e01",
+          "en": "The puppy's antics amused us.",
+          "ja": "子犬のふざけた行動に笑いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00330-e02",
+          "en": "The actor's antics delighted the audience.",
+          "ja": "俳優の愉快な動きに観客は喜びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00331",
+      "wordId": "VD-06903",
+      "headword": "antiquated",
+      "partOfSpeech": "adjective",
+      "meaningJa": "時代遅れの",
+      "definitionEn": "outdated through age",
+      "synonyms": "outdated; obsolete (some contexts)",
+      "cefrHeadword": "C1",
+      "imageHint": "事務所は古い機器を使っていました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "antiqueと評価が異なる。",
+      "collocations": [
+        {
+          "en": "an antiquated method",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00331-e01",
+          "en": "The office used antiquated equipment.",
+          "ja": "事務所は古い機器を使っていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00331-e02",
+          "en": "They replaced the antiquated system.",
+          "ja": "時代遅れの仕組みを替えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00332",
+      "wordId": "VD-06904",
+      "headword": "antiquity",
+      "partOfSpeech": "noun",
+      "meaningJa": "古代",
+      "definitionEn": "the distant historical past",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "博物館は古代の日常を扱います。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "複数形antiquitiesは古代遺物。",
+      "collocations": [
+        {
+          "en": "classical antiquity",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00332-e01",
+          "en": "The museum explores daily life in antiquity.",
+          "ja": "博物館は古代の日常を扱います。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00332-e02",
+          "en": "The design has roots in antiquity.",
+          "ja": "設計は古代に由来します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00333",
+      "wordId": "VD-06905",
+      "headword": "appall/appal",
+      "partOfSpeech": "verb",
+      "meaningJa": "がくぜんとさせる",
+      "definitionEn": "to shock or horrify",
+      "synonyms": "horrify",
+      "cefrHeadword": "C1",
+      "imageHint": "破壊に来客はがくぜんとしました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "appallは米語、appalは英語。appalledは共通。",
+      "collocations": [
+        {
+          "en": "appal someone",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00333-e01",
+          "en": "The destruction appalled the visitors.",
+          "ja": "破壊に来客はがくぜんとしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00333-e02",
+          "en": "The report appalled its readers.",
+          "ja": "報告は読者に衝撃を与えました。",
+          "context": "alternate"
+        }
+      ],
+      "displayHeadword": "appall"
+    },
+    {
+      "senseId": "VDO-261115-CORE-00334",
+      "wordId": "VD-06906",
+      "headword": "appalling",
+      "partOfSpeech": "adjective",
+      "meaningJa": "ひどい・ぞっとする",
+      "definitionEn": "extremely bad or shocking",
+      "synonyms": "shocking; terrible",
+      "cefrHeadword": "C1",
+      "imageHint": "道はひどい状態でした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "appalledは感じる側。",
+      "collocations": [
+        {
+          "en": "appalling conditions",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00334-e01",
+          "en": "The road was in appalling condition.",
+          "ja": "道はひどい状態でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00334-e02",
+          "en": "The report described appalling waste.",
+          "ja": "報告はひどい浪費を描きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00335",
+      "wordId": "VD-06907",
+      "headword": "appallingly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "ひどく",
+      "definitionEn": "to a shockingly bad degree",
+      "synonyms": "shockingly",
+      "cefrHeadword": "C1",
+      "imageHint": "部屋はひどく汚れていました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "appallingは形容詞。",
+      "collocations": [
+        {
+          "en": "appallingly bad",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00335-e01",
+          "en": "The room was appallingly dirty.",
+          "ja": "部屋はひどく汚れていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00335-e02",
+          "en": "The work was appallingly careless.",
+          "ja": "作業はひどく不注意でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00336",
+      "wordId": "VD-06908",
+      "headword": "appliance",
+      "partOfSpeech": "noun",
+      "meaningJa": "家庭用機器",
+      "definitionEn": "a device used for a household task",
+      "synonyms": "household device (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "店は電気製品を修理します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a kitchen appliance",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00336-e01",
+          "en": "The shop repairs electrical appliances.",
+          "ja": "店は電気製品を修理します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00336-e02",
+          "en": "Each appliance has clear instructions.",
+          "ja": "各機器には明確な説明があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00337",
+      "wordId": "VD-06909",
+      "headword": "apprehensive",
+      "partOfSpeech": "adjective",
+      "meaningJa": "不安な",
+      "definitionEn": "worried about what may happen",
+      "synonyms": "anxious; uneasy",
+      "cefrHeadword": "C1",
+      "imageHint": "面接前に不安でした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "apprehensionは名詞。",
+      "collocations": [
+        {
+          "en": "apprehensive about",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00337-e01",
+          "en": "She felt apprehensive before the interview.",
+          "ja": "面接前に不安でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00337-e02",
+          "en": "We were apprehensive about the weather.",
+          "ja": "天気に不安を感じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00338",
+      "wordId": "VD-06910",
+      "headword": "apprentice",
+      "partOfSpeech": "noun",
+      "meaningJa": "見習い",
+      "definitionEn": "a person learning a skilled job under supervision",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "見習いは大工を見て学びました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "動詞用法もある。",
+      "collocations": [
+        {
+          "en": "an apprentice carpenter",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00338-e01",
+          "en": "The apprentice watched the carpenter.",
+          "ja": "見習いは大工を見て学びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00338-e02",
+          "en": "Each apprentice worked with a mentor.",
+          "ja": "各見習いは指導者と働きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00339",
+      "wordId": "VD-06911",
+      "headword": "apprenticeship",
+      "partOfSpeech": "noun",
+      "meaningJa": "徒弟訓練・実習期間",
+      "definitionEn": "structured work-based learning of a trade",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は大工の徒弟訓練を始めました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "制度は地域・職種で異なる。",
+      "collocations": [
+        {
+          "en": "complete an apprenticeship",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00339-e01",
+          "en": "She began an apprenticeship in carpentry.",
+          "ja": "彼女は大工の徒弟訓練を始めました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00339-e02",
+          "en": "The apprenticeship combines work and study.",
+          "ja": "実習は仕事と学習を組み合わせます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00340",
+      "wordId": "VD-06912",
+      "headword": "apt",
+      "partOfSpeech": "adjective",
+      "meaningJa": "的確な",
+      "definitionEn": "appropriate and well chosen",
+      "synonyms": "appropriate; fitting",
+      "cefrHeadword": "C1",
+      "imageHint": "それは的確な例です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "apt toは〜しがちなという別の構文。",
+      "collocations": [
+        {
+          "en": "an apt description",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00340-e01",
+          "en": "That is an apt example.",
+          "ja": "それは的確な例です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00340-e02",
+          "en": "She chose an apt title.",
+          "ja": "彼女は適切な題名を選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00341",
+      "wordId": "VD-06913",
+      "headword": "apt to",
+      "partOfSpeech": "adjective phrase",
+      "meaningJa": "〜しがちな",
+      "definitionEn": "likely or inclined to do something",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "機器は過熱しがちです。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "原品詞欄に対し形容詞句として収録。",
+      "collocations": [
+        {
+          "en": "be apt to do",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00341-e01",
+          "en": "The device is apt to overheat.",
+          "ja": "機器は過熱しがちです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00341-e02",
+          "en": "He is apt to forget small details.",
+          "ja": "彼は細部を忘れがちです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00342",
+      "wordId": "VD-06914",
+      "headword": "aqua",
+      "partOfSpeech": "adjective",
+      "meaningJa": "淡い青緑色の",
+      "definitionEn": "having a light blue-green colour",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は淡い青緑のカーテンを選びました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "名詞の色名としても使う。",
+      "collocations": [
+        {
+          "en": "an aqua shade",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00342-e01",
+          "en": "She chose aqua curtains.",
+          "ja": "彼女は淡い青緑のカーテンを選びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00342-e02",
+          "en": "The wall had an aqua finish.",
+          "ja": "壁は青緑色の仕上げでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00343",
+      "wordId": "VD-06915",
+      "headword": "aquarium",
+      "partOfSpeech": "noun",
+      "meaningJa": "水族館",
+      "definitionEn": "a place displaying aquatic animals",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "水族館には海岸の展示があります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "水槽という別義もある。",
+      "collocations": [
+        {
+          "en": "a public aquarium",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00343-e01",
+          "en": "The aquarium has a coastal exhibition.",
+          "ja": "水族館には海岸の展示があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00343-e02",
+          "en": "We visited the aquarium after lunch.",
+          "ja": "昼食後に水族館を訪れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00344",
+      "wordId": "VD-06916",
+      "headword": "artistically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "芸術的に",
+      "definitionEn": "in a way showing artistic skill",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "部屋は芸術的に飾られていました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "artisticは形容詞。",
+      "collocations": [
+        {
+          "en": "artistically designed",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00344-e01",
+          "en": "The room was artistically decorated.",
+          "ja": "部屋は芸術的に飾られていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00344-e02",
+          "en": "She arranged the photographs artistically.",
+          "ja": "彼女は写真を美しく配置しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00345",
+      "wordId": "VD-06917",
+      "headword": "assertion",
+      "partOfSpeech": "noun",
+      "meaningJa": "主張",
+      "definitionEn": "a statement made confidently",
+      "synonyms": "claim",
+      "cefrHeadword": "C1",
+      "imageHint": "主張には根拠が必要です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "assertは動詞。",
+      "collocations": [
+        {
+          "en": "an assertion that",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00345-e01",
+          "en": "The assertion needs evidence.",
+          "ja": "主張には根拠が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00345-e02",
+          "en": "She challenged the author's assertion.",
+          "ja": "彼女は著者の主張を問い直しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00346",
+      "wordId": "VD-06918",
+      "headword": "astray",
+      "partOfSpeech": "adverb",
+      "meaningJa": "道に迷って",
+      "definitionEn": "away from the correct path",
+      "synonyms": "off course (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "古い標識で道に迷いました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "正しい経路を外れる意味。",
+      "collocations": [
+        {
+          "en": "go astray",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00346-e01",
+          "en": "The old sign led us astray.",
+          "ja": "古い標識で道に迷いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00346-e02",
+          "en": "The message went astray.",
+          "ja": "メッセージは行方不明になりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00347",
+      "wordId": "VD-06919",
+      "headword": "atmospheric",
+      "partOfSpeech": "adjective",
+      "meaningJa": "雰囲気のある",
+      "definitionEn": "creating a distinctive mood",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "古い劇場は雰囲気があります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "大気のという科学的語義は別。",
+      "collocations": [
+        {
+          "en": "atmospheric music",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00347-e01",
+          "en": "The old theatre is atmospheric.",
+          "ja": "古い劇場は雰囲気があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00347-e02",
+          "en": "The film uses atmospheric lighting.",
+          "ja": "映画は雰囲気のある照明を使います。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00348",
+      "wordId": "VD-06920",
+      "headword": "avid",
+      "partOfSpeech": "adjective",
+      "meaningJa": "熱心な",
+      "definitionEn": "very eager or enthusiastic",
+      "synonyms": "eager; enthusiastic",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は熱心な読書家です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常名詞の前で使う。",
+      "collocations": [
+        {
+          "en": "an avid fan",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00348-e01",
+          "en": "She is an avid reader.",
+          "ja": "彼女は熱心な読書家です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00348-e02",
+          "en": "The club attracts avid photographers.",
+          "ja": "クラブには熱心な写真愛好家が集まります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00349",
+      "wordId": "VD-06921",
+      "headword": "baldly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "率直に・飾りなく",
+      "definitionEn": "without softening or explanation",
+      "synonyms": "bluntly; plainly",
+      "cefrHeadword": "C1",
+      "imageHint": "彼は問題を率直に述べました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "baldの文字どおりの意味と区別。",
+      "collocations": [
+        {
+          "en": "put it baldly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00349-e01",
+          "en": "He stated the problem baldly.",
+          "ja": "彼は問題を率直に述べました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00349-e02",
+          "en": "The facts were baldly presented.",
+          "ja": "事実は飾りなく示されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00350",
+      "wordId": "VD-06922",
+      "headword": "batter",
+      "partOfSpeech": "verb",
+      "meaningJa": "繰り返し強く打つ",
+      "definitionEn": "to hit repeatedly with force",
+      "synonyms": "pound (repeated hits)",
+      "cefrHeadword": "C1",
+      "imageHint": "風は雨戸を激しくたたきました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "名詞の衣用生地などは別義。",
+      "collocations": [
+        {
+          "en": "batter against",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00350-e01",
+          "en": "The wind battered the shutters.",
+          "ja": "風は雨戸を激しくたたきました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00350-e02",
+          "en": "Waves battered the harbour wall.",
+          "ja": "波は港の壁を打ちました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00351",
+      "wordId": "VD-06923",
+      "headword": "battered",
+      "partOfSpeech": "adjective",
+      "meaningJa": "傷んだ",
+      "definitionEn": "damaged by repeated use or blows",
+      "synonyms": "worn (use); damaged (blows)",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は使い込んだかばんを運びました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "料理の衣付きという別義もある。",
+      "collocations": [
+        {
+          "en": "a battered book",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00351-e01",
+          "en": "She carried a battered suitcase.",
+          "ja": "彼女は使い込んだかばんを運びました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00351-e02",
+          "en": "The battered sign was replaced.",
+          "ja": "傷んだ標識は交換されました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00352",
+      "wordId": "VD-06924",
+      "headword": "bearded",
+      "partOfSpeech": "adjective",
+      "meaningJa": "あごひげのある",
+      "definitionEn": "having a beard",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "ひげの案内人が迎えました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "beardは名詞。",
+      "collocations": [
+        {
+          "en": "a bearded man",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00352-e01",
+          "en": "A bearded guide met us.",
+          "ja": "ひげの案内人が迎えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00352-e02",
+          "en": "The portrait shows a bearded scholar.",
+          "ja": "肖像画はひげの学者を描きます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00353",
+      "wordId": "VD-06925",
+      "headword": "beforehand",
+      "partOfSpeech": "adverb",
+      "meaningJa": "前もって",
+      "definitionEn": "before an event",
+      "synonyms": "in advance",
+      "cefrHeadword": "C1",
+      "imageHint": "機器は前もって確認してください。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "before＋名詞とは構文が異なる。",
+      "collocations": [
+        {
+          "en": "prepare beforehand",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00353-e01",
+          "en": "Check the equipment beforehand.",
+          "ja": "機器は前もって確認してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00353-e02",
+          "en": "She sent the questions beforehand.",
+          "ja": "彼女は質問を事前に送りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00354",
+      "wordId": "VD-06926",
+      "headword": "beguiling",
+      "partOfSpeech": "adjective",
+      "meaningJa": "魅惑的な",
+      "definitionEn": "attractively charming",
+      "synonyms": "charming; captivating",
+      "cefrHeadword": "C1",
+      "imageHint": "歌には魅惑的な旋律があります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "欺くというbeguileの用法にも注意。",
+      "collocations": [
+        {
+          "en": "a beguiling smile",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00354-e01",
+          "en": "The song has a beguiling melody.",
+          "ja": "歌には魅惑的な旋律があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00354-e02",
+          "en": "The town has a beguiling atmosphere.",
+          "ja": "町には魅惑的な雰囲気があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00355",
+      "wordId": "VD-06927",
+      "headword": "beguilingly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "魅力的に",
+      "definitionEn": "in a charmingly attractive way",
+      "synonyms": "charmingly",
+      "cefrHeadword": "C1",
+      "imageHint": "曲は魅力的なほど簡素に響きました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "beguilingは形容詞。",
+      "collocations": [
+        {
+          "en": "beguilingly attractive",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00355-e01",
+          "en": "The tune sounded beguilingly simple.",
+          "ja": "曲は魅力的なほど簡素に響きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00355-e02",
+          "en": "She smiled beguilingly in the play.",
+          "ja": "劇で彼女は魅惑的にほほえみました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00356",
+      "wordId": "VD-06928",
+      "headword": "believably",
+      "partOfSpeech": "adverb",
+      "meaningJa": "説得力をもって",
+      "definitionEn": "in a way that seems credible",
+      "synonyms": "credibly",
+      "cefrHeadword": "C1",
+      "imageHint": "俳優は先生を説得力ある形で演じました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "believableは形容詞。",
+      "collocations": [
+        {
+          "en": "act believably",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00356-e01",
+          "en": "The actor portrayed the teacher believably.",
+          "ja": "俳優は先生を説得力ある形で演じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00356-e02",
+          "en": "The story develops believably.",
+          "ja": "物語は納得できる形で進みます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00357",
+      "wordId": "VD-06929",
+      "headword": "benign",
+      "partOfSpeech": "adjective",
+      "meaningJa": "穏やかで害のない",
+      "definitionEn": "gentle or not harmful",
+      "synonyms": "gentle; harmless (general sense)",
+      "cefrHeadword": "C1",
+      "imageHint": "気候は穏やかでした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "医学の良性という別義とは区別。",
+      "collocations": [
+        {
+          "en": "a benign influence",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00357-e01",
+          "en": "The climate was benign.",
+          "ja": "気候は穏やかでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00357-e02",
+          "en": "The story's ruler is benign.",
+          "ja": "物語の支配者は温厚です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00358",
+      "wordId": "VD-06930",
+      "headword": "benignly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "穏やかに",
+      "definitionEn": "in a gentle nonthreatening way",
+      "synonyms": "gently",
+      "cefrHeadword": "C1",
+      "imageHint": "先生は穏やかにほほえみました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "benignは形容詞。",
+      "collocations": [
+        {
+          "en": "smile benignly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00358-e01",
+          "en": "The teacher smiled benignly.",
+          "ja": "先生は穏やかにほほえみました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00358-e02",
+          "en": "He nodded benignly at the suggestion.",
+          "ja": "彼は提案に穏やかにうなずきました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00359",
+      "wordId": "VD-06931",
+      "headword": "bequeath",
+      "partOfSpeech": "verb",
+      "meaningJa": "遺贈する",
+      "definitionEn": "to leave property to someone after death",
+      "synonyms": "leave by will (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "彼女は本を学校に遺贈しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "法律手続きの助言ではない。",
+      "collocations": [
+        {
+          "en": "bequeath something to",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00359-e01",
+          "en": "She bequeathed her books to the school.",
+          "ja": "彼女は本を学校に遺贈しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00359-e02",
+          "en": "The collector bequeathed the paintings.",
+          "ja": "収集家は絵を遺贈しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00360",
+      "wordId": "VD-06932",
+      "headword": "billiards",
+      "partOfSpeech": "noun",
+      "meaningJa": "ビリヤード",
+      "definitionEn": "a family of games using cues and balls on a table",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "夕食後にビリヤードをしました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "競技名は通常単数扱い。",
+      "collocations": [
+        {
+          "en": "play billiards",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00360-e01",
+          "en": "They played billiards after dinner.",
+          "ja": "夕食後にビリヤードをしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00360-e02",
+          "en": "The club has a room for billiards.",
+          "ja": "クラブにはビリヤード室があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00361",
+      "wordId": "VD-06933",
+      "headword": "blankness",
+      "partOfSpeech": "noun",
+      "meaningJa": "空白",
+      "definitionEn": "the state of having no visible content",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "白紙は自由に書けそうでした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "a sense of blankness",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00361-e01",
+          "en": "The page's blankness seemed inviting.",
+          "ja": "白紙は自由に書けそうでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00361-e02",
+          "en": "She stared at the screen's blankness.",
+          "ja": "彼女は画面の空白を見つめました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00362",
+      "wordId": "VD-06934",
+      "headword": "bliss",
+      "partOfSpeech": "noun",
+      "meaningJa": "至福",
+      "definitionEn": "complete happiness",
+      "synonyms": "complete happiness (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "静かな午後は至福でした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "pure bliss",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00362-e01",
+          "en": "The quiet afternoon was bliss.",
+          "ja": "静かな午後は至福でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00362-e02",
+          "en": "She listened in bliss.",
+          "ja": "彼女は至福の中で聞きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00363",
+      "wordId": "VD-06935",
+      "headword": "blister",
+      "partOfSpeech": "noun",
+      "meaningJa": "水疱・まめ",
+      "definitionEn": "a small fluid-filled swelling on the skin",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "長い散歩でまめができました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "個別の処置を示す例ではない。",
+      "collocations": [
+        {
+          "en": "a heel blister",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00363-e01",
+          "en": "The long walk left a blister.",
+          "ja": "長い散歩でまめができました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00363-e02",
+          "en": "The label explains the word blister.",
+          "ja": "ラベルは水疱という語を説明します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00364",
+      "wordId": "VD-06936",
+      "headword": "blithely",
+      "partOfSpeech": "adverb",
+      "meaningJa": "気楽に・無頓着に",
+      "definitionEn": "without apparent worry or concern",
+      "synonyms": "unconcernedly",
+      "cefrHeadword": "C1",
+      "imageHint": "彼は無頓着に警告を無視しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "文脈によって批判を含む。",
+      "collocations": [
+        {
+          "en": "blithely unaware",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00364-e01",
+          "en": "He blithely ignored the warning.",
+          "ja": "彼は無頓着に警告を無視しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00364-e02",
+          "en": "She blithely assumed everything would work.",
+          "ja": "彼女は気楽にうまくいくと思いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00365",
+      "wordId": "VD-06937",
+      "headword": "blockbuster",
+      "partOfSpeech": "noun",
+      "meaningJa": "大ヒット作",
+      "definitionEn": "a film or book with exceptional commercial success",
+      "synonyms": "major hit (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "映画は大ヒットしました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a summer blockbuster",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00365-e01",
+          "en": "The film became a blockbuster.",
+          "ja": "映画は大ヒットしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00365-e02",
+          "en": "The library bought the latest blockbuster.",
+          "ja": "図書館は最新の大ヒット作を買いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00366",
+      "wordId": "VD-06938",
+      "headword": "bouquet",
+      "partOfSpeech": "noun",
+      "meaningJa": "花束",
+      "definitionEn": "an arranged bunch of flowers",
+      "synonyms": "bunch of flowers (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "来客は花束を持参しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a bouquet of flowers",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00366-e01",
+          "en": "The visitors brought a bouquet.",
+          "ja": "来客は花束を持参しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00366-e02",
+          "en": "She placed the bouquet in water.",
+          "ja": "彼女は花束を水に入れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00367",
+      "wordId": "VD-06939",
+      "headword": "brainwash",
+      "partOfSpeech": "verb",
+      "meaningJa": "洗脳する",
+      "definitionEn": "to pressure someone into accepting beliefs without critical thought",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "小説は体制の洗脳を描きます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "評価を伴う強い語。方法の指南ではない。",
+      "collocations": [
+        {
+          "en": "brainwash someone",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00367-e01",
+          "en": "The novel shows how the regime brainwashed citizens.",
+          "ja": "小説は体制の洗脳を描きます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00367-e02",
+          "en": "The article warns against attempts to brainwash audiences.",
+          "ja": "記事は聴衆の洗脳に警鐘を鳴らします。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00368",
+      "wordId": "VD-06940",
+      "headword": "brainwashing",
+      "partOfSpeech": "noun",
+      "meaningJa": "洗脳",
+      "definitionEn": "pressure intended to impose beliefs uncritically",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "番組は洗脳を検討します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "political brainwashing",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00368-e01",
+          "en": "The documentary examines brainwashing.",
+          "ja": "番組は洗脳を検討します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00368-e02",
+          "en": "The class discussed claims of brainwashing.",
+          "ja": "クラスは洗脳の主張について話しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00369",
+      "wordId": "VD-06941",
+      "headword": "bribe",
+      "partOfSpeech": "verb",
+      "meaningJa": "賄賂を贈る",
+      "definitionEn": "to offer something to obtain improper influence",
+      "synonyms": "buy off (informal)",
+      "cefrHeadword": "C1",
+      "imageHint": "物語は官吏への贈賄を非難します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "名詞では賄賂。",
+      "collocations": [
+        {
+          "en": "bribe someone",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00369-e01",
+          "en": "The story condemns attempts to bribe officials.",
+          "ja": "物語は官吏への贈賄を非難します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00369-e02",
+          "en": "The witness denied being bribed.",
+          "ja": "目撃者は買収を否定しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00370",
+      "wordId": "VD-06942",
+      "headword": "bribery",
+      "partOfSpeech": "noun",
+      "meaningJa": "贈収賄",
+      "definitionEn": "giving or receiving something for improper influence",
+      "synonyms": "corrupt inducement (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "報告は贈収賄を調査します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "prevent bribery",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00370-e01",
+          "en": "The report investigates bribery.",
+          "ja": "報告は贈収賄を調査します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00370-e02",
+          "en": "The policy prohibits bribery.",
+          "ja": "方針は贈収賄を禁じます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00371",
+      "wordId": "VD-06943",
+      "headword": "bubbly",
+      "partOfSpeech": "adjective",
+      "meaningJa": "陽気な",
+      "definitionEn": "lively and cheerful",
+      "synonyms": "vivacious; cheerful",
+      "cefrHeadword": "C1",
+      "imageHint": "受け入れ役は陽気な性格でした。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "泡の多いという別義もある。",
+      "collocations": [
+        {
+          "en": "a bubbly person",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00371-e01",
+          "en": "The host had a bubbly personality.",
+          "ja": "受け入れ役は陽気な性格でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00371-e02",
+          "en": "Her bubbly greeting relaxed us.",
+          "ja": "明るい挨拶でくつろぎました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00372",
+      "wordId": "VD-06944",
+      "headword": "buffer",
+      "partOfSpeech": "noun",
+      "meaningJa": "緩衝物・余裕",
+      "definitionEn": "something reducing an impact or providing a margin",
+      "synonyms": "cushion (against an effect)",
+      "cefrHeadword": "C1",
+      "imageHint": "木々は騒音への緩衝帯です。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "情報技術の緩衝記憶などにも使う。",
+      "collocations": [
+        {
+          "en": "a buffer against",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00372-e01",
+          "en": "The trees form a buffer against noise.",
+          "ja": "木々は騒音への緩衝帯です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00372-e02",
+          "en": "We added a time buffer.",
+          "ja": "時間の余裕を加えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00373",
+      "wordId": "VD-06945",
+      "headword": "buffoon",
+      "partOfSpeech": "noun",
+      "meaningJa": "道化者",
+      "definitionEn": "a person behaving foolishly for amusement or ridicule",
+      "synonyms": "foolish performer (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "劇には自慢する道化者が出ます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "人への侮辱にもなる語。",
+      "collocations": [
+        {
+          "en": "a comic buffoon",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00373-e01",
+          "en": "The play includes a boastful buffoon.",
+          "ja": "劇には自慢する道化者が出ます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00373-e02",
+          "en": "The actor played the buffoon skilfully.",
+          "ja": "俳優は道化者を巧みに演じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00374",
+      "wordId": "VD-06946",
+      "headword": "bulk",
+      "partOfSpeech": "noun",
+      "meaningJa": "大部分",
+      "definitionEn": "the main or largest part",
+      "synonyms": "main part (with the bulk of)",
+      "cefrHeadword": "C1",
+      "imageHint": "作業の大部分は終わりました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "量・大きさという別義もある。",
+      "collocations": [
+        {
+          "en": "the bulk of",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00374-e01",
+          "en": "The bulk of the work is finished.",
+          "ja": "作業の大部分は終わりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00374-e02",
+          "en": "The bulk of the audience stayed.",
+          "ja": "観客の大部分は残りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00375",
+      "wordId": "VD-06947",
+      "headword": "bulk up",
+      "partOfSpeech": "verb",
+      "meaningJa": "体格・量を大きくする",
+      "definitionEn": "to become or make more substantial",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "衣装で俳優は大きく見えました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "運動の具体的助言を示すものではない。",
+      "collocations": [
+        {
+          "en": "bulk up a structure",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00375-e01",
+          "en": "The costume helped the actor bulk up visually.",
+          "ja": "衣装で俳優は大きく見えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00375-e02",
+          "en": "The designer bulked up the model's base.",
+          "ja": "設計者は模型の土台を厚くしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00376",
+      "wordId": "VD-06948",
+      "headword": "bulky",
+      "partOfSpeech": "adjective",
+      "meaningJa": "かさばる",
+      "definitionEn": "large and awkward to carry",
+      "synonyms": "cumbersome",
+      "cefrHeadword": "C1",
+      "imageHint": "機器はかさばりました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "比較級bulkier。",
+      "collocations": [
+        {
+          "en": "a bulky package",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00376-e01",
+          "en": "The equipment was bulky.",
+          "ja": "機器はかさばりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00376-e02",
+          "en": "We replaced the bulky case.",
+          "ja": "かさばるケースを替えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00377",
+      "wordId": "VD-06949",
+      "headword": "bureaucratic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "官僚的な",
+      "definitionEn": "involving official procedures and administration",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "手続きには官僚的段階がありました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "批判的意味を含むことが多い。",
+      "collocations": [
+        {
+          "en": "bureaucratic procedures",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00377-e01",
+          "en": "The process involved bureaucratic steps.",
+          "ja": "手続きには官僚的段階がありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00377-e02",
+          "en": "The report criticizes bureaucratic delays.",
+          "ja": "報告は事務手続きの遅延を批判します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00378",
+      "wordId": "VD-06950",
+      "headword": "bureaucratically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "官僚的に",
+      "definitionEn": "through formal administrative procedures",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "決定は官僚的に処理されました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "bureaucraticは形容詞。",
+      "collocations": [
+        {
+          "en": "bureaucratically complex",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00378-e01",
+          "en": "The decision was handled bureaucratically.",
+          "ja": "決定は官僚的に処理されました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00378-e02",
+          "en": "The office responded bureaucratically.",
+          "ja": "事務所は形式的に応じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00379",
+      "wordId": "VD-06951",
+      "headword": "buzzer",
+      "partOfSpeech": "noun",
+      "meaningJa": "ブザー",
+      "definitionEn": "a device making a buzzing signal",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "ブザーは終了を告げました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "a door buzzer",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00379-e01",
+          "en": "The buzzer marked the end.",
+          "ja": "ブザーは終了を告げました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00379-e02",
+          "en": "Press the buzzer once.",
+          "ja": "ブザーを一度押してください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00380",
+      "wordId": "VD-06952",
+      "headword": "bypass",
+      "partOfSpeech": "verb",
+      "meaningJa": "迂回する",
+      "definitionEn": "to go around rather than through",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "混む中心部を迂回しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "手続きを飛ばすなどの比喩もある。",
+      "collocations": [
+        {
+          "en": "bypass a town",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00380-e01",
+          "en": "We bypassed the crowded centre.",
+          "ja": "混む中心部を迂回しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00380-e02",
+          "en": "The new road bypasses the village.",
+          "ja": "新道は村を迂回します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00381",
+      "wordId": "VD-06953",
+      "headword": "calorie",
+      "partOfSpeech": "noun",
+      "meaningJa": "カロリー",
+      "definitionEn": "a unit used to express energy, especially in food",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "授業はカロリーという語を説明します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "栄養表示のCalorieは通常キロカロリー。摂取目標ではない。",
+      "collocations": [
+        {
+          "en": "food calories",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00381-e01",
+          "en": "The lesson explains the term calorie.",
+          "ja": "授業はカロリーという語を説明します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00381-e02",
+          "en": "The label states the energy in calories.",
+          "ja": "表示は熱量をカロリーで示します。",
+          "context": "alternate"
+        }
+      ],
+      "referenceChecks": [
+        {
+          "url": "https://www.fda.gov/food/nutrition-facts-label/calories-nutrition-facts-label",
+          "checkedOn": "2026-11-15",
+          "purpose": "Selected meaning verification; definition and bilingual examples independently authored."
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00382",
+      "wordId": "VD-06954",
+      "headword": "candid",
+      "partOfSpeech": "adjective",
+      "meaningJa": "率直な",
+      "definitionEn": "honest and direct",
+      "synonyms": "frank",
+      "cefrHeadword": "C1",
+      "imageHint": "率直に話し合いました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "写真では自然な姿のという別義。",
+      "collocations": [
+        {
+          "en": "a candid opinion",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00382-e01",
+          "en": "We had a candid discussion.",
+          "ja": "率直に話し合いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00382-e02",
+          "en": "She gave a candid account.",
+          "ja": "彼女は率直に語りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00383",
+      "wordId": "VD-06955",
+      "headword": "candidly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "率直に",
+      "definitionEn": "honestly and directly",
+      "synonyms": "frankly",
+      "cefrHeadword": "C1",
+      "imageHint": "彼は問題を率直に話しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "candidは形容詞。",
+      "collocations": [
+        {
+          "en": "speak candidly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00383-e01",
+          "en": "He spoke candidly about the problems.",
+          "ja": "彼は問題を率直に話しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00383-e02",
+          "en": "She candidly admitted the mistake.",
+          "ja": "彼女は率直に間違いを認めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00384",
+      "wordId": "VD-06956",
+      "headword": "canoe",
+      "partOfSpeech": "noun",
+      "meaningJa": "カヌー",
+      "definitionEn": "a narrow light boat propelled with paddles",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "カヌーは静かに進みました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "可算名詞。",
+      "collocations": [
+        {
+          "en": "paddle a canoe",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00384-e01",
+          "en": "The canoe moved quietly.",
+          "ja": "カヌーは静かに進みました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00384-e02",
+          "en": "We carried the canoe to the water.",
+          "ja": "カヌーを水辺に運びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00385",
+      "wordId": "VD-06957",
+      "headword": "carpenter",
+      "partOfSpeech": "noun",
+      "meaningJa": "大工",
+      "definitionEn": "a skilled worker making or repairing wooden structures",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "大工はベンチを修理しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "carpentryは名詞。",
+      "collocations": [
+        {
+          "en": "a skilled carpenter",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00385-e01",
+          "en": "The carpenter repaired the bench.",
+          "ja": "大工はベンチを修理しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00385-e02",
+          "en": "We interviewed a local carpenter.",
+          "ja": "地元の大工に取材しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00386",
+      "wordId": "VD-06958",
+      "headword": "carpentry",
+      "partOfSpeech": "noun",
+      "meaningJa": "大工仕事",
+      "definitionEn": "the skill or activity of working with wood",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "講座は大工仕事の基礎を教えます。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "通常不可算。",
+      "collocations": [
+        {
+          "en": "carpentry skills",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00386-e01",
+          "en": "The course teaches basic carpentry.",
+          "ja": "講座は大工仕事の基礎を教えます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00386-e02",
+          "en": "Her carpentry improved with practice.",
+          "ja": "練習で木工技能が上達しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00387",
+      "wordId": "VD-06959",
+      "headword": "carrier",
+      "partOfSpeech": "noun",
+      "meaningJa": "運送業者",
+      "definitionEn": "a business transporting people or goods",
+      "synonyms": "transport operator (freight sense)",
+      "cefrHeadword": "C1",
+      "imageHint": "運送業者は配送日を確認しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "運ぶ人・保菌者などは別義。",
+      "collocations": [
+        {
+          "en": "a freight carrier",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00387-e01",
+          "en": "The carrier confirmed the delivery date.",
+          "ja": "運送業者は配送日を確認しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00387-e02",
+          "en": "We compared two carriers.",
+          "ja": "運送業者二社を比べました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00388",
+      "wordId": "VD-06960",
+      "headword": "cavity",
+      "partOfSpeech": "noun",
+      "meaningJa": "空洞",
+      "definitionEn": "an empty space inside something",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "岩には小さな空洞があります。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "虫歯という医学の別義もある。",
+      "collocations": [
+        {
+          "en": "a hollow cavity",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00388-e01",
+          "en": "The rock has a small cavity.",
+          "ja": "岩には小さな空洞があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00388-e02",
+          "en": "The cavity contained crystals.",
+          "ja": "空洞には結晶がありました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00389",
+      "wordId": "VD-06961",
+      "headword": "ceaseless",
+      "partOfSpeech": "adjective",
+      "meaningJa": "絶え間ない",
+      "definitionEn": "continuing without stopping",
+      "synonyms": "unending; incessant",
+      "cefrHeadword": "C1",
+      "imageHint": "絶え間ない騒音に疲れました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "ceaseは動詞。",
+      "collocations": [
+        {
+          "en": "ceaseless activity",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00389-e01",
+          "en": "The ceaseless noise was tiring.",
+          "ja": "絶え間ない騒音に疲れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00389-e02",
+          "en": "We heard the ceaseless flow of water.",
+          "ja": "絶え間ない水の流れを聞きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00390",
+      "wordId": "VD-06962",
+      "headword": "ceaselessly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "絶え間なく",
+      "definitionEn": "without stopping",
+      "synonyms": "incessantly",
+      "cefrHeadword": "C1",
+      "imageHint": "雨は絶え間なく降りました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "ceaselessは形容詞。",
+      "collocations": [
+        {
+          "en": "flow ceaselessly",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00390-e01",
+          "en": "Rain fell ceaselessly.",
+          "ja": "雨は絶え間なく降りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00390-e02",
+          "en": "The machine worked ceaselessly.",
+          "ja": "機械は休みなく動きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00391",
+      "wordId": "VD-06963",
+      "headword": "cessation",
+      "partOfSpeech": "noun",
+      "meaningJa": "停止",
+      "definitionEn": "the ending of an activity",
+      "synonyms": "stoppage; ending",
+      "cefrHeadword": "C1",
+      "imageHint": "通知は作業の停止を告げました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "やや改まった語。",
+      "collocations": [
+        {
+          "en": "a cessation of",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00391-e01",
+          "en": "The notice announced a cessation of work.",
+          "ja": "通知は作業の停止を告げました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00391-e02",
+          "en": "The sudden cessation of noise surprised us.",
+          "ja": "騒音の突然の停止に驚きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00392",
+      "wordId": "VD-06964",
+      "headword": "chaotically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "無秩序に",
+      "definitionEn": "without order",
+      "synonyms": "disorderly (different grammar)",
+      "cefrHeadword": "C1",
+      "imageHint": "紙は無秩序に散らばっていました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "chaoticは形容詞。",
+      "collocations": [
+        {
+          "en": "arranged chaotically",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00392-e01",
+          "en": "The papers were scattered chaotically.",
+          "ja": "紙は無秩序に散らばっていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00392-e02",
+          "en": "People moved chaotically through the hall.",
+          "ja": "人々はホールを混乱して移動しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00393",
+      "wordId": "VD-06965",
+      "headword": "characterization/characterisation",
+      "partOfSpeech": "noun",
+      "meaningJa": "人物描写",
+      "definitionEn": "the creation or description of a fictional character",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "小説は人物描写が巧みです。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "綴りの異形を保持。",
+      "collocations": [
+        {
+          "en": "detailed characterisation",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00393-e01",
+          "en": "The novel has subtle characterization.",
+          "ja": "小説は人物描写が巧みです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00393-e02",
+          "en": "We compared the characterisation in two films.",
+          "ja": "二つの映画の人物描写を比べました。",
+          "context": "alternate"
+        }
+      ],
+      "displayHeadword": "characterization"
+    },
+    {
+      "senseId": "VDO-261115-CORE-00394",
+      "wordId": "VD-06966",
+      "headword": "charter",
+      "partOfSpeech": "verb",
+      "meaningJa": "貸し切る",
+      "definitionEn": "to hire a vehicle for a particular group",
+      "synonyms": "hire for exclusive use (paraphrase)",
+      "cefrHeadword": "C1",
+      "imageHint": "学校はバスを貸し切りました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "憲章という名詞は別義。",
+      "collocations": [
+        {
+          "en": "charter a vehicle",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00394-e01",
+          "en": "The school chartered a bus.",
+          "ja": "学校はバスを貸し切りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00394-e02",
+          "en": "We chartered a boat for the visit.",
+          "ja": "訪問のため船を借り切りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00395",
+      "wordId": "VD-06967",
+      "headword": "chauffer",
+      "partOfSpeech": "noun",
+      "meaningJa": "小型の携帯こんろ",
+      "definitionEn": "a small portable stove with an open upper part",
+      "synonyms": "portable stove (definition-like)",
+      "cefrHeadword": "C1",
+      "imageHint": "博物館は金属製の小型こんろを展示します。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "稀な器具名。chauffeur（運転手）の誤記と自動判断しない。",
+      "collocations": [
+        {
+          "en": "a portable chauffer",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00395-e01",
+          "en": "The museum displays a metal chauffer.",
+          "ja": "博物館は金属製の小型こんろを展示します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00395-e02",
+          "en": "The drawing shows a chauffer beside a workbench.",
+          "ja": "図は作業台のそばの小型こんろを示します。",
+          "context": "alternate"
+        }
+      ],
+      "referenceChecks": [
+        {
+          "url": "https://www.merriam-webster.com/dictionary/chauffer",
+          "checkedOn": "2026-11-15",
+          "purpose": "Selected meaning verification; definition and bilingual examples independently authored."
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00396",
+      "wordId": "VD-06968",
+      "headword": "chill",
+      "partOfSpeech": "verb",
+      "meaningJa": "冷やす",
+      "definitionEn": "to make something cold",
+      "synonyms": "cool (make cold)",
+      "cefrHeadword": "C1",
+      "imageHint": "出す前にジュースを冷やしてください。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "恐怖を感じさせるなどは別義。",
+      "collocations": [
+        {
+          "en": "chill a drink",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00396-e01",
+          "en": "Chill the juice before serving.",
+          "ja": "出す前にジュースを冷やしてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00396-e02",
+          "en": "The cold wind chilled our hands.",
+          "ja": "冷たい風で手が冷えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00397",
+      "wordId": "VD-06969",
+      "headword": "chilly",
+      "partOfSpeech": "adjective",
+      "meaningJa": "肌寒い",
+      "definitionEn": "unpleasantly cool",
+      "synonyms": "cool (unpleasantly)",
+      "cefrHeadword": "C1",
+      "imageHint": "教室は肌寒かったです。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "比較級chillier。",
+      "collocations": [
+        {
+          "en": "a chilly day",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00397-e01",
+          "en": "The classroom was chilly.",
+          "ja": "教室は肌寒かったです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00397-e02",
+          "en": "We took a walk on a chilly morning.",
+          "ja": "肌寒い朝に散歩しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00398",
+      "wordId": "VD-06970",
+      "headword": "chisel",
+      "partOfSpeech": "verb",
+      "meaningJa": "のみで彫る",
+      "definitionEn": "to cut or shape with a chisel",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "職人は石をのみで彫りました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "英米でchiseled／chiselledの綴り差。",
+      "collocations": [
+        {
+          "en": "chisel into",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00398-e01",
+          "en": "The craftsperson chiselled the stone.",
+          "ja": "職人は石をのみで彫りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00398-e02",
+          "en": "She chiseled a pattern into wood.",
+          "ja": "彼女は木に模様を彫りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00399",
+      "wordId": "VD-06971",
+      "headword": "chiselled",
+      "partOfSpeech": "adjective",
+      "meaningJa": "くっきり彫られた",
+      "definitionEn": "shaped with clear carved lines",
+      "synonyms": "carved (clear-cut lines)",
+      "cefrHeadword": "C1",
+      "imageHint": "像はくっきりした顔立ちです。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "米語ではchiseled。",
+      "collocations": [
+        {
+          "en": "chiselled features",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "語義・構文・文体を限定した候補。説明的な言い換えを含み、常に置換できるとは限らない。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00399-e01",
+          "en": "The statue has chiselled features.",
+          "ja": "像はくっきりした顔立ちです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00399-e02",
+          "en": "The wall shows a chiselled pattern.",
+          "ja": "壁には彫り込んだ模様があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-CORE-00400",
+      "wordId": "VD-06972",
+      "headword": "churn",
+      "partOfSpeech": "verb",
+      "meaningJa": "激しくかき混ぜる",
+      "definitionEn": "to move liquid violently",
+      "synonyms": "",
+      "cefrHeadword": "C1",
+      "imageHint": "船は水をかき乱しました。 文字なしの教材用場面イラスト",
+      "status": "draft-unreviewed",
+      "usageNoteJa": "バターを作るなどの別義もある。",
+      "collocations": [
+        {
+          "en": "churn up",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "synonymNoteJa": "類義語は未設定。語義に合う候補を校閲時に検討する。",
+      "examples": [
+        {
+          "id": "VDO-261115-CORE-00400-e01",
+          "en": "The boat churned the water.",
+          "ja": "船は水をかき乱しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-CORE-00400-e02",
+          "en": "Waves churned beneath the bridge.",
+          "ja": "橋の下で波は激しく渦巻きました。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}

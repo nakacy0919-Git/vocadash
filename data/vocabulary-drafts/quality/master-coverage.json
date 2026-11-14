@@ -1,0 +1,8492 @@
+{
+  "schemaVersion": "1.0",
+  "asOf": "2026-11-15",
+  "reference": {
+    "kind": "private-reference-read-locally",
+    "rows": 8653,
+    "sha256": "d64f4e919b0549adc8c21c85bda969279eb5ed22c56eefa2a6104928cfe0aafe"
+  },
+  "targetHeadwords": 8653,
+  "draftedHeadwords": 7019,
+  "reviewedHeadwords": 0,
+  "remainingWithoutDraft": 1634,
+  "remainingWithoutRequiredContent": 1687,
+  "byLevel": {
+    "A1": {
+      "target": 1064,
+      "drafted": 1064,
+      "withRequiredContent": 1041,
+      "reviewed": 0
+    },
+    "A2": {
+      "target": 1243,
+      "drafted": 1243,
+      "withRequiredContent": 1243,
+      "reviewed": 0
+    },
+    "B1": {
+      "target": 2139,
+      "drafted": 2139,
+      "withRequiredContent": 2109,
+      "reviewed": 0
+    },
+    "B2": {
+      "target": 2417,
+      "drafted": 2417,
+      "withRequiredContent": 2417,
+      "reviewed": 0
+    },
+    "C1": {
+      "target": 914,
+      "drafted": 145,
+      "withRequiredContent": 145,
+      "reviewed": 0
+    },
+    "C2": {
+      "target": 876,
+      "drafted": 11,
+      "withRequiredContent": 11,
+      "reviewed": 0
+    }
+  },
+  "identityErrors": [],
+  "status": "incomplete",
+  "note": "Draft coverage is not editorial approval or exhaustive coverage of every sense. No runtime or deployment changes.",
+  "backlog": [
+    {
+      "wordId": "VD-00068",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00069",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00099",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00105",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00109",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00121",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00131",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00141",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00142",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00148",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00156",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00173",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00176",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00193",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00199",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00280",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00311",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00365",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00367",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00401",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00405",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00416",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-00436",
+      "level": "A1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02356",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02375",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02378",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02395",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02404",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02448",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02450",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02471",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02494",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02507",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02534",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02552",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02553",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02571",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02581",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02585",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02586",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02632",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02666",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02712",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02736",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02755",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02758",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02776",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02859",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-02942",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-03153",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-03196",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-03202",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-03270",
+      "level": "B1",
+      "reason": "required-content-missing"
+    },
+    {
+      "wordId": "VD-06973",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06974",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06975",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06977",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06978",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06979",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06980",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06981",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06982",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06983",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06984",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06985",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06986",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06987",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06988",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06989",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06990",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06991",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06994",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06995",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06996",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06997",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06998",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-06999",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07000",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07001",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07002",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07003",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07004",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07006",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07007",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07008",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07009",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07010",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07011",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07012",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07013",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07014",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07015",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07016",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07017",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07018",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07019",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07020",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07021",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07022",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07023",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07024",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07026",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07027",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07028",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07029",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07030",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07031",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07032",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07033",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07034",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07035",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07036",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07037",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07038",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07039",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07040",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07041",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07042",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07043",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07044",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07045",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07046",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07047",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07048",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07049",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07050",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07051",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07052",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07053",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07054",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07055",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07056",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07057",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07058",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07059",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07060",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07061",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07062",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07063",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07064",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07065",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07066",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07067",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07068",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07070",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07071",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07072",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07074",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07075",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07076",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07077",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07078",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07079",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07080",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07081",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07082",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07083",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07084",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07085",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07086",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07087",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07089",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07090",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07091",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07092",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07093",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07094",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07095",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07096",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07097",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07098",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07099",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07100",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07101",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07102",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07103",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07105",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07106",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07107",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07108",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07109",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07111",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07112",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07113",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07114",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07115",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07116",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07117",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07118",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07119",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07120",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07121",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07122",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07123",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07124",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07125",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07126",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07127",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07128",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07129",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07131",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07132",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07133",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07134",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07135",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07136",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07137",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07138",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07139",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07140",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07141",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07142",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07143",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07144",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07146",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07147",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07148",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07149",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07150",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07151",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07152",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07153",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07154",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07155",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07157",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07158",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07159",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07160",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07161",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07162",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07163",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07164",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07165",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07166",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07167",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07168",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07169",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07170",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07171",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07172",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07173",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07174",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07175",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07176",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07177",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07178",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07179",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07180",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07181",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07182",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07183",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07184",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07185",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07186",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07187",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07188",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07189",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07190",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07191",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07192",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07193",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07194",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07195",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07196",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07197",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07198",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07199",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07200",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07202",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07203",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07204",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07205",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07206",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07207",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07208",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07209",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07210",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07211",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07212",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07213",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07214",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07215",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07216",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07217",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07218",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07219",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07220",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07221",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07222",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07223",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07224",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07225",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07226",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07227",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07228",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07229",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07230",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07231",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07232",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07233",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07234",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07235",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07236",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07237",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07238",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07239",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07240",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07241",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07242",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07243",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07244",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07245",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07246",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07247",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07248",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07249",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07250",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07251",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07252",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07253",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07254",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07255",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07256",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07257",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07259",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07260",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07261",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07263",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07264",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07265",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07266",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07267",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07268",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07269",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07270",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07271",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07272",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07273",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07274",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07275",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07278",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07279",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07280",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07281",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07282",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07283",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07284",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07285",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07286",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07287",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07288",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07289",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07290",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07291",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07292",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07293",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07294",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07296",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07297",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07298",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07299",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07300",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07301",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07302",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07303",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07304",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07305",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07306",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07308",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07309",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07310",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07311",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07312",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07313",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07314",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07315",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07316",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07317",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07318",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07319",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07320",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07321",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07322",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07323",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07324",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07325",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07326",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07327",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07328",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07329",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07330",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07331",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07332",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07333",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07334",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07335",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07336",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07337",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07338",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07339",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07340",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07341",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07342",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07343",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07344",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07345",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07346",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07347",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07348",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07349",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07350",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07351",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07353",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07354",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07355",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07356",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07357",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07358",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07359",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07361",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07362",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07363",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07364",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07365",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07366",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07367",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07368",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07369",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07370",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07371",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07372",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07373",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07374",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07375",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07376",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07377",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07378",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07379",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07380",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07381",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07382",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07383",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07384",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07385",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07386",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07387",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07388",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07389",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07390",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07391",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07392",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07394",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07395",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07396",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07397",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07398",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07399",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07400",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07401",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07402",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07403",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07404",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07405",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07406",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07407",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07408",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07409",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07410",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07411",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07412",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07413",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07414",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07415",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07416",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07417",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07418",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07419",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07420",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07421",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07422",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07423",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07424",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07425",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07426",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07427",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07428",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07429",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07430",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07431",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07432",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07433",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07434",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07435",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07436",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07437",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07438",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07439",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07440",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07441",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07442",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07443",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07444",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07445",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07446",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07447",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07448",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07449",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07450",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07451",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07452",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07453",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07454",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07455",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07456",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07457",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07458",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07459",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07460",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07461",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07462",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07463",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07464",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07465",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07467",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07468",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07469",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07470",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07471",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07472",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07474",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07475",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07476",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07477",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07478",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07479",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07480",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07481",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07482",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07483",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07484",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07485",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07486",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07487",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07488",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07489",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07490",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07491",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07492",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07493",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07494",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07495",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07496",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07497",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07498",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07499",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07500",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07501",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07502",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07503",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07504",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07505",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07506",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07507",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07508",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07510",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07511",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07512",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07513",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07514",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07515",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07516",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07517",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07518",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07519",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07520",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07521",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07522",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07523",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07524",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07525",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07526",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07527",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07528",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07529",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07530",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07531",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07532",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07533",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07534",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07535",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07536",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07537",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07538",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07539",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07540",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07543",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07544",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07545",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07546",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07547",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07549",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07550",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07551",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07552",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07554",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07556",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07557",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07558",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07559",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07560",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07561",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07562",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07563",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07564",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07565",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07566",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07567",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07568",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07569",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07570",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07571",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07572",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07573",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07574",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07575",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07577",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07578",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07579",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07580",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07581",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07582",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07583",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07584",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07585",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07586",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07587",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07588",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07589",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07590",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07591",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07592",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07593",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07594",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07595",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07596",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07597",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07598",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07599",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07600",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07601",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07602",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07603",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07604",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07605",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07606",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07607",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07608",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07609",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07610",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07611",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07612",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07613",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07614",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07615",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07616",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07617",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07619",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07620",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07621",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07622",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07623",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07624",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07625",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07626",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07627",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07628",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07629",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07630",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07631",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07632",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07633",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07634",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07635",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07636",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07637",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07638",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07639",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07640",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07641",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07643",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07644",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07645",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07646",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07647",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07648",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07649",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07650",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07651",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07652",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07653",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07654",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07655",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07656",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07657",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07658",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07659",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07660",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07661",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07662",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07663",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07665",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07666",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07667",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07668",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07669",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07670",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07671",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07672",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07673",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07674",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07675",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07676",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07677",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07678",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07679",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07680",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07681",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07682",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07683",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07684",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07685",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07686",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07687",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07688",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07689",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07690",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07691",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07692",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07693",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07694",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07695",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07696",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07697",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07698",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07699",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07700",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07701",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07702",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07703",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07704",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07705",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07706",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07707",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07708",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07709",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07710",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07711",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07712",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07713",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07714",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07715",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07716",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07717",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07718",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07719",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07720",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07721",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07722",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07723",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07724",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07725",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07726",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07727",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07728",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07729",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07730",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07731",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07732",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07733",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07734",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07735",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07736",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07737",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07738",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07739",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07740",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07741",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07742",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07743",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07744",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07745",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07746",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07747",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07748",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07749",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07750",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07751",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07752",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07753",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07754",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07755",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07756",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07757",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07759",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07760",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07761",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07762",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07763",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07764",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07765",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07766",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07767",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07768",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07769",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07770",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07771",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07772",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07773",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07774",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07775",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07776",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07777",
+      "level": "C1",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07778",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07779",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07780",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07781",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07782",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07783",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07784",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07785",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07786",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07787",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07788",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07789",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07790",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07791",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07792",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07793",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07794",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07795",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07796",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07797",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07798",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07799",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07800",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07801",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07802",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07803",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07804",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07805",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07806",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07807",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07808",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07809",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07810",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07811",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07812",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07813",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07814",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07815",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07816",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07817",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07818",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07819",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07820",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07821",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07822",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07823",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07824",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07825",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07826",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07827",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07828",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07829",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07830",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07831",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07832",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07833",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07834",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07835",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07836",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07837",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07838",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07839",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07840",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07841",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07842",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07843",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07844",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07845",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07846",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07847",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07848",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07849",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07850",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07851",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07852",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07854",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07855",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07856",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07857",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07858",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07859",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07860",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07861",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07862",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07863",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07864",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07865",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07866",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07867",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07868",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07869",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07870",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07871",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07872",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07873",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07874",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07875",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07876",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07877",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07878",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07879",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07880",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07881",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07882",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07883",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07884",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07885",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07886",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07887",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07888",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07889",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07890",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07891",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07892",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07893",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07894",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07895",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07896",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07897",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07898",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07899",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07900",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07901",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07902",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07903",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07904",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07905",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07906",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07907",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07908",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07909",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07910",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07911",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07912",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07913",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07914",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07915",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07916",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07917",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07918",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07919",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07920",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07921",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07922",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07923",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07924",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07925",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07926",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07927",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07928",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07929",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07930",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07932",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07933",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07934",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07935",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07936",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07937",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07938",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07939",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07940",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07941",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07942",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07943",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07944",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07945",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07946",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07947",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07948",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07949",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07950",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07951",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07952",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07953",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07954",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07955",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07956",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07957",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07958",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07959",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07960",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07961",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07962",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07963",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07964",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07965",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07966",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07967",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07968",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07969",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07970",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07971",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07972",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07973",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07974",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07975",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07976",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07977",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07978",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07979",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07980",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07981",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07982",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07983",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07984",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07985",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07986",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07987",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07988",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07989",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07990",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07991",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07992",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07993",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07994",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07995",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07996",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07997",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07998",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-07999",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08000",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08001",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08002",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08003",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08004",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08006",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08007",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08008",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08009",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08010",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08011",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08012",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08013",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08014",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08015",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08016",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08017",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08018",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08019",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08020",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08021",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08022",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08023",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08024",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08025",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08026",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08027",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08028",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08029",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08030",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08031",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08032",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08033",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08034",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08035",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08036",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08037",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08038",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08039",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08040",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08041",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08042",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08043",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08044",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08045",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08047",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08048",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08049",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08050",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08051",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08052",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08053",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08054",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08055",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08056",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08057",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08058",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08059",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08060",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08061",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08062",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08063",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08064",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08065",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08066",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08067",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08068",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08069",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08070",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08071",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08072",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08073",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08074",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08075",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08076",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08077",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08078",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08079",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08080",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08081",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08082",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08083",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08084",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08085",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08086",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08087",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08088",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08089",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08090",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08091",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08092",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08093",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08094",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08095",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08096",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08097",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08098",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08099",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08100",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08101",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08102",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08103",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08104",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08105",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08106",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08107",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08108",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08109",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08110",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08111",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08112",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08113",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08114",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08115",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08116",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08117",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08118",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08119",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08120",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08121",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08122",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08123",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08124",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08125",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08126",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08127",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08128",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08129",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08130",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08131",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08132",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08133",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08134",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08135",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08136",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08137",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08138",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08139",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08141",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08142",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08143",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08144",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08145",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08146",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08147",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08148",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08149",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08150",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08151",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08152",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08155",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08156",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08157",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08158",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08159",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08160",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08161",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08162",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08163",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08164",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08165",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08166",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08167",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08168",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08169",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08170",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08171",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08172",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08173",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08174",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08175",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08176",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08177",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08178",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08179",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08180",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08181",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08182",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08183",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08184",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08185",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08186",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08187",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08188",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08189",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08190",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08191",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08192",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08193",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08194",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08195",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08196",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08197",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08198",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08199",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08200",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08201",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08202",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08203",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08204",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08205",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08206",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08207",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08208",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08209",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08210",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08211",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08212",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08213",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08214",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08215",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08216",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08217",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08218",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08219",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08220",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08221",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08222",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08223",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08224",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08225",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08226",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08227",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08228",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08229",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08230",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08231",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08232",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08233",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08234",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08235",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08236",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08237",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08238",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08239",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08240",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08241",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08242",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08243",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08244",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08245",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08246",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08247",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08248",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08249",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08250",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08251",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08252",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08253",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08254",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08255",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08256",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08257",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08258",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08259",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08260",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08261",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08262",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08263",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08264",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08265",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08266",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08267",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08268",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08269",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08270",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08271",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08272",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08273",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08274",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08275",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08276",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08277",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08278",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08279",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08280",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08281",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08282",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08283",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08284",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08285",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08286",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08287",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08288",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08289",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08290",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08291",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08292",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08293",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08294",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08296",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08297",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08298",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08299",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08300",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08301",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08302",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08303",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08304",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08305",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08306",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08307",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08308",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08309",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08310",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08311",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08312",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08313",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08314",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08315",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08316",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08317",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08318",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08319",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08320",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08321",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08322",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08323",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08324",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08325",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08326",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08327",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08328",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08329",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08330",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08331",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08332",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08333",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08334",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08335",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08336",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08337",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08338",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08339",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08340",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08341",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08342",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08343",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08344",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08345",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08346",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08347",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08348",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08349",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08350",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08351",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08352",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08353",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08354",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08355",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08356",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08357",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08358",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08359",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08360",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08361",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08362",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08363",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08364",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08365",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08366",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08367",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08368",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08369",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08370",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08371",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08372",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08373",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08374",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08375",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08376",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08377",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08378",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08379",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08380",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08381",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08382",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08383",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08384",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08385",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08386",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08387",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08388",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08389",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08390",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08391",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08392",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08393",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08394",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08395",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08396",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08397",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08398",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08399",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08400",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08401",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08402",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08403",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08404",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08405",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08406",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08407",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08408",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08409",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08410",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08411",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08412",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08413",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08414",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08415",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08416",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08417",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08418",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08419",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08420",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08421",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08422",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08423",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08424",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08425",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08426",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08428",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08429",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08430",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08431",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08432",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08433",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08434",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08435",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08436",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08437",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08438",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08440",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08441",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08442",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08443",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08444",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08445",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08446",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08447",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08448",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08449",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08450",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08451",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08452",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08453",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08454",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08455",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08456",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08457",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08458",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08459",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08460",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08461",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08462",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08463",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08464",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08465",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08466",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08467",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08468",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08469",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08470",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08471",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08472",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08473",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08474",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08475",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08476",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08477",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08478",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08479",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08480",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08481",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08482",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08483",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08484",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08485",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08486",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08487",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08488",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08489",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08490",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08491",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08492",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08493",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08494",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08495",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08496",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08497",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08498",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08499",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08500",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08501",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08502",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08503",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08504",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08505",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08506",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08507",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08508",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08509",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08510",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08511",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08512",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08513",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08514",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08515",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08516",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08517",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08518",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08519",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08520",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08521",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08522",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08523",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08524",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08525",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08526",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08527",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08528",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08529",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08530",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08531",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08532",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08533",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08534",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08535",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08536",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08537",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08538",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08539",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08540",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08542",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08543",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08544",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08545",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08546",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08547",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08548",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08549",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08550",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08551",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08552",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08553",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08554",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08555",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08556",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08557",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08558",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08559",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08560",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08561",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08562",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08563",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08564",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08565",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08566",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08567",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08568",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08569",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08570",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08571",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08572",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08573",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08574",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08575",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08576",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08577",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08578",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08579",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08580",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08581",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08582",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08583",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08584",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08585",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08586",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08587",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08588",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08589",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08590",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08591",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08592",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08593",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08594",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08595",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08596",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08597",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08598",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08599",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08600",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08601",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08602",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08603",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08604",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08605",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08606",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08607",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08608",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08609",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08610",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08611",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08612",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08613",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08614",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08615",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08616",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08617",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08618",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08619",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08620",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08621",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08622",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08623",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08624",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08625",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08626",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08627",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08628",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08629",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08630",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08631",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08632",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08633",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08634",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08635",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08636",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08637",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08638",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08639",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08640",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08641",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08642",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08643",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08644",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08645",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08646",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08647",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08648",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08649",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08650",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08651",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08652",
+      "level": "C2",
+      "reason": "no-draft"
+    },
+    {
+      "wordId": "VD-08653",
+      "level": "C2",
+      "reason": "no-draft"
+    }
+  ]
+}
