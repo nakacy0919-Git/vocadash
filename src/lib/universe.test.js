@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:3430,links:12299});
+ assert.deepEqual(universeCoverage(),{heads:4362,links:16182});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -146,4 +146,16 @@ test('academic topics have contextual links, explicit contrasts and bridges to f
  assert.ok(getRelations(lookupUniverse('acute')).some(x=>x.word==='chronic'&&x.type==='contrast'&&x.note));
  assert.ok(getRelations(lookupUniverse('phonology')).some(x=>x.word==='pronunciation'));
  assert.ok(getRelations(lookupUniverse('pronunciation')).some(x=>x.word==='phonology'&&x.reverse));
+});
+
+test('general and school vocabulary expansion has contextual links, explicit distinctions and cross-level bridges',()=>{
+ for(const w of ["mimic","retailer","laundromat","glacier","screenshot","numerator","vocational","syllabus","proofread","shadowing","facilitator"])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse("inquiry")).some(x=>x.word==="enquiry"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("discernment")).some(x=>x.word==="judgment"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("minority")).some(x=>x.word==="majority"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("maximize")).some(x=>x.word==="minimize"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("syllabus")).some(x=>x.word==="curriculum"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("homophone")).some(x=>x.word==="homograph"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("dictation")).some(x=>x.word==="shadowing"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse('mimic')).some(x=>x.word==='imitate'&&x.type==='synonym'));
 });
