@@ -48,13 +48,17 @@
     "batches/original-20261114-b2-mega-04b.json",
     "batches/original-20261114-b2-mega-04c.json",
     "batches/original-20261114-b2-mega-04d.json",
-    "batches/original-20261114-b2-mega-04e.json"
+    "batches/original-20261114-b2-mega-04e.json",
+    "batches/original-20261114-b2-mega-05a.json",
+    "batches/original-20261114-b2-mega-05b.json",
+    "batches/original-20261114-b2-mega-05c.json",
+    "batches/original-20261114-b2-mega-05d.json"
   ],
   "totals": {
-    "distinctHeadwords": 3862,
-    "senses": 4557,
-    "examples": 9114,
-    "distinctExamples": 9114
+    "distinctHeadwords": 4377,
+    "senses": 5072,
+    "examples": 10144,
+    "distinctExamples": 10144
   },
   "quality": {
     "humanReviewed": false,
@@ -71,21 +75,20 @@
   "recentWork": {
     "source": "original B2 learner vocabulary definitions, contextual synonyms, bilingual examples",
     "newBatches": [
-      "original-20261114-b2-mega-04a",
-      "original-20261114-b2-mega-04b",
-      "original-20261114-b2-mega-04c",
-      "original-20261114-b2-mega-04d",
-      "original-20261114-b2-mega-04e"
+      "original-20261114-b2-mega-05a",
+      "original-20261114-b2-mega-05b",
+      "original-20261114-b2-mega-05c",
+      "original-20261114-b2-mega-05d"
     ],
-    "headwordsAdded": 504,
-    "sensesAdded": 504,
-    "translatedExamplesAdded": 1008,
-    "synonymOrParaphraseCandidatesAdded": 1046,
+    "headwordsAdded": 515,
+    "sensesAdded": 515,
+    "translatedExamplesAdded": 1030,
+    "synonymOrParaphraseCandidatesAdded": 975,
     "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 39,
+    "existingBatchesChecked": 44,
     "derivedExports": [
-      "exports/examples/original-20261114-b2-mega-04.json",
-      "exports/synonyms/original-20261114-b2-mega-04.json"
+      "exports/examples/original-20261114-b2-mega-05.json",
+      "exports/synonyms/original-20261114-b2-mega-05.json"
     ],
     "editorialStatus": "draft-unreviewed; human review pending"
   },
