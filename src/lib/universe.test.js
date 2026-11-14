@@ -15,8 +15,10 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:67,links:343});
+ assert.deepEqual(universeCoverage(),{heads:96,links:555});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
+ assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
+ assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
  assert.ok(getRelations({word:'translation'}).some(x=>x.word==='translate'&&x.reverse));
  assert.ok(!getRelations({word:'translate into English'}).some(x=>x.word==='translate'));
  assert.ok(!getRelations({word:'translation'},{includeReverse:false}).some(x=>x.word==='translate'));
