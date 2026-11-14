@@ -32,7 +32,9 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
  assert.ok(getRelations({word:'redistribute'}).some(x=>x.word==='distribute'&&x.reverse));
  assert.ok(getRelations({word:'translation'}).some(x=>x.word==='translate'&&!x.reverse));
- assert.ok(!getRelations({word:'translate into English'}).some(x=>x.word==='translate'));
+ // Promoted phrases may have an explicit related backlink, never an inferred collocation or synonym.
+ assert.ok(getRelations({word:'translate'}).some(x=>x.word.toLowerCase()==='translate into english'&&x.type==='collocation'));
+ assert.ok(getRelations({word:'translate into English'}).filter(x=>x.word==='translate').every(x=>x.type==='related'&&!x.reverse));
  assert.ok(!getRelations({word:'redistribute'},{includeReverse:false}).some(x=>x.word==='distribute'));
 });
 test('rare usage moves equally strong relations outward; unknown stays unpenalized',()=>{

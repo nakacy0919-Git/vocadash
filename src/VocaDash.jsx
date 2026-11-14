@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
 import './VocaDash.css';
 import MemoryTrainer from './components/MemoryTrainer.jsx';
-import {reviewMemory} from './lib/memoryEngine.js';
+import {applyMemoryAttempt,memorySnapshot,quizMemoryAttempt,universeMemoryAttempt} from './lib/memoryBridge.js';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
@@ -220,6 +220,10 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const [store, setStore] = useState(() => safeLoad(storageKey));
   const [selection, setSelection] = useState(() => classroomAssignment ? {courseId:classroomAssignment.course,unitId:classroomAssignment.unit} : store.lastSelection);
   const { words, loading, error, retry, key:loadedKey } = useVocabulary(selection);
+  const memoryStoreRef=useRef(store),memoryWordsRef=useRef(words);
+  memoryStoreRef.current=store;memoryWordsRef.current=words;
+  const storeExternalAttempt=useCallback(attempt=>{const next=applyMemoryAttempt(memoryStoreRef.current,attempt);if(!safeSave(next,storageKey))throw Error('Memory storage unavailable');memoryStoreRef.current=next;setStore(next);},[storageKey]);
+  const universeMemoryAdapter=useMemo(()=>({version:1,getSnapshot:({now}={})=>memorySnapshot(memoryStoreRef.current.records,memoryWordsRef.current,now),recordAttempt:attempt=>storeExternalAttempt(universeMemoryAttempt(attempt))}),[storeExternalAttempt]);
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
   const [quizStudioOpen,setQuizStudioOpen]=useState(false);
@@ -362,7 +366,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     setRatingFeedback(remembered ? 'correct' : 'retry');
     playQuizFeedbackSound(remembered,store.settings.sound);
     recordClassroom(current, remembered, mode, selection);
-    setStore(prev => updateRecord(prev, current.id, remembered));
+    setStore(prev => applyMemoryAttempt(updateRecord(prev,current.id,remembered),{id:current.id,word:current.word,meaning:current.meaning,correct:remembered,selfReported:true,kind:'recall'}));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (remembered ? 1 : 0) }));
     if (mode === 'review' && !remembered && queue.length < words.length * 3) setQueue(prev => [...prev, current]);
     quizTimer.current=setTimeout(next,remembered?1150:800);
@@ -374,7 +378,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     setQuizCelebration(option.correct ? 'correct' : 'incorrect');
     playQuizFeedbackSound(option.correct, store.settings.sound);
     recordClassroom(current, option.correct, mode, selection);
-    setStore(prev => updateRecord(prev, current.id, option.correct));
+    setStore(prev => applyMemoryAttempt(updateRecord(prev,current.id,option.correct),{id:current.id,word:current.word,meaning:current.meaning,correct:option.correct,kind:mode==='listening'?'listening':'meaning'}));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
     // Show the explanation for every answer; advance only when the learner chooses to.
     quizTimer.current = setTimeout(() => {
@@ -454,7 +458,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
-  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at,evidence)=>setStore(prev=>({...prev,records:{...prev.records,[id]:{...prev.records[id],memory:reviewMemory(prev.records[id]?.memory,grade,kind,at,evidence)}}}))}/>;
+  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
   return <div className={'vd-app'+(dashboardOpen?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
     <aside className="vd-sidebar">
@@ -475,7 +479,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
 
       </header>
       <div className="vd-page">
-        {quizStudioOpen ? <QuizStudio onClose={()=>setQuizStudioOpen(false)}/> : dashboardOpen ? (
+        {quizStudioOpen ? <QuizStudio onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
             onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioOpen(true);}} onResume={()=>startMode('study')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
@@ -638,7 +642,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </div>
     </main>
     <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse records={store.records} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    {universeEntry && <VocaUniverse records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">

@@ -32,6 +32,6 @@ export const subscribeUniverseMemory=fn=>{listeners.add(fn);return()=>listeners.
 
 export function indexMemorySnapshot(snapshot={}){
  const indexed={...snapshot};
- for(const [id,row] of Object.entries(snapshot)){if(row?.word)indexed[normalizeTerm(row.word)]={...row,wordId:row.wordId||id};}
+ for(const [id,row] of Object.entries(snapshot)){if(row?.word){const key=normalizeTerm(row.word);const previous=indexed[key];if(!previous||(row.weak&&!previous.weak)||(!previous.weak&&!row.weak&&row.retrievability<previous.retrievability))indexed[key]={...row,wordId:row.wordId||id};}}
  return indexed;
 }

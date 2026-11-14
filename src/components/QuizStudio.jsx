@@ -29,7 +29,7 @@ export default function QuizStudio({onClose,onAttempt}){
     setResult(attempt);setScore(n=>n+Number(attempt.correct));
     if(!saveAttempt(attempt))setNotice('記録を保存できません。ブラウザの保存設定をご確認ください。');
     // Optional integration boundary; scheduling is owned by the separate Memory Engine.
-    try{onAttempt?.(attempt);window.dispatchEvent(new CustomEvent('vocadash:quiz-attempt-v1',{detail:attempt}));}catch{setNotice('回答は記録しましたが、学習エンジンへの通知に失敗しました。');}
+    try{const sourceRecord=records.find(r=>r.senseId===attempt.senseId);onAttempt?.({...attempt,word:sourceRecord?.headword,meaning:sourceRecord?.meaningJa});window.dispatchEvent(new CustomEvent('vocadash:quiz-attempt-v1',{detail:attempt}));}catch{setNotice('回答は記録しましたが、学習エンジンへの通知に失敗しました。');}
     if(!attempt.correct && queue.length<26){setQueue(prev=>{const next=[...prev];const other=bank.questions.find(x=>x.senseId===q.senseId && x.format!==q.format)||q;next.splice(Math.min(next.length,cursor+4),0,other);return next;});}
   }
   function speak(){if(!q||result)return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(q.audioText);u.lang='en-US';u.rate=.85;u.onerror=()=>setNotice('音声を再生できません。この問題をスキップできます。');window.speechSynthesis.speak(u);setPlays(n=>n+1);}
