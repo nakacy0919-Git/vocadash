@@ -608,3 +608,48 @@ test('word families and collocations prioritize lexical anchors and protect exis
 });
 
 test('common voice query beautiful has balanced authored relations',()=>{const entry=lookupUniverse('beautiful');assert.ok(entry);for(const type of ['synonym','family','contrast','collocation'])assert.ok(getRelations(entry).some(l=>l.type===type));assert.ok(lookupUniverse('happiness'));});
+
+import lexicalExpansion from '../data/universe-lexical-expansion.js';
+import {lexicalExpansionCoverage} from './universe.js';
+test('editorial expansion preserves classified, unique bilingual edges',()=>{
+ assert.equal(Object.keys(lexicalExpansion).length,172);
+ const counts={synonym:0,family:0,collocation:0,related:0};
+ for(const [word,entry] of Object.entries(lexicalExpansion)){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.equal(new Set(entry.links.map(l=>l.word)).size,entry.links.length);
+  for(const link of entry.links){assert.ok(link.meaning&&link.word!==word&&Object.hasOwn(counts,link.type));counts[link.type]++;}
+ }
+ assert.deepEqual(counts,{synonym:163,family:177,collocation:336,related:20});
+ assert.ok(lexicalExpansion.scrutinize.links.some(l=>l.word==='scrutinize the evidence'&&l.type==='collocation'));
+ assert.ok(lexicalExpansion.procrastinate.links.some(l=>l.word==='procrastination'&&l.type==='family'));
+});
+test('searchable expansion deduplicates and separates words from expressions',()=>{
+ const s=lexicalExpansionCoverage();
+ assert.equal(s.editorial.candidates,172);
+ assert.equal(s.editorial.heads+s.editorial.compatible+s.editorial.skippedSense,172);
+ assert.equal(s.after.heads-s.before.heads,s.editorial.heads+s.nominal.heads+s.promoted.singleWords+s.promoted.expressions);
+ assert.equal(s.after.links-s.before.links,s.editorial.links+s.nominal.links+s.promoted.links);
+ assert.ok(s.after.singleWords>=s.before.singleWords);
+ assert.ok(s.promoted.singleWords+s.promoted.expressions>0);
+ assert.ok(s.promoted.conflictingGloss>=0);
+});
+
+import nominalExpansion from '../data/universe-nominal-expansion.js';
+test('nominal expansion preserves curated bilingual relation types',()=>{
+ assert.equal(Object.keys(nominalExpansion).length,319);
+ const totals={synonym:0,family:0,collocation:0,related:0};
+ for(const [word,entry] of Object.entries(nominalExpansion)){
+  assert.ok(entry.meaning&&lookupUniverse(word)?.meaning);
+  assert.ok(entry.links.length>=3);
+  assert.equal(new Set(entry.links.map(l=>l.word)).size,entry.links.length);
+  for(const l of entry.links){assert.ok(l.meaning&&l.word!==word&&Object.hasOwn(totals,l.type));totals[l.type]++;}
+ }
+ assert.deepEqual(totals,{synonym:248,family:225,collocation:638,related:164});
+ const {nominal,editorialAfter,before}=lexicalExpansionCoverage();
+ assert.equal(nominal.candidates,319);
+ assert.equal(nominal.heads+nominal.compatible+nominal.skippedSense,319);
+ assert.ok(editorialAfter.heads>=before.heads);
+ assert.ok(nominalExpansion['cogent'].links.some(l=>l.word==='cogent argument'&&l.type==='collocation'));
+ assert.ok(nominalExpansion['dissonance'].links.some(l=>l.word==='dissonant'&&l.type==='family'));
+ assert.ok(nominalExpansion['tenacity'].links.some(l=>l.word==='persistence'&&l.type==='synonym'));
+});
