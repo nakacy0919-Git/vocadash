@@ -1,10 +1,13 @@
 import React, {useEffect,useId,useMemo,useRef,useState} from 'react';
-import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,types,tierLabels} from '../lib/universe';
+import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VocaUniverse.css';
 export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  const [center,setCenter]=useState(entry);
  const [trail,setTrail]=useState([]);
+ const [query,setQuery]=useState('');
+ const catalog=useMemo(()=>universeEntries(),[]);
+ const searchResults=useMemo(()=>{const q=query.trim().toLowerCase();if(!q)return [];return catalog.filter(w=>w.word.includes(q)||w.meaning.includes(q)).sort((a,b)=>Number(b.word.startsWith(q))-Number(a.word.startsWith(q))||a.word.localeCompare(b.word)).slice(0,8);},[catalog,query]);
  const [filter,setFilter]=useState('all');
  const [selected,setSelected]=useState(null);
  const [badImage,setBadImage]=useState(false);
@@ -28,7 +31,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    return ()=>{document.body.style.overflow=overflow;before?.focus?.();};
  },[]);
  useEffect(()=>{const el=mapScroll.current;if(el&&view==='map')el.scrollLeft=Math.max(0,(el.scrollWidth-el.clientWidth)/2);},[center.word,view]);
- const change=(next)=>{setCenter(next);setSelected(null);setFilter('all');setBadImage(false);setTargetImageError('');setPage(0);};
+ const change=(next)=>{setCenter(next);setSelected(null);setFilter('all');setBadImage(false);setTargetImageError('');setPage(0);setQuery('');};
  const key=(e)=>{
    e.stopPropagation();
    if(e.key==='Escape'){e.preventDefault();onClose();}
@@ -44,6 +47,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><button ref={close} onClick={onClose} aria-label="閉じる">✕</button></header>
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);setPage(0);}}>{label}</button>)}</div>
+   <div className="vu-search-wrap"><label htmlFor={titleId+'-search'}>ネットワーク内の語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off"/>{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>{setTrail(t=>[...t,center]);change({...item,...(index.get(item.word)||{}),word:item.word,meaning:item.meaning});}}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>登録済みの中心語が見つかりません。</p>}</div>}</div>
    {mapSense&&<p className="vu-map-sense">関連語マップの対象語義：{mapSense}</p>}
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
    {view==='map' && <><div className="vu-map-scroll" ref={mapScroll}><div className="vu-map" key={center.word}>
@@ -58,7 +62,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);setSelected(null);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);setSelected(null);}}>次へ →</button></div>}</>}
    {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button></section>}
    {!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
-   {active&&<div className="vu-detail"><div><small>{types[active.type]} · {tierLabels[active.tier]}</small><h3>{active.word}</h3><p>{active.meaning||target?.meaning||'日本語の意味は準備中'}</p>{target?.english&&<p>{target.english}</p>}{target?.japanese&&<small>{target.japanese}</small>}{active.reverse&&<p className="vu-reverse">登録済みの語からの逆方向リンク</p>}</div>{showImages&&target?.image&&targetImageError!==target.image&&<img className="vu-detail-image" src={assetImage(target.image)} alt={active.word+' の参考画像'} onError={()=>setTargetImageError(target.image)}/>}<div className="vu-detail-actions"><button disabled={!sound} onClick={()=>onSpeak(target)}>♫ 発音</button><button disabled={!canExplore} onClick={()=>{setTrail(t=>[...t,center]);change(target);}}>中心にする →</button></div></div>}
+   {active&&<div className="vu-detail"><div><small>{types[active.type]} · {tierLabels[active.tier]}</small><h3>{active.word}</h3><p>{active.meaning||target?.meaning||'日本語の意味は準備中'}</p>{target?.english&&<p>{target.english}</p>}{target?.japanese&&<small>{target.japanese}</small>}{active.note&&<div className="vu-usage-note"><strong>使い分け・語感</strong><p>{active.note}</p>{active.example&&<p lang="en">{active.example}</p>}{active.translation&&<small>{active.translation}</small>}</div>}{active.reverse&&<p className="vu-reverse">登録済みの語からの逆方向リンク</p>}</div>{showImages&&target?.image&&targetImageError!==target.image&&<img className="vu-detail-image" src={assetImage(target.image)} alt={active.word+' の参考画像'} onError={()=>setTargetImageError(target.image)}/>}<div className="vu-detail-actions"><button disabled={!sound} onClick={()=>onSpeak(target)}>♫ 発音</button><button disabled={!canExplore} onClick={()=>{setTrail(t=>[...t,center]);change(target);}}>中心にする →</button></div></div>}
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} aria-pressed={selected===n.word} onClick={()=>setSelected(n.word)} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
   </section></div>;
 }
