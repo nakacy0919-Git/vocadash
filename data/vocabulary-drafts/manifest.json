@@ -22,13 +22,18 @@
     "batches/original-20261114-a1-01.json",
     "batches/original-20261114-a1-02.json",
     "batches/original-20261114-a1-03.json",
-    "batches/original-20261114-b1-01.json"
+    "batches/original-20261114-b1-01.json",
+    "batches/original-20261114-b1-02.json",
+    "batches/original-20261114-b1-03.json",
+    "batches/original-20261114-b1-04.json",
+    "batches/original-20261114-b1-05.json",
+    "batches/original-20261114-b1-06.json"
   ],
   "totals": {
-    "distinctHeadwords": 1465,
-    "senses": 1893,
-    "examples": 3786,
-    "distinctExamples": 3786
+    "distinctHeadwords": 1715,
+    "senses": 2167,
+    "examples": 4334,
+    "distinctExamples": 4334
   },
   "quality": {
     "humanReviewed": false,
@@ -43,17 +48,19 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-14",
   "recentWork": {
-    "source": "new original bilingual vocabulary drafting",
+    "source": "original learner vocabulary examples and English definitions",
     "batchesAdded": [
-      "original-20261114-a1-01",
-      "original-20261114-a1-02",
-      "original-20261114-a1-03",
-      "original-20261114-b1-01"
+      "original-20261114-b1-02",
+      "original-20261114-b1-03",
+      "original-20261114-b1-04",
+      "original-20261114-b1-05",
+      "original-20261114-b1-06"
     ],
-    "distinctHeadwordsAdded": 240,
-    "senseRecordsAdded": 278,
-    "englishJapaneseExamplePairsAdded": 556,
-    "exactDuplicateSentencesCorrected": 1
+    "distinctHeadwordsAdded": 250,
+    "senseRecordsAdded": 274,
+    "englishJapaneseExamplePairsAdded": 548,
+    "crossBatchEnglishDuplicates": 0,
+    "missingRequiredFields": 0
   },
-  "notes": "All drafts are unreviewed. Original definitions/sentences are authored for learning; contextual synonyms and CEFR by headword require manual review before publication."
+  "notes": "Drafts only; no production import. Original educational sentences, Japanese translations and contextual definitions require human language review prior to release."
 }
