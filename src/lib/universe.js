@@ -1,5 +1,6 @@
 import synonymMega from '../data/universe-synonym-mega.js';
-import {addSynonymMega} from './universe-synonym-mega.js';
+import synonymMega2 from '../data/universe-synonym-mega-2.js';
+import {addSynonymMega,synonymCandidateKeys} from './universe-synonym-mega.js';
 import lexicalExpansion from '../data/universe-lexical-expansion.js';
 import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
 import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
@@ -354,6 +355,9 @@ export function lexicalExpansionCoverage(){return {editorial:{...lexicalEditoria
 // The synonym batch is applied last, preserving earlier editorial classifications.
 const synonymMegaAdded=addSynonymMega(authored,synonymMega);
 export function synonymMegaCoverage(){return {...synonymMegaAdded};}
+// Second batch excludes all first-batch candidates and prioritizes single words.
+const synonymMega2Added=addSynonymMega(authored,synonymMega2,5000,{batch:2,prioritizeSingle:true,excludeCandidates:synonymCandidateKeys(synonymMega)});
+export function synonymMega2Coverage(){return {...synonymMega2Added};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
@@ -363,7 +367,7 @@ for (const [head,entry] of authored) {
     if (!['synonym','family','contrast','related'].includes(link.type)) continue;
     const key=normalize(link.word);
     const list=reverse.get(key)||[];
-    list.push({word:head,meaning:link.synonymContext||entry.meaning,type:link.type,tier:link.tier==='extended'?'extended':'related',reverse:true,...(link.synonymMega?{synonymContext:link.synonymContext,note:link.note,synonymMega:true}:{})});
+    list.push({word:head,meaning:link.synonymContext||entry.meaning,type:link.type,tier:link.tier==='extended'?'extended':'related',reverse:true,...(link.synonymMega?{synonymContext:link.synonymContext,note:link.note,synonymMega:true,synonymBatch:link.synonymBatch}:{})});
     reverse.set(key,list);
   }
 }
