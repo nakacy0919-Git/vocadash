@@ -1,3 +1,4 @@
+import nuanceFamilyMega, {nuanceFamilyNotes} from '../data/universe-nuance-family-mega.js';
 import collocationReadingMega, {collocationReadingNotes} from '../data/universe-collocation-reading-mega.js';
 import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
 import everydayAbstractMega, {everydayAbstractNotes} from '../data/universe-everyday-abstract-mega.js';
@@ -137,6 +138,8 @@ function addCompatibleBatch(batch) {
 const unifiedReadingAdded=addCompatibleBatch(domainReadingMega);
 const everydayAbstractAdded=addCompatibleBatch(everydayAbstractMega);
 const collocationReadingAdded=addCompatibleBatch(collocationReadingMega);
+const nuanceFamilyAdded=addCompatibleBatch(nuanceFamilyMega);
+export function nuanceFamilyCoverage(){return {...nuanceFamilyAdded};}
 export function collocationReadingCoverage(){return {...collocationReadingAdded};}
 export function unifiedReadingCoverage(){return {...unifiedReadingAdded};}
 export function everydayAbstractCoverage(){return {...everydayAbstractAdded};}
@@ -162,7 +165,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes,everydayAbstractNotes,collocationReadingNotes,nuanceFamilyNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
