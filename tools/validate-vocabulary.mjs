@@ -8,6 +8,7 @@ const manifest = read('manifest.json');
 const errors = [];
 const warnings = [];
 const ids = new Set();
+const exampleIds = new Set();
 const headwords = new Set();
 const sentences = new Map();
 let senses = 0, examples = 0;
@@ -30,9 +31,40 @@ for (const filename of manifest.batchFiles) {
     for (const e of record.examples) {
       examples++;
       if (!e.en || !e.ja) errors.push('Missing translation or sentence: ' + key);
+      if (!e.id || exampleIds.has(e.id)) errors.push('Missing or duplicate example ID: ' + key + ' ' + e.id);
+      exampleIds.add(e.id);
+      if (!/[A-Za-z]/.test(e.en || '') || !/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}]/u.test(e.ja || '')) {
+        errors.push('Expected English and Japanese text: ' + key);
+      }
       const sentence = String(e.en || '').trim().toLowerCase();
       if (!sentences.has(sentence)) sentences.set(sentence, []);
       sentences.get(sentence).push(key);
+    }
+  }
+}
+// Derived exports from this authoring pass must match their source records.
+for (const filename of manifest.recentWork?.newBatches || []) {
+  const source = manifest.batchFiles.find(file => file === filename || path.basename(file, '.json') === filename);
+  if (!source) { errors.push('Unknown recent batch: ' + filename); continue; }
+  const stem = path.basename(source, '.json');
+  const sourceRecords = read(source).records;
+  for (const kind of ['examples', 'synonyms']) {
+    const exportFile = 'exports/' + kind + '/' + stem + '.json';
+    if (!fs.existsSync(path.join(root, exportFile))) continue;
+    const exported = read(exportFile).records;
+    const expected = kind === 'examples'
+      ? sourceRecords.flatMap(record => record.examples.map(example => ({...example, wordId: record.wordId, senseId: record.senseId, headword: record.headword})))
+      : sourceRecords;
+    if (exported.length !== expected.length) errors.push('Export count mismatch: ' + exportFile);
+    const byId = new Map(expected.map(record => [kind === 'examples' ? record.id : record.senseId, record]));
+    const exportedIds = new Set();
+    for (const record of exported) {
+      const exportId = kind === 'examples' ? record.id : record.senseId;
+      if (exportedIds.has(exportId)) errors.push('Duplicate export ID: ' + exportId);
+      exportedIds.add(exportId);
+      const original = byId.get(exportId);
+      const fields = kind === 'examples' ? ['wordId', 'senseId', 'headword', 'en', 'ja'] : ['wordId', 'senseId', 'headword', 'definitionEn', 'meaningJa'];
+      if (!original || fields.some(field => record[field] !== original[field])) errors.push('Export content mismatch: ' + exportFile + ' ' + exportId);
     }
   }
 }
