@@ -384,7 +384,7 @@ function applySynonymExpansion(groups){
   const found=prior?.links.find(l=>normalize(l.word)===b.word);
   if(found){
    if(found.type==='related'&&type==='synonym'&&matchesEditorialSense({meaning:found.meaning},b)){
-    found.type='synonym';found.tier='core';stats.upgradedSynonyms++;
+    authored.set(a.word,{...prior,links:prior.links.map(l=>l===found?{...l,type:'synonym',tier:'core'}:l)});stats.upgradedSynonyms++;
    }else if(found.type===type)stats.alreadyRegistered++;
    else stats.protectedExisting++;
    return;
@@ -400,7 +400,6 @@ function applySynonymExpansion(groups){
  }
  return {...stats,before,after:registrationCoverage()};
 }
-const nominalEditorialAfter=countLexicalHeads();
 const synonymEditorial=applySynonymExpansion(synonymExpansion);
 export function synonymExpansionCoverage(){return JSON.parse(JSON.stringify(synonymEditorial));}
 
