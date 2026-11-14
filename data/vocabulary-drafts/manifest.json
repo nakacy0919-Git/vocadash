@@ -42,13 +42,14 @@
     "batches/original-20261114-b1-mega-03a.json",
     "batches/original-20261114-b1-mega-03b.json",
     "batches/original-20261114-mega-03c.json",
-    "batches/original-20261114-b2-evening-01.json"
+    "batches/original-20261114-b2-evening-01.json",
+    "batches/original-20261114-b2-evening-02.json"
   ],
   "totals": {
-    "distinctHeadwords": 3250,
-    "senses": 3936,
-    "examples": 7872,
-    "distinctExamples": 7872
+    "distinctHeadwords": 3358,
+    "senses": 4053,
+    "examples": 8106,
+    "distinctExamples": 8106
   },
   "quality": {
     "humanReviewed": false,
@@ -65,18 +66,31 @@
   "recentWork": {
     "source": "original B2 vocabulary definitions, contextual synonyms and bilingual examples",
     "newBatches": [
-      "original-20261114-b2-evening-01"
+      "original-20261114-b2-evening-02"
     ],
-    "headwordsAdded": 93,
-    "sensesAdded": 114,
-    "translatedExamplesAdded": 228,
+    "headwordsAdded": 108,
+    "sensesAdded": 117,
+    "translatedExamplesAdded": 234,
+    "synonymOrParaphraseCandidatesAdded": 269,
     "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 37,
+    "existingBatchesChecked": 38,
     "skippedExistingHeadwords": [
-      "broaden",
-      "carbon",
-      "catastrophe",
-      "capability"
+      "community",
+      "cease",
+      "compensate",
+      "compile",
+      "conceal",
+      "concede",
+      "confine",
+      "confront",
+      "consult",
+      "coincidence",
+      "compensation",
+      "consensus",
+      "consent",
+      "coherent",
+      "consistent",
+      "compassion"
     ]
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
