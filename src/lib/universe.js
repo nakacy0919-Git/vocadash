@@ -1,3 +1,5 @@
+import academicVerbReview, {academicVerbParadigms} from '../data/universe-academic-verb-review-mega.js';
+import academicAdjectiveReview, {academicAdjectiveParadigms} from '../data/universe-academic-adjective-review-mega.js';
 import verbMorphologyReview, {verbParadigms} from '../data/universe-verb-morphology-review.js';
 import nounAdjectiveReview, {adjectiveNounParadigms} from '../data/universe-noun-adjective-review.js';
 import familyCollocationMega, {familyCollocationNotes} from '../data/universe-families-collocations-mega.js';
@@ -143,7 +145,7 @@ const reviewBefore=lexicalAudit();
 const priorReviewHeads=new Set(authored.keys());
 const revisedPriorHeads=new Set();
 let refinedReviewLinks=0, annotatedReviewLinks=0;
-for(const batch of [verbMorphologyReview,nounAdjectiveReview]){
+for(const batch of [verbMorphologyReview,nounAdjectiveReview,academicVerbReview,academicAdjectiveReview]){
   for(const [word,entry] of Object.entries(batch)){
     const key=normalize(word);
     const prior=authored.get(key);
@@ -183,8 +185,8 @@ export function lexicalReviewCoverage(){
 export function getWordForms(word){
   const key=normalize(word);
   const rows=[];
-  const verb=verbParadigms[key];
-  const adj=adjectiveNounParadigms.adjectives[key];
+  const verb=verbParadigms[key]||academicVerbParadigms[key];
+  const adj=adjectiveNounParadigms.adjectives[key]||academicAdjectiveParadigms[key];
   const noun=adjectiveNounParadigms.nouns[key];
   const add=(label,forms)=>{if(forms?.length)rows.push({label,forms:[...forms]});};
   if(verb){
