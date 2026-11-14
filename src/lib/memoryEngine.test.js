@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {recall,mastery,reviewMemory,memoryQueue,buildQuestion,enqueueRetry,normalizeAnswer} from './memoryEngine.js';
+const DAY=86400000, start=1700000000000;
+test('FSRS curve anchors at 90 percent and declines',()=>{const m=reviewMemory(null,3,'typing',start);assert.ok(Math.abs(recall(m,start+m.stability*DAY)-.9)<1e-9);assert.ok(recall(m,start+30*DAY)<recall(m,start+DAY));});
+test('same-day repetition cannot master; delayed recall grows stability',()=>{let m=reviewMemory(null,3,'typing',start);for(let i=1;i<=20;i++)m=reviewMemory(m,3,'cloze',start+i*1000);assert.equal(m.spacedSuccesses,0);assert.ok(mastery(m,m.lastAt)<=49);const next=reviewMemory(m,3,'typing',m.lastAt+3*DAY);assert.ok(next.stability>m.stability);assert.equal(next.spacedSuccesses,1);});
+test('incorrect answer reduces stability and schedules 10 minute review',()=>{const m=reviewMemory(null,3,'typing',start),next=reviewMemory(m,1,'cloze',start+DAY);assert.ok(next.stability<m.stability);assert.equal(next.dueAt,next.lastAt+600000);assert.equal(next.spacedSuccesses,0);});
+const words=[{id:'a',word:'apple',meaning:'りんご',prompt:'I ate an ________.',choices:['apple','pear','peach','orange'],correctIndex:0},{id:'b',word:'pear',meaning:'梨'},{id:'c',word:'peach',meaning:'桃'},{id:'d',word:'orange',meaning:'オレンジ'}];
+test('due before new, future reviews excluded',()=>{const m=reviewMemory(null,1,'typing',start),records={a:{memory:m}};assert.equal(memoryQueue(words,records,start,9).length,3);assert.equal(memoryQueue(words,records,m.dueAt,1)[0].id,'a')});
+test('valid authored cloze, distinct meaning choices and normalized typing',()=>{assert.equal(buildQuestion(words[0],words,0).options.length,4);assert.equal(buildQuestion(words[0],words,2).kind,'cloze');assert.equal(normalizeAnswer(' ＡPPLE '),'apple');assert.notEqual(buildQuestion({...words[0],prompt:'no blank'},words,2).kind,'cloze')});
+test('retry is bounded and placed later',()=>{const q=words.map(word=>({word,retry:0}));assert.equal(enqueueRetry(q,0,q[0])[4].retry,1);assert.equal(enqueueRetry(q,0,{...q[0],retry:2}),q);});

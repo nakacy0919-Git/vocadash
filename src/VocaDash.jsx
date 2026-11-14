@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments } from './lib/learning';
 import './VocaDash.css';
+import MemoryTrainer from './components/MemoryTrainer.jsx';
+import {reviewMemory} from './lib/memoryEngine.js';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
@@ -444,6 +446,7 @@ export default function VocaDash() {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
+  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at)=>setStore(prev=>({...prev,records:{...prev.records,[id]:{...prev.records[id],memory:reviewMemory(prev.records[id]?.memory,grade,kind,at)}}}))}/>;
   return <div className={'vd-app'+(dashboardOpen?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
     <aside className="vd-sidebar">
