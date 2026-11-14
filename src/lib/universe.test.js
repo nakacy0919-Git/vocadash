@@ -15,13 +15,14 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:1282,links:4989});
+ assert.deepEqual(universeCoverage(),{heads:1535,links:5750});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
- assert.ok(getRelations({word:'translation'}).some(x=>x.word==='translate'&&x.reverse));
+ assert.ok(getRelations({word:'redistribute'}).some(x=>x.word==='distribute'&&x.reverse));
+ assert.ok(getRelations({word:'translation'}).some(x=>x.word==='translate'&&!x.reverse));
  assert.ok(!getRelations({word:'translate into English'}).some(x=>x.word==='translate'));
- assert.ok(!getRelations({word:'translation'},{includeReverse:false}).some(x=>x.word==='translate'));
+ assert.ok(!getRelations({word:'redistribute'},{includeReverse:false}).some(x=>x.word==='distribute'));
 });
 test('rare usage moves equally strong relations outward; unknown stays unpenalized',()=>{
  assert.equal(relationTier({strength:.85,usageBand:'common'}),'core');
@@ -93,4 +94,12 @@ test('late reading and foundational maps link basic to advanced vocabulary',()=>
  assert.ok(getRelations(lookupUniverse('confuse')).some(x=>x.word==='perplex'&&x.tier==='extended'&&x.note));
  assert.ok(getRelations(lookupUniverse('empathy')).some(x=>x.word==='sympathy'&&x.note));
  assert.ok(getRelations(lookupUniverse('reusable')).some(x=>x.word==='recyclable'&&x.example));
+});
+
+test('foundation maps distinguish usage, word families and spelling variants',()=>{
+ for(const w of ['grammar','confidence','conquer','diligent','democracy','defence','economic'])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse('economic')).some(x=>x.word==='economical'&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse('despite')).some(x=>x.word==='in spite of'&&x.note));
+ assert.ok(getRelations(lookupUniverse('defence')).some(x=>x.word==='defense'&&x.type==='synonym'));
+ assert.ok(getRelations(lookupUniverse('diligent')).some(x=>x.word==='diligence'&&x.type==='family'));
 });
