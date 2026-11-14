@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,cumulativeLexicalCoverage,getWordForms} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,balancedReviewCoverage,cumulativeLexicalCoverage,getWordForms} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -21,7 +21,8 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const academic=academicReviewCoverage();
  const advanced=advancedReviewCoverage();
  const extended=extendedReviewCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads,links:26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links});
+ const balanced=balancedReviewCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads,links:26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -306,8 +307,32 @@ test('extended lexical review and all parallel batches are actually integrated',
  const academic=academicReviewCoverage(),advanced=advancedReviewCoverage(),extended=extendedReviewCoverage();
  assert.deepEqual(academic.after,advanced.before);
  assert.deepEqual(advanced.after,extended.before);
- assert.deepEqual(extended.after,cumulativeLexicalCoverage());
+ assert.deepEqual(extended.after,balancedReviewCoverage().before);
+ assert.deepEqual(balancedReviewCoverage().after,cumulativeLexicalCoverage());
  assert.ok(extended.heads>0&&extended.links>0&&extended.existingHeadsUpdated>0);
  assert.ok(extended.after.headsWithForms>=extended.before.headsWithForms);
  assert.ok(extended.after.headsWithCollocations>=extended.before.headsWithCollocations);
+});
+
+test('sense-focused synonyms, collocations and forms are integrated together',()=>{
+ const form=(w,l)=>getWordForms(w).find(x=>x.label===l)?.forms;
+ assert.ok(form('concur','過去形').includes('concurred'));
+ assert.ok(form('recap','現在分詞・動名詞').includes('recapping'));
+ assert.ok(form('weary','比較級').includes('wearier'));
+ assert.ok(form('drawback','複数形').includes('drawbacks'));
+ assert.ok(form('foresee','過去分詞').includes('foreseen'));
+ for(const [h,w] of [['important','significant'],['ponder','think'],['concur','agree'],['surmount','overcome']]){
+   const l=getRelations(lookupUniverse(h)).find(x=>x.word===w);
+   assert.ok(l?.meaning&&(l.type==='synonym'||l.type==='related'),h+' -> '+w);
+ }
+ for(const [h,w] of [['pragmatic','pragmatic decision-making'],['concur','concur with a conclusion'],['lucid','lucid reasoning'],['setback','temporary academic setback']]){
+   const l=getRelations(lookupUniverse(h)).find(x=>x.word===w);
+   assert.ok(l&&l.type==='collocation'&&l.meaning,h+' -> '+w);
+ }
+ assert.ok(usageFor('effective','efficient')?.note);
+ assert.ok(usageFor('despite','regardless of')?.translation);
+ const {before,after,heads,links,existingHeadsUpdated}=balancedReviewCoverage();
+ assert.ok(heads>0&&links>0&&existingHeadsUpdated>0);
+ assert.ok(after.synonym>=before.synonym&&after.collocation>before.collocation&&after.forms>=before.forms);
+ assert.deepEqual(after,cumulativeLexicalCoverage());
 });
