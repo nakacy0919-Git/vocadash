@@ -1,4 +1,4 @@
-// Original editorial relations for foundational and intermediate vocabulary.
+// Editorial contextual relations; ambiguous headword matches do not certify identical senses.
 export default {
   "delighted": {
     "meaning": "とてもうれしい",
@@ -614,8 +614,8 @@ export default {
         "tier": "related"
       },
       {
-        "word": "due diligence",
-        "meaning": "適切な注意・精査",
+        "word": "work with diligence",
+        "meaning": "勤勉に働く",
         "type": "collocation",
         "tier": "related"
       }
@@ -1045,8 +1045,8 @@ export default {
         "tier": "related"
       },
       {
-        "word": "solution",
-        "meaning": "溶液",
+        "word": "aqueous solution",
+        "meaning": "水溶液",
         "type": "related",
         "tier": "related"
       },
@@ -1444,8 +1444,8 @@ export default {
       {
         "word": "dotted line",
         "meaning": "点線",
-        "type": "family",
-        "tier": "core"
+        "type": "collocation",
+        "tier": "related"
       }
     ]
   },
