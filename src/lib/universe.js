@@ -1,3 +1,5 @@
+import lexicalExpansion from '../data/universe-lexical-expansion.js';
+import nominalExpansion from '../data/universe-nominal-expansion.js';
 import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
 import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
 import productiveVerbMega, {productiveVerbNotes} from '../data/universe-productive-verbs-mega.js';
@@ -324,6 +326,47 @@ for(const [word,entry] of Object.entries(voiceEssentials)){
  voiceEssentialAdded.heads++;voiceEssentialAdded.links+=authored.get(word).links.length;
 }
 export function voiceEssentialCoverage(){return {...voiceEssentialAdded};}
+
+// Promote only explicitly authored links to searchable centers, without inferring new synonyms.
+const isLexicalWord=w=>/^[a-z]+(?:[-'][a-z]+)*$/.test(w);
+const isLexicalPhrase=w=>/^[a-z]+(?:[-'][a-z]+)*(?: [a-z]+(?:[-'][a-z]+)*){1,4}$/.test(w);
+const countLexicalHeads=()=>({ ...universeCoverage(),singleWords:[...authored.keys()].filter(isLexicalWord).length });
+const lexicalBefore=countLexicalHeads();
+const lexicalEditorial=addCompatibleBatch(lexicalExpansion);
+const nominalEditorial=addCompatibleBatch(nominalExpansion);
+const lexicalEditorialAfter=countLexicalHeads();
+const lexicalCandidates=new Map();
+function collectLexicalLinks(head,entry){
+ if(!entry.meaning)return;
+ const source=normalize(head);
+ for(const l of entry.links){
+  const key=normalize(l.word),gloss=String(l.meaning||'').trim();
+  if(!key||key===source||authored.has(key)||!gloss)continue;
+  const inflected=(l.morphology||[]).some(x=>!['派生・語族','基となる語'].includes(x))||/三単現|過去形|過去分詞|現在分詞|動名詞|複数形|比較級|最上級/.test(gloss)||(l.type==='family'&&/(?:ing|ed)$/.test(key));
+  const single=isLexicalWord(key)&&['synonym','family'].includes(l.type)&&!inflected;
+  const phrase=isLexicalPhrase(key)&&l.type==='collocation'&&!/[()（）]/.test(gloss);
+  if(!single&&!phrase)continue;
+  let c=lexicalCandidates.get(key);
+  if(!c){c={glosses:new Set(),links:new Map()};lexicalCandidates.set(key,c);}
+  c.glosses.add(gloss);
+  const backlink={word:source,meaning:entry.meaning,type:phrase?'related':l.type,tier:'related'};
+  const prior=c.links.get(source);
+  if(!prior)c.links.set(source,backlink);
+  else if(prior.type!==backlink.type)c.links.set(source,{...prior,type:'related'});
+ }
+}
+for(const [head,entry] of authored)collectLexicalLinks(head,entry);
+// All compatible editorial entries are already included above. Do not use an incompatible head sense as a pivot.
+const lexicalPromoted={singleWords:0,expressions:0,links:0,conflictingGloss:0};
+for(const [word,c] of lexicalCandidates){
+ if(authored.has(word))continue;
+ if(c.glosses.size!==1){lexicalPromoted.conflictingGloss++;continue;}
+ addAuthored(word,{meaning:[...c.glosses][0],links:[...c.links.values()]});
+ lexicalPromoted[isLexicalWord(word)?'singleWords':'expressions']++;
+ lexicalPromoted.links+=authored.get(word).links.length;
+}
+const lexicalAfter=countLexicalHeads();
+export function lexicalExpansionCoverage(){return {editorial:{...lexicalEditorial},nominal:{...nominalEditorial},editorialAfter:{...lexicalEditorialAfter},promoted:{...lexicalPromoted},before:{...lexicalBefore},after:{...lexicalAfter}};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
