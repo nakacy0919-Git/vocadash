@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:333,links:1577});
+ assert.deepEqual(universeCoverage(),{heads:726,links:2761});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -50,8 +50,17 @@ test('bulk catalog is valid and connects cross-level authored heads',()=>{
    seen.add(key);if(keys.has(key))cross++;
   }
  }
- assert.ok(cross>=100);
+ assert.ok(cross>=200);
  assert.ok(getRelations(lookupUniverse('borrow')).some(x=>x.word==='lend'&&x.note));
  assert.ok(usageFor('call off','put off').example);
  assert.ok(getRelations({word:'library'}).some(x=>x.word==='bookstore'&&x.reverse));
+});
+
+test('master maps link verbs, adjectives, nouns and phrasal verbs',()=>{
+ for(const w of ['recommence','galvanize','scrutinize','salubrious','empirical','neonate','dearth','phase out','grapple with']){
+  const entry=lookupUniverse(w);assert.ok(entry&&entry.relatedWords.length>=3);
+ }
+ assert.ok(getRelations(lookupUniverse('peruse')).some(x=>x.word==='pore over'&&x.note));
+ assert.ok(getRelations(lookupUniverse('reimburse')).some(x=>x.word==='reimbursement'));
+ assert.ok(getRelations(lookupUniverse('phase out')).some(x=>x.word==='abolish'&&x.example));
 });
