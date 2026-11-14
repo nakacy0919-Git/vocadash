@@ -1,0 +1,2505 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "batch-10",
+  "topic": "Academic adjectives, social and research descriptions",
+  "createdOn": "2026-11-14",
+  "sourceKind": "original-draft",
+  "records": [
+    {
+      "senseId": "VD10-00001",
+      "wordId": "VD-02335",
+      "headword": "accurate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "正確な・誤りのない",
+      "definitionEn": "correct and free from mistakes",
+      "synonyms": "precise",
+      "cefrHeadword": "B1",
+      "imageHint": "正確な測定値の確認",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00001-e01",
+          "en": "The student gave an accurate description of the picture.",
+          "ja": "その生徒は写真を正確に描写しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00001-e02",
+          "en": "We need accurate data before making a decision.",
+          "ja": "決定する前に正確なデータが必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00002",
+      "wordId": "VD-04471",
+      "headword": "adequate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "十分な・必要な水準の",
+      "definitionEn": "enough for a particular purpose",
+      "synonyms": "sufficient",
+      "cefrHeadword": "B2",
+      "imageHint": "広さを確認する教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00002-e01",
+          "en": "The classroom has adequate space for the group.",
+          "ja": "その教室にはグループに十分な空間があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00002-e02",
+          "en": "We need adequate time to prepare the presentation.",
+          "ja": "発表の準備には十分な時間が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00003",
+      "wordId": "VD-04485",
+      "headword": "adverse",
+      "partOfSpeech": "adjective",
+      "meaningJa": "不利な・悪い影響を及ぼす",
+      "definitionEn": "having a harmful or unfavorable effect",
+      "synonyms": "unfavorable",
+      "cefrHeadword": "B2",
+      "imageHint": "強風で遅れる飛行機",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00003-e01",
+          "en": "Adverse weather conditions delayed the flight.",
+          "ja": "悪天候で飛行機が遅れました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00003-e02",
+          "en": "The report describes adverse effects of air pollution.",
+          "ja": "報告書は大気汚染の悪影響について述べています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00004",
+      "wordId": "VD-02370",
+      "headword": "agricultural",
+      "partOfSpeech": "adjective",
+      "meaningJa": "農業の・農業に関する",
+      "definitionEn": "connected with farming and food production",
+      "synonyms": "farming-related",
+      "cefrHeadword": "B1",
+      "imageHint": "農業研究センター",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00004-e01",
+          "en": "The town depends on agricultural products.",
+          "ja": "その町は農産物に依存しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00004-e02",
+          "en": "The school visited an agricultural research center.",
+          "ja": "学校は農業研究センターを訪問しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00005",
+      "wordId": "VD-02384",
+      "headword": "alternative",
+      "partOfSpeech": "adjective",
+      "meaningJa": "代わりとなる・別の",
+      "definitionEn": "available instead of the usual choice",
+      "synonyms": "different",
+      "cefrHeadword": "B1",
+      "imageHint": "迂回路を示す地図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00005-e01",
+          "en": "We need an alternative route during the roadworks.",
+          "ja": "道路工事中は別の経路が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00005-e02",
+          "en": "Solar power is an alternative energy source.",
+          "ja": "太陽光は代替エネルギー源です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00006",
+      "wordId": "VD-02384",
+      "headword": "alternative",
+      "partOfSpeech": "noun",
+      "meaningJa": "代替案・選択肢",
+      "definitionEn": "another possible choice or action",
+      "synonyms": "option",
+      "cefrHeadword": "B1",
+      "imageHint": "三つの選択肢のカード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00006-e01",
+          "en": "The train is crowded, so let's consider an alternative.",
+          "ja": "電車が混んでいるので別の選択肢を考えましょう。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00006-e02",
+          "en": "The committee discussed three alternatives to the plan.",
+          "ja": "委員会はその計画の代替案を3つ検討しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00007",
+      "wordId": "VD-04515",
+      "headword": "ambiguous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "曖昧な・複数の意味に取れる",
+      "definitionEn": "having more than one possible meaning",
+      "synonyms": "unclear",
+      "cefrHeadword": "B2",
+      "imageHint": "曖昧な案内表示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00007-e01",
+          "en": "The instructions were ambiguous, so students asked questions.",
+          "ja": "指示が曖昧だったため、生徒たちは質問しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00007-e02",
+          "en": "His answer was too ambiguous to be useful.",
+          "ja": "彼の答えは曖昧すぎて役に立ちませんでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00008",
+      "wordId": "VD-02413",
+      "headword": "apparent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "明らかな・見てわかる",
+      "definitionEn": "easy to notice or understand",
+      "synonyms": "obvious",
+      "cefrHeadword": "B1",
+      "imageHint": "実験結果の差",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00008-e01",
+          "en": "The difference became apparent during the experiment.",
+          "ja": "実験中に違いが明らかになりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00008-e02",
+          "en": "It was apparent that the team needed more time.",
+          "ja": "チームにもっと時間が必要なことは明らかでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00009",
+      "wordId": "VD-01128",
+      "headword": "appropriate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "適切な・ふさわしい",
+      "definitionEn": "suitable for a particular situation",
+      "synonyms": "suitable",
+      "cefrHeadword": "A2",
+      "imageHint": "場面に合う表現を選ぶ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00009-e01",
+          "en": "Choose appropriate words for a formal email.",
+          "ja": "正式なメールには適切な言葉を選んでください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00009-e02",
+          "en": "The teacher selected an appropriate reading level.",
+          "ja": "教師は適切な読解レベルを選びました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00010",
+      "wordId": "VD-01135",
+      "headword": "artificial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "人工の・人工的な",
+      "definitionEn": "made by people instead of occurring naturally",
+      "synonyms": "man-made",
+      "cefrHeadword": "A2",
+      "imageHint": "本物と人工の花",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00010-e01",
+          "en": "The stadium uses artificial grass.",
+          "ja": "その競技場は人工芝を使っています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00010-e02",
+          "en": "The flowers look real, but they are artificial.",
+          "ja": "その花は本物に見えますが造花です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00011",
+      "wordId": "VD-07853",
+      "headword": "autonomous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "自律した・自主的な",
+      "definitionEn": "able to act or make decisions independently",
+      "synonyms": "self-governing",
+      "cefrHeadword": "C2",
+      "imageHint": "自律走行するロボット",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00011-e01",
+          "en": "The robot can operate in autonomous mode.",
+          "ja": "そのロボットは自律モードで動作できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00011-e02",
+          "en": "Students learn to become autonomous learners.",
+          "ja": "生徒たちは自律的に学ぶ人になることを学びます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00012",
+      "wordId": "VD-02461",
+      "headword": "aware",
+      "partOfSpeech": "adjective",
+      "meaningJa": "気づいている・認識している",
+      "definitionEn": "knowing that something exists or is happening",
+      "synonyms": "conscious of",
+      "cefrHeadword": "B1",
+      "imageHint": "食品ロスへの意識",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00012-e01",
+          "en": "Are you aware of the new safety rules?",
+          "ja": "新しい安全規則を知っていますか。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00012-e02",
+          "en": "The campaign made students more aware of food waste.",
+          "ja": "その運動は生徒たちの食品ロスへの意識を高めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00013",
+      "wordId": "VD-04623",
+      "headword": "beneficial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "有益な・役に立つ",
+      "definitionEn": "producing a good result or advantage",
+      "synonyms": "helpful",
+      "cefrHeadword": "B2",
+      "imageHint": "住民に役立つバス路線",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00013-e01",
+          "en": "Regular reading is beneficial for language development.",
+          "ja": "定期的な読書は言語能力の発達に役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00013-e02",
+          "en": "The new bus route is beneficial to local residents.",
+          "ja": "新しいバス路線は地域住民にとって有益です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00014",
+      "wordId": "VD-04792",
+      "headword": "coherent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "筋の通った・一貫した",
+      "definitionEn": "clear and logically connected",
+      "synonyms": "logical",
+      "cefrHeadword": "B2",
+      "imageHint": "順序を並べ直す段落",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00014-e01",
+          "en": "Her speech presented a coherent argument.",
+          "ja": "彼女のスピーチは筋の通った主張を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00014-e02",
+          "en": "The paragraphs need a more coherent order.",
+          "ja": "段落はもっと一貫した順序にする必要があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00015",
+      "wordId": "VD-02682",
+      "headword": "complex",
+      "partOfSpeech": "adjective",
+      "meaningJa": "複雑な",
+      "definitionEn": "made of many connected parts and difficult to understand",
+      "synonyms": "complicated",
+      "cefrHeadword": "B1",
+      "imageHint": "複雑な歯車の組み合わせ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00015-e01",
+          "en": "Climate change is a complex problem.",
+          "ja": "気候変動は複雑な問題です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00015-e02",
+          "en": "The machine has a complex control system.",
+          "ja": "その機械には複雑な制御システムがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00016",
+      "wordId": "VD-02682",
+      "headword": "complex",
+      "partOfSpeech": "noun",
+      "meaningJa": "複合施設・集合体",
+      "definitionEn": "a group of buildings or connected things forming one unit",
+      "synonyms": "group of buildings",
+      "cefrHeadword": "B1",
+      "imageHint": "複数棟からなる複合施設",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00016-e01",
+          "en": "The sports complex includes a pool and gym.",
+          "ja": "その総合スポーツ施設にはプールと体育館があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00016-e02",
+          "en": "A new apartment complex opened near the station.",
+          "ja": "駅の近くに新しい集合住宅が完成しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00017",
+      "wordId": "VD-02710",
+      "headword": "considerable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "かなりの・相当な",
+      "definitionEn": "large or important in amount or degree",
+      "synonyms": "substantial",
+      "cefrHeadword": "B1",
+      "imageHint": "多数の来場者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00017-e01",
+          "en": "The renovation required considerable effort.",
+          "ja": "改修にはかなりの労力が必要でした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00017-e02",
+          "en": "The event attracted considerable public interest.",
+          "ja": "その行事は世間の大きな関心を集めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00018",
+      "wordId": "VD-04855",
+      "headword": "consistent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "一貫した・安定した",
+      "definitionEn": "staying the same in behavior or quality",
+      "synonyms": "steady",
+      "cefrHeadword": "B2",
+      "imageHint": "安定した測定結果",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00018-e01",
+          "en": "Consistent practice helps build confidence.",
+          "ja": "一貫した練習は自信を育てるのに役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00018-e02",
+          "en": "The measurements were consistent across three tests.",
+          "ja": "測定値は3回の試験で一貫していました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00019",
+      "wordId": "VD-04862",
+      "headword": "contemporary",
+      "partOfSpeech": "adjective",
+      "meaningJa": "現代の・同時代の",
+      "definitionEn": "belonging to the present time",
+      "synonyms": "modern",
+      "cefrHeadword": "B2",
+      "imageHint": "現代美術の展示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00019-e01",
+          "en": "The museum features contemporary art.",
+          "ja": "その博物館は現代美術を展示しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00019-e02",
+          "en": "Students discussed contemporary social issues.",
+          "ja": "生徒たちは現代の社会問題について議論しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00020",
+      "wordId": "VD-04871",
+      "headword": "conventional",
+      "partOfSpeech": "adjective",
+      "meaningJa": "従来の・一般的な",
+      "definitionEn": "following methods that are usually accepted",
+      "synonyms": "traditional",
+      "cefrHeadword": "B2",
+      "imageHint": "新旧の列車を比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00020-e01",
+          "en": "The new train is quieter than conventional models.",
+          "ja": "新型列車は従来型より静かです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00020-e02",
+          "en": "The school combined digital tools with conventional teaching.",
+          "ja": "学校はデジタルツールと従来の授業を組み合わせました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00021",
+      "wordId": "VD-04924",
+      "headword": "crucial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "極めて重要な・決定的な",
+      "definitionEn": "extremely important to a successful result",
+      "synonyms": "essential",
+      "cefrHeadword": "B2",
+      "imageHint": "緊急時に情報を伝える",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00021-e01",
+          "en": "Clear communication is crucial during emergencies.",
+          "ja": "緊急時には明確な情報伝達が極めて重要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00021-e02",
+          "en": "The last experiment provided crucial evidence.",
+          "ja": "最後の実験は決定的な証拠を示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00022",
+      "wordId": "VD-04978",
+      "headword": "deliberate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "意図的な・慎重に考えた",
+      "definitionEn": "done on purpose rather than by accident",
+      "synonyms": "intentional",
+      "cefrHeadword": "B2",
+      "imageHint": "選択肢を比較する委員会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00022-e01",
+          "en": "The change was deliberate, not a mistake.",
+          "ja": "その変更は間違いではなく意図的なものでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00022-e02",
+          "en": "The committee made a deliberate choice after discussion.",
+          "ja": "委員会は議論のあと慎重に選択しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00023",
+      "wordId": "VD-02825",
+      "headword": "dependent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "依存している・左右される",
+      "definitionEn": "needing someone or something for support or success",
+      "synonyms": "reliant",
+      "cefrHeadword": "B1",
+      "imageHint": "観光客に依存する地域",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00023-e01",
+          "en": "The village is dependent on tourism.",
+          "ja": "その村は観光業に依存しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00023-e02",
+          "en": "The result is dependent on the amount of sunlight.",
+          "ja": "結果は日光の量に左右されます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00024",
+      "wordId": "VD-04992",
+      "headword": "desirable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "望ましい・好ましい",
+      "definitionEn": "wanted because it is useful or pleasant",
+      "synonyms": "preferred",
+      "cefrHeadword": "B2",
+      "imageHint": "少人数の討論授業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00024-e01",
+          "en": "Small class sizes are desirable for discussion lessons.",
+          "ja": "討論の授業では少人数の学級が望ましいです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00024-e02",
+          "en": "The job requires several desirable skills.",
+          "ja": "その仕事ではいくつかの望ましい技能が求められます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00025",
+      "wordId": "VD-02846",
+      "headword": "devastating",
+      "partOfSpeech": "adjective",
+      "meaningJa": "壊滅的な・非常に大きな被害を与える",
+      "definitionEn": "causing extreme damage or suffering",
+      "synonyms": "destructive",
+      "cefrHeadword": "B1",
+      "imageHint": "洪水後の町の復旧",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00025-e01",
+          "en": "The flood had devastating effects on the town.",
+          "ja": "洪水はその町に壊滅的な被害をもたらしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00025-e02",
+          "en": "The family received devastating news after the storm.",
+          "ja": "家族は嵐のあと非常につらい知らせを受けました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00026",
+      "wordId": "VD-02856",
+      "headword": "digital",
+      "partOfSpeech": "adjective",
+      "meaningJa": "デジタルの",
+      "definitionEn": "using information stored or processed electronically",
+      "synonyms": "electronic",
+      "cefrHeadword": "B1",
+      "imageHint": "電子地図を操作する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00026-e01",
+          "en": "The library offers digital books.",
+          "ja": "図書館では電子書籍を利用できます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00026-e02",
+          "en": "Students made a digital map of local landmarks.",
+          "ja": "生徒たちは地域の名所のデジタル地図を作りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00027",
+      "wordId": "VD-05064",
+      "headword": "domestic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "国内の・家庭内の",
+      "definitionEn": "relating to one's own country or home",
+      "synonyms": "national; household",
+      "cefrHeadword": "B2",
+      "imageHint": "国内線と国際線の案内",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00027-e01",
+          "en": "Domestic flights are usually shorter than international ones.",
+          "ja": "国内線は一般に国際線より短いです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00027-e02",
+          "en": "The report compares domestic energy use across regions.",
+          "ja": "報告書は地域別の家庭内エネルギー使用量を比較しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00028",
+      "wordId": "VD-07110",
+      "headword": "dominant",
+      "partOfSpeech": "adjective",
+      "meaningJa": "支配的な・最も目立つ",
+      "definitionEn": "having more power or influence than others",
+      "synonyms": "leading",
+      "cefrHeadword": "C1",
+      "imageHint": "青色が多い絵画",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00028-e01",
+          "en": "Blue is the dominant color in the painting.",
+          "ja": "その絵では青が最も目立つ色です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00028-e02",
+          "en": "One company holds a dominant position in the market.",
+          "ja": "1社が市場で支配的な地位を占めています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00029",
+      "wordId": "VD-02906",
+      "headword": "dramatic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "劇的な・非常に大きな",
+      "definitionEn": "large and noticeable in size or effect",
+      "synonyms": "striking",
+      "cefrHeadword": "B1",
+      "imageHint": "待ち時間の大幅減少",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00029-e01",
+          "en": "The new system brought a dramatic reduction in waiting time.",
+          "ja": "新しいシステムで待ち時間が劇的に減りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00029-e02",
+          "en": "The coast has changed in a dramatic way.",
+          "ja": "海岸の景観は劇的に変化しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00030",
+      "wordId": "VD-05098",
+      "headword": "dynamic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "活気のある・変化し続ける",
+      "definitionEn": "full of energy or changing actively",
+      "synonyms": "energetic",
+      "cefrHeadword": "B2",
+      "imageHint": "活発な起業家の交流会",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00030-e01",
+          "en": "The city has a dynamic start-up community.",
+          "ja": "その都市には活気のある新興企業のコミュニティがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00030-e02",
+          "en": "Language is dynamic and changes over time.",
+          "ja": "言語は変化し続けるものです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00031",
+      "wordId": "VD-02937",
+      "headword": "efficient",
+      "partOfSpeech": "adjective",
+      "meaningJa": "効率的な",
+      "definitionEn": "working well without wasting time or energy",
+      "synonyms": "effective with little waste",
+      "cefrHeadword": "B1",
+      "imageHint": "効率のよい照明比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00031-e01",
+          "en": "The new lamp is more energy-efficient.",
+          "ja": "新しい照明はエネルギー効率がより高いです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00031-e02",
+          "en": "She found an efficient way to organize her notes.",
+          "ja": "彼女はノートを整理する効率的な方法を見つけました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00032",
+      "wordId": "VD-01431",
+      "headword": "elderly",
+      "partOfSpeech": "adjective",
+      "meaningJa": "高齢の",
+      "definitionEn": "older in age, especially late in life",
+      "synonyms": "older",
+      "cefrHeadword": "A2",
+      "imageHint": "スマホを教わる高齢者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00032-e01",
+          "en": "The center provides meals for elderly residents.",
+          "ja": "その施設は高齢の住民に食事を提供しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00032-e02",
+          "en": "Volunteers helped elderly people use smartphones.",
+          "ja": "ボランティアは高齢者がスマートフォンを使うのを助けました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00033",
+      "wordId": "VD-02993",
+      "headword": "essential",
+      "partOfSpeech": "adjective",
+      "meaningJa": "不可欠な・必要不可欠な",
+      "definitionEn": "completely necessary for something",
+      "synonyms": "necessary",
+      "cefrHeadword": "B1",
+      "imageHint": "飲み水の確保",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00033-e01",
+          "en": "Clean water is essential for health.",
+          "ja": "清潔な水は健康に不可欠です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00033-e02",
+          "en": "Regular feedback is essential to good teaching.",
+          "ja": "定期的なフィードバックはよい指導に欠かせません。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00034",
+      "wordId": "VD-07145",
+      "headword": "ethical",
+      "partOfSpeech": "adjective",
+      "meaningJa": "倫理的な・道徳的な",
+      "definitionEn": "following principles about what is right or fair",
+      "synonyms": "moral",
+      "cefrHeadword": "C1",
+      "imageHint": "AIの倫理を議論する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00034-e01",
+          "en": "The researchers followed ethical rules when collecting data.",
+          "ja": "研究者たちはデータ収集で倫理規則に従いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00034-e02",
+          "en": "Students discussed the ethical use of artificial intelligence.",
+          "ja": "生徒たちは人工知能の倫理的利用について議論しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00035",
+      "wordId": "VD-05166",
+      "headword": "ethnic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "民族の・民族的な",
+      "definitionEn": "related to a group sharing a cultural or historical background",
+      "synonyms": "cultural (related)",
+      "cefrHeadword": "B2",
+      "imageHint": "多様な文化を紹介する行事",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00035-e01",
+          "en": "The museum introduced several ethnic traditions.",
+          "ja": "博物館はいくつかの民族的伝統を紹介しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00035-e02",
+          "en": "People from different ethnic backgrounds joined the event.",
+          "ja": "さまざまな民族的背景を持つ人々が行事に参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00036",
+      "wordId": "VD-05184",
+      "headword": "exceptional",
+      "partOfSpeech": "adjective",
+      "meaningJa": "並外れた・非常に優れた",
+      "definitionEn": "much better or more unusual than normal",
+      "synonyms": "outstanding",
+      "cefrHeadword": "B2",
+      "imageHint": "優れた音楽演奏",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00036-e01",
+          "en": "The student showed exceptional skill in music.",
+          "ja": "その生徒は音楽で並外れた能力を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00036-e02",
+          "en": "The team made exceptional progress in a short time.",
+          "ja": "チームは短期間で非常に大きな進歩を遂げました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00037",
+      "wordId": "VD-05186",
+      "headword": "excessive",
+      "partOfSpeech": "adjective",
+      "meaningJa": "過度の・必要以上の",
+      "definitionEn": "greater than what is reasonable or necessary",
+      "synonyms": "too much",
+      "cefrHeadword": "B2",
+      "imageHint": "長時間の画面使用",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00037-e01",
+          "en": "Excessive screen time can reduce sleep.",
+          "ja": "画面を見る時間が過度に長いと睡眠が減ることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00037-e02",
+          "en": "The building used an excessive amount of electricity.",
+          "ja": "その建物は必要以上に多くの電力を使いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00038",
+      "wordId": "VD-03010",
+      "headword": "exclusive",
+      "partOfSpeech": "adjective",
+      "meaningJa": "限定の・専用の",
+      "definitionEn": "available only to a particular group or for one purpose",
+      "synonyms": "restricted",
+      "cefrHeadword": "B1",
+      "imageHint": "会員専用の学習室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00038-e01",
+          "en": "The library has an exclusive study room for members.",
+          "ja": "その図書館には会員専用の学習室があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00038-e02",
+          "en": "The interview includes exclusive information about the project.",
+          "ja": "そのインタビューには計画についての独占的な情報が含まれています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00039",
+      "wordId": "VD-05216",
+      "headword": "external",
+      "partOfSpeech": "adjective",
+      "meaningJa": "外部の・外側の",
+      "definitionEn": "coming from outside an organization or object",
+      "synonyms": "outside",
+      "cefrHeadword": "B2",
+      "imageHint": "外部講師とモニター",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00039-e01",
+          "en": "We invited an external expert to the class.",
+          "ja": "私たちは授業に外部の専門家を招きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00039-e02",
+          "en": "The computer connects to an external monitor.",
+          "ja": "そのコンピューターは外付けモニターに接続します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00040",
+      "wordId": "VD-03062",
+      "headword": "financial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "財政の・金銭的な",
+      "definitionEn": "related to money and how it is managed",
+      "synonyms": "monetary",
+      "cefrHeadword": "B1",
+      "imageHint": "奨学金の案内",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00040-e01",
+          "en": "The school offers financial aid to some students.",
+          "ja": "学校は一部の生徒に経済的支援を提供しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00040-e02",
+          "en": "The report explains the financial cost of the project.",
+          "ja": "報告書は計画の金銭的費用を説明しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00041",
+      "wordId": "VD-05273",
+      "headword": "flexible",
+      "partOfSpeech": "adjective",
+      "meaningJa": "柔軟な・融通が利く",
+      "definitionEn": "able to change easily to suit different needs",
+      "synonyms": "adaptable",
+      "cefrHeadword": "B2",
+      "imageHint": "曲がる柔軟な素材",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00041-e01",
+          "en": "A flexible schedule helps students balance activities.",
+          "ja": "柔軟な予定は生徒の活動の両立に役立ちます。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00041-e02",
+          "en": "The material is flexible enough to bend without breaking.",
+          "ja": "その素材は折れずに曲げられるほど柔軟です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00042",
+      "wordId": "VD-05308",
+      "headword": "fundamental",
+      "partOfSpeech": "adjective",
+      "meaningJa": "基本的な・根本的な",
+      "definitionEn": "forming the main basis of something",
+      "synonyms": "basic",
+      "cefrHeadword": "B2",
+      "imageHint": "チームワークの土台",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00042-e01",
+          "en": "Respect is a fundamental part of teamwork.",
+          "ja": "尊重はチームワークの基本的な要素です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00042-e02",
+          "en": "The research revealed a fundamental problem with the design.",
+          "ja": "研究はその設計の根本的な問題を明らかにしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00043",
+      "wordId": "VD-05331",
+      "headword": "genuine",
+      "partOfSpeech": "adjective",
+      "meaningJa": "本物の・心からの",
+      "definitionEn": "real or sincere rather than false",
+      "synonyms": "authentic",
+      "cefrHeadword": "B2",
+      "imageHint": "本物の絵画を調べる",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00043-e01",
+          "en": "The museum confirmed that the painting was genuine.",
+          "ja": "博物館はその絵が本物であると確認しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00043-e02",
+          "en": "She showed genuine interest in the visitor's culture.",
+          "ja": "彼女は訪問者の文化に心から関心を示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00044",
+      "wordId": "VD-05357",
+      "headword": "gradual",
+      "partOfSpeech": "adjective",
+      "meaningJa": "徐々の・段階的な",
+      "definitionEn": "happening slowly over a period of time",
+      "synonyms": "slow",
+      "cefrHeadword": "B2",
+      "imageHint": "なだらかに上がるグラフ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00044-e01",
+          "en": "The patient made a gradual recovery.",
+          "ja": "患者は徐々に回復しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00044-e02",
+          "en": "We observed a gradual increase in temperature.",
+          "ja": "私たちは温度が徐々に上昇するのを観察しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00045",
+      "wordId": "VD-05396",
+      "headword": "hazardous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "危険な・有害な",
+      "definitionEn": "likely to cause harm or danger",
+      "synonyms": "dangerous",
+      "cefrHeadword": "B2",
+      "imageHint": "凍結した危険な道路",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00045-e01",
+          "en": "Workers wore gloves when handling hazardous chemicals.",
+          "ja": "作業員たちは危険な化学物質を扱う際に手袋を着用しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00045-e02",
+          "en": "The road becomes hazardous when it freezes.",
+          "ja": "その道路は凍結すると危険になります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00046",
+      "wordId": "VD-00473",
+      "headword": "ideal",
+      "partOfSpeech": "adjective",
+      "meaningJa": "理想的な・最適な",
+      "definitionEn": "the best possible for a particular purpose",
+      "synonyms": "perfect for",
+      "cefrHeadword": "A1",
+      "imageHint": "討論に適した教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00046-e01",
+          "en": "This room is ideal for small discussions.",
+          "ja": "この部屋は少人数の討論に最適です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00046-e02",
+          "en": "The weather was ideal for outdoor activities.",
+          "ja": "天候は屋外活動に理想的でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00047",
+      "wordId": "VD-05451",
+      "headword": "identical",
+      "partOfSpeech": "adjective",
+      "meaningJa": "まったく同じの",
+      "definitionEn": "exactly the same in every detail",
+      "synonyms": "the same",
+      "cefrHeadword": "B2",
+      "imageHint": "同じ二つのジャケット",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00047-e01",
+          "en": "The twins wore identical jackets.",
+          "ja": "双子はまったく同じ上着を着ていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00047-e02",
+          "en": "The two files have identical contents.",
+          "ja": "その2つのファイルの内容は同一です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00048",
+      "wordId": "VD-03282",
+      "headword": "immediate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "すぐの・即座の",
+      "definitionEn": "happening without delay",
+      "synonyms": "instant",
+      "cefrHeadword": "B1",
+      "imageHint": "回答直後のフィードバック",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00048-e01",
+          "en": "The student needed immediate assistance.",
+          "ja": "その生徒はすぐに助けを必要としていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00048-e02",
+          "en": "The app gives immediate feedback after each answer.",
+          "ja": "そのアプリは各回答のあとすぐにフィードバックを出します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00049",
+      "wordId": "VD-07258",
+      "headword": "immense",
+      "partOfSpeech": "adjective",
+      "meaningJa": "非常に大きな・莫大な",
+      "definitionEn": "extremely large in amount or size",
+      "synonyms": "enormous",
+      "cefrHeadword": "C1",
+      "imageHint": "広大な砂漠の景色",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00049-e01",
+          "en": "The desert covers an immense area.",
+          "ja": "その砂漠は非常に広い範囲に広がっています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00049-e02",
+          "en": "The volunteers made an immense effort to rebuild the town.",
+          "ja": "ボランティアたちは町の再建に非常に大きな努力をしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00050",
+      "wordId": "VD-05465",
+      "headword": "immigrant",
+      "partOfSpeech": "noun",
+      "meaningJa": "移住者・移民",
+      "definitionEn": "a person who comes to live in a country from another one",
+      "synonyms": "newcomer from abroad",
+      "cefrHeadword": "B2",
+      "imageHint": "多文化の語学講座",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00050-e01",
+          "en": "The city provides language classes for immigrants.",
+          "ja": "その市は移住者向けの語学講座を提供しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00050-e02",
+          "en": "Her grandparents were immigrants from another country.",
+          "ja": "彼女の祖父母は他国から移住した人々でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00051",
+      "wordId": "VD-07277",
+      "headword": "inclusive",
+      "partOfSpeech": "adjective",
+      "meaningJa": "包摂的な・誰も参加できる",
+      "definitionEn": "welcoming and allowing people with different needs to participate",
+      "synonyms": "welcoming",
+      "cefrHeadword": "C1",
+      "imageHint": "多様な生徒の共同作業",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00051-e01",
+          "en": "The school aims to create an inclusive classroom.",
+          "ja": "学校は誰もが参加できる教室を目指しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00051-e02",
+          "en": "An inclusive design considers people with disabilities.",
+          "ja": "包摂的な設計は障害のある人々にも配慮します。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00052",
+      "wordId": "VD-03300",
+      "headword": "independent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "独立した・自立した",
+      "definitionEn": "not controlled by others or needing help",
+      "synonyms": "self-reliant",
+      "cefrHeadword": "B1",
+      "imageHint": "自習する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00052-e01",
+          "en": "The students became more independent learners.",
+          "ja": "生徒たちはより自立した学習者になりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00052-e02",
+          "en": "The newspaper is independent of the government.",
+          "ja": "その新聞社は政府から独立しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00053",
+      "wordId": "VD-03307",
+      "headword": "inevitable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "避けられない・必然の",
+      "definitionEn": "certain to happen and impossible to prevent",
+      "synonyms": "unavoidable",
+      "cefrHeadword": "B1",
+      "imageHint": "工事で避けられない遅延",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00053-e01",
+          "en": "Some delays are inevitable during major repairs.",
+          "ja": "大規模な修理中はいくらかの遅れは避けられません。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00053-e02",
+          "en": "Change is inevitable as technology develops.",
+          "ja": "技術が発展するにつれて変化は避けられません。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00054",
+      "wordId": "VD-03315",
+      "headword": "initial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "最初の・初期の",
+      "definitionEn": "happening at the beginning of a process",
+      "synonyms": "first",
+      "cefrHeadword": "B1",
+      "imageHint": "初期案と改訂案の比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00054-e01",
+          "en": "Our initial plan was too expensive.",
+          "ja": "私たちの最初の計画は費用がかかりすぎました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00054-e02",
+          "en": "The initial results looked promising.",
+          "ja": "初期の結果は有望に見えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00055",
+      "wordId": "VD-07307",
+      "headword": "integral",
+      "partOfSpeech": "adjective",
+      "meaningJa": "不可欠な・一体をなす",
+      "definitionEn": "necessary as part of a larger whole",
+      "synonyms": "essential",
+      "cefrHeadword": "C1",
+      "imageHint": "協力して一つの計画を作る",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00055-e01",
+          "en": "Listening is an integral part of language learning.",
+          "ja": "聞くことは言語学習の不可欠な一部です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00055-e02",
+          "en": "Local residents were integral to the project's success.",
+          "ja": "地域住民は計画の成功に不可欠でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00056",
+      "wordId": "VD-05552",
+      "headword": "intellectual",
+      "partOfSpeech": "adjective",
+      "meaningJa": "知的な・知性に関する",
+      "definitionEn": "related to thinking, learning, and ideas",
+      "synonyms": "mental (contextual)",
+      "cefrHeadword": "B2",
+      "imageHint": "本を読んで討論する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00056-e01",
+          "en": "Reading difficult books can be an intellectual challenge.",
+          "ja": "難しい本を読むことは知的な挑戦になります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00056-e02",
+          "en": "The debate encouraged intellectual curiosity.",
+          "ja": "その討論は知的好奇心を刺激しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00057",
+      "wordId": "VD-03339",
+      "headword": "intense",
+      "partOfSpeech": "adjective",
+      "meaningJa": "激しい・強烈な",
+      "definitionEn": "very strong in degree or feeling",
+      "synonyms": "strong",
+      "cefrHeadword": "B1",
+      "imageHint": "激しい雨が降る街",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00057-e01",
+          "en": "The city experienced intense rainfall overnight.",
+          "ja": "その都市は夜間に激しい雨に見舞われました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00057-e02",
+          "en": "She felt intense pressure before the final exam.",
+          "ja": "彼女は最終試験の前に強いプレッシャーを感じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00058",
+      "wordId": "VD-03347",
+      "headword": "internal",
+      "partOfSpeech": "adjective",
+      "meaningJa": "内部の・組織内の",
+      "definitionEn": "located or happening inside something",
+      "synonyms": "inside",
+      "cefrHeadword": "B1",
+      "imageHint": "機器の内蔵バッテリー",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00058-e01",
+          "en": "The device has an internal battery.",
+          "ja": "その装置には内蔵電池があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00058-e02",
+          "en": "The company conducted an internal review.",
+          "ja": "会社は内部調査を実施しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00059",
+      "wordId": "VD-01647",
+      "headword": "international",
+      "partOfSpeech": "adjective",
+      "meaningJa": "国際的な・国同士の",
+      "definitionEn": "involving more than one country",
+      "synonyms": "global (contextual)",
+      "cefrHeadword": "A2",
+      "imageHint": "世界の学校をつなぐ会議",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00059-e01",
+          "en": "The class joined an international video meeting.",
+          "ja": "クラスは国際的なビデオ会議に参加しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00059-e02",
+          "en": "International trade connects many communities.",
+          "ja": "国際貿易は多くの地域社会を結びつけています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00060",
+      "wordId": "VD-05646",
+      "headword": "legitimate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "正当な・合法的な",
+      "definitionEn": "reasonable or allowed by law and rules",
+      "synonyms": "valid",
+      "cefrHeadword": "B2",
+      "imageHint": "プライバシーに関する相談",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00060-e01",
+          "en": "Students raised legitimate concerns about privacy.",
+          "ja": "生徒たちはプライバシーについて正当な懸念を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00060-e02",
+          "en": "The company operates as a legitimate business.",
+          "ja": "その会社は合法的な事業を営んでいます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00061",
+      "wordId": "VD-01705",
+      "headword": "logical",
+      "partOfSpeech": "adjective",
+      "meaningJa": "論理的な・筋の通った",
+      "definitionEn": "following a clear and reasonable order of ideas",
+      "synonyms": "rational",
+      "cefrHeadword": "A2",
+      "imageHint": "筋道を示すフローチャート",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00061-e01",
+          "en": "The student presented a logical explanation.",
+          "ja": "その生徒は論理的な説明をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00061-e02",
+          "en": "Put the paragraphs in a logical order.",
+          "ja": "段落を論理的な順番に並べてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00062",
+      "wordId": "VD-01719",
+      "headword": "major",
+      "partOfSpeech": "adjective",
+      "meaningJa": "主要な・大きな",
+      "definitionEn": "more important or serious than others",
+      "synonyms": "important",
+      "cefrHeadword": "A2",
+      "imageHint": "大きく変わった時間割",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00062-e01",
+          "en": "Air pollution is a major concern in the city.",
+          "ja": "大気汚染はその都市の大きな懸念事項です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00062-e02",
+          "en": "The school made major changes to its timetable.",
+          "ja": "学校は時間割に大きな変更を加えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00063",
+      "wordId": "VD-07352",
+      "headword": "marginal",
+      "partOfSpeech": "adjective",
+      "meaningJa": "わずかな・重要性の小さい",
+      "definitionEn": "very small or not central to an issue",
+      "synonyms": "minor",
+      "cefrHeadword": "C1",
+      "imageHint": "ほとんど同じ二つの数値",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00063-e01",
+          "en": "The new design produced only a marginal improvement.",
+          "ja": "新しいデザインによる改善はごくわずかでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00063-e02",
+          "en": "The difference between the scores was marginal.",
+          "ja": "得点の差はごくわずかでした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00064",
+      "wordId": "VD-03490",
+      "headword": "mental",
+      "partOfSpeech": "adjective",
+      "meaningJa": "心の・精神の",
+      "definitionEn": "related to the mind or thinking",
+      "synonyms": "psychological (contextual)",
+      "cefrHeadword": "B1",
+      "imageHint": "パズルに取り組む生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00064-e01",
+          "en": "Exercise can support mental well-being.",
+          "ja": "運動は心の健康を支えることがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00064-e02",
+          "en": "The puzzle requires mental effort.",
+          "ja": "そのパズルには頭を使う努力が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00065",
+      "wordId": "VD-03548",
+      "headword": "mutual",
+      "partOfSpeech": "adjective",
+      "meaningJa": "相互の・お互いの",
+      "definitionEn": "shared by two or more people or groups",
+      "synonyms": "shared",
+      "cefrHeadword": "B1",
+      "imageHint": "学校間の握手",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00065-e01",
+          "en": "The schools developed mutual trust through exchanges.",
+          "ja": "学校同士は交流を通して相互の信頼を築きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00065-e02",
+          "en": "The agreement offers mutual benefits.",
+          "ja": "その協定は双方に利益をもたらします。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00066",
+      "wordId": "VD-03571",
+      "headword": "neutral",
+      "partOfSpeech": "adjective",
+      "meaningJa": "中立の・どちらにも偏らない",
+      "definitionEn": "not supporting either side in a disagreement",
+      "synonyms": "impartial",
+      "cefrHeadword": "B1",
+      "imageHint": "中立な討論司会者",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00066-e01",
+          "en": "The moderator remained neutral during the debate.",
+          "ja": "司会者は討論中、中立を保ちました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00066-e02",
+          "en": "We asked a neutral expert to review the proposal.",
+          "ja": "私たちは中立の専門家に提案の審査を依頼しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00067",
+      "wordId": "VD-03612",
+      "headword": "obvious",
+      "partOfSpeech": "adjective",
+      "meaningJa": "明白な・すぐわかる",
+      "definitionEn": "easy to see or understand",
+      "synonyms": "clear",
+      "cefrHeadword": "B1",
+      "imageHint": "道路をふさぐ障害物",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00067-e01",
+          "en": "It was obvious that the road was blocked.",
+          "ja": "道路がふさがれているのは明らかでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00067-e02",
+          "en": "The chart shows an obvious increase in temperature.",
+          "ja": "そのグラフは気温の明白な上昇を示しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00068",
+      "wordId": "VD-05902",
+      "headword": "overall",
+      "partOfSpeech": "adjective",
+      "meaningJa": "全体的な・総合的な",
+      "definitionEn": "considering all parts together",
+      "synonyms": "general",
+      "cefrHeadword": "B2",
+      "imageHint": "発表の総合評価表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00068-e01",
+          "en": "The overall result was positive.",
+          "ja": "全体的な結果はよいものでした。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00068-e02",
+          "en": "We evaluated the overall quality of the presentations.",
+          "ja": "私たちは発表の総合的な質を評価しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00069",
+      "wordId": "VD-03700",
+      "headword": "permanent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "永久の・長期間続く",
+      "definitionEn": "lasting or intended to last for a very long time",
+      "synonyms": "lasting",
+      "cefrHeadword": "B1",
+      "imageHint": "川に架かる恒久橋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00069-e01",
+          "en": "The museum opened a permanent exhibition.",
+          "ja": "博物館は常設展示を開きました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00069-e02",
+          "en": "They built a permanent bridge across the river.",
+          "ja": "彼らは川に恒久的な橋を建設しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00070",
+      "wordId": "VD-03756",
+      "headword": "practical",
+      "partOfSpeech": "adjective",
+      "meaningJa": "実用的な・実際に役立つ",
+      "definitionEn": "useful in real situations rather than only in theory",
+      "synonyms": "useful",
+      "cefrHeadword": "B1",
+      "imageHint": "応急手当の実技",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00070-e01",
+          "en": "The workshop taught practical first-aid skills.",
+          "ja": "その講習会では実用的な応急手当の技能を教えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00070-e02",
+          "en": "She offered practical advice for new teachers.",
+          "ja": "彼女は新任教師に実用的な助言をしました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00071",
+      "wordId": "VD-06069",
+      "headword": "preliminary",
+      "partOfSpeech": "adjective",
+      "meaningJa": "予備的な・事前の",
+      "definitionEn": "done before a more detailed activity or final decision",
+      "synonyms": "initial",
+      "cefrHeadword": "B2",
+      "imageHint": "予備調査の結果表",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00071-e01",
+          "en": "The team conducted a preliminary survey.",
+          "ja": "チームは予備調査を実施しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00071-e02",
+          "en": "Preliminary results suggest a small improvement.",
+          "ja": "予備的な結果はわずかな改善を示唆しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00072",
+      "wordId": "VD-06087",
+      "headword": "prior",
+      "partOfSpeech": "adjective",
+      "meaningJa": "以前の・事前の",
+      "definitionEn": "happening before a particular time or event",
+      "synonyms": "previous",
+      "cefrHeadword": "B2",
+      "imageHint": "事前許可の申請用紙",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00072-e01",
+          "en": "Prior experience is not required for this course.",
+          "ja": "この講座に事前の経験は必要ありません。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00072-e02",
+          "en": "Please obtain prior permission before recording.",
+          "ja": "録画する前に事前の許可を得てください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00073",
+      "wordId": "VD-07473",
+      "headword": "profound",
+      "partOfSpeech": "adjective",
+      "meaningJa": "深い・重大な",
+      "definitionEn": "very great in effect or meaning",
+      "synonyms": "deep",
+      "cefrHeadword": "C1",
+      "imageHint": "世界観を変える旅行",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00073-e01",
+          "en": "The trip had a profound effect on her worldview.",
+          "ja": "その旅行は彼女の世界観に深い影響を与えました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00073-e02",
+          "en": "The book raises profound questions about justice.",
+          "ja": "その本は正義について深い問いを投げかけています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00074",
+      "wordId": "VD-03816",
+      "headword": "psychological",
+      "partOfSpeech": "adjective",
+      "meaningJa": "心理的な・精神の",
+      "definitionEn": "related to the mind and human behavior",
+      "synonyms": "mental",
+      "cefrHeadword": "B1",
+      "imageHint": "安心して話す教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00074-e01",
+          "en": "The team studied psychological responses to stress.",
+          "ja": "チームはストレスへの心理的反応を研究しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00074-e02",
+          "en": "A supportive classroom creates psychological safety.",
+          "ja": "支え合う教室は心理的な安心感を生みます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00075",
+      "wordId": "VD-08427",
+      "headword": "qualitative",
+      "partOfSpeech": "adjective",
+      "meaningJa": "質的な・数値以外の特徴を扱う",
+      "definitionEn": "describing qualities and meanings rather than numerical amounts",
+      "synonyms": "descriptive",
+      "cefrHeadword": "C2",
+      "imageHint": "インタビューの記録",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00075-e01",
+          "en": "The researchers collected qualitative interview data.",
+          "ja": "研究者たちはインタビューによる質的データを集めました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00075-e02",
+          "en": "Qualitative feedback helped explain the test scores.",
+          "ja": "質的なフィードバックはテスト得点を説明するのに役立ちました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00076",
+      "wordId": "VD-03854",
+      "headword": "rational",
+      "partOfSpeech": "adjective",
+      "meaningJa": "合理的な・理性的な",
+      "definitionEn": "based on clear reasons rather than emotion alone",
+      "synonyms": "logical",
+      "cefrHeadword": "B1",
+      "imageHint": "証拠と理由を比較する",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00076-e01",
+          "en": "We tried to make a rational decision using evidence.",
+          "ja": "私たちは証拠を使って合理的な決定をしようとしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00076-e02",
+          "en": "The report provides a rational explanation of the costs.",
+          "ja": "報告書は費用について合理的に説明しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00077",
+      "wordId": "VD-03897",
+      "headword": "reliable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "信頼できる・安定した",
+      "definitionEn": "able to be trusted to work well or give correct information",
+      "synonyms": "dependable",
+      "cefrHeadword": "B1",
+      "imageHint": "時間通りに来るバス",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00077-e01",
+          "en": "Check whether the website is a reliable source.",
+          "ja": "そのウェブサイトが信頼できる情報源か確認してください。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00077-e02",
+          "en": "The new bus service is more reliable than before.",
+          "ja": "新しいバスサービスは以前より安定しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00078",
+      "wordId": "VD-07542",
+      "headword": "resilient",
+      "partOfSpeech": "adjective",
+      "meaningJa": "回復力のある・困難に強い",
+      "definitionEn": "able to recover quickly after difficulty or damage",
+      "synonyms": "able to recover",
+      "cefrHeadword": "C1",
+      "imageHint": "災害後に再建する地域",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00078-e01",
+          "en": "The community remained resilient after the flood.",
+          "ja": "その地域社会は洪水のあとも回復力を示しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00078-e02",
+          "en": "Resilient students learn from setbacks.",
+          "ja": "回復力のある生徒は失敗から学びます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00079",
+      "wordId": "VD-07553",
+      "headword": "robust",
+      "partOfSpeech": "adjective",
+      "meaningJa": "丈夫な・しっかりした",
+      "definitionEn": "strong enough to withstand difficulty or pressure",
+      "synonyms": "strong",
+      "cefrHeadword": "C1",
+      "imageHint": "丈夫な橋の構造",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00079-e01",
+          "en": "The engineers designed a robust bridge.",
+          "ja": "技術者たちは丈夫な橋を設計しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00079-e02",
+          "en": "The study needs a robust method for checking errors.",
+          "ja": "その研究には誤りを確認するしっかりした方法が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00080",
+      "wordId": "VD-06285",
+      "headword": "rural",
+      "partOfSpeech": "adjective",
+      "meaningJa": "農村の・地方の",
+      "definitionEn": "relating to areas outside cities with farmland or small villages",
+      "synonyms": "countryside",
+      "cefrHeadword": "B2",
+      "imageHint": "田園地帯の学校",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00080-e01",
+          "en": "Rural schools may have fewer public transport options.",
+          "ja": "地方の学校には公共交通の選択肢が少ないことがあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00080-e02",
+          "en": "The program supports health services in rural communities.",
+          "ja": "その計画は農村地域の医療サービスを支援しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00081",
+      "wordId": "VD-02052",
+      "headword": "significant",
+      "partOfSpeech": "adjective",
+      "meaningJa": "重要な・意味のある",
+      "definitionEn": "important enough to deserve attention",
+      "synonyms": "important",
+      "cefrHeadword": "A2",
+      "imageHint": "研究グループ間の差",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00081-e01",
+          "en": "The research found a significant difference between the groups.",
+          "ja": "研究ではグループ間に重要な差が見つかりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00081-e02",
+          "en": "This was a significant moment in her career.",
+          "ja": "それは彼女の経歴における重要な瞬間でした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00082",
+      "wordId": "VD-00841",
+      "headword": "social",
+      "partOfSpeech": "adjective",
+      "meaningJa": "社会の・人間関係の",
+      "definitionEn": "related to people living and interacting in groups",
+      "synonyms": "societal",
+      "cefrHeadword": "A1",
+      "imageHint": "人と交流するスポーツ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00082-e01",
+          "en": "The class discussed social challenges in the region.",
+          "ja": "クラスは地域の社会的課題について議論しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00082-e02",
+          "en": "Team sports can develop social skills.",
+          "ja": "チームスポーツは社会的技能を育むことがあります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00083",
+      "wordId": "VD-04109",
+      "headword": "stable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "安定した・変わりにくい",
+      "definitionEn": "not likely to change or fall suddenly",
+      "synonyms": "steady",
+      "cefrHeadword": "B1",
+      "imageHint": "安定した通信状態の表示",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00083-e01",
+          "en": "The patient's temperature remained stable.",
+          "ja": "患者の体温は安定していました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00083-e02",
+          "en": "We need a stable internet connection for the event.",
+          "ja": "行事には安定したインターネット接続が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00084",
+      "wordId": "VD-07642",
+      "headword": "structural",
+      "partOfSpeech": "adjective",
+      "meaningJa": "構造の・構造的な",
+      "definitionEn": "related to how parts of something are arranged or connected",
+      "synonyms": "organizational (contextual)",
+      "cefrHeadword": "C1",
+      "imageHint": "橋の構造点検",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00084-e01",
+          "en": "Engineers checked the bridge for structural damage.",
+          "ja": "技術者たちは橋の構造的な損傷を点検しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00084-e02",
+          "en": "The report identifies structural problems in the education system.",
+          "ja": "報告書は教育制度の構造的な問題を明らかにしています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00085",
+      "wordId": "VD-04153",
+      "headword": "substantial",
+      "partOfSpeech": "adjective",
+      "meaningJa": "相当な・かなり大きな",
+      "definitionEn": "large in amount or importance",
+      "synonyms": "considerable",
+      "cefrHeadword": "B1",
+      "imageHint": "大規模な募金",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00085-e01",
+          "en": "The school received substantial support from volunteers.",
+          "ja": "学校はボランティアから相当な支援を受けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00085-e02",
+          "en": "The project requires a substantial amount of funding.",
+          "ja": "その計画にはかなり多くの資金が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00086",
+      "wordId": "VD-04157",
+      "headword": "sufficient",
+      "partOfSpeech": "adjective",
+      "meaningJa": "十分な",
+      "definitionEn": "as much as is needed for a purpose",
+      "synonyms": "enough",
+      "cefrHeadword": "B1",
+      "imageHint": "十分な時間がある時計",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00086-e01",
+          "en": "We have sufficient time to complete the task.",
+          "ja": "課題を終えるのに十分な時間があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00086-e02",
+          "en": "The evidence is not sufficient to support the claim.",
+          "ja": "証拠はその主張を裏付けるには不十分です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00087",
+      "wordId": "VD-06542",
+      "headword": "symbolic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "象徴的な",
+      "definitionEn": "representing an idea rather than only a physical thing",
+      "synonyms": "representative",
+      "cefrHeadword": "B2",
+      "imageHint": "友好の象徴となる木",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00087-e01",
+          "en": "The tree has symbolic meaning for the community.",
+          "ja": "その木には地域社会にとって象徴的な意味があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00087-e02",
+          "en": "The two leaders made a symbolic gesture of friendship.",
+          "ja": "2人の指導者は友情を象徴する行動を示しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00088",
+      "wordId": "VD-02210",
+      "headword": "traditional",
+      "partOfSpeech": "adjective",
+      "meaningJa": "伝統的な",
+      "definitionEn": "following customs or methods passed down through generations",
+      "synonyms": "customary",
+      "cefrHeadword": "A2",
+      "imageHint": "地域の伝統舞踊",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00088-e01",
+          "en": "The family prepared a traditional meal for the festival.",
+          "ja": "その家族は祭りのため伝統料理を用意しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00088-e02",
+          "en": "Students learned a traditional dance from local residents.",
+          "ja": "生徒たちは地域住民から伝統舞踊を習いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00089",
+      "wordId": "VD-06672",
+      "headword": "ultimate",
+      "partOfSpeech": "adjective",
+      "meaningJa": "最終的な・究極の",
+      "definitionEn": "being the final or most important goal or result",
+      "synonyms": "final",
+      "cefrHeadword": "B2",
+      "imageHint": "最終目標へのロードマップ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00089-e01",
+          "en": "Our ultimate goal is to make the service accessible to everyone.",
+          "ja": "私たちの最終目標はすべての人がサービスを利用できるようにすることです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00089-e02",
+          "en": "The ultimate decision belongs to the school board.",
+          "ja": "最終決定は教育委員会が行います。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00090",
+      "wordId": "VD-04329",
+      "headword": "unique",
+      "partOfSpeech": "adjective",
+      "meaningJa": "独特の・唯一の",
+      "definitionEn": "different from every other person or thing",
+      "synonyms": "one of a kind",
+      "cefrHeadword": "B1",
+      "imageHint": "番号の異なるカード",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00090-e01",
+          "en": "Each culture has unique traditions.",
+          "ja": "それぞれの文化には独自の伝統があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00090-e02",
+          "en": "Every student has a unique identification number.",
+          "ja": "各生徒には固有の識別番号があります。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00091",
+      "wordId": "VD-06713",
+      "headword": "universal",
+      "partOfSpeech": "adjective",
+      "meaningJa": "普遍的な・すべてに共通する",
+      "definitionEn": "applying to everyone or everything in a group",
+      "synonyms": "common to all",
+      "cefrHeadword": "B2",
+      "imageHint": "世界の人々が学ぶ教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00091-e01",
+          "en": "Access to education should be a universal right.",
+          "ja": "教育を受ける機会はすべての人に共通する権利であるべきです。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00091-e02",
+          "en": "Some emotions are considered universal across cultures.",
+          "ja": "一部の感情は文化を超えて共通すると考えられています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00092",
+      "wordId": "VD-06749",
+      "headword": "urban",
+      "partOfSpeech": "adjective",
+      "meaningJa": "都市の・都会の",
+      "definitionEn": "related to cities and towns",
+      "synonyms": "city-related",
+      "cefrHeadword": "B2",
+      "imageHint": "都市の鉄道網",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00092-e01",
+          "en": "Urban areas often have dense public transport networks.",
+          "ja": "都市部には公共交通網が密集していることがよくあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00092-e02",
+          "en": "The project studies urban air pollution.",
+          "ja": "その計画は都市の大気汚染を研究しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00093",
+      "wordId": "VD-04349",
+      "headword": "urgent",
+      "partOfSpeech": "adjective",
+      "meaningJa": "緊急の・急を要する",
+      "definitionEn": "needing action immediately",
+      "synonyms": "pressing",
+      "cefrHeadword": "B1",
+      "imageHint": "緊急修理中の橋",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00093-e01",
+          "en": "The hospital sent an urgent message to staff.",
+          "ja": "病院は職員に緊急の連絡を送りました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00093-e02",
+          "en": "We need urgent repairs before the bridge reopens.",
+          "ja": "橋を再開通する前に緊急の修理が必要です。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00094",
+      "wordId": "VD-04420",
+      "headword": "widespread",
+      "partOfSpeech": "adjective",
+      "meaningJa": "広範囲に広がった・広く普及した",
+      "definitionEn": "existing or happening in many places",
+      "synonyms": "common",
+      "cefrHeadword": "B1",
+      "imageHint": "広範囲の停電地図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00094-e01",
+          "en": "The region experienced widespread power failures.",
+          "ja": "その地域では広範囲に停電が発生しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00094-e02",
+          "en": "The new teaching method gained widespread support.",
+          "ja": "新しい指導法は広く支持されるようになりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00095",
+      "wordId": "VD-07758",
+      "headword": "voluntary",
+      "partOfSpeech": "adjective",
+      "meaningJa": "自発的な・任意の",
+      "definitionEn": "done by choice rather than by force",
+      "synonyms": "optional",
+      "cefrHeadword": "C1",
+      "imageHint": "自主的な清掃活動",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00095-e01",
+          "en": "Participation in the survey is voluntary.",
+          "ja": "その調査への参加は任意です。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00095-e02",
+          "en": "The students organized a voluntary cleanup activity.",
+          "ja": "生徒たちは自発的な清掃活動を企画しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VD10-00096",
+      "wordId": "VD-02589",
+      "headword": "capable",
+      "partOfSpeech": "adjective",
+      "meaningJa": "能力がある・できる",
+      "definitionEn": "having the skills or ability to do something",
+      "synonyms": "able",
+      "cefrHeadword": "B1",
+      "imageHint": "討論を進行する生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VD10-00096-e01",
+          "en": "She is capable of leading the discussion.",
+          "ja": "彼女には討論を進行する能力があります。",
+          "context": "basic"
+        },
+        {
+          "id": "VD10-00096-e02",
+          "en": "The device is capable of recording clear audio.",
+          "ja": "その装置は明瞭な音声を録音できます。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
