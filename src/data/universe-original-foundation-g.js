@@ -1,4 +1,4 @@
-// Original N–S vocabulary expansion; not integrated until duplicate validation.
+// Original editorial N–S vocabulary maps. Priority tiers are instructional, not measured frequency.
 export default {
   "northwest": {
     "meaning": "北西",
@@ -1173,29 +1173,6 @@ export default {
       }
     ]
   },
-  "orientation": {
-    "meaning": "方向づけ・新入者向け説明",
-    "links": [
-      {
-        "word": "introduction",
-        "meaning": "導入",
-        "type": "related",
-        "tier": "related"
-      },
-      {
-        "word": "orient",
-        "meaning": "方向づける",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "orientation session",
-        "meaning": "説明会",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "origin": {
     "meaning": "起源・由来",
     "links": [
@@ -1840,29 +1817,6 @@ export default {
       }
     ]
   },
-  "particular": {
-    "meaning": "特定の",
-    "links": [
-      {
-        "word": "specific",
-        "meaning": "特定の",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "general",
-        "meaning": "一般の",
-        "type": "contrast",
-        "tier": "related"
-      },
-      {
-        "word": "particular reason",
-        "meaning": "特定の理由",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "partly": {
     "meaning": "部分的に",
     "links": [
@@ -2226,29 +2180,6 @@ export default {
       {
         "word": "medical personnel",
         "meaning": "医療従事者",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "persuasion": {
-    "meaning": "説得",
-    "links": [
-      {
-        "word": "persuade",
-        "meaning": "説得する",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "persuasive",
-        "meaning": "説得力のある",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "power of persuasion",
-        "meaning": "説得力",
         "type": "collocation",
         "tier": "related"
       }
@@ -3583,29 +3514,6 @@ export default {
       {
         "word": "speak privately",
         "meaning": "非公開で話す",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "probability": {
-    "meaning": "確率・可能性",
-    "links": [
-      {
-        "word": "probable",
-        "meaning": "ありそうな",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "likelihood",
-        "meaning": "見込み",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "calculate probability",
-        "meaning": "確率を計算する",
         "type": "collocation",
         "tier": "related"
       }
@@ -5451,29 +5359,6 @@ export default {
       }
     ]
   },
-  "repair": {
-    "meaning": "修理する",
-    "links": [
-      {
-        "word": "fix",
-        "meaning": "直す",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "mend",
-        "meaning": "修繕する",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "repair equipment",
-        "meaning": "機器を修理する",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "repetition": {
     "meaning": "反復",
     "links": [
@@ -6302,29 +6187,6 @@ export default {
       }
     ]
   },
-  "safely": {
-    "meaning": "安全に",
-    "links": [
-      {
-        "word": "safe",
-        "meaning": "安全な",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "securely",
-        "meaning": "安全に",
-        "type": "related",
-        "tier": "related"
-      },
-      {
-        "word": "arrive safely",
-        "meaning": "無事に到着する",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "safety": {
     "meaning": "安全",
     "links": [
@@ -6923,29 +6785,6 @@ export default {
       }
     ]
   },
-  "shortage": {
-    "meaning": "不足",
-    "links": [
-      {
-        "word": "lack",
-        "meaning": "不足",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "surplus",
-        "meaning": "余剰",
-        "type": "contrast",
-        "tier": "related"
-      },
-      {
-        "word": "water shortage",
-        "meaning": "水不足",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
   "shorten": {
     "meaning": "短くする",
     "links": [
@@ -7309,29 +7148,6 @@ export default {
       {
         "word": "southern region",
         "meaning": "南部地域",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "specialist": {
-    "meaning": "専門家",
-    "links": [
-      {
-        "word": "specialize",
-        "meaning": "専門とする",
-        "type": "family",
-        "tier": "core"
-      },
-      {
-        "word": "expert",
-        "meaning": "専門家",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "medical specialist",
-        "meaning": "専門医",
         "type": "collocation",
         "tier": "related"
       }
@@ -7723,29 +7539,6 @@ export default {
       {
         "word": "submission deadline",
         "meaning": "提出期限",
-        "type": "collocation",
-        "tier": "related"
-      }
-    ]
-  },
-  "substitute": {
-    "meaning": "代用品・代わり",
-    "links": [
-      {
-        "word": "replacement",
-        "meaning": "代用品",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "alternative",
-        "meaning": "代替品",
-        "type": "synonym",
-        "tier": "core"
-      },
-      {
-        "word": "substitute for sugar",
-        "meaning": "砂糖の代用品",
         "type": "collocation",
         "tier": "related"
       }
@@ -8164,5 +7957,217 @@ export default {
         "tier": "related"
       }
     ]
+  }
+};
+export const foundationGNotes = {
+  "noticeable": {
+    "conspicuous": {
+      "note": "noticeable は気づくほど明らかであること、conspicuous は周囲から際立って目につくことを強調する。",
+      "example": "There was a noticeable improvement in her pronunciation.",
+      "translation": "彼女の発音には明らかな改善が見られた。"
+    }
+  },
+  "nutrient": {
+    "nutrition": {
+      "note": "nutrient は個々の栄養素、nutrition は栄養の摂取や利用の過程・状態を指す。",
+      "example": "A balanced diet provides a wide range of essential nutrients.",
+      "translation": "バランスのよい食事は幅広い必須栄養素を供給する。"
+    }
+  },
+  "obstacle": {
+    "hindrance": {
+      "note": "obstacle は進行を妨げる物理的・比喩的な障害、hindrance は進行を遅らせたり難しくしたりする妨げ。",
+      "example": "A lack of confidence can be a hindrance to effective communication.",
+      "translation": "自信のなさは効果的な意思疎通の妨げになりうる。"
+    }
+  },
+  "occasion": {
+    "opportunity": {
+      "note": "occasion は特定の機会や行事、opportunity は何かをする好機や可能な状況。",
+      "example": "The event gave students an opportunity to meet people from different countries.",
+      "translation": "その行事は生徒にさまざまな国の人と出会う機会を与えた。"
+    }
+  },
+  "odor": {
+    "smell": {
+      "note": "smell はよい匂いにも悪い匂いにも使う。odor は特定の匂いを指し、不快な匂いについて使われることも多い。",
+      "example": "The unpleasant odor disappeared when we opened the windows.",
+      "translation": "窓を開けると不快な臭いが消えた。"
+    }
+  },
+  "omit": {
+    "leave out": {
+      "note": "どちらも省くという意味。omit は文章や報告書などで使われる比較的改まった表現。",
+      "example": "Do not omit any important details from the report.",
+      "translation": "報告書から重要な詳細を省かないでください。"
+    }
+  },
+  "ongoing": {
+    "underway": {
+      "note": "ongoing は継続中の活動などを名詞の前にも置ける。underway は通常、be underway の形で進行中であることを表す。",
+      "example": "The investigation is underway, and further updates will follow.",
+      "translation": "調査は進行中で、追加情報が後ほど発表される。"
+    }
+  },
+  "opponent": {
+    "rival": {
+      "note": "opponent は試合や議論などで直接対立する相手、rival は同じ目標や地位をめぐる競争相手。",
+      "example": "The team respected its opponents throughout the tournament.",
+      "translation": "チームは大会を通して対戦相手に敬意を払った。"
+    }
+  },
+  "optional": {
+    "compulsory": {
+      "note": "optional は選択できること、compulsory は規則などで義務づけられていることを表す。",
+      "example": "The workshop is optional, but the safety course is compulsory.",
+      "translation": "その講習会は任意参加だが、安全講座は必修だ。"
+    }
+  },
+  "ordinary": {
+    "extraordinary": {
+      "note": "ordinary は通常の範囲にあること、extraordinary は通常の範囲を超えていることを表す。",
+      "example": "Ordinary people can achieve extraordinary things through cooperation.",
+      "translation": "普通の人々も協力を通じて並外れたことを成し遂げられる。"
+    }
+  },
+  "outline": {
+    "summary": {
+      "note": "outline は構成や主要な項目を示す概要、summary は内容を短くまとめた要約。",
+      "example": "Write an outline before drafting your essay.",
+      "translation": "小論文の下書きを書く前に構成案を作りなさい。"
+    }
+  },
+  "outlook": {
+    "forecast": {
+      "note": "outlook は将来の見通しやものの見方。forecast は情報に基づいて将来を予測すること、またはその予測結果。",
+      "example": "The economic outlook has improved since last year.",
+      "translation": "経済の見通しは昨年から改善した。"
+    }
+  },
+  "participation": {
+    "involvement": {
+      "note": "participation は活動への参加、involvement は参加に加えて関与や責任を持つことも含む。",
+      "example": "Active participation is encouraged in every discussion.",
+      "translation": "すべての討論で積極的な参加が奨励される。"
+    }
+  },
+  "perception": {
+    "awareness": {
+      "note": "perception は何かをどう認識・知覚するか、awareness は存在や問題に気づいていること。",
+      "example": "The campaign changed public perception of renewable energy.",
+      "translation": "その活動は再生可能エネルギーに対する世間の認識を変えた。"
+    }
+  },
+  "permission": {
+    "approval": {
+      "note": "permission は行動をしてよいという許可。approval は計画の正式承認や賛成も表す。",
+      "example": "Students must ask for permission before leaving the classroom.",
+      "translation": "生徒は教室を出る前に許可を求めなければならない。"
+    }
+  },
+  "persist": {
+    "continue": {
+      "note": "continue は続けるという中立的な表現。persist は困難があっても続けることや不都合な状態が続くことも表す。",
+      "example": "The problem persisted despite several attempts to solve it.",
+      "translation": "何度か解決を試みたが、その問題は続いた。"
+    }
+  },
+  "physician": {
+    "doctor": {
+      "note": "physician は医師を表す改まった表現。doctor は医師のほか、博士号を持つ人の称号としても使われる。",
+      "example": "She discussed the symptoms with her primary care physician.",
+      "translation": "彼女はかかりつけ医に症状について相談した。"
+    }
+  },
+  "postpone": {
+    "delay": {
+      "note": "postpone は予定していた行事などを後の日程に延期すること。delay は進行を遅らせることにも使う。",
+      "example": "We postponed the event because of the heavy rain.",
+      "translation": "大雨のため行事を延期した。"
+    }
+  },
+  "precision": {
+    "accuracy": {
+      "note": "precision は細かさや再現性、accuracy は正しい値や事実への近さに重点を置く。",
+      "example": "Both accuracy and precision are important in scientific measurements.",
+      "translation": "科学的測定では正確さと精密さの両方が重要だ。"
+    }
+  },
+  "preservation": {
+    "conservation": {
+      "note": "preservation は元の状態を保持すること、conservation は資源や自然環境を守り適切に管理することにも使う。",
+      "example": "The museum focuses on the preservation of historical documents.",
+      "translation": "その博物館は歴史的文書の保存に力を入れている。"
+    }
+  },
+  "profession": {
+    "occupation": {
+      "note": "occupation は仕事・職業全般、profession は専門的な知識や技能を必要とする職業を指すことが多い。",
+      "example": "Teaching is a profession that requires continuous learning.",
+      "translation": "教職は継続的な学びを必要とする専門職だ。"
+    }
+  },
+  "refund": {
+    "reimbursement": {
+      "note": "refund は購入代金などを返すこと、reimbursement は立て替えた費用などの払い戻しを表すことが多い。",
+      "example": "Employees can request reimbursement for business travel expenses.",
+      "translation": "従業員は出張費の払い戻しを申請できる。"
+    }
+  },
+  "responsible": {
+    "accountable": {
+      "note": "responsible は担当や責任があること、accountable は結果や判断について説明する責任を負うことを強調する。",
+      "example": "Leaders are accountable for the decisions they make.",
+      "translation": "指導者は自分の下した決定について説明責任を負う。"
+    }
+  },
+  "revenue": {
+    "profit": {
+      "note": "revenue は事業の売上などの収入、profit は費用を差し引いた利益。",
+      "example": "Revenue increased, but rising costs reduced the company's profit.",
+      "translation": "売上は増えたが、費用の上昇により会社の利益は減少した。"
+    }
+  },
+  "satisfactory": {
+    "acceptable": {
+      "note": "satisfactory は期待や基準を満たし満足できること、acceptable は少なくとも受け入れられる水準であること。",
+      "example": "The initial results were satisfactory, but further research is needed.",
+      "translation": "初期の結果は満足できるものだったが、さらなる研究が必要だ。"
+    }
+  },
+  "sensitive": {
+    "insensitive": {
+      "note": "sensitive は刺激や他人の感情への敏感さ、insensitive はそれに気づきにくいことや配慮に欠けることを表す。",
+      "example": "Teachers should be sensitive to the needs of individual learners.",
+      "translation": "教師は一人ひとりの学習者の必要に配慮するべきだ。"
+    }
+  },
+  "stationary": {
+    "motionless": {
+      "note": "stationary は移動していないこと、motionless は体や物が少しも動かない様子を強調する。stationery は文房具で別の単語。",
+      "example": "The camera remained stationary throughout the experiment.",
+      "translation": "実験中、カメラは固定されたままだった。"
+    }
+  },
+  "sufficient": {
+    "adequate": {
+      "note": "sufficient は必要な量や程度を満たすこと、adequate は目的や基準を満たすのに十分であること。",
+      "example": "We collected sufficient evidence to support our conclusion.",
+      "translation": "結論を裏づける十分な証拠を集めた。"
+    }
+  },
+  "sympathy": {
+    "empathy": {
+      "note": "sympathy は相手を気の毒に思う気持ちや理解を示すこと、empathy は相手の視点や感情を理解することに重点がある。",
+      "example": "The counselor listened with empathy rather than offering immediate advice.",
+      "translation": "カウンセラーはすぐ助言するのではなく、共感を持って耳を傾けた。"
+    }
+  },
+  "systematic": {
+    "methodical": {
+      "note": "systematic は体系や計画に従うこと、methodical は手順を守って着実に行うことを強調する。",
+      "example": "A systematic approach helped the students organize their research.",
+      "translation": "体系的な取り組みが生徒たちの研究整理を助けた。"
+    }
   }
 };
