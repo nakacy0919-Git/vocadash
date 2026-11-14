@@ -43,13 +43,18 @@
     "batches/original-20261114-b1-mega-03b.json",
     "batches/original-20261114-mega-03c.json",
     "batches/original-20261114-b2-evening-01.json",
-    "batches/original-20261114-b2-evening-02.json"
+    "batches/original-20261114-b2-evening-02.json",
+    "batches/original-20261114-b2-mega-04a.json",
+    "batches/original-20261114-b2-mega-04b.json",
+    "batches/original-20261114-b2-mega-04c.json",
+    "batches/original-20261114-b2-mega-04d.json",
+    "batches/original-20261114-b2-mega-04e.json"
   ],
   "totals": {
-    "distinctHeadwords": 3358,
-    "senses": 4053,
-    "examples": 8106,
-    "distinctExamples": 8106
+    "distinctHeadwords": 3862,
+    "senses": 4557,
+    "examples": 9114,
+    "distinctExamples": 9114
   },
   "quality": {
     "humanReviewed": false,
@@ -64,34 +69,25 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-14",
   "recentWork": {
-    "source": "original B2 vocabulary definitions, contextual synonyms and bilingual examples",
+    "source": "original B2 learner vocabulary definitions, contextual synonyms, bilingual examples",
     "newBatches": [
-      "original-20261114-b2-evening-02"
+      "original-20261114-b2-mega-04a",
+      "original-20261114-b2-mega-04b",
+      "original-20261114-b2-mega-04c",
+      "original-20261114-b2-mega-04d",
+      "original-20261114-b2-mega-04e"
     ],
-    "headwordsAdded": 108,
-    "sensesAdded": 117,
-    "translatedExamplesAdded": 234,
-    "synonymOrParaphraseCandidatesAdded": 269,
+    "headwordsAdded": 504,
+    "sensesAdded": 504,
+    "translatedExamplesAdded": 1008,
+    "synonymOrParaphraseCandidatesAdded": 1046,
     "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 38,
-    "skippedExistingHeadwords": [
-      "community",
-      "cease",
-      "compensate",
-      "compile",
-      "conceal",
-      "concede",
-      "confine",
-      "confront",
-      "consult",
-      "coincidence",
-      "compensation",
-      "consensus",
-      "consent",
-      "coherent",
-      "consistent",
-      "compassion"
-    ]
+    "existingBatchesChecked": 39,
+    "derivedExports": [
+      "exports/examples/original-20261114-b2-mega-04.json",
+      "exports/synonyms/original-20261114-b2-mega-04.json"
+    ],
+    "editorialStatus": "draft-unreviewed; human review pending"
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
 }
