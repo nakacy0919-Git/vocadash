@@ -7,3 +7,23 @@
 .vu-center,.vu-node{position:absolute;transform:translate(-50%,-50%);text-align:center;display:flex;align-items:center;flex-direction:column;gap:3px;overflow-wrap:anywhere}.vu-center{left:50%;top:50%;z-index:2;width:31%;max-width:165px;border:1px solid #67e8f9;border-radius:24px;background:#102a42f5;padding:12px;box-shadow:0 0 22px #22d3ee55}.vu-center img{width:74px;height:46px;object-fit:cover;border-radius:8px}.vu-center strong{font-size:clamp(17px,3vw,27px);line-height:1.1}.vu-center span,.vu-node small{font-size:11px;color:#bdcedf}.vu-center button{font-size:11px;padding:5px 10px}
 .vu-dialog .vu-node{width:clamp(82px,17%,113px);min-height:49px;padding:6px 4px;background:#0e1c32f5;font-size:13px;z-index:3;animation:vu-emerge .55s both;box-shadow:0 0 14px #38bdf81f}.vu-node strong{line-height:1.15}.vu-dialog [data-type=synonym]{border-color:#2dd4bf}.vu-dialog [data-type=family]{border-color:#60a5fa}.vu-dialog [data-type=collocation]{border-color:#fbbf24}.vu-dialog [data-type=contrast]{border-color:#fda4af}.vu-dialog [data-type=related]{border-color:#c4b5fd}.vu-dialog .vu-node.is-selected{background:#284967;box-shadow:0 0 18px #67e8f9;z-index:4}.vu-rings{display:flex;justify-content:center;gap:12px;font-size:11px;color:#a8c7e0;flex-wrap:wrap}.vu-detail,.vu-empty{margin-top:12px;padding:14px;border:1px solid #345777;border-radius:15px;background:#0a172c}.vu-detail h3,.vu-detail p{margin:4px 0}.vu-detail-actions{display:flex;flex-wrap:wrap;gap:6px}.vu-list{margin-top:14px;font-size:13px;color:#b9d6e9}.vu-list div{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.vu-list button span{font-size:11px}.vu-launch{display:inline-flex;gap:8px;align-items:center;border:1px solid #3c78a2;border-radius:12px;padding:10px 15px;background:linear-gradient(120deg,#0d2750,#174d69);color:white;font-weight:700;margin:10px 0;box-shadow:0 3px 15px #38bdf82e}.vu-launch:hover{filter:brightness(1.15)}
 @keyframes vu-emerge{from{opacity:0;scale:.7}to{opacity:1;scale:1}}@media(prefers-reduced-motion:reduce){.vu-dialog .vu-node{animation:none}}@media(max-width:560px){.vu-dialog{padding:12px;border-radius:16px}.vu-detail{align-items:flex-start;flex-direction:column}}
+
+/* Explorer controls and image-ready detail panel */
+.vu-display-tools,.vu-pagination,.vu-view-switch{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.vu-display-tools{justify-content:space-between;margin:12px 0;font-size:12px;color:#d0e5f3}
+.vu-display-tools label{display:flex;gap:6px;align-items:center}
+.vu-view-switch button[aria-pressed=true],.vu-full-list button[aria-pressed=true]{background:#164e63;border-color:#67e8f9}
+.vu-pagination{justify-content:center;margin-top:12px;font-size:12px}
+.vu-center{width:24%;max-width:150px}
+.vu-dialog .vu-node{width:clamp(76px,15%,100px);min-height:44px;font-size:12px}
+.vu-node small{line-height:1.2;max-height:2.4em;overflow:hidden}
+.vu-map{background:radial-gradient(circle at 50% 50%,#22d3ee12,transparent 65%),radial-gradient(circle at 13% 18%,#7dd3fc80 0 1px,transparent 2px),radial-gradient(circle at 79% 72%,#b0c9ff80 0 1px,transparent 2px);background-size:auto,87px 101px,121px 149px}
+.vu-map-scroll{touch-action:pan-x pan-y}
+.vu-detail-image{width:132px;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid #496782}
+.vu-reverse{font-size:11px;color:#a8c7e0}
+.vu-list-center{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid #3e5670}
+.vu-list-center strong{font-size:22px}.vu-list-center span{color:#bcd8e8}.vu-list-center button{margin-left:auto}
+.vu-full-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.vu-full-list section{display:flex;flex-direction:column;gap:6px;min-width:0}.vu-full-list h3{font-size:14px;margin:6px 0;color:#b9d7eb}.vu-full-list h3 small{font-size:11px}
+.vu-full-list button{width:100%;text-align:left;display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere}.vu-full-list button span{font-size:11px;color:#b8cce0}
+@media(max-width:560px){.vu-full-list{grid-template-columns:1fr}.vu-map{min-width:490px}.vu-center{padding:9px}.vu-detail-image{width:160px}}
