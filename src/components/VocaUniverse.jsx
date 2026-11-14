@@ -1,10 +1,11 @@
-import React, {useEffect,useSyncExternalStore,useLayoutEffect,useId,useMemo,useRef,useState} from 'react';
+import React, {lazy,Suspense,useEffect,useSyncExternalStore,useLayoutEffect,useId,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
 import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels,getWordForms} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
+const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
 export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
@@ -13,6 +14,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const [snapshot,setSnapshot]=useState({});
  const [learningCommand,setLearningCommand]=useState(null);
  const [learningOpen,setLearningOpen]=useState(false);
+ const [draftOpen,setDraftOpen]=useState(false);
  useEffect(()=>{let alive=true;let revision=0;setSnapshot({});async function refresh(){const current=++revision;if(!activeAdapter)return;try{const data=await activeAdapter.getSnapshot({version:1,now:Date.now()});if(alive&&current===revision)setSnapshot(data||{});}catch{if(alive)setSnapshot({});}}refresh();const unsub=activeAdapter?.subscribe?.(refresh);const id=setInterval(()=>{if(!document.hidden)refresh();},60000);return()=>{alive=false;clearInterval(id);unsub?.();};},[activeAdapter]);
  const indexedSnapshot=useMemo(()=>indexMemorySnapshot(snapshot),[snapshot]);
  const memoryFor=w=>planetState(index.get(w.word.toLowerCase())||w,records,indexedSnapshot);
@@ -90,7 +92,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    <div className="vu-space" aria-hidden="true"><div className="vu-space-nebula"/><div className="vu-space-stars near"/><div className="vu-space-stars far"/></div>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button className="vu-effects-toggle" aria-pressed={effects} onClick={onToggleEffects} aria-label={effects?"ワープ効果音をオフ":"ワープ効果音をオン"}>{effects?"♫ 効果音 ON":"♪ 効果音 OFF"}</button><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
    <div ref={voiceDockRef} className="vu-voice-dock"/>
-   <div className="vu-controls"><button aria-expanded={learningOpen} onClick={()=>setLearningOpen(v=>!v)}>✦ My Vocabulary Universe</button>
+   <div className="vu-controls"><button aria-expanded={learningOpen} onClick={()=>setLearningOpen(v=>!v)}>✦ My Vocabulary Universe</button><button aria-expanded={draftOpen} onClick={()=>setDraftOpen(v=>!v)}>語義・例文 β</button>
    <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setPage(0);}}>{label}</button>)}</div>
    {searchOpen&&<div className="vu-search-wrap" id={titleId+"-search-panel"}><label htmlFor={titleId+'-search'}>登録済みの語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off" onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();searchFull();}}}/><button type="button" disabled={searchBusy||!query.trim()} onClick={searchFull}>{searchBusy?'検索中…':'全教材から検索'}</button>{searchNotice&&<p role="status">{searchNotice}</p>}{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>explore(item)}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>ネットワークの候補なし。全教材から検索できます。</p>}</div>}</div>}
@@ -98,6 +100,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
    </div>
    <div className="vu-workspace"> <div className={"vu-stage"+(view==="list"?" is-list":"")}>
+   {draftOpen?<Suspense fallback={<p className="vu-empty">語義を読み込み中…</p>}><UniverseSenseExplorer key={center.word} initialWord={center.word} onSpeak={onSpeak} sound={sound} onBack={()=>setDraftOpen(false)}/></Suspense>:<>
    {view==='map' && <><div className="vu-map-scroll"><div className="vu-map" key={center.word}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" className="vu-orbits">
       {ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
@@ -112,6 +115,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    {center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
 
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} onClick={()=>explore(n)} aria-label={n.word+" を中心に表示"} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
+  </>}
   </div>
   {learningOpen&&<UniverseLearning center={center} catalog={catalog} words={words} records={records} adapter={activeAdapter} links={links} onExplore={explore} snapshot={indexedSnapshot} onSnapshot={setSnapshot} command={learningCommand} onClose={()=>setLearningOpen(false)}/>}
   </div>
