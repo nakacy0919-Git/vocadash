@@ -56,7 +56,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound,effects=
      setTrail(t=>[...t,center]);change({...link,...item,...local,word:local?.word||item?.word||link?.word||k,meaning:local?.meaning||item?.meaning||link?.meaning||''});done('Focus: '+k);return;
     }
     if(kind==='read'){const item=target||center;if(!sound){done('音声設定がオフです');return;}if(value){if(value==='first'&&item.english){const u=new SpeechSynthesisUtterance(item.english);u.lang='en-US';window.speechSynthesis.speak(u);}else{done('この画面にはその例文がありません');return;}}else onSpeak(item);done();return;}
-    if(kind==='meaning'||kind==='examples'){if(active){done();return;}setView('list');done(kind==='examples'?'関連語を選ぶと登録例文を表示します':'OK');return;}
+    if(kind==='meaning'||kind==='examples'){c.entry=target||center;done();return;}
     if(kind==='universe'){setView('map');done();return;}
    };
    window.addEventListener('vd-universe-voice',handler);

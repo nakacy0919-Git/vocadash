@@ -28,7 +28,7 @@ export function parseVoice(raw) {
  if(kind==='focus')value=m[2];
  if(kind==='search')value=m[1];
  if(kind==='examples')value=m[2]||'';
- if(kind==='read')value=m[3]||'';
+ if(kind==='read')value=m[4]||'';
  if(kind==='filter'){const x=m[4];value=/synonym|similar/.test(x)?'synonym':/antonym|opposite/.test(x)?'contrast':/famil|derivative/.test(x)?'family':/collocation/.test(x)?'collocation':/forms|inflections/.test(x)?'forms':/related/.test(x)?'related':'all';}
  if(kind==='images'||kind==='translation')value=m[1];
  return {kind,value};

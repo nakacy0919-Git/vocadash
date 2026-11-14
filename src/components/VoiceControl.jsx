@@ -22,7 +22,7 @@ function draftIndex(){
  return draftIndexPromise;
 }
 export default function VoiceControl({current,words,universeOpen,onOpenUniverse,onAppCommand,loadCourseWords,suspended=false}){
- const [open,setOpen]=useState(false),[enabled,setEnabled]=useState(false),[status,setStatus]=useState('マイクを押して開始'),[transcript,setTranscript]=useState(''),[typed,setTyped]=useState(''),[entry,setEntry]=useState(null),[showExamples,setShowExamples]=useState(true),[showJa,setShowJa]=useState(true),[showImage,setShowImage]=useState(true);
+ const [open,setOpen]=useState(false),[enabled,setEnabled]=useState(false),[status,setStatus]=useState('マイクを押して開始'),[transcript,setTranscript]=useState(''),[typed,setTyped]=useState(''),[entry,setEntry]=useState(null),[showExamples,setShowExamples]=useState(true),[showJa,setShowJa]=useState(true),[showImage,setShowImage]=useState(true),[showEntryInUniverse,setShowEntryInUniverse]=useState(false);
  const recognition=useRef(null),running=useRef(false),wanted=useRef(false),timer=useRef(null),processing=useRef(false),latest=useRef(null),suspendRef=useRef(suspended);
  const [supports]=useState(()=>typeof window!=='undefined'&&Boolean(window.SpeechRecognition||window.webkitSpeechRecognition));
  const stop=()=>{wanted.current=false;clearTimeout(timer.current);try{recognition.current?.abort();}catch{}setEnabled(false);};
@@ -47,13 +47,13 @@ export default function VoiceControl({current,words,universeOpen,onOpenUniverse,
    if(kind==='translation'){setShowJa(value==='show');setStatus('Translation '+(value==='show'?'on':'off'));return;}
    if(kind==='images'&&!universeOpen){setShowImage(value==='show');setStatus('Images '+(value==='show'?'on':'off'));return;}
    if(kind==='home'||kind==='close'||kind==='quiz'||kind==='study'||kind==='sentence'||kind==='review'){
-    if(kind!=='close')setEntry(null);
+    if(kind!=='close')setEntry(null);setShowEntryInUniverse(false);
     if(kind==='quiz')stop();
     onAppCommand(kind);setStatus(kind==='close'?'VocaDash に戻りました':'画面を切り替えました');return;
    }
    if(universeOpen&&['filter','focus','back','next','list','map','images','read','examples','meaning','search','universe'].includes(kind)){
     const detail={...cmd,handled:false,message:''};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));
-    if(detail.handled){setStatus(detail.message||'OK');return;}
+    if(detail.handled){if(detail.entry){const result=await resolve(detail.entry.word);setEntry(result||detail.entry);setShowExamples(kind==='examples');setShowEntryInUniverse(true);}else if(kind==='focus'||kind==='search'||kind==='universe'||kind==='back'||kind==='filter'){setShowEntryInUniverse(false);}setStatus(detail.message||'OK');return;}
    }
    if(kind==='next'||kind==='back'){setEntry(null);onAppCommand(kind);setStatus('OK');return;}
    if(kind==='search'||kind==='focus'||(kind==='universe'&&value)||(kind==='examples'&&value)){
@@ -105,7 +105,7 @@ export default function VoiceControl({current,words,universeOpen,onOpenUniverse,
    <div role="status" className="vd-voice-status">{status}</div>
    {transcript&&<p className="vd-voice-transcript">“{transcript}”</p>}
    <form onSubmit={e=>{e.preventDefault();if(typed.trim()){execute(typed.trim());setTyped('');}}}><input aria-label="Type a voice command" value={typed} onChange={e=>setTyped(e.target.value)} placeholder="Show me connect"/><button type="submit">Go</button></form>
-   {entry&&!universeOpen&&<div className="vd-voice-entry"><h3>{entry.word}</h3>{showJa&&<p>{entry.meaning}</p>}{entry.image&&showImage&&<img src={assetImage(entry.image)} alt=""/>}<button onClick={()=>speak(entry.word)}>♫ Pronounce</button><button onClick={()=>onOpenUniverse(entry)}>◉ Universe</button>
+   {entry&&(!universeOpen||showEntryInUniverse)&&<div className="vd-voice-entry"><h3>{entry.word}</h3>{showJa&&<p>{entry.meaning}</p>}{entry.image&&showImage&&<img src={assetImage(entry.image)} alt=""/>}<button onClick={()=>speak(entry.word)}>♫ Pronounce</button><button onClick={()=>onOpenUniverse(entry)}>◉ Universe</button>
    {entry.records?.length>0&&<small className="vd-voice-draft">追加教材 β・未校閲の語義を含みます</small>}
    {entry.records?.map(r=><div key={r.senseId} className="vd-voice-sense"><b>{r.partOfSpeech} · {r.definitionEn}</b>{showJa&&<p>{r.meaningJa}</p>}{showExamples&&r.examples?.map(e=><div key={e.id}><p>{e.en} <button onClick={()=>speak(e.en)}>♫</button></p>{showJa&&<small>{e.ja}</small>}</div>)}</div>)}
    {!entry.records?.length&&showExamples&&entry.examples?.map((e,i)=><div key={i}><p>{e.en} <button onClick={()=>speak(e.en)}>♫</button></p>{showJa&&<small>{e.ja}</small>}</div>)}</div>}
