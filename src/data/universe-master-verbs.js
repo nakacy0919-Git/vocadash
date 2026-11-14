@@ -2282,5 +2282,52 @@ export default {
         "tier": "related"
       }
     ]
+  },
+  "eradicate": {
+    "meaning": "根絶する・撲滅する",
+    "links": [
+      {
+        "word": "eliminate",
+        "meaning": "取り除く",
+        "type": "synonym",
+        "tier": "core"
+      },
+      {
+        "word": "wipe out",
+        "meaning": "一掃する",
+        "type": "synonym",
+        "tier": "core"
+      },
+      {
+        "word": "eradication",
+        "meaning": "根絶・撲滅",
+        "type": "family",
+        "tier": "core"
+      },
+      {
+        "word": "root out",
+        "meaning": "根絶する",
+        "type": "synonym",
+        "tier": "related"
+      },
+      {
+        "word": "stamp out",
+        "meaning": "完全に根絶する",
+        "type": "synonym",
+        "tier": "related"
+      },
+      {
+        "word": "eradicate a disease",
+        "meaning": "病気を根絶する",
+        "type": "collocation",
+        "tier": "related"
+      },
+      {
+        "word": "extirpate",
+        "meaning": "根絶する（改まった語）",
+        "type": "synonym",
+        "tier": "extended"
+      }
+    ]
   }
 };
