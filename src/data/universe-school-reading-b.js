@@ -1,4 +1,4 @@
-// Original editorial relations for reading lessons 5–8.
+// Original editorial vocabulary maps; distance is pedagogical priority, not corpus frequency.
 export default {
   "create": {
     "meaning": "作り出す・創造する",
@@ -48,7 +48,7 @@ export default {
         "word": "entrepreneur",
         "meaning": "起業家",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "run a business",
@@ -257,7 +257,7 @@ export default {
         "word": "documentary film",
         "meaning": "ドキュメンタリー映画",
         "type": "collocation",
-        "tier": "related"
+        "tier": "extended"
       }
     ]
   },
@@ -737,7 +737,7 @@ export default {
       {
         "word": "quantity",
         "meaning": "量",
-        "type": "related",
+        "type": "contrast",
         "tier": "related"
       },
       {
@@ -831,7 +831,7 @@ export default {
         "word": "apprehension",
         "meaning": "不安",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "reduce anxiety",
@@ -889,7 +889,7 @@ export default {
         "word": "interpersonal",
         "meaning": "対人関係の",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "social interaction",
@@ -1294,8 +1294,8 @@ export default {
       {
         "word": "manufacturing",
         "meaning": "製造",
-        "type": "synonym",
-        "tier": "core"
+        "type": "related",
+        "tier": "related"
       },
       {
         "word": "mass production",
@@ -1312,13 +1312,13 @@ export default {
         "word": "horticulture",
         "meaning": "園芸",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "cultivation",
         "meaning": "栽培",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "greenhouse gas",
@@ -1434,7 +1434,7 @@ export default {
         "word": "cultivation",
         "meaning": "培養・栽培",
         "type": "related",
-        "tier": "related"
+        "tier": "extended"
       },
       {
         "word": "cultured cells",
@@ -1527,7 +1527,7 @@ export default {
         "word": "ardent",
         "meaning": "熱烈な",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "passionate about",
@@ -1695,7 +1695,7 @@ export default {
         "word": "immense",
         "meaning": "莫大な",
         "type": "synonym",
-        "tier": "core"
+        "tier": "extended"
       },
       {
         "word": "tiny",
