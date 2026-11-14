@@ -1,15 +1,61 @@
-import React from 'react';
+import React,{useEffect,useRef} from 'react';
 import './VoiceOrb.css';
-const dots=Array.from({length:96},(_,i)=>{const strand=i%3,k=Math.floor(i/3),t=k/31,angle=t*Math.PI*3.5+strand*2*Math.PI/3,r=10+73*t;return {x:100+Math.cos(angle)*r,y:100+Math.sin(angle)*r*.76,r:.9+(i%5)*.27,opacity:.26+t*.65,color:['#72e9ff','#777dff','#cfa0ff'][strand]};});
-export default function VoiceOrb({enabled,phase,micState,busy,transcript,interim,notice,suggestions,onChoose}){
+const particles=Array.from({length:480},(_,i)=>{const arm=i%5,j=Math.floor(i/5),t=j/95;return {arm,t,angle:t*10.8+arm*Math.PI*2/5,seed:Math.sin(i*127.1)*43758.5453%1,weight:.45+(i%7)*.14};});
+const stars=Array.from({length:100},(_,i)=>({x:(Math.sin(i*87.31)*43758.5453%1+1)%1,y:(Math.sin(i*42.78+7)*26378.72%1+1)%1,r:.3+(i%4)*.25}));
+export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
+ const canvas=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
+ useEffect(()=>{
+  if(!enabled||!canvas.current)return;
+  const el=canvas.current,ctx=el.getContext('2d');if(!ctx)return;
+  let w=1,h=1,frame=0,energy=0,rotation=0,last=0,stopped=false;
+  const reduce=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  const resize=()=>{const b=el.getBoundingClientRect(),d=Math.min(window.devicePixelRatio||1,2);w=Math.max(1,b.width);h=Math.max(1,b.height);el.width=Math.round(w*d);el.height=Math.round(h*d);ctx.setTransform(d,0,0,d,0,0);};
+  resize();const ro=typeof ResizeObserver!=='undefined'?new ResizeObserver(resize):null;ro?.observe(el);window.addEventListener('resize',resize);
+  function draw(now){
+   if(stopped)return;const dt=last?Math.min(50,now-last):16;last=now;
+   const state=live.current,active=state.phase==='active',speaking=state.micState==='speaking';
+   const measured=state.meterReady?meter.current?.read()||0:(active&&speaking ? .22 : 0);
+   const target=active?measured:0;energy+=(target-energy)*(target>energy?.24:.085);
+   if(!reduce)rotation+=dt*.00024*(1+energy*2.8+(state.busy?1.2:0));
+   const time=reduce?0:now*.001,cx=w*.5,cy=full?h*.48:h*.5,base=Math.min(w,h)*.43;
+   ctx.clearRect(0,0,w,h);
+   if(full){
+    const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,Math.max(w,h)*.69);bg.addColorStop(0,'#101a38');bg.addColorStop(.43,'#080f24');bg.addColorStop(1,'#03050d');ctx.fillStyle=bg;ctx.fillRect(0,0,w,h);
+    for(const p of stars){ctx.fillStyle='rgba(121,159,229,'+(.14+p.r*.16)+')';ctx.beginPath();ctx.arc(p.x*w,p.y*h,p.r,0,Math.PI*2);ctx.fill();}
+   }
+   const glow=ctx.createRadialGradient(cx,cy,0,cx,cy,base*1.16);glow.addColorStop(0,'rgba(111,176,255,'+(.14+energy*.23)+')');glow.addColorStop(.45,'rgba(76,81,228,'+(.10+energy*.12)+')');glow.addColorStop(1,'rgba(45,56,170,0)');ctx.fillStyle=glow;ctx.fillRect(cx-base*1.2,cy-base*1.2,base*2.4,base*2.4);
+   const count=full?particles.length:140;
+   ctx.globalCompositeOperation='lighter';
+   for(let i=0;i<count;i++){
+    const p=particles[full?i:Math.floor(i*particles.length/count)],a=p.angle+rotation;
+    const wave=reduce?0:Math.sin(a*3+time*5+p.t*13)*energy*.15+Math.cos(a*5-time*3)*energy*.065;
+    const r=base*(.12+.84*p.t+wave)*(1+energy*.10);
+    // Inclined, slowly twisting spiral, with depth-dependent glow and size.
+    const tilt=.64+.13*Math.sin(rotation*.65),z=Math.sin(a)*p.t;
+    const x=cx+Math.cos(a)*r,y=cy+Math.sin(a)*r*tilt+Math.sin(p.angle*1.6+rotation)*base*.14*(.2+p.t);
+    const hue=[190,204,226,260,282][p.arm],size=Math.max(.5,(full?1.6:.75)*p.weight*(.65+p.t*.55)*(1+energy*.7)*(1+z*.15));
+    ctx.fillStyle='hsla('+hue+',95%,'+(63+energy*22)+'%,'+(.25+p.t*.4+energy*.22)+')';
+    ctx.beginPath();ctx.arc(x,y,size,0,Math.PI*2);ctx.fill();
+    if(full&&i%6===0){ctx.fillStyle='hsla('+hue+',95%,70%,.07)';ctx.beginPath();ctx.arc(x,y,size*3.2,0,Math.PI*2);ctx.fill();}
+   }
+   ctx.globalCompositeOperation='source-over';frame=requestAnimationFrame(draw);
+  }
+  frame=requestAnimationFrame(draw);
+  return()=>{stopped=true;cancelAnimationFrame(frame);ro?.disconnect();window.removeEventListener('resize',resize);};
+ },[enabled,full,meter]);
  if(!enabled&&!notice&&!suggestions.length)return null;
  const state=busy?'thinking':phase==='standby'?'standby':micState;
  const label=busy?'Processing…':phase==='standby'?'Waiting for Voca…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Voice Control';
- return <div className={'vd-orb-overlay vd-orb-'+state}>
-  {enabled&&<div className="vd-orb-art" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><radialGradient id="vd-orb-glow"><stop stopColor="#8adfff" stopOpacity=".7"/><stop offset=".35" stopColor="#635eff" stopOpacity=".34"/><stop offset="1" stopColor="#465bf5" stopOpacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="73" fill="url(#vd-orb-glow)"/><g className="vd-orb-spin">{dots.map((p,i)=><circle key={i} cx={p.x} cy={p.y} r={p.r} fill={p.color} opacity={p.opacity}/>)}</g><g className="vd-orb-counter">{Array.from({length:28},(_,i)=>{const a=i/28*Math.PI*2;return <circle key={i} cx={100+88*Math.cos(a)} cy={100+67*Math.sin(a)} r={i%4===0?1.4:.65} fill="#aadfff" opacity={.38+(i%3)*.17}/>;})}</g><circle className="vd-orb-core" cx="100" cy="100" r="5" fill="#e6f9ff"/></svg></div>}
-  {enabled&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
-  {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
-  {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
-  {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map(word=><button key={word} type="button" onClick={()=>onChoose(word)}>{word}</button>)}</div>}
+ return <div className={'vd-orb-overlay '+(full?'vd-orb-full ':'vd-orb-compact ')+'vd-orb-'+state}>
+  {enabled&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
+  {enabled&&full&&<div className="vd-orb-top"><span>VOCA<span className="vd-orb-brand-accent"> ASSISTANT</span></span><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button></div>}
+  <div className="vd-orb-copy">
+   {enabled&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
+   {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
+   {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
+   {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map(word=><button key={word} type="button" onClick={()=>onChoose(word)}>{word}</button>)}</div>}
+  </div>
+  {enabled&&full&&<div className="vd-orb-footer"><button type="button" className="vd-orb-stop" onClick={onStop} aria-label="Stop microphone"><span/></button><small>{meterReady?'LIVE AUDIO · 音量に連動':'音声認識中 · 音量取得は未接続'}</small></div>}
+  {enabled&&!full&&<button className="vd-orb-expand" type="button" onClick={onExpand} aria-label="Expand assistant">⤢</button>}
  </div>;
 }

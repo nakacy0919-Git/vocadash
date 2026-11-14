@@ -42,3 +42,6 @@ test('interim recognition is displayed but never sent as a command',()=>{
  assert.deepEqual(speechSegments({results:[a],resultIndex:0}),{final:[],interim:'Show me the'});
  assert.deepEqual(speechSegments({results:[b],resultIndex:0}),{final:[['Show me the beautiful','Show me beautiful']],interim:''});
 });
+
+import {audioLevel} from './voiceMeter.js';
+test('voice visualizer measures signal RMS and ignores silence',()=>{assert.equal(audioLevel(new Float32Array(128)),0);assert.ok(audioLevel(new Float32Array(128).fill(.2))>audioLevel(new Float32Array(128).fill(.05)));assert.ok(audioLevel(new Float32Array(128).fill(1))<=1);});
