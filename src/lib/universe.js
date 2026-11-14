@@ -1,4 +1,4 @@
-import stageOne from '../data/universeStageOne.js';
+import stageOne, {headMeanings} from '../data/universeStageOne.js';
 import {stageOneUniverse} from '../data/universe-stage1.js';
 // Voca Universe: authored semantic links, never quiz distractors.
 const rows = (values) => values.map(([word, meaning, type, tier]) => ({word, meaning, type, tier}));
@@ -41,10 +41,17 @@ export function relationTier(item) {
 export const tierLabels = {core:'最優先',related:'関連',extended:'発展'};
 const normalize = value => String(value || '').trim().toLowerCase().replace(/[’]/g,"'").replace(/\s+/g,' ');
 const seedMeanings = {distribute:'配る・分配する',ancestors:'先祖','interfering with':'〜に干渉する','content with':'〜に満足して',respond:'返答・反応する',improve:'改善する'};
-const authored = new Map([
-  ...Object.entries(universeSeed).map(([word,links])=>[word,{meaning:seedMeanings[word],links}]),
-  ...Object.entries(stageOneUniverse)
-]);
+const authored = new Map(Object.entries(universeSeed).map(([word,links])=>[word,{meaning:seedMeanings[word]||headMeanings[word],links}]));
+for(const [word,entry] of Object.entries(stageOneUniverse)) {
+  const prior=authored.get(word);
+  const seen=new Set(entry.links.map(link=>normalize(link.word)));
+  const extra=(prior?.links||[]).filter(link=>{
+    const key=normalize(link.word);
+    if(key===word||seen.has(key))return false;
+    seen.add(key);return true;
+  });
+  authored.set(word,{meaning:entry.meaning||prior?.meaning,links:[...entry.links,...extra]});
+}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
