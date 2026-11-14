@@ -1,3 +1,4 @@
+import domainReadingMega, {domainReadingNotes} from '../data/universe-domain-reading-mega.js';
 import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
 import foundationMega, {foundationMegaNotes} from '../data/universe-foundation-mega.js';
 import generalNetwork, {generalNetworkNotes} from '../data/universe-general-network.js';
@@ -89,6 +90,13 @@ for(const [word,entry] of Object.entries(stageOneUniverse))addAuthored(word,entr
 for(const [word,links] of Object.entries(universeSeed))addAuthored(word,{meaning:headMeanings[word]||seedMeanings[word],links});
 for(const batch of [coreBulk,advancedBulk,masterVerbs,masterAdjectives,masterNouns,masterPhrasal,schoolRegular,schoolReadingA,schoolReadingB,schoolContext,schoolReadingC,schoolReadingD,originalA1A,originalFoundationB,originalFoundationC,originalFoundationD,originalFoundationE,originalFoundationF,originalFoundationG,supplementOZ,academicNetwork,generalNetwork,foundationMega,academicFamilies])for(const [word,entry] of Object.entries(batch))addAuthored(word,entry);
 for(const [word,links] of Object.entries(bridges))if(authored.has(word))addAuthored(word,{meaning:authored.get(word).meaning,links});
+// Keep earlier authored meanings and link classifications; add only unseen edges.
+const domainBefore=universeCoverage();
+for(const [word,entry] of Object.entries(domainReadingMega))addAuthored(word,entry);
+const domainAfter=universeCoverage();
+export function domainReadingCoverage() {
+  return {heads:domainAfter.heads-domainBefore.heads,links:domainAfter.links-domainBefore.links};
+}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
@@ -111,7 +119,7 @@ export function universeEntries() {
 }
 export function usageFor(head,word) {
   const a=normalize(head),b=normalize(word);
-  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes]) {
+  for(const source of [usageNotes,masterNotes,schoolNotes,readingNotes,foundationNotes,foundationDNotes,foundationENotes,foundationFNotes,foundationGNotes,supplementOZNotes,academicNetworkNotes,generalNetworkNotes,foundationMegaNotes,academicFamilyNotes,domainReadingNotes]) {
     const notes=Object.hasOwn(source,a)?source[a]:null;
     if(notes&&Object.hasOwn(notes,b))return notes[b];
   }
