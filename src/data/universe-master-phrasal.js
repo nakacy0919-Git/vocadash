@@ -2113,6 +2113,12 @@ export default {
         "meaning": "破産を回避する",
         "type": "collocation",
         "tier": "related"
+      },
+      {
+        "word": "fend off",
+        "meaning": "迫る攻撃・圧力をかわす",
+        "type": "related",
+        "tier": "related"
       }
     ]
   },
