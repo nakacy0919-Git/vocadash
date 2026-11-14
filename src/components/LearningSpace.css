@@ -71,3 +71,60 @@
 @media(max-width:720px){.ls-home{gap:16px}.ls-hero{padding:22px 16px;min-height:185px;gap:5px}.ls-orb{width:116px;margin-right:0}.ls-hero h1{font-size:clamp(31px,7vw,47px)}.ls-hero p{font-size:15px;margin-bottom:15px}.ls-hero-meta{font-size:10px;gap:5px}.ls-dash-link{right:10px;bottom:7px}.ls-dash-link span{font-size:9px}.ls-dash-link small{font-size:9px}.ls-progress{padding:15px}.ls-progress-body{grid-template-columns:1fr;gap:6px}.ls-rings{gap:15px}.ls-rings .vd-progress-medallion{max-width:145px}.ls-metrics{gap:5px}.ls-metrics small{font-size:9px}.ls-goals{gap:8px}.ls-goal{padding:12px;min-height:135px}.ls-goal strong{font-size:14px}.ls-library,.ls-explore{padding:15px;gap:10px;flex-wrap:wrap}.ls-library>div,.ls-explore>div{flex-basis:65%}.ls-outline{width:100%}.ls-sectionhead{align-items:flex-end}.ls-sectionhead>.ls-note{display:none}.ls-dialog{padding:16px}.ls-dialog .ls-choices{gap:7px}.ls-choice{padding:10px;min-height:80px}.ls-choice strong{font-size:13px}}
 @media(max-width:370px){.ls-orb{width:91px}.ls-hero-meta span:last-child{display:none}.ls-choices{grid-template-columns:1fr}.ls-metrics{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){.ls-home *,.ls-opening *,.ls-opening{animation:none!important;transition:none!important}}
+
+/* 3.1: compact command centre, with no long course list. */
+.ls-compact-home{gap:14px;padding-bottom:4px}
+.ls-compact-home .ls-hero{min-height:112px;padding:15px 20px;gap:13px;border-radius:20px}
+.ls-compact-home .ls-hero h1{font-size:clamp(29px,4vw,48px);margin:4px 0 5px}
+.ls-compact-home .ls-hero p{font-size:14px;margin:0}
+.ls-compact-home .ls-dash-link{position:static;display:flex;flex-direction:column;align-items:center;text-align:center;flex:none;gap:0;padding:0;min-width:76px}
+.ls-compact-home .ls-dash-link .ls-orb{width:67px;margin:0}
+.ls-compact-home .ls-dash-link span{font-size:11px;line-height:1.2}
+.ls-compact-home .ls-dash-link small{display:block;font-size:9px}
+.ls-hero-search{min-width:0;flex:0 1 220px;display:flex;align-items:center;border:1px solid #4b7898;background:#081627;border-radius:12px;overflow:hidden}
+.ls-hero-search input{color:#e7f7ff;background:transparent;border:0;padding:10px;min-width:0;width:100%;font:inherit;font-size:13px;outline:none}
+.ls-hero-search button{background:#1e4764;border:0;color:#a6f1ff;width:44px;height:45px;font-size:26px;flex:none}
+.ls-hero-search button:disabled{opacity:.45}
+.ls-sr-only{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+.ls-command-grid{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.35fr);gap:14px;align-items:stretch}
+.ls-compact-home .ls-progress{padding:15px}
+.ls-compact-home .ls-sectionhead{margin-bottom:8px}
+.ls-compact-home .ls-sectionhead h2{font-size:20px}
+.ls-compact-home .ls-progress-body{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+.ls-compact-home .ls-rings{gap:9px}
+.ls-compact-home .ls-rings .vd-progress-medallion{max-width:127px;padding:0;gap:3px}
+.ls-compact-home .ls-rings .vd-medallion-visual{width:100%;max-width:119px;height:auto;aspect-ratio:1}
+.ls-compact-home .ls-rings .vd-medallion-svg{width:100%;height:auto}
+.ls-compact-home .ls-rings .vd-medallion-value strong{font-size:27px}
+.ls-compact-home .ls-rings .vd-medallion-label{font-size:11px}
+.ls-compact-home .ls-rings .vd-medallion-subtitle{display:none}
+.ls-compact-home .ls-progress-info h3{font-size:14px;margin:4px 0}
+.ls-compact-home .ls-progress-info p{font-size:12px;margin:2px 0}
+.ls-compact-home .ls-metrics{grid-template-columns:repeat(3,1fr);margin:7px 0}
+.ls-compact-home .ls-metrics b{font-size:18px}
+.ls-compact-home .ls-primary{padding:8px 11px;min-height:43px;font-size:13px}
+.ls-fast-actions{display:flex;gap:6px;margin-top:6px}
+.ls-fast-actions button{flex:1;padding:8px;border:1px solid #36566e;border-radius:8px;background:#132e45;color:#bceafa;font-size:12px;min-height:36px}
+.ls-mission{padding:12px 0}
+.ls-compact-home .ls-goals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.ls-compact-home .ls-goal{min-height:100px;padding:12px;display:flex;flex-direction:row;align-items:center;gap:10px}
+.ls-compact-home .ls-goal>div{min-width:0;display:grid;gap:4px}
+.ls-compact-home .ls-goal-icon{font-size:28px;font-weight:800;flex:none}
+.ls-compact-home .ls-goal-tag{font-size:8px}
+.ls-compact-home .ls-goal strong{font-size:16px}.ls-compact-home .ls-goal small{font-size:10px;line-height:1.35}
+.ls-compact-home .ls-goal-arrow{font-size:15px;right:8px;bottom:5px}
+.ls-bottom-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ls-bottom-actions .ls-outline{width:100%;display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 12px;font-size:12px!important}
+.ls-bottom-actions small{font-size:10px;color:#a7bed4}
+.ls-dialog-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
+.ls-dialog-nav .ls-back{margin:0}
+.ls-dialog-nav>div{margin-left:auto;display:flex;align-items:center;gap:8px}
+.ls-dialog-nav>div button{min-width:44px;min-height:44px;border:1px solid #466b89;border-radius:9px;background:#18354e;color:#e0f5ff}
+.ls-dialog-nav>div button:disabled{opacity:.35}
+.vd-voice-home-idle .vd-voice-bottom{display:none!important}
+.vd-app.ls-dashboard .vd-sidebar-bottom{margin-top:auto}
+.vd-app.ls-dashboard .vd-sidebar{overflow:auto}
+@media(min-width:900px) and (orientation:landscape){.vd-app.ls-dashboard .vd-page{padding:12px 15px}.vd-app.ls-dashboard .vd-topbar{height:52px;min-height:52px}.vd-app.ls-dashboard .vd-sidebar{width:168px;flex-basis:168px;padding:12px 10px}.vd-app.ls-dashboard .vd-sidebar-bottom{display:none}.vd-app.ls-dashboard .vd-sidebar .vd-brand{gap:7px}.vd-app.ls-dashboard .vd-sidebar .vd-brand strong{font-size:19px}.vd-app.ls-dashboard .vd-sidebar .vd-nav-item{font-size:12px;padding:10px 5px}.vd-app.ls-dashboard .vd-mobile-brand{display:none}.ls-compact-home{height:auto;max-width:none}.ls-compact-home .ls-dialog{max-height:calc(100dvh - 20px)}}
+@media(min-width:900px) and (orientation:landscape) and (max-height:740px){.ls-compact-home{gap:9px}.ls-compact-home .ls-hero{min-height:92px;padding:9px 15px}.ls-compact-home .ls-goal{min-height:86px}.ls-compact-home .ls-mission{padding:5px 0}.ls-compact-home .ls-progress{padding:10px}.ls-compact-home .ls-rings .vd-progress-medallion{max-width:107px}.ls-compact-home .ls-rings .vd-medallion-visual{max-width:100px}.ls-compact-home .ls-metrics div{padding:6px}.ls-compact-home .ls-sectionhead h2{font-size:17px}.ls-bottom-actions .ls-outline{min-height:38px;padding:7px 10px}}
+@media(max-width:899px){.ls-compact-home .ls-hero{flex-wrap:wrap;min-height:108px}.ls-hero-search{order:3;flex-basis:100%}.ls-compact-home .ls-dash-link{margin-left:auto}.ls-command-grid{grid-template-columns:1fr}.ls-compact-home .ls-progress-body{display:grid;grid-template-columns:minmax(130px,.9fr) minmax(0,1.2fr);gap:10px;align-items:center}.ls-compact-home .ls-rings .vd-progress-medallion{max-width:115px}.ls-compact-home .ls-goal{min-height:82px}}
+@media(max-width:550px){.ls-compact-home .ls-progress-body{display:flex}.ls-compact-home .ls-goal{padding:9px;gap:7px}.ls-compact-home .ls-goal-icon{font-size:23px}.ls-compact-home .ls-goal strong{font-size:14px}.ls-bottom-actions{grid-template-columns:1fr}.ls-compact-home .ls-hero h1{font-size:31px}.ls-compact-home .ls-goal small{font-size:10px}}
