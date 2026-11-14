@@ -12,9 +12,10 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  const [showImages,setShowImages]=useState(true);
  const [view,setView]=useState('map');
  const [page,setPage]=useState(0);
- const dialog=useRef(null), close=useRef(null), titleId=useId();
+ const dialog=useRef(null), close=useRef(null), mapScroll=useRef(null), titleId=useId();
  const index=useMemo(()=>new Map(words.map(w=>[w.word.toLowerCase(),w])),[words]);
  const links=useMemo(()=>getRelations(center),[center]);
+ const mapSense=lookupUniverse(center.word)?.meaning;
  const visible=links.filter(x=>filter==='all'||x.type===filter);
  const pageCount=orbitPageCount(visible);
  const nodes=orbitNodes(visible,Math.min(page,pageCount-1));
@@ -26,6 +27,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
    const overflow=document.body.style.overflow;document.body.style.overflow='hidden';
    return ()=>{document.body.style.overflow=overflow;before?.focus?.();};
  },[]);
+ useEffect(()=>{const el=mapScroll.current;if(el&&view==='map')el.scrollLeft=Math.max(0,(el.scrollWidth-el.clientWidth)/2);},[center.word,view]);
  const change=(next)=>{setCenter(next);setSelected(null);setFilter('all');setBadImage(false);setTargetImageError('');setPage(0);};
  const key=(e)=>{
    e.stopPropagation();
@@ -40,10 +42,11 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
  return <div className="vu-overlay" onClick={onClose}>
   <section className="vu-dialog" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><button ref={close} onClick={onClose} aria-label="閉じる">✕</button></header>
-   <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
+   <div className="vu-toolbar">{trail.length>0&&<button onClick={()=>{change(trail.at(-1));setTrail(t=>t.slice(0,-1));}}>← 前の語</button>}{trail.length>0&&<button onClick={()=>{change(entry);setTrail([]);}}>最初の語へ</button>}<span>距離は関連性・使用頻度の教材上の優先度（実測頻度ではありません）</span></div>
    <div className="vu-filters"><button aria-pressed={filter==='all'} onClick={()=>{setFilter('all');setSelected(null);setPage(0);}}>すべて</button>{Object.entries(types).map(([id,label])=><button key={id} data-type={id} aria-pressed={filter===id} onClick={()=>{setFilter(id);setSelected(null);setPage(0);}}>{label}</button>)}</div>
+   {mapSense&&<p className="vu-map-sense">関連語マップの対象語義：{mapSense}</p>}
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
-   {view==='map' && <><div className="vu-map-scroll"><div className="vu-map" key={center.word}>
+   {view==='map' && <><div className="vu-map-scroll" ref={mapScroll}><div className="vu-map" key={center.word}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" className="vu-orbits">
       {ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
       {nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={'vu-line '+n.type}/>)}
@@ -51,7 +54,7 @@ export default function VocaUniverse({entry,words,onClose,onSpeak,sound}) {
     <div className="vu-center">{showImages&&center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
     {nodes.map((n,i)=><button key={n.word} data-type={n.type} className={'vu-node '+(selected===n.word?'is-selected':'')} style={{left:n.x+'%',top:n.y+'%',animationDelay:i*55+'ms'}} onClick={()=>setSelected(n.word)} aria-pressed={selected===n.word}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small></button>)}
    </div></div>
-   <div className="vu-rings"><span>内側：最優先</span><span>中間：関連</span><span>外側：発展</span></div>
+   <div className="vu-rings"><span>{visible.length}件の関連語</span><span>内側：最優先</span><span>中間：関連</span><span>外側：発展</span></div>
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);setSelected(null);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);setSelected(null);}}>次へ →</button></div>}</>}
    {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button></section>}
    {!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
