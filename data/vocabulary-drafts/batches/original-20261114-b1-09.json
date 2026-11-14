@@ -1,0 +1,840 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261114-b1-09",
+  "sourceKind": "github-original",
+  "records": [
+    {
+      "senseId": "VDO-261114-L-00001",
+      "wordId": "VD-03110",
+      "headword": "freshman",
+      "partOfSpeech": "noun",
+      "meaningJa": "大学・高校などの1年生（米）",
+      "definitionEn": "a student in the first year of a school or college",
+      "synonyms": "first-year student",
+      "cefrHeadword": "B1",
+      "imageHint": "大学の新入生",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00001-e01",
+          "en": "My cousin is a freshman at a university in Tokyo.",
+          "ja": "いとこは東京の大学の1年生です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00001-e02",
+          "en": "The freshmen attended an orientation on Monday.",
+          "ja": "新入生たちは月曜日にオリエンテーションに参加しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00002",
+      "wordId": "VD-03111",
+      "headword": "friendliness",
+      "partOfSpeech": "noun",
+      "meaningJa": "親しみやすさ・友好的な態度",
+      "definitionEn": "the quality of being kind and welcoming",
+      "synonyms": "warmth",
+      "cefrHeadword": "B1",
+      "imageHint": "歓迎するホスト家庭",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00002-e01",
+          "en": "The visitors appreciated the friendliness of the host families.",
+          "ja": "訪問者たちは受け入れ家庭の親しみやすさに感謝しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00002-e02",
+          "en": "Her friendliness helped new classmates feel comfortable.",
+          "ja": "彼女の親しみやすさのおかげで新しいクラスメートたちは安心できました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00003",
+      "wordId": "VD-03112",
+      "headword": "fright",
+      "partOfSpeech": "noun",
+      "meaningJa": "恐怖・驚き",
+      "definitionEn": "a sudden strong feeling of fear",
+      "synonyms": "scare",
+      "cefrHeadword": "B1",
+      "imageHint": "突然の大きな音",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00003-e01",
+          "en": "The loud sound gave the child a fright.",
+          "ja": "大きな音にその子どもはびっくりしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00003-e02",
+          "en": "She recovered from her fright when she saw the dog was safe.",
+          "ja": "犬が無事だとわかって彼女は恐怖から立ち直りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00004",
+      "wordId": "VD-03113",
+      "headword": "frost",
+      "partOfSpeech": "noun",
+      "meaningJa": "霜",
+      "definitionEn": "a thin white layer of ice forming on cold surfaces",
+      "synonyms": "ice crystals",
+      "cefrHeadword": "B1",
+      "imageHint": "霜のついた芝生",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00004-e01",
+          "en": "Frost covered the grass early in the morning.",
+          "ja": "早朝、芝生は霜で覆われていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00004-e02",
+          "en": "The farmers protected young plants from frost.",
+          "ja": "農家の人たちは若い植物を霜から守りました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00005",
+      "wordId": "VD-03114",
+      "headword": "frozen",
+      "partOfSpeech": "adjective",
+      "meaningJa": "凍った・冷凍の",
+      "definitionEn": "made solid or very cold by freezing",
+      "synonyms": "icy",
+      "cefrHeadword": "B1",
+      "imageHint": "凍った湖",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00005-e01",
+          "en": "The lake was frozen after several cold nights.",
+          "ja": "寒い夜が何日か続き湖は凍っていました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00005-e02",
+          "en": "She cooked frozen vegetables for dinner.",
+          "ja": "彼女は夕食に冷凍野菜を調理しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00006",
+      "wordId": "VD-03115",
+      "headword": "frustrated",
+      "partOfSpeech": "adjective",
+      "meaningJa": "いらいらした・思うようにいかず落胆した",
+      "definitionEn": "upset because something is difficult or not going well",
+      "synonyms": "discouraged",
+      "cefrHeadword": "B1",
+      "imageHint": "うまくいかない発音練習",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00006-e01",
+          "en": "He felt frustrated when the microphone stopped working.",
+          "ja": "マイクが動かなくなって彼はいらいらしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00006-e02",
+          "en": "She was frustrated by her slow progress in pronunciation.",
+          "ja": "発音の上達が遅くて彼女はもどかしく感じました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00007",
+      "wordId": "VD-03116",
+      "headword": "frustration",
+      "partOfSpeech": "noun",
+      "meaningJa": "いらだち・もどかしさ",
+      "definitionEn": "a feeling of being upset when progress is blocked",
+      "synonyms": "annoyance",
+      "cefrHeadword": "B1",
+      "imageHint": "アプリの操作に苦労する",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00007-e01",
+          "en": "The long delay caused frustration among passengers.",
+          "ja": "長い遅延で乗客たちはいらだちを感じました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00007-e02",
+          "en": "The teacher understood the students' frustration with the new app.",
+          "ja": "教師は新しいアプリに対する生徒たちのもどかしさを理解しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00008",
+      "wordId": "VD-03117",
+      "headword": "frying pan",
+      "partOfSpeech": "noun",
+      "meaningJa": "フライパン",
+      "definitionEn": "a flat pan used for cooking food over heat",
+      "synonyms": "skillet",
+      "cefrHeadword": "B1",
+      "imageHint": "コンロのフライパン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00008-e01",
+          "en": "Heat the frying pan before adding the vegetables.",
+          "ja": "野菜を入れる前にフライパンを温めてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00008-e02",
+          "en": "The cook placed the frying pan on the stove.",
+          "ja": "料理人はフライパンをコンロに置きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00009",
+      "wordId": "VD-03118",
+      "headword": "fuel",
+      "partOfSpeech": "noun",
+      "meaningJa": "燃料",
+      "definitionEn": "a material used to produce heat or power",
+      "synonyms": "energy source",
+      "cefrHeadword": "B1",
+      "imageHint": "バスの燃料補給",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00009-e01",
+          "en": "The bus uses less fuel than the older model.",
+          "ja": "そのバスは旧型より燃料の使用量が少ないです。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00009-e02",
+          "en": "Scientists compared several types of clean fuel.",
+          "ja": "科学者たちはいくつかのクリーン燃料を比較しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00010",
+      "wordId": "VD-03118",
+      "headword": "fuel",
+      "partOfSpeech": "verb",
+      "meaningJa": "燃料を供給する・促進する",
+      "definitionEn": "to supply energy or make an activity stronger",
+      "synonyms": "power",
+      "cefrHeadword": "B1",
+      "imageHint": "太陽光で動く設備",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00010-e01",
+          "en": "Solar energy fuels some of the school's equipment.",
+          "ja": "太陽エネルギーは学校の設備の一部に電力を供給します。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00010-e02",
+          "en": "The successful event fueled interest in international exchange.",
+          "ja": "行事の成功は国際交流への関心を高めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00011",
+      "wordId": "VD-03119",
+      "headword": "full stop",
+      "partOfSpeech": "noun",
+      "meaningJa": "ピリオド・文の終止符（英）",
+      "definitionEn": "the punctuation mark placed at the end of a statement",
+      "synonyms": "period (US)",
+      "cefrHeadword": "B1",
+      "imageHint": "英文末のピリオド",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00011-e01",
+          "en": "Put a full stop at the end of the sentence.",
+          "ja": "文末にピリオドを付けてください。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00011-e02",
+          "en": "The student forgot the full stop after the last word.",
+          "ja": "生徒は最後の単語のあとにピリオドを付け忘れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00012",
+      "wordId": "VD-03120",
+      "headword": "full-time",
+      "partOfSpeech": "adjective",
+      "meaningJa": "常勤の・フルタイムの",
+      "definitionEn": "working for the usual number of hours each week",
+      "synonyms": "not part-time",
+      "cefrHeadword": "B1",
+      "imageHint": "常勤職員の求人",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00012-e01",
+          "en": "She accepted a full-time teaching position.",
+          "ja": "彼女は常勤の教師の職を引き受けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00012-e02",
+          "en": "The hospital is looking for full-time nurses.",
+          "ja": "病院は常勤の看護師を募集しています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00013",
+      "wordId": "VD-03121",
+      "headword": "fund",
+      "partOfSpeech": "noun",
+      "meaningJa": "基金・資金",
+      "definitionEn": "money set aside for a particular purpose",
+      "synonyms": "reserve",
+      "cefrHeadword": "B1",
+      "imageHint": "奨学金用の募金箱",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00013-e01",
+          "en": "The club created a fund for travel expenses.",
+          "ja": "部活動は交通費のための資金を設けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00013-e02",
+          "en": "Donations increased the scholarship fund.",
+          "ja": "寄付によって奨学基金が増えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00014",
+      "wordId": "VD-03121",
+      "headword": "fund",
+      "partOfSpeech": "verb",
+      "meaningJa": "資金を提供する",
+      "definitionEn": "to provide money for a project",
+      "synonyms": "finance",
+      "cefrHeadword": "B1",
+      "imageHint": "科学プロジェクトの助成",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00014-e01",
+          "en": "The town funded a new children's library.",
+          "ja": "町は新しい児童図書館に資金を提供しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00014-e02",
+          "en": "A grant funded the school's science project.",
+          "ja": "助成金が学校の科学プロジェクトを支えました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00015",
+      "wordId": "VD-03122",
+      "headword": "funeral",
+      "partOfSpeech": "noun",
+      "meaningJa": "葬儀",
+      "definitionEn": "a ceremony held after someone dies",
+      "synonyms": "memorial service (related)",
+      "cefrHeadword": "B1",
+      "imageHint": "葬儀に飾られた花",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00015-e01",
+          "en": "The family held a small funeral for their grandfather.",
+          "ja": "家族は祖父のために小さな葬儀を行いました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00015-e02",
+          "en": "He took a day off to attend a funeral.",
+          "ja": "彼は葬儀に参列するため1日休みました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00016",
+      "wordId": "VD-03123",
+      "headword": "fur",
+      "partOfSpeech": "noun",
+      "meaningJa": "動物の毛・毛皮",
+      "definitionEn": "thick soft hair covering an animal's body",
+      "synonyms": "animal hair",
+      "cefrHeadword": "B1",
+      "imageHint": "白い毛のウサギ",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00016-e01",
+          "en": "The rabbit has soft white fur.",
+          "ja": "そのウサギは柔らかい白い毛に覆われています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00016-e02",
+          "en": "The cat's fur became wet in the rain.",
+          "ja": "猫の毛は雨で濡れました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00017",
+      "wordId": "VD-03124",
+      "headword": "furnish",
+      "partOfSpeech": "verb",
+      "meaningJa": "家具を備え付ける",
+      "definitionEn": "to put furniture and equipment into a room",
+      "synonyms": "equip",
+      "cefrHeadword": "B1",
+      "imageHint": "丸い机の新しい教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00017-e01",
+          "en": "The school furnished the new classroom with round tables.",
+          "ja": "学校は新しい教室に丸いテーブルを備え付けました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00017-e02",
+          "en": "They furnished the apartment using secondhand furniture.",
+          "ja": "彼らは中古家具を使ってアパートに家具をそろえました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00018",
+      "wordId": "VD-03125",
+      "headword": "furthermore",
+      "partOfSpeech": "adverb",
+      "meaningJa": "さらに・そのうえ",
+      "definitionEn": "used to add an important point to what was said",
+      "synonyms": "moreover",
+      "cefrHeadword": "B1",
+      "imageHint": "利点を示すプレゼン",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00018-e01",
+          "en": "The plan saves time; furthermore, it reduces paper waste.",
+          "ja": "その計画は時間を節約し、さらに紙のごみも減らします。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00018-e02",
+          "en": "The park is safe; furthermore, it is easy to reach by bus.",
+          "ja": "その公園は安全で、そのうえバスで簡単に行けます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00019",
+      "wordId": "VD-03126",
+      "headword": "furthest",
+      "partOfSpeech": "adjective",
+      "meaningJa": "最も遠い",
+      "definitionEn": "at the greatest distance from a place",
+      "synonyms": "farthest",
+      "cefrHeadword": "B1",
+      "imageHint": "廊下の端の教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00019-e01",
+          "en": "The furthest classroom is at the end of the corridor.",
+          "ja": "最も遠い教室は廊下の突き当たりにあります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00019-e02",
+          "en": "Our team traveled to the furthest village on the map.",
+          "ja": "私たちのチームは地図上で最も遠い村へ行きました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00020",
+      "wordId": "VD-03127",
+      "headword": "fuss",
+      "partOfSpeech": "noun",
+      "meaningJa": "大騒ぎ・過剰な心配",
+      "definitionEn": "unnecessary excitement or concern about something small",
+      "synonyms": "commotion",
+      "cefrHeadword": "B1",
+      "imageHint": "なくした名札を探す",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00020-e01",
+          "en": "There was a fuss over the missing name tag.",
+          "ja": "なくなった名札をめぐって大騒ぎになりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00020-e02",
+          "en": "The coach asked us not to make a fuss about the mistake.",
+          "ja": "コーチはそのミスを大げさに騒がないよう求めました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00021",
+      "wordId": "VD-03130",
+      "headword": "gallon",
+      "partOfSpeech": "noun",
+      "meaningJa": "ガロン（液体量の単位）",
+      "definitionEn": "a unit for measuring liquids used in some countries",
+      "synonyms": "liquid measure",
+      "cefrHeadword": "B1",
+      "imageHint": "液体の容器と量",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00021-e01",
+          "en": "The container holds one US gallon of water.",
+          "ja": "その容器には米国の1ガロン分の水が入ります。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00021-e02",
+          "en": "The recipe listed the milk in gallons rather than liters.",
+          "ja": "そのレシピでは牛乳の量がリットルではなくガロンで示されていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00022",
+      "wordId": "VD-03131",
+      "headword": "gap",
+      "partOfSpeech": "noun",
+      "meaningJa": "すき間・空間",
+      "definitionEn": "an empty space between two things",
+      "synonyms": "opening",
+      "cefrHeadword": "B1",
+      "imageHint": "椅子の間のすき間",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00022-e01",
+          "en": "A narrow gap separated the two buildings.",
+          "ja": "2つの建物の間には狭いすき間がありました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00022-e02",
+          "en": "Please leave a small gap between the chairs.",
+          "ja": "椅子の間に少しすき間を空けてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00023",
+      "wordId": "VD-03131",
+      "headword": "gap",
+      "partOfSpeech": "noun",
+      "meaningJa": "格差・差",
+      "definitionEn": "an important difference between groups or levels",
+      "synonyms": "difference",
+      "cefrHeadword": "B1",
+      "imageHint": "都市と農村の比較",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00023-e01",
+          "en": "The project aims to close the learning gap.",
+          "ja": "その計画は学習格差を縮めることを目指しています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00023-e02",
+          "en": "The survey found a gap between rural and urban services.",
+          "ja": "調査では農村部と都市部のサービスに差があることがわかりました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00024",
+      "wordId": "VD-03132",
+      "headword": "gardening",
+      "partOfSpeech": "noun",
+      "meaningJa": "園芸・庭仕事",
+      "definitionEn": "the activity of growing and caring for plants",
+      "synonyms": "plant growing",
+      "cefrHeadword": "B1",
+      "imageHint": "学校の花壇作り",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00024-e01",
+          "en": "Gardening helped the students learn about seasons.",
+          "ja": "園芸は生徒たちが季節について学ぶ助けになりました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00024-e02",
+          "en": "My aunt enjoys gardening on weekends.",
+          "ja": "おばは週末に庭仕事を楽しみます。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00025",
+      "wordId": "VD-03133",
+      "headword": "garment",
+      "partOfSpeech": "noun",
+      "meaningJa": "衣服・衣類の一着",
+      "definitionEn": "one item of clothing",
+      "synonyms": "piece of clothing",
+      "cefrHeadword": "B1",
+      "imageHint": "再生素材の衣服",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00025-e01",
+          "en": "The garment was made from recycled cotton.",
+          "ja": "その衣服は再生綿から作られました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00025-e02",
+          "en": "Each garment was labeled with its size.",
+          "ja": "衣服には一着ずつサイズが表示されていました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00026",
+      "wordId": "VD-03134",
+      "headword": "gay",
+      "partOfSpeech": "adjective",
+      "meaningJa": "同性愛の・ゲイの",
+      "definitionEn": "attracted romantically to people of the same sex",
+      "synonyms": "homosexual",
+      "cefrHeadword": "B1",
+      "imageHint": "多様性を尊重する教室",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00026-e01",
+          "en": "The book includes a gay character who supports his friends.",
+          "ja": "その本には友人たちを支えるゲイの登場人物が出てきます。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00026-e02",
+          "en": "The discussion focused on equal rights for gay people.",
+          "ja": "その話し合いは同性愛者の平等な権利に焦点を当てました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00027",
+      "wordId": "VD-03135",
+      "headword": "gee",
+      "partOfSpeech": "interjection",
+      "meaningJa": "わあ・へえ（口語の驚き）",
+      "definitionEn": "an informal expression of surprise",
+      "synonyms": "wow",
+      "cefrHeadword": "B1",
+      "imageHint": "ロボットに驚く生徒",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00027-e01",
+          "en": "Gee, I didn't expect the robot to move that quickly!",
+          "ja": "わあ、ロボットがあんなに速く動くとは思わなかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00027-e02",
+          "en": "Gee, that was a difficult puzzle!",
+          "ja": "わあ、難しいパズルだったね。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00028",
+      "wordId": "VD-03136",
+      "headword": "gene",
+      "partOfSpeech": "noun",
+      "meaningJa": "遺伝子",
+      "definitionEn": "a unit of information in cells that influences inherited traits",
+      "synonyms": "unit of heredity",
+      "cefrHeadword": "B1",
+      "imageHint": "DNAと遺伝子の図",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00028-e01",
+          "en": "Scientists identified a gene related to the plant's color.",
+          "ja": "科学者たちは植物の色に関係する遺伝子を特定しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00028-e02",
+          "en": "The lesson explained how a gene can affect a trait.",
+          "ja": "授業では遺伝子が特徴に影響する仕組みを説明しました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00029",
+      "wordId": "VD-03137",
+      "headword": "general",
+      "partOfSpeech": "adjective",
+      "meaningJa": "一般的な・全体的な",
+      "definitionEn": "not limited to one specific case",
+      "synonyms": "overall",
+      "cefrHeadword": "B1",
+      "imageHint": "博物館の全体案内",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00029-e01",
+          "en": "The guide gave a general introduction to the museum.",
+          "ja": "案内人は博物館の全体的な紹介をしました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00029-e02",
+          "en": "We discussed the general causes of water pollution.",
+          "ja": "私たちは水質汚染の一般的な原因を話し合いました。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00030",
+      "wordId": "VD-03137",
+      "headword": "general",
+      "partOfSpeech": "noun",
+      "meaningJa": "将軍・軍の高級司令官",
+      "definitionEn": "a high-ranking officer in an army",
+      "synonyms": "army commander",
+      "cefrHeadword": "B1",
+      "imageHint": "歴史博物館の将軍像",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00030-e01",
+          "en": "The history book describes a general who led the army.",
+          "ja": "歴史の本には軍を率いた将軍について書かれています。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00030-e02",
+          "en": "The general's portrait hangs in the museum.",
+          "ja": "その将軍の肖像画は博物館に飾られています。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00031",
+      "wordId": "VD-03138",
+      "headword": "generally",
+      "partOfSpeech": "adverb",
+      "meaningJa": "一般に・ふつう",
+      "definitionEn": "in most situations or as a general rule",
+      "synonyms": "usually",
+      "cefrHeadword": "B1",
+      "imageHint": "規則正しい睡眠",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00031-e01",
+          "en": "People generally need enough sleep to concentrate.",
+          "ja": "人は一般に集中するため十分な睡眠が必要です。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00031-e02",
+          "en": "The buses are generally on time in this town.",
+          "ja": "この町のバスはふつう時間どおりです。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261114-L-00032",
+      "wordId": "VD-03140",
+      "headword": "generous",
+      "partOfSpeech": "adjective",
+      "meaningJa": "気前がよい・寛大な",
+      "definitionEn": "willing to give time, money, or help to others",
+      "synonyms": "giving",
+      "cefrHeadword": "B1",
+      "imageHint": "学校への本の寄付",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261114-L-00032-e01",
+          "en": "A generous neighbor donated books to the school.",
+          "ja": "気前のよい近所の人が学校に本を寄付しました。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261114-L-00032-e02",
+          "en": "She was generous with her time when helping beginners.",
+          "ja": "彼女は初心者を助けるため惜しみなく時間を使いました。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ],
+  "qualityNote": "Original authoring; known previously covered headwords filtered. Pending human editorial review."
+}
