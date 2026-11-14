@@ -1,0 +1,57 @@
+{
+  "asOf": "2026-11-15",
+  "inspection": "source and local automated tests; no live deployment verification",
+  "main": {
+    "ref": "origin/main",
+    "commit": "52d6c9031bc643ca7c7004d054f3be431a7ea361",
+    "automatedTestsPassed": 71,
+    "catalogCourses": 24,
+    "catalogUnits": 69,
+    "sourceDraftHeadwords": 3157,
+    "sourceDraftExamples": 7644,
+    "categoryStarterUniqueWords": 100,
+    "imageFiles": 400,
+    "audioFiles": 400,
+    "universeHeadsIncludingPhrases": 32813,
+    "universeDirectedLinks": 119074
+  },
+  "memoryBranch": {
+    "ref": "origin/development/memory-mission-no-deploy",
+    "commit": "ab70aab5952979d05deedf4fb3fcbc3dfc9abcbe",
+    "automatedTestsPassed": 78,
+    "memorySpecificTestsPassed": 7,
+    "aheadOfMainCommits": 2,
+    "mergedIntoMain": false,
+    "persistence": "browser-local storage"
+  },
+  "privateVocabularyDraft": {
+    "headwords": 7019,
+    "target": 8653,
+    "coveragePercent": 81.1,
+    "examples": 15428,
+    "remainingNoDraft": 1634,
+    "editorialApproval": false,
+    "newInThisPass": {
+      "B2": 292,
+      "C1": 108,
+      "examples": 800
+    },
+    "addedImageGenerationCount": 0
+  },
+  "outstanding": [
+    "769 C1 and 865 C2 headword drafts",
+    "semantic and translation review across the dataset",
+    "historical 53-headword synonym-status backlog",
+    "170 previously flagged B2 definitions need sense-boundary decisions",
+    "import the private drafts into normal course and memory question sources",
+    "integrate and verify Memory Mission in main",
+    "new example images and associated media",
+    "full build verification and iPad/browser end-to-end testing"
+  ],
+  "publication": {
+    "newPushPerformed": false,
+    "deploymentPerformed": false,
+    "repositoryVercelGitDeploymentEnabled": false,
+    "liveServingCommitVerified": false
+  }
+}
