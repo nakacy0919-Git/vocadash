@@ -1,7 +1,20 @@
+// A wake word is recognized only at the start of a final utterance.
+export function extractWake(raw,mode='both') {
+ const t=String(raw||'').trim();
+ const m=t.match(/^(hey[\s,]+)?(?:voca(?:\s*dash)?|voka)\b[\s,.:!?-]*(.*)$/i);
+ if(!m)return null;
+ if(mode==='hey'&&!m[1]||mode==='short'&&m[1])return null;
+ const command=m[2].trim();
+ // Do not activate on the app name in a normal sentence.
+ if(command&&parseVoice(command).kind==='unknown')return null;
+ return {command};
+}
+
 export function parseVoice(raw) {
  const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(hey )?(voca dash|vocadash)[ ,:]*/,'').replace(/^(please |can you |could you )/,'');
  const rules=[
  ['stop',/^(stop listening|turn off voice|voice off|stop voice)$/],
+ ['sleep',/^(go to sleep|stand by|standby|sleep mode|goodbye voca)$/],
  ['help',/^(help|show commands|what can i say)$/],
  ['home',/^(go home|home|back to dashboard)$/],
  ['close',/^(close (the )?universe|go back to (voca dash|vocadash)|close map|exit universe)$/],
