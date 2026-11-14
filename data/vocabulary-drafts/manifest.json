@@ -41,13 +41,14 @@
     "batches/original-20261114-b1-mega-02c.json",
     "batches/original-20261114-b1-mega-03a.json",
     "batches/original-20261114-b1-mega-03b.json",
-    "batches/original-20261114-mega-03c.json"
+    "batches/original-20261114-mega-03c.json",
+    "batches/original-20261114-b2-evening-01.json"
   ],
   "totals": {
-    "distinctHeadwords": 3157,
-    "senses": 3822,
-    "examples": 7644,
-    "distinctExamples": 7644
+    "distinctHeadwords": 3250,
+    "senses": 3936,
+    "examples": 7872,
+    "distinctExamples": 7872
   },
   "quality": {
     "humanReviewed": false,
@@ -62,17 +63,21 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-14",
   "recentWork": {
-    "source": "original English-Japanese learning examples, consolidated B1 S–Y and B2 A–B",
+    "source": "original B2 vocabulary definitions, contextual synonyms and bilingual examples",
     "newBatches": [
-      "original-20261114-b1-mega-03a",
-      "original-20261114-b1-mega-03b",
-      "original-20261114-mega-03c"
+      "original-20261114-b2-evening-01"
     ],
-    "headwordsAdded": 526,
-    "sensesAdded": 591,
-    "translatedExamplesAdded": 1182,
+    "headwordsAdded": 93,
+    "sensesAdded": 114,
+    "translatedExamplesAdded": 228,
     "newExamplesDuplicatingPrior": 0,
-    "existingBatchesChecked": 34
+    "existingBatchesChecked": 37,
+    "skippedExistingHeadwords": [
+      "broaden",
+      "carbon",
+      "catastrophe",
+      "capability"
+    ]
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. All entries remain draft-unreviewed pending human checks. Main app source and production are not linked."
 }
