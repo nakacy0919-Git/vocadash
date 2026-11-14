@@ -1,3 +1,4 @@
+import advancedActionMega from '../data/universe-advanced-action-mega.js';
 import domainMega from '../data/universe-domain-mega.js';
 import academicFamilies, {academicFamilyNotes} from '../data/universe-academic-families.js';
 import foundationMega, {foundationMegaNotes} from '../data/universe-foundation-mega.js';
@@ -99,6 +100,14 @@ for(const [word,entry] of Object.entries(domainMega)) {
   domainMegaAdded.links+=authored.get(normalize(word)).links.length;
 }
 export function domainMegaCoverage(){return {...domainMegaAdded,candidates:Object.keys(domainMega).length};}
+const actionMegaAdded={heads:0,links:0};
+for(const [word,entry] of Object.entries(advancedActionMega)){
+ if(authored.has(normalize(word)))continue;
+ addAuthored(word,entry);
+ actionMegaAdded.heads++;
+ actionMegaAdded.links+=authored.get(normalize(word)).links.length;
+}
+export function actionMegaCoverage(){return {...actionMegaAdded,candidates:Object.keys(advancedActionMega).length};}
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
