@@ -1,0 +1,71 @@
+import {test,after} from 'node:test';
+import assert from 'node:assert/strict';
+import {createClassroom} from './server.js';
+import {summarize,csv,classSummary} from './analytics.js';
+import {normalizeWords} from '../src/lib/learning.js';
+import {readFileSync} from 'node:fs';
+const firstWord=normalizeWords(JSON.parse(readFileSync(new URL('../src/data/eiken_2_stage1.json',import.meta.url),'utf8')),'eiken_2','1')[0];
+const origin='http://localhost:5173';
+const {server,db}=createClassroom({origin,teacherKey:'test-teacher-key'});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const base=`http://127.0.0.1:${server.address().port}/api/classroom/`;
+after(()=>{server.close();db.close();});
+async function request(path,body,cookie='',otherOrigin=origin){const res=await fetch(base+path,{method:body===undefined?'GET':'POST',headers:{origin:otherOrigin,cookie,'content-type':'application/json'},...(body===undefined?{}:{body:JSON.stringify(body)})});const data=res.headers.get('content-type').includes('json')?await res.json():await res.text();return {status:res.status,data,cookie:res.headers.get('set-cookie')?.split(';')[0]};}
+const account=async(login,role='student')=>request('auth/register',{login,name:login,password:'safe-test-password',role,teacherKey:'test-teacher-key'});
+test('authorization, join, assignment, idempotent sync and private dashboard end-to-end',async()=>{
+ const teacher=await account('teacher','teacher'),other=await account('other_teacher','teacher'),s1=await account('student_one'),s2=await account('student_two');
+ assert.equal(teacher.status,200);
+ assert.equal((await request('classes',{name:'forbidden'},s1.cookie)).status,403);
+ const made=await request('classes',{name:'3-2',timezone:'Asia/Tokyo'},teacher.cookie);assert.equal(made.status,201);const id=made.data.id;
+ assert.equal((await request(`classes/${id}/dashboard`,undefined,other.cookie)).status,403);
+ const view=await request(`classes/${id}/dashboard`,undefined,teacher.cookie);
+ assert.equal((await request('join',{invite:view.data.class.invite},s1.cookie)).status,200);
+ assert.equal((await request('join',{invite:view.data.class.invite},s2.cookie)).status,200);
+ const assignment=await request(`classes/${id}/assignments`,{title:'Unit 1',course:'eiken_2',unit:'1',target:10,due:Date.now()+86400000},teacher.cookie);assert.equal(assignment.status,201);
+ const body={assignmentId:assignment.data.id,items:[{id:'attempt-1',word:firstWord.id,label:firstWord.word,correct:true,duration:1000,mode:'quiz'}]};
+ assert.equal((await request('attempts',body,s1.cookie)).status,200);assert.equal((await request('attempts',body,s1.cookie)).status,200);
+ assert.equal((await request('attempts',body,s2.cookie)).status,409);
+ const student=await request(`classes/${id}/dashboard`,undefined,s1.cookie);assert.equal(student.data.rows.length,1);assert.equal(student.data.rows[0].answers,1);assert.equal(student.data.class.invite,undefined);
+ const dashboard=await request(`classes/${id}/dashboard`,undefined,teacher.cookie);assert.equal(dashboard.data.rows.length,2);assert.equal(dashboard.data.summary.answers,1);
+ assert.equal((await request(`classes/${id}/csv`,undefined,s1.cookie)).status,403);assert.match((await request(`classes/${id}/csv`,undefined,teacher.cookie)).data,/student_one/);
+ assert.equal((await request(`classes/${id}/invite`,{},teacher.cookie,'https://evil.example')).status,403);
+ await request(`classes/${id}/invite`,{},teacher.cookie);assert.equal((await request('join',{invite:view.data.class.invite},s1.cookie)).status,404);
+ assert.equal((await request('attempts',{...body,items:[{...body.items[0],id:'forged',word:'not-in-unit'}]},s1.cookie)).status,400);
+ const bad={...body,items:[{...body.items[0],id:'bad',duration:-1}]};assert.equal((await request('attempts',bad,s1.cookie)).status,400);
+ await request(`classes/${id}/remove`,{userId:student.data.rows[0].id},teacher.cookie);assert.equal((await request(`classes/${id}/dashboard`,undefined,s1.cookie)).status,403);assert.equal((await request('attempts',{...body,items:[{...body.items[0],id:'new'}]},s1.cookie)).status,403);
+ await request('auth/logout',{},s1.cookie);assert.equal((await request('auth/me',undefined,s1.cookie)).status,401);
+});
+test('long term mastery requires spaced success; wrong answer resets it',()=>{
+ const day=86400000,now=Date.now(),a=(n,correct=true)=>({id:String(n),word:'one',label:'one',correct,duration:500,created:now+n*day});
+ assert.equal(summarize(Array.from({length:20},(_,n)=>({...a(n),created:now})),now).mastered,0);
+ const attempts=[0,1,4,11,25].map(n=>a(n));assert.equal(summarize(attempts,now+25*day).mastered,1);
+ assert.equal(summarize([...attempts,a(26,false)],now+26*day).mastered,0);
+ assert.equal(summarize(attempts,now+200*day).mastered,0);
+ assert.equal(summarize([]).accuracy,null);
+});
+test('CSV neutralizes formulas including leading spaces and escapes quotes',()=>{const output=csv([{id:'x',name:' =HYPERLINK("evil")'}]);assert.ok(output.includes("' =HYPERLINK"));assert.ok(output.includes('""evil""'));});
+
+test('different students never advance each other memory levels',()=>{const now=Date.now(),day=86400000;const attempts=[0,1,4,11,25].map((n,i)=>({id:String(i),user_id:'student'+i,word:'one',label:'one',correct:1,duration:100,created:now+n*day}));const s=classSummary(attempts,now+25*day);assert.equal(s.mastered,0);assert.equal(s.learned,5);});
+test('validates assignments and events, exports and deletes personal data',async()=>{
+ const t=await account('privacy_teacher','teacher'),s=await account('privacy_student');
+ const made=await request('classes',{name:'Privacy class'},t.cookie),id=made.data.id;
+ const dashboard=await request(`classes/${id}/dashboard`,undefined,t.cookie);
+ await request('join',{invite:dashboard.data.class.invite},s.cookie);
+ assert.equal((await request(`classes/${id}/assignments`,{title:'Invalid',course:'unknown',unit:'1',target:2,due:Date.now()+100000},t.cookie)).status,400);
+ assert.equal((await request(`classes/${id}/assignments`,{title:'Too large',course:'eiken_2',unit:'1',target:1000,due:Date.now()+100000},t.cookie)).status,400);
+ const start=Date.now();assert.equal((await request(`classes/${id}/events`,{title:'Team words',goal:20,starts:start,ends:start+3600000},t.cookie)).status,201);
+ assert.equal((await request(`classes/${id}/events`,{title:'Invalid',goal:20,starts:start,ends:start-1000},t.cookie)).status,400);
+ const exported=await request('account/export',undefined,s.cookie);assert.equal(exported.status,200);assert.equal(exported.data.profile.login,'privacy_student');assert.equal(exported.data.profile.password,undefined);
+ assert.equal((await request('account/delete',{login:'privacy_student',password:'incorrect-password'},s.cookie)).status,403);
+ assert.equal((await request('account/delete',{login:'privacy_student',password:'safe-test-password'},s.cookie)).status,200);
+ assert.equal((await request('auth/me',undefined,s.cookie)).status,401);
+ assert.equal((await request(`classes/${id}/dashboard`,undefined,t.cookie)).data.rows.length,0);
+ assert.equal((await request('account/delete',{login:'privacy_teacher',password:'safe-test-password'},t.cookie)).status,200);
+ assert.equal(db.prepare('SELECT * FROM classes WHERE id=?').get(id),undefined);
+});
+test('persistent SQLite survives server restart',async()=>{
+ const {mkdtempSync,rmSync}=await import('node:fs');const {tmpdir}=await import('node:os');const {join}=await import('node:path');
+ const dir=mkdtempSync(join(tmpdir(),'vd-classroom-'));const file=join(dir,'data.sqlite');
+ const first=createClassroom({filename:file});first.db.prepare('INSERT INTO users VALUES(?,?,?,?,?)').run('persistent','persistent','Persistent','student','unused');first.db.close();
+ const second=createClassroom({filename:file});assert.equal(second.db.prepare('SELECT name FROM users WHERE id=?').get('persistent').name,'Persistent');second.db.close();rmSync(dir,{recursive:true});
+});

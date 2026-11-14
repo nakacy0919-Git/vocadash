@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Isolated student records and credentials
+.classroom-data/
+*.sqlite
+*.sqlite-*
+.env*

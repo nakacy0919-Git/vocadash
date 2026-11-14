@@ -72,10 +72,10 @@ export function assetImage(path) {
   return path;
 }
 
-export function safeLoad() {
+export function safeLoad(storageKey = STORAGE_KEY) {
   const empty = { records: {}, totalAnswers: 0, lastSelection: { courseId: 'eiken_2', unitId: '1' }, settings: { sound: true, speed: 0.85, questionCount: 10, randomOrder: false } };
   try {
-    const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+    const parsed = JSON.parse(localStorage.getItem(storageKey) || 'null');
     if (!parsed || typeof parsed !== 'object') return empty;
     const course = CATALOG.find(c => c.id === parsed.lastSelection?.courseId) || CATALOG.find(c => c.id === 'eiken_2');
     const validUnit = course.units.find(u => u.id === parsed.lastSelection?.unitId);
@@ -90,8 +90,8 @@ export function safeLoad() {
   }
 }
 
-export function safeSave(store) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); return true; }
+export function safeSave(store, storageKey = STORAGE_KEY) {
+  try { localStorage.setItem(storageKey, JSON.stringify(store)); return true; }
   catch { return false; }
 }
 
