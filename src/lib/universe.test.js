@@ -15,7 +15,7 @@ test('missing data is honest; authored core is closer',()=>{
 });
 
 test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
- assert.deepEqual(universeCoverage(),{heads:5235,links:19674});
+ assert.deepEqual(universeCoverage(),{heads:6842,links:26096});
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
  assert.ok(lookupUniverse('constellation').relatedWords.some(x=>x.word==='Orion'));
  assert.ok(lookupUniverse('remarkably').relatedWords.some(x=>x.word==='extraordinarily'));
@@ -168,4 +168,14 @@ test('foundation mega batch keeps contextual links and spelling variants',()=>{
  assert.ok(getRelations(lookupUniverse("architect")).some(x=>x.word==="architecture"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("ashamed")).some(x=>x.word==="shame"&&x.note&&x.example));
  assert.ok(getRelations(lookupUniverse("assist")).some(x=>x.word==="assistance"&&x.note&&x.example));
+});
+
+test('academic family maps preserve contextual links and usage explanations',()=>{
+ for(const w of ["reveal","repeal","corroborate","systemic","homogeneous","intrinsic","stipulate"])assert.ok(lookupUniverse(w).relatedWords.length>=3);
+ assert.ok(getRelations(lookupUniverse("reveal")).some(x=>x.word==="disclose"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("abolish")).some(x=>x.word==="repeal"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("contemplate")).some(x=>x.word==="ponder"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("pretext")).some(x=>x.word==="excuse"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("comprise")).some(x=>x.word==="consist of"&&x.note&&x.example));
+ assert.ok(getRelations(lookupUniverse("demotion")).some(x=>x.word==="promotion"&&x.note&&x.example));
 });
