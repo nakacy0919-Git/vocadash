@@ -1,3 +1,5 @@
+import synonymMega from '../data/universe-synonym-mega.js';
+import {addSynonymMega} from './universe-synonym-mega.js';
 import lexicalExpansion from '../data/universe-lexical-expansion.js';
 import derivationCollocationMega, {derivationCollocationNotes} from '../data/universe-derivation-collocation-mega.js';
 import adjectiveNounMega, {adjectiveNounNotes} from '../data/universe-adjective-noun-expressions-mega.js';
@@ -349,6 +351,10 @@ for(const [word,c] of candidates){
 const lexicalAfter=countLexicalHeads();
 export function lexicalExpansionCoverage(){return {editorial:{...lexicalEditorial},promoted:{...lexicalPromoted},before:{...lexicalBefore},after:{...lexicalAfter}};}
 
+// The synonym batch is applied last, preserving earlier editorial classifications.
+const synonymMegaAdded=addSynonymMega(authored,synonymMega);
+export function synonymMegaCoverage(){return {...synonymMegaAdded};}
+
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
 const reverse = new Map();
@@ -357,7 +363,7 @@ for (const [head,entry] of authored) {
     if (!['synonym','family','contrast','related'].includes(link.type)) continue;
     const key=normalize(link.word);
     const list=reverse.get(key)||[];
-    list.push({word:head,meaning:entry.meaning,type:link.type,tier:link.tier==='extended'?'extended':'related',reverse:true});
+    list.push({word:head,meaning:link.synonymContext||entry.meaning,type:link.type,tier:link.tier==='extended'?'extended':'related',reverse:true,...(link.synonymMega?{synonymContext:link.synonymContext,note:link.note,synonymMega:true}:{})});
     reverse.set(key,list);
   }
 }
