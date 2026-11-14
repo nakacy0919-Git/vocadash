@@ -10,7 +10,8 @@ test('authored specialist questions have evidence and exactly one option answer'
 });
 test('full original corpus generates valid questions across all 14 formats',()=>{
   const base=buildQuestions(records,authored,{random:()=>.3});
-  const questions=[...base.questions,...records.flatMap(sentenceQuestions)];
+  const questions=base.questions;
+  for(const q of questions)if(q.format!=='reorder')assert.equal(q.options.length,4,q.id);
   for(const q of questions)assert.deepEqual(validateQuestion(q),[],q.id);
   assert.deepEqual(new Set(questions.map(q=>q.format)),new Set(Object.keys(FORMATS)));
   assert.equal(new Set(questions.map(q=>q.id)).size,questions.length);
@@ -20,7 +21,7 @@ test('rejects duplicate choices, missing correct option, unreviewed relations an
   assert(validateQuestion({...q,options:['靴','時計']}).includes('ambiguous-options'));
   assert(validateQuestion({...authored.find(q=>q.format==='synonym'),evidence:{source:'x',rationale:'x'}}).includes('review-required'));
   assert(validateQuestion({...authored.find(q=>q.format==='image'),evidence:{source:'x',rationale:'x'}}).includes('unverified-image'));
-  assert(validateQuestion({...q,options:['本','volume'],forbiddenDistractors:['volume']}).includes('related-distractor'));
+  assert(validateQuestion({...q,options:['本','volume','clock','bag'],forbiddenDistractors:['volume']}).includes('related-distractor'));
 });
 test('cloze requires one exact headword occurrence and translated source',()=>{
   const w={senseId:'s',wordId:'w',headword:'cat',examples:[{id:'e',en:'A cat met another cat.',ja:'猫同士が会った'}]};
@@ -56,3 +57,5 @@ test('mixed session revisits selected senses with different skills',()=>{
   assert(new Set(session.map(q=>q.format)).size>=3);
   assert(session.length>=15);
 });
+
+test('four-choice recognition never exposes a typed task, even for a single filtered word',()=>{ const r={senseId:'test-s',wordId:'test-w',headword:'remote control',meaningJa:'リモコン',partOfSpeech:'noun',definitionEn:'A device used to control equipment from a distance.',examples:[{id:'test-e',en:'The remote control was under the cushion.',ja:'リモコンはクッションの下にありました。'}]}; const bank=buildQuestions([r],[],{random:()=>.4});for(const q of bank.questions.filter(q=>q.format!=='reorder')){assert.equal(q.options.length,4);assert.equal(new Set(q.options.map(s=>s.toLowerCase())).size,4);assert.equal(q.options.filter(o=>gradeAnswer(q,o)).length,1);}assert.deepEqual(new Set(bank.questions.map(q=>q.format)),new Set(['spelling','listening','definition','cloze','reorder']));});

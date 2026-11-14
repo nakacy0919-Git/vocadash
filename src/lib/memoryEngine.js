@@ -1,5 +1,6 @@
 // FSRS-6 memory equations (fixed default weights), with VocaDash scheduling and mastery policy.
 // https://open-spaced-repetition.github.io/ts-fsrs/guide/model/fsrs-6
+import {choiceIndex,wordOptions} from './fourChoices.js';
 const W=[0.212,1.2931,2.3065,8.2956,6.4133,0.8334,3.0194,0.001,1.8722,0.1666,0.796,1.4835,0.0614,0.2629,1.6483,0.6014,1.8729,0.5425,0.0912,0.0658,0.1542], DAY=86400000, FACTOR=0.9**(-1/W[20])-1;
 const clamp=(n,a,b)=>Math.min(b,Math.max(a,n));
 export function recall(m,now=Date.now()){return m?.stability>0&&Number.isFinite(m.lastAt)?(1+FACTOR*Math.max(0,(now-m.lastAt)/DAY)/m.stability)**(-W[20]):0}
@@ -84,7 +85,8 @@ export function weakWords(words,records,now=Date.now(),limit=5){
 
 export function isMastered(m,now=Date.now()){
   const production=['typing','listening'].some(k=>(m?.skillStats?.[k]?.unaided||0)>=2);
-  return !!(m?.spacedSuccesses>=3&&m.stability>=30&&m.lastGrade>=3&&production&&mastery(m,now)>=80);
+  const recognition=['meaning','cloze','typing-choice','listening-choice','spelling','definition','en-ja','ja-en'].filter(k=>(m?.skillStats?.[k]?.unaided||0)>=2).length>=2;
+  return !!(m?.spacedSuccesses>=3&&m.stability>=30&&m.lastGrade>=3&&(production||recognition)&&mastery(m,now)>=80);
 }
 
 export function normalizeAnswer(s){return String(s??'').normalize('NFKC').toLowerCase().trim().replace(/[’‘]/g,"'").replace(/\s+/g,' ')}
@@ -93,19 +95,21 @@ export function buildQuestion(word,words,turn=0,random=Math.random,memory=null){
   const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
   const authored=Array.isArray(word.choices)&&word.choices.length===4&&new Set(word.choices.map(normalizeAnswer)).size===4&&normalizeAnswer(word.choices[word.correctIndex])===normalizeAnswer(word.word)&&/_{3,}|＿{3,}/.test(word.prompt||'');
   const typed=!/\.{2,}|…/.test(word.word);
-  const pool=[...new Set(words.filter(w=>w.id!==word.id&&normalizeAnswer(w.word)!==normalizeAnswer(word.word)&&w.meaning&&normalizeAnswer(w.meaning)!==normalizeAnswer(word.meaning)).map(w=>w.meaning))];
+  const index=choiceIndex(words), englishOptions=typed?wordOptions(word,index,{random}):[];
+  const pool=[...new Map(words.filter(w=>w.id!==word.id&&normalizeAnswer(w.word)!==normalizeAnswer(word.word)&&w.meaning&&normalizeAnswer(w.meaning)!==normalizeAnswer(word.meaning)).map(w=>[normalizeAnswer(w.meaning),w.meaning])).values()];
   const meaning=pool.length>=3;
-  const kinds=[...(meaning?['meaning']:[]),...(typed?['typing']:[]),...(authored?['cloze']:[]),...(typed?['listening']:[])];
+  const kinds=[...(meaning?['meaning']:[]),...(englishOptions.length===4?['typing']:[]),...(authored?['cloze']:[]),...(englishOptions.length===4?['listening']:[])];
   if(!kinds.length)return {kind:'recall',prompt:word.word,answer:word.meaning,options:[]};
   const stats=memory?.skillStats||{};
   const ranked=[...kinds].sort((a,b)=>{
-    const score=k=>stats[k]?.attempts?stats[k].unaided/stats[k].attempts:0;
+    const skill=k=>stats[k==='typing'||k==='listening'?k+'-choice':k]||stats[k];
+    const score=k=>skill(k)?.attempts?skill(k).unaided/skill(k).attempts:0;
     return score(a)-score(b)||(stats[a]?.lastAt||0)-(stats[b]?.lastAt||0);
   });
   const kind=memory&&turn%3!==0?ranked[0]:kinds[turn%kinds.length];
   if(kind==='cloze')return {kind,prompt:word.prompt,answer:word.word,options:shuffle(word.choices)};
   if(kind==='meaning')return {kind,prompt:word.word,answer:word.meaning,options:shuffle([word.meaning,...shuffle(pool).slice(0,3)])};
-  return {kind,prompt:kind==='typing'?word.meaning:'音声を聞いて入力してください',answer:word.word,options:[]};
+  return {kind,prompt:kind==='typing'?word.meaning:'音声を聞いて正しい英単語を選んでください',answer:word.word,options:englishOptions};
 }
 
 export function enqueueRetry(queue,index,item){if(item.retry>=2)return queue;const out=[...queue];out.splice(Math.min(out.length,index+4),0,{word:item.word,retry:item.retry+1});return out;}

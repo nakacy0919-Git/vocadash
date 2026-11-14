@@ -22,7 +22,7 @@ export function memorySnapshot(records={},words=[],now=Date.now()){
 
 export function quizMemoryAttempt(attempt){
  if(!attempt?.senseId)throw new Error('Missing quiz sense ID');
- return {id:'quiz:'+attempt.senseId,word:attempt.word,meaning:attempt.meaning,kind:attempt.format,correct:attempt.correct,responseMs:attempt.responseMs,hintUsed:attempt.hintCount>0,at:attempt.answeredAt,attemptId:attempt.attemptId};
+ return {id:'quiz:'+attempt.senseId,word:attempt.word,meaning:attempt.meaning,kind:attempt.format==='listening'?'listening-choice':attempt.format,correct:attempt.correct,responseMs:attempt.responseMs,hintUsed:attempt.hintCount>0,at:attempt.answeredAt,attemptId:attempt.attemptId};
 }
 
 export function universeMemoryAttempt(attempt){

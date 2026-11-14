@@ -1,5 +1,5 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
-import {FORMATS,adaptVocabulary,buildQuestions,sentenceQuestions,validateQuestion,planSession,createAttempt,shuffle} from '../lib/quiz/engine.js';
+import {FORMATS,buildQuestions,planSession,createAttempt,shuffle,normalize} from '../lib/quiz/engine.js';
 import authored from '../data/quiz-authored.json';
 import './QuizStudio.css';
 const modules=import.meta.glob('../../data/vocabulary-drafts/batches/*.json',{import:'default'});
@@ -15,16 +15,14 @@ export default function QuizStudio({onClose,onAttempt}){
   const bank=useMemo(()=>{
     const subset=records.filter(r=>!word || (r.headword||'').toLowerCase().includes(word.toLowerCase()));
     const ids=new Set(subset.map(r=>r.senseId));
-    const base=buildQuestions(subset,authored.filter(q=>ids.has(q.senseId)),{audioAvailable});
-    const sentences=subset.flatMap(sentenceQuestions),valid=sentences.filter(q=>!validateQuestion(q).length);
-    return {...base,questions:[...base.questions,...valid]};
+    return buildQuestions(subset,authored.filter(q=>ids.has(q.senseId)),{audioAvailable,choiceRecords:records});
   },[records,word,audioAvailable]);
   const available=bank.questions.filter(q=>format==='mixed'||q.format===format);
   const q=queue[cursor];
   const tokens=useMemo(()=>q?.tokens?shuffle(q.tokens.map((text,id)=>({text,id}))):[],[q]);
   function reset(){setAnswer('');setPicked([]);setResult(null);setHints(0);setPlays(0);locked.current=false;started.current=Date.now();window.speechSynthesis?.cancel();}
   function start(){reset();setScore(0);setNotice('');setCursor(0);setQueue(planSession(available,{limit:20,maxSenses:format==='mixed'?5:20}));}
-  function submit(e){e.preventDefault();if(locked.current||!q)return;const value=q.format==='reorder'?picked.map(t=>t.text).join(' '):answer;if(!value.trim())return;locked.current=true;
+  function submit(e,selected){e?.preventDefault();if(locked.current||!q)return;const value=q.format==='reorder'?picked.map(t=>t.text).join(' '):selected;if(!value?.trim()||(q.format!=='reorder'&&!q.options?.includes(value)))return;setAnswer(value);locked.current=true;
     const attempt=createAttempt(q,{answer:value,startedAt:started.current,hintCount:hints,audioPlays:plays});
     setResult(attempt);setScore(n=>n+Number(attempt.correct));
     if(!saveAttempt(attempt))setNotice('記録を保存できません。ブラウザの保存設定をご確認ください。');
@@ -43,10 +41,10 @@ export default function QuizStudio({onClose,onAttempt}){
       <article key={cursor}><div className="qs-meta"><strong>{FORMATS[q.format]}</strong><span>{cursor+1} / {queue.length}</span></div><h2 className="qs-prompt">{q.prompt}</h2>
       {q.image&&<img className="qs-image" src={q.image} alt="出題用の物のイラスト" onError={()=>setNotice('画像が読み込めません。この問題をスキップしてください。')}/>}
       {q.audioText&&<button disabled={!!result} onClick={speak}>音声を聞く（{plays}回）</button>}
-      <form onSubmit={submit}>
+      <form onSubmit={e=>submit(e)}>
       {q.format==='reorder'?<><div className="qs-token-answer" aria-label="並べ替えた英文">{picked.map(t=><button type="button" key={t.id} disabled={!!result} onClick={()=>setPicked(p=>p.filter(x=>x.id!==t.id))}>{t.text} ×</button>)}</div><div className="qs-tokens">{tokens.map(t=><button type="button" key={t.id} disabled={!!result||picked.some(x=>x.id===t.id)} onClick={()=>setPicked(p=>[...p,t])}>{t.text}</button>)}</div></>:
-      q.options?<div className="qs-options">{q.options.map(o=><button type="button" key={o} disabled={!!result} aria-pressed={answer===o} onClick={()=>setAnswer(o)}>{o}</button>)}</div>:<label>英語で回答<input key={cursor} autoComplete="off" autoCapitalize="none" spellCheck={false} value={answer} disabled={!!result} onChange={e=>setAnswer(e.target.value)}/></label>}
-      {!result&&<div className="qs-actions"><button disabled={q.format==='reorder'?!picked.length:!answer.trim()}>回答する</button>{q.hint&&<button type="button" onClick={()=>setHints(n=>n+1)}>ヒント</button>}<button type="button" onClick={()=>{reset();setQueue([]);}}>形式を選び直す</button><button type="button" onClick={()=>{reset();setCursor(n=>n+1);}}>スキップ</button></div>}
+      <div className="qs-options">{q.options.map((o,i)=><button type="button" key={o} disabled={!!result} aria-pressed={answer===o} className={result?(q.answers.some(a=>normalize(a)===normalize(o))?'qs-correct':answer===o?'qs-wrong':''):''} onClick={()=>submit(null,o)}><span className="qs-letter">{String.fromCharCode(65+i)}</span>{o}</button>)}</div>}
+      {!result&&<div className="qs-actions">{q.format==='reorder'&&<button disabled={picked.length!==tokens.length}>回答する</button>}{q.hint&&<button type="button" onClick={()=>setHints(n=>n+1)}>ヒント</button>}<button type="button" onClick={()=>{reset();setQueue([]);}}>形式を選び直す</button><button type="button" onClick={()=>{reset();setCursor(n=>n+1);}}>スキップ</button></div>}
       </form>
       {hints>0&&<p>ヒント：{q.hint}</p>}
       {result&&<div className="qs-feedback" role="status"><h3>{result.correct?'正解！':'登録教材の答えを確認しましょう'}</h3><p>{q.answers.join(' / ')}</p><p>{q.translation}</p><p>{q.explanation||q.evidence.rationale}</p><small>出典：{q.evidence.source} · {(result.responseMs/1000).toFixed(1)}秒 · ヒント {result.hintCount}回</small><div><button onClick={()=>{reset();setCursor(n=>n+1);}}>次の問題 →</button></div></div>}

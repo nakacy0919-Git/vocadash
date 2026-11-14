@@ -92,7 +92,7 @@
     "wordId": "VD-00095",
     "senseId": "VD-BULK-261114-A1-00064",
     "format": "nuance",
-    "prompt": "big / large はどちらも「大きい」。くだけた表現「姉・兄」で使う組み合わせは？",
+    "prompt": "big / large はどちらも「大きい」。くだけた表現「姉」で使う組み合わせは？",
     "answers": [
       "big sister"
     ],
@@ -104,7 +104,9 @@
     },
     "options": [
       "big sister",
-      "large sister"
+      "large sister",
+      "tall sister",
+      "wide sister"
     ]
   },
   {
@@ -134,7 +136,7 @@
     "wordId": "VD-01364",
     "senseId": "VD-01364-n2-145",
     "format": "derivation",
-    "prompt": "decide の派生語：「決定」という意味の名詞を入力",
+    "prompt": "decide の派生語：「決定」という意味の名詞を選んでください",
     "answers": [
       "decision"
     ],
@@ -144,14 +146,20 @@
       "reviewed": true,
       "rationale": "decide（動詞）から decision（名詞）へ。deciding はこの名詞化課題の対象外。"
     },
-    "hint": "de… / 8文字"
+    "hint": "de… / 8文字",
+    "options": [
+      "decision",
+      "decide",
+      "decisive",
+      "decisively"
+    ]
   },
   {
     "id": "VD-00387-v-01:authored:inflection",
     "wordId": "VD-00387",
     "senseId": "VD-00387-v-01",
     "format": "inflection",
-    "prompt": "go の不規則な過去形を入力（過去分詞ではありません）",
+    "prompt": "go の不規則な過去形を選んでください（過去分詞ではありません）",
     "answers": [
       "went"
     ],
@@ -161,14 +169,20 @@
       "reviewed": true,
       "rationale": "go / went / gone。既存例文 My sister went to Osaka by train. の形。"
     },
-    "hint": "w…"
+    "hint": "w…",
+    "options": [
+      "went",
+      "goes",
+      "gone",
+      "going"
+    ]
   },
   {
     "id": "VD-00110-n-01:authored:image",
     "wordId": "VD-00110",
     "senseId": "VD-00110-n-01",
     "format": "image",
-    "prompt": "画像の物を表す英単語を入力：b… / 4文字",
+    "prompt": "画像の物を表す英単語を選んでください：単数形",
     "answers": [
       "book"
     ],
@@ -179,7 +193,13 @@
       "rationale": "ラベルのない本の図。book の単数形を文字数と頭文字で指定。",
       "imageVerified": true
     },
-    "image": "/quiz-assets/object-01.svg"
+    "image": "/quiz-assets/object-01.svg",
+    "options": [
+      "book",
+      "notebook",
+      "folder",
+      "magazine"
+    ]
   },
   {
     "id": "VD-00829-n2-169:curated:en-ja:9",
@@ -1044,7 +1064,7 @@
     "wordId": "VD-00424",
     "senseId": "VD-00424-n2-162",
     "format": "derivation",
-    "prompt": "happy から派生した「幸福」を表す名詞を入力",
+    "prompt": "happy から派生した「幸福」を表す名詞を選んでください",
     "answers": [
       "happiness"
     ],
@@ -1053,14 +1073,20 @@
       "source": "VD-00424-n2-162",
       "reviewed": true,
       "rationale": "happy の y を i に変え -ness をつける。"
-    }
+    },
+    "options": [
+      "happiness",
+      "happy",
+      "happily",
+      "unhappy"
+    ]
   },
   {
     "id": "VD-01334-v-5-001:curated:derivation:49",
     "wordId": "VD-01334",
     "senseId": "VD-01334-v-5-001",
     "format": "derivation",
-    "prompt": "create から派生した「創造的な」を表す形容詞を入力",
+    "prompt": "create から派生した「創造的な」を表す形容詞を選んでください",
     "answers": [
       "creative"
     ],
@@ -1069,14 +1095,20 @@
       "source": "VD-01334-v-5-001",
       "reviewed": true,
       "rationale": "create（創造する）から creative（創造的な）。"
-    }
+    },
+    "options": [
+      "creative",
+      "creation",
+      "creatively",
+      "create"
+    ]
   },
   {
     "id": "VD-01377-v-01:curated:derivation:50",
     "wordId": "VD-01377",
     "senseId": "VD-01377-v-01",
     "format": "derivation",
-    "prompt": "develop から派生した「発展・開発」を表す名詞を入力",
+    "prompt": "develop から派生した「発展・開発」を表す名詞を選んでください",
     "answers": [
       "development"
     ],
@@ -1085,14 +1117,20 @@
       "source": "VD-01377-v-01",
       "reviewed": true,
       "rationale": "develop に -ment を付ける。"
-    }
+    },
+    "options": [
+      "development",
+      "develop",
+      "developed",
+      "developer"
+    ]
   },
   {
     "id": "VD-02135-n-5-050:curated:derivation:51",
     "wordId": "VD-02135",
     "senseId": "VD-02135-n-5-050",
     "format": "derivation",
-    "prompt": "success から派生した「成功した」を表す形容詞を入力",
+    "prompt": "success から派生した「成功した」を表す形容詞を選んでください",
     "answers": [
       "successful"
     ],
@@ -1101,14 +1139,20 @@
       "source": "VD-02135-n-5-050",
       "reviewed": true,
       "rationale": "success に -ful を付ける。"
-    }
+    },
+    "options": [
+      "successful",
+      "success",
+      "successfully",
+      "succeed"
+    ]
   },
   {
     "id": "VD-00908-v-01:curated:derivation:52",
     "wordId": "VD-00908",
     "senseId": "VD-00908-v-01",
     "format": "derivation",
-    "prompt": "teach から派生した「教師」を表す名詞を入力",
+    "prompt": "teach から派生した「教師」を表す名詞を選んでください",
     "answers": [
       "teacher"
     ],
@@ -1117,14 +1161,20 @@
       "source": "VD-00908-v-01",
       "reviewed": true,
       "rationale": "teach に行為者を表す -er を付ける。"
-    }
+    },
+    "options": [
+      "teacher",
+      "teach",
+      "teaches",
+      "teaching"
+    ]
   },
   {
     "id": "VD-00144-n2-112:curated:inflection:53",
     "wordId": "VD-00144",
     "senseId": "VD-00144-n2-112",
     "format": "inflection",
-    "prompt": "buy の過去形を入力",
+    "prompt": "buy の過去形を選んでください",
     "answers": [
       "bought"
     ],
@@ -1133,14 +1183,20 @@
       "source": "VD-00144-n2-112",
       "reviewed": true,
       "rationale": "buy / bought / bought。"
-    }
+    },
+    "options": [
+      "bought",
+      "buy",
+      "buying",
+      "buys"
+    ]
   },
   {
     "id": "VD-00908-v-01:curated:inflection:54",
     "wordId": "VD-00908",
     "senseId": "VD-00908-v-01",
     "format": "inflection",
-    "prompt": "teach の過去形を入力",
+    "prompt": "teach の過去形を選んでください",
     "answers": [
       "taught"
     ],
@@ -1149,14 +1205,20 @@
       "source": "VD-00908-v-01",
       "reviewed": true,
       "rationale": "teach / taught / taught。"
-    }
+    },
+    "options": [
+      "taught",
+      "teaches",
+      "teach",
+      "teaching"
+    ]
   },
   {
     "id": "VD-00175-n2-065:curated:inflection:55",
     "wordId": "VD-00175",
     "senseId": "VD-00175-n2-065",
     "format": "inflection",
-    "prompt": "child の複数形を入力",
+    "prompt": "child の複数形を選んでください",
     "answers": [
       "children"
     ],
@@ -1165,14 +1227,20 @@
       "source": "VD-00175-n2-065",
       "reviewed": true,
       "rationale": "不規則な複数形。childs ではない。"
-    }
+    },
+    "options": [
+      "children",
+      "child",
+      "childs",
+      "childrens"
+    ]
   },
   {
     "id": "VD-00879-n2-095:curated:inflection:56",
     "wordId": "VD-00879",
     "senseId": "VD-00879-n2-095",
     "format": "inflection",
-    "prompt": "study の三人称単数現在形を入力",
+    "prompt": "study の三人称単数現在形を選んでください",
     "answers": [
       "studies"
     ],
@@ -1181,14 +1249,20 @@
       "source": "VD-00879-n2-095",
       "reviewed": true,
       "rationale": "子音字 + y で終わるので y を i に変えて -es。"
-    }
+    },
+    "options": [
+      "studies",
+      "study",
+      "studying",
+      "studied"
+    ]
   },
   {
     "id": "VD-00560-v-01:curated:inflection:57",
     "wordId": "VD-00560",
     "senseId": "VD-00560-v-01",
     "format": "inflection",
-    "prompt": "make の過去形を入力",
+    "prompt": "make の過去形を選んでください",
     "answers": [
       "made"
     ],
@@ -1197,14 +1271,20 @@
       "source": "VD-00560-v-01",
       "reviewed": true,
       "rationale": "既存例文 We made sandwiches for lunch. の made。"
-    }
+    },
+    "options": [
+      "made",
+      "make",
+      "makes",
+      "making"
+    ]
   },
   {
     "id": "VD-BULK-261114-A1-00064:curated:inflection:58",
     "wordId": "VD-00095",
     "senseId": "VD-BULK-261114-A1-00064",
     "format": "inflection",
-    "prompt": "big の比較級（1語）を入力",
+    "prompt": "big の比較級（1語）を選んでください",
     "answers": [
       "bigger"
     ],
@@ -1213,14 +1293,20 @@
       "source": "VD-BULK-261114-A1-00064",
       "reviewed": true,
       "rationale": "語末の g を重ねて -er。"
-    }
+    },
+    "options": [
+      "bigger",
+      "biggest",
+      "big",
+      "biger"
+    ]
   },
   {
     "id": "VD-00282-n2-174:curated:inflection:59",
     "wordId": "VD-00282",
     "senseId": "VD-00282-n2-174",
     "format": "inflection",
-    "prompt": "easy の比較級（1語）を入力",
+    "prompt": "easy の比較級（1語）を選んでください",
     "answers": [
       "easier"
     ],
@@ -1229,14 +1315,20 @@
       "source": "VD-00282-n2-174",
       "reviewed": true,
       "rationale": "y を i に変えて -er。"
-    }
+    },
+    "options": [
+      "easier",
+      "easiest",
+      "easy",
+      "easyer"
+    ]
   },
   {
     "id": "VD-00144-n2-112:curated:nuance:60",
     "wordId": "VD-00144",
     "senseId": "VD-00144-n2-112",
     "format": "nuance",
-    "prompt": "buy / purchase：日常会話で、よりくだけた基本語は？",
+    "prompt": "日常会話で、よりくだけた基本語は？",
     "answers": [
       "buy"
     ],
@@ -1248,7 +1340,9 @@
     },
     "options": [
       "buy",
-      "purchase"
+      "purchase",
+      "acquire",
+      "procure"
     ]
   },
   {
@@ -1256,7 +1350,7 @@
     "wordId": "VD-00733",
     "senseId": "VD-00733-n2-167",
     "format": "nuance",
-    "prompt": "quiet / silent：「音が全くしない」に近い、より強い表現は？",
+    "prompt": "「音が全くしない」に近い、より強い表現は？",
     "answers": [
       "silent"
     ],
@@ -1267,8 +1361,10 @@
       "rationale": "quiet は静かな、silent は無音の・沈黙した。"
     },
     "options": [
+      "silent",
       "quiet",
-      "silent"
+      "noisy",
+      "loud"
     ]
   },
   {
@@ -1276,7 +1372,7 @@
     "wordId": "VD-00829",
     "senseId": "VD-00829-n2-169",
     "format": "nuance",
-    "prompt": "small / little：「時間がほとんどない」には _____ time のどちらを使う？",
+    "prompt": "「時間がほとんどない」には _____ time に入る語は？",
     "answers": [
       "little"
     ],
@@ -1287,8 +1383,10 @@
       "rationale": "little は不可算名詞の量が少ないことを表せる。small time はこの意味では使わない。"
     },
     "options": [
+      "little",
       "small",
-      "little"
+      "few",
+      "many"
     ]
   }
 ]

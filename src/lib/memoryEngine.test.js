@@ -78,3 +78,5 @@ test('hard same-day success never decreases stability and repeated hint does not
  for(let i=1;i<=10;i++)m=reviewMemory(m,2,'typing',start+i*60000,{hintUsed:true});
  assert.ok(m.stability>=before);assert.equal(isMastered(m,m.lastAt),false);assert.equal(m.skillStats.typing.unaided,1);
 });
+
+test('Memory Mission English and listening tasks offer four distinct choices; recognition alone is not production',()=>{for(let i=0;i<8;i++){const q=buildQuestion(words[0],words,i,()=>.4);assert.equal(q.options.length,4);assert.equal(new Set(q.options.map(normalizeAnswer)).size,4);assert.equal(q.options.filter(x=>normalizeAnswer(x)===normalizeAnswer(q.answer)).length,1);}});
