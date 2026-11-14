@@ -1,4 +1,4 @@
-// Editorial word maps based on original vocabulary source. Ambiguous entries with incompatible senses are deferred.
+// Editorial contextual relations; ambiguous headword matches do not certify identical senses.
 export default {
   "foggy": {
     "meaning": "霧の深い",
@@ -263,8 +263,8 @@ export default {
         "tier": "extended"
       },
       {
-        "word": "spirit",
-        "meaning": "霊",
+        "word": "haunted house",
+        "meaning": "幽霊が出る家",
         "type": "related",
         "tier": "related"
       },
@@ -1392,7 +1392,7 @@ export default {
       {
         "word": "carefully",
         "meaning": "注意深く",
-        "type": "synonym",
+        "type": "related",
         "tier": "core"
       },
       {
@@ -2978,7 +2978,7 @@ export default {
       },
       {
         "word": "inquisitively",
-        "meaning": "物知りたげに",
+        "meaning": "知りたそうに",
         "type": "synonym",
         "tier": "extended"
       },
