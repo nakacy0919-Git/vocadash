@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,getWordForms} from './universe.js';
+import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,cumulativeLexicalCoverage,getWordForms} from './universe.js';
 test('uses tagged links instead of distractors; deduplicates and excludes center',()=>{
  const links=getRelations({word:'unknown',choices:['wrong'],relatedWords:[{word:'unknown'},{word:'reply',type:'synonym',tier:'core'},{word:'REPLY'}],synonyms:['answer']});
  assert.deepEqual(links.map(x=>x.word),['reply','answer']);
@@ -18,8 +18,10 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const added=domainReadingCoverage();
  const lexical=familyCollocationCoverage();
  const review=lexicalReviewCoverage();
+ const academic=academicReviewCoverage();
  const advanced=advancedReviewCoverage();
- assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads+advanced.heads,links:26096+added.links+lexical.links+review.links+advanced.links});
+ const extended=extendedReviewCoverage();
+ assert.deepEqual(universeCoverage(),{heads:6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads,links:26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -282,4 +284,30 @@ test('advanced lexical review supplements previous entries and preserves distinc
  assert.ok(existingHeadsUpdated>0&&heads>0&&links>0);
  assert.ok(after.headsWithFamily>=before.headsWithFamily&&after.headsWithCollocations>=before.headsWithCollocations&&after.headsWithForms>before.headsWithForms);
  assert.ok(usageFor('derive','derive meaning from context')?.example);
+});
+
+test('extended lexical review and all parallel batches are actually integrated',()=>{
+ const form=(w,l)=>getWordForms(w).find(x=>x.label===l)?.forms;
+ assert.deepEqual(form('foresee','過去形'),['foresaw']);
+ assert.deepEqual(form('foresee','過去分詞'),['foreseen']);
+ assert.deepEqual(form('underlie','過去分詞'),['underlain']);
+ assert.ok(form('mimic','現在分詞・動名詞').includes('mimicking'));
+ assert.ok(form('cancel','過去形').includes('cancelled'));
+ assert.ok(form('cancel','過去形').includes('canceled'));
+ assert.ok(form('compel','過去形').includes('compelled'));
+ assert.ok(!form('compel','過去形').includes('compeled'));
+ assert.ok(form('compel','現在分詞・動名詞').includes('compelling'));
+ assert.ok(form('injury','複数形').includes('injuries'));
+ assert.ok(!form('advice','複数形'));
+ for(const [h,w] of [['abstain','abstain from voting'],['align','align objectives with needs'],['tailor','tailor instruction to individual needs'],['feedback','provide constructive feedback'],['ownership','take ownership of one\'s learning']]){
+   const l=getRelations(lookupUniverse(h)).find(x=>x.word===w);
+   assert.ok(l&&l.meaning&&l.type==='collocation',h+' -> '+w);
+ }
+ const academic=academicReviewCoverage(),advanced=advancedReviewCoverage(),extended=extendedReviewCoverage();
+ assert.deepEqual(academic.after,advanced.before);
+ assert.deepEqual(advanced.after,extended.before);
+ assert.deepEqual(extended.after,cumulativeLexicalCoverage());
+ assert.ok(extended.heads>0&&extended.links>0&&extended.existingHeadsUpdated>0);
+ assert.ok(extended.after.headsWithForms>=extended.before.headsWithForms);
+ assert.ok(extended.after.headsWithCollocations>=extended.before.headsWithCollocations);
 });
