@@ -766,3 +766,16 @@ test('curated derivatives append unique pairs without overwriting existing relat
  assert.equal(addCuratedWordFamilies(entries,[dataset]).newPairs,0);
  assert.equal(entries.get('act').links.length,2);
 });
+
+test('map pages reserve six separated slots, without intersecting node boxes or the central card',()=>{
+ const links=['core','related','extended'].flatMap(tier=>Array.from({length:8},(_,i)=>({word:tier+i,tier})));
+ for(let i=0;i<orbitPageCount(links);i++){
+ const nodes=orbitNodes(links,i);assert.ok(nodes.length<=6);
+ const boxes=[{x:50,y:50,w:29,h:40},...nodes.map(n=>({...n,w:21,h:24}))];
+ for(const b of boxes){assert.ok(b.x-b.w/2>=0&&b.x+b.w/2<=100&&b.y-b.h/2>=0&&b.y+b.h/2<=100);}
+ for(let a=0;a<boxes.length;a++)for(let b=a+1;b<boxes.length;b++){
+ const x=boxes[a],y=boxes[b];
+ assert.ok(Math.abs(x.x-y.x)>=(x.w+y.w)/2||Math.abs(x.y-y.y)>=(x.h+y.h)/2,'overlapping slots');
+ }
+ }
+});
