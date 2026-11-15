@@ -92,3 +92,15 @@ test('personal Universe commands use explicit Dash wake gating',()=>{
  assert.equal(parseVoice('start mission').kind,'mission');
  assert.equal(extractWake('Dash show my universe').command,'show my universe');
 });
+
+test('natural back commands work even after the universe wake window expires',()=>{
+ for(const raw of ["so back","so let's go back","hey just back","Hey Dash, let's go back","well go back now","take me back to the previous screen","okay go back again"]){
+  assert.equal(parseVoice(raw).kind,'back',raw);
+  assert.ok(routeVoice([raw],'standby',{universeOpen:true}),raw);
+ }
+ assert.equal(routeVoice(['so back'],'standby'),null);
+ assert.equal(routeVoice(['so back'],'off',{universeOpen:true}),null);
+ for(const raw of ['show me back','show me background','look up back','find backpack'])assert.equal(parseVoice(raw).kind,'search');
+ for(const raw of ['my back hurts','I went back yesterday','background music'])assert.equal(parseVoice(raw).kind,'unknown');
+ for(const word of ['beauty','sad','accelerator','environment','quickly','back'])assert.deepEqual(parseVoice('Hey Dash, show me '+word),{kind:'search',value:word});
+});
