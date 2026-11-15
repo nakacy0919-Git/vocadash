@@ -1,0 +1,1308 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261115-c2-tail-8500-8529",
+  "sourceKind": "original-authored",
+  "authoringNote": "Original C2 bilingual examples. Staged batch pending manifest reconciliation and full corpus audit.",
+  "records": [
+    {
+      "wordId": "VD-08500",
+      "headword": "shimmer",
+      "senseId": "VDO-261115-T8500-8500-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "かすかにきらめく",
+      "definitionEn": "to shine with a soft light that seems to move",
+      "cefrHeadword": "C2",
+      "synonyms": "glimmer, gleam",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "shimmer in the sunlight",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "湖は朝日の下でかすかにきらめいた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8500-1-e01",
+          "en": "The lake shimmered beneath the morning sun.",
+          "ja": "湖は朝日の下でかすかにきらめいた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8500-1-e02",
+          "en": "Heat shimmered above the asphalt as we crossed the road.",
+          "ja": "道路を渡るとアスファルトの上で陽炎が揺らめいていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08500",
+      "headword": "shimmer",
+      "senseId": "VDO-261115-T8500-8500-2",
+      "partOfSpeech": "noun",
+      "meaningJa": "かすかなきらめき",
+      "definitionEn": "a soft unsteady brightness",
+      "cefrHeadword": "C2",
+      "synonyms": "glimmer",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a faint shimmer",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "地平線のかすかなきらめきが海の存在を示していた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8500-2-e01",
+          "en": "A faint shimmer on the horizon marked the sea.",
+          "ja": "地平線のかすかなきらめきが海の存在を示していた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8500-2-e02",
+          "en": "The silk scarf had a delicate silver shimmer.",
+          "ja": "絹のスカーフには繊細な銀色の光沢があった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08501",
+      "headword": "shoal",
+      "senseId": "VDO-261115-T8500-8501-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "魚の群れ",
+      "definitionEn": "a large group of fish swimming together",
+      "cefrHeadword": "C2",
+      "synonyms": "school",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a shoal of sardines",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "イワシの群れが水中カメラの前を勢いよく通り過ぎた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8501-1-e01",
+          "en": "A shoal of sardines swept past the underwater camera.",
+          "ja": "イワシの群れが水中カメラの前を勢いよく通り過ぎた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8501-1-e02",
+          "en": "The heron waited near a shoal of tiny fish.",
+          "ja": "サギは小魚の群れの近くで待ち構えていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08501",
+      "headword": "shoal",
+      "senseId": "VDO-261115-T8500-8501-2",
+      "partOfSpeech": "noun",
+      "meaningJa": "浅瀬、砂州",
+      "definitionEn": "a shallow area of water that may obstruct navigation",
+      "cefrHeadword": "C2",
+      "synonyms": "sandbank",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a submerged shoal",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "帆船は見えない浅瀬で危うく座礁しそうになった。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8501-2-e01",
+          "en": "The sailing boat nearly ran aground on a hidden shoal.",
+          "ja": "帆船は見えない浅瀬で危うく座礁しそうになった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8501-2-e02",
+          "en": "Navigators marked the shoals on updated coastal charts.",
+          "ja": "航海士たちは更新された沿岸の海図に浅瀬を記した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08502",
+      "headword": "side-step",
+      "senseId": "VDO-261115-T8500-8502-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "横に避ける",
+      "definitionEn": "to move sideways to avoid something",
+      "cefrHeadword": "C2",
+      "synonyms": "dodge",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "side-step an obstacle",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "選手は横に動いて守備選手をかわし、ボールをパスした。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8502-1-e01",
+          "en": "The player side-stepped a defender and passed the ball.",
+          "ja": "選手は横に動いて守備選手をかわし、ボールをパスした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8502-1-e02",
+          "en": "I had to side-step a puddle outside the station.",
+          "ja": "駅の外で水たまりを横によけなければならなかった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08502",
+      "headword": "side-step",
+      "senseId": "VDO-261115-T8500-8502-2",
+      "partOfSpeech": "verb",
+      "meaningJa": "問題を回避する",
+      "definitionEn": "to avoid dealing directly with a difficult issue",
+      "cefrHeadword": "C2",
+      "synonyms": "evade, avoid",
+      "antonyms": [
+        "confront"
+      ],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "side-step a question",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "広報担当者は費用の上昇に関する質問をかわした。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8502-2-e01",
+          "en": "The spokesperson side-stepped the question about rising costs.",
+          "ja": "広報担当者は費用の上昇に関する質問をかわした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8502-2-e02",
+          "en": "We cannot side-step the ethical concerns raised by the experiment.",
+          "ja": "その実験に対して提起された倫理的な懸念は避けて通れない。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08503",
+      "headword": "singe",
+      "senseId": "VDO-261115-T8500-8503-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "表面を少し焦がす",
+      "definitionEn": "to lightly burn the outer surface or ends of something",
+      "cefrHeadword": "C2",
+      "synonyms": "scorch",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "singe one's hair",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "火花で彼の袖口が少し焦げた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8503-1-e01",
+          "en": "A spark singed the edge of his sleeve.",
+          "ja": "火花で彼の袖口が少し焦げた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8503-1-e02",
+          "en": "The baker lowered the oven temperature after singeing the first batch of rolls.",
+          "ja": "最初に焼いたロールパンを少し焦がしたため、パン職人はオーブンの温度を下げた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08504",
+      "headword": "skew",
+      "senseId": "VDO-261115-T8500-8504-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "ゆがめる、偏らせる",
+      "definitionEn": "to make a result or interpretation uneven or misleading",
+      "cefrHeadword": "C2",
+      "synonyms": "distort, bias",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "skew the results",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "農村住民からの回答が不足すると調査結果が偏るおそれがある。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8504-1-e01",
+          "en": "Missing responses from rural residents could skew the survey results.",
+          "ja": "農村住民からの回答が不足すると調査結果が偏るおそれがある。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8504-1-e02",
+          "en": "Unusually expensive sales skewed the average price upward.",
+          "ja": "異例に高額な取引が平均価格を押し上げた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08505",
+      "headword": "slab",
+      "senseId": "VDO-261115-T8500-8505-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "厚い平板",
+      "definitionEn": "a broad thick flat piece of solid material",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "a slab of stone",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "作業員たちは重い花こう岩の板を所定の位置に下ろした。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8505-1-e01",
+          "en": "Workers lowered a heavy slab of granite into place.",
+          "ja": "作業員たちは重い花こう岩の板を所定の位置に下ろした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8505-1-e02",
+          "en": "The chocolatier broke a slab of dark chocolate into smaller pieces.",
+          "ja": "ショコラティエは厚いダークチョコレートの板を小さく割った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08506",
+      "headword": "slither",
+      "senseId": "VDO-261115-T8500-8506-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "するするとはう、滑る",
+      "definitionEn": "to move smoothly along a surface with a twisting motion",
+      "cefrHeadword": "C2",
+      "synonyms": "slide",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "slither across",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "ヘビが暖かい庭の小道をするするとはっていった。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8506-1-e01",
+          "en": "A snake slithered across the warm garden path.",
+          "ja": "ヘビが暖かい庭の小道をするするとはっていった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8506-1-e02",
+          "en": "The wet rope slithered through my fingers before I could grip it.",
+          "ja": "しっかり握る前に濡れたロープが指の間をするりと滑り抜けた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08507",
+      "headword": "smattering",
+      "senseId": "VDO-261115-T8500-8507-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "少しばかりの知識、少量",
+      "definitionEn": "a small and incomplete amount of knowledge or something else",
+      "cefrHeadword": "C2",
+      "synonyms": "a little",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a smattering of French",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "わずかなイタリア語の知識で何とか昼食を注文できた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8507-1-e01",
+          "en": "With a smattering of Italian, we managed to order lunch.",
+          "ja": "わずかなイタリア語の知識で何とか昼食を注文できた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8507-1-e02",
+          "en": "A smattering of applause greeted the unexpected announcement.",
+          "ja": "予想外の発表に対してまばらな拍手が起こった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08508",
+      "headword": "snippet",
+      "senseId": "VDO-261115-T8500-8508-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "短い断片",
+      "definitionEn": "a small piece taken from a longer text, recording, or conversation",
+      "cefrHeadword": "C2",
+      "synonyms": "fragment, extract",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a snippet of conversation",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "なくなった鍵についての会話の一部が耳に入った。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8508-1-e01",
+          "en": "I overheard a snippet of conversation about the missing keys.",
+          "ja": "なくなった鍵についての会話の一部が耳に入った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8508-1-e02",
+          "en": "The documentary opens with a snippet of an old radio broadcast.",
+          "ja": "そのドキュメンタリーは昔のラジオ放送の短い抜粋で始まる。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08509",
+      "headword": "snobbery",
+      "senseId": "VDO-261115-T8500-8509-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "気取り、俗物根性",
+      "definitionEn": "an attitude of looking down on people with less status or taste",
+      "cefrHeadword": "C2",
+      "synonyms": "elitism",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "social snobbery",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "そのクラブの厳しい服装規定は気取りの文化を助長した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8509-1-e01",
+          "en": "The club's strict dress rules encouraged a culture of snobbery.",
+          "ja": "そのクラブの厳しい服装規定は気取りの文化を助長した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8509-1-e02",
+          "en": "She disliked the snobbery of diners who mocked inexpensive restaurants.",
+          "ja": "彼女は安いレストランをばかにする客たちの俗物根性を嫌った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08510",
+      "headword": "solicit",
+      "senseId": "VDO-261115-T8500-8510-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "求める、勧誘する",
+      "definitionEn": "to actively ask people for information, support, or business",
+      "cefrHeadword": "C2",
+      "synonyms": "seek, request",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "solicit feedback",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "博物館は入口の設計を変更する前に来館者の意見を求めた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8510-1-e01",
+          "en": "The museum solicited feedback from visitors before redesigning its entrance.",
+          "ja": "博物館は入口の設計を変更する前に来館者の意見を求めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8510-1-e02",
+          "en": "Volunteers are not permitted to solicit donations inside the station.",
+          "ja": "ボランティアが駅構内で寄付を募ることは許可されていない。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08511",
+      "headword": "soliloquize",
+      "senseId": "VDO-261115-T8500-8511-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "独り言を言う、独白する",
+      "definitionEn": "to speak one's thoughts aloud while alone or as if alone",
+      "cefrHeadword": "C2",
+      "synonyms": "talk to oneself",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "soliloquize on stage",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "最後の場面で俳優は空の椅子のそばで独白する。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8511-1-e01",
+          "en": "The actor soliloquizes beside an empty chair in the final scene.",
+          "ja": "最後の場面で俳優は空の椅子のそばで独白する。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8511-1-e02",
+          "en": "Walking through the deserted garden, the character soliloquized about her future.",
+          "ja": "人気のない庭を歩きながら、登場人物は自分の将来について独り言を言った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08512",
+      "headword": "solipsism",
+      "senseId": "VDO-261115-T8500-8512-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "独我論",
+      "definitionEn": "the view that one's own mind is the only thing known to exist with certainty",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "philosophical solipsism",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "哲学のゼミでは独我論と知識の限界を検討した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8512-1-e01",
+          "en": "The philosophy seminar examined solipsism and the limits of knowledge.",
+          "ja": "哲学のゼミでは独我論と知識の限界を検討した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8512-1-e02",
+          "en": "The novel uses solipsism to question whether the narrator can truly know other minds.",
+          "ja": "その小説は独我論を通じて語り手が他人の心を本当に知ることができるかを問う。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08513",
+      "headword": "solitariness",
+      "senseId": "VDO-261115-T8500-8513-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "孤独、一人でいる状態",
+      "definitionEn": "the state or quality of being alone or separate from others",
+      "cefrHeadword": "C2",
+      "synonyms": "solitude",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "the solitariness of a place",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "人里離れた灯台の孤独な環境が作家を引きつけた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8513-1-e01",
+          "en": "The solitariness of the remote lighthouse appealed to the writer.",
+          "ja": "人里離れた灯台の孤独な環境が作家を引きつけた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8513-1-e02",
+          "en": "Her preference for solitariness did not prevent her from forming close friendships.",
+          "ja": "一人でいることを好んでも、彼女は親しい友人関係を築くことができた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08514",
+      "headword": "solitary",
+      "senseId": "VDO-261115-T8500-8514-1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "一人の、単独の",
+      "definitionEn": "alone or existing apart from others",
+      "cefrHeadword": "C2",
+      "synonyms": "lone, isolated",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a solitary figure",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "誰もいない山道に一人の自転車乗りが現れた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8514-1-e01",
+          "en": "A solitary cyclist appeared on the empty mountain road.",
+          "ja": "誰もいない山道に一人の自転車乗りが現れた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8514-1-e02",
+          "en": "The scientist observed a solitary bee building a nest in the sand.",
+          "ja": "科学者は単独で暮らすハチが砂の中に巣を作る様子を観察した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08514",
+      "headword": "solitary",
+      "senseId": "VDO-261115-T8500-8514-2",
+      "partOfSpeech": "adjective",
+      "meaningJa": "ただ一つの",
+      "definitionEn": "being the only one present",
+      "cefrHeadword": "C2",
+      "synonyms": "single",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a solitary candle",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "ただ1本のろうそくが暗い礼拝堂を照らしていた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8514-2-e01",
+          "en": "A solitary candle lit the dark chapel.",
+          "ja": "ただ1本のろうそくが暗い礼拝堂を照らしていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8514-2-e02",
+          "en": "Not a solitary flower survived the sudden frost.",
+          "ja": "突然の霜で花は一輪も生き残らなかった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08515",
+      "headword": "solitude",
+      "senseId": "VDO-261115-T8500-8515-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "孤独、独りでいること",
+      "definitionEn": "the state of being alone, often by choice",
+      "cefrHeadword": "C2",
+      "synonyms": "seclusion",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "seek solitude",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "忙しい仕事の一日の後、彼女は庭で一人になれる時間を求めた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8515-1-e01",
+          "en": "She sought solitude in the garden after a busy day at work.",
+          "ja": "忙しい仕事の一日の後、彼女は庭で一人になれる時間を求めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8515-1-e02",
+          "en": "The photographer enjoyed the solitude of the beach before dawn.",
+          "ja": "写真家は夜明け前の浜辺で一人きりの時間を楽しんだ。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08516",
+      "headword": "spatial",
+      "senseId": "VDO-261115-T8500-8516-1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "空間の、空間的な",
+      "definitionEn": "relating to the arrangement or relationships of objects in space",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "spatial awareness",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "模型作りは子どもの空間認識力を高められる。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8516-1-e01",
+          "en": "Building models can improve children's spatial awareness.",
+          "ja": "模型作りは子どもの空間認識力を高められる。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8516-1-e02",
+          "en": "The researchers examined spatial patterns in nest distribution.",
+          "ja": "研究者たちは巣の分布の空間的なパターンを調べた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08517",
+      "headword": "spatially",
+      "senseId": "VDO-261115-T8500-8517-1",
+      "partOfSpeech": "adverb",
+      "meaningJa": "空間的に",
+      "definitionEn": "with reference to position, distance, or arrangement in space",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "spatially distributed",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "センサーは森林全体に分散して配置されていた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8517-1-e01",
+          "en": "The sensors were spatially distributed throughout the forest.",
+          "ja": "センサーは森林全体に分散して配置されていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8517-1-e02",
+          "en": "These diagrams help learners visualize molecules spatially.",
+          "ja": "これらの図は学習者が分子を空間的にイメージするのに役立つ。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08518",
+      "headword": "spire",
+      "senseId": "VDO-261115-T8500-8518-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "尖塔",
+      "definitionEn": "a tall pointed structure rising from the top of a building",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "a church spire",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "教会の尖塔は町の外の畑からも見えた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8518-1-e01",
+          "en": "The church spire was visible from the fields outside the town.",
+          "ja": "教会の尖塔は町の外の畑からも見えた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8518-1-e02",
+          "en": "The architect designed a slender spire that catches the evening light.",
+          "ja": "建築家は夕方の光を受ける細い尖塔を設計した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08519",
+      "headword": "splinter",
+      "senseId": "VDO-261115-T8500-8519-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "とげ、破片",
+      "definitionEn": "a thin sharp piece broken off from wood or another material",
+      "cefrHeadword": "C2",
+      "synonyms": "shard",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a wooden splinter",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "古いベンチの木のとげが指に刺さった。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8519-1-e01",
+          "en": "A splinter from the old bench lodged in my finger.",
+          "ja": "古いベンチの木のとげが指に刺さった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8519-1-e02",
+          "en": "Tiny splinters of glass lay beneath the broken window.",
+          "ja": "割れた窓の下に小さなガラスの破片が散らばっていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08519",
+      "headword": "splinter",
+      "senseId": "VDO-261115-T8500-8519-2",
+      "partOfSpeech": "verb",
+      "meaningJa": "割れる、分裂する",
+      "definitionEn": "to break into small pieces or separate into opposing groups",
+      "cefrHeadword": "C2",
+      "synonyms": "fragment, split",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "splinter into factions",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "倒れた枝の重みで木製の手すりが割れた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8519-2-e01",
+          "en": "The wooden railing splintered under the weight of the fallen branch.",
+          "ja": "倒れた枝の重みで木製の手すりが割れた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8519-2-e02",
+          "en": "The association splintered into three factions after a disagreement over funding.",
+          "ja": "資金をめぐる意見の相違の後、その団体は三つの派閥に分裂した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08520",
+      "headword": "spontaneity",
+      "senseId": "VDO-261115-T8500-8520-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "自発性、自然な即興性",
+      "definitionEn": "the quality of acting naturally without planning in advance",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "a sense of spontaneity",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "音楽の教員は即興練習で自発的な表現を促した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8520-1-e01",
+          "en": "The music teacher encouraged spontaneity during improvisation exercises.",
+          "ja": "音楽の教員は即興練習で自発的な表現を促した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8520-1-e02",
+          "en": "Too much rehearsal drained the scene of its spontaneity.",
+          "ja": "練習しすぎたことでその場面から自然な即興性が失われた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08521",
+      "headword": "spurious",
+      "senseId": "VDO-261115-T8500-8521-1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "偽りの、根拠のない",
+      "definitionEn": "appearing valid or genuine but actually false or unsupported",
+      "cefrHeadword": "C2",
+      "synonyms": "false, bogus",
+      "antonyms": [
+        "genuine"
+      ],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a spurious claim",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "編集者は原稿から根拠のない主張をいくつか削除した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8521-1-e01",
+          "en": "The editor removed several spurious claims from the manuscript.",
+          "ja": "編集者は原稿から根拠のない主張をいくつか削除した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8521-1-e02",
+          "en": "A faulty sensor produced spurious readings at midnight.",
+          "ja": "故障したセンサーが真夜中に誤った測定値を出した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08522",
+      "headword": "spuriously",
+      "senseId": "VDO-261115-T8500-8522-1",
+      "partOfSpeech": "adverb",
+      "meaningJa": "誤って、偽りに基づいて",
+      "definitionEn": "in a manner that misleadingly appears correct or genuine",
+      "cefrHeadword": "C2",
+      "synonyms": "falsely",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "spuriously correlated",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "二つの変数はいずれも季節に伴って変化するため、見せかけの相関を示した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8522-1-e01",
+          "en": "Two variables were spuriously correlated because both changed with the season.",
+          "ja": "二つの変数はいずれも季節に伴って変化するため、見せかけの相関を示した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8522-1-e02",
+          "en": "The document was spuriously attributed to a famous historian.",
+          "ja": "その文書は誤って著名な歴史家の著作とされていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08523",
+      "headword": "squint",
+      "senseId": "VDO-261115-T8500-8523-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "目を細める",
+      "definitionEn": "to narrow one's eyes to see more clearly or block strong light",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "squint at a screen",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "霧の中で遠くの標識を見ようと目を細めた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8523-1-e01",
+          "en": "I squinted at the distant sign through the fog.",
+          "ja": "霧の中で遠くの標識を見ようと目を細めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8523-1-e02",
+          "en": "She squinted against the glare reflecting off the snow.",
+          "ja": "彼女は雪から反射するまぶしい光に目を細めた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08523",
+      "headword": "squint",
+      "senseId": "VDO-261115-T8500-8523-2",
+      "partOfSpeech": "noun",
+      "meaningJa": "斜視（主に英）",
+      "definitionEn": "a condition in which the eyes do not look in the same direction",
+      "cefrHeadword": "C2",
+      "synonyms": "strabismus",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "have a squint",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "検眼の専門家は子どもの視力検査で軽い斜視に気づいた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8523-2-e01",
+          "en": "The optometrist noticed a slight squint during the child's eye test.",
+          "ja": "検眼の専門家は子どもの視力検査で軽い斜視に気づいた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8523-2-e02",
+          "en": "The booklet explains when a squint requires further assessment.",
+          "ja": "その小冊子は斜視の追加検査が必要な場合を説明している。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08524",
+      "headword": "squirm",
+      "senseId": "VDO-261115-T8500-8524-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "身をよじる、もじもじする",
+      "definitionEn": "to twist the body because of discomfort or embarrassment",
+      "cefrHeadword": "C2",
+      "synonyms": "wriggle",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "squirm in one's seat",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "長い演奏会の間、子どもは席で体をもぞもぞ動かした。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8524-1-e01",
+          "en": "The child squirmed in his seat during the long concert.",
+          "ja": "長い演奏会の間、子どもは席で体をもぞもぞ動かした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8524-1-e02",
+          "en": "He squirmed when the audience asked about his earlier mistake.",
+          "ja": "聴衆から以前の失敗について聞かれ、彼は居心地悪そうにもじもじした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08525",
+      "headword": "squirmy",
+      "senseId": "VDO-261115-T8500-8525-1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "じっとしていられない",
+      "definitionEn": "inclined to wriggle or move about from discomfort or impatience",
+      "cefrHeadword": "C2",
+      "synonyms": "restless",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a squirmy child",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "じっとしていられない子犬は足を拭かれるのを嫌がった。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8525-1-e01",
+          "en": "The squirmy puppy resisted having its paws dried.",
+          "ja": "じっとしていられない子犬は足を拭かれるのを嫌がった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8525-1-e02",
+          "en": "The squirmy children were relieved when the bus finally stopped.",
+          "ja": "落ち着かない子どもたちはバスがようやく止まってほっとした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08526",
+      "headword": "stabilize/stabilise",
+      "senseId": "VDO-261115-T8500-8526-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "安定させる、安定する",
+      "definitionEn": "to make or become steady after a period of change or movement",
+      "cefrHeadword": "C2",
+      "synonyms": "steady",
+      "antonyms": [
+        "destabilize"
+      ],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "stabilize prices",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "追加の支柱が修理中の作業台を安定させた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8526-1-e01",
+          "en": "Extra supports stabilized the platform during repairs.",
+          "ja": "追加の支柱が修理中の作業台を安定させた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8526-1-e02",
+          "en": "The patient's condition began to stabilise after treatment.",
+          "ja": "治療後、患者の容体は安定し始めた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08527",
+      "headword": "standing",
+      "senseId": "VDO-261115-T8500-8527-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "地位、評判",
+      "definitionEn": "the level of respect or status someone has in a group",
+      "cefrHeadword": "C2",
+      "synonyms": "status, reputation",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "professional standing",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "綿密な研究によって学術界での彼女の評価が高まった。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8527-1-e01",
+          "en": "Her careful research strengthened her standing in the academic community.",
+          "ja": "綿密な研究によって学術界での彼女の評価が高まった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8527-1-e02",
+          "en": "The club's standing in the community improved after its volunteer program.",
+          "ja": "ボランティア活動を始めた後、そのクラブの地域での評価が向上した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08527",
+      "headword": "standing",
+      "senseId": "VDO-261115-T8500-8527-2",
+      "partOfSpeech": "adjective",
+      "meaningJa": "常設の、継続的な",
+      "definitionEn": "existing on an ongoing basis rather than being created for one occasion",
+      "cefrHeadword": "C2",
+      "synonyms": "permanent",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "a standing committee",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "常設委員会は毎月安全に関する苦情を審査する。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8527-2-e01",
+          "en": "A standing committee reviews safety complaints every month.",
+          "ja": "常設委員会は毎月安全に関する苦情を審査する。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8527-2-e02",
+          "en": "We have a standing arrangement to meet online on Fridays.",
+          "ja": "毎週金曜日にオンラインで会うという継続的な取り決めがある。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08528",
+      "headword": "sterility",
+      "senseId": "VDO-261115-T8500-8528-1",
+      "partOfSpeech": "noun",
+      "meaningJa": "不妊、繁殖能力の欠如",
+      "definitionEn": "the inability to produce offspring",
+      "cefrHeadword": "C2",
+      "synonyms": "infertility",
+      "antonyms": [
+        "fertility"
+      ],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "cause sterility",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "生物学者たちは熱への暴露で昆虫が繁殖能力を失う可能性を調べた。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8528-1-e01",
+          "en": "The biologists investigated whether heat exposure could cause sterility in insects.",
+          "ja": "生物学者たちは熱への暴露で昆虫が繁殖能力を失う可能性を調べた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8528-1-e02",
+          "en": "The documentary explores sterility in threatened animal populations.",
+          "ja": "そのドキュメンタリーは絶滅の危機にある動物集団の不妊を取り上げている。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08528",
+      "headword": "sterility",
+      "senseId": "VDO-261115-T8500-8528-2",
+      "partOfSpeech": "noun",
+      "meaningJa": "無菌状態",
+      "definitionEn": "the condition of being free from viable microorganisms",
+      "cefrHeadword": "C2",
+      "synonyms": "",
+      "antonyms": [],
+      "synonymNoteJa": "直接の類義語は無理に設定しない。英英定義を参照。",
+      "collocations": [
+        {
+          "en": "maintain sterility",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "看護師は器具が無菌であることを確かめるため包装を確認した。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8528-2-e01",
+          "en": "The nurse checked the packaging to ensure the instrument's sterility.",
+          "ja": "看護師は器具が無菌であることを確かめるため包装を確認した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8528-2-e02",
+          "en": "Maintaining sterility is essential when preparing certain laboratory cultures.",
+          "ja": "特定の実験用培養物を準備する際には無菌状態の維持が欠かせない。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "wordId": "VD-08529",
+      "headword": "stipulate",
+      "senseId": "VDO-261115-T8500-8529-1",
+      "partOfSpeech": "verb",
+      "meaningJa": "条件として明記する",
+      "definitionEn": "to state explicitly what is required in an agreement or rule",
+      "cefrHeadword": "C2",
+      "synonyms": "specify",
+      "antonyms": [],
+      "synonymNoteJa": "この語義に限る候補。構文・文体により置換できない場合がある。",
+      "collocations": [
+        {
+          "en": "stipulate a condition",
+          "status": "draft-unreviewed"
+        }
+      ],
+      "imageHint": "契約ではすべての修理を記録しなければならないと明記されている。 例文の中心となる人物・物・状況を明確にした文字なし教材イラスト。",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-T8500-8529-1-e01",
+          "en": "The contract stipulates that all repairs must be documented.",
+          "ja": "契約ではすべての修理を記録しなければならないと明記されている。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-T8500-8529-1-e02",
+          "en": "Competition rules stipulate a maximum presentation length of five minutes.",
+          "ja": "大会の規則は発表時間を最長5分と定めている。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
