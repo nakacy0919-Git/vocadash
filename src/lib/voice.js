@@ -12,6 +12,9 @@ export function extractWake(raw,mode='both') {
 
 export function parseVoice(raw) {
  const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ // Accept natural return phrases, but never interpret a vocabulary query such as 'show me back' as navigation.
+ const backPhrase=t.replace(/’/g,"'").replace(/^(?:(?:so|well|hey|just|okay|ok|please|then|now|let's|lets|let us|i want to|can we|shall we|we should)\s+)+/,'');
+ if(/^(?:(?:go|come|get|take me|bring me|move|head)\s+)?back(?:\s+(?:now|again|a bit|to (?:the )?(?:previous screen|original screen|last screen|assistant|dash assistant)))?$/.test(backPhrase))return {kind:'back',value:''};
  const rules=[
  ['personal',/^(my universe|show my universe|personal universe)$/],
  ['weak',/^(show weak words|weak words|fading planets)$/],
@@ -55,20 +58,20 @@ export function parseVoice(raw) {
 }
 
 /** Route recognition alternatives without requiring a wake word during an active session. */
-export function routeVoice(alternatives,phase) {
+export function routeVoice(alternatives,phase,{universeOpen=false}={}) {
  const texts=(Array.isArray(alternatives)?alternatives:[]).filter(t=>typeof t==='string'&&t.trim());
  if(phase==='off'||!texts.length)return null;
  // Prefer the browser's top result when it already matches a supported command.
  const first=texts[0],wake=extractWake(first);
  if(wake)return {kind:'wake',command:wake.command};
  const parsed=parseVoice(first);
- if(parsed.kind==='stop')return {kind:'command',command:first};
+ if(parsed.kind==='stop'||(universeOpen&&parsed.kind==='back'))return {kind:'command',command:first};
  if(phase==='active'&&parsed.kind!=='unknown')return {kind:'command',command:first};
  // Alternatives can recover a recognition variation, but standby accepts only wake phrases.
  for(const t of texts.slice(1)){
   const w=extractWake(t);
   if(w)return {kind:'wake',command:w.command};
-  if(phase==='active'&&parseVoice(t).kind!=='unknown')return {kind:'command',command:t};
+  if((universeOpen&&parseVoice(t).kind==='back')||(phase==='active'&&parseVoice(t).kind!=='unknown'))return {kind:'command',command:t};
  }
  return phase==='active'?{kind:'command',command:first}:null;
 }
