@@ -86,12 +86,13 @@
     "batches/original-20261115-c2-reconciled-8006-8079.json",
     "batches/original-20261115-c2-tail-8369-8449.json",
     "batches/original-20261115-c2-mid-8250-8299.json",
-    "batches/original-20261115-c2-tail-8200-8249.json"
+    "batches/original-20261115-c2-tail-8200-8249.json",
+    "batches/original-20261115-c2-mid-8141-8199.json"
   ],
   "totals": {
-    "distinctHeadwords": 8533,
-    "senses": 9465,
-    "examples": 18930,
+    "distinctHeadwords": 8590,
+    "senses": 9535,
+    "examples": 19070,
     "distinctExamples": null
   },
   "quality": {
@@ -109,11 +110,11 @@
   "recentWork": {
     "source": "Original C2 draft; master IDs verified; cross-batch audit and editorial review pending",
     "newBatches": [
-      "batches/original-20261115-c2-tail-8200-8249.json"
+      "batches/original-20261115-c2-mid-8141-8199.json"
     ],
-    "headwordsAdded": 50,
-    "sensesAdded": 62,
-    "translatedExamplesAdded": 124,
+    "headwordsAdded": 57,
+    "sensesAdded": 70,
+    "translatedExamplesAdded": 140,
     "editorialStatus": "draft-unreviewed"
   },
   "notes": "Counts use the previous audited manifest baseline plus disjoint new word-ID ranges. Concurrent overlapping draft files are preserved outside the active manifest; they require sense-level editorial merging later. Full cross-batch duplicate and semantic review pending. No runtime or deployment changes. Supplemental batches contain alternative authored examples for IDs also covered by concurrent batches; excluded from headline totals pending reconciliation.",
