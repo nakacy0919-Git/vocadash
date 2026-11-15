@@ -83,12 +83,13 @@
     "batches/original-20261115-c2-finish-15.json",
     "batches/original-20261115-c2-finish-01.json",
     "batches/original-20261115-c2-finish-02.json",
-    "batches/original-20261115-c2-finish-03.json"
+    "batches/original-20261115-c2-finish-03.json",
+    "batches/original-20261115-c2-tail-8450-8529.json"
   ],
   "totals": {
-    "distinctHeadwords": 8433,
-    "senses": 9365,
-    "examples": 18730,
+    "distinctHeadwords": 8513,
+    "senses": 9472,
+    "examples": 18944,
     "distinctExamples": null
   },
   "quality": {
@@ -104,15 +105,14 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-15",
   "recentWork": {
-    "source": "C1 finish batches reconciled; C2 original A–E drafted",
+    "source": "Original C2 tail drafts; complete reconciliation and editorial review pending",
     "newBatches": [
-      "batches/original-20261115-c2-finish-01.json",
-      "batches/original-20261115-c2-finish-02.json",
-      "batches/original-20261115-c2-finish-03.json"
+      "batches/original-20261115-c2-tail-8530-8598.json",
+      "batches/original-20261115-c2-tail-8450-8529.json"
     ],
-    "headwordsAdded": 298,
-    "sensesAdded": 399,
-    "translatedExamplesAdded": 798,
+    "headwordsAdded": 148,
+    "sensesAdded": 189,
+    "translatedExamplesAdded": 378,
     "editorialStatus": "draft-unreviewed"
   },
   "notes": "Original educational sentences, sense-specific learner definitions and illustrative concepts. Counts use prior manifest baseline plus verified new batch counts; aggregate uniqueness and editorial review pending. No runtime or deployment changes."
