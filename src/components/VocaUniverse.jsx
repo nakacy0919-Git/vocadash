@@ -7,7 +7,7 @@ import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
-export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
+export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const registeredAdapter=useSyncExternalStore(subscribeUniverseMemory,getUniverseMemoryAdapter,()=>null);
  const activeAdapter=memoryAdapter||registeredAdapter;
@@ -49,7 +49,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    return ()=>{window.removeEventListener('resize',fit);viewport?.removeEventListener('resize',fit);viewport?.removeEventListener('scroll',fit);body.style.overflow=oldBody;root.style.overflow=oldRoot;before?.focus?.({preventScroll:true});};
  },[]);
 
- const change=(next)=>{if(!next)return;const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
+ const change=(next)=>{if(!next)return;const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(Boolean(next.draft));setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
  const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(item.word.toLowerCase()!==center.word.toLowerCase())setTrail(t=>[...t.slice(-49),center]);change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(next.word.toLowerCase()!==center.word.toLowerCase())setTrail(t=>[...t.slice(-49),center]);change(next);setView('map');};
  useLayoutEffect(()=>{
@@ -111,13 +111,13 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    </div></div>
    <div className="vu-rings"><span>{visible.length}件の関連語</span><span>長い表現は一覧で確認できます</span>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}</div>
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);}}>次へ →</button></div>}</>}
-   {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
+   {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
    {center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
 
    {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} onClick={()=>explore(n)} aria-label={n.word+" を中心に表示"} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}</span></button>)}</section>})}</div>}
   </>}
   </div>
-  {learningOpen&&<UniverseLearning center={center} catalog={catalog} words={words} records={records} adapter={activeAdapter} links={links} onExplore={explore} snapshot={indexedSnapshot} onSnapshot={setSnapshot} command={learningCommand} onClose={()=>setLearningOpen(false)}/>}
+  {learningOpen&&<UniverseLearning center={center} catalog={catalog} words={words} records={records} adapter={activeAdapter} links={links} onExplore={explore} snapshot={indexedSnapshot} onSnapshot={setSnapshot} command={learningCommand} onFeedback={onFeedback} onClose={()=>setLearningOpen(false)}/>}
   </div>
   </section></div>,document.body);
 }
