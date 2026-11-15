@@ -1,4 +1,5 @@
 import {CATEGORY_CATALOG} from './category.js';
+import {CEFR_COURSES} from './learningFlow.js';
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
@@ -16,6 +17,7 @@ export const CATALOG = [
     { id: 'regular', label: '第1回 KICK OFF' }, { id: 'regular2', label: '第2回 KICK OFF' },
   ] },
   { id: 'reading', label: '長文読解 語彙', short: '長文語彙', group: '学校教材', units: Array.from({ length: 15 }, (_, i) => ({ id: String(i + 1), label: 'Lesson ' + (i + 1) })) },
+  ...CEFR_COURSES,
   ...CATEGORY_CATALOG,
 ];
 
