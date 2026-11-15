@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
 import './VocaDash.css';
 import MemoryTrainer from './components/MemoryTrainer.jsx';
+import CourseLibrary from './components/CourseLibrary.jsx';
 import {applyMemoryAttempt,memorySnapshot,quizMemoryAttempt,universeMemoryAttempt} from './lib/memoryBridge.js';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
@@ -228,6 +229,8 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const universeMemoryAdapter=useMemo(()=>({version:1,getSnapshot:({now}={})=>memorySnapshot(memoryStoreRef.current.records,memoryWordsRef.current,now),recordAttempt:attempt=>storeExternalAttempt(universeMemoryAttempt(attempt))}),[storeExternalAttempt]);
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
+  const [libraryPage,setLibraryPage]=useState(0),[missionScope,setMissionScope]=useState(null);
+  const [returnToLibrary,setReturnToLibrary]=useState(false);
   const [quizStudioOpen,setQuizStudioOpen]=useState(false);
   const [quizStudioWord,setQuizStudioWord]=useState('');
   const [dashboardOpen, setDashboardOpen] = useState(true);
@@ -323,12 +326,15 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   };
   const startMode = name => {
     pendingMode.current=null;
+    if(name==='memory'){setMissionScope(null);setReturnToLibrary(mode==='library'&&!dashboardOpen);} 
     resetCard(); readingCounted.current.clear(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
     setSession({ answered: 0, correct: 0 });
     setQueue(makeSessionQueue(words, name, store.records, categoryCourse(selection.courseId)?{...store.settings,questionCount:'all',randomOrder:false}:store.settings));
   };
   const startGuided = (courseId,unitId,name) => {
     if(!unitLoader(courseId,unitId))return;
+    if(courseId!==selection.courseId||unitId!==selection.unitId)setLibraryPage(0);
+    if(name==='memory'){setMissionScope(null);setReturnToLibrary(false);}
     if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(name);return;}
     resetCard(); readingCounted.current.clear(); setAutoplay(false);setDashboardOpen(false);setQueue([]);setCursor(0);setMode(name);setSession({answered:0,correct:0});
     pendingMode.current={key:courseId+':'+unitId,mode:name};
@@ -430,7 +436,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
-      if (mode === 'reading' || ratingFeedback !== null) return;
+      if (mode === 'reading' || mode==='library' || mode==='memory' || ratingFeedback !== null) return;
       if ((mode === 'quiz' || mode === 'listening') && feedback !== null) return;
       if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
@@ -446,8 +452,8 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     return () => window.removeEventListener('keydown', handler);
   });
 
-  const jumpTo = word => {
-    setWordListOpen(false); setAutoplay(false); setMode('study'); setQueue(words);
+  const jumpTo = (word,kind='study') => {
+    setWordListOpen(false); setAutoplay(false); setMode(kind); setQueue(words);
     setCursor(words.findIndex(w => w.id === word.id)); resetCard(); setDashboardOpen(false);
   };
 
@@ -464,10 +470,10 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
-  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
-  return <div className={'vd-app'+(dashboardOpen?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
+  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer focusIds={missionScope} sound={store.settings.sound} onSpeak={speak} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(!returnToLibrary);setMode(returnToLibrary?'library':'study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
+  return <div className={'vd-app'+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
-    <aside className="vd-sidebar" hidden={dashboardOpen}>
+    <aside className="vd-sidebar" hidden={dashboardOpen||mode==='library'}>
       <Brand/>
       <a className="vd-dashboard-nav" href="/?classroom=1">Classroom</a>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
@@ -480,25 +486,25 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     </aside>
     <main className="vd-main">
       <header className="vd-topbar">
-        <div className="vd-mobile-brand"><Brand/></div>{dashboardOpen&&!quizStudioOpen&&<a className="vd-home-classroom" href="/?classroom=1">Classroom</a>}{!dashboardOpen&&<button className="vd-return-home" onClick={()=>{resetCard();setAutoplay(false);setDashboardOpen(true);}}>⌂ ホーム</button>}
+        <div className="vd-mobile-brand"><Brand/></div>{dashboardOpen&&!quizStudioOpen&&<a className="vd-home-classroom" href="/?classroom=1">Classroom</a>}{!dashboardOpen&&mode!=='library'&&<button className="vd-return-home" onClick={()=>{resetCard();setAutoplay(false);setDashboardOpen(true);}}>⌂ ホーム</button>}
         <div className="vd-breadcrumb"><span>LEARNING SPACE</span><b>/</b><strong>{course.label}</strong></div>
 
       </header>
       <div className="vd-page">
         {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onLibrary={()=>startMode('library')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
             onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
-        ) : (
+        ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('memory');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
           <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>
-          <div className="vd-tabs" aria-label="学習モード">{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
+          <div className="vd-tabs" aria-label="学習モード"><button onClick={()=>startMode('library')}>▦ 単語一覧</button>{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
         <div className="vd-columns"><section className="vd-study-panel" onTouchStart={handleSwipeStart} onTouchEnd={handleSwipeEnd}>
           <div className="vd-panel-head">
             <span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? '音読 · 80%以上で合格' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span>
