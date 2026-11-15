@@ -1,3 +1,5 @@
+import familyBatchGL09 from '../data/universe-word-families-20261115-gl-affixes-09.json' with {type:'json'};
+import familyBatchMR10 from '../data/universe-word-families-20261115-mr-affixes-10.json' with {type:'json'};
 import familyBatchAC07 from '../data/universe-word-families-20261115-ac-affixes-07.json' with {type:'json'};
 import familyBatchDF08 from '../data/universe-word-families-20261115-df-affixes-08.json' with {type:'json'};
 import familyBatchGL05 from '../data/universe-word-families-20261115-gl-foundation-05.json' with {type:'json'};
@@ -461,7 +463,7 @@ const synonymMega2Added=addSynonymMega(authored,synonymMega2,5000,{batch:2,prior
 export function synonymMega2Coverage(){return {...synonymMega2Added};}
 
 // Append only genuinely unregistered lexical pairs, after all prior editorial sources.
-const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB,familyBatchSZ02,familyBatchMR01,familyBatchAC03,familyBatchDF04,familyBatchGL05,familyBatchMZ06,familyBatchSZ06,familyBatchAC07,familyBatchDF08,familyBatchS07,familyBatchTZ08,familyBatchSZ09]);
+const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB,familyBatchSZ02,familyBatchMR01,familyBatchAC03,familyBatchDF04,familyBatchGL05,familyBatchMZ06,familyBatchSZ06,familyBatchAC07,familyBatchDF08,familyBatchS07,familyBatchTZ08,familyBatchSZ09,familyBatchGL09,familyBatchMR10]);
 export function curatedWordFamilyCoverage(){return {...curatedFamilyCoverage};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
