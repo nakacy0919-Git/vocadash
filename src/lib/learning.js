@@ -1,4 +1,6 @@
 import {CATEGORY_CATALOG} from './category.js';
+import {CEFR_COURSES} from './learningFlow.js';
+import {isMastered} from './memoryEngine.js';
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
@@ -16,6 +18,7 @@ export const CATALOG = [
     { id: 'regular', label: '第1回 KICK OFF' }, { id: 'regular2', label: '第2回 KICK OFF' },
   ] },
   { id: 'reading', label: '長文読解 語彙', short: '長文語彙', group: '学校教材', units: Array.from({ length: 15 }, (_, i) => ({ id: String(i + 1), label: 'Lesson ' + (i + 1) })) },
+  ...CEFR_COURSES,
   ...CATEGORY_CATALOG,
 ];
 
@@ -110,12 +113,12 @@ export function updateRecord(store, wordId, knew, now = Date.now()) {
 }
 
 export function isDue(record, now = Date.now()) {
-  return Boolean(record && record.seen && (record.dueAt || 0) <= now);
+  return record?.memory?.attempts>0 ? record.memory.dueAt<=now : Boolean(record && record.seen && (record.dueAt || 0) <= now);
 }
 
 export function summaryFor(words, records, now = Date.now()) {
-  const known = words.filter(w => (records[w.id]?.level || 0) >= 2).length;
-  const seen = words.filter(w => (records[w.id]?.seen || 0) > 0).length;
+  const known = words.filter(w => records[w.id]?.memory?.attempts>0 ? isMastered(records[w.id].memory,now) : (records[w.id]?.level || 0) >= 2).length;
+  const seen = words.filter(w => (records[w.id]?.seen || 0) > 0 || (records[w.id]?.memory?.attempts || 0)>0).length;
   const due = words.filter(w => isDue(records[w.id], now)).length;
   const correct = words.reduce((acc, w) => acc + (records[w.id]?.correct || 0), 0);
   const wrong = words.reduce((acc, w) => acc + (records[w.id]?.wrong || 0), 0);
@@ -158,6 +161,7 @@ export function splitDialogueTurns(value) {
 export function makeSessionQueue(words, mode, records = {}, settings = {}) {
   const source = Array.isArray(words) ? words : [];
   let eligible = source;
+  if (mode === 'quiz') eligible = source.filter(w => !String(w.id||'').startsWith('quiz:') || w.choices?.length===4);
   if (mode === 'review') eligible = source.filter(w => isDue(records[w.id]));
   if (mode === 'listening') eligible = source.filter(w => Boolean(w.image && w.audio));
   const random = settings.randomOrder === true || mode === 'quiz' || mode === 'listening' || mode === 'review';

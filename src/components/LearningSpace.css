@@ -130,3 +130,12 @@
 @media(max-width:550px){.ls-compact-home .ls-progress-body{display:flex}.ls-compact-home .ls-goal{padding:9px;gap:7px}.ls-compact-home .ls-goal-icon{font-size:23px}.ls-compact-home .ls-goal strong{font-size:14px}.ls-bottom-actions{grid-template-columns:1fr}.ls-compact-home .ls-hero h1{font-size:31px}.ls-compact-home .ls-goal small{font-size:10px}}
 
 .vd-return-home{margin-left:auto;border:1px solid #dce5f3;border-radius:10px;background:#eef3fb;color:#45618a;padding:9px 12px;min-height:40px;font-weight:700;white-space:nowrap;cursor:pointer}.vu-center-example{margin:8px 0;padding:10px 15px;border:1px solid #365674;border-radius:10px;color:#d4e9f9;background:#12243c}.vu-center-example summary{cursor:pointer}.vu-center-example p{margin:8px 0 4px}.vu-center-example small{color:#a4bed7}
+
+.ls-compact-home{max-width:1250px;margin-inline:auto}
+.ls-compact-home .ls-goals{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ls-compact-home .ls-goal{min-height:84px;min-width:0}
+.ls-compact-home .ls-goal>div{min-width:0;overflow-wrap:anywhere}
+.ls-compact-home .ls-goal strong{font-size:clamp(13px,1.55vw,16px)}
+.ls-compact-home .ls-bottom-actions{grid-template-columns:1fr}
+.ls-compact-home .ls-bottom-actions .ls-outline{min-height:44px}
+@media(max-width:780px){.ls-compact-home .ls-goals{grid-template-columns:repeat(2,minmax(0,1fr))}}

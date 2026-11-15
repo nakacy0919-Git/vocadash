@@ -3,7 +3,7 @@ import * as legacy from '../lib/universe-senses';
 import {loadDraftExplorer} from '../lib/draftExplorer.js';
 import {orbitNodes,orbitPageCount,ORBIT_RADII,types} from '../lib/universe';
 const fallback={...legacy,stats:legacy.senseNetworkStats()};
-export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}){
+export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack,onPractice}){
  const [corpus,setCorpus]=useState(null),[loadError,setLoadError]=useState(false);
  useEffect(()=>{let active=true;loadDraftExplorer().then(value=>{if(active)setCorpus(value);}).catch(()=>{if(active)setLoadError(true);});return()=>{active=false;};},[]);
  const {candidateTerms,candidateTargets,linkedFrom,sensesFor,searchSenses,senseById,stats}=corpus||fallback;
@@ -12,7 +12,7 @@ export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}
  const [trail,setTrail]=useState([]);
  const [selected,setSelected]=useState(null);
  const [page,setPage]=useState(0);
- const [view,setView]=useState('map');
+ const [view,setView]=useState(typeof window!=='undefined'&&window.innerWidth<640?'list':'map');
  const entry=senseById(id);
  const results=useMemo(()=>searchSenses(query),[query,corpus]);
  const terms=useMemo(()=>candidateTerms(entry),[entry,corpus]);
@@ -31,9 +31,9 @@ export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}
   {!entry&&<div className="vu-sense-results">{results.length?results.map(r=><button key={r.id} onClick={()=>choose(r)}><strong>{r.word} <small>{r.pos} · {r.cefr}</small></strong><span>{r.meaning}</span><small lang="en">{r.definition}</small></button>):<p>該当する語義がありません。別の表記で検索してください。</p>}</div>}
   {entry&&<>
    {sensesFor(entry.word).length>1&&<div className="vu-sense-alternatives"><span>同じ単語の別語義</span>{sensesFor(entry.word).map(r=><button key={r.id} aria-pressed={r.id===entry.id} onClick={()=>choose(r)}>{r.pos} · {r.meaning}</button>)}</div>}
-   <section className="vu-draft-definition"><h3>{entry.word} <small>{entry.pos} · {entry.cefr}</small></h3><p>{entry.meaning}</p><p lang="en">{entry.definition}</p><button disabled={!sound} onClick={()=>speak(entry.word)}>♫ 発音</button></section>
+   <section className="vu-draft-definition"><h3>{entry.word} <small>{entry.pos} · {entry.cefr}</small></h3><p>{entry.meaning}</p><p lang="en">{entry.definition}</p><button disabled={!sound} onClick={()=>speak(entry.word)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(entry.word.split("/")[0])}>この単語をクイズで練習 →</button>}</section>
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><span>{terms.length}件の関連語候補</span></div>
-   {view==='map'&&terms.length>0&&<><div className="vu-map-scroll"><div className="vu-map" key={entry.id}><svg viewBox="0 0 100 100" className="vu-orbits" aria-hidden="true">{ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}{nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={"vu-line "+n.type}/>)}</svg><div className="vu-center"><strong>{entry.word}</strong><span>{entry.meaning}</span></div>{nodes.map((n,i)=><button key={n.word} className={'vu-node '+(selected===n.word?'is-selected':'')} data-type={n.type} style={{left:n.x+'%',top:n.y+'%',animationDelay:i*55+'ms'}} aria-pressed={selected===n.word} onClick={()=>setSelected(n.word)}><strong>{n.word}</strong><small>{n.meaning||n.qualifier||'候補'}</small></button>)}</div></div>{pages>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>setPage(p=>p-1)}>← 前へ</button><span>{page+1}/{pages}</span><button disabled={page>=pages-1} onClick={()=>setPage(p=>p+1)}>次へ →</button></div>}</>}
+   {view==='map'&&terms.length>0&&<><div className="vu-map-scroll"><div className="vu-map" key={entry.id}><svg viewBox="0 0 100 100" className="vu-orbits" aria-hidden="true">{ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}{nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={"vu-line "+n.type}/>)}</svg><div className="vu-center"><strong>{entry.word}</strong><span>{entry.meaning}</span></div>{nodes.map((n,i)=><button key={n.word} className={'vu-node '+(selected===n.word?'is-selected':'')} data-type={n.type} style={{left:n.x+'%',top:n.y+'%',animationDelay:i*55+'ms'}} aria-pressed={selected===n.word} title={n.word+" · "+(n.meaning||n.qualifier||"")} onClick={()=>setSelected(n.word)}><strong>{n.word}</strong><small>{n.meaning||n.qualifier||'候補'}</small></button>)}</div></div>{pages>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>setPage(p=>p-1)}>← 前へ</button><span>{page+1}/{pages}</span><button disabled={page>=pages-1} onClick={()=>setPage(p=>p+1)}>次へ →</button></div>}</>}
    {view==='list'&&terms.length>0&&<div className="vu-sense-results">{terms.map(n=><button key={n.word} onClick={()=>setSelected(n.word)} aria-pressed={selected===n.word}><strong>{n.word}</strong><small>{n.meaning||n.qualifier||'関連語候補'}</small></button>)}</div>}
    {!terms.length&&<p className="vu-empty">関連語候補は未登録です。英英定義・例文は学習できます。</p>}
    {active&&<div className="vu-usage-note"><strong>{active.word} · {active.editorial?types[active.type]+'（未レビュー）':'未レビュー候補'}</strong>{active.meaning&&<p>{active.meaning}</p>}{active.qualifier&&<p>元データの注記：{active.qualifier}</p>}<p>候補の語義を確認して選択してください。綴りが同じだけでは自動接続しません。</p><button disabled={!sound} onClick={()=>speak(active.word)}>♫ 発音</button>{targets.length>0?<div className="vu-sense-results">{targets.map(r=><button key={r.id} onClick={()=>choose(r)}><strong>{r.word} <small>{r.pos}</small></strong><span>{r.meaning}</span><small lang="en">{r.definition}</small></button>)}</div>:<p>候補語の語義カードは未登録です。</p>}</div>}

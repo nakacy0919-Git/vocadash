@@ -546,29 +546,12 @@ export function getRelations(entry,{includeReverse=true}={}) {
   return links.sort((a,b)=>tiers.indexOf(a.tier)-tiers.indexOf(b.tier));
 }
 export const ORBIT_RADII = [21,32,40];
-const capacities=[3,4,4];
-// Greedy placement chooses the angle with the greatest spacing from existing labels.
-// A paged map keeps all the links accessible without an unreadable cloud.
+// Six non-overlapping slots: two per tier, with the central card reserved.
+const capacities=[2,2,2];
+const orbitSlots=[[[34,18],[66,82]],[[70,18],[30,82]],[[11,50],[89,50]]];
 export function orbitPageCount(links) {
-  return Math.max(1,...tiers.map((tier,i)=>Math.ceil(links.filter(x=>x.tier===tier).length/capacities[i])));
+ return Math.max(1,...tiers.map((tier,i)=>Math.ceil(links.filter(x=>x.tier===tier).length/capacities[i])));
 }
 export function orbitNodes(links,page=0) {
-  const result=[];
-  tiers.forEach((tier,i)=>{
-    const group=links.filter(x=>x.tier===tier).slice(page*capacities[i],(page+1)*capacities[i]);
-    const radius=ORBIT_RADII[i];
-    group.forEach((item,k)=>{
-      const ideal=-90+i*38+k*360/group.length;
-      const candidate=Array.from({length:72},(_,step)=>{
-        const degrees=ideal+step*5;
-        const a=degrees*Math.PI/180;
-        const x=50+radius*Math.cos(a),y=50+radius*Math.sin(a);
-        const clearance=Math.min(100,...result.map(n=>Math.hypot((x-n.x)/1.65,(y-n.y))));
-        const centerClearance=Math.hypot((x-50)/1.5,y-50);
-        return {x,y,score:Math.min(clearance,centerClearance+9)-step*.015};
-      }).sort((a,b)=>b.score-a.score)[0];
-      result.push({...item,x:candidate.x,y:candidate.y});
-    });
-  });
-  return result;
+ return tiers.flatMap((tier,i)=>links.filter(x=>x.tier===tier).slice(page*capacities[i],(page+1)*capacities[i]).map((item,k)=>({...item,x:orbitSlots[i][k][0],y:orbitSlots[i][k][1]})));
 }

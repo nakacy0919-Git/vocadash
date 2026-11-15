@@ -14,8 +14,10 @@ import {categoryUnit,categoryCourse} from './lib/category.js';
 import {findVocabulary,searchVocabulary} from './lib/vocabularyLookup.js';
 import { saveReadingProgress, READING_SCORE_VERSION } from './lib/reading';
 
+import {draftCourseLoader} from './lib/draftCourse.js';
+import {shouldAutoAdvance,CORRECT_ADVANCE_MS} from './lib/learningFlow.js';
 const MODULES = import.meta.glob('./data/*.json');
-function unitLoader(c,u){const data=categoryUnit(c,u);return data?()=>Promise.resolve({default:data}):MODULES[sourcePath(c,u)];}
+function unitLoader(c,u){const draft=draftCourseLoader(c,u);if(draft)return draft;const data=categoryUnit(c,u);return data?()=>Promise.resolve({default:data}):MODULES[sourcePath(c,u)];}
 let courseIndexPromise;
 function courseIndex(){if(!courseIndexPromise){const units=CATALOG.flatMap(c=>c.units.map(u=>({c:c.id,u:u.id,load:unitLoader(c.id,u.id)}))).filter(x=>x.load);courseIndexPromise=Promise.allSettled(units.map(async x=>normalizeWords((await x.load()).default,x.c,x.u))).then(results=>{const index=new Map();for(const r of results)if(r.status==='fulfilled')for(const w of r.value){const key=w.word.toLowerCase().trim();if(!index.has(key))index.set(key,w);}if(results.some(r=>r.status==='rejected'))courseIndexPromise=null;return index;}).catch(e=>{courseIndexPromise=null;throw e;});}return courseIndexPromise;}
 
@@ -227,6 +229,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
   const [quizStudioOpen,setQuizStudioOpen]=useState(false);
+  const [quizStudioWord,setQuizStudioWord]=useState('');
   const [dashboardOpen, setDashboardOpen] = useState(true);
   const [homeCategory,setHomeCategory]=useState(null);
   const goCategory=group=>{setDashboardOpen(true);setQuizStudioOpen(false);setHomeCategory({group,stamp:Date.now()});};
@@ -247,7 +250,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const [imageError, setImageError] = useState(false);
   const [savedError, setSavedError] = useState(false);
   const [session, setSession] = useState({ answered: 0, correct: 0 });
-  const audio = useRef(null), quizTimer = useRef(null);
+  const audio = useRef(null), quizTimer = useRef(null), answerLock=useRef(false);
   const swipeStart = useRef(null);
   const readingCounted = useRef(new Set());
 
@@ -257,7 +260,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const quizAnswerCorrect = feedback !== null && (mode === 'listening' ? feedback === current?.id : feedback === current?.correctIndex);
   const isFinished = !loading && queue.length > 0 && cursor >= queue.length;
   const stats = useMemo(() => summaryFor(words, store.records), [words, store.records]);
-  const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
+  const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt,r?.memory?.lastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
   const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
   const readingPassed = useMemo(
@@ -286,6 +289,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     setUniverseInitialFilter(filter);setAutoplay(false);stopAudio();playUniverseLaunchSound(store.settings.universeSound!==false);setUniverseEntry(item);
   };
   const resetCard = () => {
+    answerLock.current=false;
     clearTimeout(quizTimer.current);
     stopAudio();
     setRevealed(false);
@@ -372,7 +376,8 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     quizTimer.current=setTimeout(next,remembered?1150:800);
   };
   const answer = option => {
-    if (feedback !== null || !current) return;
+    if (answerLock.current || feedback !== null || !current) return;
+    answerLock.current=true;
     clearTimeout(quizTimer.current);
     setFeedback(option.id);
     setQuizCelebration(option.correct ? 'correct' : 'incorrect');
@@ -380,11 +385,12 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     recordClassroom(current, option.correct, mode, selection);
     setStore(prev => applyMemoryAttempt(updateRecord(prev,current.id,option.correct),{id:current.id,word:current.word,meaning:current.meaning,correct:option.correct,kind:mode==='listening'?'listening':'meaning'}));
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
-    // Show the explanation for every answer; advance only when the learner chooses to.
+    // Keep mistakes and real explanations visible; straightforward correct answers flow onward.
     quizTimer.current = setTimeout(() => {
+      if(shouldAutoAdvance(option.correct,current.explanation||current.etymology)){next();return;}
       setQuizCelebration(null);
       setQuizReviewOpen(true);
-    }, option.correct ? 1000 : 750);
+    }, option.correct ? CORRECT_ADVANCE_MS : 750);
   };
   const speak = (item = current, sentence = false) => {
     if (!item || !store.settings.sound) return;
@@ -458,10 +464,10 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
-  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
+  if(!dashboardOpen&&mode==='memory')return <MemoryTrainer onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(true);setMode('study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
   return <div className={'vd-app'+(dashboardOpen?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
-    <aside className="vd-sidebar">
+    <aside className="vd-sidebar" hidden={dashboardOpen}>
       <Brand/>
       <a className="vd-dashboard-nav" href="/?classroom=1">Classroom</a>
       <button className={'vd-dashboard-nav' + (dashboardOpen ? ' is-active' : '')}
@@ -474,16 +480,16 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     </aside>
     <main className="vd-main">
       <header className="vd-topbar">
-        <div className="vd-mobile-brand"><Brand/></div>{!dashboardOpen&&<button className="vd-return-home" onClick={()=>{resetCard();setAutoplay(false);setDashboardOpen(true);}}>⌂ ホーム</button>}
+        <div className="vd-mobile-brand"><Brand/></div>{dashboardOpen&&!quizStudioOpen&&<a className="vd-home-classroom" href="/?classroom=1">Classroom</a>}{!dashboardOpen&&<button className="vd-return-home" onClick={()=>{resetCard();setAutoplay(false);setDashboardOpen(true);}}>⌂ ホーム</button>}
         <div className="vd-breadcrumb"><span>LEARNING SPACE</span><b>/</b><strong>{course.label}</strong></div>
 
       </header>
       <div className="vd-page">
-        {quizStudioOpen ? <QuizStudio onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
+        {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioOpen(true);}} onResume={()=>startMode('study')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
-            totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
+            totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
             onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
@@ -532,8 +538,8 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
                   </div>
                 ) : (
                   <>
-                    <div className="vd-quiz-instruction">{categoryCourse(course.id)?'日本語の意味に合う語を選んでください':'空欄に入る英単語を選んでください'}</div>
-                    {categoryCourse(course.id)&&<div className="vd-quiz-instruction" style={{fontSize:19,color:"#344b74",marginTop:8}}>{current.meaning}</div>}<QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>
+                    <div className="vd-quiz-instruction">{(categoryCourse(course.id)||course.id.startsWith('draft-'))?'日本語の意味に合う語を選んでください':'空欄に入る英単語を選んでください'}</div>
+                    {(categoryCourse(course.id)||course.id.startsWith('draft-'))&&<div className="vd-quiz-instruction" style={{fontSize:19,color:"#344b74",marginTop:8}}>{current.meaning}</div>}{!course.id.startsWith('draft-')&&<QuizSentence text={current.prompt.includes('________') ? current.prompt.replace('________', '＿＿＿＿') : current.english.replace(current.word, '＿＿＿＿')}/>}
                   </>
                 )}
                 <div className={mode === 'listening' ? 'vd-listening-grid' : 'vd-choice-grid'}>
@@ -642,7 +648,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </div>
     </main>
     <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    {universeEntry && <VocaUniverse onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onPractice={word=>{resetCard();setAutoplay(false);stopUniverseLaunchSound();setUniverseEntry(null);setQuizStudioWord(word);setDashboardOpen(true);setQuizStudioOpen(true);}} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">

@@ -94,3 +94,29 @@
 .vu-draft-banner{display:grid;gap:5px;padding:13px;border:1px solid #b78c39;border-radius:13px;background:#241b1a;color:#fde6ac;font-size:13px}.vu-draft-banner small{color:#d6cbad}.vu-draft-nav{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.vu-sense-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin:8px 0}.vu-sense-results button{display:flex;flex-direction:column;gap:4px;text-align:left;overflow-wrap:anywhere}.vu-sense-results small{color:#c8daed;line-height:1.5}.vu-sense-alternatives{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:10px 0;font-size:12px}.vu-sense-alternatives button[aria-pressed=true]{background:#155e75;border-color:#67e8f9}.vu-draft-definition{padding:14px;border:1px solid #325f80;border-radius:13px;background:#102238}.vu-draft-definition h3{font-size:24px;margin:0}.vu-draft-definition h3 small{font-size:12px;color:#a4c7e6}.vu-draft-definition p,.vu-draft-example p{margin:6px 0}.vu-draft-example{padding:8px 0;border-bottom:1px solid #375168}.vu-draft-example:last-child{border-bottom:0}
 
 .vu-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}.vu-learning .vu-choice-grid button{min-height:48px;text-align:left;overflow-wrap:anywhere}.vu-learning .vu-choice-grid button.vu-choice-correct{background:#124e3b;color:#e1ffed;opacity:1;border-color:#6de2ac}.vu-learning .vu-choice-grid button.vu-choice-wrong{background:#66333e;color:#ffe7ea;opacity:1;border-color:#fa9aa8}@media(max-width:480px){.vu-choice-grid{grid-template-columns:1fr}}
+
+/* Learning-flow update: non-overlapping slots and readable cards on every viewport. */
+.vu-dialog .vu-map-scroll{overflow:auto;justify-content:flex-start;align-items:flex-start;overscroll-behavior:contain;touch-action:pan-x pan-y;scrollbar-width:thin}
+.vu-dialog .vu-map{min-width:620px;min-height:460px;width:100%;height:100%;max-width:1120px;flex:0 0 auto;margin-inline:auto}
+.vu-dialog .vu-map .vu-center,.vu-dialog .vu-map .vu-node{box-sizing:border-box;min-width:0;overflow:auto;overscroll-behavior:contain;white-space:normal;overflow-wrap:anywhere;word-break:normal;scrollbar-width:thin;justify-content:flex-start;align-items:center}
+.vu-dialog .vu-map .vu-center{width:29%;max-width:250px;max-height:40%;padding:9px;gap:4px}
+.vu-dialog .vu-map .vu-center strong{font-size:clamp(17px,2.6cqw,29px);line-height:1.2}
+.vu-dialog .vu-map .vu-center span{font-size:clamp(12px,1.5cqw,15px);line-height:1.35}
+.vu-dialog .vu-map .vu-center button{min-height:30px;white-space:normal;font-size:11px}
+.vu-dialog .vu-map .vu-node{width:21%;max-width:220px;max-height:24%;padding:8px 6px;min-height:58px;gap:4px}
+.vu-dialog .vu-map .vu-node strong{max-width:100%;font-size:clamp(13px,1.9cqw,20px);line-height:1.2;white-space:normal;overflow-wrap:anywhere}
+.vu-dialog .vu-map .vu-node small{max-height:none;overflow:visible;max-width:100%;font-size:clamp(11px,1.4cqw,15px);line-height:1.3;white-space:normal;overflow-wrap:anywhere}
+.vu-dialog .vu-map .vu-node .vu-node-memory{font-size:10px;line-height:1.2;color:#b9d6e9}
+.vu-dialog .vu-map .vu-center>*{flex-shrink:0;max-width:100%;overflow-wrap:anywhere}
+.vu-dialog .vu-map .vu-node>*{flex-shrink:0}
+.vu-dialog .vu-stage:has(.vu-draft-explorer){overflow:auto;overscroll-behavior:contain}
+.vu-draft-explorer{min-width:0;width:100%;overflow-wrap:anywhere;box-sizing:border-box}
+.vu-dialog .vu-draft-explorer .vu-map-scroll{display:block;min-height:460px;flex:none}
+.vu-dialog .vu-draft-explorer .vu-map{height:460px}
+.vu-dialog .vu-full-list,.vu-dialog .vu-sense-results{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.vu-dialog .vu-full-list button,.vu-dialog .vu-sense-results button{min-width:0;white-space:normal;overflow-wrap:anywhere;line-height:1.4;min-height:44px;height:auto}
+.vu-dialog .vu-full-list button>*{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.vu-dialog .vu-draft-definition,.vu-dialog .vu-usage-note,.vu-dialog .vu-list-center{min-width:0;overflow-wrap:anywhere}
+.vu-dialog .vu-header,.vu-dialog .vu-controls,.vu-dialog .vu-display-tools{min-width:0}
+.vu-dialog .vu-header-actions{flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:640px){.vu-dialog .vu-map{margin-inline:0}.vu-dialog .vu-header h2{font-size:18px}.vu-dialog .vu-controls>button{min-height:40px;white-space:normal}}
