@@ -1,5 +1,6 @@
 import {CATEGORY_CATALOG} from './category.js';
 import {CEFR_COURSES} from './learningFlow.js';
+import {isMastered} from './memoryEngine.js';
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
@@ -112,12 +113,12 @@ export function updateRecord(store, wordId, knew, now = Date.now()) {
 }
 
 export function isDue(record, now = Date.now()) {
-  return Boolean(record && record.seen && (record.dueAt || 0) <= now);
+  return record?.memory?.attempts>0 ? record.memory.dueAt<=now : Boolean(record && record.seen && (record.dueAt || 0) <= now);
 }
 
 export function summaryFor(words, records, now = Date.now()) {
-  const known = words.filter(w => (records[w.id]?.level || 0) >= 2).length;
-  const seen = words.filter(w => (records[w.id]?.seen || 0) > 0).length;
+  const known = words.filter(w => records[w.id]?.memory?.attempts>0 ? isMastered(records[w.id].memory,now) : (records[w.id]?.level || 0) >= 2).length;
+  const seen = words.filter(w => (records[w.id]?.seen || 0) > 0 || (records[w.id]?.memory?.attempts || 0)>0).length;
   const due = words.filter(w => isDue(records[w.id], now)).length;
   const correct = words.reduce((acc, w) => acc + (records[w.id]?.correct || 0), 0);
   const wrong = words.reduce((acc, w) => acc + (records[w.id]?.wrong || 0), 0);
