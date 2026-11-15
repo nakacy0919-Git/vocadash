@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatch": "data/vocabulary-drafts/batches/batch-05.json",
+  "records": [
+    {
+      "senseId": "VD4-00135",
+      "wordId": "VD-06833",
+      "headword": "withdraw",
+      "collocations": [
+        {
+          "en": "withdraw a proposal",
+          "ja": "提案を撤回する"
+        },
+        {
+          "en": "withdraw an application",
+          "ja": "申請を取り下げる"
+        },
+        {
+          "en": "withdraw a statement",
+          "ja": "発言を撤回する"
+        },
+        {
+          "en": "withdraw an objection",
+          "ja": "異議を取り下げる"
+        }
+      ]
+    },
+    {
+      "senseId": "VD4-00136",
+      "wordId": "VD-04429",
+      "headword": "witness",
+      "collocations": [
+        {
+          "en": "witness an accident",
+          "ja": "事故を目撃する"
+        },
+        {
+          "en": "witness a crime",
+          "ja": "犯罪を目撃する"
+        },
+        {
+          "en": "witness a historic event",
+          "ja": "歴史的な出来事を目撃する"
+        },
+        {
+          "en": "witness a collision",
+          "ja": "衝突事故を目撃する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD4-00137",
+      "wordId": "VD-04429",
+      "headword": "witness",
+      "collocations": [
+        {
+          "en": "key witness",
+          "ja": "重要な証人"
+        },
+        {
+          "en": "independent witness",
+          "ja": "独立した証人"
+        },
+        {
+          "en": "call a witness",
+          "ja": "証人を呼ぶ"
+        },
+        {
+          "en": "credible witness",
+          "ja": "信頼できる証人"
+        }
+      ]
+    }
+  ]
+}

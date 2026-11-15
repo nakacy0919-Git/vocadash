@@ -1,0 +1,157 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261115-master-spelling-review",
+  "sourceKind": "github-original",
+  "editorialHold": true,
+  "records": [
+    {
+      "senseId": "VDO-261115-SPELL-0001",
+      "wordId": "VD-07729",
+      "headword": "unscathing",
+      "cefrHeadword": "C1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "辛辣でない、穏やかな（非常にまれな表現）",
+      "definitionEn": "avoiding the severe or cutting criticism that might otherwise be expected",
+      "synonyms": "mild, restrained, measured",
+      "antonyms": "scathing",
+      "collocations": [
+        "unscathing criticism (rare)",
+        "unscathing assessment (rare)"
+      ],
+      "imageHint": "同僚の提案を傷つけないよう穏やかに評価する会議",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "unscathing は非常にまれな形。通常の英作文では mild, measured, not scathing を推奨。一般的用例が乏しいため自動出題は保留。",
+      "normalizedHeadword": "unscathing",
+      "acceptedForms": [],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0001-e01",
+          "en": "Her assessment of the proposal was unscathing, even though she identified several weaknesses.",
+          "ja": "彼女は提案の弱点をいくつも指摘したが、その評価は辛辣ではなかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0001-e02",
+          "en": "The editor asked for an unscathing response that would encourage the young writer to revise the article.",
+          "ja": "編集者は若い書き手が記事を修正する気になるような、辛辣でない返答を求めた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0002",
+      "wordId": "VD-08303",
+      "headword": "misdemeanor/misdemanour",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "軽罪（特に米国法）",
+      "definitionEn": "a criminal offense classified below the most serious category of crimes",
+      "synonyms": "minor criminal offense",
+      "antonyms": "felony",
+      "collocations": [
+        "charge someone with a misdemeanor",
+        "misdemeanor conviction",
+        "misdemeanour offence"
+      ],
+      "imageHint": "法廷の机に軽罪事件の書類を置く法律家",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "英国式の正しい綴りは misdemeanour。原語マスターの misdemanour は誤記と判断。原IDを保持し、出題時は正規化表記を使用するまで保留。",
+      "normalizedHeadword": "misdemeanor/misdemeanour",
+      "acceptedForms": [
+        "misdemeanor",
+        "misdemeanour"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0002-e01",
+          "en": "The attorney explained why the charge had been classified as a misdemeanor.",
+          "ja": "弁護士はその罪が軽罪に分類された理由を説明した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0002-e02",
+          "en": "A misdemeanor conviction can have consequences that extend beyond the immediate penalty.",
+          "ja": "軽罪の有罪判決は、直接的な刑罰を超える影響をもたらす場合がある。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0003",
+      "wordId": "VD-08303",
+      "headword": "misdemeanor/misdemanour",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "軽い非行、規則違反",
+      "definitionEn": "an instance of improper conduct that is comparatively minor",
+      "synonyms": "misdeed, infraction, lapse",
+      "antonyms": "",
+      "collocations": [
+        "minor misdemeanour",
+        "schoolboy misdemeanours"
+      ],
+      "imageHint": "図書館の静粛の規則を破った生徒に優しく注意する司書",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "英国式の正しい綴りは misdemeanour。原語マスターの misdemanour は誤記と判断。原IDを保持し、出題時は正規化表記を使用するまで保留。",
+      "normalizedHeadword": "misdemeanor/misdemeanour",
+      "acceptedForms": [
+        "misdemeanor",
+        "misdemeanour"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0003-e01",
+          "en": "The librarian treated the noisy conversation as a minor misdemeanour rather than a reason to ban the visitors.",
+          "ja": "司書は騒がしい会話を、来館者を出入り禁止にする理由ではなく軽い規則違反として扱った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0003-e02",
+          "en": "The memoir recalls several harmless childhood misdemeanours with affection.",
+          "ja": "その回想録は子どものころの害のないいたずらをいくつも愛情を込めて振り返っている。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0004",
+      "wordId": "VD-08377",
+      "headword": "porten",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "前兆、兆し（portent を想定した修正候補）",
+      "definitionEn": "an occurrence or sign interpreted as indicating a significant event to come, often an unwelcome one",
+      "synonyms": "omen, harbinger, warning sign",
+      "antonyms": "",
+      "collocations": [
+        "ominous portent",
+        "portent of change"
+      ],
+      "imageHint": "海岸の漁師が遠くに立ち上る異様な雲を観察している場面",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "マスターの品詞が noun であるため portent を修正候補とした。porten を現代標準英語の名詞として確認できないため、原IDを保持して承認まで出題保留。",
+      "normalizedHeadword": "portent",
+      "acceptedForms": [
+        "portent"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0004-e01",
+          "en": "The fishermen regarded the unusual cloud formation as a portent of rough weather.",
+          "ja": "漁師たちはその珍しい雲の形を荒天の前兆とみなした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0004-e02",
+          "en": "The sudden closure of several local shops was taken as a portent of deeper economic difficulties.",
+          "ja": "地元の店が相次いで突然閉店したことは、より深刻な経済的困難の前兆と受け止められた。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
