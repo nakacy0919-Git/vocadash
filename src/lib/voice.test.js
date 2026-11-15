@@ -92,3 +92,23 @@ test('personal Universe commands use explicit Dash wake gating',()=>{
  assert.equal(parseVoice('start mission').kind,'mission');
  assert.equal(extractWake('Dash show my universe').command,'show my universe');
 });
+
+test('natural back commands work even after the universe wake window expires',()=>{
+ for(const raw of ["so back","so let's go back","hey just back","Hey Dash, let's go back","well go back now","take me back to the previous screen","okay go back again"]){
+  assert.equal(parseVoice(raw).kind,'back',raw);
+  assert.ok(routeVoice([raw],'standby',{universeOpen:true}),raw);
+ }
+ assert.equal(routeVoice(['so back'],'standby'),null);
+ assert.equal(routeVoice(['so back'],'off',{universeOpen:true}),null);
+ for(const raw of ['show me back','show me background','look up back','find backpack'])assert.equal(parseVoice(raw).kind,'search');
+ for(const raw of ['my back hurts','I went back yesterday','background music'])assert.equal(parseVoice(raw).kind,'unknown');
+ for(const word of ['beauty','sad','accelerator','environment','quickly','back'])assert.deepEqual(parseVoice('Hey Dash, show me '+word),{kind:'search',value:word});
+});
+
+import {readFileSync} from 'node:fs';
+test('voice resolver can read every canonical original vocabulary sense and requested search examples',async()=>{
+ const root=new URL('../../data/vocabulary-drafts/',import.meta.url);const manifest=JSON.parse(readFileSync(new URL('manifest.json',root),'utf8'));const rows=manifest.batchFiles.flatMap(path=>JSON.parse(readFileSync(new URL(path,root),'utf8')).records);const index=new Map();for(const r of rows)for(const k of [r.headword,...r.headword.split('/')].map(w=>w.toLowerCase().trim())){const list=index.get(k)||[];list.push(r);index.set(k,list);}
+ assert.equal(new Set(rows.map(r=>r.wordId)).size,8653);
+ for(const [k] of index){const item=await resolveVocabularyEntry(k,{getDrafts:async()=>index});assert.ok(item?.meaning,k);}
+ for(const k of ['beauty','sad','accelerator']){const item=await resolveVocabularyEntry(k,{lookup:lookupUniverse,getDrafts:async()=>index});assert.ok(item?.word,k+' must resolve');}
+});
