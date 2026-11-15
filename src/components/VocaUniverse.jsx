@@ -7,7 +7,7 @@ import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
-export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
+export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const registeredAdapter=useSyncExternalStore(subscribeUniverseMemory,getUniverseMemoryAdapter,()=>null);
  const activeAdapter=memoryAdapter||registeredAdapter;
@@ -100,7 +100,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    <div className="vu-display-tools"><div className="vu-view-switch"><button aria-pressed={view==='map'} onClick={()=>setView('map')}>◉ マップ</button><button aria-pressed={view==='list'} onClick={()=>setView('list')}>☰ 一覧</button></div><label><input type="checkbox" checked={showImages} onChange={e=>setShowImages(e.target.checked)}/> 画像を表示</label></div>
    </div>
    <div className="vu-workspace"> <div className={"vu-stage"+(view==="list"?" is-list":"")}>
-   {draftOpen?<Suspense fallback={<p className="vu-empty">語義を読み込み中…</p>}><UniverseSenseExplorer key={center.word} initialWord={center.word} onSpeak={onSpeak} sound={sound} onBack={()=>setDraftOpen(false)}/></Suspense>:<>
+   {draftOpen?<Suspense fallback={<p className="vu-empty">語義を読み込み中…</p>}><UniverseSenseExplorer key={center.word} initialWord={center.word} onSpeak={onSpeak} sound={sound} onBack={()=>setDraftOpen(false)} onPractice={onPractice}/></Suspense>:<>
    {view==='map' && <><div className="vu-map-scroll"><div className="vu-map" key={center.word}>
     <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" className="vu-orbits">
       {ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
@@ -109,7 +109,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     <div className="vu-center" data-memory={memoryFor(center).status} style={{'--vu-memory-light':memoryFor(center).brightness}}>{showImages&&center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<strong>{center.word}</strong><small>{memoryLabels[memoryFor(center).status]}</small><span>{mapSense||center.meaning}</span><button onClick={()=>{setLearningOpen(true);setLearningCommand({kind:'review',at:Date.now()});}}>✦ 復習</button><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
     {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:(280+i*65)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{memoryLabels[memoryFor(n).status]}</small></button>)}
    </div></div>
-   <div className="vu-rings"><span>{visible.length}件の関連語</span><span>長い表現は一覧で確認できます</span></div>
+   <div className="vu-rings"><span>{visible.length}件の関連語</span><span>長い表現は一覧で確認できます</span>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}</div>
    {pageCount>1&&<div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);}}>← 前へ</button><span>{page+1} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);}}>次へ →</button></div>}</>}
    {view==='list'&&<section className="vu-list-center"><strong>{center.word}</strong><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
    {center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
