@@ -1,3 +1,6 @@
+import familyBatchA from '../data/universe-word-families-20261115-a.json' with {type:'json'};
+import familyBatchB from '../data/universe-word-families-20261115-b.json' with {type:'json'};
+import {addCuratedWordFamilies} from './universe-word-families.js';
 import synonymMega from '../data/universe-synonym-mega.js';
 import synonymMega2 from '../data/universe-synonym-mega-2.js';
 import {addSynonymMega,synonymCandidateKeys} from './universe-synonym-mega.js';
@@ -444,6 +447,10 @@ const synonymMegaAdded=addSynonymMega(authored,synonymMega);
 export function synonymMegaCoverage(){return {...synonymMegaAdded};}
 const synonymMega2Added=addSynonymMega(authored,synonymMega2,5000,{batch:2,prioritizeSingle:true,excludeCandidates:synonymCandidateKeys(synonymMega)});
 export function synonymMega2Coverage(){return {...synonymMega2Added};}
+
+// Append only genuinely unregistered lexical pairs, after all prior editorial sources.
+const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB]);
+export function curatedWordFamilyCoverage(){return {...curatedFamilyCoverage};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.
