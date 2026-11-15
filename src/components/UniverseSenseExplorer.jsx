@@ -1,8 +1,12 @@
-import React,{useMemo,useState} from 'react';
-import {candidateTerms,candidateTargets,linkedFrom,sensesFor,searchSenses,senseById,senseNetworkStats} from '../lib/universe-senses';
+import React,{useEffect,useMemo,useState} from 'react';
+import * as legacy from '../lib/universe-senses';
+import {loadDraftExplorer} from '../lib/draftExplorer.js';
 import {orbitNodes,orbitPageCount,ORBIT_RADII,types} from '../lib/universe';
-const stats=senseNetworkStats();
+const fallback={...legacy,stats:legacy.senseNetworkStats()};
 export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}){
+ const [corpus,setCorpus]=useState(null),[loadError,setLoadError]=useState(false);
+ useEffect(()=>{let active=true;loadDraftExplorer().then(value=>{if(active)setCorpus(value);}).catch(()=>{if(active)setLoadError(true);});return()=>{active=false;};},[]);
+ const {candidateTerms,candidateTargets,linkedFrom,sensesFor,searchSenses,senseById,stats}=corpus||fallback;
  const [query,setQuery]=useState(initialWord||'');
  const [id,setId]=useState(null);
  const [trail,setTrail]=useState([]);
@@ -10,8 +14,8 @@ export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}
  const [page,setPage]=useState(0);
  const [view,setView]=useState('map');
  const entry=senseById(id);
- const results=useMemo(()=>searchSenses(query),[query]);
- const terms=useMemo(()=>candidateTerms(entry),[entry]);
+ const results=useMemo(()=>searchSenses(query),[query,corpus]);
+ const terms=useMemo(()=>candidateTerms(entry),[entry,corpus]);
  const pages=orbitPageCount(terms),nodes=orbitNodes(terms,Math.min(page,pages-1));
  const active=terms.find(t=>t.word===selected);
  const targets=candidateTargets(active);
@@ -20,7 +24,8 @@ export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}
  const back=()=>{const previous=trail.at(-1);setTrail(t=>t.slice(0,-1));setId(previous||null);setPage(0);setSelected(null);};
  const speak=(word)=>onSpeak({word});
  return <div className="vu-draft-explorer">
-  <div className="vu-draft-banner"><strong>オリジナル教材 · 開発プレビュー</strong><span>未レビューの語義・関連語候補です。通常の関連語マップとは分離しています。</span><small>{stats.headwords.toLocaleString()}語 / {stats.senses.toLocaleString()}語義 · 英英定義・例文付き</small></div>
+  <div className="vu-draft-banner"><strong>オリジナル教材 · 開発プレビュー</strong><span>未レビューの語義・関連語・コロケーション候補です。通常の関連語マップとは分離しています。</span><small>{stats.headwords.toLocaleString()}語 / {stats.senses.toLocaleString()}語義 · 英英定義・例文付き {corpus&&` / ${stats.collocations.toLocaleString()}件の日本語訳付き表現`}</small></div>
+  {!corpus&&<p role="status">{loadError?"追加教材を読み込めませんでした。既存教材を表示しています。":"全語彙・コロケーションを読み込み中…"}</p>}
   <div className="vu-draft-nav"><button onClick={onBack}>← 通常のマップ</button>{entry&&<button onClick={back}>← {trail.length?'前の語義':'語義検索へ'}</button>}</div>
   <div className="vu-search-wrap"><label htmlFor="vu-draft-query">英単語・日本語から語義を探す</label><input id="vu-draft-query" type="search" value={query} onChange={e=>{setQuery(e.target.value);setId(null);setTrail([]);setSelected(null);setPage(0);}} placeholder="例：character / 性格"/></div>
   {!entry&&<div className="vu-sense-results">{results.length?results.map(r=><button key={r.id} onClick={()=>choose(r)}><strong>{r.word} <small>{r.pos} · {r.cefr}</small></strong><span>{r.meaning}</span><small lang="en">{r.definition}</small></button>):<p>該当する語義がありません。別の表記で検索してください。</p>}</div>}
@@ -32,6 +37,7 @@ export default function UniverseSenseExplorer({initialWord,onSpeak,sound,onBack}
    {view==='list'&&terms.length>0&&<div className="vu-sense-results">{terms.map(n=><button key={n.word} onClick={()=>setSelected(n.word)} aria-pressed={selected===n.word}><strong>{n.word}</strong><small>{n.meaning||n.qualifier||'関連語候補'}</small></button>)}</div>}
    {!terms.length&&<p className="vu-empty">関連語候補は未登録です。英英定義・例文は学習できます。</p>}
    {active&&<div className="vu-usage-note"><strong>{active.word} · {active.editorial?types[active.type]+'（未レビュー）':'未レビュー候補'}</strong>{active.meaning&&<p>{active.meaning}</p>}{active.qualifier&&<p>元データの注記：{active.qualifier}</p>}<p>候補の語義を確認して選択してください。綴りが同じだけでは自動接続しません。</p><button disabled={!sound} onClick={()=>speak(active.word)}>♫ 発音</button>{targets.length>0?<div className="vu-sense-results">{targets.map(r=><button key={r.id} onClick={()=>choose(r)}><strong>{r.word} <small>{r.pos}</small></strong><span>{r.meaning}</span><small lang="en">{r.definition}</small></button>)}</div>:<p>候補語の語義カードは未登録です。</p>}</div>}
+   {entry.collocations?.length>0&&<section className="vu-usage-note"><strong>コロケーション・実用表現（未校閲）</strong>{entry.collocations.map(c=><div key={c.en} className="vu-draft-example"><p lang="en">{c.en} <button disabled={!sound} onClick={()=>speak(c.en)}>♫</button></p><small>{c.ja||"日本語訳確認中"}</small></div>)}</section>}
    <section className="vu-usage-note"><strong>この語義のオリジナル例文</strong>{entry.examples.map(([en,ja],i)=><div key={i} className="vu-draft-example"><p lang="en">{en}</p><small>{ja}</small></div>)}</section>
    {entry.imageHint&&<p className="vu-map-sense">将来の画像制作のヒント：{entry.imageHint}（画像未登録）</p>}
    {incoming.length>0&&<section className="vu-usage-note"><strong>この表現を候補に持つ語義</strong><p>逆方向の参照です。同義語と確定したわけではありません。</p><div className="vu-sense-results">{incoming.slice(0,25).map(r=><button key={r.id} onClick={()=>choose(r)}><strong>{r.word}</strong><span>{r.meaning}</span></button>)}</div>{incoming.length>25&&<small>先頭25件を表示</small>}</section>}
