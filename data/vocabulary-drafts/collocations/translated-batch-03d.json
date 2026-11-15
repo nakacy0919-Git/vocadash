@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatch": "data/vocabulary-drafts/batches/batch-03.json",
+  "records": [
+    {
+      "senseId": "VD-02814-v-5-010",
+      "wordId": "VD-02814",
+      "headword": "deliver",
+      "collocations": [
+        {
+          "en": "deliver a parcel",
+          "ja": "小包を配達する"
+        },
+        {
+          "en": "deliver goods",
+          "ja": "商品を配送する"
+        },
+        {
+          "en": "deliver medical supplies",
+          "ja": "医療物資を届ける"
+        },
+        {
+          "en": "deliver directly to customers",
+          "ja": "顧客に直接届ける"
+        }
+      ]
+    }
+  ]
+}
