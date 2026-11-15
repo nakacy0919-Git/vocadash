@@ -2,7 +2,7 @@ import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {FORMATS,buildQuestions,planSession,createAttempt,shuffle,normalize} from '../lib/quiz/engine.js';
 import authored from '../data/quiz-authored.json';
 import './QuizStudio.css';
-const modules=import.meta.glob('../../data/vocabulary-drafts/batches/*.json',{import:'default'});
+import {loadDraftRecords} from '../lib/draftCorpus.js';
 const KEY='vocadash-quiz-attempts-v1';
 function saveAttempt(attempt){
   try {const old=JSON.parse(localStorage.getItem(KEY)||'[]');localStorage.setItem(KEY,JSON.stringify([...(Array.isArray(old)?old:[]),attempt].slice(-2000)));return true;}catch{return false;}
@@ -11,7 +11,7 @@ export default function QuizStudio({onClose,onAttempt}){
   const [records,setRecords]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[format,setFormat]=useState('mixed'),[word,setWord]=useState(''),[queue,setQueue]=useState([]),[cursor,setCursor]=useState(0),[answer,setAnswer]=useState(''),[picked,setPicked]=useState([]),[result,setResult]=useState(null),[hints,setHints]=useState(0),[plays,setPlays]=useState(0),[score,setScore]=useState(0),[notice,setNotice]=useState('');
   const started=useRef(0),locked=useRef(false);
   const audioAvailable=typeof window!=='undefined' && 'speechSynthesis' in window;
-  useEffect(()=>{let active=true;Promise.all(Object.values(modules).map(load=>load())).then(batches=>{if(active){setRecords([...new Map(batches.flatMap(b=>b.records||[]).map(r=>[r.senseId,r])).values()]);setLoading(false);}}).catch(()=>{if(active){setError('教材を読み込めませんでした。閉じて再度開いてください。');setLoading(false);}});return()=>{active=false;window.speechSynthesis?.cancel();};},[]);
+  useEffect(()=>{let active=true;loadDraftRecords().then(rows=>{if(active){setRecords(rows);setLoading(false);}}).catch(()=>{if(active){setError('教材を読み込めませんでした。閉じて再度開いてください。');setLoading(false);}});return()=>{active=false;window.speechSynthesis?.cancel();};},[]);
   const bank=useMemo(()=>{
     const subset=records.filter(r=>!word || (r.headword||'').toLowerCase().includes(word.toLowerCase()));
     const ids=new Set(subset.map(r=>r.senseId));
