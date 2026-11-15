@@ -85,12 +85,13 @@
     "batches/original-20261115-c2-finish-16.json",
     "batches/original-20261115-c2-reconciled-8006-8079.json",
     "batches/original-20261115-c2-tail-8369-8449.json",
-    "batches/original-20261115-c2-mid-8250-8299.json"
+    "batches/original-20261115-c2-mid-8250-8299.json",
+    "batches/original-20261115-c2-tail-8200-8249.json"
   ],
   "totals": {
-    "distinctHeadwords": 8483,
-    "senses": 9403,
-    "examples": 18806,
+    "distinctHeadwords": 8533,
+    "senses": 9465,
+    "examples": 18930,
     "distinctExamples": null
   },
   "quality": {
@@ -106,34 +107,18 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-15",
   "recentWork": {
-    "source": "Reconciled disjoint headword ID ranges across concurrent C1/C2 draft work; original alternate files retained in repository",
+    "source": "Original C2 draft; master IDs verified; cross-batch audit and editorial review pending",
     "newBatches": [
-      "batches/original-20261115-c1-finish-01.json",
-      "batches/original-20261115-c1-finish-02.json",
-      "batches/original-20261115-c1-finish-03.json",
-      "batches/original-20261115-c1-finish-04.json",
-      "batches/original-20261115-c1-finish-05.json",
-      "batches/original-20261115-c1-finish-06.json",
-      "batches/original-20261115-c1-finish-07.json",
-      "batches/original-20261115-c1-finish-08.json",
-      "batches/original-20261115-c1-finish-09.json",
-      "batches/original-20261115-c1-finish-10.json",
-      "batches/original-20261115-c1-finish-11.json",
-      "batches/original-20261115-c1-finish-12.json",
-      "batches/original-20261115-c2-finish-13.json",
-      "batches/original-20261115-c2-finish-14.json",
-      "batches/original-20261115-c2-finish-15.json",
-      "batches/original-20261115-c2-finish-16.json",
-      "batches/original-20261115-c2-tail-8530-8598.json",
-      "batches/original-20261115-c2-tail-8450-8529.json",
-      "batches/original-20261115-c2-reconciled-8006-8079.json",
-      "batches/original-20261115-c2-tail-8369-8449.json",
-      "batches/original-20261115-c2-mid-8250-8299.json"
+      "batches/original-20261115-c2-tail-8200-8249.json"
     ],
-    "headwordsAdded": 1409,
-    "sensesAdded": 1634,
-    "translatedExamplesAdded": 3268,
+    "headwordsAdded": 50,
+    "sensesAdded": 62,
+    "translatedExamplesAdded": 124,
     "editorialStatus": "draft-unreviewed"
   },
-  "notes": "Counts use the previous audited manifest baseline plus disjoint new word-ID ranges. Concurrent overlapping draft files are preserved outside the active manifest; they require sense-level editorial merging later. Full cross-batch duplicate and semantic review pending. No runtime or deployment changes."
+  "notes": "Counts use the previous audited manifest baseline plus disjoint new word-ID ranges. Concurrent overlapping draft files are preserved outside the active manifest; they require sense-level editorial merging later. Full cross-batch duplicate and semantic review pending. No runtime or deployment changes. Supplemental batches contain alternative authored examples for IDs also covered by concurrent batches; excluded from headline totals pending reconciliation.",
+  "supplementalBatchFiles": [
+    "batches/original-20261115-c2-tail-8400-8449.json",
+    "batches/original-20261115-c2-tail-8500-8529.json"
+  ]
 }
