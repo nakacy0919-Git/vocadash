@@ -1,3 +1,32 @@
+import familyBatchAcademicAH15 from '../data/universe-word-families-20261115-academic-ah-15.json' with {type:'json'};
+import familyBatchDM13 from '../data/universe-word-families-20261115-supplement-dm-13.json' with {type:'json'};
+import familyBatchNR14 from '../data/universe-word-families-20261115-supplement-nr-14.json' with {type:'json'};
+import familyBatchDL13 from '../data/universe-word-families-20261115-supplement-dl-13.json' with {type:'json'};
+import familyBatchMR14 from '../data/universe-word-families-20261115-supplement-mr-14.json' with {type:'json'};
+import familyBatchDirect11 from '../data/universe-word-families-20261115-direct-bridges-11.json' with {type:'json'};
+import familyBatchAC12 from '../data/universe-word-families-20261115-supplement-ac-12.json' with {type:'json'};
+import familyBatchGL09 from '../data/universe-word-families-20261115-gl-affixes-09.json' with {type:'json'};
+import familyBatchMR10 from '../data/universe-word-families-20261115-mr-affixes-10.json' with {type:'json'};
+import familyBatchAC07 from '../data/universe-word-families-20261115-ac-affixes-07.json' with {type:'json'};
+import familyBatchDF08 from '../data/universe-word-families-20261115-df-affixes-08.json' with {type:'json'};
+import familyBatchGL05 from '../data/universe-word-families-20261115-gl-foundation-05.json' with {type:'json'};
+import familyBatchMZ06 from '../data/universe-word-families-20261115-mz-foundation-06.json' with {type:'json'};
+import familyBatchAC03 from '../data/universe-word-families-20261115-ac-foundation-03.json' with {type:'json'};
+import familyBatchDF04 from '../data/universe-word-families-20261115-df-foundation-04.json' with {type:'json'};
+import familyBatchMR01 from '../data/universe-word-families-20261115-mr-01.json' with {type:'json'};
+import familyBatchA from '../data/universe-word-families-20261115-a.json' with {type:'json'};
+import familyBatchB from '../data/universe-word-families-20261115-b.json' with {type:'json'};
+import familyBatchSZ02 from '../data/universe-word-families-20261115-sz-02.json' with {type:'json'};
+import familyBatchSZ06 from '../data/universe-word-families-20261115-sz-06.json' with {type:'json'};
+import familyBatchS07 from '../data/universe-word-families-20261115-s-07.json' with {type:'json'};
+import familyBatchTZ08 from '../data/universe-word-families-20261115-tz-08.json' with {type:'json'};
+import familyBatchSZ09 from '../data/universe-word-families-20261115-sz-affixes-09.json' with {type:'json'};
+import familyBatchSZ11 from '../data/universe-word-families-20261115-sz-direct-11.json' with {type:'json'};
+import familyBatchUZ12 from '../data/universe-word-families-20261115-uz-prefix-12.json' with {type:'json'};
+import familyBatchSZ13 from '../data/universe-word-families-20261115-sz-lexical-13.json' with {type:'json'};
+import familyBatchS15 from '../data/universe-word-families-20261115-s-network-15.json' with {type:'json'};
+import familyBatchTZ16 from '../data/universe-word-families-20261115-tz-network-16.json' with {type:'json'};
+import {addCuratedWordFamilies} from './universe-word-families.js';
 import synonymMega from '../data/universe-synonym-mega.js';
 import synonymMega2 from '../data/universe-synonym-mega-2.js';
 import {addSynonymMega,synonymCandidateKeys} from './universe-synonym-mega.js';
@@ -444,6 +473,10 @@ const synonymMegaAdded=addSynonymMega(authored,synonymMega);
 export function synonymMegaCoverage(){return {...synonymMegaAdded};}
 const synonymMega2Added=addSynonymMega(authored,synonymMega2,5000,{batch:2,prioritizeSingle:true,excludeCandidates:synonymCandidateKeys(synonymMega)});
 export function synonymMega2Coverage(){return {...synonymMega2Added};}
+
+// Append only genuinely unregistered lexical pairs, after all prior editorial sources.
+const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB,familyBatchSZ02,familyBatchMR01,familyBatchAC03,familyBatchDF04,familyBatchGL05,familyBatchMZ06,familyBatchSZ06,familyBatchAC07,familyBatchDF08,familyBatchS07,familyBatchTZ08,familyBatchSZ09,familyBatchGL09,familyBatchMR10,familyBatchSZ11,familyBatchUZ12,familyBatchDirect11,familyBatchAC12,familyBatchDL13,familyBatchMR14,familyBatchDM13,familyBatchNR14,familyBatchSZ13,familyBatchAcademicAH15,familyBatchS15,familyBatchTZ16]);
+export function curatedWordFamilyCoverage(){return {...curatedFamilyCoverage};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
 // A reverse-only view means "linked from", not a complete dictionary entry.

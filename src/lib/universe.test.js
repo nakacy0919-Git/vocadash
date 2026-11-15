@@ -1,3 +1,5 @@
+import {curatedWordFamilyCoverage} from './universe.js';
+import {addCuratedWordFamilies} from './universe-word-families.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {getRelations,orbitNodes,orbitPageCount,lookupUniverse,universeCoverage,relationTier,universeEntries,usageFor,domainReadingCoverage,familyCollocationCoverage,lexicalReviewCoverage,advancedReviewCoverage,academicReviewCoverage,extendedReviewCoverage,balancedReviewCoverage,cumulativeLexicalCoverage,getWordForms,domainMegaCoverage,actionMegaCoverage,adjectiveMegaCoverage,unifiedReadingCoverage,everydayAbstractCoverage,collocationReadingCoverage,nuanceFamilyCoverage,thematicReadingCoverage,everydayPhrasesCoverage,concreteWorldCoverage,productiveVerbCoverage,adjectiveNounCoverage,derivationCollocationCoverage,voiceEssentialCoverage} from './universe.js';
@@ -24,7 +26,7 @@ test('stage one seeds cover vocabulary, reciprocal links have provenance',()=>{
  const balanced=balancedReviewCoverage();
  const extra=[domainMegaCoverage(),actionMegaCoverage(),adjectiveMegaCoverage(),unifiedReadingCoverage(),everydayAbstractCoverage(),collocationReadingCoverage(),nuanceFamilyCoverage(),thematicReadingCoverage(),everydayPhrasesCoverage(),concreteWorldCoverage(),productiveVerbCoverage(),adjectiveNounCoverage(),derivationCollocationCoverage()].reduce((a,b)=>({heads:a.heads+b.heads,links:a.links+b.links}),{heads:0,links:0});
  const expansion=lexicalExpansionCoverage(),mega1=synonymMegaCoverage(),mega2=synonymMega2Coverage();
- assert.deepEqual(universeCoverage(),{heads:voiceEssentialCoverage().heads+extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads+(expansion.after.heads-expansion.before.heads)+mega1.headsAdded+mega2.headsAdded,links:voiceEssentialCoverage().links+extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links+(expansion.after.links-expansion.before.links)+mega1.linksAdded+mega2.linksAdded});
+ assert.deepEqual(universeCoverage(),{heads:curatedWordFamilyCoverage().heads+voiceEssentialCoverage().heads+extra.heads+6842+added.heads+lexical.heads+review.heads+academic.heads+advanced.heads+extended.heads+balanced.heads+(expansion.after.heads-expansion.before.heads)+mega1.headsAdded+mega2.headsAdded,links:curatedWordFamilyCoverage().links+voiceEssentialCoverage().links+extra.links+26096+added.links+lexical.links+review.links+academic.links+advanced.links+extended.links+balanced.links+(expansion.after.links-expansion.before.links)+mega1.linksAdded+mega2.linksAdded});
  assert.ok(lexical.heads>0&&lexical.links>0&&lexical.refined>=0);
  assert.ok(added.heads>0&&added.links>0);
  assert.equal(lookupUniverse('  TRANSLATE ').meaning,'翻訳する');
@@ -744,4 +746,23 @@ test('second-batch selection prioritizes lexical pairs and excludes first-batch 
  assert.equal(stats.addedPairs,2);
  assert.equal(map.has('long phrase'),false);
  assert.ok([...map.values()].flatMap(x=>x.links).every(l=>l.synonymBatch===2));
+});
+
+
+test('curated derivatives append unique pairs without overwriting existing relations',()=>{
+ const actual=curatedWordFamilyCoverage();
+ assert.ok(actual.groups>=599); // Other independent content batches may be appended.
+ assert.ok(actual.candidatePairs>=1099);
+ assert.equal(actual.invalid,0);
+ assert.ok(actual.duplicateCandidates>=0); // Cross-batch overlaps are filtered.
+ assert.equal(actual.candidatePairs,actual.newPairs+actual.alreadyFamily+actual.protectedExisting);
+ assert.equal(actual.links,2*actual.newPairs);
+ const entries=new Map([['act',{meaning:'行動する',links:[{word:'action',meaning:'行動',type:'family',tier:'core'}]}]]);
+ const dataset={schemaVersion:1,families:[[{word:'act',partOfSpeech:'動詞',meaning:'行動する'},{word:'action',partOfSpeech:'名詞',meaning:'行動'},{word:'actor',partOfSpeech:'名詞',meaning:'俳優'}]]};
+ const first=addCuratedWordFamilies(entries,[dataset]);
+ assert.equal(first.newPairs,1);assert.equal(first.alreadyFamily,1);assert.equal(first.links,2);
+ assert.equal(entries.get('act').links.find(l=>l.word==='actor').type,'family');
+ assert.equal(entries.get('actor').links[0].word,'act');
+ assert.equal(addCuratedWordFamilies(entries,[dataset]).newPairs,0);
+ assert.equal(entries.get('act').links.length,2);
 });
