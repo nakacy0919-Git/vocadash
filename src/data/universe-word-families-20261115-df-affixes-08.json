@@ -1,0 +1,3662 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-unreviewed",
+  "scope": "word-family",
+  "description": "Explicit D–F lexical derivatives, Japanese meanings and parts of speech. Existing unordered pairs excluded.",
+  "families": [
+    [
+      {
+        "word": "damp",
+        "partOfSpeech": "形容詞",
+        "meaning": "湿った"
+      },
+      {
+        "word": "dampness",
+        "partOfSpeech": "名詞",
+        "meaning": "湿気"
+      },
+      {
+        "word": "dampen",
+        "partOfSpeech": "動詞",
+        "meaning": "湿らせる"
+      }
+    ],
+    [
+      {
+        "word": "dangerous",
+        "partOfSpeech": "形容詞",
+        "meaning": "危険な"
+      },
+      {
+        "word": "dangerously",
+        "partOfSpeech": "副詞",
+        "meaning": "危険なほど"
+      }
+    ],
+    [
+      {
+        "word": "dark",
+        "partOfSpeech": "形容詞",
+        "meaning": "暗い"
+      },
+      {
+        "word": "darkening",
+        "partOfSpeech": "名詞",
+        "meaning": "暗くなること"
+      }
+    ],
+    [
+      {
+        "word": "deactivate",
+        "partOfSpeech": "動詞",
+        "meaning": "停止させる"
+      },
+      {
+        "word": "deactivation",
+        "partOfSpeech": "名詞",
+        "meaning": "停止・無効化"
+      }
+    ],
+    [
+      {
+        "word": "debilitate",
+        "partOfSpeech": "動詞",
+        "meaning": "弱体化させる"
+      },
+      {
+        "word": "debilitation",
+        "partOfSpeech": "名詞",
+        "meaning": "衰弱"
+      }
+    ],
+    [
+      {
+        "word": "deceptive",
+        "partOfSpeech": "形容詞",
+        "meaning": "人を欺くような"
+      },
+      {
+        "word": "deceptively",
+        "partOfSpeech": "副詞",
+        "meaning": "見かけとは異なって"
+      }
+    ],
+    [
+      {
+        "word": "decide",
+        "partOfSpeech": "動詞",
+        "meaning": "決める"
+      },
+      {
+        "word": "undecided",
+        "partOfSpeech": "形容詞",
+        "meaning": "未決定の"
+      }
+    ],
+    [
+      {
+        "word": "decisive",
+        "partOfSpeech": "形容詞",
+        "meaning": "決定的な"
+      },
+      {
+        "word": "decisively",
+        "partOfSpeech": "副詞",
+        "meaning": "決定的に"
+      },
+      {
+        "word": "decisiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "決断力"
+      },
+      {
+        "word": "indecisive",
+        "partOfSpeech": "形容詞",
+        "meaning": "優柔不断な"
+      }
+    ],
+    [
+      {
+        "word": "declaration",
+        "partOfSpeech": "名詞",
+        "meaning": "宣言"
+      },
+      {
+        "word": "declarative",
+        "partOfSpeech": "形容詞",
+        "meaning": "宣言的な・平叙文の"
+      }
+    ],
+    [
+      {
+        "word": "declassify",
+        "partOfSpeech": "動詞",
+        "meaning": "機密指定を解除する"
+      },
+      {
+        "word": "declassification",
+        "partOfSpeech": "名詞",
+        "meaning": "機密指定解除"
+      }
+    ],
+    [
+      {
+        "word": "decorate",
+        "partOfSpeech": "動詞",
+        "meaning": "飾る"
+      },
+      {
+        "word": "decorated",
+        "partOfSpeech": "形容詞",
+        "meaning": "装飾された"
+      },
+      {
+        "word": "redecorate",
+        "partOfSpeech": "動詞",
+        "meaning": "模様替えをする"
+      }
+    ],
+    [
+      {
+        "word": "decorative",
+        "partOfSpeech": "形容詞",
+        "meaning": "装飾用の"
+      },
+      {
+        "word": "decoratively",
+        "partOfSpeech": "副詞",
+        "meaning": "装飾的に"
+      }
+    ],
+    [
+      {
+        "word": "dedicate",
+        "partOfSpeech": "動詞",
+        "meaning": "捧げる"
+      },
+      {
+        "word": "dedication",
+        "partOfSpeech": "名詞",
+        "meaning": "献身"
+      },
+      {
+        "word": "dedicated",
+        "partOfSpeech": "形容詞",
+        "meaning": "献身的な"
+      }
+    ],
+    [
+      {
+        "word": "deduct",
+        "partOfSpeech": "動詞",
+        "meaning": "差し引く"
+      },
+      {
+        "word": "deduction",
+        "partOfSpeech": "名詞",
+        "meaning": "控除"
+      },
+      {
+        "word": "deductible",
+        "partOfSpeech": "形容詞",
+        "meaning": "控除可能な"
+      }
+    ],
+    [
+      {
+        "word": "deductive",
+        "partOfSpeech": "形容詞",
+        "meaning": "演繹的な"
+      },
+      {
+        "word": "deductively",
+        "partOfSpeech": "副詞",
+        "meaning": "演繹的に"
+      }
+    ],
+    [
+      {
+        "word": "defend",
+        "partOfSpeech": "動詞",
+        "meaning": "守る"
+      },
+      {
+        "word": "defendant",
+        "partOfSpeech": "名詞",
+        "meaning": "被告"
+      }
+    ],
+    [
+      {
+        "word": "defense",
+        "partOfSpeech": "名詞",
+        "meaning": "防御"
+      },
+      {
+        "word": "defenseless",
+        "partOfSpeech": "形容詞",
+        "meaning": "無防備な"
+      },
+      {
+        "word": "defensive",
+        "partOfSpeech": "形容詞",
+        "meaning": "防御的な"
+      }
+    ],
+    [
+      {
+        "word": "defensive",
+        "partOfSpeech": "形容詞",
+        "meaning": "防御的な"
+      },
+      {
+        "word": "defensively",
+        "partOfSpeech": "副詞",
+        "meaning": "防御的に"
+      }
+    ],
+    [
+      {
+        "word": "deficient",
+        "partOfSpeech": "形容詞",
+        "meaning": "不足している"
+      },
+      {
+        "word": "deficiency",
+        "partOfSpeech": "名詞",
+        "meaning": "不足・欠乏"
+      }
+    ],
+    [
+      {
+        "word": "definite",
+        "partOfSpeech": "形容詞",
+        "meaning": "明確な"
+      },
+      {
+        "word": "definiteness",
+        "partOfSpeech": "名詞",
+        "meaning": "明確さ"
+      },
+      {
+        "word": "definitive",
+        "partOfSpeech": "形容詞",
+        "meaning": "決定的な"
+      }
+    ],
+    [
+      {
+        "word": "definitive",
+        "partOfSpeech": "形容詞",
+        "meaning": "決定的な"
+      },
+      {
+        "word": "definitively",
+        "partOfSpeech": "副詞",
+        "meaning": "決定的に"
+      }
+    ],
+    [
+      {
+        "word": "deform",
+        "partOfSpeech": "動詞",
+        "meaning": "変形させる"
+      },
+      {
+        "word": "deformed",
+        "partOfSpeech": "形容詞",
+        "meaning": "変形した"
+      }
+    ],
+    [
+      {
+        "word": "degradable",
+        "partOfSpeech": "形容詞",
+        "meaning": "分解可能な"
+      },
+      {
+        "word": "biodegradable",
+        "partOfSpeech": "形容詞",
+        "meaning": "生分解性の"
+      }
+    ],
+    [
+      {
+        "word": "dehydrate",
+        "partOfSpeech": "動詞",
+        "meaning": "脱水させる"
+      },
+      {
+        "word": "dehydrated",
+        "partOfSpeech": "形容詞",
+        "meaning": "脱水した"
+      }
+    ],
+    [
+      {
+        "word": "delegate",
+        "partOfSpeech": "動詞",
+        "meaning": "委任する"
+      },
+      {
+        "word": "delegation",
+        "partOfSpeech": "名詞",
+        "meaning": "委任・代表団"
+      }
+    ],
+    [
+      {
+        "word": "delicious",
+        "partOfSpeech": "形容詞",
+        "meaning": "おいしい"
+      },
+      {
+        "word": "deliciously",
+        "partOfSpeech": "副詞",
+        "meaning": "おいしく"
+      }
+    ],
+    [
+      {
+        "word": "delightful",
+        "partOfSpeech": "形容詞",
+        "meaning": "楽しい"
+      },
+      {
+        "word": "delightfully",
+        "partOfSpeech": "副詞",
+        "meaning": "楽しいことに"
+      }
+    ],
+    [
+      {
+        "word": "delinquent",
+        "partOfSpeech": "形容詞",
+        "meaning": "非行に走った・滞納した"
+      },
+      {
+        "word": "delinquency",
+        "partOfSpeech": "名詞",
+        "meaning": "非行・滞納"
+      }
+    ],
+    [
+      {
+        "word": "deliver",
+        "partOfSpeech": "動詞",
+        "meaning": "届ける"
+      },
+      {
+        "word": "redeliver",
+        "partOfSpeech": "動詞",
+        "meaning": "再配達する"
+      }
+    ],
+    [
+      {
+        "word": "democracy",
+        "partOfSpeech": "名詞",
+        "meaning": "民主主義"
+      },
+      {
+        "word": "democrat",
+        "partOfSpeech": "名詞",
+        "meaning": "民主主義者"
+      }
+    ],
+    [
+      {
+        "word": "democratic",
+        "partOfSpeech": "形容詞",
+        "meaning": "民主的な"
+      },
+      {
+        "word": "democratically",
+        "partOfSpeech": "副詞",
+        "meaning": "民主的に"
+      },
+      {
+        "word": "undemocratic",
+        "partOfSpeech": "形容詞",
+        "meaning": "非民主的な"
+      }
+    ],
+    [
+      {
+        "word": "democratize",
+        "partOfSpeech": "動詞",
+        "meaning": "民主化する"
+      },
+      {
+        "word": "democratization",
+        "partOfSpeech": "名詞",
+        "meaning": "民主化"
+      }
+    ],
+    [
+      {
+        "word": "demonstrable",
+        "partOfSpeech": "形容詞",
+        "meaning": "実証可能な"
+      },
+      {
+        "word": "demonstrably",
+        "partOfSpeech": "副詞",
+        "meaning": "実証できるほど"
+      }
+    ],
+    [
+      {
+        "word": "dense",
+        "partOfSpeech": "形容詞",
+        "meaning": "密集した"
+      },
+      {
+        "word": "densely",
+        "partOfSpeech": "副詞",
+        "meaning": "密集して"
+      },
+      {
+        "word": "density",
+        "partOfSpeech": "名詞",
+        "meaning": "密度"
+      }
+    ],
+    [
+      {
+        "word": "dependable",
+        "partOfSpeech": "形容詞",
+        "meaning": "頼りになる"
+      },
+      {
+        "word": "dependability",
+        "partOfSpeech": "名詞",
+        "meaning": "頼りになること"
+      }
+    ],
+    [
+      {
+        "word": "dependent",
+        "partOfSpeech": "形容詞",
+        "meaning": "依存する"
+      },
+      {
+        "word": "independent",
+        "partOfSpeech": "形容詞",
+        "meaning": "独立した"
+      },
+      {
+        "word": "dependency",
+        "partOfSpeech": "名詞",
+        "meaning": "依存関係"
+      }
+    ],
+    [
+      {
+        "word": "deplorable",
+        "partOfSpeech": "形容詞",
+        "meaning": "嘆かわしい"
+      },
+      {
+        "word": "deplorably",
+        "partOfSpeech": "副詞",
+        "meaning": "嘆かわしいほど"
+      }
+    ],
+    [
+      {
+        "word": "depopulate",
+        "partOfSpeech": "動詞",
+        "meaning": "人口を減少させる"
+      },
+      {
+        "word": "depopulation",
+        "partOfSpeech": "名詞",
+        "meaning": "人口減少"
+      }
+    ],
+    [
+      {
+        "word": "depress",
+        "partOfSpeech": "動詞",
+        "meaning": "落ち込ませる"
+      },
+      {
+        "word": "depressant",
+        "partOfSpeech": "名詞",
+        "meaning": "抑制剤"
+      }
+    ],
+    [
+      {
+        "word": "depressing",
+        "partOfSpeech": "形容詞",
+        "meaning": "気がめいる"
+      },
+      {
+        "word": "depressingly",
+        "partOfSpeech": "副詞",
+        "meaning": "気がめいるほど"
+      }
+    ],
+    [
+      {
+        "word": "derivative",
+        "partOfSpeech": "名詞",
+        "meaning": "派生物・派生語"
+      },
+      {
+        "word": "derivational",
+        "partOfSpeech": "形容詞",
+        "meaning": "派生に関する"
+      }
+    ],
+    [
+      {
+        "word": "describe",
+        "partOfSpeech": "動詞",
+        "meaning": "描写する"
+      },
+      {
+        "word": "describable",
+        "partOfSpeech": "形容詞",
+        "meaning": "描写可能な"
+      }
+    ],
+    [
+      {
+        "word": "descriptive",
+        "partOfSpeech": "形容詞",
+        "meaning": "描写的な"
+      },
+      {
+        "word": "descriptively",
+        "partOfSpeech": "副詞",
+        "meaning": "描写的に"
+      }
+    ],
+    [
+      {
+        "word": "desert",
+        "partOfSpeech": "名詞",
+        "meaning": "砂漠"
+      },
+      {
+        "word": "desertification",
+        "partOfSpeech": "名詞",
+        "meaning": "砂漠化"
+      }
+    ],
+    [
+      {
+        "word": "desirable",
+        "partOfSpeech": "形容詞",
+        "meaning": "望ましい"
+      },
+      {
+        "word": "desirability",
+        "partOfSpeech": "名詞",
+        "meaning": "望ましさ"
+      },
+      {
+        "word": "undesirable",
+        "partOfSpeech": "形容詞",
+        "meaning": "望ましくない"
+      }
+    ],
+    [
+      {
+        "word": "destroy",
+        "partOfSpeech": "動詞",
+        "meaning": "破壊する"
+      },
+      {
+        "word": "destroyer",
+        "partOfSpeech": "名詞",
+        "meaning": "破壊者・駆逐艦"
+      }
+    ],
+    [
+      {
+        "word": "destructive",
+        "partOfSpeech": "形容詞",
+        "meaning": "破壊的な"
+      },
+      {
+        "word": "destructively",
+        "partOfSpeech": "副詞",
+        "meaning": "破壊的に"
+      }
+    ],
+    [
+      {
+        "word": "detectable",
+        "partOfSpeech": "形容詞",
+        "meaning": "検出可能な"
+      },
+      {
+        "word": "undetectable",
+        "partOfSpeech": "形容詞",
+        "meaning": "検出できない"
+      }
+    ],
+    [
+      {
+        "word": "determine",
+        "partOfSpeech": "動詞",
+        "meaning": "決定する"
+      },
+      {
+        "word": "predetermine",
+        "partOfSpeech": "動詞",
+        "meaning": "あらかじめ決める"
+      }
+    ],
+    [
+      {
+        "word": "devastating",
+        "partOfSpeech": "形容詞",
+        "meaning": "壊滅的な"
+      },
+      {
+        "word": "devastatingly",
+        "partOfSpeech": "副詞",
+        "meaning": "壊滅的に"
+      }
+    ],
+    [
+      {
+        "word": "develop",
+        "partOfSpeech": "動詞",
+        "meaning": "発展する"
+      },
+      {
+        "word": "underdeveloped",
+        "partOfSpeech": "形容詞",
+        "meaning": "発展が遅れている"
+      }
+    ],
+    [
+      {
+        "word": "development",
+        "partOfSpeech": "名詞",
+        "meaning": "発展・開発"
+      },
+      {
+        "word": "developmental",
+        "partOfSpeech": "形容詞",
+        "meaning": "発達の"
+      }
+    ],
+    [
+      {
+        "word": "deviant",
+        "partOfSpeech": "形容詞",
+        "meaning": "規範から外れた"
+      },
+      {
+        "word": "deviance",
+        "partOfSpeech": "名詞",
+        "meaning": "逸脱"
+      }
+    ],
+    [
+      {
+        "word": "devoted",
+        "partOfSpeech": "形容詞",
+        "meaning": "献身的な"
+      },
+      {
+        "word": "devotedly",
+        "partOfSpeech": "副詞",
+        "meaning": "献身的に"
+      }
+    ],
+    [
+      {
+        "word": "diagnostic",
+        "partOfSpeech": "形容詞",
+        "meaning": "診断の"
+      },
+      {
+        "word": "diagnostically",
+        "partOfSpeech": "副詞",
+        "meaning": "診断上"
+      }
+    ],
+    [
+      {
+        "word": "dial",
+        "partOfSpeech": "動詞",
+        "meaning": "ダイヤルを回す"
+      },
+      {
+        "word": "dialer",
+        "partOfSpeech": "名詞",
+        "meaning": "ダイヤラー"
+      },
+      {
+        "word": "redial",
+        "partOfSpeech": "動詞",
+        "meaning": "かけ直す"
+      }
+    ],
+    [
+      {
+        "word": "dialect",
+        "partOfSpeech": "名詞",
+        "meaning": "方言"
+      },
+      {
+        "word": "dialectal",
+        "partOfSpeech": "形容詞",
+        "meaning": "方言の"
+      }
+    ],
+    [
+      {
+        "word": "different",
+        "partOfSpeech": "形容詞",
+        "meaning": "異なる"
+      },
+      {
+        "word": "differently",
+        "partOfSpeech": "副詞",
+        "meaning": "異なって"
+      },
+      {
+        "word": "difference",
+        "partOfSpeech": "名詞",
+        "meaning": "違い"
+      }
+    ],
+    [
+      {
+        "word": "differentiate",
+        "partOfSpeech": "動詞",
+        "meaning": "区別する"
+      },
+      {
+        "word": "differentiation",
+        "partOfSpeech": "名詞",
+        "meaning": "区別・分化"
+      }
+    ],
+    [
+      {
+        "word": "difficult",
+        "partOfSpeech": "形容詞",
+        "meaning": "難しい"
+      },
+      {
+        "word": "difficulty",
+        "partOfSpeech": "名詞",
+        "meaning": "難しさ"
+      }
+    ],
+    [
+      {
+        "word": "digestive",
+        "partOfSpeech": "形容詞",
+        "meaning": "消化の"
+      },
+      {
+        "word": "digestively",
+        "partOfSpeech": "副詞",
+        "meaning": "消化の面で"
+      }
+    ],
+    [
+      {
+        "word": "dignity",
+        "partOfSpeech": "名詞",
+        "meaning": "尊厳"
+      },
+      {
+        "word": "indignity",
+        "partOfSpeech": "名詞",
+        "meaning": "屈辱"
+      }
+    ],
+    [
+      {
+        "word": "dimension",
+        "partOfSpeech": "名詞",
+        "meaning": "次元・寸法"
+      },
+      {
+        "word": "dimensional",
+        "partOfSpeech": "形容詞",
+        "meaning": "次元の・寸法の"
+      },
+      {
+        "word": "multidimensional",
+        "partOfSpeech": "形容詞",
+        "meaning": "多次元の"
+      }
+    ],
+    [
+      {
+        "word": "direct",
+        "partOfSpeech": "形容詞",
+        "meaning": "直接の"
+      },
+      {
+        "word": "directly",
+        "partOfSpeech": "副詞",
+        "meaning": "直接に"
+      },
+      {
+        "word": "indirect",
+        "partOfSpeech": "形容詞",
+        "meaning": "間接的な"
+      },
+      {
+        "word": "indirectly",
+        "partOfSpeech": "副詞",
+        "meaning": "間接的に"
+      }
+    ],
+    [
+      {
+        "word": "direction",
+        "partOfSpeech": "名詞",
+        "meaning": "方向"
+      },
+      {
+        "word": "directional",
+        "partOfSpeech": "形容詞",
+        "meaning": "方向性のある"
+      },
+      {
+        "word": "bidirectional",
+        "partOfSpeech": "形容詞",
+        "meaning": "双方向の"
+      }
+    ],
+    [
+      {
+        "word": "director",
+        "partOfSpeech": "名詞",
+        "meaning": "監督・取締役"
+      },
+      {
+        "word": "directorship",
+        "partOfSpeech": "名詞",
+        "meaning": "監督・取締役の職"
+      }
+    ],
+    [
+      {
+        "word": "disable",
+        "partOfSpeech": "動詞",
+        "meaning": "無効にする"
+      },
+      {
+        "word": "disablement",
+        "partOfSpeech": "名詞",
+        "meaning": "無効化"
+      }
+    ],
+    [
+      {
+        "word": "disagree",
+        "partOfSpeech": "動詞",
+        "meaning": "意見が合わない"
+      },
+      {
+        "word": "disagreement",
+        "partOfSpeech": "名詞",
+        "meaning": "意見の不一致"
+      }
+    ],
+    [
+      {
+        "word": "disappoint",
+        "partOfSpeech": "動詞",
+        "meaning": "失望させる"
+      },
+      {
+        "word": "disappointment",
+        "partOfSpeech": "名詞",
+        "meaning": "失望"
+      },
+      {
+        "word": "disappointed",
+        "partOfSpeech": "形容詞",
+        "meaning": "失望した"
+      },
+      {
+        "word": "disappointing",
+        "partOfSpeech": "形容詞",
+        "meaning": "期待外れの"
+      }
+    ],
+    [
+      {
+        "word": "disappointing",
+        "partOfSpeech": "形容詞",
+        "meaning": "期待外れの"
+      },
+      {
+        "word": "disappointingly",
+        "partOfSpeech": "副詞",
+        "meaning": "残念なことに"
+      }
+    ],
+    [
+      {
+        "word": "disapprove",
+        "partOfSpeech": "動詞",
+        "meaning": "賛成しない"
+      },
+      {
+        "word": "disapproval",
+        "partOfSpeech": "名詞",
+        "meaning": "不賛成"
+      }
+    ],
+    [
+      {
+        "word": "disarm",
+        "partOfSpeech": "動詞",
+        "meaning": "武装解除する"
+      },
+      {
+        "word": "disarmament",
+        "partOfSpeech": "名詞",
+        "meaning": "武装解除"
+      }
+    ],
+    [
+      {
+        "word": "discernible",
+        "partOfSpeech": "形容詞",
+        "meaning": "認識できる"
+      },
+      {
+        "word": "indiscernible",
+        "partOfSpeech": "形容詞",
+        "meaning": "認識できない"
+      }
+    ],
+    [
+      {
+        "word": "discipline",
+        "partOfSpeech": "名詞",
+        "meaning": "規律"
+      },
+      {
+        "word": "disciplinary",
+        "partOfSpeech": "形容詞",
+        "meaning": "規律・懲戒に関する"
+      },
+      {
+        "word": "disciplined",
+        "partOfSpeech": "形容詞",
+        "meaning": "規律正しい"
+      },
+      {
+        "word": "undisciplined",
+        "partOfSpeech": "形容詞",
+        "meaning": "規律に欠ける"
+      }
+    ],
+    [
+      {
+        "word": "discourage",
+        "partOfSpeech": "動詞",
+        "meaning": "思いとどまらせる"
+      },
+      {
+        "word": "discouragement",
+        "partOfSpeech": "名詞",
+        "meaning": "落胆・抑止"
+      },
+      {
+        "word": "discouraging",
+        "partOfSpeech": "形容詞",
+        "meaning": "落胆させる"
+      }
+    ],
+    [
+      {
+        "word": "discreet",
+        "partOfSpeech": "形容詞",
+        "meaning": "慎重な"
+      },
+      {
+        "word": "discretion",
+        "partOfSpeech": "名詞",
+        "meaning": "慎重さ・裁量"
+      }
+    ],
+    [
+      {
+        "word": "discriminate",
+        "partOfSpeech": "動詞",
+        "meaning": "差別する・識別する"
+      },
+      {
+        "word": "discriminating",
+        "partOfSpeech": "形容詞",
+        "meaning": "識別力のある"
+      }
+    ],
+    [
+      {
+        "word": "discriminatory",
+        "partOfSpeech": "形容詞",
+        "meaning": "差別的な"
+      },
+      {
+        "word": "nondiscriminatory",
+        "partOfSpeech": "形容詞",
+        "meaning": "差別的でない"
+      }
+    ],
+    [
+      {
+        "word": "disgraceful",
+        "partOfSpeech": "形容詞",
+        "meaning": "恥ずべき"
+      },
+      {
+        "word": "disgracefully",
+        "partOfSpeech": "副詞",
+        "meaning": "恥ずべきほど"
+      }
+    ],
+    [
+      {
+        "word": "disguise",
+        "partOfSpeech": "動詞",
+        "meaning": "変装する"
+      },
+      {
+        "word": "disguised",
+        "partOfSpeech": "形容詞",
+        "meaning": "変装した"
+      },
+      {
+        "word": "undisguised",
+        "partOfSpeech": "形容詞",
+        "meaning": "隠されていない"
+      }
+    ],
+    [
+      {
+        "word": "disgust",
+        "partOfSpeech": "動詞",
+        "meaning": "嫌悪感を抱かせる"
+      },
+      {
+        "word": "disgusting",
+        "partOfSpeech": "形容詞",
+        "meaning": "むかつくような"
+      },
+      {
+        "word": "disgusted",
+        "partOfSpeech": "形容詞",
+        "meaning": "嫌悪感を抱いた"
+      }
+    ],
+    [
+      {
+        "word": "disgusting",
+        "partOfSpeech": "形容詞",
+        "meaning": "むかつくような"
+      },
+      {
+        "word": "disgustingly",
+        "partOfSpeech": "副詞",
+        "meaning": "むかつくほど"
+      }
+    ],
+    [
+      {
+        "word": "disinfect",
+        "partOfSpeech": "動詞",
+        "meaning": "消毒する"
+      },
+      {
+        "word": "disinfection",
+        "partOfSpeech": "名詞",
+        "meaning": "消毒"
+      },
+      {
+        "word": "disinfectant",
+        "partOfSpeech": "名詞",
+        "meaning": "消毒剤"
+      }
+    ],
+    [
+      {
+        "word": "dismissive",
+        "partOfSpeech": "形容詞",
+        "meaning": "軽くあしらうような"
+      },
+      {
+        "word": "dismissively",
+        "partOfSpeech": "副詞",
+        "meaning": "軽くあしらって"
+      }
+    ],
+    [
+      {
+        "word": "disorder",
+        "partOfSpeech": "名詞",
+        "meaning": "無秩序"
+      },
+      {
+        "word": "disorderly",
+        "partOfSpeech": "形容詞",
+        "meaning": "乱雑な"
+      }
+    ],
+    [
+      {
+        "word": "disperse",
+        "partOfSpeech": "動詞",
+        "meaning": "分散させる"
+      },
+      {
+        "word": "dispersible",
+        "partOfSpeech": "形容詞",
+        "meaning": "分散可能な"
+      }
+    ],
+    [
+      {
+        "word": "displace",
+        "partOfSpeech": "動詞",
+        "meaning": "移動させる"
+      },
+      {
+        "word": "displaced",
+        "partOfSpeech": "形容詞",
+        "meaning": "住む場所を追われた"
+      }
+    ],
+    [
+      {
+        "word": "display",
+        "partOfSpeech": "動詞",
+        "meaning": "表示する"
+      },
+      {
+        "word": "displayable",
+        "partOfSpeech": "形容詞",
+        "meaning": "表示可能な"
+      }
+    ],
+    [
+      {
+        "word": "disposable",
+        "partOfSpeech": "形容詞",
+        "meaning": "使い捨ての"
+      },
+      {
+        "word": "disposability",
+        "partOfSpeech": "名詞",
+        "meaning": "使い捨て可能性"
+      }
+    ],
+    [
+      {
+        "word": "dissatisfy",
+        "partOfSpeech": "動詞",
+        "meaning": "不満を抱かせる"
+      },
+      {
+        "word": "dissatisfaction",
+        "partOfSpeech": "名詞",
+        "meaning": "不満"
+      },
+      {
+        "word": "dissatisfied",
+        "partOfSpeech": "形容詞",
+        "meaning": "不満を抱いた"
+      }
+    ],
+    [
+      {
+        "word": "dissolve",
+        "partOfSpeech": "動詞",
+        "meaning": "溶かす"
+      },
+      {
+        "word": "dissolvable",
+        "partOfSpeech": "形容詞",
+        "meaning": "溶かせる"
+      }
+    ],
+    [
+      {
+        "word": "distinct",
+        "partOfSpeech": "形容詞",
+        "meaning": "明確に異なる"
+      },
+      {
+        "word": "distinctness",
+        "partOfSpeech": "名詞",
+        "meaning": "明確に異なること"
+      }
+    ],
+    [
+      {
+        "word": "distinctive",
+        "partOfSpeech": "形容詞",
+        "meaning": "独特の"
+      },
+      {
+        "word": "distinctively",
+        "partOfSpeech": "副詞",
+        "meaning": "独特に"
+      },
+      {
+        "word": "distinctiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "独自性"
+      }
+    ],
+    [
+      {
+        "word": "distinguishable",
+        "partOfSpeech": "形容詞",
+        "meaning": "区別できる"
+      },
+      {
+        "word": "indistinguishable",
+        "partOfSpeech": "形容詞",
+        "meaning": "区別できない"
+      }
+    ],
+    [
+      {
+        "word": "distort",
+        "partOfSpeech": "動詞",
+        "meaning": "歪める"
+      },
+      {
+        "word": "distorted",
+        "partOfSpeech": "形容詞",
+        "meaning": "歪んだ"
+      },
+      {
+        "word": "undistorted",
+        "partOfSpeech": "形容詞",
+        "meaning": "歪みのない"
+      }
+    ],
+    [
+      {
+        "word": "distract",
+        "partOfSpeech": "動詞",
+        "meaning": "気をそらす"
+      },
+      {
+        "word": "distractible",
+        "partOfSpeech": "形容詞",
+        "meaning": "気が散りやすい"
+      }
+    ],
+    [
+      {
+        "word": "distribute",
+        "partOfSpeech": "動詞",
+        "meaning": "配布する"
+      },
+      {
+        "word": "distributive",
+        "partOfSpeech": "形容詞",
+        "meaning": "分配の"
+      }
+    ],
+    [
+      {
+        "word": "diverse",
+        "partOfSpeech": "形容詞",
+        "meaning": "多様な"
+      },
+      {
+        "word": "diversity",
+        "partOfSpeech": "名詞",
+        "meaning": "多様性"
+      }
+    ],
+    [
+      {
+        "word": "divisible",
+        "partOfSpeech": "形容詞",
+        "meaning": "割り切れる"
+      },
+      {
+        "word": "divisibility",
+        "partOfSpeech": "名詞",
+        "meaning": "可分性"
+      },
+      {
+        "word": "indivisible",
+        "partOfSpeech": "形容詞",
+        "meaning": "分割できない"
+      }
+    ],
+    [
+      {
+        "word": "division",
+        "partOfSpeech": "名詞",
+        "meaning": "分割・部門"
+      },
+      {
+        "word": "divisional",
+        "partOfSpeech": "形容詞",
+        "meaning": "部門の"
+      }
+    ],
+    [
+      {
+        "word": "divorce",
+        "partOfSpeech": "動詞",
+        "meaning": "離婚する"
+      },
+      {
+        "word": "divorced",
+        "partOfSpeech": "形容詞",
+        "meaning": "離婚した"
+      }
+    ],
+    [
+      {
+        "word": "dizzy",
+        "partOfSpeech": "形容詞",
+        "meaning": "めまいがする"
+      },
+      {
+        "word": "dizziness",
+        "partOfSpeech": "名詞",
+        "meaning": "めまい"
+      }
+    ],
+    [
+      {
+        "word": "doctor",
+        "partOfSpeech": "名詞",
+        "meaning": "医師・博士"
+      },
+      {
+        "word": "doctoral",
+        "partOfSpeech": "形容詞",
+        "meaning": "博士課程の"
+      },
+      {
+        "word": "doctorate",
+        "partOfSpeech": "名詞",
+        "meaning": "博士号"
+      }
+    ],
+    [
+      {
+        "word": "dogma",
+        "partOfSpeech": "名詞",
+        "meaning": "教義"
+      },
+      {
+        "word": "dogmatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "独断的な"
+      },
+      {
+        "word": "dogmatically",
+        "partOfSpeech": "副詞",
+        "meaning": "独断的に"
+      }
+    ],
+    [
+      {
+        "word": "domestic",
+        "partOfSpeech": "形容詞",
+        "meaning": "家庭の"
+      },
+      {
+        "word": "domesticate",
+        "partOfSpeech": "動詞",
+        "meaning": "家畜化する"
+      }
+    ],
+    [
+      {
+        "word": "dominant",
+        "partOfSpeech": "形容詞",
+        "meaning": "支配的な"
+      },
+      {
+        "word": "dominance",
+        "partOfSpeech": "名詞",
+        "meaning": "優位"
+      }
+    ],
+    [
+      {
+        "word": "doubtful",
+        "partOfSpeech": "形容詞",
+        "meaning": "疑わしい"
+      },
+      {
+        "word": "doubtfully",
+        "partOfSpeech": "副詞",
+        "meaning": "疑わしそうに"
+      }
+    ],
+    [
+      {
+        "word": "draft",
+        "partOfSpeech": "動詞",
+        "meaning": "下書きする"
+      },
+      {
+        "word": "drafter",
+        "partOfSpeech": "名詞",
+        "meaning": "起草者・製図者"
+      }
+    ],
+    [
+      {
+        "word": "drain",
+        "partOfSpeech": "動詞",
+        "meaning": "排水する"
+      },
+      {
+        "word": "drainage",
+        "partOfSpeech": "名詞",
+        "meaning": "排水"
+      },
+      {
+        "word": "drainer",
+        "partOfSpeech": "名詞",
+        "meaning": "水切り器"
+      }
+    ],
+    [
+      {
+        "word": "drama",
+        "partOfSpeech": "名詞",
+        "meaning": "ドラマ"
+      },
+      {
+        "word": "dramatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "劇的な"
+      },
+      {
+        "word": "dramatist",
+        "partOfSpeech": "名詞",
+        "meaning": "劇作家"
+      },
+      {
+        "word": "dramatize",
+        "partOfSpeech": "動詞",
+        "meaning": "劇化する"
+      }
+    ],
+    [
+      {
+        "word": "dramatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "劇的な"
+      },
+      {
+        "word": "dramatically",
+        "partOfSpeech": "副詞",
+        "meaning": "劇的に"
+      }
+    ],
+    [
+      {
+        "word": "dreadful",
+        "partOfSpeech": "形容詞",
+        "meaning": "恐ろしい"
+      },
+      {
+        "word": "dreadfully",
+        "partOfSpeech": "副詞",
+        "meaning": "ひどく"
+      }
+    ],
+    [
+      {
+        "word": "dreamy",
+        "partOfSpeech": "形容詞",
+        "meaning": "夢見心地の"
+      },
+      {
+        "word": "dreamily",
+        "partOfSpeech": "副詞",
+        "meaning": "夢見るように"
+      }
+    ],
+    [
+      {
+        "word": "drift",
+        "partOfSpeech": "動詞",
+        "meaning": "漂う"
+      },
+      {
+        "word": "drifter",
+        "partOfSpeech": "名詞",
+        "meaning": "放浪者"
+      }
+    ],
+    [
+      {
+        "word": "drop",
+        "partOfSpeech": "動詞",
+        "meaning": "落とす"
+      },
+      {
+        "word": "dropper",
+        "partOfSpeech": "名詞",
+        "meaning": "スポイト"
+      },
+      {
+        "word": "droplet",
+        "partOfSpeech": "名詞",
+        "meaning": "小滴"
+      }
+    ],
+    [
+      {
+        "word": "drum",
+        "partOfSpeech": "名詞",
+        "meaning": "ドラム"
+      },
+      {
+        "word": "drummer",
+        "partOfSpeech": "名詞",
+        "meaning": "ドラマー"
+      },
+      {
+        "word": "drumming",
+        "partOfSpeech": "名詞",
+        "meaning": "ドラム演奏"
+      }
+    ],
+    [
+      {
+        "word": "dust",
+        "partOfSpeech": "名詞",
+        "meaning": "ほこり"
+      },
+      {
+        "word": "duster",
+        "partOfSpeech": "名詞",
+        "meaning": "はたき"
+      }
+    ],
+    [
+      {
+        "word": "dynamic",
+        "partOfSpeech": "形容詞",
+        "meaning": "動的な"
+      },
+      {
+        "word": "dynamically",
+        "partOfSpeech": "副詞",
+        "meaning": "動的に"
+      },
+      {
+        "word": "dynamism",
+        "partOfSpeech": "名詞",
+        "meaning": "活力"
+      }
+    ],
+    [
+      {
+        "word": "economic",
+        "partOfSpeech": "形容詞",
+        "meaning": "経済の"
+      },
+      {
+        "word": "uneconomic",
+        "partOfSpeech": "形容詞",
+        "meaning": "採算の取れない"
+      }
+    ],
+    [
+      {
+        "word": "economical",
+        "partOfSpeech": "形容詞",
+        "meaning": "経済的な"
+      },
+      {
+        "word": "economically",
+        "partOfSpeech": "副詞",
+        "meaning": "経済的に"
+      },
+      {
+        "word": "uneconomical",
+        "partOfSpeech": "形容詞",
+        "meaning": "不経済な"
+      }
+    ],
+    [
+      {
+        "word": "edit",
+        "partOfSpeech": "動詞",
+        "meaning": "編集する"
+      },
+      {
+        "word": "edition",
+        "partOfSpeech": "名詞",
+        "meaning": "版"
+      },
+      {
+        "word": "editor",
+        "partOfSpeech": "名詞",
+        "meaning": "編集者"
+      },
+      {
+        "word": "editable",
+        "partOfSpeech": "形容詞",
+        "meaning": "編集可能な"
+      },
+      {
+        "word": "editorial",
+        "partOfSpeech": "形容詞",
+        "meaning": "編集上の"
+      }
+    ],
+    [
+      {
+        "word": "educated",
+        "partOfSpeech": "形容詞",
+        "meaning": "教育を受けた"
+      },
+      {
+        "word": "uneducated",
+        "partOfSpeech": "形容詞",
+        "meaning": "教育を受けていない"
+      }
+    ],
+    [
+      {
+        "word": "effective",
+        "partOfSpeech": "形容詞",
+        "meaning": "効果的な"
+      },
+      {
+        "word": "effectiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "有効性"
+      },
+      {
+        "word": "effectively",
+        "partOfSpeech": "副詞",
+        "meaning": "効果的に"
+      },
+      {
+        "word": "ineffective",
+        "partOfSpeech": "形容詞",
+        "meaning": "効果のない"
+      }
+    ],
+    [
+      {
+        "word": "efficient",
+        "partOfSpeech": "形容詞",
+        "meaning": "効率的な"
+      },
+      {
+        "word": "inefficiency",
+        "partOfSpeech": "名詞",
+        "meaning": "非効率"
+      }
+    ],
+    [
+      {
+        "word": "ego",
+        "partOfSpeech": "名詞",
+        "meaning": "自我"
+      },
+      {
+        "word": "egotism",
+        "partOfSpeech": "名詞",
+        "meaning": "自己中心性"
+      }
+    ],
+    [
+      {
+        "word": "elastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "弾力性のある"
+      },
+      {
+        "word": "elasticity",
+        "partOfSpeech": "名詞",
+        "meaning": "弾力性"
+      },
+      {
+        "word": "inelastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "弾力性のない"
+      }
+    ],
+    [
+      {
+        "word": "elect",
+        "partOfSpeech": "動詞",
+        "meaning": "選出する"
+      },
+      {
+        "word": "reelect",
+        "partOfSpeech": "動詞",
+        "meaning": "再選する"
+      },
+      {
+        "word": "reelection",
+        "partOfSpeech": "名詞",
+        "meaning": "再選"
+      }
+    ],
+    [
+      {
+        "word": "electoral",
+        "partOfSpeech": "形容詞",
+        "meaning": "選挙の"
+      },
+      {
+        "word": "electorate",
+        "partOfSpeech": "名詞",
+        "meaning": "有権者全体"
+      }
+    ],
+    [
+      {
+        "word": "electric",
+        "partOfSpeech": "形容詞",
+        "meaning": "電気の"
+      },
+      {
+        "word": "electrify",
+        "partOfSpeech": "動詞",
+        "meaning": "電化する"
+      }
+    ],
+    [
+      {
+        "word": "electron",
+        "partOfSpeech": "名詞",
+        "meaning": "電子"
+      },
+      {
+        "word": "electronic",
+        "partOfSpeech": "形容詞",
+        "meaning": "電子の"
+      },
+      {
+        "word": "electronics",
+        "partOfSpeech": "名詞",
+        "meaning": "電子工学・電子機器"
+      }
+    ],
+    [
+      {
+        "word": "electrify",
+        "partOfSpeech": "動詞",
+        "meaning": "電化する"
+      },
+      {
+        "word": "electrified",
+        "partOfSpeech": "形容詞",
+        "meaning": "電化された"
+      }
+    ],
+    [
+      {
+        "word": "eligible",
+        "partOfSpeech": "形容詞",
+        "meaning": "資格がある"
+      },
+      {
+        "word": "ineligibility",
+        "partOfSpeech": "名詞",
+        "meaning": "資格がないこと"
+      }
+    ],
+    [
+      {
+        "word": "eliminate",
+        "partOfSpeech": "動詞",
+        "meaning": "除去する"
+      },
+      {
+        "word": "eliminator",
+        "partOfSpeech": "名詞",
+        "meaning": "除去装置"
+      }
+    ],
+    [
+      {
+        "word": "emigrant",
+        "partOfSpeech": "名詞",
+        "meaning": "国外移住者"
+      },
+      {
+        "word": "emigration",
+        "partOfSpeech": "名詞",
+        "meaning": "国外移住"
+      }
+    ],
+    [
+      {
+        "word": "emotional",
+        "partOfSpeech": "形容詞",
+        "meaning": "感情の・感情的な"
+      },
+      {
+        "word": "emotionally",
+        "partOfSpeech": "副詞",
+        "meaning": "感情的に"
+      },
+      {
+        "word": "unemotional",
+        "partOfSpeech": "形容詞",
+        "meaning": "感情を表さない"
+      }
+    ],
+    [
+      {
+        "word": "empathy",
+        "partOfSpeech": "名詞",
+        "meaning": "共感"
+      },
+      {
+        "word": "empathetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "共感的な"
+      },
+      {
+        "word": "empathetically",
+        "partOfSpeech": "副詞",
+        "meaning": "共感的に"
+      }
+    ],
+    [
+      {
+        "word": "employ",
+        "partOfSpeech": "動詞",
+        "meaning": "雇う"
+      },
+      {
+        "word": "employability",
+        "partOfSpeech": "名詞",
+        "meaning": "雇用される能力"
+      },
+      {
+        "word": "reemploy",
+        "partOfSpeech": "動詞",
+        "meaning": "再雇用する"
+      }
+    ],
+    [
+      {
+        "word": "employable",
+        "partOfSpeech": "形容詞",
+        "meaning": "雇用される能力のある"
+      },
+      {
+        "word": "employability",
+        "partOfSpeech": "名詞",
+        "meaning": "雇用される能力"
+      },
+      {
+        "word": "unemployable",
+        "partOfSpeech": "形容詞",
+        "meaning": "雇用されにくい"
+      }
+    ],
+    [
+      {
+        "word": "encourage",
+        "partOfSpeech": "動詞",
+        "meaning": "励ます"
+      },
+      {
+        "word": "encouragingly",
+        "partOfSpeech": "副詞",
+        "meaning": "励ますように"
+      }
+    ],
+    [
+      {
+        "word": "encouraging",
+        "partOfSpeech": "形容詞",
+        "meaning": "励みになる"
+      },
+      {
+        "word": "encouragingly",
+        "partOfSpeech": "副詞",
+        "meaning": "励ますように"
+      }
+    ],
+    [
+      {
+        "word": "end",
+        "partOfSpeech": "名詞",
+        "meaning": "終わり"
+      },
+      {
+        "word": "endless",
+        "partOfSpeech": "形容詞",
+        "meaning": "終わりのない"
+      },
+      {
+        "word": "endlessly",
+        "partOfSpeech": "副詞",
+        "meaning": "際限なく"
+      },
+      {
+        "word": "ending",
+        "partOfSpeech": "名詞",
+        "meaning": "結末"
+      }
+    ],
+    [
+      {
+        "word": "endless",
+        "partOfSpeech": "形容詞",
+        "meaning": "終わりのない"
+      },
+      {
+        "word": "endlessly",
+        "partOfSpeech": "副詞",
+        "meaning": "際限なく"
+      }
+    ],
+    [
+      {
+        "word": "endure",
+        "partOfSpeech": "動詞",
+        "meaning": "耐える"
+      },
+      {
+        "word": "unendurable",
+        "partOfSpeech": "形容詞",
+        "meaning": "耐え難い"
+      }
+    ],
+    [
+      {
+        "word": "energy",
+        "partOfSpeech": "名詞",
+        "meaning": "エネルギー"
+      },
+      {
+        "word": "energetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "活力のある"
+      },
+      {
+        "word": "energetically",
+        "partOfSpeech": "副詞",
+        "meaning": "精力的に"
+      },
+      {
+        "word": "energize",
+        "partOfSpeech": "動詞",
+        "meaning": "活力を与える"
+      }
+    ],
+    [
+      {
+        "word": "energetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "活力のある"
+      },
+      {
+        "word": "energetically",
+        "partOfSpeech": "副詞",
+        "meaning": "精力的に"
+      }
+    ],
+    [
+      {
+        "word": "engage",
+        "partOfSpeech": "動詞",
+        "meaning": "関与する・従事する"
+      },
+      {
+        "word": "engagement",
+        "partOfSpeech": "名詞",
+        "meaning": "関与・約束"
+      },
+      {
+        "word": "disengage",
+        "partOfSpeech": "動詞",
+        "meaning": "離脱する"
+      }
+    ],
+    [
+      {
+        "word": "engagement",
+        "partOfSpeech": "名詞",
+        "meaning": "関与"
+      },
+      {
+        "word": "disengagement",
+        "partOfSpeech": "名詞",
+        "meaning": "離脱"
+      }
+    ],
+    [
+      {
+        "word": "engineering",
+        "partOfSpeech": "名詞",
+        "meaning": "工学"
+      },
+      {
+        "word": "engineer",
+        "partOfSpeech": "名詞",
+        "meaning": "技術者"
+      }
+    ],
+    [
+      {
+        "word": "enhance",
+        "partOfSpeech": "動詞",
+        "meaning": "高める"
+      },
+      {
+        "word": "enhancer",
+        "partOfSpeech": "名詞",
+        "meaning": "高めるもの"
+      }
+    ],
+    [
+      {
+        "word": "enjoyable",
+        "partOfSpeech": "形容詞",
+        "meaning": "楽しい"
+      },
+      {
+        "word": "enjoyably",
+        "partOfSpeech": "副詞",
+        "meaning": "楽しく"
+      }
+    ],
+    [
+      {
+        "word": "enslave",
+        "partOfSpeech": "動詞",
+        "meaning": "奴隷にする"
+      },
+      {
+        "word": "enslaved",
+        "partOfSpeech": "形容詞",
+        "meaning": "奴隷にされた"
+      }
+    ],
+    [
+      {
+        "word": "enter",
+        "partOfSpeech": "動詞",
+        "meaning": "入る"
+      },
+      {
+        "word": "entry",
+        "partOfSpeech": "名詞",
+        "meaning": "入り口・記入事項"
+      }
+    ],
+    [
+      {
+        "word": "enthusiastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "熱心な"
+      },
+      {
+        "word": "enthusiastically",
+        "partOfSpeech": "副詞",
+        "meaning": "熱心に"
+      },
+      {
+        "word": "unenthusiastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "気乗りしない"
+      }
+    ],
+    [
+      {
+        "word": "environmental",
+        "partOfSpeech": "形容詞",
+        "meaning": "環境の"
+      },
+      {
+        "word": "environmentally",
+        "partOfSpeech": "副詞",
+        "meaning": "環境面で"
+      },
+      {
+        "word": "environmentalism",
+        "partOfSpeech": "名詞",
+        "meaning": "環境保護主義"
+      }
+    ],
+    [
+      {
+        "word": "epidemic",
+        "partOfSpeech": "名詞",
+        "meaning": "流行病"
+      },
+      {
+        "word": "epidemiology",
+        "partOfSpeech": "名詞",
+        "meaning": "疫学"
+      },
+      {
+        "word": "epidemiologist",
+        "partOfSpeech": "名詞",
+        "meaning": "疫学者"
+      },
+      {
+        "word": "epidemiological",
+        "partOfSpeech": "形容詞",
+        "meaning": "疫学の"
+      }
+    ],
+    [
+      {
+        "word": "equal",
+        "partOfSpeech": "形容詞",
+        "meaning": "等しい"
+      },
+      {
+        "word": "equalizer",
+        "partOfSpeech": "名詞",
+        "meaning": "均等化する装置"
+      }
+    ],
+    [
+      {
+        "word": "equalize",
+        "partOfSpeech": "動詞",
+        "meaning": "均等にする"
+      },
+      {
+        "word": "equalization",
+        "partOfSpeech": "名詞",
+        "meaning": "均等化"
+      }
+    ],
+    [
+      {
+        "word": "equilibrium",
+        "partOfSpeech": "名詞",
+        "meaning": "均衡"
+      },
+      {
+        "word": "disequilibrium",
+        "partOfSpeech": "名詞",
+        "meaning": "不均衡"
+      }
+    ],
+    [
+      {
+        "word": "equivalent",
+        "partOfSpeech": "形容詞",
+        "meaning": "同等の"
+      },
+      {
+        "word": "equivalence",
+        "partOfSpeech": "名詞",
+        "meaning": "同等性"
+      }
+    ],
+    [
+      {
+        "word": "erroneous",
+        "partOfSpeech": "形容詞",
+        "meaning": "誤った"
+      },
+      {
+        "word": "erroneously",
+        "partOfSpeech": "副詞",
+        "meaning": "誤って"
+      }
+    ],
+    [
+      {
+        "word": "essential",
+        "partOfSpeech": "形容詞",
+        "meaning": "不可欠な"
+      },
+      {
+        "word": "essentially",
+        "partOfSpeech": "副詞",
+        "meaning": "本質的に"
+      },
+      {
+        "word": "nonessential",
+        "partOfSpeech": "形容詞",
+        "meaning": "必須でない"
+      }
+    ],
+    [
+      {
+        "word": "establish",
+        "partOfSpeech": "動詞",
+        "meaning": "確立する"
+      },
+      {
+        "word": "disestablish",
+        "partOfSpeech": "動詞",
+        "meaning": "制度などを廃止する"
+      }
+    ],
+    [
+      {
+        "word": "ethical",
+        "partOfSpeech": "形容詞",
+        "meaning": "倫理的な"
+      },
+      {
+        "word": "ethically",
+        "partOfSpeech": "副詞",
+        "meaning": "倫理的に"
+      },
+      {
+        "word": "unethical",
+        "partOfSpeech": "形容詞",
+        "meaning": "非倫理的な"
+      }
+    ],
+    [
+      {
+        "word": "ethnic",
+        "partOfSpeech": "形容詞",
+        "meaning": "民族の"
+      },
+      {
+        "word": "ethnically",
+        "partOfSpeech": "副詞",
+        "meaning": "民族的に"
+      }
+    ],
+    [
+      {
+        "word": "evade",
+        "partOfSpeech": "動詞",
+        "meaning": "回避する"
+      },
+      {
+        "word": "evader",
+        "partOfSpeech": "名詞",
+        "meaning": "回避する人・逃れる人"
+      }
+    ],
+    [
+      {
+        "word": "evasive",
+        "partOfSpeech": "形容詞",
+        "meaning": "言い逃れをする"
+      },
+      {
+        "word": "evasiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "言い逃れをする性質"
+      }
+    ],
+    [
+      {
+        "word": "even",
+        "partOfSpeech": "形容詞",
+        "meaning": "平らな・均等な"
+      },
+      {
+        "word": "evenly",
+        "partOfSpeech": "副詞",
+        "meaning": "均等に"
+      },
+      {
+        "word": "uneven",
+        "partOfSpeech": "形容詞",
+        "meaning": "不均一な"
+      },
+      {
+        "word": "unevenly",
+        "partOfSpeech": "副詞",
+        "meaning": "不均一に"
+      }
+    ],
+    [
+      {
+        "word": "eventual",
+        "partOfSpeech": "形容詞",
+        "meaning": "最終的な"
+      },
+      {
+        "word": "eventually",
+        "partOfSpeech": "副詞",
+        "meaning": "最終的に"
+      }
+    ],
+    [
+      {
+        "word": "evolution",
+        "partOfSpeech": "名詞",
+        "meaning": "進化"
+      },
+      {
+        "word": "evolutionary",
+        "partOfSpeech": "形容詞",
+        "meaning": "進化の"
+      }
+    ],
+    [
+      {
+        "word": "evolve",
+        "partOfSpeech": "動詞",
+        "meaning": "進化する"
+      },
+      {
+        "word": "evolution",
+        "partOfSpeech": "名詞",
+        "meaning": "進化"
+      }
+    ],
+    [
+      {
+        "word": "example",
+        "partOfSpeech": "名詞",
+        "meaning": "例"
+      },
+      {
+        "word": "exemplary",
+        "partOfSpeech": "形容詞",
+        "meaning": "模範的な"
+      },
+      {
+        "word": "exemplify",
+        "partOfSpeech": "動詞",
+        "meaning": "例示する"
+      }
+    ],
+    [
+      {
+        "word": "exemplify",
+        "partOfSpeech": "動詞",
+        "meaning": "例示する"
+      },
+      {
+        "word": "exemplification",
+        "partOfSpeech": "名詞",
+        "meaning": "例示"
+      }
+    ],
+    [
+      {
+        "word": "exception",
+        "partOfSpeech": "名詞",
+        "meaning": "例外"
+      },
+      {
+        "word": "exceptional",
+        "partOfSpeech": "形容詞",
+        "meaning": "例外的な・並外れた"
+      },
+      {
+        "word": "exceptionally",
+        "partOfSpeech": "副詞",
+        "meaning": "例外的に"
+      }
+    ],
+    [
+      {
+        "word": "exceptional",
+        "partOfSpeech": "形容詞",
+        "meaning": "並外れた"
+      },
+      {
+        "word": "exceptionally",
+        "partOfSpeech": "副詞",
+        "meaning": "並外れて"
+      }
+    ],
+    [
+      {
+        "word": "excess",
+        "partOfSpeech": "名詞",
+        "meaning": "過剰"
+      },
+      {
+        "word": "excessive",
+        "partOfSpeech": "形容詞",
+        "meaning": "過度の"
+      },
+      {
+        "word": "excessively",
+        "partOfSpeech": "副詞",
+        "meaning": "過度に"
+      }
+    ],
+    [
+      {
+        "word": "excessive",
+        "partOfSpeech": "形容詞",
+        "meaning": "過度の"
+      },
+      {
+        "word": "excessively",
+        "partOfSpeech": "副詞",
+        "meaning": "過度に"
+      }
+    ],
+    [
+      {
+        "word": "excite",
+        "partOfSpeech": "動詞",
+        "meaning": "興奮させる"
+      },
+      {
+        "word": "excitability",
+        "partOfSpeech": "名詞",
+        "meaning": "興奮しやすさ"
+      }
+    ],
+    [
+      {
+        "word": "excitable",
+        "partOfSpeech": "形容詞",
+        "meaning": "興奮しやすい"
+      },
+      {
+        "word": "excitability",
+        "partOfSpeech": "名詞",
+        "meaning": "興奮しやすさ"
+      }
+    ],
+    [
+      {
+        "word": "exclusive",
+        "partOfSpeech": "形容詞",
+        "meaning": "排他的な"
+      },
+      {
+        "word": "exclusivity",
+        "partOfSpeech": "名詞",
+        "meaning": "排他性・独占性"
+      },
+      {
+        "word": "exclusively",
+        "partOfSpeech": "副詞",
+        "meaning": "独占的に"
+      }
+    ],
+    [
+      {
+        "word": "execute",
+        "partOfSpeech": "動詞",
+        "meaning": "実行する"
+      },
+      {
+        "word": "executive",
+        "partOfSpeech": "名詞",
+        "meaning": "幹部・経営者"
+      }
+    ],
+    [
+      {
+        "word": "exempt",
+        "partOfSpeech": "動詞",
+        "meaning": "免除する"
+      },
+      {
+        "word": "nonexempt",
+        "partOfSpeech": "形容詞",
+        "meaning": "免除対象でない"
+      }
+    ],
+    [
+      {
+        "word": "exhaustive",
+        "partOfSpeech": "形容詞",
+        "meaning": "徹底的な"
+      },
+      {
+        "word": "exhaustively",
+        "partOfSpeech": "副詞",
+        "meaning": "徹底的に"
+      }
+    ],
+    [
+      {
+        "word": "exist",
+        "partOfSpeech": "動詞",
+        "meaning": "存在する"
+      },
+      {
+        "word": "preexist",
+        "partOfSpeech": "動詞",
+        "meaning": "以前から存在する"
+      }
+    ],
+    [
+      {
+        "word": "existence",
+        "partOfSpeech": "名詞",
+        "meaning": "存在"
+      },
+      {
+        "word": "nonexistence",
+        "partOfSpeech": "名詞",
+        "meaning": "存在しないこと"
+      }
+    ],
+    [
+      {
+        "word": "existent",
+        "partOfSpeech": "形容詞",
+        "meaning": "存在する"
+      },
+      {
+        "word": "nonexistent",
+        "partOfSpeech": "形容詞",
+        "meaning": "存在しない"
+      }
+    ],
+    [
+      {
+        "word": "expansion",
+        "partOfSpeech": "名詞",
+        "meaning": "拡張"
+      },
+      {
+        "word": "expansionary",
+        "partOfSpeech": "形容詞",
+        "meaning": "拡張的な"
+      }
+    ],
+    [
+      {
+        "word": "expect",
+        "partOfSpeech": "動詞",
+        "meaning": "期待する"
+      },
+      {
+        "word": "expectant",
+        "partOfSpeech": "形容詞",
+        "meaning": "期待している・妊娠中の"
+      }
+    ],
+    [
+      {
+        "word": "expectant",
+        "partOfSpeech": "形容詞",
+        "meaning": "期待している"
+      },
+      {
+        "word": "expectantly",
+        "partOfSpeech": "副詞",
+        "meaning": "期待して"
+      }
+    ],
+    [
+      {
+        "word": "expedient",
+        "partOfSpeech": "形容詞",
+        "meaning": "都合のよい"
+      },
+      {
+        "word": "expediency",
+        "partOfSpeech": "名詞",
+        "meaning": "便宜・得策"
+      }
+    ],
+    [
+      {
+        "word": "expensive",
+        "partOfSpeech": "形容詞",
+        "meaning": "高価な"
+      },
+      {
+        "word": "expensively",
+        "partOfSpeech": "副詞",
+        "meaning": "高い費用をかけて"
+      },
+      {
+        "word": "inexpensive",
+        "partOfSpeech": "形容詞",
+        "meaning": "安価な"
+      }
+    ],
+    [
+      {
+        "word": "experimental",
+        "partOfSpeech": "形容詞",
+        "meaning": "実験的な"
+      },
+      {
+        "word": "experimentally",
+        "partOfSpeech": "副詞",
+        "meaning": "実験的に"
+      }
+    ],
+    [
+      {
+        "word": "explosive",
+        "partOfSpeech": "形容詞",
+        "meaning": "爆発性の"
+      },
+      {
+        "word": "explosively",
+        "partOfSpeech": "副詞",
+        "meaning": "爆発的に"
+      }
+    ],
+    [
+      {
+        "word": "exploit",
+        "partOfSpeech": "動詞",
+        "meaning": "悪用する"
+      },
+      {
+        "word": "exploiter",
+        "partOfSpeech": "名詞",
+        "meaning": "搾取者"
+      },
+      {
+        "word": "exploitable",
+        "partOfSpeech": "形容詞",
+        "meaning": "活用できる"
+      }
+    ],
+    [
+      {
+        "word": "export",
+        "partOfSpeech": "動詞",
+        "meaning": "輸出する"
+      },
+      {
+        "word": "exporter",
+        "partOfSpeech": "名詞",
+        "meaning": "輸出業者"
+      },
+      {
+        "word": "exportable",
+        "partOfSpeech": "形容詞",
+        "meaning": "輸出可能な"
+      },
+      {
+        "word": "exportation",
+        "partOfSpeech": "名詞",
+        "meaning": "輸出"
+      }
+    ],
+    [
+      {
+        "word": "expose",
+        "partOfSpeech": "動詞",
+        "meaning": "さらす"
+      },
+      {
+        "word": "overexpose",
+        "partOfSpeech": "動詞",
+        "meaning": "過度に露出させる"
+      },
+      {
+        "word": "overexposure",
+        "partOfSpeech": "名詞",
+        "meaning": "過度の露出"
+      }
+    ],
+    [
+      {
+        "word": "expressive",
+        "partOfSpeech": "形容詞",
+        "meaning": "表現力のある"
+      },
+      {
+        "word": "expressively",
+        "partOfSpeech": "副詞",
+        "meaning": "表現豊かに"
+      },
+      {
+        "word": "expressiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "表現力"
+      }
+    ],
+    [
+      {
+        "word": "extend",
+        "partOfSpeech": "動詞",
+        "meaning": "延長する"
+      },
+      {
+        "word": "extender",
+        "partOfSpeech": "名詞",
+        "meaning": "延長用の装置・増量剤"
+      }
+    ],
+    [
+      {
+        "word": "extensive",
+        "partOfSpeech": "形容詞",
+        "meaning": "広範な"
+      },
+      {
+        "word": "extensively",
+        "partOfSpeech": "副詞",
+        "meaning": "広範に"
+      }
+    ],
+    [
+      {
+        "word": "external",
+        "partOfSpeech": "形容詞",
+        "meaning": "外部の"
+      },
+      {
+        "word": "externality",
+        "partOfSpeech": "名詞",
+        "meaning": "外部性"
+      }
+    ],
+    [
+      {
+        "word": "externalize",
+        "partOfSpeech": "動詞",
+        "meaning": "外在化する"
+      },
+      {
+        "word": "externalization",
+        "partOfSpeech": "名詞",
+        "meaning": "外在化"
+      }
+    ],
+    [
+      {
+        "word": "extinct",
+        "partOfSpeech": "形容詞",
+        "meaning": "絶滅した"
+      },
+      {
+        "word": "extinction",
+        "partOfSpeech": "名詞",
+        "meaning": "絶滅"
+      }
+    ],
+    [
+      {
+        "word": "extreme",
+        "partOfSpeech": "形容詞",
+        "meaning": "極端な"
+      },
+      {
+        "word": "extremism",
+        "partOfSpeech": "名詞",
+        "meaning": "過激主義"
+      }
+    ],
+    [
+      {
+        "word": "extrinsic",
+        "partOfSpeech": "形容詞",
+        "meaning": "外的な"
+      },
+      {
+        "word": "extrinsically",
+        "partOfSpeech": "副詞",
+        "meaning": "外的に"
+      }
+    ],
+    [
+      {
+        "word": "facilitate",
+        "partOfSpeech": "動詞",
+        "meaning": "促進する"
+      },
+      {
+        "word": "facilitative",
+        "partOfSpeech": "形容詞",
+        "meaning": "促進する"
+      }
+    ],
+    [
+      {
+        "word": "factual",
+        "partOfSpeech": "形容詞",
+        "meaning": "事実に基づく"
+      },
+      {
+        "word": "factually",
+        "partOfSpeech": "副詞",
+        "meaning": "事実に即して"
+      }
+    ],
+    [
+      {
+        "word": "fallacy",
+        "partOfSpeech": "名詞",
+        "meaning": "誤った考え"
+      },
+      {
+        "word": "fallacious",
+        "partOfSpeech": "形容詞",
+        "meaning": "誤った"
+      }
+    ],
+    [
+      {
+        "word": "false",
+        "partOfSpeech": "形容詞",
+        "meaning": "誤った"
+      },
+      {
+        "word": "falsely",
+        "partOfSpeech": "副詞",
+        "meaning": "誤って"
+      },
+      {
+        "word": "falsehood",
+        "partOfSpeech": "名詞",
+        "meaning": "虚偽"
+      },
+      {
+        "word": "falsify",
+        "partOfSpeech": "動詞",
+        "meaning": "改ざんする"
+      }
+    ],
+    [
+      {
+        "word": "fantastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "すばらしい・空想的な"
+      },
+      {
+        "word": "fantastically",
+        "partOfSpeech": "副詞",
+        "meaning": "すばらしく"
+      }
+    ],
+    [
+      {
+        "word": "fashionable",
+        "partOfSpeech": "形容詞",
+        "meaning": "流行の"
+      },
+      {
+        "word": "fashionably",
+        "partOfSpeech": "副詞",
+        "meaning": "流行に合わせて"
+      },
+      {
+        "word": "unfashionable",
+        "partOfSpeech": "形容詞",
+        "meaning": "流行遅れの"
+      }
+    ],
+    [
+      {
+        "word": "fatal",
+        "partOfSpeech": "形容詞",
+        "meaning": "致命的な"
+      },
+      {
+        "word": "fatality",
+        "partOfSpeech": "名詞",
+        "meaning": "死者・死亡事故"
+      },
+      {
+        "word": "fatally",
+        "partOfSpeech": "副詞",
+        "meaning": "致命的に"
+      }
+    ],
+    [
+      {
+        "word": "fault",
+        "partOfSpeech": "名詞",
+        "meaning": "欠点"
+      },
+      {
+        "word": "faulty",
+        "partOfSpeech": "形容詞",
+        "meaning": "欠陥のある"
+      },
+      {
+        "word": "faultless",
+        "partOfSpeech": "形容詞",
+        "meaning": "非の打ち所のない"
+      }
+    ],
+    [
+      {
+        "word": "favor",
+        "partOfSpeech": "動詞",
+        "meaning": "好む"
+      },
+      {
+        "word": "favoritism",
+        "partOfSpeech": "名詞",
+        "meaning": "えこひいき"
+      }
+    ],
+    [
+      {
+        "word": "favorable",
+        "partOfSpeech": "形容詞",
+        "meaning": "好意的な"
+      },
+      {
+        "word": "favorably",
+        "partOfSpeech": "副詞",
+        "meaning": "好意的に"
+      },
+      {
+        "word": "unfavorable",
+        "partOfSpeech": "形容詞",
+        "meaning": "不利な"
+      }
+    ],
+    [
+      {
+        "word": "fearful",
+        "partOfSpeech": "形容詞",
+        "meaning": "恐れている"
+      },
+      {
+        "word": "fearfully",
+        "partOfSpeech": "副詞",
+        "meaning": "恐る恐る"
+      }
+    ],
+    [
+      {
+        "word": "fearless",
+        "partOfSpeech": "形容詞",
+        "meaning": "恐れを知らない"
+      },
+      {
+        "word": "fearlessly",
+        "partOfSpeech": "副詞",
+        "meaning": "恐れずに"
+      },
+      {
+        "word": "fearlessness",
+        "partOfSpeech": "名詞",
+        "meaning": "恐れを知らないこと"
+      }
+    ],
+    [
+      {
+        "word": "feasible",
+        "partOfSpeech": "形容詞",
+        "meaning": "実行可能な"
+      },
+      {
+        "word": "infeasibility",
+        "partOfSpeech": "名詞",
+        "meaning": "実現不可能性"
+      }
+    ],
+    [
+      {
+        "word": "feminist",
+        "partOfSpeech": "名詞",
+        "meaning": "フェミニスト"
+      },
+      {
+        "word": "feminism",
+        "partOfSpeech": "名詞",
+        "meaning": "フェミニズム"
+      }
+    ],
+    [
+      {
+        "word": "fertile",
+        "partOfSpeech": "形容詞",
+        "meaning": "肥沃な"
+      },
+      {
+        "word": "infertility",
+        "partOfSpeech": "名詞",
+        "meaning": "不妊・不毛"
+      }
+    ],
+    [
+      {
+        "word": "fertilize",
+        "partOfSpeech": "動詞",
+        "meaning": "肥料を施す・受精させる"
+      },
+      {
+        "word": "fertilization",
+        "partOfSpeech": "名詞",
+        "meaning": "施肥・受精"
+      },
+      {
+        "word": "fertilizer",
+        "partOfSpeech": "名詞",
+        "meaning": "肥料"
+      }
+    ],
+    [
+      {
+        "word": "festive",
+        "partOfSpeech": "形容詞",
+        "meaning": "お祭り気分の"
+      },
+      {
+        "word": "festivity",
+        "partOfSpeech": "名詞",
+        "meaning": "祝いの行事"
+      }
+    ],
+    [
+      {
+        "word": "fiction",
+        "partOfSpeech": "名詞",
+        "meaning": "フィクション"
+      },
+      {
+        "word": "fictionalize",
+        "partOfSpeech": "動詞",
+        "meaning": "フィクション化する"
+      }
+    ],
+    [
+      {
+        "word": "fictional",
+        "partOfSpeech": "形容詞",
+        "meaning": "架空の"
+      },
+      {
+        "word": "fictionalization",
+        "partOfSpeech": "名詞",
+        "meaning": "フィクション化"
+      }
+    ],
+    [
+      {
+        "word": "fidget",
+        "partOfSpeech": "動詞",
+        "meaning": "そわそわする"
+      },
+      {
+        "word": "fidgety",
+        "partOfSpeech": "形容詞",
+        "meaning": "落ち着かない"
+      }
+    ],
+    [
+      {
+        "word": "fierce",
+        "partOfSpeech": "形容詞",
+        "meaning": "激しい"
+      },
+      {
+        "word": "fiercely",
+        "partOfSpeech": "副詞",
+        "meaning": "激しく"
+      },
+      {
+        "word": "fierceness",
+        "partOfSpeech": "名詞",
+        "meaning": "激しさ"
+      }
+    ],
+    [
+      {
+        "word": "filter",
+        "partOfSpeech": "動詞",
+        "meaning": "ろ過する"
+      },
+      {
+        "word": "filtration",
+        "partOfSpeech": "名詞",
+        "meaning": "ろ過"
+      },
+      {
+        "word": "filterable",
+        "partOfSpeech": "形容詞",
+        "meaning": "ろ過可能な"
+      },
+      {
+        "word": "unfiltered",
+        "partOfSpeech": "形容詞",
+        "meaning": "ろ過されていない"
+      }
+    ],
+    [
+      {
+        "word": "finalize",
+        "partOfSpeech": "動詞",
+        "meaning": "最終決定する"
+      },
+      {
+        "word": "finalization",
+        "partOfSpeech": "名詞",
+        "meaning": "最終決定"
+      }
+    ],
+    [
+      {
+        "word": "financial",
+        "partOfSpeech": "形容詞",
+        "meaning": "財政の"
+      },
+      {
+        "word": "financially",
+        "partOfSpeech": "副詞",
+        "meaning": "財政的に"
+      }
+    ],
+    [
+      {
+        "word": "flex",
+        "partOfSpeech": "動詞",
+        "meaning": "曲げる"
+      },
+      {
+        "word": "flexion",
+        "partOfSpeech": "名詞",
+        "meaning": "屈曲"
+      }
+    ],
+    [
+      {
+        "word": "foam",
+        "partOfSpeech": "名詞",
+        "meaning": "泡"
+      },
+      {
+        "word": "foamy",
+        "partOfSpeech": "形容詞",
+        "meaning": "泡立った"
+      }
+    ],
+    [
+      {
+        "word": "focus",
+        "partOfSpeech": "動詞",
+        "meaning": "集中する"
+      },
+      {
+        "word": "focused",
+        "partOfSpeech": "形容詞",
+        "meaning": "集中した"
+      },
+      {
+        "word": "refocus",
+        "partOfSpeech": "動詞",
+        "meaning": "再び集中する"
+      },
+      {
+        "word": "unfocused",
+        "partOfSpeech": "形容詞",
+        "meaning": "集中していない"
+      }
+    ],
+    [
+      {
+        "word": "fog",
+        "partOfSpeech": "名詞",
+        "meaning": "霧"
+      },
+      {
+        "word": "foggy",
+        "partOfSpeech": "形容詞",
+        "meaning": "霧のかかった"
+      }
+    ],
+    [
+      {
+        "word": "foolish",
+        "partOfSpeech": "形容詞",
+        "meaning": "愚かな"
+      },
+      {
+        "word": "foolishly",
+        "partOfSpeech": "副詞",
+        "meaning": "愚かにも"
+      },
+      {
+        "word": "foolishness",
+        "partOfSpeech": "名詞",
+        "meaning": "愚かさ"
+      }
+    ],
+    [
+      {
+        "word": "forbid",
+        "partOfSpeech": "動詞",
+        "meaning": "禁じる"
+      },
+      {
+        "word": "forbidden",
+        "partOfSpeech": "形容詞",
+        "meaning": "禁じられた"
+      }
+    ],
+    [
+      {
+        "word": "forceful",
+        "partOfSpeech": "形容詞",
+        "meaning": "力強い"
+      },
+      {
+        "word": "forcefully",
+        "partOfSpeech": "副詞",
+        "meaning": "力強く"
+      },
+      {
+        "word": "forcefulness",
+        "partOfSpeech": "名詞",
+        "meaning": "力強さ"
+      }
+    ],
+    [
+      {
+        "word": "forcible",
+        "partOfSpeech": "形容詞",
+        "meaning": "強制的な"
+      },
+      {
+        "word": "forcibly",
+        "partOfSpeech": "副詞",
+        "meaning": "強制的に"
+      }
+    ],
+    [
+      {
+        "word": "forecast",
+        "partOfSpeech": "動詞",
+        "meaning": "予測する"
+      },
+      {
+        "word": "forecaster",
+        "partOfSpeech": "名詞",
+        "meaning": "予報者"
+      }
+    ],
+    [
+      {
+        "word": "forgetful",
+        "partOfSpeech": "形容詞",
+        "meaning": "忘れっぽい"
+      },
+      {
+        "word": "forgetfulness",
+        "partOfSpeech": "名詞",
+        "meaning": "忘れっぽさ"
+      }
+    ],
+    [
+      {
+        "word": "forgettable",
+        "partOfSpeech": "形容詞",
+        "meaning": "忘れられやすい"
+      },
+      {
+        "word": "unforgettable",
+        "partOfSpeech": "形容詞",
+        "meaning": "忘れられない"
+      }
+    ],
+    [
+      {
+        "word": "forgive",
+        "partOfSpeech": "動詞",
+        "meaning": "許す"
+      },
+      {
+        "word": "forgivable",
+        "partOfSpeech": "形容詞",
+        "meaning": "許される"
+      }
+    ],
+    [
+      {
+        "word": "formal",
+        "partOfSpeech": "形容詞",
+        "meaning": "形式的な"
+      },
+      {
+        "word": "formality",
+        "partOfSpeech": "名詞",
+        "meaning": "形式・儀礼"
+      },
+      {
+        "word": "formally",
+        "partOfSpeech": "副詞",
+        "meaning": "正式に"
+      },
+      {
+        "word": "informal",
+        "partOfSpeech": "形容詞",
+        "meaning": "非公式の"
+      }
+    ],
+    [
+      {
+        "word": "formalize",
+        "partOfSpeech": "動詞",
+        "meaning": "正式なものにする"
+      },
+      {
+        "word": "formalization",
+        "partOfSpeech": "名詞",
+        "meaning": "形式化"
+      }
+    ],
+    [
+      {
+        "word": "format",
+        "partOfSpeech": "動詞",
+        "meaning": "形式を整える"
+      },
+      {
+        "word": "formatting",
+        "partOfSpeech": "名詞",
+        "meaning": "書式設定"
+      },
+      {
+        "word": "reformat",
+        "partOfSpeech": "動詞",
+        "meaning": "再フォーマットする"
+      }
+    ],
+    [
+      {
+        "word": "former",
+        "partOfSpeech": "形容詞",
+        "meaning": "以前の"
+      },
+      {
+        "word": "formerly",
+        "partOfSpeech": "副詞",
+        "meaning": "以前は"
+      }
+    ],
+    [
+      {
+        "word": "fortunate",
+        "partOfSpeech": "形容詞",
+        "meaning": "幸運な"
+      },
+      {
+        "word": "misfortune",
+        "partOfSpeech": "名詞",
+        "meaning": "不運"
+      }
+    ],
+    [
+      {
+        "word": "fortune",
+        "partOfSpeech": "名詞",
+        "meaning": "運・財産"
+      },
+      {
+        "word": "fortunate",
+        "partOfSpeech": "形容詞",
+        "meaning": "幸運な"
+      },
+      {
+        "word": "misfortune",
+        "partOfSpeech": "名詞",
+        "meaning": "不運"
+      }
+    ],
+    [
+      {
+        "word": "fossil",
+        "partOfSpeech": "名詞",
+        "meaning": "化石"
+      },
+      {
+        "word": "fossilize",
+        "partOfSpeech": "動詞",
+        "meaning": "化石化する"
+      },
+      {
+        "word": "fossilization",
+        "partOfSpeech": "名詞",
+        "meaning": "化石化"
+      }
+    ],
+    [
+      {
+        "word": "fragrant",
+        "partOfSpeech": "形容詞",
+        "meaning": "香りのよい"
+      },
+      {
+        "word": "fragrance",
+        "partOfSpeech": "名詞",
+        "meaning": "芳香"
+      }
+    ],
+    [
+      {
+        "word": "frame",
+        "partOfSpeech": "動詞",
+        "meaning": "枠にはめる・組み立てる"
+      },
+      {
+        "word": "framing",
+        "partOfSpeech": "名詞",
+        "meaning": "枠組み"
+      },
+      {
+        "word": "reframe",
+        "partOfSpeech": "動詞",
+        "meaning": "捉え直す"
+      }
+    ],
+    [
+      {
+        "word": "frank",
+        "partOfSpeech": "形容詞",
+        "meaning": "率直な"
+      },
+      {
+        "word": "frankly",
+        "partOfSpeech": "副詞",
+        "meaning": "率直に"
+      },
+      {
+        "word": "frankness",
+        "partOfSpeech": "名詞",
+        "meaning": "率直さ"
+      }
+    ],
+    [
+      {
+        "word": "frequent",
+        "partOfSpeech": "形容詞",
+        "meaning": "頻繁な"
+      },
+      {
+        "word": "infrequently",
+        "partOfSpeech": "副詞",
+        "meaning": "まれに"
+      }
+    ],
+    [
+      {
+        "word": "fresh",
+        "partOfSpeech": "形容詞",
+        "meaning": "新鮮な"
+      },
+      {
+        "word": "freshen",
+        "partOfSpeech": "動詞",
+        "meaning": "新鮮にする"
+      }
+    ],
+    [
+      {
+        "word": "friend",
+        "partOfSpeech": "名詞",
+        "meaning": "友人"
+      },
+      {
+        "word": "friendless",
+        "partOfSpeech": "形容詞",
+        "meaning": "友人のいない"
+      }
+    ],
+    [
+      {
+        "word": "friendly",
+        "partOfSpeech": "形容詞",
+        "meaning": "親しみやすい"
+      },
+      {
+        "word": "friendliness",
+        "partOfSpeech": "名詞",
+        "meaning": "親しみやすさ"
+      },
+      {
+        "word": "unfriendly",
+        "partOfSpeech": "形容詞",
+        "meaning": "よそよそしい"
+      }
+    ],
+    [
+      {
+        "word": "frightening",
+        "partOfSpeech": "形容詞",
+        "meaning": "恐ろしい"
+      },
+      {
+        "word": "frighteningly",
+        "partOfSpeech": "副詞",
+        "meaning": "恐ろしいほど"
+      }
+    ],
+    [
+      {
+        "word": "frustrating",
+        "partOfSpeech": "形容詞",
+        "meaning": "いらだたしい"
+      },
+      {
+        "word": "frustratingly",
+        "partOfSpeech": "副詞",
+        "meaning": "いらだたしいほど"
+      }
+    ],
+    [
+      {
+        "word": "functional",
+        "partOfSpeech": "形容詞",
+        "meaning": "機能的な"
+      },
+      {
+        "word": "functionally",
+        "partOfSpeech": "副詞",
+        "meaning": "機能面で"
+      },
+      {
+        "word": "nonfunctional",
+        "partOfSpeech": "形容詞",
+        "meaning": "機能しない"
+      }
+    ],
+    [
+      {
+        "word": "fundamental",
+        "partOfSpeech": "形容詞",
+        "meaning": "根本的な"
+      },
+      {
+        "word": "fundamentally",
+        "partOfSpeech": "副詞",
+        "meaning": "根本的に"
+      },
+      {
+        "word": "fundamentalism",
+        "partOfSpeech": "名詞",
+        "meaning": "原理主義"
+      }
+    ],
+    [
+      {
+        "word": "fur",
+        "partOfSpeech": "名詞",
+        "meaning": "毛皮"
+      },
+      {
+        "word": "furry",
+        "partOfSpeech": "形容詞",
+        "meaning": "毛で覆われた"
+      }
+    ],
+    [
+      {
+        "word": "furious",
+        "partOfSpeech": "形容詞",
+        "meaning": "激怒した"
+      },
+      {
+        "word": "furiously",
+        "partOfSpeech": "副詞",
+        "meaning": "激怒して・激しく"
+      }
+    ],
+    [
+      {
+        "word": "furnish",
+        "partOfSpeech": "動詞",
+        "meaning": "家具を備え付ける"
+      },
+      {
+        "word": "furnished",
+        "partOfSpeech": "形容詞",
+        "meaning": "家具付きの"
+      },
+      {
+        "word": "unfurnished",
+        "partOfSpeech": "形容詞",
+        "meaning": "家具の付いていない"
+      }
+    ],
+    [
+      {
+        "word": "fuse",
+        "partOfSpeech": "動詞",
+        "meaning": "融合する"
+      },
+      {
+        "word": "fusion",
+        "partOfSpeech": "名詞",
+        "meaning": "融合"
+      },
+      {
+        "word": "fusible",
+        "partOfSpeech": "形容詞",
+        "meaning": "融解可能な"
+      }
+    ],
+    [
+      {
+        "word": "future",
+        "partOfSpeech": "名詞",
+        "meaning": "未来"
+      },
+      {
+        "word": "futuristic",
+        "partOfSpeech": "形容詞",
+        "meaning": "未来的な"
+      },
+      {
+        "word": "futurism",
+        "partOfSpeech": "名詞",
+        "meaning": "未来主義"
+      }
+    ]
+  ]
+}

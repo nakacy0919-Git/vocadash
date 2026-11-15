@@ -1,0 +1,1425 @@
+{
+  "schemaVersion": "1.0",
+  "asOf": "2026-11-15",
+  "auditedCommit": "e8a21e5635d47618ebf723b9dd5241118e8864ca",
+  "activeBatchFiles": 84,
+  "masterHeadwords": 8653,
+  "draftedHeadwords": 8653,
+  "missingMasterIds": [],
+  "identityErrors": [],
+  "senses": 9614,
+  "translatedExamples": 19228,
+  "duplicateSenseIds": 0,
+  "duplicateExampleIds": 0,
+  "duplicateNormalizedEnglishSignatures": 0,
+  "duplicateNormalizedEnglishJapanesePairSignatures": 0,
+  "duplicateDetectionMethod": "Independent paired 32-bit signatures of NFC, lower-cased, trimmed and whitespace-normalized text, compared globally; no matching signatures.",
+  "wordIdsInMultipleFiles": 56,
+  "missingCoreSenses": 0,
+  "missingSynonymOrNoteSenses": 334,
+  "missingCollocationSenses": 5317,
+  "missingImageHintSenses": 0,
+  "editorialHoldWordIds": [
+    "VD-07729",
+    "VD-08303",
+    "VD-08377"
+  ],
+  "qualityBacklog": {
+    "synonymsOrNotes": [
+      {
+        "wordId": "VD-00068",
+        "senseId": "VD-BULK-261114-A1-00043"
+      },
+      {
+        "wordId": "VD-00069",
+        "senseId": "VD-BULK-261114-A1-00044"
+      },
+      {
+        "wordId": "VD-00076",
+        "senseId": "VD-BULK-261114-A1-00048"
+      },
+      {
+        "wordId": "VD-00099",
+        "senseId": "VD-BULK-261114-A1-00067"
+      },
+      {
+        "wordId": "VD-00105",
+        "senseId": "VD-BULK-261114-A1-00074"
+      },
+      {
+        "wordId": "VD-00109",
+        "senseId": "VD-BULK-261114-A1-00078"
+      },
+      {
+        "wordId": "VD-00121",
+        "senseId": "VD-BULK-261114-A1-00089"
+      },
+      {
+        "wordId": "VD-00131",
+        "senseId": "VD-BULK-261114-A1-00093"
+      },
+      {
+        "wordId": "VD-00132",
+        "senseId": "VD-BULK-261114-A1-00094"
+      },
+      {
+        "wordId": "VD-00141",
+        "senseId": "VD-BULK-261114-A1-00100"
+      },
+      {
+        "wordId": "VD-00142",
+        "senseId": "VD-BULK-261114-A1-00101"
+      },
+      {
+        "wordId": "VD-00148",
+        "senseId": "VD-BULK-261114-A1-00103"
+      },
+      {
+        "wordId": "VD-00156",
+        "senseId": "VD-BULK-261114-A1-00108"
+      },
+      {
+        "wordId": "VD-02356",
+        "senseId": "VD-BULK-261114-B1-A-00040"
+      },
+      {
+        "wordId": "VD-02375",
+        "senseId": "VD-BULK-261114-B1-A-00056"
+      },
+      {
+        "wordId": "VD-02378",
+        "senseId": "VD-BULK-261114-B1-A-00059"
+      },
+      {
+        "wordId": "VD-02395",
+        "senseId": "VD-BULK-261114-B1-A-00075"
+      },
+      {
+        "wordId": "VD-02404",
+        "senseId": "VD-BULK-261114-B1-A-00083"
+      },
+      {
+        "wordId": "VD-02448",
+        "senseId": "VD-BULK-261114-B1-B-00035"
+      },
+      {
+        "wordId": "VD-02450",
+        "senseId": "VD-BULK-261114-B1-B-00038"
+      },
+      {
+        "wordId": "VD-02471",
+        "senseId": "VD-BULK-261114-B1-B-00056"
+      },
+      {
+        "wordId": "VD-02494",
+        "senseId": "VD-BULK-261114-B1-B-00077"
+      },
+      {
+        "wordId": "VD-02507",
+        "senseId": "VD-BULK-261114-B1-B-00089"
+      },
+      {
+        "wordId": "VD-02534",
+        "senseId": "VD-BULK-261114-B1-B-00114"
+      },
+      {
+        "wordId": "VD-02552",
+        "senseId": "VD-BULK-261114-B1-B-00128"
+      },
+      {
+        "wordId": "VD-02553",
+        "senseId": "VD-BULK-261114-B1-B-00129"
+      },
+      {
+        "wordId": "VD-02571",
+        "senseId": "VD-BULK-261114-B1-B-00135"
+      },
+      {
+        "wordId": "VD-02581",
+        "senseId": "VD-BULK-261114-B1-B-00145"
+      },
+      {
+        "wordId": "VD-02585",
+        "senseId": "VD-BULK-261114-B1-B-00149"
+      },
+      {
+        "wordId": "VD-02586",
+        "senseId": "VD-BULK-261114-B1-B-00150"
+      },
+      {
+        "wordId": "VD-02632",
+        "senseId": "VD-BULK-261114-B1-B-00185"
+      },
+      {
+        "wordId": "VD-00173",
+        "senseId": "VDO-261114-A-00007"
+      },
+      {
+        "wordId": "VD-00176",
+        "senseId": "VDO-261114-A-00010"
+      },
+      {
+        "wordId": "VD-00193",
+        "senseId": "VDO-261114-A-00023"
+      },
+      {
+        "wordId": "VD-00199",
+        "senseId": "VDO-261114-A-00031"
+      },
+      {
+        "wordId": "VD-00280",
+        "senseId": "VDO-261114-B-00029"
+      },
+      {
+        "wordId": "VD-00311",
+        "senseId": "VDO-261114-B-00049"
+      },
+      {
+        "wordId": "VD-00365",
+        "senseId": "VDO-261114-C-00020"
+      },
+      {
+        "wordId": "VD-00367",
+        "senseId": "VDO-261114-C-00021"
+      },
+      {
+        "wordId": "VD-00401",
+        "senseId": "VDO-261114-C-00044"
+      },
+      {
+        "wordId": "VD-00405",
+        "senseId": "VDO-261114-C-00047"
+      },
+      {
+        "wordId": "VD-00416",
+        "senseId": "VDO-261114-C-00056"
+      },
+      {
+        "wordId": "VD-00421",
+        "senseId": "VDO-261114-C-00061"
+      },
+      {
+        "wordId": "VD-00431",
+        "senseId": "VDO-261114-C-00066"
+      },
+      {
+        "wordId": "VD-00436",
+        "senseId": "VDO-261114-C-00071"
+      },
+      {
+        "wordId": "VD-02666",
+        "senseId": "VDO-261114-D-00022"
+      },
+      {
+        "wordId": "VD-02712",
+        "senseId": "VDO-261114-D-00059"
+      },
+      {
+        "wordId": "VD-02736",
+        "senseId": "VDO-261114-D-00075"
+      },
+      {
+        "wordId": "VD-02755",
+        "senseId": "VDO-261114-E-00017"
+      },
+      {
+        "wordId": "VD-02758",
+        "senseId": "VDO-261114-E-00020"
+      },
+      {
+        "wordId": "VD-02776",
+        "senseId": "VDO-261114-E-00038"
+      },
+      {
+        "wordId": "VD-02859",
+        "senseId": "VDO-261114-F-00044"
+      },
+      {
+        "wordId": "VD-02942",
+        "senseId": "VDO-261114-H-00008"
+      },
+      {
+        "wordId": "VD-03088",
+        "senseId": "VDO-261114-K-00025"
+      },
+      {
+        "wordId": "VD-03153",
+        "senseId": "VDO-261114-M-00015"
+      },
+      {
+        "wordId": "VD-03196",
+        "senseId": "VDO-261114-N-00023"
+      },
+      {
+        "wordId": "VD-03202",
+        "senseId": "VDO-261114-N-00029"
+      },
+      {
+        "wordId": "VD-03270",
+        "senseId": "VDO-261114-O-00038"
+      },
+      {
+        "wordId": "VD-07030",
+        "senseId": "VDO-261115-C1-F02-0009"
+      },
+      {
+        "wordId": "VD-07033",
+        "senseId": "VDO-261115-C1-F02-0012"
+      },
+      {
+        "wordId": "VD-07057",
+        "senseId": "VDO-261115-C1-F02-0039"
+      },
+      {
+        "wordId": "VD-07058",
+        "senseId": "VDO-261115-C1-F02-0040"
+      },
+      {
+        "wordId": "VD-07062",
+        "senseId": "VDO-261115-C1-F02-0045"
+      },
+      {
+        "wordId": "VD-07062",
+        "senseId": "VDO-261115-C1-F02-0046"
+      },
+      {
+        "wordId": "VD-07070",
+        "senseId": "VDO-261115-C1-F02-0053"
+      },
+      {
+        "wordId": "VD-07071",
+        "senseId": "VDO-261115-C1-F02-0054"
+      },
+      {
+        "wordId": "VD-07086",
+        "senseId": "VDO-261115-C1-F03-0013"
+      },
+      {
+        "wordId": "VD-07095",
+        "senseId": "VDO-261115-C1-F03-0022"
+      },
+      {
+        "wordId": "VD-07109",
+        "senseId": "VDO-261115-C1-F03-0035"
+      },
+      {
+        "wordId": "VD-07111",
+        "senseId": "VDO-261115-C1-F03-0036"
+      },
+      {
+        "wordId": "VD-07115",
+        "senseId": "VDO-261115-C1-F03-0041"
+      },
+      {
+        "wordId": "VD-07122",
+        "senseId": "VDO-261115-C1-F03-0050"
+      },
+      {
+        "wordId": "VD-07123",
+        "senseId": "VDO-261115-C1-F03-0051"
+      },
+      {
+        "wordId": "VD-07129",
+        "senseId": "VDO-261115-C1-F03-0059"
+      },
+      {
+        "wordId": "VD-07132",
+        "senseId": "VDO-261115-C1-F03-0061"
+      },
+      {
+        "wordId": "VD-07148",
+        "senseId": "VDO-261115-C1-F03-0076"
+      },
+      {
+        "wordId": "VD-07155",
+        "senseId": "VDO-261115-C1-F03-0083"
+      },
+      {
+        "wordId": "VD-07158",
+        "senseId": "VDO-261115-C1-F03-0085"
+      },
+      {
+        "wordId": "VD-07160",
+        "senseId": "VDO-261115-C1-F03-0087"
+      },
+      {
+        "wordId": "VD-07168",
+        "senseId": "VDO-261115-C1-F03-0095"
+      },
+      {
+        "wordId": "VD-07168",
+        "senseId": "VDO-261115-C1-F03-0096"
+      },
+      {
+        "wordId": "VD-07175",
+        "senseId": "VDO-261115-C1-F03-0104"
+      },
+      {
+        "wordId": "VD-07183",
+        "senseId": "VDO-261115-C1-F04-0005"
+      },
+      {
+        "wordId": "VD-07187",
+        "senseId": "VDO-261115-C1-F04-0009"
+      },
+      {
+        "wordId": "VD-07189",
+        "senseId": "VDO-261115-C1-F04-0011"
+      },
+      {
+        "wordId": "VD-07190",
+        "senseId": "VDO-261115-C1-F04-0012"
+      },
+      {
+        "wordId": "VD-07191",
+        "senseId": "VDO-261115-C1-F04-0013"
+      },
+      {
+        "wordId": "VD-07194",
+        "senseId": "VDO-261115-C1-F04-0016"
+      },
+      {
+        "wordId": "VD-07195",
+        "senseId": "VDO-261115-C1-F04-0017"
+      },
+      {
+        "wordId": "VD-07196",
+        "senseId": "VDO-261115-C1-F04-0019"
+      },
+      {
+        "wordId": "VD-07197",
+        "senseId": "VDO-261115-C1-F04-0020"
+      },
+      {
+        "wordId": "VD-07198",
+        "senseId": "VDO-261115-C1-F04-0021"
+      },
+      {
+        "wordId": "VD-07200",
+        "senseId": "VDO-261115-C1-F04-0023"
+      },
+      {
+        "wordId": "VD-07202",
+        "senseId": "VDO-261115-C1-F04-0024"
+      },
+      {
+        "wordId": "VD-07203",
+        "senseId": "VDO-261115-C1-F04-0025"
+      },
+      {
+        "wordId": "VD-07213",
+        "senseId": "VDO-261115-C1-F04-0035"
+      },
+      {
+        "wordId": "VD-07214",
+        "senseId": "VDO-261115-C1-F04-0036"
+      },
+      {
+        "wordId": "VD-07215",
+        "senseId": "VDO-261115-C1-F04-0037"
+      },
+      {
+        "wordId": "VD-07217",
+        "senseId": "VDO-261115-C1-F04-0039"
+      },
+      {
+        "wordId": "VD-07221",
+        "senseId": "VDO-261115-C1-F04-0043"
+      },
+      {
+        "wordId": "VD-07222",
+        "senseId": "VDO-261115-C1-F04-0044"
+      },
+      {
+        "wordId": "VD-07223",
+        "senseId": "VDO-261115-C1-F04-0046"
+      },
+      {
+        "wordId": "VD-07224",
+        "senseId": "VDO-261115-C1-F04-0047"
+      },
+      {
+        "wordId": "VD-07224",
+        "senseId": "VDO-261115-C1-F04-0048"
+      },
+      {
+        "wordId": "VD-07225",
+        "senseId": "VDO-261115-C1-F04-0049"
+      },
+      {
+        "wordId": "VD-07226",
+        "senseId": "VDO-261115-C1-F04-0051"
+      },
+      {
+        "wordId": "VD-07231",
+        "senseId": "VDO-261115-C1-F04-0057"
+      },
+      {
+        "wordId": "VD-07236",
+        "senseId": "VDO-261115-C1-F05-0001"
+      },
+      {
+        "wordId": "VD-07237",
+        "senseId": "VDO-261115-C1-F05-0002"
+      },
+      {
+        "wordId": "VD-07240",
+        "senseId": "VDO-261115-C1-F05-0006"
+      },
+      {
+        "wordId": "VD-07242",
+        "senseId": "VDO-261115-C1-F05-0008"
+      },
+      {
+        "wordId": "VD-07243",
+        "senseId": "VDO-261115-C1-F05-0009"
+      },
+      {
+        "wordId": "VD-07246",
+        "senseId": "VDO-261115-C1-F05-0012"
+      },
+      {
+        "wordId": "VD-07247",
+        "senseId": "VDO-261115-C1-F05-0013"
+      },
+      {
+        "wordId": "VD-07248",
+        "senseId": "VDO-261115-C1-F05-0014"
+      },
+      {
+        "wordId": "VD-07249",
+        "senseId": "VDO-261115-C1-F05-0015"
+      },
+      {
+        "wordId": "VD-07250",
+        "senseId": "VDO-261115-C1-F05-0016"
+      },
+      {
+        "wordId": "VD-07250",
+        "senseId": "VDO-261115-C1-F05-0017"
+      },
+      {
+        "wordId": "VD-07251",
+        "senseId": "VDO-261115-C1-F05-0018"
+      },
+      {
+        "wordId": "VD-07255",
+        "senseId": "VDO-261115-C1-F05-0022"
+      },
+      {
+        "wordId": "VD-07261",
+        "senseId": "VDO-261115-C1-F05-0027"
+      },
+      {
+        "wordId": "VD-07268",
+        "senseId": "VDO-261115-C1-F05-0033"
+      },
+      {
+        "wordId": "VD-07272",
+        "senseId": "VDO-261115-C1-F05-0037"
+      },
+      {
+        "wordId": "VD-07274",
+        "senseId": "VDO-261115-C1-F05-0039"
+      },
+      {
+        "wordId": "VD-07275",
+        "senseId": "VDO-261115-C1-F05-0040"
+      },
+      {
+        "wordId": "VD-07278",
+        "senseId": "VDO-261115-C1-F05-0041"
+      },
+      {
+        "wordId": "VD-07280",
+        "senseId": "VDO-261115-C1-F05-0043"
+      },
+      {
+        "wordId": "VD-07283",
+        "senseId": "VDO-261115-C1-F05-0046"
+      },
+      {
+        "wordId": "VD-07297",
+        "senseId": "VDO-261115-C1-F05-0059"
+      },
+      {
+        "wordId": "VD-07310",
+        "senseId": "VDO-261115-C1-F05-0071"
+      },
+      {
+        "wordId": "VD-07318",
+        "senseId": "VDO-261115-C1-F05-0079"
+      },
+      {
+        "wordId": "VD-07321",
+        "senseId": "VDO-261115-C1-F05-0082"
+      },
+      {
+        "wordId": "VD-07322",
+        "senseId": "VDO-261115-C1-F05-0083"
+      },
+      {
+        "wordId": "VD-07323",
+        "senseId": "VDO-261115-C1-F05-0084"
+      },
+      {
+        "wordId": "VD-07335",
+        "senseId": "VDO-261115-C1-F06-0013"
+      },
+      {
+        "wordId": "VD-07338",
+        "senseId": "VDO-261115-C1-F06-0016"
+      },
+      {
+        "wordId": "VD-07339",
+        "senseId": "VDO-261115-C1-F06-0017"
+      },
+      {
+        "wordId": "VD-07340",
+        "senseId": "VDO-261115-C1-F06-0018"
+      },
+      {
+        "wordId": "VD-07346",
+        "senseId": "VDO-261115-C1-F06-0024"
+      },
+      {
+        "wordId": "VD-07347",
+        "senseId": "VDO-261115-C1-F06-0025"
+      },
+      {
+        "wordId": "VD-07349",
+        "senseId": "VDO-261115-C1-F06-0027"
+      },
+      {
+        "wordId": "VD-07349",
+        "senseId": "VDO-261115-C1-F06-0028"
+      },
+      {
+        "wordId": "VD-07350",
+        "senseId": "VDO-261115-C1-F06-0029"
+      },
+      {
+        "wordId": "VD-07350",
+        "senseId": "VDO-261115-C1-F06-0030"
+      },
+      {
+        "wordId": "VD-07351",
+        "senseId": "VDO-261115-C1-F06-0031"
+      },
+      {
+        "wordId": "VD-07354",
+        "senseId": "VDO-261115-C1-F06-0033"
+      },
+      {
+        "wordId": "VD-07356",
+        "senseId": "VDO-261115-C1-F06-0036"
+      },
+      {
+        "wordId": "VD-07357",
+        "senseId": "VDO-261115-C1-F06-0037"
+      },
+      {
+        "wordId": "VD-07362",
+        "senseId": "VDO-261115-C1-F06-0041"
+      },
+      {
+        "wordId": "VD-07364",
+        "senseId": "VDO-261115-C1-F06-0043"
+      },
+      {
+        "wordId": "VD-07374",
+        "senseId": "VDO-261115-C1-F06-0053"
+      },
+      {
+        "wordId": "VD-07375",
+        "senseId": "VDO-261115-C1-F06-0054"
+      },
+      {
+        "wordId": "VD-07384",
+        "senseId": "VDO-261115-C1-F06-0063"
+      },
+      {
+        "wordId": "VD-07386",
+        "senseId": "VDO-261115-C1-F06-0065"
+      },
+      {
+        "wordId": "VD-07387",
+        "senseId": "VDO-261115-C1-F06-0066"
+      },
+      {
+        "wordId": "VD-07392",
+        "senseId": "VDO-261115-C1-F06-0072"
+      },
+      {
+        "wordId": "VD-07396",
+        "senseId": "VDO-261115-C1-F06-0076"
+      },
+      {
+        "wordId": "VD-07397",
+        "senseId": "VDO-261115-C1-F06-0077"
+      },
+      {
+        "wordId": "VD-07400",
+        "senseId": "VDO-261115-C1-F06-0080"
+      },
+      {
+        "wordId": "VD-07402",
+        "senseId": "VDO-261115-C1-F06-0082"
+      },
+      {
+        "wordId": "VD-07404",
+        "senseId": "VDO-261115-C1-F06-0084"
+      },
+      {
+        "wordId": "VD-07406",
+        "senseId": "VDO-261115-C1-F06-0086"
+      },
+      {
+        "wordId": "VD-07407",
+        "senseId": "VDO-261115-C1-F06-0087"
+      },
+      {
+        "wordId": "VD-07410",
+        "senseId": "VDO-261115-C1-F06-0091"
+      },
+      {
+        "wordId": "VD-07411",
+        "senseId": "VDO-261115-C1-F06-0092"
+      },
+      {
+        "wordId": "VD-07412",
+        "senseId": "VDO-261115-C1-F06-0093"
+      },
+      {
+        "wordId": "VD-07413",
+        "senseId": "VDO-261115-C1-F06-0094"
+      },
+      {
+        "wordId": "VD-07414",
+        "senseId": "VDO-261115-C1-F06-0095"
+      },
+      {
+        "wordId": "VD-07415",
+        "senseId": "VDO-261115-C1-F06-0096"
+      },
+      {
+        "wordId": "VD-07416",
+        "senseId": "VDO-261115-C1-F06-0097"
+      },
+      {
+        "wordId": "VD-07417",
+        "senseId": "VDO-261115-C1-F06-0098"
+      },
+      {
+        "wordId": "VD-07419",
+        "senseId": "VDO-261115-C1-F07-0002"
+      },
+      {
+        "wordId": "VD-07421",
+        "senseId": "VDO-261115-C1-F07-0004"
+      },
+      {
+        "wordId": "VD-07422",
+        "senseId": "VDO-261115-C1-F07-0005"
+      },
+      {
+        "wordId": "VD-07435",
+        "senseId": "VDO-261115-C1-F07-0018"
+      },
+      {
+        "wordId": "VD-07437",
+        "senseId": "VDO-261115-C1-F07-0020"
+      },
+      {
+        "wordId": "VD-07442",
+        "senseId": "VDO-261115-C1-F07-0026"
+      },
+      {
+        "wordId": "VD-07443",
+        "senseId": "VDO-261115-C1-F07-0027"
+      },
+      {
+        "wordId": "VD-07443",
+        "senseId": "VDO-261115-C1-F07-0028"
+      },
+      {
+        "wordId": "VD-07449",
+        "senseId": "VDO-261115-C1-F07-0034"
+      },
+      {
+        "wordId": "VD-07451",
+        "senseId": "VDO-261115-C1-F07-0037"
+      },
+      {
+        "wordId": "VD-07453",
+        "senseId": "VDO-261115-C1-F07-0040"
+      },
+      {
+        "wordId": "VD-07454",
+        "senseId": "VDO-261115-C1-F07-0041"
+      },
+      {
+        "wordId": "VD-07455",
+        "senseId": "VDO-261115-C1-F07-0042"
+      },
+      {
+        "wordId": "VD-07459",
+        "senseId": "VDO-261115-C1-F07-0047"
+      },
+      {
+        "wordId": "VD-07460",
+        "senseId": "VDO-261115-C1-F07-0048"
+      },
+      {
+        "wordId": "VD-07462",
+        "senseId": "VDO-261115-C1-F07-0050"
+      },
+      {
+        "wordId": "VD-07464",
+        "senseId": "VDO-261115-C1-F07-0052"
+      },
+      {
+        "wordId": "VD-07465",
+        "senseId": "VDO-261115-C1-F07-0054"
+      },
+      {
+        "wordId": "VD-07467",
+        "senseId": "VDO-261115-C1-F07-0055"
+      },
+      {
+        "wordId": "VD-07468",
+        "senseId": "VDO-261115-C1-F07-0056"
+      },
+      {
+        "wordId": "VD-07472",
+        "senseId": "VDO-261115-C1-F07-0060"
+      },
+      {
+        "wordId": "VD-07480",
+        "senseId": "VDO-261115-C1-F08-0007"
+      },
+      {
+        "wordId": "VD-07481",
+        "senseId": "VDO-261115-C1-F08-0008"
+      },
+      {
+        "wordId": "VD-07485",
+        "senseId": "VDO-261115-C1-F08-0012"
+      },
+      {
+        "wordId": "VD-07487",
+        "senseId": "VDO-261115-C1-F08-0014"
+      },
+      {
+        "wordId": "VD-07490",
+        "senseId": "VDO-261115-C1-F08-0017"
+      },
+      {
+        "wordId": "VD-07491",
+        "senseId": "VDO-261115-C1-F08-0018"
+      },
+      {
+        "wordId": "VD-07492",
+        "senseId": "VDO-261115-C1-F08-0019"
+      },
+      {
+        "wordId": "VD-07494",
+        "senseId": "VDO-261115-C1-F08-0021"
+      },
+      {
+        "wordId": "VD-07499",
+        "senseId": "VDO-261115-C1-F08-0027"
+      },
+      {
+        "wordId": "VD-07500",
+        "senseId": "VDO-261115-C1-F08-0028"
+      },
+      {
+        "wordId": "VD-07505",
+        "senseId": "VDO-261115-C1-F08-0033"
+      },
+      {
+        "wordId": "VD-07506",
+        "senseId": "VDO-261115-C1-F08-0034"
+      },
+      {
+        "wordId": "VD-07510",
+        "senseId": "VDO-261115-C1-F08-0037"
+      },
+      {
+        "wordId": "VD-07511",
+        "senseId": "VDO-261115-C1-F08-0038"
+      },
+      {
+        "wordId": "VD-07512",
+        "senseId": "VDO-261115-C1-F08-0039"
+      },
+      {
+        "wordId": "VD-07513",
+        "senseId": "VDO-261115-C1-F08-0040"
+      },
+      {
+        "wordId": "VD-07514",
+        "senseId": "VDO-261115-C1-F08-0041"
+      },
+      {
+        "wordId": "VD-07515",
+        "senseId": "VDO-261115-C1-F08-0042"
+      },
+      {
+        "wordId": "VD-07516",
+        "senseId": "VDO-261115-C1-F08-0043"
+      },
+      {
+        "wordId": "VD-07518",
+        "senseId": "VDO-261115-C1-F08-0045"
+      },
+      {
+        "wordId": "VD-07521",
+        "senseId": "VDO-261115-C1-F09-0001"
+      },
+      {
+        "wordId": "VD-07521",
+        "senseId": "VDO-261115-C1-F09-0002"
+      },
+      {
+        "wordId": "VD-07526",
+        "senseId": "VDO-261115-C1-F09-0007"
+      },
+      {
+        "wordId": "VD-07531",
+        "senseId": "VDO-261115-C1-F09-0012"
+      },
+      {
+        "wordId": "VD-07540",
+        "senseId": "VDO-261115-C1-F09-0023"
+      },
+      {
+        "wordId": "VD-07543",
+        "senseId": "VDO-261115-C1-F09-0024"
+      },
+      {
+        "wordId": "VD-07544",
+        "senseId": "VDO-261115-C1-F09-0025"
+      },
+      {
+        "wordId": "VD-07547",
+        "senseId": "VDO-261115-C1-F09-0028"
+      },
+      {
+        "wordId": "VD-07549",
+        "senseId": "VDO-261115-C1-F09-0029"
+      },
+      {
+        "wordId": "VD-07556",
+        "senseId": "VDO-261115-C1-F09-0034"
+      },
+      {
+        "wordId": "VD-07559",
+        "senseId": "VDO-261115-C1-F09-0037"
+      },
+      {
+        "wordId": "VD-07559",
+        "senseId": "VDO-261115-C1-F09-0038"
+      },
+      {
+        "wordId": "VD-07560",
+        "senseId": "VDO-261115-C1-F09-0039"
+      },
+      {
+        "wordId": "VD-07560",
+        "senseId": "VDO-261115-C1-F09-0040"
+      },
+      {
+        "wordId": "VD-07563",
+        "senseId": "VDO-261115-C1-F09-0043"
+      },
+      {
+        "wordId": "VD-07564",
+        "senseId": "VDO-261115-C1-F09-0045"
+      },
+      {
+        "wordId": "VD-07565",
+        "senseId": "VDO-261115-C1-F09-0046"
+      },
+      {
+        "wordId": "VD-07569",
+        "senseId": "VDO-261115-C1-F09-0050"
+      },
+      {
+        "wordId": "VD-07570",
+        "senseId": "VDO-261115-C1-F09-0051"
+      },
+      {
+        "wordId": "VD-07572",
+        "senseId": "VDO-261115-C1-F09-0053"
+      },
+      {
+        "wordId": "VD-07573",
+        "senseId": "VDO-261115-C1-F09-0054"
+      },
+      {
+        "wordId": "VD-07574",
+        "senseId": "VDO-261115-C1-F09-0055"
+      },
+      {
+        "wordId": "VD-07582",
+        "senseId": "VDO-261115-C1-F10-0002"
+      },
+      {
+        "wordId": "VD-07585",
+        "senseId": "VDO-261115-C1-F10-0005"
+      },
+      {
+        "wordId": "VD-07588",
+        "senseId": "VDO-261115-C1-F10-0009"
+      },
+      {
+        "wordId": "VD-07589",
+        "senseId": "VDO-261115-C1-F10-0010"
+      },
+      {
+        "wordId": "VD-07591",
+        "senseId": "VDO-261115-C1-F10-0012"
+      },
+      {
+        "wordId": "VD-07593",
+        "senseId": "VDO-261115-C1-F10-0014"
+      },
+      {
+        "wordId": "VD-07594",
+        "senseId": "VDO-261115-C1-F10-0015"
+      },
+      {
+        "wordId": "VD-07595",
+        "senseId": "VDO-261115-C1-F10-0016"
+      },
+      {
+        "wordId": "VD-07598",
+        "senseId": "VDO-261115-C1-F10-0019"
+      },
+      {
+        "wordId": "VD-07598",
+        "senseId": "VDO-261115-C1-F10-0020"
+      },
+      {
+        "wordId": "VD-07600",
+        "senseId": "VDO-261115-C1-F10-0022"
+      },
+      {
+        "wordId": "VD-07602",
+        "senseId": "VDO-261115-C1-F10-0024"
+      },
+      {
+        "wordId": "VD-07603",
+        "senseId": "VDO-261115-C1-F10-0026"
+      },
+      {
+        "wordId": "VD-07605",
+        "senseId": "VDO-261115-C1-F10-0029"
+      },
+      {
+        "wordId": "VD-07607",
+        "senseId": "VDO-261115-C1-F10-0031"
+      },
+      {
+        "wordId": "VD-07608",
+        "senseId": "VDO-261115-C1-F10-0032"
+      },
+      {
+        "wordId": "VD-07610",
+        "senseId": "VDO-261115-C1-F10-0034"
+      },
+      {
+        "wordId": "VD-07613",
+        "senseId": "VDO-261115-C1-F10-0037"
+      },
+      {
+        "wordId": "VD-07613",
+        "senseId": "VDO-261115-C1-F10-0038"
+      },
+      {
+        "wordId": "VD-07616",
+        "senseId": "VDO-261115-C1-F10-0041"
+      },
+      {
+        "wordId": "VD-07617",
+        "senseId": "VDO-261115-C1-F10-0042"
+      },
+      {
+        "wordId": "VD-07620",
+        "senseId": "VDO-261115-C1-F10-0044"
+      },
+      {
+        "wordId": "VD-07621",
+        "senseId": "VDO-261115-C1-F10-0045"
+      },
+      {
+        "wordId": "VD-07623",
+        "senseId": "VDO-261115-C1-F10-0047"
+      },
+      {
+        "wordId": "VD-07624",
+        "senseId": "VDO-261115-C1-F10-0048"
+      },
+      {
+        "wordId": "VD-07624",
+        "senseId": "VDO-261115-C1-F10-0049"
+      },
+      {
+        "wordId": "VD-07625",
+        "senseId": "VDO-261115-C1-F10-0050"
+      },
+      {
+        "wordId": "VD-07625",
+        "senseId": "VDO-261115-C1-F10-0051"
+      },
+      {
+        "wordId": "VD-07627",
+        "senseId": "VDO-261115-C1-F10-0053"
+      },
+      {
+        "wordId": "VD-07627",
+        "senseId": "VDO-261115-C1-F10-0054"
+      },
+      {
+        "wordId": "VD-07634",
+        "senseId": "VDO-261115-C1-F11-0005"
+      },
+      {
+        "wordId": "VD-07635",
+        "senseId": "VDO-261115-C1-F11-0006"
+      },
+      {
+        "wordId": "VD-07637",
+        "senseId": "VDO-261115-C1-F11-0008"
+      },
+      {
+        "wordId": "VD-07639",
+        "senseId": "VDO-261115-C1-F11-0012"
+      },
+      {
+        "wordId": "VD-07639",
+        "senseId": "VDO-261115-C1-F11-0013"
+      },
+      {
+        "wordId": "VD-07640",
+        "senseId": "VDO-261115-C1-F11-0014"
+      },
+      {
+        "wordId": "VD-07641",
+        "senseId": "VDO-261115-C1-F11-0015"
+      },
+      {
+        "wordId": "VD-07643",
+        "senseId": "VDO-261115-C1-F11-0016"
+      },
+      {
+        "wordId": "VD-07645",
+        "senseId": "VDO-261115-C1-F11-0018"
+      },
+      {
+        "wordId": "VD-07646",
+        "senseId": "VDO-261115-C1-F11-0019"
+      },
+      {
+        "wordId": "VD-07647",
+        "senseId": "VDO-261115-C1-F11-0020"
+      },
+      {
+        "wordId": "VD-07648",
+        "senseId": "VDO-261115-C1-F11-0021"
+      },
+      {
+        "wordId": "VD-07649",
+        "senseId": "VDO-261115-C1-F11-0022"
+      },
+      {
+        "wordId": "VD-07651",
+        "senseId": "VDO-261115-C1-F11-0024"
+      },
+      {
+        "wordId": "VD-07652",
+        "senseId": "VDO-261115-C1-F11-0025"
+      },
+      {
+        "wordId": "VD-07653",
+        "senseId": "VDO-261115-C1-F11-0026"
+      },
+      {
+        "wordId": "VD-07654",
+        "senseId": "VDO-261115-C1-F11-0027"
+      },
+      {
+        "wordId": "VD-07655",
+        "senseId": "VDO-261115-C1-F11-0028"
+      },
+      {
+        "wordId": "VD-07656",
+        "senseId": "VDO-261115-C1-F11-0030"
+      },
+      {
+        "wordId": "VD-07659",
+        "senseId": "VDO-261115-C1-F11-0033"
+      },
+      {
+        "wordId": "VD-07661",
+        "senseId": "VDO-261115-C1-F11-0035"
+      },
+      {
+        "wordId": "VD-07663",
+        "senseId": "VDO-261115-C1-F11-0037"
+      },
+      {
+        "wordId": "VD-07665",
+        "senseId": "VDO-261115-C1-F11-0038"
+      },
+      {
+        "wordId": "VD-07670",
+        "senseId": "VDO-261115-C1-F11-0044"
+      },
+      {
+        "wordId": "VD-07674",
+        "senseId": "VDO-261115-C1-F11-0048"
+      },
+      {
+        "wordId": "VD-07675",
+        "senseId": "VDO-261115-C1-F11-0050"
+      },
+      {
+        "wordId": "VD-07675",
+        "senseId": "VDO-261115-C1-F11-0051"
+      },
+      {
+        "wordId": "VD-07676",
+        "senseId": "VDO-261115-C1-F11-0052"
+      },
+      {
+        "wordId": "VD-07677",
+        "senseId": "VDO-261115-C1-F11-0053"
+      },
+      {
+        "wordId": "VD-07678",
+        "senseId": "VDO-261115-C1-F11-0054"
+      },
+      {
+        "wordId": "VD-07679",
+        "senseId": "VDO-261115-C1-F11-0055"
+      },
+      {
+        "wordId": "VD-07683",
+        "senseId": "VDO-261115-C1-F11-0059"
+      },
+      {
+        "wordId": "VD-07685",
+        "senseId": "VDO-261115-C1-F11-0061"
+      },
+      {
+        "wordId": "VD-07688",
+        "senseId": "VDO-261115-C1-F11-0064"
+      },
+      {
+        "wordId": "VD-07689",
+        "senseId": "VDO-261115-C1-F11-0065"
+      },
+      {
+        "wordId": "VD-07690",
+        "senseId": "VDO-261115-C1-F11-0066"
+      },
+      {
+        "wordId": "VD-07691",
+        "senseId": "VDO-261115-C1-F11-0067"
+      },
+      {
+        "wordId": "VD-07693",
+        "senseId": "VDO-261115-C1-F12-0002"
+      },
+      {
+        "wordId": "VD-07697",
+        "senseId": "VDO-261115-C1-F12-0007"
+      },
+      {
+        "wordId": "VD-07698",
+        "senseId": "VDO-261115-C1-F12-0008"
+      },
+      {
+        "wordId": "VD-07701",
+        "senseId": "VDO-261115-C1-F12-0011"
+      },
+      {
+        "wordId": "VD-07703",
+        "senseId": "VDO-261115-C1-F12-0013"
+      },
+      {
+        "wordId": "VD-07704",
+        "senseId": "VDO-261115-C1-F12-0014"
+      },
+      {
+        "wordId": "VD-07705",
+        "senseId": "VDO-261115-C1-F12-0015"
+      },
+      {
+        "wordId": "VD-07708",
+        "senseId": "VDO-261115-C1-F12-0018"
+      },
+      {
+        "wordId": "VD-07709",
+        "senseId": "VDO-261115-C1-F12-0019"
+      },
+      {
+        "wordId": "VD-07709",
+        "senseId": "VDO-261115-C1-F12-0020"
+      },
+      {
+        "wordId": "VD-07714",
+        "senseId": "VDO-261115-C1-F12-0025"
+      },
+      {
+        "wordId": "VD-07716",
+        "senseId": "VDO-261115-C1-F12-0027"
+      },
+      {
+        "wordId": "VD-07717",
+        "senseId": "VDO-261115-C1-F12-0028"
+      },
+      {
+        "wordId": "VD-07721",
+        "senseId": "VDO-261115-C1-F12-0032"
+      },
+      {
+        "wordId": "VD-07722",
+        "senseId": "VDO-261115-C1-F12-0033"
+      },
+      {
+        "wordId": "VD-07723",
+        "senseId": "VDO-261115-C1-F12-0034"
+      },
+      {
+        "wordId": "VD-07724",
+        "senseId": "VDO-261115-C1-F12-0035"
+      },
+      {
+        "wordId": "VD-07725",
+        "senseId": "VDO-261115-C1-F12-0036"
+      },
+      {
+        "wordId": "VD-07727",
+        "senseId": "VDO-261115-C1-F12-0038"
+      },
+      {
+        "wordId": "VD-07728",
+        "senseId": "VDO-261115-C1-F12-0039"
+      },
+      {
+        "wordId": "VD-07732",
+        "senseId": "VDO-261115-C1-F12-0042"
+      },
+      {
+        "wordId": "VD-07733",
+        "senseId": "VDO-261115-C1-F12-0043"
+      },
+      {
+        "wordId": "VD-07735",
+        "senseId": "VDO-261115-C1-F12-0045"
+      },
+      {
+        "wordId": "VD-07739",
+        "senseId": "VDO-261115-C1-F12-0049"
+      },
+      {
+        "wordId": "VD-07740",
+        "senseId": "VDO-261115-C1-F12-0050"
+      },
+      {
+        "wordId": "VD-07744",
+        "senseId": "VDO-261115-C1-F12-0054"
+      },
+      {
+        "wordId": "VD-07746",
+        "senseId": "VDO-261115-C1-F12-0056"
+      },
+      {
+        "wordId": "VD-07755",
+        "senseId": "VDO-261115-C1-F12-0065"
+      },
+      {
+        "wordId": "VD-07757",
+        "senseId": "VDO-261115-C1-F12-0067"
+      },
+      {
+        "wordId": "VD-07760",
+        "senseId": "VDO-261115-C1-F12-0069"
+      },
+      {
+        "wordId": "VD-07763",
+        "senseId": "VDO-261115-C1-F12-0072"
+      },
+      {
+        "wordId": "VD-07764",
+        "senseId": "VDO-261115-C1-F12-0073"
+      },
+      {
+        "wordId": "VD-07768",
+        "senseId": "VDO-261115-C1-F12-0077"
+      }
+    ],
+    "collocationsMissingByBatch": {
+      "0": 91,
+      "1": 138,
+      "2": 328,
+      "3": 76,
+      "4": 137,
+      "5": 57,
+      "6": 72,
+      "7": 94,
+      "8": 99,
+      "9": 96,
+      "10": 35,
+      "11": 114,
+      "12": 90,
+      "13": 188,
+      "14": 61,
+      "15": 64,
+      "16": 71,
+      "17": 82,
+      "18": 69,
+      "19": 53,
+      "20": 57,
+      "21": 67,
+      "22": 28,
+      "23": 30,
+      "24": 47,
+      "25": 32,
+      "26": 43,
+      "27": 65,
+      "28": 42,
+      "29": 66,
+      "30": 256,
+      "31": 154,
+      "32": 146,
+      "33": 183,
+      "34": 199,
+      "35": 186,
+      "36": 206,
+      "37": 114,
+      "38": 117,
+      "39": 107,
+      "40": 109,
+      "41": 105,
+      "42": 117,
+      "43": 66,
+      "44": 120,
+      "45": 152,
+      "46": 138,
+      "47": 105,
+      "48": 190,
+      "59": 55
+    }
+  },
+  "limitations": [
+    "All entries remain draft-unreviewed; independent human linguistic review is not complete.",
+    "56 master IDs have separate senses in multiple active files; sense-level semantic duplication needs editorial review.",
+    "Antonyms need not be present for senses without a natural opposite.",
+    "Supplemental alternative draft files are excluded from active counts."
+  ]
+}

@@ -1,0 +1,1292 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-unreviewed",
+  "scope": "word-family",
+  "description": "Additional N–R lexical families with explicit Japanese meaning and POS. Prior known unordered pairs excluded.",
+  "families": [
+    [
+      {
+        "word": "nasal",
+        "partOfSpeech": "形容詞",
+        "meaning": "鼻の"
+      },
+      {
+        "word": "nasally",
+        "partOfSpeech": "副詞",
+        "meaning": "鼻にかけて"
+      }
+    ],
+    [
+      {
+        "word": "neglect",
+        "partOfSpeech": "動詞",
+        "meaning": "怠る"
+      },
+      {
+        "word": "neglected",
+        "partOfSpeech": "形容詞",
+        "meaning": "放置された"
+      }
+    ],
+    [
+      {
+        "word": "negotiate",
+        "partOfSpeech": "動詞",
+        "meaning": "交渉する"
+      },
+      {
+        "word": "nonnegotiable",
+        "partOfSpeech": "形容詞",
+        "meaning": "交渉の余地がない"
+      }
+    ],
+    [
+      {
+        "word": "network",
+        "partOfSpeech": "動詞",
+        "meaning": "人脈を作る・接続する"
+      },
+      {
+        "word": "networking",
+        "partOfSpeech": "名詞",
+        "meaning": "人脈づくり・ネットワーク接続"
+      }
+    ],
+    [
+      {
+        "word": "neurological",
+        "partOfSpeech": "形容詞",
+        "meaning": "神経学の"
+      },
+      {
+        "word": "neurologically",
+        "partOfSpeech": "副詞",
+        "meaning": "神経学的に"
+      }
+    ],
+    [
+      {
+        "word": "neuron",
+        "partOfSpeech": "名詞",
+        "meaning": "神経細胞"
+      },
+      {
+        "word": "neuronal",
+        "partOfSpeech": "形容詞",
+        "meaning": "神経細胞の"
+      }
+    ],
+    [
+      {
+        "word": "neurosis",
+        "partOfSpeech": "名詞",
+        "meaning": "神経症"
+      },
+      {
+        "word": "neurotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "神経症的な"
+      }
+    ],
+    [
+      {
+        "word": "neutralize",
+        "partOfSpeech": "動詞",
+        "meaning": "中和する"
+      },
+      {
+        "word": "neutralizer",
+        "partOfSpeech": "名詞",
+        "meaning": "中和剤"
+      }
+    ],
+    [
+      {
+        "word": "nihilism",
+        "partOfSpeech": "名詞",
+        "meaning": "虚無主義"
+      },
+      {
+        "word": "nihilist",
+        "partOfSpeech": "名詞",
+        "meaning": "虚無主義者"
+      },
+      {
+        "word": "nihilistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "虚無主義的な"
+      }
+    ],
+    [
+      {
+        "word": "nonsense",
+        "partOfSpeech": "名詞",
+        "meaning": "無意味なこと"
+      },
+      {
+        "word": "nonsensical",
+        "partOfSpeech": "形容詞",
+        "meaning": "無意味な"
+      }
+    ],
+    [
+      {
+        "word": "norm",
+        "partOfSpeech": "名詞",
+        "meaning": "標準・規範"
+      },
+      {
+        "word": "normative",
+        "partOfSpeech": "形容詞",
+        "meaning": "規範的な"
+      }
+    ],
+    [
+      {
+        "word": "normalize",
+        "partOfSpeech": "動詞",
+        "meaning": "正常化する"
+      },
+      {
+        "word": "normalizer",
+        "partOfSpeech": "名詞",
+        "meaning": "正規化装置"
+      }
+    ],
+    [
+      {
+        "word": "normalize",
+        "partOfSpeech": "動詞",
+        "meaning": "正常化する"
+      },
+      {
+        "word": "renormalize",
+        "partOfSpeech": "動詞",
+        "meaning": "再正規化する"
+      }
+    ],
+    [
+      {
+        "word": "nullify",
+        "partOfSpeech": "動詞",
+        "meaning": "無効にする"
+      },
+      {
+        "word": "nullification",
+        "partOfSpeech": "名詞",
+        "meaning": "無効化"
+      }
+    ],
+    [
+      {
+        "word": "numeracy",
+        "partOfSpeech": "名詞",
+        "meaning": "計算能力"
+      },
+      {
+        "word": "innumeracy",
+        "partOfSpeech": "名詞",
+        "meaning": "計算能力の欠如"
+      }
+    ],
+    [
+      {
+        "word": "numeral",
+        "partOfSpeech": "名詞",
+        "meaning": "数字"
+      },
+      {
+        "word": "numerical",
+        "partOfSpeech": "形容詞",
+        "meaning": "数値の"
+      },
+      {
+        "word": "numerically",
+        "partOfSpeech": "副詞",
+        "meaning": "数値的に"
+      }
+    ],
+    [
+      {
+        "word": "nutrition",
+        "partOfSpeech": "名詞",
+        "meaning": "栄養"
+      },
+      {
+        "word": "undernutrition",
+        "partOfSpeech": "名詞",
+        "meaning": "栄養不足"
+      }
+    ],
+    [
+      {
+        "word": "obese",
+        "partOfSpeech": "形容詞",
+        "meaning": "肥満の"
+      },
+      {
+        "word": "obesity",
+        "partOfSpeech": "名詞",
+        "meaning": "肥満"
+      }
+    ],
+    [
+      {
+        "word": "obfuscate",
+        "partOfSpeech": "動詞",
+        "meaning": "分かりにくくする"
+      },
+      {
+        "word": "obfuscation",
+        "partOfSpeech": "名詞",
+        "meaning": "難読化"
+      }
+    ],
+    [
+      {
+        "word": "objectify",
+        "partOfSpeech": "動詞",
+        "meaning": "物のように扱う"
+      },
+      {
+        "word": "objectification",
+        "partOfSpeech": "名詞",
+        "meaning": "客体化"
+      }
+    ],
+    [
+      {
+        "word": "oblique",
+        "partOfSpeech": "形容詞",
+        "meaning": "斜めの・遠回しの"
+      },
+      {
+        "word": "obliquely",
+        "partOfSpeech": "副詞",
+        "meaning": "斜めに・遠回しに"
+      }
+    ],
+    [
+      {
+        "word": "obliterate",
+        "partOfSpeech": "動詞",
+        "meaning": "消し去る"
+      },
+      {
+        "word": "obliteration",
+        "partOfSpeech": "名詞",
+        "meaning": "抹消"
+      }
+    ],
+    [
+      {
+        "word": "obscene",
+        "partOfSpeech": "形容詞",
+        "meaning": "わいせつな"
+      },
+      {
+        "word": "obscenity",
+        "partOfSpeech": "名詞",
+        "meaning": "わいせつさ"
+      },
+      {
+        "word": "obscenely",
+        "partOfSpeech": "副詞",
+        "meaning": "わいせつに・法外に"
+      }
+    ],
+    [
+      {
+        "word": "observable",
+        "partOfSpeech": "形容詞",
+        "meaning": "観察可能な"
+      },
+      {
+        "word": "observability",
+        "partOfSpeech": "名詞",
+        "meaning": "観測可能性"
+      }
+    ],
+    [
+      {
+        "word": "observational",
+        "partOfSpeech": "形容詞",
+        "meaning": "観察の"
+      },
+      {
+        "word": "observationally",
+        "partOfSpeech": "副詞",
+        "meaning": "観察によって"
+      }
+    ],
+    [
+      {
+        "word": "obstinate",
+        "partOfSpeech": "形容詞",
+        "meaning": "頑固な"
+      },
+      {
+        "word": "obstinacy",
+        "partOfSpeech": "名詞",
+        "meaning": "頑固さ"
+      },
+      {
+        "word": "obstinately",
+        "partOfSpeech": "副詞",
+        "meaning": "頑固に"
+      }
+    ],
+    [
+      {
+        "word": "octagon",
+        "partOfSpeech": "名詞",
+        "meaning": "八角形"
+      },
+      {
+        "word": "octagonal",
+        "partOfSpeech": "形容詞",
+        "meaning": "八角形の"
+      }
+    ],
+    [
+      {
+        "word": "officially",
+        "partOfSpeech": "副詞",
+        "meaning": "正式に"
+      },
+      {
+        "word": "unofficially",
+        "partOfSpeech": "副詞",
+        "meaning": "非公式に"
+      }
+    ],
+    [
+      {
+        "word": "omnivore",
+        "partOfSpeech": "名詞",
+        "meaning": "雑食動物"
+      },
+      {
+        "word": "omnivorous",
+        "partOfSpeech": "形容詞",
+        "meaning": "雑食性の"
+      }
+    ],
+    [
+      {
+        "word": "operable",
+        "partOfSpeech": "形容詞",
+        "meaning": "操作可能な"
+      },
+      {
+        "word": "operability",
+        "partOfSpeech": "名詞",
+        "meaning": "操作性"
+      }
+    ],
+    [
+      {
+        "word": "optical",
+        "partOfSpeech": "形容詞",
+        "meaning": "光学の"
+      },
+      {
+        "word": "optician",
+        "partOfSpeech": "名詞",
+        "meaning": "眼鏡技師"
+      }
+    ],
+    [
+      {
+        "word": "organize",
+        "partOfSpeech": "動詞",
+        "meaning": "組織する"
+      },
+      {
+        "word": "disorganize",
+        "partOfSpeech": "動詞",
+        "meaning": "混乱させる"
+      },
+      {
+        "word": "disorganization",
+        "partOfSpeech": "名詞",
+        "meaning": "混乱"
+      }
+    ],
+    [
+      {
+        "word": "disorganize",
+        "partOfSpeech": "動詞",
+        "meaning": "混乱させる"
+      },
+      {
+        "word": "disorganization",
+        "partOfSpeech": "名詞",
+        "meaning": "混乱"
+      }
+    ],
+    [
+      {
+        "word": "orientation",
+        "partOfSpeech": "名詞",
+        "meaning": "方向づけ・研修"
+      },
+      {
+        "word": "disorientation",
+        "partOfSpeech": "名詞",
+        "meaning": "方向感覚の喪失"
+      }
+    ],
+    [
+      {
+        "word": "osmosis",
+        "partOfSpeech": "名詞",
+        "meaning": "浸透"
+      },
+      {
+        "word": "osmotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "浸透の"
+      }
+    ],
+    [
+      {
+        "word": "overcook",
+        "partOfSpeech": "動詞",
+        "meaning": "加熱しすぎる"
+      },
+      {
+        "word": "overcooked",
+        "partOfSpeech": "形容詞",
+        "meaning": "加熱しすぎた"
+      }
+    ],
+    [
+      {
+        "word": "overpopulate",
+        "partOfSpeech": "動詞",
+        "meaning": "人口過密にする"
+      },
+      {
+        "word": "overpopulation",
+        "partOfSpeech": "名詞",
+        "meaning": "人口過密"
+      }
+    ],
+    [
+      {
+        "word": "oxygenate",
+        "partOfSpeech": "動詞",
+        "meaning": "酸素を供給する"
+      },
+      {
+        "word": "oxygenation",
+        "partOfSpeech": "名詞",
+        "meaning": "酸素供給"
+      }
+    ],
+    [
+      {
+        "word": "pack",
+        "partOfSpeech": "動詞",
+        "meaning": "詰める"
+      },
+      {
+        "word": "package",
+        "partOfSpeech": "名詞",
+        "meaning": "包み・パッケージ"
+      }
+    ],
+    [
+      {
+        "word": "package",
+        "partOfSpeech": "動詞",
+        "meaning": "包装する"
+      },
+      {
+        "word": "packaging",
+        "partOfSpeech": "名詞",
+        "meaning": "包装・包装材"
+      }
+    ],
+    [
+      {
+        "word": "parameter",
+        "partOfSpeech": "名詞",
+        "meaning": "変数・パラメーター"
+      },
+      {
+        "word": "parameterize",
+        "partOfSpeech": "動詞",
+        "meaning": "パラメーター化する"
+      }
+    ],
+    [
+      {
+        "word": "paranoia",
+        "partOfSpeech": "名詞",
+        "meaning": "被害妄想"
+      },
+      {
+        "word": "paranoid",
+        "partOfSpeech": "形容詞",
+        "meaning": "被害妄想的な"
+      }
+    ],
+    [
+      {
+        "word": "parasitic",
+        "partOfSpeech": "形容詞",
+        "meaning": "寄生性の"
+      },
+      {
+        "word": "parasitically",
+        "partOfSpeech": "副詞",
+        "meaning": "寄生して"
+      }
+    ],
+    [
+      {
+        "word": "parenthesis",
+        "partOfSpeech": "名詞",
+        "meaning": "挿入句・丸括弧"
+      },
+      {
+        "word": "parenthetical",
+        "partOfSpeech": "形容詞",
+        "meaning": "挿入句の"
+      }
+    ],
+    [
+      {
+        "word": "passable",
+        "partOfSpeech": "形容詞",
+        "meaning": "まずまずの・通行可能な"
+      },
+      {
+        "word": "impassable",
+        "partOfSpeech": "形容詞",
+        "meaning": "通行できない"
+      }
+    ],
+    [
+      {
+        "word": "pasteurize",
+        "partOfSpeech": "動詞",
+        "meaning": "低温殺菌する"
+      },
+      {
+        "word": "pasteurization",
+        "partOfSpeech": "名詞",
+        "meaning": "低温殺菌"
+      }
+    ],
+    [
+      {
+        "word": "periphery",
+        "partOfSpeech": "名詞",
+        "meaning": "周辺"
+      },
+      {
+        "word": "peripheral",
+        "partOfSpeech": "形容詞",
+        "meaning": "周辺の"
+      }
+    ],
+    [
+      {
+        "word": "personify",
+        "partOfSpeech": "動詞",
+        "meaning": "擬人化する"
+      },
+      {
+        "word": "personification",
+        "partOfSpeech": "名詞",
+        "meaning": "擬人化"
+      }
+    ],
+    [
+      {
+        "word": "perspire",
+        "partOfSpeech": "動詞",
+        "meaning": "汗をかく"
+      },
+      {
+        "word": "perspiration",
+        "partOfSpeech": "名詞",
+        "meaning": "発汗・汗"
+      }
+    ],
+    [
+      {
+        "word": "pervasive",
+        "partOfSpeech": "形容詞",
+        "meaning": "広く行き渡った"
+      },
+      {
+        "word": "pervasiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "浸透性"
+      }
+    ],
+    [
+      {
+        "word": "pharmacology",
+        "partOfSpeech": "名詞",
+        "meaning": "薬理学"
+      },
+      {
+        "word": "pharmacological",
+        "partOfSpeech": "形容詞",
+        "meaning": "薬理学の"
+      }
+    ],
+    [
+      {
+        "word": "pigment",
+        "partOfSpeech": "名詞",
+        "meaning": "色素"
+      },
+      {
+        "word": "pigmentation",
+        "partOfSpeech": "名詞",
+        "meaning": "色素沈着"
+      }
+    ],
+    [
+      {
+        "word": "placid",
+        "partOfSpeech": "形容詞",
+        "meaning": "穏やかな"
+      },
+      {
+        "word": "placidly",
+        "partOfSpeech": "副詞",
+        "meaning": "穏やかに"
+      }
+    ],
+    [
+      {
+        "word": "pluralize",
+        "partOfSpeech": "動詞",
+        "meaning": "複数形にする"
+      },
+      {
+        "word": "pluralization",
+        "partOfSpeech": "名詞",
+        "meaning": "複数形化"
+      }
+    ],
+    [
+      {
+        "word": "poem",
+        "partOfSpeech": "名詞",
+        "meaning": "詩"
+      },
+      {
+        "word": "poet",
+        "partOfSpeech": "名詞",
+        "meaning": "詩人"
+      },
+      {
+        "word": "poetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "詩的な"
+      }
+    ],
+    [
+      {
+        "word": "poignancy",
+        "partOfSpeech": "名詞",
+        "meaning": "心を打つ切なさ"
+      },
+      {
+        "word": "poignantly",
+        "partOfSpeech": "副詞",
+        "meaning": "痛切に"
+      }
+    ],
+    [
+      {
+        "word": "polar",
+        "partOfSpeech": "形容詞",
+        "meaning": "極の"
+      },
+      {
+        "word": "polarity",
+        "partOfSpeech": "名詞",
+        "meaning": "極性"
+      }
+    ],
+    [
+      {
+        "word": "depolarize",
+        "partOfSpeech": "動詞",
+        "meaning": "脱分極させる"
+      },
+      {
+        "word": "depolarization",
+        "partOfSpeech": "名詞",
+        "meaning": "脱分極"
+      }
+    ],
+    [
+      {
+        "word": "pollinate",
+        "partOfSpeech": "動詞",
+        "meaning": "受粉させる"
+      },
+      {
+        "word": "pollination",
+        "partOfSpeech": "名詞",
+        "meaning": "受粉"
+      },
+      {
+        "word": "pollinator",
+        "partOfSpeech": "名詞",
+        "meaning": "花粉媒介者"
+      }
+    ],
+    [
+      {
+        "word": "populate",
+        "partOfSpeech": "動詞",
+        "meaning": "住みつく"
+      },
+      {
+        "word": "populous",
+        "partOfSpeech": "形容詞",
+        "meaning": "人口の多い"
+      }
+    ],
+    [
+      {
+        "word": "porous",
+        "partOfSpeech": "形容詞",
+        "meaning": "多孔質の"
+      },
+      {
+        "word": "porosity",
+        "partOfSpeech": "名詞",
+        "meaning": "多孔性"
+      }
+    ],
+    [
+      {
+        "word": "posthumous",
+        "partOfSpeech": "形容詞",
+        "meaning": "死後の"
+      },
+      {
+        "word": "posthumously",
+        "partOfSpeech": "副詞",
+        "meaning": "死後に"
+      }
+    ],
+    [
+      {
+        "word": "postulate",
+        "partOfSpeech": "動詞",
+        "meaning": "仮定する"
+      },
+      {
+        "word": "postulation",
+        "partOfSpeech": "名詞",
+        "meaning": "仮定"
+      }
+    ],
+    [
+      {
+        "word": "practicable",
+        "partOfSpeech": "形容詞",
+        "meaning": "実行可能な"
+      },
+      {
+        "word": "impracticable",
+        "partOfSpeech": "形容詞",
+        "meaning": "実行不可能な"
+      }
+    ],
+    [
+      {
+        "word": "pragmatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "実用的な"
+      },
+      {
+        "word": "pragmatist",
+        "partOfSpeech": "名詞",
+        "meaning": "実用主義者"
+      }
+    ],
+    [
+      {
+        "word": "precipitate",
+        "partOfSpeech": "動詞",
+        "meaning": "引き起こす・沈殿させる"
+      },
+      {
+        "word": "precipitation",
+        "partOfSpeech": "名詞",
+        "meaning": "降水・沈殿"
+      }
+    ],
+    [
+      {
+        "word": "predispose",
+        "partOfSpeech": "動詞",
+        "meaning": "傾向を持たせる"
+      },
+      {
+        "word": "predisposition",
+        "partOfSpeech": "名詞",
+        "meaning": "素因"
+      }
+    ],
+    [
+      {
+        "word": "prefabricate",
+        "partOfSpeech": "動詞",
+        "meaning": "あらかじめ製造する"
+      },
+      {
+        "word": "prefabrication",
+        "partOfSpeech": "名詞",
+        "meaning": "事前製造"
+      }
+    ],
+    [
+      {
+        "word": "preheat",
+        "partOfSpeech": "動詞",
+        "meaning": "予熱する"
+      },
+      {
+        "word": "preheating",
+        "partOfSpeech": "名詞",
+        "meaning": "予熱"
+      }
+    ],
+    [
+      {
+        "word": "previous",
+        "partOfSpeech": "形容詞",
+        "meaning": "以前の"
+      },
+      {
+        "word": "previously",
+        "partOfSpeech": "副詞",
+        "meaning": "以前に"
+      }
+    ],
+    [
+      {
+        "word": "procedural",
+        "partOfSpeech": "形容詞",
+        "meaning": "手続きの"
+      },
+      {
+        "word": "procedurally",
+        "partOfSpeech": "副詞",
+        "meaning": "手続き上"
+      }
+    ],
+    [
+      {
+        "word": "prophesy",
+        "partOfSpeech": "動詞",
+        "meaning": "予言する"
+      },
+      {
+        "word": "prophecy",
+        "partOfSpeech": "名詞",
+        "meaning": "予言"
+      },
+      {
+        "word": "prophetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "予言的な"
+      }
+    ],
+    [
+      {
+        "word": "prophet",
+        "partOfSpeech": "名詞",
+        "meaning": "預言者"
+      },
+      {
+        "word": "prophetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "預言的な"
+      }
+    ],
+    [
+      {
+        "word": "provisional",
+        "partOfSpeech": "形容詞",
+        "meaning": "暫定的な"
+      },
+      {
+        "word": "provisionally",
+        "partOfSpeech": "副詞",
+        "meaning": "暫定的に"
+      }
+    ],
+    [
+      {
+        "word": "psychiatry",
+        "partOfSpeech": "名詞",
+        "meaning": "精神医学"
+      },
+      {
+        "word": "psychiatrist",
+        "partOfSpeech": "名詞",
+        "meaning": "精神科医"
+      },
+      {
+        "word": "psychiatric",
+        "partOfSpeech": "形容詞",
+        "meaning": "精神医学の"
+      }
+    ],
+    [
+      {
+        "word": "punctuate",
+        "partOfSpeech": "動詞",
+        "meaning": "句読点を付ける"
+      },
+      {
+        "word": "punctuation",
+        "partOfSpeech": "名詞",
+        "meaning": "句読点"
+      }
+    ],
+    [
+      {
+        "word": "punish",
+        "partOfSpeech": "動詞",
+        "meaning": "罰する"
+      },
+      {
+        "word": "punitive",
+        "partOfSpeech": "形容詞",
+        "meaning": "懲罰的な"
+      }
+    ],
+    [
+      {
+        "word": "purpose",
+        "partOfSpeech": "名詞",
+        "meaning": "目的"
+      },
+      {
+        "word": "purposefully",
+        "partOfSpeech": "副詞",
+        "meaning": "目的を持って"
+      }
+    ],
+    [
+      {
+        "word": "question",
+        "partOfSpeech": "動詞",
+        "meaning": "質問する"
+      },
+      {
+        "word": "questioner",
+        "partOfSpeech": "名詞",
+        "meaning": "質問者"
+      }
+    ],
+    [
+      {
+        "word": "radiology",
+        "partOfSpeech": "名詞",
+        "meaning": "放射線医学"
+      },
+      {
+        "word": "radiologist",
+        "partOfSpeech": "名詞",
+        "meaning": "放射線科医"
+      },
+      {
+        "word": "radiological",
+        "partOfSpeech": "形容詞",
+        "meaning": "放射線医学の"
+      }
+    ],
+    [
+      {
+        "word": "react",
+        "partOfSpeech": "動詞",
+        "meaning": "反応する"
+      },
+      {
+        "word": "reactivity",
+        "partOfSpeech": "名詞",
+        "meaning": "反応性"
+      }
+    ],
+    [
+      {
+        "word": "realize",
+        "partOfSpeech": "動詞",
+        "meaning": "実現する"
+      },
+      {
+        "word": "realizable",
+        "partOfSpeech": "形容詞",
+        "meaning": "実現可能な"
+      }
+    ],
+    [
+      {
+        "word": "rebut",
+        "partOfSpeech": "動詞",
+        "meaning": "反論する"
+      },
+      {
+        "word": "rebuttal",
+        "partOfSpeech": "名詞",
+        "meaning": "反論"
+      }
+    ],
+    [
+      {
+        "word": "recollect",
+        "partOfSpeech": "動詞",
+        "meaning": "思い出す"
+      },
+      {
+        "word": "recollection",
+        "partOfSpeech": "名詞",
+        "meaning": "回想"
+      }
+    ],
+    [
+      {
+        "word": "recursive",
+        "partOfSpeech": "形容詞",
+        "meaning": "再帰的な"
+      },
+      {
+        "word": "recursively",
+        "partOfSpeech": "副詞",
+        "meaning": "再帰的に"
+      }
+    ],
+    [
+      {
+        "word": "redevelop",
+        "partOfSpeech": "動詞",
+        "meaning": "再開発する"
+      },
+      {
+        "word": "redevelopment",
+        "partOfSpeech": "名詞",
+        "meaning": "再開発"
+      }
+    ],
+    [
+      {
+        "word": "redundant",
+        "partOfSpeech": "形容詞",
+        "meaning": "余分な・解雇された"
+      },
+      {
+        "word": "redundancy",
+        "partOfSpeech": "名詞",
+        "meaning": "冗長性・人員削減"
+      }
+    ],
+    [
+      {
+        "word": "reevaluate",
+        "partOfSpeech": "動詞",
+        "meaning": "再評価する"
+      },
+      {
+        "word": "reevaluation",
+        "partOfSpeech": "名詞",
+        "meaning": "再評価"
+      }
+    ],
+    [
+      {
+        "word": "reincarnate",
+        "partOfSpeech": "動詞",
+        "meaning": "生まれ変わらせる"
+      },
+      {
+        "word": "reincarnation",
+        "partOfSpeech": "名詞",
+        "meaning": "生まれ変わり"
+      }
+    ],
+    [
+      {
+        "word": "reinstate",
+        "partOfSpeech": "動詞",
+        "meaning": "復職させる"
+      },
+      {
+        "word": "reinstatement",
+        "partOfSpeech": "名詞",
+        "meaning": "復職・復帰"
+      }
+    ],
+    [
+      {
+        "word": "relentless",
+        "partOfSpeech": "形容詞",
+        "meaning": "容赦のない"
+      },
+      {
+        "word": "relentlessness",
+        "partOfSpeech": "名詞",
+        "meaning": "容赦のなさ"
+      }
+    ],
+    [
+      {
+        "word": "relieve",
+        "partOfSpeech": "動詞",
+        "meaning": "和らげる"
+      },
+      {
+        "word": "reliever",
+        "partOfSpeech": "名詞",
+        "meaning": "緩和するもの・人"
+      }
+    ],
+    [
+      {
+        "word": "report",
+        "partOfSpeech": "動詞",
+        "meaning": "報告する"
+      },
+      {
+        "word": "underreport",
+        "partOfSpeech": "動詞",
+        "meaning": "過少報告する"
+      },
+      {
+        "word": "underreporting",
+        "partOfSpeech": "名詞",
+        "meaning": "過少報告"
+      }
+    ],
+    [
+      {
+        "word": "residual",
+        "partOfSpeech": "形容詞",
+        "meaning": "残留する"
+      },
+      {
+        "word": "residue",
+        "partOfSpeech": "名詞",
+        "meaning": "残留物"
+      }
+    ],
+    [
+      {
+        "word": "retrain",
+        "partOfSpeech": "動詞",
+        "meaning": "再訓練する"
+      },
+      {
+        "word": "retraining",
+        "partOfSpeech": "名詞",
+        "meaning": "再訓練"
+      }
+    ],
+    [
+      {
+        "word": "retroactive",
+        "partOfSpeech": "形容詞",
+        "meaning": "遡及する"
+      },
+      {
+        "word": "retroactively",
+        "partOfSpeech": "副詞",
+        "meaning": "遡及して"
+      }
+    ],
+    [
+      {
+        "word": "retrospect",
+        "partOfSpeech": "名詞",
+        "meaning": "回顧"
+      },
+      {
+        "word": "retrospective",
+        "partOfSpeech": "形容詞",
+        "meaning": "回顧的な"
+      }
+    ],
+    [
+      {
+        "word": "revalue",
+        "partOfSpeech": "動詞",
+        "meaning": "再評価する"
+      },
+      {
+        "word": "revaluation",
+        "partOfSpeech": "名詞",
+        "meaning": "再評価"
+      }
+    ],
+    [
+      {
+        "word": "reverberate",
+        "partOfSpeech": "動詞",
+        "meaning": "反響する"
+      },
+      {
+        "word": "reverberation",
+        "partOfSpeech": "名詞",
+        "meaning": "反響"
+      }
+    ],
+    [
+      {
+        "word": "righteous",
+        "partOfSpeech": "形容詞",
+        "meaning": "道徳的に正しい"
+      },
+      {
+        "word": "righteousness",
+        "partOfSpeech": "名詞",
+        "meaning": "正義"
+      }
+    ],
+    [
+      {
+        "word": "robot",
+        "partOfSpeech": "名詞",
+        "meaning": "ロボット"
+      },
+      {
+        "word": "robotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "ロボットの"
+      },
+      {
+        "word": "robotics",
+        "partOfSpeech": "名詞",
+        "meaning": "ロボット工学"
+      }
+    ],
+    [
+      {
+        "word": "rubber",
+        "partOfSpeech": "名詞",
+        "meaning": "ゴム"
+      },
+      {
+        "word": "rubbery",
+        "partOfSpeech": "形容詞",
+        "meaning": "ゴムのような"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,972 @@
+{
+  "schemaVersion": "1.0",
+  "sourceBatch": "data/vocabulary-drafts/batches/batch-03.json",
+  "records": [
+    {
+      "senseId": "VD-02814-v-5-011",
+      "wordId": "VD-02814",
+      "headword": "deliver",
+      "collocations": [
+        {
+          "en": "deliver a speech",
+          "ja": "演説する"
+        },
+        {
+          "en": "deliver a lecture",
+          "ja": "講義を行う"
+        },
+        {
+          "en": "deliver a presentation",
+          "ja": "発表する"
+        },
+        {
+          "en": "deliver an address",
+          "ja": "式辞を述べる"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-04168-v-5-012",
+      "wordId": "VD-04168",
+      "headword": "supply",
+      "collocations": [
+        {
+          "en": "supply goods",
+          "ja": "商品を供給する"
+        },
+        {
+          "en": "supply water",
+          "ja": "水を供給する"
+        },
+        {
+          "en": "supply electricity",
+          "ja": "電力を供給する"
+        },
+        {
+          "en": "supply equipment",
+          "ja": "機材を供給する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-04168-n-5-013",
+      "wordId": "VD-04168",
+      "headword": "supply",
+      "collocations": [
+        {
+          "en": "water supply",
+          "ja": "水の供給"
+        },
+        {
+          "en": "food supply",
+          "ja": "食料供給"
+        },
+        {
+          "en": "limited supply",
+          "ja": "限られた供給量"
+        },
+        {
+          "en": "emergency supplies",
+          "ja": "緊急物資"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02033-v-5-014",
+      "wordId": "VD-02033",
+      "headword": "serve",
+      "collocations": [
+        {
+          "en": "serve breakfast",
+          "ja": "朝食を出す"
+        },
+        {
+          "en": "serve dinner",
+          "ja": "夕食を出す"
+        },
+        {
+          "en": "serve hot",
+          "ja": "温かい状態で出す"
+        },
+        {
+          "en": "serve refreshments",
+          "ja": "軽食を出す"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02033-v-5-015",
+      "wordId": "VD-02033",
+      "headword": "serve",
+      "collocations": [
+        {
+          "en": "serve the community",
+          "ja": "地域社会に奉仕する"
+        },
+        {
+          "en": "serve the public",
+          "ja": "公共に奉仕する"
+        },
+        {
+          "en": "serve a purpose",
+          "ja": "目的に役立つ"
+        },
+        {
+          "en": "serve as a guide",
+          "ja": "案内役を務める"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-04387-n-5-016",
+      "wordId": "VD-04387",
+      "headword": "volunteer",
+      "collocations": [
+        {
+          "en": "local volunteer",
+          "ja": "地元のボランティア"
+        },
+        {
+          "en": "medical volunteer",
+          "ja": "医療ボランティア"
+        },
+        {
+          "en": "volunteer team",
+          "ja": "ボランティアチーム"
+        },
+        {
+          "en": "recruit volunteers",
+          "ja": "ボランティアを募る"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-04387-v-5-017",
+      "wordId": "VD-04387",
+      "headword": "volunteer",
+      "collocations": [
+        {
+          "en": "volunteer to help",
+          "ja": "自ら助けを申し出る"
+        },
+        {
+          "en": "volunteer one's time",
+          "ja": "自発的に時間を提供する"
+        },
+        {
+          "en": "volunteer for a task",
+          "ja": "仕事に自ら志願する"
+        },
+        {
+          "en": "volunteer to teach",
+          "ja": "自ら教えることを申し出る"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-05066-v-5-018",
+      "wordId": "VD-05066",
+      "headword": "donate",
+      "collocations": [
+        {
+          "en": "donate blood",
+          "ja": "献血する"
+        },
+        {
+          "en": "donate money",
+          "ja": "寄付金を出す"
+        },
+        {
+          "en": "donate clothes",
+          "ja": "衣服を寄付する"
+        },
+        {
+          "en": "donate generously",
+          "ja": "惜しみなく寄付する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00202-v-5-019",
+      "wordId": "VD-00202",
+      "headword": "collect",
+      "collocations": [
+        {
+          "en": "collect data",
+          "ja": "データを集める"
+        },
+        {
+          "en": "collect stamps",
+          "ja": "切手を集める"
+        },
+        {
+          "en": "collect donations",
+          "ja": "寄付を集める"
+        },
+        {
+          "en": "collect samples",
+          "ja": "試料を集める"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00202-v-5-020",
+      "wordId": "VD-00202",
+      "headword": "collect",
+      "collocations": [
+        {
+          "en": "collect a parcel",
+          "ja": "小包を受け取る"
+        },
+        {
+          "en": "collect one's luggage",
+          "ja": "荷物を受け取る"
+        },
+        {
+          "en": "collect children from school",
+          "ja": "子どもを学校へ迎えに行く"
+        },
+        {
+          "en": "collect a prescription",
+          "ja": "処方薬を受け取る"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01548-v-5-021",
+      "wordId": "VD-01548",
+      "headword": "gather",
+      "collocations": [
+        {
+          "en": "gather information",
+          "ja": "情報を集める"
+        },
+        {
+          "en": "gather evidence",
+          "ja": "証拠を集める"
+        },
+        {
+          "en": "gather around",
+          "ja": "周囲に集まる"
+        },
+        {
+          "en": "gather in the hall",
+          "ja": "ホールに集まる"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01724-v-5-022",
+      "wordId": "VD-01724",
+      "headword": "manage",
+      "collocations": [
+        {
+          "en": "manage a team",
+          "ja": "チームを管理する"
+        },
+        {
+          "en": "manage finances",
+          "ja": "財務を管理する"
+        },
+        {
+          "en": "manage resources",
+          "ja": "資源を管理する"
+        },
+        {
+          "en": "manage a business",
+          "ja": "事業を運営する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01724-v-5-023",
+      "wordId": "VD-01724",
+      "headword": "manage",
+      "collocations": [
+        {
+          "en": "manage to escape",
+          "ja": "何とか脱出する"
+        },
+        {
+          "en": "manage to finish",
+          "ja": "何とか終える"
+        },
+        {
+          "en": "manage without help",
+          "ja": "助けなしで何とかやる"
+        },
+        {
+          "en": "manage to survive",
+          "ja": "何とか生き延びる"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01516-v-5-024",
+      "wordId": "VD-01516",
+      "headword": "follow",
+      "collocations": [
+        {
+          "en": "follow a guide",
+          "ja": "案内人についていく"
+        },
+        {
+          "en": "follow a trail",
+          "ja": "小道をたどる"
+        },
+        {
+          "en": "follow closely",
+          "ja": "すぐ後についていく"
+        },
+        {
+          "en": "follow someone home",
+          "ja": "人の後を追って家まで行く"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01516-v-5-025",
+      "wordId": "VD-01516",
+      "headword": "follow",
+      "collocations": [
+        {
+          "en": "follow instructions",
+          "ja": "指示に従う"
+        },
+        {
+          "en": "follow the rules",
+          "ja": "規則に従う"
+        },
+        {
+          "en": "follow advice",
+          "ja": "助言に従う"
+        },
+        {
+          "en": "follow a procedure",
+          "ja": "手順に従う"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00717-n-5-026",
+      "wordId": "VD-00717",
+      "headword": "practice",
+      "collocations": [
+        {
+          "en": "daily practice",
+          "ja": "毎日の練習"
+        },
+        {
+          "en": "regular practice",
+          "ja": "定期的な練習"
+        },
+        {
+          "en": "practice session",
+          "ja": "練習時間"
+        },
+        {
+          "en": "language practice",
+          "ja": "語学練習"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00717-v-5-027",
+      "wordId": "VD-00717",
+      "headword": "practice",
+      "collocations": [
+        {
+          "en": "practice pronunciation",
+          "ja": "発音を練習する"
+        },
+        {
+          "en": "practice regularly",
+          "ja": "定期的に練習する"
+        },
+        {
+          "en": "practice speaking",
+          "ja": "会話を練習する"
+        },
+        {
+          "en": "practice the piano",
+          "ja": "ピアノを練習する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02221-v-5-028",
+      "wordId": "VD-02221",
+      "headword": "trust",
+      "collocations": [
+        {
+          "en": "trust one's instincts",
+          "ja": "直感を信じる"
+        },
+        {
+          "en": "trust someone's judgment",
+          "ja": "人の判断を信頼する"
+        },
+        {
+          "en": "trust completely",
+          "ja": "全面的に信頼する"
+        },
+        {
+          "en": "trust a colleague",
+          "ja": "同僚を信頼する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02221-n-5-029",
+      "wordId": "VD-02221",
+      "headword": "trust",
+      "collocations": [
+        {
+          "en": "mutual trust",
+          "ja": "相互信頼"
+        },
+        {
+          "en": "earn trust",
+          "ja": "信頼を得る"
+        },
+        {
+          "en": "betray someone's trust",
+          "ja": "人の信頼を裏切る"
+        },
+        {
+          "en": "public trust",
+          "ja": "社会の信頼"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01492-n-5-030",
+      "wordId": "VD-01492",
+      "headword": "fear",
+      "collocations": [
+        {
+          "en": "fear of failure",
+          "ja": "失敗への恐怖"
+        },
+        {
+          "en": "deep fear",
+          "ja": "深い恐怖"
+        },
+        {
+          "en": "overcome fear",
+          "ja": "恐怖を克服する"
+        },
+        {
+          "en": "instill fear",
+          "ja": "恐怖を植え付ける"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01492-v-5-031",
+      "wordId": "VD-01492",
+      "headword": "fear",
+      "collocations": [
+        {
+          "en": "fear the worst",
+          "ja": "最悪の事態を恐れる"
+        },
+        {
+          "en": "fear rejection",
+          "ja": "拒絶を恐れる"
+        },
+        {
+          "en": "fear for one's safety",
+          "ja": "身の安全を案じる"
+        },
+        {
+          "en": "fear losing control",
+          "ja": "制御を失うことを恐れる"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01047-v-5-032",
+      "wordId": "VD-01047",
+      "headword": "worry",
+      "collocations": [
+        {
+          "en": "worry about exams",
+          "ja": "試験を心配する"
+        },
+        {
+          "en": "worry unnecessarily",
+          "ja": "不必要に心配する"
+        },
+        {
+          "en": "worry about the future",
+          "ja": "将来を心配する"
+        },
+        {
+          "en": "worry excessively",
+          "ja": "過度に心配する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01047-n-5-033",
+      "wordId": "VD-01047",
+      "headword": "worry",
+      "collocations": [
+        {
+          "en": "major worry",
+          "ja": "大きな心配事"
+        },
+        {
+          "en": "financial worries",
+          "ja": "金銭面の心配事"
+        },
+        {
+          "en": "constant worry",
+          "ja": "絶え間ない心配"
+        },
+        {
+          "en": "source of worry",
+          "ja": "心配の種"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00157-v-5-034",
+      "wordId": "VD-00157",
+      "headword": "care",
+      "collocations": [
+        {
+          "en": "care about others",
+          "ja": "他者を気にかける"
+        },
+        {
+          "en": "care deeply",
+          "ja": "深く気にかける"
+        },
+        {
+          "en": "care about the environment",
+          "ja": "環境を大切に思う"
+        },
+        {
+          "en": "care about quality",
+          "ja": "品質を重視する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00157-n-5-035",
+      "wordId": "VD-00157",
+      "headword": "care",
+      "collocations": [
+        {
+          "en": "medical care",
+          "ja": "医療"
+        },
+        {
+          "en": "child care",
+          "ja": "育児・保育"
+        },
+        {
+          "en": "intensive care",
+          "ja": "集中治療"
+        },
+        {
+          "en": "elderly care",
+          "ja": "高齢者介護"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01891-v-5-036",
+      "wordId": "VD-01891",
+      "headword": "prefer",
+      "collocations": [
+        {
+          "en": "prefer tea to coffee",
+          "ja": "コーヒーよりお茶を好む"
+        },
+        {
+          "en": "prefer to walk",
+          "ja": "歩く方を好む"
+        },
+        {
+          "en": "strongly prefer",
+          "ja": "強く好む"
+        },
+        {
+          "en": "prefer a quieter place",
+          "ja": "より静かな場所を好む"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-03867-v-5-037",
+      "wordId": "VD-03867",
+      "headword": "recommend",
+      "collocations": [
+        {
+          "en": "highly recommend",
+          "ja": "強く勧める"
+        },
+        {
+          "en": "recommend a book",
+          "ja": "本を勧める"
+        },
+        {
+          "en": "recommend a treatment",
+          "ja": "治療法を勧める"
+        },
+        {
+          "en": "recommend taking a break",
+          "ja": "休憩を取ることを勧める"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02502-n-5-038",
+      "wordId": "VD-02502",
+      "headword": "benefit",
+      "collocations": [
+        {
+          "en": "health benefit",
+          "ja": "健康上の利点"
+        },
+        {
+          "en": "mutual benefit",
+          "ja": "相互利益"
+        },
+        {
+          "en": "economic benefit",
+          "ja": "経済的利益"
+        },
+        {
+          "en": "long-term benefits",
+          "ja": "長期的な恩恵"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02502-v-5-039",
+      "wordId": "VD-02502",
+      "headword": "benefit",
+      "collocations": [
+        {
+          "en": "benefit from training",
+          "ja": "研修の恩恵を受ける"
+        },
+        {
+          "en": "benefit society",
+          "ja": "社会に利益をもたらす"
+        },
+        {
+          "en": "benefit greatly",
+          "ja": "大いに恩恵を受ける"
+        },
+        {
+          "en": "benefit local residents",
+          "ja": "地域住民の役に立つ"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01083-n-5-040",
+      "wordId": "VD-01083",
+      "headword": "advantage",
+      "collocations": [
+        {
+          "en": "competitive advantage",
+          "ja": "競争上の優位性"
+        },
+        {
+          "en": "major advantage",
+          "ja": "大きな利点"
+        },
+        {
+          "en": "distinct advantage",
+          "ja": "明確な強み"
+        },
+        {
+          "en": "gain an advantage",
+          "ja": "優位に立つ"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01390-n-5-041",
+      "wordId": "VD-01390",
+      "headword": "disadvantage",
+      "collocations": [
+        {
+          "en": "major disadvantage",
+          "ja": "大きな欠点"
+        },
+        {
+          "en": "social disadvantage",
+          "ja": "社会的不利"
+        },
+        {
+          "en": "at a disadvantage",
+          "ja": "不利な立場で"
+        },
+        {
+          "en": "inherent disadvantage",
+          "ja": "本質的な欠点"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01805-n-5-042",
+      "wordId": "VD-01805",
+      "headword": "opportunity",
+      "collocations": [
+        {
+          "en": "career opportunity",
+          "ja": "職業上の機会"
+        },
+        {
+          "en": "seize an opportunity",
+          "ja": "機会をつかむ"
+        },
+        {
+          "en": "equal opportunity",
+          "ja": "機会均等"
+        },
+        {
+          "en": "learning opportunity",
+          "ja": "学習の機会"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01469-n-5-043",
+      "wordId": "VD-01469",
+      "headword": "experience",
+      "collocations": [
+        {
+          "en": "valuable experience",
+          "ja": "貴重な経験"
+        },
+        {
+          "en": "work experience",
+          "ja": "職務経験"
+        },
+        {
+          "en": "firsthand experience",
+          "ja": "直接の経験"
+        },
+        {
+          "en": "practical experience",
+          "ja": "実践経験"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01469-v-5-044",
+      "wordId": "VD-01469",
+      "headword": "experience",
+      "collocations": [
+        {
+          "en": "experience difficulties",
+          "ja": "困難を経験する"
+        },
+        {
+          "en": "experience joy",
+          "ja": "喜びを経験する"
+        },
+        {
+          "en": "experience rapid growth",
+          "ja": "急成長を経験する"
+        },
+        {
+          "en": "experience culture shock",
+          "ja": "カルチャーショックを経験する"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02340-n-5-045",
+      "wordId": "VD-02340",
+      "headword": "achievement",
+      "collocations": [
+        {
+          "en": "academic achievement",
+          "ja": "学業上の成果"
+        },
+        {
+          "en": "remarkable achievement",
+          "ja": "顕著な成果"
+        },
+        {
+          "en": "sense of achievement",
+          "ja": "達成感"
+        },
+        {
+          "en": "personal achievement",
+          "ja": "個人的な成果"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00388-n-5-046",
+      "wordId": "VD-00388",
+      "headword": "goal",
+      "collocations": [
+        {
+          "en": "set a goal",
+          "ja": "目標を設定する"
+        },
+        {
+          "en": "achieve a goal",
+          "ja": "目標を達成する"
+        },
+        {
+          "en": "realistic goal",
+          "ja": "現実的な目標"
+        },
+        {
+          "en": "long-term goal",
+          "ja": "長期目標"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-00388-n-5-047",
+      "wordId": "VD-00388",
+      "headword": "goal",
+      "collocations": [
+        {
+          "en": "score a goal",
+          "ja": "得点する"
+        },
+        {
+          "en": "winning goal",
+          "ja": "決勝点"
+        },
+        {
+          "en": "equalizing goal",
+          "ja": "同点ゴール"
+        },
+        {
+          "en": "opening goal",
+          "ja": "先制ゴール"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01918-n-5-048",
+      "wordId": "VD-01918",
+      "headword": "purpose",
+      "collocations": [
+        {
+          "en": "main purpose",
+          "ja": "主な目的"
+        },
+        {
+          "en": "serve a purpose",
+          "ja": "目的に役立つ"
+        },
+        {
+          "en": "educational purpose",
+          "ja": "教育目的"
+        },
+        {
+          "en": "clear purpose",
+          "ja": "明確な目的"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-01430-n-5-049",
+      "wordId": "VD-01430",
+      "headword": "effort",
+      "collocations": [
+        {
+          "en": "make an effort",
+          "ja": "努力する"
+        },
+        {
+          "en": "concerted effort",
+          "ja": "一致団結した努力"
+        },
+        {
+          "en": "considerable effort",
+          "ja": "かなりの努力"
+        },
+        {
+          "en": "sustained effort",
+          "ja": "継続的な努力"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-02135-n-5-050",
+      "wordId": "VD-02135",
+      "headword": "success",
+      "collocations": [
+        {
+          "en": "great success",
+          "ja": "大成功"
+        },
+        {
+          "en": "commercial success",
+          "ja": "商業的成功"
+        },
+        {
+          "en": "achieve success",
+          "ja": "成功を収める"
+        },
+        {
+          "en": "measure success",
+          "ja": "成功度を測る"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-03034-n-5-051",
+      "wordId": "VD-03034",
+      "headword": "failure",
+      "collocations": [
+        {
+          "en": "complete failure",
+          "ja": "完全な失敗"
+        },
+        {
+          "en": "fear of failure",
+          "ja": "失敗への恐れ"
+        },
+        {
+          "en": "academic failure",
+          "ja": "学業上の失敗"
+        },
+        {
+          "en": "learn from failure",
+          "ja": "失敗から学ぶ"
+        }
+      ]
+    },
+    {
+      "senseId": "VD-03794-n-5-052",
+      "wordId": "VD-03794",
+      "headword": "progress",
+      "collocations": [
+        {
+          "en": "make progress",
+          "ja": "進歩する"
+        },
+        {
+          "en": "steady progress",
+          "ja": "着実な進歩"
+        },
+        {
+          "en": "track progress",
+          "ja": "進捗を追跡する"
+        },
+        {
+          "en": "significant progress",
+          "ja": "大きな進展"
+        }
+      ]
+    }
+  ]
+}

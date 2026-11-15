@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0",
+  "auditDate": "2026-11-15",
+  "target": 8653,
+  "coveredFromPriorMasterAuditAndNewBatchIDs": 8653,
+  "missingWordIds": [],
+  "registeredSenses": 9614,
+  "registeredExamples": 19228,
+  "normalizedSentenceHashCount": 19228,
+  "examplesIncludedInHashCheck": 19228,
+  "exactNormalizedDuplicateCount": 0,
+  "incrementalBatchCount": 25,
+  "priorIndexExampleCount": 15428,
+  "priorMasterAuditRef": "2116b681c30fa1c587240d14e5159de5a73951eb",
+  "newBatchFieldIssuesAfterZCollocationRepair": 0,
+  "requiredContentBacklog": 287,
+  "backlogByLevel": {
+    "A1": {
+      "target": 1064,
+      "drafted": 1064,
+      "withRequiredContent": 1041,
+      "reviewed": 0
+    },
+    "A2": {
+      "target": 1243,
+      "drafted": 1243,
+      "withRequiredContent": 1243,
+      "reviewed": 0
+    },
+    "B1": {
+      "target": 2139,
+      "drafted": 2139,
+      "withRequiredContent": 2109,
+      "reviewed": 0
+    },
+    "B2": {
+      "target": 2417,
+      "drafted": 2417,
+      "withRequiredContent": 2417,
+      "reviewed": 0
+    },
+    "C1": {
+      "target": 914,
+      "drafted": 914,
+      "withRequiredContent": 680,
+      "reviewed": 0
+    },
+    "C2": {
+      "target": 876,
+      "drafted": 876,
+      "withRequiredContent": 876,
+      "reviewed": 0
+    }
+  },
+  "editorialReviewComplete": false,
+  "notes": "Coverage uses earlier master audit plus newly read word IDs. The current full sentence index covers the manifest total and contains all hashes from the 25 incrementally reread batches; the current index is counted once, not added to the completion batches. No independent linguistic review, external publication overlap search, or complete new audit of legacy fields. Supplemental batches excluded."
+}

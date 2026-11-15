@@ -1,0 +1,3227 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-unreviewed",
+  "scope": "word-family",
+  "description": "Worker 02 advanced S pass. Explicit lexical word families, Japanese gloss and part of speech. Existing pair filtering at loader.",
+  "families": [
+    [
+      {
+        "word": "sabbatical",
+        "partOfSpeech": "形容詞",
+        "meaning": "長期休暇の・安息日の"
+      },
+      {
+        "word": "sabbath",
+        "partOfSpeech": "名詞",
+        "meaning": "安息日"
+      }
+    ],
+    [
+      {
+        "word": "sagacious",
+        "partOfSpeech": "形容詞",
+        "meaning": "賢明な・洞察力のある"
+      },
+      {
+        "word": "sagacity",
+        "partOfSpeech": "名詞",
+        "meaning": "賢明さ・洞察力"
+      },
+      {
+        "word": "sagaciously",
+        "partOfSpeech": "副詞",
+        "meaning": "賢明に"
+      }
+    ],
+    [
+      {
+        "word": "sage",
+        "partOfSpeech": "形容詞",
+        "meaning": "賢明な"
+      },
+      {
+        "word": "sagely",
+        "partOfSpeech": "副詞",
+        "meaning": "賢明に"
+      }
+    ],
+    [
+      {
+        "word": "salient",
+        "partOfSpeech": "形容詞",
+        "meaning": "顕著な・重要な"
+      },
+      {
+        "word": "salience",
+        "partOfSpeech": "名詞",
+        "meaning": "顕著さ・重要性"
+      },
+      {
+        "word": "saliency",
+        "partOfSpeech": "名詞",
+        "meaning": "顕著性"
+      }
+    ],
+    [
+      {
+        "word": "saline",
+        "partOfSpeech": "形容詞",
+        "meaning": "塩分を含む"
+      },
+      {
+        "word": "salinity",
+        "partOfSpeech": "名詞",
+        "meaning": "塩分濃度"
+      },
+      {
+        "word": "salinize",
+        "partOfSpeech": "動詞",
+        "meaning": "塩分を増加させる"
+      },
+      {
+        "word": "salinization",
+        "partOfSpeech": "名詞",
+        "meaning": "塩類集積・塩性化"
+      },
+      {
+        "word": "desalinate",
+        "partOfSpeech": "動詞",
+        "meaning": "塩分を除去する"
+      },
+      {
+        "word": "desalination",
+        "partOfSpeech": "名詞",
+        "meaning": "脱塩"
+      }
+    ],
+    [
+      {
+        "word": "salubrious",
+        "partOfSpeech": "形容詞",
+        "meaning": "健康によい"
+      },
+      {
+        "word": "salubrity",
+        "partOfSpeech": "名詞",
+        "meaning": "健康によさ"
+      }
+    ],
+    [
+      {
+        "word": "sanctimonious",
+        "partOfSpeech": "形容詞",
+        "meaning": "偽善的な・聖人ぶった"
+      },
+      {
+        "word": "sanctimoniously",
+        "partOfSpeech": "副詞",
+        "meaning": "聖人ぶって"
+      },
+      {
+        "word": "sanctimoniousness",
+        "partOfSpeech": "名詞",
+        "meaning": "偽善的な態度"
+      }
+    ],
+    [
+      {
+        "word": "sanguine",
+        "partOfSpeech": "形容詞",
+        "meaning": "楽観的な"
+      },
+      {
+        "word": "sanguinely",
+        "partOfSpeech": "副詞",
+        "meaning": "楽観的に"
+      }
+    ],
+    [
+      {
+        "word": "sap",
+        "partOfSpeech": "名詞",
+        "meaning": "樹液"
+      },
+      {
+        "word": "sappy",
+        "partOfSpeech": "形容詞",
+        "meaning": "樹液の多い・感傷的すぎる"
+      }
+    ],
+    [
+      {
+        "word": "sardonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "冷笑的な"
+      },
+      {
+        "word": "sardonically",
+        "partOfSpeech": "副詞",
+        "meaning": "冷笑的に"
+      }
+    ],
+    [
+      {
+        "word": "savage",
+        "partOfSpeech": "形容詞",
+        "meaning": "残忍な・野蛮な"
+      },
+      {
+        "word": "savagery",
+        "partOfSpeech": "名詞",
+        "meaning": "残忍さ"
+      },
+      {
+        "word": "savagely",
+        "partOfSpeech": "副詞",
+        "meaning": "残忍に"
+      }
+    ],
+    [
+      {
+        "word": "scent",
+        "partOfSpeech": "名詞",
+        "meaning": "香り"
+      },
+      {
+        "word": "scented",
+        "partOfSpeech": "形容詞",
+        "meaning": "香りのついた"
+      },
+      {
+        "word": "unscented",
+        "partOfSpeech": "形容詞",
+        "meaning": "無香料の"
+      }
+    ],
+    [
+      {
+        "word": "sceptical",
+        "partOfSpeech": "形容詞",
+        "meaning": "懐疑的な"
+      },
+      {
+        "word": "scepticism",
+        "partOfSpeech": "名詞",
+        "meaning": "懐疑心"
+      },
+      {
+        "word": "sceptically",
+        "partOfSpeech": "副詞",
+        "meaning": "懐疑的に"
+      }
+    ],
+    [
+      {
+        "word": "schism",
+        "partOfSpeech": "名詞",
+        "meaning": "分裂・分派"
+      },
+      {
+        "word": "schismatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "分裂を引き起こす・分派の"
+      }
+    ],
+    [
+      {
+        "word": "scholastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "学校教育の・学問の"
+      },
+      {
+        "word": "scholasticism",
+        "partOfSpeech": "名詞",
+        "meaning": "スコラ哲学"
+      }
+    ],
+    [
+      {
+        "word": "scintillating",
+        "partOfSpeech": "形容詞",
+        "meaning": "きらめく・機知に富む"
+      },
+      {
+        "word": "scintillatingly",
+        "partOfSpeech": "副詞",
+        "meaning": "きらめくように・機知に富んで"
+      }
+    ],
+    [
+      {
+        "word": "sclerosis",
+        "partOfSpeech": "名詞",
+        "meaning": "硬化症"
+      },
+      {
+        "word": "sclerotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "硬化した・硬化症の"
+      }
+    ],
+    [
+      {
+        "word": "scorn",
+        "partOfSpeech": "名詞",
+        "meaning": "軽蔑"
+      },
+      {
+        "word": "scornful",
+        "partOfSpeech": "形容詞",
+        "meaning": "軽蔑的な"
+      },
+      {
+        "word": "scornfully",
+        "partOfSpeech": "副詞",
+        "meaning": "軽蔑して"
+      }
+    ],
+    [
+      {
+        "word": "scramble",
+        "partOfSpeech": "動詞",
+        "meaning": "よじ登る・かき混ぜる"
+      },
+      {
+        "word": "scrambler",
+        "partOfSpeech": "名詞",
+        "meaning": "信号をかく乱する装置"
+      },
+      {
+        "word": "unscramble",
+        "partOfSpeech": "動詞",
+        "meaning": "混乱を解く・暗号を解く"
+      }
+    ],
+    [
+      {
+        "word": "scribble",
+        "partOfSpeech": "動詞",
+        "meaning": "走り書きする"
+      },
+      {
+        "word": "scribbler",
+        "partOfSpeech": "名詞",
+        "meaning": "走り書きする人"
+      }
+    ],
+    [
+      {
+        "word": "scruple",
+        "partOfSpeech": "名詞",
+        "meaning": "良心のとがめ"
+      },
+      {
+        "word": "scrupulous",
+        "partOfSpeech": "形容詞",
+        "meaning": "良心的な・細心の"
+      },
+      {
+        "word": "scrupulously",
+        "partOfSpeech": "副詞",
+        "meaning": "細心の注意を払って"
+      },
+      {
+        "word": "unscrupulous",
+        "partOfSpeech": "形容詞",
+        "meaning": "良心に欠ける"
+      },
+      {
+        "word": "unscrupulously",
+        "partOfSpeech": "副詞",
+        "meaning": "良心の呵責なく"
+      }
+    ],
+    [
+      {
+        "word": "seafaring",
+        "partOfSpeech": "形容詞",
+        "meaning": "航海の"
+      },
+      {
+        "word": "seafarer",
+        "partOfSpeech": "名詞",
+        "meaning": "船乗り"
+      }
+    ],
+    [
+      {
+        "word": "seam",
+        "partOfSpeech": "名詞",
+        "meaning": "縫い目・地層"
+      },
+      {
+        "word": "seamless",
+        "partOfSpeech": "形容詞",
+        "meaning": "継ぎ目のない・途切れない"
+      },
+      {
+        "word": "seamlessly",
+        "partOfSpeech": "副詞",
+        "meaning": "途切れることなく"
+      },
+      {
+        "word": "seamy",
+        "partOfSpeech": "形容詞",
+        "meaning": "裏面の・いかがわしい"
+      }
+    ],
+    [
+      {
+        "word": "sear",
+        "partOfSpeech": "動詞",
+        "meaning": "表面を焼く・焼き焦がす"
+      },
+      {
+        "word": "searing",
+        "partOfSpeech": "形容詞",
+        "meaning": "焼けつくような・痛烈な"
+      },
+      {
+        "word": "searingly",
+        "partOfSpeech": "副詞",
+        "meaning": "焼けつくほど・痛烈に"
+      }
+    ],
+    [
+      {
+        "word": "seasonal",
+        "partOfSpeech": "形容詞",
+        "meaning": "季節の"
+      },
+      {
+        "word": "seasonality",
+        "partOfSpeech": "名詞",
+        "meaning": "季節性"
+      },
+      {
+        "word": "seasonally",
+        "partOfSpeech": "副詞",
+        "meaning": "季節的に"
+      }
+    ],
+    [
+      {
+        "word": "secession",
+        "partOfSpeech": "名詞",
+        "meaning": "脱退・離脱"
+      },
+      {
+        "word": "secede",
+        "partOfSpeech": "動詞",
+        "meaning": "脱退する"
+      },
+      {
+        "word": "secessionist",
+        "partOfSpeech": "名詞",
+        "meaning": "分離独立主義者"
+      }
+    ],
+    [
+      {
+        "word": "sedition",
+        "partOfSpeech": "名詞",
+        "meaning": "治安を乱す扇動"
+      },
+      {
+        "word": "seditious",
+        "partOfSpeech": "形容詞",
+        "meaning": "反乱を扇動する"
+      }
+    ],
+    [
+      {
+        "word": "seductive",
+        "partOfSpeech": "形容詞",
+        "meaning": "魅惑的な"
+      },
+      {
+        "word": "seductiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "魅惑的であること"
+      }
+    ],
+    [
+      {
+        "word": "seismic",
+        "partOfSpeech": "形容詞",
+        "meaning": "地震の"
+      },
+      {
+        "word": "seismically",
+        "partOfSpeech": "副詞",
+        "meaning": "地震学的に"
+      }
+    ],
+    [
+      {
+        "word": "selective",
+        "partOfSpeech": "形容詞",
+        "meaning": "選択的な"
+      },
+      {
+        "word": "selectivity",
+        "partOfSpeech": "名詞",
+        "meaning": "選択性"
+      },
+      {
+        "word": "selectively",
+        "partOfSpeech": "副詞",
+        "meaning": "選択的に"
+      }
+    ],
+    [
+      {
+        "word": "semantic",
+        "partOfSpeech": "形容詞",
+        "meaning": "意味の・意味論の"
+      },
+      {
+        "word": "semantics",
+        "partOfSpeech": "名詞",
+        "meaning": "意味論"
+      },
+      {
+        "word": "semantically",
+        "partOfSpeech": "副詞",
+        "meaning": "意味の面で"
+      }
+    ],
+    [
+      {
+        "word": "semiotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "記号論の"
+      },
+      {
+        "word": "semiotics",
+        "partOfSpeech": "名詞",
+        "meaning": "記号論"
+      }
+    ],
+    [
+      {
+        "word": "senate",
+        "partOfSpeech": "名詞",
+        "meaning": "上院"
+      },
+      {
+        "word": "senator",
+        "partOfSpeech": "名詞",
+        "meaning": "上院議員"
+      }
+    ],
+    [
+      {
+        "word": "senescent",
+        "partOfSpeech": "形容詞",
+        "meaning": "老化しつつある"
+      },
+      {
+        "word": "senescence",
+        "partOfSpeech": "名詞",
+        "meaning": "老化"
+      }
+    ],
+    [
+      {
+        "word": "senile",
+        "partOfSpeech": "形容詞",
+        "meaning": "老齢による衰えがある"
+      },
+      {
+        "word": "senility",
+        "partOfSpeech": "名詞",
+        "meaning": "老齢による衰え"
+      }
+    ],
+    [
+      {
+        "word": "senior",
+        "partOfSpeech": "形容詞",
+        "meaning": "年長の・上位の"
+      },
+      {
+        "word": "seniority",
+        "partOfSpeech": "名詞",
+        "meaning": "年功・先任順位"
+      }
+    ],
+    [
+      {
+        "word": "sensational",
+        "partOfSpeech": "形容詞",
+        "meaning": "世間を騒がせる・非常に印象的な"
+      },
+      {
+        "word": "sensationally",
+        "partOfSpeech": "副詞",
+        "meaning": "衝撃的に"
+      },
+      {
+        "word": "sensationalism",
+        "partOfSpeech": "名詞",
+        "meaning": "扇情主義"
+      },
+      {
+        "word": "sensationalist",
+        "partOfSpeech": "名詞",
+        "meaning": "扇情主義者"
+      }
+    ],
+    [
+      {
+        "word": "sensitive",
+        "partOfSpeech": "形容詞",
+        "meaning": "敏感な"
+      },
+      {
+        "word": "sensitiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "敏感さ"
+      }
+    ],
+    [
+      {
+        "word": "sensuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "感覚に訴える"
+      },
+      {
+        "word": "sensuously",
+        "partOfSpeech": "副詞",
+        "meaning": "感覚に訴えるように"
+      }
+    ],
+    [
+      {
+        "word": "sentient",
+        "partOfSpeech": "形容詞",
+        "meaning": "感覚・意識を持つ"
+      },
+      {
+        "word": "sentience",
+        "partOfSpeech": "名詞",
+        "meaning": "感覚・意識を持つこと"
+      }
+    ],
+    [
+      {
+        "word": "sentimental",
+        "partOfSpeech": "形容詞",
+        "meaning": "感傷的な"
+      },
+      {
+        "word": "sentimentalize",
+        "partOfSpeech": "動詞",
+        "meaning": "感傷的に描く・扱う"
+      }
+    ],
+    [
+      {
+        "word": "sepsis",
+        "partOfSpeech": "名詞",
+        "meaning": "敗血症"
+      },
+      {
+        "word": "septic",
+        "partOfSpeech": "形容詞",
+        "meaning": "感染性の・敗血症の"
+      },
+      {
+        "word": "antiseptic",
+        "partOfSpeech": "形容詞",
+        "meaning": "消毒用の"
+      },
+      {
+        "word": "aseptic",
+        "partOfSpeech": "形容詞",
+        "meaning": "無菌の"
+      }
+    ],
+    [
+      {
+        "word": "serology",
+        "partOfSpeech": "名詞",
+        "meaning": "血清学"
+      },
+      {
+        "word": "serological",
+        "partOfSpeech": "形容詞",
+        "meaning": "血清学の"
+      }
+    ],
+    [
+      {
+        "word": "serpentine",
+        "partOfSpeech": "形容詞",
+        "meaning": "蛇のように曲がりくねった"
+      },
+      {
+        "word": "serpent",
+        "partOfSpeech": "名詞",
+        "meaning": "蛇（文語）"
+      }
+    ],
+    [
+      {
+        "word": "servile",
+        "partOfSpeech": "形容詞",
+        "meaning": "卑屈な・奴隷のような"
+      },
+      {
+        "word": "servility",
+        "partOfSpeech": "名詞",
+        "meaning": "卑屈さ"
+      }
+    ],
+    [
+      {
+        "word": "sever",
+        "partOfSpeech": "動詞",
+        "meaning": "切断する・関係を断つ"
+      },
+      {
+        "word": "severance",
+        "partOfSpeech": "名詞",
+        "meaning": "切断・離職"
+      },
+      {
+        "word": "severable",
+        "partOfSpeech": "形容詞",
+        "meaning": "分離可能な"
+      }
+    ],
+    [
+      {
+        "word": "sewage",
+        "partOfSpeech": "名詞",
+        "meaning": "下水・汚水"
+      },
+      {
+        "word": "sewerage",
+        "partOfSpeech": "名詞",
+        "meaning": "下水道設備・下水処理"
+      }
+    ],
+    [
+      {
+        "word": "sexual",
+        "partOfSpeech": "形容詞",
+        "meaning": "性の・性的な"
+      },
+      {
+        "word": "sexualize",
+        "partOfSpeech": "動詞",
+        "meaning": "性的なものとして扱う"
+      },
+      {
+        "word": "sexualization",
+        "partOfSpeech": "名詞",
+        "meaning": "性的なものとして扱うこと"
+      }
+    ],
+    [
+      {
+        "word": "shabby",
+        "partOfSpeech": "形容詞",
+        "meaning": "みすぼらしい・不誠実な"
+      },
+      {
+        "word": "shabbiness",
+        "partOfSpeech": "名詞",
+        "meaning": "みすぼらしさ"
+      },
+      {
+        "word": "shabbily",
+        "partOfSpeech": "副詞",
+        "meaning": "みすぼらしく・不当に"
+      }
+    ],
+    [
+      {
+        "word": "shackle",
+        "partOfSpeech": "動詞",
+        "meaning": "拘束する"
+      },
+      {
+        "word": "unshackle",
+        "partOfSpeech": "動詞",
+        "meaning": "拘束を解く"
+      }
+    ],
+    [
+      {
+        "word": "shadow",
+        "partOfSpeech": "名詞",
+        "meaning": "影"
+      },
+      {
+        "word": "overshadow",
+        "partOfSpeech": "動詞",
+        "meaning": "影を落とす・存在感で圧倒する"
+      }
+    ],
+    [
+      {
+        "word": "shapeless",
+        "partOfSpeech": "形容詞",
+        "meaning": "形の定まらない"
+      },
+      {
+        "word": "shapelessness",
+        "partOfSpeech": "名詞",
+        "meaning": "形が定まらないこと"
+      }
+    ],
+    [
+      {
+        "word": "sheep",
+        "partOfSpeech": "名詞",
+        "meaning": "羊"
+      },
+      {
+        "word": "sheepish",
+        "partOfSpeech": "形容詞",
+        "meaning": "きまり悪そうな"
+      },
+      {
+        "word": "sheepishly",
+        "partOfSpeech": "副詞",
+        "meaning": "きまり悪そうに"
+      },
+      {
+        "word": "sheepishness",
+        "partOfSpeech": "名詞",
+        "meaning": "きまり悪さ"
+      }
+    ],
+    [
+      {
+        "word": "shelter",
+        "partOfSpeech": "名詞",
+        "meaning": "避難所・保護"
+      },
+      {
+        "word": "sheltered",
+        "partOfSpeech": "形容詞",
+        "meaning": "守られた・世間知らずの"
+      },
+      {
+        "word": "unsheltered",
+        "partOfSpeech": "形容詞",
+        "meaning": "保護されていない"
+      }
+    ],
+    [
+      {
+        "word": "shield",
+        "partOfSpeech": "動詞",
+        "meaning": "防護する"
+      },
+      {
+        "word": "shielding",
+        "partOfSpeech": "名詞",
+        "meaning": "遮蔽・防護"
+      },
+      {
+        "word": "unshielded",
+        "partOfSpeech": "形容詞",
+        "meaning": "遮蔽されていない"
+      }
+    ],
+    [
+      {
+        "word": "shift",
+        "partOfSpeech": "動詞",
+        "meaning": "移す・移る"
+      },
+      {
+        "word": "shifter",
+        "partOfSpeech": "名詞",
+        "meaning": "変速装置・移動させるもの"
+      }
+    ],
+    [
+      {
+        "word": "shifty",
+        "partOfSpeech": "形容詞",
+        "meaning": "信用できない・こそこそした"
+      },
+      {
+        "word": "shiftily",
+        "partOfSpeech": "副詞",
+        "meaning": "こそこそと"
+      },
+      {
+        "word": "shiftiness",
+        "partOfSpeech": "名詞",
+        "meaning": "信用できなさ"
+      }
+    ],
+    [
+      {
+        "word": "ship",
+        "partOfSpeech": "動詞",
+        "meaning": "発送する・船で運ぶ"
+      },
+      {
+        "word": "reship",
+        "partOfSpeech": "動詞",
+        "meaning": "再発送する"
+      },
+      {
+        "word": "reshipment",
+        "partOfSpeech": "名詞",
+        "meaning": "再発送"
+      }
+    ],
+    [
+      {
+        "word": "shoddy",
+        "partOfSpeech": "形容詞",
+        "meaning": "粗悪な"
+      },
+      {
+        "word": "shoddiness",
+        "partOfSpeech": "名詞",
+        "meaning": "粗悪さ"
+      },
+      {
+        "word": "shoddily",
+        "partOfSpeech": "副詞",
+        "meaning": "粗雑に"
+      }
+    ],
+    [
+      {
+        "word": "short",
+        "partOfSpeech": "形容詞",
+        "meaning": "短い"
+      },
+      {
+        "word": "shortfall",
+        "partOfSpeech": "名詞",
+        "meaning": "不足額"
+      },
+      {
+        "word": "shortsighted",
+        "partOfSpeech": "形容詞",
+        "meaning": "近視眼的な"
+      }
+    ],
+    [
+      {
+        "word": "shortsighted",
+        "partOfSpeech": "形容詞",
+        "meaning": "近視眼的な"
+      },
+      {
+        "word": "shortsightedness",
+        "partOfSpeech": "名詞",
+        "meaning": "近視眼的であること"
+      }
+    ],
+    [
+      {
+        "word": "showy",
+        "partOfSpeech": "形容詞",
+        "meaning": "派手な"
+      },
+      {
+        "word": "showiness",
+        "partOfSpeech": "名詞",
+        "meaning": "派手さ"
+      }
+    ],
+    [
+      {
+        "word": "shrewd",
+        "partOfSpeech": "形容詞",
+        "meaning": "抜け目のない・鋭い"
+      },
+      {
+        "word": "shrewdness",
+        "partOfSpeech": "名詞",
+        "meaning": "抜け目のなさ"
+      },
+      {
+        "word": "shrewdly",
+        "partOfSpeech": "副詞",
+        "meaning": "抜け目なく"
+      }
+    ],
+    [
+      {
+        "word": "shrill",
+        "partOfSpeech": "形容詞",
+        "meaning": "甲高い"
+      },
+      {
+        "word": "shrillness",
+        "partOfSpeech": "名詞",
+        "meaning": "甲高いこと"
+      },
+      {
+        "word": "shrilly",
+        "partOfSpeech": "副詞",
+        "meaning": "甲高く"
+      }
+    ],
+    [
+      {
+        "word": "sight",
+        "partOfSpeech": "名詞",
+        "meaning": "視力・光景"
+      },
+      {
+        "word": "sighted",
+        "partOfSpeech": "形容詞",
+        "meaning": "目の見える"
+      },
+      {
+        "word": "sightless",
+        "partOfSpeech": "形容詞",
+        "meaning": "視力のない"
+      },
+      {
+        "word": "sighting",
+        "partOfSpeech": "名詞",
+        "meaning": "目撃"
+      }
+    ],
+    [
+      {
+        "word": "signal",
+        "partOfSpeech": "名詞",
+        "meaning": "信号"
+      },
+      {
+        "word": "signaller",
+        "partOfSpeech": "名詞",
+        "meaning": "信号を送る人"
+      },
+      {
+        "word": "signalling",
+        "partOfSpeech": "名詞",
+        "meaning": "信号伝達"
+      }
+    ],
+    [
+      {
+        "word": "significant",
+        "partOfSpeech": "形容詞",
+        "meaning": "重要な・有意な"
+      },
+      {
+        "word": "significance",
+        "partOfSpeech": "名詞",
+        "meaning": "重要性・意義"
+      },
+      {
+        "word": "insignificantly",
+        "partOfSpeech": "副詞",
+        "meaning": "取るに足らない程度に"
+      }
+    ],
+    [
+      {
+        "word": "silky",
+        "partOfSpeech": "形容詞",
+        "meaning": "絹のような"
+      },
+      {
+        "word": "silkiness",
+        "partOfSpeech": "名詞",
+        "meaning": "絹のような滑らかさ"
+      }
+    ],
+    [
+      {
+        "word": "simultaneous",
+        "partOfSpeech": "形容詞",
+        "meaning": "同時の"
+      },
+      {
+        "word": "simultaneously",
+        "partOfSpeech": "副詞",
+        "meaning": "同時に"
+      },
+      {
+        "word": "simultaneity",
+        "partOfSpeech": "名詞",
+        "meaning": "同時性"
+      }
+    ],
+    [
+      {
+        "word": "sinuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "曲がりくねった"
+      },
+      {
+        "word": "sinuosity",
+        "partOfSpeech": "名詞",
+        "meaning": "曲がりくねり"
+      },
+      {
+        "word": "sinuously",
+        "partOfSpeech": "副詞",
+        "meaning": "曲がりくねって"
+      }
+    ],
+    [
+      {
+        "word": "skeletal",
+        "partOfSpeech": "形容詞",
+        "meaning": "骨格の"
+      },
+      {
+        "word": "skeleton",
+        "partOfSpeech": "名詞",
+        "meaning": "骨格・骨組み"
+      },
+      {
+        "word": "skeletonize",
+        "partOfSpeech": "動詞",
+        "meaning": "骨組みだけにする"
+      }
+    ],
+    [
+      {
+        "word": "skeptic",
+        "partOfSpeech": "名詞",
+        "meaning": "懐疑的な人"
+      },
+      {
+        "word": "skeptical",
+        "partOfSpeech": "形容詞",
+        "meaning": "懐疑的な"
+      },
+      {
+        "word": "skepticism",
+        "partOfSpeech": "名詞",
+        "meaning": "懐疑心"
+      },
+      {
+        "word": "skeptically",
+        "partOfSpeech": "副詞",
+        "meaning": "懐疑的に"
+      }
+    ],
+    [
+      {
+        "word": "sketchy",
+        "partOfSpeech": "形容詞",
+        "meaning": "大ざっぱな・不十分な"
+      },
+      {
+        "word": "sketchiness",
+        "partOfSpeech": "名詞",
+        "meaning": "大ざっぱさ・不完全さ"
+      }
+    ],
+    [
+      {
+        "word": "skew",
+        "partOfSpeech": "動詞",
+        "meaning": "ゆがめる・偏らせる"
+      },
+      {
+        "word": "skewness",
+        "partOfSpeech": "名詞",
+        "meaning": "ゆがみ・歪度"
+      }
+    ],
+    [
+      {
+        "word": "skimp",
+        "partOfSpeech": "動詞",
+        "meaning": "けちる・十分に使わない"
+      },
+      {
+        "word": "skimpy",
+        "partOfSpeech": "形容詞",
+        "meaning": "不十分な・露出の多い"
+      },
+      {
+        "word": "skimpily",
+        "partOfSpeech": "副詞",
+        "meaning": "不十分に"
+      }
+    ],
+    [
+      {
+        "word": "skittish",
+        "partOfSpeech": "形容詞",
+        "meaning": "おびえやすい・落ち着きのない"
+      },
+      {
+        "word": "skittishly",
+        "partOfSpeech": "副詞",
+        "meaning": "おびえた様子で"
+      },
+      {
+        "word": "skittishness",
+        "partOfSpeech": "名詞",
+        "meaning": "おびえやすさ・落ち着きのなさ"
+      }
+    ],
+    [
+      {
+        "word": "slack",
+        "partOfSpeech": "形容詞",
+        "meaning": "緩い・たるんだ"
+      },
+      {
+        "word": "slacker",
+        "partOfSpeech": "名詞",
+        "meaning": "怠け者"
+      },
+      {
+        "word": "slackly",
+        "partOfSpeech": "副詞",
+        "meaning": "緩く"
+      }
+    ],
+    [
+      {
+        "word": "slander",
+        "partOfSpeech": "名詞",
+        "meaning": "中傷・口頭での名誉毀損"
+      },
+      {
+        "word": "slanderous",
+        "partOfSpeech": "形容詞",
+        "meaning": "中傷的な"
+      },
+      {
+        "word": "slanderously",
+        "partOfSpeech": "副詞",
+        "meaning": "中傷するように"
+      },
+      {
+        "word": "slanderer",
+        "partOfSpeech": "名詞",
+        "meaning": "中傷する人"
+      }
+    ],
+    [
+      {
+        "word": "sleaze",
+        "partOfSpeech": "名詞",
+        "meaning": "いかがわしさ・低俗な行為"
+      },
+      {
+        "word": "sleazy",
+        "partOfSpeech": "形容詞",
+        "meaning": "いかがわしい・低俗な"
+      },
+      {
+        "word": "sleaziness",
+        "partOfSpeech": "名詞",
+        "meaning": "いかがわしさ"
+      }
+    ],
+    [
+      {
+        "word": "sleek",
+        "partOfSpeech": "形容詞",
+        "meaning": "滑らかな・洗練された"
+      },
+      {
+        "word": "sleekness",
+        "partOfSpeech": "名詞",
+        "meaning": "滑らかさ・洗練"
+      }
+    ],
+    [
+      {
+        "word": "sleep",
+        "partOfSpeech": "名詞",
+        "meaning": "睡眠"
+      },
+      {
+        "word": "sleepyhead",
+        "partOfSpeech": "名詞",
+        "meaning": "寝ぼすけ"
+      }
+    ],
+    [
+      {
+        "word": "slender",
+        "partOfSpeech": "形容詞",
+        "meaning": "細身の・わずかな"
+      },
+      {
+        "word": "slenderness",
+        "partOfSpeech": "名詞",
+        "meaning": "細さ"
+      },
+      {
+        "word": "slenderly",
+        "partOfSpeech": "副詞",
+        "meaning": "細く"
+      }
+    ],
+    [
+      {
+        "word": "slick",
+        "partOfSpeech": "形容詞",
+        "meaning": "滑らかな・口先のうまい"
+      },
+      {
+        "word": "slickness",
+        "partOfSpeech": "名詞",
+        "meaning": "滑らかさ・口先のうまさ"
+      },
+      {
+        "word": "slickly",
+        "partOfSpeech": "副詞",
+        "meaning": "巧みに・滑らかに"
+      }
+    ],
+    [
+      {
+        "word": "slight",
+        "partOfSpeech": "形容詞",
+        "meaning": "わずかな"
+      },
+      {
+        "word": "slightly",
+        "partOfSpeech": "副詞",
+        "meaning": "わずかに"
+      },
+      {
+        "word": "slightness",
+        "partOfSpeech": "名詞",
+        "meaning": "わずかさ"
+      }
+    ],
+    [
+      {
+        "word": "slime",
+        "partOfSpeech": "名詞",
+        "meaning": "ぬめり・粘液"
+      },
+      {
+        "word": "slimy",
+        "partOfSpeech": "形容詞",
+        "meaning": "ぬるぬるした・卑劣な"
+      },
+      {
+        "word": "sliminess",
+        "partOfSpeech": "名詞",
+        "meaning": "ぬるぬるしていること"
+      }
+    ],
+    [
+      {
+        "word": "slip",
+        "partOfSpeech": "動詞",
+        "meaning": "滑る・すべり落ちる"
+      },
+      {
+        "word": "slipper",
+        "partOfSpeech": "名詞",
+        "meaning": "スリッパ"
+      },
+      {
+        "word": "slip-resistant",
+        "partOfSpeech": "形容詞",
+        "meaning": "滑りにくい"
+      }
+    ],
+    [
+      {
+        "word": "slippery",
+        "partOfSpeech": "形容詞",
+        "meaning": "滑りやすい・信用できない"
+      },
+      {
+        "word": "slipperiness",
+        "partOfSpeech": "名詞",
+        "meaning": "滑りやすさ・信用できなさ"
+      }
+    ],
+    [
+      {
+        "word": "slop",
+        "partOfSpeech": "動詞",
+        "meaning": "液体をこぼす"
+      },
+      {
+        "word": "sloppy",
+        "partOfSpeech": "形容詞",
+        "meaning": "ずさんな・水っぽい"
+      },
+      {
+        "word": "sloppiness",
+        "partOfSpeech": "名詞",
+        "meaning": "ずさんさ"
+      },
+      {
+        "word": "sloppily",
+        "partOfSpeech": "副詞",
+        "meaning": "ずさんに"
+      }
+    ],
+    [
+      {
+        "word": "sloth",
+        "partOfSpeech": "名詞",
+        "meaning": "怠惰・ナマケモノ"
+      },
+      {
+        "word": "slothful",
+        "partOfSpeech": "形容詞",
+        "meaning": "怠惰な"
+      },
+      {
+        "word": "slothfully",
+        "partOfSpeech": "副詞",
+        "meaning": "怠惰に"
+      }
+    ],
+    [
+      {
+        "word": "slovenly",
+        "partOfSpeech": "形容詞",
+        "meaning": "だらしない"
+      },
+      {
+        "word": "slovenliness",
+        "partOfSpeech": "名詞",
+        "meaning": "だらしなさ"
+      }
+    ],
+    [
+      {
+        "word": "smell",
+        "partOfSpeech": "名詞",
+        "meaning": "におい"
+      },
+      {
+        "word": "smelliness",
+        "partOfSpeech": "名詞",
+        "meaning": "悪臭がすること"
+      }
+    ],
+    [
+      {
+        "word": "smelt",
+        "partOfSpeech": "動詞",
+        "meaning": "製錬する"
+      },
+      {
+        "word": "smeltery",
+        "partOfSpeech": "名詞",
+        "meaning": "製錬所"
+      }
+    ],
+    [
+      {
+        "word": "smog",
+        "partOfSpeech": "名詞",
+        "meaning": "スモッグ"
+      },
+      {
+        "word": "smoggy",
+        "partOfSpeech": "形容詞",
+        "meaning": "スモッグに覆われた"
+      }
+    ],
+    [
+      {
+        "word": "smoke",
+        "partOfSpeech": "名詞",
+        "meaning": "煙"
+      },
+      {
+        "word": "smokiness",
+        "partOfSpeech": "名詞",
+        "meaning": "煙っぽさ"
+      }
+    ],
+    [
+      {
+        "word": "smug",
+        "partOfSpeech": "形容詞",
+        "meaning": "自己満足した・得意げな"
+      },
+      {
+        "word": "smugness",
+        "partOfSpeech": "名詞",
+        "meaning": "自己満足"
+      },
+      {
+        "word": "smugly",
+        "partOfSpeech": "副詞",
+        "meaning": "得意げに"
+      }
+    ],
+    [
+      {
+        "word": "smuggle",
+        "partOfSpeech": "動詞",
+        "meaning": "密輸する・こっそり持ち込む"
+      },
+      {
+        "word": "smuggler",
+        "partOfSpeech": "名詞",
+        "meaning": "密輸業者"
+      },
+      {
+        "word": "smuggling",
+        "partOfSpeech": "名詞",
+        "meaning": "密輸"
+      }
+    ],
+    [
+      {
+        "word": "snake",
+        "partOfSpeech": "名詞",
+        "meaning": "蛇"
+      },
+      {
+        "word": "snaky",
+        "partOfSpeech": "形容詞",
+        "meaning": "蛇のような・曲がりくねった"
+      }
+    ],
+    [
+      {
+        "word": "snare",
+        "partOfSpeech": "動詞",
+        "meaning": "わなで捕らえる"
+      },
+      {
+        "word": "ensnare",
+        "partOfSpeech": "動詞",
+        "meaning": "わなにかける・陥れる"
+      }
+    ],
+    [
+      {
+        "word": "sneak",
+        "partOfSpeech": "動詞",
+        "meaning": "こっそり動く"
+      },
+      {
+        "word": "sneaky",
+        "partOfSpeech": "形容詞",
+        "meaning": "こそこそした"
+      },
+      {
+        "word": "sneakily",
+        "partOfSpeech": "副詞",
+        "meaning": "こっそりと"
+      },
+      {
+        "word": "sneakiness",
+        "partOfSpeech": "名詞",
+        "meaning": "こそこそする性質"
+      }
+    ],
+    [
+      {
+        "word": "sneer",
+        "partOfSpeech": "動詞",
+        "meaning": "冷笑する"
+      },
+      {
+        "word": "sneering",
+        "partOfSpeech": "形容詞",
+        "meaning": "冷笑的な"
+      },
+      {
+        "word": "sneeringly",
+        "partOfSpeech": "副詞",
+        "meaning": "冷笑して"
+      }
+    ],
+    [
+      {
+        "word": "snore",
+        "partOfSpeech": "動詞",
+        "meaning": "いびきをかく"
+      },
+      {
+        "word": "snorer",
+        "partOfSpeech": "名詞",
+        "meaning": "いびきをかく人"
+      },
+      {
+        "word": "snoring",
+        "partOfSpeech": "名詞",
+        "meaning": "いびき"
+      }
+    ],
+    [
+      {
+        "word": "soar",
+        "partOfSpeech": "動詞",
+        "meaning": "急上昇する"
+      },
+      {
+        "word": "soaring",
+        "partOfSpeech": "形容詞",
+        "meaning": "急上昇する・高くそびえる"
+      }
+    ],
+    [
+      {
+        "word": "sob",
+        "partOfSpeech": "動詞",
+        "meaning": "すすり泣く"
+      },
+      {
+        "word": "sobbing",
+        "partOfSpeech": "名詞",
+        "meaning": "すすり泣き"
+      }
+    ],
+    [
+      {
+        "word": "sober",
+        "partOfSpeech": "形容詞",
+        "meaning": "しらふの・冷静な"
+      },
+      {
+        "word": "sobriety",
+        "partOfSpeech": "名詞",
+        "meaning": "しらふ・冷静さ"
+      },
+      {
+        "word": "soberly",
+        "partOfSpeech": "副詞",
+        "meaning": "冷静に"
+      }
+    ],
+    [
+      {
+        "word": "socioeconomic",
+        "partOfSpeech": "形容詞",
+        "meaning": "社会経済的な"
+      },
+      {
+        "word": "socioeconomically",
+        "partOfSpeech": "副詞",
+        "meaning": "社会経済的に"
+      }
+    ],
+    [
+      {
+        "word": "sociable",
+        "partOfSpeech": "形容詞",
+        "meaning": "社交的な"
+      },
+      {
+        "word": "sociably",
+        "partOfSpeech": "副詞",
+        "meaning": "社交的に"
+      },
+      {
+        "word": "unsociable",
+        "partOfSpeech": "形容詞",
+        "meaning": "社交的でない"
+      }
+    ],
+    [
+      {
+        "word": "social",
+        "partOfSpeech": "形容詞",
+        "meaning": "社会の"
+      },
+      {
+        "word": "socialism",
+        "partOfSpeech": "名詞",
+        "meaning": "社会主義"
+      },
+      {
+        "word": "socialist",
+        "partOfSpeech": "名詞",
+        "meaning": "社会主義者"
+      }
+    ],
+    [
+      {
+        "word": "soft",
+        "partOfSpeech": "形容詞",
+        "meaning": "柔らかい"
+      },
+      {
+        "word": "softhearted",
+        "partOfSpeech": "形容詞",
+        "meaning": "心優しい"
+      }
+    ],
+    [
+      {
+        "word": "sole",
+        "partOfSpeech": "形容詞",
+        "meaning": "唯一の"
+      },
+      {
+        "word": "solely",
+        "partOfSpeech": "副詞",
+        "meaning": "唯一・もっぱら"
+      }
+    ],
+    [
+      {
+        "word": "solicitous",
+        "partOfSpeech": "形容詞",
+        "meaning": "気遣う・心配している"
+      },
+      {
+        "word": "solicitude",
+        "partOfSpeech": "名詞",
+        "meaning": "気遣い・心配"
+      },
+      {
+        "word": "solicitously",
+        "partOfSpeech": "副詞",
+        "meaning": "気遣って"
+      }
+    ],
+    [
+      {
+        "word": "solitary",
+        "partOfSpeech": "形容詞",
+        "meaning": "孤独な・単独の"
+      },
+      {
+        "word": "solitude",
+        "partOfSpeech": "名詞",
+        "meaning": "孤独・独りの状態"
+      },
+      {
+        "word": "solitarily",
+        "partOfSpeech": "副詞",
+        "meaning": "独りで"
+      }
+    ],
+    [
+      {
+        "word": "soluble",
+        "partOfSpeech": "形容詞",
+        "meaning": "溶ける性質の"
+      },
+      {
+        "word": "solubilize",
+        "partOfSpeech": "動詞",
+        "meaning": "可溶化する"
+      }
+    ],
+    [
+      {
+        "word": "solvent",
+        "partOfSpeech": "形容詞",
+        "meaning": "支払い能力のある"
+      },
+      {
+        "word": "solvency",
+        "partOfSpeech": "名詞",
+        "meaning": "支払い能力"
+      },
+      {
+        "word": "insolvent",
+        "partOfSpeech": "形容詞",
+        "meaning": "支払い不能の"
+      },
+      {
+        "word": "insolvency",
+        "partOfSpeech": "名詞",
+        "meaning": "支払い不能"
+      }
+    ],
+    [
+      {
+        "word": "somber",
+        "partOfSpeech": "形容詞",
+        "meaning": "陰気な・厳粛な"
+      },
+      {
+        "word": "somberly",
+        "partOfSpeech": "副詞",
+        "meaning": "陰気に・厳粛に"
+      },
+      {
+        "word": "somberness",
+        "partOfSpeech": "名詞",
+        "meaning": "陰気さ"
+      }
+    ],
+    [
+      {
+        "word": "somnambulism",
+        "partOfSpeech": "名詞",
+        "meaning": "夢遊病"
+      },
+      {
+        "word": "somnambulist",
+        "partOfSpeech": "名詞",
+        "meaning": "夢遊病者"
+      }
+    ],
+    [
+      {
+        "word": "somnolent",
+        "partOfSpeech": "形容詞",
+        "meaning": "眠気を催した・眠気を誘う"
+      },
+      {
+        "word": "somnolence",
+        "partOfSpeech": "名詞",
+        "meaning": "眠気"
+      }
+    ],
+    [
+      {
+        "word": "sonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "音の・音速の"
+      },
+      {
+        "word": "subsonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "亜音速の"
+      },
+      {
+        "word": "supersonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "超音速の"
+      },
+      {
+        "word": "ultrasonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "超音波の"
+      }
+    ],
+    [
+      {
+        "word": "sonorous",
+        "partOfSpeech": "形容詞",
+        "meaning": "朗々と響く"
+      },
+      {
+        "word": "sonority",
+        "partOfSpeech": "名詞",
+        "meaning": "響きの豊かさ"
+      }
+    ],
+    [
+      {
+        "word": "sophism",
+        "partOfSpeech": "名詞",
+        "meaning": "詭弁"
+      },
+      {
+        "word": "sophist",
+        "partOfSpeech": "名詞",
+        "meaning": "ソフィスト・詭弁家"
+      },
+      {
+        "word": "sophistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "詭弁的な"
+      }
+    ],
+    [
+      {
+        "word": "sordid",
+        "partOfSpeech": "形容詞",
+        "meaning": "卑劣な・みすぼらしい"
+      },
+      {
+        "word": "sordidness",
+        "partOfSpeech": "名詞",
+        "meaning": "卑劣さ・みすぼらしさ"
+      },
+      {
+        "word": "sordidly",
+        "partOfSpeech": "副詞",
+        "meaning": "卑劣に"
+      }
+    ],
+    [
+      {
+        "word": "sour",
+        "partOfSpeech": "形容詞",
+        "meaning": "酸っぱい・不機嫌な"
+      },
+      {
+        "word": "sourness",
+        "partOfSpeech": "名詞",
+        "meaning": "酸っぱさ・不機嫌さ"
+      },
+      {
+        "word": "sourly",
+        "partOfSpeech": "副詞",
+        "meaning": "不機嫌に"
+      }
+    ],
+    [
+      {
+        "word": "spark",
+        "partOfSpeech": "名詞",
+        "meaning": "火花"
+      },
+      {
+        "word": "sparkle",
+        "partOfSpeech": "動詞",
+        "meaning": "きらきら輝く"
+      },
+      {
+        "word": "sparkly",
+        "partOfSpeech": "形容詞",
+        "meaning": "きらきら光る"
+      }
+    ],
+    [
+      {
+        "word": "spasm",
+        "partOfSpeech": "名詞",
+        "meaning": "けいれん・発作"
+      },
+      {
+        "word": "spasmodic",
+        "partOfSpeech": "形容詞",
+        "meaning": "断続的な・けいれん性の"
+      },
+      {
+        "word": "spasmodically",
+        "partOfSpeech": "副詞",
+        "meaning": "断続的に"
+      },
+      {
+        "word": "spastic",
+        "partOfSpeech": "形容詞",
+        "meaning": "けいれん性の"
+      }
+    ],
+    [
+      {
+        "word": "spatial",
+        "partOfSpeech": "形容詞",
+        "meaning": "空間の"
+      },
+      {
+        "word": "spatialize",
+        "partOfSpeech": "動詞",
+        "meaning": "空間化する"
+      }
+    ],
+    [
+      {
+        "word": "spectacle",
+        "partOfSpeech": "名詞",
+        "meaning": "光景・見世物"
+      },
+      {
+        "word": "spectacular",
+        "partOfSpeech": "形容詞",
+        "meaning": "壮観な"
+      },
+      {
+        "word": "spectacularly",
+        "partOfSpeech": "副詞",
+        "meaning": "壮観に・目覚ましく"
+      }
+    ],
+    [
+      {
+        "word": "spectator",
+        "partOfSpeech": "名詞",
+        "meaning": "観客"
+      },
+      {
+        "word": "spectatorship",
+        "partOfSpeech": "名詞",
+        "meaning": "観客であること"
+      }
+    ],
+    [
+      {
+        "word": "spectrometer",
+        "partOfSpeech": "名詞",
+        "meaning": "分光計"
+      },
+      {
+        "word": "spectrometry",
+        "partOfSpeech": "名詞",
+        "meaning": "分光測定"
+      }
+    ],
+    [
+      {
+        "word": "spectroscopy",
+        "partOfSpeech": "名詞",
+        "meaning": "分光学"
+      },
+      {
+        "word": "spectroscopic",
+        "partOfSpeech": "形容詞",
+        "meaning": "分光学の"
+      }
+    ],
+    [
+      {
+        "word": "speculative",
+        "partOfSpeech": "形容詞",
+        "meaning": "推測に基づく・投機的な"
+      },
+      {
+        "word": "speculatively",
+        "partOfSpeech": "副詞",
+        "meaning": "推測的に・投機的に"
+      }
+    ],
+    [
+      {
+        "word": "spiritual",
+        "partOfSpeech": "形容詞",
+        "meaning": "精神的な・霊的な"
+      },
+      {
+        "word": "spiritualism",
+        "partOfSpeech": "名詞",
+        "meaning": "心霊主義"
+      },
+      {
+        "word": "spiritualist",
+        "partOfSpeech": "名詞",
+        "meaning": "心霊主義者"
+      }
+    ],
+    [
+      {
+        "word": "spleen",
+        "partOfSpeech": "名詞",
+        "meaning": "脾臓・鬱憤"
+      },
+      {
+        "word": "splenic",
+        "partOfSpeech": "形容詞",
+        "meaning": "脾臓の"
+      }
+    ],
+    [
+      {
+        "word": "spontaneous",
+        "partOfSpeech": "形容詞",
+        "meaning": "自発的な"
+      },
+      {
+        "word": "nonspontaneous",
+        "partOfSpeech": "形容詞",
+        "meaning": "自発的でない"
+      }
+    ],
+    [
+      {
+        "word": "sporadic",
+        "partOfSpeech": "形容詞",
+        "meaning": "散発的な"
+      },
+      {
+        "word": "sporadically",
+        "partOfSpeech": "副詞",
+        "meaning": "散発的に"
+      }
+    ],
+    [
+      {
+        "word": "spotless",
+        "partOfSpeech": "形容詞",
+        "meaning": "汚れのない"
+      },
+      {
+        "word": "spotlessness",
+        "partOfSpeech": "名詞",
+        "meaning": "汚れのなさ"
+      }
+    ],
+    [
+      {
+        "word": "spring",
+        "partOfSpeech": "名詞",
+        "meaning": "ばね"
+      },
+      {
+        "word": "springy",
+        "partOfSpeech": "形容詞",
+        "meaning": "弾力のある"
+      },
+      {
+        "word": "springiness",
+        "partOfSpeech": "名詞",
+        "meaning": "弾力性"
+      }
+    ],
+    [
+      {
+        "word": "squalid",
+        "partOfSpeech": "形容詞",
+        "meaning": "不潔な・みじめな"
+      },
+      {
+        "word": "squalor",
+        "partOfSpeech": "名詞",
+        "meaning": "不潔さ・みじめな状態"
+      },
+      {
+        "word": "squalidly",
+        "partOfSpeech": "副詞",
+        "meaning": "不潔な状態で"
+      }
+    ],
+    [
+      {
+        "word": "squeak",
+        "partOfSpeech": "動詞",
+        "meaning": "きしむ・キーキー鳴る"
+      },
+      {
+        "word": "squeaky",
+        "partOfSpeech": "形容詞",
+        "meaning": "キーキー鳴る"
+      },
+      {
+        "word": "squeakiness",
+        "partOfSpeech": "名詞",
+        "meaning": "きしみ音がすること"
+      }
+    ],
+    [
+      {
+        "word": "squeamish",
+        "partOfSpeech": "形容詞",
+        "meaning": "気分が悪くなりやすい・神経質な"
+      },
+      {
+        "word": "squeamishness",
+        "partOfSpeech": "名詞",
+        "meaning": "気分が悪くなりやすいこと"
+      },
+      {
+        "word": "squeamishly",
+        "partOfSpeech": "副詞",
+        "meaning": "嫌悪感を抱いて"
+      }
+    ],
+    [
+      {
+        "word": "stagger",
+        "partOfSpeech": "動詞",
+        "meaning": "よろめく・驚かせる"
+      },
+      {
+        "word": "staggering",
+        "partOfSpeech": "形容詞",
+        "meaning": "驚くほどの"
+      },
+      {
+        "word": "staggeringly",
+        "partOfSpeech": "副詞",
+        "meaning": "驚くほど"
+      }
+    ],
+    [
+      {
+        "word": "stale",
+        "partOfSpeech": "形容詞",
+        "meaning": "古くなった・新鮮でない"
+      },
+      {
+        "word": "staleness",
+        "partOfSpeech": "名詞",
+        "meaning": "新鮮さの欠如"
+      }
+    ],
+    [
+      {
+        "word": "stammer",
+        "partOfSpeech": "動詞",
+        "meaning": "どもる"
+      },
+      {
+        "word": "stammerer",
+        "partOfSpeech": "名詞",
+        "meaning": "どもる人"
+      }
+    ],
+    [
+      {
+        "word": "standardize",
+        "partOfSpeech": "動詞",
+        "meaning": "標準化する"
+      },
+      {
+        "word": "nonstandard",
+        "partOfSpeech": "形容詞",
+        "meaning": "標準的でない"
+      },
+      {
+        "word": "standardizer",
+        "partOfSpeech": "名詞",
+        "meaning": "標準化するもの"
+      }
+    ],
+    [
+      {
+        "word": "starch",
+        "partOfSpeech": "名詞",
+        "meaning": "でんぷん"
+      },
+      {
+        "word": "starchy",
+        "partOfSpeech": "形容詞",
+        "meaning": "でんぷん質の"
+      }
+    ],
+    [
+      {
+        "word": "stark",
+        "partOfSpeech": "形容詞",
+        "meaning": "厳然とした・荒涼とした"
+      },
+      {
+        "word": "starkly",
+        "partOfSpeech": "副詞",
+        "meaning": "際立って・厳然と"
+      },
+      {
+        "word": "starkness",
+        "partOfSpeech": "名詞",
+        "meaning": "厳然としたこと"
+      }
+    ],
+    [
+      {
+        "word": "startle",
+        "partOfSpeech": "動詞",
+        "meaning": "びっくりさせる"
+      },
+      {
+        "word": "startling",
+        "partOfSpeech": "形容詞",
+        "meaning": "びっくりするような"
+      },
+      {
+        "word": "startlingly",
+        "partOfSpeech": "副詞",
+        "meaning": "驚くほど"
+      }
+    ],
+    [
+      {
+        "word": "stealth",
+        "partOfSpeech": "名詞",
+        "meaning": "隠密行動"
+      },
+      {
+        "word": "stealthy",
+        "partOfSpeech": "形容詞",
+        "meaning": "ひそかな"
+      },
+      {
+        "word": "stealthily",
+        "partOfSpeech": "副詞",
+        "meaning": "ひそかに"
+      }
+    ],
+    [
+      {
+        "word": "steep",
+        "partOfSpeech": "形容詞",
+        "meaning": "急な・法外な"
+      },
+      {
+        "word": "steepen",
+        "partOfSpeech": "動詞",
+        "meaning": "急勾配になる・する"
+      }
+    ],
+    [
+      {
+        "word": "stellar",
+        "partOfSpeech": "形容詞",
+        "meaning": "恒星の・非常に優れた"
+      },
+      {
+        "word": "interstellar",
+        "partOfSpeech": "形容詞",
+        "meaning": "恒星間の"
+      }
+    ],
+    [
+      {
+        "word": "stenography",
+        "partOfSpeech": "名詞",
+        "meaning": "速記"
+      },
+      {
+        "word": "stenographer",
+        "partOfSpeech": "名詞",
+        "meaning": "速記者"
+      }
+    ],
+    [
+      {
+        "word": "stereophonic",
+        "partOfSpeech": "形容詞",
+        "meaning": "ステレオ音響の"
+      },
+      {
+        "word": "stereophony",
+        "partOfSpeech": "名詞",
+        "meaning": "ステレオ音響"
+      }
+    ],
+    [
+      {
+        "word": "stickler",
+        "partOfSpeech": "名詞",
+        "meaning": "細かいことにこだわる人"
+      },
+      {
+        "word": "stickle",
+        "partOfSpeech": "動詞",
+        "meaning": "細部にこだわる"
+      }
+    ],
+    [
+      {
+        "word": "still",
+        "partOfSpeech": "形容詞",
+        "meaning": "静かな・動かない"
+      },
+      {
+        "word": "stillness",
+        "partOfSpeech": "名詞",
+        "meaning": "静けさ"
+      }
+    ],
+    [
+      {
+        "word": "stint",
+        "partOfSpeech": "動詞",
+        "meaning": "出し惜しみする"
+      },
+      {
+        "word": "unstinting",
+        "partOfSpeech": "形容詞",
+        "meaning": "惜しみない"
+      },
+      {
+        "word": "unstintingly",
+        "partOfSpeech": "副詞",
+        "meaning": "惜しみなく"
+      }
+    ],
+    [
+      {
+        "word": "stocky",
+        "partOfSpeech": "形容詞",
+        "meaning": "ずんぐりした"
+      },
+      {
+        "word": "stockiness",
+        "partOfSpeech": "名詞",
+        "meaning": "ずんぐりした体つき"
+      }
+    ],
+    [
+      {
+        "word": "stoicism",
+        "partOfSpeech": "名詞",
+        "meaning": "ストア哲学・忍耐"
+      },
+      {
+        "word": "stoical",
+        "partOfSpeech": "形容詞",
+        "meaning": "苦痛に動じない"
+      },
+      {
+        "word": "stoically",
+        "partOfSpeech": "副詞",
+        "meaning": "苦痛に動じず"
+      }
+    ],
+    [
+      {
+        "word": "stolid",
+        "partOfSpeech": "形容詞",
+        "meaning": "感情を表さない・鈍重な"
+      },
+      {
+        "word": "stolidity",
+        "partOfSpeech": "名詞",
+        "meaning": "無感動さ・鈍重さ"
+      },
+      {
+        "word": "stolidly",
+        "partOfSpeech": "副詞",
+        "meaning": "無表情で"
+      }
+    ],
+    [
+      {
+        "word": "stop",
+        "partOfSpeech": "動詞",
+        "meaning": "止める"
+      },
+      {
+        "word": "nonstop",
+        "partOfSpeech": "形容詞",
+        "meaning": "途中で止まらない"
+      }
+    ],
+    [
+      {
+        "word": "store",
+        "partOfSpeech": "動詞",
+        "meaning": "保管する"
+      },
+      {
+        "word": "storable",
+        "partOfSpeech": "形容詞",
+        "meaning": "保管可能な"
+      }
+    ],
+    [
+      {
+        "word": "stout",
+        "partOfSpeech": "形容詞",
+        "meaning": "がっしりした・断固とした"
+      },
+      {
+        "word": "stoutness",
+        "partOfSpeech": "名詞",
+        "meaning": "がっしりしていること"
+      },
+      {
+        "word": "stoutly",
+        "partOfSpeech": "副詞",
+        "meaning": "断固として"
+      }
+    ],
+    [
+      {
+        "word": "straggle",
+        "partOfSpeech": "動詞",
+        "meaning": "列から遅れる・散らばる"
+      },
+      {
+        "word": "straggler",
+        "partOfSpeech": "名詞",
+        "meaning": "遅れてついてくる人"
+      },
+      {
+        "word": "straggly",
+        "partOfSpeech": "形容詞",
+        "meaning": "乱雑に伸びた"
+      }
+    ],
+    [
+      {
+        "word": "stratify",
+        "partOfSpeech": "動詞",
+        "meaning": "層に分ける"
+      },
+      {
+        "word": "stratification",
+        "partOfSpeech": "名詞",
+        "meaning": "階層化・成層"
+      },
+      {
+        "word": "stratified",
+        "partOfSpeech": "形容詞",
+        "meaning": "層状の・階層化された"
+      }
+    ],
+    [
+      {
+        "word": "stratosphere",
+        "partOfSpeech": "名詞",
+        "meaning": "成層圏"
+      },
+      {
+        "word": "stratospheric",
+        "partOfSpeech": "形容詞",
+        "meaning": "成層圏の・非常に高い"
+      }
+    ],
+    [
+      {
+        "word": "streak",
+        "partOfSpeech": "名詞",
+        "meaning": "筋・連続記録"
+      },
+      {
+        "word": "streaky",
+        "partOfSpeech": "形容詞",
+        "meaning": "筋の入った"
+      }
+    ],
+    [
+      {
+        "word": "streamline",
+        "partOfSpeech": "動詞",
+        "meaning": "効率化する・流線形にする"
+      },
+      {
+        "word": "streamlined",
+        "partOfSpeech": "形容詞",
+        "meaning": "効率化された・流線形の"
+      }
+    ],
+    [
+      {
+        "word": "strength",
+        "partOfSpeech": "名詞",
+        "meaning": "強さ"
+      },
+      {
+        "word": "strengthening",
+        "partOfSpeech": "名詞",
+        "meaning": "強化"
+      }
+    ],
+    [
+      {
+        "word": "strenuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "骨の折れる・激しい"
+      },
+      {
+        "word": "strenuously",
+        "partOfSpeech": "副詞",
+        "meaning": "精力的に"
+      }
+    ],
+    [
+      {
+        "word": "stretch",
+        "partOfSpeech": "動詞",
+        "meaning": "伸ばす・伸びる"
+      },
+      {
+        "word": "stretcher",
+        "partOfSpeech": "名詞",
+        "meaning": "担架"
+      }
+    ],
+    [
+      {
+        "word": "stringent",
+        "partOfSpeech": "形容詞",
+        "meaning": "厳格な・切迫した"
+      },
+      {
+        "word": "stringency",
+        "partOfSpeech": "名詞",
+        "meaning": "厳格さ・逼迫"
+      },
+      {
+        "word": "stringently",
+        "partOfSpeech": "副詞",
+        "meaning": "厳格に"
+      }
+    ],
+    [
+      {
+        "word": "strip",
+        "partOfSpeech": "動詞",
+        "meaning": "はぎ取る"
+      },
+      {
+        "word": "stripper",
+        "partOfSpeech": "名詞",
+        "meaning": "除去装置・除去する人"
+      }
+    ],
+    [
+      {
+        "word": "stroll",
+        "partOfSpeech": "動詞",
+        "meaning": "散歩する"
+      },
+      {
+        "word": "stroller",
+        "partOfSpeech": "名詞",
+        "meaning": "散歩する人・ベビーカー"
+      }
+    ],
+    [
+      {
+        "word": "structural",
+        "partOfSpeech": "形容詞",
+        "meaning": "構造上の"
+      },
+      {
+        "word": "structurally",
+        "partOfSpeech": "副詞",
+        "meaning": "構造的に"
+      },
+      {
+        "word": "structuralism",
+        "partOfSpeech": "名詞",
+        "meaning": "構造主義"
+      },
+      {
+        "word": "structuralist",
+        "partOfSpeech": "名詞",
+        "meaning": "構造主義者"
+      }
+    ],
+    [
+      {
+        "word": "stuffy",
+        "partOfSpeech": "形容詞",
+        "meaning": "息苦しい・堅苦しい"
+      },
+      {
+        "word": "stuffiness",
+        "partOfSpeech": "名詞",
+        "meaning": "息苦しさ・堅苦しさ"
+      }
+    ],
+    [
+      {
+        "word": "stupor",
+        "partOfSpeech": "名詞",
+        "meaning": "昏迷・ぼう然自失"
+      },
+      {
+        "word": "stupefy",
+        "partOfSpeech": "動詞",
+        "meaning": "ぼう然とさせる"
+      },
+      {
+        "word": "stupefaction",
+        "partOfSpeech": "名詞",
+        "meaning": "ぼう然自失"
+      },
+      {
+        "word": "stupefying",
+        "partOfSpeech": "形容詞",
+        "meaning": "ぼう然とさせる"
+      }
+    ],
+    [
+      {
+        "word": "stylish",
+        "partOfSpeech": "形容詞",
+        "meaning": "おしゃれな"
+      },
+      {
+        "word": "stylishness",
+        "partOfSpeech": "名詞",
+        "meaning": "おしゃれさ"
+      },
+      {
+        "word": "stylishly",
+        "partOfSpeech": "副詞",
+        "meaning": "おしゃれに"
+      }
+    ],
+    [
+      {
+        "word": "subconscious",
+        "partOfSpeech": "形容詞",
+        "meaning": "潜在意識の"
+      },
+      {
+        "word": "subconsciously",
+        "partOfSpeech": "副詞",
+        "meaning": "潜在意識のうちに"
+      }
+    ],
+    [
+      {
+        "word": "subjective",
+        "partOfSpeech": "形容詞",
+        "meaning": "主観的な"
+      },
+      {
+        "word": "subjectivism",
+        "partOfSpeech": "名詞",
+        "meaning": "主観主義"
+      },
+      {
+        "word": "subjectivist",
+        "partOfSpeech": "名詞",
+        "meaning": "主観主義者"
+      }
+    ],
+    [
+      {
+        "word": "subjugate",
+        "partOfSpeech": "動詞",
+        "meaning": "征服する・支配下に置く"
+      },
+      {
+        "word": "subjugation",
+        "partOfSpeech": "名詞",
+        "meaning": "征服・服従させること"
+      }
+    ],
+    [
+      {
+        "word": "submissive",
+        "partOfSpeech": "形容詞",
+        "meaning": "従順な"
+      },
+      {
+        "word": "submissively",
+        "partOfSpeech": "副詞",
+        "meaning": "従順に"
+      }
+    ],
+    [
+      {
+        "word": "subservient",
+        "partOfSpeech": "形容詞",
+        "meaning": "従属的な・卑屈な"
+      },
+      {
+        "word": "subservience",
+        "partOfSpeech": "名詞",
+        "meaning": "従属・卑屈さ"
+      },
+      {
+        "word": "subserviently",
+        "partOfSpeech": "副詞",
+        "meaning": "従属的に"
+      }
+    ],
+    [
+      {
+        "word": "substantial",
+        "partOfSpeech": "形容詞",
+        "meaning": "かなりの・実質的な"
+      },
+      {
+        "word": "substantiality",
+        "partOfSpeech": "名詞",
+        "meaning": "実質性"
+      },
+      {
+        "word": "substantially",
+        "partOfSpeech": "副詞",
+        "meaning": "大幅に・実質的に"
+      }
+    ],
+    [
+      {
+        "word": "substantive",
+        "partOfSpeech": "形容詞",
+        "meaning": "実質的な・重要な"
+      },
+      {
+        "word": "substantively",
+        "partOfSpeech": "副詞",
+        "meaning": "実質的に"
+      }
+    ],
+    [
+      {
+        "word": "substantiate",
+        "partOfSpeech": "動詞",
+        "meaning": "根拠で裏づける"
+      },
+      {
+        "word": "unsubstantiated",
+        "partOfSpeech": "形容詞",
+        "meaning": "裏づけのない"
+      }
+    ],
+    [
+      {
+        "word": "subtropical",
+        "partOfSpeech": "形容詞",
+        "meaning": "亜熱帯の"
+      },
+      {
+        "word": "subtropics",
+        "partOfSpeech": "名詞",
+        "meaning": "亜熱帯地方"
+      }
+    ],
+    [
+      {
+        "word": "suburb",
+        "partOfSpeech": "名詞",
+        "meaning": "郊外"
+      },
+      {
+        "word": "suburban",
+        "partOfSpeech": "形容詞",
+        "meaning": "郊外の"
+      },
+      {
+        "word": "suburbanite",
+        "partOfSpeech": "名詞",
+        "meaning": "郊外に暮らす人"
+      }
+    ],
+    [
+      {
+        "word": "subvert",
+        "partOfSpeech": "動詞",
+        "meaning": "転覆させる・根底から覆す"
+      },
+      {
+        "word": "subverter",
+        "partOfSpeech": "名詞",
+        "meaning": "転覆を図る人"
+      }
+    ],
+    [
+      {
+        "word": "suffrage",
+        "partOfSpeech": "名詞",
+        "meaning": "参政権・投票権"
+      },
+      {
+        "word": "suffragist",
+        "partOfSpeech": "名詞",
+        "meaning": "参政権獲得運動家"
+      },
+      {
+        "word": "suffragette",
+        "partOfSpeech": "名詞",
+        "meaning": "女性参政権運動家（歴史用語）"
+      }
+    ],
+    [
+      {
+        "word": "suffuse",
+        "partOfSpeech": "動詞",
+        "meaning": "一面に広がらせる"
+      },
+      {
+        "word": "suffusion",
+        "partOfSpeech": "名詞",
+        "meaning": "広がること・充満"
+      }
+    ],
+    [
+      {
+        "word": "sugar",
+        "partOfSpeech": "名詞",
+        "meaning": "砂糖"
+      },
+      {
+        "word": "sugared",
+        "partOfSpeech": "形容詞",
+        "meaning": "砂糖を加えた"
+      },
+      {
+        "word": "unsugared",
+        "partOfSpeech": "形容詞",
+        "meaning": "砂糖を加えていない"
+      }
+    ],
+    [
+      {
+        "word": "sulfur",
+        "partOfSpeech": "名詞",
+        "meaning": "硫黄"
+      },
+      {
+        "word": "sulfuric",
+        "partOfSpeech": "形容詞",
+        "meaning": "硫黄の・硫酸の"
+      }
+    ],
+    [
+      {
+        "word": "sully",
+        "partOfSpeech": "動詞",
+        "meaning": "汚す・名誉を傷つける"
+      },
+      {
+        "word": "unsullied",
+        "partOfSpeech": "形容詞",
+        "meaning": "汚されていない"
+      }
+    ],
+    [
+      {
+        "word": "sumptuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "豪華な"
+      },
+      {
+        "word": "sumptuously",
+        "partOfSpeech": "副詞",
+        "meaning": "豪華に"
+      },
+      {
+        "word": "sumptuousness",
+        "partOfSpeech": "名詞",
+        "meaning": "豪華さ"
+      }
+    ],
+    [
+      {
+        "word": "superannuate",
+        "partOfSpeech": "動詞",
+        "meaning": "年齢を理由に退職させる"
+      },
+      {
+        "word": "superannuation",
+        "partOfSpeech": "名詞",
+        "meaning": "退職年金・老朽化"
+      },
+      {
+        "word": "superannuated",
+        "partOfSpeech": "形容詞",
+        "meaning": "時代遅れの・老朽化した"
+      }
+    ],
+    [
+      {
+        "word": "supercilious",
+        "partOfSpeech": "形容詞",
+        "meaning": "尊大な・見下した"
+      },
+      {
+        "word": "superciliously",
+        "partOfSpeech": "副詞",
+        "meaning": "尊大に"
+      },
+      {
+        "word": "superciliousness",
+        "partOfSpeech": "名詞",
+        "meaning": "尊大さ"
+      }
+    ],
+    [
+      {
+        "word": "superimpose",
+        "partOfSpeech": "動詞",
+        "meaning": "重ね合わせる"
+      },
+      {
+        "word": "superimposition",
+        "partOfSpeech": "名詞",
+        "meaning": "重ね合わせ"
+      }
+    ],
+    [
+      {
+        "word": "superintend",
+        "partOfSpeech": "動詞",
+        "meaning": "監督する"
+      },
+      {
+        "word": "superintendent",
+        "partOfSpeech": "名詞",
+        "meaning": "監督者"
+      }
+    ],
+    [
+      {
+        "word": "supernatural",
+        "partOfSpeech": "形容詞",
+        "meaning": "超自然的な"
+      },
+      {
+        "word": "supernaturally",
+        "partOfSpeech": "副詞",
+        "meaning": "超自然的に"
+      }
+    ],
+    [
+      {
+        "word": "supplicate",
+        "partOfSpeech": "動詞",
+        "meaning": "懇願する"
+      },
+      {
+        "word": "supplication",
+        "partOfSpeech": "名詞",
+        "meaning": "懇願"
+      }
+    ],
+    [
+      {
+        "word": "suppurate",
+        "partOfSpeech": "動詞",
+        "meaning": "化膿する"
+      },
+      {
+        "word": "suppuration",
+        "partOfSpeech": "名詞",
+        "meaning": "化膿"
+      }
+    ],
+    [
+      {
+        "word": "sure",
+        "partOfSpeech": "形容詞",
+        "meaning": "確かな"
+      },
+      {
+        "word": "assuredly",
+        "partOfSpeech": "副詞",
+        "meaning": "確実に"
+      }
+    ],
+    [
+      {
+        "word": "surge",
+        "partOfSpeech": "動詞",
+        "meaning": "急増する・押し寄せる"
+      },
+      {
+        "word": "resurgence",
+        "partOfSpeech": "名詞",
+        "meaning": "復活・再燃"
+      },
+      {
+        "word": "resurgent",
+        "partOfSpeech": "形容詞",
+        "meaning": "復活しつつある"
+      }
+    ],
+    [
+      {
+        "word": "surgical",
+        "partOfSpeech": "形容詞",
+        "meaning": "外科の"
+      },
+      {
+        "word": "surgically",
+        "partOfSpeech": "副詞",
+        "meaning": "外科的に"
+      },
+      {
+        "word": "nonsurgical",
+        "partOfSpeech": "形容詞",
+        "meaning": "非外科的な"
+      }
+    ],
+    [
+      {
+        "word": "surmount",
+        "partOfSpeech": "動詞",
+        "meaning": "克服する"
+      },
+      {
+        "word": "surmountable",
+        "partOfSpeech": "形容詞",
+        "meaning": "克服できる"
+      },
+      {
+        "word": "insurmountable",
+        "partOfSpeech": "形容詞",
+        "meaning": "克服できない"
+      }
+    ],
+    [
+      {
+        "word": "surrealist",
+        "partOfSpeech": "名詞",
+        "meaning": "超現実主義の芸術家"
+      },
+      {
+        "word": "surrealistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "超現実主義的な"
+      }
+    ],
+    [
+      {
+        "word": "surveil",
+        "partOfSpeech": "動詞",
+        "meaning": "監視する"
+      },
+      {
+        "word": "surveillance",
+        "partOfSpeech": "名詞",
+        "meaning": "監視"
+      }
+    ],
+    [
+      {
+        "word": "suspend",
+        "partOfSpeech": "動詞",
+        "meaning": "一時停止する・つるす"
+      },
+      {
+        "word": "suspense",
+        "partOfSpeech": "名詞",
+        "meaning": "不安・先が気になる状態"
+      },
+      {
+        "word": "suspenseful",
+        "partOfSpeech": "形容詞",
+        "meaning": "はらはらさせる"
+      }
+    ],
+    [
+      {
+        "word": "swamp",
+        "partOfSpeech": "名詞",
+        "meaning": "沼地"
+      },
+      {
+        "word": "swampy",
+        "partOfSpeech": "形容詞",
+        "meaning": "沼地のような"
+      }
+    ],
+    [
+      {
+        "word": "swift",
+        "partOfSpeech": "形容詞",
+        "meaning": "素早い"
+      },
+      {
+        "word": "swiftly",
+        "partOfSpeech": "副詞",
+        "meaning": "素早く"
+      },
+      {
+        "word": "swiftness",
+        "partOfSpeech": "名詞",
+        "meaning": "素早さ"
+      }
+    ],
+    [
+      {
+        "word": "swindle",
+        "partOfSpeech": "動詞",
+        "meaning": "だまし取る"
+      },
+      {
+        "word": "swindler",
+        "partOfSpeech": "名詞",
+        "meaning": "詐欺師"
+      }
+    ],
+    [
+      {
+        "word": "sycophant",
+        "partOfSpeech": "名詞",
+        "meaning": "おべっか使い"
+      },
+      {
+        "word": "sycophantic",
+        "partOfSpeech": "形容詞",
+        "meaning": "こびへつらう"
+      }
+    ],
+    [
+      {
+        "word": "syllogism",
+        "partOfSpeech": "名詞",
+        "meaning": "三段論法"
+      },
+      {
+        "word": "syllogistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "三段論法の"
+      }
+    ],
+    [
+      {
+        "word": "symbiotic",
+        "partOfSpeech": "形容詞",
+        "meaning": "共生の"
+      },
+      {
+        "word": "symbiosis",
+        "partOfSpeech": "名詞",
+        "meaning": "共生"
+      }
+    ],
+    [
+      {
+        "word": "symmetry",
+        "partOfSpeech": "名詞",
+        "meaning": "対称性"
+      },
+      {
+        "word": "symmetrize",
+        "partOfSpeech": "動詞",
+        "meaning": "対称化する"
+      }
+    ],
+    [
+      {
+        "word": "synapse",
+        "partOfSpeech": "名詞",
+        "meaning": "シナプス"
+      },
+      {
+        "word": "synaptic",
+        "partOfSpeech": "形容詞",
+        "meaning": "シナプスの"
+      }
+    ],
+    [
+      {
+        "word": "synchronous",
+        "partOfSpeech": "形容詞",
+        "meaning": "同期した"
+      },
+      {
+        "word": "synchrony",
+        "partOfSpeech": "名詞",
+        "meaning": "同期・同時性"
+      }
+    ],
+    [
+      {
+        "word": "synonym",
+        "partOfSpeech": "名詞",
+        "meaning": "同義語"
+      },
+      {
+        "word": "synonymous",
+        "partOfSpeech": "形容詞",
+        "meaning": "同義の"
+      },
+      {
+        "word": "synonymy",
+        "partOfSpeech": "名詞",
+        "meaning": "同義関係"
+      }
+    ],
+    [
+      {
+        "word": "syntax",
+        "partOfSpeech": "名詞",
+        "meaning": "統語法"
+      },
+      {
+        "word": "syntactic",
+        "partOfSpeech": "形容詞",
+        "meaning": "統語法の"
+      },
+      {
+        "word": "syntactically",
+        "partOfSpeech": "副詞",
+        "meaning": "統語法の面で"
+      }
+    ],
+    [
+      {
+        "word": "systemic",
+        "partOfSpeech": "形容詞",
+        "meaning": "全体に関わる・全身性の"
+      },
+      {
+        "word": "systemically",
+        "partOfSpeech": "副詞",
+        "meaning": "全体的に・全身に作用して"
+      }
+    ]
+  ]
+}
