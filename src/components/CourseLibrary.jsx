@@ -5,7 +5,7 @@ import {libraryPage,posLabel,examplesFor,PAGE_SIZE} from '../lib/courseLibrary.j
 import './CourseLibrary.css';
 
 export function WordImage({word,className=''}) {
- const src=word?.image?assetImage(word.image):'';
+ const src=typeof word?.image==='string'&&word.image?assetImage(word.image):'';
  const [failed,setFailed]=useState(false);
  useEffect(()=>setFailed(false),[src]);
  return src&&!failed?<img className={className} src={src} alt={word.word+' の学習画像'} loading="lazy" onError={()=>setFailed(true)}/>:null;
