@@ -101,7 +101,11 @@
     "imagesGenerated": 0,
     "exactDuplicateExamplePairs": 0,
     "requiredFieldMissing": null,
-    "duplicateSenseIds": null
+    "duplicateSenseIds": 0,
+    "legacyCollocationSensesMissing": 5262,
+    "synonymOrNoteSensesRepaired": 334,
+    "editorialHoldCount": 3,
+    "linguisticReviewComplete": false
   },
   "publication": {
     "liveAppConnected": false
@@ -118,7 +122,7 @@
     "translatedExamplesAdded": 158,
     "editorialStatus": "draft-unreviewed"
   },
-  "notes": "Incremental word-ID reconciliation reaches the 8,653 master IDs. Three exceptional entries are held from quiz publication pending editorial review; supplemental drafts excluded from active totals. Full cross-batch and linguistic audit pending. No runtime or deployment changes.",
+  "notes": "All 8,653 target word IDs have draft records in the 84 active batches; supplemental alternative examples are preserved separately and are not counted. Global duplicate audit reports 0 duplicate sense IDs, 0 duplicate example IDs and 0 normalized English or bilingual-pair duplicates. 334 missing synonym-or-note entries and 55 C2 collocation entries were addressed. Legacy collocations remain incomplete (5,262 senses based on full audit minus the repaired C2 batch); three master spelling/rarity holds and independent linguistic review remain. Do not publish as fully editorially approved.",
   "supplementalBatchFiles": [
     "batches/original-20261115-c2-tail-8400-8449.json",
     "batches/original-20261115-c2-tail-8500-8529.json",
@@ -129,7 +133,9 @@
     "batches/original-20261115-c2-finish-05.json",
     "batches/original-20261115-c2-reconciled-8180-8199.json",
     "batches/original-20261115-master-spelling-review.json",
-    "batches/original-20261115-c2-mid-8080-8139.json"
+    "batches/original-20261115-c2-mid-8080-8139.json",
+    "batches/original-20261115-c2-finish-17.json",
+    "batches/original-20261115-c2-finish-18.json"
   ],
   "editorialHoldWordIds": [
     "VD-07729",
