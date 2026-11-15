@@ -94,12 +94,12 @@
     "distinctHeadwords": 8653,
     "senses": 9614,
     "examples": 19228,
-    "distinctExamples": null
+    "distinctExamples": 19228
   },
   "quality": {
     "humanReviewed": false,
     "imagesGenerated": 0,
-    "exactDuplicateExamplePairs": null,
+    "exactDuplicateExamplePairs": 0,
     "requiredFieldMissing": null,
     "duplicateSenseIds": null
   },
@@ -128,7 +128,8 @@
     "batches/original-20261115-c2-finish-04.json",
     "batches/original-20261115-c2-finish-05.json",
     "batches/original-20261115-c2-reconciled-8180-8199.json",
-    "batches/original-20261115-master-spelling-review.json"
+    "batches/original-20261115-master-spelling-review.json",
+    "batches/original-20261115-c2-mid-8080-8139.json"
   ],
   "editorialHoldWordIds": [
     "VD-07729",
