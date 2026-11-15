@@ -229,6 +229,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
   const [quizStudioOpen,setQuizStudioOpen]=useState(false);
+  const [quizStudioWord,setQuizStudioWord]=useState('');
   const [dashboardOpen, setDashboardOpen] = useState(true);
   const [homeCategory,setHomeCategory]=useState(null);
   const goCategory=group=>{setDashboardOpen(true);setQuizStudioOpen(false);setHomeCategory({group,stamp:Date.now()});};
@@ -259,7 +260,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const quizAnswerCorrect = feedback !== null && (mode === 'listening' ? feedback === current?.id : feedback === current?.correctIndex);
   const isFinished = !loading && queue.length > 0 && cursor >= queue.length;
   const stats = useMemo(() => summaryFor(words, store.records), [words, store.records]);
-  const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
+  const today = useMemo(() => Object.values(store.records).filter(r => [r?.lastSeenAt,r?.readingLastAt,r?.memory?.lastAt].some(at => at && new Date(at).toDateString() === new Date().toDateString())).length, [store.records]);
   const progress = queue.length ? Math.min(100, cursor / queue.length * 100) : 0;
   const masteryPercent = stats.total ? Math.round(stats.known / stats.total * 100) : 0;
   const readingPassed = useMemo(
@@ -386,7 +387,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     setSession(prev => ({ answered: prev.answered + 1, correct: prev.correct + (option.correct ? 1 : 0) }));
     // Keep mistakes and real explanations visible; straightforward correct answers flow onward.
     quizTimer.current = setTimeout(() => {
-      if(shouldAutoAdvance(option.correct,current.explanation)){next();return;}
+      if(shouldAutoAdvance(option.correct,current.explanation||current.etymology)){next();return;}
       setQuizCelebration(null);
       setQuizReviewOpen(true);
     }, option.correct ? CORRECT_ADVANCE_MS : 750);
@@ -484,11 +485,11 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
 
       </header>
       <div className="vd-page">
-        {quizStudioOpen ? <QuizStudio sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
+        {quizStudioOpen ? <QuizStudio initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
-            totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt).length}
+            totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
             onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
@@ -647,7 +648,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </div>
     </main>
     <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    {universeEntry && <VocaUniverse records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onPractice={word=>{resetCard();setAutoplay(false);stopUniverseLaunchSound();setUniverseEntry(null);setQuizStudioWord(word);setDashboardOpen(true);setQuizStudioOpen(true);}} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">
