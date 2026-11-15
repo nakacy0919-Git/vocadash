@@ -461,7 +461,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const resolveVocabulary=raw=>findVocabulary(raw,{words,loadCourseWords:voiceCourseSearch});
   const exploreFromHome=async raw=>{const item=await resolveVocabulary(raw);if(!item)return false;openUniverse(item);return true;};
   const searchAll=raw=>searchVocabulary(raw,courseIndex);
-  const launchDash=()=>{document.querySelector('.vd-voice-help-button')?.click();};
+  const launchDash=()=>window.dispatchEvent(new Event('vd-open-dash'));
   const voiceAppCommand=kind=>{
     if(universeEntry){stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}
     if(kind==='close')return;
@@ -653,7 +653,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
         {!dashboardOpen&&<footer className="vd-footer">VocaDash · Built for focused learning <span>学習データはこのブラウザ内に保存されます。端末間同期はありません。</span></footer>}
       </div>
     </main>
-    <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen} suspended={mode==='reading'&&!dashboardOpen}/>
+    <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen||mode==='library'} suspended={mode==='reading'&&!dashboardOpen}/>
     {universeEntry && <VocaUniverse onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onPractice={word=>{resetCard();setAutoplay(false);stopUniverseLaunchSound();setUniverseEntry(null);setQuizStudioWord(word);setDashboardOpen(true);setQuizStudioOpen(true);}} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
