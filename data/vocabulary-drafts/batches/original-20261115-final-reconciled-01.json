@@ -1,0 +1,2479 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "original-20261115-final-reconciled-01",
+  "sourceKind": "github-original",
+  "records": [
+    {
+      "senseId": "VDO-261115-C2-F04-0001",
+      "wordId": "VD-08080",
+      "headword": "exorcism",
+      "partOfSpeech": "noun",
+      "meaningJa": "悪霊払い",
+      "definitionEn": "a ritual intended to drive out an evil spirit believed to possess a person or place",
+      "synonyms": "expulsion ritual",
+      "antonyms": "",
+      "collocations": [
+        "perform an exorcism",
+        "religious exorcism"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：そのドキュメンタリーは複数の宗教的伝統における悪霊払いの歴史を調べた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0001-e01",
+          "en": "The documentary examined the history of exorcism in several religious traditions.",
+          "ja": "そのドキュメンタリーは複数の宗教的伝統における悪霊払いの歴史を調べた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0001-e02",
+          "en": "In the novel, the villagers request an exorcism of the abandoned house.",
+          "ja": "小説では村人たちが廃屋の悪霊払いを依頼する。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0002",
+      "wordId": "VD-08081",
+      "headword": "exorcist",
+      "partOfSpeech": "noun",
+      "meaningJa": "悪霊払いを行う人",
+      "definitionEn": "a person who performs rituals intended to expel evil spirits",
+      "synonyms": "ritual practitioner",
+      "antonyms": "",
+      "collocations": [
+        "trained exorcist",
+        "call an exorcist"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：架空の悪霊払い師は真夜中過ぎに城へ到着する。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0002-e01",
+          "en": "The fictional exorcist arrives at the castle after midnight.",
+          "ja": "架空の悪霊払い師は真夜中過ぎに城へ到着する。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0002-e02",
+          "en": "The historian interviewed a priest who had served as an exorcist.",
+          "ja": "歴史家は悪霊払いを務めたことのある司祭に取材した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0003",
+      "wordId": "VD-08082",
+      "headword": "extant",
+      "partOfSpeech": "adjective",
+      "meaningJa": "現存する",
+      "definitionEn": "still existing despite the passage of time",
+      "synonyms": "surviving, existing",
+      "antonyms": "lost",
+      "collocations": [
+        "extant manuscript",
+        "extant species"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：学者に知られている現存する地図の写しは3部だけだ。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0003-e01",
+          "en": "Only three extant copies of the map are known to scholars.",
+          "ja": "学者に知られている現存する地図の写しは3部だけだ。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0003-e02",
+          "en": "The database distinguishes extinct mammals from extant species.",
+          "ja": "データベースは絶滅した哺乳類と現存する種を区別する。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0004",
+      "wordId": "VD-08083",
+      "headword": "extracurricular",
+      "partOfSpeech": "adjective",
+      "meaningJa": "課外の",
+      "definitionEn": "taking place outside the regular academic curriculum",
+      "synonyms": "after-school, co-curricular",
+      "antonyms": "",
+      "collocations": [
+        "extracurricular activity",
+        "extracurricular program"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：学校はロボット工学から演劇までさまざまな課外活動を提供している。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0004-e01",
+          "en": "The school offers extracurricular activities ranging from robotics to drama.",
+          "ja": "学校はロボット工学から演劇までさまざまな課外活動を提供している。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0004-e02",
+          "en": "She organized an extracurricular gardening program for younger pupils.",
+          "ja": "彼女は年少の児童のために課外園芸プログラムを企画した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0005",
+      "wordId": "VD-08084",
+      "headword": "exude",
+      "partOfSpeech": "verb",
+      "meaningJa": "にじみ出る、分泌する",
+      "definitionEn": "to discharge a liquid or other substance gradually through a surface",
+      "synonyms": "secrete, ooze",
+      "antonyms": "",
+      "collocations": [
+        "exude sap",
+        "exude moisture"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：傷ついた木は割れ目から粘り気のある樹脂を分泌した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0005-e01",
+          "en": "The injured tree exuded a sticky resin from a crack.",
+          "ja": "傷ついた木は割れ目から粘り気のある樹脂を分泌した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0005-e02",
+          "en": "Some sea creatures exude mucus when disturbed.",
+          "ja": "一部の海洋生物は刺激されると粘液を分泌する。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0006",
+      "wordId": "VD-08084",
+      "headword": "exude",
+      "partOfSpeech": "verb",
+      "meaningJa": "雰囲気や性質を自然に発する",
+      "definitionEn": "to give a strong impression of a particular quality or feeling",
+      "synonyms": "radiate, emanate",
+      "antonyms": "",
+      "collocations": [
+        "exude confidence",
+        "exude warmth"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：避難所が混雑してきてもそのボランティアは落ち着きを漂わせていた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0006-e01",
+          "en": "The volunteer exuded calm even as the shelter grew crowded.",
+          "ja": "避難所が混雑してきてもそのボランティアは落ち着きを漂わせていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0006-e02",
+          "en": "The renovated café exudes warmth through its soft lighting and wooden furniture.",
+          "ja": "改装されたカフェは柔らかな照明と木製家具によって温かみを醸し出している。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0007",
+      "wordId": "VD-08085",
+      "headword": "fabled",
+      "partOfSpeech": "adjective",
+      "meaningJa": "伝説的な、名高い",
+      "definitionEn": "famous through stories or reputation, sometimes with uncertain historical truth",
+      "synonyms": "legendary, renowned",
+      "antonyms": "obscure",
+      "collocations": [
+        "fabled city",
+        "fabled treasure"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：探検家たちは伝説の山岳都市の遺跡を探した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0007-e01",
+          "en": "The explorers searched for the ruins of a fabled mountain city.",
+          "ja": "探検家たちは伝説の山岳都市の遺跡を探した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0007-e02",
+          "en": "The fabled violin was finally displayed to the public.",
+          "ja": "名高いバイオリンはついに一般公開された。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0008",
+      "wordId": "VD-08086",
+      "headword": "fabricate",
+      "partOfSpeech": "verb",
+      "meaningJa": "捏造する",
+      "definitionEn": "to invent a false story, statement, or piece of evidence",
+      "synonyms": "invent, falsify",
+      "antonyms": "",
+      "collocations": [
+        "fabricate evidence",
+        "fabricate an excuse"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：生徒は調査結果を捏造していたことを認めた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0008-e01",
+          "en": "The student admitted that he had fabricated the survey results.",
+          "ja": "生徒は調査結果を捏造していたことを認めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0008-e02",
+          "en": "The reporter found no proof that the witness had fabricated the story.",
+          "ja": "記者は証人が話を捏造したという証拠を見つけられなかった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0009",
+      "wordId": "VD-08086",
+      "headword": "fabricate",
+      "partOfSpeech": "verb",
+      "meaningJa": "部品などを製造・組み立てる",
+      "definitionEn": "to make a physical object from assembled or processed materials",
+      "synonyms": "manufacture, construct",
+      "antonyms": "",
+      "collocations": [
+        "fabricate components",
+        "fabricate a frame"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：作業場は再生鋼材から交換用の枠を製造した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0009-e01",
+          "en": "The workshop fabricated a replacement frame from recycled steel.",
+          "ja": "作業場は再生鋼材から交換用の枠を製造した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0009-e02",
+          "en": "Using digital designs, technicians fabricated lightweight prosthetic parts.",
+          "ja": "技術者たちはデジタル設計を用いて軽量の義肢部品を製作した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0010",
+      "wordId": "VD-08087",
+      "headword": "fabrication",
+      "partOfSpeech": "noun",
+      "meaningJa": "捏造、作り話",
+      "definitionEn": "the act of inventing false information or a false account",
+      "synonyms": "falsehood, invention",
+      "antonyms": "",
+      "collocations": [
+        "complete fabrication",
+        "fabrication of evidence"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：広く拡散したうわさは完全な作り話だったことが判明した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0010-e01",
+          "en": "The widely shared rumor turned out to be a complete fabrication.",
+          "ja": "広く拡散したうわさは完全な作り話だったことが判明した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0010-e02",
+          "en": "The inquiry investigated the fabrication of research data.",
+          "ja": "調査委員会は研究データの捏造を調べた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0011",
+      "wordId": "VD-08087",
+      "headword": "fabrication",
+      "partOfSpeech": "noun",
+      "meaningJa": "製造、加工組立",
+      "definitionEn": "the process of making objects or structures from materials",
+      "synonyms": "manufacturing, construction",
+      "antonyms": "",
+      "collocations": [
+        "metal fabrication",
+        "digital fabrication"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：生徒たちは作業場で金属加工の基礎を学んだ。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0011-e01",
+          "en": "The students learned the basics of metal fabrication in the workshop.",
+          "ja": "生徒たちは作業場で金属加工の基礎を学んだ。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0011-e02",
+          "en": "Digital fabrication allowed the designers to test their prototypes quickly.",
+          "ja": "デジタル加工技術によって設計者は試作品を素早く試せた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0012",
+      "wordId": "VD-08088",
+      "headword": "fabulate",
+      "partOfSpeech": "verb",
+      "meaningJa": "寓話や架空の物語を作る（まれ）",
+      "definitionEn": "to invent imaginative or fictional narratives",
+      "synonyms": "invent stories, fictionalize",
+      "antonyms": "",
+      "collocations": [
+        "fabulate a narrative"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：小説家は歴史記録の空白をもとに架空の物語を作る。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0012-e01",
+          "en": "The novelist fabulates around gaps in the historical record.",
+          "ja": "小説家は歴史記録の空白をもとに架空の物語を作る。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0012-e02",
+          "en": "Children sometimes fabulate when invited to explain an unfamiliar picture.",
+          "ja": "子どもは見慣れない絵について説明を求められると架空の話を作ることがある。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0013",
+      "wordId": "VD-08089",
+      "headword": "fabulation",
+      "partOfSpeech": "noun",
+      "meaningJa": "架空の物語の創作",
+      "definitionEn": "the creation of imaginative stories, often blending fact and invention",
+      "synonyms": "fictional invention",
+      "antonyms": "",
+      "collocations": [
+        "literary fabulation",
+        "creative fabulation"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：その小説は歴史研究と想像力豊かな物語の創作を組み合わせている。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0013-e01",
+          "en": "The novel combines historical research with imaginative fabulation.",
+          "ja": "その小説は歴史研究と想像力豊かな物語の創作を組み合わせている。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0013-e02",
+          "en": "The lecture explored the role of fabulation in oral traditions.",
+          "ja": "講義は口承の伝統における架空の物語作りの役割を考察した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0014",
+      "wordId": "VD-08090",
+      "headword": "facsimile",
+      "partOfSpeech": "noun",
+      "meaningJa": "正確な複製、原寸複写",
+      "definitionEn": "a copy made to reproduce the appearance of an original as closely as possible",
+      "synonyms": "reproduction, replica",
+      "antonyms": "original",
+      "collocations": [
+        "exact facsimile",
+        "facsimile edition"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：来館者は壊れやすい古代写本の精巧な複製を手に取った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0014-e01",
+          "en": "Visitors handled a facsimile of the fragile ancient manuscript.",
+          "ja": "来館者は壊れやすい古代写本の精巧な複製を手に取った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0014-e02",
+          "en": "The library published a facsimile edition of the first newspaper.",
+          "ja": "図書館は最初の新聞の複製版を刊行した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0015",
+      "wordId": "VD-08090",
+      "headword": "facsimile",
+      "partOfSpeech": "noun",
+      "meaningJa": "ファクス（形式的）",
+      "definitionEn": "a document transmitted as an image over a communications network",
+      "synonyms": "fax",
+      "antonyms": "",
+      "collocations": [
+        "send by facsimile",
+        "facsimile transmission"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：事務所は署名済みの文書をファクスで受け取った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0015-e01",
+          "en": "The office received the signed document by facsimile.",
+          "ja": "事務所は署名済みの文書をファクスで受け取った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0015-e02",
+          "en": "The regulations once required applications to be sent by facsimile or post.",
+          "ja": "その規則はかつて申請書をファクスか郵便で送ることを求めていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0016",
+      "wordId": "VD-08091",
+      "headword": "fallacy",
+      "partOfSpeech": "noun",
+      "meaningJa": "誤った考え、論理的誤謬",
+      "definitionEn": "a mistaken belief or a flaw in reasoning that makes an argument invalid",
+      "synonyms": "misconception, logical error",
+      "antonyms": "",
+      "collocations": [
+        "common fallacy",
+        "logical fallacy"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：人気のある考えはすべて正しいと思い込むのは論理的誤謬だ。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0016-e01",
+          "en": "Assuming that every popular idea is true is a logical fallacy.",
+          "ja": "人気のある考えはすべて正しいと思い込むのは論理的誤謬だ。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0016-e02",
+          "en": "The lesson challenged the fallacy that creativity is an innate talent alone.",
+          "ja": "授業は創造性が生まれつきの才能だけに由来するという誤った考えを問い直した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0017",
+      "wordId": "VD-08092",
+      "headword": "farcical",
+      "partOfSpeech": "adjective",
+      "meaningJa": "茶番のような、ばかげた",
+      "definitionEn": "so absurd or badly organized that it resembles a ridiculous comedy",
+      "synonyms": "absurd, ludicrous",
+      "antonyms": "serious",
+      "collocations": [
+        "farcical situation",
+        "farcical attempt"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：3人が同時に議長を務めようとしたため会議は茶番のようになった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0017-e01",
+          "en": "The meeting became farcical when three people tried to chair it at once.",
+          "ja": "3人が同時に議長を務めようとしたため会議は茶番のようになった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0017-e02",
+          "en": "A series of contradictory instructions led to a farcical opening ceremony.",
+          "ja": "相次ぐ矛盾した指示によって開会式は茶番のようになった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0018",
+      "wordId": "VD-08093",
+      "headword": "feign",
+      "partOfSpeech": "verb",
+      "meaningJa": "～のふりをする",
+      "definitionEn": "to pretend to feel or experience something that is not genuine",
+      "synonyms": "pretend, simulate",
+      "antonyms": "",
+      "collocations": [
+        "feign ignorance",
+        "feign interest"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：部屋を片づける時間になると子どもは寝たふりをした。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0018-e01",
+          "en": "The child feigned sleep when it was time to tidy the room.",
+          "ja": "部屋を片づける時間になると子どもは寝たふりをした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0018-e02",
+          "en": "The negotiator feigned indifference to the initial offer.",
+          "ja": "交渉担当者は最初の提示に関心がないふりをした。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0019",
+      "wordId": "VD-08094",
+      "headword": "ferocity",
+      "partOfSpeech": "noun",
+      "meaningJa": "獰猛さ、激しさ",
+      "definitionEn": "the quality of being extremely fierce, violent, or intense",
+      "synonyms": "fierceness, intensity",
+      "antonyms": "gentleness",
+      "collocations": [
+        "ferocity of a storm",
+        "with ferocity"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：嵐の激しさは漁船の乗組員を驚かせた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0019-e01",
+          "en": "The ferocity of the storm took the fishing crew by surprise.",
+          "ja": "嵐の激しさは漁船の乗組員を驚かせた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0019-e02",
+          "en": "The documentary shows the ferocity with which the small bird defends its nest.",
+          "ja": "そのドキュメンタリーは小鳥が巣を守る際の激しさを映し出す。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0020",
+      "wordId": "VD-08095",
+      "headword": "fete",
+      "partOfSpeech": "noun",
+      "meaningJa": "祝祭、屋外の催し",
+      "definitionEn": "a public celebration, especially an outdoor event with stalls and entertainment",
+      "synonyms": "fair, festival",
+      "antonyms": "",
+      "collocations": [
+        "village fete",
+        "summer fete"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：学校は夏の催しで新しい本を買う資金を集めた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0020-e01",
+          "en": "The school raised money for new books at its summer fete.",
+          "ja": "学校は夏の催しで新しい本を買う資金を集めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0020-e02",
+          "en": "Local musicians performed at the village fete beside the church.",
+          "ja": "地元の音楽家たちは教会横の村の祭りで演奏した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0021",
+      "wordId": "VD-08095",
+      "headword": "fete",
+      "partOfSpeech": "verb",
+      "meaningJa": "盛大にもてなす、称える",
+      "definitionEn": "to honor someone with a celebration or enthusiastic public attention",
+      "synonyms": "celebrate, honor",
+      "antonyms": "",
+      "collocations": [
+        "fete an artist",
+        "feted as a hero"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：地域は特別な式典で若い発明家を称えた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0021-e01",
+          "en": "The community feted the young inventor at a special ceremony.",
+          "ja": "地域は特別な式典で若い発明家を称えた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0021-e02",
+          "en": "The author was feted by readers during her visit to the town.",
+          "ja": "著者は町を訪れた際に読者から盛大に歓迎された。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0022",
+      "wordId": "VD-08096",
+      "headword": "figuratively",
+      "partOfSpeech": "adverb",
+      "meaningJa": "比喩的に",
+      "definitionEn": "in a nonliteral manner using imagery or comparison",
+      "synonyms": "metaphorically",
+      "antonyms": "literally",
+      "collocations": [
+        "figuratively speaking",
+        "used figuratively"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：open a doorは機会を作るという意味で比喩的によく使われる。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0022-e01",
+          "en": "The phrase open a door is often used figuratively to describe creating an opportunity.",
+          "ja": "open a doorは機会を作るという意味で比喩的によく使われる。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0022-e02",
+          "en": "When the coach called her a rock, he was speaking figuratively.",
+          "ja": "コーチが彼女を岩と呼んだとき、それは比喩的な表現だった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0023",
+      "wordId": "VD-08097",
+      "headword": "flagging",
+      "partOfSpeech": "adjective",
+      "meaningJa": "衰えつつある、弱まっている",
+      "definitionEn": "losing energy, strength, or enthusiasm",
+      "synonyms": "waning, declining",
+      "antonyms": "reviving",
+      "collocations": [
+        "flagging spirits",
+        "flagging sales"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：思いがけない訪問でボランティアの衰えていた士気が回復した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0023-e01",
+          "en": "A surprise visit revived the volunteers' flagging spirits.",
+          "ja": "思いがけない訪問でボランティアの衰えていた士気が回復した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0023-e02",
+          "en": "The shop redesigned its display to boost flagging sales.",
+          "ja": "店は落ち込みつつある売上を伸ばすため陳列を一新した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0024",
+      "wordId": "VD-08098",
+      "headword": "flatout",
+      "partOfSpeech": "adverb",
+      "meaningJa": "全力で、最高速度で（通常 flat out と書く）",
+      "definitionEn": "at maximum speed or effort",
+      "synonyms": "at full speed, full tilt",
+      "antonyms": "",
+      "collocations": [
+        "work flat out",
+        "run flat out"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：授業開始前にネットワークを復旧するため技術者たちは全力で働いた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0024-e01",
+          "en": "The technicians worked flat out to restore the network before classes began.",
+          "ja": "授業開始前にネットワークを復旧するため技術者たちは全力で働いた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0024-e02",
+          "en": "She ran flat out across the final stretch of the track.",
+          "ja": "彼女はトラックの最後の区間を全速力で走った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0025",
+      "wordId": "VD-08098",
+      "headword": "flatout",
+      "partOfSpeech": "adverb",
+      "meaningJa": "きっぱりと、完全に（通常 flat out と書く）",
+      "definitionEn": "completely or without qualification or hesitation",
+      "synonyms": "categorically, outright",
+      "antonyms": "",
+      "collocations": [
+        "refuse flat out",
+        "flat out wrong"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：責任者は記録を改ざんすることをきっぱり拒否した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0025-e01",
+          "en": "The manager flat out refused to falsify the records.",
+          "ja": "責任者は記録を改ざんすることをきっぱり拒否した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0025-e02",
+          "en": "The historian said the popular account was flat out wrong.",
+          "ja": "歴史家は広く知られた説明は完全に間違っていると述べた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0026",
+      "wordId": "VD-08099",
+      "headword": "flightiness",
+      "partOfSpeech": "noun",
+      "meaningJa": "移り気、落ち着きのなさ",
+      "definitionEn": "the tendency to change interests or decisions quickly and unreliably",
+      "synonyms": "fickleness, capriciousness",
+      "antonyms": "steadiness",
+      "collocations": [
+        "apparent flightiness",
+        "criticize flightiness"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：彼女の一見移り気な態度の裏にはいくつもの分野への真剣な関心があった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0026-e01",
+          "en": "Her apparent flightiness concealed a serious interest in several subjects.",
+          "ja": "彼女の一見移り気な態度の裏にはいくつもの分野への真剣な関心があった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0026-e02",
+          "en": "The narrator mistakes the character's curiosity for flightiness.",
+          "ja": "語り手は登場人物の好奇心を移り気と取り違える。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0027",
+      "wordId": "VD-08100",
+      "headword": "flighty",
+      "partOfSpeech": "adjective",
+      "meaningJa": "移り気な、軽はずみな",
+      "definitionEn": "changing one's plans or feelings frequently and without much thought",
+      "synonyms": "fickle, capricious",
+      "antonyms": "dependable",
+      "collocations": [
+        "flighty behavior",
+        "flighty character"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：その人物は移り気だが寛大に描かれている。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0027-e01",
+          "en": "The character is portrayed as flighty but generous.",
+          "ja": "その人物は移り気だが寛大に描かれている。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0027-e02",
+          "en": "The director worried that the applicant seemed too flighty for a long-term project.",
+          "ja": "監督は応募者が長期プロジェクトには落ち着きがなさすぎるようだと心配した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0028",
+      "wordId": "VD-08101",
+      "headword": "flit",
+      "partOfSpeech": "verb",
+      "meaningJa": "さっと飛び回る、素早く移動する",
+      "definitionEn": "to move lightly and quickly from one place to another",
+      "synonyms": "dart, flutter",
+      "antonyms": "",
+      "collocations": [
+        "flit between",
+        "flit across"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：小鳥が池のそばの枝から枝へと素早く飛び回った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0028-e01",
+          "en": "Small birds flitted between the branches near the pond.",
+          "ja": "小鳥が池のそばの枝から枝へと素早く飛び回った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0028-e02",
+          "en": "A brief smile flitted across the child's face.",
+          "ja": "子どもの顔に一瞬笑みが浮かんだ。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0029",
+      "wordId": "VD-08102",
+      "headword": "floe",
+      "partOfSpeech": "noun",
+      "meaningJa": "浮氷、海面の氷塊",
+      "definitionEn": "a broad piece of floating ice formed on the sea",
+      "synonyms": "ice floe",
+      "antonyms": "",
+      "collocations": [
+        "drifting floe",
+        "ice floe"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：アザラシは調査船の近くの漂流する浮氷の上で休んでいた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0029-e01",
+          "en": "A seal rested on a drifting floe near the research vessel.",
+          "ja": "アザラシは調査船の近くの漂流する浮氷の上で休んでいた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0029-e02",
+          "en": "The crew monitored cracks forming between the ice floes.",
+          "ja": "乗組員は浮氷の間に生じるひびを監視した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0030",
+      "wordId": "VD-08103",
+      "headword": "floodgates",
+      "partOfSpeech": "noun",
+      "meaningJa": "水門、放水門",
+      "definitionEn": "gates that control the flow of water in a river, dam, or channel",
+      "synonyms": "sluice gates",
+      "antonyms": "",
+      "collocations": [
+        "open the floodgates",
+        "close the floodgates"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：貯水池が限界に達すると操作員は水門を開いた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0030-e01",
+          "en": "Operators opened the floodgates after the reservoir reached its limit.",
+          "ja": "貯水池が限界に達すると操作員は水門を開いた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0030-e02",
+          "en": "The floodgates remained closed while engineers inspected the downstream channel.",
+          "ja": "技術者が下流の水路を調べている間、水門は閉じたままだった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0031",
+      "wordId": "VD-08103",
+      "headword": "floodgates",
+      "partOfSpeech": "noun",
+      "meaningJa": "大量の物事の流入を防ぐ障壁（比喩）",
+      "definitionEn": "barriers that prevent a large sudden flow of actions, feelings, or requests",
+      "synonyms": "barriers",
+      "antonyms": "",
+      "collocations": [
+        "open the floodgates to",
+        "release the floodgates"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：発表をきっかけに何千件もの応募が殺到した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0031-e01",
+          "en": "The announcement opened the floodgates to thousands of applications.",
+          "ja": "発表をきっかけに何千件もの応募が殺到した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0031-e02",
+          "en": "One shared memory opened the floodgates of emotion at the reunion.",
+          "ja": "ある思い出を共有したことで同窓会では感情が一気にあふれ出した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0032",
+      "wordId": "VD-08104",
+      "headword": "fluctuate",
+      "partOfSpeech": "verb",
+      "meaningJa": "変動する、上下する",
+      "definitionEn": "to change repeatedly in amount, level, or intensity",
+      "synonyms": "vary, oscillate",
+      "antonyms": "remain steady",
+      "collocations": [
+        "prices fluctuate",
+        "fluctuate widely"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：電力消費量は一日を通じて変動する。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0032-e01",
+          "en": "Electricity consumption fluctuates throughout the day.",
+          "ja": "電力消費量は一日を通じて変動する。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0032-e02",
+          "en": "The lake's water level fluctuated with seasonal rainfall.",
+          "ja": "湖の水位は季節ごとの降雨によって変動した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0033",
+      "wordId": "VD-08105",
+      "headword": "fluctuation",
+      "partOfSpeech": "noun",
+      "meaningJa": "変動、上下動",
+      "definitionEn": "a repeated change in the level or amount of something",
+      "synonyms": "variation, oscillation",
+      "antonyms": "stability",
+      "collocations": [
+        "price fluctuation",
+        "seasonal fluctuation"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：温室のセンサーは急激な温度変動を検知した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0033-e01",
+          "en": "The greenhouse sensors detected a sudden fluctuation in temperature.",
+          "ja": "温室のセンサーは急激な温度変動を検知した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0033-e02",
+          "en": "Seasonal fluctuations in demand affect the town's tourism industry.",
+          "ja": "需要の季節変動は町の観光産業に影響する。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0034",
+      "wordId": "VD-08106",
+      "headword": "forfeiture",
+      "partOfSpeech": "noun",
+      "meaningJa": "没収、権利の喪失",
+      "definitionEn": "the loss of property, rights, or money as a penalty or consequence",
+      "synonyms": "loss, confiscation",
+      "antonyms": "",
+      "collocations": [
+        "asset forfeiture",
+        "forfeiture of a deposit"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：賃貸契約に違反すると保証金を失う可能性があった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0034-e01",
+          "en": "Breaking the rental agreement could result in forfeiture of the deposit.",
+          "ja": "賃貸契約に違反すると保証金を失う可能性があった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0034-e02",
+          "en": "The court reviewed the legal basis for asset forfeiture.",
+          "ja": "裁判所は資産没収の法的根拠を検討した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0035",
+      "wordId": "VD-08107",
+      "headword": "forlorn",
+      "partOfSpeech": "adjective",
+      "meaningJa": "孤独で見捨てられたような",
+      "definitionEn": "appearing lonely, abandoned, or deeply sad",
+      "synonyms": "desolate, lonely",
+      "antonyms": "cheerful",
+      "collocations": [
+        "forlorn expression",
+        "forlorn figure"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：寂しそうな犬が閉店した店の前で待っていた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0035-e01",
+          "en": "A forlorn dog waited outside the closed shop.",
+          "ja": "寂しそうな犬が閉店した店の前で待っていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0035-e02",
+          "en": "She looked forlorn as the last bus disappeared around the corner.",
+          "ja": "最後のバスが角を曲がって見えなくなると彼女は寂しそうだった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0036",
+      "wordId": "VD-08107",
+      "headword": "forlorn",
+      "partOfSpeech": "adjective",
+      "meaningJa": "成功の望みがほとんどない",
+      "definitionEn": "having very little chance of success",
+      "synonyms": "hopeless, unlikely",
+      "antonyms": "",
+      "collocations": [
+        "forlorn hope",
+        "forlorn attempt"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：チームは水浸しのノートを何とか復元しようとしたが望みは薄かった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0036-e01",
+          "en": "The team made a forlorn attempt to recover the waterlogged notebook.",
+          "ja": "チームは水浸しのノートを何とか復元しようとしたが望みは薄かった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0036-e02",
+          "en": "It seemed a forlorn hope that the missing boat would be found before dark.",
+          "ja": "日没前に行方不明の船が見つかる望みは薄いようだった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0037",
+      "wordId": "VD-08108",
+      "headword": "forlornly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "寂しげに、悲しそうに",
+      "definitionEn": "in a manner suggesting loneliness or hopelessness",
+      "synonyms": "sadly, desolately",
+      "antonyms": "cheerfully",
+      "collocations": [
+        "wait forlornly",
+        "look forlornly"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：子どもは出航するフェリーに寂しそうに手を振った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0037-e01",
+          "en": "The child waved forlornly at the departing ferry.",
+          "ja": "子どもは出航するフェリーに寂しそうに手を振った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0037-e02",
+          "en": "An abandoned bicycle stood forlornly beside the locked school gate.",
+          "ja": "放置された自転車が鍵のかかった校門のそばにぽつんと立っていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0038",
+      "wordId": "VD-08109",
+      "headword": "formidably",
+      "partOfSpeech": "adverb",
+      "meaningJa": "手ごわいほどに、圧倒的に",
+      "definitionEn": "to a degree that inspires respect or intimidation through difficulty or strength",
+      "synonyms": "impressively, dauntingly",
+      "antonyms": "",
+      "collocations": [
+        "formidably complex",
+        "formidably difficult"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：最後のパズルは経験豊富な参加者にも手ごわかった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0038-e01",
+          "en": "The final puzzle was formidably difficult even for experienced players.",
+          "ja": "最後のパズルは経験豊富な参加者にも手ごわかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0038-e02",
+          "en": "The small legal team was formidably well prepared.",
+          "ja": "少人数の法律チームは圧倒されるほど準備が整っていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0039",
+      "wordId": "VD-08110",
+      "headword": "fractious",
+      "partOfSpeech": "adjective",
+      "meaningJa": "いら立ちやすい、扱いにくい",
+      "definitionEn": "easily irritated and likely to quarrel or resist control",
+      "synonyms": "irritable, quarrelsome",
+      "antonyms": "cooperative",
+      "collocations": [
+        "fractious child",
+        "fractious meeting"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：長い遅延で乗客はますますいら立った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0039-e01",
+          "en": "The long delay made the passengers increasingly fractious.",
+          "ja": "長い遅延で乗客はますますいら立った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0039-e02",
+          "en": "The chair struggled to guide a fractious committee toward a decision.",
+          "ja": "議長は対立の多い委員会を決定へ導くのに苦労した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0040",
+      "wordId": "VD-08111",
+      "headword": "frolic",
+      "partOfSpeech": "verb",
+      "meaningJa": "はしゃぐ、楽しげに遊ぶ",
+      "definitionEn": "to move or play in a lively and carefree way",
+      "synonyms": "romp, play",
+      "antonyms": "",
+      "collocations": [
+        "frolic in the water",
+        "frolic about"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：子犬たちは農家の近くの草地ではしゃいで遊んだ。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0040-e01",
+          "en": "Puppies frolicked in the grass near the farmhouse.",
+          "ja": "子犬たちは農家の近くの草地ではしゃいで遊んだ。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0040-e02",
+          "en": "Children frolicked in the shallow fountain on a hot afternoon.",
+          "ja": "暑い午後、子どもたちは浅い噴水ではしゃいだ。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0041",
+      "wordId": "VD-08111",
+      "headword": "frolic",
+      "partOfSpeech": "noun",
+      "meaningJa": "陽気な遊び、ふざけ合い",
+      "definitionEn": "a period of lively, carefree play or enjoyment",
+      "synonyms": "romp, lark",
+      "antonyms": "",
+      "collocations": [
+        "summer frolic",
+        "playful frolic"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：子猫たちが夕方にはしゃいだためソファからクッションがいくつも落ちた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0041-e01",
+          "en": "The kittens' evening frolic knocked several cushions off the sofa.",
+          "ja": "子猫たちが夕方にはしゃいだためソファからクッションがいくつも落ちた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0041-e02",
+          "en": "The picnic ended with a playful frolic beside the river.",
+          "ja": "ピクニックは川辺での楽しい遊びで締めくくられた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0042",
+      "wordId": "VD-08112",
+      "headword": "fruition",
+      "partOfSpeech": "noun",
+      "meaningJa": "実現、成果の達成",
+      "definitionEn": "the point at which a plan or effort produces its intended result",
+      "synonyms": "realization, fulfillment",
+      "antonyms": "",
+      "collocations": [
+        "come to fruition",
+        "bring to fruition"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：2年間の計画を経て地域の庭がようやく実現した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0042-e01",
+          "en": "The community garden finally came to fruition after two years of planning.",
+          "ja": "2年間の計画を経て地域の庭がようやく実現した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0042-e02",
+          "en": "It took several partnerships to bring the research project to fruition.",
+          "ja": "研究プロジェクトを実現するには複数の協力関係が必要だった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0043",
+      "wordId": "VD-08113",
+      "headword": "gale",
+      "partOfSpeech": "noun",
+      "meaningJa": "強風、疾風",
+      "definitionEn": "a very strong wind",
+      "synonyms": "strong wind",
+      "antonyms": "",
+      "collocations": [
+        "gale-force winds",
+        "howling gale"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：強風が港沿いの木々から何本もの枝を折った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0043-e01",
+          "en": "A gale tore several branches from the trees along the harbor.",
+          "ja": "強風が港沿いの木々から何本もの枝を折った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0043-e02",
+          "en": "The ferry service was suspended during a severe gale.",
+          "ja": "激しい強風の間、フェリー便は運休した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0044",
+      "wordId": "VD-08113",
+      "headword": "gale",
+      "partOfSpeech": "noun",
+      "meaningJa": "どっと起こる笑い",
+      "definitionEn": "a sudden loud burst of laughter",
+      "synonyms": "burst of laughter",
+      "antonyms": "",
+      "collocations": [
+        "gales of laughter"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：コメディアンの予想外の返答に観客はどっと笑った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0044-e01",
+          "en": "The comedian's unexpected reply sent the audience into gales of laughter.",
+          "ja": "コメディアンの予想外の返答に観客はどっと笑った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0044-e02",
+          "en": "The photograph provoked gales of laughter among the reunited classmates.",
+          "ja": "その写真は再会したクラスメートたちの爆笑を誘った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0045",
+      "wordId": "VD-08114",
+      "headword": "gambit",
+      "partOfSpeech": "noun",
+      "meaningJa": "先手を取る戦略、駆け引き",
+      "definitionEn": "an opening action calculated to gain an advantage",
+      "synonyms": "maneuver, tactic",
+      "antonyms": "",
+      "collocations": [
+        "opening gambit",
+        "diplomatic gambit"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：最初の出荷分を分ける提案は巧みな交渉の駆け引きだった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0045-e01",
+          "en": "Offering to share the first shipment was a clever negotiating gambit.",
+          "ja": "最初の出荷分を分ける提案は巧みな交渉の駆け引きだった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0045-e02",
+          "en": "The candidate's opening gambit was to ask the audience a question.",
+          "ja": "候補者が最初に取った戦略は聴衆に質問することだった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0046",
+      "wordId": "VD-08114",
+      "headword": "gambit",
+      "partOfSpeech": "noun",
+      "meaningJa": "ギャンビット（チェスで駒を犠牲にする序盤戦術）",
+      "definitionEn": "a chess opening in which material is offered to gain a positional advantage",
+      "synonyms": "sacrificial opening",
+      "antonyms": "",
+      "collocations": [
+        "queen's gambit",
+        "play a gambit"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：コーチは初心者にポーンを犠牲にする簡単なギャンビットを教えた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0046-e01",
+          "en": "The coach taught the beginners a simple gambit involving a pawn sacrifice.",
+          "ja": "コーチは初心者にポーンを犠牲にする簡単なギャンビットを教えた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0046-e02",
+          "en": "She declined the gambit and developed her knight instead.",
+          "ja": "彼女はギャンビットを受けずに代わりにナイトを展開した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0047",
+      "wordId": "VD-08115",
+      "headword": "gauche",
+      "partOfSpeech": "adjective",
+      "meaningJa": "社交的に不器用な、無作法な",
+      "definitionEn": "lacking social ease or sensitivity",
+      "synonyms": "awkward, tactless",
+      "antonyms": "graceful",
+      "collocations": [
+        "gauche remark",
+        "gauche behavior"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：来客の年齢についての彼の無神経な発言は全員を困惑させた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0047-e01",
+          "en": "His gauche remark about the guest's age embarrassed everyone.",
+          "ja": "来客の年齢についての彼の無神経な発言は全員を困惑させた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0047-e02",
+          "en": "The teenager felt rather gauche at the formal reception.",
+          "ja": "その10代の若者は正式な歓迎会で場違いに感じた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0048",
+      "wordId": "VD-08116",
+      "headword": "genomic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "ゲノムの",
+      "definitionEn": "relating to the complete genetic material of an organism",
+      "synonyms": "genetic",
+      "antonyms": "",
+      "collocations": [
+        "genomic data",
+        "genomic sequencing"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：チームは複数の小麦品種のゲノムデータを分析した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0048-e01",
+          "en": "The team analyzed genomic data from several wheat varieties.",
+          "ja": "チームは複数の小麦品種のゲノムデータを分析した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0048-e02",
+          "en": "Genomic sequencing helped researchers trace the ancestry of the bacteria.",
+          "ja": "ゲノム配列解析は研究者が細菌の系統をたどるのに役立った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0049",
+      "wordId": "VD-08117",
+      "headword": "genomically",
+      "partOfSpeech": "adverb",
+      "meaningJa": "ゲノムの観点から",
+      "definitionEn": "in terms of an organism's complete genetic material",
+      "synonyms": "at the genomic level",
+      "antonyms": "",
+      "collocations": [
+        "genomically distinct",
+        "genomically similar"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：2つの細菌株は外見が似ていてもゲノムの観点では異なっていた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0049-e01",
+          "en": "The two bacterial strains were genomically distinct despite their similar appearance.",
+          "ja": "2つの細菌株は外見が似ていてもゲノムの観点では異なっていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0049-e02",
+          "en": "The plants were genomically characterized before the field trial.",
+          "ja": "野外試験の前に植物のゲノム特性が調べられた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0050",
+      "wordId": "VD-08118",
+      "headword": "glitz",
+      "partOfSpeech": "noun",
+      "meaningJa": "きらびやかさ、派手な魅力",
+      "definitionEn": "showy glamour created by sparkling decoration or spectacle",
+      "synonyms": "glamour, flashiness",
+      "antonyms": "",
+      "collocations": [
+        "Hollywood glitz",
+        "glitz and glamour"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：式典はきらびやかだったが意外にも音楽は少なかった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0050-e01",
+          "en": "The ceremony had plenty of glitz but surprisingly little music.",
+          "ja": "式典はきらびやかだったが意外にも音楽は少なかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0050-e02",
+          "en": "Beyond the glitz of the tourist district lay quieter residential streets.",
+          "ja": "観光地区の派手なにぎわいの向こうには静かな住宅街が広がっていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0051",
+      "wordId": "VD-08119",
+      "headword": "glitzy",
+      "partOfSpeech": "adjective",
+      "meaningJa": "華美な、派手な",
+      "definitionEn": "designed to attract attention through extravagant sparkle or glamour",
+      "synonyms": "flashy, showy",
+      "antonyms": "understated",
+      "collocations": [
+        "glitzy hotel",
+        "glitzy event"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：海岸近くの質素な店の上に華美なホテルがそびえ立っていた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0051-e01",
+          "en": "A glitzy hotel rose above the modest shops near the beach.",
+          "ja": "海岸近くの質素な店の上に華美なホテルがそびえ立っていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0051-e02",
+          "en": "The charity chose a simple outdoor concert over a glitzy fundraising gala.",
+          "ja": "慈善団体は派手な募金イベントではなく簡素な野外演奏会を選んだ。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0052",
+      "wordId": "VD-08120",
+      "headword": "glory in",
+      "partOfSpeech": "verb",
+      "meaningJa": "～を大いに誇る、喜ぶ",
+      "definitionEn": "to take intense pleasure or pride in something",
+      "synonyms": "revel in, delight in",
+      "antonyms": "",
+      "collocations": [
+        "glory in success",
+        "glory in independence"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：若いチームは予想外の勝利を大いに喜んだ。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0052-e01",
+          "en": "The young team gloried in its unexpected victory.",
+          "ja": "若いチームは予想外の勝利を大いに喜んだ。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0052-e02",
+          "en": "My grandmother gloried in the independence of living in her own flat.",
+          "ja": "祖母は自分の住まいで自立して暮らすことを大いに喜んでいた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0053",
+      "wordId": "VD-08121",
+      "headword": "gout",
+      "partOfSpeech": "noun",
+      "meaningJa": "痛風",
+      "definitionEn": "a form of arthritis caused by deposits of urate crystals, often producing sudden joint pain",
+      "synonyms": "gouty arthritis",
+      "antonyms": "",
+      "collocations": [
+        "gout attack",
+        "treat gout"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：医師は痛風が足の親指の付け根の関節によく起こる理由を説明した。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0053-e01",
+          "en": "The doctor explained why gout often affects the joint at the base of the big toe.",
+          "ja": "医師は痛風が足の親指の付け根の関節によく起こる理由を説明した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0053-e02",
+          "en": "A sudden attack of gout made walking difficult for the patient.",
+          "ja": "痛風の突然の発作で患者は歩くのが難しくなった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0054",
+      "wordId": "VD-08122",
+      "headword": "gravitate",
+      "partOfSpeech": "verb",
+      "meaningJa": "自然と引き寄せられる、傾く",
+      "definitionEn": "to move or be drawn naturally toward a person, activity, or place",
+      "synonyms": "be drawn to, move toward",
+      "antonyms": "",
+      "collocations": [
+        "gravitate toward",
+        "gravitate to"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：生徒たちは自然と体験型の科学展示に引き寄せられた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0054-e01",
+          "en": "Students naturally gravitated toward the hands-on science exhibits.",
+          "ja": "生徒たちは自然と体験型の科学展示に引き寄せられた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0054-e02",
+          "en": "Over time, she gravitated toward documentary filmmaking.",
+          "ja": "やがて彼女はドキュメンタリー映画製作に惹かれるようになった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0055",
+      "wordId": "VD-08123",
+      "headword": "gravitational",
+      "partOfSpeech": "adjective",
+      "meaningJa": "重力の",
+      "definitionEn": "relating to the force of attraction between masses",
+      "synonyms": "gravity-related",
+      "antonyms": "",
+      "collocations": [
+        "gravitational force",
+        "gravitational waves"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：惑星は重力による引力のため軌道にとどまる。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0055-e01",
+          "en": "The planets remain in orbit because of gravitational attraction.",
+          "ja": "惑星は重力による引力のため軌道にとどまる。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0055-e02",
+          "en": "The students modeled gravitational forces using a computer simulation.",
+          "ja": "生徒たちはコンピューターシミュレーションで重力をモデル化した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0056",
+      "wordId": "VD-08124",
+      "headword": "gravitationally",
+      "partOfSpeech": "adverb",
+      "meaningJa": "重力によって、重力的に",
+      "definitionEn": "through the action or effects of gravity",
+      "synonyms": "by gravity",
+      "antonyms": "",
+      "collocations": [
+        "gravitationally bound",
+        "gravitationally attracted"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：2つの恒星は重力によって互いに束縛されている。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0056-e01",
+          "en": "The two stars are gravitationally bound to each other.",
+          "ja": "2つの恒星は重力によって互いに束縛されている。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0056-e02",
+          "en": "Small particles can be gravitationally attracted to a larger body in space.",
+          "ja": "小さな粒子は宇宙で大きな天体に重力によって引き寄せられることがある。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0057",
+      "wordId": "VD-08125",
+      "headword": "grievance",
+      "partOfSpeech": "noun",
+      "meaningJa": "不満、苦情",
+      "definitionEn": "a complaint based on a perceived wrong or unfair treatment",
+      "synonyms": "complaint, resentment",
+      "antonyms": "",
+      "collocations": [
+        "file a grievance",
+        "address grievances"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：従業員は独立した委員会を通じて苦情を申し立てられる。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0057-e01",
+          "en": "Employees can file a grievance through an independent committee.",
+          "ja": "従業員は独立した委員会を通じて苦情を申し立てられる。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0057-e02",
+          "en": "The town hall meeting gave residents a chance to voice their grievances.",
+          "ja": "町の公開集会は住民に不満を述べる機会を与えた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0058",
+      "wordId": "VD-08126",
+      "headword": "habitation",
+      "partOfSpeech": "noun",
+      "meaningJa": "居住、住居",
+      "definitionEn": "the act of living in a place or a place used for living",
+      "synonyms": "occupancy, dwelling",
+      "antonyms": "",
+      "collocations": [
+        "human habitation",
+        "suitable for habitation"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：遺跡には数世紀にわたる人間の居住の痕跡がある。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0058-e01",
+          "en": "The ruins show evidence of human habitation over several centuries.",
+          "ja": "遺跡には数世紀にわたる人間の居住の痕跡がある。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0058-e02",
+          "en": "The flooded house was no longer suitable for habitation.",
+          "ja": "浸水した家はもはや居住に適さなかった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0059",
+      "wordId": "VD-08127",
+      "headword": "hamper",
+      "partOfSpeech": "verb",
+      "meaningJa": "妨げる、邪魔をする",
+      "definitionEn": "to make progress or movement more difficult",
+      "synonyms": "hinder, impede",
+      "antonyms": "facilitate",
+      "collocations": [
+        "hamper progress",
+        "hamper efforts"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：濃霧が沿岸部の捜索活動を妨げた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0059-e01",
+          "en": "Dense fog hampered the search operation near the coast.",
+          "ja": "濃霧が沿岸部の捜索活動を妨げた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0059-e02",
+          "en": "Repeated interruptions hampered the students' ability to concentrate.",
+          "ja": "繰り返される中断は生徒が集中するのを妨げた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0060",
+      "wordId": "VD-08127",
+      "headword": "hamper",
+      "partOfSpeech": "noun",
+      "meaningJa": "食品などを入れる大きなかご",
+      "definitionEn": "a large basket or container for carrying food or storing laundry",
+      "synonyms": "basket",
+      "antonyms": "",
+      "collocations": [
+        "picnic hamper",
+        "laundry hamper"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：ピクニック用のかごにサンドイッチとリンゴを詰めた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0060-e01",
+          "en": "We packed sandwiches and apples into a picnic hamper.",
+          "ja": "ピクニック用のかごにサンドイッチとリンゴを詰めた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0060-e02",
+          "en": "Please put the wet towels in the laundry hamper.",
+          "ja": "濡れたタオルは洗濯かごに入れてください。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0061",
+      "wordId": "VD-08128",
+      "headword": "haphazard",
+      "partOfSpeech": "adjective",
+      "meaningJa": "無計画な、行き当たりばったりの",
+      "definitionEn": "organized or done without a clear plan or consistent method",
+      "synonyms": "random, unsystematic",
+      "antonyms": "methodical",
+      "collocations": [
+        "haphazard approach",
+        "haphazard arrangement"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：無秩序な書類管理システムのため古い記録を見つけるのが難しかった。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0061-e01",
+          "en": "A haphazard filing system made it difficult to find old records.",
+          "ja": "無秩序な書類管理システムのため古い記録を見つけるのが難しかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0061-e02",
+          "en": "The chairs had been placed in a haphazard arrangement around the hall.",
+          "ja": "いすはホールのあちこちに無計画に置かれていた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0062",
+      "wordId": "VD-08129",
+      "headword": "haphazardly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "無計画に、乱雑に",
+      "definitionEn": "without a deliberate or systematic arrangement",
+      "synonyms": "randomly, unsystematically",
+      "antonyms": "methodically",
+      "collocations": [
+        "arrange haphazardly",
+        "scatter haphazardly"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：道具は作業台に乱雑に散らばっていた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0062-e01",
+          "en": "The tools were scattered haphazardly across the workbench.",
+          "ja": "道具は作業台に乱雑に散らばっていた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0062-e02",
+          "en": "The survey was distributed haphazardly, so the sample was unrepresentative.",
+          "ja": "調査票は無計画に配られたため標本に代表性がなかった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0063",
+      "wordId": "VD-08130",
+      "headword": "hapless",
+      "partOfSpeech": "adjective",
+      "meaningJa": "不運な、気の毒な",
+      "definitionEn": "unlucky and often deserving sympathy",
+      "synonyms": "unfortunate, ill-fated",
+      "antonyms": "fortunate",
+      "collocations": [
+        "hapless victim",
+        "hapless traveler"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：不運な旅行者は一朝に2度も違う電車に乗った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0063-e01",
+          "en": "The hapless traveler boarded the wrong train twice in one morning.",
+          "ja": "不運な旅行者は一朝に2度も違う電車に乗った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0063-e02",
+          "en": "The comedy follows a hapless inventor whose machines never work as intended.",
+          "ja": "その喜劇は機械が意図どおり動かない不運な発明家を描く。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0064",
+      "wordId": "VD-08131",
+      "headword": "happenstance",
+      "partOfSpeech": "noun",
+      "meaningJa": "偶然の出来事",
+      "definitionEn": "an event or situation that arises by chance rather than design",
+      "synonyms": "chance, coincidence",
+      "antonyms": "",
+      "collocations": [
+        "by happenstance",
+        "pure happenstance"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：偶然、遠く離れた都市で以前の教師に会った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0064-e01",
+          "en": "By happenstance, I met my former teacher in a distant city.",
+          "ja": "偶然、遠く離れた都市で以前の教師に会った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0064-e02",
+          "en": "The partnership began through a remarkable bit of happenstance.",
+          "ja": "その協力関係は驚くべき偶然から始まった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0065",
+      "wordId": "VD-08132",
+      "headword": "haughtily",
+      "partOfSpeech": "adverb",
+      "meaningJa": "傲慢に、尊大に",
+      "definitionEn": "in a way that shows an assumption of superiority over others",
+      "synonyms": "arrogantly, snobbishly",
+      "antonyms": "humbly",
+      "collocations": [
+        "reply haughtily",
+        "look haughtily"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：その登場人物は何気ない質問に尊大な態度で答えた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0065-e01",
+          "en": "The character replied haughtily to an innocent question.",
+          "ja": "その登場人物は何気ない質問に尊大な態度で答えた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0065-e02",
+          "en": "The stranger swept haughtily past the people waiting in line.",
+          "ja": "見知らぬ人は列に並ぶ人々の前を尊大な態度で通り過ぎた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0066",
+      "wordId": "VD-08133",
+      "headword": "haughty",
+      "partOfSpeech": "adjective",
+      "meaningJa": "傲慢な、尊大な",
+      "definitionEn": "proud in a way that treats other people as inferior",
+      "synonyms": "arrogant, conceited",
+      "antonyms": "humble",
+      "collocations": [
+        "haughty manner",
+        "haughty expression"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：俳優は貴族役のため尊大な表情を作った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0066-e01",
+          "en": "The actor adopted a haughty expression for the role of the nobleman.",
+          "ja": "俳優は貴族役のため尊大な表情を作った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0066-e02",
+          "en": "Her haughty manner kept potential collaborators at a distance.",
+          "ja": "彼女の傲慢な態度が協力候補者を遠ざけた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0067",
+      "wordId": "VD-08134",
+      "headword": "hauntingly",
+      "partOfSpeech": "adverb",
+      "meaningJa": "心に残るほどに、忘れがたいほどに",
+      "definitionEn": "in a way that remains in the mind because it is moving, mysterious, or disturbing",
+      "synonyms": "memorably, evocatively",
+      "antonyms": "",
+      "collocations": [
+        "hauntingly beautiful",
+        "hauntingly familiar"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：映画のエンドクレジットに忘れがたいほど美しい旋律が流れた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0067-e01",
+          "en": "A hauntingly beautiful melody played over the film's closing credits.",
+          "ja": "映画のエンドクレジットに忘れがたいほど美しい旋律が流れた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0067-e02",
+          "en": "The abandoned classroom looked hauntingly familiar to the former pupils.",
+          "ja": "廃校になった教室はかつての生徒たちには胸に残るほど懐かしく見えた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0068",
+      "wordId": "VD-08135",
+      "headword": "headmistress",
+      "partOfSpeech": "noun",
+      "meaningJa": "女性の校長（主に英国、現在は headteacher が一般的）",
+      "definitionEn": "a woman who is the head of a school, especially in traditional British usage",
+      "synonyms": "headteacher, principal",
+      "antonyms": "",
+      "collocations": [
+        "school headmistress",
+        "former headmistress"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：女性校長は毎年の学校演奏会に保護者を迎えた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0068-e01",
+          "en": "The headmistress welcomed parents to the annual school concert.",
+          "ja": "女性校長は毎年の学校演奏会に保護者を迎えた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0068-e02",
+          "en": "The former headmistress donated her collection of books to the library.",
+          "ja": "元女性校長は蔵書を図書館に寄贈した。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0069",
+      "wordId": "VD-08136",
+      "headword": "helm",
+      "partOfSpeech": "noun",
+      "meaningJa": "舵、操舵装置",
+      "definitionEn": "the steering controls of a ship or boat",
+      "synonyms": "steering gear",
+      "antonyms": "",
+      "collocations": [
+        "take the helm",
+        "at the helm"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：船が狭い水路に近づくと船長は舵を握った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0069-e01",
+          "en": "The captain took the helm as the boat approached the narrow channel.",
+          "ja": "船が狭い水路に近づくと船長は舵を握った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0069-e02",
+          "en": "The trainee remained at the helm under the instructor's supervision.",
+          "ja": "訓練生は指導員の監督のもとで舵を握り続けた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0070",
+      "wordId": "VD-08136",
+      "headword": "helm",
+      "partOfSpeech": "noun",
+      "meaningJa": "指揮・管理の責任ある地位",
+      "definitionEn": "the position of directing an organization or activity",
+      "synonyms": "leadership, command",
+      "antonyms": "",
+      "collocations": [
+        "at the helm of",
+        "take the helm"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：昨春、新しい館長が博物館の指揮を執った。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0070-e01",
+          "en": "A new director took the helm of the museum last spring.",
+          "ja": "昨春、新しい館長が博物館の指揮を執った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0070-e02",
+          "en": "With an experienced engineer at the helm, the project recovered quickly.",
+          "ja": "経験豊富な技術者が指揮を執っていたためプロジェクトはすぐに立ち直った。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0071",
+      "wordId": "VD-08137",
+      "headword": "herald",
+      "partOfSpeech": "verb",
+      "meaningJa": "～の到来を告げる",
+      "definitionEn": "to announce or signal the beginning of an event or change",
+      "synonyms": "announce, foreshadow",
+      "antonyms": "",
+      "collocations": [
+        "herald a new era",
+        "herald the arrival"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：最初の花が春の到来を告げた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0071-e01",
+          "en": "The first blossoms heralded the arrival of spring.",
+          "ja": "最初の花が春の到来を告げた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0071-e02",
+          "en": "The discovery may herald a new era of underwater exploration.",
+          "ja": "その発見は水中探査の新時代の到来を告げるかもしれない。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0072",
+      "wordId": "VD-08137",
+      "headword": "herald",
+      "partOfSpeech": "noun",
+      "meaningJa": "使者、先触れ",
+      "definitionEn": "a person or sign that announces or indicates what is coming",
+      "synonyms": "messenger, harbinger",
+      "antonyms": "",
+      "collocations": [
+        "royal herald",
+        "herald of change"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：王室の使者が宮殿の階段から布告を読み上げた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0072-e01",
+          "en": "A royal herald read the proclamation from the palace steps.",
+          "ja": "王室の使者が宮殿の階段から布告を読み上げた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0072-e02",
+          "en": "The tiny green shoots were heralds of warmer weather.",
+          "ja": "小さな緑の芽が暖かい季節の先触れだった。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0073",
+      "wordId": "VD-08138",
+      "headword": "hermetic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "密閉された、気密性の",
+      "definitionEn": "completely sealed against the passage of air or other outside matter",
+      "synonyms": "airtight, sealed",
+      "antonyms": "unsealed",
+      "collocations": [
+        "hermetic seal",
+        "hermetic container"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：汚染を防ぐため試料は密閉容器に保管された。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0073-e01",
+          "en": "The sample was kept in a hermetic container to prevent contamination.",
+          "ja": "汚染を防ぐため試料は密閉容器に保管された。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0073-e02",
+          "en": "Engineers inspected the hermetic seal around the electronic component.",
+          "ja": "技術者は電子部品の周囲の気密シールを調べた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0074",
+      "wordId": "VD-08138",
+      "headword": "hermetic",
+      "partOfSpeech": "adjective",
+      "meaningJa": "外部から閉ざされた、難解な",
+      "definitionEn": "closed off from outside influence or understood only by a small group",
+      "synonyms": "insular, esoteric",
+      "antonyms": "open",
+      "collocations": [
+        "hermetic world",
+        "hermetic language"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：小説は孤立した学者集団の閉ざされた世界を描く。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0074-e01",
+          "en": "The novel portrays the hermetic world of an isolated academic circle.",
+          "ja": "小説は孤立した学者集団の閉ざされた世界を描く。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0074-e02",
+          "en": "The poem's hermetic language makes it challenging for new readers.",
+          "ja": "その詩の難解な言葉遣いは初めて読む人には難しい。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-C2-F04-0075",
+      "wordId": "VD-08139",
+      "headword": "hermit",
+      "partOfSpeech": "noun",
+      "meaningJa": "隠者、世捨て人",
+      "definitionEn": "a person who chooses to live apart from society",
+      "synonyms": "recluse",
+      "antonyms": "",
+      "collocations": [
+        "live as a hermit",
+        "mountain hermit"
+      ],
+      "cefrHeadword": "C2",
+      "imageHint": "第一例文の場面：隠者が谷を見下ろす高い所の石造りの小屋に住んでいた。（英単語・文字の表示なし）",
+      "status": "draft-unreviewed",
+      "examples": [
+        {
+          "id": "VDO-261115-C2-F04-0075-e01",
+          "en": "A hermit lived in a stone hut high above the valley.",
+          "ja": "隠者が谷を見下ろす高い所の石造りの小屋に住んでいた。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-C2-F04-0075-e02",
+          "en": "The novel follows an elderly hermit whose quiet routine is interrupted by a visitor.",
+          "ja": "その小説は来客によって静かな日常を乱される年老いた隠者を追う。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0001",
+      "wordId": "VD-07729",
+      "headword": "unscathing",
+      "cefrHeadword": "C1",
+      "partOfSpeech": "adjective",
+      "meaningJa": "辛辣でない、穏やかな（非常にまれな表現）",
+      "definitionEn": "avoiding the severe or cutting criticism that might otherwise be expected",
+      "synonyms": "mild, restrained, measured",
+      "antonyms": "scathing",
+      "collocations": [
+        "unscathing criticism (rare)",
+        "unscathing assessment (rare)"
+      ],
+      "imageHint": "同僚の提案を傷つけないよう穏やかに評価する会議",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "unscathing は非常にまれな形。通常の英作文では mild, measured, not scathing を推奨。一般的用例が乏しいため自動出題は保留。",
+      "normalizedHeadword": "unscathing",
+      "acceptedForms": [],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0001-e01",
+          "en": "Her assessment of the proposal was unscathing, even though she identified several weaknesses.",
+          "ja": "彼女は提案の弱点をいくつも指摘したが、その評価は辛辣ではなかった。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0001-e02",
+          "en": "The editor asked for an unscathing response that would encourage the young writer to revise the article.",
+          "ja": "編集者は若い書き手が記事を修正する気になるような、辛辣でない返答を求めた。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0002",
+      "wordId": "VD-08303",
+      "headword": "misdemeanor/misdemanour",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "軽罪（特に米国法）",
+      "definitionEn": "a criminal offense classified below the most serious category of crimes",
+      "synonyms": "minor criminal offense",
+      "antonyms": "felony",
+      "collocations": [
+        "charge someone with a misdemeanor",
+        "misdemeanor conviction",
+        "misdemeanour offence"
+      ],
+      "imageHint": "法廷の机に軽罪事件の書類を置く法律家",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "英国式の正しい綴りは misdemeanour。原語マスターの misdemanour は誤記と判断。原IDを保持し、出題時は正規化表記を使用するまで保留。",
+      "normalizedHeadword": "misdemeanor/misdemeanour",
+      "acceptedForms": [
+        "misdemeanor",
+        "misdemeanour"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0002-e01",
+          "en": "The attorney explained why the charge had been classified as a misdemeanor.",
+          "ja": "弁護士はその罪が軽罪に分類された理由を説明した。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0002-e02",
+          "en": "A misdemeanor conviction can have consequences that extend beyond the immediate penalty.",
+          "ja": "軽罪の有罪判決は、直接的な刑罰を超える影響をもたらす場合がある。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0003",
+      "wordId": "VD-08303",
+      "headword": "misdemeanor/misdemanour",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "軽い非行、規則違反",
+      "definitionEn": "an instance of improper conduct that is comparatively minor",
+      "synonyms": "misdeed, infraction, lapse",
+      "antonyms": "",
+      "collocations": [
+        "minor misdemeanour",
+        "schoolboy misdemeanours"
+      ],
+      "imageHint": "図書館の静粛の規則を破った生徒に優しく注意する司書",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "英国式の正しい綴りは misdemeanour。原語マスターの misdemanour は誤記と判断。原IDを保持し、出題時は正規化表記を使用するまで保留。",
+      "normalizedHeadword": "misdemeanor/misdemeanour",
+      "acceptedForms": [
+        "misdemeanor",
+        "misdemeanour"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0003-e01",
+          "en": "The librarian treated the noisy conversation as a minor misdemeanour rather than a reason to ban the visitors.",
+          "ja": "司書は騒がしい会話を、来館者を出入り禁止にする理由ではなく軽い規則違反として扱った。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0003-e02",
+          "en": "The memoir recalls several harmless childhood misdemeanours with affection.",
+          "ja": "その回想録は子どものころの害のないいたずらをいくつも愛情を込めて振り返っている。",
+          "context": "alternate"
+        }
+      ]
+    },
+    {
+      "senseId": "VDO-261115-SPELL-0004",
+      "wordId": "VD-08377",
+      "headword": "porten",
+      "cefrHeadword": "C2",
+      "partOfSpeech": "noun",
+      "meaningJa": "前兆、兆し（portent を想定した修正候補）",
+      "definitionEn": "an occurrence or sign interpreted as indicating a significant event to come, often an unwelcome one",
+      "synonyms": "omen, harbinger, warning sign",
+      "antonyms": "",
+      "collocations": [
+        "ominous portent",
+        "portent of change"
+      ],
+      "imageHint": "海岸の漁師が遠くに立ち上る異様な雲を観察している場面",
+      "status": "draft-unreviewed",
+      "editorialNoteJa": "マスターの品詞が noun であるため portent を修正候補とした。porten を現代標準英語の名詞として確認できないため、原IDを保持して承認まで出題保留。",
+      "normalizedHeadword": "portent",
+      "acceptedForms": [
+        "portent"
+      ],
+      "quizEligible": false,
+      "examples": [
+        {
+          "id": "VDO-261115-SPELL-0004-e01",
+          "en": "The fishermen regarded the unusual cloud formation as a portent of rough weather.",
+          "ja": "漁師たちはその珍しい雲の形を荒天の前兆とみなした。",
+          "context": "basic"
+        },
+        {
+          "id": "VDO-261115-SPELL-0004-e02",
+          "en": "The sudden closure of several local shops was taken as a portent of deeper economic difficulties.",
+          "ja": "地元の店が相次いで突然閉店したことは、より深刻な経済的困難の前兆と受け止められた。",
+          "context": "alternate"
+        }
+      ]
+    }
+  ]
+}
