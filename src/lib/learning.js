@@ -160,6 +160,7 @@ export function splitDialogueTurns(value) {
 export function makeSessionQueue(words, mode, records = {}, settings = {}) {
   const source = Array.isArray(words) ? words : [];
   let eligible = source;
+  if (mode === 'quiz') eligible = source.filter(w => !String(w.id||'').startsWith('quiz:') || w.choices?.length===4);
   if (mode === 'review') eligible = source.filter(w => isDue(records[w.id]));
   if (mode === 'listening') eligible = source.filter(w => Boolean(w.image && w.audio));
   const random = settings.randomOrder === true || mode === 'quiz' || mode === 'listening' || mode === 'review';
