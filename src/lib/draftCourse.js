@@ -13,7 +13,7 @@ export function draftCourseLoader(c,u){
    const ex=r.examples?.[0]||{};
    const word=r.headword;
    const opts=wordOptions({...r,synonyms:typeof r.synonyms==='string'?r.synonyms.split(/[;,；、]/).map(x=>x.trim()):r.synonyms},index);
-   return {learningId:'quiz:'+r.senseId,targetWord:word,meaning:r.meaningJa,english:ex.en||'',japanese:ex.ja||'',explanation:r.usageNoteJa||'',choices:opts.length===4?opts:[],correct:opts.indexOf(word),collocations:r.collocations||[]};
+   return {learningId:'quiz:'+r.senseId,targetWord:word,meaning:r.meaningJa,english:ex.en||'',japanese:ex.ja||'',explanation:r.usageNoteJa||'',partOfSpeech:r.partOfSpeech,definition:r.definitionEn,examples:r.examples||[],pronunciation:r.pronunciation||r.ipa||'',image:r.image||'',imageHint:r.imageHint||'',draft:true,choices:opts.length===4?opts:[],correct:opts.indexOf(word),collocations:r.collocations||[]};
   });
   return {default:value};
  };
