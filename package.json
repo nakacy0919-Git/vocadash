@@ -6,9 +6,9 @@
   "homepage": "https://vocadash.pic-speak-story.com/",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node --test src/lib/learning.test.js src/lib/universe.test.js src/lib/voice.test.js src/lib/universeMemory.test.js src/lib/memoryEngine.test.js src/lib/quiz/engine.test.js classroom/*.test.js src/lib/universe-senses.test.js src/lib/memoryBridge.test.js",
+    "prebuild": "node --test src/lib/learning.test.js src/lib/universe.test.js src/lib/voice.test.js src/lib/universeMemory.test.js src/lib/memoryEngine.test.js src/lib/quiz/engine.test.js classroom/*.test.js src/lib/universe-senses.test.js src/lib/memoryBridge.test.js src/lib/learningFlow.test.js",
     "build": "vite build",
-    "test": "node --test src/lib/learning.test.js src/lib/universe.test.js src/lib/voice.test.js src/lib/universeMemory.test.js src/lib/memoryEngine.test.js src/lib/quiz/engine.test.js classroom/*.test.js src/lib/universe-senses.test.js src/lib/memoryBridge.test.js",
+    "test": "node --test src/lib/learning.test.js src/lib/universe.test.js src/lib/voice.test.js src/lib/universeMemory.test.js src/lib/memoryEngine.test.js src/lib/quiz/engine.test.js classroom/*.test.js src/lib/universe-senses.test.js src/lib/memoryBridge.test.js src/lib/learningFlow.test.js",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "classroom:server": "node classroom/server.js",
