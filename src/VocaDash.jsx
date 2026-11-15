@@ -471,7 +471,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
   if(!dashboardOpen&&mode==='memory')return <MemoryTrainer focusIds={missionScope} sound={store.settings.sound} onSpeak={speak} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(!returnToLibrary);setMode(returnToLibrary?'library':'study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
-  return <div className={'vd-app'+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
+  return <div className={'vd-app'+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen&&mode!=='library' ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
     <aside className="vd-sidebar" hidden={dashboardOpen||mode==='library'}>
       <Brand/>
@@ -504,14 +504,14 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
           <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>
-          <div className="vd-tabs" aria-label="学習モード"><button onClick={()=>startMode('library')}>▦ 単語一覧</button>{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
+          <div className="vd-tabs" aria-label="学習モード">{modes.filter(m => !m.masterOnly || course.id === 'eiken1_master').map(m => <button key={m.id} aria-pressed={mode === m.id} className={mode === m.id ? 'selected' : ''} onClick={() => startMode(m.id)}><span>{m.icon}</span>{m.label}</button>)}</div></div>
         <div className="vd-columns"><section className="vd-study-panel" onTouchStart={handleSwipeStart} onTouchEnd={handleSwipeEnd}>
           <div className="vd-panel-head">
             <span><i/> {mode === 'study' ? 'WORD STUDY' : mode === 'sentence' ? 'SENTENCE STUDY' : mode === 'reading' ? '音読 · 80%以上で合格' : mode === 'quiz' ? 'CHECK YOUR KNOWLEDGE' : mode === 'listening' ? 'LISTEN & MATCH' : 'SPACED REVIEW'}</span>
             <div className="vd-panel-head-actions">
               {mode === 'reading' && <strong className="vd-reading-session-count">{queue.length ? Math.min(cursor+1,queue.length) : 0}<span> / {queue.length}</span></strong>}
               <button className="vd-reading-settings-button" aria-label="学習の詳細設定を開く" onClick={() => setAdvancedOpen(true)}><Icon name="sliders" size={17}/></button>
-              <button className="vd-list-button" onClick={() => {setWordListOpen(true);setWordQuery('');}}><Icon name="list" size={17}/> 単語一覧</button>
+              <button className="vd-list-button" onClick={() => startMode('library')}><Icon name="list" size={17}/> 単語一覧</button>
             </div>
           </div>
           <div className="vd-progress"><span style={{ width: progress + '%' }}/></div>
