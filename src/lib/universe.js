@@ -24,6 +24,8 @@ import familyBatchSZ09 from '../data/universe-word-families-20261115-sz-affixes-
 import familyBatchSZ11 from '../data/universe-word-families-20261115-sz-direct-11.json' with {type:'json'};
 import familyBatchUZ12 from '../data/universe-word-families-20261115-uz-prefix-12.json' with {type:'json'};
 import familyBatchSZ13 from '../data/universe-word-families-20261115-sz-lexical-13.json' with {type:'json'};
+import familyBatchS15 from '../data/universe-word-families-20261115-s-network-15.json' with {type:'json'};
+import familyBatchTZ16 from '../data/universe-word-families-20261115-tz-network-16.json' with {type:'json'};
 import {addCuratedWordFamilies} from './universe-word-families.js';
 import synonymMega from '../data/universe-synonym-mega.js';
 import synonymMega2 from '../data/universe-synonym-mega-2.js';
@@ -473,7 +475,7 @@ const synonymMega2Added=addSynonymMega(authored,synonymMega2,5000,{batch:2,prior
 export function synonymMega2Coverage(){return {...synonymMega2Added};}
 
 // Append only genuinely unregistered lexical pairs, after all prior editorial sources.
-const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB,familyBatchSZ02,familyBatchMR01,familyBatchAC03,familyBatchDF04,familyBatchGL05,familyBatchMZ06,familyBatchSZ06,familyBatchAC07,familyBatchDF08,familyBatchS07,familyBatchTZ08,familyBatchSZ09,familyBatchGL09,familyBatchMR10,familyBatchSZ11,familyBatchUZ12,familyBatchDirect11,familyBatchAC12,familyBatchDL13,familyBatchMR14,familyBatchDM13,familyBatchNR14,familyBatchSZ13,familyBatchAcademicAH15]);
+const curatedFamilyCoverage = addCuratedWordFamilies(authored,[familyBatchA,familyBatchB,familyBatchSZ02,familyBatchMR01,familyBatchAC03,familyBatchDF04,familyBatchGL05,familyBatchMZ06,familyBatchSZ06,familyBatchAC07,familyBatchDF08,familyBatchS07,familyBatchTZ08,familyBatchSZ09,familyBatchGL09,familyBatchMR10,familyBatchSZ11,familyBatchUZ12,familyBatchDirect11,familyBatchAC12,familyBatchDL13,familyBatchMR14,familyBatchDM13,familyBatchNR14,familyBatchSZ13,familyBatchAcademicAH15,familyBatchS15,familyBatchTZ16]);
 export function curatedWordFamilyCoverage(){return {...curatedFamilyCoverage};}
 
 // Reverse only explicit symmetric relations; never infer transitive synonymy.
