@@ -7,10 +7,10 @@
   "registeredSenses": 9614,
   "registeredExamples": 19228,
   "normalizedSentenceHashCount": 19228,
-  "examplesIncludedInHashCheck": 23028,
-  "exactNormalizedDuplicateCount": 3800,
+  "examplesIncludedInHashCheck": 19228,
+  "exactNormalizedDuplicateCount": 0,
   "incrementalBatchCount": 25,
-  "priorIndexExampleCount": 19228,
+  "priorIndexExampleCount": 15428,
   "priorMasterAuditRef": "2116b681c30fa1c587240d14e5159de5a73951eb",
   "newBatchFieldIssuesAfterZCollocationRepair": 0,
   "requiredContentBacklog": 287,
@@ -53,5 +53,5 @@
     }
   },
   "editorialReviewComplete": false,
-  "notes": "Coverage uses the earlier master audit plus new word IDs; duplicate check uses prior normalized sentence hashes and reread completion batches. No independent linguistic review, external publication overlap search, or complete new audit of legacy fields. Supplemental batches excluded."
+  "notes": "Coverage uses earlier master audit plus newly read word IDs. The current full sentence index covers the manifest total and contains all hashes from the 25 incrementally reread batches; the current index is counted once, not added to the completion batches. No independent linguistic review, external publication overlap search, or complete new audit of legacy fields. Supplemental batches excluded."
 }
