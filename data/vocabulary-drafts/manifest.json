@@ -84,12 +84,13 @@
     "batches/original-20261115-c2-tail-8450-8529.json",
     "batches/original-20261115-c2-finish-16.json",
     "batches/original-20261115-c2-reconciled-8006-8079.json",
-    "batches/original-20261115-c2-tail-8369-8449.json"
+    "batches/original-20261115-c2-tail-8369-8449.json",
+    "batches/original-20261115-c2-mid-8250-8299.json"
   ],
   "totals": {
-    "distinctHeadwords": 8434,
-    "senses": 9347,
-    "examples": 18694,
+    "distinctHeadwords": 8483,
+    "senses": 9403,
+    "examples": 18806,
     "distinctExamples": null
   },
   "quality": {
@@ -126,11 +127,12 @@
       "batches/original-20261115-c2-tail-8530-8598.json",
       "batches/original-20261115-c2-tail-8450-8529.json",
       "batches/original-20261115-c2-reconciled-8006-8079.json",
-      "batches/original-20261115-c2-tail-8369-8449.json"
+      "batches/original-20261115-c2-tail-8369-8449.json",
+      "batches/original-20261115-c2-mid-8250-8299.json"
     ],
-    "headwordsAdded": 1360,
-    "sensesAdded": 1578,
-    "translatedExamplesAdded": 3156,
+    "headwordsAdded": 1409,
+    "sensesAdded": 1634,
+    "translatedExamplesAdded": 3268,
     "editorialStatus": "draft-unreviewed"
   },
   "notes": "Counts use the previous audited manifest baseline plus disjoint new word-ID ranges. Concurrent overlapping draft files are preserved outside the active manifest; they require sense-level editorial merging later. Full cross-batch duplicate and semantic review pending. No runtime or deployment changes."
