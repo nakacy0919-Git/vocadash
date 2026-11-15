@@ -77,7 +77,7 @@ export function routeVoice(alternatives,phase,{universeOpen=false}={}) {
 }
 
 export function wordCandidates(raw){
- const word=String(raw||'').toLowerCase().trim().replace(/^[“"'‘]+|[”"'’?.!,]+$/g,'').replace(/\s+/g,' ');
+ const word=String(raw||'').normalize('NFKC').toLowerCase().trim().replace(/^[“"'‘]+|[”"'’?.!,]+$/g,'').replace(/\s+/g,' ');
  if(!word)return [];
  const stripped=word.replace(/^(?:the word|the term|a word|the|an|a)\s+/,'').replace(/\s+please$/,'').trim();
  return [...new Set([word,stripped].filter(Boolean))];
