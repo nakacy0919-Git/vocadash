@@ -1,0 +1,3586 @@
+{
+  "schemaVersion": 1,
+  "status": "draft-unreviewed",
+  "scope": "word-family",
+  "description": "Original Japanese glosses; lexical derivation only. No collocations. Star connections from base to each explicitly authored derivative; reverse links are not counted as new lexical pairs.",
+  "families": [
+    [
+      {
+        "word": "abdicate",
+        "partOfSpeech": "動詞",
+        "meaning": "退位する・責任を放棄する"
+      },
+      {
+        "word": "abdication",
+        "partOfSpeech": "名詞",
+        "meaning": "退位・責任放棄"
+      }
+    ],
+    [
+      {
+        "word": "abhor",
+        "partOfSpeech": "動詞",
+        "meaning": "ひどく嫌う"
+      },
+      {
+        "word": "abhorrence",
+        "partOfSpeech": "名詞",
+        "meaning": "強い嫌悪"
+      },
+      {
+        "word": "abhorrent",
+        "partOfSpeech": "形容詞",
+        "meaning": "忌まわしい"
+      }
+    ],
+    [
+      {
+        "word": "abound",
+        "partOfSpeech": "動詞",
+        "meaning": "豊富にある"
+      },
+      {
+        "word": "abundant",
+        "partOfSpeech": "形容詞",
+        "meaning": "豊富な"
+      },
+      {
+        "word": "abundance",
+        "partOfSpeech": "名詞",
+        "meaning": "豊富さ"
+      },
+      {
+        "word": "abundantly",
+        "partOfSpeech": "副詞",
+        "meaning": "豊富に"
+      }
+    ],
+    [
+      {
+        "word": "abstain",
+        "partOfSpeech": "動詞",
+        "meaning": "控える・棄権する"
+      },
+      {
+        "word": "abstention",
+        "partOfSpeech": "名詞",
+        "meaning": "自制・棄権"
+      },
+      {
+        "word": "abstainer",
+        "partOfSpeech": "名詞",
+        "meaning": "控える人"
+      }
+    ],
+    [
+      {
+        "word": "abstract",
+        "partOfSpeech": "形容詞",
+        "meaning": "抽象的な"
+      },
+      {
+        "word": "abstraction",
+        "partOfSpeech": "名詞",
+        "meaning": "抽象化・抽象概念"
+      },
+      {
+        "word": "abstractly",
+        "partOfSpeech": "副詞",
+        "meaning": "抽象的に"
+      }
+    ],
+    [
+      {
+        "word": "acclaim",
+        "partOfSpeech": "動詞",
+        "meaning": "称賛する"
+      },
+      {
+        "word": "acclaimed",
+        "partOfSpeech": "形容詞",
+        "meaning": "高く評価された"
+      },
+      {
+        "word": "acclamation",
+        "partOfSpeech": "名詞",
+        "meaning": "歓呼・称賛"
+      }
+    ],
+    [
+      {
+        "word": "acclimate",
+        "partOfSpeech": "動詞",
+        "meaning": "環境に順応させる"
+      },
+      {
+        "word": "acclimation",
+        "partOfSpeech": "名詞",
+        "meaning": "環境順応"
+      }
+    ],
+    [
+      {
+        "word": "accrue",
+        "partOfSpeech": "動詞",
+        "meaning": "次第に生じる・蓄積する"
+      },
+      {
+        "word": "accrual",
+        "partOfSpeech": "名詞",
+        "meaning": "発生・累積"
+      }
+    ],
+    [
+      {
+        "word": "acerbic",
+        "partOfSpeech": "形容詞",
+        "meaning": "辛辣な"
+      },
+      {
+        "word": "acerbity",
+        "partOfSpeech": "名詞",
+        "meaning": "辛辣さ"
+      },
+      {
+        "word": "acerbically",
+        "partOfSpeech": "副詞",
+        "meaning": "辛辣に"
+      }
+    ],
+    [
+      {
+        "word": "acquit",
+        "partOfSpeech": "動詞",
+        "meaning": "無罪とする"
+      },
+      {
+        "word": "acquittal",
+        "partOfSpeech": "名詞",
+        "meaning": "無罪判決"
+      }
+    ],
+    [
+      {
+        "word": "acute",
+        "partOfSpeech": "形容詞",
+        "meaning": "急性の・鋭い"
+      },
+      {
+        "word": "acutely",
+        "partOfSpeech": "副詞",
+        "meaning": "鋭く・痛切に"
+      },
+      {
+        "word": "acuteness",
+        "partOfSpeech": "名詞",
+        "meaning": "鋭さ・深刻さ"
+      }
+    ],
+    [
+      {
+        "word": "addict",
+        "partOfSpeech": "名詞",
+        "meaning": "依存症の人"
+      },
+      {
+        "word": "addiction",
+        "partOfSpeech": "名詞",
+        "meaning": "依存症"
+      },
+      {
+        "word": "addictive",
+        "partOfSpeech": "形容詞",
+        "meaning": "依存性のある"
+      },
+      {
+        "word": "addicted",
+        "partOfSpeech": "形容詞",
+        "meaning": "依存している"
+      }
+    ],
+    [
+      {
+        "word": "adept",
+        "partOfSpeech": "形容詞",
+        "meaning": "熟達した"
+      },
+      {
+        "word": "adeptly",
+        "partOfSpeech": "副詞",
+        "meaning": "巧みに"
+      },
+      {
+        "word": "adeptness",
+        "partOfSpeech": "名詞",
+        "meaning": "熟達"
+      }
+    ],
+    [
+      {
+        "word": "adhere",
+        "partOfSpeech": "動詞",
+        "meaning": "付着する・固く守る"
+      },
+      {
+        "word": "adherence",
+        "partOfSpeech": "名詞",
+        "meaning": "付着・遵守"
+      },
+      {
+        "word": "adherent",
+        "partOfSpeech": "名詞",
+        "meaning": "支持者"
+      },
+      {
+        "word": "adhesive",
+        "partOfSpeech": "形容詞",
+        "meaning": "接着性のある"
+      }
+    ],
+    [
+      {
+        "word": "adjoin",
+        "partOfSpeech": "動詞",
+        "meaning": "隣接する"
+      },
+      {
+        "word": "adjoining",
+        "partOfSpeech": "形容詞",
+        "meaning": "隣接した"
+      }
+    ],
+    [
+      {
+        "word": "adjourn",
+        "partOfSpeech": "動詞",
+        "meaning": "休会する・延期する"
+      },
+      {
+        "word": "adjournment",
+        "partOfSpeech": "名詞",
+        "meaning": "休会・延期"
+      }
+    ],
+    [
+      {
+        "word": "adjudicate",
+        "partOfSpeech": "動詞",
+        "meaning": "裁定する"
+      },
+      {
+        "word": "adjudication",
+        "partOfSpeech": "名詞",
+        "meaning": "裁定"
+      },
+      {
+        "word": "adjudicator",
+        "partOfSpeech": "名詞",
+        "meaning": "裁定者"
+      }
+    ],
+    [
+      {
+        "word": "administer",
+        "partOfSpeech": "動詞",
+        "meaning": "管理する・投与する"
+      },
+      {
+        "word": "administration",
+        "partOfSpeech": "名詞",
+        "meaning": "管理・投与"
+      },
+      {
+        "word": "administrator",
+        "partOfSpeech": "名詞",
+        "meaning": "管理者"
+      },
+      {
+        "word": "administrative",
+        "partOfSpeech": "形容詞",
+        "meaning": "管理上の"
+      },
+      {
+        "word": "administratively",
+        "partOfSpeech": "副詞",
+        "meaning": "管理上"
+      }
+    ],
+    [
+      {
+        "word": "admonish",
+        "partOfSpeech": "動詞",
+        "meaning": "戒める"
+      },
+      {
+        "word": "admonition",
+        "partOfSpeech": "名詞",
+        "meaning": "戒め"
+      }
+    ],
+    [
+      {
+        "word": "adore",
+        "partOfSpeech": "動詞",
+        "meaning": "大好きである・崇拝する"
+      },
+      {
+        "word": "adoration",
+        "partOfSpeech": "名詞",
+        "meaning": "崇拝・深い愛情"
+      },
+      {
+        "word": "adorable",
+        "partOfSpeech": "形容詞",
+        "meaning": "とてもかわいらしい"
+      },
+      {
+        "word": "adorably",
+        "partOfSpeech": "副詞",
+        "meaning": "かわいらしく"
+      }
+    ],
+    [
+      {
+        "word": "adorn",
+        "partOfSpeech": "動詞",
+        "meaning": "飾る"
+      },
+      {
+        "word": "adornment",
+        "partOfSpeech": "名詞",
+        "meaning": "装飾"
+      }
+    ],
+    [
+      {
+        "word": "adroit",
+        "partOfSpeech": "形容詞",
+        "meaning": "巧みな"
+      },
+      {
+        "word": "adroitly",
+        "partOfSpeech": "副詞",
+        "meaning": "巧みに"
+      },
+      {
+        "word": "adroitness",
+        "partOfSpeech": "名詞",
+        "meaning": "巧みさ"
+      }
+    ],
+    [
+      {
+        "word": "adulate",
+        "partOfSpeech": "動詞",
+        "meaning": "お世辞を言って持ち上げる"
+      },
+      {
+        "word": "adulation",
+        "partOfSpeech": "名詞",
+        "meaning": "過度の称賛"
+      }
+    ],
+    [
+      {
+        "word": "adulterate",
+        "partOfSpeech": "動詞",
+        "meaning": "不純物を混ぜる"
+      },
+      {
+        "word": "adulteration",
+        "partOfSpeech": "名詞",
+        "meaning": "混ぜ物をすること"
+      },
+      {
+        "word": "unadulterated",
+        "partOfSpeech": "形容詞",
+        "meaning": "混ぜ物のない"
+      }
+    ],
+    [
+      {
+        "word": "adverse",
+        "partOfSpeech": "形容詞",
+        "meaning": "不利な・悪影響を及ぼす"
+      },
+      {
+        "word": "adversely",
+        "partOfSpeech": "副詞",
+        "meaning": "不利に"
+      },
+      {
+        "word": "adversity",
+        "partOfSpeech": "名詞",
+        "meaning": "逆境"
+      }
+    ],
+    [
+      {
+        "word": "aesthetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "美的な"
+      },
+      {
+        "word": "aesthetically",
+        "partOfSpeech": "副詞",
+        "meaning": "美的観点から"
+      },
+      {
+        "word": "aesthetics",
+        "partOfSpeech": "名詞",
+        "meaning": "美学"
+      }
+    ],
+    [
+      {
+        "word": "affable",
+        "partOfSpeech": "形容詞",
+        "meaning": "愛想のよい"
+      },
+      {
+        "word": "affability",
+        "partOfSpeech": "名詞",
+        "meaning": "愛想のよさ"
+      },
+      {
+        "word": "affably",
+        "partOfSpeech": "副詞",
+        "meaning": "愛想よく"
+      }
+    ],
+    [
+      {
+        "word": "afflict",
+        "partOfSpeech": "動詞",
+        "meaning": "苦しめる"
+      },
+      {
+        "word": "affliction",
+        "partOfSpeech": "名詞",
+        "meaning": "苦痛・災難"
+      }
+    ],
+    [
+      {
+        "word": "affluent",
+        "partOfSpeech": "形容詞",
+        "meaning": "裕福な"
+      },
+      {
+        "word": "affluence",
+        "partOfSpeech": "名詞",
+        "meaning": "豊かさ"
+      }
+    ],
+    [
+      {
+        "word": "aggravate",
+        "partOfSpeech": "動詞",
+        "meaning": "悪化させる"
+      },
+      {
+        "word": "aggravation",
+        "partOfSpeech": "名詞",
+        "meaning": "悪化"
+      },
+      {
+        "word": "aggravating",
+        "partOfSpeech": "形容詞",
+        "meaning": "いらいらさせる"
+      }
+    ],
+    [
+      {
+        "word": "aggregate",
+        "partOfSpeech": "動詞",
+        "meaning": "集計する・集める"
+      },
+      {
+        "word": "aggregation",
+        "partOfSpeech": "名詞",
+        "meaning": "集計・集合"
+      },
+      {
+        "word": "aggregator",
+        "partOfSpeech": "名詞",
+        "meaning": "集約サービス・集約者"
+      }
+    ],
+    [
+      {
+        "word": "agile",
+        "partOfSpeech": "形容詞",
+        "meaning": "機敏な"
+      },
+      {
+        "word": "agility",
+        "partOfSpeech": "名詞",
+        "meaning": "機敏さ"
+      }
+    ],
+    [
+      {
+        "word": "agitate",
+        "partOfSpeech": "動詞",
+        "meaning": "動揺させる・扇動する"
+      },
+      {
+        "word": "agitation",
+        "partOfSpeech": "名詞",
+        "meaning": "動揺・扇動"
+      },
+      {
+        "word": "agitator",
+        "partOfSpeech": "名詞",
+        "meaning": "扇動者"
+      },
+      {
+        "word": "agitated",
+        "partOfSpeech": "形容詞",
+        "meaning": "動揺した"
+      }
+    ],
+    [
+      {
+        "word": "alienate",
+        "partOfSpeech": "動詞",
+        "meaning": "疎遠にする"
+      },
+      {
+        "word": "alienation",
+        "partOfSpeech": "名詞",
+        "meaning": "疎外"
+      }
+    ],
+    [
+      {
+        "word": "align",
+        "partOfSpeech": "動詞",
+        "meaning": "整列させる・一致させる"
+      },
+      {
+        "word": "alignment",
+        "partOfSpeech": "名詞",
+        "meaning": "整列・一致"
+      },
+      {
+        "word": "misalign",
+        "partOfSpeech": "動詞",
+        "meaning": "位置をずらす"
+      },
+      {
+        "word": "misalignment",
+        "partOfSpeech": "名詞",
+        "meaning": "位置のずれ"
+      }
+    ],
+    [
+      {
+        "word": "alleviate",
+        "partOfSpeech": "動詞",
+        "meaning": "苦痛などを軽減する"
+      },
+      {
+        "word": "alleviation",
+        "partOfSpeech": "名詞",
+        "meaning": "軽減"
+      }
+    ],
+    [
+      {
+        "word": "allocate",
+        "partOfSpeech": "動詞",
+        "meaning": "割り当てる"
+      },
+      {
+        "word": "allocation",
+        "partOfSpeech": "名詞",
+        "meaning": "割り当て"
+      },
+      {
+        "word": "reallocate",
+        "partOfSpeech": "動詞",
+        "meaning": "再配分する"
+      },
+      {
+        "word": "reallocation",
+        "partOfSpeech": "名詞",
+        "meaning": "再配分"
+      }
+    ],
+    [
+      {
+        "word": "allot",
+        "partOfSpeech": "動詞",
+        "meaning": "割り当てる"
+      },
+      {
+        "word": "allotment",
+        "partOfSpeech": "名詞",
+        "meaning": "割り当て分"
+      }
+    ],
+    [
+      {
+        "word": "allude",
+        "partOfSpeech": "動詞",
+        "meaning": "ほのめかす"
+      },
+      {
+        "word": "allusion",
+        "partOfSpeech": "名詞",
+        "meaning": "言及・暗示"
+      },
+      {
+        "word": "allusive",
+        "partOfSpeech": "形容詞",
+        "meaning": "ほのめかしの多い"
+      }
+    ],
+    [
+      {
+        "word": "allure",
+        "partOfSpeech": "名詞",
+        "meaning": "魅力"
+      },
+      {
+        "word": "alluring",
+        "partOfSpeech": "形容詞",
+        "meaning": "魅惑的な"
+      }
+    ],
+    [
+      {
+        "word": "alter",
+        "partOfSpeech": "動詞",
+        "meaning": "変える"
+      },
+      {
+        "word": "alteration",
+        "partOfSpeech": "名詞",
+        "meaning": "変更"
+      },
+      {
+        "word": "alterable",
+        "partOfSpeech": "形容詞",
+        "meaning": "変更可能な"
+      },
+      {
+        "word": "unalterable",
+        "partOfSpeech": "形容詞",
+        "meaning": "変更できない"
+      }
+    ],
+    [
+      {
+        "word": "alternate",
+        "partOfSpeech": "動詞",
+        "meaning": "交互に行う"
+      },
+      {
+        "word": "alternation",
+        "partOfSpeech": "名詞",
+        "meaning": "交替"
+      },
+      {
+        "word": "alternately",
+        "partOfSpeech": "副詞",
+        "meaning": "交互に"
+      }
+    ],
+    [
+      {
+        "word": "amalgamate",
+        "partOfSpeech": "動詞",
+        "meaning": "合併する"
+      },
+      {
+        "word": "amalgamation",
+        "partOfSpeech": "名詞",
+        "meaning": "合併"
+      }
+    ],
+    [
+      {
+        "word": "ambiguous",
+        "partOfSpeech": "形容詞",
+        "meaning": "曖昧な"
+      },
+      {
+        "word": "ambiguity",
+        "partOfSpeech": "名詞",
+        "meaning": "曖昧さ"
+      },
+      {
+        "word": "ambiguously",
+        "partOfSpeech": "副詞",
+        "meaning": "曖昧に"
+      },
+      {
+        "word": "unambiguous",
+        "partOfSpeech": "形容詞",
+        "meaning": "明確な"
+      },
+      {
+        "word": "unambiguously",
+        "partOfSpeech": "副詞",
+        "meaning": "明確に"
+      }
+    ],
+    [
+      {
+        "word": "ambivalent",
+        "partOfSpeech": "形容詞",
+        "meaning": "相反する感情を抱く"
+      },
+      {
+        "word": "ambivalence",
+        "partOfSpeech": "名詞",
+        "meaning": "相反する感情"
+      }
+    ],
+    [
+      {
+        "word": "amend",
+        "partOfSpeech": "動詞",
+        "meaning": "修正する"
+      },
+      {
+        "word": "amendment",
+        "partOfSpeech": "名詞",
+        "meaning": "修正・修正条項"
+      }
+    ],
+    [
+      {
+        "word": "amiable",
+        "partOfSpeech": "形容詞",
+        "meaning": "感じのよい"
+      },
+      {
+        "word": "amiability",
+        "partOfSpeech": "名詞",
+        "meaning": "愛想のよさ"
+      },
+      {
+        "word": "amiably",
+        "partOfSpeech": "副詞",
+        "meaning": "感じよく"
+      }
+    ],
+    [
+      {
+        "word": "amicable",
+        "partOfSpeech": "形容詞",
+        "meaning": "友好的な"
+      },
+      {
+        "word": "amicably",
+        "partOfSpeech": "副詞",
+        "meaning": "友好的に"
+      }
+    ],
+    [
+      {
+        "word": "amplify",
+        "partOfSpeech": "動詞",
+        "meaning": "増幅する"
+      },
+      {
+        "word": "amplification",
+        "partOfSpeech": "名詞",
+        "meaning": "増幅"
+      },
+      {
+        "word": "amplifier",
+        "partOfSpeech": "名詞",
+        "meaning": "増幅器"
+      }
+    ],
+    [
+      {
+        "word": "anachronism",
+        "partOfSpeech": "名詞",
+        "meaning": "時代錯誤"
+      },
+      {
+        "word": "anachronistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "時代錯誤の"
+      }
+    ],
+    [
+      {
+        "word": "analogous",
+        "partOfSpeech": "形容詞",
+        "meaning": "類似した"
+      },
+      {
+        "word": "analogy",
+        "partOfSpeech": "名詞",
+        "meaning": "類似・たとえ"
+      }
+    ],
+    [
+      {
+        "word": "anarchy",
+        "partOfSpeech": "名詞",
+        "meaning": "無政府状態"
+      },
+      {
+        "word": "anarchic",
+        "partOfSpeech": "形容詞",
+        "meaning": "無秩序な"
+      },
+      {
+        "word": "anarchist",
+        "partOfSpeech": "名詞",
+        "meaning": "無政府主義者"
+      },
+      {
+        "word": "anarchism",
+        "partOfSpeech": "名詞",
+        "meaning": "無政府主義"
+      }
+    ],
+    [
+      {
+        "word": "animate",
+        "partOfSpeech": "動詞",
+        "meaning": "生き生きさせる・動画にする"
+      },
+      {
+        "word": "animation",
+        "partOfSpeech": "名詞",
+        "meaning": "アニメーション"
+      },
+      {
+        "word": "animator",
+        "partOfSpeech": "名詞",
+        "meaning": "アニメーター"
+      },
+      {
+        "word": "animated",
+        "partOfSpeech": "形容詞",
+        "meaning": "生き生きした"
+      }
+    ],
+    [
+      {
+        "word": "annotate",
+        "partOfSpeech": "動詞",
+        "meaning": "注釈を付ける"
+      },
+      {
+        "word": "annotation",
+        "partOfSpeech": "名詞",
+        "meaning": "注釈"
+      }
+    ],
+    [
+      {
+        "word": "anomaly",
+        "partOfSpeech": "名詞",
+        "meaning": "異常・例外"
+      },
+      {
+        "word": "anomalous",
+        "partOfSpeech": "形容詞",
+        "meaning": "異常な"
+      }
+    ],
+    [
+      {
+        "word": "anonymous",
+        "partOfSpeech": "形容詞",
+        "meaning": "匿名の"
+      },
+      {
+        "word": "anonymity",
+        "partOfSpeech": "名詞",
+        "meaning": "匿名性"
+      },
+      {
+        "word": "anonymously",
+        "partOfSpeech": "副詞",
+        "meaning": "匿名で"
+      },
+      {
+        "word": "anonymize",
+        "partOfSpeech": "動詞",
+        "meaning": "匿名化する"
+      },
+      {
+        "word": "anonymization",
+        "partOfSpeech": "名詞",
+        "meaning": "匿名化"
+      }
+    ],
+    [
+      {
+        "word": "antagonize",
+        "partOfSpeech": "動詞",
+        "meaning": "反感を買う"
+      },
+      {
+        "word": "antagonism",
+        "partOfSpeech": "名詞",
+        "meaning": "反感・対立"
+      },
+      {
+        "word": "antagonist",
+        "partOfSpeech": "名詞",
+        "meaning": "敵対者"
+      },
+      {
+        "word": "antagonistic",
+        "partOfSpeech": "形容詞",
+        "meaning": "敵対的な"
+      }
+    ],
+    [
+      {
+        "word": "apathy",
+        "partOfSpeech": "名詞",
+        "meaning": "無関心"
+      },
+      {
+        "word": "apathetic",
+        "partOfSpeech": "形容詞",
+        "meaning": "無関心な"
+      },
+      {
+        "word": "apathetically",
+        "partOfSpeech": "副詞",
+        "meaning": "無関心に"
+      }
+    ],
+    [
+      {
+        "word": "appease",
+        "partOfSpeech": "動詞",
+        "meaning": "なだめる"
+      },
+      {
+        "word": "appeasement",
+        "partOfSpeech": "名詞",
+        "meaning": "宥和・懐柔"
+      }
+    ],
+    [
+      {
+        "word": "apprentice",
+        "partOfSpeech": "名詞",
+        "meaning": "見習い"
+      },
+      {
+        "word": "apprenticeship",
+        "partOfSpeech": "名詞",
+        "meaning": "見習い期間・制度"
+      }
+    ],
+    [
+      {
+        "word": "arbitrary",
+        "partOfSpeech": "形容詞",
+        "meaning": "恣意的な"
+      },
+      {
+        "word": "arbitrarily",
+        "partOfSpeech": "副詞",
+        "meaning": "恣意的に"
+      },
+      {
+        "word": "arbitrariness",
+        "partOfSpeech": "名詞",
+        "meaning": "恣意性"
+      }
+    ],
+    [
+      {
+        "word": "arbitrate",
+        "partOfSpeech": "動詞",
+        "meaning": "仲裁する"
+      },
+      {
+        "word": "arbitration",
+        "partOfSpeech": "名詞",
+        "meaning": "仲裁"
+      },
+      {
+        "word": "arbitrator",
+        "partOfSpeech": "名詞",
+        "meaning": "仲裁人"
+      }
+    ],
+    [
+      {
+        "word": "archaeology",
+        "partOfSpeech": "名詞",
+        "meaning": "考古学"
+      },
+      {
+        "word": "archaeologist",
+        "partOfSpeech": "名詞",
+        "meaning": "考古学者"
+      },
+      {
+        "word": "archaeological",
+        "partOfSpeech": "形容詞",
+        "meaning": "考古学の"
+      }
+    ],
+    [
+      {
+        "word": "ardent",
+        "partOfSpeech": "形容詞",
+        "meaning": "熱烈な"
+      },
+      {
+        "word": "ardently",
+        "partOfSpeech": "副詞",
+        "meaning": "熱烈に"
+      },
+      {
+        "word": "ardor",
+        "partOfSpeech": "名詞",
+        "meaning": "熱意"
+      }
+    ],
+    [
+      {
+        "word": "ascend",
+        "partOfSpeech": "動詞",
+        "meaning": "上昇する"
+      },
+      {
+        "word": "ascent",
+        "partOfSpeech": "名詞",
+        "meaning": "上昇"
+      }
+    ],
+    [
+      {
+        "word": "ascertain",
+        "partOfSpeech": "動詞",
+        "meaning": "確かめる"
+      },
+      {
+        "word": "ascertainable",
+        "partOfSpeech": "形容詞",
+        "meaning": "確認できる"
+      }
+    ],
+    [
+      {
+        "word": "ascribe",
+        "partOfSpeech": "動詞",
+        "meaning": "原因などを帰する"
+      },
+      {
+        "word": "ascription",
+        "partOfSpeech": "名詞",
+        "meaning": "帰属・原因を帰すること"
+      }
+    ],
+    [
+      {
+        "word": "aspire",
+        "partOfSpeech": "動詞",
+        "meaning": "熱望する"
+      },
+      {
+        "word": "aspiration",
+        "partOfSpeech": "名詞",
+        "meaning": "熱望・志"
+      },
+      {
+        "word": "aspirant",
+        "partOfSpeech": "名詞",
+        "meaning": "志望者"
+      },
+      {
+        "word": "aspiring",
+        "partOfSpeech": "形容詞",
+        "meaning": "志望している"
+      }
+    ],
+    [
+      {
+        "word": "assail",
+        "partOfSpeech": "動詞",
+        "meaning": "激しく攻撃する"
+      },
+      {
+        "word": "assailant",
+        "partOfSpeech": "名詞",
+        "meaning": "襲撃者"
+      }
+    ],
+    [
+      {
+        "word": "assassin",
+        "partOfSpeech": "名詞",
+        "meaning": "暗殺者"
+      },
+      {
+        "word": "assassinate",
+        "partOfSpeech": "動詞",
+        "meaning": "暗殺する"
+      },
+      {
+        "word": "assassination",
+        "partOfSpeech": "名詞",
+        "meaning": "暗殺"
+      }
+    ],
+    [
+      {
+        "word": "assert",
+        "partOfSpeech": "動詞",
+        "meaning": "断言する・主張する"
+      },
+      {
+        "word": "assertion",
+        "partOfSpeech": "名詞",
+        "meaning": "断言・主張"
+      },
+      {
+        "word": "assertive",
+        "partOfSpeech": "形容詞",
+        "meaning": "自己主張のできる"
+      },
+      {
+        "word": "assertiveness",
+        "partOfSpeech": "名詞",
+        "meaning": "自己主張する姿勢"
+      },
+      {
+        "word": "assertively",
+        "partOfSpeech": "副詞",
+        "meaning": "はっきり自己主張して"
+      }
+    ],
+    [
+      {
+        "word": "assimilate",
+        "partOfSpeech": "動詞",
+        "meaning": "同化する・吸収する"
+      },
+      {
+        "word": "assimilation",
+        "partOfSpeech": "名詞",
+        "meaning": "同化・吸収"
+      }
+    ],
+    [
+      {
+        "word": "astound",
+        "partOfSpeech": "動詞",
+        "meaning": "仰天させる"
+      },
+      {
+        "word": "astounding",
+        "partOfSpeech": "形容詞",
+        "meaning": "仰天するほどの"
+      },
+      {
+        "word": "astoundingly",
+        "partOfSpeech": "副詞",
+        "meaning": "驚くほど"
+      }
+    ],
+    [
+      {
+        "word": "atrocious",
+        "partOfSpeech": "形容詞",
+        "meaning": "残虐な・ひどい"
+      },
+      {
+        "word": "atrocity",
+        "partOfSpeech": "名詞",
+        "meaning": "残虐行為"
+      },
+      {
+        "word": "atrociously",
+        "partOfSpeech": "副詞",
+        "meaning": "ひどく・残虐に"
+      }
+    ],
+    [
+      {
+        "word": "attest",
+        "partOfSpeech": "動詞",
+        "meaning": "証明する"
+      },
+      {
+        "word": "attestation",
+        "partOfSpeech": "名詞",
+        "meaning": "証明"
+      }
+    ],
+    [
+      {
+        "word": "attune",
+        "partOfSpeech": "動詞",
+        "meaning": "調和させる・慣れさせる"
+      },
+      {
+        "word": "attuned",
+        "partOfSpeech": "形容詞",
+        "meaning": "敏感に対応できる"
+      }
+    ],
+    [
+      {
+        "word": "augment",
+        "partOfSpeech": "動詞",
+        "meaning": "増大させる"
+      },
+      {
+        "word": "augmentation",
+        "partOfSpeech": "名詞",
+        "meaning": "増大"
+      }
+    ],
+    [
+      {
+        "word": "auspicious",
+        "partOfSpeech": "形容詞",
+        "meaning": "幸先のよい"
+      },
+      {
+        "word": "inauspicious",
+        "partOfSpeech": "形容詞",
+        "meaning": "幸先の悪い"
+      }
+    ],
+    [
+      {
+        "word": "autonomous",
+        "partOfSpeech": "形容詞",
+        "meaning": "自律的な"
+      },
+      {
+        "word": "autonomy",
+        "partOfSpeech": "名詞",
+        "meaning": "自律・自治"
+      },
+      {
+        "word": "autonomously",
+        "partOfSpeech": "副詞",
+        "meaning": "自律的に"
+      }
+    ],
+    [
+      {
+        "word": "avert",
+        "partOfSpeech": "動詞",
+        "meaning": "回避する"
+      },
+      {
+        "word": "avertable",
+        "partOfSpeech": "形容詞",
+        "meaning": "回避できる"
+      }
+    ],
+    [
+      {
+        "word": "avid",
+        "partOfSpeech": "形容詞",
+        "meaning": "熱心な"
+      },
+      {
+        "word": "avidly",
+        "partOfSpeech": "副詞",
+        "meaning": "熱心に"
+      },
+      {
+        "word": "avidity",
+        "partOfSpeech": "名詞",
+        "meaning": "熱心さ"
+      }
+    ],
+    [
+      {
+        "word": "avow",
+        "partOfSpeech": "動詞",
+        "meaning": "公然と認める"
+      },
+      {
+        "word": "avowal",
+        "partOfSpeech": "名詞",
+        "meaning": "公言"
+      },
+      {
+        "word": "avowed",
+        "partOfSpeech": "形容詞",
+        "meaning": "公言された・自認する"
+      }
+    ],
+    [
+      {
+        "word": "baffle",
+        "partOfSpeech": "動詞",
+        "meaning": "困惑させる"
+      },
+      {
+        "word": "bafflement",
+        "partOfSpeech": "名詞",
+        "meaning": "困惑"
+      },
+      {
+        "word": "baffling",
+        "partOfSpeech": "形容詞",
+        "meaning": "不可解な"
+      }
+    ],
+    [
+      {
+        "word": "banal",
+        "partOfSpeech": "形容詞",
+        "meaning": "陳腐な"
+      },
+      {
+        "word": "banality",
+        "partOfSpeech": "名詞",
+        "meaning": "陳腐さ・ありふれた言葉"
+      }
+    ],
+    [
+      {
+        "word": "barbaric",
+        "partOfSpeech": "形容詞",
+        "meaning": "野蛮な"
+      },
+      {
+        "word": "barbarism",
+        "partOfSpeech": "名詞",
+        "meaning": "野蛮な行為・野蛮さ"
+      },
+      {
+        "word": "barbarity",
+        "partOfSpeech": "名詞",
+        "meaning": "残虐さ"
+      }
+    ],
+    [
+      {
+        "word": "barren",
+        "partOfSpeech": "形容詞",
+        "meaning": "不毛の"
+      },
+      {
+        "word": "barrenness",
+        "partOfSpeech": "名詞",
+        "meaning": "不毛"
+      }
+    ],
+    [
+      {
+        "word": "belittle",
+        "partOfSpeech": "動詞",
+        "meaning": "軽視する"
+      },
+      {
+        "word": "belittlement",
+        "partOfSpeech": "名詞",
+        "meaning": "軽視"
+      }
+    ],
+    [
+      {
+        "word": "belligerent",
+        "partOfSpeech": "形容詞",
+        "meaning": "好戦的な"
+      },
+      {
+        "word": "belligerence",
+        "partOfSpeech": "名詞",
+        "meaning": "好戦性"
+      }
+    ],
+    [
+      {
+        "word": "benevolent",
+        "partOfSpeech": "形容詞",
+        "meaning": "慈悲深い"
+      },
+      {
+        "word": "benevolence",
+        "partOfSpeech": "名詞",
+        "meaning": "慈悲"
+      }
+    ],
+    [
+      {
+        "word": "benign",
+        "partOfSpeech": "形容詞",
+        "meaning": "良性の・穏やかな"
+      },
+      {
+        "word": "benignly",
+        "partOfSpeech": "副詞",
+        "meaning": "穏やかに"
+      }
+    ],
+    [
+      {
+        "word": "bereave",
+        "partOfSpeech": "動詞",
+        "meaning": "肉親などを奪う"
+      },
+      {
+        "word": "bereavement",
+        "partOfSpeech": "名詞",
+        "meaning": "死別"
+      }
+    ],
+    [
+      {
+        "word": "besiege",
+        "partOfSpeech": "動詞",
+        "meaning": "包囲する・殺到する"
+      },
+      {
+        "word": "besieged",
+        "partOfSpeech": "形容詞",
+        "meaning": "包囲された"
+      }
+    ],
+    [
+      {
+        "word": "bewilder",
+        "partOfSpeech": "動詞",
+        "meaning": "当惑させる"
+      },
+      {
+        "word": "bewilderment",
+        "partOfSpeech": "名詞",
+        "meaning": "当惑"
+      },
+      {
+        "word": "bewildering",
+        "partOfSpeech": "形容詞",
+        "meaning": "当惑させるような"
+      }
+    ],
+    [
+      {
+        "word": "bias",
+        "partOfSpeech": "名詞",
+        "meaning": "偏り"
+      },
+      {
+        "word": "biased",
+        "partOfSpeech": "形容詞",
+        "meaning": "偏った"
+      },
+      {
+        "word": "unbiased",
+        "partOfSpeech": "形容詞",
+        "meaning": "偏りのない"
+      }
+    ],
+    [
+      {
+        "word": "bitter",
+        "partOfSpeech": "形容詞",
+        "meaning": "苦い・苦々しい"
+      },
+      {
+        "word": "bitterness",
+        "partOfSpeech": "名詞",
+        "meaning": "苦味・苦々しさ"
+      },
+      {
+        "word": "bitterly",
+        "partOfSpeech": "副詞",
+        "meaning": "ひどく・苦々しく"
+      },
+      {
+        "word": "embitter",
+        "partOfSpeech": "動詞",
+        "meaning": "苦々しい気持ちにさせる"
+      }
+    ],
+    [
+      {
+        "word": "blatant",
+        "partOfSpeech": "形容詞",
+        "meaning": "露骨な"
+      },
+      {
+        "word": "blatantly",
+        "partOfSpeech": "副詞",
+        "meaning": "露骨に"
+      }
+    ],
+    [
+      {
+        "word": "bleak",
+        "partOfSpeech": "形容詞",
+        "meaning": "荒涼とした・暗い"
+      },
+      {
+        "word": "bleakness",
+        "partOfSpeech": "名詞",
+        "meaning": "荒涼・暗さ"
+      },
+      {
+        "word": "bleakly",
+        "partOfSpeech": "副詞",
+        "meaning": "暗い調子で"
+      }
+    ],
+    [
+      {
+        "word": "bliss",
+        "partOfSpeech": "名詞",
+        "meaning": "至福"
+      },
+      {
+        "word": "blissful",
+        "partOfSpeech": "形容詞",
+        "meaning": "至福の"
+      },
+      {
+        "word": "blissfully",
+        "partOfSpeech": "副詞",
+        "meaning": "幸せいっぱいに"
+      }
+    ],
+    [
+      {
+        "word": "blunt",
+        "partOfSpeech": "形容詞",
+        "meaning": "鈍い・ぶっきらぼうな"
+      },
+      {
+        "word": "bluntly",
+        "partOfSpeech": "副詞",
+        "meaning": "率直に・ぶっきらぼうに"
+      },
+      {
+        "word": "bluntness",
+        "partOfSpeech": "名詞",
+        "meaning": "率直さ・鈍さ"
+      }
+    ],
+    [
+      {
+        "word": "boast",
+        "partOfSpeech": "動詞",
+        "meaning": "自慢する"
+      },
+      {
+        "word": "boastful",
+        "partOfSpeech": "形容詞",
+        "meaning": "自慢げな"
+      },
+      {
+        "word": "boastfully",
+        "partOfSpeech": "副詞",
+        "meaning": "自慢げに"
+      }
+    ],
+    [
+      {
+        "word": "brevity",
+        "partOfSpeech": "名詞",
+        "meaning": "簡潔さ・短さ"
+      },
+      {
+        "word": "brief",
+        "partOfSpeech": "形容詞",
+        "meaning": "短い"
+      },
+      {
+        "word": "briefly",
+        "partOfSpeech": "副詞",
+        "meaning": "手短に"
+      }
+    ],
+    [
+      {
+        "word": "brisk",
+        "partOfSpeech": "形容詞",
+        "meaning": "活発な・きびきびした"
+      },
+      {
+        "word": "briskly",
+        "partOfSpeech": "副詞",
+        "meaning": "きびきびと"
+      },
+      {
+        "word": "briskness",
+        "partOfSpeech": "名詞",
+        "meaning": "活発さ"
+      }
+    ],
+    [
+      {
+        "word": "brittle",
+        "partOfSpeech": "形容詞",
+        "meaning": "もろい"
+      },
+      {
+        "word": "brittleness",
+        "partOfSpeech": "名詞",
+        "meaning": "もろさ"
+      }
+    ],
+    [
+      {
+        "word": "brutal",
+        "partOfSpeech": "形容詞",
+        "meaning": "残忍な"
+      },
+      {
+        "word": "brutality",
+        "partOfSpeech": "名詞",
+        "meaning": "残忍さ・残虐行為"
+      },
+      {
+        "word": "brutally",
+        "partOfSpeech": "副詞",
+        "meaning": "残忍に"
+      },
+      {
+        "word": "brutalize",
+        "partOfSpeech": "動詞",
+        "meaning": "残忍に扱う"
+      }
+    ],
+    [
+      {
+        "word": "buoyant",
+        "partOfSpeech": "形容詞",
+        "meaning": "浮力のある・快活な"
+      },
+      {
+        "word": "buoyancy",
+        "partOfSpeech": "名詞",
+        "meaning": "浮力・快活さ"
+      }
+    ],
+    [
+      {
+        "word": "bureaucracy",
+        "partOfSpeech": "名詞",
+        "meaning": "官僚制度"
+      },
+      {
+        "word": "bureaucrat",
+        "partOfSpeech": "名詞",
+        "meaning": "官僚"
+      },
+      {
+        "word": "bureaucratic",
+        "partOfSpeech": "形容詞",
+        "meaning": "官僚的な"
+      }
+    ],
+    [
+      {
+        "word": "calamity",
+        "partOfSpeech": "名詞",
+        "meaning": "大災害"
+      },
+      {
+        "word": "calamitous",
+        "partOfSpeech": "形容詞",
+        "meaning": "悲惨な"
+      }
+    ],
+    [
+      {
+        "word": "calibrate",
+        "partOfSpeech": "動詞",
+        "meaning": "目盛りを調整する"
+      },
+      {
+        "word": "calibration",
+        "partOfSpeech": "名詞",
+        "meaning": "校正・目盛り調整"
+      }
+    ],
+    [
+      {
+        "word": "callous",
+        "partOfSpeech": "形容詞",
+        "meaning": "冷淡な"
+      },
+      {
+        "word": "callousness",
+        "partOfSpeech": "名詞",
+        "meaning": "冷淡さ"
+      },
+      {
+        "word": "callously",
+        "partOfSpeech": "副詞",
+        "meaning": "冷淡に"
+      }
+    ],
+    [
+      {
+        "word": "candid",
+        "partOfSpeech": "形容詞",
+        "meaning": "率直な"
+      },
+      {
+        "word": "candor",
+        "partOfSpeech": "名詞",
+        "meaning": "率直さ"
+      },
+      {
+        "word": "candidly",
+        "partOfSpeech": "副詞",
+        "meaning": "率直に"
+      }
+    ],
+    [
+      {
+        "word": "capricious",
+        "partOfSpeech": "形容詞",
+        "meaning": "気まぐれな"
+      },
+      {
+        "word": "caprice",
+        "partOfSpeech": "名詞",
+        "meaning": "気まぐれ"
+      },
+      {
+        "word": "capriciously",
+        "partOfSpeech": "副詞",
+        "meaning": "気まぐれに"
+      }
+    ],
+    [
+      {
+        "word": "captivate",
+        "partOfSpeech": "動詞",
+        "meaning": "魅了する"
+      },
+      {
+        "word": "captivating",
+        "partOfSpeech": "形容詞",
+        "meaning": "魅力的な"
+      }
+    ],
+    [
+      {
+        "word": "carnivore",
+        "partOfSpeech": "名詞",
+        "meaning": "肉食動物"
+      },
+      {
+        "word": "carnivorous",
+        "partOfSpeech": "形容詞",
+        "meaning": "肉食性の"
+      }
+    ],
+    [
+      {
+        "word": "catastrophe",
+        "partOfSpeech": "名詞",
+        "meaning": "大惨事"
+      },
+      {
+        "word": "catastrophic",
+        "partOfSpeech": "形容詞",
+        "meaning": "壊滅的な"
+      },
+      {
+        "word": "catastrophically",
+        "partOfSpeech": "副詞",
+        "meaning": "壊滅的に"
+      }
+    ],
+    [
+      {
+        "word": "categorize",
+        "partOfSpeech": "動詞",
+        "meaning": "分類する"
+      },
+      {
+        "word": "categorization",
+        "partOfSpeech": "名詞",
+        "meaning": "分類"
+      },
+      {
+        "word": "recategorize",
+        "partOfSpeech": "動詞",
+        "meaning": "再分類する"
+      }
+    ],
+    [
+      {
+        "word": "cater",
+        "partOfSpeech": "動詞",
+        "meaning": "要望に応える・食事を提供する"
+      },
+      {
+        "word": "caterer",
+        "partOfSpeech": "名詞",
+        "meaning": "仕出し業者"
+      },
+      {
+        "word": "catering",
+        "partOfSpeech": "名詞",
+        "meaning": "飲食物の提供"
+      }
+    ],
+    [
+      {
+        "word": "caustic",
+        "partOfSpeech": "形容詞",
+        "meaning": "腐食性のある・辛辣な"
+      },
+      {
+        "word": "caustically",
+        "partOfSpeech": "副詞",
+        "meaning": "辛辣に"
+      }
+    ],
+    [
+      {
+        "word": "certify",
+        "partOfSpeech": "動詞",
+        "meaning": "証明する"
+      },
+      {
+        "word": "certification",
+        "partOfSpeech": "名詞",
+        "meaning": "認証"
+      },
+      {
+        "word": "certified",
+        "partOfSpeech": "形容詞",
+        "meaning": "認定された"
+      },
+      {
+        "word": "recertify",
+        "partOfSpeech": "動詞",
+        "meaning": "再認定する"
+      }
+    ],
+    [
+      {
+        "word": "cessation",
+        "partOfSpeech": "名詞",
+        "meaning": "停止・中止"
+      },
+      {
+        "word": "cease",
+        "partOfSpeech": "動詞",
+        "meaning": "やめる"
+      },
+      {
+        "word": "ceaseless",
+        "partOfSpeech": "形容詞",
+        "meaning": "絶え間ない"
+      },
+      {
+        "word": "ceaselessly",
+        "partOfSpeech": "副詞",
+        "meaning": "絶え間なく"
+      }
+    ],
+    [
+      {
+        "word": "charisma",
+        "partOfSpeech": "名詞",
+        "meaning": "人を引きつける魅力"
+      },
+      {
+        "word": "charismatic",
+        "partOfSpeech": "形容詞",
+        "meaning": "カリスマ性のある"
+      },
+      {
+        "word": "charismatically",
+        "partOfSpeech": "副詞",
+        "meaning": "魅力的に"
+      }
+    ],
+    [
+      {
+        "word": "chaste",
+        "partOfSpeech": "形容詞",
+        "meaning": "貞節な・質素な"
+      },
+      {
+        "word": "chastity",
+        "partOfSpeech": "名詞",
+        "meaning": "貞節"
+      }
+    ],
+    [
+      {
+        "word": "chastise",
+        "partOfSpeech": "動詞",
+        "meaning": "厳しく叱る"
+      },
+      {
+        "word": "chastisement",
+        "partOfSpeech": "名詞",
+        "meaning": "厳しい叱責"
+      }
+    ],
+    [
+      {
+        "word": "chronic",
+        "partOfSpeech": "形容詞",
+        "meaning": "慢性の"
+      },
+      {
+        "word": "chronically",
+        "partOfSpeech": "副詞",
+        "meaning": "慢性的に"
+      }
+    ],
+    [
+      {
+        "word": "chronology",
+        "partOfSpeech": "名詞",
+        "meaning": "年代順・年表"
+      },
+      {
+        "word": "chronological",
+        "partOfSpeech": "形容詞",
+        "meaning": "年代順の"
+      },
+      {
+        "word": "chronologically",
+        "partOfSpeech": "副詞",
+        "meaning": "時系列順に"
+      }
+    ],
+    [
+      {
+        "word": "circumscribe",
+        "partOfSpeech": "動詞",
+        "meaning": "範囲を制限する"
+      },
+      {
+        "word": "circumscription",
+        "partOfSpeech": "名詞",
+        "meaning": "範囲の限定"
+      }
+    ],
+    [
+      {
+        "word": "circumspect",
+        "partOfSpeech": "形容詞",
+        "meaning": "慎重な"
+      },
+      {
+        "word": "circumspection",
+        "partOfSpeech": "名詞",
+        "meaning": "慎重さ"
+      },
+      {
+        "word": "circumspectly",
+        "partOfSpeech": "副詞",
+        "meaning": "慎重に"
+      }
+    ],
+    [
+      {
+        "word": "cite",
+        "partOfSpeech": "動詞",
+        "meaning": "引用する"
+      },
+      {
+        "word": "citation",
+        "partOfSpeech": "名詞",
+        "meaning": "引用・出典"
+      }
+    ],
+    [
+      {
+        "word": "civilize",
+        "partOfSpeech": "動詞",
+        "meaning": "文明化する"
+      },
+      {
+        "word": "civilization",
+        "partOfSpeech": "名詞",
+        "meaning": "文明"
+      },
+      {
+        "word": "civilized",
+        "partOfSpeech": "形容詞",
+        "meaning": "文明化された"
+      }
+    ],
+    [
+      {
+        "word": "clamor",
+        "partOfSpeech": "名詞",
+        "meaning": "大きな叫び・要求"
+      },
+      {
+        "word": "clamorous",
+        "partOfSpeech": "形容詞",
+        "meaning": "騒々しい"
+      }
+    ],
+    [
+      {
+        "word": "clarify",
+        "partOfSpeech": "動詞",
+        "meaning": "明確にする"
+      },
+      {
+        "word": "clarification",
+        "partOfSpeech": "名詞",
+        "meaning": "明確化"
+      },
+      {
+        "word": "clarity",
+        "partOfSpeech": "名詞",
+        "meaning": "明瞭さ"
+      }
+    ],
+    [
+      {
+        "word": "classify",
+        "partOfSpeech": "動詞",
+        "meaning": "分類する"
+      },
+      {
+        "word": "classification",
+        "partOfSpeech": "名詞",
+        "meaning": "分類"
+      },
+      {
+        "word": "classifiable",
+        "partOfSpeech": "形容詞",
+        "meaning": "分類できる"
+      },
+      {
+        "word": "reclassify",
+        "partOfSpeech": "動詞",
+        "meaning": "再分類する"
+      },
+      {
+        "word": "reclassification",
+        "partOfSpeech": "名詞",
+        "meaning": "再分類"
+      }
+    ],
+    [
+      {
+        "word": "clemency",
+        "partOfSpeech": "名詞",
+        "meaning": "寛大さ・減刑"
+      },
+      {
+        "word": "clement",
+        "partOfSpeech": "形容詞",
+        "meaning": "寛大な・穏やかな"
+      }
+    ],
+    [
+      {
+        "word": "coalesce",
+        "partOfSpeech": "動詞",
+        "meaning": "合体する"
+      },
+      {
+        "word": "coalescence",
+        "partOfSpeech": "名詞",
+        "meaning": "融合"
+      }
+    ],
+    [
+      {
+        "word": "coerce",
+        "partOfSpeech": "動詞",
+        "meaning": "強制する"
+      },
+      {
+        "word": "coercion",
+        "partOfSpeech": "名詞",
+        "meaning": "強制"
+      },
+      {
+        "word": "coercive",
+        "partOfSpeech": "形容詞",
+        "meaning": "強制的な"
+      }
+    ],
+    [
+      {
+        "word": "cogent",
+        "partOfSpeech": "形容詞",
+        "meaning": "説得力のある"
+      },
+      {
+        "word": "cogency",
+        "partOfSpeech": "名詞",
+        "meaning": "説得力"
+      },
+      {
+        "word": "cogently",
+        "partOfSpeech": "副詞",
+        "meaning": "説得力をもって"
+      }
+    ],
+    [
+      {
+        "word": "cohere",
+        "partOfSpeech": "動詞",
+        "meaning": "まとまる"
+      },
+      {
+        "word": "coherence",
+        "partOfSpeech": "名詞",
+        "meaning": "一貫性"
+      },
+      {
+        "word": "coherent",
+        "partOfSpeech": "形容詞",
+        "meaning": "一貫した"
+      },
+      {
+        "word": "coherently",
+        "partOfSpeech": "副詞",
+        "meaning": "一貫性をもって"
+      },
+      {
+        "word": "incoherent",
+        "partOfSpeech": "形容詞",
+        "meaning": "一貫性のない"
+      }
+    ],
+    [
+      {
+        "word": "coincide",
+        "partOfSpeech": "動詞",
+        "meaning": "同時に起こる・一致する"
+      },
+      {
+        "word": "coincidence",
+        "partOfSpeech": "名詞",
+        "meaning": "偶然の一致"
+      },
+      {
+        "word": "coincidental",
+        "partOfSpeech": "形容詞",
+        "meaning": "偶然の"
+      },
+      {
+        "word": "coincidentally",
+        "partOfSpeech": "副詞",
+        "meaning": "偶然に"
+      }
+    ],
+    [
+      {
+        "word": "collaborate",
+        "partOfSpeech": "動詞",
+        "meaning": "協力する"
+      },
+      {
+        "word": "collaboration",
+        "partOfSpeech": "名詞",
+        "meaning": "協力"
+      },
+      {
+        "word": "collaborator",
+        "partOfSpeech": "名詞",
+        "meaning": "協力者"
+      },
+      {
+        "word": "collaborative",
+        "partOfSpeech": "形容詞",
+        "meaning": "協働の"
+      },
+      {
+        "word": "collaboratively",
+        "partOfSpeech": "副詞",
+        "meaning": "協力して"
+      }
+    ],
+    [
+      {
+        "word": "collide",
+        "partOfSpeech": "動詞",
+        "meaning": "衝突する"
+      },
+      {
+        "word": "collision",
+        "partOfSpeech": "名詞",
+        "meaning": "衝突"
+      }
+    ],
+    [
+      {
+        "word": "colonize",
+        "partOfSpeech": "動詞",
+        "meaning": "植民地化する"
+      },
+      {
+        "word": "colonization",
+        "partOfSpeech": "名詞",
+        "meaning": "植民地化"
+      },
+      {
+        "word": "colonizer",
+        "partOfSpeech": "名詞",
+        "meaning": "植民地化を行う者"
+      },
+      {
+        "word": "decolonize",
+        "partOfSpeech": "動詞",
+        "meaning": "脱植民地化する"
+      },
+      {
+        "word": "decolonization",
+        "partOfSpeech": "名詞",
+        "meaning": "脱植民地化"
+      }
+    ],
+    [
+      {
+        "word": "colossal",
+        "partOfSpeech": "形容詞",
+        "meaning": "巨大な"
+      },
+      {
+        "word": "colossally",
+        "partOfSpeech": "副詞",
+        "meaning": "途方もなく"
+      }
+    ],
+    [
+      {
+        "word": "combust",
+        "partOfSpeech": "動詞",
+        "meaning": "燃焼する"
+      },
+      {
+        "word": "combustion",
+        "partOfSpeech": "名詞",
+        "meaning": "燃焼"
+      },
+      {
+        "word": "combustible",
+        "partOfSpeech": "形容詞",
+        "meaning": "可燃性の"
+      }
+    ],
+    [
+      {
+        "word": "commemorate",
+        "partOfSpeech": "動詞",
+        "meaning": "記念する"
+      },
+      {
+        "word": "commemoration",
+        "partOfSpeech": "名詞",
+        "meaning": "記念"
+      },
+      {
+        "word": "commemorative",
+        "partOfSpeech": "形容詞",
+        "meaning": "記念の"
+      }
+    ],
+    [
+      {
+        "word": "commence",
+        "partOfSpeech": "動詞",
+        "meaning": "開始する"
+      },
+      {
+        "word": "commencement",
+        "partOfSpeech": "名詞",
+        "meaning": "開始・卒業式"
+      }
+    ],
+    [
+      {
+        "word": "commend",
+        "partOfSpeech": "動詞",
+        "meaning": "称賛する・推薦する"
+      },
+      {
+        "word": "commendation",
+        "partOfSpeech": "名詞",
+        "meaning": "称賛"
+      },
+      {
+        "word": "commendable",
+        "partOfSpeech": "形容詞",
+        "meaning": "称賛に値する"
+      },
+      {
+        "word": "commendably",
+        "partOfSpeech": "副詞",
+        "meaning": "称賛すべきことに"
+      }
+    ],
+    [
+      {
+        "word": "commensurate",
+        "partOfSpeech": "形容詞",
+        "meaning": "釣り合った"
+      },
+      {
+        "word": "commensurately",
+        "partOfSpeech": "副詞",
+        "meaning": "釣り合う程度に"
+      }
+    ],
+    [
+      {
+        "word": "commiserate",
+        "partOfSpeech": "動詞",
+        "meaning": "同情する"
+      },
+      {
+        "word": "commiseration",
+        "partOfSpeech": "名詞",
+        "meaning": "同情"
+      }
+    ],
+    [
+      {
+        "word": "commodify",
+        "partOfSpeech": "動詞",
+        "meaning": "商品化する"
+      },
+      {
+        "word": "commodification",
+        "partOfSpeech": "名詞",
+        "meaning": "商品化"
+      }
+    ],
+    [
+      {
+        "word": "communal",
+        "partOfSpeech": "形容詞",
+        "meaning": "共同体の・共同の"
+      },
+      {
+        "word": "communally",
+        "partOfSpeech": "副詞",
+        "meaning": "共同で"
+      }
+    ],
+    [
+      {
+        "word": "communicate",
+        "partOfSpeech": "動詞",
+        "meaning": "伝達する"
+      },
+      {
+        "word": "communication",
+        "partOfSpeech": "名詞",
+        "meaning": "伝達"
+      },
+      {
+        "word": "communicative",
+        "partOfSpeech": "形容詞",
+        "meaning": "意思疎通に関する・話好きな"
+      },
+      {
+        "word": "communicator",
+        "partOfSpeech": "名詞",
+        "meaning": "伝達する人"
+      },
+      {
+        "word": "miscommunication",
+        "partOfSpeech": "名詞",
+        "meaning": "意思疎通の不全"
+      }
+    ],
+    [
+      {
+        "word": "commute",
+        "partOfSpeech": "動詞",
+        "meaning": "通勤する"
+      },
+      {
+        "word": "commuter",
+        "partOfSpeech": "名詞",
+        "meaning": "通勤者"
+      },
+      {
+        "word": "commuting",
+        "partOfSpeech": "名詞",
+        "meaning": "通勤"
+      }
+    ],
+    [
+      {
+        "word": "compact",
+        "partOfSpeech": "形容詞",
+        "meaning": "小型の・密集した"
+      },
+      {
+        "word": "compactness",
+        "partOfSpeech": "名詞",
+        "meaning": "小型・密集していること"
+      },
+      {
+        "word": "compaction",
+        "partOfSpeech": "名詞",
+        "meaning": "圧縮"
+      }
+    ],
+    [
+      {
+        "word": "comparable",
+        "partOfSpeech": "形容詞",
+        "meaning": "比較できる・同程度の"
+      },
+      {
+        "word": "comparability",
+        "partOfSpeech": "名詞",
+        "meaning": "比較可能性"
+      },
+      {
+        "word": "comparably",
+        "partOfSpeech": "副詞",
+        "meaning": "同程度に"
+      },
+      {
+        "word": "incomparable",
+        "partOfSpeech": "形容詞",
+        "meaning": "比類のない"
+      }
+    ],
+    [
+      {
+        "word": "compartmentalize",
+        "partOfSpeech": "動詞",
+        "meaning": "区分して扱う"
+      },
+      {
+        "word": "compartmentalization",
+        "partOfSpeech": "名詞",
+        "meaning": "区分化"
+      }
+    ],
+    [
+      {
+        "word": "compel",
+        "partOfSpeech": "動詞",
+        "meaning": "強いる・駆り立てる"
+      },
+      {
+        "word": "compelling",
+        "partOfSpeech": "形容詞",
+        "meaning": "説得力のある"
+      },
+      {
+        "word": "compulsion",
+        "partOfSpeech": "名詞",
+        "meaning": "強制・衝動"
+      },
+      {
+        "word": "compulsive",
+        "partOfSpeech": "形容詞",
+        "meaning": "強迫的な"
+      },
+      {
+        "word": "compulsively",
+        "partOfSpeech": "副詞",
+        "meaning": "強迫的に"
+      }
+    ],
+    [
+      {
+        "word": "compensate",
+        "partOfSpeech": "動詞",
+        "meaning": "補償する・埋め合わせる"
+      },
+      {
+        "word": "compensation",
+        "partOfSpeech": "名詞",
+        "meaning": "補償"
+      },
+      {
+        "word": "compensatory",
+        "partOfSpeech": "形容詞",
+        "meaning": "補償の・埋め合わせの"
+      }
+    ],
+    [
+      {
+        "word": "compile",
+        "partOfSpeech": "動詞",
+        "meaning": "編集する・まとめる"
+      },
+      {
+        "word": "compilation",
+        "partOfSpeech": "名詞",
+        "meaning": "編集物・編集"
+      },
+      {
+        "word": "compiler",
+        "partOfSpeech": "名詞",
+        "meaning": "編集者・コンパイラ"
+      }
+    ],
+    [
+      {
+        "word": "complacent",
+        "partOfSpeech": "形容詞",
+        "meaning": "自己満足した"
+      },
+      {
+        "word": "complacency",
+        "partOfSpeech": "名詞",
+        "meaning": "自己満足"
+      },
+      {
+        "word": "complacently",
+        "partOfSpeech": "副詞",
+        "meaning": "自己満足した様子で"
+      }
+    ],
+    [
+      {
+        "word": "complement",
+        "partOfSpeech": "動詞",
+        "meaning": "補完する"
+      },
+      {
+        "word": "complementary",
+        "partOfSpeech": "形容詞",
+        "meaning": "補完的な"
+      },
+      {
+        "word": "complementarity",
+        "partOfSpeech": "名詞",
+        "meaning": "相互補完性"
+      }
+    ],
+    [
+      {
+        "word": "complicate",
+        "partOfSpeech": "動詞",
+        "meaning": "複雑にする"
+      },
+      {
+        "word": "complication",
+        "partOfSpeech": "名詞",
+        "meaning": "複雑化・合併症"
+      },
+      {
+        "word": "complicated",
+        "partOfSpeech": "形容詞",
+        "meaning": "複雑な"
+      }
+    ],
+    [
+      {
+        "word": "comply",
+        "partOfSpeech": "動詞",
+        "meaning": "従う"
+      },
+      {
+        "word": "compliance",
+        "partOfSpeech": "名詞",
+        "meaning": "遵守"
+      },
+      {
+        "word": "compliant",
+        "partOfSpeech": "形容詞",
+        "meaning": "従順な・規則に適合する"
+      },
+      {
+        "word": "noncompliance",
+        "partOfSpeech": "名詞",
+        "meaning": "不遵守"
+      },
+      {
+        "word": "noncompliant",
+        "partOfSpeech": "形容詞",
+        "meaning": "規則に従わない"
+      }
+    ],
+    [
+      {
+        "word": "comprehend",
+        "partOfSpeech": "動詞",
+        "meaning": "理解する"
+      },
+      {
+        "word": "comprehension",
+        "partOfSpeech": "名詞",
+        "meaning": "理解"
+      },
+      {
+        "word": "comprehensible",
+        "partOfSpeech": "形容詞",
+        "meaning": "理解できる"
+      },
+      {
+        "word": "incomprehensible",
+        "partOfSpeech": "形容詞",
+        "meaning": "理解できない"
+      }
+    ],
+    [
+      {
+        "word": "compress",
+        "partOfSpeech": "動詞",
+        "meaning": "圧縮する"
+      },
+      {
+        "word": "compression",
+        "partOfSpeech": "名詞",
+        "meaning": "圧縮"
+      },
+      {
+        "word": "compressor",
+        "partOfSpeech": "名詞",
+        "meaning": "圧縮機"
+      },
+      {
+        "word": "compressible",
+        "partOfSpeech": "形容詞",
+        "meaning": "圧縮可能な"
+      },
+      {
+        "word": "decompress",
+        "partOfSpeech": "動詞",
+        "meaning": "減圧する・解凍する"
+      }
+    ],
+    [
+      {
+        "word": "compromise",
+        "partOfSpeech": "動詞",
+        "meaning": "妥協する・損なう"
+      },
+      {
+        "word": "uncompromising",
+        "partOfSpeech": "形容詞",
+        "meaning": "妥協しない"
+      },
+      {
+        "word": "compromising",
+        "partOfSpeech": "形容詞",
+        "meaning": "信用を損ないかねない"
+      }
+    ],
+    [
+      {
+        "word": "compute",
+        "partOfSpeech": "動詞",
+        "meaning": "計算する"
+      },
+      {
+        "word": "computation",
+        "partOfSpeech": "名詞",
+        "meaning": "計算"
+      },
+      {
+        "word": "computational",
+        "partOfSpeech": "形容詞",
+        "meaning": "計算の"
+      },
+      {
+        "word": "computable",
+        "partOfSpeech": "形容詞",
+        "meaning": "計算可能な"
+      }
+    ],
+    [
+      {
+        "word": "conceal",
+        "partOfSpeech": "動詞",
+        "meaning": "隠す"
+      },
+      {
+        "word": "concealment",
+        "partOfSpeech": "名詞",
+        "meaning": "隠蔽"
+      }
+    ],
+    [
+      {
+        "word": "concede",
+        "partOfSpeech": "動詞",
+        "meaning": "認める・譲歩する"
+      },
+      {
+        "word": "concession",
+        "partOfSpeech": "名詞",
+        "meaning": "譲歩・特権"
+      }
+    ],
+    [
+      {
+        "word": "conceive",
+        "partOfSpeech": "動詞",
+        "meaning": "思いつく・考案する"
+      },
+      {
+        "word": "conception",
+        "partOfSpeech": "名詞",
+        "meaning": "構想・概念"
+      },
+      {
+        "word": "conceivable",
+        "partOfSpeech": "形容詞",
+        "meaning": "考えられる"
+      },
+      {
+        "word": "inconceivable",
+        "partOfSpeech": "形容詞",
+        "meaning": "想像できない"
+      },
+      {
+        "word": "conceivably",
+        "partOfSpeech": "副詞",
+        "meaning": "ひょっとすると"
+      }
+    ],
+    [
+      {
+        "word": "conciliate",
+        "partOfSpeech": "動詞",
+        "meaning": "なだめる・和解させる"
+      },
+      {
+        "word": "conciliation",
+        "partOfSpeech": "名詞",
+        "meaning": "調停・和解"
+      },
+      {
+        "word": "conciliatory",
+        "partOfSpeech": "形容詞",
+        "meaning": "融和的な"
+      }
+    ],
+    [
+      {
+        "word": "concise",
+        "partOfSpeech": "形容詞",
+        "meaning": "簡潔な"
+      },
+      {
+        "word": "concision",
+        "partOfSpeech": "名詞",
+        "meaning": "簡潔さ"
+      },
+      {
+        "word": "concisely",
+        "partOfSpeech": "副詞",
+        "meaning": "簡潔に"
+      }
+    ],
+    [
+      {
+        "word": "conclusive",
+        "partOfSpeech": "形容詞",
+        "meaning": "決定的な"
+      },
+      {
+        "word": "conclusively",
+        "partOfSpeech": "副詞",
+        "meaning": "決定的に"
+      },
+      {
+        "word": "inconclusive",
+        "partOfSpeech": "形容詞",
+        "meaning": "結論が出ない"
+      }
+    ],
+    [
+      {
+        "word": "concur",
+        "partOfSpeech": "動詞",
+        "meaning": "同意する"
+      },
+      {
+        "word": "concurrence",
+        "partOfSpeech": "名詞",
+        "meaning": "同意・同時発生"
+      },
+      {
+        "word": "concurrent",
+        "partOfSpeech": "形容詞",
+        "meaning": "同時の"
+      },
+      {
+        "word": "concurrently",
+        "partOfSpeech": "副詞",
+        "meaning": "同時に"
+      }
+    ],
+    [
+      {
+        "word": "condense",
+        "partOfSpeech": "動詞",
+        "meaning": "凝縮する・要約する"
+      },
+      {
+        "word": "condensation",
+        "partOfSpeech": "名詞",
+        "meaning": "凝縮・結露"
+      },
+      {
+        "word": "condenser",
+        "partOfSpeech": "名詞",
+        "meaning": "凝縮器"
+      },
+      {
+        "word": "condensed",
+        "partOfSpeech": "形容詞",
+        "meaning": "凝縮された"
+      }
+    ],
+    [
+      {
+        "word": "condescend",
+        "partOfSpeech": "動詞",
+        "meaning": "へりくだる・見下す"
+      },
+      {
+        "word": "condescension",
+        "partOfSpeech": "名詞",
+        "meaning": "見下した態度"
+      },
+      {
+        "word": "condescending",
+        "partOfSpeech": "形容詞",
+        "meaning": "見下すような"
+      }
+    ],
+    [
+      {
+        "word": "condone",
+        "partOfSpeech": "動詞",
+        "meaning": "黙認する"
+      },
+      {
+        "word": "condonation",
+        "partOfSpeech": "名詞",
+        "meaning": "黙認"
+      }
+    ],
+    [
+      {
+        "word": "confide",
+        "partOfSpeech": "動詞",
+        "meaning": "打ち明ける"
+      },
+      {
+        "word": "confidant",
+        "partOfSpeech": "名詞",
+        "meaning": "相談相手"
+      },
+      {
+        "word": "confidential",
+        "partOfSpeech": "形容詞",
+        "meaning": "秘密の"
+      },
+      {
+        "word": "confidentiality",
+        "partOfSpeech": "名詞",
+        "meaning": "機密性"
+      },
+      {
+        "word": "confidentially",
+        "partOfSpeech": "副詞",
+        "meaning": "内密に"
+      }
+    ],
+    [
+      {
+        "word": "configure",
+        "partOfSpeech": "動詞",
+        "meaning": "設定する"
+      },
+      {
+        "word": "configuration",
+        "partOfSpeech": "名詞",
+        "meaning": "設定・構成"
+      },
+      {
+        "word": "configurable",
+        "partOfSpeech": "形容詞",
+        "meaning": "設定可能な"
+      },
+      {
+        "word": "reconfigure",
+        "partOfSpeech": "動詞",
+        "meaning": "再設定する"
+      }
+    ],
+    [
+      {
+        "word": "confine",
+        "partOfSpeech": "動詞",
+        "meaning": "閉じ込める・制限する"
+      },
+      {
+        "word": "confinement",
+        "partOfSpeech": "名詞",
+        "meaning": "監禁・制限"
+      }
+    ],
+    [
+      {
+        "word": "confiscate",
+        "partOfSpeech": "動詞",
+        "meaning": "没収する"
+      },
+      {
+        "word": "confiscation",
+        "partOfSpeech": "名詞",
+        "meaning": "没収"
+      }
+    ],
+    [
+      {
+        "word": "conflate",
+        "partOfSpeech": "動詞",
+        "meaning": "混同する"
+      },
+      {
+        "word": "conflation",
+        "partOfSpeech": "名詞",
+        "meaning": "混同"
+      }
+    ],
+    [
+      {
+        "word": "conform",
+        "partOfSpeech": "動詞",
+        "meaning": "適合する・従う"
+      },
+      {
+        "word": "conformity",
+        "partOfSpeech": "名詞",
+        "meaning": "適合・同調"
+      },
+      {
+        "word": "conformist",
+        "partOfSpeech": "名詞",
+        "meaning": "同調主義者"
+      },
+      {
+        "word": "nonconformity",
+        "partOfSpeech": "名詞",
+        "meaning": "不適合・非同調"
+      }
+    ],
+    [
+      {
+        "word": "congeal",
+        "partOfSpeech": "動詞",
+        "meaning": "凝固する"
+      },
+      {
+        "word": "congealed",
+        "partOfSpeech": "形容詞",
+        "meaning": "凝固した"
+      }
+    ],
+    [
+      {
+        "word": "congest",
+        "partOfSpeech": "動詞",
+        "meaning": "混雑させる"
+      },
+      {
+        "word": "congestion",
+        "partOfSpeech": "名詞",
+        "meaning": "混雑・うっ血"
+      },
+      {
+        "word": "congested",
+        "partOfSpeech": "形容詞",
+        "meaning": "混雑した"
+      }
+    ],
+    [
+      {
+        "word": "congratulate",
+        "partOfSpeech": "動詞",
+        "meaning": "祝う"
+      },
+      {
+        "word": "congratulation",
+        "partOfSpeech": "名詞",
+        "meaning": "祝辞"
+      },
+      {
+        "word": "congratulatory",
+        "partOfSpeech": "形容詞",
+        "meaning": "祝意を表す"
+      }
+    ],
+    [
+      {
+        "word": "congregate",
+        "partOfSpeech": "動詞",
+        "meaning": "集まる"
+      },
+      {
+        "word": "congregation",
+        "partOfSpeech": "名詞",
+        "meaning": "集まり・会衆"
+      }
+    ],
+    [
+      {
+        "word": "conjecture",
+        "partOfSpeech": "動詞",
+        "meaning": "推測する"
+      },
+      {
+        "word": "conjectural",
+        "partOfSpeech": "形容詞",
+        "meaning": "推測に基づく"
+      }
+    ],
+    [
+      {
+        "word": "conjure",
+        "partOfSpeech": "動詞",
+        "meaning": "呼び起こす・魔法で出す"
+      },
+      {
+        "word": "conjurer",
+        "partOfSpeech": "名詞",
+        "meaning": "手品師"
+      }
+    ],
+    [
+      {
+        "word": "connote",
+        "partOfSpeech": "動詞",
+        "meaning": "暗示する"
+      },
+      {
+        "word": "connotation",
+        "partOfSpeech": "名詞",
+        "meaning": "含意・ニュアンス"
+      },
+      {
+        "word": "connotative",
+        "partOfSpeech": "形容詞",
+        "meaning": "含意に関する"
+      }
+    ],
+    [
+      {
+        "word": "conscientious",
+        "partOfSpeech": "形容詞",
+        "meaning": "良心的な"
+      },
+      {
+        "word": "conscientiously",
+        "partOfSpeech": "副詞",
+        "meaning": "良心的に"
+      },
+      {
+        "word": "conscientiousness",
+        "partOfSpeech": "名詞",
+        "meaning": "良心的に行動する性質"
+      }
+    ],
+    [
+      {
+        "word": "consecutive",
+        "partOfSpeech": "形容詞",
+        "meaning": "連続した"
+      },
+      {
+        "word": "consecutively",
+        "partOfSpeech": "副詞",
+        "meaning": "連続して"
+      }
+    ],
+    [
+      {
+        "word": "consecrate",
+        "partOfSpeech": "動詞",
+        "meaning": "神聖なものとして奉献する"
+      },
+      {
+        "word": "consecration",
+        "partOfSpeech": "名詞",
+        "meaning": "奉献"
+      }
+    ],
+    [
+      {
+        "word": "conserve",
+        "partOfSpeech": "動詞",
+        "meaning": "保存する・節約する"
+      },
+      {
+        "word": "conservation",
+        "partOfSpeech": "名詞",
+        "meaning": "保存・保全"
+      },
+      {
+        "word": "conservationist",
+        "partOfSpeech": "名詞",
+        "meaning": "自然保護活動家"
+      }
+    ],
+    [
+      {
+        "word": "consolidate",
+        "partOfSpeech": "動詞",
+        "meaning": "統合する・強固にする"
+      },
+      {
+        "word": "consolidation",
+        "partOfSpeech": "名詞",
+        "meaning": "統合・強化"
+      }
+    ],
+    [
+      {
+        "word": "conspicuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "目立つ"
+      },
+      {
+        "word": "conspicuously",
+        "partOfSpeech": "副詞",
+        "meaning": "目立つほど"
+      },
+      {
+        "word": "inconspicuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "目立たない"
+      }
+    ],
+    [
+      {
+        "word": "conspire",
+        "partOfSpeech": "動詞",
+        "meaning": "共謀する"
+      },
+      {
+        "word": "conspiracy",
+        "partOfSpeech": "名詞",
+        "meaning": "陰謀"
+      },
+      {
+        "word": "conspirator",
+        "partOfSpeech": "名詞",
+        "meaning": "共謀者"
+      },
+      {
+        "word": "conspiratorial",
+        "partOfSpeech": "形容詞",
+        "meaning": "陰謀めいた"
+      }
+    ],
+    [
+      {
+        "word": "constrain",
+        "partOfSpeech": "動詞",
+        "meaning": "制約する"
+      },
+      {
+        "word": "constraint",
+        "partOfSpeech": "名詞",
+        "meaning": "制約"
+      },
+      {
+        "word": "constrained",
+        "partOfSpeech": "形容詞",
+        "meaning": "制約された"
+      }
+    ],
+    [
+      {
+        "word": "construe",
+        "partOfSpeech": "動詞",
+        "meaning": "解釈する"
+      },
+      {
+        "word": "misconstrue",
+        "partOfSpeech": "動詞",
+        "meaning": "誤解する"
+      }
+    ],
+    [
+      {
+        "word": "contaminate",
+        "partOfSpeech": "動詞",
+        "meaning": "汚染する"
+      },
+      {
+        "word": "contamination",
+        "partOfSpeech": "名詞",
+        "meaning": "汚染"
+      },
+      {
+        "word": "contaminant",
+        "partOfSpeech": "名詞",
+        "meaning": "汚染物質"
+      },
+      {
+        "word": "decontaminate",
+        "partOfSpeech": "動詞",
+        "meaning": "汚染を除去する"
+      },
+      {
+        "word": "decontamination",
+        "partOfSpeech": "名詞",
+        "meaning": "除染"
+      }
+    ],
+    [
+      {
+        "word": "contemplate",
+        "partOfSpeech": "動詞",
+        "meaning": "熟考する"
+      },
+      {
+        "word": "contemplation",
+        "partOfSpeech": "名詞",
+        "meaning": "熟考"
+      },
+      {
+        "word": "contemplative",
+        "partOfSpeech": "形容詞",
+        "meaning": "物思いにふける"
+      }
+    ],
+    [
+      {
+        "word": "contempt",
+        "partOfSpeech": "名詞",
+        "meaning": "軽蔑"
+      },
+      {
+        "word": "contemptuous",
+        "partOfSpeech": "形容詞",
+        "meaning": "軽蔑的な"
+      },
+      {
+        "word": "contemptuously",
+        "partOfSpeech": "副詞",
+        "meaning": "軽蔑して"
+      },
+      {
+        "word": "contemptible",
+        "partOfSpeech": "形容詞",
+        "meaning": "軽蔑に値する"
+      }
+    ],
+    [
+      {
+        "word": "contend",
+        "partOfSpeech": "動詞",
+        "meaning": "争う・主張する"
+      },
+      {
+        "word": "contention",
+        "partOfSpeech": "名詞",
+        "meaning": "争い・主張"
+      },
+      {
+        "word": "contender",
+        "partOfSpeech": "名詞",
+        "meaning": "競争相手"
+      },
+      {
+        "word": "contentious",
+        "partOfSpeech": "形容詞",
+        "meaning": "論争を招く"
+      }
+    ],
+    [
+      {
+        "word": "contingent",
+        "partOfSpeech": "形容詞",
+        "meaning": "条件次第の"
+      },
+      {
+        "word": "contingency",
+        "partOfSpeech": "名詞",
+        "meaning": "不測の事態・条件"
+      }
+    ],
+    [
+      {
+        "word": "contradict",
+        "partOfSpeech": "動詞",
+        "meaning": "矛盾する・反論する"
+      },
+      {
+        "word": "contradiction",
+        "partOfSpeech": "名詞",
+        "meaning": "矛盾"
+      },
+      {
+        "word": "contradictory",
+        "partOfSpeech": "形容詞",
+        "meaning": "矛盾した"
+      }
+    ],
+    [
+      {
+        "word": "contravene",
+        "partOfSpeech": "動詞",
+        "meaning": "法律などに違反する"
+      },
+      {
+        "word": "contravention",
+        "partOfSpeech": "名詞",
+        "meaning": "違反"
+      }
+    ],
+    [
+      {
+        "word": "convene",
+        "partOfSpeech": "動詞",
+        "meaning": "招集する"
+      },
+      {
+        "word": "convener",
+        "partOfSpeech": "名詞",
+        "meaning": "招集者"
+      },
+      {
+        "word": "reconvene",
+        "partOfSpeech": "動詞",
+        "meaning": "再招集する"
+      }
+    ],
+    [
+      {
+        "word": "converge",
+        "partOfSpeech": "動詞",
+        "meaning": "収束する"
+      },
+      {
+        "word": "convergence",
+        "partOfSpeech": "名詞",
+        "meaning": "収束"
+      },
+      {
+        "word": "convergent",
+        "partOfSpeech": "形容詞",
+        "meaning": "収束する"
+      }
+    ],
+    [
+      {
+        "word": "convulse",
+        "partOfSpeech": "動詞",
+        "meaning": "けいれんさせる"
+      },
+      {
+        "word": "convulsion",
+        "partOfSpeech": "名詞",
+        "meaning": "けいれん"
+      },
+      {
+        "word": "convulsive",
+        "partOfSpeech": "形容詞",
+        "meaning": "けいれん性の"
+      }
+    ],
+    [
+      {
+        "word": "corrode",
+        "partOfSpeech": "動詞",
+        "meaning": "腐食する"
+      },
+      {
+        "word": "corrosion",
+        "partOfSpeech": "名詞",
+        "meaning": "腐食"
+      },
+      {
+        "word": "corrosive",
+        "partOfSpeech": "形容詞",
+        "meaning": "腐食性の"
+      }
+    ],
+    [
+      {
+        "word": "corroborate",
+        "partOfSpeech": "動詞",
+        "meaning": "裏付ける"
+      },
+      {
+        "word": "corroboration",
+        "partOfSpeech": "名詞",
+        "meaning": "裏付け"
+      },
+      {
+        "word": "corroborative",
+        "partOfSpeech": "形容詞",
+        "meaning": "裏付けとなる"
+      }
+    ],
+    [
+      {
+        "word": "corrupt",
+        "partOfSpeech": "動詞",
+        "meaning": "腐敗させる"
+      },
+      {
+        "word": "corruption",
+        "partOfSpeech": "名詞",
+        "meaning": "腐敗"
+      },
+      {
+        "word": "corruptible",
+        "partOfSpeech": "形容詞",
+        "meaning": "腐敗しやすい"
+      },
+      {
+        "word": "incorruptible",
+        "partOfSpeech": "形容詞",
+        "meaning": "買収されない"
+      }
+    ],
+    [
+      {
+        "word": "cosmopolitan",
+        "partOfSpeech": "形容詞",
+        "meaning": "国際的な"
+      },
+      {
+        "word": "cosmopolitanism",
+        "partOfSpeech": "名詞",
+        "meaning": "世界市民主義"
+      }
+    ],
+    [
+      {
+        "word": "counteract",
+        "partOfSpeech": "動詞",
+        "meaning": "作用を打ち消す"
+      },
+      {
+        "word": "counteraction",
+        "partOfSpeech": "名詞",
+        "meaning": "対抗作用"
+      }
+    ],
+    [
+      {
+        "word": "covet",
+        "partOfSpeech": "動詞",
+        "meaning": "むやみに欲しがる"
+      },
+      {
+        "word": "covetous",
+        "partOfSpeech": "形容詞",
+        "meaning": "強欲な"
+      },
+      {
+        "word": "covetously",
+        "partOfSpeech": "副詞",
+        "meaning": "強欲に"
+      }
+    ],
+    [
+      {
+        "word": "crave",
+        "partOfSpeech": "動詞",
+        "meaning": "切望する"
+      },
+      {
+        "word": "craving",
+        "partOfSpeech": "名詞",
+        "meaning": "切望・強い欲求"
+      }
+    ],
+    [
+      {
+        "word": "credulous",
+        "partOfSpeech": "形容詞",
+        "meaning": "信じやすい"
+      },
+      {
+        "word": "credulity",
+        "partOfSpeech": "名詞",
+        "meaning": "信じやすさ"
+      },
+      {
+        "word": "incredulous",
+        "partOfSpeech": "形容詞",
+        "meaning": "信じられない様子の"
+      },
+      {
+        "word": "incredulity",
+        "partOfSpeech": "名詞",
+        "meaning": "不信"
+      }
+    ],
+    [
+      {
+        "word": "culminate",
+        "partOfSpeech": "動詞",
+        "meaning": "頂点に達する"
+      },
+      {
+        "word": "culmination",
+        "partOfSpeech": "名詞",
+        "meaning": "頂点・最終的な結果"
+      }
+    ],
+    [
+      {
+        "word": "culpable",
+        "partOfSpeech": "形容詞",
+        "meaning": "非難されるべき"
+      },
+      {
+        "word": "culpability",
+        "partOfSpeech": "名詞",
+        "meaning": "責任・有責性"
+      }
+    ],
+    [
+      {
+        "word": "curtail",
+        "partOfSpeech": "動詞",
+        "meaning": "削減する"
+      },
+      {
+        "word": "curtailment",
+        "partOfSpeech": "名詞",
+        "meaning": "削減"
+      }
+    ],
+    [
+      {
+        "word": "cynic",
+        "partOfSpeech": "名詞",
+        "meaning": "皮肉屋"
+      },
+      {
+        "word": "cynical",
+        "partOfSpeech": "形容詞",
+        "meaning": "皮肉な・冷笑的な"
+      },
+      {
+        "word": "cynicism",
+        "partOfSpeech": "名詞",
+        "meaning": "冷笑主義"
+      },
+      {
+        "word": "cynically",
+        "partOfSpeech": "副詞",
+        "meaning": "皮肉っぽく"
+      }
+    ]
+  ]
+}
