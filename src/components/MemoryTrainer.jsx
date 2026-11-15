@@ -1,9 +1,10 @@
 import React,{useState,useRef,useEffect} from 'react';
 import {recall,mastery,reviewMemory,normalizeAnswer,buildQuestion,enqueueRetry,gradeAnswer,dailyPlan,weakWords,isMastered} from '../lib/memoryEngine.js';
 import './MemoryTrainer.css';
+import {shouldAutoAdvance,CORRECT_ADVANCE_MS} from '../lib/learningFlow.js';
 
 const labels={meaning:'意味を選ぶ',typing:'英単語を選ぶ','typing-choice':'英単語を選ぶ','listening-choice':'聞き取り・選択',cloze:'例文穴埋め',listening:'聞き取り・選択',recall:'意味を思い出す'};
-export default function MemoryTrainer({words,store,onRecord,onExit,loading,error,title,onRetry,savedError}){
+export default function MemoryTrainer({words,store,onRecord,onExit,loading,error,title,onRetry,savedError,onFeedback}){
  const [queue,setQueue]=useState([]),[i,setI]=useState(0),[question,setQuestion]=useState(null),[result,setResult]=useState(null),[count,setCount]=useState(5),[phase,setPhase]=useState('ready'),[tally,setTally]=useState({total:0,correct:0}),[audioError,setAudioError]=useState(''),[intro,setIntro]=useState(false),[hint,setHint]=useState(false);
  const lock=useRef(false),baseAttempts=useRef({}),localAttempts=useRef({}),startedAt=useRef(null);
  const item=queue[i],w=item?.word,records=store.records,now=Date.now();
@@ -23,10 +24,12 @@ export default function MemoryTrainer({words,store,onRecord,onExit,loading,error
    const evidence={responseMs:startedAt.current===null?null:Math.max(0,performance.now()-startedAt.current),hintUsed:hint,selfReported:manual===true};
    const kind=['typing','listening'].includes(question.kind)?question.kind+'-choice':question.kind;
    const grade=gradeAnswer({correct:ok,kind,...evidence}),next=reviewMemory(memory,grade,kind,Date.now(),evidence);onRecord(w.id,grade,kind,next.lastAt,evidence);localAttempts.current[w.id]=(localAttempts.current[w.id]||0)+1;
-   setResult({ok,value,before:mastery(memory,next.lastAt),after:mastery(next,next.lastAt),dueAt:next.dueAt});setTally(t=>({total:t.total+1,correct:t.correct+(ok?1:0)}));
+   onFeedback?.(ok);setResult({ok,value,before:mastery(memory,next.lastAt),after:mastery(next,next.lastAt),dueAt:next.dueAt});setTally(t=>({total:t.total+1,correct:t.correct+(ok?1:0)}));
    if(grade<=2||(item.retry===0&&!baseAttempts.current[w.id]))setQueue(q=>enqueueRetry(q,i,item));
  }
  function advance(){if(typeof window!=='undefined')window.speechSynthesis?.cancel();const n=i+1;if(n>=queue.length){setPhase('done');setQuestion(null);return;}setI(n);load(queue[n]);}
+ const autoAdvance=phase==='quiz'&&!!result&&question?.options?.length===4&&shouldAutoAdvance(result.ok,w?.explanation);
+ useEffect(()=>{if(!autoAdvance)return;const timer=setTimeout(advance,CORRECT_ADVANCE_MS);return()=>clearTimeout(timer);},[result,autoAdvance,i]);
  const done=phase==='done',available=phase==='ready'||done;
  return <main className="vm-page"><header className="vm-header"><button onClick={onExit}>← ホーム</button><span>VOCADASH / MEMORY ENGINE</span></header><section className="vm-card">
  {savedError&&<p role="alert">学習記録を保存できません。この端末のブラウザ設定をご確認ください。</p>}<p className="vm-kicker">{title}</p><h1>Memory Mission</h1><p className="vm-sub">今日の復習と新しい語彙。思い出すたびに、記憶を育てよう。</p>
@@ -41,6 +44,6 @@ export default function MemoryTrainer({words,store,onRecord,onExit,loading,error
  {question.kind==='typing'&&!result&&<p className="vm-hint">登録された英単語を選択　{hint?'先頭文字：'+question.answer[0]:<button onClick={()=>setHint(true)}>ヒント</button>}</p>}
  {question.kind==='listening'&&<><button className="vm-audio" onClick={speak}>▶ 音声を再生</button>{audioError&&<p role="alert">{audioError}</p>}</>}
  {question.options.length>0?<div className="vm-options">{question.options.map(option=><button key={option} disabled={!!result} onClick={()=>submit(option)} className={result?(normalizeAnswer(option)===normalizeAnswer(question.answer)?'vm-correct':option===result.value?'vm-wrong':''):''}>{option}</button>)}</div>:question.kind==='recall'?<div className="vm-options"><button disabled={!!result} onClick={()=>submit('',true)}>思い出せた</button><button disabled={!!result} onClick={()=>submit('',false)}>思い出せない</button></div>:<p role="status">選択肢を準備できませんでした。採点せずスキップしてください。</p>}
- {!result?<div className="vm-actions"><button onClick={()=>submit('',false)}>わからない</button><button onClick={advance}>採点せずスキップ</button></div>:<div className="vm-feedback" role="status"><strong>{result.ok?'正解！':'もう一度覚えよう'}　{result.before}% → {result.after}%</strong><h3>{w.word} · {w.meaning}</h3>{w.english&&<p>{w.english}</p>}{w.japanese&&<p>{w.japanese}</p>}<small>次回復習：{new Date(result.dueAt).toLocaleString('ja-JP')}</small><button className="vm-primary" onClick={advance}>次へ →</button></div>}</>}
+ {!result?<div className="vm-actions"><button onClick={()=>submit('',false)}>わからない</button><button onClick={advance}>採点せずスキップ</button></div>:<div className={"vm-feedback "+(result.ok?"vm-feedback-success":"")} role="status"><strong>{result.ok?'正解！':'もう一度覚えよう'}　{result.before}% → {result.after}%</strong><h3>{w.word} · {w.meaning}</h3>{w.english&&<p>{w.english}</p>}{w.japanese&&<p>{w.japanese}</p>}<small>次回復習：{new Date(result.dueAt).toLocaleString('ja-JP')}</small>{w.explanation&&<p>{w.explanation}</p>}{autoAdvance?<small>次の問題へ自動で進みます…</small>:<button className="vm-primary" onClick={advance}>次へ →</button>}</div>}</>}
  </>:null}</section></main>;
 }
