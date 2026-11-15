@@ -110,7 +110,8 @@ export function returnsToAssistant(kind,universeOpen){return kind==='close'||kin
 
 /** Resolve authored maps, original course words and draft entries without requiring a network. */
 export async function resolveVocabularyEntry(raw,{words=[],lookup=()=>null,getDrafts=async()=>new Map(),getCourse=async()=>null}={}){
- const keys=wordCandidates(raw);
+ const exact=String(raw||'').normalize('NFKC').toLowerCase().trim().replace(/\s+/g,' ');
+ const keys=[...new Set([exact,...wordCandidates(raw)].filter(Boolean))];
  for(const k of keys){const map=lookup(k),local=words.find(w=>String(w.word||'').toLowerCase().trim()===k);if(map||local)return {...map,...local,word:local?.word||map?.word||k,meaning:local?.meaning||map?.meaning||''};}
  if(!keys.length)return null;
  const drafts=await Promise.resolve().then(getDrafts).catch(()=>new Map());
