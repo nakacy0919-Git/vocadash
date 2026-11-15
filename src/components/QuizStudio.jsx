@@ -8,8 +8,8 @@ const KEY='vocadash-quiz-attempts-v1';
 function saveAttempt(attempt){
   try {const old=JSON.parse(localStorage.getItem(KEY)||'[]');localStorage.setItem(KEY,JSON.stringify([...(Array.isArray(old)?old:[]),attempt].slice(-2000)));return true;}catch{return false;}
 }
-export default function QuizStudio({onClose,onAttempt,onFeedback,sound=true,initialWord=''}){
-  const [records,setRecords]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[format,setFormat]=useState('mixed'),[word,setWord]=useState(initialWord),[level,setLevel]=useState('all'),[queue,setQueue]=useState([]),[cursor,setCursor]=useState(0),[answer,setAnswer]=useState(''),[picked,setPicked]=useState([]),[result,setResult]=useState(null),[hints,setHints]=useState(0),[plays,setPlays]=useState(0),[score,setScore]=useState(0),[notice,setNotice]=useState('');
+export default function QuizStudio({onClose,onAttempt,onFeedback,sound=true,initialWord='',initialLevel='B1'}){
+  const [records,setRecords]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[format,setFormat]=useState('mixed'),[word,setWord]=useState(initialWord),[level,setLevel]=useState(initialWord?'all':initialLevel),[queue,setQueue]=useState([]),[cursor,setCursor]=useState(0),[answer,setAnswer]=useState(''),[picked,setPicked]=useState([]),[result,setResult]=useState(null),[hints,setHints]=useState(0),[plays,setPlays]=useState(0),[score,setScore]=useState(0),[notice,setNotice]=useState('');
   const started=useRef(0),locked=useRef(false),advanceTimer=useRef(null);
   const audioAvailable=sound&&typeof window!=='undefined' && 'speechSynthesis' in window;
   useEffect(()=>{let active=true;loadDraftRecords().then(rows=>{if(active){setRecords(rows);setLoading(false);}}).catch(()=>{if(active){setError('教材を読み込めませんでした。閉じて再度開いてください。');setLoading(false);}});return()=>{active=false;window.speechSynthesis?.cancel();};},[]);
