@@ -1,12 +1,13 @@
-import React,{useEffect,useRef} from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import './VoiceOrb.css';
 import {createEnergyRenderer} from '../lib/voiceEnergyRenderer.js';
 const particles=Array.from({length:960},(_,i)=>{const t=(i+.5)/960,h=1-2*t;return {arm:i%5,t,h,angle:i*2.39996323,r:.76+.23*((i*73%97)/97),weight:.45+(i%7)*.14};});
 const stars=Array.from({length:100},(_,i)=>({x:(Math.sin(i*87.31)*43758.5453%1+1)%1,y:(Math.sin(i*42.78+7)*26378.72%1+1)%1,r:.3+(i%4)*.25}));
-export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
+export default function VoiceOrb({visible=false,supports=true,status,onStart,onCommand,onClose,enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
+ const [text,setText]=useState('');
  const canvas=useRef(null),cinematic=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
  useEffect(()=>{
-  if(!enabled||!canvas.current)return;
+  if((!enabled&&!full)||!canvas.current)return;
   const el=canvas.current,ctx=el.getContext('2d');if(!ctx)return;
   const film=full?cinematic.current:null;let gpu=null;try{if(film)gpu=createEnergyRenderer(film);}catch{}
   if(film)film.style.visibility=gpu?'visible':'hidden';
@@ -47,20 +48,20 @@ export default function VoiceOrb({enabled,phase,micState,busy,full,meter,meterRe
   frame=requestAnimationFrame(draw);
   return()=>{stopped=true;cancelAnimationFrame(frame);ro?.disconnect();gpu?.dispose();if(film)film.style.visibility='hidden';window.removeEventListener('resize',resize);};
  },[enabled,full,meter]);
- if(!enabled&&!notice&&!suggestions.length)return null;
+ if(!visible&&!enabled&&!notice&&!suggestions.length)return null;
  const state=busy?'thinking':phase==='standby'?'standby':micState;
- const label=busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Dash Assistant';
+ const label=!enabled?'Dash Assistant':busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Dash Assistant';
  return <div className={'vd-orb-overlay '+(full?'vd-orb-full ':'vd-orb-compact ')+'vd-orb-'+state}>
-  {enabled&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
-  {enabled&&full&&<canvas ref={cinematic} className="vd-orb-canvas vd-orb-cinematic" aria-hidden="true"/>}
-  {enabled&&full&&<div className="vd-orb-top"><span>DASH<span className="vd-orb-brand-accent"> ASSISTANT</span><small className="vd-orb-edition">NEURAL INTERFACE</small></span><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button></div>}
+  {(enabled||full)&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
+  {full&&<canvas ref={cinematic} className="vd-orb-canvas vd-orb-cinematic" aria-hidden="true"/>}
+  {full&&<div className="vd-orb-top"><span>DASH<span className="vd-orb-brand-accent"> ASSISTANT</span><small className="vd-orb-edition">NEURAL INTERFACE</small></span><div className="vd-orb-top-actions"><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button><button type="button" aria-label="Close assistant" onClick={onClose}>×</button></div></div>}
   <div className="vd-orb-copy">
-   {enabled&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
+   {(enabled||full)&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
    {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
    {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
    {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map(word=><button key={word} type="button" onClick={()=>onChoose(word)}>{word}</button>)}</div>}
   </div>
-  {enabled&&full&&<div className="vd-orb-footer"><button type="button" className="vd-orb-stop" onClick={onStop} aria-label="Stop microphone"><span/></button><small>{meterReady?'LIVE AUDIO · 音量に連動':'音声認識中 · 音量取得は未接続'}</small></div>}
+  {full&&<div className="vd-orb-footer"><form className="vd-orb-command" onSubmit={e=>{e.preventDefault();const command=text.trim();if(!command)return;onCommand?.(command);setText('');}}><input aria-label="Dash command" placeholder="Hey Dash, show me beauty" value={text} onChange={e=>setText(e.target.value)}/><button type="submit" disabled={!text.trim()||busy}>→</button></form><div className="vd-orb-examples">{['Show me beauty','Show me sad','Show me accelerator','Go back'].map(cmd=><button key={cmd} onClick={()=>onCommand?.(cmd)}>{cmd}</button>)}</div>{enabled?<button type="button" className="vd-orb-stop" onClick={onStop} aria-label="Stop microphone"><span/></button>:<button className="vd-orb-mic-start" type="button" onClick={onStart} disabled={!supports}>🎙 マイクをオン</button>}<small>{enabled?(meterReady?'LIVE AUDIO · 音量に連動':'音声認識中 · 音量取得は未接続'):supports?'マイクは手動で開始 · 文字入力も可':'音声非対応 · 文字入力をご利用ください'}{!enabled&&status?' · '+status:''}</small></div>}
   {enabled&&!full&&<button className="vd-orb-expand" type="button" onClick={onExpand} aria-label="Expand assistant">⤢</button>}
  </div>;
 }
