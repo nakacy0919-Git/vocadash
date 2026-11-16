@@ -12,6 +12,8 @@ export function extractWake(raw,mode='both') {
 
 export function parseVoice(raw) {
  const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ // Explicit home requests must not be interpreted as one-step history navigation.
+ if(/^(?:(?:so|well|hey|just|okay|ok|please|then|now|let's|lets)\s+)*(?:(?:go|come|take me|bring me)\s+)?back(?:\s+to)?\s+(?:(?:the\s+)?(?:dash(?: assistant)?|voice assistant|assistant)|home(?: screen)?)$/.test(t.replace(/’/g,"'")))return {kind:'dashHome',value:''};
  // Accept natural return phrases, but never interpret a vocabulary query such as 'show me back' as navigation.
  const backPhrase=t.replace(/’/g,"'").replace(/^(?:(?:so|well|hey|just|okay|ok|please|then|now|let's|lets|let us|i want to|can we|shall we|we should)\s+)+/,'');
  if(/^(?:(?:go|come|get|take me|bring me|move|head)\s+)?back(?:\s+(?:now|again|a bit|to (?:the )?(?:previous screen|original screen|last screen|assistant|dash assistant)))?$/.test(backPhrase))return {kind:'back',value:''};
@@ -31,7 +33,7 @@ export function parseVoice(raw) {
  ['universe',/^(open|show|launch)( me)? (the |voca )?universe(?: (of|for) (.+))?$/],
  ['filter',/^(?:(show|expand|display|hide) (me )?(the )?)?(synonyms?|similar words|antonyms?|opposites?|word famil(?:y|ies)|derivatives?|derivations?|collocations?|related words|related terms|all relations|all words|all|everything|word forms|inflections)$/],
  ['focus',/^(focus on|center on|centre on|explore|expand on|expand) (.+)$/],
- ['examples',/^(give me|show me|show|give|read) (?:some |the |an? |two |three |[23] )?(?:examples?|example sentences?)(?: (?:of|for) (.+))?$/],
+ ['examples',/^(give me|show me|show|give|read) (?:some |the |an? |two |three |[23] )?(?:examples?|example sentences?)(?: (?:of|for|with|using) (.+))?$/],
  ['read',/^(read (it|the word|aloud)|pronounce( it)?|say it|read the (first|second|third) (sentence|example))$/],
  ['meaning',/^(show (me )?(the )?meaning|show definition|what does it mean|reveal)$/],
  ['quiz',/^(quiz me|start (a |the )?quiz|give me a quiz)$/],
@@ -57,23 +59,45 @@ export function parseVoice(raw) {
  return {kind:'unknown',value:t};
 }
 
-/** Route recognition alternatives without requiring a wake word during an active session. */
-export function routeVoice(alternatives,phase,{universeOpen=false}={}) {
+// Candidate choices are valid only while that specific list is displayed.
+// Exact matching prevents unrelated conversation from starting a new search.
+export function voiceCandidateCommand(word){const command='Show me '+word;return parseVoice(command).kind==='search'?command:'Focus on '+word;}
+export function voiceCandidateChoice(raw,candidates=[]){
+ const t=String(raw||'').normalize('NFKC').toLowerCase().trim().replace(/[“”"?!.,]+$/g,'').replace(/\s+/g,' ');
+ const match=t.match(/^(?:number|option|choice|candidate)\s+(one|two|three|four|five|six|[1-6])$/);
+ if(match){const n=({one:1,two:2,three:3,four:4,five:5,six:6})[match[1]]||Number(match[1]);return candidates[n-1]||null;}
+ const key=t.replace(/^(?:choose|select|open)\s+(?:the word\s+)?/,'');
+ if(key===t&&parseVoice(t).kind!=='unknown')return null;
+ return candidates.find(w=>String(w).normalize('NFKC').toLowerCase().trim()===key)||null;
+}
+/** Active sessions and an open Universe support uninterrupted follow-up searches. */
+export function routeVoice(alternatives,phase,{universeOpen=false,candidates=[]}={}) {
  const texts=(Array.isArray(alternatives)?alternatives:[]).filter(t=>typeof t==='string'&&t.trim());
  if(phase==='off'||!texts.length)return null;
- // Prefer the browser's top result when it already matches a supported command.
- const first=texts[0],wake=extractWake(first);
- if(wake)return {kind:'wake',command:wake.command};
- const parsed=parseVoice(first);
- if(parsed.kind==='stop'||(universeOpen&&parsed.kind==='back'))return {kind:'command',command:first};
- if(phase==='active'&&parsed.kind!=='unknown')return {kind:'command',command:first};
- // Alternatives can recover a recognition variation, but standby accepts only wake phrases.
- for(const t of texts.slice(1)){
-  const w=extractWake(t);
-  if(w)return {kind:'wake',command:w.command};
-  if((universeOpen&&parseVoice(t).kind==='back')||(phase==='active'&&parseVoice(t).kind!=='unknown'))return {kind:'command',command:t};
+ for(const t of texts){
+  const wake=extractWake(t);if(wake)return {kind:'wake',command:wake.command};
+  const parsed=parseVoice(t);
+  if(parsed.kind==='stop'||(universeOpen&&(['back','dashHome','close','examples','meaning','previous','pageBack','next','read','map','list'].includes(parsed.kind)||opensVoiceUniverse(parsed.kind,parsed.value))))return {kind:'command',command:t};
+  if(phase==='active'&&parsed.kind!=='unknown')return {kind:'command',command:t};
+  const choice=voiceCandidateChoice(t,candidates);
+  if(choice)return {kind:'command',command:voiceCandidateCommand(choice)};
  }
- return phase==='active'?{kind:'command',command:first}:null;
+ return phase==='active'?{kind:'command',command:texts[0]}:null;
+}
+// Suggestions are derived only from known lexical entries, never generated guesses.
+// Prefer speech alternatives, then semantic links; exclude the current word.
+export function nextVoiceWords(current,alternatives=[],relations=[],limit=4){
+ const key=w=>String(w||'').normalize('NFKC').trim().toLowerCase().replace(/\s+/g,' ');
+ const seen=new Set([key(current)]),out=[];
+ const add=raw=>{const word=typeof raw==='string'?raw:raw?.word;const k=key(word);if(!k||k.length>65||seen.has(k))return;seen.add(k);out.push(word.trim());};
+ for(const word of alternatives)add(word);
+ for(const type of ['synonym','family','related','contrast','collocation'])for(const link of relations)if(link?.type===type)add(link);
+ return out.slice(0,limit);
+}
+export function recognizedSearchTerms(alternatives=[]){
+ const keys=new Set();
+ for(const raw of alternatives){const parsed=parseVoice(extractWake(raw)?.command||raw);if(opensVoiceUniverse(parsed.kind,parsed.value))for(const k of wordCandidates(parsed.value))keys.add(k);}
+ return [...keys];
 }
 
 export function wordCandidates(raw){
@@ -106,7 +130,7 @@ export function speechSegments(event){
 export function opensVoiceUniverse(kind,value){return Boolean(value)&&['search','focus','universe'].includes(kind);}
 export function quickVoiceEntry(value,words,lookup){for(const key of wordCandidates(value)){const local=words.find(w=>String(w.word||'').toLowerCase().trim()===key),map=lookup(key);if(map||local)return {...map,...local,word:local?.word||map.word,meaning:local?.meaning||map?.meaning||''};}return null;}
 
-export function returnsToAssistant(kind,universeOpen){return kind==='close'||kind==='back'&&universeOpen;}
+export function returnsToAssistant(kind,universeOpen){return kind==='close'||kind==='dashHome';}
 
 /** Resolve authored maps, original course words and draft entries without requiring a network. */
 export async function resolveVocabularyEntry(raw,{words=[],lookup=()=>null,getDrafts=async()=>new Map(),getCourse=async()=>null}={}){

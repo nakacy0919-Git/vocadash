@@ -58,7 +58,7 @@ export default function VoiceOrb({visible=false,supports=true,status,onStart,onC
    {(enabled||full)&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
    {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
    {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
-   {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map(word=><button key={word} type="button" onClick={()=>onChoose(word)}>{word}</button>)}</div>}
+   {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map((word,i)=><button key={word} type="button" onClick={()=>onChoose(word)}>{i+1}. {word}</button>)}</div>}
   </div>
   {full&&<button className="vd-orb-touch" type="button" aria-label={enabled?'マイクを停止':'マイクを開始'} aria-pressed={enabled} aria-describedby="vd-orb-touch-hint" disabled={!supports&&!enabled} onClick={enabled?onStop:onStart}/>}
   {full&&<div className="vd-orb-touch-status" id="vd-orb-touch-hint"><span className="vd-orb-state-dot" data-enabled={enabled}/><span>{!supports?'このブラウザは音声認識に対応していません':enabled?'タップしてマイクを停止':'中央の光をタップして開始'}</span>{status&&<small role="status">{status}</small>}</div>}

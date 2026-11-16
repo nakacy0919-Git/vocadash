@@ -49,10 +49,10 @@ test('voice visualizer measures signal RMS and ignores silence',()=>{assert.equa
 import {lookupUniverse} from './universe.js';
 test('Show me beautiful launches a registered Universe entry directly, with or without an article',()=>{for(const raw of ['Show me beautiful','Show me the beautiful','Dash, show me beautiful','Hey Dash, show me beautiful']){const cmd=parseVoice(extractWake(raw)?.command||raw);assert.equal(opensVoiceUniverse(cmd.kind,cmd.value),true);const item=quickVoiceEntry(cmd.value,[],lookupUniverse);assert.equal(item?.word,'beautiful');assert.ok(item.relatedWords.length>0);}assert.equal(opensVoiceUniverse('examples','beautiful'),false);assert.equal(opensVoiceUniverse('filter','synonym'),false);});
 
-test('universe hands-free commands distinguish assistant return, map history, filters and polite microphone stop',()=>{for(const [raw,kind,value] of [['Back','back',''],['Go back','back',''],['Previous word','previous',''],['Previous page','pageBack',''],['Expand synonyms','filter','synonym'],['Expand the collocations','filter','collocation'],['Expand derivatives','filter','family'],['Expand all','filter','all'],['Expand beautiful','focus','beautiful'],['Expand on beauty','focus','beauty'],['Thank you stop listening','stop',''],['Stop listening please','stop',''],['Can you expand synonyms please','filter','synonym']])assert.deepEqual(parseVoice(raw),{kind,value});assert.equal(returnsToAssistant('back',true),true);assert.equal(returnsToAssistant('close',true),true);assert.equal(returnsToAssistant('previous',true),false);assert.equal(returnsToAssistant('pageBack',true),false);assert.deepEqual(routeVoice(['Thank you stop listening'],'standby'),{kind:'command',command:'Thank you stop listening'});});
+test('universe hands-free commands distinguish assistant return, map history, filters and polite microphone stop',()=>{for(const [raw,kind,value] of [['Back','back',''],['Go back','back',''],['Previous word','previous',''],['Previous page','pageBack',''],['Expand synonyms','filter','synonym'],['Expand the collocations','filter','collocation'],['Expand derivatives','filter','family'],['Expand all','filter','all'],['Expand beautiful','focus','beautiful'],['Expand on beauty','focus','beauty'],['Thank you stop listening','stop',''],['Stop listening please','stop',''],['Can you expand synonyms please','filter','synonym']])assert.deepEqual(parseVoice(raw),{kind,value});assert.equal(returnsToAssistant('back',true),false);assert.equal(returnsToAssistant('dashHome',true),true);assert.equal(returnsToAssistant('close',true),true);assert.equal(returnsToAssistant('previous',true),false);assert.equal(returnsToAssistant('pageBack',true),false);assert.deepEqual(routeVoice(['Thank you stop listening'],'standby'),{kind:'command',command:'Thank you stop listening'});});
 
 import {centerFromRelation} from './universeNavigation.js';
-test('Dash is the wake name; old Voca wake phrase is retired',()=>{assert.deepEqual(extractWake('Dash Assistant, show me beautiful'),{command:'show me beautiful'});assert.deepEqual(parseVoice('Dash, expand synonyms'),{kind:'filter',value:'synonym'});assert.equal(extractWake('Hey Voca'),null);assert.equal(extractWake('Dashboard'),null);assert.equal(parseVoice('Back to Dash Assistant').kind,'back');});
+test('Dash is the wake name; old Voca wake phrase is retired',()=>{assert.deepEqual(extractWake('Dash Assistant, show me beautiful'),{command:'show me beautiful'});assert.deepEqual(parseVoice('Dash, expand synonyms'),{kind:'filter',value:'synonym'});assert.equal(extractWake('Hey Voca'),null);assert.equal(extractWake('Dashboard'),null);assert.equal(parseVoice('Back to Dash Assistant').kind,'dashHome');});
 test('direct related-node navigation supports existing and leaf words',()=>{const map=word=>word==='beauty'?{word,meaning:'美しさ',relatedWords:[{word:'beautiful'}]}:null;const a=centerFromRelation({word:'beauty',meaning:'美'},map,new Map());assert.equal(a.meaning,'美しさ');assert.equal(a.relatedWords[0].word,'beautiful');const b=centerFromRelation({word:'new phrase',meaning:'新しい表現'},map,new Map());assert.equal(b.word,'new phrase');assert.equal(b.meaning,'新しい表現');});
 
 import {resolveVocabularyEntry} from './voice.js';
@@ -111,4 +111,37 @@ test('voice resolver can read every canonical original vocabulary sense and requ
  assert.equal(new Set(rows.map(r=>r.wordId)).size,8653);
  for(const [k] of index){const item=await resolveVocabularyEntry(k,{getDrafts:async()=>index});assert.ok(item?.meaning,k);}
  for(const k of ['beauty','sad','accelerator']){const item=await resolveVocabularyEntry(k,{lookup:lookupUniverse,getDrafts:async()=>index});assert.ok(item?.word,k+' must resolve');}
+});
+
+import {voiceCandidateChoice,voiceCandidateCommand,nextVoiceWords,recognizedSearchTerms} from './voice.js';
+test('successive Universe searches accept Show me without a wake word even in standby',()=>{
+ for(const word of ['beauty','sad','accelerator','resilience'])for(const phase of ['active','standby'])assert.deepEqual(routeVoice(['Show me '+word],phase,{universeOpen:true}),{kind:'command',command:'Show me '+word});
+ assert.equal(routeVoice(['Show me beauty'],'standby'),null);assert.equal(routeVoice(['Show me beauty'],'off',{universeOpen:true}),null);assert.equal(routeVoice(['I like beauty'],'standby',{universeOpen:true}),null);
+});
+test('only displayed candidates may be selected by voice or option number',()=>{
+ const candidates=['beautiful','beautify','gorgeous','pretty'];
+ for(const [utterance,word] of [['Beautiful','beautiful'],['Choose beautify','beautify'],['Number three','gorgeous'],['Option 4','pretty']])assert.deepEqual(routeVoice([utterance],'standby',{universeOpen:true,candidates}),{kind:'command',command:'Show me '+word});
+ assert.equal(routeVoice(['beautify'],'standby',{universeOpen:true,candidates:[]}),null);assert.equal(routeVoice(['number five'],'standby',{universeOpen:true,candidates}),null);assert.equal(routeVoice(['beautiful'],'off',{universeOpen:true,candidates}),null);
+ assert.equal(voiceCandidateChoice('back',['back']),null);assert.equal(voiceCandidateChoice('choose back',['back']),'back');assert.equal(routeVoice(['back'],'standby',{universeOpen:true,candidates:['back']}).command,'back');
+});
+test('predictions use recognition alternatives and authored relations without duplicates',()=>{
+ assert.deepEqual(nextVoiceWords('beauty',['Beauty','beautiful','BEAUTIFUL'],[{word:'beautify',type:'family'},{word:'gorgeous',type:'synonym'},{word:'Beautiful',type:'related'},{word:'pretty',type:'synonym'},{word:'ugly',type:'contrast'}]),['beautiful','gorgeous','pretty','beautify']);
+ assert.deepEqual(recognizedSearchTerms(['Show me beauty','Dash show me beautiful','back','noise']),['beauty','beautiful']);
+});
+
+test('a reserved filter name selected explicitly remains a vocabulary query',()=>{assert.equal(voiceCandidateCommand('synonyms'),'Focus on synonyms');assert.deepEqual(routeVoice(['number one'],'standby',{universeOpen:true,candidates:['synonyms']}),{kind:'command',command:'Focus on synonyms'});assert.equal(parseVoice('Show me synonyms').kind,'filter');});
+
+import {profilePages,pushProfileHistory,popProfileHistory} from './wordProfile.js';
+test('example commands with a or an and the target word work during Universe standby',()=>{
+ for(const phrase of ['Show me a example sentence of accelerator','Show me an example sentence of accelerator','Show me example sentences for accelerator','Show me an example sentence using accelerator']){assert.deepEqual(parseVoice(phrase),{kind:'examples',value:'accelerator'});assert.equal(routeVoice([phrase],'standby',{universeOpen:true}).command,phrase);}
+ for(const phrase of ['back home','go back home','so back home','Back to Dash Assistant']){assert.equal(parseVoice(phrase).kind,'dashHome');assert.ok(routeVoice([phrase],'standby',{universeOpen:true}));}
+ assert.equal(parseVoice('Back').kind,'back');assert.equal(returnsToAssistant('back',true),false);
+ assert.equal(parseVoice('Show me back home').kind,'search');assert.equal(routeVoice(['back home'],'off',{universeOpen:true}),null);
+});
+test('word profile pagination preserves bilingual examples and distinct sense identities',()=>{
+ const data={word:'bank',records:[{senseId:'s1',partOfSpeech:'noun',meaningJa:'銀行',definitionEn:'a financial institution',examples:[{en:'I went to the bank.',ja:'銀行へ行った。'},{en:'The bank is open.',ja:'銀行は開いている。'},{en:'A new bank opened.',ja:'新しい銀行が開店した。'}]},{senseId:'s2',partOfSpeech:'noun',meaningJa:'土手',examples:[{en:'We sat on the river bank.',ja:'川岸に座った。'}]}]};
+ const wide=profilePages(data,2),compact=profilePages(data,1);assert.deepEqual(wide.map(p=>p.id),['s1','s1','s2']);assert.equal(compact.length,4);assert.deepEqual(wide.flatMap(p=>p.examples),compact.flatMap(p=>p.examples));assert.equal(wide[2].meaning,'土手');assert.equal(profilePages({word:'missing'})[0].examples.length,0);
+});
+test('Back restores the last map or profile and its page rather than jumping home',()=>{
+ const map={center:{word:'beauty'},filter:'family',page:2,profile:null};const profile={center:{word:'beauty'},profile:{word:'accelerator'},profilePage:1};const history=pushProfileHistory(pushProfileHistory([],map),profile);let a=popProfileHistory(history);assert.deepEqual(a.screen,profile);a=popProfileHistory(a.remaining);assert.deepEqual(a.screen,map);assert.equal(popProfileHistory(a.remaining).screen,null);
 });

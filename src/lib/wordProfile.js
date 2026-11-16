@@ -1,0 +1,11 @@
+// Keep examples paired with the authored sense instead of combining incompatible meanings.
+const clean=s=>typeof s==='string'?s.trim():'';
+function examples(rows){const seen=new Set();return (Array.isArray(rows)?rows:[]).filter(e=>clean(e?.en)).map(e=>({en:clean(e.en),ja:clean(e.ja)})).filter(e=>{const key=e.en+'|'+e.ja;if(seen.has(key))return false;seen.add(key);return true;});}
+export function profilePages(entry,perPage=2){
+ const count=Math.max(1,Math.min(2,Number(perPage)||2));
+ const records=Array.isArray(entry?.records)?entry.records:[];
+ const senses=records.length?records.map(r=>({id:r.senseId,pos:clean(r.partOfSpeech),meaning:clean(r.meaningJa),definition:clean(r.definitionEn),pronunciation:clean(r.pronunciation||r.ipa),cefr:clean(r.cefrHeadword),draft:r.status==='draft-unreviewed'||!!entry.draft,examples:examples(r.examples)})):[{id:entry?.word,pos:clean(entry?.partOfSpeech||entry?.pos),meaning:clean(entry?.meaning),definition:clean(entry?.definition||entry?.definitionEn),pronunciation:clean(entry?.pronunciation||entry?.ipa),cefr:clean(entry?.cefr),draft:!!entry?.draft,examples:examples(entry?.examples?.length?entry.examples:entry?.english?[{en:entry.english,ja:entry.japanese}]:[])}];
+ return senses.flatMap((sense,senseIndex)=>Array.from({length:Math.max(1,Math.ceil(sense.examples.length/count))},(_,i)=>({...sense,senseIndex,senseCount:senses.length,examples:sense.examples.slice(i*count,(i+1)*count),exampleOffset:i*count,exampleCount:sense.examples.length})));
+}
+export function pushProfileHistory(history,screen){return [...history.slice(-49),screen];}
+export function popProfileHistory(history){return {screen:history.at(-1)||null,remaining:history.slice(0,-1)};}

@@ -175,3 +175,6 @@
 /* Preserve the beginning of unusually long labels inside their own card. */
 .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-node,.vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center{justify-content:flex-start;justify-content:safe center;scrollbar-width:thin}
 @media(max-width:380px){.vu-dialog .vu-header small{display:none}.vu-dialog .vu-header h2{white-space:normal;line-height:1.05}.vu-dialog .vu-header-actions{gap:3px}.vu-dialog .vu-header-actions button{white-space:normal}}
+
+/* Compact predictions remain within the existing live-voice strip. */
+.vu-dialog .vu-live-suggestions{align-items:center;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;max-width:100%;min-width:0;padding-bottom:2px;gap:6px}.vu-suggestion-caption{color:#a5c6df;white-space:nowrap;font-size:10px;flex:none}.vu-dialog .vu-live-suggestions button{display:inline-flex;align-items:center;gap:5px;flex:none;min-height:30px;white-space:nowrap;background:#12374d;border-color:#497e99;padding:4px 9px;color:#e6f8ff}.vu-suggestion-number{color:#91d6ee;font-size:10px;font-weight:700}.vu-dialog .vu-live-suggestions button:focus-visible{outline:2px solid #a0edf9;outline-offset:-2px}@media(max-width:640px){.vu-suggestion-caption{font-size:9px}.vu-dialog .vu-live-suggestions button{min-height:30px;font-size:11px}}
