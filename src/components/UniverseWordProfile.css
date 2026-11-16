@@ -73,3 +73,51 @@
 .vp-single.vp-tiny .vp-term small{display:none}
 .vp-single.vp-tiny .vp-meta{font-size:9px}
 @container (max-width:480px){.vp-single .vp-summary{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:5px}.vp-single .vp-content{gap:5px}.vp-single .vp-word-card,.vp-single .vp-definition,.vp-single .vp-example,.vp-single .vp-lexical-group{padding:6px}.vp-single .vp-examples .vp-example-en{font-size:14px}.vp-single .vp-examples .vp-example-ja{font-size:12px}.vp-single .vp-portrait .vp-examples{display:flex}.vp-single .vp-bar span{font-size:9px}}
+
+/* Unified two-column profile with color-coded semantic cards and compact word chips. */
+.vp-single{--vp-grid-gap:clamp(7px,1cqw,14px);--vp-panel-edge:#3d607c}
+.vp-single .vp-summary,.vp-single .vp-content{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--vp-grid-gap)}
+.vp-single .vp-content{align-items:stretch}
+.vp-single .vp-relations-column,.vp-single .vp-examples{display:flex;flex-direction:column;min-height:0;min-width:0;gap:7px}
+.vp-single .vp-relations-column>.vp-card-heading,.vp-single .vp-examples>.vp-card-heading{min-height:21px;height:21px;align-items:center}
+.vp-single .vp-relations{flex:1 1 0;gap:var(--vp-grid-gap)}
+.vp-single .vp-word-card,.vp-single .vp-definition{background:radial-gradient(ellipse at 4% 5%,#28496e70,transparent 80%),linear-gradient(145deg,#142d47,#0b2036);border-color:#476d91;box-shadow:inset 0 1px 0 #c6e8ff0c}
+.vp-single .vp-definition{background:radial-gradient(ellipse at 95% 5%,#36528648,transparent 75%),linear-gradient(135deg,#132c44,#0c1f35)}
+.vp-single .vp-lexical-group{--rel-rgb:100,189,249;--rel-ink:#b4e6ff;--rel-base:#122f4d;border:1px solid rgba(var(--rel-rgb),.46);border-top:1px solid rgba(var(--rel-rgb),.65);background:radial-gradient(ellipse at 6% 0%,rgba(var(--rel-rgb),.19),transparent 90%),linear-gradient(145deg,var(--rel-base),#0c1d33);box-shadow:inset 0 1px 0 rgba(var(--rel-rgb),.13),0 3px 14px #00000017;border-radius:14px;gap:clamp(5px,1cqh,12px);overflow:hidden}
+.vp-single .vp-type-synonym{--rel-rgb:100,189,249;--rel-ink:#b9e7ff;--rel-base:#122f4d}
+.vp-single .vp-type-contrast{--rel-rgb:247,143,170;--rel-ink:#ffd0dc;--rel-base:#42263e}
+.vp-single .vp-type-family{--rel-rgb:183,159,255;--rel-ink:#e0d4ff;--rel-base:#30274b}
+.vp-single .vp-type-collocation{--rel-rgb:102,225,181;--rel-ink:#b7f7dd;--rel-base:#153e3b}
+.vp-single .vp-lexical-group .vp-card-heading{gap:5px}
+.vp-single .vp-lexical-group .vp-card-heading h2{display:flex;align-items:center;gap:7px;color:var(--rel-ink);font-size:clamp(12px,1.5cqw,18px)}
+.vp-single .vp-lexical-group .vp-card-heading h2 small{color:var(--rel-ink);opacity:.74;font-size:.71em;margin-top:3px}
+.vp-single .vp-category-icon{width:clamp(23px,3cqw,34px);height:clamp(23px,3cqw,34px);flex:none;border-radius:10px;background:rgba(var(--rel-rgb),.15);border:1px solid rgba(var(--rel-rgb),.32);display:grid;place-items:center;font-size:clamp(14px,2cqw,22px);font-weight:700}
+.vu-dialog .vp-single .vp-lexical-group .vp-link{color:var(--rel-ink);background:rgba(var(--rel-rgb),.12);border-color:rgba(var(--rel-rgb),.36);border-radius:8px}
+.vp-single .vp-term-list{flex-direction:row;flex-wrap:wrap;align-content:center;align-items:flex-start;justify-content:flex-start;gap:clamp(4px,.6cqw,8px)}
+.vu-dialog .vp-single .vp-term{width:auto;max-width:100%;flex:0 0 auto;display:inline-flex;gap:5px;max-height:100%;min-height:0;padding:5px 9px;border-radius:8px;background:rgba(var(--rel-rgb),.11);border:1px solid rgba(var(--rel-rgb),.31);color:#f1f6ff;font-size:clamp(12px,1.38cqw,18px);line-height:1.16;text-align:left;transition:background .18s,border-color .18s}
+.vp-single .vp-term span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.vp-single .vp-term small{font-size:9px;color:var(--rel-ink);opacity:.75}
+.vu-dialog .vp-single .vp-term:hover,.vu-dialog .vp-single .vp-lexical-group .vp-link:hover{background:rgba(var(--rel-rgb),.23);border-color:rgba(var(--rel-rgb),.7)}
+.vp-single .vp-example{background:linear-gradient(145deg,#172b46,#102538);border-color:#42617d;border-radius:14px;padding:clamp(9px,1.3cqw,18px);gap:clamp(4px,.8cqh,9px)}
+.vp-single .vp-example-top{min-height:30px}
+.vp-single .vp-example-top small{letter-spacing:.07em;color:#a1bfdc}
+.vp-single .vp-example-en{color:#f5f8ff;font-weight:650}
+.vu-dialog .vp-single .vp-sound{width:42px;height:42px;min-width:42px;min-height:42px;display:inline-grid;place-items:center;border-radius:50%;padding:0;color:#b5e7ff;background:#10253b;border:1px solid #5b94b57a;transition:color .18s,background .18s,box-shadow .18s}
+.vu-dialog .vp-single .vp-sound:hover,.vu-dialog .vp-single .vp-sound[data-audio="playing"]{color:#e3f9ff;background:#195778;border-color:#80dafa;box-shadow:0 0 15px #5bd8ff3b}
+.vu-dialog .vp-single .vp-sound[data-audio="starting"]{color:#e2f5ff;border-color:#9ed5f4}
+.vu-dialog .vp-single .vp-sound[data-audio="error"]{color:#ffc6cf;border-color:#f58ca5;background:#46253b}
+.vp-sound[data-audio="playing"] .vp-sound-wave-outer,.vp-sound[data-audio="starting"] .vp-sound-wave{animation:vp-speaker-glow 1.15s ease-in-out infinite alternate}
+@keyframes vp-speaker-glow{from{opacity:.35}to{opacity:1}}
+.vp-sr-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.vp-single.vp-portrait:not(.vp-tight) .vp-content{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+.vp-single.vp-portrait:not(.vp-tight) .vp-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:21px minmax(0,1fr)}
+.vp-single.vp-tight .vp-relations-column,.vp-single.vp-tight .vp-examples{gap:4px}
+.vp-single.vp-tight .vp-relations-column>.vp-card-heading,.vp-single.vp-tight .vp-examples>.vp-card-heading{min-height:15px;height:15px}
+.vp-single.vp-tight .vp-category-icon{width:20px;height:20px;border-radius:6px;font-size:13px}
+.vp-single.vp-tight .vp-lexical-group .vp-card-heading{gap:3px}
+.vp-single.vp-tight .vp-lexical-group .vp-card-heading h2{gap:4px;font-size:11px}
+.vu-dialog .vp-single.vp-tight .vp-term{font-size:11px;padding:3px 5px}
+.vu-dialog .vp-single.vp-tight .vp-sound{width:32px;height:32px;min-width:32px;min-height:32px}
+.vp-single.vp-tight .vp-sound svg{width:18px;height:18px}
+@container(max-width:480px){.vp-single .vp-category-icon{display:none}.vp-single .vp-lexical-group .vp-card-heading h2{font-size:11px}.vu-dialog .vp-single .vp-term{padding:4px 5px;font-size:11px}.vp-single .vp-portrait .vp-examples{display:flex}}
+@media(prefers-reduced-motion:reduce){.vp-sound .vp-sound-wave,.vp-single button{animation:none!important;transition:none!important}}
