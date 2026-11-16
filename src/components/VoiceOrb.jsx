@@ -56,7 +56,7 @@ export default function VoiceOrb({visible=false,supports=true,status,onStart,onC
   {full&&<div className="vd-orb-top"><span>DASH<span className="vd-orb-brand-accent"> ASSISTANT</span><small className="vd-orb-edition">NEURAL INTERFACE</small></span><div className="vd-orb-top-actions"><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button><button type="button" aria-label="Close assistant" onClick={onClose}>×</button></div></div>}
   <div className="vd-orb-copy">
    {(enabled||full)&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
-   {enabled&&transcript&&phase!=='standby'&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
+   {enabled&&transcript&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
    {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
    {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map((word,i)=><button key={word} type="button" onClick={()=>onChoose(word)}>{i+1}. {word}</button>)}</div>}
   </div>
