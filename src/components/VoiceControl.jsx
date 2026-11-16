@@ -6,6 +6,7 @@ import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
 import VoiceOrb from './VoiceOrb';
 import {warmVocabularyIndex} from '../lib/vocabularyLookup.js';
+import {unlockProfileWarp,cancelProfileWarp} from '../lib/profileWarp.js';
 import {createVoiceMeter} from '../lib/voiceMeter.js';
 
 const drafts=import.meta.glob('../../data/vocabulary-drafts/batches/*.json',{import:'default'});
@@ -39,7 +40,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  const [supports]=useState(()=>typeof window!=='undefined'&&Boolean(window.SpeechRecognition||window.webkitSpeechRecognition));
  const changePhase=value=>{phaseRef.current=value;setPhase(value);};
  const standby=()=>{clearTimeout(activeTimer.current);changePhase('standby');setTranscript('');setStatus(universeRef.current?'Ready · Show me …':'Waiting for Hey, Dash / Dash…');};
- const stop=()=>{processing.current=false;clearTimeout(activeTimer.current);releaseMeter();wanted.current=false;commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);clearTimeout(noticeTimer.current);setNotice('');setSuggestions([]);setTranscript('');setResultOpen(false);setHelpOpen(false);clearTimeout(timer.current);setMicState('off');setInterim('');setBusy(false);changePhase('off');const r=recognition.current;recognition.current=null;try{r?.abort();}catch{}setEnabled(false);};
+ const stop=()=>{cancelProfileWarp();processing.current=false;clearTimeout(activeTimer.current);releaseMeter();wanted.current=false;commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);clearTimeout(noticeTimer.current);setNotice('');setSuggestions([]);setTranscript('');setResultOpen(false);setHelpOpen(false);clearTimeout(timer.current);setMicState('off');setInterim('');setBusy(false);changePhase('off');const r=recognition.current;recognition.current=null;try{r?.abort();}catch{}setEnabled(false);};
  const returnAssistant=()=>{processing.current=false;setBusy(false);clearTimeout(pendingTimer.current);skipAutoReturn.current=true;commandEpoch.current++;pending.current=null;setOpen(true);setResultOpen(false);setShowEntryInUniverse(false);setHelpOpen(false);setCompact(false);setTranscript('');setInterim('');setSuggestions([]);clearTimeout(noticeTimer.current);setNotice('');if(wanted.current)activate();onAppCommand('close');};
  const activate=()=>{clearTimeout(activeTimer.current);setOpen(true);setCompact(false);changePhase('active');setStatus("I'm listening…");};
  const wakeChime=()=>{try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const ctx=new C();const o=ctx.createOscillator(),g=ctx.createGain();o.frequency.setValueAtTime(660,ctx.currentTime);o.frequency.setValueAtTime(880,ctx.currentTime+.09);g.gain.setValueAtTime(.035,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.22);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.23);o.onended=()=>{ctx.close().catch(()=>{});};}catch{}};
@@ -148,6 +149,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   if(!supports){setStatus('このブラウザでは音声認識に対応していません。');return;}
   if(suspended){flash('音読モードから戻ってから開始してください');return;}
   if(wanted.current){stop();setStatus('停止しました');return;}
+  void unlockProfileWarp();
   const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
   const r=new SR();recognition.current=r;r.lang='en-US';const appleTouch=isAppleTouchDevice(navigator.userAgent,navigator.platform,navigator.maxTouchPoints);r.continuous=!appleTouch;r.interimResults=true;r.maxAlternatives=5;
   restartFailures.current=0;meterRetry.current=false;
