@@ -229,3 +229,10 @@
 .vu-live-indicator[data-state="model"]{background:#78dfff;box-shadow:0 0 10px #78dfff8a}
 .vu-live-model-icon{display:inline-flex;align-items:center;color:#9de2ff;vertical-align:middle}
 @media(prefers-reduced-motion:reduce){.vu-warp,.vu-profile-warp{display:none!important}.vu-dialog .vu-node,.vu-center,.vu-dialog .vu-profile .vp-summary,.vu-dialog .vu-profile .vp-content{animation:none!important}}
+
+/* Keep microphone controls in the document flow, never over a sentence or image. */
+.vu-dialog .vu-voice-idle{min-height:34px;padding:3px 7px;gap:6px;flex-wrap:nowrap}
+.vu-dialog .vu-voice-idle .vu-live-copy{color:#a4c5dd}
+.vu-dialog .vu-voice-idle button{min-height:27px;padding:3px 8px;flex:none}
+.vu-dialog .vu-voice-idle .vu-dock-mic{display:inline-flex;align-items:center;justify-content:center;gap:5px;border-color:#4d8dc5;color:#d3eeff;background:#183858;font-weight:650}
+@media(max-height:500px){.vu-dialog .vu-voice-idle{min-height:28px;padding:2px 5px}.vu-dialog .vu-voice-idle button{min-height:24px;padding:2px 6px}}
