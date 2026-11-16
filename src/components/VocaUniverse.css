@@ -183,3 +183,16 @@
 .vu-dialog-warp{animation-duration:.22s}.vu-warp{animation-duration:.24s;background:radial-gradient(ellipse at center,#16476a99,#060d2199 70%)}.vu-warp-core{animation-duration:.23s}.vu-warp i{animation-duration:.18s;animation-delay:0s!important}
 @keyframes vu-warp-out{0%{opacity:.85}100%{opacity:0;visibility:hidden}}
 @media(prefers-reduced-motion:reduce){.vu-dialog-warp{animation:none!important}}
+
+/* Profile hyperjump is deliberately richer than ordinary map navigation. Never intercept input. */
+.vu-profile-warp{position:absolute;inset:0;z-index:21;overflow:hidden;display:grid;place-items:center;pointer-events:none;isolation:isolate;background:radial-gradient(ellipse at 50% 50%,#0b345a26,transparent 48%,#061326a6);animation:vp-warp-fade .72s ease-out both}
+.vp-warp-ring{position:absolute;width:18vmin;height:18vmin;border:2px solid #85ddff;border-radius:50%;box-shadow:0 0 18px #47c9ff, inset 0 0 10px #a99aff;animation:vp-ring-expand .64s cubic-bezier(.14,.55,.33,1) both}
+.vp-warp-ring-alt{border-color:#a9a0ff;width:12vmin;height:12vmin;animation-delay:.06s;box-shadow:0 0 24px #948cff}
+.vu-profile-warp i{position:absolute;top:50%;left:50%;width:var(--pw-length);height:1.5px;transform-origin:0 50%;background:linear-gradient(90deg,transparent,var(--pw-color));opacity:0;animation:vp-streak .53s cubic-bezier(.3,.18,.8,1) var(--pw-delay) both}
+.vp-warp-label{position:relative;display:grid;gap:7px;text-align:center;max-width:76%;padding:14px 20px;border:1px solid #93e3ff66;border-radius:12px;background:#071b31ca;color:#effbff;box-shadow:0 0 25px #50d9ff44;animation:vp-label .55s ease-out both}
+.vp-warp-label small,.vp-warp-label span{font-size:clamp(9px,1.2vw,14px);letter-spacing:.16em;color:#a8dff7}.vp-warp-label strong{font-size:clamp(24px,5vw,64px);overflow-wrap:anywhere;line-height:1.1}
+@keyframes vp-warp-fade{0%{opacity:.88}32%{opacity:.7}100%{opacity:0;visibility:hidden}}
+@keyframes vp-ring-expand{0%{opacity:.7;transform:scale(.35)}100%{opacity:0;transform:scale(8)}}
+@keyframes vp-streak{0%{opacity:0;transform:rotate(var(--pw-angle)) translateX(2vmin) scaleX(.15)}30%{opacity:.75}100%{opacity:0;transform:rotate(var(--pw-angle)) translateX(72vmin) scaleX(2.6)}}
+@keyframes vp-label{0%{opacity:0;transform:scale(.9)}20%{opacity:1;transform:scale(1)}70%{opacity:.65}100%{opacity:0;transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.vu-profile-warp{display:none!important}}
