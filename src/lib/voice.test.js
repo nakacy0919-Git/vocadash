@@ -112,3 +112,19 @@ test('voice resolver can read every canonical original vocabulary sense and requ
  for(const [k] of index){const item=await resolveVocabularyEntry(k,{getDrafts:async()=>index});assert.ok(item?.meaning,k);}
  for(const k of ['beauty','sad','accelerator']){const item=await resolveVocabularyEntry(k,{lookup:lookupUniverse,getDrafts:async()=>index});assert.ok(item?.word,k+' must resolve');}
 });
+
+import {voiceCandidateChoice,nextVoiceWords,recognizedSearchTerms} from './voice.js';
+test('successive Universe searches accept Show me without a wake word even in standby',()=>{
+ for(const word of ['beauty','sad','accelerator','resilience'])for(const phase of ['active','standby'])assert.deepEqual(routeVoice(['Show me '+word],phase,{universeOpen:true}),{kind:'command',command:'Show me '+word});
+ assert.equal(routeVoice(['Show me beauty'],'standby'),null);assert.equal(routeVoice(['Show me beauty'],'off',{universeOpen:true}),null);assert.equal(routeVoice(['I like beauty'],'standby',{universeOpen:true}),null);
+});
+test('only displayed candidates may be selected by voice or option number',()=>{
+ const candidates=['beautiful','beautify','gorgeous','pretty'];
+ for(const [utterance,word] of [['Beautiful','beautiful'],['Choose beautify','beautify'],['Number three','gorgeous'],['Option 4','pretty']])assert.deepEqual(routeVoice([utterance],'standby',{universeOpen:true,candidates}),{kind:'command',command:'Show me '+word});
+ assert.equal(routeVoice(['beautify'],'standby',{universeOpen:true,candidates:[]}),null);assert.equal(routeVoice(['number five'],'standby',{universeOpen:true,candidates}),null);assert.equal(routeVoice(['beautiful'],'off',{universeOpen:true,candidates}),null);
+ assert.equal(voiceCandidateChoice('back',['back']),null);assert.equal(voiceCandidateChoice('choose back',['back']),'back');assert.equal(routeVoice(['back'],'standby',{universeOpen:true,candidates:['back']}).command,'back');
+});
+test('predictions use recognition alternatives and authored relations without duplicates',()=>{
+ assert.deepEqual(nextVoiceWords('beauty',['Beauty','beautiful','BEAUTIFUL'],[{word:'beautify',type:'family'},{word:'gorgeous',type:'synonym'},{word:'Beautiful',type:'related'},{word:'pretty',type:'synonym'},{word:'ugly',type:'contrast'}]),['beautiful','gorgeous','pretty','beautify']);
+ assert.deepEqual(recognizedSearchTerms(['Show me beauty','Dash show me beautiful','back','noise']),['beauty','beautiful']);
+});
