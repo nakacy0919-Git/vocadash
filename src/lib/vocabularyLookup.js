@@ -2,7 +2,6 @@ import {lookupUniverse,universeEntries} from './universe.js';
 import {resolveVocabularyEntry,suggestVoiceWords,wordCandidates} from './voice.js';
 import {loadDraftRecords} from './draftCorpus.js';
 let draftPromise,readyDraftIndex;
-const profileCache=new Map();
 export const normalizeKey=x=>String(x||'').toLowerCase().trim().replace(/\s+/g,' ');
 export function draftAliases(head){const exact=[normalizeKey(head),...String(head||'').split('/').map(normalizeKey)];return [...new Set([...exact,...exact.map(k=>k.replace(/^[“"'‘]+|[”"'’?.!,]+$/g,''))].filter(Boolean))];}
 function draftIndex(){if(!draftPromise){draftPromise=loadDraftRecords().then(records=>{const index=new Map();for(const r of records){for(const key of draftAliases(r.headword)){const list=index.get(key)||[];list.push(r);index.set(key,list);}}readyDraftIndex=index;return index;}).catch(e=>{draftPromise=null;throw e;});}return draftPromise;}
@@ -21,11 +20,7 @@ function profileFromIndex(raw,words,seed,index){
  return null;
 }
 export function peekVocabularyProfile(raw,{words=[],seed=null}={}){
- const key=normalizeKey(raw);
- const cached=profileCache.get(key);if(cached)return cached;
- const complete=profileFromIndex(raw,words,seed,readyDraftIndex);
- if(complete){profileCache.set(key,complete);return complete;}
- return null;
+ return profileFromIndex(raw,words,seed,readyDraftIndex);
 }
 export function initialVocabularyProfile(raw,{words=[],seed=null}={}){
  const complete=peekVocabularyProfile(raw,{words,seed});if(complete)return complete;
@@ -37,11 +32,9 @@ export function initialVocabularyProfile(raw,{words=[],seed=null}={}){
  return null;
 }
 export async function findVocabularyProfile(raw,{words=[],seed=null,resolveVocabulary}={}){
- const key=normalizeKey(raw),cached=peekVocabularyProfile(raw,{words,seed});if(cached)return cached;
+ const cached=peekVocabularyProfile(raw,{words,seed});if(cached)return cached;
  const drafts=await draftIndex().catch(()=>null);
- const complete=profileFromIndex(raw,words,seed,drafts);if(complete){profileCache.set(key,complete);return complete;}
+ const complete=profileFromIndex(raw,words,seed,drafts);if(complete)return complete;
  const item=initialVocabularyProfile(raw,{words,seed})||await resolveVocabulary?.(raw);
- // Do not cache a partial profile after a failed canonical load.
- if(drafts&&item)profileCache.set(key,item);
  return item||null;
 }
