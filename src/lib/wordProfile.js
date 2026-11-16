@@ -14,3 +14,20 @@ export function profilePages(entry,perPage=2){
 }
 export function pushProfileHistory(history,screen){return [...history.slice(-49),screen];}
 export function popProfileHistory(history){return {screen:history.at(-1)||null,remaining:history.slice(0,-1)};}
+
+// Screen budgets depend on the profile's actual available area (not just device width).
+export function profileLayout(width=1024,height=650){
+ const portrait=width<760, tight=height<470, tiny=height<320||width<480;
+ return {portrait,tight,tiny,examples:tiny||tight?1:2,previewTerms:tiny?1:tight?2:3,detailTerms:tiny?3:tight?4:portrait?6:8};
+}
+// Prefer sense-specific terms. If missing, label word-level links separately.
+export function profileRelationRows(senseRows,headRows){
+ const own=profileTerms(senseRows),head=profileTerms(headRows),seen=new Set(own.map(row=>row.word.toLowerCase()));
+ return [...own.map(row=>({...row,headOnly:false})),...head.filter(row=>!seen.has(row.word.toLowerCase())).map(row=>({...row,headOnly:true}))];
+}
+export function profileTextPages(text,limit=300){
+ const chars=Array.from(String(text||'')),pages=[];let i=0;
+ limit=Math.max(40,Number(limit)||300);
+ while(i<chars.length){let end=Math.min(i+limit,chars.length);if(end<chars.length){let j=end;while(j>i+limit*.7&&!/\s/.test(chars[j-1]))j--;if(j>i+limit*.7)end=j;}pages.push(chars.slice(i,end).join('').trim());i=end;}
+ return pages.length?pages:[''];
+}
