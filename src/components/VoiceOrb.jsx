@@ -49,7 +49,7 @@ export default function VoiceOrb({visible=false,supports=true,status,onStart,onC
  },[enabled,full,meter]);
  if(!visible&&!enabled&&!notice&&!suggestions.length)return null;
  const state=busy?'thinking':phase==='standby'?'standby':micState;
- const label=!enabled?'Dash Assistant':busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Dash Assistant';
+ const label=!enabled?'Dash Assistant':micState==='model'?'Playing model audio…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Dash Assistant';
  return <div className={'vd-orb-overlay '+(full?'vd-orb-full ':'vd-orb-compact ')+'vd-orb-'+state}>
   {(enabled||full)&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
   {full&&<canvas ref={cinematic} className="vd-orb-canvas vd-orb-cinematic" aria-hidden="true"/>}
