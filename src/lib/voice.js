@@ -154,4 +154,16 @@ export async function resolveVocabularyEntry(raw,{words=[],lookup=()=>null,getDr
 // A deliberately requested navigation must not queue behind a slow vocabulary lookup.
 export function isUrgentVoiceNavigation(kind,universeOpen){return kind==='dashHome'||kind==='close'||kind==='stop'||(universeOpen&&['back','previous'].includes(kind));}
 export function isAppleTouchDevice(ua='',platform='',touchPoints=0){return /iPhone|iPad|iPod/i.test(ua)||(platform==='MacIntel'&&touchPoints>1);}
-export function voiceRestartDelay(failures=0){return Math.min(800,80*Math.pow(2,Math.max(0,failures)));}
+export function voiceRestartDelay(failures=0){return Math.min(800,40*Math.pow(2,Math.max(0,failures)));}
+
+// Preload only complete explicit queries. Never execute interim text (Back may become Back home).
+export function speculativeVoiceWord(raw){
+ const text=String(raw||'').trim();const parsed=parseVoice(extractWake(text)?.command||text);
+ if(parsed.kind!=='search'||!parsed.value)return '';
+ const word=parsed.value.trim();
+ if(word.split(/\s+/).length!==1||! /^[a-z][a-z'-]{1,48}$/i.test(word)||/^(?:the|an|a|word|example|examples|sentence|meaning|definition|please)$/i.test(word))return '';
+ return word.toLowerCase();
+}
+export function supersedesVoiceLookup(kind,value,universeOpen){
+ return isUrgentVoiceNavigation(kind,universeOpen)||opensVoiceUniverse(kind,value)||kind==='back';
+}
