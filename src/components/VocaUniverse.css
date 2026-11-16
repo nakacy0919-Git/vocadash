@@ -208,3 +208,24 @@
 
 /* Profile content is immediately readable: keep the dramatic streaks at the perimeter; clear the title quickly. */
 .vu-profile-warp{background:transparent;animation:vp-warp-fade .42s ease-out both}.vp-warp-ring{animation-duration:.36s}.vp-warp-ring-alt{animation-delay:.025s}.vu-profile-warp i{animation-duration:.34s}.vp-warp-label{animation:vp-label .19s ease-out both;animation-delay:0s;background:#071b31a6}.vu-profile-warp .vp-warp-label{pointer-events:none}@keyframes vp-warp-fade{from{opacity:.78}to{opacity:0;visibility:hidden}}@keyframes vp-label{0%{opacity:.8;transform:scale(.96)}30%{opacity:.65;transform:scale(1)}100%{opacity:0;visibility:hidden;transform:scale(1.02)}}
+
+/* Visual travel runs in parallel with data and never blocks input. */
+.vu-warp{animation:vu-warp-out .58s cubic-bezier(.2,.65,.25,1) both;background:radial-gradient(ellipse at center,#497ebc26 0%,#0d294b1f 38%,transparent 75%)}
+.vu-warp-core{animation-duration:.54s;box-shadow:0 0 35px #67e8f97a}
+.vu-warp i{animation-duration:.47s;animation-delay:var(--vu-delay)!important}
+@keyframes vu-warp-out{0%{opacity:.12}22%{opacity:.84}65%{opacity:.45}100%{opacity:0;visibility:hidden}}
+.vu-profile-warp{animation:vp-warp-fade .72s ease-out both;background:radial-gradient(ellipse at center,#397bba26,transparent 65%)}
+.vp-warp-ring{animation-duration:.66s}.vp-warp-ring-alt{animation-delay:.045s}.vu-profile-warp i{animation-duration:.53s}
+.vp-warp-label{animation:vp-label .56s cubic-bezier(.18,.7,.25,1) both;background:#071b31b5}
+@keyframes vp-warp-fade{0%{opacity:.12}20%{opacity:.85}52%{opacity:.55}100%{opacity:0;visibility:hidden}}
+@keyframes vp-label{0%{opacity:0;transform:scale(.91) translateY(5px)}25%{opacity:.95;transform:scale(1) translateY(0)}62%{opacity:.75;transform:scale(1.01)}100%{opacity:0;visibility:hidden;transform:scale(1.055)}}
+.vu-dialog .vu-profile .vp-summary,.vu-dialog .vu-profile .vp-content{animation:vp-soft-arrival .52s cubic-bezier(.16,.75,.25,1) both}
+@keyframes vp-soft-arrival{from{opacity:.52;transform:translate3d(0,7px,0) scale(.991)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+.vu-dialog .vu-node{animation:vu-fast-node .38s cubic-bezier(.16,.75,.25,1) both}
+.vu-center{animation:vu-fast-center .36s cubic-bezier(.16,.75,.25,1) both}
+@keyframes vu-fast-node{from{opacity:.55;scale:.94}to{opacity:1;scale:1}}
+@keyframes vu-fast-center{from{opacity:.6;scale:.95}to{opacity:1;scale:1}}
+.vu-dialog.vu-instant-back .vu-node,.vu-dialog.vu-instant-back .vu-center,.vu-dialog.vu-instant-back .vu-profile .vp-summary,.vu-dialog.vu-instant-back .vu-profile .vp-content{animation:none!important}
+.vu-live-indicator[data-state="model"]{background:#78dfff;box-shadow:0 0 10px #78dfff8a}
+.vu-live-model-icon{display:inline-flex;align-items:center;color:#9de2ff;vertical-align:middle}
+@media(prefers-reduced-motion:reduce){.vu-warp,.vu-profile-warp{display:none!important}.vu-dialog .vu-node,.vu-center,.vu-dialog .vu-profile .vp-summary,.vu-dialog .vu-profile .vp-content{animation:none!important}}
