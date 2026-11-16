@@ -205,3 +205,6 @@
 @keyframes vu-warp-out{from{opacity:.3}to{opacity:0;visibility:hidden}}
 .vu-dialog.vu-instant-back .vu-node,.vu-dialog.vu-instant-back .vu-center{animation:none!important}
 @media(prefers-reduced-motion:reduce){.vu-warp,.vu-profile-warp{display:none!important}.vu-dialog .vu-node,.vu-center{animation:none!important}}
+
+/* Profile content is immediately readable: keep the dramatic streaks at the perimeter; clear the title quickly. */
+.vu-profile-warp{background:transparent;animation:vp-warp-fade .42s ease-out both}.vp-warp-ring{animation-duration:.36s}.vp-warp-ring-alt{animation-delay:.025s}.vu-profile-warp i{animation-duration:.34s}.vp-warp-label{animation:vp-label .19s ease-out both;animation-delay:0s;background:#071b31a6}.vu-profile-warp .vp-warp-label{pointer-events:none}@keyframes vp-warp-fade{from{opacity:.78}to{opacity:0;visibility:hidden}}@keyframes vp-label{0%{opacity:.8;transform:scale(.96)}30%{opacity:.65;transform:scale(1)}100%{opacity:0;visibility:hidden;transform:scale(1.02)}}
