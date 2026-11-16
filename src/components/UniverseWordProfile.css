@@ -121,3 +121,20 @@
 .vp-single.vp-tight .vp-sound svg{width:18px;height:18px}
 @container(max-width:480px){.vp-single .vp-category-icon{display:none}.vp-single .vp-lexical-group .vp-card-heading h2{font-size:11px}.vu-dialog .vp-single .vp-term{padding:4px 5px;font-size:11px}.vp-single .vp-portrait .vp-examples{display:flex}}
 @media(prefers-reduced-motion:reduce){.vp-sound .vp-sound-wave,.vp-single button{animation:none!important;transition:none!important}}
+
+/* Optional authored illustrations occupy a side column, not an extra scroll region. */
+.vp-single .vp-word-copy,.vp-single .vp-example-copy{display:flex;flex-direction:column;gap:inherit;min-width:0;min-height:0;justify-content:center}
+.vp-single .vp-word-card.vp-with-concept,.vp-single .vp-example.vp-with-example-image{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,38%);align-items:center;gap:clamp(6px,1cqw,16px)}
+.vp-single .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:clamp(19px,min(3.6cqw,7cqh),50px)}
+.vp-single .vp-example.vp-with-example-image .vp-example-en{font-size:clamp(14px,min(2.1cqw,3.6cqh),24px)}
+.vu-dialog .vp-single .vp-visual-thumb{position:relative;display:grid;place-items:center;padding:0;min-width:0;min-height:0;width:100%;max-height:100%;aspect-ratio:16/9;border:1px solid #6ea5c17a;background:#0a1728;border-radius:10px;overflow:hidden;align-self:center}
+.vp-single .vp-visual-thumb img{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+.vp-single .vp-visual-thumb span{position:absolute;bottom:5px;right:5px;background:#071422c9;color:#d6f1ff;border:1px solid #81c8e65c;border-radius:5px;font-size:12px;padding:1px 5px}
+.vp-single .vp-expanded-visual{height:100%;width:100%;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.vp-single .vp-expanded-visual img{width:auto;height:auto;max-width:100%;max-height:100%;min-height:0;flex:1 1 auto;object-fit:contain}
+.vp-single .vp-visual-caption{display:flex;align-items:center;gap:12px;flex:none;max-width:100%}
+.vp-single .vp-visual-caption strong{font-size:clamp(15px,2.2cqw,25px);color:#fff}
+.vp-single .vp-visual-caption p{font-size:clamp(12px,1.6cqw,17px);color:#c7dbe8;margin:4px 0 0}
+.vp-single.vp-tight .vp-word-card.vp-with-concept,.vp-single.vp-tight .vp-example.vp-with-example-image{grid-template-columns:minmax(0,1fr) minmax(0,30%);gap:5px}
+.vp-single.vp-tight .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:clamp(17px,3cqw,27px)}
+@container(max-width:480px){.vp-single .vp-word-card.vp-with-concept,.vp-single .vp-example.vp-with-example-image{grid-template-columns:minmax(0,1fr) minmax(0,25%);gap:4px}.vp-single .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:16px}.vp-single .vp-visual-thumb span{font-size:10px;right:1px;bottom:1px;padding:0 2px}}
