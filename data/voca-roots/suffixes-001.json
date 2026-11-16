@@ -1,0 +1,646 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "001",
+  "records": [
+    {
+      "id": "suffix:able",
+      "kind": "suffix",
+      "forms": [
+        "able",
+        "ible"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜できる・〜されうる",
+      "meaningEn": "capable of being",
+      "exampleHeadwords": [
+        "readable",
+        "washable",
+        "portable",
+        "visible"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:less",
+      "kind": "suffix",
+      "forms": [
+        "less"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜がない",
+      "meaningEn": "without",
+      "exampleHeadwords": [
+        "careless",
+        "hopeless",
+        "useless",
+        "homeless"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ful",
+      "kind": "suffix",
+      "forms": [
+        "ful"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜に満ちた・〜のある",
+      "meaningEn": "full of; having",
+      "exampleHeadwords": [
+        "helpful",
+        "careful",
+        "hopeful",
+        "joyful"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ness",
+      "kind": "suffix",
+      "forms": [
+        "ness"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "性質・状態",
+      "meaningEn": "quality; state",
+      "exampleHeadwords": [
+        "kindness",
+        "happiness",
+        "darkness",
+        "weakness"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ity",
+      "kind": "suffix",
+      "forms": [
+        "ity",
+        "ty"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "性質・状態",
+      "meaningEn": "quality; state",
+      "exampleHeadwords": [
+        "activity",
+        "ability",
+        "flexibility",
+        "visibility"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ment",
+      "kind": "suffix",
+      "forms": [
+        "ment"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "行為・結果・状態",
+      "meaningEn": "action; result",
+      "exampleHeadwords": [
+        "development",
+        "improvement",
+        "agreement",
+        "achievement"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ion",
+      "kind": "suffix",
+      "forms": [
+        "ion",
+        "tion",
+        "sion",
+        "ation"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "行為・過程・結果",
+      "meaningEn": "action; process",
+      "exampleHeadwords": [
+        "creation",
+        "education",
+        "decision",
+        "discussion"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ance",
+      "kind": "suffix",
+      "forms": [
+        "ance",
+        "ence"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "状態・行為",
+      "meaningEn": "state; action",
+      "exampleHeadwords": [
+        "appearance",
+        "performance",
+        "existence",
+        "dependence"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:er-agent",
+      "kind": "suffix",
+      "forms": [
+        "er"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "〜する人・もの",
+      "meaningEn": "agent; instrument",
+      "exampleHeadwords": [
+        "teacher",
+        "writer",
+        "worker",
+        "printer"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:or-agent",
+      "kind": "suffix",
+      "forms": [
+        "or"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "〜する人・もの",
+      "meaningEn": "agent; instrument",
+      "exampleHeadwords": [
+        "actor",
+        "visitor",
+        "creator",
+        "translator"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ist",
+      "kind": "suffix",
+      "forms": [
+        "ist"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "専門家・実践者・支持者",
+      "meaningEn": "practitioner; believer",
+      "exampleHeadwords": [
+        "artist",
+        "scientist",
+        "journalist",
+        "environmentalist"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ian",
+      "kind": "suffix",
+      "forms": [
+        "ian"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "専門家・関係者",
+      "meaningEn": "specialist; associated person",
+      "exampleHeadwords": [
+        "musician",
+        "historian",
+        "librarian",
+        "politician"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ee",
+      "kind": "suffix",
+      "forms": [
+        "ee"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "行為を受ける人など",
+      "meaningEn": "participant often receiving action",
+      "exampleHeadwords": [
+        "employee",
+        "interviewee",
+        "trainee",
+        "nominee"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ship",
+      "kind": "suffix",
+      "forms": [
+        "ship"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "関係・地位・技能",
+      "meaningEn": "relationship; status",
+      "exampleHeadwords": [
+        "friendship",
+        "leadership",
+        "membership",
+        "partnership"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:hood",
+      "kind": "suffix",
+      "forms": [
+        "hood"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "状態・時期",
+      "meaningEn": "state; period",
+      "exampleHeadwords": [
+        "childhood",
+        "adulthood",
+        "parenthood",
+        "brotherhood"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ism",
+      "kind": "suffix",
+      "forms": [
+        "ism"
+      ],
+      "resultPartOfSpeech": "noun",
+      "meaningJa": "思想・制度・傾向",
+      "meaningEn": "system; doctrine",
+      "exampleHeadwords": [
+        "capitalism",
+        "socialism",
+        "realism",
+        "optimism"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ize",
+      "kind": "suffix",
+      "forms": [
+        "ize",
+        "ise"
+      ],
+      "resultPartOfSpeech": "verb",
+      "meaningJa": "〜にする・〜化する",
+      "meaningEn": "make; become",
+      "exampleHeadwords": [
+        "modernize",
+        "organize",
+        "realize",
+        "industrialize"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ify",
+      "kind": "suffix",
+      "forms": [
+        "ify",
+        "fy"
+      ],
+      "resultPartOfSpeech": "verb",
+      "meaningJa": "〜にする",
+      "meaningEn": "make",
+      "exampleHeadwords": [
+        "simplify",
+        "clarify",
+        "purify",
+        "beautify"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:en-verb",
+      "kind": "suffix",
+      "forms": [
+        "en"
+      ],
+      "resultPartOfSpeech": "verb",
+      "meaningJa": "〜にする・〜になる",
+      "meaningEn": "make; become",
+      "exampleHeadwords": [
+        "strengthen",
+        "widen",
+        "deepen",
+        "soften"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ous",
+      "kind": "suffix",
+      "forms": [
+        "ous",
+        "ious"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜の性質を持つ",
+      "meaningEn": "having a quality",
+      "exampleHeadwords": [
+        "dangerous",
+        "famous",
+        "curious",
+        "poisonous"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ive",
+      "kind": "suffix",
+      "forms": [
+        "ive"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜する性質・傾向",
+      "meaningEn": "having a tendency",
+      "exampleHeadwords": [
+        "active",
+        "creative",
+        "productive",
+        "protective"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:al-adj",
+      "kind": "suffix",
+      "forms": [
+        "al"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜に関する",
+      "meaningEn": "relating to",
+      "exampleHeadwords": [
+        "national",
+        "personal",
+        "cultural",
+        "educational"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ic",
+      "kind": "suffix",
+      "forms": [
+        "ic"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜に関する・〜的",
+      "meaningEn": "relating to",
+      "exampleHeadwords": [
+        "historic",
+        "atomic",
+        "poetic",
+        "scientific"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ical",
+      "kind": "suffix",
+      "forms": [
+        "ical"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜に関する・〜的",
+      "meaningEn": "relating to",
+      "exampleHeadwords": [
+        "historical",
+        "biological",
+        "political",
+        "practical"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:y",
+      "kind": "suffix",
+      "forms": [
+        "y"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜の多い・〜の性質",
+      "meaningEn": "having; characterized by",
+      "exampleHeadwords": [
+        "rainy",
+        "cloudy",
+        "windy",
+        "dirty"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ish",
+      "kind": "suffix",
+      "forms": [
+        "ish"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜のような・やや〜",
+      "meaningEn": "somewhat; like",
+      "exampleHeadwords": [
+        "childish",
+        "selfish",
+        "greenish",
+        "foolish"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:like",
+      "kind": "suffix",
+      "forms": [
+        "like"
+      ],
+      "resultPartOfSpeech": "adjective",
+      "meaningJa": "〜に似た",
+      "meaningEn": "resembling",
+      "exampleHeadwords": [
+        "childlike",
+        "lifelike",
+        "dreamlike",
+        "businesslike"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ly-adverb",
+      "kind": "suffix",
+      "forms": [
+        "ly"
+      ],
+      "resultPartOfSpeech": "adverb",
+      "meaningJa": "〜の仕方で",
+      "meaningEn": "in a manner",
+      "exampleHeadwords": [
+        "quickly",
+        "carefully",
+        "quietly",
+        "clearly"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:ward",
+      "kind": "suffix",
+      "forms": [
+        "ward",
+        "wards"
+      ],
+      "resultPartOfSpeech": "adverb/adjective",
+      "meaningJa": "〜の方向へ",
+      "meaningEn": "in the direction of",
+      "exampleHeadwords": [
+        "forward",
+        "backward",
+        "upward",
+        "downward"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    },
+    {
+      "id": "suffix:wise",
+      "kind": "suffix",
+      "forms": [
+        "wise"
+      ],
+      "resultPartOfSpeech": "adverb/adjective",
+      "meaningJa": "〜の方向・やり方で",
+      "meaningEn": "in a direction or manner",
+      "exampleHeadwords": [
+        "clockwise",
+        "counterclockwise",
+        "lengthwise",
+        "sidewise"
+      ],
+      "status": "draft-unreviewed",
+      "reviewScope": "individual-etymology-and-pedagogical-fit",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ]
+    }
+  ]
+}
