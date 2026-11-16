@@ -159,37 +159,40 @@ function ProgressMedallion({ value, title, detail, variant }) {
   const percent = Math.max(0, Math.min(100, Number(value) || 0));
   const circumference = 2 * Math.PI * 67;
   const dash = circumference * percent / 100;
-  const id = variant === 'reading' ? 'vd-reading' : 'vd-mastery';
+  const reading = variant === 'reading';
+  const id = reading ? 'vd-reading' : 'vd-mastery';
+  const accent = reading ? '#5ce9bf' : '#83baff';
+  const endAngle = (percent / 100) * Math.PI * 2 - Math.PI / 2;
   return (
-    <div className={'vd-progress-medallion '+(variant === 'reading' ? 'is-reading' : 'is-mastery')}
+    <div className={'vd-progress-medallion '+(reading ? 'is-reading' : 'is-mastery')}
       role="meter" aria-label={title} aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}>
       <div className="vd-medallion-visual">
         <svg className="vd-medallion-svg" viewBox="0 0 180 180" aria-hidden="true">
           <defs>
             <linearGradient id={id+'-fill'} x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor={variant === 'reading' ? '#0e9b83' : '#425ed5'}/>
-              <stop offset="47%" stopColor={variant === 'reading' ? '#43eac0' : '#7dccff'}/>
-              <stop offset="100%" stopColor={variant === 'reading' ? '#0fba89' : '#5971ec'}/>
+              <stop offset="0%" stopColor={reading ? '#178f83' : '#5067da'}/>
+              <stop offset="55%" stopColor={accent}/>
+              <stop offset="100%" stopColor={reading ? '#b2ffe0' : '#bee4ff'}/>
             </linearGradient>
-            <linearGradient id={id+'-glass'} x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#fff" stopOpacity=".78"/>
-              <stop offset="100%" stopColor="#fff" stopOpacity="0"/>
-            </linearGradient>
-            <radialGradient id={id+'-face'} cx="35%" cy="15%" r="85%">
-              <stop offset="0%" stopColor="#ffffff"/>
-              <stop offset="100%" stopColor={variant === 'reading' ? '#f1faf7' : '#f1f5ff'}/>
+            <radialGradient id={id+'-face'} cx="35%" cy="12%" r="95%">
+              <stop offset="0%" stopColor={reading ? '#174338' : '#1b365b'}/>
+              <stop offset="100%" stopColor="#0b1b2e"/>
             </radialGradient>
+            <linearGradient id={id+'-edge'} x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor={accent} stopOpacity=".46"/>
+              <stop offset="60%" stopColor={accent} stopOpacity=".12"/>
+              <stop offset="100%" stopColor={accent} stopOpacity=".32"/>
+            </linearGradient>
           </defs>
-          <circle cx="90" cy="90" r="79" fill="none" stroke="#fff" strokeWidth="2" opacity=".85"/>
-          <circle cx="90" cy="90" r="67" fill="none" stroke="#dce6f3" strokeWidth="15" />
-          <circle cx="90" cy="90" r="67" fill="none" stroke={'url(#'+id+'-fill)'} strokeWidth="15"
+          <circle cx="90" cy="90" r="84" fill="none" stroke={accent} strokeWidth=".8" opacity=".14"/>
+          <circle cx="90" cy="90" r="78" fill="none" stroke={accent} strokeWidth="2" strokeDasharray="1.2 7" opacity=".34"/>
+          <circle cx="90" cy="90" r="67" fill="none" stroke="#263c52" strokeWidth="10"/>
+          {percent>0&&<circle cx="90" cy="90" r="67" fill="none" stroke={'url(#'+id+'-fill)'} strokeWidth="10"
             strokeLinecap="round" strokeDasharray={dash+' '+circumference}
-            transform="rotate(-90 90 90)" className="vd-medallion-progress"/>
-          <circle cx="90" cy="90" r="67" fill="none" stroke={'url(#'+id+'-glass)'}
-            strokeWidth="5" strokeDasharray={dash+' '+circumference} transform="rotate(-90 90 90) translate(0 -3)"
-            className="vd-medallion-reflection"/>
-          <circle cx="90" cy="90" r="54" fill={'url(#'+id+'-face)'} stroke="#fff" strokeWidth="2"/>
-          <ellipse cx="90" cy="65" rx="43" ry="17" fill="#fff" opacity=".4"/>
+            transform="rotate(-90 90 90)" className="vd-medallion-progress"/>}
+          <circle cx="90" cy="90" r="55" fill={'url(#'+id+'-face)'} stroke={'url(#'+id+'-edge)'} strokeWidth="1.5"/>
+          <circle cx="90" cy="90" r="50" fill="none" stroke={accent} strokeWidth=".7" opacity=".12"/>
+          <circle cx={90+67*Math.cos(endAngle)} cy={90+67*Math.sin(endAngle)} r={percent>0?4.5:3} fill={accent} opacity={percent>0?1:.7} className="vd-medallion-marker"/>
         </svg>
         <div className="vd-medallion-value">
           <strong>{percent}<span>%</span></strong>
