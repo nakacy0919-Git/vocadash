@@ -4,13 +4,14 @@ import {profilePages} from '../lib/wordProfile.js';
 import {posLabel} from '../lib/courseLibrary.js';
 import {assetImage} from '../lib/learning.js';
 import './UniverseWordProfile.css';
-export default function UniverseWordProfile({request,words,resolveVocabulary,onBack,onSpeak,sound,page,onPage,onExplore,onReady}){
+export default function UniverseWordProfile({request,words,resolveVocabulary,onBack,onSpeak,sound,page,onPage,onExplore,onReady,onPageData}){
  const [data,setData]=useState(null),[error,setError]=useState(false),[compact,setCompact]=useState(false),[badImage,setBadImage]=useState(false);
  const panel=useRef(null),readyRef=useRef(onReady);readyRef.current=onReady;
  useEffect(()=>{let alive=true;setData(null);setError(false);setBadImage(false);findVocabularyProfile(request.word,{words,seed:request.seed,resolveVocabulary}).then(result=>{if(alive){setData(result);if(result)readyRef.current?.(result);else setError(true);}}).catch(()=>{if(alive)setError(true);});return()=>{alive=false;};},[request.word,request.seed,words,resolveVocabulary]);
  useEffect(()=>{const el=panel.current;if(!el)return;const fit=()=>{const rect=el.getBoundingClientRect();setCompact(rect.width<650||rect.height<390);};fit();if(typeof ResizeObserver==='undefined'){window.addEventListener('resize',fit);return()=>window.removeEventListener('resize',fit);}const observer=new ResizeObserver(fit);observer.observe(el);return()=>observer.disconnect();},[]);
  const pages=data?profilePages(data,compact?1:2):[],index=Math.max(0,Math.min(page,Math.max(0,pages.length-1))),p=pages[index];
  useEffect(()=>{if(data&&index!==page)onPage(index);},[data,index,page,onPage]);
+ useEffect(()=>{onPageData?.(p||null);},[data,index,compact]);
  const pronounce=text=>{if(sound&&text)onSpeak({word:text});};
  return <section ref={panel} className="vu-profile" aria-label={request.word+' の語義と例文'}>
  <header className="vp-bar"><button onClick={onBack}>← Back</button><span>VOCABULARY PROFILE / WORD &amp; EXAMPLES</span><button disabled={!data} onClick={()=>onExplore(data)}>◉ Universe</button></header>
