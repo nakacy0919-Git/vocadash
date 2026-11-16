@@ -145,3 +145,25 @@ test('word profile pagination preserves bilingual examples and distinct sense id
 test('Back restores the last map or profile and its page rather than jumping home',()=>{
  const map={center:{word:'beauty'},filter:'family',page:2,profile:null};const profile={center:{word:'beauty'},profile:{word:'accelerator'},profilePage:1};const history=pushProfileHistory(pushProfileHistory([],map),profile);let a=popProfileHistory(history);assert.deepEqual(a.screen,profile);a=popProfileHistory(a.remaining);assert.deepEqual(a.screen,map);assert.equal(popProfileHistory(a.remaining).screen,null);
 });
+
+import {isUrgentVoiceNavigation,isAppleTouchDevice,voiceRestartDelay} from './voice.js';
+test('Back and Back home can preempt pending searches without changing explicit word search',()=>{
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Back').kind,true),true);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Back home').kind,false),true);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Show me back').kind,true),false);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Show me beautiful').kind,true),false);
+ assert.equal(isUrgentVoiceNavigation('back',false),false);
+});
+test('iPadOS desktop user-agent and iPhone use a single microphone path',()=>{
+ assert.equal(isAppleTouchDevice('Mozilla iPad','iPad',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla Macintosh','MacIntel',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla iPhone','iPhone',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla Macintosh','MacIntel',0),false);
+ assert.equal(isAppleTouchDevice('Windows Chrome','Win32',0),false);
+});
+test('recognition reconnects promptly with backoff after failures',()=>{
+ assert.equal(voiceRestartDelay(0),80);
+ assert.equal(voiceRestartDelay(1),160);
+ assert.equal(voiceRestartDelay(2),320);
+ assert.equal(voiceRestartDelay(10),800);
+});
