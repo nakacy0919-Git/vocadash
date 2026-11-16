@@ -167,3 +167,6 @@ test('recognition reconnects promptly with backoff after failures',()=>{
  assert.equal(voiceRestartDelay(2),320);
  assert.equal(voiceRestartDelay(10),800);
 });
+
+import {profileWarpSamples,PROFILE_WARP_MS} from './profileWarp.js';
+test('profile warp uses a bounded original short sound with smooth endpoints',()=>{const {rate,samples}=profileWarpSamples();assert.equal(samples.length,Math.round(rate*PROFILE_WARP_MS/1000));assert.equal(samples[0],0);assert.ok(Math.abs(samples.at(-1))<.001);assert.ok(samples.some(x=>Math.abs(x)>.1));assert.ok(samples.every(x=>Number.isFinite(x)&&Math.abs(x)<.8));});
