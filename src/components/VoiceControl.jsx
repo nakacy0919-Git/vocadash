@@ -1,11 +1,11 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand,isAppleTouchDevice,voiceRestartDelay,speculativeVoiceWord,supersedesVoiceLookup} from '../lib/voice.js';
+import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand,isAppleTouchDevice,voiceRestartDelay,speculativeVoiceWord,supersedesVoiceLookup,speculativeProfileWord} from '../lib/voice.js';
 import {lookupUniverse,universeEntries,getRelations} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
 import VoiceOrb from './VoiceOrb';
-import {warmVocabularyIndex} from '../lib/vocabularyLookup.js';
+import {warmVocabularyIndex,findVocabularyProfile} from '../lib/vocabularyLookup.js';
 import {unlockProfileWarp,cancelProfileWarp} from '../lib/profileWarp.js';
 import {createVoiceMeter} from '../lib/voiceMeter.js';
 
@@ -165,7 +165,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   r.onresult=e=>{
    if(recognition.current!==r||!wanted.current||suspendRef.current||document.hidden||window.speechSynthesis?.speaking)return;
    const segments=speechSegments(e);
-   if(segments.interim){setInterim(segments.interim);setMicState('speaking');const word=speculativeVoiceWord(segments.interim);clearTimeout(warmTimer.current);if(word&&phaseRef.current==='active')warmTimer.current=setTimeout(()=>warmRef.current?.(word),100);}
+   if(segments.interim){setInterim(segments.interim);setMicState('speaking');const profileWord=speculativeProfileWord(segments.interim);if(profileWord&&phaseRef.current==='active')void findVocabularyProfile(profileWord).catch(()=>{});const word=speculativeVoiceWord(segments.interim);clearTimeout(warmTimer.current);if(word&&phaseRef.current==='active')warmTimer.current=setTimeout(()=>warmRef.current?.(word),100);}
    if(!segments.final.length)return;
    clearTimeout(warmTimer.current);setInterim('');
    for(const alternatives of segments.final){
