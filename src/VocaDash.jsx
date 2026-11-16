@@ -1,4 +1,5 @@
 import {playProfileWarp,cancelProfileWarp} from './lib/profileWarp.js';
+import {playModelSpeech,cancelModelSpeech} from './lib/modelSpeech.js';
 import {recordClassroom, startQuestion} from './classroom/client';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
@@ -285,7 +286,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   useEffect(() => { if (!safeSave(store, storageKey)) setSavedError(true); }, [store, storageKey]);
   const stopAudio = useCallback(() => {
     if (audio.current) { audio.current.pause(); audio.current = null; }
-    if (typeof window !== 'undefined') window.speechSynthesis?.cancel();
+    if (typeof window !== 'undefined') cancelModelSpeech();
   }, []);
   useEffect(() => () => { clearTimeout(quizTimer.current); stopAudio(); }, [stopAudio]);
   const openUniverse = (item,filter='all') => {
@@ -404,10 +405,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     stopAudio();
     const value = sentence ? item.english : item.word;
     const fallback = () => {
-      if (!window.speechSynthesis) return;
-      const speech = new SpeechSynthesisUtterance(value);
-      speech.lang = 'en-US'; speech.rate = Number(store.settings.speed) || 0.85;
-      window.speechSynthesis.speak(speech);
+      playModelSpeech(value,{rate:Number(store.settings.speed)||0.85});
     };
     if (sentence && item.audio) {
       const player = new Audio(encodeURI(item.audio));

@@ -12,6 +12,11 @@ export function extractWake(raw,mode='both') {
 
 export function parseVoice(raw) {
  const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ // Natural requests for a full lexical profile, not just a map.
+ const natural=t.match(/^(?:(?:i (?:want|need|would like) to|i'd like to|let's|lets|let me)\s+)?(?:take a look at|have a look at|look at|learn about|learn more about|know more about|see details (?:of|for|about)|see (?:the )?(?:word )?(?:profile|details) (?:of|for)|show (?:me )?(?:the )?(?:word )?(?:profile|details|information) (?:of|for|about))\s+(.+)$/);
+ if(natural)return {kind:'examples',value:natural[1].replace(/^(?:the word|the term)\s+/,'')};
+ const details=t.match(/^(?:show(?: me)?|give me|tell me) (?:the )?(?:synonyms?|antonyms?|pronunciation|cefr level|definition|meaning|collocations?|word family) (?:of|for) (.+)$/);
+ if(details)return {kind:'examples',value:details[1]};
  // Explicit home requests must not be interpreted as one-step history navigation.
  if(/^(?:(?:so|well|hey|just|okay|ok|please|then|now|let's|lets)\s+)*(?:(?:go|come|take me|bring me)\s+)?back(?:\s+to)?\s+(?:(?:the\s+)?(?:dash(?: assistant)?|voice assistant|assistant)|home(?: screen)?)$/.test(t.replace(/’/g,"'")))return {kind:'dashHome',value:''};
  // Accept natural return phrases, but never interpret a vocabulary query such as 'show me back' as navigation.
