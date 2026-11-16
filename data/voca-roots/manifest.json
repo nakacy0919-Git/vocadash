@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "batch": "002",
+  "batch": "003",
   "createdOn": "2026-11-17",
   "status": "draft-unreviewed",
   "productionEnabled": false,
   "counts": {
-    "roots": 100,
-    "prefixes": 50,
-    "suffixes": 50,
-    "relations": 906,
-    "distinctHeadwords": 866,
-    "matchedRelations": 187,
-    "matchedDistinctHeadwords": 176,
-    "unresolvedRelations": 719,
-    "quizzes": 200,
-    "imagePrompts": 100,
+    "roots": 150,
+    "prefixes": 71,
+    "suffixes": 69,
+    "relations": 1243,
+    "distinctHeadwords": 1180,
+    "matchedRelations": 218,
+    "matchedDistinctHeadwords": 205,
+    "unresolvedRelations": 1025,
+    "quizzes": 290,
+    "imagePrompts": 150,
     "generatedImages": 0
   },
   "targets": {
@@ -48,9 +48,14 @@
     "prefixes-002.json",
     "suffixes-002.json",
     "word-links-002.json",
-    "quizzes-002.json"
+    "quizzes-002.json",
+    "roots-003.json",
+    "prefixes-003.json",
+    "suffixes-003.json",
+    "word-links-003.json",
+    "quizzes-003.json"
   ],
-  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。",
+  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。",
   "batches": [
     {
       "batch": "001",
@@ -79,6 +84,22 @@
         "matchedRelations": 72,
         "matchedDistinctHeadwords": 71,
         "unresolvedRelations": 337,
+        "quizzes": 90,
+        "imagePrompts": 50,
+        "generatedImages": 0
+      }
+    },
+    {
+      "batch": "003",
+      "counts": {
+        "roots": 50,
+        "prefixes": 21,
+        "suffixes": 19,
+        "relations": 337,
+        "distinctHeadwords": 336,
+        "matchedRelations": 31,
+        "matchedDistinctHeadwords": 31,
+        "unresolvedRelations": 306,
         "quizzes": 90,
         "imagePrompts": 50,
         "generatedImages": 0

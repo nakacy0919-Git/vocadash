@@ -1,0 +1,2436 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "003",
+  "records": [
+    {
+      "id": "quiz:root:apt",
+      "morphemeId": "root:apt",
+      "type": "morpheme-meaning",
+      "questionJa": "apt / adapt / adaptation に共通する 語根 apt の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:apt",
+          "labelJa": "適合する・結びつく"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:apt",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:art",
+      "morphemeId": "root:art",
+      "type": "morpheme-meaning",
+      "questionJa": "art / artist / artisan に共通する 語根 art の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:art",
+          "labelJa": "技術・技芸"
+        }
+      ],
+      "answerId": "root:art",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:arm",
+      "morphemeId": "root:arm",
+      "type": "morpheme-meaning",
+      "questionJa": "armament / disarm / armory に共通する 語根 arm の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:arm",
+          "labelJa": "武器・武装"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:arm",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:bell",
+      "morphemeId": "root:bell",
+      "type": "morpheme-meaning",
+      "questionJa": "rebellion / rebel / belligerent に共通する 語根 bell の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:bell",
+          "labelJa": "戦争"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:bell",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cad",
+      "morphemeId": "root:cad",
+      "type": "morpheme-meaning",
+      "questionJa": "accident / incident / coincide に共通する 語根 cad の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:cad",
+          "labelJa": "落ちる・起こる"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:cad",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cand",
+      "morphemeId": "root:cand",
+      "type": "morpheme-meaning",
+      "questionJa": "candle / candid / candidate に共通する 語根 cand の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:cand",
+          "labelJa": "白く輝く"
+        }
+      ],
+      "answerId": "root:cand",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cant",
+      "morphemeId": "root:cant",
+      "type": "morpheme-meaning",
+      "questionJa": "chant / incantation / accent に共通する 語根 cant の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:cant",
+          "labelJa": "歌う"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:cant",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cert",
+      "morphemeId": "root:cert",
+      "type": "morpheme-meaning",
+      "questionJa": "certain / certainty / certify に共通する 語根 cert の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:cert",
+          "labelJa": "確かな・決まった"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:cert",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cid-cut",
+      "morphemeId": "root:cid-cut",
+      "type": "morpheme-meaning",
+      "questionJa": "incision / decide / decision に共通する 語根 cid の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:cid-cut",
+          "labelJa": "切る・打つ"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:cid-cut",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:clar",
+      "morphemeId": "root:clar",
+      "type": "morpheme-meaning",
+      "questionJa": "clear / clarify / clarity に共通する 語根 clar の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:clar",
+          "labelJa": "明るい・明瞭な"
+        }
+      ],
+      "answerId": "root:clar",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:clin",
+      "morphemeId": "root:clin",
+      "type": "morpheme-meaning",
+      "questionJa": "incline / decline / recline に共通する 語根 clin の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:clin",
+          "labelJa": "傾く・曲げる"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:clin",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:clud",
+      "morphemeId": "root:clud",
+      "type": "morpheme-meaning",
+      "questionJa": "include / exclude / conclude に共通する 語根 clud の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:clud",
+          "labelJa": "閉じる"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:clud",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cresc",
+      "morphemeId": "root:cresc",
+      "type": "morpheme-meaning",
+      "questionJa": "increase / decrease / crescent に共通する 語根 cresc の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:cresc",
+          "labelJa": "成長する・増える"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:cresc",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:cub",
+      "morphemeId": "root:cub",
+      "type": "morpheme-meaning",
+      "questionJa": "incubate / incubation / succumb に共通する 語根 cub の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:cub",
+          "labelJa": "横たわる"
+        }
+      ],
+      "answerId": "root:cub",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:culp",
+      "morphemeId": "root:culp",
+      "type": "morpheme-meaning",
+      "questionJa": "culprit / culpable / culpability に共通する 語根 culp の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:culp",
+          "labelJa": "過失・責任"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:culp",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:dorm",
+      "morphemeId": "root:dorm",
+      "type": "morpheme-meaning",
+      "questionJa": "dormant / dormitory / dormancy に共通する 語根 dorm の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:dorm",
+          "labelJa": "眠る"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:dorm",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:dur",
+      "morphemeId": "root:dur",
+      "type": "morpheme-meaning",
+      "questionJa": "durable / duration / endure に共通する 語根 dur の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:dur",
+          "labelJa": "硬い・持続する"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:dur",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:empt",
+      "morphemeId": "root:empt",
+      "type": "morpheme-meaning",
+      "questionJa": "redeem / redemption / exempt に共通する 語根 empt の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:empt",
+          "labelJa": "買う・取る"
+        }
+      ],
+      "answerId": "root:empt",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:err",
+      "morphemeId": "root:err",
+      "type": "morpheme-meaning",
+      "questionJa": "error / erratic / erroneous に共通する 語根 err の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:err",
+          "labelJa": "さまよう・誤る"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:err",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:ferv",
+      "morphemeId": "root:ferv",
+      "type": "morpheme-meaning",
+      "questionJa": "fervent / fervor / fervid に共通する 語根 ferv の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:ferv",
+          "labelJa": "沸く・熱する"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:ferv",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:flor",
+      "morphemeId": "root:flor",
+      "type": "morpheme-meaning",
+      "questionJa": "floral / florist / flora に共通する 語根 flor の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:flor",
+          "labelJa": "花・花が咲く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:flor",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:fug",
+      "morphemeId": "root:fug",
+      "type": "morpheme-meaning",
+      "questionJa": "refuge / refugee / fugitive に共通する 語根 fug の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:fug",
+          "labelJa": "逃げる"
+        }
+      ],
+      "answerId": "root:fug",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:fund-pour",
+      "morphemeId": "root:fund-pour",
+      "type": "morpheme-meaning",
+      "questionJa": "confuse / confusion / diffuse に共通する 語根 fund の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "注ぐ・流し出す"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:fund-pour",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:grav",
+      "morphemeId": "root:grav",
+      "type": "morpheme-meaning",
+      "questionJa": "gravity / grave / aggravate に共通する 語根 grav の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:grav",
+          "labelJa": "重い・重大な"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:grav",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:hab",
+      "morphemeId": "root:hab",
+      "type": "morpheme-meaning",
+      "questionJa": "habit / habitat / inhabit に共通する 語根 hab の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:hab",
+          "labelJa": "持つ・住む"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:hab",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:her",
+      "morphemeId": "root:her",
+      "type": "morpheme-meaning",
+      "questionJa": "adhere / adhesion / cohesion に共通する 語根 her の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:her",
+          "labelJa": "くっつく"
+        }
+      ],
+      "answerId": "root:her",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:hosp",
+      "morphemeId": "root:hosp",
+      "type": "morpheme-meaning",
+      "questionJa": "hospital / hospitality / hostel に共通する 語根 hosp の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:hosp",
+          "labelJa": "客・もてなす人"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:hosp",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:hum",
+      "morphemeId": "root:hum",
+      "type": "morpheme-meaning",
+      "questionJa": "humble / humility / humiliate に共通する 語根 hum の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:hum",
+          "labelJa": "土・低い"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:hum",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:lab",
+      "morphemeId": "root:lab",
+      "type": "morpheme-meaning",
+      "questionJa": "labor / laboratory / elaborate に共通する 語根 lab の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:lab",
+          "labelJa": "労働・努力"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:lab",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:lact",
+      "morphemeId": "root:lact",
+      "type": "morpheme-meaning",
+      "questionJa": "lactose / lactic / lactation に共通する 語根 lact の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:lact",
+          "labelJa": "乳"
+        }
+      ],
+      "answerId": "root:lact",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:lat",
+      "morphemeId": "root:lat",
+      "type": "morpheme-meaning",
+      "questionJa": "lateral / bilateral / unilateral に共通する 語根 lat の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:lat",
+          "labelJa": "側面"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:lat",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:liber",
+      "morphemeId": "root:liber",
+      "type": "morpheme-meaning",
+      "questionJa": "liberty / liberal / liberate に共通する 語根 liber の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:liber",
+          "labelJa": "自由な"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:liber",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:lingu",
+      "morphemeId": "root:lingu",
+      "type": "morpheme-meaning",
+      "questionJa": "linguist / linguistic / bilingual に共通する 語根 lingu の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:lingu",
+          "labelJa": "舌・言語"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:lingu",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:liqu",
+      "morphemeId": "root:liqu",
+      "type": "morpheme-meaning",
+      "questionJa": "liquid / liquefy / liquidity に共通する 語根 liqu の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:liqu",
+          "labelJa": "液体・流れる"
+        }
+      ],
+      "answerId": "root:liqu",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:luc",
+      "morphemeId": "root:luc",
+      "type": "morpheme-meaning",
+      "questionJa": "lucid / elucidate / translucent に共通する 語根 luc の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:luc",
+          "labelJa": "光・輝く"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:luc",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:mar",
+      "morphemeId": "root:mar",
+      "type": "morpheme-meaning",
+      "questionJa": "marine / maritime / submarine に共通する 語根 mar の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:mar",
+          "labelJa": "海"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:mar",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:medi",
+      "morphemeId": "root:medi",
+      "type": "morpheme-meaning",
+      "questionJa": "medium / mediate / medieval に共通する 語根 medi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:medi",
+          "labelJa": "中間"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:medi",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:mend",
+      "morphemeId": "root:mend",
+      "type": "morpheme-meaning",
+      "questionJa": "mend / amend / amendment に共通する 語根 mend の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "欠点・誤り"
+        }
+      ],
+      "answerId": "root:mend",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:meas",
+      "morphemeId": "root:meas",
+      "type": "morpheme-meaning",
+      "questionJa": "measure / measurement / dimension に共通する 語根 measure の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:meas",
+          "labelJa": "測る"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:meas",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:mut",
+      "morphemeId": "root:mut",
+      "type": "morpheme-meaning",
+      "questionJa": "mutual / mutation / mutate に共通する 語根 mut の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "変える"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:mut",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:neg",
+      "morphemeId": "root:neg",
+      "type": "morpheme-meaning",
+      "questionJa": "negative / negate / negation に共通する 語根 neg の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:neg",
+          "labelJa": "否定する"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:neg",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:noc",
+      "morphemeId": "root:noc",
+      "type": "morpheme-meaning",
+      "questionJa": "innocent / innocence / noxious に共通する 語根 noc の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "害する"
+        }
+      ],
+      "answerId": "root:noc",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:nutr",
+      "morphemeId": "root:nutr",
+      "type": "morpheme-meaning",
+      "questionJa": "nutrition / nutrient / nourish に共通する 語根 nutr の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:nutr",
+          "labelJa": "養う"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:nutr",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:ocul",
+      "morphemeId": "root:ocul",
+      "type": "morpheme-meaning",
+      "questionJa": "ocular / binocular / inoculate に共通する 語根 ocul の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:ocul",
+          "labelJa": "目"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:ocul",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:opt-eye",
+      "morphemeId": "root:opt-eye",
+      "type": "morpheme-meaning",
+      "questionJa": "optical / optics / optician に共通する 語根 opt の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:opt-eye",
+          "labelJa": "視覚・見ること"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:opt-eye",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:opt-choose",
+      "morphemeId": "root:opt-choose",
+      "type": "morpheme-meaning",
+      "questionJa": "opt / option / optional に共通する 語根 opt の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:opt-choose",
+          "labelJa": "選ぶ・望む"
+        }
+      ],
+      "answerId": "root:opt-choose",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:ordin",
+      "morphemeId": "root:ordin",
+      "type": "morpheme-meaning",
+      "questionJa": "order / ordinary / coordinate に共通する 語根 ordin の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:ordin",
+          "labelJa": "順序"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:ordin",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:pac",
+      "morphemeId": "root:pac",
+      "type": "morpheme-meaning",
+      "questionJa": "peace / pacify / pacific に共通する 語根 pac の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:pac",
+          "labelJa": "平和"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:pac",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:patr",
+      "morphemeId": "root:patr",
+      "type": "morpheme-meaning",
+      "questionJa": "paternal / patriarch / patriot に共通する 語根 patr の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:patr",
+          "labelJa": "父"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:patr",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:popul",
+      "morphemeId": "root:popul",
+      "type": "morpheme-meaning",
+      "questionJa": "popular / population / populate に共通する 語根 popul の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:popul",
+          "labelJa": "人々・民衆"
+        }
+      ],
+      "answerId": "root:popul",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:ambi",
+      "morphemeId": "prefix:ambi",
+      "type": "morpheme-meaning",
+      "questionJa": "ambidextrous / ambivalent / ambiguous に共通する 接頭辞 ambi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "両方・二方向"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:ambi",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:apo",
+      "morphemeId": "prefix:apo",
+      "type": "morpheme-meaning",
+      "questionJa": "apostasy / apogee / apoptosis に共通する 接頭辞 apo の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "離れて"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:apo",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:arch",
+      "morphemeId": "prefix:arch",
+      "type": "morpheme-meaning",
+      "questionJa": "archbishop / archenemy / archrival に共通する 接頭辞 arch の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "首位・主要"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:arch",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:be",
+      "morphemeId": "prefix:be",
+      "type": "morpheme-meaning",
+      "questionJa": "befriend / belittle / bewitch に共通する 接頭辞 be の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "〜にする・周囲に及ぶ"
+        }
+      ],
+      "answerId": "prefix:be",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:dia",
+      "morphemeId": "prefix:dia",
+      "type": "morpheme-meaning",
+      "questionJa": "diameter / diagonal / diaphragm に共通する 接頭辞 dia の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "通して・横切って"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:dia",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:eu",
+      "morphemeId": "prefix:eu",
+      "type": "morpheme-meaning",
+      "questionJa": "euphoria / euphemism / euthanasia に共通する 接頭辞 eu の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "良い・正常な"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:eu",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:dys",
+      "morphemeId": "prefix:dys",
+      "type": "morpheme-meaning",
+      "questionJa": "dyslexia / dysfunction / dysphoria に共通する 接頭辞 dys の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:dys",
+          "labelJa": "困難・異常・悪い"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:dys",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:epi",
+      "morphemeId": "prefix:epi",
+      "type": "morpheme-meaning",
+      "questionJa": "epidermis / epilogue / epicenter に共通する 接頭辞 epi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "上に・付加して"
+        }
+      ],
+      "answerId": "prefix:epi",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:infra",
+      "morphemeId": "prefix:infra",
+      "type": "morpheme-meaning",
+      "questionJa": "infrared / infrastructure / infrasonic に共通する 接頭辞 infra の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "下・より低い"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:infra",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:ultra",
+      "morphemeId": "prefix:ultra",
+      "type": "morpheme-meaning",
+      "questionJa": "ultraviolet / ultrasonic / ultramodern に共通する 接頭辞 ultra の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "超えて・極度に"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:ultra",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:mid",
+      "morphemeId": "prefix:mid",
+      "type": "morpheme-meaning",
+      "questionJa": "midday / midnight / midterm に共通する 接頭辞 mid の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "中間"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:mid",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:out",
+      "morphemeId": "prefix:out",
+      "type": "morpheme-meaning",
+      "questionJa": "outperform / outnumber / outgrow に共通する 接頭辞 out の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "外へ・〜を上回る"
+        }
+      ],
+      "answerId": "prefix:out",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:self",
+      "morphemeId": "prefix:self",
+      "type": "morpheme-meaning",
+      "questionJa": "self-control / self-esteem / self-taught に共通する 接頭辞 self の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "自分自身"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:self",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:quasi",
+      "morphemeId": "prefix:quasi",
+      "type": "morpheme-meaning",
+      "questionJa": "quasi-legal / quasi-scientific / quasi-public に共通する 接頭辞 quasi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "疑似・ほぼ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:quasi",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:pseudo",
+      "morphemeId": "prefix:pseudo",
+      "type": "morpheme-meaning",
+      "questionJa": "pseudonym / pseudoscience / pseudocode に共通する 接頭辞 pseudo の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "偽り・見せかけ"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:pseudo",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:pan",
+      "morphemeId": "prefix:pan",
+      "type": "morpheme-meaning",
+      "questionJa": "pan-African / pan-European / panorama に共通する 接頭辞 pan の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "すべて"
+        }
+      ],
+      "answerId": "prefix:pan",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:omni",
+      "morphemeId": "prefix:omni",
+      "type": "morpheme-meaning",
+      "questionJa": "omnipresent / omniscient / omnivore に共通する 接頭辞 omni の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "すべて"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:omni",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:syn",
+      "morphemeId": "prefix:syn",
+      "type": "morpheme-meaning",
+      "questionJa": "synchronize / synthesis / symmetry に共通する 接頭辞 syn の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "共に"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:syn",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:peri",
+      "morphemeId": "prefix:peri",
+      "type": "morpheme-meaning",
+      "questionJa": "perimeter / peripheral / periscope に共通する 接頭辞 peri の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:peri",
+          "labelJa": "周囲"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "間に・相互に"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "過度に・上に"
+        }
+      ],
+      "answerId": "prefix:peri",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:proto",
+      "morphemeId": "prefix:proto",
+      "type": "morpheme-meaning",
+      "questionJa": "prototype / protozoan / proto-language に共通する 接頭辞 proto の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "多数の"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "再び・元へ"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "下に・副次的な"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "最初の・原初の"
+        }
+      ],
+      "answerId": "prefix:proto",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:prefix:amphi",
+      "morphemeId": "prefix:amphi",
+      "type": "morpheme-meaning",
+      "questionJa": "amphibious / amphitheater / amphibian に共通する 接頭辞 amphi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "前もって・以前"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "二つ"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "両方・周囲"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "反対・対抗"
+        }
+      ],
+      "answerId": "prefix:amphi",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:arium",
+      "morphemeId": "suffix:arium",
+      "type": "morpheme-meaning",
+      "questionJa": "aquarium / terrarium / planetarium に共通する 接尾辞 arium の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:arium",
+          "labelJa": "収容する場所・設備"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:arium",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:orium",
+      "morphemeId": "suffix:orium",
+      "type": "morpheme-meaning",
+      "questionJa": "auditorium / crematorium / sanatorium に共通する 接尾辞 orium の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:orium",
+          "labelJa": "用途のある場所"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:orium",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ette",
+      "morphemeId": "suffix:ette",
+      "type": "morpheme-meaning",
+      "questionJa": "kitchenette / cigarette / statuette に共通する 接尾辞 ette の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ette",
+          "labelJa": "小型のもの"
+        }
+      ],
+      "answerId": "suffix:ette",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:kin",
+      "morphemeId": "suffix:kin",
+      "type": "morpheme-meaning",
+      "questionJa": "lambkin / mannikin / catkin に共通する 接尾辞 kin の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:kin",
+          "labelJa": "小さい・親しみのあるもの"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:kin",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ster",
+      "morphemeId": "suffix:ster",
+      "type": "morpheme-meaning",
+      "questionJa": "youngster / gangster / trickster に共通する 接尾辞 ster の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ster",
+          "labelJa": "人・従事者（時に否定的）"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:ster",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ard",
+      "morphemeId": "suffix:ard",
+      "type": "morpheme-meaning",
+      "questionJa": "drunkard / coward / dullard に共通する 接尾辞 ard の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ard",
+          "labelJa": "特徴を持つ人（しばしば否定的）"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:ard",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ite",
+      "morphemeId": "suffix:ite",
+      "type": "morpheme-meaning",
+      "questionJa": "Israelite / Trotskyite / pre-Raphaelite に共通する 接尾辞 ite の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:ite",
+          "labelJa": "支持者・所属者"
+        }
+      ],
+      "answerId": "suffix:ite",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:an-person",
+      "morphemeId": "suffix:an-person",
+      "type": "morpheme-meaning",
+      "questionJa": "American / African / Korean に共通する 接尾辞 an の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:an-person",
+          "labelJa": "地域・集団の出身者・所属者"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:an-person",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ese",
+      "morphemeId": "suffix:ese",
+      "type": "morpheme-meaning",
+      "questionJa": "Japanese / Chinese / Vietnamese に共通する 接尾辞 ese の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:ese",
+          "labelJa": "地域・国の人や言語"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:ese",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:esque",
+      "morphemeId": "suffix:esque",
+      "type": "morpheme-meaning",
+      "questionJa": "picturesque / grotesque / chaplinesque に共通する 接尾辞 esque の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:esque",
+          "labelJa": "〜風の"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:esque",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:oid",
+      "morphemeId": "suffix:oid",
+      "type": "morpheme-meaning",
+      "questionJa": "humanoid / asteroid / ovoid に共通する 接尾辞 oid の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:oid",
+          "labelJa": "〜に似た形・もの"
+        }
+      ],
+      "answerId": "suffix:oid",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:ate-noun",
+      "morphemeId": "suffix:ate-noun",
+      "type": "morpheme-meaning",
+      "questionJa": "directorate / secretariat / electorate に共通する 接尾辞 ate の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:ate-noun",
+          "labelJa": "官職・団体など"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:ate-noun",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:itude",
+      "morphemeId": "suffix:itude",
+      "type": "morpheme-meaning",
+      "questionJa": "solitude / aptitude / certitude に共通する 接尾辞 itude の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        },
+        {
+          "id": "suffix:itude",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:itude",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:th",
+      "morphemeId": "suffix:th",
+      "type": "morpheme-meaning",
+      "questionJa": "warmth / depth / width に共通する 接尾辞 th の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:th",
+          "labelJa": "性質・状態・尺度"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "〜の方向へ"
+        }
+      ],
+      "answerId": "suffix:th",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:let-verb",
+      "morphemeId": "suffix:let-verb",
+      "type": "morpheme-meaning",
+      "questionJa": "twinkle / crackle / sparkle に共通する 接尾辞 le の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:ness",
+          "labelJa": "性質・状態"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:let-verb",
+          "labelJa": "反復・小さな動作（歴史的）"
+        }
+      ],
+      "answerId": "suffix:let-verb",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:fold",
+      "morphemeId": "suffix:fold",
+      "type": "morpheme-meaning",
+      "questionJa": "twofold / threefold / fourfold に共通する 接尾辞 fold の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:fold",
+          "labelJa": "〜倍・〜重"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:fold",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:free",
+      "morphemeId": "suffix:free",
+      "type": "morpheme-meaning",
+      "questionJa": "sugar-free / carefree / smoke-free に共通する 接尾辞 free の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:free",
+          "labelJa": "〜を含まない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        }
+      ],
+      "answerId": "suffix:free",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:er-comparative",
+      "morphemeId": "suffix:er-comparative",
+      "type": "morpheme-meaning",
+      "questionJa": "faster / smaller / older に共通する 接尾辞 er の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:er-comparative",
+          "labelJa": "より〜"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "〜できる・〜されうる"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "〜する人・もの"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "〜のような・やや〜"
+        }
+      ],
+      "answerId": "suffix:er-comparative",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:suffix:est-superlative",
+      "morphemeId": "suffix:est-superlative",
+      "type": "morpheme-meaning",
+      "questionJa": "fastest / smallest / oldest に共通する 接尾辞 est の学習用の意味は？",
+      "choices": [
+        {
+          "id": "suffix:less",
+          "labelJa": "〜がない"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "行為・結果・状態"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "〜の仕方で"
+        },
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "最も〜"
+        }
+      ],
+      "answerId": "suffix:est-superlative",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    }
+  ]
+}
