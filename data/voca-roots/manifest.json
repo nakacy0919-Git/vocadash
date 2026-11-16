@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "batch": "001",
+  "batch": "002",
   "createdOn": "2026-11-17",
   "status": "draft-unreviewed",
   "productionEnabled": false,
   "counts": {
-    "roots": 50,
-    "prefixes": 30,
-    "suffixes": 30,
-    "relations": 497,
-    "distinctHeadwords": 472,
-    "matchedRelations": 115,
-    "matchedDistinctHeadwords": 108,
-    "unresolvedRelations": 382,
-    "quizzes": 110,
-    "imagePrompts": 50,
+    "roots": 100,
+    "prefixes": 50,
+    "suffixes": 50,
+    "relations": 906,
+    "distinctHeadwords": 866,
+    "matchedRelations": 187,
+    "matchedDistinctHeadwords": 176,
+    "unresolvedRelations": 719,
+    "quizzes": 200,
+    "imagePrompts": 100,
     "generatedImages": 0
   },
   "targets": {
@@ -43,7 +43,46 @@
     "prefixes-001.json",
     "suffixes-001.json",
     "word-links-001.json",
-    "quizzes-001.json"
+    "quizzes-001.json",
+    "roots-002.json",
+    "prefixes-002.json",
+    "suffixes-002.json",
+    "word-links-002.json",
+    "quizzes-002.json"
   ],
-  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。"
+  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。",
+  "batches": [
+    {
+      "batch": "001",
+      "counts": {
+        "roots": 50,
+        "prefixes": 30,
+        "suffixes": 30,
+        "relations": 497,
+        "distinctHeadwords": 472,
+        "matchedRelations": 115,
+        "matchedDistinctHeadwords": 108,
+        "unresolvedRelations": 382,
+        "quizzes": 110,
+        "imagePrompts": 50,
+        "generatedImages": 0
+      }
+    },
+    {
+      "batch": "002",
+      "counts": {
+        "roots": 50,
+        "prefixes": 20,
+        "suffixes": 20,
+        "relations": 409,
+        "distinctHeadwords": 404,
+        "matchedRelations": 72,
+        "matchedDistinctHeadwords": 71,
+        "unresolvedRelations": 337,
+        "quizzes": 90,
+        "imagePrompts": 50,
+        "generatedImages": 0
+      }
+    }
+  ]
 }
