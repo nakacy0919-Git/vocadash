@@ -5,7 +5,7 @@ import {lookupUniverse,universeEntries,getRelations} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
 import VoiceOrb from './VoiceOrb';
-import {warmVocabularyIndex,findVocabularyProfile} from '../lib/vocabularyLookup.js';
+import {warmVocabularyIndex} from '../lib/vocabularyLookup.js';
 import {unlockProfileWarp,cancelProfileWarp} from '../lib/profileWarp.js';
 import {createVoiceMeter} from '../lib/voiceMeter.js';
 
@@ -165,7 +165,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   r.onresult=e=>{
    if(recognition.current!==r||!wanted.current||suspendRef.current||document.hidden||window.speechSynthesis?.speaking)return;
    const segments=speechSegments(e);
-   if(segments.interim){setInterim(segments.interim);setMicState('speaking');const profileWord=speculativeProfileWord(segments.interim);if(profileWord&&phaseRef.current==='active')void findVocabularyProfile(profileWord).catch(()=>{});const word=speculativeVoiceWord(segments.interim);clearTimeout(warmTimer.current);if(word&&phaseRef.current==='active')warmTimer.current=setTimeout(()=>warmRef.current?.(word),100);}
+   if(segments.interim){setInterim(segments.interim);setMicState('speaking');const profileWord=speculativeProfileWord(segments.interim);if(profileWord&&phaseRef.current==='active')warmRef.current?.(profileWord);const word=speculativeVoiceWord(segments.interim);clearTimeout(warmTimer.current);if(word&&phaseRef.current==='active')warmTimer.current=setTimeout(()=>warmRef.current?.(word),100);}
    if(!segments.final.length)return;
    clearTimeout(warmTimer.current);setInterim('');
    for(const alternatives of segments.final){
