@@ -150,3 +150,8 @@ export async function resolveVocabularyEntry(raw,{words=[],lookup=()=>null,getDr
  for(const k of keys){const course=await Promise.resolve().then(()=>getCourse(k)).catch(()=>null);if(course)return {...course,examples:course.english?[{en:course.english,ja:course.japanese}]:[]};}
  return null;
 }
+
+// A deliberately requested navigation must not queue behind a slow vocabulary lookup.
+export function isUrgentVoiceNavigation(kind,universeOpen){return kind==='dashHome'||kind==='close'||kind==='stop'||(universeOpen&&['back','previous'].includes(kind));}
+export function isAppleTouchDevice(ua='',platform='',touchPoints=0){return /iPhone|iPad|iPod/i.test(ua)||(platform==='MacIntel'&&touchPoints>1);}
+export function voiceRestartDelay(failures=0){return Math.min(800,80*Math.pow(2,Math.max(0,failures)));}
