@@ -138,3 +138,54 @@
 .vp-single.vp-tight .vp-word-card.vp-with-concept,.vp-single.vp-tight .vp-example.vp-with-example-image{grid-template-columns:minmax(0,1fr) minmax(0,30%);gap:5px}
 .vp-single.vp-tight .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:clamp(17px,3cqw,27px)}
 @container(max-width:480px){.vp-single .vp-word-card.vp-with-concept,.vp-single .vp-example.vp-with-example-image{grid-template-columns:minmax(0,1fr) minmax(0,25%);gap:4px}.vp-single .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:16px}.vp-single .vp-visual-thumb span{font-size:10px;right:1px;bottom:1px;padding:0 2px}}
+
+/* Tablet fit: keep category surfaces, but render words as clean unboxed text.
+   Explicit grid tracks stop the header, translations and images from overflowing. */
+.vu-dialog .vp-single{gap:clamp(4px,.8cqh,9px);padding:clamp(5px,.75vw,12px)}
+.vp-single .vp-summary{height:clamp(108px,25cqh,176px);grid-template-rows:minmax(0,1fr)}
+.vp-single .vp-content{grid-template-rows:minmax(0,1fr)}
+.vp-single .vp-relations-column,.vp-single .vp-examples{gap:5px}
+.vp-single .vp-relations{grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(5px,.8cqw,12px)}
+.vp-single .vp-lexical-group{display:grid;grid-template-rows:auto minmax(0,1fr);align-items:stretch;gap:clamp(3px,.75cqh,7px);padding:clamp(6px,min(1cqw,1.65cqh),13px)}
+.vp-single .vp-lexical-group .vp-card-heading{min-height:0;align-items:center}
+.vp-single .vp-lexical-group .vp-card-heading h2{font-size:clamp(11px,min(1.46cqw,3.15cqh),18px);line-height:1.1;gap:5px;overflow-wrap:normal}
+.vp-single .vp-lexical-group .vp-card-heading h2 small{margin-top:2px;line-height:1.1}
+.vp-single .vp-category-icon{width:clamp(20px,min(2.6cqw,5cqh),32px);height:clamp(20px,min(2.6cqw,5cqh),32px)}
+.vu-dialog .vp-single .vp-lexical-group .vp-link{min-height:23px;padding:2px 5px;font-size:clamp(9px,min(1.1cqw,2.1cqh),12px);border-radius:6px}
+.vp-single .vp-term-list{display:grid;grid-auto-flow:row;grid-template-columns:minmax(0,1fr);grid-template-rows:repeat(3,minmax(0,1fr));align-content:stretch;align-items:center;justify-content:stretch;gap:0;overflow:hidden}
+.vu-dialog .vp-single .vp-term,.vu-dialog .vp-single.vp-portrait .vp-term,.vu-dialog .vp-single.vp-tight .vp-term{display:flex;align-items:center;justify-content:flex-start;gap:5px;width:100%;height:100%;max-height:100%;min-height:0;padding:0 2px;background:transparent;border:0;border-radius:0;box-shadow:none;color:#eef6ff;text-align:left;font-weight:500;font-size:clamp(11px,min(1.45cqw,3.0cqh),18px);line-height:1.15}
+.vu-dialog .vp-single .vp-term:hover{background:transparent;color:var(--rel-ink);text-decoration:underline;text-underline-offset:3px}
+.vu-dialog .vp-single .vp-term:focus-visible{outline:1px solid var(--rel-ink);outline-offset:-1px;border-radius:3px}
+.vp-single .vp-term span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.vp-single .vp-term small{flex:none;font-size:9px;opacity:.66}
+.vp-single .vp-unregistered{align-self:center;grid-row:1/-1}
+.vp-single .vp-examples{display:grid;grid-template-rows:auto repeat(var(--vp-example-rows,2),minmax(0,1fr))}
+.vp-single .vp-example{display:grid;grid-template: minmax(0,1fr) / minmax(0,1fr);align-items:stretch;justify-content:stretch;overflow:hidden;padding:clamp(6px,min(1.1cqw,1.8cqh),14px);gap:clamp(4px,.75cqh,8px)}
+.vp-single .vp-example.vp-with-example-image{grid-template: minmax(0,1fr) / minmax(0,1fr) minmax(0,36%);align-items:stretch}
+.vp-single .vp-word-card{overflow:hidden}
+.vp-single .vp-word-card.vp-with-concept{grid-template-rows:minmax(0,1fr);align-items:stretch}
+.vp-single .vp-word-copy{display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:clamp(3px,.6cqh,6px);align-content:center;align-items:center}
+.vp-single .vp-word-heading h1{font-size:clamp(20px,min(4cqw,7.1cqh),50px)}
+.vp-single .vp-word-card.vp-with-concept .vp-word-heading h1{font-size:clamp(17px,min(3.5cqw,6.7cqh),46px)}
+.vp-single .vp-meaning{font-size:clamp(14px,min(2.5cqw,4.4cqh),26px)}
+.vp-single .vp-example-copy{display:grid;grid-template-rows:auto minmax(0,1.15fr) minmax(0,.85fr);align-content:stretch;align-items:center;gap:clamp(2px,.55cqh,5px);height:100%;min-height:0;overflow:hidden}
+.vp-single .vp-example-top{min-height:0;align-items:center;gap:5px}
+.vp-single .vp-example-top small{font-size:clamp(9px,min(1.25cqw,2.25cqh),13px)}
+.vu-dialog .vp-single .vp-example-top .vp-sound,.vu-dialog .vp-single .vp-word-heading .vp-sound{width:clamp(28px,6cqh,40px);height:clamp(28px,6cqh,40px);min-width:0;min-height:0}
+.vp-single .vp-example-top .vp-sound svg,.vp-single .vp-word-heading .vp-sound svg{width:20px;height:20px}
+.vp-single .vp-example-en,.vp-single .vp-example.vp-with-example-image .vp-example-en{font-size:clamp(13px,min(2cqw,3.55cqh),24px);line-height:1.2}
+.vp-single .vp-example-ja{font-size:clamp(11px,min(1.55cqw,2.65cqh),17px);line-height:1.25}
+.vp-single .vp-example-copy>.vp-bounded,.vp-single .vp-word-copy>.vp-bounded{height:100%;max-height:100%;align-items:center;overflow:hidden}
+.vp-single .vp-example-copy>.vp-bounded p,.vp-single .vp-word-copy>.vp-bounded p{max-height:100%;line-height:1.24;min-height:0}
+.vp-single .vp-example-en p,.vp-single .vp-example-ja p{-webkit-line-clamp:2}
+.vu-dialog .vp-single .vp-example .vp-text-more,.vu-dialog .vp-single .vp-word-card .vp-text-more{min-height:20px;padding:1px 4px;font-size:10px;align-self:center}
+.vu-dialog .vp-single .vp-visual-thumb{max-width:100%;max-height:100%;height:auto;align-self:center;aspect-ratio:16/9}
+.vp-single .vp-visual-thumb img{object-fit:contain}
+.vp-single .vp-pager{min-height:32px}
+.vp-single.vp-tight .vp-summary{height:clamp(80px,27cqh,112px)}
+.vp-single.vp-tight .vp-term-list{grid-template-rows:repeat(2,minmax(0,1fr))}
+.vp-single.vp-tiny .vp-term-list{grid-template-rows:minmax(0,1fr)}
+.vp-single.vp-portrait:not(.vp-tight) .vp-content{grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
+.vp-single.vp-portrait:not(.vp-tight) .vp-examples{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr)}
+.vp-single.vp-portrait:not(.vp-tight) .vp-example:only-of-type{grid-column:1/-1}
+@container(max-width:480px){.vp-single.vp-portrait:not(.vp-tight) .vp-examples{display:grid}.vp-single .vp-category-icon{display:none}.vu-dialog .vp-single .vp-term{font-size:11px}.vp-single .vp-term small{display:none}}
