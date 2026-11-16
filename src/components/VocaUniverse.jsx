@@ -14,7 +14,7 @@ import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,su
 export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,onProfileWarp,onCancelProfileWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const displayedProfilePage=useRef(null);
- const [profile,setProfile]=useState(null),[profilePage,setProfilePage]=useState(0),[profileData,setProfileData]=useState(null);
+ const [profile,setProfile]=useState(()=>initialFilter==='profile'?{word:entry.word,seed:entry}:null),[profilePage,setProfilePage]=useState(0),[profileData,setProfileData]=useState(()=>initialFilter==='profile'?entry:null);
  const registeredAdapter=useSyncExternalStore(subscribeUniverseMemory,getUniverseMemoryAdapter,()=>null);
  const activeAdapter=memoryAdapter||registeredAdapter;
  const [snapshot,setSnapshot]=useState({});
@@ -31,7 +31,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const [query,setQuery]=useState('');
  const catalog=useMemo(()=>universeEntries(),[]);
  const searchResults=useMemo(()=>{const q=query.trim().toLowerCase();if(!q)return [];return catalog.filter(w=>w.word.includes(q)||w.meaning.includes(q)).sort((a,b)=>Number(b.word.startsWith(q))-Number(a.word.startsWith(q))||a.word.localeCompare(b.word)).slice(0,8);},[catalog,query]);
- const [filter,setFilter]=useState(initialFilter==='forms'?'all':initialFilter);
+ const [filter,setFilter]=useState(['forms','profile'].includes(initialFilter)?'all':initialFilter);
  const [warpVersion,setWarpVersion]=useState(0);
  const [instantBack,setInstantBack]=useState(false);
  const [profileWarp,setProfileWarp]=useState(null);
