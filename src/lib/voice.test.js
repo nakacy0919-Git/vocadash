@@ -191,3 +191,17 @@ test('profile lexical metadata preserves multiword expressions and bilingual mea
  assert.deepEqual(profileTerms([{en:'vital',ja:'極めて重要な'},'vital']),[{word:'vital',meaning:'極めて重要な'}]);
  assert.deepEqual(profileTerms(null),[]);
 });
+
+import {profileLayout,profileRelationRows,profileTextPages} from './wordProfile.js';
+test('tablet profile budgets keep overview and explicit pages across orientations',()=>{
+ assert.deepEqual(profileLayout(1024,650),{portrait:false,tight:false,tiny:false,examples:2,previewTerms:3,detailTerms:8});
+ assert.deepEqual(profileLayout(720,850),{portrait:true,tight:false,tiny:false,examples:2,previewTerms:3,detailTerms:6});
+ assert.equal(profileLayout(920,420).examples,1);assert.equal(profileLayout(375,600).previewTerms,1);
+});
+test('profile relation pages retain every term and separate sense vs headword scope',()=>{
+ const primary=[{word:'vital',meaning:'極めて重要な'}],head=[{word:'vital',meaning:'重要な'},{word:'essential',meaning:'不可欠な'}];
+ assert.deepEqual(profileRelationRows(primary,head),[{word:'vital',meaning:'極めて重要な',headOnly:false},{word:'essential',meaning:'不可欠な',headOnly:true}]);
+ const items=Array.from({length:33},(_,i)=>({word:'term '+i}));const terms=profileRelationRows([],items),n=profileLayout(1024,650).detailTerms;
+ assert.equal(Array.from({length:Math.ceil(terms.length/n)},(_,i)=>terms.slice(i*n,(i+1)*n)).flat().length,33);
+ const text='a'.repeat(450)+'日本語'.repeat(100),pages=profileTextPages(text,140);assert.equal(pages.join(''),text);assert.ok(pages.every(p=>Array.from(p).length<=140));
+});
