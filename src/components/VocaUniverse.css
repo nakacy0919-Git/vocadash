@@ -178,3 +178,8 @@
 
 /* Compact predictions remain within the existing live-voice strip. */
 .vu-dialog .vu-live-suggestions{align-items:center;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;max-width:100%;min-width:0;padding-bottom:2px;gap:6px}.vu-suggestion-caption{color:#a5c6df;white-space:nowrap;font-size:10px;flex:none}.vu-dialog .vu-live-suggestions button{display:inline-flex;align-items:center;gap:5px;flex:none;min-height:30px;white-space:nowrap;background:#12374d;border-color:#497e99;padding:4px 9px;color:#e6f8ff}.vu-suggestion-number{color:#91d6ee;font-size:10px;font-weight:700}.vu-dialog .vu-live-suggestions button:focus-visible{outline:2px solid #a0edf9;outline-offset:-2px}@media(max-width:640px){.vu-suggestion-caption{font-size:9px}.vu-dialog .vu-live-suggestions button{min-height:30px;font-size:11px}}
+
+/* Fast transition: preserve the space effect without covering the new map for 0.65s. */
+.vu-dialog-warp{animation-duration:.22s}.vu-warp{animation-duration:.24s;background:radial-gradient(ellipse at center,#16476a99,#060d2199 70%)}.vu-warp-core{animation-duration:.23s}.vu-warp i{animation-duration:.18s;animation-delay:0s!important}
+@keyframes vu-warp-out{0%{opacity:.85}100%{opacity:0;visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.vu-dialog-warp{animation:none!important}}
