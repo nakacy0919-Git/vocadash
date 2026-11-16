@@ -1,10 +1,9 @@
-import React,{useEffect,useRef,useState} from 'react';
+import React,{useEffect,useRef} from 'react';
 import './VoiceOrb.css';
 import {createEnergyRenderer} from '../lib/voiceEnergyRenderer.js';
 const particles=Array.from({length:960},(_,i)=>{const t=(i+.5)/960,h=1-2*t;return {arm:i%5,t,h,angle:i*2.39996323,r:.76+.23*((i*73%97)/97),weight:.45+(i%7)*.14};});
 const stars=Array.from({length:100},(_,i)=>({x:(Math.sin(i*87.31)*43758.5453%1+1)%1,y:(Math.sin(i*42.78+7)*26378.72%1+1)%1,r:.3+(i%4)*.25}));
-export default function VoiceOrb({visible=false,supports=true,status,onStart,onCommand,onClose,enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
- const [text,setText]=useState('');
+export default function VoiceOrb({visible=false,supports=true,status,onStart,onClose,enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
  const canvas=useRef(null),cinematic=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
  useEffect(()=>{
   if((!enabled&&!full)||!canvas.current)return;
@@ -61,7 +60,8 @@ export default function VoiceOrb({visible=false,supports=true,status,onStart,onC
    {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
    {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map(word=><button key={word} type="button" onClick={()=>onChoose(word)}>{word}</button>)}</div>}
   </div>
-  {full&&<div className="vd-orb-footer"><form className="vd-orb-command" onSubmit={e=>{e.preventDefault();const command=text.trim();if(!command)return;onCommand?.(command);setText('');}}><input aria-label="Dash command" placeholder="Hey Dash, show me beauty" value={text} onChange={e=>setText(e.target.value)}/><button type="submit" disabled={!text.trim()||busy}>→</button></form><div className="vd-orb-examples">{['Show me beauty','Show me sad','Show me accelerator','Go back'].map(cmd=><button key={cmd} onClick={()=>onCommand?.(cmd)}>{cmd}</button>)}</div>{enabled?<button type="button" className="vd-orb-stop" onClick={onStop} aria-label="Stop microphone"><span/></button>:<button className="vd-orb-mic-start" type="button" onClick={onStart} disabled={!supports}>🎙 マイクをオン</button>}<small>{enabled?(meterReady?'LIVE AUDIO · 音量に連動':'音声認識中 · 音量取得は未接続'):supports?'マイクは手動で開始 · 文字入力も可':'音声非対応 · 文字入力をご利用ください'}{!enabled&&status?' · '+status:''}</small></div>}
+  {full&&<button className="vd-orb-touch" type="button" aria-label={enabled?'マイクを停止':'マイクを開始'} aria-pressed={enabled} aria-describedby="vd-orb-touch-hint" disabled={!supports&&!enabled} onClick={enabled?onStop:onStart}/>}
+  {full&&<div className="vd-orb-touch-status" id="vd-orb-touch-hint"><span className="vd-orb-state-dot" data-enabled={enabled}/><span>{!supports?'このブラウザは音声認識に対応していません':enabled?'タップしてマイクを停止':'中央の光をタップして開始'}</span>{status&&<small role="status">{status}</small>}</div>}
   {enabled&&!full&&<button className="vd-orb-expand" type="button" onClick={onExpand} aria-label="Expand assistant">⤢</button>}
  </div>;
 }
