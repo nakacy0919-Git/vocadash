@@ -6,11 +6,12 @@ import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
 import UniverseWordProfile from './UniverseWordProfile.jsx';
-import {pushProfileHistory,popProfileHistory,profilePages} from '../lib/wordProfile.js';
+import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
 export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
+ const displayedProfilePage=useRef(null);
  const [profile,setProfile]=useState(null),[profilePage,setProfilePage]=useState(0),[profileData,setProfileData]=useState(null);
  const registeredAdapter=useSyncExternalStore(subscribeUniverseMemory,getUniverseMemoryAdapter,()=>null);
  const activeAdapter=memoryAdapter||registeredAdapter;
@@ -75,7 +76,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     const done=msg=>{c.handled=true;c.message=msg||'OK';};
     if(kind==='profile'||kind==='examples'||kind==='meaning'){const target=value||profile?.word||center.word;showProfile(target,c.resolvedEntry||(target.toLowerCase()===center.word.toLowerCase()?center:null));done('Word profile: '+target);return;}
     if(profile&&['next','pageBack'].includes(kind)){setProfilePage(p=>Math.max(0,p+(kind==='next'?1:-1)));done();return;}
-    if(profile&&kind==='read'){const item=profileData||profile.seed;if(!item||!sound){done('音声または教材を利用できません');return;}const index={first:0,second:1,third:2}[value];const pageData=profilePages(item,2)[profilePage];const text=index===undefined?item.word:(pageData?.examples?.[index]?.en||item.examples?.[index]?.en);if(text)onSpeak({word:text});done(text?'Reading aloud':'例文は未登録です');return;}
+    if(profile&&kind==='read'){const item=profileData||profile.seed;if(!item||!sound){done('音声または教材を利用できません');return;}const index={first:0,second:1,third:2}[value];const pageData=displayedProfilePage.current;const text=index===undefined?item.word:(pageData?.examples?.[index]?.en||item.examples?.[index]?.en);if(text)onSpeak({word:text});done(text?'Reading aloud':'例文は未登録です');return;}
     if(kind==='filter'){if(profile)remember();setProfile(null);setProfileData(null);if(value==='forms'){applyFilter('family');setView('list');}else{applyFilter(value);setView('map');}done(value==='forms'?'Word forms':value==='all'?'All relations':(types[value]||value)+' · '+links.filter(x=>x.type===value).length);return;}
     if(kind==='list'||kind==='map'){if(profile)remember();setProfile(null);setProfileData(null);setDraftOpen(false);setView(kind);done();return;}
     if(kind==='images'){setShowImages(value==='show');done();return;}
@@ -111,7 +112,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button className="vu-effects-toggle" aria-pressed={effects} onClick={onToggleEffects} aria-label={effects?"ワープ効果音をオフ":"ワープ効果音をオン"}>{effects?"♫ 効果音 ON":"♪ 効果音 OFF"}</button><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
    <div ref={voiceDockRef} className="vu-voice-dock"/>
    <div className="vu-search-anchor">{searchOpen&&<div className="vu-search-wrap" id={titleId+"-search-panel"}><label htmlFor={titleId+'-search'}>登録済みの語彙を探す</label><input id={titleId+'-search'} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="英単語・日本語で検索" autoComplete="off" onKeyDown={e=>{if(e.key==='Enter'){e.preventDefault();searchFull();}}}/><button type="button" disabled={searchBusy||!query.trim()} onClick={searchFull}>{searchBusy?'検索中…':'全教材から検索'}</button>{searchNotice&&<p role="status">{searchNotice}</p>}{query.trim()&&<div className="vu-search-results">{searchResults.length?searchResults.map(item=><button key={item.word} onClick={()=>explore(item)}><strong>{item.word}</strong><small>{item.meaning}</small></button>):<p>ネットワークの候補なし。全教材から検索できます。</p>}</div>}</div>}</div>
-   {profile?<UniverseWordProfile key={profile.word} request={profile} words={words} resolveVocabulary={resolveVocabulary} onBack={()=>{if(!goBack())setProfile(null);}} onSpeak={onSpeak} sound={sound} page={profilePage} onPage={setProfilePage} onReady={setProfileData} onExplore={item=>{remember();change(item);setView('map');}}/>:<div className="vu-workspace vu-wide-workspace">
+   {profile?<UniverseWordProfile key={profile.word} request={profile} words={words} resolveVocabulary={resolveVocabulary} onBack={()=>{if(!goBack())setProfile(null);}} onSpeak={onSpeak} sound={sound} page={profilePage} onPage={setProfilePage} onReady={setProfileData} onPageData={p=>{displayedProfilePage.current=p;}} onExplore={item=>{remember();change(item);setView('map');}}/>:<div className="vu-workspace vu-wide-workspace">
     <button className="vu-nav-toggle" aria-expanded={navOpen} onClick={()=>setNavOpen(v=>!v)}>☰ {filter==='all'?'すべて':types[filter]||'フィルター'}</button>
     <nav className={'vu-sidebar'+(navOpen?' is-open':'')} aria-label="関連語カテゴリー">
      <small className="vu-side-caption">RELATIONS</small>
