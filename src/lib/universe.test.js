@@ -779,3 +779,15 @@ test('map pages reserve six separated slots, without intersecting node boxes or 
  }
  }
 });
+
+// The dedicated workspace uses 20% x 27% node bounds and 29% x 36% central bounds.
+test('full-screen sidebar canvas fits every slot inside landscape and portrait viewports',()=>{
+ const links=['core','related','extended'].flatMap(tier=>Array.from({length:14},(_,i)=>({word:tier+i,tier})));
+ for(const [width,height] of [[1000,600],[630,820],[340,480],[660,260]]){
+  for(let page=0;page<orbitPageCount(links);page++){
+   const boxes=[{x:50,y:50,w:29,h:36},...orbitNodes(links,page).map(n=>({...n,w:20,h:27}))].map(b=>({left:(b.x-b.w/2)*width/100,right:(b.x+b.w/2)*width/100,top:(b.y-b.h/2)*height/100,bottom:(b.y+b.h/2)*height/100}));
+   for(const b of boxes)assert.ok(b.left>=0&&b.right<=width&&b.top>=0&&b.bottom<=height);
+   for(let i=0;i<boxes.length;i++)for(const b of boxes.slice(i+1)){const a=boxes[i];assert.ok(a.right<=b.left||b.right<=a.left||a.bottom<=b.top||b.bottom<=a.top);}
+  }
+ }
+});
