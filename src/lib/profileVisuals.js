@@ -13,4 +13,4 @@ const visuals={
  }
 };
 export function conceptVisual(word){return visuals[key(word)]?.concept||null;}
-export function exampleVisual(word,sentence){return visuals[key(word)]?.examples[sentenceKey(sentence)]||null;}
+export function exampleVisual(word,sentence){return visuals[key(word)]?.examples?.[sentenceKey(sentence)]||null;}
