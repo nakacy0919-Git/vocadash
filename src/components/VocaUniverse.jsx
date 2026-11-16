@@ -6,10 +6,11 @@ import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
 import UniverseWordProfile from './UniverseWordProfile.jsx';
+import {warmVocabularyIndex,initialVocabularyProfile} from '../lib/vocabularyLookup.js';
 import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
-export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
+export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,onProfileWarp,onCancelProfileWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const displayedProfilePage=useRef(null);
  const [profile,setProfile]=useState(null),[profilePage,setProfilePage]=useState(0),[profileData,setProfileData]=useState(null);
@@ -31,6 +32,8 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const searchResults=useMemo(()=>{const q=query.trim().toLowerCase();if(!q)return [];return catalog.filter(w=>w.word.includes(q)||w.meaning.includes(q)).sort((a,b)=>Number(b.word.startsWith(q))-Number(a.word.startsWith(q))||a.word.localeCompare(b.word)).slice(0,8);},[catalog,query]);
  const [filter,setFilter]=useState(initialFilter==='forms'?'all':initialFilter);
  const [warpVersion,setWarpVersion]=useState(0);
+ const [instantBack,setInstantBack]=useState(false);
+ const [profileWarp,setProfileWarp]=useState(null);
  const [badImage,setBadImage]=useState(false);
  const [showImages,setShowImages]=useState(true);
  const [view,setView]=useState(initialFilter==='forms'||(typeof window!=='undefined'&&window.innerWidth<640)?'list':'map');
@@ -44,11 +47,11 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const links=useMemo(()=>{if(!candidateData)return registeredLinks;const seen=new Set(registeredLinks.map(n=>n.word.trim().toLowerCase()));const result=[...registeredLinks];for(const sense of candidateData.sensesFor(center.word)){for(const term of candidateData.candidateTerms(sense)){const k=term.word.trim().toLowerCase();if(!seen.has(k)){seen.add(k);result.push({...term,candidate:true});}}}return result;},[registeredLinks,candidateData,center.word]);
  const applyFilter=id=>{setDraftOpen(false);setLearningOpen(false);setFilter(id);setPage(0);setNavOpen(false);};
  const mapSense=lookupUniverse(center.word)?.meaning;
- const formRows=getWordForms(center.word);
- const visible=links.filter(x=>filter==='all'||x.type===filter);
- const pageCount=orbitPageCount(visible);
+ const formRows=useMemo(()=>getWordForms(center.word),[center.word]);
+ const visible=useMemo(()=>links.filter(x=>filter==='all'||x.type===filter),[links,filter]);
+ const pageCount=useMemo(()=>orbitPageCount(visible),[visible]);
  const currentPage=Math.min(page,pageCount-1);
- const nodes=orbitNodes(visible,currentPage);
+ const nodes=useMemo(()=>orbitNodes(visible,currentPage),[visible,currentPage]);
  useEffect(()=>{if(page!==currentPage)setPage(currentPage);},[page,currentPage]);
  useEffect(()=>{
    const before=document.activeElement;
@@ -64,11 +67,11 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
 
  const screen=()=>({center,filter,view,page,draftOpen,profile,profilePage,learningOpen});
  const remember=()=>setTrail(t=>pushProfileHistory(t,screen()));
- const change=(next)=>{if(!next)return;setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
+ const change=(next,{back=false}={})=>{if(!next)return;setInstantBack(back);setProfileWarp(null);onCancelProfileWarp?.();setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed&&!back){setWarpVersion(v=>v+1);onWarp?.();}};
  const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(profile||item.word.toLowerCase()!==center.word.toLowerCase())remember();change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(profile||next.word.toLowerCase()!==center.word.toLowerCase())remember();change(next);setView('map');};
- const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(!profile||profile.word.toLowerCase()!==target.toLowerCase())remember();setProfile({word:target,seed});setProfileData(null);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
- const goBack=()=>{const {screen:prior,remaining}=popProfileHistory(trail);if(!prior)return false;setTrail(remaining);change(prior.center);setFilter(prior.filter);setView(prior.view);setPage(prior.page);setDraftOpen(prior.draftOpen);setLearningOpen(prior.learningOpen);setProfile(prior.profile);setProfilePage(prior.profilePage||0);return true;};
+ const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(profile?.word.toLowerCase()===target.toLowerCase())return;const initial=initialVocabularyProfile(target,{words,seed});void warmVocabularyIndex().catch(()=>{});remember();setProfileWarp({word:target,id:performance.now()});onProfileWarp?.();setProfile({word:target,seed:initial||seed});setProfileData(initial);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
+ const goBack=()=>{const {screen:prior,remaining}=popProfileHistory(trail);if(!prior)return false;setTrail(remaining);change(prior.center,{back:true});setFilter(prior.filter);setView(prior.view);setPage(prior.page);setDraftOpen(prior.draftOpen);setLearningOpen(prior.learningOpen);setProfile(prior.profile);setProfilePage(prior.profilePage||0);return true;};
  useLayoutEffect(()=>{
    const handler=e=>{
     const c=e.detail, kind=c.kind,value=c.value;
@@ -106,8 +109,9 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    }
  };
  return createPortal(<div ref={overlay} className="vu-overlay vu-portal-open" onClick={onClose}>
-  <div key={warpVersion} className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>{warpVersion===0?"ENTERING VOCA UNIVERSE":center.word.toUpperCase()}</span></div>
-  <section className="vu-dialog vu-dialog-warp" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
+  {profile&&profileWarp&&<div key={profileWarp.id} className="vu-profile-warp" aria-hidden="true"><div className="vp-warp-ring"/><div className="vp-warp-ring vp-warp-ring-alt"/>{Array.from({length:40},(_,i)=><i key={i} style={{'--pw-angle':(i*9)+'deg','--pw-length':(12+(i*11)%28)+'vmin','--pw-delay':(i%5)*.014+'s','--pw-color':i%3===0?'#b7a3ff':'#78e3ff'}}/>)}<div className="vp-warp-label"><small>ACCESSING WORD PROFILE</small><strong>{profileWarp.word}</strong><span>DEFINITION · EXAMPLES</span></div></div>}
+  {!instantBack&&<div key={warpVersion} className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>{warpVersion===0?"ENTERING VOCA UNIVERSE":center.word.toUpperCase()}</span></div>}
+  <section className={"vu-dialog vu-dialog-warp"+(instantBack?" vu-instant-back":"")} role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <div className="vu-space" aria-hidden="true"><div className="vu-space-nebula"/><div className="vu-space-stars near"/><div className="vu-space-stars far"/></div>
    <header className="vu-header"><div><small>VOCADASH / SEMANTIC EXPLORER</small><h2 id={titleId}>Voca Universe</h2></div><div className="vu-header-actions"><button className="vu-effects-toggle" aria-pressed={effects} onClick={onToggleEffects} aria-label={effects?"ワープ効果音をオフ":"ワープ効果音をオン"}>{effects?"♫ 効果音 ON":"♪ 効果音 OFF"}</button><button aria-expanded={searchOpen} aria-controls={titleId+"-search-panel"} onClick={()=>{setSearchOpen(v=>!v);setQuery("");}}>⌕ 語彙検索</button><button className="vu-close" ref={close} onClick={onClose} aria-label="閉じる">✕</button></div></header>
    <div ref={voiceDockRef} className="vu-voice-dock"/>
@@ -130,7 +134,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
       {nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={'vu-line '+n.type}/>)}
     </svg>
     <div className="vu-center" data-memory={memoryFor(center).status} style={{'--vu-memory-light':memoryFor(center).brightness}}>{showImages&&center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<button className="vu-center-word" title="単語の詳しい情報" onClick={()=>showProfile(center.word,center)}><strong>{center.word}</strong></button><span>{mapSense||center.meaning}</span><small>{memoryLabels[memoryFor(center).status]}</small><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
-    {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:(280+i*65)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{n.candidate?"未校閲候補 · ":""}{memoryLabels[memoryFor(n).status]}</small></button>)}
+    {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:instantBack?'0ms':(i*9)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{n.candidate?"未校閲候補 · ":""}{memoryLabels[memoryFor(n).status]}</small></button>)}
    </div></div>
    <footer className="vu-map-footer"><span>{visible.length?visible.length+'件': '関連語 0件'}{needsCandidates&&!candidateData&&!candidateError?' · 読込中…':''}{candidateError?' · 追加教材の読込に失敗':''}</span><div className="vu-pagination"><button disabled={currentPage===0} onClick={()=>{setPage(p=>Math.max(0,p-1));}}>← 前へ</button><span>{Math.min(page+1,pageCount)} / {pageCount}</span><button disabled={currentPage>=pageCount-1} onClick={()=>{setPage(p=>Math.min(pageCount-1,p+1));}}>次へ →</button></div>{onPractice&&<button className="vu-practice-short" onClick={()=>onPractice(center.word)}>クイズ →</button>}</footer></>}
    {view==='list'&&<section className="vu-list-center"><button onClick={()=>showProfile(center.word,center)}>{center.word} ↗</button><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}

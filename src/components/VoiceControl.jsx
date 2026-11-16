@@ -1,10 +1,12 @@
-import React,{useEffect,useRef,useState} from 'react';
+import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand} from '../lib/voice.js';
+import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand,isAppleTouchDevice,voiceRestartDelay,speculativeVoiceWord,supersedesVoiceLookup,speculativeProfileWord} from '../lib/voice.js';
 import {lookupUniverse,universeEntries,getRelations} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
 import VoiceOrb from './VoiceOrb';
+import {warmVocabularyIndex} from '../lib/vocabularyLookup.js';
+import {unlockProfileWarp,cancelProfileWarp} from '../lib/profileWarp.js';
 import {createVoiceMeter} from '../lib/voiceMeter.js';
 
 const drafts=import.meta.glob('../../data/vocabulary-drafts/batches/*.json',{import:'default'});
@@ -27,6 +29,9 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  const [open,setOpen]=useState(false),[enabled,setEnabled]=useState(false),[status,setStatus]=useState('中央の光をタップして開始'),[transcript,setTranscript]=useState(''),[typed,setTyped]=useState(''),[entry,setEntry]=useState(null),[showExamples,setShowExamples]=useState(true),[showJa,setShowJa]=useState(true),[showImage,setShowImage]=useState(true),[showEntryInUniverse,setShowEntryInUniverse]=useState(false);
  const [phase,setPhase]=useState('off'),[micState,setMicState]=useState('off'),[interim,setInterim]=useState(''),[busy,setBusy]=useState(false),[resultOpen,setResultOpen]=useState(false),[helpOpen,setHelpOpen]=useState(false),[suggestions,updateSuggestions]=useState([]),[suggestionMode,setSuggestionMode]=useState('next'),[notice,setNotice]=useState('');
  const suggestionsRef=useRef([]);
+ const warmedWord=useRef(''),warmTimer=useRef(null),warmRef=useRef(null);
+ const localIndex=useMemo(()=>new Map(words.map(w=>[norm(w.word),w])),[words]);
+ warmRef.current=word=>{if(!word||warmedWord.current===word)return;warmedWord.current=word;warmVocabularyIndex().catch(()=>{if(warmedWord.current===word)warmedWord.current='';});};
  const setSuggestions=(items,mode='next')=>{suggestionsRef.current=items;updateSuggestions(items);setSuggestionMode(mode);};
  const activeTimer=useRef(null),noticeTimer=useRef(null),commandEpoch=useRef(0),pending=useRef(null),pendingTimer=useRef(null),wasUniverseOpen=useRef(false),skipAutoReturn=useRef(false);
  const [compact,setCompact]=useState(false),[meterReady,setMeterReady]=useState(false);
@@ -37,10 +42,10 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  const recognition=useRef(null),running=useRef(false),wanted=useRef(false),timer=useRef(null),processing=useRef(false),latest=useRef(null),suspendRef=useRef(suspended);
  const [supports]=useState(()=>typeof window!=='undefined'&&Boolean(window.SpeechRecognition||window.webkitSpeechRecognition));
  const changePhase=value=>{phaseRef.current=value;setPhase(value);};
- const standby=()=>{changePhase('standby');setTranscript('');setStatus(universeRef.current?'Ready · Show me …':'Waiting for Hey, Dash / Dash…');};
- const stop=()=>{clearTimeout(activeTimer.current);releaseMeter();wanted.current=false;commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);clearTimeout(noticeTimer.current);setNotice('');setSuggestions([]);setTranscript('');setResultOpen(false);setHelpOpen(false);clearTimeout(timer.current);setMicState('off');setInterim('');setBusy(false);changePhase('off');const r=recognition.current;recognition.current=null;try{r?.abort();}catch{}setEnabled(false);};
- const returnAssistant=()=>{skipAutoReturn.current=true;commandEpoch.current++;pending.current=null;setOpen(true);setResultOpen(false);setShowEntryInUniverse(false);setHelpOpen(false);setCompact(false);setTranscript('');setInterim('');setSuggestions([]);clearTimeout(noticeTimer.current);setNotice('');if(wanted.current)activate();onAppCommand('close');};
- const activate=()=>{clearTimeout(activeTimer.current);setOpen(true);setCompact(false);changePhase('active');setStatus("I'm listening…");activeTimer.current=setTimeout(()=>{if(wanted.current){standby();}},12000);};
+ const standby=()=>{clearTimeout(activeTimer.current);changePhase('standby');setTranscript('');setStatus(universeRef.current?'Ready · Show me …':'Waiting for Hey, Dash / Dash…');};
+ const stop=()=>{clearTimeout(warmTimer.current);warmedWord.current='';cancelProfileWarp();processing.current=false;clearTimeout(activeTimer.current);releaseMeter();wanted.current=false;commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);clearTimeout(noticeTimer.current);setNotice('');setSuggestions([]);setTranscript('');setResultOpen(false);setHelpOpen(false);clearTimeout(timer.current);setMicState('off');setInterim('');setBusy(false);changePhase('off');const r=recognition.current;recognition.current=null;try{r?.abort();}catch{}setEnabled(false);};
+ const returnAssistant=()=>{processing.current=false;setBusy(false);clearTimeout(pendingTimer.current);skipAutoReturn.current=true;commandEpoch.current++;pending.current=null;setOpen(true);setResultOpen(false);setShowEntryInUniverse(false);setHelpOpen(false);setCompact(false);setTranscript('');setInterim('');setSuggestions([]);clearTimeout(noticeTimer.current);setNotice('');if(wanted.current)activate();onAppCommand('close');};
+ const activate=()=>{clearTimeout(activeTimer.current);setOpen(true);setCompact(false);changePhase('active');setStatus("I'm listening…");};
  const wakeChime=()=>{try{const C=window.AudioContext||window.webkitAudioContext;if(!C)return;const ctx=new C();const o=ctx.createOscillator(),g=ctx.createGain();o.frequency.setValueAtTime(660,ctx.currentTime);o.frequency.setValueAtTime(880,ctx.currentTime+.09);g.gain.setValueAtTime(.035,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.22);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.23);o.onended=()=>{ctx.close().catch(()=>{});};}catch{}};
 
  const speak=text=>{if(!text||!window.speechSynthesis)return;window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-US';window.speechSynthesis.speak(u);};
@@ -56,13 +61,13 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  async function resolve(word){for(const candidate of wordCandidates(word)){const found=await resolveExact(candidate);if(found)return found;}return null;}
  async function candidates(word){let draft=[];try{draft=[...(await draftIndex()).keys()];}catch{}return suggestVoiceWords(word,[...words.map(w=>norm(w.word)),...universeEntries().map(w=>w.word),...draft]);}
  const selected=()=>entry||current;
- const suggestNext=(result,alternatives,relations)=>{if(!result?.word)return;const known=recognizedSearchTerms(alternatives).filter(k=>lookupUniverse(k)||words.some(w=>norm(w.word)===k));const links=relations||getRelations(result);setSuggestions(nextVoiceWords(result.word,known,links),'next');};
+ const suggestNext=(result,alternatives,relations)=>{if(!result?.word)return;const known=recognizedSearchTerms(alternatives).filter(k=>lookupUniverse(k)||localIndex.has(k));const links=relations||getRelations(result);setSuggestions(nextVoiceWords(result.word,known,links),'next');};
  async function execute(raw,alternatives=[]){
   const addressed=extractWake(raw);const parsed=parseVoice(addressed?.command||raw);
   if(returnsToAssistant(parsed.kind,universeOpen)){returnAssistant();return;}
   if(parsed.kind==='stop'){stop();setStatus('音声操作を停止しました');return;}
   // Keep the next valid command while an asynchronous search is still resolving.
-  if(processing.current){if(parsed.kind!=='unknown')pending.current={raw,alternatives};return;}
+  if(processing.current){if(supersedesVoiceLookup(parsed.kind,parsed.value,universeOpen)){commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);processing.current=false;setBusy(false);}else{if(parsed.kind!=='unknown')pending.current={raw,alternatives};return;}}
   const epoch=commandEpoch.current;
   const valid=()=>epoch===commandEpoch.current;
   processing.current=true;setBusy(true);setInterim('');setTranscript(raw);setSuggestions([]);
@@ -95,7 +100,8 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
    if(kind==='next'||kind==='back'||kind==='previous'||kind==='pageBack'){setCompact(true);setEntry(null);setResultOpen(false);onAppCommand(kind==='previous'||kind==='pageBack'?'back':kind);setStatus('OK');return;}
    if(kind==='search'||kind==='focus'||(kind==='universe'&&value)||(kind==='examples'&&value)){
     // Registered networks are already in memory; open immediately instead of loading every course/draft batch.
-    let result=directUniverse&&resolveVocabulary?await resolveVocabulary(value):await resolve(value);
+    let result=directUniverse?quickVoiceEntry(value,words,lookupUniverse):null;
+    if(!result)result=directUniverse&&resolveVocabulary?await resolveVocabulary(value):await resolve(value);
     // If the primary result is not registered, offer alternatives rather than silently choosing one.
     if(!valid())return;
     if(!result){
@@ -124,7 +130,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
     const line=num===undefined?target.word:ex[num]?.en;if(!line){setStatus('例文は未登録です');return;}speak(line);setStatus('Reading aloud');return;}
    flash('I didn’t catch that. Try again.');
   }catch(e){if(valid())flash('操作できませんでした。もう一度お試しください。');}
-  finally{processing.current=false;setBusy(false);const next=pending.current;pending.current=null;if(next&&(wanted.current||open)){const queuedEpoch=commandEpoch.current;clearTimeout(pendingTimer.current);pendingTimer.current=setTimeout(()=>{if((wanted.current||open)&&queuedEpoch===commandEpoch.current)latest.current?.(next.raw,next.alternatives);},90);}}
+  finally{if(valid()){processing.current=false;setBusy(false);const next=pending.current;pending.current=null;if(next&&(wanted.current||open)){const queuedEpoch=commandEpoch.current;clearTimeout(pendingTimer.current);pendingTimer.current=setTimeout(()=>{if((wanted.current||open)&&queuedEpoch===commandEpoch.current)latest.current?.(next.raw,next.alternatives);},0);}}}
  }
  latest.current=execute;
  suspendRef.current=suspended;
@@ -139,15 +145,16 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
     if(++restartFailures.current>=3){stop();setStatus('音声認識を再開できません。中央の光をタップしてください');}
     else restart();
    }
-  },150);
+  },voiceRestartDelay(restartFailures.current));
  }
  function start(){
   setCompact(false);setOpen(true);setResultOpen(false);setHelpOpen(false);setTranscript('');setInterim('');setSuggestions([]);setNotice('');
   if(!supports){setStatus('このブラウザでは音声認識に対応していません。');return;}
   if(suspended){flash('音読モードから戻ってから開始してください');return;}
   if(wanted.current){stop();setStatus('停止しました');return;}
+  void unlockProfileWarp();
   const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-  const r=new SR();recognition.current=r;r.lang='en-US';r.continuous=!(/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1));r.interimResults=true;r.maxAlternatives=5;
+  const r=new SR();recognition.current=r;r.lang='en-US';const appleTouch=isAppleTouchDevice(navigator.userAgent,navigator.platform,navigator.maxTouchPoints);r.continuous=!appleTouch;r.interimResults=true;r.maxAlternatives=5;
   restartFailures.current=0;meterRetry.current=false;
   wanted.current=true;setEnabled(true);setMicState('starting');
   activate();
@@ -158,28 +165,30 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   r.onresult=e=>{
    if(recognition.current!==r||!wanted.current||suspendRef.current||document.hidden||window.speechSynthesis?.speaking)return;
    const segments=speechSegments(e);
-   if((phaseRef.current==='active'||universeRef.current||suggestionsRef.current.length>0)&&segments.interim){setInterim(segments.interim);setMicState('speaking');}
-   const alternatives=segments.final.at(-1);if(!alternatives?.length)return;
-   setInterim('');
-   const routed=routeVoice(alternatives,phaseRef.current,{universeOpen:universeRef.current,candidates:suggestionsRef.current});
-   if(!routed)return;
-   if(routed.kind==='wake'){
-    const wasStandby=phaseRef.current==='standby';
-    activate();
-    if(routed.command)latest.current?.(routed.command,alternatives);
-    else{if(wasStandby)wakeChime();setTranscript('Dash');}
-    return;
+   if(segments.interim){setInterim(segments.interim);setMicState('speaking');const profileWord=speculativeProfileWord(segments.interim);if(profileWord&&phaseRef.current==='active')warmRef.current?.(profileWord);const word=speculativeVoiceWord(segments.interim);clearTimeout(warmTimer.current);if(word&&phaseRef.current==='active')warmTimer.current=setTimeout(()=>warmRef.current?.(word),100);}
+   if(!segments.final.length)return;
+   clearTimeout(warmTimer.current);setInterim('');
+   for(const alternatives of segments.final){
+    if(!wanted.current)break;
+    setTranscript(alternatives[0]||'');
+    const routed=routeVoice(alternatives,phaseRef.current,{universeOpen:universeRef.current,candidates:suggestionsRef.current});
+    if(!routed)continue;
+    if(routed.kind==='wake'){
+     const wasStandby=phaseRef.current==='standby';
+     activate();
+     if(routed.command)latest.current?.(routed.command,alternatives);
+     else{if(wasStandby)wakeChime();setTranscript('Dash');}
+    }else latest.current?.(routed.command,alternatives);
    }
-   latest.current?.(routed.command,alternatives);
-   if(phaseRef.current==='active'){clearTimeout(activeTimer.current);activeTimer.current=setTimeout(()=>{if(wanted.current){standby();}},12000);}
   };
   r.onerror=e=>{if(recognition.current!==r||!wanted.current)return;if(e.error==='audio-capture'&&meter.current&&!meterRetry.current){meterRetry.current=true;releaseMeter();setMicState('reconnecting');flash('音声認識を優先して再接続します');return;}if(['not-allowed','service-not-allowed','audio-capture','network'].includes(e.error)){stop();flash('音声認識: '+e.error+'（中央の光を再度タップしてください）');}else if(e.error==='no-speech'&&phaseRef.current==='active')setInterim('');};
   r.onend=()=>{if(recognition.current!==r)return;running.current=false;setInterim('');setMicState('reconnecting');if(wanted.current)restart();};
   try{r.start();
    // A separate, local analyser is optional; it never sends or plays audio.
-   const m=createVoiceMeter();meter.current=m;m.start().then(ok=>{if(meter.current===m&&wanted.current){setMeterReady(ok);if(!ok)releaseMeter();}});
+   if(!appleTouch){const m=createVoiceMeter();meter.current=m;m.start().then(ok=>{if(meter.current===m&&wanted.current){setMeterReady(ok);if(!ok)releaseMeter();}});}
   }catch{stop();flash('マイクを開始できませんでした');}
  }
+ useEffect(()=>{if(!open&&!enabled)return;const preload=()=>{warmVocabularyIndex().catch(()=>{});};const id=setTimeout(preload,50);return()=>clearTimeout(id);},[open,enabled]);
  useEffect(()=>{if(wasUniverseOpen.current&&!universeOpen){if(wanted.current&&!skipAutoReturn.current)stop();skipAutoReturn.current=false;}wasUniverseOpen.current=universeOpen;},[universeOpen,enabled]);
  useEffect(()=>{if(!dashboardOpen&&!universeOpen&&wanted.current&&!open)stop();},[dashboardOpen,universeOpen]);
  useEffect(()=>{const show=()=>{setOpen(true);setCompact(false);setHelpOpen(false);setResultOpen(false);};window.addEventListener('vd-open-dash',show);return()=>window.removeEventListener('vd-open-dash',show);},[]);
@@ -187,14 +196,14 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  useEffect(()=>{
   const hidden=()=>{if(document.hidden&&wanted.current){stop();setStatus('画面が非表示になったため停止しました');}};
   document.addEventListener('visibilitychange',hidden);
-  return()=>{document.removeEventListener('visibilitychange',hidden);wanted.current=false;meter.current?.close();meter.current=null;clearTimeout(timer.current);clearTimeout(noticeTimer.current);clearTimeout(pendingTimer.current);clearTimeout(activeTimer.current);try{recognition.current?.abort();}catch{}};
+  return()=>{document.removeEventListener('visibilitychange',hidden);wanted.current=false;meter.current?.close();meter.current=null;clearTimeout(timer.current);clearTimeout(noticeTimer.current);clearTimeout(pendingTimer.current);clearTimeout(activeTimer.current);clearTimeout(warmTimer.current);try{recognition.current?.abort();}catch{}};
  },[]);
  return createPortal(<div className={"vd-voice-shell"+(universeOpen?" in-universe":"")+(dashboardOpen&&!universeOpen&&!enabled&&!helpOpen&&!resultOpen?" vd-voice-home-idle":"")}>
   {(!universeOpen||!voiceDock)&&<VoiceOrb enabled={enabled} phase={phase} micState={micState} busy={busy} visible={open&&!compact} full={open&&!compact&&!resultOpen&&!universeOpen&&!helpOpen} supports={supports} status={status} onStart={start} onClose={()=>{stop();setOpen(false);setCompact(true);}} meter={meter} meterReady={meterReady} onMinimize={()=>{setOpen(false);setCompact(true);}} onExpand={()=>{setOpen(true);setResultOpen(false);setHelpOpen(false);setCompact(false);}} onStop={()=>{stop();setStatus('マイクを停止しました');setOpen(true);setCompact(false);setResultOpen(false);setSuggestions([]);setHelpOpen(false);setNotice('');}} transcript={interim||transcript} interim={Boolean(interim)} notice={notice} suggestions={suggestions} onChoose={word=>{setSuggestions([]);execute(voiceCandidateCommand(word));}}/>}
-  {universeOpen&&voiceDock&&enabled&&createPortal(<div className="vu-live-voice"><span className="vu-live-indicator" data-state={micState}/><span role="status" className="vu-live-copy"><strong>{busy?'Processing…':phase==='standby'?'Ready · Show me …':micState==='reconnecting'?'Reconnecting…':micState==='speaking'?'Listening to you…':'Listening…'}</strong>{(notice||interim||transcript)&&<small>{notice||interim||transcript}</small>}</span><button type="button" onClick={returnAssistant} aria-label="Return to full-screen Dash Assistant">↩ Dash</button><button type="button" className="vu-live-stop" onClick={()=>{stop();setStatus('音声操作を停止しました');}} aria-label="Stop listening">■</button>{suggestions.length>0&&<div className="vu-live-suggestions" aria-label="音声検索候補"><small className="vu-suggestion-caption">{suggestionMode==='retry'?'Did you mean?':'Explore next'} · 語彙または番号を発話</small>{suggestions.map((word,i)=><button key={word} onClick={()=>execute(voiceCandidateCommand(word))}><span className="vu-suggestion-number">{i+1}</span>{word}</button>)}</div>}</div>,voiceDock)}
+  {universeOpen&&voiceDock&&enabled&&createPortal(<div className="vu-live-voice"><span className="vu-live-indicator" data-state={micState}/><span role="status" className="vu-live-copy"><strong>{busy?'Processing…':phase==='standby'?'Ready · Show me …':micState==='reconnecting'?'Reconnecting…':micState==='speaking'?'Listening to you…':'Listening…'}</strong>{(interim||transcript)&&<small>{interim||transcript}</small>}{notice&&<small>{notice}</small>}</span><button type="button" onClick={returnAssistant} aria-label="Return to full-screen Dash Assistant">↩ Dash</button><button type="button" className="vu-live-stop" onClick={()=>{stop();setStatus('音声操作を停止しました');}} aria-label="Stop listening">■</button>{suggestions.length>0&&<div className="vu-live-suggestions" aria-label="音声検索候補"><small className="vu-suggestion-caption">{suggestionMode==='retry'?'Did you mean?':'Explore next'} · 語彙または番号を発話</small>{suggestions.map((word,i)=><button key={word} onClick={()=>execute(voiceCandidateCommand(word))}><span className="vu-suggestion-number">{i+1}</span>{word}</button>)}</div>}</div>,voiceDock)}
   {helpOpen&&<section className="vd-voice-panel vd-voice-help" aria-label="Voice help">
    <header><strong>Dash Assistant · Commands</strong><button type="button" onClick={()=>setHelpOpen(false)} aria-label="Close help">×</button></header>
-   <p>{status} · マイクは手動でオンにしてください。起動後は「Dash, show me ...」と話しかけるか、「Dash」の後に指示してください。</p><form onSubmit={e=>{e.preventDefault();if(typed.trim()){const addressed=extractWake(typed.trim());if(addressed){if(wanted.current)activate();if(addressed.command)execute(addressed.command);}else execute(typed.trim());setTyped('');setHelpOpen(false);}}}><input aria-label="Type a voice command" value={typed} onChange={e=>setTyped(e.target.value)} placeholder="Show me beautiful"/><button type="submit">Go</button></form>
+   <p>{status} · マイクは手動でオンにしてください。起動後は「Show me ...」と続けて指示できます。待機を選んだ場合はDashと呼びかけてください。</p><form onSubmit={e=>{e.preventDefault();if(typed.trim()){const addressed=extractWake(typed.trim());if(addressed){if(wanted.current)activate();if(addressed.command)execute(addressed.command);}else execute(typed.trim());setTyped('');setHelpOpen(false);}}}><input aria-label="Type a voice command" value={typed} onChange={e=>setTyped(e.target.value)} placeholder="Show me beautiful"/><button type="submit">Go</button></form>
    <p>Dash, show me innovation / develop / sustainable · Expand synonyms · Expand beauty · Show me an example sentence of beauty · Back (previous screen) · Back home (Dash) · Go to sleep · Stop listening</p><p className="vd-voice-privacy">待機中もマイクを使用します。ブラウザによっては外部の音声認識サービスを利用します。</p>
   </section>}
   {resultOpen&&entry&&(!universeOpen||showEntryInUniverse)&&<section className="vd-voice-panel vd-voice-result" aria-label="Vocabulary search result"><header><small>VOCABULARY RESULT</small><button type="button" onClick={()=>setResultOpen(false)} aria-label="Close result">×</button></header>

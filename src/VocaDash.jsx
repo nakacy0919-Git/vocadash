@@ -1,3 +1,4 @@
+import {playProfileWarp,cancelProfileWarp} from './lib/profileWarp.js';
 import {recordClassroom, startQuestion} from './classroom/client';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
@@ -103,7 +104,7 @@ function playUniverseLaunchSound(enabled) {
     const played=universeEffectAudio.play();if(played?.catch)played.catch(fallback);
   }catch{/* effect must never block the learning workspace */}
 }
-function stopUniverseLaunchSound(){try{universeEffectAudio?.pause();}catch{/* no-op */}}
+function stopUniverseLaunchSound(){cancelProfileWarp();try{universeEffectAudio?.pause();}catch{/* no-op */}}
 function UniverseLaunchButton({entry,onLaunch}) {
   return <span className="vu-launch-wrap"><button type="button" className="vu-launch vu-launch-round" onClick={()=>onLaunch(entry)} aria-label={entry.word+' の Voca Universe 関連語マップを開く'} aria-haspopup="dialog">
     <span className="vu-launch-symbol" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="5" fill="currentColor"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(-35 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="9" stroke="currentColor" strokeWidth="1.6" transform="rotate(55 24 24)"/><circle cx="36" cy="13" r="2.5" fill="currentColor"/><circle cx="11" cy="30" r="2" fill="currentColor"/></svg></span>
@@ -654,7 +655,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </div>
     </main>
     <VoiceControl voiceDock={voiceDock} current={current} words={words} universeOpen={Boolean(universeEntry)} onOpenUniverse={openUniverse} onAppCommand={voiceAppCommand} loadCourseWords={voiceCourseSearch} resolveVocabulary={resolveVocabulary} searchAll={searchAll} dashboardOpen={dashboardOpen||mode==='library'} suspended={mode==='reading'&&!dashboardOpen}/>
-    {universeEntry && <VocaUniverse onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} records={store.records} memoryAdapter={universeMemoryAdapter} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onPractice={word=>{resetCard();setAutoplay(false);stopUniverseLaunchSound();setUniverseEntry(null);setQuizStudioWord(word);setDashboardOpen(true);setQuizStudioOpen(true);}} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
+    {universeEntry && <VocaUniverse onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} records={store.records} memoryAdapter={universeMemoryAdapter} onProfileWarp={()=>{stopUniverseLaunchSound();playProfileWarp(store.settings.universeSound!==false);}} onCancelProfileWarp={cancelProfileWarp} onWarp={()=>playUniverseLaunchSound(store.settings.universeSound!==false)} voiceDockRef={setVoiceDock} initialFilter={universeInitialFilter} entry={universeEntry} words={words} resolveVocabulary={resolveVocabulary} onPractice={word=>{resetCard();setAutoplay(false);stopUniverseLaunchSound();setUniverseEntry(null);setQuizStudioWord(word);setDashboardOpen(true);setQuizStudioOpen(true);}} onClose={()=>{stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}} onSpeak={item=>speak(item)} sound={store.settings.sound} effects={store.settings.universeSound!==false} onToggleEffects={()=>{const next=store.settings.universeSound===false;setSetting("universeSound",next);if(next)playUniverseLaunchSound(true);else stopUniverseLaunchSound();}}/>}
     {quizReviewOpen && (mode === 'quiz' || mode === 'listening') && current && (
       <div className="vd-quiz-review-backdrop">
         <section className={'vd-quiz-review-dialog' + (quizAnswerCorrect ? ' is-correct' : '')} role="dialog" aria-modal="true" aria-labelledby="vd-quiz-review-title" aria-describedby="vd-quiz-review-description">

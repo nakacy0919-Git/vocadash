@@ -145,3 +145,35 @@ test('word profile pagination preserves bilingual examples and distinct sense id
 test('Back restores the last map or profile and its page rather than jumping home',()=>{
  const map={center:{word:'beauty'},filter:'family',page:2,profile:null};const profile={center:{word:'beauty'},profile:{word:'accelerator'},profilePage:1};const history=pushProfileHistory(pushProfileHistory([],map),profile);let a=popProfileHistory(history);assert.deepEqual(a.screen,profile);a=popProfileHistory(a.remaining);assert.deepEqual(a.screen,map);assert.equal(popProfileHistory(a.remaining).screen,null);
 });
+
+import {isUrgentVoiceNavigation,isAppleTouchDevice,voiceRestartDelay} from './voice.js';
+test('Back and Back home can preempt pending searches without changing explicit word search',()=>{
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Back').kind,true),true);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Back home').kind,false),true);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Show me back').kind,true),false);
+ assert.equal(isUrgentVoiceNavigation(parseVoice('Show me beautiful').kind,true),false);
+ assert.equal(isUrgentVoiceNavigation('back',false),false);
+});
+test('iPadOS desktop user-agent and iPhone use a single microphone path',()=>{
+ assert.equal(isAppleTouchDevice('Mozilla iPad','iPad',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla Macintosh','MacIntel',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla iPhone','iPhone',5),true);
+ assert.equal(isAppleTouchDevice('Mozilla Macintosh','MacIntel',0),false);
+ assert.equal(isAppleTouchDevice('Windows Chrome','Win32',0),false);
+});
+test('recognition reconnects promptly with backoff after failures',()=>{
+ assert.equal(voiceRestartDelay(0),40);
+ assert.equal(voiceRestartDelay(1),80);
+ assert.equal(voiceRestartDelay(2),160);
+ assert.equal(voiceRestartDelay(10),800);
+});
+
+import {profileWarpSamples,PROFILE_WARP_MS} from './profileWarp.js';
+test('profile warp uses a bounded original short sound with smooth endpoints',()=>{const {rate,samples}=profileWarpSamples();assert.equal(samples.length,Math.round(rate*PROFILE_WARP_MS/1000));assert.equal(samples[0],0);assert.ok(Math.abs(samples.at(-1))<.001);assert.ok(samples.some(x=>Math.abs(x)>.1));assert.ok(samples.every(x=>Number.isFinite(x)&&Math.abs(x)<.8));});
+
+import {speculativeVoiceWord,supersedesVoiceLookup} from './voice.js';
+test('interim single-word queries may preload but incomplete or navigation commands cannot',()=>{for(const raw of ['Show me beauty','Hey Dash, show me accelerator','Show me sad'])assert.ok(speculativeVoiceWord(raw),raw);for(const raw of ['Show me','Show me an','Show me example','Show me example sentence of beauty','Back','Back home','Show me take off'])assert.equal(speculativeVoiceWord(raw),'',raw);});
+test('new searches and back supersede slow requests while unrelated commands do not',()=>{for(const raw of ['Show me beauty','Show me accelerator','Back','Back home']){const cmd=parseVoice(raw);assert.equal(supersedesVoiceLookup(cmd.kind,cmd.value,true),true,raw);}for(const raw of ['Read aloud','Show me synonyms','Show me an example sentence of beauty']){const cmd=parseVoice(raw);assert.equal(supersedesVoiceLookup(cmd.kind,cmd.value,true),false,raw);}});
+
+import {speculativeProfileWord} from './voice.js';
+test('example requests can warm the canonical index before final recognition without navigating',()=>{for(const raw of ['Show me example sentence of beauty','Hey Dash, show me an example sentence of beauty','Show me examples for beauty'])assert.equal(speculativeProfileWord(raw),'beauty',raw);for(const raw of ['Show me example sentence','Show me beauty','Back','Back home'])assert.equal(speculativeProfileWord(raw),'',raw);});
