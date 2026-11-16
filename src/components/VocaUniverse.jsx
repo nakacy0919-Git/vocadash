@@ -76,7 +76,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     if(['focus','search','universe'].includes(kind)&&value){
      const k=value.trim().toLowerCase(),link=links.find(x=>x.word.toLowerCase()===k),item=lookupUniverse(k),local=index.get(k),resolved=c.resolvedEntry;
      if(!link&&!item&&!local&&!resolved){if(!c.localOnly)done('未登録: '+value);return;}
-     if(center.word.toLowerCase()!==k)setTrail(t=>[...t.slice(-49),center]);const next={...link,...item,...local,...resolved,word:resolved?.word||local?.word||item?.word||link?.word||k,meaning:resolved?.meaning||local?.meaning||item?.meaning||link?.meaning||''};change(next);setView('map');c.entry=next;done('Focus: '+k);return;
+     if(center.word.toLowerCase()!==k)setTrail(t=>[...t.slice(-49),center]);const next={...link,...item,...local,...resolved,word:resolved?.word||local?.word||item?.word||link?.word||k,meaning:resolved?.meaning||local?.meaning||item?.meaning||link?.meaning||''};change(next);setView('map');c.entry=next;c.relations=getRelations(next);if(candidateData){for(const sense of candidateData.sensesFor(next.word))c.relations.push(...candidateData.candidateTerms(sense));}done('Focus: '+k);return;
     }
     if(kind==='read'){const item=center;if(!sound){done('音声設定がオフです');return;}if(value){if(value==='first'&&item.english){const u=new SpeechSynthesisUtterance(item.english);u.lang='en-US';window.speechSynthesis.speak(u);}else{done('この画面にはその例文がありません');return;}}else onSpeak(item);done();return;}
     if(kind==='meaning'||kind==='examples'){c.entry=center;done();return;}
