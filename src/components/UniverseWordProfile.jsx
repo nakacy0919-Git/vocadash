@@ -38,12 +38,12 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
  const changePage=n=>{setDetail(null);setDetailPage(0);onPage(n);};
  const audioMessage=audioStatus==='error'?'音声再生に失敗 · 再タップ':audioStatus==='starting'?'音声準備中…':audioStatus==='playing'?'モデル音声を再生中…':'';
  const speakButton=(value,label)=><button type="button" className="vp-sound" aria-label={label} title={label} onClick={()=>pronounce(value)}>▶</button>;
- return <section ref={panel} className={'vu-profile vp-single'+(layout.portrait?' vp-portrait':'')+(layout.tight?' vp-tight':'')+(layout.tiny?' vp-tiny':'')} aria-label={request.word+' の語義と例文'}>
+ return <section ref={panel} className={'vu-profile vp-single'+(layout.portrait?' vp-portrait':'')+(layout.tight?' vp-tight':'')+(layout.tiny?' vp-tiny':'')+(detail?' vp-detail-open':'')} aria-label={request.word+' の語義と例文'}>
  <header className="vp-bar"><button type="button" onClick={detail?()=>setDetail(null):onBack}>← {detail?'概要':'Back'}</button><span>WORD PROFILE{p?' · 語義 '+(p.senseIndex+1)+'/'+p.senseCount:''}</span><button type="button" disabled={!data} onClick={()=>onExplore(data)}>◉ Universe</button></header>
  {!p?<div className="vp-state" role="status"><h2>{request.word}</h2><p>{error?'登録済みの語義・例文が見つかりませんでした。':'語義と例文を読み込み中…'}</p></div>:<>
  <div className="vp-summary">
   <article className="vp-word-card">
-   <div className="vp-word-heading"><div><h1 title={data.word}>{data.word}</h1><div className="vp-badges"><span className="vp-cefr">CEFR {p.cefr||'未登録'}</span><small>{posLabel(p.pos)||'品詞未登録'}</small></div></div>{speakButton(data.word,data.word+' の発音')}</div>
+   <div className="vp-word-heading"><div><h1 title={data.word}>{data.word}</h1>{data.word.length>24&&<button type="button" className="vp-link" onClick={()=>fullText('Headword',data.word,data.word)}>語彙全文 ↗</button>}<div className="vp-badges"><span className="vp-cefr">CEFR {p.cefr||'未登録'}</span><small>{posLabel(p.pos)||'品詞未登録'}</small></div></div>{speakButton(data.word,data.word+' の発音')}</div>
    <p className="vp-ipa">IPA: {p.pronunciation||data.pronunciation||data.ipa||'未登録'}</p>
    <BoundedText className="vp-meaning" text={p.meaning||'日本語訳未登録'} onFull={()=>fullText('日本語の意味',p.meaning||'未登録')}/>
   </article>
