@@ -8,6 +8,7 @@ import UniverseLearning from './UniverseLearning';
 import UniverseWordProfile from './UniverseWordProfile.jsx';
 import {warmVocabularyIndex,initialVocabularyProfile} from '../lib/vocabularyLookup.js';
 import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
+import {playModelSpeech} from '../lib/modelSpeech.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
 export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,onProfileWarp,onCancelProfileWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
@@ -79,7 +80,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     const done=msg=>{c.handled=true;c.message=msg||'OK';};
     if(kind==='profile'||kind==='examples'||kind==='meaning'){const target=value||profile?.word||center.word;showProfile(target,c.resolvedEntry||(target.toLowerCase()===center.word.toLowerCase()?center:null));done('Word profile: '+target);return;}
     if(profile&&['next','pageBack'].includes(kind)){setProfilePage(p=>Math.max(0,p+(kind==='next'?1:-1)));done();return;}
-    if(profile&&kind==='read'){const item=profileData||profile.seed;if(!item||!sound){done('音声または教材を利用できません');return;}const index={first:0,second:1,third:2}[value];const pageData=displayedProfilePage.current;const text=index===undefined?item.word:(pageData?.examples?.[index]?.en||item.examples?.[index]?.en);if(text)onSpeak({word:text});done(text?'Reading aloud':'例文は未登録です');return;}
+    if(profile&&kind==='read'){const item=profileData||profile.seed;if(!item){done('教材を利用できません');return;}const index={first:0,second:1,third:2}[value];const pageData=displayedProfilePage.current;const text=index===undefined?item.word:(pageData?.examples?.[index]?.en||item.examples?.[index]?.en);if(text){const ok=playModelSpeech(text);done(ok?'Reading aloud':'モデル音声を再生できません');}else done('例文は未登録です');return;}
     if(kind==='filter'){if(profile)remember();setProfile(null);setProfileData(null);if(value==='forms'){applyFilter('family');setView('list');}else{applyFilter(value);setView('map');}done(value==='forms'?'Word forms':value==='all'?'All relations':(types[value]||value)+' · '+links.filter(x=>x.type===value).length);return;}
     if(kind==='list'||kind==='map'){if(profile)remember();setProfile(null);setProfileData(null);setDraftOpen(false);setView(kind);done();return;}
     if(kind==='images'){setShowImages(value==='show');done();return;}
