@@ -43,7 +43,9 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const formRows=getWordForms(center.word);
  const visible=links.filter(x=>filter==='all'||x.type===filter);
  const pageCount=orbitPageCount(visible);
- const nodes=orbitNodes(visible,Math.min(page,pageCount-1));
+ const currentPage=Math.min(page,pageCount-1);
+ const nodes=orbitNodes(visible,currentPage);
+ useEffect(()=>{if(page!==currentPage)setPage(currentPage);},[page,currentPage]);
  useEffect(()=>{
    const before=document.activeElement;
    const body=document.body,root=document.documentElement;
@@ -120,7 +122,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     <div className="vu-center" data-memory={memoryFor(center).status} style={{'--vu-memory-light':memoryFor(center).brightness}}>{showImages&&center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<button className="vu-center-word" title="単語の詳しい情報" onClick={()=>{setLearningOpen(false);setDraftOpen(true);}}><strong>{center.word}</strong></button><span>{mapSense||center.meaning}</span><small>{memoryLabels[memoryFor(center).status]}</small><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
     {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:(280+i*65)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{n.candidate?"未校閲候補 · ":""}{memoryLabels[memoryFor(n).status]}</small></button>)}
    </div></div>
-   <footer className="vu-map-footer"><span>{visible.length}件{needsCandidates&&!candidateData&&!candidateError?' · 読込中…':''}{candidateError?' · 追加教材の読込に失敗':''}</span><div className="vu-pagination"><button disabled={page===0} onClick={()=>{setPage(p=>p-1);}}>← 前へ</button><span>{Math.min(page+1,pageCount)} / {pageCount}</span><button disabled={page>=pageCount-1} onClick={()=>{setPage(p=>p+1);}}>次へ →</button></div>{onPractice&&<button className="vu-practice-short" onClick={()=>onPractice(center.word)}>クイズ →</button>}</footer></>}
+   <footer className="vu-map-footer"><span>{visible.length?visible.length+'件': '関連語 0件'}{needsCandidates&&!candidateData&&!candidateError?' · 読込中…':''}{candidateError?' · 追加教材の読込に失敗':''}</span><div className="vu-pagination"><button disabled={currentPage===0} onClick={()=>{setPage(p=>Math.max(0,p-1));}}>← 前へ</button><span>{Math.min(page+1,pageCount)} / {pageCount}</span><button disabled={currentPage>=pageCount-1} onClick={()=>{setPage(p=>Math.min(pageCount-1,p+1));}}>次へ →</button></div>{onPractice&&<button className="vu-practice-short" onClick={()=>onPractice(center.word)}>クイズ →</button>}</footer></>}
    {view==='list'&&<section className="vu-list-center"><button onClick={()=>setDraftOpen(true)}>{center.word} ↗</button><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
    {view==='list'&&center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{view==='list'&&center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&view==='list'&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
 
