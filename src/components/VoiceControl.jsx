@@ -1,6 +1,6 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {createPortal} from 'react-dom';
-import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand,isUrgentVoiceNavigation,isAppleTouchDevice,voiceRestartDelay,speculativeVoiceWord,supersedesVoiceLookup} from '../lib/voice.js';
+import {parseVoice,routeVoice,extractWake,wordCandidates,suggestVoiceWords,speechSegments,opensVoiceUniverse,quickVoiceEntry,returnsToAssistant,nextVoiceWords,recognizedSearchTerms,voiceCandidateCommand,isAppleTouchDevice,voiceRestartDelay,speculativeVoiceWord,supersedesVoiceLookup} from '../lib/voice.js';
 import {lookupUniverse,universeEntries,getRelations} from '../lib/universe';
 import {assetImage} from '../lib/learning';
 import './VoiceControl.css';
