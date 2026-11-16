@@ -162,11 +162,15 @@ test('iPadOS desktop user-agent and iPhone use a single microphone path',()=>{
  assert.equal(isAppleTouchDevice('Windows Chrome','Win32',0),false);
 });
 test('recognition reconnects promptly with backoff after failures',()=>{
- assert.equal(voiceRestartDelay(0),80);
- assert.equal(voiceRestartDelay(1),160);
- assert.equal(voiceRestartDelay(2),320);
+ assert.equal(voiceRestartDelay(0),40);
+ assert.equal(voiceRestartDelay(1),80);
+ assert.equal(voiceRestartDelay(2),160);
  assert.equal(voiceRestartDelay(10),800);
 });
 
 import {profileWarpSamples,PROFILE_WARP_MS} from './profileWarp.js';
 test('profile warp uses a bounded original short sound with smooth endpoints',()=>{const {rate,samples}=profileWarpSamples();assert.equal(samples.length,Math.round(rate*PROFILE_WARP_MS/1000));assert.equal(samples[0],0);assert.ok(Math.abs(samples.at(-1))<.001);assert.ok(samples.some(x=>Math.abs(x)>.1));assert.ok(samples.every(x=>Number.isFinite(x)&&Math.abs(x)<.8));});
+
+import {speculativeVoiceWord,supersedesVoiceLookup} from './voice.js';
+test('interim single-word queries may preload but incomplete or navigation commands cannot',()=>{for(const raw of ['Show me beauty','Hey Dash, show me accelerator','Show me sad'])assert.ok(speculativeVoiceWord(raw),raw);for(const raw of ['Show me','Show me an','Show me example','Show me example sentence of beauty','Back','Back home','Show me take off'])assert.equal(speculativeVoiceWord(raw),'',raw);});
+test('new searches and back supersede slow requests while unrelated commands do not',()=>{for(const raw of ['Show me beauty','Show me accelerator','Back','Back home']){const cmd=parseVoice(raw);assert.equal(supersedesVoiceLookup(cmd.kind,cmd.value,true),true,raw);}for(const raw of ['Read aloud','Show me synonyms','Show me an example sentence of beauty']){const cmd=parseVoice(raw);assert.equal(supersedesVoiceLookup(cmd.kind,cmd.value,true),false,raw);}});
