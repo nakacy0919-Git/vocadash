@@ -2,7 +2,7 @@ import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {findVocabularyProfile,initialVocabularyProfile,peekVocabularyProfile} from '../lib/vocabularyLookup.js';
 import {profilePages,profileLayout,profileRelationRows,profileTextPages} from '../lib/wordProfile.js';
 import {getRelations} from '../lib/universe.js';
-import {playModelSpeech} from '../lib/modelSpeech.js';
+import {playModelSpeech,cancelModelSpeech} from '../lib/modelSpeech.js';
 import {posLabel} from '../lib/courseLibrary.js';
 import {assetImage} from '../lib/learning.js';
 import './UniverseWordProfile.css';
@@ -21,12 +21,12 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
  const layout=profileLayout(size.width,size.height);
  const pages=useMemo(()=>data?profilePages(data,layout.examples):[],[data,layout.examples]),index=Math.max(0,Math.min(page,Math.max(0,pages.length-1))),p=pages[index];
  const [detail,setDetail]=useState(null),[detailPage,setDetailPage]=useState(0);
- const [audioStatus,setAudioStatus]=useState('idle');
+ const [audio,setAudio]=useState({value:'',status:'idle'});const audioToken=useRef(0);
  const aliveAudio=useRef(true);useEffect(()=>{aliveAudio.current=true;return()=>{aliveAudio.current=false;};},[]);
  useEffect(()=>{if(data&&index!==page)onPage(index);},[data,index,page,onPage]);
  useEffect(()=>{onPageData?.(p||null);},[data,index,layout.examples]);
  useEffect(()=>{setDetail(null);setDetailPage(0);},[request.word,index]);
- const pronounce=text=>{if(text)playModelSpeech(text,{onStatus:s=>{if(aliveAudio.current)setAudioStatus(s);}});};
+ const pronounce=text=>{if(!text)return;const token=++audioToken.current;if(audio.value===text&&['starting','playing'].includes(audio.status)){cancelModelSpeech();setAudio({value:'',status:'idle'});return;}setAudio({value:text,status:'starting'});playModelSpeech(text,{onStatus:status=>{if(aliveAudio.current&&audioToken.current===token)setAudio({value:text,status});}});};
  const lexicalLinks=useMemo(()=>data?getRelations(data):[],[data]);
  const groups=p?[{label:'Synonyms',ja:'類義語',rows:p.synonyms,type:'synonym'},{label:'Antonyms',ja:'対義語',rows:p.antonyms,type:'contrast'},{label:'Word family',ja:'派生語',rows:p.family,type:'family'},{label:'Collocations',ja:'コロケーション',rows:p.collocations,type:'collocation'}].map(g=>({...g,rows:profileRelationRows(g.rows,lexicalLinks.filter(l=>l.type===g.type))})):[];
  const openDetail=value=>{setDetail(value);setDetailPage(0);};
@@ -36,8 +36,7 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
  const detailCount=detail?.type==='relations'?Math.max(1,Math.ceil((activeGroup?.rows.length||0)/layout.detailTerms)):detail?.type==='text'?textPages.length:1;
  const di=Math.max(0,Math.min(detailPage,detailCount-1));
  const changePage=n=>{setDetail(null);setDetailPage(0);onPage(n);};
- const audioMessage=audioStatus==='error'?'音声再生に失敗 · 再タップ':audioStatus==='starting'?'音声準備中…':audioStatus==='playing'?'モデル音声を再生中…':'';
- const speakButton=(value,label)=><button type="button" className="vp-sound" aria-label={label} title={label} onClick={()=>pronounce(value)}>▶</button>;
+ const speakButton=(value,label)=>{const status=audio.value===value?audio.status:'idle',active=['starting','playing'].includes(status),failed=status==='error';return <button type="button" className="vp-sound" data-audio={status} aria-pressed={active} aria-label={active?'音声停止':failed?label+'（再試行）':label} title={active?'音声停止':failed?'音声再生に失敗・再タップ':label} onClick={()=>pronounce(value)}><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor" stroke="none"/>{failed?<path d="m16 9 5 6m0-6-5 6"/>:<><path className="vp-sound-wave" d="M15 9a4 4 0 0 1 0 6"/><path className="vp-sound-wave vp-sound-wave-outer" d="M18 6a8 8 0 0 1 0 12"/></>}</svg></button>;};
  return <section ref={panel} className={'vu-profile vp-single'+(layout.portrait?' vp-portrait':'')+(layout.tight?' vp-tight':'')+(layout.tiny?' vp-tiny':'')+(detail?' vp-detail-open':'')} aria-label={request.word+' の語義と例文'}>
  <header className="vp-bar"><button type="button" onClick={detail?()=>setDetail(null):onBack}>← {detail?'概要':'Back'}</button><span>WORD PROFILE{p?' · 語義 '+(p.senseIndex+1)+'/'+p.senseCount:''}</span><button type="button" disabled={!data} onClick={()=>onExplore(data)}>◉ Universe</button></header>
  {!p?<div className="vp-state" role="status"><h2>{request.word}</h2><p>{error?'登録済みの語義・例文が見つかりませんでした。':'語義と例文を読み込み中…'}</p></div>:<>
@@ -49,12 +48,12 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
   </article>
   <article className="vp-definition"><div className="vp-card-heading"><h2>ENGLISH DEFINITION <small>英英定義</small></h2>{data.image&&!badImage&&<button type="button" className="vp-link" onClick={()=>openDetail({type:'image',title:'学習画像'})}>画像 ↗</button>}</div>
    <BoundedText className="vp-definition-text" text={p.definition||'英英定義未登録'} onFull={()=>fullText('English definition',p.definition||'未登録',p.definition)}/>
-   <div className="vp-meta"><span>{p.draft?'教材β・未校閲':''}{loading?' · 教材読込中':''}</span><span className="vp-audio-status" role="status">{audioMessage}</span></div>
+   <div className="vp-meta"><span>{p.draft?'教材β・未校閲':''}{loading?' · 教材読込中':''}</span><span className="vp-sr-status" role="status">{audio.status==='error'?'音声再生に失敗しました。スピーカーボタンを再タップしてください。':audio.status==='playing'?'音声再生中':''}</span></div>
   </article>
  </div>
  {!detail?<div className="vp-content">
-  <section className="vp-relations" aria-label="関連語">{groups.map(g=><article className={'vp-lexical-group vp-type-'+g.type} key={g.type}><div className="vp-card-heading"><h2>{g.label} <small>{g.ja}</small></h2>{g.rows.length>0&&<button type="button" className="vp-link" onClick={()=>openDetail({type:'relations',group:g.type,title:g.label+' / '+g.ja})}>{g.rows.length}件 ↗</button>}</div>
-  <div className="vp-term-list">{g.rows.length?g.rows.slice(0,layout.previewTerms).map(row=><button type="button" className="vp-term" key={row.word} title={row.word+(row.meaning?' · '+row.meaning:'')} onClick={()=>openDetail({type:'relations',group:g.type,title:g.label+' / '+g.ja})}><span>{row.word}</span>{row.headOnly&&<small>語全体</small>}</button>):<span className="vp-unregistered">未登録</span>}</div></article>)}</section>
+  <section className="vp-relations-column" aria-label="関連語"><div className="vp-card-heading vp-section-heading"><h2>WORD CONNECTIONS <small>関連語</small></h2></div><div className="vp-relations">{groups.map(g=><article className={'vp-lexical-group vp-type-'+g.type} key={g.type}><div className="vp-card-heading"><h2><span className="vp-category-icon" aria-hidden="true">{{synonym:'≈',contrast:'↔',family:'◇',collocation:'∞'}[g.type]}</span><span>{g.label}<small>{g.ja}</small></span></h2>{g.rows.length>0&&<button type="button" className="vp-link" onClick={()=>openDetail({type:'relations',group:g.type,title:g.label+' / '+g.ja})}>{g.rows.length}件 ↗</button>}</div>
+  <div className="vp-term-list">{g.rows.length?g.rows.slice(0,layout.previewTerms).map(row=><button type="button" className="vp-term" key={row.word} title={row.word+(row.meaning?' · '+row.meaning:'')} onClick={()=>openDetail({type:'relations',group:g.type,title:g.label+' / '+g.ja})}><span>{row.word}</span>{row.headOnly&&<small aria-label="語全体の関連語">語全体</small>}</button>):<span className="vp-unregistered">未登録</span>}</div></article>)}</div></section>
   <section className="vp-examples" aria-label="例文"><div className="vp-card-heading"><h2>EXAMPLE SENTENCES <small>例文</small></h2><span className="vp-example-count">{p.examples.length?p.exampleOffset+1+'–'+(p.exampleOffset+p.examples.length)+' / '+p.exampleCount:'0件'}</span></div>
    {p.examples.length?p.examples.map((ex,i)=><article key={ex.en+'|'+i} className="vp-example"><div className="vp-example-top"><small>EXAMPLE {p.exampleOffset+i+1}</small>{speakButton(ex.en,'例文 '+(p.exampleOffset+i+1)+' の発音')}</div>
     <BoundedText className="vp-example-en" text={ex.en} onFull={()=>fullText('Example '+(p.exampleOffset+i+1),ex.en+'\n\n'+(ex.ja||'日本語訳未登録'),ex.en)}/>
