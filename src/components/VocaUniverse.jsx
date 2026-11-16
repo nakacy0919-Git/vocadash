@@ -6,7 +6,7 @@ import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
 import UniverseWordProfile from './UniverseWordProfile.jsx';
-import {findVocabularyProfile,initialVocabularyProfile} from '../lib/vocabularyLookup.js';
+import {warmVocabularyIndex,initialVocabularyProfile} from '../lib/vocabularyLookup.js';
 import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
@@ -70,7 +70,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const change=(next,{back=false}={})=>{if(!next)return;setInstantBack(back);setProfileWarp(null);onCancelProfileWarp?.();setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed&&!back){setWarpVersion(v=>v+1);onWarp?.();}};
  const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(profile||item.word.toLowerCase()!==center.word.toLowerCase())remember();change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(profile||next.word.toLowerCase()!==center.word.toLowerCase())remember();change(next);setView('map');};
- const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(profile?.word.toLowerCase()===target.toLowerCase())return;const initial=initialVocabularyProfile(target,{words,seed});void findVocabularyProfile(target,{words,seed,resolveVocabulary}).catch(()=>{});remember();setProfileWarp({word:target,id:performance.now()});onProfileWarp?.();setProfile({word:target,seed:initial||seed});setProfileData(initial);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
+ const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(profile?.word.toLowerCase()===target.toLowerCase())return;const initial=initialVocabularyProfile(target,{words,seed});void warmVocabularyIndex().catch(()=>{});remember();setProfileWarp({word:target,id:performance.now()});onProfileWarp?.();setProfile({word:target,seed:initial||seed});setProfileData(initial);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
  const goBack=()=>{const {screen:prior,remaining}=popProfileHistory(trail);if(!prior)return false;setTrail(remaining);change(prior.center,{back:true});setFilter(prior.filter);setView(prior.view);setPage(prior.page);setDraftOpen(prior.draftOpen);setLearningOpen(prior.learningOpen);setProfile(prior.profile);setProfilePage(prior.profilePage||0);return true;};
  useLayoutEffect(()=>{
    const handler=e=>{
