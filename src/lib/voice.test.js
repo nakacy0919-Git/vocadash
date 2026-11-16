@@ -177,3 +177,10 @@ test('new searches and back supersede slow requests while unrelated commands do 
 
 import {speculativeProfileWord} from './voice.js';
 test('example requests can warm the canonical index before final recognition without navigating',()=>{for(const raw of ['Show me example sentence of beauty','Hey Dash, show me an example sentence of beauty','Show me examples for beauty'])assert.equal(speculativeProfileWord(raw),'beauty',raw);for(const raw of ['Show me example sentence','Show me beauty','Back','Back home'])assert.equal(speculativeProfileWord(raw),'',raw);});
+
+
+test('natural requests open lexical profiles without swallowing phrases',()=>{
+ for(const input of ['I want to take a look at important','Could you have a look at important','Show me the details for important','Show me synonyms of important','I would like to learn more about important'])assert.deepEqual(parseVoice(input),{kind:'examples',value:'important'});
+ assert.deepEqual(parseVoice('I want to take a look at take care of'),{kind:'examples',value:'take care of'});
+ assert.equal(parseVoice('Show me back').kind,'search');
+});
