@@ -167,3 +167,11 @@ export function speculativeVoiceWord(raw){
 export function supersedesVoiceLookup(kind,value,universeOpen){
  return isUrgentVoiceNavigation(kind,universeOpen)||opensVoiceUniverse(kind,value)||kind==='back';
 }
+
+// Example commands can prefetch their target independently of the final command dispatch.
+export function speculativeProfileWord(raw){
+ const text=String(raw||'').trim(),parsed=parseVoice(extractWake(text)?.command||text);
+ if(parsed.kind!=='examples'||!parsed.value)return '';
+ const keys=wordCandidates(parsed.value);
+ return keys.at(-1)||'';
+}
