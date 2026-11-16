@@ -184,3 +184,10 @@ test('natural requests open lexical profiles without swallowing phrases',()=>{
  assert.deepEqual(parseVoice('I want to take a look at take care of'),{kind:'examples',value:'take care of'});
  assert.equal(parseVoice('Show me back').kind,'search');
 });
+
+import {profileTerms} from './wordProfile.js';
+test('profile lexical metadata preserves multiword expressions and bilingual meanings',()=>{
+ assert.deepEqual(profileTerms('take care of, look after'),[{word:'take care of',meaning:''},{word:'look after',meaning:''}]);
+ assert.deepEqual(profileTerms([{en:'vital',ja:'極めて重要な'},'vital']),[{word:'vital',meaning:'極めて重要な'}]);
+ assert.deepEqual(profileTerms(null),[]);
+});
