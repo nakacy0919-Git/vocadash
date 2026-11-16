@@ -113,7 +113,7 @@ test('voice resolver can read every canonical original vocabulary sense and requ
  for(const k of ['beauty','sad','accelerator']){const item=await resolveVocabularyEntry(k,{lookup:lookupUniverse,getDrafts:async()=>index});assert.ok(item?.word,k+' must resolve');}
 });
 
-import {voiceCandidateChoice,nextVoiceWords,recognizedSearchTerms} from './voice.js';
+import {voiceCandidateChoice,voiceCandidateCommand,nextVoiceWords,recognizedSearchTerms} from './voice.js';
 test('successive Universe searches accept Show me without a wake word even in standby',()=>{
  for(const word of ['beauty','sad','accelerator','resilience'])for(const phase of ['active','standby'])assert.deepEqual(routeVoice(['Show me '+word],phase,{universeOpen:true}),{kind:'command',command:'Show me '+word});
  assert.equal(routeVoice(['Show me beauty'],'standby'),null);assert.equal(routeVoice(['Show me beauty'],'off',{universeOpen:true}),null);assert.equal(routeVoice(['I like beauty'],'standby',{universeOpen:true}),null);
@@ -128,3 +128,5 @@ test('predictions use recognition alternatives and authored relations without du
  assert.deepEqual(nextVoiceWords('beauty',['Beauty','beautiful','BEAUTIFUL'],[{word:'beautify',type:'family'},{word:'gorgeous',type:'synonym'},{word:'Beautiful',type:'related'},{word:'pretty',type:'synonym'},{word:'ugly',type:'contrast'}]),['beautiful','gorgeous','pretty','beautify']);
  assert.deepEqual(recognizedSearchTerms(['Show me beauty','Dash show me beautiful','back','noise']),['beauty','beautiful']);
 });
+
+test('a reserved filter name selected explicitly remains a vocabulary query',()=>{assert.equal(voiceCandidateCommand('synonyms'),'Focus on synonyms');assert.deepEqual(routeVoice(['number one'],'standby',{universeOpen:true,candidates:['synonyms']}),{kind:'command',command:'Focus on synonyms'});assert.equal(parseVoice('Show me synonyms').kind,'filter');});
