@@ -205,3 +205,13 @@ test('profile relation pages retain every term and separate sense vs headword sc
  assert.equal(Array.from({length:Math.ceil(terms.length/n)},(_,i)=>terms.slice(i*n,(i+1)*n)).flat().length,33);
  const text='a'.repeat(450)+'日本語'.repeat(100),pages=profileTextPages(text,140);assert.equal(pages.join(''),text);assert.ok(pages.every(p=>Array.from(p).length<=140));
 });
+
+import {conceptVisual,exampleVisual} from './profileVisuals.js';
+import {existsSync as visualExists,readFileSync as visualRead} from 'node:fs';
+test('important concept and exact sentence visuals use real WebP assets',()=>{
+ const imgs=[conceptVisual('Important'),exampleVisual('important','Sleep is important for learning.'),exampleVisual('important','This meeting is important to our team.')];
+ assert.equal(new Set(imgs.map(v=>v.src)).size,3);
+ for(const image of imgs){const url=new URL('../../public'+image.src,import.meta.url);assert.ok(visualExists(url));const bytes=visualRead(url);assert.equal(bytes.toString('ascii',0,4),'RIFF');assert.equal(bytes.toString('ascii',8,12),'WEBP');}
+ assert.equal(exampleVisual('important','This is important.'),null);assert.equal(conceptVisual('importance'),null);assert.equal(exampleVisual('other','Sleep is important for learning.'),null);
+ assert.equal(exampleVisual('IMPORTANT',' Sleep is important for learning '),imgs[1]);
+});
