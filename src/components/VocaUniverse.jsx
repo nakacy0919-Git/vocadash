@@ -9,7 +9,7 @@ import UniverseWordProfile from './UniverseWordProfile.jsx';
 import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
-export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
+export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,onProfileWarp,onCancelProfileWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const displayedProfilePage=useRef(null);
  const [profile,setProfile]=useState(null),[profilePage,setProfilePage]=useState(0),[profileData,setProfileData]=useState(null);
@@ -31,6 +31,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const searchResults=useMemo(()=>{const q=query.trim().toLowerCase();if(!q)return [];return catalog.filter(w=>w.word.includes(q)||w.meaning.includes(q)).sort((a,b)=>Number(b.word.startsWith(q))-Number(a.word.startsWith(q))||a.word.localeCompare(b.word)).slice(0,8);},[catalog,query]);
  const [filter,setFilter]=useState(initialFilter==='forms'?'all':initialFilter);
  const [warpVersion,setWarpVersion]=useState(0);
+ const [profileWarp,setProfileWarp]=useState(null);
  const [badImage,setBadImage]=useState(false);
  const [showImages,setShowImages]=useState(true);
  const [view,setView]=useState(initialFilter==='forms'||(typeof window!=='undefined'&&window.innerWidth<640)?'list':'map');
@@ -64,10 +65,10 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
 
  const screen=()=>({center,filter,view,page,draftOpen,profile,profilePage,learningOpen});
  const remember=()=>setTrail(t=>pushProfileHistory(t,screen()));
- const change=(next)=>{if(!next)return;setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
+ const change=(next)=>{if(!next)return;setProfileWarp(null);onCancelProfileWarp?.();setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed){setWarpVersion(v=>v+1);onWarp?.();}};
  const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(profile||item.word.toLowerCase()!==center.word.toLowerCase())remember();change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(profile||next.word.toLowerCase()!==center.word.toLowerCase())remember();change(next);setView('map');};
- const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(!profile||profile.word.toLowerCase()!==target.toLowerCase())remember();setProfile({word:target,seed});setProfileData(null);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
+ const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(!profile||profile.word.toLowerCase()!==target.toLowerCase()){remember();setProfileWarp({word:target,id:performance.now()});onProfileWarp?.();}setProfile({word:target,seed});setProfileData(null);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
  const goBack=()=>{const {screen:prior,remaining}=popProfileHistory(trail);if(!prior)return false;setTrail(remaining);change(prior.center);setFilter(prior.filter);setView(prior.view);setPage(prior.page);setDraftOpen(prior.draftOpen);setLearningOpen(prior.learningOpen);setProfile(prior.profile);setProfilePage(prior.profilePage||0);return true;};
  useLayoutEffect(()=>{
    const handler=e=>{
@@ -106,6 +107,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
    }
  };
  return createPortal(<div ref={overlay} className="vu-overlay vu-portal-open" onClick={onClose}>
+  {profile&&profileWarp&&<div key={profileWarp.id} className="vu-profile-warp" aria-hidden="true"><div className="vp-warp-ring"/><div className="vp-warp-ring vp-warp-ring-alt"/>{Array.from({length:40},(_,i)=><i key={i} style={{'--pw-angle':(i*9)+'deg','--pw-length':(12+(i*11)%28)+'vmin','--pw-delay':(i%5)*.014+'s','--pw-color':i%3===0?'#b7a3ff':'#78e3ff'}}/>)}<div className="vp-warp-label"><small>ACCESSING WORD PROFILE</small><strong>{profileWarp.word}</strong><span>DEFINITION · EXAMPLES</span></div></div>}
   <div key={warpVersion} className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>{warpVersion===0?"ENTERING VOCA UNIVERSE":center.word.toUpperCase()}</span></div>
   <section className="vu-dialog vu-dialog-warp" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>
    <div className="vu-space" aria-hidden="true"><div className="vu-space-nebula"/><div className="vu-space-stars near"/><div className="vu-space-stars far"/></div>
