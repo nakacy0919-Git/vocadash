@@ -120,7 +120,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
      if(universeOpen){const detail={kind:'search',value:result.word,resolvedEntry:result,handled:false};window.dispatchEvent(new CustomEvent('vd-universe-voice',{detail}));suggestNext(result,alternatives,detail.relations);}
      else{onOpenUniverse(result);suggestNext(result,alternatives);}
      flash('Opening '+result.word+' universe');
-    }else{setShowEntryInUniverse(universeOpen);setResultOpen(true);flash(result.word+' found');}
+    }else if(kind==='examples'&&value&&!universeOpen){setShowEntryInUniverse(false);setResultOpen(false);onOpenUniverse(result,'profile');flash('Word profile: '+result.word);}else{setShowEntryInUniverse(universeOpen);setResultOpen(true);flash(result.word+' found');}
     return;
    }
    const target=selected();
@@ -145,7 +145,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
    if(modelPlaying.current||window.speechSynthesis?.speaking||suspendRef.current){restart();return;}
    if(running.current)return;
    setMicState('starting');
-   try{recognition.current?.start();}catch{
+   try{recognition.current?.start();clearTimeout(captureTimer.current);captureTimer.current=setTimeout(()=>{if(!wanted.current||modelPlaying.current)return;stop();setStatus('音声認識サービスから応答がありません。中央の光を再度タップしてください');},15000);}catch{
     if(++restartFailures.current>=3){stop();setStatus('音声認識を再開できません。中央の光をタップしてください');}
     else restart();
    }
@@ -166,7 +166,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   const live=()=>recognition.current===r&&wanted.current;
   const reconnectCapture=()=>{if(!live()||modelPlaying.current)return;clearTimeout(captureTimer.current);if(++audioRetry.current>3){stop();setStatus('音声入力が開始できません。マイク権限と接続をご確認ください');return;}setMicState('reconnecting');setStatus('音声入力を再接続しています');try{r.abort();}catch{running.current=false;restart();}};
   const captured=()=>{if(!live()||modelPlaying.current)return;clearTimeout(captureTimer.current);audioRetry.current=0;restartFailures.current=0;setMicState('listening');setStatus(phaseRef.current==='standby'?'Waiting for Hey, Dash / Dash…':"I'm listening…");};
-  r.onstart=()=>{if(!live())return;running.current=true;setMicState('starting');setStatus('音声入力を確認しています');clearTimeout(captureTimer.current);captureTimer.current=setTimeout(reconnectCapture,7000);};
+  r.onstart=()=>{if(!live())return;running.current=true;if(modelPlaying.current){try{r.abort();}catch{}return;}setMicState('starting');setStatus('音声入力を確認しています');clearTimeout(captureTimer.current);captureTimer.current=setTimeout(reconnectCapture,7000);};
   r.onaudiostart=captured;
   r.onaudioend=()=>{if(!live())return;clearTimeout(captureTimer.current);setMicState(modelPlaying.current?'model':'reconnecting');if(!modelPlaying.current)captureTimer.current=setTimeout(reconnectCapture,2500);};
   r.onspeechstart=()=>{if(live()&&!modelPlaying.current){captured();setMicState('speaking');}};
@@ -195,10 +195,10 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
    if(['not-allowed','service-not-allowed'].includes(e.error)){stop();setStatus('マイクへのアクセスが拒否されました');flash('ブラウザのマイク権限をご確認ください');return;}
    if(e.error==='audio-capture'&&meter.current&&!meterRetry.current){meterRetry.current=true;releaseMeter();}
    if(['audio-capture','network'].includes(e.error)){if(++audioRetry.current>3){stop();setStatus('音声認識を再接続できません');flash('マイクまたはネットワークをご確認ください');return;}setMicState('reconnecting');flash('音声認識を再接続しています');try{r.abort();}catch{};captureTimer.current=setTimeout(()=>{if(live()&&running.current){running.current=false;restart();}},2500);}
-   else if(e.error==='no-speech'){setInterim('');setMicState('reconnecting');}
+   else if(e.error==='no-speech'){setInterim('');setMicState('reconnecting');captureTimer.current=setTimeout(reconnectCapture,2500);}
   };
   r.onend=()=>{if(recognition.current!==r)return;clearTimeout(captureTimer.current);running.current=false;setInterim('');setMicState(modelPlaying.current?'model':'reconnecting');if(wanted.current&&!modelPlaying.current)restart();};
-  try{r.start();
+  try{r.start();clearTimeout(captureTimer.current);captureTimer.current=setTimeout(()=>{if(live()&&!modelPlaying.current){stop();setStatus('マイクの許可と音声認識サービスを確認し、再度タップしてください');}},20000);
    // A separate, local analyser is optional; it never sends or plays audio.
    if(!appleTouch){const m=createVoiceMeter();meter.current=m;m.start().then(ok=>{if(meter.current===m&&wanted.current){setMeterReady(ok);if(!ok)releaseMeter();}});}
   }catch{stop();flash('マイクを開始できませんでした');}
