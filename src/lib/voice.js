@@ -59,6 +59,7 @@ export function parseVoice(raw) {
 
 // Candidate choices are valid only while that specific list is displayed.
 // Exact matching prevents unrelated conversation from starting a new search.
+export function voiceCandidateCommand(word){const command='Show me '+word;return parseVoice(command).kind==='search'?command:'Focus on '+word;}
 export function voiceCandidateChoice(raw,candidates=[]){
  const t=String(raw||'').normalize('NFKC').toLowerCase().trim().replace(/[“”"?!.,]+$/g,'').replace(/\s+/g,' ');
  const match=t.match(/^(?:number|option|choice|candidate)\s+(one|two|three|four|five|six|[1-6])$/);
@@ -77,7 +78,7 @@ export function routeVoice(alternatives,phase,{universeOpen=false,candidates=[]}
   if(parsed.kind==='stop'||(universeOpen&&(parsed.kind==='back'||opensVoiceUniverse(parsed.kind,parsed.value))))return {kind:'command',command:t};
   if(phase==='active'&&parsed.kind!=='unknown')return {kind:'command',command:t};
   const choice=voiceCandidateChoice(t,candidates);
-  if(choice)return {kind:'command',command:'Show me '+choice};
+  if(choice)return {kind:'command',command:voiceCandidateCommand(choice)};
  }
  return phase==='active'?{kind:'command',command:texts[0]}:null;
 }
