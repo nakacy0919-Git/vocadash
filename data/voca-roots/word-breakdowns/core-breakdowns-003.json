@@ -1,0 +1,3124 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "009",
+  "type": "hand-authored-transparent-prefix-learning-candidates",
+  "productionEnabled": false,
+  "sourcePolicy": "Pedagogical modern segmentation; historical etymology not verified; editorial review required",
+  "records": [
+    {
+      "id": "wb:core:uncover",
+      "headword": "uncover",
+      "wordId": "VD-04308",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "覆いを取る・明らかにする",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "cover",
+          "kind": "free-base",
+          "meaningJa": "覆う"
+        }
+      ],
+      "baseHeadword": "cover",
+      "baseWordId": "VD-00223",
+      "explanationJa": "un-（反対の動作・元に戻す）と cover（覆う）を手がかりに、uncover（覆いを取る・明らかにする）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The report uncovered a serious problem.",
+      "exampleJa": "その報告書は重大な問題を明らかにした。",
+      "imageHintJa": "「覆う」と「覆いを取る・明らかにする」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:undo",
+      "headword": "undo",
+      "wordId": "VD-04313",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "元に戻す",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "do",
+          "kind": "free-base",
+          "meaningJa": "する"
+        }
+      ],
+      "baseHeadword": "do",
+      "baseWordId": "VD-00257",
+      "explanationJa": "un-（反対の動作・元に戻す）と do（する）を手がかりに、undo（元に戻す）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "You can undo the last change.",
+      "exampleJa": "最後の変更を取り消せます。",
+      "imageHintJa": "「する」と「元に戻す」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:undress",
+      "headword": "undress",
+      "wordId": "VD-04314",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "服を脱ぐ",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "dress",
+          "kind": "free-base",
+          "meaningJa": "服を着せる"
+        }
+      ],
+      "baseHeadword": "dress",
+      "baseWordId": "VD-00269",
+      "explanationJa": "un-（反対の動作・元に戻す）と dress（服を着せる）を手がかりに、undress（服を脱ぐ）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The child learned to undress without help.",
+      "exampleJa": "その子は一人で服を脱げるようになった。",
+      "imageHintJa": "「服を着せる」と「服を脱ぐ」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unexpected",
+      "headword": "unexpected",
+      "wordId": "VD-04317",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "予期しない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "expected",
+          "kind": "free-base",
+          "meaningJa": "予期された"
+        }
+      ],
+      "baseHeadword": "expected",
+      "baseWordId": "VD-05205",
+      "explanationJa": "un-（〜でない）と expected（予期された）を手がかりに、unexpected（予期しない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "An unexpected message arrived.",
+      "exampleJa": "予期しないメッセージが届いた。",
+      "imageHintJa": "「予期された」と「予期しない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unfit",
+      "headword": "unfit",
+      "wordId": "VD-04320",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "適していない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "fit",
+          "kind": "free-base",
+          "meaningJa": "適した"
+        }
+      ],
+      "baseHeadword": "fit",
+      "baseWordId": "VD-01507",
+      "explanationJa": "un-（〜でない）と fit（適した）を手がかりに、unfit（適していない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The equipment is unfit for school use.",
+      "exampleJa": "その機器は学校での使用に適していない。",
+      "imageHintJa": "「適した」と「適していない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unfold",
+      "headword": "unfold",
+      "wordId": "VD-04321",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "広げる・展開する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "fold",
+          "kind": "free-base",
+          "meaningJa": "折りたたむ"
+        }
+      ],
+      "baseHeadword": "fold",
+      "baseWordId": "VD-03083",
+      "explanationJa": "un-（反対の動作・元に戻す）と fold（折りたたむ）を手がかりに、unfold（広げる・展開する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The students unfolded the map.",
+      "exampleJa": "生徒たちは地図を広げた。",
+      "imageHintJa": "「折りたたむ」と「広げる・展開する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:uninterested",
+      "headword": "uninterested",
+      "wordId": "VD-04326",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "興味がない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "interested",
+          "kind": "free-base",
+          "meaningJa": "関心のある"
+        }
+      ],
+      "baseHeadword": "interested",
+      "baseWordId": "VD-00480",
+      "explanationJa": "un-（〜でない）と interested（関心のある）を手がかりに、uninterested（興味がない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "He seemed uninterested in the proposal.",
+      "exampleJa": "彼はその提案に興味がなさそうだった。",
+      "imageHintJa": "「関心のある」と「興味がない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unpack",
+      "headword": "unpack",
+      "wordId": "VD-04335",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "荷物を解く",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "pack",
+          "kind": "free-base",
+          "meaningJa": "荷造りする"
+        }
+      ],
+      "baseHeadword": "pack",
+      "baseWordId": "VD-01818",
+      "explanationJa": "un-（反対の動作・元に戻す）と pack（荷造りする）を手がかりに、unpack（荷物を解く）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Please unpack your bag here.",
+      "exampleJa": "ここでかばんの中身を出してください。",
+      "imageHintJa": "「荷造りする」と「荷物を解く」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:untidy",
+      "headword": "untidy",
+      "wordId": "VD-04338",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "散らかった",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "tidy",
+          "kind": "free-base",
+          "meaningJa": "整った"
+        }
+      ],
+      "baseHeadword": "tidy",
+      "baseWordId": "VD-02191",
+      "explanationJa": "un-（〜でない）と tidy（整った）を手がかりに、untidy（散らかった）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "My desk looks untidy today.",
+      "exampleJa": "今日は机が散らかっている。",
+      "imageHintJa": "「整った」と「散らかった」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unwell",
+      "headword": "unwell",
+      "wordId": "VD-04341",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "体調が悪い",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "well",
+          "kind": "free-base",
+          "meaningJa": "元気な"
+        }
+      ],
+      "baseHeadword": "well",
+      "baseWordId": "VD-01022",
+      "explanationJa": "un-（〜でない）と well（元気な）を手がかりに、unwell（体調が悪い）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "She stayed home because she felt unwell.",
+      "exampleJa": "彼女は体調が悪くて家にいた。",
+      "imageHintJa": "「元気な」と「体調が悪い」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:uncharacteristic",
+      "headword": "uncharacteristic",
+      "wordId": "VD-06683",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "いつもと異なる",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "characteristic",
+          "kind": "free-base",
+          "meaningJa": "特徴的な"
+        }
+      ],
+      "baseHeadword": "characteristic",
+      "baseWordId": "VD-02619",
+      "explanationJa": "un-（〜でない）と characteristic（特徴的な）を手がかりに、uncharacteristic（いつもと異なる）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "His silence was uncharacteristic.",
+      "exampleJa": "彼が黙っていたのは珍しかった。",
+      "imageHintJa": "「特徴的な」と「いつもと異なる」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:uneven",
+      "headword": "uneven",
+      "wordId": "VD-06703",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不均一な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "even",
+          "kind": "free-base",
+          "meaningJa": "均一な"
+        }
+      ],
+      "baseHeadword": "even",
+      "baseWordId": "VD-01459",
+      "explanationJa": "un-（〜でない）と even（均一な）を手がかりに、uneven（不均一な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The road surface is uneven.",
+      "exampleJa": "道路の表面にはでこぼこがある。",
+      "imageHintJa": "「均一な」と「不均一な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unfashionable",
+      "headword": "unfashionable",
+      "wordId": "VD-06705",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "流行遅れの",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "fashionable",
+          "kind": "free-base",
+          "meaningJa": "流行の"
+        }
+      ],
+      "baseHeadword": "fashionable",
+      "baseWordId": "VD-03047",
+      "explanationJa": "un-（〜でない）と fashionable（流行の）を手がかりに、unfashionable（流行遅れの）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The design may seem unfashionable now.",
+      "exampleJa": "そのデザインは今では流行遅れに見えるかもしれない。",
+      "imageHintJa": "「流行の」と「流行遅れの」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unhelpful",
+      "headword": "unhelpful",
+      "wordId": "VD-06709",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "役に立たない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "helpful",
+          "kind": "free-base",
+          "meaningJa": "役に立つ"
+        }
+      ],
+      "baseHeadword": "helpful",
+      "baseWordId": "VD-01594",
+      "explanationJa": "un-（〜でない）と helpful（役に立つ）を手がかりに、unhelpful（役に立たない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The instructions were unhelpful.",
+      "exampleJa": "説明書は役に立たなかった。",
+      "imageHintJa": "「役に立つ」と「役に立たない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unknown",
+      "headword": "unknown",
+      "wordId": "VD-02239",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "知られていない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "known",
+          "kind": "free-base",
+          "meaningJa": "知られている"
+        }
+      ],
+      "baseHeadword": "known",
+      "baseWordId": "VD-05611",
+      "explanationJa": "un-（〜でない）と known（知られている）を手がかりに、unknown（知られていない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The cause is still unknown.",
+      "exampleJa": "原因はいまだ不明だ。",
+      "imageHintJa": "「知られている」と「知られていない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unlike",
+      "headword": "unlike",
+      "wordId": "VD-02240",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "〜とは違って",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "like",
+          "kind": "free-base",
+          "meaningJa": "〜のような"
+        }
+      ],
+      "baseHeadword": "like",
+      "baseWordId": "VD-00538",
+      "explanationJa": "un-（〜でない）と like（〜のような）を手がかりに、unlike（〜とは違って）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Unlike his brother, he loves science.",
+      "exampleJa": "兄と違い、彼は科学が大好きだ。",
+      "imageHintJa": "「〜のような」と「〜とは違って」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unload",
+      "headword": "unload",
+      "wordId": "VD-06717",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "荷物を降ろす",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "load",
+          "kind": "free-base",
+          "meaningJa": "積む"
+        }
+      ],
+      "baseHeadword": "load",
+      "baseWordId": "VD-01702",
+      "explanationJa": "un-（反対の動作・元に戻す）と load（積む）を手がかりに、unload（荷物を降ろす）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "They unloaded the truck after lunch.",
+      "exampleJa": "昼食後にトラックの荷物を降ろした。",
+      "imageHintJa": "「積む」と「荷物を降ろす」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unlock",
+      "headword": "unlock",
+      "wordId": "VD-06718",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "鍵を開ける",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "lock",
+          "kind": "free-base",
+          "meaningJa": "鍵をかける"
+        }
+      ],
+      "baseHeadword": "lock",
+      "baseWordId": "VD-01704",
+      "explanationJa": "un-（反対の動作・元に戻す）と lock（鍵をかける）を手がかりに、unlock（鍵を開ける）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Please unlock the classroom door.",
+      "exampleJa": "教室のドアの鍵を開けてください。",
+      "imageHintJa": "「鍵をかける」と「鍵を開ける」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unnatural",
+      "headword": "unnatural",
+      "wordId": "VD-06721",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不自然な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "natural",
+          "kind": "free-base",
+          "meaningJa": "自然な"
+        }
+      ],
+      "baseHeadword": "natural",
+      "baseWordId": "VD-01774",
+      "explanationJa": "un-（〜でない）と natural（自然な）を手がかりに、unnatural（不自然な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The sentence sounds unnatural.",
+      "exampleJa": "その文は不自然に聞こえる。",
+      "imageHintJa": "「自然な」と「不自然な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unofficial",
+      "headword": "unofficial",
+      "wordId": "VD-06722",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "非公式の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "official",
+          "kind": "free-base",
+          "meaningJa": "公式の"
+        }
+      ],
+      "baseHeadword": "official",
+      "baseWordId": "VD-01796",
+      "explanationJa": "un-（〜でない）と official（公式の）を手がかりに、unofficial（非公式の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "This is an unofficial translation.",
+      "exampleJa": "これは非公式の翻訳です。",
+      "imageHintJa": "「公式の」と「非公式の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unpopular",
+      "headword": "unpopular",
+      "wordId": "VD-06723",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "人気のない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "popular",
+          "kind": "free-base",
+          "meaningJa": "人気のある"
+        }
+      ],
+      "baseHeadword": "popular",
+      "baseWordId": "VD-01878",
+      "explanationJa": "un-（〜でない）と popular（人気のある）を手がかりに、unpopular（人気のない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The new rule is unpopular.",
+      "exampleJa": "新しい規則は不評だ。",
+      "imageHintJa": "「人気のある」と「人気のない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unrealistic",
+      "headword": "unrealistic",
+      "wordId": "VD-06724",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "現実的でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "realistic",
+          "kind": "free-base",
+          "meaningJa": "現実的な"
+        }
+      ],
+      "baseHeadword": "realistic",
+      "baseWordId": "VD-03857",
+      "explanationJa": "un-（〜でない）と realistic（現実的な）を手がかりに、unrealistic（現実的でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "That deadline is unrealistic.",
+      "exampleJa": "その締め切りは現実的ではない。",
+      "imageHintJa": "「現実的な」と「現実的でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unsuccessful",
+      "headword": "unsuccessful",
+      "wordId": "VD-06732",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "成功しなかった",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "successful",
+          "kind": "free-base",
+          "meaningJa": "成功した"
+        }
+      ],
+      "baseHeadword": "successful",
+      "baseWordId": "VD-00882",
+      "explanationJa": "un-（〜でない）と successful（成功した）を手がかりに、unsuccessful（成功しなかった）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Their first attempt was unsuccessful.",
+      "exampleJa": "最初の試みは成功しなかった。",
+      "imageHintJa": "「成功した」と「成功しなかった」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unusual",
+      "headword": "unusual",
+      "wordId": "VD-02243",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "普通ではない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "usual",
+          "kind": "free-base",
+          "meaningJa": "通常の"
+        }
+      ],
+      "baseHeadword": "usual",
+      "baseWordId": "VD-02249",
+      "explanationJa": "un-（〜でない）と usual（通常の）を手がかりに、unusual（普通ではない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "We saw an unusual bird.",
+      "exampleJa": "私たちは珍しい鳥を見た。",
+      "imageHintJa": "「通常の」と「普通ではない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unwise",
+      "headword": "unwise",
+      "wordId": "VD-06743",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "賢明でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "wise",
+          "kind": "free-base",
+          "meaningJa": "賢明な"
+        }
+      ],
+      "baseHeadword": "wise",
+      "baseWordId": "VD-02293",
+      "explanationJa": "un-（〜でない）と wise（賢明な）を手がかりに、unwise（賢明でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "It would be unwise to ignore the warning.",
+      "exampleJa": "その警告を無視するのは賢明ではない。",
+      "imageHintJa": "「賢明な」と「賢明でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unplug",
+      "headword": "unplug",
+      "wordId": "VD-07727",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "プラグを抜く",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "plug",
+          "kind": "free-base",
+          "meaningJa": "差し込む"
+        }
+      ],
+      "baseHeadword": "plug",
+      "baseWordId": "VD-03726",
+      "explanationJa": "un-（反対の動作・元に戻す）と plug（差し込む）を手がかりに、unplug（プラグを抜く）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Unplug the device before cleaning it.",
+      "exampleJa": "掃除する前に機器のプラグを抜いてください。",
+      "imageHintJa": "「差し込む」と「プラグを抜く」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:untangle",
+      "headword": "untangle",
+      "wordId": "VD-07734",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "もつれをほどく",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-reversal",
+          "meaningJa": "反対の動作・元に戻す"
+        },
+        {
+          "surface": "tangle",
+          "kind": "free-base",
+          "meaningJa": "もつれさせる"
+        }
+      ],
+      "baseHeadword": "tangle",
+      "baseWordId": "VD-07675",
+      "explanationJa": "un-（反対の動作・元に戻す）と tangle（もつれさせる）を手がかりに、untangle（もつれをほどく）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "She untangled the cables.",
+      "exampleJa": "彼女はコードのもつれをほどいた。",
+      "imageHintJa": "「もつれさせる」と「もつれをほどく」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:improper",
+      "headword": "improper",
+      "wordId": "VD-03289",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不適切な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "proper",
+          "kind": "free-base",
+          "meaningJa": "適切な"
+        }
+      ],
+      "baseHeadword": "proper",
+      "baseWordId": "VD-01911",
+      "explanationJa": "im-（〜でない）と proper（適切な）を手がかりに、improper（不適切な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "That is an improper use of the tool.",
+      "exampleJa": "それは道具の不適切な使い方だ。",
+      "imageHintJa": "「適切な」と「不適切な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:immoral",
+      "headword": "immoral",
+      "wordId": "VD-05466",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "道徳に反する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "moral",
+          "kind": "free-base",
+          "meaningJa": "道徳的な"
+        }
+      ],
+      "baseHeadword": "moral",
+      "baseWordId": "VD-03527",
+      "explanationJa": "im-（〜でない）と moral（道徳的な）を手がかりに、immoral（道徳に反する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The judge called the act immoral.",
+      "exampleJa": "裁判官はその行為を非道徳的だとした。",
+      "imageHintJa": "「道徳的な」と「道徳に反する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:immortal",
+      "headword": "immortal",
+      "wordId": "VD-05467",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不死の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "mortal",
+          "kind": "free-base",
+          "meaningJa": "死すべき"
+        }
+      ],
+      "baseHeadword": "mortal",
+      "baseWordId": "VD-05773",
+      "explanationJa": "im-（〜でない）と mortal（死すべき）を手がかりに、immortal（不死の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The story tells of an immortal hero.",
+      "exampleJa": "その物語は不死身の英雄を描く。",
+      "imageHintJa": "「死すべき」と「不死の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impartial",
+      "headword": "impartial",
+      "wordId": "VD-05469",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "公平な・偏りのない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "partial",
+          "kind": "free-base",
+          "meaningJa": "偏った"
+        }
+      ],
+      "baseHeadword": "partial",
+      "baseWordId": "VD-03680",
+      "explanationJa": "im-（〜でない）と partial（偏った）を手がかりに、impartial（公平な・偏りのない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "A referee must remain impartial.",
+      "exampleJa": "審判は公平でなければならない。",
+      "imageHintJa": "「偏った」と「公平な・偏りのない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impermanent",
+      "headword": "impermanent",
+      "wordId": "VD-05472",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "永久ではない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "permanent",
+          "kind": "free-base",
+          "meaningJa": "永続的な"
+        }
+      ],
+      "baseHeadword": "permanent",
+      "baseWordId": "VD-03700",
+      "explanationJa": "im-（〜でない）と permanent（永続的な）を手がかりに、impermanent（永久ではない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The exhibition is impermanent.",
+      "exampleJa": "その展示は常設ではない。",
+      "imageHintJa": "「永続的な」と「永久ではない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impolite",
+      "headword": "impolite",
+      "wordId": "VD-05476",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "無礼な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "polite",
+          "kind": "free-base",
+          "meaningJa": "礼儀正しい"
+        }
+      ],
+      "baseHeadword": "polite",
+      "baseWordId": "VD-01875",
+      "explanationJa": "im-（〜でない）と polite（礼儀正しい）を手がかりに、impolite（無礼な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "It is impolite to interrupt.",
+      "exampleJa": "話を遮るのは失礼だ。",
+      "imageHintJa": "「礼儀正しい」と「無礼な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impossibility",
+      "headword": "impossibility",
+      "wordId": "VD-05480",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不可能なこと",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "possibility",
+          "kind": "free-base",
+          "meaningJa": "可能性"
+        }
+      ],
+      "baseHeadword": "possibility",
+      "baseWordId": "VD-03747",
+      "explanationJa": "im-（〜でない）と possibility（可能性）を手がかりに、impossibility（不可能なこと）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "We should not assume impossibility too soon.",
+      "exampleJa": "早々に不可能だと決めつけるべきではない。",
+      "imageHintJa": "「可能性」と「不可能なこと」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impractical",
+      "headword": "impractical",
+      "wordId": "VD-05481",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "実用的でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "practical",
+          "kind": "free-base",
+          "meaningJa": "実用的な"
+        }
+      ],
+      "baseHeadword": "practical",
+      "baseWordId": "VD-03756",
+      "explanationJa": "im-（〜でない）と practical（実用的な）を手がかりに、impractical（実用的でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The plan is too costly and impractical.",
+      "exampleJa": "その計画は費用がかかり過ぎて実用的でない。",
+      "imageHintJa": "「実用的な」と「実用的でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:improbable",
+      "headword": "improbable",
+      "wordId": "VD-05487",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ありそうにない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "probable",
+          "kind": "free-base",
+          "meaningJa": "起こりそうな"
+        }
+      ],
+      "baseHeadword": "probable",
+      "baseWordId": "VD-06091",
+      "explanationJa": "im-（〜でない）と probable（起こりそうな）を手がかりに、improbable（ありそうにない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "An improbable result is still possible.",
+      "exampleJa": "ありそうにない結果でも起こりうる。",
+      "imageHintJa": "「起こりそうな」と「ありそうにない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impatient",
+      "headword": "impatient",
+      "wordId": "VD-01622",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "我慢できない・いら立つ",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "patient",
+          "kind": "free-base",
+          "meaningJa": "辛抱強い"
+        }
+      ],
+      "baseHeadword": "patient",
+      "baseWordId": "VD-01830",
+      "explanationJa": "im-（〜でない）と patient（辛抱強い）を手がかりに、impatient（我慢できない・いら立つ）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The children grew impatient.",
+      "exampleJa": "子どもたちは待ちきれなくなった。",
+      "imageHintJa": "「辛抱強い」と「我慢できない・いら立つ」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impersonal",
+      "headword": "impersonal",
+      "wordId": "VD-07264",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "個人的でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "personal",
+          "kind": "free-base",
+          "meaningJa": "個人的な"
+        }
+      ],
+      "baseHeadword": "personal",
+      "baseWordId": "VD-00688",
+      "explanationJa": "im-（〜でない）と personal（個人的な）を手がかりに、impersonal（個人的でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The reply felt impersonal.",
+      "exampleJa": "その返事は事務的に感じられた。",
+      "imageHintJa": "「個人的な」と「個人的でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inconvenient",
+      "headword": "inconvenient",
+      "wordId": "VD-03294",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不便な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "convenient",
+          "kind": "free-base",
+          "meaningJa": "便利な"
+        }
+      ],
+      "baseHeadword": "convenient",
+      "baseWordId": "VD-01322",
+      "explanationJa": "in-（〜でない）と convenient（便利な）を手がかりに、inconvenient（不便な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The meeting time is inconvenient.",
+      "exampleJa": "その会議の時間は都合が悪い。",
+      "imageHintJa": "「便利な」と「不便な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:incorrect",
+      "headword": "incorrect",
+      "wordId": "VD-03295",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "正しくない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "correct",
+          "kind": "free-base",
+          "meaningJa": "正しい"
+        }
+      ],
+      "baseHeadword": "correct",
+      "baseWordId": "VD-00218",
+      "explanationJa": "in-（〜でない）と correct（正しい）を手がかりに、incorrect（正しくない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "One answer was incorrect.",
+      "exampleJa": "一つの答えが不正解だった。",
+      "imageHintJa": "「正しい」と「正しくない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:incredible",
+      "headword": "incredible",
+      "wordId": "VD-03297",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "信じられないほどすごい",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "credible",
+          "kind": "free-base",
+          "meaningJa": "信じられる"
+        }
+      ],
+      "baseHeadword": "credible",
+      "baseWordId": "VD-07045",
+      "explanationJa": "in-（〜でない）と credible（信じられる）を手がかりに、incredible（信じられないほどすごい）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The view from the mountain was incredible.",
+      "exampleJa": "山頂からの景色は信じられないほどすばらしかった。",
+      "imageHintJa": "「信じられる」と「信じられないほどすごい」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:indirect",
+      "headword": "indirect",
+      "wordId": "VD-03301",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "間接的な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "direct",
+          "kind": "free-base",
+          "meaningJa": "直接の"
+        }
+      ],
+      "baseHeadword": "direct",
+      "baseWordId": "VD-01387",
+      "explanationJa": "in-（〜でない）と direct（直接の）を手がかりに、indirect（間接的な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "She gave an indirect answer.",
+      "exampleJa": "彼女は遠回しに答えた。",
+      "imageHintJa": "「直接の」と「間接的な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inaccurate",
+      "headword": "inaccurate",
+      "wordId": "VD-05492",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不正確な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "accurate",
+          "kind": "free-base",
+          "meaningJa": "正確な"
+        }
+      ],
+      "baseHeadword": "accurate",
+      "baseWordId": "VD-02335",
+      "explanationJa": "in-（〜でない）と accurate（正確な）を手がかりに、inaccurate（不正確な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The data in the chart is inaccurate.",
+      "exampleJa": "グラフのデータは不正確だ。",
+      "imageHintJa": "「正確な」と「不正確な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inadequate",
+      "headword": "inadequate",
+      "wordId": "VD-05493",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不十分な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "adequate",
+          "kind": "free-base",
+          "meaningJa": "十分な"
+        }
+      ],
+      "baseHeadword": "adequate",
+      "baseWordId": "VD-04471",
+      "explanationJa": "in-（〜でない）と adequate（十分な）を手がかりに、inadequate（不十分な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The funding was inadequate.",
+      "exampleJa": "資金は十分ではなかった。",
+      "imageHintJa": "「十分な」と「不十分な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inanimate",
+      "headword": "inanimate",
+      "wordId": "VD-05494",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "生命のない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "animate",
+          "kind": "free-base",
+          "meaningJa": "生命のある"
+        }
+      ],
+      "baseHeadword": "animate",
+      "baseWordId": "VD-04529",
+      "explanationJa": "in-（〜でない）と animate（生命のある）を手がかりに、inanimate（生命のない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Rocks are inanimate objects.",
+      "exampleJa": "石は生命のない物体だ。",
+      "imageHintJa": "「生命のある」と「生命のない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ineffective",
+      "headword": "ineffective",
+      "wordId": "VD-05511",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "効果がない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "effective",
+          "kind": "free-base",
+          "meaningJa": "効果的な"
+        }
+      ],
+      "baseHeadword": "effective",
+      "baseWordId": "VD-02935",
+      "explanationJa": "in-（〜でない）と effective（効果的な）を手がかりに、ineffective（効果がない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The old method was ineffective.",
+      "exampleJa": "従来の方法は効果がなかった。",
+      "imageHintJa": "「効果的な」と「効果がない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inexperienced",
+      "headword": "inexperienced",
+      "wordId": "VD-05513",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "経験の浅い",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "experienced",
+          "kind": "free-base",
+          "meaningJa": "経験豊富な"
+        }
+      ],
+      "baseHeadword": "experienced",
+      "baseWordId": "VD-03016",
+      "explanationJa": "in-（〜でない）と experienced（経験豊富な）を手がかりに、inexperienced（経験の浅い）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The inexperienced guide asked for advice.",
+      "exampleJa": "経験の浅い案内人は助言を求めた。",
+      "imageHintJa": "「経験豊富な」と「経験の浅い」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:informal",
+      "headword": "informal",
+      "wordId": "VD-05526",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "非公式の・くだけた",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "formal",
+          "kind": "free-base",
+          "meaningJa": "正式な"
+        }
+      ],
+      "baseHeadword": "formal",
+      "baseWordId": "VD-03093",
+      "explanationJa": "in-（〜でない）と formal（正式な）を手がかりに、informal（非公式の・くだけた）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "We had an informal discussion.",
+      "exampleJa": "私たちは気軽な話し合いをした。",
+      "imageHintJa": "「正式な」と「非公式の・くだけた」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:insufficient",
+      "headword": "insufficient",
+      "wordId": "VD-05549",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "十分でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "sufficient",
+          "kind": "free-base",
+          "meaningJa": "十分な"
+        }
+      ],
+      "baseHeadword": "sufficient",
+      "baseWordId": "VD-04157",
+      "explanationJa": "in-（〜でない）と sufficient（十分な）を手がかりに、insufficient（十分でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The evidence was insufficient.",
+      "exampleJa": "証拠は不十分だった。",
+      "imageHintJa": "「十分な」と「十分でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:intransitive",
+      "headword": "intransitive",
+      "wordId": "VD-05564",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自動詞の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "transitive",
+          "kind": "free-base",
+          "meaningJa": "他動詞の"
+        }
+      ],
+      "baseHeadword": "transitive",
+      "baseWordId": "VD-06630",
+      "explanationJa": "in-（〜でない）と transitive（他動詞の）を手がかりに、intransitive（自動詞の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Sleep is an intransitive verb here.",
+      "exampleJa": "ここでのsleepは自動詞だ。",
+      "imageHintJa": "「他動詞の」と「自動詞の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inexpensive",
+      "headword": "inexpensive",
+      "wordId": "VD-01635",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "安価な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "expensive",
+          "kind": "free-base",
+          "meaningJa": "高価な"
+        }
+      ],
+      "baseHeadword": "expensive",
+      "baseWordId": "VD-00310",
+      "explanationJa": "in-（〜でない）と expensive（高価な）を手がかりに、inexpensive（安価な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "We found an inexpensive solution.",
+      "exampleJa": "私たちは費用の安い解決策を見つけた。",
+      "imageHintJa": "「高価な」と「安価な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:indefinite",
+      "headword": "indefinite",
+      "wordId": "VD-07279",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不明確な・期限のない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "definite",
+          "kind": "free-base",
+          "meaningJa": "明確な"
+        }
+      ],
+      "baseHeadword": "definite",
+      "baseWordId": "VD-02805",
+      "explanationJa": "in-（〜でない）と definite（明確な）を手がかりに、indefinite（不明確な・期限のない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The plan was postponed for an indefinite period.",
+      "exampleJa": "計画は期限を定めず延期された。",
+      "imageHintJa": "「明確な」と「不明確な・期限のない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:injustice",
+      "headword": "injustice",
+      "wordId": "VD-07294",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不正・不公正",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "justice",
+          "kind": "free-base",
+          "meaningJa": "正義・公正"
+        }
+      ],
+      "baseHeadword": "justice",
+      "baseWordId": "VD-03383",
+      "explanationJa": "in-（〜でない）と justice（正義・公正）を手がかりに、injustice（不正・不公正）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The students spoke out against injustice.",
+      "exampleJa": "生徒たちは不公正に抗議した。",
+      "imageHintJa": "「正義・公正」と「不正・不公正」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:insecure",
+      "headword": "insecure",
+      "wordId": "VD-07296",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不安な・安全でない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "secure",
+          "kind": "free-base",
+          "meaningJa": "安全な"
+        }
+      ],
+      "baseHeadword": "secure",
+      "baseWordId": "VD-04000",
+      "explanationJa": "in-（〜でない）と secure（安全な）を手がかりに、insecure（不安な・安全でない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "He felt insecure in the unfamiliar place.",
+      "exampleJa": "彼は慣れない場所で不安を感じた。",
+      "imageHintJa": "「安全な」と「不安な・安全でない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:insensitive",
+      "headword": "insensitive",
+      "wordId": "VD-07298",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "無神経な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "sensitive",
+          "kind": "free-base",
+          "meaningJa": "気配りのある"
+        }
+      ],
+      "baseHeadword": "sensitive",
+      "baseWordId": "VD-06338",
+      "explanationJa": "in-（〜でない）と sensitive（気配りのある）を手がかりに、insensitive（無神経な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The comment sounded insensitive.",
+      "exampleJa": "その発言は無神経に聞こえた。",
+      "imageHintJa": "「気配りのある」と「無神経な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:independent",
+      "headword": "independent",
+      "wordId": "VD-03300",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "独立した",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "dependent",
+          "kind": "free-base",
+          "meaningJa": "依存している"
+        }
+      ],
+      "baseHeadword": "dependent",
+      "baseWordId": "VD-02825",
+      "explanationJa": "in-（〜でない）と dependent（依存している）を手がかりに、independent（独立した）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The group became independent.",
+      "exampleJa": "その団体は独立した。",
+      "imageHintJa": "「依存している」と「独立した」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:irregular",
+      "headword": "irregular",
+      "wordId": "VD-03362",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不規則な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ir-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "regular",
+          "kind": "free-base",
+          "meaningJa": "規則的な"
+        }
+      ],
+      "baseHeadword": "regular",
+      "baseWordId": "VD-01950",
+      "explanationJa": "ir-（〜でない）と regular（規則的な）を手がかりに、irregular（不規則な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The timetable is irregular this week.",
+      "exampleJa": "今週の時間割は不規則だ。",
+      "imageHintJa": "「規則的な」と「不規則な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:irrational",
+      "headword": "irrational",
+      "wordId": "VD-05582",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "理にかなわない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ir-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "rational",
+          "kind": "free-base",
+          "meaningJa": "合理的な"
+        }
+      ],
+      "baseHeadword": "rational",
+      "baseWordId": "VD-03854",
+      "explanationJa": "ir-（〜でない）と rational（合理的な）を手がかりに、irrational（理にかなわない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Fear can lead to irrational decisions.",
+      "exampleJa": "恐怖は非合理的な判断につながることがある。",
+      "imageHintJa": "「合理的な」と「理にかなわない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:irresponsible",
+      "headword": "irresponsible",
+      "wordId": "VD-05585",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "無責任な",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ir-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "responsible",
+          "kind": "free-base",
+          "meaningJa": "責任ある"
+        }
+      ],
+      "baseHeadword": "responsible",
+      "baseWordId": "VD-03932",
+      "explanationJa": "ir-（〜でない）と responsible（責任ある）を手がかりに、irresponsible（無責任な）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "It was irresponsible to leave the door open.",
+      "exampleJa": "ドアを開けたままにしたのは無責任だった。",
+      "imageHintJa": "「責任ある」と「無責任な」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:rearrange",
+      "headword": "rearrange",
+      "wordId": "VD-03859",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "並べ替える",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "arrange",
+          "kind": "free-base",
+          "meaningJa": "並べる"
+        }
+      ],
+      "baseHeadword": "arrange",
+      "baseWordId": "VD-02429",
+      "explanationJa": "re-（再び・元に）と arrange（並べる）を手がかりに、rearrange（並べ替える）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Please rearrange the desks into groups.",
+      "exampleJa": "机をグループごとに並べ替えてください。",
+      "imageHintJa": "「並べる」と「並べ替える」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:recycle",
+      "headword": "recycle",
+      "wordId": "VD-01945",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "再資源化する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "cycle",
+          "kind": "free-base",
+          "meaningJa": "循環する"
+        }
+      ],
+      "baseHeadword": "cycle",
+      "baseWordId": "VD-02775",
+      "explanationJa": "re-（再び・元に）と cycle（循環する）を手がかりに、recycle（再資源化する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "We recycle paper at school.",
+      "exampleJa": "私たちは学校で紙をリサイクルする。",
+      "imageHintJa": "「循環する」と「再資源化する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:regain",
+      "headword": "regain",
+      "wordId": "VD-03882",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "取り戻す",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "gain",
+          "kind": "free-base",
+          "meaningJa": "得る"
+        }
+      ],
+      "baseHeadword": "gain",
+      "baseWordId": "VD-03128",
+      "explanationJa": "re-（再び・元に）と gain（得る）を手がかりに、regain（取り戻す）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "He worked hard to regain confidence.",
+      "exampleJa": "彼は自信を取り戻そうと努力した。",
+      "imageHintJa": "「得る」と「取り戻す」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:repay",
+      "headword": "repay",
+      "wordId": "VD-03909",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "返済する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "pay",
+          "kind": "free-base",
+          "meaningJa": "支払う"
+        }
+      ],
+      "baseHeadword": "pay",
+      "baseWordId": "VD-00681",
+      "explanationJa": "re-（再び・元に）と pay（支払う）を手がかりに、repay（返済する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "She promised to repay the loan.",
+      "exampleJa": "彼女は借金を返すと約束した。",
+      "imageHintJa": "「支払う」と「返済する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:retell",
+      "headword": "retell",
+      "wordId": "VD-03938",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "語り直す",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "tell",
+          "kind": "free-base",
+          "meaningJa": "話す"
+        }
+      ],
+      "baseHeadword": "tell",
+      "baseWordId": "VD-00914",
+      "explanationJa": "re-（再び・元に）と tell（話す）を手がかりに、retell（語り直す）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Retell the story in your own words.",
+      "exampleJa": "物語を自分の言葉で語り直してください。",
+      "imageHintJa": "「話す」と「語り直す」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:rewrite",
+      "headword": "rewrite",
+      "wordId": "VD-03945",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "書き直す",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "write",
+          "kind": "free-base",
+          "meaningJa": "書く"
+        }
+      ],
+      "baseHeadword": "write",
+      "baseWordId": "VD-01049",
+      "explanationJa": "re-（再び・元に）と write（書く）を手がかりに、rewrite（書き直す）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Rewrite the paragraph more clearly.",
+      "exampleJa": "段落をもっと明確に書き直してください。",
+      "imageHintJa": "「書く」と「書き直す」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:redo",
+      "headword": "redo",
+      "wordId": "VD-06182",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "やり直す",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "do",
+          "kind": "free-base",
+          "meaningJa": "する"
+        }
+      ],
+      "baseHeadword": "do",
+      "baseWordId": "VD-00257",
+      "explanationJa": "re-（再び・元に）と do（する）を手がかりに、redo（やり直す）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "I had to redo the calculation.",
+      "exampleJa": "私は計算をやり直す必要があった。",
+      "imageHintJa": "「する」と「やり直す」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:renew",
+      "headword": "renew",
+      "wordId": "VD-03908",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "新しくする・更新する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "new",
+          "kind": "free-base",
+          "meaningJa": "新しい"
+        }
+      ],
+      "baseHeadword": "new",
+      "baseWordId": "VD-00620",
+      "explanationJa": "re-（再び・元に）と new（新しい）を手がかりに、renew（新しくする・更新する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Please renew your library card.",
+      "exampleJa": "図書館カードを更新してください。",
+      "imageHintJa": "「新しい」と「新しくする・更新する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:review",
+      "headword": "review",
+      "wordId": "VD-00752",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "見直す・復習する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び・元に"
+        },
+        {
+          "surface": "view",
+          "kind": "free-base",
+          "meaningJa": "見る"
+        }
+      ],
+      "baseHeadword": "view",
+      "baseWordId": "VD-02254",
+      "explanationJa": "re-（再び・元に）と view（見る）を手がかりに、review（見直す・復習する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Review the notes before the quiz.",
+      "exampleJa": "小テスト前にノートを復習してください。",
+      "imageHintJa": "「見る」と「見直す・復習する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mislead",
+      "headword": "mislead",
+      "wordId": "VD-03511",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "誤った方向へ導く",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "lead",
+          "kind": "free-base",
+          "meaningJa": "導く"
+        }
+      ],
+      "baseHeadword": "lead",
+      "baseWordId": "VD-01683",
+      "explanationJa": "mis-（誤って）と lead（導く）を手がかりに、mislead（誤った方向へ導く）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The headline may mislead readers.",
+      "exampleJa": "その見出しは読者を誤解させるかもしれない。",
+      "imageHintJa": "「導く」と「誤った方向へ導く」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:misconception",
+      "headword": "misconception",
+      "wordId": "VD-05748",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "誤解・思い違い",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "conception",
+          "kind": "free-base",
+          "meaningJa": "考え・概念"
+        }
+      ],
+      "baseHeadword": "conception",
+      "baseWordId": "VD-04833",
+      "explanationJa": "mis-（誤って）と conception（考え・概念）を手がかりに、misconception（誤解・思い違い）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "This activity corrects a common misconception.",
+      "exampleJa": "この活動はよくある誤解を正す。",
+      "imageHintJa": "「考え・概念」と「誤解・思い違い」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:misfortune",
+      "headword": "misfortune",
+      "wordId": "VD-05749",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不運",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "fortune",
+          "kind": "free-base",
+          "meaningJa": "運"
+        }
+      ],
+      "baseHeadword": "fortune",
+      "baseWordId": "VD-01525",
+      "explanationJa": "mis-（誤って）と fortune（運）を手がかりに、misfortune（不運）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "He faced misfortune with courage.",
+      "exampleJa": "彼は不運に勇敢に立ち向かった。",
+      "imageHintJa": "「運」と「不運」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mistreat",
+      "headword": "mistreat",
+      "wordId": "VD-05753",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ひどい扱いをする",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "treat",
+          "kind": "free-base",
+          "meaningJa": "扱う"
+        }
+      ],
+      "baseHeadword": "treat",
+      "baseWordId": "VD-04282",
+      "explanationJa": "mis-（誤って）と treat（扱う）を手がかりに、mistreat（ひどい扱いをする）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "No one should mistreat animals.",
+      "exampleJa": "誰も動物を虐待してはならない。",
+      "imageHintJa": "「扱う」と「ひどい扱いをする」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:misplace",
+      "headword": "misplace",
+      "wordId": "VD-07365",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "置き間違える",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "place",
+          "kind": "free-base",
+          "meaningJa": "置く"
+        }
+      ],
+      "baseHeadword": "place",
+      "baseWordId": "VD-00700",
+      "explanationJa": "mis-（誤って）と place（置く）を手がかりに、misplace（置き間違える）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "I often misplace my keys.",
+      "exampleJa": "私はよく鍵を置き忘れる。",
+      "imageHintJa": "「置く」と「置き間違える」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overwork",
+      "headword": "overwork",
+      "wordId": "VD-03659",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "働き過ぎる",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "meaningJa": "働く"
+        }
+      ],
+      "baseHeadword": "work",
+      "baseWordId": "VD-01044",
+      "explanationJa": "over-（上・越えて・過度に）と work（働く）を手がかりに、overwork（働き過ぎる）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Do not overwork during exam week.",
+      "exampleJa": "試験週間に働き過ぎないでください。",
+      "imageHintJa": "「働く」と「働き過ぎる」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overcoat",
+      "headword": "overcoat",
+      "wordId": "VD-05905",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "外套・オーバーコート",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "coat",
+          "kind": "free-base",
+          "meaningJa": "コート"
+        }
+      ],
+      "baseHeadword": "coat",
+      "baseWordId": "VD-00197",
+      "explanationJa": "over-（上・越えて・過度に）と coat（コート）を手がかりに、overcoat（外套・オーバーコート）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "He wore an overcoat in the snow.",
+      "exampleJa": "彼は雪の中で厚手のコートを着ていた。",
+      "imageHintJa": "「コート」と「外套・オーバーコート」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overstep",
+      "headword": "overstep",
+      "wordId": "VD-05914",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "行き過ぎる",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "step",
+          "kind": "free-base",
+          "meaningJa": "踏み出す"
+        }
+      ],
+      "baseHeadword": "step",
+      "baseWordId": "VD-00867",
+      "explanationJa": "over-（上・越えて・過度に）と step（踏み出す）を手がかりに、overstep（行き過ぎる）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The official must not overstep her authority.",
+      "exampleJa": "担当者は権限を越えてはならない。",
+      "imageHintJa": "「踏み出す」と「行き過ぎる」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overnight",
+      "headword": "overnight",
+      "wordId": "VD-03656",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "一晩で・夜通し",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "night",
+          "kind": "free-base",
+          "meaningJa": "夜"
+        }
+      ],
+      "baseHeadword": "night",
+      "baseWordId": "VD-00624",
+      "explanationJa": "over-（上・越えて・過度に）と night（夜）を手がかりに、overnight（一晩で・夜通し）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The weather changed overnight.",
+      "exampleJa": "天気は一晩で変わった。",
+      "imageHintJa": "「夜」と「一晩で・夜通し」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overweight",
+      "headword": "overweight",
+      "wordId": "VD-01816",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "重量超過の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "weight",
+          "kind": "free-base",
+          "meaningJa": "重さ"
+        }
+      ],
+      "baseHeadword": "weight",
+      "baseWordId": "VD-02277",
+      "explanationJa": "over-（上・越えて・過度に）と weight（重さ）を手がかりに、overweight（重量超過の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The parcel is overweight.",
+      "exampleJa": "その小包は重量超過だ。",
+      "imageHintJa": "「重さ」と「重量超過の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overtime",
+      "headword": "overtime",
+      "wordId": "VD-05917",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "時間外労働・延長時間",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "上・越えて・過度に"
+        },
+        {
+          "surface": "time",
+          "kind": "free-base",
+          "meaningJa": "時間"
+        }
+      ],
+      "baseHeadword": "time",
+      "baseWordId": "VD-00947",
+      "explanationJa": "over-（上・越えて・過度に）と time（時間）を手がかりに、overtime（時間外労働・延長時間）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "She worked overtime on Friday.",
+      "exampleJa": "彼女は金曜日に残業した。",
+      "imageHintJa": "「時間」と「時間外労働・延長時間」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underage",
+      "headword": "underage",
+      "wordId": "VD-04309",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "法定年齢に達していない",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "age",
+          "kind": "free-base",
+          "meaningJa": "年齢"
+        }
+      ],
+      "baseHeadword": "age",
+      "baseWordId": "VD-00017",
+      "explanationJa": "under-（下・基準未満）と age（年齢）を手がかりに、underage（法定年齢に達していない）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The event is not open to underage visitors.",
+      "exampleJa": "そのイベントには規定年齢未満の人は入れない。",
+      "imageHintJa": "「年齢」と「法定年齢に達していない」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underground",
+      "headword": "underground",
+      "wordId": "VD-06691",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "地下の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "ground",
+          "kind": "free-base",
+          "meaningJa": "地面"
+        }
+      ],
+      "baseHeadword": "ground",
+      "baseWordId": "VD-00407",
+      "explanationJa": "under-（下・基準未満）と ground（地面）を手がかりに、underground（地下の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The city has an underground station.",
+      "exampleJa": "その都市には地下鉄の駅がある。",
+      "imageHintJa": "「地面」と「地下の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underline",
+      "headword": "underline",
+      "wordId": "VD-00987",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "下線を引く",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "line",
+          "kind": "free-base",
+          "meaningJa": "線"
+        }
+      ],
+      "baseHeadword": "line",
+      "baseWordId": "VD-00540",
+      "explanationJa": "under-（下・基準未満）と line（線）を手がかりに、underline（下線を引く）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Underline the main idea.",
+      "exampleJa": "中心となる考えに下線を引いてください。",
+      "imageHintJa": "「線」と「下線を引く」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underwater",
+      "headword": "underwater",
+      "wordId": "VD-02228",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "水中の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "water",
+          "kind": "free-base",
+          "meaningJa": "水"
+        }
+      ],
+      "baseHeadword": "water",
+      "baseWordId": "VD-01013",
+      "explanationJa": "under-（下・基準未満）と water（水）を手がかりに、underwater（水中の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The camera can take underwater photos.",
+      "exampleJa": "そのカメラは水中写真を撮れる。",
+      "imageHintJa": "「水」と「水中の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:undersea",
+      "headword": "undersea",
+      "wordId": "VD-06692",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "海底の・海中の",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "sea",
+          "kind": "free-base",
+          "meaningJa": "海"
+        }
+      ],
+      "baseHeadword": "sea",
+      "baseWordId": "VD-00781",
+      "explanationJa": "under-（下・基準未満）と sea（海）を手がかりに、undersea（海底の・海中の）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "An undersea cable connects the islands.",
+      "exampleJa": "海底ケーブルが島々をつないでいる。",
+      "imageHintJa": "「海」と「海底の・海中の」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underwear",
+      "headword": "underwear",
+      "wordId": "VD-06696",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "下着",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "下・基準未満"
+        },
+        {
+          "surface": "wear",
+          "kind": "free-base",
+          "meaningJa": "身に着ける"
+        }
+      ],
+      "baseHeadword": "wear",
+      "baseWordId": "VD-01016",
+      "explanationJa": "under-（下・基準未満）と wear（身に着ける）を手がかりに、underwear（下着）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Pack enough underwear for the trip.",
+      "exampleJa": "旅行に必要な下着を十分に入れてください。",
+      "imageHintJa": "「身に着ける」と「下着」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:interact",
+      "headword": "interact",
+      "wordId": "VD-03343",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "交流する・相互作用する",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "inter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:inter",
+          "meaningJa": "相互に・間に"
+        },
+        {
+          "surface": "act",
+          "kind": "free-base",
+          "meaningJa": "行動する"
+        }
+      ],
+      "baseHeadword": "act",
+      "baseWordId": "VD-01073",
+      "explanationJa": "inter-（相互に・間に）と act（行動する）を手がかりに、interact（交流する・相互作用する）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Students interact with classmates abroad.",
+      "exampleJa": "生徒たちは海外の同級生と交流する。",
+      "imageHintJa": "「行動する」と「交流する・相互作用する」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:interaction",
+      "headword": "interaction",
+      "wordId": "VD-03344",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "交流・相互作用",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "inter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:inter",
+          "meaningJa": "相互に・間に"
+        },
+        {
+          "surface": "action",
+          "kind": "free-base",
+          "meaningJa": "行為"
+        }
+      ],
+      "baseHeadword": "action",
+      "baseWordId": "VD-00008",
+      "explanationJa": "inter-（相互に・間に）と action（行為）を手がかりに、interaction（交流・相互作用）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The lesson encourages interaction.",
+      "exampleJa": "その授業は交流を促す。",
+      "imageHintJa": "「行為」と「交流・相互作用」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:interpersonal",
+      "headword": "interpersonal",
+      "wordId": "VD-05557",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "人と人との",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "inter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:inter",
+          "meaningJa": "相互に・間に"
+        },
+        {
+          "surface": "personal",
+          "kind": "free-base",
+          "meaningJa": "個人的な"
+        }
+      ],
+      "baseHeadword": "personal",
+      "baseWordId": "VD-00688",
+      "explanationJa": "inter-（相互に・間に）と personal（個人的な）を手がかりに、interpersonal（人と人との）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "Interpersonal skills matter at work.",
+      "exampleJa": "対人関係の技能は仕事で重要だ。",
+      "imageHintJa": "「個人的な」と「人と人との」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:interweave",
+      "headword": "interweave",
+      "wordId": "VD-08224",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "織り交ぜる",
+      "analysisType": "transparent-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "inter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:inter",
+          "meaningJa": "相互に・間に"
+        },
+        {
+          "surface": "weave",
+          "kind": "free-base",
+          "meaningJa": "織る"
+        }
+      ],
+      "baseHeadword": "weave",
+      "baseWordId": "VD-06809",
+      "explanationJa": "inter-（相互に・間に）と weave（織る）を手がかりに、interweave（織り交ぜる）の意味を理解する。文脈による意味の違いにも注意する。",
+      "exampleEn": "The author interweaves two stories.",
+      "exampleJa": "作者は二つの物語を織り交ぜている。",
+      "imageHintJa": "「織る」と「織り交ぜる」の状況を左右で見比べる",
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "referenceLookupPending": true,
+      "sourceRefs": [],
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
