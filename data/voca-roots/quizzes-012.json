@@ -1,0 +1,4507 @@
+{
+  "schemaVersion": "1.1",
+  "batch": "016",
+  "quizGroup": "prefixes-reverse-meaning",
+  "records": [
+    {
+      "id": "quiz:reverse:prefix:un-negative",
+      "morphemeId": "prefix:un-negative",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜でない」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"not\"?",
+      "choices": [
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homo-"
+        },
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        }
+      ],
+      "answerId": "prefix:un-negative",
+      "explanationJa": "un-：〜でない。学習例：unhappy / unfair / unclear。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:un-reversal",
+      "morphemeId": "prefix:un-reversal",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「元の状態に戻す」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"reverse an action\"?",
+      "choices": [
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        }
+      ],
+      "answerId": "prefix:un-reversal",
+      "explanationJa": "un-：元の状態に戻す。学習例：unlock / untie / unpack。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:re",
+      "morphemeId": "prefix:re",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「再び・元へ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"again; back\"?",
+      "choices": [
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        }
+      ],
+      "answerId": "prefix:re",
+      "explanationJa": "re-：再び・元へ。学習例：rewrite / rebuild / review。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pre",
+      "morphemeId": "prefix:pre",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「前もって・以前」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"before\"?",
+      "choices": [
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "pre-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        }
+      ],
+      "answerId": "prefix:pre",
+      "explanationJa": "pre-：前もって・以前。学習例：preview / prepay / preschool。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:post",
+      "morphemeId": "prefix:post",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「後に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"after\"?",
+      "choices": [
+        {
+          "id": "prefix:post",
+          "labelJa": "post-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        }
+      ],
+      "answerId": "prefix:post",
+      "explanationJa": "post-：後に。学習例：postwar / postdate / postgraduate。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:dis",
+      "morphemeId": "prefix:dis",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「否定・分離・反対」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"not; apart\"?",
+      "choices": [
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        }
+      ],
+      "answerId": "prefix:dis",
+      "explanationJa": "dis-：否定・分離・反対。学習例：disagree / dislike / disconnect。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:mis",
+      "morphemeId": "prefix:mis",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「誤って」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"wrongly\"?",
+      "choices": [
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        }
+      ],
+      "answerId": "prefix:mis",
+      "explanationJa": "mis-：誤って。学習例：misunderstand / misread / mislead。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:non",
+      "morphemeId": "prefix:non",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜でない・非〜」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"not\"?",
+      "choices": [
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        }
+      ],
+      "answerId": "prefix:non",
+      "explanationJa": "non-：〜でない・非〜。学習例：nonfiction / nonverbal / nonviolent。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:in-negative",
+      "morphemeId": "prefix:in-negative",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜でない」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"not\"?",
+      "choices": [
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        }
+      ],
+      "answerId": "prefix:in-negative",
+      "explanationJa": "in / im-：〜でない。学習例：invisible / impossible / illegal。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:in-inward",
+      "morphemeId": "prefix:in-inward",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「中へ・中に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"in; into\"?",
+      "choices": [
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:in-inward",
+      "explanationJa": "in / im-：中へ・中に。学習例：insert / inject / import。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ex",
+      "morphemeId": "prefix:ex",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「外へ・外に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"out\"?",
+      "choices": [
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "ex / e-"
+        },
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        }
+      ],
+      "answerId": "prefix:ex",
+      "explanationJa": "ex / e-：外へ・外に。学習例：export / exclude / extract。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:co",
+      "morphemeId": "prefix:co",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「共に・一緒に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"together\"?",
+      "choices": [
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        }
+      ],
+      "answerId": "prefix:co",
+      "explanationJa": "co / com-：共に・一緒に。学習例：cooperate / combine / connect。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:inter",
+      "morphemeId": "prefix:inter",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「間に・相互に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"between; among\"?",
+      "choices": [
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electro-"
+        }
+      ],
+      "answerId": "prefix:inter",
+      "explanationJa": "inter-：間に・相互に。学習例：international / interact / interconnect。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:intra",
+      "morphemeId": "prefix:intra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「内部に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"within\"?",
+      "choices": [
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intra-"
+        }
+      ],
+      "answerId": "prefix:intra",
+      "explanationJa": "intra-：内部に。学習例：intravenous / intranet / intramural。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:trans",
+      "morphemeId": "prefix:trans",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「越えて・横切って」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"across\"?",
+      "choices": [
+        {
+          "id": "prefix:under",
+          "labelJa": "under-"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        }
+      ],
+      "answerId": "prefix:trans",
+      "explanationJa": "trans-：越えて・横切って。学習例：transport / transmit / transatlantic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:sub",
+      "morphemeId": "prefix:sub",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下に・副次的な」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"under; subordinate\"?",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        }
+      ],
+      "answerId": "prefix:sub",
+      "explanationJa": "sub-：下に・副次的な。学習例：submarine / subway / subheading。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:super",
+      "morphemeId": "prefix:super",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「上に・超えて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"above; beyond\"?",
+      "choices": [
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        },
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        }
+      ],
+      "answerId": "prefix:super",
+      "explanationJa": "super-：上に・超えて。学習例：superpower / superhuman / superstructure。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:over",
+      "morphemeId": "prefix:over",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「過度に・上に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"too much; above\"?",
+      "choices": [
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        }
+      ],
+      "answerId": "prefix:over",
+      "explanationJa": "over-：過度に・上に。学習例：overcook / overwork / overestimate。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:under",
+      "morphemeId": "prefix:under",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「不足・下に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"too little; below\"?",
+      "choices": [
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "under-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        }
+      ],
+      "answerId": "prefix:under",
+      "explanationJa": "under-：不足・下に。学習例：underestimate / underpay / underground。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:anti",
+      "morphemeId": "prefix:anti",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「反対・対抗」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"against\"?",
+      "choices": [
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:anti",
+      "explanationJa": "anti-：反対・対抗。学習例：antiwar / antibacterial / antivirus。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:auto",
+      "morphemeId": "prefix:auto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「自分自身・自動」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"self\"?",
+      "choices": [
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        }
+      ],
+      "answerId": "prefix:auto",
+      "explanationJa": "auto-：自分自身・自動。学習例：autobiography / autopilot / autograph。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:bi",
+      "morphemeId": "prefix:bi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「二つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"two\"?",
+      "choices": [
+        {
+          "id": "prefix:endo",
+          "labelJa": "endo-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:bi",
+      "explanationJa": "bi-：二つ。学習例：bicycle / bilingual / bilateral。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:tri",
+      "morphemeId": "prefix:tri",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「三つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"three\"?",
+      "choices": [
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        }
+      ],
+      "answerId": "prefix:tri",
+      "explanationJa": "tri-：三つ。学習例：triangle / tricycle / tripod。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:multi",
+      "morphemeId": "prefix:multi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「多数の」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"many\"?",
+      "choices": [
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        }
+      ],
+      "answerId": "prefix:multi",
+      "explanationJa": "multi-：多数の。学習例：multilingual / multicultural / multinational。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:poly",
+      "morphemeId": "prefix:poly",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「多数の」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"many\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "pre-"
+        },
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        }
+      ],
+      "answerId": "prefix:poly",
+      "explanationJa": "poly-：多数の。学習例：polygon / polytheism / polymer。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:mono",
+      "morphemeId": "prefix:mono",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「一つの」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one\"?",
+      "choices": [
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "mono-"
+        }
+      ],
+      "answerId": "prefix:mono",
+      "explanationJa": "mono-：一つの。学習例：monologue / monopoly / monorail。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:micro",
+      "morphemeId": "prefix:micro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「小さい」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"small\"?",
+      "choices": [
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        },
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "micro-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        }
+      ],
+      "answerId": "prefix:micro",
+      "explanationJa": "micro-：小さい。学習例：microscope / microchip / microorganism。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:macro",
+      "morphemeId": "prefix:macro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「大きい・大規模」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"large\"?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:macro",
+      "explanationJa": "macro-：大きい・大規模。学習例：macroeconomics / macroscopic / macromolecule。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:semi",
+      "morphemeId": "prefix:semi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「半分・部分的」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"half; partly\"?",
+      "choices": [
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        }
+      ],
+      "answerId": "prefix:semi",
+      "explanationJa": "semi-：半分・部分的。学習例：semicircle / semifinal / semiconductor。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:counter",
+      "morphemeId": "prefix:counter",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「対抗・反対」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"against\"?",
+      "choices": [
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        }
+      ],
+      "answerId": "prefix:counter",
+      "explanationJa": "counter-：対抗・反対。学習例：counterattack / counterbalance / counterargument。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:a-no",
+      "morphemeId": "prefix:a-no",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜がない・欠如」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"without\"?",
+      "choices": [
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        }
+      ],
+      "answerId": "prefix:a-no",
+      "explanationJa": "a / an-：〜がない・欠如。学習例：atypical / asymmetry / amoral。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ab",
+      "morphemeId": "prefix:ab",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「離れて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"away from\"?",
+      "choices": [
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "ab / abs-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        }
+      ],
+      "answerId": "prefix:ab",
+      "explanationJa": "ab / abs-：離れて。学習例：abduct / absent / abstain。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ad",
+      "morphemeId": "prefix:ad",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜へ・近づいて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"toward\"?",
+      "choices": [
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        }
+      ],
+      "answerId": "prefix:ad",
+      "explanationJa": "ad / ac-：〜へ・近づいて。学習例：adapt / adhere / attract。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ante",
+      "morphemeId": "prefix:ante",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「前に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"before\"?",
+      "choices": [
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        }
+      ],
+      "answerId": "prefix:ante",
+      "explanationJa": "ante-：前に。学習例：antecedent / antenatal / antechamber。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:circum",
+      "morphemeId": "prefix:circum",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「周囲に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"around\"?",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        }
+      ],
+      "answerId": "prefix:circum",
+      "explanationJa": "circum-：周囲に。学習例：circumnavigate / circumference / circumscribe。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:contra",
+      "morphemeId": "prefix:contra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「反対に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"against\"?",
+      "choices": [
+        {
+          "id": "prefix:anglo",
+          "labelJa": "Anglo-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:contra",
+      "explanationJa": "contra-：反対に。学習例：contradict / contraception / contravene。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:de",
+      "morphemeId": "prefix:de",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下へ・離す・取り除く」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"down; away; remove\"?",
+      "choices": [
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        }
+      ],
+      "answerId": "prefix:de",
+      "explanationJa": "de-：下へ・離す・取り除く。学習例：defrost / deactivate / devalue。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:en-prefix",
+      "morphemeId": "prefix:en-prefix",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜にする・中に入れる」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"make; put into\"?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:en-prefix",
+      "explanationJa": "en / em-：〜にする・中に入れる。学習例：enable / enlarge / enrich。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:extra",
+      "morphemeId": "prefix:extra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「外側・範囲を超えて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"outside; beyond\"?",
+      "choices": [
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        }
+      ],
+      "answerId": "prefix:extra",
+      "explanationJa": "extra-：外側・範囲を超えて。学習例：extracurricular / extraordinary / extraterrestrial。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:fore",
+      "morphemeId": "prefix:fore",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「前に・先に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"before; ahead\"?",
+      "choices": [
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:fore",
+      "explanationJa": "fore-：前に・先に。学習例：forecast / foresee / forewarn。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hyper",
+      "morphemeId": "prefix:hyper",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「過度・超えて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"excessive; above\"?",
+      "choices": [
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:hyper",
+      "explanationJa": "hyper-：過度・超えて。学習例：hyperactive / hypertension / hypersensitive。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hypo",
+      "morphemeId": "prefix:hypo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下・不足」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"below; deficient\"?",
+      "choices": [
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:hypo",
+          "labelJa": "hypo-"
+        }
+      ],
+      "answerId": "prefix:hypo",
+      "explanationJa": "hypo-：下・不足。学習例：hypothermia / hypoglycemia / hypodermic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hetero",
+      "morphemeId": "prefix:hetero",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「異なる」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"different\"?",
+      "choices": [
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        }
+      ],
+      "answerId": "prefix:hetero",
+      "explanationJa": "hetero-：異なる。学習例：heterogeneous / heterosexual / heteronym。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:homo",
+      "morphemeId": "prefix:homo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「同じ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"same\"?",
+      "choices": [
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homo-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:homo",
+      "explanationJa": "homo-：同じ。学習例：homogeneous / homophone / homonym。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:meta",
+      "morphemeId": "prefix:meta",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「変化・一段上の視点」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"change; higher level\"?",
+      "choices": [
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        }
+      ],
+      "answerId": "prefix:meta",
+      "explanationJa": "meta-：変化・一段上の視点。学習例：metamorphosis / metadata / metalinguistic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:neo",
+      "morphemeId": "prefix:neo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「新しい」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"new\"?",
+      "choices": [
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        }
+      ],
+      "answerId": "prefix:neo",
+      "explanationJa": "neo-：新しい。学習例：neoclassical / neonatal / neologism。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:para",
+      "morphemeId": "prefix:para",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「そば・関連・補助」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"beside; associated\"?",
+      "choices": [
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        },
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        }
+      ],
+      "answerId": "prefix:para",
+      "explanationJa": "para-：そば・関連・補助。学習例：paramedic / paralegal / parathyroid。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pro-forward",
+      "morphemeId": "prefix:pro-forward",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「前へ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"forward\"?",
+      "choices": [
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        }
+      ],
+      "answerId": "prefix:pro-forward",
+      "explanationJa": "pro-：前へ。学習例：proceed / promote / propel。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:retro",
+      "morphemeId": "prefix:retro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「後ろへ・過去へ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"backward\"?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        }
+      ],
+      "answerId": "prefix:retro",
+      "explanationJa": "retro-：後ろへ・過去へ。学習例：retroactive / retrospective / retrograde。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:uni",
+      "morphemeId": "prefix:uni",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「一つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one\"?",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        }
+      ],
+      "answerId": "prefix:uni",
+      "explanationJa": "uni-：一つ。学習例：unilateral / unicycle / unify。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ambi",
+      "morphemeId": "prefix:ambi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「両方・二方向」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"both; on both sides\"?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        }
+      ],
+      "answerId": "prefix:ambi",
+      "explanationJa": "ambi-：両方・二方向。学習例：ambidextrous / ambivalent / ambiguous。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:apo",
+      "morphemeId": "prefix:apo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「離れて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"away from\"?",
+      "choices": [
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        }
+      ],
+      "answerId": "prefix:apo",
+      "explanationJa": "apo-：離れて。学習例：apostasy / apogee / apoptosis。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:arch",
+      "morphemeId": "prefix:arch",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「首位・主要」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"chief; principal\"?",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:anglo",
+          "labelJa": "Anglo-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        }
+      ],
+      "answerId": "prefix:arch",
+      "explanationJa": "arch-：首位・主要。学習例：archbishop / archenemy / archrival。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:be",
+      "morphemeId": "prefix:be",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜にする・周囲に及ぶ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"make; around\"?",
+      "choices": [
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        }
+      ],
+      "answerId": "prefix:be",
+      "explanationJa": "be-：〜にする・周囲に及ぶ。学習例：befriend / belittle / bewitch。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:dia",
+      "morphemeId": "prefix:dia",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「通して・横切って」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"through; across\"?",
+      "choices": [
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        }
+      ],
+      "answerId": "prefix:dia",
+      "explanationJa": "dia-：通して・横切って。学習例：diameter / diagonal / diaphragm。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:eu",
+      "morphemeId": "prefix:eu",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「良い・正常な」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"good; well\"?",
+      "choices": [
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        }
+      ],
+      "answerId": "prefix:eu",
+      "explanationJa": "eu-：良い・正常な。学習例：euphoria / euphemism / euthanasia。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:dys",
+      "morphemeId": "prefix:dys",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「困難・異常・悪い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"difficulty; abnormality\"?",
+      "choices": [
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        }
+      ],
+      "answerId": "prefix:dys",
+      "explanationJa": "dys-：困難・異常・悪い。学習例：dyslexia / dysfunction / dysphoria。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:epi",
+      "morphemeId": "prefix:epi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「上に・付加して」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"upon; over\"?",
+      "choices": [
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        }
+      ],
+      "answerId": "prefix:epi",
+      "explanationJa": "epi-：上に・付加して。学習例：epidermis / epilogue / epicenter。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:infra",
+      "morphemeId": "prefix:infra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下・より低い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"below\"?",
+      "choices": [
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        }
+      ],
+      "answerId": "prefix:infra",
+      "explanationJa": "infra-：下・より低い。学習例：infrared / infrastructure / infrasonic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ultra",
+      "morphemeId": "prefix:ultra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「超えて・極度に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"beyond; extreme\"?",
+      "choices": [
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        }
+      ],
+      "answerId": "prefix:ultra",
+      "explanationJa": "ultra-：超えて・極度に。学習例：ultraviolet / ultrasonic / ultramodern。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:mid",
+      "morphemeId": "prefix:mid",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「中間」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"middle\"?",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        }
+      ],
+      "answerId": "prefix:mid",
+      "explanationJa": "mid-：中間。学習例：midday / midnight / midterm。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:out",
+      "morphemeId": "prefix:out",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「外へ・〜を上回る」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"out; surpass\"?",
+      "choices": [
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        }
+      ],
+      "answerId": "prefix:out",
+      "explanationJa": "out-：外へ・〜を上回る。学習例：outperform / outnumber / outgrow。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:self",
+      "morphemeId": "prefix:self",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「自分自身」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"oneself\"?",
+      "choices": [
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        }
+      ],
+      "answerId": "prefix:self",
+      "explanationJa": "self-：自分自身。学習例：self-control / self-esteem / self-taught。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:quasi",
+      "morphemeId": "prefix:quasi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「疑似・ほぼ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"seemingly; partly\"?",
+      "choices": [
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        }
+      ],
+      "answerId": "prefix:quasi",
+      "explanationJa": "quasi-：疑似・ほぼ。学習例：quasi-legal / quasi-scientific / quasi-public。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pseudo",
+      "morphemeId": "prefix:pseudo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「偽り・見せかけ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"false\"?",
+      "choices": [
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudo-"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        }
+      ],
+      "answerId": "prefix:pseudo",
+      "explanationJa": "pseudo-：偽り・見せかけ。学習例：pseudonym / pseudoscience / pseudocode。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pan",
+      "morphemeId": "prefix:pan",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「すべて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"all\"?",
+      "choices": [
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:pan",
+      "explanationJa": "pan-：すべて。学習例：pan-African / pan-European / panorama。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:omni",
+      "morphemeId": "prefix:omni",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「すべて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"all\"?",
+      "choices": [
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        }
+      ],
+      "answerId": "prefix:omni",
+      "explanationJa": "omni-：すべて。学習例：omnipresent / omniscient / omnivore。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:syn",
+      "morphemeId": "prefix:syn",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「共に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"together\"?",
+      "choices": [
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        }
+      ],
+      "answerId": "prefix:syn",
+      "explanationJa": "syn / sym-：共に。学習例：synchronize / synthesis / symmetry。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:peri",
+      "morphemeId": "prefix:peri",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「周囲」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"around\"?",
+      "choices": [
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        }
+      ],
+      "answerId": "prefix:peri",
+      "explanationJa": "peri-：周囲。学習例：perimeter / peripheral / periscope。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:proto",
+      "morphemeId": "prefix:proto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「最初の・原初の」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"first; earliest\"?",
+      "choices": [
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        }
+      ],
+      "answerId": "prefix:proto",
+      "explanationJa": "proto-：最初の・原初の。学習例：prototype / protozoan / proto-language。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:amphi",
+      "morphemeId": "prefix:amphi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「両方・周囲」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"both; around\"?",
+      "choices": [
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphi-"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "under-"
+        }
+      ],
+      "answerId": "prefix:amphi",
+      "explanationJa": "amphi-：両方・周囲。学習例：amphibious / amphitheater / amphibian。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:per",
+      "morphemeId": "prefix:per",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「通して・完全に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"through; thoroughly\"?",
+      "choices": [
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:euro",
+          "labelJa": "Euro-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        }
+      ],
+      "answerId": "prefix:per",
+      "explanationJa": "per-：通して・完全に。学習例：permeate / perforate / persist。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ob",
+      "morphemeId": "prefix:ob",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜に向かって・対して」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"toward; against\"?",
+      "choices": [
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        }
+      ],
+      "answerId": "prefix:ob",
+      "explanationJa": "ob / oc-：〜に向かって・対して。学習例：object / oppose / obstruct。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:se-apart",
+      "morphemeId": "prefix:se-apart",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「離れて・分けて」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"apart\"?",
+      "choices": [
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        }
+      ],
+      "answerId": "prefix:se-apart",
+      "explanationJa": "se-：離れて・分けて。学習例：separate / seclude / segregate。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pro-support",
+      "morphemeId": "prefix:pro-support",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「〜に賛成して」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"in favor of\"?",
+      "choices": [
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        }
+      ],
+      "answerId": "prefix:pro-support",
+      "explanationJa": "pro-：〜に賛成して。学習例：pro-democracy / pro-choice / pro-government。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:perma",
+      "morphemeId": "prefix:perma",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「恒久的な」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"permanent\"?",
+      "choices": [
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphi-"
+        }
+      ],
+      "answerId": "prefix:perma",
+      "explanationJa": "perma-：恒久的な。学習例：permafrost / permaculture / permalink。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:vice",
+      "morphemeId": "prefix:vice",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「代理・副〜」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"deputy; in place of\"?",
+      "choices": [
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intra-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        }
+      ],
+      "answerId": "prefix:vice",
+      "explanationJa": "vice-：代理・副〜。学習例：vice-president / vice-chair / vice-chancellor。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:nano",
+      "morphemeId": "prefix:nano",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「極小・十億分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"very small; one billionth\"?",
+      "choices": [
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nano-"
+        }
+      ],
+      "answerId": "prefix:nano",
+      "explanationJa": "nano-：極小・十億分の一。学習例：nanotechnology / nanometer / nanoparticle。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:mega",
+      "morphemeId": "prefix:mega",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「巨大・百万」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"large; one million\"?",
+      "choices": [
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        }
+      ],
+      "answerId": "prefix:mega",
+      "explanationJa": "mega-：巨大・百万。学習例：megabyte / megacity / megawatt。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:giga",
+      "morphemeId": "prefix:giga",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「十億」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one billion\"?",
+      "choices": [
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        }
+      ],
+      "answerId": "prefix:giga",
+      "explanationJa": "giga-：十億。学習例：gigabyte / gigawatt / gigahertz。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:kilo",
+      "morphemeId": "prefix:kilo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「千」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one thousand\"?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        }
+      ],
+      "answerId": "prefix:kilo",
+      "explanationJa": "kilo-：千。学習例：kilogram / kilometer / kilowatt。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hemi",
+      "morphemeId": "prefix:hemi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「半分」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"half\"?",
+      "choices": [
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        }
+      ],
+      "answerId": "prefix:hemi",
+      "explanationJa": "hemi-：半分。学習例：hemisphere / hemiplegia / hemicycle。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:deci",
+      "morphemeId": "prefix:deci",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「十分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one tenth\"?",
+      "choices": [
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homo-"
+        }
+      ],
+      "answerId": "prefix:deci",
+      "explanationJa": "deci-：十分の一。学習例：decimeter / deciliter / decigram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:centi",
+      "morphemeId": "prefix:centi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「百分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one hundredth\"?",
+      "choices": [
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        }
+      ],
+      "answerId": "prefix:centi",
+      "explanationJa": "centi-：百分の一。学習例：centimeter / centiliter / centigram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:milli",
+      "morphemeId": "prefix:milli",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「千分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one thousandth\"?",
+      "choices": [
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        }
+      ],
+      "answerId": "prefix:milli",
+      "explanationJa": "milli-：千分の一。学習例：millimeter / milliliter / millisecond。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hecto",
+      "morphemeId": "prefix:hecto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「百」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one hundred\"?",
+      "choices": [
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        }
+      ],
+      "answerId": "prefix:hecto",
+      "explanationJa": "hecto-：百。学習例：hectometer / hectoliter / hectopascal。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:tetra",
+      "morphemeId": "prefix:tetra",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「四つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"four\"?",
+      "choices": [
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        }
+      ],
+      "answerId": "prefix:tetra",
+      "explanationJa": "tetra-：四つ。学習例：tetrahedron / tetrapod / tetragon。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:penta",
+      "morphemeId": "prefix:penta",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「五つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"five\"?",
+      "choices": [
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        }
+      ],
+      "answerId": "prefix:penta",
+      "explanationJa": "penta-：五つ。学習例：pentagon / pentathlon / pentagram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hexa",
+      "morphemeId": "prefix:hexa",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「六つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"six\"?",
+      "choices": [
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexa-"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        }
+      ],
+      "answerId": "prefix:hexa",
+      "explanationJa": "hexa-：六つ。学習例：hexagon / hexadecimal / hexahedron。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:octa",
+      "morphemeId": "prefix:octa",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「八つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"eight\"?",
+      "choices": [
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        }
+      ],
+      "answerId": "prefix:octa",
+      "explanationJa": "octa / octo-：八つ。学習例：octagon / octahedron / octopus。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:deca",
+      "morphemeId": "prefix:deca",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「十」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"ten\"?",
+      "choices": [
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        }
+      ],
+      "answerId": "prefix:deca",
+      "explanationJa": "deca / deka-：十。学習例：decathlon / decagon / decameter。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:after",
+      "morphemeId": "prefix:after",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「後の・後に」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"after\"?",
+      "choices": [
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:after",
+      "explanationJa": "after-：後の・後に。学習例：aftercare / aftereffect / afterthought。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:back",
+      "morphemeId": "prefix:back",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「後ろ・逆方向」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"backward; in return\"?",
+      "choices": [
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:back",
+      "explanationJa": "back-：後ろ・逆方向。学習例：backtrack / backdate / backflow。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:cross",
+      "morphemeId": "prefix:cross",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「横断・分野を越えた」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"across\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "ab / abs-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        }
+      ],
+      "answerId": "prefix:cross",
+      "explanationJa": "cross-：横断・分野を越えた。学習例：cross-cultural / cross-border / cross-reference。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:down",
+      "morphemeId": "prefix:down",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下・減少方向」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"downward; reduced\"?",
+      "choices": [
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        }
+      ],
+      "answerId": "prefix:down",
+      "explanationJa": "down-：下・減少方向。学習例：downgrade / downsize / downplay。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:up",
+      "morphemeId": "prefix:up",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「上・増加方向」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"upward; increased\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        }
+      ],
+      "answerId": "prefix:up",
+      "explanationJa": "up-：上・増加方向。学習例：upgrade / upscale / upskill。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:off",
+      "morphemeId": "prefix:off",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「離れた・通常の場所以外」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"away; outside\"?",
+      "choices": [
+        {
+          "id": "prefix:off",
+          "labelJa": "off-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        }
+      ],
+      "answerId": "prefix:off",
+      "explanationJa": "off-：離れた・通常の場所以外。学習例：offshore / offsite / offline。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:on",
+      "morphemeId": "prefix:on",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「接続中・現場」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"connected; at a place\"?",
+      "choices": [
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "ex / e-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        }
+      ],
+      "answerId": "prefix:on",
+      "explanationJa": "on-：接続中・現場。学習例：online / onsite / onboard。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:new",
+      "morphemeId": "prefix:new",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「新しく」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"newly\"?",
+      "choices": [
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        }
+      ],
+      "answerId": "prefix:new",
+      "explanationJa": "new-：新しく。学習例：newborn / newfound / newlywed。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:near",
+      "morphemeId": "prefix:near",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「ほぼ・近い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"almost; close\"?",
+      "choices": [
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        }
+      ],
+      "answerId": "prefix:near",
+      "explanationJa": "near-：ほぼ・近い。学習例：near-sighted / near-term / near-perfect。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:all",
+      "morphemeId": "prefix:all",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「すべて・全面的」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"all; completely\"?",
+      "choices": [
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:grand-family",
+          "labelJa": "grand-"
+        }
+      ],
+      "answerId": "prefix:all",
+      "explanationJa": "all-：すべて・全面的。学習例：all-inclusive / all-purpose / all-round。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:half",
+      "morphemeId": "prefix:half",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「半分・不完全」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"half; partly\"?",
+      "choices": [
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        }
+      ],
+      "answerId": "prefix:half",
+      "explanationJa": "half-：半分・不完全。学習例：halfhearted / halfway / half-life。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:double",
+      "morphemeId": "prefix:double",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「二重・二倍」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"twice; twofold\"?",
+      "choices": [
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        },
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:double",
+      "explanationJa": "double-：二重・二倍。学習例：double-check / double-sided / double-edged。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:electro",
+      "morphemeId": "prefix:electro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「電気を使う」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"electric\"?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electro-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        }
+      ],
+      "answerId": "prefix:electro",
+      "explanationJa": "electro-：電気を使う。学習例：electrocardiogram / electromagnetic / electrolysis。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:eco",
+      "morphemeId": "prefix:eco",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「環境・生態」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"environment; ecology\"?",
+      "choices": [
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        }
+      ],
+      "answerId": "prefix:eco",
+      "explanationJa": "eco-：環境・生態。学習例：eco-friendly / ecotourism / ecosystem。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:agro",
+      "morphemeId": "prefix:agro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「農業・農地」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"agriculture; field\"?",
+      "choices": [
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:agro",
+          "labelJa": "agro-"
+        }
+      ],
+      "answerId": "prefix:agro",
+      "explanationJa": "agro-：農業・農地。学習例：agroforestry / agrochemical / agroecology。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:aero",
+      "morphemeId": "prefix:aero",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「空気・航空」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"air; aviation\"?",
+      "choices": [
+        {
+          "id": "prefix:euro",
+          "labelJa": "Euro-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        }
+      ],
+      "answerId": "prefix:aero",
+      "explanationJa": "aero-：空気・航空。学習例：aerodynamic / aerospace / aeronautics。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:cardio",
+      "morphemeId": "prefix:cardio",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「心臓」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"heart\"?",
+      "choices": [
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        }
+      ],
+      "answerId": "prefix:cardio",
+      "explanationJa": "cardio-：心臓。学習例：cardiovascular / cardiologist / cardiogram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:cyber",
+      "morphemeId": "prefix:cyber",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「コンピューター・ネット空間」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"digital; cyberspace\"?",
+      "choices": [
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        }
+      ],
+      "answerId": "prefix:cyber",
+      "explanationJa": "cyber-：コンピューター・ネット空間。学習例：cybersecurity / cybercrime / cyberbullying。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:iso",
+      "morphemeId": "prefix:iso",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「等しい・同じ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"equal; same\"?",
+      "choices": [
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        }
+      ],
+      "answerId": "prefix:iso",
+      "explanationJa": "iso-：等しい・同じ。学習例：isometric / isotope / isothermal。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:crypto",
+      "morphemeId": "prefix:crypto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「隠された・暗号に関する」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"hidden; encrypted\"?",
+      "choices": [
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        }
+      ],
+      "answerId": "prefix:crypto",
+      "explanationJa": "crypto-：隠された・暗号に関する。学習例：cryptography / cryptocurrency / cryptogram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ex-former",
+      "morphemeId": "prefix:ex-former",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「元〜・前〜」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"former\"?",
+      "choices": [
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        }
+      ],
+      "answerId": "prefix:ex-former",
+      "explanationJa": "ex-：元〜・前〜。学習例：ex-president / ex-partner / ex-colleague。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:e-digital",
+      "morphemeId": "prefix:e-digital",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「電子・オンライン」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"electronic\"?",
+      "choices": [
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        }
+      ],
+      "answerId": "prefix:e-digital",
+      "explanationJa": "e-：電子・オンライン。学習例：e-mail / e-commerce / e-learning。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:step-family",
+      "morphemeId": "prefix:step-family",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「継〜・姻族関係」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"stepfamily relation\"?",
+      "choices": [
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "ab / abs-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        }
+      ],
+      "answerId": "prefix:step-family",
+      "explanationJa": "step-：継〜・姻族関係。学習例：stepfather / stepmother / stepchild。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:grand-family",
+      "morphemeId": "prefix:grand-family",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「祖父母・孫の関係」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one generation beyond parent or child\"?",
+      "choices": [
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:grand-family",
+          "labelJa": "grand-"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        }
+      ],
+      "answerId": "prefix:grand-family",
+      "explanationJa": "grand-：祖父母・孫の関係。学習例：grandparent / grandchild / granddaughter。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:great-family",
+      "morphemeId": "prefix:great-family",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「さらに一世代離れた」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one further generation\"?",
+      "choices": [
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        }
+      ],
+      "answerId": "prefix:great-family",
+      "explanationJa": "great-：さらに一世代離れた。学習例：great-grandfather / great-grandmother / great-grandchild。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:mini",
+      "morphemeId": "prefix:mini",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「小型・小規模」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"small; miniature\"?",
+      "choices": [
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        }
+      ],
+      "answerId": "prefix:mini",
+      "explanationJa": "mini-：小型・小規模。学習例：minibus / miniskirt / miniseries。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:maxi",
+      "morphemeId": "prefix:maxi",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「大型・長い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"large; maximum\"?",
+      "choices": [
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        }
+      ],
+      "answerId": "prefix:maxi",
+      "explanationJa": "maxi-：大型・長い。学習例：maxiskirt / maxidress / maxiscooter。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:tera",
+      "morphemeId": "prefix:tera",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「一兆」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one trillion\"?",
+      "choices": [
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        }
+      ],
+      "answerId": "prefix:tera",
+      "explanationJa": "tera-：一兆。学習例：terabyte / terawatt / terahertz。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:pico",
+      "morphemeId": "prefix:pico",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「一兆分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one trillionth\"?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        }
+      ],
+      "answerId": "prefix:pico",
+      "explanationJa": "pico-：一兆分の一。学習例：picometer / picosecond / picofarad。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:femto",
+      "morphemeId": "prefix:femto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「千兆分の一」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"one quadrillionth\"?",
+      "choices": [
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        },
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        }
+      ],
+      "answerId": "prefix:femto",
+      "explanationJa": "femto-：千兆分の一。学習例：femtosecond / femtometer / femtoampere。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:hepta",
+      "morphemeId": "prefix:hepta",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「七つ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"seven\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        }
+      ],
+      "answerId": "prefix:hepta",
+      "explanationJa": "hepta-：七つ。学習例：heptagon / heptathlon / heptane。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:socio",
+      "morphemeId": "prefix:socio",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「社会・社会的」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"social\"?",
+      "choices": [
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        }
+      ],
+      "answerId": "prefix:socio",
+      "explanationJa": "socio-：社会・社会的。学習例：socioeconomic / sociocultural / sociopolitical。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:techno",
+      "morphemeId": "prefix:techno",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「技術・科学技術」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"technology\"?",
+      "choices": [
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        }
+      ],
+      "answerId": "prefix:techno",
+      "explanationJa": "techno-：技術・科学技術。学習例：technophobia / technophile / technocracy。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:info",
+      "morphemeId": "prefix:info",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「情報」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"information\"?",
+      "choices": [
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        }
+      ],
+      "answerId": "prefix:info",
+      "explanationJa": "info-：情報。学習例：infographic / infotainment / infodemic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:immuno",
+      "morphemeId": "prefix:immuno",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「免疫」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"immunity\"?",
+      "choices": [
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        },
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        }
+      ],
+      "answerId": "prefix:immuno",
+      "explanationJa": "immuno-：免疫。学習例：immunology / immunotherapy / immunodeficiency。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:gastro",
+      "morphemeId": "prefix:gastro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「胃」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"stomach\"?",
+      "choices": [
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        }
+      ],
+      "answerId": "prefix:gastro",
+      "explanationJa": "gastro-：胃。学習例：gastroenterology / gastronomy / gastroscopy。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:anglo",
+      "morphemeId": "prefix:anglo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「イングランド・英語圏」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"English; British\"?",
+      "choices": [
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:anglo",
+          "labelJa": "Anglo-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:anglo",
+      "explanationJa": "Anglo-：イングランド・英語圏。学習例：Anglophone / Anglophile / Anglo-American。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:euro",
+      "morphemeId": "prefix:euro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「欧州・ユーロ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"Europe; euro\"?",
+      "choices": [
+        {
+          "id": "prefix:euro",
+          "labelJa": "Euro-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        }
+      ],
+      "answerId": "prefix:euro",
+      "explanationJa": "Euro-：欧州・ユーロ。学習例：Eurozone / Eurocentric / Eurosceptic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:afro",
+      "morphemeId": "prefix:afro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「アフリカ・アフリカ系」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"Africa; African heritage\"?",
+      "choices": [
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        }
+      ],
+      "answerId": "prefix:afro",
+      "explanationJa": "Afro-：アフリカ・アフリカ系。学習例：Afro-Caribbean / Afrobeat / Afrocentric。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:sino",
+      "morphemeId": "prefix:sino",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「中国」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"China\"?",
+      "choices": [
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        },
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        }
+      ],
+      "answerId": "prefix:sino",
+      "explanationJa": "Sino-：中国。学習例：Sino-Japanese / Sino-American / Sinophone。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:acro",
+      "morphemeId": "prefix:acro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「先端・高い所」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"tip; high\"?",
+      "choices": [
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:acro",
+      "explanationJa": "acro-：先端・高い所。学習例：acropolis / acrophobia / acronym。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:bathy",
+      "morphemeId": "prefix:bathy",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「深い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"deep\"?",
+      "choices": [
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        }
+      ],
+      "answerId": "prefix:bathy",
+      "explanationJa": "bathy-：深い。学習例：bathymetry / bathysphere / bathypelagic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:brachy",
+      "morphemeId": "prefix:brachy",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「短い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"short\"?",
+      "choices": [
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:agro",
+          "labelJa": "agro-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        }
+      ],
+      "answerId": "prefix:brachy",
+      "explanationJa": "brachy-：短い。学習例：brachytherapy / brachycephalic / brachydactyly。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:chromo",
+      "morphemeId": "prefix:chromo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「色」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"color\"?",
+      "choices": [
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "post-"
+        },
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        }
+      ],
+      "answerId": "prefix:chromo",
+      "explanationJa": "chromo / chromato-：色。学習例：chromosome / chromatography / chromatic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:chloro",
+      "morphemeId": "prefix:chloro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「緑・黄緑」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"green\"?",
+      "choices": [
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        }
+      ],
+      "answerId": "prefix:chloro",
+      "explanationJa": "chloro-：緑・黄緑。学習例：chlorophyll / chloroplast / chlorosis。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:xeno",
+      "morphemeId": "prefix:xeno",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「異国の・異質な」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"foreign\"?",
+      "choices": [
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        }
+      ],
+      "answerId": "prefix:xeno",
+      "explanationJa": "xeno-：異国の・異質な。学習例：xenophobia / xenograft / xenolith。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:zoo",
+      "morphemeId": "prefix:zoo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「動物」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"animal\"?",
+      "choices": [
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphi-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        }
+      ],
+      "answerId": "prefix:zoo",
+      "explanationJa": "zoo-：動物。学習例：zoology / zoologist / zooplankton。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ornitho",
+      "morphemeId": "prefix:ornitho",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「鳥」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"bird\"?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "pre-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        }
+      ],
+      "answerId": "prefix:ornitho",
+      "explanationJa": "ornitho-：鳥。学習例：ornithology / ornithologist / ornithopter。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:paleo",
+      "morphemeId": "prefix:paleo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「古い」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"ancient\"?",
+      "choices": [
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        }
+      ],
+      "answerId": "prefix:paleo",
+      "explanationJa": "paleo / palaeo-：古い。学習例：paleontology / paleobotany / paleoclimate。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:meso",
+      "morphemeId": "prefix:meso",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「中間」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"middle\"?",
+      "choices": [
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        }
+      ],
+      "answerId": "prefix:meso",
+      "explanationJa": "meso-：中間。学習例：mesosphere / mesoderm / mesolithic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:endo",
+      "morphemeId": "prefix:endo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「内側」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"within\"?",
+      "choices": [
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:endo",
+          "labelJa": "endo-"
+        }
+      ],
+      "answerId": "prefix:endo",
+      "explanationJa": "endo-：内側。学習例：endogenous / endoskeleton / endoscopy。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ecto",
+      "morphemeId": "prefix:ecto",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「外側」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"outside\"?",
+      "choices": [
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        }
+      ],
+      "answerId": "prefix:ecto",
+      "explanationJa": "ecto-：外側。学習例：ectoderm / ectoplasm / ectopic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:exo",
+      "morphemeId": "prefix:exo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「外部」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"outside\"?",
+      "choices": [
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        }
+      ],
+      "answerId": "prefix:exo",
+      "explanationJa": "exo-：外部。学習例：exoskeleton / exoplanet / exogenous。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ana",
+      "morphemeId": "prefix:ana",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「上へ・再び」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"up; again\"?",
+      "choices": [
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexa-"
+        }
+      ],
+      "answerId": "prefix:ana",
+      "explanationJa": "ana-：上へ・再び。学習例：anabolism / anaphase / anagram。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:cata",
+      "morphemeId": "prefix:cata",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「下へ・分解」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"down\"?",
+      "choices": [
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        }
+      ],
+      "answerId": "prefix:cata",
+      "explanationJa": "cata-：下へ・分解。学習例：catabolism / catalyst / catapult。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:dorso",
+      "morphemeId": "prefix:dorso",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「背側」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"back\"?",
+      "choices": [
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        }
+      ],
+      "answerId": "prefix:dorso",
+      "explanationJa": "dorso-：背側。学習例：dorsoventral / dorsolateral / dorsomedial。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ventro",
+      "morphemeId": "prefix:ventro",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「腹側」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"belly; ventral\"?",
+      "choices": [
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        }
+      ],
+      "answerId": "prefix:ventro",
+      "explanationJa": "ventro-：腹側。学習例：ventrolateral / ventromedial / ventrodorsal。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:ortho",
+      "morphemeId": "prefix:ortho",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「正しい・まっすぐ」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"straight; correct\"?",
+      "choices": [
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        }
+      ],
+      "answerId": "prefix:ortho",
+      "explanationJa": "ortho-：正しい・まっすぐ。学習例：orthodontics / orthography / orthopedic。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:reverse:prefix:oligo",
+      "morphemeId": "prefix:oligo",
+      "type": "meaning-to-morpheme",
+      "questionJa": "「少ない」を表す接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form has the learning meaning \"few\"?",
+      "choices": [
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        }
+      ],
+      "answerId": "prefix:oligo",
+      "explanationJa": "oligo-：少ない。学習例：oligarchy / oligopoly / oligosaccharide。語源上の分類・個別語源は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
