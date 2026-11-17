@@ -1,0 +1,3007 @@
+{
+  "schemaVersion": "1.1",
+  "batch": "017",
+  "quizGroup": "prefix-word-family-recognition",
+  "records": [
+    {
+      "id": "quiz:family-match:prefix:un-negative",
+      "morphemeId": "prefix:un-negative",
+      "type": "word-family-recognition",
+      "questionJa": "「unhappy」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"unhappy\"?",
+      "choices": [
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unfair"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambiguous"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neoclassical"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decathlon"
+        }
+      ],
+      "answerId": "prefix:un-negative",
+      "explanationJa": "unhappy と unfair は「〜でない」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:un-reversal",
+      "morphemeId": "prefix:un-reversal",
+      "type": "word-family-recognition",
+      "questionJa": "「unlock」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"unlock\"?",
+      "choices": [
+        {
+          "id": "prefix:centi",
+          "labelJa": "centimeter"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "ecosystem"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "gigawatt"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "untie"
+        }
+      ],
+      "answerId": "prefix:un-reversal",
+      "explanationJa": "unlock と untie は「元の状態に戻す」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:re",
+      "morphemeId": "prefix:re",
+      "type": "word-family-recognition",
+      "questionJa": "「rewrite」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"rewrite\"?",
+      "choices": [
+        {
+          "id": "prefix:ex",
+          "labelJa": "exclude"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "diagonal"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "rebuild"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circumvent"
+        }
+      ],
+      "answerId": "prefix:re",
+      "explanationJa": "rewrite と rebuild は「再び・元へ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:pre",
+      "morphemeId": "prefix:pre",
+      "type": "word-family-recognition",
+      "questionJa": "「preview」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"preview\"?",
+      "choices": [
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "enlarge"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "prepay"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retrospective"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "misuse"
+        }
+      ],
+      "answerId": "prefix:pre",
+      "explanationJa": "preview と prepay は「前もって・以前」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:post",
+      "morphemeId": "prefix:post",
+      "type": "word-family-recognition",
+      "questionJa": "「postwar」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"postwar\"?",
+      "choices": [
+        {
+          "id": "prefix:post",
+          "labelJa": "postdate"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentathlon"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decameter"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aerospace"
+        }
+      ],
+      "answerId": "prefix:post",
+      "explanationJa": "postwar と postdate は「後に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:dis",
+      "morphemeId": "prefix:dis",
+      "type": "word-family-recognition",
+      "questionJa": "「disagree」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"disagree\"?",
+      "choices": [
+        {
+          "id": "prefix:hypo",
+          "labelJa": "hypodermic"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "transatlantic"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "unpack"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dislike"
+        }
+      ],
+      "answerId": "prefix:dis",
+      "explanationJa": "disagree と dislike は「否定・分離・反対」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:mis",
+      "morphemeId": "prefix:mis",
+      "type": "word-family-recognition",
+      "questionJa": "「misunderstand」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"misunderstand\"?",
+      "choices": [
+        {
+          "id": "prefix:neo",
+          "labelJa": "neoclassical"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambiguous"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "misread"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "adapt"
+        }
+      ],
+      "answerId": "prefix:mis",
+      "explanationJa": "misunderstand と misread は「誤って」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:non",
+      "morphemeId": "prefix:non",
+      "type": "word-family-recognition",
+      "questionJa": "「nonfiction」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"nonfiction\"?",
+      "choices": [
+        {
+          "id": "prefix:pan",
+          "labelJa": "panorama"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "nonverbal"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semiconductor"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "polytheism"
+        }
+      ],
+      "answerId": "prefix:non",
+      "explanationJa": "nonfiction と nonverbal は「〜でない・非〜」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:in-negative",
+      "morphemeId": "prefix:in-negative",
+      "type": "word-family-recognition",
+      "questionJa": "「invisible」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"invisible\"?",
+      "choices": [
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "impossible"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "parathyroid"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-sighted"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "metacognition"
+        }
+      ],
+      "answerId": "prefix:in-negative",
+      "explanationJa": "invisible と impossible は「〜でない」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:in-inward",
+      "morphemeId": "prefix:in-inward",
+      "type": "word-family-recognition",
+      "questionJa": "「insert」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"insert\"?",
+      "choices": [
+        {
+          "id": "prefix:near",
+          "labelJa": "near-term"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heterogeneous"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "unilateral"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "inject"
+        }
+      ],
+      "answerId": "prefix:in-inward",
+      "explanationJa": "insert と inject は「中へ・中に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ex",
+      "morphemeId": "prefix:ex",
+      "type": "word-family-recognition",
+      "questionJa": "「export」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"export\"?",
+      "choices": [
+        {
+          "id": "prefix:perma",
+          "labelJa": "permafrost"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-life"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "exclude"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "microchip"
+        }
+      ],
+      "answerId": "prefix:ex",
+      "explanationJa": "export と exclude は「外へ・外に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:co",
+      "morphemeId": "prefix:co",
+      "type": "word-family-recognition",
+      "questionJa": "「cooperate」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"cooperate\"?",
+      "choices": [
+        {
+          "id": "prefix:epi",
+          "labelJa": "epidermis"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "combine"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultrasonic"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "euphemism"
+        }
+      ],
+      "answerId": "prefix:co",
+      "explanationJa": "cooperate と combine は「共に・一緒に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:inter",
+      "morphemeId": "prefix:inter",
+      "type": "word-family-recognition",
+      "questionJa": "「international」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"international\"?",
+      "choices": [
+        {
+          "id": "prefix:inter",
+          "labelJa": "interact"
+        },
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexahedron"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mislead"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "cryptocurrency"
+        }
+      ],
+      "answerId": "prefix:inter",
+      "explanationJa": "international と interact は「間に・相互に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:intra",
+      "morphemeId": "prefix:intra",
+      "type": "word-family-recognition",
+      "questionJa": "「intravenous」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"intravenous\"?",
+      "choices": [
+        {
+          "id": "prefix:all",
+          "labelJa": "all-inclusive"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "foresee"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deciliter"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intranet"
+        }
+      ],
+      "answerId": "prefix:intra",
+      "explanationJa": "intravenous と intranet は「内部に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:trans",
+      "morphemeId": "prefix:trans",
+      "type": "word-family-recognition",
+      "questionJa": "「transport」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"transport\"?",
+      "choices": [
+        {
+          "id": "prefix:infra",
+          "labelJa": "infrared"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "onsite"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "transmit"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "paralegal"
+        }
+      ],
+      "answerId": "prefix:trans",
+      "explanationJa": "transport と transmit は「越えて・横切って」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:sub",
+      "morphemeId": "prefix:sub",
+      "type": "word-family-recognition",
+      "questionJa": "「submarine」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"submarine\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "polymer"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "subway"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetragon"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infrastructure"
+        }
+      ],
+      "answerId": "prefix:sub",
+      "explanationJa": "submarine と subway は「下に・副次的な」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:super",
+      "morphemeId": "prefix:super",
+      "type": "word-family-recognition",
+      "questionJa": "「superpower」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"superpower\"?",
+      "choices": [
+        {
+          "id": "prefix:super",
+          "labelJa": "superhuman"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "overload"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "postpone"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heterosexual"
+        }
+      ],
+      "answerId": "prefix:super",
+      "explanationJa": "superpower と superhuman は「上に・超えて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:over",
+      "morphemeId": "prefix:over",
+      "type": "word-family-recognition",
+      "questionJa": "「overcook」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"overcook\"?",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "midnight"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extrajudicial"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octagon"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "overwork"
+        }
+      ],
+      "answerId": "prefix:over",
+      "explanationJa": "overcook と overwork は「過度に・上に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:under",
+      "morphemeId": "prefix:under",
+      "type": "word-family-recognition",
+      "questionJa": "「underestimate」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"underestimate\"?",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "multinational"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "interact"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "underpay"
+        },
+        {
+          "id": "prefix:peri",
+          "labelJa": "perimeter"
+        }
+      ],
+      "answerId": "prefix:under",
+      "explanationJa": "underestimate と underpay は「不足・下に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:anti",
+      "morphemeId": "prefix:anti",
+      "type": "word-family-recognition",
+      "questionJa": "「antiwar」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"antiwar\"?",
+      "choices": [
+        {
+          "id": "prefix:after",
+          "labelJa": "afterthought"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "antibacterial"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-democracy"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanometer"
+        }
+      ],
+      "answerId": "prefix:anti",
+      "explanationJa": "antiwar と antibacterial は「反対・対抗」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:auto",
+      "morphemeId": "prefix:auto",
+      "type": "word-family-recognition",
+      "questionJa": "「autobiography」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"autobiography\"?",
+      "choices": [
+        {
+          "id": "prefix:auto",
+          "labelJa": "autopilot"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apostasy"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multilingual"
+        },
+        {
+          "id": "prefix:after",
+          "labelJa": "aftercare"
+        }
+      ],
+      "answerId": "prefix:auto",
+      "explanationJa": "autobiography と autopilot は「自分自身・自動」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:bi",
+      "morphemeId": "prefix:bi",
+      "type": "word-family-recognition",
+      "questionJa": "「bicycle」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"bicycle\"?",
+      "choices": [
+        {
+          "id": "prefix:homo",
+          "labelJa": "homogeneity"
+        },
+        {
+          "id": "prefix:hypo",
+          "labelJa": "hypoallergenic"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "microplastic"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bilingual"
+        }
+      ],
+      "answerId": "prefix:bi",
+      "explanationJa": "bicycle と bilingual は「二つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:tri",
+      "morphemeId": "prefix:tri",
+      "type": "word-family-recognition",
+      "questionJa": "「triangle」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"triangle\"?",
+      "choices": [
+        {
+          "id": "prefix:contra",
+          "labelJa": "contravene"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "enlarge"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tricycle"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uniform"
+        }
+      ],
+      "answerId": "prefix:tri",
+      "explanationJa": "triangle と tricycle は「三つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:multi",
+      "morphemeId": "prefix:multi",
+      "type": "word-family-recognition",
+      "questionJa": "「multilingual」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"multilingual\"?",
+      "choices": [
+        {
+          "id": "prefix:ante",
+          "labelJa": "antechamber"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multicultural"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counterargument"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unhappy"
+        }
+      ],
+      "answerId": "prefix:multi",
+      "explanationJa": "multilingual と multicultural は「多数の」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:poly",
+      "morphemeId": "prefix:poly",
+      "type": "word-family-recognition",
+      "questionJa": "「polygon」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"polygon\"?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "polytheism"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multinational"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "underground"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "postgraduate"
+        }
+      ],
+      "answerId": "prefix:poly",
+      "explanationJa": "polygon と polytheism は「多数の」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:mono",
+      "morphemeId": "prefix:mono",
+      "type": "word-family-recognition",
+      "questionJa": "「monologue」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"monologue\"?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apogee"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "review"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "ecotourism"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "monopoly"
+        }
+      ],
+      "answerId": "prefix:mono",
+      "explanationJa": "monologue と monopoly は「一つの」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:micro",
+      "morphemeId": "prefix:micro",
+      "type": "word-family-recognition",
+      "questionJa": "「microscope」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"microscope\"?",
+      "choices": [
+        {
+          "id": "prefix:iso",
+          "labelJa": "isothermal"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "prepay"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "microchip"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "subheading"
+        }
+      ],
+      "answerId": "prefix:micro",
+      "explanationJa": "microscope と microchip は「小さい」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:macro",
+      "morphemeId": "prefix:macro",
+      "type": "word-family-recognition",
+      "questionJa": "「macroeconomics」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"macroeconomics\"?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circumference"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macroscopic"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "backdate"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "asymmetry"
+        }
+      ],
+      "answerId": "prefix:macro",
+      "explanationJa": "macroeconomics と macroscopic は「大きい・大規模」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:semi",
+      "morphemeId": "prefix:semi",
+      "type": "word-family-recognition",
+      "questionJa": "「semicircle」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"semicircle\"?",
+      "choices": [
+        {
+          "id": "prefix:semi",
+          "labelJa": "semifinal"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centiliter"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "autograph"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "transport"
+        }
+      ],
+      "answerId": "prefix:semi",
+      "explanationJa": "semicircle と semifinal は「半分・部分的」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:counter",
+      "morphemeId": "prefix:counter",
+      "type": "word-family-recognition",
+      "questionJa": "「counterattack」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"counterattack\"?",
+      "choices": [
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heterosexual"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "misuse"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "unilateral"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counterbalance"
+        }
+      ],
+      "answerId": "prefix:counter",
+      "explanationJa": "counterattack と counterbalance は「対抗・反対」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:a-no",
+      "morphemeId": "prefix:a-no",
+      "type": "word-family-recognition",
+      "questionJa": "「atypical」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"atypical\"?",
+      "choices": [
+        {
+          "id": "prefix:octa",
+          "labelJa": "octopus"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "autograph"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "asymmetry"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-government"
+        }
+      ],
+      "answerId": "prefix:a-no",
+      "explanationJa": "atypical と asymmetry は「〜がない・欠如」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ab",
+      "morphemeId": "prefix:ab",
+      "type": "word-family-recognition",
+      "questionJa": "「abduct」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"abduct\"?",
+      "choices": [
+        {
+          "id": "prefix:omni",
+          "labelJa": "omniscient"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "absent"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unclear"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "segregate"
+        }
+      ],
+      "answerId": "prefix:ab",
+      "explanationJa": "abduct と absent は「離れて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ad",
+      "morphemeId": "prefix:ad",
+      "type": "word-family-recognition",
+      "questionJa": "「adapt」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"adapt\"?",
+      "choices": [
+        {
+          "id": "prefix:ad",
+          "labelJa": "adhere"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decameter"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "overload"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bilingual"
+        }
+      ],
+      "answerId": "prefix:ad",
+      "explanationJa": "adapt と adhere は「〜へ・近づいて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ante",
+      "morphemeId": "prefix:ante",
+      "type": "word-family-recognition",
+      "questionJa": "「antecedent」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"antecedent\"?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circumference"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "misuse"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "review"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "antenatal"
+        }
+      ],
+      "answerId": "prefix:ante",
+      "explanationJa": "antecedent と antenatal は「前に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:circum",
+      "morphemeId": "prefix:circum",
+      "type": "word-family-recognition",
+      "questionJa": "「circumnavigate」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"circumnavigate\"?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilowatt"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "permalink"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circumference"
+        },
+        {
+          "id": "prefix:agro",
+          "labelJa": "agroecology"
+        }
+      ],
+      "answerId": "prefix:circum",
+      "explanationJa": "circumnavigate と circumference は「周囲に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:contra",
+      "morphemeId": "prefix:contra",
+      "type": "word-family-recognition",
+      "questionJa": "「contradict」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"contradict\"?",
+      "choices": [
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphitheater"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contraception"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-cultural"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "antivirus"
+        }
+      ],
+      "answerId": "prefix:contra",
+      "explanationJa": "contradict と contraception は「反対に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:de",
+      "morphemeId": "prefix:de",
+      "type": "word-family-recognition",
+      "questionJa": "「defrost」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"defrost\"?",
+      "choices": [
+        {
+          "id": "prefix:de",
+          "labelJa": "deactivate"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multinational"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanometer"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "gigabyte"
+        }
+      ],
+      "answerId": "prefix:de",
+      "explanationJa": "defrost と deactivate は「下へ・離す・取り除く」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:en-prefix",
+      "morphemeId": "prefix:en-prefix",
+      "type": "word-family-recognition",
+      "questionJa": "「enable」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"enable\"?",
+      "choices": [
+        {
+          "id": "prefix:de",
+          "labelJa": "devalue"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "reconsider"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "megabyte"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "enlarge"
+        }
+      ],
+      "answerId": "prefix:en-prefix",
+      "explanationJa": "enable と enlarge は「〜にする・中に入れる」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:extra",
+      "morphemeId": "prefix:extra",
+      "type": "word-family-recognition",
+      "questionJa": "「extracurricular」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"extracurricular\"?",
+      "choices": [
+        {
+          "id": "prefix:be",
+          "labelJa": "belittle"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intravenous"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extraordinary"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octagon"
+        }
+      ],
+      "answerId": "prefix:extra",
+      "explanationJa": "extracurricular と extraordinary は「外側・範囲を超えて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:fore",
+      "morphemeId": "prefix:fore",
+      "type": "word-family-recognition",
+      "questionJa": "「forecast」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"forecast\"?",
+      "choices": [
+        {
+          "id": "prefix:trans",
+          "labelJa": "transatlantic"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "foresee"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "newborn"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "subway"
+        }
+      ],
+      "answerId": "prefix:fore",
+      "explanationJa": "forecast と foresee は「前に・先に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hyper",
+      "morphemeId": "prefix:hyper",
+      "type": "word-family-recognition",
+      "questionJa": "「hyperactive」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"hyperactive\"?",
+      "choices": [
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hypertension"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unhappy"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "impossible"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "postpone"
+        }
+      ],
+      "answerId": "prefix:hyper",
+      "explanationJa": "hyperactive と hypertension は「過度・超えて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hypo",
+      "morphemeId": "prefix:hypo",
+      "type": "word-family-recognition",
+      "questionJa": "「hypothermia」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"hypothermia\"?",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "midday"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electrocardiogram"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "abstain"
+        },
+        {
+          "id": "prefix:hypo",
+          "labelJa": "hypoglycemia"
+        }
+      ],
+      "answerId": "prefix:hypo",
+      "explanationJa": "hypothermia と hypoglycemia は「下・不足」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hetero",
+      "morphemeId": "prefix:hetero",
+      "type": "word-family-recognition",
+      "questionJa": "「heterogeneous」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"heterogeneous\"?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retrospective"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "permeate"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heterosexual"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambivalent"
+        }
+      ],
+      "answerId": "prefix:hetero",
+      "explanationJa": "heterogeneous と heterosexual は「異なる」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:homo",
+      "morphemeId": "prefix:homo",
+      "type": "word-family-recognition",
+      "questionJa": "「homogeneous」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"homogeneous\"?",
+      "choices": [
+        {
+          "id": "prefix:near",
+          "labelJa": "near-term"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homophone"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-democracy"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "polymer"
+        }
+      ],
+      "answerId": "prefix:homo",
+      "explanationJa": "homogeneous と homophone は「同じ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:meta",
+      "morphemeId": "prefix:meta",
+      "type": "word-family-recognition",
+      "questionJa": "「metamorphosis」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"metamorphosis\"?",
+      "choices": [
+        {
+          "id": "prefix:meta",
+          "labelJa": "metadata"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "monolingual"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multilingual"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanometer"
+        }
+      ],
+      "answerId": "prefix:meta",
+      "explanationJa": "metamorphosis と metadata は「変化・一段上の視点」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:neo",
+      "morphemeId": "prefix:neo",
+      "type": "word-family-recognition",
+      "questionJa": "「neoclassical」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"neoclassical\"?",
+      "choices": [
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-language"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-cultural"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "microscope"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neonatal"
+        }
+      ],
+      "answerId": "prefix:neo",
+      "explanationJa": "neoclassical と neonatal は「新しい」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:para",
+      "morphemeId": "prefix:para",
+      "type": "word-family-recognition",
+      "questionJa": "「paramedic」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"paramedic\"?",
+      "choices": [
+        {
+          "id": "prefix:proto",
+          "labelJa": "protozoan"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "overcook"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "paralegal"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tripod"
+        }
+      ],
+      "answerId": "prefix:para",
+      "explanationJa": "paramedic と paralegal は「そば・関連・補助」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:pro-forward",
+      "morphemeId": "prefix:pro-forward",
+      "type": "word-family-recognition",
+      "questionJa": "「proceed」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"proceed\"?",
+      "choices": [
+        {
+          "id": "prefix:self",
+          "labelJa": "self-control"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "promote"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "inhale"
+        },
+        {
+          "id": "prefix:dys",
+          "labelJa": "dyslexia"
+        }
+      ],
+      "answerId": "prefix:pro-forward",
+      "explanationJa": "proceed と promote は「前へ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:retro",
+      "morphemeId": "prefix:retro",
+      "type": "word-family-recognition",
+      "questionJa": "「retroactive」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"retroactive\"?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retrospective"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "interact"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanometer"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "onsite"
+        }
+      ],
+      "answerId": "prefix:retro",
+      "explanationJa": "retroactive と retrospective は「後ろへ・過去へ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:uni",
+      "morphemeId": "prefix:uni",
+      "type": "word-family-recognition",
+      "questionJa": "「unilateral」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"unilateral\"?",
+      "choices": [
+        {
+          "id": "prefix:under",
+          "labelJa": "understate"
+        },
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-chair"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "transmit"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "unicycle"
+        }
+      ],
+      "answerId": "prefix:uni",
+      "explanationJa": "unilateral と unicycle は「一つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ambi",
+      "morphemeId": "prefix:ambi",
+      "type": "word-family-recognition",
+      "questionJa": "「ambidextrous」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"ambidextrous\"?",
+      "choices": [
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetrahedron"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "untie"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambivalent"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "adhere"
+        }
+      ],
+      "answerId": "prefix:ambi",
+      "explanationJa": "ambidextrous と ambivalent は「両方・二方向」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:apo",
+      "morphemeId": "prefix:apo",
+      "type": "word-family-recognition",
+      "questionJa": "「apostasy」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"apostasy\"?",
+      "choices": [
+        {
+          "id": "prefix:ob",
+          "labelJa": "obstruct"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apogee"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambidextrous"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "unlock"
+        }
+      ],
+      "answerId": "prefix:apo",
+      "explanationJa": "apostasy と apogee は「離れて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:arch",
+      "morphemeId": "prefix:arch",
+      "type": "word-family-recognition",
+      "questionJa": "「archbishop」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"archbishop\"?",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "archenemy"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "transmit"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "reuse"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "isothermal"
+        }
+      ],
+      "answerId": "prefix:arch",
+      "explanationJa": "archbishop と archenemy は「首位・主要」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:be",
+      "morphemeId": "prefix:be",
+      "type": "word-family-recognition",
+      "questionJa": "「befriend」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"befriend\"?",
+      "choices": [
+        {
+          "id": "prefix:post",
+          "labelJa": "postdate"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contraception"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neoclassical"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "belittle"
+        }
+      ],
+      "answerId": "prefix:be",
+      "explanationJa": "befriend と belittle は「〜にする・周囲に及ぶ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:dia",
+      "morphemeId": "prefix:dia",
+      "type": "word-family-recognition",
+      "questionJa": "「diameter」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"diameter\"?",
+      "choices": [
+        {
+          "id": "prefix:deci",
+          "labelJa": "deciliter"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "backflow"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "diagonal"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphitheater"
+        }
+      ],
+      "answerId": "prefix:dia",
+      "explanationJa": "diameter と diagonal は「通して・横切って」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:eu",
+      "morphemeId": "prefix:eu",
+      "type": "word-family-recognition",
+      "questionJa": "「euphoria」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"euphoria\"?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retrospective"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "euphemism"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circumvent"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "upskill"
+        }
+      ],
+      "answerId": "prefix:eu",
+      "explanationJa": "euphoria と euphemism は「良い・正常な」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:dys",
+      "morphemeId": "prefix:dys",
+      "type": "word-family-recognition",
+      "questionJa": "「dyslexia」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"dyslexia\"?",
+      "choices": [
+        {
+          "id": "prefix:dys",
+          "labelJa": "dysfunction"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "online"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electrolysis"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentagram"
+        }
+      ],
+      "answerId": "prefix:dys",
+      "explanationJa": "dyslexia と dysfunction は「困難・異常・悪い」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:epi",
+      "morphemeId": "prefix:epi",
+      "type": "word-family-recognition",
+      "questionJa": "「epidermis」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"epidermis\"?",
+      "choices": [
+        {
+          "id": "prefix:macro",
+          "labelJa": "macroeconomics"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "polyglot"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "submarine"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epilogue"
+        }
+      ],
+      "answerId": "prefix:epi",
+      "explanationJa": "epidermis と epilogue は「上に・付加して」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:infra",
+      "morphemeId": "prefix:infra",
+      "type": "word-family-recognition",
+      "questionJa": "「infrared」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"infrared\"?",
+      "choices": [
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphibious"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homogeneity"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infrastructure"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "foreword"
+        }
+      ],
+      "answerId": "prefix:infra",
+      "explanationJa": "infrared と infrastructure は「下・より低い」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ultra",
+      "morphemeId": "prefix:ultra",
+      "type": "word-family-recognition",
+      "questionJa": "「ultraviolet」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"ultraviolet\"?",
+      "choices": [
+        {
+          "id": "prefix:ante",
+          "labelJa": "antedate"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultrasonic"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "midpoint"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "paramedic"
+        }
+      ],
+      "answerId": "prefix:ultra",
+      "explanationJa": "ultraviolet と ultrasonic は「超えて・極度に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:mid",
+      "morphemeId": "prefix:mid",
+      "type": "word-family-recognition",
+      "questionJa": "「midday」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"midday\"?",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "midnight"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "adhere"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "cryptocurrency"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "object"
+        }
+      ],
+      "answerId": "prefix:mid",
+      "explanationJa": "midday と midnight は「中間」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:out",
+      "morphemeId": "prefix:out",
+      "type": "word-family-recognition",
+      "questionJa": "「outperform」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"outperform\"?",
+      "choices": [
+        {
+          "id": "prefix:milli",
+          "labelJa": "milliliter"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "antibiotic"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "insert"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "outnumber"
+        }
+      ],
+      "answerId": "prefix:out",
+      "explanationJa": "outperform と outnumber は「外へ・〜を上回る」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:self",
+      "morphemeId": "prefix:self",
+      "type": "word-family-recognition",
+      "questionJa": "「self-control」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"self-control\"?",
+      "choices": [
+        {
+          "id": "prefix:ab",
+          "labelJa": "abduct"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hectoliter"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-esteem"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "antiwar"
+        }
+      ],
+      "answerId": "prefix:self",
+      "explanationJa": "self-control と self-esteem は「自分自身」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:quasi",
+      "morphemeId": "prefix:quasi",
+      "type": "word-family-recognition",
+      "questionJa": "「quasi-legal」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"quasi-legal\"?",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "multicultural"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-scientific"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "approach"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "connect"
+        }
+      ],
+      "answerId": "prefix:quasi",
+      "explanationJa": "quasi-legal と quasi-scientific は「疑似・ほぼ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:pseudo",
+      "morphemeId": "prefix:pseudo",
+      "type": "word-family-recognition",
+      "questionJa": "「pseudonym」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"pseudonym\"?",
+      "choices": [
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudoscience"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decagon"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "prepay"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infrastructure"
+        }
+      ],
+      "answerId": "prefix:pseudo",
+      "explanationJa": "pseudonym と pseudoscience は「偽り・見せかけ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:pan",
+      "morphemeId": "prefix:pan",
+      "type": "word-family-recognition",
+      "questionJa": "「pan-african」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"pan-african\"?",
+      "choices": [
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemicycle"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "ecosystem"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "empower"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-european"
+        }
+      ],
+      "answerId": "prefix:pan",
+      "explanationJa": "pan-african と pan-european は「すべて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:omni",
+      "morphemeId": "prefix:omni",
+      "type": "word-family-recognition",
+      "questionJa": "「omnipresent」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"omnipresent\"?",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "prepay"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "symbiosis"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "omniscient"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "promote"
+        }
+      ],
+      "answerId": "prefix:omni",
+      "explanationJa": "omnipresent と omniscient は「すべて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:syn",
+      "morphemeId": "prefix:syn",
+      "type": "word-family-recognition",
+      "questionJa": "「synchronize」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"synchronize\"?",
+      "choices": [
+        {
+          "id": "prefix:a-no",
+          "labelJa": "amoral"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "synthesis"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "preview"
+        },
+        {
+          "id": "prefix:arch",
+          "labelJa": "archbishop"
+        }
+      ],
+      "answerId": "prefix:syn",
+      "explanationJa": "synchronize と synthesis は「共に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:peri",
+      "morphemeId": "prefix:peri",
+      "type": "word-family-recognition",
+      "questionJa": "「perimeter」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"perimeter\"?",
+      "choices": [
+        {
+          "id": "prefix:peri",
+          "labelJa": "peripheral"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "protozoan"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "monopoly"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanotechnology"
+        }
+      ],
+      "answerId": "prefix:peri",
+      "explanationJa": "perimeter と peripheral は「周囲」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:proto",
+      "morphemeId": "prefix:proto",
+      "type": "word-family-recognition",
+      "questionJa": "「prototype」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"prototype\"?",
+      "choices": [
+        {
+          "id": "prefix:be",
+          "labelJa": "belittle"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "subgroup"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-choice"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "protozoan"
+        }
+      ],
+      "answerId": "prefix:proto",
+      "explanationJa": "prototype と protozoan は「最初の・原初の」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:amphi",
+      "morphemeId": "prefix:amphi",
+      "type": "word-family-recognition",
+      "questionJa": "「amphibious」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"amphibious\"?",
+      "choices": [
+        {
+          "id": "prefix:mega",
+          "labelJa": "megacity"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "underground"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphitheater"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-term"
+        }
+      ],
+      "answerId": "prefix:amphi",
+      "explanationJa": "amphibious と amphitheater は「両方・周囲」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:per",
+      "morphemeId": "prefix:per",
+      "type": "word-family-recognition",
+      "questionJa": "「permeate」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"permeate\"?",
+      "choices": [
+        {
+          "id": "prefix:auto",
+          "labelJa": "autonomous"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "perforate"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "downgrade"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milliliter"
+        }
+      ],
+      "answerId": "prefix:per",
+      "explanationJa": "permeate と perforate は「通して・完全に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:ob",
+      "morphemeId": "prefix:ob",
+      "type": "word-family-recognition",
+      "questionJa": "「object」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"object\"?",
+      "choices": [
+        {
+          "id": "prefix:ob",
+          "labelJa": "oppose"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neoliberal"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "illegal"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "metacognition"
+        }
+      ],
+      "answerId": "prefix:ob",
+      "explanationJa": "object と oppose は「〜に向かって・対して」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:se-apart",
+      "morphemeId": "prefix:se-apart",
+      "type": "word-family-recognition",
+      "questionJa": "「separate」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"separate\"?",
+      "choices": [
+        {
+          "id": "prefix:multi",
+          "labelJa": "multilingual"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "abstain"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unknown"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "seclude"
+        }
+      ],
+      "answerId": "prefix:se-apart",
+      "explanationJa": "separate と seclude は「離れて・分けて」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:pro-support",
+      "morphemeId": "prefix:pro-support",
+      "type": "word-family-recognition",
+      "questionJa": "「pro-democracy」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"pro-democracy\"?",
+      "choices": [
+        {
+          "id": "prefix:syn",
+          "labelJa": "synthesis"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "forecast"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-choice"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "postgraduate"
+        }
+      ],
+      "answerId": "prefix:pro-support",
+      "explanationJa": "pro-democracy と pro-choice は「〜に賛成して」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:perma",
+      "morphemeId": "prefix:perma",
+      "type": "word-family-recognition",
+      "questionJa": "「permafrost」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"permafrost\"?",
+      "choices": [
+        {
+          "id": "prefix:meta",
+          "labelJa": "metamorphosis"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "permaculture"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apoptosis"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "euthanasia"
+        }
+      ],
+      "answerId": "prefix:perma",
+      "explanationJa": "permafrost と permaculture は「恒久的な」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:vice",
+      "morphemeId": "prefix:vice",
+      "type": "word-family-recognition",
+      "questionJa": "「vice-president」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"vice-president\"?",
+      "choices": [
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-chair"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "midnight"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetragon"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-service"
+        }
+      ],
+      "answerId": "prefix:vice",
+      "explanationJa": "vice-president と vice-chair は「代理・副〜」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:nano",
+      "morphemeId": "prefix:nano",
+      "type": "word-family-recognition",
+      "questionJa": "「nanotechnology」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"nanotechnology\"?",
+      "choices": [
+        {
+          "id": "prefix:pre",
+          "labelJa": "preheat"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heteronym"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "underestimate"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nanometer"
+        }
+      ],
+      "answerId": "prefix:nano",
+      "explanationJa": "nanotechnology と nanometer は「極小・十億分の一」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:mega",
+      "morphemeId": "prefix:mega",
+      "type": "word-family-recognition",
+      "questionJa": "「megabyte」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"megabyte\"?",
+      "choices": [
+        {
+          "id": "prefix:hetero",
+          "labelJa": "heterogeneity"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-inclusive"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "megacity"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decagon"
+        }
+      ],
+      "answerId": "prefix:mega",
+      "explanationJa": "megabyte と megacity は「巨大・百万」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:giga",
+      "morphemeId": "prefix:giga",
+      "type": "word-family-recognition",
+      "questionJa": "「gigabyte」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"gigabyte\"?",
+      "choices": [
+        {
+          "id": "prefix:extra",
+          "labelJa": "extracurricular"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "gigawatt"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentagon"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "euphoria"
+        }
+      ],
+      "answerId": "prefix:giga",
+      "explanationJa": "gigabyte と gigawatt は「十億」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:kilo",
+      "morphemeId": "prefix:kilo",
+      "type": "word-family-recognition",
+      "questionJa": "「kilogram」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"kilogram\"?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilometer"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-purpose"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bimonthly"
+        },
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyperlink"
+        }
+      ],
+      "answerId": "prefix:kilo",
+      "explanationJa": "kilogram と kilometer は「千」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hemi",
+      "morphemeId": "prefix:hemi",
+      "type": "word-family-recognition",
+      "questionJa": "「hemisphere」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"hemisphere\"?",
+      "choices": [
+        {
+          "id": "prefix:sub",
+          "labelJa": "submarine"
+        },
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hypersensitive"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hectopascal"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemiplegia"
+        }
+      ],
+      "answerId": "prefix:hemi",
+      "explanationJa": "hemisphere と hemiplegia は「半分」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:deci",
+      "morphemeId": "prefix:deci",
+      "type": "word-family-recognition",
+      "questionJa": "「decimeter」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"decimeter\"?",
+      "choices": [
+        {
+          "id": "prefix:out",
+          "labelJa": "outlive"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hectometer"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deciliter"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semicircle"
+        }
+      ],
+      "answerId": "prefix:deci",
+      "explanationJa": "decimeter と deciliter は「十分の一」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:centi",
+      "morphemeId": "prefix:centi",
+      "type": "word-family-recognition",
+      "questionJa": "「centimeter」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"centimeter\"?",
+      "choices": [
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "unpack"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centiliter"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dislike"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bicycle"
+        }
+      ],
+      "answerId": "prefix:centi",
+      "explanationJa": "centimeter と centiliter は「百分の一」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:milli",
+      "morphemeId": "prefix:milli",
+      "type": "word-family-recognition",
+      "questionJa": "「millimeter」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"millimeter\"?",
+      "choices": [
+        {
+          "id": "prefix:milli",
+          "labelJa": "milliliter"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "paramedic"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "approach"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "besiege"
+        }
+      ],
+      "answerId": "prefix:milli",
+      "explanationJa": "millimeter と milliliter は「千分の一」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hecto",
+      "morphemeId": "prefix:hecto",
+      "type": "word-family-recognition",
+      "questionJa": "「hectometer」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"hectometer\"?",
+      "choices": [
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "empower"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "connect"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "synchronize"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hectoliter"
+        }
+      ],
+      "answerId": "prefix:hecto",
+      "explanationJa": "hectometer と hectoliter は「百」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:tetra",
+      "morphemeId": "prefix:tetra",
+      "type": "word-family-recognition",
+      "questionJa": "「tetrahedron」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"tetrahedron\"?",
+      "choices": [
+        {
+          "id": "prefix:new",
+          "labelJa": "newlywed"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electrocardiogram"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetrapod"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "oppose"
+        }
+      ],
+      "answerId": "prefix:tetra",
+      "explanationJa": "tetrahedron と tetrapod は「四つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:penta",
+      "morphemeId": "prefix:penta",
+      "type": "word-family-recognition",
+      "questionJa": "「pentagon」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"pentagon\"?",
+      "choices": [
+        {
+          "id": "prefix:post",
+          "labelJa": "postwar"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentathlon"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambivalent"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-service"
+        }
+      ],
+      "answerId": "prefix:penta",
+      "explanationJa": "pentagon と pentathlon は「五つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:hexa",
+      "morphemeId": "prefix:hexa",
+      "type": "word-family-recognition",
+      "questionJa": "「hexagon」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"hexagon\"?",
+      "choices": [
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexadecimal"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "unfair"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "countermeasure"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetragon"
+        }
+      ],
+      "answerId": "prefix:hexa",
+      "explanationJa": "hexagon と hexadecimal は「六つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:octa",
+      "morphemeId": "prefix:octa",
+      "type": "word-family-recognition",
+      "questionJa": "「octagon」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"octagon\"?",
+      "choices": [
+        {
+          "id": "prefix:contra",
+          "labelJa": "contradict"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "downplay"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "immerse"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octahedron"
+        }
+      ],
+      "answerId": "prefix:octa",
+      "explanationJa": "octagon と octahedron は「八つ」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:deca",
+      "morphemeId": "prefix:deca",
+      "type": "word-family-recognition",
+      "questionJa": "「decathlon」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"decathlon\"?",
+      "choices": [
+        {
+          "id": "prefix:co",
+          "labelJa": "combine"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "separate"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "decagon"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphibious"
+        }
+      ],
+      "answerId": "prefix:deca",
+      "explanationJa": "decathlon と decagon は「十」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:after",
+      "morphemeId": "prefix:after",
+      "type": "word-family-recognition",
+      "questionJa": "「aftercare」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"aftercare\"?",
+      "choices": [
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentagon"
+        },
+        {
+          "id": "prefix:after",
+          "labelJa": "aftereffect"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intranet"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "nonviolent"
+        }
+      ],
+      "answerId": "prefix:after",
+      "explanationJa": "aftercare と aftereffect は「後の・後に」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:back",
+      "morphemeId": "prefix:back",
+      "type": "word-family-recognition",
+      "questionJa": "「backtrack」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"backtrack\"?",
+      "choices": [
+        {
+          "id": "prefix:back",
+          "labelJa": "backdate"
+        },
+        {
+          "id": "prefix:off",
+          "labelJa": "offline"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-african"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "illegal"
+        }
+      ],
+      "answerId": "prefix:back",
+      "explanationJa": "backtrack と backdate は「後ろ・逆方向」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:cross",
+      "morphemeId": "prefix:cross",
+      "type": "word-family-recognition",
+      "questionJa": "「cross-cultural」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"cross-cultural\"?",
+      "choices": [
+        {
+          "id": "prefix:per",
+          "labelJa": "permeate"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "interpersonal"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "protozoan"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-border"
+        }
+      ],
+      "answerId": "prefix:cross",
+      "explanationJa": "cross-cultural と cross-border は「横断・分野を越えた」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:down",
+      "morphemeId": "prefix:down",
+      "type": "word-family-recognition",
+      "questionJa": "「downgrade」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"downgrade\"?",
+      "choices": [
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphibious"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetrapod"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "downsize"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "nonviolent"
+        }
+      ],
+      "answerId": "prefix:down",
+      "explanationJa": "downgrade と downsize は「下・減少方向」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:up",
+      "morphemeId": "prefix:up",
+      "type": "word-family-recognition",
+      "questionJa": "「upgrade」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"upgrade\"?",
+      "choices": [
+        {
+          "id": "prefix:epi",
+          "labelJa": "epilogue"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "upscale"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "enlarge"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "pentathlon"
+        }
+      ],
+      "answerId": "prefix:up",
+      "explanationJa": "upgrade と upscale は「上・増加方向」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:off",
+      "morphemeId": "prefix:off",
+      "type": "word-family-recognition",
+      "questionJa": "「offshore」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"offshore\"?",
+      "choices": [
+        {
+          "id": "prefix:off",
+          "labelJa": "offsite"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "bewitch"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "overestimate"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "attract"
+        }
+      ],
+      "answerId": "prefix:off",
+      "explanationJa": "offshore と offsite は「離れた・通常の場所以外」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:on",
+      "morphemeId": "prefix:on",
+      "type": "word-family-recognition",
+      "questionJa": "「online」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"online\"?",
+      "choices": [
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "inject"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "perforate"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "metadata"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "onsite"
+        }
+      ],
+      "answerId": "prefix:on",
+      "explanationJa": "online と onsite は「接続中・現場」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:new",
+      "morphemeId": "prefix:new",
+      "type": "word-family-recognition",
+      "questionJa": "「newborn」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"newborn\"?",
+      "choices": [
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexadecimal"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intranet"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "newfound"
+        },
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudocode"
+        }
+      ],
+      "answerId": "prefix:new",
+      "explanationJa": "newborn と newfound は「新しく」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:prefix:near",
+      "morphemeId": "prefix:near",
+      "type": "word-family-recognition",
+      "questionJa": "「near-sighted」と同じ接頭辞・語頭結合形に関連する語はどれですか？",
+      "questionEn": "Which word shares the same prefix or initial combining form as \"near-sighted\"?",
+      "choices": [
+        {
+          "id": "prefix:perma",
+          "labelJa": "permafrost"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-term"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counterargument"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "abstain"
+        }
+      ],
+      "answerId": "prefix:near",
+      "explanationJa": "near-sighted と near-term は「ほぼ・近い」を学ぶ関連例語。具体的な派生・語源上の関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
