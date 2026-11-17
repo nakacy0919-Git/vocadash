@@ -1,0 +1,5045 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "006",
+  "type": "master-priority-js-family-candidates",
+  "sourcePaths": [
+    "src/data/universe-derivation-collocation-mega.js",
+    "src/data/universe-families-collocations-mega.js",
+    "src/data/universe-academic-families.js",
+    "src/data/universe-general-network.js"
+  ],
+  "records": [
+    {
+      "id": "wb:modern:abstraction",
+      "headword": "abstraction",
+      "wordId": "VD-06865",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "抽象化",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "abstract",
+          "kind": "free-base",
+          "meaningJa": "抽象的な"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "abstract",
+      "baseWordId": "VD-02318",
+      "explanationJa": "abstract（抽象的な）と接尾辞 -ionの関係を手掛かりに、abstraction（抽象化）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "abstract",
+        "targetHeadword": "abstraction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:acceptance",
+      "headword": "acceptance",
+      "wordId": "VD-02324",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "受容・承認",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "accept",
+          "kind": "free-base",
+          "meaningJa": "受け入れる"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "accept",
+      "baseWordId": "VD-01067",
+      "explanationJa": "accept（受け入れる）と接尾辞 -anceの関係を手掛かりに、acceptance（受容・承認）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "accept",
+        "targetHeadword": "acceptance",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:accessible",
+      "headword": "accessible",
+      "wordId": "VD-02326",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "利用可能な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "access",
+          "kind": "free-base",
+          "meaningJa": "アクセスする"
+        },
+        {
+          "surface": "-ible",
+          "kind": "suffix",
+          "morphemeId": "suffix:able",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "access",
+      "baseWordId": "VD-02325",
+      "explanationJa": "access（アクセスする）と接尾辞 -ibleの関係を手掛かりに、accessible（利用可能な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "access",
+        "targetHeadword": "accessible",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:achievable",
+      "headword": "achievable",
+      "wordId": "VD-04460",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "達成可能な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "achiev",
+          "kind": "altered-free-base",
+          "meaningJa": "達成する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "morphemeId": "suffix:able",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "achieve",
+      "baseWordId": "VD-01071",
+      "explanationJa": "achieve（達成する）と接尾辞 -ableの関係を手掛かりに、achievable（達成可能な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "achieve",
+        "targetHeadword": "achievable",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:amplifier",
+      "headword": "amplifier",
+      "wordId": "VD-04519",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "増幅器",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "amplifi",
+          "kind": "altered-free-base",
+          "meaningJa": "増幅する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "amplify",
+      "baseWordId": "VD-04520",
+      "explanationJa": "amplify（増幅する）と接尾辞 -erの関係を手掛かりに、amplifier（増幅器）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "amplify",
+        "targetHeadword": "amplifier",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:appreciation",
+      "headword": "appreciation",
+      "wordId": "VD-02420",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "感謝・理解",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "appreciat",
+          "kind": "altered-free-base",
+          "meaningJa": "感謝する・真価を理解する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "appreciate",
+      "baseWordId": "VD-01127",
+      "explanationJa": "appreciate（感謝する・真価を理解する）と接尾辞 -ionの関係を手掛かりに、appreciation（感謝・理解）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "appreciate",
+        "targetHeadword": "appreciation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:appreciative",
+      "headword": "appreciative",
+      "wordId": "VD-04541",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "感謝している",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "appreciat",
+          "kind": "altered-free-base",
+          "meaningJa": "感謝する・真価を理解する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "appreciate",
+      "baseWordId": "VD-01127",
+      "explanationJa": "appreciate（感謝する・真価を理解する）と接尾辞 -iveの関係を手掛かりに、appreciative（感謝している）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "appreciate",
+        "targetHeadword": "appreciative",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:approval",
+      "headword": "approval",
+      "wordId": "VD-02422",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "承認",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "approv",
+          "kind": "altered-free-base",
+          "meaningJa": "承認する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "approve",
+      "baseWordId": "VD-02423",
+      "explanationJa": "approve（承認する）と接尾辞 -alの関係を手掛かりに、approval（承認）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "approve",
+        "targetHeadword": "approval",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:aspiration",
+      "headword": "aspiration",
+      "wordId": "VD-04557",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "志・願望",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "aspir",
+          "kind": "altered-free-base",
+          "meaningJa": "志す"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "aspire",
+      "baseWordId": "VD-04558",
+      "explanationJa": "aspire（志す）と接尾辞 -ationの関係を手掛かりに、aspiration（志・願望）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "aspire",
+        "targetHeadword": "aspiration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:automatic",
+      "headword": "automatic",
+      "wordId": "VD-01150",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "自動の",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "automat",
+          "kind": "altered-free-base",
+          "meaningJa": "自動化する"
+        },
+        {
+          "surface": "-ic",
+          "kind": "suffix",
+          "morphemeId": "suffix:ic",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "automate",
+      "baseWordId": "VD-07852",
+      "explanationJa": "automate（自動化する）と接尾辞 -icの関係を手掛かりに、automatic（自動の）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "automate",
+        "targetHeadword": "automatic",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:ceaseless",
+      "headword": "ceaseless",
+      "wordId": "VD-06961",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "絶え間ない",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "cease",
+          "kind": "free-base",
+          "meaningJa": "やめる・終える"
+        },
+        {
+          "surface": "-less",
+          "kind": "suffix",
+          "morphemeId": "suffix:less",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "cease",
+      "baseWordId": "VD-04740",
+      "explanationJa": "cease（やめる・終える）と接尾辞 -lessの関係を手掛かりに、ceaseless（絶え間ない）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "cease",
+        "targetHeadword": "ceaseless",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:certainty",
+      "headword": "certainty",
+      "wordId": "VD-02614",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "確実性",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "certain",
+          "kind": "free-base",
+          "meaningJa": "確かな"
+        },
+        {
+          "surface": "-ty",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "certain",
+      "baseWordId": "VD-01245",
+      "explanationJa": "certain（確かな）と接尾辞 -tyの関係を手掛かりに、certainty（確実性）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "certain",
+        "targetHeadword": "certainty",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:certification",
+      "headword": "certification",
+      "wordId": "VD-04748",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "認定",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "certificat",
+          "kind": "altered-free-base",
+          "meaningJa": "証明書"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "certificate",
+      "baseWordId": "VD-04747",
+      "explanationJa": "certificate（証明書）と接尾辞 -ionの関係を手掛かりに、certification（認定）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "certificate",
+        "targetHeadword": "certification",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:coincidence",
+      "headword": "coincidence",
+      "wordId": "VD-04794",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "偶然の一致",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "coincid",
+          "kind": "altered-free-base",
+          "meaningJa": "一致する・同時に起こる"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "coincide",
+      "baseWordId": "VD-04793",
+      "explanationJa": "coincide（一致する・同時に起こる）と接尾辞 -enceの関係を手掛かりに、coincidence（偶然の一致）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "coincide",
+        "targetHeadword": "coincidence",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:collaboration",
+      "headword": "collaboration",
+      "wordId": "VD-06993",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "共同作業",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "collaborat",
+          "kind": "altered-free-base",
+          "meaningJa": "共同で取り組む"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "collaborate",
+      "baseWordId": "VD-06992",
+      "explanationJa": "collaborate（共同で取り組む）と接尾辞 -ionの関係を手掛かりに、collaboration（共同作業）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "collaborate",
+        "targetHeadword": "collaboration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:collaborative",
+      "headword": "collaborative",
+      "wordId": "VD-06994",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "協働的な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "collaborat",
+          "kind": "altered-free-base",
+          "meaningJa": "共同で取り組む"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "collaborate",
+      "baseWordId": "VD-06992",
+      "explanationJa": "collaborate（共同で取り組む）と接尾辞 -iveの関係を手掛かりに、collaborative（協働的な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "collaborate",
+        "targetHeadword": "collaborative",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:collaborator",
+      "headword": "collaborator",
+      "wordId": "VD-06995",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "共同作業者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "collaborat",
+          "kind": "altered-free-base",
+          "meaningJa": "共同で取り組む"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "collaborate",
+      "baseWordId": "VD-06992",
+      "explanationJa": "collaborate（共同で取り組む）と接尾辞 -orの関係を手掛かりに、collaborator（共同作業者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "collaborate",
+        "targetHeadword": "collaborator",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:combination",
+      "headword": "combination",
+      "wordId": "VD-02662",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "組み合わせ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "combin",
+          "kind": "altered-free-base",
+          "meaningJa": "結合する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "combine",
+      "baseWordId": "VD-02663",
+      "explanationJa": "combine（結合する）と接尾辞 -ationの関係を手掛かりに、combination（組み合わせ）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "combine",
+        "targetHeadword": "combination",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:compensation",
+      "headword": "compensation",
+      "wordId": "VD-04814",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "補償・報酬",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "compensat",
+          "kind": "altered-free-base",
+          "meaningJa": "補償する・埋め合わせる"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "compensate",
+      "baseWordId": "VD-04813",
+      "explanationJa": "compensate（補償する・埋め合わせる）と接尾辞 -ionの関係を手掛かりに、compensation（補償・報酬）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "compensate",
+        "targetHeadword": "compensation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:complexity",
+      "headword": "complexity",
+      "wordId": "VD-04820",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "複雑さ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "complex",
+          "kind": "free-base",
+          "meaningJa": "複雑な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "complex",
+      "baseWordId": "VD-02682",
+      "explanationJa": "complex（複雑な）と接尾辞 -ityの関係を手掛かりに、complexity（複雑さ）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "complex",
+        "targetHeadword": "complexity",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:conceivable",
+      "headword": "conceivable",
+      "wordId": "VD-04831",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "想像可能な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "conceiv",
+          "kind": "altered-free-base",
+          "meaningJa": "考案する・想像する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "morphemeId": "suffix:able",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "conceive",
+      "baseWordId": "VD-04832",
+      "explanationJa": "conceive（考案する・想像する）と接尾辞 -ableの関係を手掛かりに、conceivable（想像可能な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "conceive",
+        "targetHeadword": "conceivable",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:concentration",
+      "headword": "concentration",
+      "wordId": "VD-02690",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "集中・濃度",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "concentrat",
+          "kind": "altered-free-base",
+          "meaningJa": "集中する・濃縮する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "concentrate",
+      "baseWordId": "VD-01305",
+      "explanationJa": "concentrate（集中する・濃縮する）と接尾辞 -ionの関係を手掛かりに、concentration（集中・濃度）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "concentrate",
+        "targetHeadword": "concentration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:consideration",
+      "headword": "consideration",
+      "wordId": "VD-02711",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "考慮",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "consider",
+          "kind": "free-base",
+          "meaningJa": "考慮する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "consider",
+      "baseWordId": "VD-01312",
+      "explanationJa": "consider（考慮する）と接尾辞 -ationの関係を手掛かりに、consideration（考慮）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "consider",
+        "targetHeadword": "consideration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:construction",
+      "headword": "construction",
+      "wordId": "VD-02717",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "建設・構築",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "construct",
+          "kind": "free-base",
+          "meaningJa": "建設する・構築する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "construct",
+      "baseWordId": "VD-02716",
+      "explanationJa": "construct（建設する・構築する）と接尾辞 -ionの関係を手掛かりに、construction（建設・構築）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "construct",
+        "targetHeadword": "construction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:consultation",
+      "headword": "consultation",
+      "wordId": "VD-07027",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "相談",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "consult",
+          "kind": "free-base",
+          "meaningJa": "相談する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "consult",
+      "baseWordId": "VD-04859",
+      "explanationJa": "consult（相談する）と接尾辞 -ationの関係を手掛かりに、consultation（相談）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "consult",
+        "targetHeadword": "consultation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:consumer",
+      "headword": "consumer",
+      "wordId": "VD-02719",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "消費者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "consum",
+          "kind": "altered-free-base",
+          "meaningJa": "消費する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "consume",
+      "baseWordId": "VD-02718",
+      "explanationJa": "consume（消費する）と接尾辞 -erの関係を手掛かりに、consumer（消費者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "consume",
+        "targetHeadword": "consumer",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:contractor",
+      "headword": "contractor",
+      "wordId": "VD-07032",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "請負業者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "contract",
+          "kind": "free-base",
+          "meaningJa": "契約する・縮む"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "contract",
+      "baseWordId": "VD-04864",
+      "explanationJa": "contract（契約する・縮む）と接尾辞 -orの関係を手掛かりに、contractor（請負業者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "contract",
+        "targetHeadword": "contractor",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:contradiction",
+      "headword": "contradiction",
+      "wordId": "VD-04866",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "矛盾",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "contradict",
+          "kind": "free-base",
+          "meaningJa": "矛盾する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "contradict",
+      "baseWordId": "VD-04865",
+      "explanationJa": "contradict（矛盾する）と接尾辞 -ionの関係を手掛かりに、contradiction（矛盾）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "contradict",
+        "targetHeadword": "contradiction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:contribution",
+      "headword": "contribution",
+      "wordId": "VD-02729",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "貢献・寄与",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "contribut",
+          "kind": "altered-free-base",
+          "meaningJa": "貢献する・寄与する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "contribute",
+      "baseWordId": "VD-02728",
+      "explanationJa": "contribute（貢献する・寄与する）と接尾辞 -ionの関係を手掛かりに、contribution（貢献・寄与）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "contribute",
+        "targetHeadword": "contribution",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:cooperation",
+      "headword": "cooperation",
+      "wordId": "VD-04878",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "協力",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "cooperat",
+          "kind": "altered-free-base",
+          "meaningJa": "協力する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "cooperate",
+      "baseWordId": "VD-04877",
+      "explanationJa": "cooperate（協力する）と接尾辞 -ionの関係を手掛かりに、cooperation（協力）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "cooperate",
+        "targetHeadword": "cooperation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:cooperative",
+      "headword": "cooperative",
+      "wordId": "VD-04879",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "協力的な・協同組合の",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "cooperat",
+          "kind": "altered-free-base",
+          "meaningJa": "協力する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "cooperate",
+      "baseWordId": "VD-04877",
+      "explanationJa": "cooperate（協力する）と接尾辞 -iveの関係を手掛かりに、cooperative（協力的な・協同組合の）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "cooperate",
+        "targetHeadword": "cooperative",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:correction",
+      "headword": "correction",
+      "wordId": "VD-02734",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "訂正",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "correct",
+          "kind": "free-base",
+          "meaningJa": "訂正する・正しい"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "correct",
+      "baseWordId": "VD-00218",
+      "explanationJa": "correct（訂正する・正しい）と接尾辞 -ionの関係を手掛かりに、correction（訂正）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "correct",
+        "targetHeadword": "correction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:correspondence",
+      "headword": "correspondence",
+      "wordId": "VD-04892",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "対応・通信",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "correspond",
+          "kind": "free-base",
+          "meaningJa": "一致する・文通する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "correspond",
+      "baseWordId": "VD-04891",
+      "explanationJa": "correspond（一致する・文通する）と接尾辞 -enceの関係を手掛かりに、correspondence（対応・通信）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "correspond",
+        "targetHeadword": "correspondence",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:creation",
+      "headword": "creation",
+      "wordId": "VD-04914",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "創造",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "creat",
+          "kind": "altered-free-base",
+          "meaningJa": "創造する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "create",
+      "baseWordId": "VD-01334",
+      "explanationJa": "create（創造する）と接尾辞 -ionの関係を手掛かりに、creation（創造）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "create",
+        "targetHeadword": "creation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:creative",
+      "headword": "creative",
+      "wordId": "VD-01335",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "創造的な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "creat",
+          "kind": "altered-free-base",
+          "meaningJa": "創造する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "create",
+      "baseWordId": "VD-01334",
+      "explanationJa": "create（創造する）と接尾辞 -iveの関係を手掛かりに、creative（創造的な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "create",
+        "targetHeadword": "creative",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:creativity",
+      "headword": "creativity",
+      "wordId": "VD-01336",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "創造性",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "creativ",
+          "kind": "altered-free-base",
+          "meaningJa": "創造的な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "creative",
+      "baseWordId": "VD-01335",
+      "explanationJa": "creative（創造的な）と接尾辞 -ityの関係を手掛かりに、creativity（創造性）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "creative",
+        "targetHeadword": "creativity",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:dedication",
+      "headword": "dedication",
+      "wordId": "VD-04968",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "献身",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "dedicat",
+          "kind": "altered-free-base",
+          "meaningJa": "捧げる・専念させる"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "dedicate",
+      "baseWordId": "VD-02797",
+      "explanationJa": "dedicate（捧げる・専念させる）と接尾辞 -ionの関係を手掛かりに、dedication（献身）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "dedicate",
+        "targetHeadword": "dedication",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:determination",
+      "headword": "determination",
+      "wordId": "VD-02843",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "決定・決意",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "determin",
+          "kind": "altered-free-base",
+          "meaningJa": "決定する・特定する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "determine",
+      "baseWordId": "VD-02844",
+      "explanationJa": "determine（決定する・特定する）と接尾辞 -ationの関係を手掛かりに、determination（決定・決意）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "determine",
+        "targetHeadword": "determination",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:disapprove",
+      "headword": "disapprove",
+      "wordId": "VD-05024",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "反対する",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:dis",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "approve",
+          "kind": "free-base",
+          "meaningJa": "承認する"
+        }
+      ],
+      "baseHeadword": "approve",
+      "baseWordId": "VD-02423",
+      "explanationJa": "approve（承認する）と接頭辞 dis-の関係を手掛かりに、disapprove（反対する）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "approve",
+        "targetHeadword": "disapprove",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:disconnect",
+      "headword": "disconnect",
+      "wordId": "VD-05028",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "切断する",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:dis",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "connect",
+          "kind": "free-base",
+          "meaningJa": "接続する・結びつける"
+        }
+      ],
+      "baseHeadword": "connect",
+      "baseWordId": "VD-02703",
+      "explanationJa": "connect（接続する・結びつける）と接頭辞 dis-の関係を手掛かりに、disconnect（切断する）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "connect",
+        "targetHeadword": "disconnect",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:discrimination",
+      "headword": "discrimination",
+      "wordId": "VD-02875",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "差別・識別",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "discriminat",
+          "kind": "altered-free-base",
+          "meaningJa": "差別する・識別する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "discriminate",
+      "baseWordId": "VD-05030",
+      "explanationJa": "discriminate（差別する・識別する）と接尾辞 -ionの関係を手掛かりに、discrimination（差別・識別）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "discriminate",
+        "targetHeadword": "discrimination",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:dissatisfied",
+      "headword": "dissatisfied",
+      "wordId": "VD-05049",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "不満な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:dis",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "satisfied",
+          "kind": "free-base",
+          "meaningJa": "満足した"
+        }
+      ],
+      "baseHeadword": "satisfied",
+      "baseWordId": "VD-03975",
+      "explanationJa": "satisfied（満足した）と接頭辞 dis-の関係を手掛かりに、dissatisfied（不満な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "satisfied",
+        "targetHeadword": "dissatisfied",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:dissemination",
+      "headword": "dissemination",
+      "wordId": "VD-08015",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "普及・拡散",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "disseminat",
+          "kind": "altered-free-base",
+          "meaningJa": "広める"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "disseminate",
+      "baseWordId": "VD-08014",
+      "explanationJa": "disseminate（広める）と接尾辞 -ionの関係を手掛かりに、dissemination（普及・拡散）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "disseminate",
+        "targetHeadword": "dissemination",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:distraction",
+      "headword": "distraction",
+      "wordId": "VD-05054",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "気を散らすもの",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "distract",
+          "kind": "free-base",
+          "meaningJa": "注意をそらす"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "distract",
+      "baseWordId": "VD-05053",
+      "explanationJa": "distract（注意をそらす）と接尾辞 -ionの関係を手掛かりに、distraction（気を散らすもの）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "distract",
+        "targetHeadword": "distraction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:distribution",
+      "headword": "distribution",
+      "wordId": "VD-02887",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "分布・分配",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "distribut",
+          "kind": "altered-free-base",
+          "meaningJa": "配布する・分配する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "distribute",
+      "baseWordId": "VD-02886",
+      "explanationJa": "distribute（配布する・分配する）と接尾辞 -ionの関係を手掛かりに、distribution（分布・分配）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "distribute",
+        "targetHeadword": "distribution",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:distributor",
+      "headword": "distributor",
+      "wordId": "VD-05056",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "販売・配給業者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "distribut",
+          "kind": "altered-free-base",
+          "meaningJa": "配布する・分配する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "distribute",
+      "baseWordId": "VD-02886",
+      "explanationJa": "distribute（配布する・分配する）と接尾辞 -orの関係を手掛かりに、distributor（販売・配給業者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "distribute",
+        "targetHeadword": "distributor",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:diversity",
+      "headword": "diversity",
+      "wordId": "VD-07104",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "多様性",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "divers",
+          "kind": "altered-free-base",
+          "meaningJa": "多様な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "diverse",
+      "baseWordId": "VD-02892",
+      "explanationJa": "diverse（多様な）と接尾辞 -ityの関係を手掛かりに、diversity（多様性）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "diverse",
+        "targetHeadword": "diversity",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:domestication",
+      "headword": "domestication",
+      "wordId": "VD-07109",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "家畜化",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "domesticat",
+          "kind": "altered-free-base",
+          "meaningJa": "家畜化する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "domesticate",
+      "baseWordId": "VD-07108",
+      "explanationJa": "domesticate（家畜化する）と接尾辞 -ionの関係を手掛かりに、domestication（家畜化）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "domesticate",
+        "targetHeadword": "domestication",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:domination",
+      "headword": "domination",
+      "wordId": "VD-07112",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "支配",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "dominat",
+          "kind": "altered-free-base",
+          "meaningJa": "支配する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "dominate",
+      "baseWordId": "VD-05065",
+      "explanationJa": "dominate（支配する）と接尾辞 -ionの関係を手掛かりに、domination（支配）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "dominate",
+        "targetHeadword": "domination",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:donation",
+      "headword": "donation",
+      "wordId": "VD-05067",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "寄付",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "donat",
+          "kind": "altered-free-base",
+          "meaningJa": "寄付する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "donate",
+      "baseWordId": "VD-05066",
+      "explanationJa": "donate（寄付する）と接尾辞 -ionの関係を手掛かりに、donation（寄付）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "donate",
+        "targetHeadword": "donation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:economical",
+      "headword": "economical",
+      "wordId": "VD-05106",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "経済的な・節約になる",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "economic",
+          "kind": "free-base",
+          "meaningJa": "経済の"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "economic",
+      "baseWordId": "VD-02927",
+      "explanationJa": "economic（経済の）と接尾辞 -alの関係を手掛かりに、economical（経済的な・節約になる）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "economic",
+        "targetHeadword": "economical",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:elaboration",
+      "headword": "elaboration",
+      "wordId": "VD-07128",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "詳述",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "elaborat",
+          "kind": "altered-free-base",
+          "meaningJa": "精巧な・詳しい"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "elaborate",
+      "baseWordId": "VD-07127",
+      "explanationJa": "elaborate（精巧な・詳しい）と接尾辞 -ionの関係を手掛かりに、elaboration（詳述）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "elaborate",
+        "targetHeadword": "elaboration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:election",
+      "headword": "election",
+      "wordId": "VD-02939",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "選挙",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "elect",
+          "kind": "free-base",
+          "meaningJa": "選出する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "elect",
+      "baseWordId": "VD-05115",
+      "explanationJa": "elect（選出する）と接尾辞 -ionの関係を手掛かりに、election（選挙）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "elect",
+        "targetHeadword": "election",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:elevation",
+      "headword": "elevation",
+      "wordId": "VD-07131",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "上昇・高度",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "elevat",
+          "kind": "altered-free-base",
+          "meaningJa": "高める"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "elevate",
+      "baseWordId": "VD-07130",
+      "explanationJa": "elevate（高める）と接尾辞 -ionの関係を手掛かりに、elevation（上昇・高度）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "elevate",
+        "targetHeadword": "elevation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:embodiment",
+      "headword": "embodiment",
+      "wordId": "VD-08045",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "体現",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "embodi",
+          "kind": "altered-free-base",
+          "meaningJa": "体現する"
+        },
+        {
+          "surface": "-ment",
+          "kind": "suffix",
+          "morphemeId": "suffix:ment",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "embody",
+      "baseWordId": "VD-08046",
+      "explanationJa": "embody（体現する）と接尾辞 -mentの関係を手掛かりに、embodiment（体現）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "embody",
+        "targetHeadword": "embodiment",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:equality",
+      "headword": "equality",
+      "wordId": "VD-02988",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "平等",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "equal",
+          "kind": "free-base",
+          "meaningJa": "平等な・等しい"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "equal",
+      "baseWordId": "VD-02987",
+      "explanationJa": "equal（平等な・等しい）と接尾辞 -ityの関係を手掛かりに、equality（平等）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "equal",
+        "targetHeadword": "equality",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:estimation",
+      "headword": "estimation",
+      "wordId": "VD-07144",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "推定",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "estimat",
+          "kind": "altered-free-base",
+          "meaningJa": "推定する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "estimate",
+      "baseWordId": "VD-02995",
+      "explanationJa": "estimate（推定する）と接尾辞 -ionの関係を手掛かりに、estimation（推定）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "estimate",
+        "targetHeadword": "estimation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:evacuation",
+      "headword": "evacuation",
+      "wordId": "VD-05168",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "避難",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "evacuat",
+          "kind": "altered-free-base",
+          "meaningJa": "避難する・避難させる"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "evacuate",
+      "baseWordId": "VD-05167",
+      "explanationJa": "evacuate（避難する・避難させる）と接尾辞 -ionの関係を手掛かりに、evacuation（避難）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "evacuate",
+        "targetHeadword": "evacuation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:execution",
+      "headword": "execution",
+      "wordId": "VD-05194",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "実行",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "execut",
+          "kind": "altered-free-base",
+          "meaningJa": "実行する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "execute",
+      "baseWordId": "VD-05193",
+      "explanationJa": "execute（実行する）と接尾辞 -ionの関係を手掛かりに、execution（実行）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "execute",
+        "targetHeadword": "execution",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:expectation",
+      "headword": "expectation",
+      "wordId": "VD-05204",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "期待",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "expect",
+          "kind": "free-base",
+          "meaningJa": "期待する・予期する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "expect",
+      "baseWordId": "VD-01468",
+      "explanationJa": "expect（期待する・予期する）と接尾辞 -ationの関係を手掛かりに、expectation（期待）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "expect",
+        "targetHeadword": "expectation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:exploitation",
+      "headword": "exploitation",
+      "wordId": "VD-07159",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "搾取・活用",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "exploit",
+          "kind": "free-base",
+          "meaningJa": "利用する・搾取する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "exploit",
+      "baseWordId": "VD-05208",
+      "explanationJa": "exploit（利用する・搾取する）と接尾辞 -ationの関係を手掛かりに、exploitation（搾取・活用）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "exploit",
+        "targetHeadword": "exploitation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:exploration",
+      "headword": "exploration",
+      "wordId": "VD-03018",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "探究・探査",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "explor",
+          "kind": "altered-free-base",
+          "meaningJa": "探究する・探検する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "explore",
+      "baseWordId": "VD-01473",
+      "explanationJa": "explore（探究する・探検する）と接尾辞 -ationの関係を手掛かりに、exploration（探究・探査）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "explore",
+        "targetHeadword": "exploration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:explorer",
+      "headword": "explorer",
+      "wordId": "VD-05209",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "探検家",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "explor",
+          "kind": "altered-free-base",
+          "meaningJa": "探究する・探検する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "explore",
+      "baseWordId": "VD-01473",
+      "explanationJa": "explore（探究する・探検する）と接尾辞 -erの関係を手掛かりに、explorer（探検家）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "explore",
+        "targetHeadword": "explorer",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:facilitation",
+      "headword": "facilitation",
+      "wordId": "VD-07169",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "促進",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "facilitat",
+          "kind": "altered-free-base",
+          "meaningJa": "促進する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "facilitate",
+      "baseWordId": "VD-05225",
+      "explanationJa": "facilitate（促進する）と接尾辞 -ionの関係を手掛かりに、facilitation（促進）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "facilitate",
+        "targetHeadword": "facilitation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:fragmentation",
+      "headword": "fragmentation",
+      "wordId": "VD-07204",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "断片化",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "fragment",
+          "kind": "free-base",
+          "meaningJa": "断片化する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "fragment",
+      "baseWordId": "VD-03103",
+      "explanationJa": "fragment（断片化する）と接尾辞 -ationの関係を手掛かりに、fragmentation（断片化）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "fragment",
+        "targetHeadword": "fragmentation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:generation",
+      "headword": "generation",
+      "wordId": "VD-01550",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "生成・世代",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "generat",
+          "kind": "altered-free-base",
+          "meaningJa": "生み出す"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "generate",
+      "baseWordId": "VD-03139",
+      "explanationJa": "generate（生み出す）と接尾辞 -ionの関係を手掛かりに、generation（生成・世代）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "generate",
+        "targetHeadword": "generation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:graduation",
+      "headword": "graduation",
+      "wordId": "VD-03174",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "卒業",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "graduat",
+          "kind": "altered-free-base",
+          "meaningJa": "卒業する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "graduate",
+      "baseWordId": "VD-01561",
+      "explanationJa": "graduate（卒業する）と接尾辞 -ionの関係を手掛かりに、graduation（卒業）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "graduate",
+        "targetHeadword": "graduation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:happily",
+      "headword": "happily",
+      "wordId": "VD-01581",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "幸せそうに",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "happi",
+          "kind": "altered-free-base",
+          "meaningJa": "幸せな"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "happy",
+      "baseWordId": "VD-00424",
+      "explanationJa": "happy（幸せな）と接尾辞 -lyの関係を手掛かりに、happily（幸せそうに）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "happy",
+        "targetHeadword": "happily",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:happiness",
+      "headword": "happiness",
+      "wordId": "VD-01582",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "幸福",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "happi",
+          "kind": "altered-free-base",
+          "meaningJa": "幸せな"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "morphemeId": "suffix:ness",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "happy",
+      "baseWordId": "VD-00424",
+      "explanationJa": "happy（幸せな）と接尾辞 -nessの関係を手掛かりに、happiness（幸福）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "happy",
+        "targetHeadword": "happiness",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:humiliation",
+      "headword": "humiliation",
+      "wordId": "VD-05440",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "屈辱",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "humiliat",
+          "kind": "altered-free-base",
+          "meaningJa": "屈辱を与える"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "humiliate",
+      "baseWordId": "VD-05438",
+      "explanationJa": "humiliate（屈辱を与える）と接尾辞 -ionの関係を手掛かりに、humiliation（屈辱）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "humiliate",
+        "targetHeadword": "humiliation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:impression",
+      "headword": "impression",
+      "wordId": "VD-03287",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "印象",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "impress",
+          "kind": "free-base",
+          "meaningJa": "感銘を与える"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "impress",
+      "baseWordId": "VD-01626",
+      "explanationJa": "impress（感銘を与える）と接尾辞 -ionの関係を手掛かりに、impression（印象）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-general-network.js",
+        "baseHeadword": "impress",
+        "targetHeadword": "impression",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:infection",
+      "headword": "infection",
+      "wordId": "VD-03308",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "感染",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "infect",
+          "kind": "free-base",
+          "meaningJa": "感染させる"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "infect",
+      "baseWordId": "VD-05515",
+      "explanationJa": "infect（感染させる）と接尾辞 -ionの関係を手掛かりに、infection（感染）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "infect",
+        "targetHeadword": "infection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:inherently",
+      "headword": "inherently",
+      "wordId": "VD-07292",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "本質的に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "inherent",
+          "kind": "free-base",
+          "meaningJa": "内在する"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "inherent",
+      "baseWordId": "VD-07291",
+      "explanationJa": "inherent（内在する）と接尾辞 -lyの関係を手掛かりに、inherently（本質的に）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "inherent",
+        "targetHeadword": "inherently",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:inheritance",
+      "headword": "inheritance",
+      "wordId": "VD-07293",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "遺伝・相続",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "inherit",
+          "kind": "free-base",
+          "meaningJa": "受け継ぐ"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "inherit",
+      "baseWordId": "VD-05530",
+      "explanationJa": "inherit（受け継ぐ）と接尾辞 -anceの関係を手掛かりに、inheritance（遺伝・相続）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "inherit",
+        "targetHeadword": "inheritance",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:injection",
+      "headword": "injection",
+      "wordId": "VD-05532",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "注入・注射",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "inject",
+          "kind": "free-base",
+          "meaningJa": "注入する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "inject",
+      "baseWordId": "VD-03317",
+      "explanationJa": "inject（注入する）と接尾辞 -ionの関係を手掛かりに、injection（注入・注射）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "inject",
+        "targetHeadword": "injection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:innovator",
+      "headword": "innovator",
+      "wordId": "VD-03322",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "革新者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "innovat",
+          "kind": "altered-free-base",
+          "meaningJa": "革新する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "innovate",
+      "baseWordId": "VD-07295",
+      "explanationJa": "innovate（革新する）と接尾辞 -orの関係を手掛かりに、innovator（革新者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "innovate",
+        "targetHeadword": "innovator",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:inspector",
+      "headword": "inspector",
+      "wordId": "VD-05542",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "検査官",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "inspect",
+          "kind": "free-base",
+          "meaningJa": "検査する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "inspect",
+      "baseWordId": "VD-05541",
+      "explanationJa": "inspect（検査する）と接尾辞 -orの関係を手掛かりに、inspector（検査官）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "inspect",
+        "targetHeadword": "inspector",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:institution",
+      "headword": "institution",
+      "wordId": "VD-05547",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "機関・制度",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "institut",
+          "kind": "altered-free-base",
+          "meaningJa": "研究所・機関"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "institute",
+      "baseWordId": "VD-03334",
+      "explanationJa": "institute（研究所・機関）と接尾辞 -ionの関係を手掛かりに、institution（機関・制度）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-general-network.js",
+        "baseHeadword": "institute",
+        "targetHeadword": "institution",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:instructor",
+      "headword": "instructor",
+      "wordId": "VD-03336",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "指導者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "instruct",
+          "kind": "free-base",
+          "meaningJa": "指導する・指示する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "instruct",
+      "baseWordId": "VD-05548",
+      "explanationJa": "instruct（指導する・指示する）と接尾辞 -orの関係を手掛かりに、instructor（指導者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "instruct",
+        "targetHeadword": "instructor",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:integration",
+      "headword": "integration",
+      "wordId": "VD-08215",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "統合",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "integrat",
+          "kind": "altered-free-base",
+          "meaningJa": "統合する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "integrate",
+      "baseWordId": "VD-05551",
+      "explanationJa": "integrate（統合する）と接尾辞 -ionの関係を手掛かりに、integration（統合）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "integrate",
+        "targetHeadword": "integration",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:interpretation",
+      "headword": "interpretation",
+      "wordId": "VD-05559",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "解釈",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "interpret",
+          "kind": "free-base",
+          "meaningJa": "解釈する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "interpret",
+      "baseWordId": "VD-05558",
+      "explanationJa": "interpret（解釈する）と接尾辞 -ationの関係を手掛かりに、interpretation（解釈）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "interpret",
+        "targetHeadword": "interpretation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:investigation",
+      "headword": "investigation",
+      "wordId": "VD-03355",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "調査",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "investigat",
+          "kind": "altered-free-base",
+          "meaningJa": "調査する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "investigate",
+      "baseWordId": "VD-05573",
+      "explanationJa": "investigate（調査する）と接尾辞 -ionの関係を手掛かりに、investigation（調査）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "investigate",
+        "targetHeadword": "investigation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:invitation",
+      "headword": "invitation",
+      "wordId": "VD-03356",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "招待",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "invit",
+          "kind": "altered-free-base",
+          "meaningJa": "招待する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "invite",
+      "baseWordId": "VD-01651",
+      "explanationJa": "invite（招待する）と接尾辞 -ationの関係を手掛かりに、invitation（招待）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "invite",
+        "targetHeadword": "invitation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:irritation",
+      "headword": "irritation",
+      "wordId": "VD-05588",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "いらだち・刺激",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "irritat",
+          "kind": "altered-free-base",
+          "meaningJa": "いらだたせる・刺激する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "irritate",
+      "baseWordId": "VD-03363",
+      "explanationJa": "irritate（いらだたせる・刺激する）と接尾辞 -ionの関係を手掛かりに、irritation（いらだち・刺激）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-general-network.js",
+        "baseHeadword": "irritate",
+        "targetHeadword": "irritation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:liberation",
+      "headword": "liberation",
+      "wordId": "VD-03417",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "解放",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "liberat",
+          "kind": "altered-free-base",
+          "meaningJa": "解放する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "liberate",
+      "baseWordId": "VD-03416",
+      "explanationJa": "liberate（解放する）と接尾辞 -ionの関係を手掛かりに、liberation（解放）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "liberate",
+        "targetHeadword": "liberation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:literally",
+      "headword": "literally",
+      "wordId": "VD-05667",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "文字通り",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "literal",
+          "kind": "free-base",
+          "meaningJa": "字義通りの"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "literal",
+      "baseWordId": "VD-05666",
+      "explanationJa": "literal（字義通りの）と接尾辞 -lyの関係を手掛かりに、literally（文字通り）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "literal",
+        "targetHeadword": "literally",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:manager",
+      "headword": "manager",
+      "wordId": "VD-01725",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "管理者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "manag",
+          "kind": "altered-free-base",
+          "meaningJa": "管理する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "manage",
+      "baseWordId": "VD-01724",
+      "explanationJa": "manage（管理する）と接尾辞 -erの関係を手掛かりに、manager（管理者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "manage",
+        "targetHeadword": "manager",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:mediation",
+      "headword": "mediation",
+      "wordId": "VD-08276",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "調停",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "mediat",
+          "kind": "altered-free-base",
+          "meaningJa": "仲介する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "mediate",
+      "baseWordId": "VD-08275",
+      "explanationJa": "mediate（仲介する）と接尾辞 -ionの関係を手掛かりに、mediation（調停）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "mediate",
+        "targetHeadword": "mediation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:motivation",
+      "headword": "motivation",
+      "wordId": "VD-03534",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "動機・意欲",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "motivat",
+          "kind": "altered-free-base",
+          "meaningJa": "意欲を高める"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "motivate",
+      "baseWordId": "VD-03533",
+      "explanationJa": "motivate（意欲を高める）と接尾辞 -ionの関係を手掛かりに、motivation（動機・意欲）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "motivate",
+        "targetHeadword": "motivation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:navigation",
+      "headword": "navigation",
+      "wordId": "VD-05806",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "航行・操作",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "navigat",
+          "kind": "altered-free-base",
+          "meaningJa": "進む・操作する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "navigate",
+      "baseWordId": "VD-05805",
+      "explanationJa": "navigate（進む・操作する）と接尾辞 -ionの関係を手掛かりに、navigation（航行・操作）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "navigate",
+        "targetHeadword": "navigation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:negotiation",
+      "headword": "negotiation",
+      "wordId": "VD-03565",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "交渉",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "negotiat",
+          "kind": "altered-free-base",
+          "meaningJa": "交渉する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "negotiate",
+      "baseWordId": "VD-03564",
+      "explanationJa": "negotiate（交渉する）と接尾辞 -ionの関係を手掛かりに、negotiation（交渉）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "negotiate",
+        "targetHeadword": "negotiation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:observer",
+      "headword": "observer",
+      "wordId": "VD-05852",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "観察者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "observ",
+          "kind": "altered-free-base",
+          "meaningJa": "観察する・遵守する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "observe",
+      "baseWordId": "VD-03609",
+      "explanationJa": "observe（観察する・遵守する）と接尾辞 -erの関係を手掛かりに、observer（観察者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "observe",
+        "targetHeadword": "observer",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:operator",
+      "headword": "operator",
+      "wordId": "VD-05867",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "操作者・事業者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "operat",
+          "kind": "altered-free-base",
+          "meaningJa": "操作する・運営する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "operate",
+      "baseWordId": "VD-01803",
+      "explanationJa": "operate（操作する・運営する）と接尾辞 -orの関係を手掛かりに、operator（操作者・事業者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "operate",
+        "targetHeadword": "operator",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:participation",
+      "headword": "participation",
+      "wordId": "VD-05943",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "参加",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "participat",
+          "kind": "altered-free-base",
+          "meaningJa": "参加する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "participate",
+      "baseWordId": "VD-03682",
+      "explanationJa": "participate（参加する）と接尾辞 -ionの関係を手掛かりに、participation（参加）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "participate",
+        "targetHeadword": "participation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:pollution",
+      "headword": "pollution",
+      "wordId": "VD-00710",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "汚染",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "pollut",
+          "kind": "altered-free-base",
+          "meaningJa": "汚染する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "pollute",
+      "baseWordId": "VD-01877",
+      "explanationJa": "pollute（汚染する）と接尾辞 -ionの関係を手掛かりに、pollution（汚染）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "pollute",
+        "targetHeadword": "pollution",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:portrayal",
+      "headword": "portrayal",
+      "wordId": "VD-07457",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "描写",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "portray",
+          "kind": "free-base",
+          "meaningJa": "描写する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "portray",
+      "baseWordId": "VD-07456",
+      "explanationJa": "portray（描写する）と接尾辞 -alの関係を手掛かりに、portrayal（描写）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "portray",
+        "targetHeadword": "portrayal",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:practical",
+      "headword": "practical",
+      "wordId": "VD-03756",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "実践的な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "practic",
+          "kind": "altered-free-base",
+          "meaningJa": "練習する・実践する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "practice",
+      "baseWordId": "VD-00717",
+      "explanationJa": "practice（練習する・実践する）と接尾辞 -alの関係を手掛かりに、practical（実践的な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "practice",
+        "targetHeadword": "practical",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:precision",
+      "headword": "precision",
+      "wordId": "VD-07463",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "精密さ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "precis",
+          "kind": "altered-free-base",
+          "meaningJa": "精密な・厳密な"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "precise",
+      "baseWordId": "VD-01888",
+      "explanationJa": "precise（精密な・厳密な）と接尾辞 -ionの関係を手掛かりに、precision（精密さ）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "precise",
+        "targetHeadword": "precision",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:prediction",
+      "headword": "prediction",
+      "wordId": "VD-01890",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "予測",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "predict",
+          "kind": "free-base",
+          "meaningJa": "予測する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "predict",
+      "baseWordId": "VD-01889",
+      "explanationJa": "predict（予測する）と接尾辞 -ionの関係を手掛かりに、prediction（予測）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "predict",
+        "targetHeadword": "prediction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:preference",
+      "headword": "preference",
+      "wordId": "VD-03760",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "好み",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "prefer",
+          "kind": "free-base",
+          "meaningJa": "好む"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "prefer",
+      "baseWordId": "VD-01891",
+      "explanationJa": "prefer（好む）と接尾辞 -enceの関係を手掛かりに、preference（好み）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "prefer",
+        "targetHeadword": "preference",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:preservation",
+      "headword": "preservation",
+      "wordId": "VD-03771",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "保存・保全",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "preserv",
+          "kind": "altered-free-base",
+          "meaningJa": "保存する・保全する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "preserve",
+      "baseWordId": "VD-03772",
+      "explanationJa": "preserve（保存する・保全する）と接尾辞 -ationの関係を手掛かりに、preservation（保存・保全）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "preserve",
+        "targetHeadword": "preservation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:prevention",
+      "headword": "prevention",
+      "wordId": "VD-06079",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "予防",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "prevent",
+          "kind": "free-base",
+          "meaningJa": "防ぐ"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "prevent",
+      "baseWordId": "VD-01895",
+      "explanationJa": "prevent（防ぐ）と接尾辞 -ionの関係を手掛かりに、prevention（予防）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "prevent",
+        "targetHeadword": "prevention",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:preventive",
+      "headword": "preventive",
+      "wordId": "VD-06080",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "予防的な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "prevent",
+          "kind": "free-base",
+          "meaningJa": "防ぐ"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "prevent",
+      "baseWordId": "VD-01895",
+      "explanationJa": "prevent（防ぐ）と接尾辞 -iveの関係を手掛かりに、preventive（予防的な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "prevent",
+        "targetHeadword": "preventive",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:prohibitive",
+      "headword": "prohibitive",
+      "wordId": "VD-07475",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "抑止的な・高すぎる",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "prohibit",
+          "kind": "free-base",
+          "meaningJa": "禁止する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "prohibit",
+      "baseWordId": "VD-06099",
+      "explanationJa": "prohibit（禁止する）と接尾辞 -iveの関係を手掛かりに、prohibitive（抑止的な・高すぎる）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "prohibit",
+        "targetHeadword": "prohibitive",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:promotion",
+      "headword": "promotion",
+      "wordId": "VD-03798",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "促進・昇進",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "promot",
+          "kind": "altered-free-base",
+          "meaningJa": "促進する・昇進させる"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "promote",
+      "baseWordId": "VD-03797",
+      "explanationJa": "promote（促進する・昇進させる）と接尾辞 -ionの関係を手掛かりに、promotion（促進・昇進）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "promote",
+        "targetHeadword": "promotion",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:protection",
+      "headword": "protection",
+      "wordId": "VD-03809",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "保護",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "protect",
+          "kind": "free-base",
+          "meaningJa": "保護する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "protect",
+      "baseWordId": "VD-03808",
+      "explanationJa": "protect（保護する）と接尾辞 -ionの関係を手掛かりに、protection（保護）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "protect",
+        "targetHeadword": "protection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:protective",
+      "headword": "protective",
+      "wordId": "VD-03810",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "保護する",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "protect",
+          "kind": "free-base",
+          "meaningJa": "保護する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "protect",
+      "baseWordId": "VD-03808",
+      "explanationJa": "protect（保護する）と接尾辞 -iveの関係を手掛かりに、protective（保護する）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "protect",
+        "targetHeadword": "protective",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:reaction",
+      "headword": "reaction",
+      "wordId": "VD-06162",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "反応",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "react",
+          "kind": "free-base",
+          "meaningJa": "反応する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "react",
+      "baseWordId": "VD-03856",
+      "explanationJa": "react（反応する）と接尾辞 -ionの関係を手掛かりに、reaction（反応）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "react",
+        "targetHeadword": "reaction",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:reassurance",
+      "headword": "reassurance",
+      "wordId": "VD-07508",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "安心を与えること",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "reassur",
+          "kind": "altered-free-base",
+          "meaningJa": "安心させる"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "reassure",
+      "baseWordId": "VD-07509",
+      "explanationJa": "reassure（安心させる）と接尾辞 -anceの関係を手掛かりに、reassurance（安心を与えること）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "reassure",
+        "targetHeadword": "reassurance",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:recommendable",
+      "headword": "recommendable",
+      "wordId": "VD-06176",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "推薦に値する",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "recommend",
+          "kind": "free-base",
+          "meaningJa": "推薦する・勧める"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "morphemeId": "suffix:able",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "recommend",
+      "baseWordId": "VD-03867",
+      "explanationJa": "recommend（推薦する・勧める）と接尾辞 -ableの関係を手掛かりに、recommendable（推薦に値する）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "recommend",
+        "targetHeadword": "recommendable",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:recommendation",
+      "headword": "recommendation",
+      "wordId": "VD-06177",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "推薦・提言",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "recommend",
+          "kind": "free-base",
+          "meaningJa": "推薦する・勧める"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "recommend",
+      "baseWordId": "VD-03867",
+      "explanationJa": "recommend（推薦する・勧める）と接尾辞 -ationの関係を手掛かりに、recommendation（推薦・提言）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "recommend",
+        "targetHeadword": "recommendation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:reflection",
+      "headword": "reflection",
+      "wordId": "VD-03877",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "反映・振り返り",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "reflect",
+          "kind": "free-base",
+          "meaningJa": "反映する・振り返る"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "reflect",
+      "baseWordId": "VD-01947",
+      "explanationJa": "reflect（反映する・振り返る）と接尾辞 -ionの関係を手掛かりに、reflection（反映・振り返り）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "reflect",
+        "targetHeadword": "reflection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:regional",
+      "headword": "regional",
+      "wordId": "VD-03886",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "地域の",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "region",
+          "kind": "free-base",
+          "meaningJa": "地域"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "region",
+      "baseWordId": "VD-03885",
+      "explanationJa": "region（地域）と接尾辞 -alの関係を手掛かりに、regional（地域の）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "region",
+        "targetHeadword": "regional",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:regulation",
+      "headword": "regulation",
+      "wordId": "VD-03889",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "規制・調節",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "regulat",
+          "kind": "altered-free-base",
+          "meaningJa": "規制する・調節する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "regulate",
+      "baseWordId": "VD-06199",
+      "explanationJa": "regulate（規制する・調節する）と接尾辞 -ionの関係を手掛かりに、regulation（規制・調節）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "regulate",
+        "targetHeadword": "regulation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:rejection",
+      "headword": "rejection",
+      "wordId": "VD-06203",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "拒絶・棄却",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "reject",
+          "kind": "free-base",
+          "meaningJa": "拒絶する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "reject",
+      "baseWordId": "VD-03890",
+      "explanationJa": "reject（拒絶する）と接尾辞 -ionの関係を手掛かりに、rejection（拒絶・棄却）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "reject",
+        "targetHeadword": "rejection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:revision",
+      "headword": "revision",
+      "wordId": "VD-03943",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "改訂・復習",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "revis",
+          "kind": "altered-free-base",
+          "meaningJa": "改訂する・復習する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "revise",
+      "baseWordId": "VD-03942",
+      "explanationJa": "revise（改訂する・復習する）と接尾辞 -ionの関係を手掛かりに、revision（改訂・復習）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "revise",
+        "targetHeadword": "revision",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:security",
+      "headword": "security",
+      "wordId": "VD-04001",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "安全・セキュリティ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "secur",
+          "kind": "altered-free-base",
+          "meaningJa": "確保する・安全にする"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "secure",
+      "baseWordId": "VD-04000",
+      "explanationJa": "secure（確保する・安全にする）と接尾辞 -ityの関係を手掛かりに、security（安全・セキュリティ）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "secure",
+        "targetHeadword": "security",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:selection",
+      "headword": "selection",
+      "wordId": "VD-04004",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "選択・選考",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "select",
+          "kind": "free-base",
+          "meaningJa": "選ぶ"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "select",
+      "baseWordId": "VD-04003",
+      "explanationJa": "select（選ぶ）と接尾辞 -ionの関係を手掛かりに、selection（選択・選考）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "select",
+        "targetHeadword": "selection",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:separately",
+      "headword": "separately",
+      "wordId": "VD-06339",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "別々に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "separate",
+          "kind": "free-base",
+          "meaningJa": "分離する"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "separate",
+      "baseWordId": "VD-02031",
+      "explanationJa": "separate（分離する）と接尾辞 -lyの関係を手掛かりに、separately（別々に）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "separate",
+        "targetHeadword": "separately",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:separation",
+      "headword": "separation",
+      "wordId": "VD-04008",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "分離",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "separat",
+          "kind": "altered-free-base",
+          "meaningJa": "分離する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "separate",
+      "baseWordId": "VD-02031",
+      "explanationJa": "separate（分離する）と接尾辞 -ionの関係を手掛かりに、separation（分離）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "separate",
+        "targetHeadword": "separation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:strengthen",
+      "headword": "strengthen",
+      "wordId": "VD-04133",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "強化する",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "strength",
+          "kind": "free-base",
+          "meaningJa": "強さ"
+        },
+        {
+          "surface": "-en",
+          "kind": "suffix",
+          "morphemeId": "suffix:en-verb",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "strength",
+      "baseWordId": "VD-02127",
+      "explanationJa": "strength（強さ）と接尾辞 -enの関係を手掛かりに、strengthen（強化する）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "strength",
+        "targetHeadword": "strengthen",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:supervision",
+      "headword": "supervision",
+      "wordId": "VD-06524",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "監督",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "supervis",
+          "kind": "altered-free-base",
+          "meaningJa": "監督する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "supervise",
+      "baseWordId": "VD-06523",
+      "explanationJa": "supervise（監督する）と接尾辞 -ionの関係を手掛かりに、supervision（監督）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "supervise",
+        "targetHeadword": "supervision",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:supportive",
+      "headword": "supportive",
+      "wordId": "VD-04170",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "支援的な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "support",
+          "kind": "free-base",
+          "meaningJa": "支援する"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "support",
+      "baseWordId": "VD-02150",
+      "explanationJa": "support（支援する）と接尾辞 -iveの関係を手掛かりに、supportive（支援的な）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "support",
+        "targetHeadword": "supportive",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:survival",
+      "headword": "survival",
+      "wordId": "VD-04180",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "生存",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "surviv",
+          "kind": "altered-free-base",
+          "meaningJa": "生き残る"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "morphemeId": "suffix:al-adj",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "survive",
+      "baseWordId": "VD-02155",
+      "explanationJa": "survive（生き残る）と接尾辞 -alの関係を手掛かりに、survival（生存）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "survive",
+        "targetHeadword": "survival",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:survivor",
+      "headword": "survivor",
+      "wordId": "VD-04181",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "生存者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "surviv",
+          "kind": "altered-free-base",
+          "meaningJa": "生き残る"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "survive",
+      "baseWordId": "VD-02155",
+      "explanationJa": "survive（生き残る）と接尾辞 -orの関係を手掛かりに、survivor（生存者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "survive",
+        "targetHeadword": "survivor",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:transformation",
+      "headword": "transformation",
+      "wordId": "VD-04275",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "変革・変換",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "transform",
+          "kind": "free-base",
+          "meaningJa": "変革する・変換する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "transform",
+      "baseWordId": "VD-04274",
+      "explanationJa": "transform（変革する・変換する）と接尾辞 -ationの関係を手掛かりに、transformation（変革・変換）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "transform",
+        "targetHeadword": "transformation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:translation",
+      "headword": "translation",
+      "wordId": "VD-06631",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "翻訳",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "translat",
+          "kind": "altered-free-base",
+          "meaningJa": "翻訳する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "translate",
+      "baseWordId": "VD-04277",
+      "explanationJa": "translate（翻訳する）と接尾辞 -ionの関係を手掛かりに、translation（翻訳）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "translate",
+        "targetHeadword": "translation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:translator",
+      "headword": "translator",
+      "wordId": "VD-06632",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "翻訳者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "translat",
+          "kind": "altered-free-base",
+          "meaningJa": "翻訳する"
+        },
+        {
+          "surface": "-or",
+          "kind": "suffix",
+          "morphemeId": "suffix:or-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "translate",
+      "baseWordId": "VD-04277",
+      "explanationJa": "translate（翻訳する）と接尾辞 -orの関係を手掛かりに、translator（翻訳者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "translate",
+        "targetHeadword": "translator",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:transportation",
+      "headword": "transportation",
+      "wordId": "VD-04279",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "輸送・交通",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "transport",
+          "kind": "free-base",
+          "meaningJa": "輸送する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "transport",
+      "baseWordId": "VD-04278",
+      "explanationJa": "transport（輸送する）と接尾辞 -ationの関係を手掛かりに、transportation（輸送・交通）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "transport",
+        "targetHeadword": "transportation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:unconventional",
+      "headword": "unconventional",
+      "wordId": "VD-07712",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "型破りな",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "conventional",
+          "kind": "free-base",
+          "meaningJa": "従来の"
+        }
+      ],
+      "baseHeadword": "conventional",
+      "baseWordId": "VD-04871",
+      "explanationJa": "conventional（従来の）と接頭辞 un-の関係を手掛かりに、unconventional（型破りな）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "conventional",
+        "targetHeadword": "unconventional",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:undergraduate",
+      "headword": "undergraduate",
+      "wordId": "VD-06690",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "学部生",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "graduate",
+          "kind": "free-base",
+          "meaningJa": "卒業する"
+        }
+      ],
+      "baseHeadword": "graduate",
+      "baseWordId": "VD-01561",
+      "explanationJa": "graduate（卒業する）と接頭辞 under-の関係を手掛かりに、undergraduate（学部生）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "graduate",
+        "targetHeadword": "undergraduate",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:unhappiness",
+      "headword": "unhappiness",
+      "wordId": "VD-06708",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "不幸",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "unhappi",
+          "kind": "altered-free-base",
+          "meaningJa": "不幸な"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "morphemeId": "suffix:ness",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "unhappy",
+      "baseWordId": "VD-02233",
+      "explanationJa": "unhappy（不幸な）と接尾辞 -nessの関係を手掛かりに、unhappiness（不幸）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "unhappy",
+        "targetHeadword": "unhappiness",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:unrelated",
+      "headword": "unrelated",
+      "wordId": "VD-04337",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "無関係の",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "related",
+          "kind": "free-base",
+          "meaningJa": "関連した"
+        }
+      ],
+      "baseHeadword": "related",
+      "baseWordId": "VD-06205",
+      "explanationJa": "related（関連した）と接頭辞 un-の関係を手掛かりに、unrelated（無関係の）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-families.js",
+        "baseHeadword": "related",
+        "targetHeadword": "unrelated",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:unreliable",
+      "headword": "unreliable",
+      "wordId": "VD-06726",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "信頼できない",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        },
+        {
+          "surface": "reliable",
+          "kind": "free-base",
+          "meaningJa": "信頼できる"
+        }
+      ],
+      "baseHeadword": "reliable",
+      "baseWordId": "VD-03897",
+      "explanationJa": "reliable（信頼できる）と接頭辞 un-の関係を手掛かりに、unreliable（信頼できない）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "reliable",
+        "targetHeadword": "unreliable",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:versatility",
+      "headword": "versatility",
+      "wordId": "VD-07748",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "多用途性",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "versatil",
+          "kind": "altered-free-base",
+          "meaningJa": "多用途の"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "versatile",
+      "baseWordId": "VD-07747",
+      "explanationJa": "versatile（多用途の）と接尾辞 -ityの関係を手掛かりに、versatility（多用途性）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-derivation-collocation-mega.js",
+        "baseHeadword": "versatile",
+        "targetHeadword": "versatility",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:voter",
+      "headword": "voter",
+      "wordId": "VD-06791",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "投票者",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "vot",
+          "kind": "altered-free-base",
+          "meaningJa": "投票する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "morphemeId": "suffix:er-agent",
+          "meaningJa": "語形成要素（具体的な意味は個別校閲待ち）"
+        }
+      ],
+      "baseHeadword": "vote",
+      "baseWordId": "VD-01000",
+      "explanationJa": "vote（投票する）と接尾辞 -erの関係を手掛かりに、voter（投票者）を学ぶ。語義と形態上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-families-collocations-mega.js",
+        "baseHeadword": "vote",
+        "targetHeadword": "voter",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
