@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "batch": "008",
+  "batch": "009",
   "createdOn": "2026-11-17",
   "status": "draft-unreviewed",
   "productionEnabled": false,
   "counts": {
-    "roots": 400,
+    "roots": 450,
     "prefixes": 150,
     "suffixes": 150,
-    "relations": 2692,
-    "distinctHeadwords": 2571,
-    "matchedRelations": 387,
-    "matchedDistinctHeadwords": 360,
-    "unresolvedRelations": 2305,
-    "quizzes": 700,
-    "imagePrompts": 400,
+    "relations": 2903,
+    "distinctHeadwords": 2757,
+    "matchedRelations": 421,
+    "matchedDistinctHeadwords": 388,
+    "unresolvedRelations": 2482,
+    "quizzes": 750,
+    "imagePrompts": 450,
     "generatedImages": 0
   },
   "targets": {
@@ -79,9 +79,12 @@
     "quizzes-007.json",
     "roots-008.json",
     "word-links-008.json",
-    "quizzes-008.json"
+    "quizzes-008.json",
+    "roots-009.json",
+    "word-links-009.json",
+    "quizzes-009.json"
   ],
-  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。 バッチ005では現代英語の複合語要素も学習単位に含み、既存語根と関連する結合形には注記を付与。個別語源の校閲は未実施。 バッチ006は基本語の歴史的関連、アカデミック語彙、現代複合語要素を追加。一部の語源参照URLを記録したが、全項目は未校閲。 バッチ007は語根・学術結合形・屈折接辞・複合語要素を区別してドラフト登録。個別語源や用例は未校閲。目標数は学習単位の数であって、厳密な独立接辞数ではない。 バッチ008では歴史的語根25件と現代英語の自由語基25件を区別して追加。roots は学習単位の総数であり、独立した歴史語根数ではない。個別校閲・画像生成は未実施。",
+  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。 バッチ005では現代英語の複合語要素も学習単位に含み、既存語根と関連する結合形には注記を付与。個別語源の校閲は未実施。 バッチ006は基本語の歴史的関連、アカデミック語彙、現代複合語要素を追加。一部の語源参照URLを記録したが、全項目は未校閲。 バッチ007は語根・学術結合形・屈折接辞・複合語要素を区別してドラフト登録。個別語源や用例は未校閲。目標数は学習単位の数であって、厳密な独立接辞数ではない。 バッチ008では歴史的語根25件と現代英語の自由語基25件を区別して追加。roots は学習単位の総数であり、独立した歴史語根数ではない。個別校閲・画像生成は未実施。 バッチ009では歴史的語根25件と現代英語の自由語基25件を追加。語源や分類、各語義は未校閲。独立歴史語根の件数ではなく学習単位の集計。",
   "batches": [
     {
       "batch": "001",
@@ -206,6 +209,22 @@
         "matchedRelations": 38,
         "matchedDistinctHeadwords": 38,
         "unresolvedRelations": 190,
+        "quizzes": 50,
+        "imagePrompts": 50,
+        "generatedImages": 0
+      }
+    },
+    {
+      "batch": "009",
+      "counts": {
+        "roots": 50,
+        "prefixes": 0,
+        "suffixes": 0,
+        "relations": 211,
+        "distinctHeadwords": 210,
+        "matchedRelations": 34,
+        "matchedDistinctHeadwords": 34,
+        "unresolvedRelations": 177,
         "quizzes": 50,
         "imagePrompts": 50,
         "generatedImages": 0
