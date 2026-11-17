@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": "voca-roots-word-study-examples",
+  "createdOn": "2026-11-17",
+  "status": "draft-unreviewed",
+  "productionEnabled": false,
+  "files": [
+    "word-study-examples-001.json",
+    "word-study-examples-002.json"
+  ],
+  "counts": {
+    "lessonUnits": 22,
+    "exampleCards": 88,
+    "distinctHeadwords": 88,
+    "matchedMasterWordIds": 88,
+    "reviewedCards": 0,
+    "productionCards": 0
+  },
+  "qualityGuard": "data/voca-roots/quality/editorial-issues-001.json",
+  "reviewNoticeJa": "例文の対象語・ID・CEFR・関連リンクの構造検証は可能。英日対訳、個別の語史と語構成は校閲前。生徒公開は禁止。"
+}
