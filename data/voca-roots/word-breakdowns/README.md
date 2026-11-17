@@ -4,9 +4,9 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 
 ## What is registered
 - **3,350 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
-- **35 individually written teaching explanations**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **3,385 source records / 3,382 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- **996 records (994 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
+- **124 individually written teaching explanations and structured prefix-learning drafts**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
+- **3,474 source records / 3,471 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- **1,085 records (1,083 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -31,7 +31,14 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - A further **213 draft Word Breakdown records** were added for distinct words that are **already present in the active 8,653-word master**. The 136/59/18 records were extracted from explicit JS `family` edges, not synonyms or collocations.
 - Inflection-only links were excluded: in morphology review sources, the family edge must carry the `派生・語族` marker. Extra records use the canonical VocaRoots affix meanings with base-word and target-word IDs from the full master.
 - Source evidence is checked as a specific base → target family link in its source JS object, and the normalized word reconstructs from its recorded parts. Linguistic review remains required before publication.
-- The 996 matching records cover **994 distinct target headwords** in the master; the other 7,659 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
+- The 1,085 matching records cover **1,083 distinct target headwords** in the master; the other 7,570 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
+
+
+## Master-first batch 009: original prefix explanations (2026-11-17)
+- Added **89 new master-matched Word Breakdown drafts**, with separate human-authored examples and Japanese translations. Existing entries were left unchanged; the list was checked against the previous recorded headwords before writing.
+- The prefix families taught are `un-` (negation vs reversal), `in-/im-/ir-` (negation), `re-`, `mis-`, `over-`, `under-`, and `inter-`. Each new item has a known master word ID and an existing prefix morpheme ID.
+- Each record includes `exampleEn`, `exampleJa`, `imageHintJa`, `baseWordId` and original `explanationJa`. `historicalEtymologyVerified=false`, `referenceLookupPending=true`, `productionEligible=false` on every record. Modern spelling segmentation is only a **learning aid**, not a certified historical etymology.
+- Current totals: **3,474 records / 3,471 distinct headwords**, with **1,085 records / 1,083 distinct words matched** against the full 8,653-word master. **7,570** master words currently lack any Word Breakdown draft.
 
 ## Critical editorial cautions
 1. **Historical roots and today's morphological segmentation are different things.** Do not teach `important` as if today's meaning literally follows from `im + port + ant`.
