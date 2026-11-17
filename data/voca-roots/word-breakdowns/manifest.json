@@ -8,7 +8,7 @@
   "counts": {
     "records": 4586,
     "distinctHeadwords": 4583,
-    "automatedModernDerivationCandidates": 4225,
+    "automatedModernDerivationCandidates": 3796,
     "handAuthoredCoreRecords": 361,
     "candidateIndexMatchedRows": 2197,
     "candidateIndexMatchedDistinctHeadwords": 2195,
@@ -16,7 +16,8 @@
     "fullyEditorialReviewed": 0,
     "fullMasterMatchedRows": 2197,
     "fullMasterMatchedDistinctHeadwords": 2195,
-    "notIn8653MasterHeadwords": 2388
+    "notIn8653MasterHeadwords": 2388,
+    "curatedMasterRecords": 429
   },
   "files": [
     "modern-derivation-candidates-001.json",
