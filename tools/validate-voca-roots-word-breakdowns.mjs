@@ -18,6 +18,23 @@ assert.equal(Object.keys(candidates).length, master.counts.headwords);
 const ids = records.map(item => item.id);
 const headwords = new Set(records.map(item => item.headword));
 const sourceCache = new Map();
+function jsExportedObject(src) {
+  const marker = src.indexOf('export default');
+  assert.ok(marker >= 0, 'Missing JS default export');
+  const start = src.indexOf('{', marker);
+  let depth = 0, quoted = false, escaped = false;
+  for (let i = start; i < src.length; i++) {
+    const ch = src[i];
+    if (quoted) {
+      if (escaped) escaped = false;
+      else if (ch === '\\') escaped = true;
+      else if (ch === '"') quoted = false;
+    } else if (ch === '"') quoted = true;
+    else if (ch === '{') depth++;
+    else if (ch === '}' && --depth === 0) return JSON.parse(src.slice(start, i + 1));
+  }
+  throw Error('Cannot parse JS family source');
+}
 
 assert.equal(manifest.productionEnabled, false);
 assert.equal(new Set(ids).size, ids.length, 'record ID duplicate');
@@ -41,12 +58,22 @@ for (const item of records) {
   if (item.familyEvidence) {
     const evidence = item.familyEvidence;
     assert.ok(evidence.sourcePath.startsWith('src/data/universe-word-families-'));
-    if (!sourceCache.has(evidence.sourcePath)) sourceCache.set(
-      evidence.sourcePath, read(evidence.sourcePath).families
-    );
-    const group = sourceCache.get(evidence.sourcePath)[evidence.familyIndex];
-    assert.ok(group && group.some(word => word.word.toLowerCase() === item.headword));
-    assert.ok(group.some(word => word.word.toLowerCase() === item.baseHeadword));
+    if (!sourceCache.has(evidence.sourcePath)) {
+      const source = evidence.sourceType === 'js-family'
+        ? jsExportedObject(fs.readFileSync(evidence.sourcePath, 'utf8'))
+        : read(evidence.sourcePath).families;
+      sourceCache.set(evidence.sourcePath, source);
+    }
+    if (evidence.sourceType === 'js-family') {
+      const group = sourceCache.get(evidence.sourcePath)[evidence.baseHeadword];
+      assert.ok(group?.links?.some(link => link.type === 'family'
+        && link.word.toLowerCase() === item.headword), 'JS family evidence for ' + item.headword);
+      assert.equal(evidence.targetHeadword, item.headword);
+    } else {
+      const group = sourceCache.get(evidence.sourcePath)[evidence.familyIndex];
+      assert.ok(group && group.some(word => word.word.toLowerCase() === item.headword));
+      assert.ok(group.some(word => word.word.toLowerCase() === item.baseHeadword));
+    }
     assert.equal(item.historicalEtymologyVerified, false);
   }
 }
