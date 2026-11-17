@@ -57,7 +57,13 @@ for (const item of records) {
   }
   if (item.familyEvidence) {
     const evidence = item.familyEvidence;
-    assert.ok(evidence.sourcePath.startsWith('src/data/universe-word-families-'));
+    assert.ok(
+      (evidence.sourceType === 'js-family'
+        && /^src\/data\/universe-[a-z0-9-]+\.js$/.test(evidence.sourcePath))
+      || (evidence.sourceType !== 'js-family'
+        && /^src\/data\/universe-word-families-[a-z0-9-]+\.json$/.test(evidence.sourcePath)),
+      'Unexpected word-family source path: ' + evidence.sourcePath
+    );
     if (!sourceCache.has(evidence.sourcePath)) {
       const source = evidence.sourceType === 'js-family'
         ? jsExportedObject(fs.readFileSync(evidence.sourcePath, 'utf8'))
