@@ -3,10 +3,10 @@
 This dataset supports the future **Word Breakdown** experience in VocaDash. It is separate from the original vocabulary master and from the live application. All entries are **unreviewed**, and `productionEnabled=false`.
 
 ## What is registered
-- **1,572 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and the letters concatenate exactly. This **does not verify the word's historical etymology** or its semantic suitability for publication.
+- **3,137 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and the letters concatenate exactly. This **does not verify the word's historical etymology** or its semantic suitability for publication.
 - **35 individually written teaching explanations**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **1,607 source records / 1,604 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- 184 records (182 distinct headwords) have a `wordId` matched exactly in the *incomplete* 2,733-entry candidate index. Unresolved rows remain `wordId: null`; do not invent or deduce a master ID.
+- **3,172 source records / 3,169 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- 219 records (217 distinct headwords) have a `wordId` matched exactly in the *incomplete* 2,733-entry candidate index. Unresolved rows remain `wordId: null`; do not invent or deduce a master ID.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -14,6 +14,12 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - `parts[]`: `surface` reconstructs the spelling; `kind` distinguishes prefix, suffix, historical/combining form, and free base. `morphemeId` refers to existing VocaRoots units when applicable.
 - `explanationJa` / `learningExplanationJa`, `familyEvidence` or `sourceRefs`, review flags.
 - All items have `editorialReviewRequired=true`, `productionEligible=false`, `status=draft-unreviewed`.
+
+## Additional batches 003–005 (2026-11-17)
+- 1,565 additional draft candidates were extracted from 20 further, explicitly authored word-family source files; records have unique headwords not used by earlier batches.
+- In addition to exact concatenation, some candidate spellings require **final -e deletion**, **-y to -i changes**, or **final-consonant doubling**. These spelling operations are encoded in `orthographicRule`; a reconstructed spelling alone is **not** proof of a valid etymology.
+- All new entries remain `draft-unreviewed` and are excluded from production. The present 2,733-headword candidate index matched 35 of the new records; unmatched words must not be treated as absent from the full 8,653-word master.
+- All source relationships and Japanese explanations require linguistic/editorial review before linking to the VocaDash learning UI.
 
 ## Critical editorial cautions
 1. **Historical roots and today's morphological segmentation are different things.** Do not teach `important` as if today's meaning literally follows from `im + port + ant`.
