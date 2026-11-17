@@ -1,0 +1,3678 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-reference-only",
+  "productionEnabled": false,
+  "source": "data/voca-roots/full-master-word-links.json",
+  "sourcePolicy": "Exact canonical master word-ID joins only, no new root inference or historical verification",
+  "counts": {
+    "newWordBreakdowns": 446,
+    "withExistingFamilyCandidate": 162,
+    "withoutExistingFamilyCandidate": 284,
+    "distinctMorphemeIds": 98,
+    "rootFamilyMembershipCandidates": 86
+  },
+  "entries": {
+    "VD-06685": {
+      "wordId": "VD-06685",
+      "headword": "uncomfortably",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:uncomfortably",
+      "linkIds": [
+        "prefix:un-negative/uncomfortably"
+      ],
+      "morphemeIds": [
+        "prefix:un-negative"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06737": {
+      "wordId": "VD-06737",
+      "headword": "untie",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:untie",
+      "linkIds": [
+        "prefix:un-reversal/untie"
+      ],
+      "morphemeIds": [
+        "prefix:un-reversal"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03357": {
+      "wordId": "VD-03357",
+      "headword": "involuntarily",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:involuntarily",
+      "linkIds": [
+        "prefix:in-negative/involuntarily",
+        "suffix:ly-adverb/involuntarily"
+      ],
+      "morphemeIds": [
+        "prefix:in-negative",
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05507": {
+      "wordId": "VD-05507",
+      "headword": "indispensable",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:indispensable",
+      "linkIds": [
+        "prefix:in-negative/indispensable"
+      ],
+      "morphemeIds": [
+        "prefix:in-negative"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07304": {
+      "wordId": "VD-07304",
+      "headword": "insubordinate",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:insubordinate",
+      "linkIds": [
+        "prefix:in-negative/insubordinate",
+        "root:ordin/insubordinate"
+      ],
+      "morphemeIds": [
+        "prefix:in-negative",
+        "root:ordin"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01390": {
+      "wordId": "VD-01390",
+      "headword": "disadvantage",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:disadvantage",
+      "linkIds": [
+        "prefix:dis/disadvantage"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02871": {
+      "wordId": "VD-02871",
+      "headword": "discomfort",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:discomfort",
+      "linkIds": [
+        "prefix:dis/discomfort"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05023": {
+      "wordId": "VD-05023",
+      "headword": "disapproval",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:disapproval",
+      "linkIds": [
+        "prefix:dis/disapproval",
+        "root:prob/disapproval",
+        "suffix:al-adj/disapproval"
+      ],
+      "morphemeIds": [
+        "prefix:dis",
+        "root:prob",
+        "suffix:al-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05029": {
+      "wordId": "VD-05029",
+      "headword": "discredit",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:discredit",
+      "linkIds": [
+        "root:cred/discredit"
+      ],
+      "morphemeIds": [
+        "root:cred"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05036": {
+      "wordId": "VD-05036",
+      "headword": "disorder",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:disorder",
+      "linkIds": [
+        "prefix:dis/disorder",
+        "root:ordin/disorder"
+      ],
+      "morphemeIds": [
+        "prefix:dis",
+        "root:ordin"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05037": {
+      "wordId": "VD-05037",
+      "headword": "disorderly",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:disorderly",
+      "linkIds": [
+        "prefix:dis/disorderly",
+        "root:ordin/disorderly",
+        "suffix:ly-adj/disorderly"
+      ],
+      "morphemeIds": [
+        "prefix:dis",
+        "root:ordin",
+        "suffix:ly-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05040": {
+      "wordId": "VD-05040",
+      "headword": "displace",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:displace",
+      "linkIds": [
+        "prefix:dis/displace"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05041": {
+      "wordId": "VD-05041",
+      "headword": "displeasure",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:displeasure",
+      "linkIds": [
+        "prefix:dis/displeasure",
+        "root:plac/displeasure"
+      ],
+      "morphemeIds": [
+        "prefix:dis",
+        "root:plac"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05045": {
+      "wordId": "VD-05045",
+      "headword": "disqualify",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:disqualify",
+      "linkIds": [
+        "prefix:dis/disqualify"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05048": {
+      "wordId": "VD-05048",
+      "headword": "dissatisfaction",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:dissatisfaction",
+      "linkIds": [
+        "prefix:dis/dissatisfaction",
+        "root:sat/dissatisfaction"
+      ],
+      "morphemeIds": [
+        "prefix:dis",
+        "root:sat"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01392": {
+      "wordId": "VD-01392",
+      "headword": "disappear",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:disappear",
+      "linkIds": [
+        "prefix:dis/disappear"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01399": {
+      "wordId": "VD-01399",
+      "headword": "dislike",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:dislike",
+      "linkIds": [
+        "prefix:dis/dislike"
+      ],
+      "morphemeIds": [
+        "prefix:dis"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01960": {
+      "wordId": "VD-01960",
+      "headword": "replace",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:replace",
+      "linkIds": [
+        "prefix:re/replace"
+      ],
+      "morphemeIds": [
+        "prefix:re"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03912": {
+      "wordId": "VD-03912",
+      "headword": "reproduce",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:reproduce",
+      "linkIds": [
+        "prefix:re/reproduce",
+        "root:duc/reproduce"
+      ],
+      "morphemeIds": [
+        "prefix:re",
+        "root:duc"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03856": {
+      "wordId": "VD-03856",
+      "headword": "react",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:react",
+      "linkIds": [
+        "root:ag/react"
+      ],
+      "morphemeIds": [
+        "root:ag"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03865": {
+      "wordId": "VD-03865",
+      "headword": "reclaim",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:reclaim",
+      "linkIds": [
+        "root:clam/reclaim"
+      ],
+      "morphemeIds": [
+        "root:clam"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06189": {
+      "wordId": "VD-06189",
+      "headword": "reform",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:reform",
+      "linkIds": [
+        "root:form/reform"
+      ],
+      "morphemeIds": [
+        "root:form"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03941": {
+      "wordId": "VD-03941",
+      "headword": "reunify",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:reunify",
+      "linkIds": [
+        "prefix:re/reunify"
+      ],
+      "morphemeIds": [
+        "prefix:re"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05750": {
+      "wordId": "VD-05750",
+      "headword": "misleading",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:misleading",
+      "linkIds": [
+        "root:lead-guide/misleading"
+      ],
+      "morphemeIds": [
+        "root:lead-guide"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05908": {
+      "wordId": "VD-05908",
+      "headword": "overhear",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:overhear",
+      "linkIds": [
+        "prefix:over/overhear",
+        "root:hear-base/overhear"
+      ],
+      "morphemeIds": [
+        "prefix:over",
+        "root:hear-base"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05910": {
+      "wordId": "VD-05910",
+      "headword": "overlook",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:overlook",
+      "linkIds": [
+        "root:look/overlook"
+      ],
+      "morphemeIds": [
+        "root:look"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05912": {
+      "wordId": "VD-05912",
+      "headword": "overshadow",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:overshadow",
+      "linkIds": [
+        "prefix:over/overshadow"
+      ],
+      "morphemeIds": [
+        "prefix:over"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05913": {
+      "wordId": "VD-05913",
+      "headword": "oversize",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:oversize",
+      "linkIds": [
+        "prefix:over/oversize"
+      ],
+      "morphemeIds": [
+        "prefix:over"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05915": {
+      "wordId": "VD-05915",
+      "headword": "overtake",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:overtake",
+      "linkIds": [
+        "root:take/overtake"
+      ],
+      "morphemeIds": [
+        "root:take"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07408": {
+      "wordId": "VD-07408",
+      "headword": "oversee",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:oversee",
+      "linkIds": [
+        "root:see-base/oversee"
+      ],
+      "morphemeIds": [
+        "root:see-base"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03345": {
+      "wordId": "VD-03345",
+      "headword": "intermediate",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:intermediate",
+      "linkIds": [
+        "root:medi/intermediate"
+      ],
+      "morphemeIds": [
+        "root:medi"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05554": {
+      "wordId": "VD-05554",
+      "headword": "interactive",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:interactive",
+      "linkIds": [
+        "suffix:ive/interactive"
+      ],
+      "morphemeIds": [
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05562": {
+      "wordId": "VD-05562",
+      "headword": "intersection",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:intersection",
+      "linkIds": [
+        "root:sec-cut/intersection",
+        "suffix:ion/intersection"
+      ],
+      "morphemeIds": [
+        "root:sec-cut",
+        "suffix:ion"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04151": {
+      "wordId": "VD-04151",
+      "headword": "subconscious",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:subconscious",
+      "linkIds": [
+        "prefix:sub/subconscious",
+        "root:sci/subconscious"
+      ],
+      "morphemeIds": [
+        "prefix:sub",
+        "root:sci"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06508": {
+      "wordId": "VD-06508",
+      "headword": "subtitle",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:subtitle",
+      "linkIds": [
+        "prefix:sub/subtitle"
+      ],
+      "morphemeIds": [
+        "prefix:sub"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07652": {
+      "wordId": "VD-07652",
+      "headword": "suburban",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:suburban",
+      "linkIds": [
+        "prefix:sub/suburban",
+        "root:urb/suburban"
+      ],
+      "morphemeIds": [
+        "prefix:sub",
+        "root:urb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05732": {
+      "wordId": "VD-05732",
+      "headword": "microorganism",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:microorganism",
+      "linkIds": [
+        "prefix:micro/microorganism"
+      ],
+      "morphemeIds": [
+        "prefix:micro"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04877": {
+      "wordId": "VD-04877",
+      "headword": "cooperate",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:cooperate",
+      "linkIds": [
+        "prefix:co/cooperate",
+        "root:oper/cooperate"
+      ],
+      "morphemeIds": [
+        "prefix:co",
+        "root:oper"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03767": {
+      "wordId": "VD-03767",
+      "headword": "preschool",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:preschool",
+      "linkIds": [
+        "prefix:pre/preschool"
+      ],
+      "morphemeIds": [
+        "prefix:pre"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03073": {
+      "wordId": "VD-03073",
+      "headword": "fitness",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:fitness",
+      "linkIds": [
+        "suffix:ness/fitness"
+      ],
+      "morphemeIds": [
+        "suffix:ness"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03278": {
+      "wordId": "VD-03278",
+      "headword": "illness",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:illness",
+      "linkIds": [
+        "suffix:ness/illness"
+      ],
+      "morphemeIds": [
+        "suffix:ness"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03964": {
+      "wordId": "VD-03964",
+      "headword": "sadness",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:sadness",
+      "linkIds": [
+        "suffix:ness/sadness"
+      ],
+      "morphemeIds": [
+        "suffix:ness"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05684": {
+      "wordId": "VD-05684",
+      "headword": "madness",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:madness",
+      "linkIds": [
+        "suffix:ness/madness"
+      ],
+      "morphemeIds": [
+        "suffix:ness"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02248": {
+      "wordId": "VD-02248",
+      "headword": "useful",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:useful",
+      "linkIds": [
+        "root:use-base/useful",
+        "suffix:ful/useful"
+      ],
+      "morphemeIds": [
+        "root:use-base",
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03401": {
+      "wordId": "VD-03401",
+      "headword": "lawful",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:lawful",
+      "linkIds": [
+        "suffix:ful/lawful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04232": {
+      "wordId": "VD-04232",
+      "headword": "thankful",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:thankful",
+      "linkIds": [
+        "suffix:ful/thankful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04401": {
+      "wordId": "VD-04401",
+      "headword": "wasteful",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:wasteful",
+      "linkIds": [
+        "suffix:ful/wasteful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05086": {
+      "wordId": "VD-05086",
+      "headword": "dreadful",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:dreadful",
+      "linkIds": [
+        "suffix:ful/dreadful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05782": {
+      "wordId": "VD-05782",
+      "headword": "mournful",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:mournful",
+      "linkIds": [
+        "suffix:ful/mournful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01594": {
+      "wordId": "VD-01594",
+      "headword": "helpful",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:helpful",
+      "linkIds": [
+        "root:help/helpful",
+        "suffix:ful/helpful"
+      ],
+      "morphemeIds": [
+        "root:help",
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01862": {
+      "wordId": "VD-01862",
+      "headword": "playful",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:playful",
+      "linkIds": [
+        "root:play/playful",
+        "suffix:ful/playful"
+      ],
+      "morphemeIds": [
+        "root:play",
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07380": {
+      "wordId": "VD-07380",
+      "headword": "neglectful",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:neglectful",
+      "linkIds": [
+        "suffix:ful/neglectful"
+      ],
+      "morphemeIds": [
+        "suffix:ful"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02740": {
+      "wordId": "VD-02740",
+      "headword": "countless",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:countless",
+      "linkIds": [
+        "suffix:less/countless"
+      ],
+      "morphemeIds": [
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02965": {
+      "wordId": "VD-02965",
+      "headword": "endless",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:endless",
+      "linkIds": [
+        "root:end-base/endless",
+        "suffix:less/endless"
+      ],
+      "morphemeIds": [
+        "root:end-base",
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03232": {
+      "wordId": "VD-03232",
+      "headword": "helpless",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:helpless",
+      "linkIds": [
+        "root:help/helpless",
+        "suffix:less/helpless"
+      ],
+      "morphemeIds": [
+        "root:help",
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04352": {
+      "wordId": "VD-04352",
+      "headword": "useless",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:useless",
+      "linkIds": [
+        "root:use-base/useless",
+        "suffix:less/useless"
+      ],
+      "morphemeIds": [
+        "root:use-base",
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04491": {
+      "wordId": "VD-04491",
+      "headword": "ageless",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:ageless",
+      "linkIds": [
+        "suffix:less/ageless"
+      ],
+      "morphemeIds": [
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05811": {
+      "wordId": "VD-05811",
+      "headword": "needless",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:needless",
+      "linkIds": [
+        "root:need-base/needless"
+      ],
+      "morphemeIds": [
+        "root:need-base"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02073": {
+      "wordId": "VD-02073",
+      "headword": "sleepless",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:sleepless",
+      "linkIds": [
+        "root:sleep-base/sleepless",
+        "suffix:less/sleepless"
+      ],
+      "morphemeIds": [
+        "root:sleep-base",
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07337": {
+      "wordId": "VD-07337",
+      "headword": "limitless",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:limitless",
+      "linkIds": [
+        "root:limit/limitless",
+        "suffix:less/limitless"
+      ],
+      "morphemeIds": [
+        "root:limit",
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07529": {
+      "wordId": "VD-07529",
+      "headword": "remorseless",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:remorseless",
+      "linkIds": [
+        "suffix:less/remorseless"
+      ],
+      "morphemeIds": [
+        "suffix:less"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02941": {
+      "wordId": "VD-02941",
+      "headword": "electricity",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:electricity",
+      "linkIds": [
+        "root:electr/electricity",
+        "suffix:ity/electricity"
+      ],
+      "morphemeIds": [
+        "root:electr",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03505": {
+      "wordId": "VD-03505",
+      "headword": "minority",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:minority",
+      "linkIds": [
+        "root:min/minority"
+      ],
+      "morphemeIds": [
+        "root:min"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06088": {
+      "wordId": "VD-06088",
+      "headword": "priority",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:priority",
+      "linkIds": [
+        "suffix:ity/priority"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03262": {
+      "wordId": "VD-03262",
+      "headword": "humanity",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:humanity",
+      "linkIds": [
+        "suffix:ity/humanity"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03858": {
+      "wordId": "VD-03858",
+      "headword": "reality",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:reality",
+      "linkIds": [
+        "suffix:ity/reality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04050": {
+      "wordId": "VD-04050",
+      "headword": "similarity",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:similarity",
+      "linkIds": [
+        "root:simil/similarity",
+        "suffix:ity/similarity"
+      ],
+      "morphemeIds": [
+        "root:simil",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05307": {
+      "wordId": "VD-05307",
+      "headword": "functionality",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:functionality",
+      "linkIds": [
+        "suffix:ity/functionality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05468": {
+      "wordId": "VD-05468",
+      "headword": "immortality",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:immortality",
+      "linkIds": [
+        "prefix:in-negative/immortality",
+        "root:mort/immortality",
+        "suffix:ity/immortality"
+      ],
+      "morphemeIds": [
+        "prefix:in-negative",
+        "root:mort",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05771": {
+      "wordId": "VD-05771",
+      "headword": "morality",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:morality",
+      "linkIds": [
+        "suffix:ity/morality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05877": {
+      "wordId": "VD-05877",
+      "headword": "originality",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:originality",
+      "linkIds": [
+        "root:ori-rise/originality",
+        "suffix:ity/originality"
+      ],
+      "morphemeIds": [
+        "root:ori-rise",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00614": {
+      "wordId": "VD-00614",
+      "headword": "nationality",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:nationality",
+      "linkIds": [
+        "root:nat/nationality",
+        "suffix:ity/nationality"
+      ],
+      "morphemeIds": [
+        "root:nat",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01845": {
+      "wordId": "VD-01845",
+      "headword": "personality",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:personality",
+      "linkIds": [
+        "suffix:ity/personality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06038": {
+      "wordId": "VD-06038",
+      "headword": "popularity",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:popularity",
+      "linkIds": [
+        "root:popul/popularity",
+        "suffix:ity/popularity"
+      ],
+      "morphemeIds": [
+        "root:popul",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06120": {
+      "wordId": "VD-06120",
+      "headword": "publicity",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:publicity",
+      "linkIds": [
+        "suffix:ity/publicity"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06127": {
+      "wordId": "VD-06127",
+      "headword": "punctuality",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:punctuality",
+      "linkIds": [
+        "suffix:ity/punctuality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07017": {
+      "wordId": "VD-07017",
+      "headword": "conformity",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:conformity",
+      "linkIds": [
+        "suffix:ity/conformity"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07175": {
+      "wordId": "VD-07175",
+      "headword": "fatality",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:fatality",
+      "linkIds": [
+        "root:fat-fate/fatality",
+        "suffix:ity/fatality"
+      ],
+      "morphemeIds": [
+        "root:fat-fate",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07200": {
+      "wordId": "VD-07200",
+      "headword": "formality",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:formality",
+      "linkIds": [
+        "root:form/formality",
+        "suffix:ity/formality"
+      ],
+      "morphemeIds": [
+        "root:form",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07281": {
+      "wordId": "VD-07281",
+      "headword": "individuality",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:individuality",
+      "linkIds": [
+        "suffix:ity/individuality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07435": {
+      "wordId": "VD-07435",
+      "headword": "physicality",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:physicality",
+      "linkIds": [
+        "suffix:ity/physicality"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07700": {
+      "wordId": "VD-07700",
+      "headword": "tranquility",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:tranquility",
+      "linkIds": [
+        "suffix:ity/tranquility"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07719": {
+      "wordId": "VD-07719",
+      "headword": "uniformity",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:uniformity",
+      "linkIds": [
+        "suffix:ity/uniformity"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07815": {
+      "wordId": "VD-07815",
+      "headword": "angularity",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:angularity",
+      "linkIds": [
+        "root:angul/angularity"
+      ],
+      "morphemeIds": [
+        "root:angul"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08039": {
+      "wordId": "VD-08039",
+      "headword": "elasticity",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:elasticity",
+      "linkIds": [
+        "suffix:ity/elasticity"
+      ],
+      "morphemeIds": [
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08575": {
+      "wordId": "VD-08575",
+      "headword": "timidity",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:timidity",
+      "linkIds": [
+        "root:tim/timidity",
+        "suffix:ity/timidity"
+      ],
+      "morphemeIds": [
+        "root:tim",
+        "suffix:ity"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05186": {
+      "wordId": "VD-05186",
+      "headword": "excessive",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:excessive",
+      "linkIds": [
+        "root:ced/excessive",
+        "suffix:ive/excessive"
+      ],
+      "morphemeIds": [
+        "root:ced",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02345": {
+      "wordId": "VD-02345",
+      "headword": "active",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:active",
+      "linkIds": [
+        "root:ag/active",
+        "suffix:ive/active"
+      ],
+      "morphemeIds": [
+        "root:ag",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02935": {
+      "wordId": "VD-02935",
+      "headword": "effective",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:effective",
+      "linkIds": [
+        "root:fac/effective",
+        "suffix:ive/effective"
+      ],
+      "morphemeIds": [
+        "root:fac",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03288": {
+      "wordId": "VD-03288",
+      "headword": "impressive",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:impressive",
+      "linkIds": [
+        "suffix:ive/impressive"
+      ],
+      "morphemeIds": [
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03470": {
+      "wordId": "VD-03470",
+      "headword": "massive",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:massive",
+      "linkIds": [
+        "suffix:ive/massive"
+      ],
+      "morphemeIds": [
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03746": {
+      "wordId": "VD-03746",
+      "headword": "possessive",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:possessive",
+      "linkIds": [
+        "suffix:ive/possessive"
+      ],
+      "morphemeIds": [
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03791": {
+      "wordId": "VD-03791",
+      "headword": "productive",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:productive",
+      "linkIds": [
+        "root:duc/productive",
+        "suffix:ive/productive"
+      ],
+      "morphemeIds": [
+        "root:duc",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05212": {
+      "wordId": "VD-05212",
+      "headword": "expressive",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:expressive",
+      "linkIds": [
+        "root:press/expressive",
+        "suffix:ive/expressive"
+      ],
+      "morphemeIds": [
+        "root:press",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05855": {
+      "wordId": "VD-05855",
+      "headword": "obsessive",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:obsessive",
+      "linkIds": [
+        "suffix:ive/obsessive"
+      ],
+      "morphemeIds": [
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01146": {
+      "wordId": "VD-01146",
+      "headword": "attractive",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:attractive",
+      "linkIds": [
+        "root:tract/attractive",
+        "suffix:ive/attractive"
+      ],
+      "morphemeIds": [
+        "root:tract",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06188": {
+      "wordId": "VD-06188",
+      "headword": "reflective",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:reflective",
+      "linkIds": [
+        "root:flex/reflective",
+        "suffix:ive/reflective"
+      ],
+      "morphemeIds": [
+        "root:flex",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07483": {
+      "wordId": "VD-07483",
+      "headword": "prospective",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:prospective",
+      "linkIds": [
+        "root:spect/prospective",
+        "suffix:ive/prospective"
+      ],
+      "morphemeIds": [
+        "root:spect",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08468": {
+      "wordId": "VD-08468",
+      "headword": "retrospective",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:retrospective",
+      "linkIds": [
+        "prefix:retro/retrospective",
+        "suffix:ive/retrospective"
+      ],
+      "morphemeIds": [
+        "prefix:retro",
+        "suffix:ive"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03226": {
+      "wordId": "VD-03226",
+      "headword": "heater",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:heater",
+      "linkIds": [
+        "suffix:er-agent/heater"
+      ],
+      "morphemeIds": [
+        "suffix:er-agent"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03782": {
+      "wordId": "VD-03782",
+      "headword": "prisoner",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:prisoner",
+      "linkIds": [
+        "suffix:er-agent/prisoner"
+      ],
+      "morphemeIds": [
+        "suffix:er-agent"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04604": {
+      "wordId": "VD-04604",
+      "headword": "banker",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:banker",
+      "linkIds": [
+        "suffix:er-agent/banker"
+      ],
+      "morphemeIds": [
+        "suffix:er-agent"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05318": {
+      "wordId": "VD-05318",
+      "headword": "gardener",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:gardener",
+      "linkIds": [
+        "suffix:er-agent/gardener"
+      ],
+      "morphemeIds": [
+        "suffix:er-agent"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01275": {
+      "wordId": "VD-01275",
+      "headword": "cleaner",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:cleaner",
+      "linkIds": [
+        "root:clean-base/cleaner",
+        "suffix:er-agent/cleaner"
+      ],
+      "morphemeIds": [
+        "root:clean-base",
+        "suffix:er-agent"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02434": {
+      "wordId": "VD-02434",
+      "headword": "artist",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:artist",
+      "linkIds": [
+        "root:art/artist",
+        "suffix:ist/artist"
+      ],
+      "morphemeIds": [
+        "root:art",
+        "suffix:ist"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02986": {
+      "wordId": "VD-02986",
+      "headword": "environmentalist",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:environmentalist",
+      "linkIds": [
+        "suffix:ist/environmentalist"
+      ],
+      "morphemeIds": [
+        "suffix:ist"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03557": {
+      "wordId": "VD-03557",
+      "headword": "nationalist",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:nationalist",
+      "linkIds": [
+        "root:nat/nationalist",
+        "suffix:ist/nationalist"
+      ],
+      "morphemeIds": [
+        "root:nat",
+        "suffix:ist"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04090": {
+      "wordId": "VD-04090",
+      "headword": "specialist",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:specialist",
+      "linkIds": [
+        "suffix:ist/specialist"
+      ],
+      "morphemeIds": [
+        "suffix:ist"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08253": {
+      "wordId": "VD-08253",
+      "headword": "lyricist",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:lyricist",
+      "linkIds": [
+        "suffix:ist/lyricist"
+      ],
+      "morphemeIds": [
+        "suffix:ist"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07472": {
+      "wordId": "VD-07472",
+      "headword": "professionalism",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:professionalism",
+      "linkIds": [
+        "suffix:ism/professionalism"
+      ],
+      "morphemeIds": [
+        "suffix:ism"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07505": {
+      "wordId": "VD-07505",
+      "headword": "realism",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:realism",
+      "linkIds": [
+        "suffix:ism/realism"
+      ],
+      "morphemeIds": [
+        "suffix:ism"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08304": {
+      "wordId": "VD-08304",
+      "headword": "modernism",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:modernism",
+      "linkIds": [
+        "suffix:ism/modernism"
+      ],
+      "morphemeIds": [
+        "suffix:ism"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02902": {
+      "wordId": "VD-02902",
+      "headword": "downward",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:downward",
+      "linkIds": [
+        "suffix:ward/downward"
+      ],
+      "morphemeIds": [
+        "suffix:ward"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02647": {
+      "wordId": "VD-02647",
+      "headword": "classical",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:classical",
+      "linkIds": [
+        "suffix:al-adj/classical"
+      ],
+      "morphemeIds": [
+        "suffix:al-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02940": {
+      "wordId": "VD-02940",
+      "headword": "electrical",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:electrical",
+      "linkIds": [
+        "root:electr/electrical",
+        "suffix:al-adj/electrical"
+      ],
+      "morphemeIds": [
+        "root:electr",
+        "suffix:al-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03145": {
+      "wordId": "VD-03145",
+      "headword": "geographical",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:geographical",
+      "linkIds": [
+        "root:geo/geographical"
+      ],
+      "morphemeIds": [
+        "root:geo"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03242": {
+      "wordId": "VD-03242",
+      "headword": "historical",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:historical",
+      "linkIds": [
+        "suffix:al-adj/historical",
+        "suffix:ical/historical"
+      ],
+      "morphemeIds": [
+        "suffix:al-adj",
+        "suffix:ical"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07012": {
+      "wordId": "VD-07012",
+      "headword": "conditional",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:conditional",
+      "linkIds": [
+        "suffix:al-adj/conditional"
+      ],
+      "morphemeIds": [
+        "suffix:al-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05963": {
+      "wordId": "VD-05963",
+      "headword": "payment",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:payment",
+      "linkIds": [
+        "suffix:ment/payment"
+      ],
+      "morphemeIds": [
+        "suffix:ment"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03047": {
+      "wordId": "VD-03047",
+      "headword": "fashionable",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:fashionable",
+      "linkIds": [
+        "suffix:able/fashionable"
+      ],
+      "morphemeIds": [
+        "suffix:able"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06096": {
+      "wordId": "VD-06096",
+      "headword": "profitable",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:profitable",
+      "linkIds": [
+        "suffix:able/profitable"
+      ],
+      "morphemeIds": [
+        "suffix:able"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05812": {
+      "wordId": "VD-05812",
+      "headword": "needy",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:needy",
+      "linkIds": [
+        "root:need-base/needy"
+      ],
+      "morphemeIds": [
+        "root:need-base"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01555": {
+      "wordId": "VD-01555",
+      "headword": "golden",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:golden",
+      "linkIds": [
+        "suffix:en-adj/golden"
+      ],
+      "morphemeIds": [
+        "suffix:en-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02298": {
+      "wordId": "VD-02298",
+      "headword": "wooden",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:wooden",
+      "linkIds": [
+        "suffix:en-adj/wooden"
+      ],
+      "morphemeIds": [
+        "suffix:en-adj"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01529": {
+      "wordId": "VD-01529",
+      "headword": "freedom",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:freedom",
+      "linkIds": [
+        "root:free-base/freedom",
+        "suffix:dom/freedom"
+      ],
+      "morphemeIds": [
+        "root:free-base",
+        "suffix:dom"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01666": {
+      "wordId": "VD-01666",
+      "headword": "kingdom",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:kingdom",
+      "linkIds": [
+        "suffix:dom/kingdom"
+      ],
+      "morphemeIds": [
+        "suffix:dom"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03211": {
+      "wordId": "VD-03211",
+      "headword": "hardship",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:hardship",
+      "linkIds": [
+        "root:hard-base/hardship",
+        "suffix:ship/hardship"
+      ],
+      "morphemeIds": [
+        "root:hard-base",
+        "suffix:ship"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07621": {
+      "wordId": "VD-07621",
+      "headword": "sponsorship",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:sponsorship",
+      "linkIds": [
+        "root:spond/sponsorship",
+        "suffix:ship/sponsorship"
+      ],
+      "morphemeIds": [
+        "root:spond",
+        "suffix:ship"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06284": {
+      "wordId": "VD-06284",
+      "headword": "ruinous",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:ruinous",
+      "linkIds": [
+        "suffix:ous/ruinous"
+      ],
+      "morphemeIds": [
+        "suffix:ous"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03999": {
+      "wordId": "VD-03999",
+      "headword": "secretly",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:secretly",
+      "linkIds": [
+        "suffix:ly-adverb/secretly"
+      ],
+      "morphemeIds": [
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07215": {
+      "wordId": "VD-07215",
+      "headword": "geologically",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:geologically",
+      "linkIds": [
+        "root:geo/geologically",
+        "root:log/geologically"
+      ],
+      "morphemeIds": [
+        "root:geo",
+        "root:log"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07607": {
+      "wordId": "VD-07607",
+      "headword": "smugly",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:smugly",
+      "linkIds": [
+        "suffix:ly-adverb/smugly"
+      ],
+      "morphemeIds": [
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07681": {
+      "wordId": "VD-07681",
+      "headword": "tautly",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:tautly",
+      "linkIds": [
+        "suffix:ly-adverb/tautly"
+      ],
+      "morphemeIds": [
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07768": {
+      "wordId": "VD-07768",
+      "headword": "wickedly",
+      "cefrHeadword": "C1",
+      "wordBreakdownId": "wb:modern:wickedly",
+      "linkIds": [
+        "suffix:ly-adverb/wickedly"
+      ],
+      "morphemeIds": [
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-07821": {
+      "wordId": "VD-07821",
+      "headword": "anthropologically",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:anthropologically",
+      "linkIds": [
+        "root:anthrop/anthropologically"
+      ],
+      "morphemeIds": [
+        "root:anthrop"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-08477": {
+      "wordId": "VD-08477",
+      "headword": "rhetorically",
+      "cefrHeadword": "C2",
+      "wordBreakdownId": "wb:modern:rhetorically",
+      "linkIds": [
+        "suffix:ly-adverb/rhetorically"
+      ],
+      "morphemeIds": [
+        "suffix:ly-adverb"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00081": {
+      "wordId": "VD-00081",
+      "headword": "bedroom",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:bedroom",
+      "linkIds": [
+        "suffix:room/bedroom"
+      ],
+      "morphemeIds": [
+        "suffix:room"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00184": {
+      "wordId": "VD-00184",
+      "headword": "classroom",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:classroom",
+      "linkIds": [
+        "suffix:room/classroom"
+      ],
+      "morphemeIds": [
+        "suffix:room"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00456": {
+      "wordId": "VD-00456",
+      "headword": "homework",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:homework",
+      "linkIds": [
+        "root:home/homework"
+      ],
+      "morphemeIds": [
+        "root:home"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03260": {
+      "wordId": "VD-03260",
+      "headword": "housework",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:housework",
+      "linkIds": [
+        "root:house/housework"
+      ],
+      "morphemeIds": [
+        "root:house"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01201": {
+      "wordId": "VD-01201",
+      "headword": "bookcase",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:bookcase",
+      "linkIds": [
+        "root:book/bookcase"
+      ],
+      "morphemeIds": [
+        "root:book"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00111": {
+      "wordId": "VD-00111",
+      "headword": "bookstore",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:bookstore",
+      "linkIds": [
+        "root:book/bookstore"
+      ],
+      "morphemeIds": [
+        "root:book"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02180": {
+      "wordId": "VD-02180",
+      "headword": "textbook",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:textbook",
+      "linkIds": [
+        "root:book/textbook"
+      ],
+      "morphemeIds": [
+        "root:book"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02300": {
+      "wordId": "VD-02300",
+      "headword": "worldwide",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:worldwide",
+      "linkIds": [
+        "suffix:wide/worldwide"
+      ],
+      "morphemeIds": [
+        "suffix:wide"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04402": {
+      "wordId": "VD-04402",
+      "headword": "waterfall",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:waterfall",
+      "linkIds": [
+        "root:fall-base/waterfall",
+        "root:water/waterfall"
+      ],
+      "morphemeIds": [
+        "root:fall-base",
+        "root:water"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-06803": {
+      "wordId": "VD-06803",
+      "headword": "waterproof",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:waterproof",
+      "linkIds": [
+        "root:water/waterproof",
+        "suffix:proof/waterproof"
+      ],
+      "morphemeIds": [
+        "root:water",
+        "suffix:proof"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02146": {
+      "wordId": "VD-02146",
+      "headword": "sunlight",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:sunlight",
+      "linkIds": [
+        "root:light-illumination/sunlight"
+      ],
+      "morphemeIds": [
+        "root:light-illumination"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01359": {
+      "wordId": "VD-01359",
+      "headword": "daylight",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:daylight",
+      "linkIds": [
+        "root:day/daylight",
+        "root:light-illumination/daylight"
+      ],
+      "morphemeIds": [
+        "root:day",
+        "root:light-illumination"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04952": {
+      "wordId": "VD-04952",
+      "headword": "daytime",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:daytime",
+      "linkIds": [
+        "root:day/daytime"
+      ],
+      "morphemeIds": [
+        "root:day"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02273": {
+      "wordId": "VD-02273",
+      "headword": "weekday",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:weekday",
+      "linkIds": [
+        "root:day/weekday"
+      ],
+      "morphemeIds": [
+        "root:day"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01020": {
+      "wordId": "VD-01020",
+      "headword": "weekend",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:weekend",
+      "linkIds": [
+        "root:end-base/weekend"
+      ],
+      "morphemeIds": [
+        "root:end-base"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-04433": {
+      "wordId": "VD-04433",
+      "headword": "workplace",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:workplace",
+      "linkIds": [
+        "root:work/workplace"
+      ],
+      "morphemeIds": [
+        "root:work"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03204": {
+      "wordId": "VD-03204",
+      "headword": "handshake",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:handshake",
+      "linkIds": [
+        "root:hand/handshake"
+      ],
+      "morphemeIds": [
+        "root:hand"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03205": {
+      "wordId": "VD-03205",
+      "headword": "handwriting",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:handwriting",
+      "linkIds": [
+        "root:hand/handwriting"
+      ],
+      "morphemeIds": [
+        "root:hand"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-00455": {
+      "wordId": "VD-00455",
+      "headword": "hometown",
+      "cefrHeadword": "A1",
+      "wordBreakdownId": "wb:modern:hometown",
+      "linkIds": [
+        "root:home/hometown"
+      ],
+      "morphemeIds": [
+        "root:home"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-03259": {
+      "wordId": "VD-03259",
+      "headword": "household",
+      "cefrHeadword": "B1",
+      "wordBreakdownId": "wb:modern:household",
+      "linkIds": [
+        "root:hold/household",
+        "root:house/household"
+      ],
+      "morphemeIds": [
+        "root:hold",
+        "root:house"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05427": {
+      "wordId": "VD-05427",
+      "headword": "housekeeper",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:housekeeper",
+      "linkIds": [
+        "root:house/housekeeper"
+      ],
+      "morphemeIds": [
+        "root:house"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-02019": {
+      "wordId": "VD-02019",
+      "headword": "seafood",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:seafood",
+      "linkIds": [
+        "root:food/seafood"
+      ],
+      "morphemeIds": [
+        "root:food"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01423": {
+      "wordId": "VD-01423",
+      "headword": "earthquake",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:earthquake",
+      "linkIds": [
+        "root:earth/earthquake"
+      ],
+      "morphemeIds": [
+        "root:earth"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-05769": {
+      "wordId": "VD-05769",
+      "headword": "moonlight",
+      "cefrHeadword": "B2",
+      "wordBreakdownId": "wb:modern:moonlight",
+      "linkIds": [
+        "root:light-illumination/moonlight"
+      ],
+      "morphemeIds": [
+        "root:light-illumination"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01599": {
+      "wordId": "VD-01599",
+      "headword": "highway",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:highway",
+      "linkIds": [
+        "root:way/highway"
+      ],
+      "morphemeIds": [
+        "root:way"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    },
+    "VD-01802": {
+      "wordId": "VD-01802",
+      "headword": "online",
+      "cefrHeadword": "A2",
+      "wordBreakdownId": "wb:modern:online",
+      "linkIds": [
+        "prefix:on/online"
+      ],
+      "morphemeIds": [
+        "prefix:on"
+      ],
+      "sourceStatus": "candidate-master-exact",
+      "etymologyVerified": false
+    }
+  },
+  "byMorphemeId": {
+    "prefix:un-negative": [
+      {
+        "wordId": "VD-06685",
+        "headword": "uncomfortably",
+        "wordBreakdownId": "wb:modern:uncomfortably"
+      }
+    ],
+    "prefix:un-reversal": [
+      {
+        "wordId": "VD-06737",
+        "headword": "untie",
+        "wordBreakdownId": "wb:modern:untie"
+      }
+    ],
+    "prefix:in-negative": [
+      {
+        "wordId": "VD-03357",
+        "headword": "involuntarily",
+        "wordBreakdownId": "wb:modern:involuntarily"
+      },
+      {
+        "wordId": "VD-05507",
+        "headword": "indispensable",
+        "wordBreakdownId": "wb:modern:indispensable"
+      },
+      {
+        "wordId": "VD-07304",
+        "headword": "insubordinate",
+        "wordBreakdownId": "wb:modern:insubordinate"
+      },
+      {
+        "wordId": "VD-05468",
+        "headword": "immortality",
+        "wordBreakdownId": "wb:modern:immortality"
+      }
+    ],
+    "suffix:ly-adverb": [
+      {
+        "wordId": "VD-03357",
+        "headword": "involuntarily",
+        "wordBreakdownId": "wb:modern:involuntarily"
+      },
+      {
+        "wordId": "VD-03999",
+        "headword": "secretly",
+        "wordBreakdownId": "wb:modern:secretly"
+      },
+      {
+        "wordId": "VD-07607",
+        "headword": "smugly",
+        "wordBreakdownId": "wb:modern:smugly"
+      },
+      {
+        "wordId": "VD-07681",
+        "headword": "tautly",
+        "wordBreakdownId": "wb:modern:tautly"
+      },
+      {
+        "wordId": "VD-07768",
+        "headword": "wickedly",
+        "wordBreakdownId": "wb:modern:wickedly"
+      },
+      {
+        "wordId": "VD-08477",
+        "headword": "rhetorically",
+        "wordBreakdownId": "wb:modern:rhetorically"
+      }
+    ],
+    "root:ordin": [
+      {
+        "wordId": "VD-07304",
+        "headword": "insubordinate",
+        "wordBreakdownId": "wb:modern:insubordinate"
+      },
+      {
+        "wordId": "VD-05036",
+        "headword": "disorder",
+        "wordBreakdownId": "wb:modern:disorder"
+      },
+      {
+        "wordId": "VD-05037",
+        "headword": "disorderly",
+        "wordBreakdownId": "wb:modern:disorderly"
+      }
+    ],
+    "prefix:dis": [
+      {
+        "wordId": "VD-01390",
+        "headword": "disadvantage",
+        "wordBreakdownId": "wb:modern:disadvantage"
+      },
+      {
+        "wordId": "VD-02871",
+        "headword": "discomfort",
+        "wordBreakdownId": "wb:modern:discomfort"
+      },
+      {
+        "wordId": "VD-05023",
+        "headword": "disapproval",
+        "wordBreakdownId": "wb:modern:disapproval"
+      },
+      {
+        "wordId": "VD-05036",
+        "headword": "disorder",
+        "wordBreakdownId": "wb:modern:disorder"
+      },
+      {
+        "wordId": "VD-05037",
+        "headword": "disorderly",
+        "wordBreakdownId": "wb:modern:disorderly"
+      },
+      {
+        "wordId": "VD-05040",
+        "headword": "displace",
+        "wordBreakdownId": "wb:modern:displace"
+      },
+      {
+        "wordId": "VD-05041",
+        "headword": "displeasure",
+        "wordBreakdownId": "wb:modern:displeasure"
+      },
+      {
+        "wordId": "VD-05045",
+        "headword": "disqualify",
+        "wordBreakdownId": "wb:modern:disqualify"
+      },
+      {
+        "wordId": "VD-05048",
+        "headword": "dissatisfaction",
+        "wordBreakdownId": "wb:modern:dissatisfaction"
+      },
+      {
+        "wordId": "VD-01392",
+        "headword": "disappear",
+        "wordBreakdownId": "wb:modern:disappear"
+      },
+      {
+        "wordId": "VD-01399",
+        "headword": "dislike",
+        "wordBreakdownId": "wb:modern:dislike"
+      }
+    ],
+    "root:prob": [
+      {
+        "wordId": "VD-05023",
+        "headword": "disapproval",
+        "wordBreakdownId": "wb:modern:disapproval"
+      }
+    ],
+    "suffix:al-adj": [
+      {
+        "wordId": "VD-05023",
+        "headword": "disapproval",
+        "wordBreakdownId": "wb:modern:disapproval"
+      },
+      {
+        "wordId": "VD-02647",
+        "headword": "classical",
+        "wordBreakdownId": "wb:modern:classical"
+      },
+      {
+        "wordId": "VD-02940",
+        "headword": "electrical",
+        "wordBreakdownId": "wb:modern:electrical"
+      },
+      {
+        "wordId": "VD-03242",
+        "headword": "historical",
+        "wordBreakdownId": "wb:modern:historical"
+      },
+      {
+        "wordId": "VD-07012",
+        "headword": "conditional",
+        "wordBreakdownId": "wb:modern:conditional"
+      }
+    ],
+    "root:cred": [
+      {
+        "wordId": "VD-05029",
+        "headword": "discredit",
+        "wordBreakdownId": "wb:modern:discredit"
+      }
+    ],
+    "suffix:ly-adj": [
+      {
+        "wordId": "VD-05037",
+        "headword": "disorderly",
+        "wordBreakdownId": "wb:modern:disorderly"
+      }
+    ],
+    "root:plac": [
+      {
+        "wordId": "VD-05041",
+        "headword": "displeasure",
+        "wordBreakdownId": "wb:modern:displeasure"
+      }
+    ],
+    "root:sat": [
+      {
+        "wordId": "VD-05048",
+        "headword": "dissatisfaction",
+        "wordBreakdownId": "wb:modern:dissatisfaction"
+      }
+    ],
+    "prefix:re": [
+      {
+        "wordId": "VD-01960",
+        "headword": "replace",
+        "wordBreakdownId": "wb:modern:replace"
+      },
+      {
+        "wordId": "VD-03912",
+        "headword": "reproduce",
+        "wordBreakdownId": "wb:modern:reproduce"
+      },
+      {
+        "wordId": "VD-03941",
+        "headword": "reunify",
+        "wordBreakdownId": "wb:modern:reunify"
+      }
+    ],
+    "root:duc": [
+      {
+        "wordId": "VD-03912",
+        "headword": "reproduce",
+        "wordBreakdownId": "wb:modern:reproduce"
+      },
+      {
+        "wordId": "VD-03791",
+        "headword": "productive",
+        "wordBreakdownId": "wb:modern:productive"
+      }
+    ],
+    "root:ag": [
+      {
+        "wordId": "VD-03856",
+        "headword": "react",
+        "wordBreakdownId": "wb:modern:react"
+      },
+      {
+        "wordId": "VD-02345",
+        "headword": "active",
+        "wordBreakdownId": "wb:modern:active"
+      }
+    ],
+    "root:clam": [
+      {
+        "wordId": "VD-03865",
+        "headword": "reclaim",
+        "wordBreakdownId": "wb:modern:reclaim"
+      }
+    ],
+    "root:form": [
+      {
+        "wordId": "VD-06189",
+        "headword": "reform",
+        "wordBreakdownId": "wb:modern:reform"
+      },
+      {
+        "wordId": "VD-07200",
+        "headword": "formality",
+        "wordBreakdownId": "wb:modern:formality"
+      }
+    ],
+    "root:lead-guide": [
+      {
+        "wordId": "VD-05750",
+        "headword": "misleading",
+        "wordBreakdownId": "wb:modern:misleading"
+      }
+    ],
+    "prefix:over": [
+      {
+        "wordId": "VD-05908",
+        "headword": "overhear",
+        "wordBreakdownId": "wb:modern:overhear"
+      },
+      {
+        "wordId": "VD-05912",
+        "headword": "overshadow",
+        "wordBreakdownId": "wb:modern:overshadow"
+      },
+      {
+        "wordId": "VD-05913",
+        "headword": "oversize",
+        "wordBreakdownId": "wb:modern:oversize"
+      }
+    ],
+    "root:hear-base": [
+      {
+        "wordId": "VD-05908",
+        "headword": "overhear",
+        "wordBreakdownId": "wb:modern:overhear"
+      }
+    ],
+    "root:look": [
+      {
+        "wordId": "VD-05910",
+        "headword": "overlook",
+        "wordBreakdownId": "wb:modern:overlook"
+      }
+    ],
+    "root:take": [
+      {
+        "wordId": "VD-05915",
+        "headword": "overtake",
+        "wordBreakdownId": "wb:modern:overtake"
+      }
+    ],
+    "root:see-base": [
+      {
+        "wordId": "VD-07408",
+        "headword": "oversee",
+        "wordBreakdownId": "wb:modern:oversee"
+      }
+    ],
+    "root:medi": [
+      {
+        "wordId": "VD-03345",
+        "headword": "intermediate",
+        "wordBreakdownId": "wb:modern:intermediate"
+      }
+    ],
+    "suffix:ive": [
+      {
+        "wordId": "VD-05554",
+        "headword": "interactive",
+        "wordBreakdownId": "wb:modern:interactive"
+      },
+      {
+        "wordId": "VD-05186",
+        "headword": "excessive",
+        "wordBreakdownId": "wb:modern:excessive"
+      },
+      {
+        "wordId": "VD-02345",
+        "headword": "active",
+        "wordBreakdownId": "wb:modern:active"
+      },
+      {
+        "wordId": "VD-02935",
+        "headword": "effective",
+        "wordBreakdownId": "wb:modern:effective"
+      },
+      {
+        "wordId": "VD-03288",
+        "headword": "impressive",
+        "wordBreakdownId": "wb:modern:impressive"
+      },
+      {
+        "wordId": "VD-03470",
+        "headword": "massive",
+        "wordBreakdownId": "wb:modern:massive"
+      },
+      {
+        "wordId": "VD-03746",
+        "headword": "possessive",
+        "wordBreakdownId": "wb:modern:possessive"
+      },
+      {
+        "wordId": "VD-03791",
+        "headword": "productive",
+        "wordBreakdownId": "wb:modern:productive"
+      },
+      {
+        "wordId": "VD-05212",
+        "headword": "expressive",
+        "wordBreakdownId": "wb:modern:expressive"
+      },
+      {
+        "wordId": "VD-05855",
+        "headword": "obsessive",
+        "wordBreakdownId": "wb:modern:obsessive"
+      },
+      {
+        "wordId": "VD-01146",
+        "headword": "attractive",
+        "wordBreakdownId": "wb:modern:attractive"
+      },
+      {
+        "wordId": "VD-06188",
+        "headword": "reflective",
+        "wordBreakdownId": "wb:modern:reflective"
+      },
+      {
+        "wordId": "VD-07483",
+        "headword": "prospective",
+        "wordBreakdownId": "wb:modern:prospective"
+      },
+      {
+        "wordId": "VD-08468",
+        "headword": "retrospective",
+        "wordBreakdownId": "wb:modern:retrospective"
+      }
+    ],
+    "root:sec-cut": [
+      {
+        "wordId": "VD-05562",
+        "headword": "intersection",
+        "wordBreakdownId": "wb:modern:intersection"
+      }
+    ],
+    "suffix:ion": [
+      {
+        "wordId": "VD-05562",
+        "headword": "intersection",
+        "wordBreakdownId": "wb:modern:intersection"
+      }
+    ],
+    "prefix:sub": [
+      {
+        "wordId": "VD-04151",
+        "headword": "subconscious",
+        "wordBreakdownId": "wb:modern:subconscious"
+      },
+      {
+        "wordId": "VD-06508",
+        "headword": "subtitle",
+        "wordBreakdownId": "wb:modern:subtitle"
+      },
+      {
+        "wordId": "VD-07652",
+        "headword": "suburban",
+        "wordBreakdownId": "wb:modern:suburban"
+      }
+    ],
+    "root:sci": [
+      {
+        "wordId": "VD-04151",
+        "headword": "subconscious",
+        "wordBreakdownId": "wb:modern:subconscious"
+      }
+    ],
+    "root:urb": [
+      {
+        "wordId": "VD-07652",
+        "headword": "suburban",
+        "wordBreakdownId": "wb:modern:suburban"
+      }
+    ],
+    "prefix:micro": [
+      {
+        "wordId": "VD-05732",
+        "headword": "microorganism",
+        "wordBreakdownId": "wb:modern:microorganism"
+      }
+    ],
+    "prefix:co": [
+      {
+        "wordId": "VD-04877",
+        "headword": "cooperate",
+        "wordBreakdownId": "wb:modern:cooperate"
+      }
+    ],
+    "root:oper": [
+      {
+        "wordId": "VD-04877",
+        "headword": "cooperate",
+        "wordBreakdownId": "wb:modern:cooperate"
+      }
+    ],
+    "prefix:pre": [
+      {
+        "wordId": "VD-03767",
+        "headword": "preschool",
+        "wordBreakdownId": "wb:modern:preschool"
+      }
+    ],
+    "suffix:ness": [
+      {
+        "wordId": "VD-03073",
+        "headword": "fitness",
+        "wordBreakdownId": "wb:modern:fitness"
+      },
+      {
+        "wordId": "VD-03278",
+        "headword": "illness",
+        "wordBreakdownId": "wb:modern:illness"
+      },
+      {
+        "wordId": "VD-03964",
+        "headword": "sadness",
+        "wordBreakdownId": "wb:modern:sadness"
+      },
+      {
+        "wordId": "VD-05684",
+        "headword": "madness",
+        "wordBreakdownId": "wb:modern:madness"
+      }
+    ],
+    "root:use-base": [
+      {
+        "wordId": "VD-02248",
+        "headword": "useful",
+        "wordBreakdownId": "wb:modern:useful"
+      },
+      {
+        "wordId": "VD-04352",
+        "headword": "useless",
+        "wordBreakdownId": "wb:modern:useless"
+      }
+    ],
+    "suffix:ful": [
+      {
+        "wordId": "VD-02248",
+        "headword": "useful",
+        "wordBreakdownId": "wb:modern:useful"
+      },
+      {
+        "wordId": "VD-03401",
+        "headword": "lawful",
+        "wordBreakdownId": "wb:modern:lawful"
+      },
+      {
+        "wordId": "VD-04232",
+        "headword": "thankful",
+        "wordBreakdownId": "wb:modern:thankful"
+      },
+      {
+        "wordId": "VD-04401",
+        "headword": "wasteful",
+        "wordBreakdownId": "wb:modern:wasteful"
+      },
+      {
+        "wordId": "VD-05086",
+        "headword": "dreadful",
+        "wordBreakdownId": "wb:modern:dreadful"
+      },
+      {
+        "wordId": "VD-05782",
+        "headword": "mournful",
+        "wordBreakdownId": "wb:modern:mournful"
+      },
+      {
+        "wordId": "VD-01594",
+        "headword": "helpful",
+        "wordBreakdownId": "wb:modern:helpful"
+      },
+      {
+        "wordId": "VD-01862",
+        "headword": "playful",
+        "wordBreakdownId": "wb:modern:playful"
+      },
+      {
+        "wordId": "VD-07380",
+        "headword": "neglectful",
+        "wordBreakdownId": "wb:modern:neglectful"
+      }
+    ],
+    "root:help": [
+      {
+        "wordId": "VD-01594",
+        "headword": "helpful",
+        "wordBreakdownId": "wb:modern:helpful"
+      },
+      {
+        "wordId": "VD-03232",
+        "headword": "helpless",
+        "wordBreakdownId": "wb:modern:helpless"
+      }
+    ],
+    "root:play": [
+      {
+        "wordId": "VD-01862",
+        "headword": "playful",
+        "wordBreakdownId": "wb:modern:playful"
+      }
+    ],
+    "suffix:less": [
+      {
+        "wordId": "VD-02740",
+        "headword": "countless",
+        "wordBreakdownId": "wb:modern:countless"
+      },
+      {
+        "wordId": "VD-02965",
+        "headword": "endless",
+        "wordBreakdownId": "wb:modern:endless"
+      },
+      {
+        "wordId": "VD-03232",
+        "headword": "helpless",
+        "wordBreakdownId": "wb:modern:helpless"
+      },
+      {
+        "wordId": "VD-04352",
+        "headword": "useless",
+        "wordBreakdownId": "wb:modern:useless"
+      },
+      {
+        "wordId": "VD-04491",
+        "headword": "ageless",
+        "wordBreakdownId": "wb:modern:ageless"
+      },
+      {
+        "wordId": "VD-02073",
+        "headword": "sleepless",
+        "wordBreakdownId": "wb:modern:sleepless"
+      },
+      {
+        "wordId": "VD-07337",
+        "headword": "limitless",
+        "wordBreakdownId": "wb:modern:limitless"
+      },
+      {
+        "wordId": "VD-07529",
+        "headword": "remorseless",
+        "wordBreakdownId": "wb:modern:remorseless"
+      }
+    ],
+    "root:end-base": [
+      {
+        "wordId": "VD-02965",
+        "headword": "endless",
+        "wordBreakdownId": "wb:modern:endless"
+      },
+      {
+        "wordId": "VD-01020",
+        "headword": "weekend",
+        "wordBreakdownId": "wb:modern:weekend"
+      }
+    ],
+    "root:need-base": [
+      {
+        "wordId": "VD-05811",
+        "headword": "needless",
+        "wordBreakdownId": "wb:modern:needless"
+      },
+      {
+        "wordId": "VD-05812",
+        "headword": "needy",
+        "wordBreakdownId": "wb:modern:needy"
+      }
+    ],
+    "root:sleep-base": [
+      {
+        "wordId": "VD-02073",
+        "headword": "sleepless",
+        "wordBreakdownId": "wb:modern:sleepless"
+      }
+    ],
+    "root:limit": [
+      {
+        "wordId": "VD-07337",
+        "headword": "limitless",
+        "wordBreakdownId": "wb:modern:limitless"
+      }
+    ],
+    "root:electr": [
+      {
+        "wordId": "VD-02941",
+        "headword": "electricity",
+        "wordBreakdownId": "wb:modern:electricity"
+      },
+      {
+        "wordId": "VD-02940",
+        "headword": "electrical",
+        "wordBreakdownId": "wb:modern:electrical"
+      }
+    ],
+    "suffix:ity": [
+      {
+        "wordId": "VD-02941",
+        "headword": "electricity",
+        "wordBreakdownId": "wb:modern:electricity"
+      },
+      {
+        "wordId": "VD-06088",
+        "headword": "priority",
+        "wordBreakdownId": "wb:modern:priority"
+      },
+      {
+        "wordId": "VD-03262",
+        "headword": "humanity",
+        "wordBreakdownId": "wb:modern:humanity"
+      },
+      {
+        "wordId": "VD-03858",
+        "headword": "reality",
+        "wordBreakdownId": "wb:modern:reality"
+      },
+      {
+        "wordId": "VD-04050",
+        "headword": "similarity",
+        "wordBreakdownId": "wb:modern:similarity"
+      },
+      {
+        "wordId": "VD-05307",
+        "headword": "functionality",
+        "wordBreakdownId": "wb:modern:functionality"
+      },
+      {
+        "wordId": "VD-05468",
+        "headword": "immortality",
+        "wordBreakdownId": "wb:modern:immortality"
+      },
+      {
+        "wordId": "VD-05771",
+        "headword": "morality",
+        "wordBreakdownId": "wb:modern:morality"
+      },
+      {
+        "wordId": "VD-05877",
+        "headword": "originality",
+        "wordBreakdownId": "wb:modern:originality"
+      },
+      {
+        "wordId": "VD-00614",
+        "headword": "nationality",
+        "wordBreakdownId": "wb:modern:nationality"
+      },
+      {
+        "wordId": "VD-01845",
+        "headword": "personality",
+        "wordBreakdownId": "wb:modern:personality"
+      },
+      {
+        "wordId": "VD-06038",
+        "headword": "popularity",
+        "wordBreakdownId": "wb:modern:popularity"
+      },
+      {
+        "wordId": "VD-06120",
+        "headword": "publicity",
+        "wordBreakdownId": "wb:modern:publicity"
+      },
+      {
+        "wordId": "VD-06127",
+        "headword": "punctuality",
+        "wordBreakdownId": "wb:modern:punctuality"
+      },
+      {
+        "wordId": "VD-07017",
+        "headword": "conformity",
+        "wordBreakdownId": "wb:modern:conformity"
+      },
+      {
+        "wordId": "VD-07175",
+        "headword": "fatality",
+        "wordBreakdownId": "wb:modern:fatality"
+      },
+      {
+        "wordId": "VD-07200",
+        "headword": "formality",
+        "wordBreakdownId": "wb:modern:formality"
+      },
+      {
+        "wordId": "VD-07281",
+        "headword": "individuality",
+        "wordBreakdownId": "wb:modern:individuality"
+      },
+      {
+        "wordId": "VD-07435",
+        "headword": "physicality",
+        "wordBreakdownId": "wb:modern:physicality"
+      },
+      {
+        "wordId": "VD-07700",
+        "headword": "tranquility",
+        "wordBreakdownId": "wb:modern:tranquility"
+      },
+      {
+        "wordId": "VD-07719",
+        "headword": "uniformity",
+        "wordBreakdownId": "wb:modern:uniformity"
+      },
+      {
+        "wordId": "VD-08039",
+        "headword": "elasticity",
+        "wordBreakdownId": "wb:modern:elasticity"
+      },
+      {
+        "wordId": "VD-08575",
+        "headword": "timidity",
+        "wordBreakdownId": "wb:modern:timidity"
+      }
+    ],
+    "root:min": [
+      {
+        "wordId": "VD-03505",
+        "headword": "minority",
+        "wordBreakdownId": "wb:modern:minority"
+      }
+    ],
+    "root:simil": [
+      {
+        "wordId": "VD-04050",
+        "headword": "similarity",
+        "wordBreakdownId": "wb:modern:similarity"
+      }
+    ],
+    "root:mort": [
+      {
+        "wordId": "VD-05468",
+        "headword": "immortality",
+        "wordBreakdownId": "wb:modern:immortality"
+      }
+    ],
+    "root:ori-rise": [
+      {
+        "wordId": "VD-05877",
+        "headword": "originality",
+        "wordBreakdownId": "wb:modern:originality"
+      }
+    ],
+    "root:nat": [
+      {
+        "wordId": "VD-00614",
+        "headword": "nationality",
+        "wordBreakdownId": "wb:modern:nationality"
+      },
+      {
+        "wordId": "VD-03557",
+        "headword": "nationalist",
+        "wordBreakdownId": "wb:modern:nationalist"
+      }
+    ],
+    "root:popul": [
+      {
+        "wordId": "VD-06038",
+        "headword": "popularity",
+        "wordBreakdownId": "wb:modern:popularity"
+      }
+    ],
+    "root:fat-fate": [
+      {
+        "wordId": "VD-07175",
+        "headword": "fatality",
+        "wordBreakdownId": "wb:modern:fatality"
+      }
+    ],
+    "root:angul": [
+      {
+        "wordId": "VD-07815",
+        "headword": "angularity",
+        "wordBreakdownId": "wb:modern:angularity"
+      }
+    ],
+    "root:tim": [
+      {
+        "wordId": "VD-08575",
+        "headword": "timidity",
+        "wordBreakdownId": "wb:modern:timidity"
+      }
+    ],
+    "root:ced": [
+      {
+        "wordId": "VD-05186",
+        "headword": "excessive",
+        "wordBreakdownId": "wb:modern:excessive"
+      }
+    ],
+    "root:fac": [
+      {
+        "wordId": "VD-02935",
+        "headword": "effective",
+        "wordBreakdownId": "wb:modern:effective"
+      }
+    ],
+    "root:press": [
+      {
+        "wordId": "VD-05212",
+        "headword": "expressive",
+        "wordBreakdownId": "wb:modern:expressive"
+      }
+    ],
+    "root:tract": [
+      {
+        "wordId": "VD-01146",
+        "headword": "attractive",
+        "wordBreakdownId": "wb:modern:attractive"
+      }
+    ],
+    "root:flex": [
+      {
+        "wordId": "VD-06188",
+        "headword": "reflective",
+        "wordBreakdownId": "wb:modern:reflective"
+      }
+    ],
+    "root:spect": [
+      {
+        "wordId": "VD-07483",
+        "headword": "prospective",
+        "wordBreakdownId": "wb:modern:prospective"
+      }
+    ],
+    "prefix:retro": [
+      {
+        "wordId": "VD-08468",
+        "headword": "retrospective",
+        "wordBreakdownId": "wb:modern:retrospective"
+      }
+    ],
+    "suffix:er-agent": [
+      {
+        "wordId": "VD-03226",
+        "headword": "heater",
+        "wordBreakdownId": "wb:modern:heater"
+      },
+      {
+        "wordId": "VD-03782",
+        "headword": "prisoner",
+        "wordBreakdownId": "wb:modern:prisoner"
+      },
+      {
+        "wordId": "VD-04604",
+        "headword": "banker",
+        "wordBreakdownId": "wb:modern:banker"
+      },
+      {
+        "wordId": "VD-05318",
+        "headword": "gardener",
+        "wordBreakdownId": "wb:modern:gardener"
+      },
+      {
+        "wordId": "VD-01275",
+        "headword": "cleaner",
+        "wordBreakdownId": "wb:modern:cleaner"
+      }
+    ],
+    "root:clean-base": [
+      {
+        "wordId": "VD-01275",
+        "headword": "cleaner",
+        "wordBreakdownId": "wb:modern:cleaner"
+      }
+    ],
+    "root:art": [
+      {
+        "wordId": "VD-02434",
+        "headword": "artist",
+        "wordBreakdownId": "wb:modern:artist"
+      }
+    ],
+    "suffix:ist": [
+      {
+        "wordId": "VD-02434",
+        "headword": "artist",
+        "wordBreakdownId": "wb:modern:artist"
+      },
+      {
+        "wordId": "VD-02986",
+        "headword": "environmentalist",
+        "wordBreakdownId": "wb:modern:environmentalist"
+      },
+      {
+        "wordId": "VD-03557",
+        "headword": "nationalist",
+        "wordBreakdownId": "wb:modern:nationalist"
+      },
+      {
+        "wordId": "VD-04090",
+        "headword": "specialist",
+        "wordBreakdownId": "wb:modern:specialist"
+      },
+      {
+        "wordId": "VD-08253",
+        "headword": "lyricist",
+        "wordBreakdownId": "wb:modern:lyricist"
+      }
+    ],
+    "suffix:ism": [
+      {
+        "wordId": "VD-07472",
+        "headword": "professionalism",
+        "wordBreakdownId": "wb:modern:professionalism"
+      },
+      {
+        "wordId": "VD-07505",
+        "headword": "realism",
+        "wordBreakdownId": "wb:modern:realism"
+      },
+      {
+        "wordId": "VD-08304",
+        "headword": "modernism",
+        "wordBreakdownId": "wb:modern:modernism"
+      }
+    ],
+    "suffix:ward": [
+      {
+        "wordId": "VD-02902",
+        "headword": "downward",
+        "wordBreakdownId": "wb:modern:downward"
+      }
+    ],
+    "root:geo": [
+      {
+        "wordId": "VD-03145",
+        "headword": "geographical",
+        "wordBreakdownId": "wb:modern:geographical"
+      },
+      {
+        "wordId": "VD-07215",
+        "headword": "geologically",
+        "wordBreakdownId": "wb:modern:geologically"
+      }
+    ],
+    "suffix:ical": [
+      {
+        "wordId": "VD-03242",
+        "headword": "historical",
+        "wordBreakdownId": "wb:modern:historical"
+      }
+    ],
+    "suffix:ment": [
+      {
+        "wordId": "VD-05963",
+        "headword": "payment",
+        "wordBreakdownId": "wb:modern:payment"
+      }
+    ],
+    "suffix:able": [
+      {
+        "wordId": "VD-03047",
+        "headword": "fashionable",
+        "wordBreakdownId": "wb:modern:fashionable"
+      },
+      {
+        "wordId": "VD-06096",
+        "headword": "profitable",
+        "wordBreakdownId": "wb:modern:profitable"
+      }
+    ],
+    "suffix:en-adj": [
+      {
+        "wordId": "VD-01555",
+        "headword": "golden",
+        "wordBreakdownId": "wb:modern:golden"
+      },
+      {
+        "wordId": "VD-02298",
+        "headword": "wooden",
+        "wordBreakdownId": "wb:modern:wooden"
+      }
+    ],
+    "root:free-base": [
+      {
+        "wordId": "VD-01529",
+        "headword": "freedom",
+        "wordBreakdownId": "wb:modern:freedom"
+      }
+    ],
+    "suffix:dom": [
+      {
+        "wordId": "VD-01529",
+        "headword": "freedom",
+        "wordBreakdownId": "wb:modern:freedom"
+      },
+      {
+        "wordId": "VD-01666",
+        "headword": "kingdom",
+        "wordBreakdownId": "wb:modern:kingdom"
+      }
+    ],
+    "root:hard-base": [
+      {
+        "wordId": "VD-03211",
+        "headword": "hardship",
+        "wordBreakdownId": "wb:modern:hardship"
+      }
+    ],
+    "suffix:ship": [
+      {
+        "wordId": "VD-03211",
+        "headword": "hardship",
+        "wordBreakdownId": "wb:modern:hardship"
+      },
+      {
+        "wordId": "VD-07621",
+        "headword": "sponsorship",
+        "wordBreakdownId": "wb:modern:sponsorship"
+      }
+    ],
+    "root:spond": [
+      {
+        "wordId": "VD-07621",
+        "headword": "sponsorship",
+        "wordBreakdownId": "wb:modern:sponsorship"
+      }
+    ],
+    "suffix:ous": [
+      {
+        "wordId": "VD-06284",
+        "headword": "ruinous",
+        "wordBreakdownId": "wb:modern:ruinous"
+      }
+    ],
+    "root:log": [
+      {
+        "wordId": "VD-07215",
+        "headword": "geologically",
+        "wordBreakdownId": "wb:modern:geologically"
+      }
+    ],
+    "root:anthrop": [
+      {
+        "wordId": "VD-07821",
+        "headword": "anthropologically",
+        "wordBreakdownId": "wb:modern:anthropologically"
+      }
+    ],
+    "suffix:room": [
+      {
+        "wordId": "VD-00081",
+        "headword": "bedroom",
+        "wordBreakdownId": "wb:modern:bedroom"
+      },
+      {
+        "wordId": "VD-00184",
+        "headword": "classroom",
+        "wordBreakdownId": "wb:modern:classroom"
+      }
+    ],
+    "root:home": [
+      {
+        "wordId": "VD-00456",
+        "headword": "homework",
+        "wordBreakdownId": "wb:modern:homework"
+      },
+      {
+        "wordId": "VD-00455",
+        "headword": "hometown",
+        "wordBreakdownId": "wb:modern:hometown"
+      }
+    ],
+    "root:house": [
+      {
+        "wordId": "VD-03260",
+        "headword": "housework",
+        "wordBreakdownId": "wb:modern:housework"
+      },
+      {
+        "wordId": "VD-03259",
+        "headword": "household",
+        "wordBreakdownId": "wb:modern:household"
+      },
+      {
+        "wordId": "VD-05427",
+        "headword": "housekeeper",
+        "wordBreakdownId": "wb:modern:housekeeper"
+      }
+    ],
+    "root:book": [
+      {
+        "wordId": "VD-01201",
+        "headword": "bookcase",
+        "wordBreakdownId": "wb:modern:bookcase"
+      },
+      {
+        "wordId": "VD-00111",
+        "headword": "bookstore",
+        "wordBreakdownId": "wb:modern:bookstore"
+      },
+      {
+        "wordId": "VD-02180",
+        "headword": "textbook",
+        "wordBreakdownId": "wb:modern:textbook"
+      }
+    ],
+    "suffix:wide": [
+      {
+        "wordId": "VD-02300",
+        "headword": "worldwide",
+        "wordBreakdownId": "wb:modern:worldwide"
+      }
+    ],
+    "root:fall-base": [
+      {
+        "wordId": "VD-04402",
+        "headword": "waterfall",
+        "wordBreakdownId": "wb:modern:waterfall"
+      }
+    ],
+    "root:water": [
+      {
+        "wordId": "VD-04402",
+        "headword": "waterfall",
+        "wordBreakdownId": "wb:modern:waterfall"
+      },
+      {
+        "wordId": "VD-06803",
+        "headword": "waterproof",
+        "wordBreakdownId": "wb:modern:waterproof"
+      }
+    ],
+    "suffix:proof": [
+      {
+        "wordId": "VD-06803",
+        "headword": "waterproof",
+        "wordBreakdownId": "wb:modern:waterproof"
+      }
+    ],
+    "root:light-illumination": [
+      {
+        "wordId": "VD-02146",
+        "headword": "sunlight",
+        "wordBreakdownId": "wb:modern:sunlight"
+      },
+      {
+        "wordId": "VD-01359",
+        "headword": "daylight",
+        "wordBreakdownId": "wb:modern:daylight"
+      },
+      {
+        "wordId": "VD-05769",
+        "headword": "moonlight",
+        "wordBreakdownId": "wb:modern:moonlight"
+      }
+    ],
+    "root:day": [
+      {
+        "wordId": "VD-01359",
+        "headword": "daylight",
+        "wordBreakdownId": "wb:modern:daylight"
+      },
+      {
+        "wordId": "VD-04952",
+        "headword": "daytime",
+        "wordBreakdownId": "wb:modern:daytime"
+      },
+      {
+        "wordId": "VD-02273",
+        "headword": "weekday",
+        "wordBreakdownId": "wb:modern:weekday"
+      }
+    ],
+    "root:work": [
+      {
+        "wordId": "VD-04433",
+        "headword": "workplace",
+        "wordBreakdownId": "wb:modern:workplace"
+      }
+    ],
+    "root:hand": [
+      {
+        "wordId": "VD-03204",
+        "headword": "handshake",
+        "wordBreakdownId": "wb:modern:handshake"
+      },
+      {
+        "wordId": "VD-03205",
+        "headword": "handwriting",
+        "wordBreakdownId": "wb:modern:handwriting"
+      }
+    ],
+    "root:hold": [
+      {
+        "wordId": "VD-03259",
+        "headword": "household",
+        "wordBreakdownId": "wb:modern:household"
+      }
+    ],
+    "root:food": [
+      {
+        "wordId": "VD-02019",
+        "headword": "seafood",
+        "wordBreakdownId": "wb:modern:seafood"
+      }
+    ],
+    "root:earth": [
+      {
+        "wordId": "VD-01423",
+        "headword": "earthquake",
+        "wordBreakdownId": "wb:modern:earthquake"
+      }
+    ],
+    "root:way": [
+      {
+        "wordId": "VD-01599",
+        "headword": "highway",
+        "wordBreakdownId": "wb:modern:highway"
+      }
+    ],
+    "prefix:on": [
+      {
+        "wordId": "VD-01802",
+        "headword": "online",
+        "wordBreakdownId": "wb:modern:online"
+      }
+    ]
+  }
+}
