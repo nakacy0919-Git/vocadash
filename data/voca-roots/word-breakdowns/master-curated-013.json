@@ -1,0 +1,4835 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "013",
+  "type": "manual-master-first-morphology-drafts",
+  "createdOn": "2026-11-18",
+  "productionEnabled": false,
+  "counts": {
+    "records": 130,
+    "suffix": 88,
+    "prefix": 19,
+    "compound-like": 23,
+    "byCefr": {
+      "A1": 7,
+      "A2": 19,
+      "B1": 28,
+      "B2": 41,
+      "C1": 12,
+      "C2": 23
+    },
+    "priorMatchedMasterHeadwords": 1636
+  },
+  "sourcePolicy": "Fully explicit allowlist, exact canonical master IDs and spelling reconstruction only; no historical claims or learner-facing approval",
+  "records": [
+    {
+      "id": "wb:core:business",
+      "headword": "business",
+      "wordId": "VD-00138",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "商売・事業・用事",
+      "baseHeadword": "busy",
+      "baseWordId": "VD-00139",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "busi",
+          "kind": "altered-free-base",
+          "wordId": "VD-00139",
+          "meaningJa": "忙しい"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "busy（忙しい）と -ness（性質・状態）の関連に注目する。business 全体の主な意味は「商売・事業・用事」。business は事業や用事という語義に定着しており、busy の抽象名詞とだけ教えない。",
+      "learningQuestionJa": "busy から business に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "busy と business の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:global",
+      "headword": "global",
+      "wordId": "VD-03158",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "世界的な",
+      "baseHeadword": "globe",
+      "baseWordId": "VD-01553",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "glob",
+          "kind": "altered-free-base",
+          "wordId": "VD-01553",
+          "meaningJa": "地球・球体"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "globe（地球・球体）と -al（名詞または形容詞を作る）の関連に注目する。global 全体の主な意味は「世界的な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "globe から global に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "globe と global の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:arrival",
+      "headword": "arrival",
+      "wordId": "VD-02432",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "到着",
+      "baseHeadword": "arrive",
+      "baseWordId": "VD-00048",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "arriv",
+          "kind": "altered-free-base",
+          "wordId": "VD-00048",
+          "meaningJa": "到着する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "arrive（到着する）と -al（名詞または形容詞を作る）の関連に注目する。arrival 全体の主な意味は「到着」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "arrive から arrival に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "arrive と arrival の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:basement",
+      "headword": "basement",
+      "wordId": "VD-02485",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "地下室",
+      "baseHeadword": "base",
+      "baseWordId": "VD-01166",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "base",
+          "kind": "free-base",
+          "wordId": "VD-01166",
+          "meaningJa": "土台"
+        },
+        {
+          "surface": "-ment",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "base（土台）と -ment（状態・行為・結果）の関連に注目する。basement 全体の主な意味は「地下室」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "base から basement に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "base と basement の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:confidence",
+      "headword": "confidence",
+      "wordId": "VD-02696",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自信・信頼",
+      "baseHeadword": "confide",
+      "baseWordId": "VD-07014",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "confid",
+          "kind": "altered-free-base",
+          "wordId": "VD-07014",
+          "meaningJa": "打ち明ける・信頼する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "confide（打ち明ける・信頼する）と -ence（状態・行為・結果）の関連に注目する。confidence 全体の主な意味は「自信・信頼」。confidence の自信という意味を confide の単純な動作名詞と断定しない。",
+      "learningQuestionJa": "confide から confidence に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "confide と confidence の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:continual",
+      "headword": "continual",
+      "wordId": "VD-02723",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "繰り返し起こる・絶え間ない",
+      "baseHeadword": "continue",
+      "baseWordId": "VD-01318",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "continu",
+          "kind": "altered-free-base",
+          "wordId": "VD-01318",
+          "meaningJa": "続ける"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "continue（続ける）と -al（名詞または形容詞を作る）の関連に注目する。continual 全体の主な意味は「繰り返し起こる・絶え間ない」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "continue から continual に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "continue と continual の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:deadly",
+      "headword": "deadly",
+      "wordId": "VD-02787",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "致命的な",
+      "baseHeadword": "dead",
+      "baseWordId": "VD-01360",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dead",
+          "kind": "free-base",
+          "wordId": "VD-01360",
+          "meaningJa": "死んだ"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "dead（死んだ）と -ly（形容詞または副詞を作る）の関連に注目する。deadly 全体の主な意味は「致命的な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "dead から deadly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "dead と deadly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:department",
+      "headword": "department",
+      "wordId": "VD-02823",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "部門・部署",
+      "baseHeadword": "depart",
+      "baseWordId": "VD-02822",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "depart",
+          "kind": "free-base",
+          "wordId": "VD-02822",
+          "meaningJa": "出発する・離れる"
+        },
+        {
+          "surface": "-ment",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "depart（出発する・離れる）と -ment（状態・行為・結果）の関連に注目する。department 全体の主な意味は「部門・部署」。department の『部門』という意味は depart と直訳関係にない。",
+      "learningQuestionJa": "depart から department に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "depart と department の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:famous",
+      "headword": "famous",
+      "wordId": "VD-00318",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "有名な",
+      "baseHeadword": "fame",
+      "baseWordId": "VD-05231",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "fam",
+          "kind": "altered-free-base",
+          "wordId": "VD-05231",
+          "meaningJa": "名声"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "fame（名声）と -ous（〜の性質をもつ）の関連に注目する。famous 全体の主な意味は「有名な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "fame から famous に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "fame と famous の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:formal",
+      "headword": "formal",
+      "wordId": "VD-03093",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "正式な・形式的な",
+      "baseHeadword": "form",
+      "baseWordId": "VD-00360",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "form",
+          "kind": "free-base",
+          "wordId": "VD-00360",
+          "meaningJa": "形・形式"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "form（形・形式）と -al（名詞または形容詞を作る）の関連に注目する。formal 全体の主な意味は「正式な・形式的な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "form から formal に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "form と formal の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:glorious",
+      "headword": "glorious",
+      "wordId": "VD-03159",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "栄光に満ちた",
+      "baseHeadword": "glory",
+      "baseWordId": "VD-03160",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "glori",
+          "kind": "altered-free-base",
+          "wordId": "VD-03160",
+          "meaningJa": "栄光"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "glory（栄光）と -ous（〜の性質をもつ）の関連に注目する。glorious 全体の主な意味は「栄光に満ちた」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "glory から glorious に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "glory と glorious の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:layer",
+      "headword": "layer",
+      "wordId": "VD-03403",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "層",
+      "baseHeadword": "lay",
+      "baseWordId": "VD-03402",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "lay",
+          "kind": "free-base",
+          "wordId": "VD-03402",
+          "meaningJa": "置く"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "lay（置く）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。layer 全体の主な意味は「層」。layer の『層』は lay（置く）からの機械的な人・道具名詞ではない。",
+      "learningQuestionJa": "lay から layer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "lay と layer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:lighter",
+      "headword": "lighter",
+      "wordId": "VD-03422",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ライター・より軽い",
+      "baseHeadword": "light",
+      "baseWordId": "VD-00537",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "light",
+          "kind": "free-base",
+          "wordId": "VD-00537",
+          "meaningJa": "軽い・光"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "light（軽い・光）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。lighter 全体の主な意味は「ライター・より軽い」。lighter は比較級・点火器具など複数の語義に分かれる。-er の役割を語義別に教える。",
+      "learningQuestionJa": "light から lighter に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "light と lighter の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:proposal",
+      "headword": "proposal",
+      "wordId": "VD-03804",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "提案",
+      "baseHeadword": "propose",
+      "baseWordId": "VD-03805",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "propos",
+          "kind": "altered-free-base",
+          "wordId": "VD-03805",
+          "meaningJa": "提案する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "propose（提案する）と -al（名詞または形容詞を作る）の関連に注目する。proposal 全体の主な意味は「提案」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "propose から proposal に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "propose と proposal の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reduction",
+      "headword": "reduction",
+      "wordId": "VD-03874",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "減少・削減",
+      "baseHeadword": "reduce",
+      "baseWordId": "VD-03873",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "reduc",
+          "kind": "altered-free-base",
+          "wordId": "VD-03873",
+          "meaningJa": "減らす"
+        },
+        {
+          "surface": "-tion",
+          "kind": "suffix",
+          "meaningJa": "行為・状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "reduce（減らす）と -tion（行為・状態・結果）の関連に注目する。reduction 全体の主な意味は「減少・削減」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "reduce から reduction に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "reduce と reduction の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:refusal",
+      "headword": "refusal",
+      "wordId": "VD-03880",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "拒否",
+      "baseHeadword": "refuse",
+      "baseWordId": "VD-03881",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "refus",
+          "kind": "altered-free-base",
+          "wordId": "VD-03881",
+          "meaningJa": "拒否する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "refuse（拒否する）と -al（名詞または形容詞を作る）の関連に注目する。refusal 全体の主な意味は「拒否」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "refuse から refusal に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "refuse と refusal の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:server",
+      "headword": "server",
+      "wordId": "VD-04012",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "サービスを提供する人・サーバー",
+      "baseHeadword": "serve",
+      "baseWordId": "VD-02033",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "serv",
+          "kind": "altered-free-base",
+          "wordId": "VD-02033",
+          "meaningJa": "仕える・提供する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "serve（仕える・提供する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。server 全体の主な意味は「サービスを提供する人・サーバー」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "serve から server に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "serve と server の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:various",
+      "headword": "various",
+      "wordId": "VD-04359",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "さまざまな",
+      "baseHeadword": "vary",
+      "baseWordId": "VD-04360",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "vari",
+          "kind": "altered-free-base",
+          "wordId": "VD-04360",
+          "meaningJa": "変化する"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "vary（変化する）と -ous（〜の性質をもつ）の関連に注目する。various 全体の主な意味は「さまざまな」。various は vary と共通語族だが、形態上の関係は歴史的な語形成を別途確認する。",
+      "learningQuestionJa": "vary から various に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "vary と various の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:adventurous",
+      "headword": "adventurous",
+      "wordId": "VD-04484",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "冒険好きな",
+      "baseHeadword": "adventure",
+      "baseWordId": "VD-01084",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "adventur",
+          "kind": "altered-free-base",
+          "wordId": "VD-01084",
+          "meaningJa": "冒険"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "adventure（冒険）と -ous（〜の性質をもつ）の関連に注目する。adventurous 全体の主な意味は「冒険好きな」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "adventure から adventurous に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "adventure と adventurous の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:burial",
+      "headword": "burial",
+      "wordId": "VD-04702",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "埋葬",
+      "baseHeadword": "bury",
+      "baseWordId": "VD-01220",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "buri",
+          "kind": "altered-free-base",
+          "wordId": "VD-01220",
+          "meaningJa": "埋める"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "bury（埋める）と -al（名詞または形容詞を作る）の関連に注目する。burial 全体の主な意味は「埋葬」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "bury から burial に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "bury と burial の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:cubism",
+      "headword": "cubism",
+      "wordId": "VD-04929",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "キュビズム・立体派",
+      "baseHeadword": "cube",
+      "baseWordId": "VD-04928",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "cub",
+          "kind": "altered-free-base",
+          "wordId": "VD-04928",
+          "meaningJa": "立方体"
+        },
+        {
+          "surface": "-ism",
+          "kind": "suffix",
+          "meaningJa": "考え方・体系・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "cube（立方体）と -ism（考え方・体系・状態）の関連に注目する。cubism 全体の主な意味は「キュビズム・立体派」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "cube から cubism に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "cube と cubism の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:determiner",
+      "headword": "determiner",
+      "wordId": "VD-05004",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "限定詞",
+      "baseHeadword": "determine",
+      "baseWordId": "VD-02844",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "determin",
+          "kind": "altered-free-base",
+          "wordId": "VD-02844",
+          "meaningJa": "決める"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "determine（決める）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。determiner 全体の主な意味は「限定詞」。品詞の『限定詞』は determine の一般的な行為者名詞と違い、文法用語として定着している。",
+      "learningQuestionJa": "determine から determiner に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "determine と determiner の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:dispensable",
+      "headword": "dispensable",
+      "wordId": "VD-05039",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "なくても済む",
+      "baseHeadword": "dispense",
+      "baseWordId": "VD-07096",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dispens",
+          "kind": "altered-free-base",
+          "wordId": "VD-07096",
+          "meaningJa": "分配する・省く"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "dispense（分配する・省く）と -able（〜できる・〜に適した）の関連に注目する。dispensable 全体の主な意味は「なくても済む」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "dispense から dispensable に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "dispense と dispensable の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:godly",
+      "headword": "godly",
+      "wordId": "VD-05351",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "敬虔な",
+      "baseHeadword": "god",
+      "baseWordId": "VD-05350",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "god",
+          "kind": "free-base",
+          "wordId": "VD-05350",
+          "meaningJa": "神"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "god（神）と -ly（形容詞または副詞を作る）の関連に注目する。godly 全体の主な意味は「敬虔な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "god から godly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "god と godly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:inference",
+      "headword": "inference",
+      "wordId": "VD-05519",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "推論",
+      "baseHeadword": "infer",
+      "baseWordId": "VD-05518",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "infer",
+          "kind": "free-base",
+          "wordId": "VD-05518",
+          "meaningJa": "推測する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "infer（推測する）と -ence（状態・行為・結果）の関連に注目する。inference 全体の主な意味は「推論」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "infer から inference に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "infer と inference の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:luxurious",
+      "headword": "luxurious",
+      "wordId": "VD-05680",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ぜいたくな",
+      "baseHeadword": "luxury",
+      "baseWordId": "VD-03452",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "luxuri",
+          "kind": "altered-free-base",
+          "wordId": "VD-03452",
+          "meaningJa": "ぜいたく"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "luxury（ぜいたく）と -ous（〜の性質をもつ）の関連に注目する。luxurious 全体の主な意味は「ぜいたくな」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "luxury から luxurious に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "luxury と luxurious の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:manufacturer",
+      "headword": "manufacturer",
+      "wordId": "VD-05695",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "製造業者",
+      "baseHeadword": "manufacture",
+      "baseWordId": "VD-05694",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "manufactur",
+          "kind": "altered-free-base",
+          "wordId": "VD-05694",
+          "meaningJa": "製造する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "manufacture（製造する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。manufacturer 全体の主な意味は「製造業者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "manufacture から manufacturer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "manufacture と manufacturer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:memorial",
+      "headword": "memorial",
+      "wordId": "VD-05719",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "記念の・記念碑",
+      "baseHeadword": "memory",
+      "baseWordId": "VD-00577",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "memori",
+          "kind": "altered-free-base",
+          "wordId": "VD-00577",
+          "meaningJa": "記憶"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "memory（記憶）と -al（名詞または形容詞を作る）の関連に注目する。memorial 全体の主な意味は「記念の・記念碑」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "memory から memorial に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "memory と memorial の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mover",
+      "headword": "mover",
+      "wordId": "VD-05783",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "運搬人・動かすもの",
+      "baseHeadword": "move",
+      "baseWordId": "VD-00603",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mov",
+          "kind": "altered-free-base",
+          "wordId": "VD-00603",
+          "meaningJa": "動く・動かす"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "move（動く・動かす）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。mover 全体の主な意味は「運搬人・動かすもの」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "move から mover に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "move と mover の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:pastoral",
+      "headword": "pastoral",
+      "wordId": "VD-05951",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "田園の・牧歌的な",
+      "baseHeadword": "pastor",
+      "baseWordId": "VD-05950",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pastor",
+          "kind": "free-base",
+          "wordId": "VD-05950",
+          "meaningJa": "牧師・羊飼い"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "pastor（牧師・羊飼い）と -al（名詞または形容詞を作る）の関連に注目する。pastoral 全体の主な意味は「田園の・牧歌的な」。pastoral は pastor（羊飼い）に関係するが、現在は田園的な意味でも使う。",
+      "learningQuestionJa": "pastor から pastoral に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "pastor と pastoral の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:pavement",
+      "headword": "pavement",
+      "wordId": "VD-05959",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "舗装路・歩道",
+      "baseHeadword": "pave",
+      "baseWordId": "VD-05958",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pave",
+          "kind": "free-base",
+          "wordId": "VD-05958",
+          "meaningJa": "舗装する"
+        },
+        {
+          "surface": "-ment",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "pave（舗装する）と -ment（状態・行為・結果）の関連に注目する。pavement 全体の主な意味は「舗装路・歩道」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "pave から pavement に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "pave と pavement の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:composer",
+      "headword": "composer",
+      "wordId": "VD-01304",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "作曲家",
+      "baseHeadword": "compose",
+      "baseWordId": "VD-02686",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "compos",
+          "kind": "altered-free-base",
+          "wordId": "VD-02686",
+          "meaningJa": "作曲する・構成する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "compose（作曲する・構成する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。composer 全体の主な意味は「作曲家」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "compose から composer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "compose と composer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:cooker",
+      "headword": "cooker",
+      "wordId": "VD-01323",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "調理器具",
+      "baseHeadword": "cook",
+      "baseWordId": "VD-00211",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "cook",
+          "kind": "free-base",
+          "wordId": "VD-00211",
+          "meaningJa": "料理する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "cook（料理する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。cooker 全体の主な意味は「調理器具」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "cook から cooker に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "cook と cooker の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:hardly",
+      "headword": "hardly",
+      "wordId": "VD-01583",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ほとんど〜ない",
+      "baseHeadword": "hard",
+      "baseWordId": "VD-00425",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "hard",
+          "kind": "free-base",
+          "wordId": "VD-00425",
+          "meaningJa": "難しい・一生懸命な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "hard（難しい・一生懸命な）と -ly（形容詞または副詞を作る）の関連に注目する。hardly 全体の主な意味は「ほとんど〜ない」。hardly は『ほとんど〜ない』であり、hard の単純な様態副詞ではない。",
+      "learningQuestionJa": "hard から hardly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "hard と hardly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:likely",
+      "headword": "likely",
+      "wordId": "VD-01698",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ありそうな",
+      "baseHeadword": "like",
+      "baseWordId": "VD-00538",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "like",
+          "kind": "free-base",
+          "wordId": "VD-00538",
+          "meaningJa": "好む・似ている"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "like（好む・似ている）と -ly（形容詞または副詞を作る）の関連に注目する。likely 全体の主な意味は「ありそうな」。likely は一般に形容詞で、like の副詞形とは教えない。",
+      "learningQuestionJa": "like から likely に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "like と likely の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:lively",
+      "headword": "lively",
+      "wordId": "VD-01701",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "活気のある",
+      "baseHeadword": "live",
+      "baseWordId": "VD-00545",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "live",
+          "kind": "free-base",
+          "wordId": "VD-00545",
+          "meaningJa": "生きる"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "live（生きる）と -ly（形容詞または副詞を作る）の関連に注目する。lively 全体の主な意味は「活気のある」。lively は主に形容詞で、『生き生きした』という定着した意味を持つ。",
+      "learningQuestionJa": "live から lively に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "live と lively の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:lover",
+      "headword": "lover",
+      "wordId": "VD-01710",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "恋人・愛好家",
+      "baseHeadword": "love",
+      "baseWordId": "VD-00552",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "lov",
+          "kind": "altered-free-base",
+          "wordId": "VD-00552",
+          "meaningJa": "愛する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "love（愛する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。lover 全体の主な意味は「恋人・愛好家」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "love から lover に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "love と lover の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mysterious",
+      "headword": "mysterious",
+      "wordId": "VD-01768",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "不思議な・謎めいた",
+      "baseHeadword": "mystery",
+      "baseWordId": "VD-01769",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mysteri",
+          "kind": "altered-free-base",
+          "wordId": "VD-01769",
+          "meaningJa": "謎"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "mystery（謎）と -ous（〜の性質をもつ）の関連に注目する。mysterious 全体の主な意味は「不思議な・謎めいた」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "mystery から mysterious に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "mystery と mysterious の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:natural",
+      "headword": "natural",
+      "wordId": "VD-01774",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自然の",
+      "baseHeadword": "nature",
+      "baseWordId": "VD-01775",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "natur",
+          "kind": "altered-free-base",
+          "wordId": "VD-01775",
+          "meaningJa": "自然"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "nature（自然）と -al（名詞または形容詞を作る）の関連に注目する。natural 全体の主な意味は「自然の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "nature から natural に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "nature と natural の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:nervous",
+      "headword": "nervous",
+      "wordId": "VD-01779",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "緊張した・神経質な",
+      "baseHeadword": "nerve",
+      "baseWordId": "VD-05817",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "nerv",
+          "kind": "altered-free-base",
+          "wordId": "VD-05817",
+          "meaningJa": "神経"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "nerve（神経）と -ous（〜の性質をもつ）の関連に注目する。nervous 全体の主な意味は「緊張した・神経質な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "nerve から nervous に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "nerve と nervous の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:officer",
+      "headword": "officer",
+      "wordId": "VD-00644",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "役員・警官",
+      "baseHeadword": "office",
+      "baseWordId": "VD-00643",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "offic",
+          "kind": "altered-free-base",
+          "wordId": "VD-00643",
+          "meaningJa": "職務・事務所"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "office（職務・事務所）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。officer 全体の主な意味は「役員・警官」。officer は多様な職位を指し、単に『事務所で働く人』とは訳さない。",
+      "learningQuestionJa": "office から officer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "office と officer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:poster",
+      "headword": "poster",
+      "wordId": "VD-00715",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ポスター",
+      "baseHeadword": "post",
+      "baseWordId": "VD-00714",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "post",
+          "kind": "free-base",
+          "wordId": "VD-00714",
+          "meaningJa": "掲示する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "post（掲示する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。poster 全体の主な意味は「ポスター」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "post から poster に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "post と poster の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:racism",
+      "headword": "racism",
+      "wordId": "VD-06142",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "人種差別主義",
+      "baseHeadword": "race",
+      "baseWordId": "VD-03838",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "rac",
+          "kind": "altered-free-base",
+          "wordId": "VD-03838",
+          "meaningJa": "人種"
+        },
+        {
+          "surface": "-ism",
+          "kind": "suffix",
+          "meaningJa": "考え方・体系・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "race（人種）と -ism（考え方・体系・状態）の関連に注目する。racism 全体の主な意味は「人種差別主義」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "race から racism に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "race と racism の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:racist",
+      "headword": "racist",
+      "wordId": "VD-06143",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "人種差別主義者・差別的な",
+      "baseHeadword": "race",
+      "baseWordId": "VD-03838",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "rac",
+          "kind": "altered-free-base",
+          "wordId": "VD-03838",
+          "meaningJa": "人種"
+        },
+        {
+          "surface": "-ist",
+          "kind": "suffix",
+          "meaningJa": "人・立場"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "race（人種）と -ist（人・立場）の関連に注目する。racist 全体の主な意味は「人種差別主義者・差別的な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "race から racist に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "race と racist の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ranger",
+      "headword": "ranger",
+      "wordId": "VD-06157",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "森林警備員など",
+      "baseHeadword": "range",
+      "baseWordId": "VD-01930",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "rang",
+          "kind": "altered-free-base",
+          "wordId": "VD-01930",
+          "meaningJa": "活動範囲・移動する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "range（活動範囲・移動する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。ranger 全体の主な意味は「森林警備員など」。ranger は職務上の意味があるため、『range する人』と機械的に訳さない。",
+      "learningQuestionJa": "range から ranger に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "range と ranger の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reference",
+      "headword": "reference",
+      "wordId": "VD-06185",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "参照・言及",
+      "baseHeadword": "refer",
+      "baseWordId": "VD-01946",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "refer",
+          "kind": "free-base",
+          "wordId": "VD-01946",
+          "meaningJa": "参照する・言及する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "refer（参照する・言及する）と -ence（状態・行為・結果）の関連に注目する。reference 全体の主な意味は「参照・言及」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "refer から reference に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "refer と reference の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:revival",
+      "headword": "revival",
+      "wordId": "VD-06253",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "復活",
+      "baseHeadword": "revive",
+      "baseWordId": "VD-06254",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "reviv",
+          "kind": "altered-free-base",
+          "wordId": "VD-06254",
+          "meaningJa": "復活させる"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "revive（復活させる）と -al（名詞または形容詞を作る）の関連に注目する。revival 全体の主な意味は「復活」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "revive から revival に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "revive と revival の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ruler",
+      "headword": "ruler",
+      "wordId": "VD-00766",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "支配者・定規",
+      "baseHeadword": "rule",
+      "baseWordId": "VD-00765",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "rul",
+          "kind": "altered-free-base",
+          "wordId": "VD-00765",
+          "meaningJa": "統治する・規則"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "rule（統治する・規則）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。ruler 全体の主な意味は「支配者・定規」。ruler は『定規』と『統治者』の語義があり、意味を取り違えない。",
+      "learningQuestionJa": "rule から ruler に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "rule と ruler の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:salesmanship",
+      "headword": "salesmanship",
+      "wordId": "VD-06293",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "販売の技術",
+      "baseHeadword": "salesman",
+      "baseWordId": "VD-03969",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "salesman",
+          "kind": "free-base",
+          "wordId": "VD-03969",
+          "meaningJa": "販売員"
+        },
+        {
+          "surface": "-ship",
+          "kind": "suffix",
+          "meaningJa": "地位・能力・状態"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "salesman（販売員）と -ship（地位・能力・状態）の関連に注目する。salesmanship 全体の主な意味は「販売の技術」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "salesman から salesmanship に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "salesman と salesmanship の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:shoplifter",
+      "headword": "shoplifter",
+      "wordId": "VD-06360",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "万引きする人",
+      "baseHeadword": "shoplift",
+      "baseWordId": "VD-06359",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "shoplift",
+          "kind": "free-base",
+          "wordId": "VD-06359",
+          "meaningJa": "万引きする"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "shoplift（万引きする）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。shoplifter 全体の主な意味は「万引きする人」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "shoplift から shoplifter に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "shoplift と shoplifter の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:stranger",
+      "headword": "stranger",
+      "wordId": "VD-02125",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "見知らぬ人",
+      "baseHeadword": "strange",
+      "baseWordId": "VD-00874",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "strang",
+          "kind": "altered-free-base",
+          "wordId": "VD-00874",
+          "meaningJa": "見知らぬ・奇妙な"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "strange（見知らぬ・奇妙な）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。stranger 全体の主な意味は「見知らぬ人」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "strange から stranger に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "strange と stranger の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:sweater",
+      "headword": "sweater",
+      "wordId": "VD-02158",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "セーター",
+      "baseHeadword": "sweat",
+      "baseWordId": "VD-02157",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "sweat",
+          "kind": "free-base",
+          "wordId": "VD-02157",
+          "meaningJa": "汗をかく"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "sweat（汗をかく）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。sweater 全体の主な意味は「セーター」。sweater は衣類を表す語義が主であり、『汗をかく人』と直訳しない。",
+      "learningQuestionJa": "sweat から sweater に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "sweat と sweater の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:teenager",
+      "headword": "teenager",
+      "wordId": "VD-02174",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "10代の人",
+      "baseHeadword": "teenage",
+      "baseWordId": "VD-02173",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "teenag",
+          "kind": "altered-free-base",
+          "wordId": "VD-02173",
+          "meaningJa": "10代の"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "teenage（10代の）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。teenager 全体の主な意味は「10代の人」。teenager は年齢区分の語で、『teenage をする人』ではない。",
+      "learningQuestionJa": "teenage から teenager に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "teenage と teenager の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:trailer",
+      "headword": "trailer",
+      "wordId": "VD-06618",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "トレーラー・予告編",
+      "baseHeadword": "trail",
+      "baseWordId": "VD-04272",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "trail",
+          "kind": "free-base",
+          "wordId": "VD-04272",
+          "meaningJa": "引きずる・後をたどる"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "trail（引きずる・後をたどる）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。trailer 全体の主な意味は「トレーラー・予告編」。trailer の『予告編』は用途に由来する拡張語義で、直訳だけでは分からない。",
+      "learningQuestionJa": "trail から trailer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "trail と trailer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:trial",
+      "headword": "trial",
+      "wordId": "VD-06643",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "試み・裁判",
+      "baseHeadword": "try",
+      "baseWordId": "VD-00973",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "tri",
+          "kind": "altered-free-base",
+          "wordId": "VD-00973",
+          "meaningJa": "試す"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "try（試す）と -al（名詞または形容詞を作る）の関連に注目する。trial 全体の主な意味は「試み・裁判」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "try から trial に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "try と trial の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:wholly",
+      "headword": "wholly",
+      "wordId": "VD-08646",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "完全に",
+      "baseHeadword": "whole",
+      "baseWordId": "VD-02284",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "whol",
+          "kind": "altered-free-base",
+          "wordId": "VD-02284",
+          "meaningJa": "全体の"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "whole（全体の）と -ly（形容詞または副詞を作る）の関連に注目する。wholly 全体の主な意味は「完全に」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "whole から wholly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "whole と wholly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:withdrawal",
+      "headword": "withdrawal",
+      "wordId": "VD-06834",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "引き出し・撤退",
+      "baseHeadword": "withdraw",
+      "baseWordId": "VD-06833",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "withdraw",
+          "kind": "free-base",
+          "wordId": "VD-06833",
+          "meaningJa": "引き出す・撤退する"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "withdraw（引き出す・撤退する）と -al（名詞または形容詞を作る）の関連に注目する。withdrawal 全体の主な意味は「引き出し・撤退」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "withdraw から withdrawal に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "withdraw と withdrawal の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:worldly",
+      "headword": "worldly",
+      "wordId": "VD-06844",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "世俗的な・世間慣れした",
+      "baseHeadword": "world",
+      "baseWordId": "VD-01046",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "world",
+          "kind": "free-base",
+          "wordId": "VD-01046",
+          "meaningJa": "世界"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "world（世界）と -ly（形容詞または副詞を作る）の関連に注目する。worldly 全体の主な意味は「世俗的な・世間慣れした」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "world から worldly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "world と worldly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:continuity",
+      "headword": "continuity",
+      "wordId": "VD-07031",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "連続性",
+      "baseHeadword": "continue",
+      "baseWordId": "VD-01318",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "continu",
+          "kind": "altered-free-base",
+          "wordId": "VD-01318",
+          "meaningJa": "続く・続ける"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "continue（続く・続ける）と -ity（性質・状態）の関連に注目する。continuity 全体の主な意味は「連続性」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "continue から continuity に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "continue と continuity の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:divergence",
+      "headword": "divergence",
+      "wordId": "VD-07102",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "分岐・相違",
+      "baseHeadword": "diverge",
+      "baseWordId": "VD-07101",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "diverg",
+          "kind": "altered-free-base",
+          "wordId": "VD-07101",
+          "meaningJa": "分かれる"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "diverge（分かれる）と -ence（状態・行為・結果）の関連に注目する。divergence 全体の主な意味は「分岐・相違」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "diverge から divergence に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "diverge と divergence の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:elitist",
+      "headword": "elitist",
+      "wordId": "VD-07132",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "エリート主義者",
+      "baseHeadword": "elite",
+      "baseWordId": "VD-05125",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "elit",
+          "kind": "altered-free-base",
+          "wordId": "VD-05125",
+          "meaningJa": "選ばれた少数"
+        },
+        {
+          "surface": "-ist",
+          "kind": "suffix",
+          "meaningJa": "人・立場"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "elite（選ばれた少数）と -ist（人・立場）の関連に注目する。elitist 全体の主な意味は「エリート主義者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "elite から elitist に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "elite と elitist の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:exhibitionist",
+      "headword": "exhibitionist",
+      "wordId": "VD-07150",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自己顕示的な人",
+      "baseHeadword": "exhibition",
+      "baseWordId": "VD-01466",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "exhibition",
+          "kind": "free-base",
+          "wordId": "VD-01466",
+          "meaningJa": "展示・顕示"
+        },
+        {
+          "surface": "-ist",
+          "kind": "suffix",
+          "meaningJa": "人・立場"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "exhibition（展示・顕示）と -ist（人・立場）の関連に注目する。exhibitionist 全体の主な意味は「自己顕示的な人」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "exhibition から exhibitionist に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "exhibition と exhibitionist の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:fiddler",
+      "headword": "fiddler",
+      "wordId": "VD-07181",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "バイオリン奏者",
+      "baseHeadword": "fiddle",
+      "baseWordId": "VD-07180",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "fiddl",
+          "kind": "altered-free-base",
+          "wordId": "VD-07180",
+          "meaningJa": "バイオリンを弾く"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "fiddle（バイオリンを弾く）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。fiddler 全体の主な意味は「バイオリン奏者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "fiddle から fiddler に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "fiddle と fiddler の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:homely",
+      "headword": "homely",
+      "wordId": "VD-07249",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "家庭的な・地味な",
+      "baseHeadword": "home",
+      "baseWordId": "VD-00454",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "home",
+          "kind": "free-base",
+          "wordId": "VD-00454",
+          "meaningJa": "家"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "home（家）と -ly（形容詞または副詞を作る）の関連に注目する。homely 全体の主な意味は「家庭的な・地味な」。homely は英米で主要なニュアンスが異なり、単に『家のような』としない。",
+      "learningQuestionJa": "home から homely に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "home と homely の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overseer",
+      "headword": "overseer",
+      "wordId": "VD-07409",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "監督者",
+      "baseHeadword": "oversee",
+      "baseWordId": "VD-07408",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "overse",
+          "kind": "altered-free-base",
+          "wordId": "VD-07408",
+          "meaningJa": "監督する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・道具・比較など（品詞と語義の確認が必要）"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "oversee（監督する）と -er（人・道具・比較など（品詞と語義の確認が必要））の関連に注目する。overseer 全体の主な意味は「監督者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "oversee から overseer に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "oversee と overseer の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:remedial",
+      "headword": "remedial",
+      "wordId": "VD-07524",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "補習の・治療の",
+      "baseHeadword": "remedy",
+      "baseWordId": "VD-03904",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "remedi",
+          "kind": "altered-free-base",
+          "wordId": "VD-03904",
+          "meaningJa": "治療法・改善策"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "remedy（治療法・改善策）と -al（名詞または形容詞を作る）の関連に注目する。remedial 全体の主な意味は「補習の・治療の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "remedy から remedial に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "remedy と remedial の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:stuffily",
+      "headword": "stuffily",
+      "wordId": "VD-07644",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "息苦しく・堅苦しく",
+      "baseHeadword": "stuffy",
+      "baseWordId": "VD-07646",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "stuffi",
+          "kind": "altered-free-base",
+          "wordId": "VD-07646",
+          "meaningJa": "息苦しい・堅苦しい"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "stuffy（息苦しい・堅苦しい）と -ly（形容詞または副詞を作る）の関連に注目する。stuffily 全体の主な意味は「息苦しく・堅苦しく」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "stuffy から stuffily に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "stuffy と stuffily の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:torturous",
+      "headword": "torturous",
+      "wordId": "VD-07695",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "苦痛に満ちた",
+      "baseHeadword": "torture",
+      "baseWordId": "VD-06614",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "tortur",
+          "kind": "altered-free-base",
+          "wordId": "VD-06614",
+          "meaningJa": "拷問・苦痛"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "torture（拷問・苦痛）と -ous（〜の性質をもつ）の関連に注目する。torturous 全体の主な意味は「苦痛に満ちた」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "torture から torturous に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "torture と torturous の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:victorious",
+      "headword": "victorious",
+      "wordId": "VD-07753",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "勝利を収めた",
+      "baseHeadword": "victory",
+      "baseWordId": "VD-04371",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "victori",
+          "kind": "altered-free-base",
+          "wordId": "VD-04371",
+          "meaningJa": "勝利"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "victory（勝利）と -ous（〜の性質をもつ）の関連に注目する。victorious 全体の主な意味は「勝利を収めた」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "victory から victorious に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "victory と victorious の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:dispersal",
+      "headword": "dispersal",
+      "wordId": "VD-08011",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "分散・散布",
+      "baseHeadword": "disperse",
+      "baseWordId": "VD-08012",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dispers",
+          "kind": "altered-free-base",
+          "wordId": "VD-08012",
+          "meaningJa": "散らす"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "disperse（散らす）と -al（名詞または形容詞を作る）の関連に注目する。dispersal 全体の主な意味は「分散・散布」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "disperse から dispersal に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "disperse と dispersal の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:flightiness",
+      "headword": "flightiness",
+      "wordId": "VD-08099",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "浮つき・気まぐれさ",
+      "baseHeadword": "flighty",
+      "baseWordId": "VD-08100",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "flighti",
+          "kind": "altered-free-base",
+          "wordId": "VD-08100",
+          "meaningJa": "浮ついた"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "flighty（浮ついた）と -ness（性質・状態）の関連に注目する。flightiness 全体の主な意味は「浮つき・気まぐれさ」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "flighty から flightiness に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "flighty と flightiness の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:grievance",
+      "headword": "grievance",
+      "wordId": "VD-08125",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "苦情・不満",
+      "baseHeadword": "grieve",
+      "baseWordId": "VD-05366",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "griev",
+          "kind": "altered-free-base",
+          "wordId": "VD-05366",
+          "meaningJa": "悲しむ"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "grieve（悲しむ）と -ance（状態・行為・結果）の関連に注目する。grievance 全体の主な意味は「苦情・不満」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "grieve から grievance に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "grieve と grievance の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:indulgence",
+      "headword": "indulgence",
+      "wordId": "VD-08193",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "甘やかし・ぜいたく",
+      "baseHeadword": "indulge",
+      "baseWordId": "VD-05508",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "indulg",
+          "kind": "altered-free-base",
+          "wordId": "VD-05508",
+          "meaningJa": "甘やかす・ふける"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "indulge（甘やかす・ふける）と -ence（状態・行為・結果）の関連に注目する。indulgence 全体の主な意味は「甘やかし・ぜいたく」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "indulge から indulgence に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "indulge と indulgence の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:melodious",
+      "headword": "melodious",
+      "wordId": "VD-08279",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "旋律が美しい",
+      "baseHeadword": "melody",
+      "baseWordId": "VD-05718",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "melodi",
+          "kind": "altered-free-base",
+          "wordId": "VD-05718",
+          "meaningJa": "旋律"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "melody（旋律）と -ous（〜の性質をもつ）の関連に注目する。melodious 全体の主な意味は「旋律が美しい」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "melody から melodious に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "melody と melodious の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:palatable",
+      "headword": "palatable",
+      "wordId": "VD-08343",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "口に合う・受け入れやすい",
+      "baseHeadword": "palate",
+      "baseWordId": "VD-08344",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "palat",
+          "kind": "altered-free-base",
+          "wordId": "VD-08344",
+          "meaningJa": "口蓋・味覚"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "palate（口蓋・味覚）と -able（〜できる・〜に適した）の関連に注目する。palatable 全体の主な意味は「口に合う・受け入れやすい」。palatable は『口に合う』以外に比喩的に『受け入れやすい』意味も持つ。",
+      "learningQuestionJa": "palate から palatable に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "palate と palatable の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:patchily",
+      "headword": "patchily",
+      "wordId": "VD-08353",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "むらのある状態で",
+      "baseHeadword": "patchy",
+      "baseWordId": "VD-08354",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "patchi",
+          "kind": "altered-free-base",
+          "wordId": "VD-08354",
+          "meaningJa": "むらのある"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "patchy（むらのある）と -ly（形容詞または副詞を作る）の関連に注目する。patchily 全体の主な意味は「むらのある状態で」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "patchy から patchily に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "patchy と patchily の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:perversity",
+      "headword": "perversity",
+      "wordId": "VD-08363",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ひねくれ・倒錯",
+      "baseHeadword": "perverse",
+      "baseWordId": "VD-08362",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pervers",
+          "kind": "altered-free-base",
+          "wordId": "VD-08362",
+          "meaningJa": "ひねくれた"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "perverse（ひねくれた）と -ity（性質・状態）の関連に注目する。perversity 全体の主な意味は「ひねくれ・倒錯」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "perverse から perversity に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "perverse と perversity の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:postural",
+      "headword": "postural",
+      "wordId": "VD-08381",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "姿勢の",
+      "baseHeadword": "posture",
+      "baseWordId": "VD-07459",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "postur",
+          "kind": "altered-free-base",
+          "wordId": "VD-07459",
+          "meaningJa": "姿勢"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "posture（姿勢）と -al（名詞または形容詞を作る）の関連に注目する。postural 全体の主な意味は「姿勢の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "posture から postural に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "posture と postural の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:pressurize",
+      "headword": "pressurize",
+      "wordId": "VD-08394",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "加圧する",
+      "baseHeadword": "pressure",
+      "baseWordId": "VD-01893",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pressur",
+          "kind": "altered-free-base",
+          "wordId": "VD-01893",
+          "meaningJa": "圧力"
+        },
+        {
+          "surface": "-ize",
+          "kind": "suffix",
+          "meaningJa": "〜化する"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "pressure（圧力）と -ize（〜化する）の関連に注目する。pressurize 全体の主な意味は「加圧する」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "pressure から pressurize に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "pressure と pressurize の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:procedural",
+      "headword": "procedural",
+      "wordId": "VD-08400",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "手続き上の",
+      "baseHeadword": "procedure",
+      "baseWordId": "VD-06093",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "procedur",
+          "kind": "altered-free-base",
+          "wordId": "VD-06093",
+          "meaningJa": "手続き"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "procedure（手続き）と -al（名詞または形容詞を作る）の関連に注目する。procedural 全体の主な意味は「手続き上の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "procedure から procedural に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "procedure と procedural の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:promotable",
+      "headword": "promotable",
+      "wordId": "VD-08405",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "昇進の対象となりうる",
+      "baseHeadword": "promote",
+      "baseWordId": "VD-03797",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "promot",
+          "kind": "altered-free-base",
+          "wordId": "VD-03797",
+          "meaningJa": "昇進させる"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "promote（昇進させる）と -able（〜できる・〜に適した）の関連に注目する。promotable 全体の主な意味は「昇進の対象となりうる」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "promote から promotable に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "promote と promotable の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:rapturous",
+      "headword": "rapturous",
+      "wordId": "VD-08431",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "有頂天の",
+      "baseHeadword": "rapture",
+      "baseWordId": "VD-08430",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "raptur",
+          "kind": "altered-free-base",
+          "wordId": "VD-08430",
+          "meaningJa": "歓喜"
+        },
+        {
+          "surface": "-ous",
+          "kind": "suffix",
+          "meaningJa": "〜の性質をもつ"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "rapture（歓喜）と -ous（〜の性質をもつ）の関連に注目する。rapturous 全体の主な意味は「有頂天の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "rapture から rapturous に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "rapture と rapturous の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:scholarly",
+      "headword": "scholarly",
+      "wordId": "VD-08490",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "学問的な",
+      "baseHeadword": "scholar",
+      "baseWordId": "VD-03984",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "scholar",
+          "kind": "free-base",
+          "wordId": "VD-03984",
+          "meaningJa": "学者"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "scholar（学者）と -ly（形容詞または副詞を作る）の関連に注目する。scholarly 全体の主な意味は「学問的な」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "scholar から scholarly に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "scholar と scholarly の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:solitariness",
+      "headword": "solitariness",
+      "wordId": "VD-08513",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "孤独であること",
+      "baseHeadword": "solitary",
+      "baseWordId": "VD-08514",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "solitari",
+          "kind": "altered-free-base",
+          "wordId": "VD-08514",
+          "meaningJa": "孤独な"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "solitary（孤独な）と -ness（性質・状態）の関連に注目する。solitariness 全体の主な意味は「孤独であること」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "solitary から solitariness に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "solitary と solitariness の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:subsistence",
+      "headword": "subsistence",
+      "wordId": "VD-08540",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "生存・最低限の生活",
+      "baseHeadword": "subsist",
+      "baseWordId": "VD-08539",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "subsist",
+          "kind": "free-base",
+          "wordId": "VD-08539",
+          "meaningJa": "生存する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・行為・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "subsist（生存する）と -ence（状態・行為・結果）の関連に注目する。subsistence 全体の主な意味は「生存・最低限の生活」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "subsist から subsistence に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "subsist と subsistence の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:summarily",
+      "headword": "summarily",
+      "wordId": "VD-08546",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "手短に・即座に",
+      "baseHeadword": "summary",
+      "baseWordId": "VD-02143",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "summari",
+          "kind": "altered-free-base",
+          "wordId": "VD-02143",
+          "meaningJa": "要約"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "形容詞または副詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "summary（要約）と -ly（形容詞または副詞を作る）の関連に注目する。summarily 全体の主な意味は「手短に・即座に」。summarily は『手短に』や『手続きなしに』であり、summary の副詞というだけでは説明不足。",
+      "learningQuestionJa": "summary から summarily に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "summary と summarily の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:testimonial",
+      "headword": "testimonial",
+      "wordId": "VD-08572",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "証言の・推薦文",
+      "baseHeadword": "testimony",
+      "baseWordId": "VD-06573",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "testimoni",
+          "kind": "altered-free-base",
+          "wordId": "VD-06573",
+          "meaningJa": "証言"
+        },
+        {
+          "surface": "-al",
+          "kind": "suffix",
+          "meaningJa": "名詞または形容詞を作る"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "testimony（証言）と -al（名詞または形容詞を作る）の関連に注目する。testimonial 全体の主な意味は「証言の・推薦文」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "testimony から testimonial に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "testimony と testimonial の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:truism",
+      "headword": "truism",
+      "wordId": "VD-08589",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自明の理",
+      "baseHeadword": "true",
+      "baseWordId": "VD-00972",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "tru",
+          "kind": "altered-free-base",
+          "wordId": "VD-00972",
+          "meaningJa": "真実の"
+        },
+        {
+          "surface": "-ism",
+          "kind": "suffix",
+          "meaningJa": "考え方・体系・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "true（真実の）と -ism（考え方・体系・状態）の関連に注目する。truism 全体の主な意味は「自明の理」。truism は『自明の理』という語義で、『真実主義』と機械的に解釈しない。",
+      "learningQuestionJa": "true から truism に語形が変わると、意味と品詞はどう変化する？",
+      "imageHintJa": "true と truism の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:discover",
+      "headword": "discover",
+      "wordId": "VD-01396",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "発見する",
+      "baseHeadword": "cover",
+      "baseWordId": "VD-00223",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "meaningJa": "否定・反対・分離"
+        },
+        {
+          "surface": "cover",
+          "kind": "free-base",
+          "wordId": "VD-00223",
+          "meaningJa": "覆う"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "dis-（否定・反対・分離）と cover（覆う）に注目する。discover 全体の主な意味は「発見する」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "dis- と cover の関係を手がかりに、discover はどのような意味で使われる？",
+      "imageHintJa": "cover と discover の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:download",
+      "headword": "download",
+      "wordId": "VD-01407",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ダウンロードする",
+      "baseHeadword": "load",
+      "baseWordId": "VD-01702",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "down-",
+          "kind": "combining-form",
+          "meaningJa": "下へ・縮小"
+        },
+        {
+          "surface": "load",
+          "kind": "free-base",
+          "wordId": "VD-01702",
+          "meaningJa": "読み込む・積む"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "down-（下へ・縮小）と load（読み込む・積む）に注目する。download 全体の主な意味は「ダウンロードする」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "down- と load の関係を手がかりに、download はどのような意味で使われる？",
+      "imageHintJa": "load と download の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outcome",
+      "headword": "outcome",
+      "wordId": "VD-05884",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "結果",
+      "baseHeadword": "come",
+      "baseWordId": "VD-00206",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "come",
+          "kind": "free-base",
+          "wordId": "VD-00206",
+          "meaningJa": "来る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と come（来る）に注目する。outcome 全体の主な意味は「結果」。outcome は『結果』という定着した名詞であり、come の前に out を付けた単純動詞ではない。",
+      "learningQuestionJa": "out- と come の関係を手がかりに、outcome はどのような意味で使われる？",
+      "imageHintJa": "come と outcome の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outline",
+      "headword": "outline",
+      "wordId": "VD-03650",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "概要・輪郭",
+      "baseHeadword": "line",
+      "baseWordId": "VD-00540",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "line",
+          "kind": "free-base",
+          "wordId": "VD-00540",
+          "meaningJa": "線"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と line（線）に注目する。outline 全体の主な意味は「概要・輪郭」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と line の関係を手がかりに、outline はどのような意味で使われる？",
+      "imageHintJa": "line と outline の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overcome",
+      "headword": "overcome",
+      "wordId": "VD-03654",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "克服する",
+      "baseHeadword": "come",
+      "baseWordId": "VD-00206",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "meaningJa": "越えて・過度に"
+        },
+        {
+          "surface": "come",
+          "kind": "free-base",
+          "wordId": "VD-00206",
+          "meaningJa": "来る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "over-（越えて・過度に）と come（来る）に注目する。overcome 全体の主な意味は「克服する」。overcome は『克服する』という定着した意味で、over- の『過度に』とは異なる。",
+      "learningQuestionJa": "over- と come の関係を手がかりに、overcome はどのような意味で使われる？",
+      "imageHintJa": "come と overcome の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:represent",
+      "headword": "represent",
+      "wordId": "VD-01963",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "代表する・表す",
+      "baseHeadword": "present",
+      "baseWordId": "VD-00720",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "present",
+          "kind": "free-base",
+          "wordId": "VD-00720",
+          "meaningJa": "示す・提示する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と present（示す・提示する）に注目する。represent 全体の主な意味は「代表する・表す」。represent の re- を『もう一度』と単純に説明しない。語義ごとに確認する。",
+      "learningQuestionJa": "re- と present の関係を手がかりに、represent はどのような意味で使われる？",
+      "imageHintJa": "present と represent の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:discourage",
+      "headword": "discourage",
+      "wordId": "VD-02873",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "やる気をなくさせる",
+      "baseHeadword": "courage",
+      "baseWordId": "VD-02742",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "meaningJa": "否定・反対・分離"
+        },
+        {
+          "surface": "courage",
+          "kind": "free-base",
+          "wordId": "VD-02742",
+          "meaningJa": "勇気"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "dis-（否定・反対・分離）と courage（勇気）に注目する。discourage 全体の主な意味は「やる気をなくさせる」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "dis- と courage の関係を手がかりに、discourage はどのような意味で使われる？",
+      "imageHintJa": "courage と discourage の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:disease",
+      "headword": "disease",
+      "wordId": "VD-02876",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "病気",
+      "baseHeadword": "ease",
+      "baseWordId": "VD-05102",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "meaningJa": "否定・反対・分離"
+        },
+        {
+          "surface": "ease",
+          "kind": "free-base",
+          "wordId": "VD-05102",
+          "meaningJa": "安楽・気楽さ"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "dis-（否定・反対・分離）と ease（安楽・気楽さ）に注目する。disease 全体の主な意味は「病気」。disease は現代英語で『病気』を表し、ease の単純な反対語として教えない。",
+      "learningQuestionJa": "dis- と ease の関係を手がかりに、disease はどのような意味で使われる？",
+      "imageHintJa": "ease と disease の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outdoor",
+      "headword": "outdoor",
+      "wordId": "VD-03646",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "屋外の",
+      "baseHeadword": "door",
+      "baseWordId": "VD-00264",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "door",
+          "kind": "free-base",
+          "wordId": "VD-00264",
+          "meaningJa": "ドア"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と door（ドア）に注目する。outdoor 全体の主な意味は「屋外の」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と door の関係を手がかりに、outdoor はどのような意味で使われる？",
+      "imageHintJa": "door と outdoor の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outlaw",
+      "headword": "outlaw",
+      "wordId": "VD-03649",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "法律で禁じる・無法者",
+      "baseHeadword": "law",
+      "baseWordId": "VD-01680",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "law",
+          "kind": "free-base",
+          "wordId": "VD-01680",
+          "meaningJa": "法律"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と law（法律）に注目する。outlaw 全体の主な意味は「法律で禁じる・無法者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と law の関係を手がかりに、outlaw はどのような意味で使われる？",
+      "imageHintJa": "law と outlaw の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outweigh",
+      "headword": "outweigh",
+      "wordId": "VD-03653",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "〜より重要である・重い",
+      "baseHeadword": "weigh",
+      "baseWordId": "VD-02276",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "weigh",
+          "kind": "free-base",
+          "wordId": "VD-02276",
+          "meaningJa": "重さを量る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と weigh（重さを量る）に注目する。outweigh 全体の主な意味は「〜より重要である・重い」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と weigh の関係を手がかりに、outweigh はどのような意味で使われる？",
+      "imageHintJa": "weigh と outweigh の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:prefix",
+      "headword": "prefix",
+      "wordId": "VD-03761",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "接頭辞",
+      "baseHeadword": "fix",
+      "baseWordId": "VD-01508",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって"
+        },
+        {
+          "surface": "fix",
+          "kind": "free-base",
+          "wordId": "VD-01508",
+          "meaningJa": "固定する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "pre-（前もって）と fix（固定する）に注目する。prefix 全体の主な意味は「接頭辞」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "pre- と fix の関係を手がかりに、prefix はどのような意味で使われる？",
+      "imageHintJa": "fix と prefix の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:remark",
+      "headword": "remark",
+      "wordId": "VD-03902",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "言及する・発言",
+      "baseHeadword": "mark",
+      "baseWordId": "VD-01727",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "mark",
+          "kind": "free-base",
+          "wordId": "VD-01727",
+          "meaningJa": "印を付ける"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と mark（印を付ける）に注目する。remark 全体の主な意味は「言及する・発言」。remark は『述べる』の意味で、mark を繰り返す行為とは限らない。",
+      "learningQuestionJa": "re- と mark の関係を手がかりに、remark はどのような意味で使われる？",
+      "imageHintJa": "mark と remark の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:remove",
+      "headword": "remove",
+      "wordId": "VD-03907",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "取り除く",
+      "baseHeadword": "move",
+      "baseWordId": "VD-00603",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "move",
+          "kind": "free-base",
+          "wordId": "VD-00603",
+          "meaningJa": "動かす"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と move（動かす）に注目する。remove 全体の主な意味は「取り除く」。remove の re- を『再び』と教えない。語全体では『取り除く』。",
+      "learningQuestionJa": "re- と move の関係を手がかりに、remove はどのような意味で使われる？",
+      "imageHintJa": "move と remove の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:update",
+      "headword": "update",
+      "wordId": "VD-04343",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "最新情報に更新する",
+      "baseHeadword": "date",
+      "baseWordId": "VD-00237",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "up-",
+          "kind": "combining-form",
+          "meaningJa": "上へ・更新"
+        },
+        {
+          "surface": "date",
+          "kind": "free-base",
+          "wordId": "VD-00237",
+          "meaningJa": "日付"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "up-（上へ・更新）と date（日付）に注目する。update 全体の主な意味は「最新情報に更新する」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "up- と date の関係を手がかりに、update はどのような意味で使われる？",
+      "imageHintJa": "date と update の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:upload",
+      "headword": "upload",
+      "wordId": "VD-04345",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "アップロードする",
+      "baseHeadword": "load",
+      "baseWordId": "VD-01702",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "up-",
+          "kind": "combining-form",
+          "meaningJa": "上へ・更新"
+        },
+        {
+          "surface": "load",
+          "kind": "free-base",
+          "wordId": "VD-01702",
+          "meaningJa": "読み込む・積む"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "up-（上へ・更新）と load（読み込む・積む）に注目する。upload 全体の主な意味は「アップロードする」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "up- と load の関係を手がかりに、upload はどのような意味で使われる？",
+      "imageHintJa": "load と upload の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:downfall",
+      "headword": "downfall",
+      "wordId": "VD-05078",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "失脚・没落",
+      "baseHeadword": "fall",
+      "baseWordId": "VD-01481",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "down-",
+          "kind": "combining-form",
+          "meaningJa": "下へ・縮小"
+        },
+        {
+          "surface": "fall",
+          "kind": "free-base",
+          "wordId": "VD-01481",
+          "meaningJa": "落ちる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "down-（下へ・縮小）と fall（落ちる）に注目する。downfall 全体の主な意味は「失脚・没落」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "down- と fall の関係を手がかりに、downfall はどのような意味で使われる？",
+      "imageHintJa": "fall と downfall の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:downsize",
+      "headword": "downsize",
+      "wordId": "VD-05079",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "規模を縮小する",
+      "baseHeadword": "size",
+      "baseWordId": "VD-00823",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "down-",
+          "kind": "combining-form",
+          "meaningJa": "下へ・縮小"
+        },
+        {
+          "surface": "size",
+          "kind": "free-base",
+          "wordId": "VD-00823",
+          "meaningJa": "大きさ"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "down-（下へ・縮小）と size（大きさ）に注目する。downsize 全体の主な意味は「規模を縮小する」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "down- と size の関係を手がかりに、downsize はどのような意味で使われる？",
+      "imageHintJa": "size と downsize の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outback",
+      "headword": "outback",
+      "wordId": "VD-05882",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "奥地・辺境",
+      "baseHeadword": "back",
+      "baseWordId": "VD-00060",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "back",
+          "kind": "free-base",
+          "wordId": "VD-00060",
+          "meaningJa": "後方"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と back（後方）に注目する。outback 全体の主な意味は「奥地・辺境」。outback は地域・奥地の意味に語彙化している。",
+      "learningQuestionJa": "out- と back の関係を手がかりに、outback はどのような意味で使われる？",
+      "imageHintJa": "back と outback の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outbreak",
+      "headword": "outbreak",
+      "wordId": "VD-05883",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "突然の発生",
+      "baseHeadword": "break",
+      "baseWordId": "VD-00123",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "break",
+          "kind": "free-base",
+          "wordId": "VD-00123",
+          "meaningJa": "破れる・壊れる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と break（破れる・壊れる）に注目する。outbreak 全体の主な意味は「突然の発生」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と break の関係を手がかりに、outbreak はどのような意味で使われる？",
+      "imageHintJa": "break と outbreak の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outdistance",
+      "headword": "outdistance",
+      "wordId": "VD-05885",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "〜を大きく引き離す",
+      "baseHeadword": "distance",
+      "baseWordId": "VD-02881",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "distance",
+          "kind": "free-base",
+          "wordId": "VD-02881",
+          "meaningJa": "距離"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と distance（距離）に注目する。outdistance 全体の主な意味は「〜を大きく引き離す」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と distance の関係を手がかりに、outdistance はどのような意味で使われる？",
+      "imageHintJa": "distance と outdistance の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outfit",
+      "headword": "outfit",
+      "wordId": "VD-05887",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "装備一式・服装",
+      "baseHeadword": "fit",
+      "baseWordId": "VD-01507",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "fit",
+          "kind": "free-base",
+          "wordId": "VD-01507",
+          "meaningJa": "装備する・合う"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と fit（装備する・合う）に注目する。outfit 全体の主な意味は「装備一式・服装」。outfit は装備・衣服のセットの意味に語彙化している。",
+      "learningQuestionJa": "out- と fit の関係を手がかりに、outfit はどのような意味で使われる？",
+      "imageHintJa": "fit と outfit の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outgrow",
+      "headword": "outgrow",
+      "wordId": "VD-05888",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "成長して卒業する",
+      "baseHeadword": "grow",
+      "baseWordId": "VD-00409",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "grow",
+          "kind": "free-base",
+          "wordId": "VD-00409",
+          "meaningJa": "成長する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と grow（成長する）に注目する。outgrow 全体の主な意味は「成長して卒業する」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と grow の関係を手がかりに、outgrow はどのような意味で使われる？",
+      "imageHintJa": "grow と outgrow の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outlive",
+      "headword": "outlive",
+      "wordId": "VD-05891",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "〜より長生きする",
+      "baseHeadword": "live",
+      "baseWordId": "VD-00545",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "live",
+          "kind": "free-base",
+          "wordId": "VD-00545",
+          "meaningJa": "生きる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と live（生きる）に注目する。outlive 全体の主な意味は「〜より長生きする」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と live の関係を手がかりに、outlive はどのような意味で使われる？",
+      "imageHintJa": "live と outlive の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outlook",
+      "headword": "outlook",
+      "wordId": "VD-05892",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "見通し・考え方",
+      "baseHeadword": "look",
+      "baseWordId": "VD-00550",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "look",
+          "kind": "free-base",
+          "wordId": "VD-00550",
+          "meaningJa": "見る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と look（見る）に注目する。outlook 全体の主な意味は「見通し・考え方」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と look の関係を手がかりに、outlook はどのような意味で使われる？",
+      "imageHintJa": "look と outlook の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outpatient",
+      "headword": "outpatient",
+      "wordId": "VD-05893",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "外来患者",
+      "baseHeadword": "patient",
+      "baseWordId": "VD-01830",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "patient",
+          "kind": "free-base",
+          "wordId": "VD-01830",
+          "meaningJa": "患者"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と patient（患者）に注目する。outpatient 全体の主な意味は「外来患者」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と patient の関係を手がかりに、outpatient はどのような意味で使われる？",
+      "imageHintJa": "patient と outpatient の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:output",
+      "headword": "output",
+      "wordId": "VD-05894",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "産出・出力",
+      "baseHeadword": "put",
+      "baseWordId": "VD-00729",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "put",
+          "kind": "free-base",
+          "wordId": "VD-00729",
+          "meaningJa": "置く"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と put（置く）に注目する。output 全体の主な意味は「産出・出力」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と put の関係を手がかりに、output はどのような意味で使われる？",
+      "imageHintJa": "put と output の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outshine",
+      "headword": "outshine",
+      "wordId": "VD-05897",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "〜より輝く",
+      "baseHeadword": "shine",
+      "baseWordId": "VD-02042",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "shine",
+          "kind": "free-base",
+          "wordId": "VD-02042",
+          "meaningJa": "輝く"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と shine（輝く）に注目する。outshine 全体の主な意味は「〜より輝く」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と shine の関係を手がかりに、outshine はどのような意味で使われる？",
+      "imageHintJa": "shine と outshine の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outside",
+      "headword": "outside",
+      "wordId": "VD-00662",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "外側・外に",
+      "baseHeadword": "side",
+      "baseWordId": "VD-00811",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "out-",
+          "kind": "combining-form",
+          "meaningJa": "外へ・〜を超えて"
+        },
+        {
+          "surface": "side",
+          "kind": "free-base",
+          "wordId": "VD-00811",
+          "meaningJa": "側"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "out-（外へ・〜を超えて）と side（側）に注目する。outside 全体の主な意味は「外側・外に」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "out- と side の関係を手がかりに、outside はどのような意味で使われる？",
+      "imageHintJa": "side と outside の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:downtown",
+      "headword": "downtown",
+      "wordId": "VD-01409",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "繁華街・中心街",
+      "baseHeadword": "town",
+      "baseWordId": "VD-00964",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "down-",
+          "kind": "combining-form",
+          "meaningJa": "下へ・縮小"
+        },
+        {
+          "surface": "town",
+          "kind": "free-base",
+          "wordId": "VD-00964",
+          "meaningJa": "町"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "down-（下へ・縮小）と town（町）に注目する。downtown 全体の主な意味は「繁華街・中心街」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "down- と town の関係を手がかりに、downtown はどのような意味で使われる？",
+      "imageHintJa": "town と downtown の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mistake",
+      "headword": "mistake",
+      "wordId": "VD-01752",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "間違える・誤り",
+      "baseHeadword": "take",
+      "baseWordId": "VD-00903",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "take",
+          "kind": "free-base",
+          "wordId": "VD-00903",
+          "meaningJa": "取る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "mis-（誤って）と take（取る）に注目する。mistake 全体の主な意味は「間違える・誤り」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "mis- と take の関係を手がかりに、mistake はどのような意味で使われる？",
+      "imageHintJa": "take と mistake の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:preoccupy",
+      "headword": "preoccupy",
+      "wordId": "VD-06070",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "頭をいっぱいにする",
+      "baseHeadword": "occupy",
+      "baseWordId": "VD-03617",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって"
+        },
+        {
+          "surface": "occupy",
+          "kind": "free-base",
+          "wordId": "VD-03617",
+          "meaningJa": "占める"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "pre-（前もって）と occupy（占める）に注目する。preoccupy 全体の主な意味は「頭をいっぱいにする」。preoccupy の『気を占める』は『前に占有する』の直訳ではない。",
+      "learningQuestionJa": "pre- と occupy の関係を手がかりに、preoccupy はどのような意味で使われる？",
+      "imageHintJa": "occupy と preoccupy の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:recollect",
+      "headword": "recollect",
+      "wordId": "VD-06174",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "思い出す",
+      "baseHeadword": "collect",
+      "baseWordId": "VD-00202",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "collect",
+          "kind": "free-base",
+          "wordId": "VD-00202",
+          "meaningJa": "集める"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と collect（集める）に注目する。recollect 全体の主な意味は「思い出す」。recollect は『記憶を集める』という比喩的意味をもつ。",
+      "learningQuestionJa": "re- と collect の関係を手がかりに、recollect はどのような意味で使われる？",
+      "imageHintJa": "collect と recollect の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:remind",
+      "headword": "remind",
+      "wordId": "VD-01956",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "思い出させる",
+      "baseHeadword": "mind",
+      "baseWordId": "VD-00582",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "mind",
+          "kind": "free-base",
+          "wordId": "VD-00582",
+          "meaningJa": "心・気に掛ける"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と mind（心・気に掛ける）に注目する。remind 全体の主な意味は「思い出させる」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "re- と mind の関係を手がかりに、remind はどのような意味で使われる？",
+      "imageHintJa": "mind と remind の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:repress",
+      "headword": "repress",
+      "wordId": "VD-06226",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "抑圧する",
+      "baseHeadword": "press",
+      "baseWordId": "VD-03774",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "press",
+          "kind": "free-base",
+          "wordId": "VD-03774",
+          "meaningJa": "押す"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と press（押す）に注目する。repress 全体の主な意味は「抑圧する」。repress の re- は反復ではなく『後ろに・抑え込む』側の意味関係。",
+      "learningQuestionJa": "re- と press の関係を手がかりに、repress はどのような意味で使われる？",
+      "imageHintJa": "press と repress の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:return",
+      "headword": "return",
+      "wordId": "VD-01969",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "戻る",
+      "baseHeadword": "turn",
+      "baseWordId": "VD-00977",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "turn",
+          "kind": "free-base",
+          "wordId": "VD-00977",
+          "meaningJa": "向きを変える"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と turn（向きを変える）に注目する。return 全体の主な意味は「戻る」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "re- と turn の関係を手がかりに、return はどのような意味で使われる？",
+      "imageHintJa": "turn と return の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:subway",
+      "headword": "subway",
+      "wordId": "VD-00881",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "地下鉄・地下道",
+      "baseHeadword": "way",
+      "baseWordId": "VD-01014",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "sub-",
+          "kind": "prefix",
+          "meaningJa": "下に"
+        },
+        {
+          "surface": "way",
+          "kind": "free-base",
+          "wordId": "VD-01014",
+          "meaningJa": "道"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "sub-（下に）と way（道）に注目する。subway 全体の主な意味は「地下鉄・地下道」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "sub- と way の関係を手がかりに、subway はどのような意味で使われる？",
+      "imageHintJa": "way と subway の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:upgrade",
+      "headword": "upgrade",
+      "wordId": "VD-06746",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "改良する・格上げする",
+      "baseHeadword": "grade",
+      "baseWordId": "VD-00394",
+      "analysisType": "curated-compound-first-element-learning-candidate",
+      "parts": [
+        {
+          "surface": "up-",
+          "kind": "combining-form",
+          "meaningJa": "上へ・更新"
+        },
+        {
+          "surface": "grade",
+          "kind": "free-base",
+          "wordId": "VD-00394",
+          "meaningJa": "等級"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "up-（上へ・更新）と grade（等級）に注目する。upgrade 全体の主な意味は「改良する・格上げする」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "up- と grade の関係を手がかりに、upgrade はどのような意味で使われる？",
+      "imageHintJa": "grade と upgrade の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:preoccupation",
+      "headword": "preoccupation",
+      "wordId": "VD-08389",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "心を占めていること",
+      "baseHeadword": "occupation",
+      "baseWordId": "VD-01794",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって"
+        },
+        {
+          "surface": "occupation",
+          "kind": "free-base",
+          "wordId": "VD-01794",
+          "meaningJa": "仕事・占有"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "pre-（前もって）と occupation（仕事・占有）に注目する。preoccupation 全体の主な意味は「心を占めていること」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "pre- と occupation の関係を手がかりに、preoccupation はどのような意味で使われる？",
+      "imageHintJa": "occupation と preoccupation の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:rebound",
+      "headword": "rebound",
+      "wordId": "VD-08434",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "跳ね返る",
+      "baseHeadword": "bound",
+      "baseWordId": "VD-02532",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "bound",
+          "kind": "free-base",
+          "wordId": "VD-02532",
+          "meaningJa": "跳ぶ・跳ねる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と bound（跳ぶ・跳ねる）に注目する。rebound 全体の主な意味は「跳ね返る」。rebound は『跳ね返る』。bound は『境界』という別語義もある。",
+      "learningQuestionJa": "re- と bound の関係を手がかりに、rebound はどのような意味で使われる？",
+      "imageHintJa": "bound と rebound の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:resound",
+      "headword": "resound",
+      "wordId": "VD-08462",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "響き渡る",
+      "baseHeadword": "sound",
+      "baseWordId": "VD-02096",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "sound",
+          "kind": "free-base",
+          "wordId": "VD-02096",
+          "meaningJa": "音・響く"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と sound（音・響く）に注目する。resound 全体の主な意味は「響き渡る」。綴りの対応は学習の手がかりであり、歴史的な直接派生や意味の完全一致を示すものではない。",
+      "learningQuestionJa": "re- と sound の関係を手がかりに、resound はどのような意味で使われる？",
+      "imageHintJa": "sound と resound の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:relapse",
+      "headword": "relapse",
+      "wordId": "VD-07521",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "再発する",
+      "baseHeadword": "lapse",
+      "baseWordId": "VD-07328",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・後ろへ・強調"
+        },
+        {
+          "surface": "lapse",
+          "kind": "free-base",
+          "wordId": "VD-07328",
+          "meaningJa": "一時的な衰え・失敗"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "re-（再び・後ろへ・強調）と lapse（一時的な衰え・失敗）に注目する。relapse 全体の主な意味は「再発する」。relapse は『再発する』であり、lapse の具体的な語義と単純に一対一対応しない。",
+      "learningQuestionJa": "re- と lapse の関係を手がかりに、relapse はどのような意味で使われる？",
+      "imageHintJa": "lapse と relapse の典型的な使い方を比べる二場面。文字は描かない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "explicit-manual-selection-not-automatic-etymology",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
