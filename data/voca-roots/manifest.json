@@ -377,5 +377,23 @@
         "generatedImages": 0
       }
     }
-  ]
+  ],
+  "fullMasterReconciliation": {
+    "path": "data/voca-roots/full-master-word-links.json",
+    "generator": "tools/reconcile-voca-roots-word-links.mjs",
+    "sourceIndex": "data/voca-roots/word-breakdowns/full-master-index.json",
+    "status": "draft-reference-only",
+    "productionEnabled": false,
+    "linguisticReviewCompleted": false,
+    "counts": {
+      "sourceRelations": 10697,
+      "matchedRelations": 3330,
+      "matchedDistinctHeadwords": 2698,
+      "unmatchedRelations": 7367,
+      "unmatchedMasterHeadwords": 5955,
+      "masterHeadwords": 8653,
+      "legacyMatchedRelations": 898,
+      "additionalResolved": 2432
+    }
+  }
 }

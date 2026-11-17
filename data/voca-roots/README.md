@@ -21,3 +21,9 @@ Run `node tools/validate-voca-roots.mjs` from repository root.
 
 ## Bulk-link evidence (batches 011+)
 Extra associations are **editorial candidates** from explicitly authored lexical families, not verified historical etymologies. Each item has familyEvidence pointing at the source file and anchor; generic related, synonym and collocation links are excluded. IDs come only from exact matches in the incomplete candidate index. Never publish without editorial review. link-ledger.json is a derived deduplication index, not runtime data.
+
+## Full-master link reconciliation (2026-11-17)
+- Derived `full-master-word-links.json` resolves **3,330 existing relation candidates** to **2,698 distinct headwords** from the complete **8,653-word** master; **2,432 link IDs** are newly resolved beyond the older incomplete candidate index.
+- Existing source batches, link-ledger and old ID assignments are unchanged. The original manifest's `matchedRelations` count describes the **legacy partial-index** state. The new `fullMasterReconciliation.counts` describes the complete-master view.
+- This is **not** an etymological accuracy review, a new vocabulary addition, or a published learning feature. All source relationships remain draft-only; new `wordId` matches must not be exposed as approved breakdowns or quiz answers.
+- Deterministic commands: `node tools/reconcile-voca-roots-word-links.mjs --check` verifies the committed index; `--write` regenerates it after source changes, without editing any source batch or publishing.
