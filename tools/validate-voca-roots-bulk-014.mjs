@@ -11,6 +11,12 @@ const a = read('bulk-master-compounds-014a.json');
 const b = read('bulk-master-compounds-014b.json');
 const evidenceParts = Array.from({ length: 7 }, (_, i) => read('bulk-master-evidence-014-0' + (i + 1) + '.json'));
 const records = [...a.records, ...b.records];
+const queue = read('bulk-editorial-review-014.json');
+assert.equal(queue.productionEnabled, false);
+assert.equal(queue.entries.length, 429);
+assert.deepEqual(queue.counts.byPriority, {high:75, medium:192, low:162});
+assert.deepEqual(new Set(queue.entries.map(x => x.breakdownId)), new Set(records.map(x => x.id)));
+assert.ok(queue.entries.every(x => x.approved === false && x.productionEligible === false && x.reviewRequired === true));
 const earlier = manifest.files.filter(file => !/^bulk-master-compounds-014[ab]\.json$/.test(file))
   .flatMap(file => read(file).records);
 const originalMasterManifest = JSON.parse(fs.readFileSync('data/vocabulary-drafts/manifest.json', 'utf8'));
