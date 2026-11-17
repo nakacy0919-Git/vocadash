@@ -5,20 +5,18 @@
   "status": "draft-unreviewed",
   "productionEnabled": false,
   "masterTarget": 8653,
-  "candidateIndex": {
-    "path": "data/vocabulary-drafts/candidate-index.json",
-    "entryCount": 2733,
-    "completeMaster": false
-  },
   "counts": {
     "records": 3172,
     "distinctHeadwords": 3169,
     "automatedModernDerivationCandidates": 3137,
     "handAuthoredCoreRecords": 35,
-    "candidateIndexMatchedRows": 219,
-    "candidateIndexMatchedDistinctHeadwords": 217,
-    "unresolvedMasterRows": 2953,
-    "fullyEditorialReviewed": 0
+    "candidateIndexMatchedRows": 783,
+    "candidateIndexMatchedDistinctHeadwords": 781,
+    "unresolvedMasterRows": 2389,
+    "fullyEditorialReviewed": 0,
+    "fullMasterMatchedRows": 783,
+    "fullMasterMatchedDistinctHeadwords": 781,
+    "notIn8653MasterHeadwords": 2388
   },
   "files": [
     "modern-derivation-candidates-001.json",
@@ -37,7 +35,10 @@
     "本番・個人別記憶エンジンには接続しない。",
     "綴り上の分割と、歴史的語源の説明を別種のレコードとして管理。",
     "追加バッチ003〜005では関連語族に基づく新規1,565件を登録。綴りの変化の候補（語末eの脱落・y→i・末子音重複）は学習上の仮分解であり、歴史語源が検証されたものではない。",
-    "2026-11-17追加の1,565件は既存見出し語との重複を除去済み。ただし同一語彙に複数の歴史的分析が成立する可能性を否定しない。"
+    "2026-11-17追加の1,565件は既存見出し語との重複を除去済み。ただし同一語彙に複数の歴史的分析が成立する可能性を否定しない。",
+    "全84アクティブ語彙バッチから8,653見出し語と9,614語義を抽出し、正式なwordIdとCEFRを完全一致再照合。元の2,733語候補索引の219レコードから783レコードに拡大（+564）。",
+    "完全マスターに含まれない2,388の別見出し語は、教材の語源関連語・派生候補として残すが、8,653語への収録済みとして数えない。",
+    "元教材の語義・語源が校閲済みという意味ではなく、VocaRoots本番公開は依然不可。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
@@ -45,5 +46,19 @@
     "https://www.etymonline.com/word/important",
     "https://www.etymonline.com/word/importance",
     "https://www.etymonline.com/word/impossible"
-  ]
+  ],
+  "fullMasterIndex": {
+    "path": "data/voca-roots/word-breakdowns/full-master-index.json",
+    "sourceManifest": "data/vocabulary-drafts/manifest.json",
+    "sourceActiveBatchCount": 84,
+    "distinctHeadwords": 8653,
+    "senses": 9614,
+    "completeMaster": true,
+    "status": "draft-reference-only"
+  },
+  "legacyCandidateIndex": {
+    "path": "data/vocabulary-drafts/candidate-index.json",
+    "entryCount": 2733,
+    "completeMaster": false
+  }
 }
