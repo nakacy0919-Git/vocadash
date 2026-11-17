@@ -36,3 +36,6 @@ node tools/validate-voca-roots-curated-013.mjs
 node tools/validate-voca-roots-master-first.mjs
 ```
 The connector-backed checks should be reported separately from an executed Node run; the latter has not been performed in an offline checkout.
+
+## Editorial review queue
+`bulk-editorial-review-014.json` records the follow-up queue for all 429 additions: **75 high**, **192 medium**, **162 low** priority. **None is approved.** Priorities identify lexicalized or ambiguous word meanings, component polysemy, phrase-vs-morphology issues and acronym casing. This does not certify that the low-priority rows are historically correct.
