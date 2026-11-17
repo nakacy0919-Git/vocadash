@@ -1,0 +1,471 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "001",
+  "type": "hand-authored-core-breakdowns",
+  "records": [
+    {
+      "id": "wb:core:transport",
+      "headword": "transport",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "輸送する",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "trans-",
+          "kind": "prefix",
+          "morphemeId": "prefix:trans",
+          "meaningJa": "向こう側へ"
+        },
+        {
+          "surface": "port",
+          "kind": "root",
+          "morphemeId": "root:port",
+          "meaningJa": "運ぶ"
+        }
+      ],
+      "explanationJa": "ラテン語の「向こう側へ＋運ぶ」にさかのぼる。場所を越えて物を運ぶことを表す。",
+      "imageHintJa": null,
+      "sourceRefs": [
+        "https://www.etymonline.com/word/transport"
+      ],
+      "referenceLookupPending": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:import",
+      "headword": "import",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "輸入する",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-inward",
+          "meaningJa": "中へ"
+        },
+        {
+          "surface": "port",
+          "kind": "root",
+          "morphemeId": "root:port",
+          "meaningJa": "運ぶ"
+        }
+      ],
+      "explanationJa": "ラテン語の「中へ運ぶ」が語源。現在は主に国外から商品を入れることを表す。",
+      "imageHintJa": null,
+      "sourceRefs": [
+        "https://www.etymonline.com/word/import"
+      ],
+      "referenceLookupPending": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:export",
+      "headword": "export",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "輸出する",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "ex-",
+          "kind": "prefix",
+          "morphemeId": "prefix:ex",
+          "meaningJa": "外へ"
+        },
+        {
+          "surface": "port",
+          "kind": "root",
+          "morphemeId": "root:port",
+          "meaningJa": "運ぶ"
+        }
+      ],
+      "explanationJa": "国外へ品物を運び出すという意味を、外へ＋運ぶという歴史的な語構成から学ぶ。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:important",
+      "headword": "important",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "重要な",
+      "analysisType": "semantic-shift",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-inward",
+          "meaningJa": "中へ"
+        },
+        {
+          "surface": "port",
+          "kind": "root",
+          "morphemeId": "root:port",
+          "meaningJa": "運ぶ"
+        },
+        {
+          "surface": "-ant",
+          "kind": "historical-ending",
+          "morphemeId": null,
+          "meaningJa": "ラテン語分詞形の名残"
+        }
+      ],
+      "explanationJa": "元は「運び入れる」に関わる語から「重大な意味を持つ」へ発達。現代の『重要な』を直訳の『中へ運ぶ』と同一視しない。",
+      "imageHintJa": "輸送する箱から『重要な知らせ』へ意味が発達する二場面",
+      "sourceRefs": [
+        "https://www.etymonline.com/word/important"
+      ],
+      "referenceLookupPending": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:importance",
+      "headword": "importance",
+      "wordId": "VD-01623",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "重要性",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "important",
+          "kind": "derived-base",
+          "morphemeId": null,
+          "meaningJa": "重要な"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "morphemeId": "suffix:ance",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "explanationJa": "important から重要である性質を表す名詞。さらにさかのぼると Latin portare の歴史的つながりがある。",
+      "imageHintJa": null,
+      "sourceRefs": [
+        "https://www.etymonline.com/word/importance"
+      ],
+      "referenceLookupPending": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:predict",
+      "headword": "predict",
+      "wordId": "VD-01889",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "予測する",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "morphemeId": "prefix:pre",
+          "meaningJa": "前もって"
+        },
+        {
+          "surface": "dict",
+          "kind": "root",
+          "morphemeId": "root:dict",
+          "meaningJa": "述べる"
+        }
+      ],
+      "explanationJa": "「前もって述べる」というラテン語系の構成から、未来を予測する意味が理解できる。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:contradict",
+      "headword": "contradict",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "反論する・矛盾する",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "contra-",
+          "kind": "prefix",
+          "morphemeId": "prefix:contra",
+          "meaningJa": "反対に"
+        },
+        {
+          "surface": "dict",
+          "kind": "root",
+          "morphemeId": "root:dict",
+          "meaningJa": "述べる"
+        }
+      ],
+      "explanationJa": "相手の発言に反対するように述べるイメージが、反論や矛盾という意味につながる。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:telephone",
+      "headword": "telephone",
+      "wordId": "VD-00912",
+      "cefrHeadword": "A1",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "電話",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "tele",
+          "kind": "combining-form",
+          "morphemeId": "root:tele",
+          "meaningJa": "遠く"
+        },
+        {
+          "surface": "phone",
+          "kind": "combining-form",
+          "morphemeId": "root:phon",
+          "meaningJa": "音・声"
+        }
+      ],
+      "explanationJa": "遠く離れた場所へ声を伝える道具として、ギリシャ語系の遠い＋声の組合せから理解する。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:photograph",
+      "headword": "photograph",
+      "wordId": "VD-01848",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "写真・写真を撮る",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "photo",
+          "kind": "combining-form",
+          "morphemeId": "root:photo",
+          "meaningJa": "光"
+        },
+        {
+          "surface": "graph",
+          "kind": "combining-form",
+          "morphemeId": "root:graph",
+          "meaningJa": "書く・記録する"
+        }
+      ],
+      "explanationJa": "光を使って像を記録するという仕組みを、光＋記録からつかむ。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:geography",
+      "headword": "geography",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "地理学",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "geo",
+          "kind": "combining-form",
+          "morphemeId": "root:geo",
+          "meaningJa": "地球・土地"
+        },
+        {
+          "surface": "graphy",
+          "kind": "combining-form",
+          "morphemeId": "root:graph",
+          "meaningJa": "記述すること"
+        }
+      ],
+      "explanationJa": "地球・土地について記述することから地理学という意味を覚える。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:biology",
+      "headword": "biology",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "生物学",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "bio",
+          "kind": "combining-form",
+          "morphemeId": "root:bio",
+          "meaningJa": "生命"
+        },
+        {
+          "surface": "logy",
+          "kind": "combining-form",
+          "morphemeId": "root:log",
+          "meaningJa": "研究・学問"
+        }
+      ],
+      "explanationJa": "生命について研究する学問が biology。-logy は学問を表す結合形として扱う。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:microscope",
+      "headword": "microscope",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "顕微鏡",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "micro-",
+          "kind": "combining-form",
+          "morphemeId": "prefix:micro",
+          "meaningJa": "小さい"
+        },
+        {
+          "surface": "scope",
+          "kind": "combining-form",
+          "morphemeId": "root:scope",
+          "meaningJa": "見る道具"
+        }
+      ],
+      "explanationJa": "非常に小さいものを観察する道具という機能と語構成が対応する。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:telescope",
+      "headword": "telescope",
+      "wordId": "VD-06562",
+      "cefrHeadword": "B2",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "望遠鏡",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "tele",
+          "kind": "combining-form",
+          "morphemeId": "root:tele",
+          "meaningJa": "遠く"
+        },
+        {
+          "surface": "scope",
+          "kind": "combining-form",
+          "morphemeId": "root:scope",
+          "meaningJa": "見る道具"
+        }
+      ],
+      "explanationJa": "遠くを見るための道具という意味を、遠い＋見る道具から理解する。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:psychology",
+      "headword": "psychology",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "meaningJa": "心理学",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "psych",
+          "kind": "combining-form",
+          "morphemeId": "root:psych",
+          "meaningJa": "心・精神"
+        },
+        {
+          "surface": "ology",
+          "kind": "combining-form",
+          "morphemeId": "root:log",
+          "meaningJa": "研究・学問"
+        }
+      ],
+      "explanationJa": "心や精神を対象とする学問。歴史的な結合形として説明し、単なる文字列一致とは区別する。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:international",
+      "headword": "international",
+      "wordId": "VD-01647",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "meaningJa": "国際的な",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "inter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:inter",
+          "meaningJa": "間・相互"
+        },
+        {
+          "surface": "national",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "国家の・国民の"
+        }
+      ],
+      "explanationJa": "nation に由来する national に inter- が付いた語で、複数の国にまたがるという意味になる。",
+      "imageHintJa": null,
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
