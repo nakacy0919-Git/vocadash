@@ -1,0 +1,595 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "002",
+  "type": "hand-authored-core-breakdowns",
+  "records": [
+    {
+      "id": "wb:core:submarine",
+      "headword": "submarine",
+      "meaningJa": "潜水艦・海底の",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "sub-",
+          "kind": "prefix",
+          "morphemeId": "prefix:sub",
+          "meaningJa": "下に"
+        },
+        {
+          "surface": "marine",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "海の"
+        }
+      ],
+      "explanationJa": "海の下にある、という構成。名詞では潜水艦を表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unhappy",
+      "headword": "unhappy",
+      "meaningJa": "不幸せな",
+      "wordId": "VD-02233",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "happy",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "幸せな"
+        }
+      ],
+      "explanationJa": "happy を un- で否定し、幸せではない状態を表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:unfair",
+      "headword": "unfair",
+      "meaningJa": "不公平な",
+      "wordId": "VD-02230",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "fair",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "公平な"
+        }
+      ],
+      "explanationJa": "公平である fair に否定の un- が付く。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reconsider",
+      "headword": "reconsider",
+      "meaningJa": "再考する",
+      "wordId": "VD-06178",
+      "cefrHeadword": "B2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "morphemeId": "prefix:re",
+          "meaningJa": "再び"
+        },
+        {
+          "surface": "consider",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "よく考える"
+        }
+      ],
+      "explanationJa": "もう一度検討する、という意味を re- から推測できる。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:misinterpret",
+      "headword": "misinterpret",
+      "meaningJa": "誤解釈する",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "mis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:mis",
+          "meaningJa": "誤って"
+        },
+        {
+          "surface": "interpret",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "解釈する"
+        }
+      ],
+      "explanationJa": "解釈を誤るという意味を mis- と interpret の組み合わせから理解する。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:disagree",
+      "headword": "disagree",
+      "meaningJa": "意見が合わない",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "dis-",
+          "kind": "prefix",
+          "morphemeId": "prefix:dis",
+          "meaningJa": "否定・反対"
+        },
+        {
+          "surface": "agree",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "同意する"
+        }
+      ],
+      "explanationJa": "agree を否定して同意しないこと。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:underestimate",
+      "headword": "underestimate",
+      "meaningJa": "過小評価する",
+      "wordId": "VD-06689",
+      "cefrHeadword": "B2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "under-",
+          "kind": "prefix",
+          "morphemeId": "prefix:under",
+          "meaningJa": "不十分に"
+        },
+        {
+          "surface": "estimate",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "見積もる・評価する"
+        }
+      ],
+      "explanationJa": "本来より低く見積もること。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:overestimate",
+      "headword": "overestimate",
+      "meaningJa": "過大評価する",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "over-",
+          "kind": "prefix",
+          "morphemeId": "prefix:over",
+          "meaningJa": "過度に"
+        },
+        {
+          "surface": "estimate",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "見積もる・評価する"
+        }
+      ],
+      "explanationJa": "必要以上に高く見積もること。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:prehistory",
+      "headword": "prehistory",
+      "meaningJa": "先史時代",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "morphemeId": "prefix:pre",
+          "meaningJa": "以前"
+        },
+        {
+          "surface": "history",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "歴史"
+        }
+      ],
+      "explanationJa": "文字による歴史記録が残る時代より前を指す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:postwar",
+      "headword": "postwar",
+      "meaningJa": "戦後の",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "post-",
+          "kind": "prefix",
+          "morphemeId": "prefix:post",
+          "meaningJa": "後に"
+        },
+        {
+          "surface": "war",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "戦争"
+        }
+      ],
+      "explanationJa": "戦争が終わった後の時期を表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:antivirus",
+      "headword": "antivirus",
+      "meaningJa": "ウイルス対策の",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "anti-",
+          "kind": "prefix",
+          "morphemeId": "prefix:anti",
+          "meaningJa": "対抗する"
+        },
+        {
+          "surface": "virus",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "ウイルス"
+        }
+      ],
+      "explanationJa": "ウイルスに対抗することから、対策ソフトウェアなどに使われる。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:hydrology",
+      "headword": "hydrology",
+      "meaningJa": "水文学",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "hydro",
+          "kind": "combining-form",
+          "morphemeId": "root:hydr",
+          "meaningJa": "水"
+        },
+        {
+          "surface": "logy",
+          "kind": "combining-form",
+          "morphemeId": "root:log",
+          "meaningJa": "学問"
+        }
+      ],
+      "explanationJa": "水の循環や性質を研究する学問を、二つのギリシャ語系結合形から理解する。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:thermometer",
+      "headword": "thermometer",
+      "meaningJa": "温度計",
+      "wordId": "VD-06579",
+      "cefrHeadword": "B2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "thermo",
+          "kind": "combining-form",
+          "morphemeId": "root:therm",
+          "meaningJa": "熱"
+        },
+        {
+          "surface": "meter",
+          "kind": "combining-form",
+          "morphemeId": "root:metr",
+          "meaningJa": "測定する道具"
+        }
+      ],
+      "explanationJa": "熱に関連する状態を測る道具という機能が語構成に表れている。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:manuscript",
+      "headword": "manuscript",
+      "meaningJa": "手書きの原稿",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "manu",
+          "kind": "combining-form",
+          "morphemeId": "root:manu",
+          "meaningJa": "手"
+        },
+        {
+          "surface": "script",
+          "kind": "combining-form",
+          "morphemeId": "root:scrib",
+          "meaningJa": "書かれたもの"
+        }
+      ],
+      "explanationJa": "手で書かれたものというラテン語系の表現が語源。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:aqueduct",
+      "headword": "aqueduct",
+      "meaningJa": "水道橋・導水路",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "aque",
+          "kind": "combining-form",
+          "morphemeId": "root:aqu",
+          "meaningJa": "水"
+        },
+        {
+          "surface": "duct",
+          "kind": "combining-form",
+          "morphemeId": "root:duc",
+          "meaningJa": "導く"
+        }
+      ],
+      "explanationJa": "ラテン語の水と導くに由来し、水を運ぶ水路を表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:autobiography",
+      "headword": "autobiography",
+      "meaningJa": "自伝",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "auto",
+          "kind": "prefix",
+          "morphemeId": "prefix:auto",
+          "meaningJa": "自分"
+        },
+        {
+          "surface": "bio",
+          "kind": "combining-form",
+          "morphemeId": "root:bio",
+          "meaningJa": "人生・生命"
+        },
+        {
+          "surface": "graphy",
+          "kind": "combining-form",
+          "morphemeId": "root:graph",
+          "meaningJa": "記録・記述"
+        }
+      ],
+      "explanationJa": "自分の人生を記述するという意味から自伝を理解する。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:invisible",
+      "headword": "invisible",
+      "meaningJa": "見えない",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "in-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "visible",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "見える"
+        }
+      ],
+      "explanationJa": "否定の in- が visible の前に付いて見えないことを表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impossible",
+      "headword": "impossible",
+      "meaningJa": "不可能な",
+      "wordId": "VD-01625",
+      "cefrHeadword": "A2",
+      "matchStatus": "candidate-index-exact",
+      "analysisType": "historical-components",
+      "parts": [
+        {
+          "surface": "im-",
+          "kind": "prefix",
+          "morphemeId": "prefix:in-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "possible",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "可能な"
+        }
+      ],
+      "explanationJa": "否定接頭辞 in- が p の前で im- の形になったラテン語系の語。",
+      "sourceRefs": [
+        "https://www.etymonline.com/word/impossible"
+      ],
+      "referenceLookupPending": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:nonverbal",
+      "headword": "nonverbal",
+      "meaningJa": "言葉を使わない",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "non-",
+          "kind": "prefix",
+          "morphemeId": "prefix:non",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "verbal",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "言葉による"
+        }
+      ],
+      "explanationJa": "言語によらない伝達やコミュニケーションを表す。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:counterattack",
+      "headword": "counterattack",
+      "meaningJa": "反撃する・反撃",
+      "wordId": null,
+      "cefrHeadword": null,
+      "matchStatus": "unresolved-complete-master",
+      "analysisType": "modern-derivation",
+      "parts": [
+        {
+          "surface": "counter-",
+          "kind": "prefix",
+          "morphemeId": "prefix:counter",
+          "meaningJa": "対抗する"
+        },
+        {
+          "surface": "attack",
+          "kind": "free-base",
+          "morphemeId": null,
+          "meaningJa": "攻撃する"
+        }
+      ],
+      "explanationJa": "相手の攻撃に対して攻撃し返すこと。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
