@@ -6,8 +6,8 @@
   "sourceMaster": "data/voca-roots/word-breakdowns/full-master-index.json",
   "sourceBaseBranch": "content/voca-roots-curated-013-20261118",
   "counts": {
-    "items": 430,
-    "compound": 292,
+    "items": 429,
+    "compound": 291,
     "phrase": 95,
     "adverb": 43
   },
@@ -374,20 +374,6 @@
       "componentWordIds": [
         "VD-01061",
         "VD-00786"
-      ]
-    },
-    {
-      "headword": "father",
-      "wordId": "VD-00324",
-      "cefrHeadword": "A1",
-      "kind": "compound",
-      "componentWords": [
-        "fat",
-        "her"
-      ],
-      "componentWordIds": [
-        "VD-00323",
-        "VD-00440"
       ]
     },
     {
@@ -6036,5 +6022,6 @@
         null
       ]
     }
-  ]
+  ],
+  "editorialRemovalNoteJa": "false split father = fat + her を除外。文字列一致による誤解析のため登録しない。"
 }
