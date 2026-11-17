@@ -1,0 +1,678 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "008",
+  "type": "master-priority-js-family-candidates",
+  "sourcePaths": [
+    "src/data/universe-nuance-family-mega.js",
+    "src/data/universe-academic-adjective-review-mega.js",
+    "src/data/universe-master-adjectives.js"
+  ],
+  "records": [
+    {
+      "id": "wb:modern:austerely",
+      "headword": "austerely",
+      "wordId": "VD-07849",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "質素に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "austere",
+          "kind": "free-base",
+          "meaningJa": "質素な・厳格な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "austere",
+      "baseWordId": "VD-07848",
+      "explanationJa": "austere（質素な・厳格な）と接尾辞 -ly（〜の仕方で）のつながりから austerely（質素に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "austere",
+        "targetHeadword": "austerely",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:austerity",
+      "headword": "austerity",
+      "wordId": "VD-07850",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "緊縮・質素さ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "auster",
+          "kind": "altered-free-base",
+          "meaningJa": "質素な・厳格な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "baseHeadword": "austere",
+      "baseWordId": "VD-07848",
+      "explanationJa": "austere（質素な・厳格な）と接尾辞 -ity（性質・状態）のつながりから austerity（緊縮・質素さ）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "austere",
+        "targetHeadword": "austerity",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:deliberately",
+      "headword": "deliberately",
+      "wordId": "VD-04979",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "意図的に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "deliberate",
+          "kind": "free-base",
+          "meaningJa": "意図的な・熟慮した"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "deliberate",
+      "baseWordId": "VD-04978",
+      "explanationJa": "deliberate（意図的な・熟慮した）と接尾辞 -ly（〜の仕方で）のつながりから deliberately（意図的に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-adjective-review-mega.js",
+        "baseHeadword": "deliberate",
+        "targetHeadword": "deliberately",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:denotation",
+      "headword": "denotation",
+      "wordId": "VD-07986",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "明示的意味",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "denot",
+          "kind": "altered-free-base",
+          "meaningJa": "表す・意味する"
+        },
+        {
+          "surface": "-ation",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "行為・過程・結果"
+        }
+      ],
+      "baseHeadword": "denote",
+      "baseWordId": "VD-07987",
+      "explanationJa": "denote（表す・意味する）と接尾辞 -ation（行為・過程・結果）のつながりから denotation（明示的意味）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "denote",
+        "targetHeadword": "denotation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:eccentricity",
+      "headword": "eccentricity",
+      "wordId": "VD-08028",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "風変わりさ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "eccentric",
+          "kind": "free-base",
+          "meaningJa": "風変わりな"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "baseHeadword": "eccentric",
+      "baseWordId": "VD-07120",
+      "explanationJa": "eccentric（風変わりな）と接尾辞 -ity（性質・状態）のつながりから eccentricity（風変わりさ）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "eccentric",
+        "targetHeadword": "eccentricity",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:ephemerality",
+      "headword": "ephemerality",
+      "wordId": "VD-08064",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "はかなさ",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "ephemeral",
+          "kind": "free-base",
+          "meaningJa": "短命の・はかない"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "morphemeId": "suffix:ity",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "baseHeadword": "ephemeral",
+      "baseWordId": "VD-08063",
+      "explanationJa": "ephemeral（短命の・はかない）と接尾辞 -ity（性質・状態）のつながりから ephemerality（はかなさ）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "ephemeral",
+        "targetHeadword": "ephemerality",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:fluctuation",
+      "headword": "fluctuation",
+      "wordId": "VD-08105",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "変動",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "fluctuat",
+          "kind": "altered-free-base",
+          "meaningJa": "変動する"
+        },
+        {
+          "surface": "-ion",
+          "kind": "suffix",
+          "morphemeId": "suffix:ion",
+          "meaningJa": "行為・過程・結果"
+        }
+      ],
+      "baseHeadword": "fluctuate",
+      "baseWordId": "VD-08104",
+      "explanationJa": "fluctuate（変動する）と接尾辞 -ion（行為・過程・結果）のつながりから fluctuation（変動）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "fluctuate",
+        "targetHeadword": "fluctuation",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:forlornly",
+      "headword": "forlornly",
+      "wordId": "VD-08108",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "わびしげに",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "forlorn",
+          "kind": "free-base",
+          "meaningJa": "わびしい・見捨てられた"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "forlorn",
+      "baseWordId": "VD-08107",
+      "explanationJa": "forlorn（わびしい・見捨てられた）と接尾辞 -ly（〜の仕方で）のつながりから forlornly（わびしげに）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "forlorn",
+        "targetHeadword": "forlornly",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:haughtily",
+      "headword": "haughtily",
+      "wordId": "VD-08132",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "傲慢に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "haughti",
+          "kind": "altered-free-base",
+          "meaningJa": "傲慢な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "haughty",
+      "baseWordId": "VD-08133",
+      "explanationJa": "haughty（傲慢な）と接尾辞 -ly（〜の仕方で）のつながりから haughtily（傲慢に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "haughty",
+        "targetHeadword": "haughtily",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:indolently",
+      "headword": "indolently",
+      "wordId": "VD-08190",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "怠惰に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "indolent",
+          "kind": "free-base",
+          "meaningJa": "怠惰な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "indolent",
+      "baseWordId": "VD-08189",
+      "explanationJa": "indolent（怠惰な）と接尾辞 -ly（〜の仕方で）のつながりから indolently（怠惰に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "indolent",
+        "targetHeadword": "indolently",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:ingenuously",
+      "headword": "ingenuously",
+      "wordId": "VD-08205",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "無邪気に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "ingenuous",
+          "kind": "free-base",
+          "meaningJa": "無邪気で率直な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "ingenuous",
+      "baseWordId": "VD-08204",
+      "explanationJa": "ingenuous（無邪気で率直な）と接尾辞 -ly（〜の仕方で）のつながりから ingenuously（無邪気に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "ingenuous",
+        "targetHeadword": "ingenuously",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:magnanimously",
+      "headword": "magnanimously",
+      "wordId": "VD-08258",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "寛大に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "magnanimous",
+          "kind": "free-base",
+          "meaningJa": "寛大な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "magnanimous",
+      "baseWordId": "VD-08257",
+      "explanationJa": "magnanimous（寛大な）と接尾辞 -ly（〜の仕方で）のつながりから magnanimously（寛大に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "magnanimous",
+        "targetHeadword": "magnanimously",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:necessarily",
+      "headword": "necessarily",
+      "wordId": "VD-05809",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "必然的に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "necessari",
+          "kind": "altered-free-base",
+          "meaningJa": "必要な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "necessary",
+      "baseWordId": "VD-01777",
+      "explanationJa": "necessary（必要な）と接尾辞 -ly（〜の仕方で）のつながりから necessarily（必然的に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-adjective-review-mega.js",
+        "baseHeadword": "necessary",
+        "targetHeadword": "necessarily",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:nonchalantly",
+      "headword": "nonchalantly",
+      "wordId": "VD-08321",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "平然と",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "nonchalant",
+          "kind": "free-base",
+          "meaningJa": "平然とした"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "nonchalant",
+      "baseWordId": "VD-08320",
+      "explanationJa": "nonchalant（平然とした）と接尾辞 -ly（〜の仕方で）のつながりから nonchalantly（平然と）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "nonchalant",
+        "targetHeadword": "nonchalantly",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:opulently",
+      "headword": "opulently",
+      "wordId": "VD-08333",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "豪華に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "opulent",
+          "kind": "free-base",
+          "meaningJa": "豪華な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "opulent",
+      "baseWordId": "VD-08332",
+      "explanationJa": "opulent（豪華な）と接尾辞 -ly（〜の仕方で）のつながりから opulently（豪華に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "opulent",
+        "targetHeadword": "opulently",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:reclusive",
+      "headword": "reclusive",
+      "wordId": "VD-08438",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "人付き合いを避ける",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "reclus",
+          "kind": "altered-free-base",
+          "meaningJa": "隠遁者"
+        },
+        {
+          "surface": "-ive",
+          "kind": "suffix",
+          "morphemeId": "suffix:ive",
+          "meaningJa": "〜する性質・傾向"
+        }
+      ],
+      "baseHeadword": "recluse",
+      "baseWordId": "VD-08437",
+      "explanationJa": "recluse（隠遁者）と接尾辞 -ive（〜する性質・傾向）のつながりから reclusive（人付き合いを避ける）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-nuance-family-mega.js",
+        "baseHeadword": "recluse",
+        "targetHeadword": "reclusive",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "drop-final-e",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:temporarily",
+      "headword": "temporarily",
+      "wordId": "VD-06564",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "一時的に",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "temporari",
+          "kind": "altered-free-base",
+          "meaningJa": "一時的な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "morphemeId": "suffix:ly-adverb",
+          "meaningJa": "〜の仕方で"
+        }
+      ],
+      "baseHeadword": "temporary",
+      "baseWordId": "VD-04218",
+      "explanationJa": "temporary（一時的な）と接尾辞 -ly（〜の仕方で）のつながりから temporarily（一時的に）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-adjective-review-mega.js",
+        "baseHeadword": "temporary",
+        "targetHeadword": "temporarily",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "y-to-i",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:unnecessary",
+      "headword": "unnecessary",
+      "wordId": "VD-02241",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "wordMeaningJa": "不必要な",
+      "analysisType": "modern-derivation-candidate",
+      "parts": [
+        {
+          "surface": "un-",
+          "kind": "prefix",
+          "morphemeId": "prefix:un-negative",
+          "meaningJa": "〜でない"
+        },
+        {
+          "surface": "necessary",
+          "kind": "free-base",
+          "meaningJa": "必要な"
+        }
+      ],
+      "baseHeadword": "necessary",
+      "baseWordId": "VD-01777",
+      "explanationJa": "necessary（必要な）と接頭辞 un-（〜でない）のつながりから unnecessary（不必要な）を理解する。語源上の関係は校閲待ち。",
+      "familyEvidence": {
+        "sourceType": "js-family",
+        "sourcePath": "src/data/universe-academic-adjective-review-mega.js",
+        "baseHeadword": "necessary",
+        "targetHeadword": "unnecessary",
+        "method": "explicit-family-edge"
+      },
+      "orthographicRule": "exact",
+      "historicalEtymologyVerified": false,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
