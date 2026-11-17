@@ -18,13 +18,15 @@
           "surface": "air",
           "kind": "free-base",
           "wordId": "VD-01095",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "空気",
+          "masterSenseId": "VDO-261115-A2-00025"
         },
         {
           "surface": "port",
           "kind": "free-base",
           "wordId": "VD-03741",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "港",
+          "masterSenseId": "VDO-261114-MEGA2B-00002"
         }
       ],
       "meaningSource": "master-wordId",
@@ -45,7 +47,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "空港",
       "meaningJa": "空港",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "空港",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-00021-n-3-026",
+          "partOfSpeech": "noun",
+          "meaningJa": "空港",
+          "sourceBatch": "batches/batch-03.json",
+          "exampleId": "VD-00021-n-3-026-e01"
+        }
+      ],
+      "exampleEn": "We arrived at the airport two hours early.",
+      "exampleJa": "私たちは2時間早く空港に着きました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-00021-n-3-026-e01",
+        "senseId": "VD-00021-n-3-026"
+      }
     },
     {
       "id": "wb:modern:aircraft",
@@ -59,13 +78,15 @@
           "surface": "air",
           "kind": "free-base",
           "wordId": "VD-01095",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "空気",
+          "masterSenseId": "VDO-261115-A2-00025"
         },
         {
           "surface": "craft",
           "kind": "free-base",
           "wordId": "VD-02745",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "工芸・手工芸",
+          "masterSenseId": "VDO-261114-E-00002"
         }
       ],
       "meaningSource": "master-wordId",
@@ -86,7 +107,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "航空機",
       "meaningJa": "航空機",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "航空機",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00078",
+          "partOfSpeech": "noun",
+          "meaningJa": "航空機",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00078-e01"
+        }
+      ],
+      "exampleEn": "The aircraft landed safely in the rain.",
+      "exampleJa": "航空機は雨の中無事着陸しました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3C-00078-e01",
+        "senseId": "VDO-261114-MEGA3C-00078"
+      }
     },
     {
       "id": "wb:modern:airline",
@@ -100,13 +138,15 @@
           "surface": "air",
           "kind": "free-base",
           "wordId": "VD-01095",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "空気",
+          "masterSenseId": "VDO-261115-A2-00025"
         },
         {
           "surface": "line",
           "kind": "free-base",
           "wordId": "VD-00540",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "線",
+          "masterSenseId": "VDO-261114-GAP-00126"
         }
       ],
       "meaningSource": "master-wordId",
@@ -129,7 +169,24 @@
       "meaningJa": "航空会社・航空路線",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "air + line から連想できるが、通常は航空会社・航路を意味し、単なる空中の線ではない。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "航空会社",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-BULK-261114-B1-A-00057",
+          "partOfSpeech": "noun",
+          "meaningJa": "航空会社",
+          "sourceBatch": "batches/bulk-20261114-b1-a.json",
+          "exampleId": "VD-BULK-261114-B1-A-00057-e01"
+        }
+      ],
+      "exampleEn": "The airline canceled the flight because of fog.",
+      "exampleJa": "その航空会社は霧のため便を欠航にしました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-BULK-261114-B1-A-00057-e01",
+        "senseId": "VD-BULK-261114-B1-A-00057"
+      }
     },
     {
       "id": "wb:modern:bedroom",
@@ -143,13 +200,15 @@
           "surface": "bed",
           "kind": "free-base",
           "wordId": "VD-00080",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "ベッド",
+          "masterSenseId": "VD-BULK-261114-A1-00052"
         },
         {
           "surface": "room",
           "kind": "free-base",
           "wordId": "VD-00761",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "部屋",
+          "masterSenseId": "VD-00761-n2-033"
         }
       ],
       "meaningSource": "master-wordId",
@@ -170,7 +229,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "寝室",
       "meaningJa": "寝室",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "寝室",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-BULK-261114-A1-00053",
+          "partOfSpeech": "noun",
+          "meaningJa": "寝室",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "exampleId": "VD-BULK-261114-A1-00053-e01"
+        }
+      ],
+      "exampleEn": "My bedroom has a small window.",
+      "exampleJa": "私の寝室には小さな窓があります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-BULK-261114-A1-00053-e01",
+        "senseId": "VD-BULK-261114-A1-00053"
+      }
     },
     {
       "id": "wb:modern:classroom",
@@ -184,13 +260,15 @@
           "surface": "class",
           "kind": "free-base",
           "wordId": "VD-00182",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "授業",
+          "masterSenseId": "VDO-261114-A-00015"
         },
         {
           "surface": "room",
           "kind": "free-base",
           "wordId": "VD-00761",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "部屋",
+          "masterSenseId": "VD-00761-n2-033"
         }
       ],
       "meaningSource": "master-wordId",
@@ -211,7 +289,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "教室",
       "meaningJa": "教室",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "教室",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-00184-n2-040",
+          "partOfSpeech": "noun",
+          "meaningJa": "教室",
+          "sourceBatch": "batches/batch-03.json",
+          "exampleId": "VD-00184-n2-040-e01"
+        }
+      ],
+      "exampleEn": "Our classroom has large windows.",
+      "exampleJa": "私たちの教室には大きな窓があります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-00184-n2-040-e01",
+        "senseId": "VD-00184-n2-040"
+      }
     },
     {
       "id": "wb:modern:bathroom",
@@ -225,13 +320,15 @@
           "surface": "bath",
           "kind": "free-base",
           "wordId": "VD-00071",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "入浴・風呂",
+          "masterSenseId": "VD-BULK-261114-A1-00045"
         },
         {
           "surface": "room",
           "kind": "free-base",
           "wordId": "VD-00761",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "部屋",
+          "masterSenseId": "VD-00761-n2-033"
         }
       ],
       "meaningSource": "master-wordId",
@@ -252,7 +349,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "浴室・トイレ",
       "meaningJa": "浴室・トイレ",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "浴室・トイレ",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-BULK-261114-A1-00046",
+          "partOfSpeech": "noun",
+          "meaningJa": "浴室・トイレ",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "exampleId": "VD-BULK-261114-A1-00046-e01"
+        }
+      ],
+      "exampleEn": "The bathroom is at the end of the hall.",
+      "exampleJa": "浴室は廊下の突き当たりにあります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-BULK-261114-A1-00046-e01",
+        "senseId": "VD-BULK-261114-A1-00046"
+      }
     },
     {
       "id": "wb:modern:schoolwork",
@@ -266,13 +380,15 @@
           "surface": "school",
           "kind": "free-base",
           "wordId": "VD-00778",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "学校",
+          "masterSenseId": "VD-00778-n2-039"
         },
         {
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -293,7 +409,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "学校の学習課題",
       "meaningJa": "学校の学習課題",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "学校の勉強・課題",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00313",
+          "partOfSpeech": "noun",
+          "meaningJa": "学校の勉強・課題",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00313-e01"
+        }
+      ],
+      "exampleEn": "She finished her schoolwork before dinner.",
+      "exampleJa": "彼女は夕食前に学校の課題を終えました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00313-e01",
+        "senseId": "VDO-261115-A2C-00313"
+      }
     },
     {
       "id": "wb:modern:homework",
@@ -307,13 +440,15 @@
           "surface": "home",
           "kind": "free-base",
           "wordId": "VD-00454",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家庭・住まい",
+          "masterSenseId": "VD-00454-n2-032"
         },
         {
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -334,7 +469,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "宿題",
       "meaningJa": "宿題",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "宿題",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-00456-n2-043",
+          "partOfSpeech": "noun",
+          "meaningJa": "宿題",
+          "sourceBatch": "batches/batch-03.json",
+          "exampleId": "VD-00456-n2-043-e01"
+        }
+      ],
+      "exampleEn": "I finished my homework before dinner.",
+      "exampleJa": "私は夕食前に宿題を終えました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-00456-n2-043-e01",
+        "senseId": "VD-00456-n2-043"
+      }
     },
     {
       "id": "wb:modern:housework",
@@ -348,13 +500,15 @@
           "surface": "house",
           "kind": "free-base",
           "wordId": "VD-00463",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家・建物",
+          "masterSenseId": "VD-00463-n2-031"
         },
         {
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -375,7 +529,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "家事",
       "meaningJa": "家事",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "家事",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-O-00026",
+          "partOfSpeech": "noun",
+          "meaningJa": "家事",
+          "sourceBatch": "batches/original-20261114-b1-12.json",
+          "exampleId": "VDO-261114-O-00026-e01"
+        }
+      ],
+      "exampleEn": "Everyone in our family shares the housework.",
+      "exampleJa": "私たちの家族はみんなで家事を分担しています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-O-00026-e01",
+        "senseId": "VDO-261114-O-00026"
+      }
     },
     {
       "id": "wb:modern:bookcase",
@@ -389,13 +560,15 @@
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         },
         {
           "surface": "case",
           "kind": "free-base",
           "wordId": "VD-00162",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "箱・入れ物",
+          "masterSenseId": "VD-BULK-261114-A1-00111"
         }
       ],
       "meaningSource": "master-wordId",
@@ -416,7 +589,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "本棚",
       "meaningJa": "本棚",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "本棚・書棚",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00116",
+          "partOfSpeech": "noun",
+          "meaningJa": "本棚・書棚",
+          "sourceBatch": "batches/original-20261115-a2-500-01.json",
+          "exampleId": "VDO-261115-A2-00116-e01"
+        }
+      ],
+      "exampleEn": "The bookcase stands beside the window.",
+      "exampleJa": "本棚は窓のそばにあります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00116-e01",
+        "senseId": "VDO-261115-A2-00116"
+      }
     },
     {
       "id": "wb:modern:bookstore",
@@ -430,13 +620,15 @@
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         },
         {
           "surface": "store",
           "kind": "free-base",
           "wordId": "VD-00871",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "店",
+          "masterSenseId": "VDO-261114-GAP-00368"
         }
       ],
       "meaningSource": "master-wordId",
@@ -457,7 +649,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "書店",
       "meaningJa": "書店",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "書店・本屋",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-BULK-261114-A1-00079",
+          "partOfSpeech": "noun",
+          "meaningJa": "書店・本屋",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "exampleId": "VD-BULK-261114-A1-00079-e01"
+        }
+      ],
+      "exampleEn": "We bought a dictionary at the bookstore.",
+      "exampleJa": "私たちは書店で辞書を買いました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-BULK-261114-A1-00079-e01",
+        "senseId": "VD-BULK-261114-A1-00079"
+      }
     },
     {
       "id": "wb:modern:bookshelf",
@@ -471,13 +680,15 @@
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         },
         {
           "surface": "shelf",
           "kind": "free-base",
           "wordId": "VD-00798",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "棚・棚板",
+          "masterSenseId": "VDO-261114-GAP-00313"
         }
       ],
       "meaningSource": "master-wordId",
@@ -498,7 +709,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "本棚",
       "meaningJa": "本棚",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "本の棚",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00117",
+          "partOfSpeech": "noun",
+          "meaningJa": "本の棚",
+          "sourceBatch": "batches/original-20261115-a2-500-01.json",
+          "exampleId": "VDO-261115-A2-00117-e01"
+        }
+      ],
+      "exampleEn": "I put the dictionary on the lowest bookshelf.",
+      "exampleJa": "辞書を一番下の本の棚に置きました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00117-e01",
+        "senseId": "VDO-261115-A2-00117"
+      }
     },
     {
       "id": "wb:modern:bookshop",
@@ -512,13 +740,15 @@
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         },
         {
           "surface": "shop",
           "kind": "free-base",
           "wordId": "VD-00802",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "店",
+          "masterSenseId": "VDO-261114-GAP-00317"
         }
       ],
       "meaningSource": "master-wordId",
@@ -539,7 +769,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "本屋",
       "meaningJa": "本屋",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "書店",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00118",
+          "partOfSpeech": "noun",
+          "meaningJa": "書店",
+          "sourceBatch": "batches/original-20261115-a2-500-01.json",
+          "exampleId": "VDO-261115-A2-00118-e01"
+        }
+      ],
+      "exampleEn": "We found a small bookshop near the university.",
+      "exampleJa": "大学の近くに小さな書店を見つけました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00118-e01",
+        "senseId": "VDO-261115-A2-00118"
+      }
     },
     {
       "id": "wb:modern:notebook",
@@ -553,13 +800,15 @@
           "surface": "note",
           "kind": "free-base",
           "wordId": "VD-00632",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "メモ・短い書き置き",
+          "masterSenseId": "VDO-261114-GAP-00194"
         },
         {
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -580,7 +829,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "ノート",
       "meaningJa": "ノート",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "ノート",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-00633-n2-047",
+          "partOfSpeech": "noun",
+          "meaningJa": "ノート",
+          "sourceBatch": "batches/batch-03.json",
+          "exampleId": "VD-00633-n2-047-e01"
+        }
+      ],
+      "exampleEn": "I wrote the new words in my notebook.",
+      "exampleJa": "私は新しい単語をノートに書きました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-00633-n2-047-e01",
+        "senseId": "VD-00633-n2-047"
+      }
     },
     {
       "id": "wb:modern:textbook",
@@ -594,13 +860,15 @@
           "surface": "text",
           "kind": "free-base",
           "wordId": "VD-02178",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "文章・本文",
+          "masterSenseId": "VDO-261115-A2C-00460"
         },
         {
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "本",
+          "masterSenseId": "VD-00110-n-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -621,7 +889,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "教科書",
       "meaningJa": "教科書",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "教科書",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00462",
+          "partOfSpeech": "noun",
+          "meaningJa": "教科書",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00462-e01"
+        }
+      ],
+      "exampleEn": "Open your textbook to page ten.",
+      "exampleJa": "教科書の10ページを開いてください。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00462-e01",
+        "senseId": "VDO-261115-A2C-00462"
+      }
     },
     {
       "id": "wb:modern:newspaper",
@@ -635,13 +920,15 @@
           "surface": "news",
           "kind": "free-base",
           "wordId": "VD-00621",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "ニュース・知らせ",
+          "masterSenseId": "VDO-261114-GAP-00184"
         },
         {
           "surface": "paper",
           "kind": "free-base",
           "wordId": "VD-00673",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "紙",
+          "masterSenseId": "VDO-261114-GAP-00226"
         }
       ],
       "meaningSource": "master-wordId",
@@ -664,7 +951,24 @@
       "meaningJa": "新聞",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "news + paper は構成の手がかり。ただし「紙に関する新しい物」ではなく、新聞という確立した複合語。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "新聞",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-GAP-00185",
+          "partOfSpeech": "noun",
+          "meaningJa": "新聞",
+          "sourceBatch": "batches/original-20261114-gap-a1.json",
+          "exampleId": "VDO-261114-GAP-00185-e01"
+        }
+      ],
+      "exampleEn": "My grandfather reads the newspaper after breakfast.",
+      "exampleJa": "祖父は朝食後に新聞を読みます。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-GAP-00185-e01",
+        "senseId": "VDO-261114-GAP-00185"
+      }
     },
     {
       "id": "wb:modern:worldwide",
@@ -678,13 +982,15 @@
           "surface": "world",
           "kind": "free-base",
           "wordId": "VD-01046",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "世界",
+          "masterSenseId": "VD-01046-n2-070"
         },
         {
           "surface": "wide",
           "kind": "free-base",
           "wordId": "VD-02286",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "幅の広い",
+          "masterSenseId": "VDO-261115-A2C-00557"
         }
       ],
       "meaningSource": "master-wordId",
@@ -705,7 +1011,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "世界中の・世界的に",
       "meaningJa": "世界中の・世界的に",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "世界中で",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00571",
+          "partOfSpeech": "adverb",
+          "meaningJa": "世界中で",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00571-e01"
+        }
+      ],
+      "exampleEn": "The event was watched worldwide.",
+      "exampleJa": "行事は世界中で視聴されました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00571-e01",
+        "senseId": "VDO-261115-A2C-00571"
+      }
     },
     {
       "id": "wb:modern:worldview",
@@ -719,13 +1042,15 @@
           "surface": "world",
           "kind": "free-base",
           "wordId": "VD-01046",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "世界",
+          "masterSenseId": "VD-01046-n2-070"
         },
         {
           "surface": "view",
           "kind": "free-base",
           "wordId": "VD-02254",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "眺め・見解",
+          "masterSenseId": "VDO-261115-A2C-00527"
         }
       ],
       "meaningSource": "master-wordId",
@@ -748,7 +1073,24 @@
       "meaningJa": "世界観",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "直訳の「世界を見ること」より「世界観」という抽象的な意味で使う。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "世界観",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-CORE-00274",
+          "partOfSpeech": "noun",
+          "meaningJa": "世界観",
+          "sourceBatch": "batches/original-20261115-b2-finish-292.json",
+          "exampleId": "VDO-261115-CORE-00274-e01"
+        }
+      ],
+      "exampleEn": "Travel changed her worldview.",
+      "exampleJa": "旅は彼女の世界観を変えました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-CORE-00274-e01",
+        "senseId": "VDO-261115-CORE-00274"
+      }
     },
     {
       "id": "wb:modern:waterfall",
@@ -762,13 +1104,15 @@
           "surface": "water",
           "kind": "free-base",
           "wordId": "VD-01013",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "水",
+          "masterSenseId": "VD-01013-n2-006"
         },
         {
           "surface": "fall",
           "kind": "free-base",
           "wordId": "VD-01481",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "落ちる・倒れる",
+          "masterSenseId": "VDO-261115-A2-00343"
         }
       ],
       "meaningSource": "master-wordId",
@@ -789,7 +1133,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "滝",
       "meaningJa": "滝",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "滝",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3B-00164",
+          "partOfSpeech": "noun",
+          "meaningJa": "滝",
+          "sourceBatch": "batches/original-20261114-b1-mega-03b.json",
+          "exampleId": "VDO-261114-MEGA3B-00164-e01"
+        }
+      ],
+      "exampleEn": "We heard the waterfall before seeing it.",
+      "exampleJa": "滝を見る前にその音が聞こえました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3B-00164-e01",
+        "senseId": "VDO-261114-MEGA3B-00164"
+      }
     },
     {
       "id": "wb:modern:waterproof",
@@ -803,13 +1164,15 @@
           "surface": "water",
           "kind": "free-base",
           "wordId": "VD-01013",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "水",
+          "masterSenseId": "VD-01013-n2-006"
         },
         {
           "surface": "proof",
           "kind": "free-base",
           "wordId": "VD-03800",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "証拠・証明",
+          "masterSenseId": "VDO-261114-MEGA2B-00059"
         }
       ],
       "meaningSource": "master-wordId",
@@ -832,7 +1195,24 @@
       "meaningJa": "防水の",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "proof は単純な「証拠」ではなく、水が通らない・水を防ぐという語義につながる。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "防水の",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-CORE-00234",
+          "partOfSpeech": "adjective",
+          "meaningJa": "防水の",
+          "sourceBatch": "batches/original-20261115-b2-finish-292.json",
+          "exampleId": "VDO-261115-CORE-00234-e01"
+        }
+      ],
+      "exampleEn": "The bag has a waterproof cover.",
+      "exampleJa": "かばんには防水カバーがあります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-CORE-00234-e01",
+        "senseId": "VDO-261115-CORE-00234"
+      }
     },
     {
       "id": "wb:modern:waterfront",
@@ -846,13 +1226,15 @@
           "surface": "water",
           "kind": "free-base",
           "wordId": "VD-01013",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "水",
+          "masterSenseId": "VD-01013-n2-006"
         },
         {
           "surface": "front",
           "kind": "free-base",
           "wordId": "VD-00369",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "前方・正面",
+          "masterSenseId": "VDO-261114-C-00022"
         }
       ],
       "meaningSource": "master-wordId",
@@ -873,7 +1255,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "水辺・臨海地区",
       "meaningJa": "水辺・臨海地区",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "水辺地区",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-C1-F12-0073",
+          "partOfSpeech": "noun",
+          "meaningJa": "水辺地区",
+          "sourceBatch": "batches/original-20261115-c1-finish-12.json",
+          "exampleId": "VDO-261115-C1-F12-0073-e01"
+        }
+      ],
+      "exampleEn": "We walked along the waterfront at sunset.",
+      "exampleJa": "夕暮れに水辺地区を散歩した。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-C1-F12-0073-e01",
+        "senseId": "VDO-261115-C1-F12-0073"
+      }
     },
     {
       "id": "wb:modern:rainfall",
@@ -887,13 +1286,15 @@
           "surface": "rain",
           "kind": "free-base",
           "wordId": "VD-00736",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雨",
+          "masterSenseId": "VD-00736-n2-023"
         },
         {
           "surface": "fall",
           "kind": "free-base",
           "wordId": "VD-01481",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "落ちる・倒れる",
+          "masterSenseId": "VDO-261115-A2-00343"
         }
       ],
       "meaningSource": "master-wordId",
@@ -916,7 +1317,24 @@
       "meaningJa": "降雨量",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "落ちる雨のイメージは役立つが、降雨そのものや量を表す文脈が多い。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "降雨・降水量",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA2B-00107",
+          "partOfSpeech": "noun",
+          "meaningJa": "降雨・降水量",
+          "sourceBatch": "batches/original-20261114-b1-mega-02b.json",
+          "exampleId": "VDO-261114-MEGA2B-00107-e01"
+        }
+      ],
+      "exampleEn": "Rainfall increased during the summer.",
+      "exampleJa": "夏には降水量が増えました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA2B-00107-e01",
+        "senseId": "VDO-261114-MEGA2B-00107"
+      }
     },
     {
       "id": "wb:modern:rainbow",
@@ -930,13 +1348,15 @@
           "surface": "rain",
           "kind": "free-base",
           "wordId": "VD-00736",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雨",
+          "masterSenseId": "VD-00736-n2-023"
         },
         {
           "surface": "bow",
           "kind": "free-base",
           "wordId": "VD-02533",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "お辞儀する",
+          "masterSenseId": "VD-BULK-261114-B1-B-00113"
         }
       ],
       "meaningSource": "master-wordId",
@@ -959,7 +1379,24 @@
       "meaningJa": "虹",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "bow は弓・弧の形を連想するが、rainbow は虹を表す固有の語義。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "虹",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M6A-00182",
+          "partOfSpeech": "noun",
+          "meaningJa": "虹",
+          "sourceBatch": "batches/original-20261114-b2-mega-06a.json",
+          "exampleId": "VDO-261114-M6A-00182-e01"
+        }
+      ],
+      "exampleEn": "A rainbow appeared above the fields.",
+      "exampleJa": "畑の上に虹が現れた。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M6A-00182-e01",
+        "senseId": "VDO-261114-M6A-00182"
+      }
     },
     {
       "id": "wb:modern:raincoat",
@@ -973,13 +1410,15 @@
           "surface": "rain",
           "kind": "free-base",
           "wordId": "VD-00736",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雨",
+          "masterSenseId": "VD-00736-n2-023"
         },
         {
           "surface": "coat",
           "kind": "free-base",
           "wordId": "VD-00197",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "コート・上着",
+          "masterSenseId": "VDO-261114-A-00028"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1000,7 +1439,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "レインコート",
       "meaningJa": "レインコート",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "レインコート",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00242",
+          "partOfSpeech": "noun",
+          "meaningJa": "レインコート",
+          "sourceBatch": "batches/original-20261115-a2-complete-01.json",
+          "exampleId": "VDO-261115-A2C-00242-e01"
+        }
+      ],
+      "exampleEn": "Pack a raincoat for the walk.",
+      "exampleJa": "散歩用にレインコートを詰めてください。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00242-e01",
+        "senseId": "VDO-261115-A2C-00242"
+      }
     },
     {
       "id": "wb:modern:snowball",
@@ -1014,13 +1470,15 @@
           "surface": "snow",
           "kind": "free-base",
           "wordId": "VD-00837",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雪",
+          "masterSenseId": "VD-00837-n2-024"
         },
         {
           "surface": "ball",
           "kind": "free-base",
           "wordId": "VD-00063",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "ボール・球",
+          "masterSenseId": "VD-BULK-261114-A1-00039"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1041,7 +1499,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "雪玉",
       "meaningJa": "雪玉",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "雪玉",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-B2N-00247",
+          "partOfSpeech": "noun",
+          "meaningJa": "雪玉",
+          "sourceBatch": "batches/original-20261115-b2-400-02.json",
+          "exampleId": "VDO-261115-B2N-00247-e01"
+        }
+      ],
+      "exampleEn": "She shaped a snowball carefully.",
+      "exampleJa": "彼女は雪玉を慎重に作りました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-B2N-00247-e01",
+        "senseId": "VDO-261115-B2N-00247"
+      }
     },
     {
       "id": "wb:modern:snowstorm",
@@ -1055,13 +1530,15 @@
           "surface": "snow",
           "kind": "free-base",
           "wordId": "VD-00837",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雪",
+          "masterSenseId": "VD-00837-n2-024"
         },
         {
           "surface": "storm",
           "kind": "free-base",
           "wordId": "VD-02123",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "嵐",
+          "masterSenseId": "VD-02123-n-3-008"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1082,7 +1559,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "吹雪",
       "meaningJa": "吹雪",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "吹雪",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3A-00012",
+          "partOfSpeech": "noun",
+          "meaningJa": "吹雪",
+          "sourceBatch": "batches/original-20261114-b1-mega-03a.json",
+          "exampleId": "VDO-261114-MEGA3A-00012-e01"
+        }
+      ],
+      "exampleEn": "The snowstorm closed the mountain road.",
+      "exampleJa": "吹雪で山道が閉鎖されました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3A-00012-e01",
+        "senseId": "VDO-261114-MEGA3A-00012"
+      }
     },
     {
       "id": "wb:modern:sunshine",
@@ -1096,13 +1590,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "shine",
           "kind": "free-base",
           "wordId": "VD-02042",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "輝く",
+          "masterSenseId": "VDO-261115-A2C-00340"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1123,7 +1619,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "日差し",
       "meaningJa": "日差し",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "日光・日差し",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-GAP-00383",
+          "partOfSpeech": "noun",
+          "meaningJa": "日光・日差し",
+          "sourceBatch": "batches/original-20261114-gap-a1.json",
+          "exampleId": "VDO-261114-GAP-00383-e01"
+        }
+      ],
+      "exampleEn": "The flowers need plenty of sunshine.",
+      "exampleJa": "その花には十分な日光が必要です。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-GAP-00383-e01",
+        "senseId": "VDO-261114-GAP-00383"
+      }
     },
     {
       "id": "wb:modern:sunlight",
@@ -1137,13 +1650,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "light",
           "kind": "free-base",
           "wordId": "VD-00537",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "光・明かり",
+          "masterSenseId": "VD-00537-n-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1164,7 +1679,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "太陽光",
       "meaningJa": "太陽光",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "日光",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00432",
+          "partOfSpeech": "noun",
+          "meaningJa": "日光",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00432-e01"
+        }
+      ],
+      "exampleEn": "Sunlight entered through the curtains.",
+      "exampleJa": "カーテン越しに日光が入りました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00432-e01",
+        "senseId": "VDO-261115-A2C-00432"
+      }
     },
     {
       "id": "wb:modern:sunflower",
@@ -1178,13 +1710,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "flower",
           "kind": "free-base",
           "wordId": "VD-00349",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "花",
+          "masterSenseId": "VD-00349-n2-017"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1207,7 +1741,24 @@
       "meaningJa": "ヒマワリ",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "sun と flower の組み合わせでも「太陽の花」一般ではなくヒマワリという特定の植物名。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "ヒマワリ",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00430",
+          "partOfSpeech": "noun",
+          "meaningJa": "ヒマワリ",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00430-e01"
+        }
+      ],
+      "exampleEn": "The sunflower grew taller than the fence.",
+      "exampleJa": "ヒマワリは柵より高く育ちました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00430-e01",
+        "senseId": "VDO-261115-A2C-00430"
+      }
     },
     {
       "id": "wb:modern:sunrise",
@@ -1221,13 +1772,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "rise",
           "kind": "free-base",
           "wordId": "VD-03950",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "上がる・増加する",
+          "masterSenseId": "VD4-00106"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1250,7 +1803,24 @@
       "meaningJa": "日の出",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "rise は太陽が地平線から上がって見えるという観察上の表現。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "日の出",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3A-00116",
+          "partOfSpeech": "noun",
+          "meaningJa": "日の出",
+          "sourceBatch": "batches/original-20261114-b1-mega-03a.json",
+          "exampleId": "VDO-261114-MEGA3A-00116-e01"
+        }
+      ],
+      "exampleEn": "We left the campsite before sunrise.",
+      "exampleJa": "日の出前にキャンプ場を出ました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3A-00116-e01",
+        "senseId": "VDO-261114-MEGA3A-00116"
+      }
     },
     {
       "id": "wb:modern:sunset",
@@ -1264,13 +1834,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "set",
           "kind": "free-base",
           "wordId": "VD-00790",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "置く",
+          "masterSenseId": "VD-00790-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1293,7 +1865,24 @@
       "meaningJa": "日没",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "set は太陽が沈んで見えるという観察上の表現。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "日没・夕日",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3A-00117",
+          "partOfSpeech": "noun",
+          "meaningJa": "日没・夕日",
+          "sourceBatch": "batches/original-20261114-b1-mega-03a.json",
+          "exampleId": "VDO-261114-MEGA3A-00117-e01"
+        }
+      ],
+      "exampleEn": "We watched the sunset from the pier.",
+      "exampleJa": "桟橋から夕日を見ました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3A-00117-e01",
+        "senseId": "VDO-261114-MEGA3A-00117"
+      }
     },
     {
       "id": "wb:modern:sunbeam",
@@ -1307,13 +1896,15 @@
           "surface": "sun",
           "kind": "free-base",
           "wordId": "VD-00887",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "太陽",
+          "masterSenseId": "VD-00887-n2-027"
         },
         {
           "surface": "beam",
           "kind": "free-base",
           "wordId": "VD-04618",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "梁・光線",
+          "masterSenseId": "VDO-261114-MEGA3C-00195"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1334,7 +1925,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "一筋の日光",
       "meaningJa": "一筋の日光",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "一筋の日光",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-B2N-00362",
+          "partOfSpeech": "noun",
+          "meaningJa": "一筋の日光",
+          "sourceBatch": "batches/original-20261115-b2-400-02.json",
+          "exampleId": "VDO-261115-B2N-00362-e01"
+        }
+      ],
+      "exampleEn": "A sunbeam crossed the floor.",
+      "exampleJa": "日光が一筋床に差しました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-B2N-00362-e01",
+        "senseId": "VDO-261115-B2N-00362"
+      }
     },
     {
       "id": "wb:modern:daylight",
@@ -1348,13 +1956,15 @@
           "surface": "day",
           "kind": "free-base",
           "wordId": "VD-00239",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "日・一日",
+          "masterSenseId": "VD-00239-n2-084"
         },
         {
           "surface": "light",
           "kind": "free-base",
           "wordId": "VD-00537",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "光・明かり",
+          "masterSenseId": "VD-00537-n-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1375,7 +1985,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "日光・昼光",
       "meaningJa": "日光・昼光",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "昼の自然光・明るい時間",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00251",
+          "partOfSpeech": "noun",
+          "meaningJa": "昼の自然光・明るい時間",
+          "sourceBatch": "batches/original-20261115-a2-500-02.json",
+          "exampleId": "VDO-261115-A2-00251-e01"
+        }
+      ],
+      "exampleEn": "We reached the campsite while there was still daylight.",
+      "exampleJa": "まだ明るいうちにキャンプ場に着きました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00251-e01",
+        "senseId": "VDO-261115-A2-00251"
+      }
     },
     {
       "id": "wb:modern:daytime",
@@ -1389,13 +2016,15 @@
           "surface": "day",
           "kind": "free-base",
           "wordId": "VD-00239",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "日・一日",
+          "masterSenseId": "VD-00239-n2-084"
         },
         {
           "surface": "time",
           "kind": "free-base",
           "wordId": "VD-00947",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "時間",
+          "masterSenseId": "VD-00947-n2-083"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1416,7 +2045,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "昼間",
       "meaningJa": "昼間",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "昼間",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4A-00081",
+          "partOfSpeech": "noun",
+          "meaningJa": "昼間",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "exampleId": "VDO-261114-M4A-00081-e01"
+        }
+      ],
+      "exampleEn": "The museum is open during the daytime.",
+      "exampleJa": "博物館は昼間開いている。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4A-00081-e01",
+        "senseId": "VDO-261114-M4A-00081"
+      }
     },
     {
       "id": "wb:modern:daydream",
@@ -1430,13 +2076,15 @@
           "surface": "day",
           "kind": "free-base",
           "wordId": "VD-00239",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "日・一日",
+          "masterSenseId": "VD-00239-n2-084"
         },
         {
           "surface": "dream",
           "kind": "free-base",
           "wordId": "VD-00268",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "夢・将来の希望",
+          "masterSenseId": "VDO-261114-B-00017"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1459,7 +2107,31 @@
       "meaningJa": "白昼夢・空想",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "昼間の夢という字面から、起きている間の空想という比喩的な意味を理解する。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "空想",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-C1-F02-0043",
+          "partOfSpeech": "noun",
+          "meaningJa": "空想",
+          "sourceBatch": "batches/original-20261115-c1-finish-02.json",
+          "exampleId": "VDO-261115-C1-F02-0043-e01"
+        },
+        {
+          "senseId": "VDO-261115-C1-F02-0044",
+          "partOfSpeech": "verb",
+          "meaningJa": "空想にふける",
+          "sourceBatch": "batches/original-20261115-c1-finish-02.json",
+          "exampleId": "VDO-261115-C1-F02-0044-e01"
+        }
+      ],
+      "exampleEn": "A sudden bell interrupted my daydream.",
+      "exampleJa": "突然のベルが私の空想を中断した。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-C1-F02-0043-e01",
+        "senseId": "VDO-261115-C1-F02-0043"
+      }
     },
     {
       "id": "wb:modern:nightlife",
@@ -1473,13 +2145,15 @@
           "surface": "night",
           "kind": "free-base",
           "wordId": "VD-00624",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "夜",
+          "masterSenseId": "VD-00624-n2-085"
         },
         {
           "surface": "life",
           "kind": "free-base",
           "wordId": "VD-00536",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "人生・生活",
+          "masterSenseId": "VDO-261114-GAP-00123"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1502,7 +2176,24 @@
       "meaningJa": "夜の娯楽",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "夜の生活全般ではなく、夜間の飲食・娯楽活動を指す文脈が多い。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "夜の娯楽・夜のにぎわい",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA1-00245",
+          "partOfSpeech": "noun",
+          "meaningJa": "夜の娯楽・夜のにぎわい",
+          "sourceBatch": "batches/original-20261114-b1-mega-01.json",
+          "exampleId": "VDO-261114-MEGA1-00245-e01"
+        }
+      ],
+      "exampleEn": "The city is known for its lively nightlife.",
+      "exampleJa": "その都市は活気ある夜のにぎわいで知られています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA1-00245-e01",
+        "senseId": "VDO-261114-MEGA1-00245"
+      }
     },
     {
       "id": "wb:modern:weekday",
@@ -1516,13 +2207,15 @@
           "surface": "week",
           "kind": "free-base",
           "wordId": "VD-01019",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "週・1週間",
+          "masterSenseId": "VDO-261114-GAP-00486"
         },
         {
           "surface": "day",
           "kind": "free-base",
           "wordId": "VD-00239",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "日・一日",
+          "masterSenseId": "VD-00239-n2-084"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1543,7 +2236,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "平日",
       "meaningJa": "平日",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "平日",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00544",
+          "partOfSpeech": "noun",
+          "meaningJa": "平日",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00544-e01"
+        }
+      ],
+      "exampleEn": "The library is busy on weekdays.",
+      "exampleJa": "図書館は平日に混みます。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00544-e01",
+        "senseId": "VDO-261115-A2C-00544"
+      }
     },
     {
       "id": "wb:modern:weekend",
@@ -1557,13 +2267,15 @@
           "surface": "week",
           "kind": "free-base",
           "wordId": "VD-01019",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "週・1週間",
+          "masterSenseId": "VDO-261114-GAP-00486"
         },
         {
           "surface": "end",
           "kind": "free-base",
           "wordId": "VD-00293",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "終わり・端",
+          "masterSenseId": "VDO-261114-B-00033"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1584,7 +2296,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "週末",
       "meaningJa": "週末",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "週末",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-GAP-00487",
+          "partOfSpeech": "noun",
+          "meaningJa": "週末",
+          "sourceBatch": "batches/original-20261114-gap-a1.json",
+          "exampleId": "VDO-261114-GAP-00487-e01"
+        }
+      ],
+      "exampleEn": "What are you doing this weekend?",
+      "exampleJa": "今週末は何をしますか。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-GAP-00487-e01",
+        "senseId": "VDO-261114-GAP-00487"
+      }
     },
     {
       "id": "wb:modern:workplace",
@@ -1598,13 +2327,15 @@
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         },
         {
           "surface": "place",
           "kind": "free-base",
           "wordId": "VD-00700",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "場所",
+          "masterSenseId": "VDO-261114-GAP-00247"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1625,7 +2356,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "職場",
       "meaningJa": "職場",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "職場",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00014",
+          "partOfSpeech": "noun",
+          "meaningJa": "職場",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00014-e01"
+        }
+      ],
+      "exampleEn": "The company promotes workplace safety.",
+      "exampleJa": "会社は職場の安全を推進します。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3C-00014-e01",
+        "senseId": "VDO-261114-MEGA3C-00014"
+      }
     },
     {
       "id": "wb:modern:workshop",
@@ -1639,13 +2387,15 @@
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         },
         {
           "surface": "shop",
           "kind": "free-base",
           "wordId": "VD-00802",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "店",
+          "masterSenseId": "VDO-261114-GAP-00317"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1668,7 +2418,31 @@
       "meaningJa": "体験講座・作業場",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "work + shop の直訳に限らず、実践型の研修会・授業という意味でも使う。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "講習会・実践研修",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00015",
+          "partOfSpeech": "noun",
+          "meaningJa": "講習会・実践研修",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00015-e01"
+        },
+        {
+          "senseId": "VDO-261114-MEGA3C-00016",
+          "partOfSpeech": "noun",
+          "meaningJa": "作業場・工房",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00016-e01"
+        }
+      ],
+      "exampleEn": "We joined a workshop on storytelling.",
+      "exampleJa": "物語の語り方の講習会に参加しました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3C-00015-e01",
+        "senseId": "VDO-261114-MEGA3C-00015"
+      }
     },
     {
       "id": "wb:modern:headache",
@@ -1682,13 +2456,15 @@
           "surface": "head",
           "kind": "free-base",
           "wordId": "VD-00431",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "頭",
+          "masterSenseId": "VDO-261114-C-00066"
         },
         {
           "surface": "ache",
           "kind": "free-base",
           "wordId": "VD-02339",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "鈍い痛み",
+          "masterSenseId": "VD-BULK-261114-B1-A-00028"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1709,7 +2485,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "頭痛",
       "meaningJa": "頭痛",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "頭痛",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-C-00068",
+          "partOfSpeech": "noun",
+          "meaningJa": "頭痛",
+          "sourceBatch": "batches/original-20261114-a1-03.json",
+          "exampleId": "VDO-261114-C-00068-e01"
+        }
+      ],
+      "exampleEn": "He stayed home because of a headache.",
+      "exampleJa": "彼は頭痛のため家にいました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-C-00068-e01",
+        "senseId": "VDO-261114-C-00068"
+      }
     },
     {
       "id": "wb:modern:headline",
@@ -1723,13 +2516,15 @@
           "surface": "head",
           "kind": "free-base",
           "wordId": "VD-00431",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "頭",
+          "masterSenseId": "VDO-261114-C-00066"
         },
         {
           "surface": "line",
           "kind": "free-base",
           "wordId": "VD-00540",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "線",
+          "masterSenseId": "VDO-261114-GAP-00126"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1752,7 +2547,24 @@
       "meaningJa": "見出し",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "head は人体の頭ではなく「一番上・主要部」という意味で比喩的に用いられる。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "見出し・ニュースの表題",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-N-00047",
+          "partOfSpeech": "noun",
+          "meaningJa": "見出し・ニュースの表題",
+          "sourceBatch": "batches/original-20261114-b1-11.json",
+          "exampleId": "VDO-261114-N-00047-e01"
+        }
+      ],
+      "exampleEn": "The headline made the article sound more dramatic.",
+      "exampleJa": "その見出しは記事をより劇的に感じさせました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-N-00047-e01",
+        "senseId": "VDO-261114-N-00047"
+      }
     },
     {
       "id": "wb:modern:headphone",
@@ -1766,13 +2578,15 @@
           "surface": "head",
           "kind": "free-base",
           "wordId": "VD-00431",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "頭",
+          "masterSenseId": "VDO-261114-C-00066"
         },
         {
           "surface": "phone",
           "kind": "free-base",
           "wordId": "VD-00690",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "電話・携帯電話",
+          "masterSenseId": "VD-00690-n2-049"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1795,7 +2609,24 @@
       "meaningJa": "ヘッドホン",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "phone は「電話」だけではなく音声に関する語源的要素として関わる。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "ヘッドホンの片側の受話器・ヘッドホン",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00443",
+          "partOfSpeech": "noun",
+          "meaningJa": "ヘッドホンの片側の受話器・ヘッドホン",
+          "sourceBatch": "batches/original-20261115-a2-500-02.json",
+          "exampleId": "VDO-261115-A2-00443-e01"
+        }
+      ],
+      "exampleEn": "One headphone was damaged, so the sound came from only one side.",
+      "exampleJa": "ヘッドホンの片側が壊れていたので音は片側からしか出ませんでした。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00443-e01",
+        "senseId": "VDO-261115-A2-00443"
+      }
     },
     {
       "id": "wb:modern:haircut",
@@ -1809,13 +2640,15 @@
           "surface": "hair",
           "kind": "free-base",
           "wordId": "VD-00416",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "髪の毛",
+          "masterSenseId": "VDO-261114-C-00056"
         },
         {
           "surface": "cut",
           "kind": "free-base",
           "wordId": "VD-00230",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "切る",
+          "masterSenseId": "VDO-261114-A-00055"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1836,7 +2669,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "散髪・髪型",
       "meaningJa": "散髪・髪型",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "散髪・髪型",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-C-00057",
+          "partOfSpeech": "noun",
+          "meaningJa": "散髪・髪型",
+          "sourceBatch": "batches/original-20261114-a1-03.json",
+          "exampleId": "VDO-261114-C-00057-e01"
+        }
+      ],
+      "exampleEn": "I need a haircut before the ceremony.",
+      "exampleJa": "式典の前に髪を切る必要があります。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-C-00057-e01",
+        "senseId": "VDO-261114-C-00057"
+      }
     },
     {
       "id": "wb:modern:eyelid",
@@ -1850,13 +2700,15 @@
           "surface": "eye",
           "kind": "free-base",
           "wordId": "VD-00311",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "目",
+          "masterSenseId": "VDO-261114-B-00049"
         },
         {
           "surface": "lid",
           "kind": "free-base",
           "wordId": "VD-05654",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "ふた",
+          "masterSenseId": "VDO-261114-M5B-00097"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1877,7 +2729,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "まぶた",
       "meaningJa": "まぶた",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "まぶた",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4C-00105",
+          "partOfSpeech": "noun",
+          "meaningJa": "まぶた",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "exampleId": "VDO-261114-M4C-00105-e01"
+        }
+      ],
+      "exampleEn": "She closed her eyelids against the bright light.",
+      "exampleJa": "彼女はまぶしい光にまぶたを閉じた。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4C-00105-e01",
+        "senseId": "VDO-261114-M4C-00105"
+      }
     },
     {
       "id": "wb:modern:eyesight",
@@ -1891,13 +2760,15 @@
           "surface": "eye",
           "kind": "free-base",
           "wordId": "VD-00311",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "目",
+          "masterSenseId": "VDO-261114-B-00049"
         },
         {
           "surface": "sight",
           "kind": "free-base",
           "wordId": "VD-00812",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "視力・見る能力",
+          "masterSenseId": "VDO-261114-GAP-00326"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1918,7 +2789,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "視力",
       "meaningJa": "視力",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "視力",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-I-00018",
+          "partOfSpeech": "noun",
+          "meaningJa": "視力",
+          "sourceBatch": "batches/original-20261114-b1-06.json",
+          "exampleId": "VDO-261114-I-00018-e01"
+        }
+      ],
+      "exampleEn": "Her eyesight improved with new glasses.",
+      "exampleJa": "新しい眼鏡で彼女の視力が改善しました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-I-00018-e01",
+        "senseId": "VDO-261114-I-00018"
+      }
     },
     {
       "id": "wb:modern:toothbrush",
@@ -1932,13 +2820,15 @@
           "surface": "tooth",
           "kind": "free-base",
           "wordId": "VD-00958",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "歯",
+          "masterSenseId": "VDO-261114-GAP-00440"
         },
         {
           "surface": "brush",
           "kind": "free-base",
           "wordId": "VD-00132",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "ブラシ・はけ",
+          "masterSenseId": "VD-BULK-261114-A1-00094"
         }
       ],
       "meaningSource": "master-wordId",
@@ -1959,7 +2849,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "歯ブラシ",
       "meaningJa": "歯ブラシ",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "歯ブラシ",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00484",
+          "partOfSpeech": "noun",
+          "meaningJa": "歯ブラシ",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00484-e01"
+        }
+      ],
+      "exampleEn": "I packed a toothbrush and toothpaste.",
+      "exampleJa": "歯ブラシと歯磨き粉を詰めました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00484-e01",
+        "senseId": "VDO-261115-A2C-00484"
+      }
     },
     {
       "id": "wb:modern:toothache",
@@ -1973,13 +2880,15 @@
           "surface": "tooth",
           "kind": "free-base",
           "wordId": "VD-00958",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "歯",
+          "masterSenseId": "VDO-261114-GAP-00440"
         },
         {
           "surface": "ache",
           "kind": "free-base",
           "wordId": "VD-02339",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "鈍い痛み",
+          "masterSenseId": "VD-BULK-261114-B1-A-00028"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2000,7 +2909,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "歯痛",
       "meaningJa": "歯痛",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "歯痛",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00483",
+          "partOfSpeech": "noun",
+          "meaningJa": "歯痛",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00483-e01"
+        }
+      ],
+      "exampleEn": "He had a toothache all morning.",
+      "exampleJa": "彼は午前中ずっと歯痛でした。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00483-e01",
+        "senseId": "VDO-261115-A2C-00483"
+      }
     },
     {
       "id": "wb:modern:fingernail",
@@ -2014,13 +2940,15 @@
           "surface": "finger",
           "kind": "free-base",
           "wordId": "VD-03064",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "指",
+          "masterSenseId": "VDO-261114-J-00027"
         },
         {
           "surface": "nail",
           "kind": "free-base",
           "wordId": "VD-03550",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "くぎ",
+          "masterSenseId": "VDO-261114-MEGA1-00216"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2041,7 +2969,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "手の爪",
       "meaningJa": "手の爪",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "手の爪",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4D-00029",
+          "partOfSpeech": "noun",
+          "meaningJa": "手の爪",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "exampleId": "VDO-261114-M4D-00029-e01"
+        }
+      ],
+      "exampleEn": "A small speck of ink stained her fingernail.",
+      "exampleJa": "小さなインクの染みが彼女の爪についた。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4D-00029-e01",
+        "senseId": "VDO-261114-M4D-00029"
+      }
     },
     {
       "id": "wb:modern:handshake",
@@ -2055,13 +3000,15 @@
           "surface": "hand",
           "kind": "free-base",
           "wordId": "VD-00421",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "手",
+          "masterSenseId": "VDO-261114-C-00061"
         },
         {
           "surface": "shake",
           "kind": "free-base",
           "wordId": "VD-00794",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "振る・揺らす",
+          "masterSenseId": "VDO-261114-GAP-00310"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2082,7 +3029,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "握手",
       "meaningJa": "握手",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "握手",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-N-00031",
+          "partOfSpeech": "noun",
+          "meaningJa": "握手",
+          "sourceBatch": "batches/original-20261114-b1-11.json",
+          "exampleId": "VDO-261114-N-00031-e01"
+        }
+      ],
+      "exampleEn": "They exchanged a handshake after the match.",
+      "exampleJa": "試合後に彼らは握手を交わしました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-N-00031-e01",
+        "senseId": "VDO-261114-N-00031"
+      }
     },
     {
       "id": "wb:modern:handwriting",
@@ -2096,13 +3060,15 @@
           "surface": "hand",
           "kind": "free-base",
           "wordId": "VD-00421",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "手",
+          "masterSenseId": "VDO-261114-C-00061"
         },
         {
           "surface": "writing",
           "kind": "free-base",
           "wordId": "VD-02304",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "書くこと・文章",
+          "masterSenseId": "VDO-261115-A2C-00575"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2123,7 +3089,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "手書き・筆跡",
       "meaningJa": "手書き・筆跡",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "手書きの文字・筆跡",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-N-00032",
+          "partOfSpeech": "noun",
+          "meaningJa": "手書きの文字・筆跡",
+          "sourceBatch": "batches/original-20261114-b1-11.json",
+          "exampleId": "VDO-261114-N-00032-e01"
+        }
+      ],
+      "exampleEn": "Her handwriting was easy to read.",
+      "exampleJa": "彼女の手書き文字は読みやすかったです。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-N-00032-e01",
+        "senseId": "VDO-261114-N-00032"
+      }
     },
     {
       "id": "wb:modern:handrail",
@@ -2137,13 +3120,15 @@
           "surface": "hand",
           "kind": "free-base",
           "wordId": "VD-00421",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "手",
+          "masterSenseId": "VDO-261114-C-00061"
         },
         {
           "surface": "rail",
           "kind": "free-base",
           "wordId": "VD-03842",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "手すり・レール",
+          "masterSenseId": "VDO-261114-MEGA2B-00104"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2164,7 +3149,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "手すり",
       "meaningJa": "手すり",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "手すり",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4E-00038",
+          "partOfSpeech": "noun",
+          "meaningJa": "手すり",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "exampleId": "VDO-261114-M4E-00038-e01"
+        }
+      ],
+      "exampleEn": "Hold the handrail when using the stairs.",
+      "exampleJa": "階段では手すりを持ちなさい。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4E-00038-e01",
+        "senseId": "VDO-261114-M4E-00038"
+      }
     },
     {
       "id": "wb:modern:handbag",
@@ -2178,13 +3180,15 @@
           "surface": "hand",
           "kind": "free-base",
           "wordId": "VD-00421",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "手",
+          "masterSenseId": "VDO-261114-C-00061"
         },
         {
           "surface": "bag",
           "kind": "free-base",
           "wordId": "VD-00062",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "かばん・袋",
+          "masterSenseId": "VD-BULK-261114-A1-00038"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2205,7 +3209,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "ハンドバッグ",
       "meaningJa": "ハンドバッグ",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "ハンドバッグ",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00433",
+          "partOfSpeech": "noun",
+          "meaningJa": "ハンドバッグ",
+          "sourceBatch": "batches/original-20261115-a2-500-02.json",
+          "exampleId": "VDO-261115-A2-00433-e01"
+        }
+      ],
+      "exampleEn": "She put the tickets in her handbag.",
+      "exampleJa": "彼女はチケットをハンドバッグに入れました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00433-e01",
+        "senseId": "VDO-261115-A2-00433"
+      }
     },
     {
       "id": "wb:modern:handout",
@@ -2219,13 +3240,15 @@
           "surface": "hand",
           "kind": "free-base",
           "wordId": "VD-00421",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "手",
+          "masterSenseId": "VDO-261114-C-00061"
         },
         {
           "surface": "out",
           "kind": "free-base",
           "wordId": "VD-00661",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "外へ・外に",
+          "masterSenseId": "VDO-261114-GAP-00215"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2248,7 +3271,24 @@
       "meaningJa": "配布物",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "手から配るという連想は有用だが、名詞では配布資料・プリントを意味する。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "配布資料",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4E-00037",
+          "partOfSpeech": "noun",
+          "meaningJa": "配布資料",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "exampleId": "VDO-261114-M4E-00037-e01"
+        }
+      ],
+      "exampleEn": "The teacher distributed a handout before the lecture.",
+      "exampleJa": "教師は講義前に資料を配布した。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4E-00037-e01",
+        "senseId": "VDO-261114-M4E-00037"
+      }
     },
     {
       "id": "wb:modern:football",
@@ -2262,13 +3302,15 @@
           "surface": "foot",
           "kind": "free-base",
           "wordId": "VD-03088",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "足・足首より下",
+          "masterSenseId": "VDO-261114-K-00025"
         },
         {
           "surface": "ball",
           "kind": "free-base",
           "wordId": "VD-00063",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "ボール・球",
+          "masterSenseId": "VD-BULK-261114-A1-00039"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2291,7 +3333,24 @@
       "meaningJa": "フットボール（地域により競技が異なる）",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "foot + ball の構成と競技名が一致するとは限らない。サッカーとアメリカンフットボールは地域差を確認。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "サッカー・フットボール",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-C-00015",
+          "partOfSpeech": "noun",
+          "meaningJa": "サッカー・フットボール",
+          "sourceBatch": "batches/original-20261114-a1-03.json",
+          "exampleId": "VDO-261114-C-00015-e01"
+        }
+      ],
+      "exampleEn": "We played football after school.",
+      "exampleJa": "私たちは放課後サッカーをしました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-C-00015-e01",
+        "senseId": "VDO-261114-C-00015"
+      }
     },
     {
       "id": "wb:modern:footnote",
@@ -2305,13 +3364,15 @@
           "surface": "foot",
           "kind": "free-base",
           "wordId": "VD-03088",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "足・足首より下",
+          "masterSenseId": "VDO-261114-K-00025"
         },
         {
           "surface": "note",
           "kind": "free-base",
           "wordId": "VD-00632",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "メモ・短い書き置き",
+          "masterSenseId": "VDO-261114-GAP-00194"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2334,7 +3395,24 @@
       "meaningJa": "脚注",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "foot はページ下部を比喩的に表す。足に関するノートではない。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "脚注",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4D-00057",
+          "partOfSpeech": "noun",
+          "meaningJa": "脚注",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "exampleId": "VDO-261114-M4D-00057-e01"
+        }
+      ],
+      "exampleEn": "A footnote provides the source of the quotation.",
+      "exampleJa": "脚注は引用の出典を示す。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4D-00057-e01",
+        "senseId": "VDO-261114-M4D-00057"
+      }
     },
     {
       "id": "wb:modern:backpack",
@@ -2348,13 +3426,15 @@
           "surface": "back",
           "kind": "free-base",
           "wordId": "VD-00060",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "背中",
+          "masterSenseId": "VD-BULK-261114-A1-00035"
         },
         {
           "surface": "pack",
           "kind": "free-base",
           "wordId": "VD-01818",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "荷造りする・詰める",
+          "masterSenseId": "VDO-261115-A2C-00146"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2375,7 +3455,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "リュックサック",
       "meaningJa": "リュックサック",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "リュックサック",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-BULK-261114-B1-B-00053",
+          "partOfSpeech": "noun",
+          "meaningJa": "リュックサック",
+          "sourceBatch": "batches/bulk-20261114-b1-b.json",
+          "exampleId": "VD-BULK-261114-B1-B-00053-e01"
+        }
+      ],
+      "exampleEn": "My backpack is full of textbooks.",
+      "exampleJa": "私のリュックサックは教科書でいっぱいです。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-BULK-261114-B1-B-00053-e01",
+        "senseId": "VD-BULK-261114-B1-B-00053"
+      }
     },
     {
       "id": "wb:modern:backyard",
@@ -2389,13 +3486,15 @@
           "surface": "back",
           "kind": "free-base",
           "wordId": "VD-00060",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "背中",
+          "masterSenseId": "VD-BULK-261114-A1-00035"
         },
         {
           "surface": "yard",
           "kind": "free-base",
           "wordId": "VD-01052",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "庭・屋外の敷地",
+          "masterSenseId": "VDO-261114-GAP-00513"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2418,7 +3517,24 @@
       "meaningJa": "裏庭",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "家の裏庭という具体的意味に加え、比喩的な「身近な地域」の意味もある。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "裏庭",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00173",
+          "partOfSpeech": "noun",
+          "meaningJa": "裏庭",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00173-e01"
+        }
+      ],
+      "exampleEn": "We planted vegetables in the backyard.",
+      "exampleJa": "裏庭に野菜を植えました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3C-00173-e01",
+        "senseId": "VDO-261114-MEGA3C-00173"
+      }
     },
     {
       "id": "wb:modern:background",
@@ -2432,13 +3548,15 @@
           "surface": "back",
           "kind": "free-base",
           "wordId": "VD-00060",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "背中",
+          "masterSenseId": "VD-BULK-261114-A1-00035"
         },
         {
           "surface": "ground",
           "kind": "free-base",
           "wordId": "VD-00407",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "地面",
+          "masterSenseId": "VDO-261114-C-00049"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2461,7 +3579,24 @@
       "meaningJa": "背景",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "背後の地面だけではなく、画像の背景や人の経歴・事情にも広がる。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "背景・育った環境",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00075",
+          "partOfSpeech": "noun",
+          "meaningJa": "背景・育った環境",
+          "sourceBatch": "batches/original-20261115-a2-500-01.json",
+          "exampleId": "VDO-261115-A2-00075-e01"
+        }
+      ],
+      "exampleEn": "Our students come from a variety of backgrounds.",
+      "exampleJa": "私たちの生徒はさまざまな背景を持っています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00075-e01",
+        "senseId": "VDO-261115-A2-00075"
+      }
     },
     {
       "id": "wb:modern:blackboard",
@@ -2475,13 +3610,15 @@
           "surface": "black",
           "kind": "free-base",
           "wordId": "VD-00101",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "黒い",
+          "masterSenseId": "VD-BULK-261114-A1-00069"
         },
         {
           "surface": "board",
           "kind": "free-base",
           "wordId": "VD-00106",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "板・掲示板",
+          "masterSenseId": "VD-BULK-261114-A1-00075"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2502,7 +3639,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "黒板",
       "meaningJa": "黒板",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "黒板",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00109",
+          "partOfSpeech": "noun",
+          "meaningJa": "黒板",
+          "sourceBatch": "batches/original-20261115-a2-500-01.json",
+          "exampleId": "VDO-261115-A2-00109-e01"
+        }
+      ],
+      "exampleEn": "The teacher drew a map on the blackboard.",
+      "exampleJa": "先生は黒板に地図を描きました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00109-e01",
+        "senseId": "VDO-261115-A2-00109"
+      }
     },
     {
       "id": "wb:modern:keyboard",
@@ -2516,13 +3670,15 @@
           "surface": "key",
           "kind": "free-base",
           "wordId": "VD-00506",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "鍵",
+          "masterSenseId": "VDO-261114-GAP-00103"
         },
         {
           "surface": "board",
           "kind": "free-base",
           "wordId": "VD-00106",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "板・掲示板",
+          "masterSenseId": "VD-BULK-261114-A1-00075"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2543,7 +3699,31 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "キーボード",
       "meaningJa": "キーボード",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "キーボード",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA1-00039",
+          "partOfSpeech": "noun",
+          "meaningJa": "キーボード",
+          "sourceBatch": "batches/original-20261114-b1-mega-01.json",
+          "exampleId": "VDO-261114-MEGA1-00039-e01"
+        },
+        {
+          "senseId": "VDO-261114-MEGA1-00040",
+          "partOfSpeech": "noun",
+          "meaningJa": "鍵盤・鍵盤楽器",
+          "sourceBatch": "batches/original-20261114-b1-mega-01.json",
+          "exampleId": "VDO-261114-MEGA1-00040-e01"
+        }
+      ],
+      "exampleEn": "I spilled tea near my keyboard.",
+      "exampleJa": "キーボードの近くにお茶をこぼしました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA1-00039-e01",
+        "senseId": "VDO-261114-MEGA1-00039"
+      }
     },
     {
       "id": "wb:modern:hometown",
@@ -2557,13 +3737,15 @@
           "surface": "home",
           "kind": "free-base",
           "wordId": "VD-00454",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家庭・住まい",
+          "masterSenseId": "VD-00454-n2-032"
         },
         {
           "surface": "town",
           "kind": "free-base",
           "wordId": "VD-00964",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "町",
+          "masterSenseId": "VDO-261114-GAP-00446"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2584,7 +3766,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "故郷",
       "meaningJa": "故郷",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "故郷・育った町",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-GAP-00067",
+          "partOfSpeech": "noun",
+          "meaningJa": "故郷・育った町",
+          "sourceBatch": "batches/original-20261114-gap-a1.json",
+          "exampleId": "VDO-261114-GAP-00067-e01"
+        }
+      ],
+      "exampleEn": "My hometown is famous for its pottery.",
+      "exampleJa": "私の故郷は陶器で有名です。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-GAP-00067-e01",
+        "senseId": "VDO-261114-GAP-00067"
+      }
     },
     {
       "id": "wb:modern:household",
@@ -2598,13 +3797,15 @@
           "surface": "house",
           "kind": "free-base",
           "wordId": "VD-00463",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家・建物",
+          "masterSenseId": "VD-00463-n2-031"
         },
         {
           "surface": "hold",
           "kind": "free-base",
           "wordId": "VD-00451",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "握る・持つ",
+          "masterSenseId": "VD-00451-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2627,7 +3828,31 @@
       "meaningJa": "世帯・家庭",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "hold を単純に「手に持つ」と解釈せず、世帯という定着した語義を覚える。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "世帯・一つの家庭",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-O-00024",
+          "partOfSpeech": "noun",
+          "meaningJa": "世帯・一つの家庭",
+          "sourceBatch": "batches/original-20261114-b1-12.json",
+          "exampleId": "VDO-261114-O-00024-e01"
+        },
+        {
+          "senseId": "VDO-261114-O-00025",
+          "partOfSpeech": "adjective",
+          "meaningJa": "家庭用の・家事の",
+          "sourceBatch": "batches/original-20261114-b1-12.json",
+          "exampleId": "VDO-261114-O-00025-e01"
+        }
+      ],
+      "exampleEn": "The survey asked each household about electricity use.",
+      "exampleJa": "調査では各世帯に電力使用量について尋ねました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-O-00024-e01",
+        "senseId": "VDO-261114-O-00024"
+      }
     },
     {
       "id": "wb:modern:housekeeper",
@@ -2641,13 +3866,15 @@
           "surface": "house",
           "kind": "free-base",
           "wordId": "VD-00463",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家・建物",
+          "masterSenseId": "VD-00463-n2-031"
         },
         {
           "surface": "keeper",
           "kind": "free-base",
           "wordId": "VD-05605",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "管理人・飼育員",
+          "masterSenseId": "VDO-261114-M5B-00049"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2668,7 +3895,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "家事管理者・家政婦",
       "meaningJa": "家事管理者・家政婦",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "家事管理人・客室清掃員",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M5A-00010",
+          "partOfSpeech": "noun",
+          "meaningJa": "家事管理人・客室清掃員",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "exampleId": "VDO-261114-M5A-00010-e01"
+        }
+      ],
+      "exampleEn": "The housekeeper prepared the guest room.",
+      "exampleJa": "家事管理人は客室を準備した。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M5A-00010-e01",
+        "senseId": "VDO-261114-M5A-00010"
+      }
     },
     {
       "id": "wb:modern:housewife",
@@ -2682,13 +3926,15 @@
           "surface": "house",
           "kind": "free-base",
           "wordId": "VD-00463",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "家・建物",
+          "masterSenseId": "VD-00463-n2-031"
         },
         {
           "surface": "wife",
           "kind": "free-base",
           "wordId": "VD-01033",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "妻",
+          "masterSenseId": "VDO-261114-GAP-00500"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2709,7 +3955,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "主婦",
       "meaningJa": "主婦",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "専業主婦",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M5A-00012",
+          "partOfSpeech": "noun",
+          "meaningJa": "専業主婦",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "exampleId": "VDO-261114-M5A-00012-e01"
+        }
+      ],
+      "exampleEn": "The novel portrays a housewife who starts a business.",
+      "exampleJa": "小説は事業を始める専業主婦を描く。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M5A-00012-e01",
+        "senseId": "VDO-261114-M5A-00012"
+      }
     },
     {
       "id": "wb:modern:greenhouse",
@@ -2723,13 +3986,15 @@
           "surface": "green",
           "kind": "free-base",
           "wordId": "VD-00405",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "緑色の",
+          "masterSenseId": "VDO-261114-C-00047"
         },
         {
           "surface": "house",
           "kind": "free-base",
           "wordId": "VD-00463",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "家・建物",
+          "masterSenseId": "VD-00463-n2-031"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2752,7 +4017,24 @@
       "meaningJa": "温室",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "緑色の家ではなく、植物を育てるための温室。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "温室",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-N-00004",
+          "partOfSpeech": "noun",
+          "meaningJa": "温室",
+          "sourceBatch": "batches/original-20261114-b1-11.json",
+          "exampleId": "VDO-261114-N-00004-e01"
+        }
+      ],
+      "exampleEn": "The students grew tomatoes in the greenhouse.",
+      "exampleJa": "生徒たちは温室でトマトを育てました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-N-00004-e01",
+        "senseId": "VDO-261114-N-00004"
+      }
     },
     {
       "id": "wb:modern:rainforest",
@@ -2766,13 +4048,15 @@
           "surface": "rain",
           "kind": "free-base",
           "wordId": "VD-00736",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "雨",
+          "masterSenseId": "VD-00736-n2-023"
         },
         {
           "surface": "forest",
           "kind": "free-base",
           "wordId": "VD-01521",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "森林",
+          "masterSenseId": "VD-01521-n-3-001"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2793,7 +4077,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "熱帯雨林",
       "meaningJa": "熱帯雨林",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "熱帯雨林・雨林",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA2B-00108",
+          "partOfSpeech": "noun",
+          "meaningJa": "熱帯雨林・雨林",
+          "sourceBatch": "batches/original-20261114-b1-mega-02b.json",
+          "exampleId": "VDO-261114-MEGA2B-00108-e01"
+        }
+      ],
+      "exampleEn": "Many species live in the rainforest.",
+      "exampleJa": "雨林には多くの種が暮らしています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA2B-00108-e01",
+        "senseId": "VDO-261114-MEGA2B-00108"
+      }
     },
     {
       "id": "wb:modern:wildlife",
@@ -2807,13 +4108,15 @@
           "surface": "wild",
           "kind": "free-base",
           "wordId": "VD-02288",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "野生の",
+          "masterSenseId": "VDO-261115-A2C-00559"
         },
         {
           "surface": "life",
           "kind": "free-base",
           "wordId": "VD-00536",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "人生・生活",
+          "masterSenseId": "VDO-261114-GAP-00123"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2834,7 +4137,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "野生生物",
       "meaningJa": "野生生物",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "野生生物",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00001",
+          "partOfSpeech": "noun",
+          "meaningJa": "野生生物",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "exampleId": "VDO-261114-MEGA3C-00001-e01"
+        }
+      ],
+      "exampleEn": "The island is home to abundant wildlife.",
+      "exampleJa": "島には豊かな野生生物が生息しています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA3C-00001-e01",
+        "senseId": "VDO-261114-MEGA3C-00001"
+      }
     },
     {
       "id": "wb:modern:seaside",
@@ -2848,13 +4168,15 @@
           "surface": "sea",
           "kind": "free-base",
           "wordId": "VD-00781",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "海",
+          "masterSenseId": "VDO-261114-GAP-00300"
         },
         {
           "surface": "side",
           "kind": "free-base",
           "wordId": "VD-00811",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "側・側面",
+          "masterSenseId": "VDO-261114-GAP-00325"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2875,7 +4197,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "海辺",
       "meaningJa": "海辺",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "海辺",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00322",
+          "partOfSpeech": "noun",
+          "meaningJa": "海辺",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00322-e01"
+        }
+      ],
+      "exampleEn": "We spent a day at the seaside.",
+      "exampleJa": "海辺で一日過ごしました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00322-e01",
+        "senseId": "VDO-261115-A2C-00322"
+      }
     },
     {
       "id": "wb:modern:seawater",
@@ -2889,13 +4228,15 @@
           "surface": "sea",
           "kind": "free-base",
           "wordId": "VD-00781",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "海",
+          "masterSenseId": "VDO-261114-GAP-00300"
         },
         {
           "surface": "water",
           "kind": "free-base",
           "wordId": "VD-01013",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "水",
+          "masterSenseId": "VD-01013-n2-006"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2916,7 +4257,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "海水",
       "meaningJa": "海水",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "海水",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA2C-00112",
+          "partOfSpeech": "noun",
+          "meaningJa": "海水",
+          "sourceBatch": "batches/original-20261114-b1-mega-02c.json",
+          "exampleId": "VDO-261114-MEGA2C-00112-e01"
+        }
+      ],
+      "exampleEn": "The researchers collected seawater near the reef.",
+      "exampleJa": "研究者は礁の近くで海水を採取しました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA2C-00112-e01",
+        "senseId": "VDO-261114-MEGA2C-00112"
+      }
     },
     {
       "id": "wb:modern:seafood",
@@ -2930,13 +4288,15 @@
           "surface": "sea",
           "kind": "free-base",
           "wordId": "VD-00781",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "海",
+          "masterSenseId": "VDO-261114-GAP-00300"
         },
         {
           "surface": "food",
           "kind": "free-base",
           "wordId": "VD-00354",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "食べ物",
+          "masterSenseId": "VD-00354-n2-081"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2957,7 +4317,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "魚介類",
       "meaningJa": "魚介類",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "魚介類",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00320",
+          "partOfSpeech": "noun",
+          "meaningJa": "魚介類",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00320-e01"
+        }
+      ],
+      "exampleEn": "The restaurant serves local seafood.",
+      "exampleJa": "店は地元の魚介料理を出します。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00320-e01",
+        "senseId": "VDO-261115-A2C-00320"
+      }
     },
     {
       "id": "wb:modern:earthquake",
@@ -2971,13 +4348,15 @@
           "surface": "earth",
           "kind": "free-base",
           "wordId": "VD-01422",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "地球",
+          "masterSenseId": "VDO-261115-A2-00300"
         },
         {
           "surface": "quake",
           "kind": "free-base",
           "wordId": "VD-03831",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "地震・揺れ",
+          "masterSenseId": "VDO-261114-MEGA2B-00090"
         }
       ],
       "meaningSource": "master-wordId",
@@ -2998,7 +4377,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "地震",
       "meaningJa": "地震",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "地震",
+      "masterSenseRefs": [
+        {
+          "senseId": "VD-01423-n-3-011",
+          "partOfSpeech": "noun",
+          "meaningJa": "地震",
+          "sourceBatch": "batches/batch-03.json",
+          "exampleId": "VD-01423-n-3-011-e01"
+        }
+      ],
+      "exampleEn": "An earthquake woke us up early this morning.",
+      "exampleJa": "今朝早く、地震で私たちは目を覚ましました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VD-01423-n-3-011-e01",
+        "senseId": "VD-01423-n-3-011"
+      }
     },
     {
       "id": "wb:modern:landlady",
@@ -3012,13 +4408,15 @@
           "surface": "land",
           "kind": "free-base",
           "wordId": "VD-01674",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "着陸する・上陸する",
+          "masterSenseId": "VDO-261115-A2C-00016"
         },
         {
           "surface": "lady",
           "kind": "free-base",
           "wordId": "VD-00518",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "女性",
+          "masterSenseId": "VDO-261114-GAP-00112"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3041,7 +4439,24 @@
       "meaningJa": "女性の家主",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "土地と女性を文字どおり足しただけではなく、女性の家主という社会的役割を表す。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "女性の家主",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M5B-00061",
+          "partOfSpeech": "noun",
+          "meaningJa": "女性の家主",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "exampleId": "VDO-261114-M5B-00061-e01"
+        }
+      ],
+      "exampleEn": "The landlady arranged for the heater to be repaired.",
+      "exampleJa": "女性の家主は暖房の修理を手配した。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M5B-00061-e01",
+        "senseId": "VDO-261114-M5B-00061"
+      }
     },
     {
       "id": "wb:modern:farmland",
@@ -3055,13 +4470,15 @@
           "surface": "farm",
           "kind": "free-base",
           "wordId": "VD-00320",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "農場",
+          "masterSenseId": "VDO-261114-B-00056"
         },
         {
           "surface": "land",
           "kind": "free-base",
           "wordId": "VD-01674",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "着陸する・上陸する",
+          "masterSenseId": "VDO-261115-A2C-00016"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3082,7 +4499,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "農地",
       "meaningJa": "農地",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "農地",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-J-00004",
+          "partOfSpeech": "noun",
+          "meaningJa": "農地",
+          "sourceBatch": "batches/original-20261114-b1-07.json",
+          "exampleId": "VDO-261114-J-00004-e01"
+        }
+      ],
+      "exampleEn": "The town protected farmland from flooding.",
+      "exampleJa": "その町は農地を洪水から守りました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-J-00004-e01",
+        "senseId": "VDO-261114-J-00004"
+      }
     },
     {
       "id": "wb:modern:firefighter",
@@ -3096,13 +4530,15 @@
           "surface": "fire",
           "kind": "free-base",
           "wordId": "VD-00341",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "火・火災",
+          "masterSenseId": "VDO-261114-C-00006"
         },
         {
           "surface": "fighter",
           "kind": "free-base",
           "wordId": "VD-01500",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "戦う人・闘う人",
+          "masterSenseId": "VDO-261115-A2-00360"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3123,7 +4559,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "消防士",
       "meaningJa": "消防士",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "消防士",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-J-00029",
+          "partOfSpeech": "noun",
+          "meaningJa": "消防士",
+          "sourceBatch": "batches/original-20261114-b1-07.json",
+          "exampleId": "VDO-261114-J-00029-e01"
+        }
+      ],
+      "exampleEn": "The firefighter showed us how to use an extinguisher.",
+      "exampleJa": "消防士は消火器の使い方を見せてくれました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-J-00029-e01",
+        "senseId": "VDO-261114-J-00029"
+      }
     },
     {
       "id": "wb:modern:fireplace",
@@ -3137,13 +4590,15 @@
           "surface": "fire",
           "kind": "free-base",
           "wordId": "VD-00341",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "火・火災",
+          "masterSenseId": "VDO-261114-C-00006"
         },
         {
           "surface": "place",
           "kind": "free-base",
           "wordId": "VD-00700",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "場所",
+          "masterSenseId": "VDO-261114-GAP-00247"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3164,7 +4619,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "暖炉",
       "meaningJa": "暖炉",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "暖炉",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4D-00032",
+          "partOfSpeech": "noun",
+          "meaningJa": "暖炉",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "exampleId": "VDO-261114-M4D-00032-e01"
+        }
+      ],
+      "exampleEn": "A stone fireplace stood at one end of the room.",
+      "exampleJa": "部屋の端に石造りの暖炉があった。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4D-00032-e01",
+        "senseId": "VDO-261114-M4D-00032"
+      }
     },
     {
       "id": "wb:modern:firearm",
@@ -3178,13 +4650,15 @@
           "surface": "fire",
           "kind": "free-base",
           "wordId": "VD-00341",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "火・火災",
+          "masterSenseId": "VDO-261114-C-00006"
         },
         {
           "surface": "arm",
           "kind": "free-base",
           "wordId": "VD-00046",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "腕",
+          "masterSenseId": "VD-BULK-261114-A1-00023"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3207,7 +4681,24 @@
       "meaningJa": "銃器",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "arm は「腕」ではなく「武器」という別語義に関係する。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "銃器",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M4D-00031",
+          "partOfSpeech": "noun",
+          "meaningJa": "銃器",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "exampleId": "VDO-261114-M4D-00031-e01"
+        }
+      ],
+      "exampleEn": "The museum displays historical firearms behind glass.",
+      "exampleJa": "博物館は歴史的な銃器をガラス越しに展示する。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M4D-00031-e01",
+        "senseId": "VDO-261114-M4D-00031"
+      }
     },
     {
       "id": "wb:modern:moonlight",
@@ -3221,13 +4712,15 @@
           "surface": "moon",
           "kind": "free-base",
           "wordId": "VD-00595",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "月",
+          "masterSenseId": "VD-00595-n2-028"
         },
         {
           "surface": "light",
           "kind": "free-base",
           "wordId": "VD-00537",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "光・明かり",
+          "masterSenseId": "VD-00537-n-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3248,7 +4741,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "月明かり",
       "meaningJa": "月明かり",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "月光",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M5C-00059",
+          "partOfSpeech": "noun",
+          "meaningJa": "月光",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "exampleId": "VDO-261114-M5C-00059-e01"
+        }
+      ],
+      "exampleEn": "The path was faintly visible in the moonlight.",
+      "exampleJa": "小道は月光の中でかすかに見えた。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M5C-00059-e01",
+        "senseId": "VDO-261114-M5C-00059"
+      }
     },
     {
       "id": "wb:modern:sidewalk",
@@ -3262,13 +4772,15 @@
           "surface": "side",
           "kind": "free-base",
           "wordId": "VD-00811",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "側・側面",
+          "masterSenseId": "VDO-261114-GAP-00325"
         },
         {
           "surface": "walk",
           "kind": "free-base",
           "wordId": "VD-01005",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "歩く",
+          "masterSenseId": "VD-01005-n2-116"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3289,7 +4801,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "歩道",
       "meaningJa": "歩道",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "歩道（米）",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA2C-00164",
+          "partOfSpeech": "noun",
+          "meaningJa": "歩道（米）",
+          "sourceBatch": "batches/original-20261114-b1-mega-02c.json",
+          "exampleId": "VDO-261114-MEGA2C-00164-e01"
+        }
+      ],
+      "exampleEn": "Keep your bicycle off the crowded sidewalk.",
+      "exampleJa": "混雑した歩道では自転車に乗り入れないでください。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA2C-00164-e01",
+        "senseId": "VDO-261114-MEGA2C-00164"
+      }
     },
     {
       "id": "wb:modern:highway",
@@ -3303,13 +4832,15 @@
           "surface": "high",
           "kind": "free-base",
           "wordId": "VD-00445",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "高い",
+          "masterSenseId": "VDO-261114-GAP-00060"
         },
         {
           "surface": "way",
           "kind": "free-base",
           "wordId": "VD-01014",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "方法・やり方",
+          "masterSenseId": "VDO-261114-GAP-00482"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3332,7 +4863,24 @@
       "meaningJa": "幹線道路・高速道路",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "high + way から直訳を作らず、幹線道路・高速道路という定着した意味を覚える。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "幹線道路・主要道路",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2-00453",
+          "partOfSpeech": "noun",
+          "meaningJa": "幹線道路・主要道路",
+          "sourceBatch": "batches/original-20261115-a2-500-02.json",
+          "exampleId": "VDO-261115-A2-00453-e01"
+        }
+      ],
+      "exampleEn": "The highway runs along the coast.",
+      "exampleJa": "幹線道路は海岸沿いに延びています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2-00453-e01",
+        "senseId": "VDO-261115-A2-00453"
+      }
     },
     {
       "id": "wb:modern:lowland",
@@ -3346,13 +4894,15 @@
           "surface": "low",
           "kind": "free-base",
           "wordId": "VD-01711",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "低い",
+          "masterSenseId": "VDO-261115-A2C-00050"
         },
         {
           "surface": "land",
           "kind": "free-base",
           "wordId": "VD-01674",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "着陸する・上陸する",
+          "masterSenseId": "VDO-261115-A2C-00016"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3373,7 +4923,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "低地",
       "meaningJa": "低地",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "低地",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-M5B-00120",
+          "partOfSpeech": "noun",
+          "meaningJa": "低地",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "exampleId": "VDO-261114-M5B-00120-e01"
+        }
+      ],
+      "exampleEn": "Farmers grow rice in the fertile lowlands.",
+      "exampleJa": "農家は肥沃な低地で米を育てる。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-M5B-00120-e01",
+        "senseId": "VDO-261114-M5B-00120"
+      }
     },
     {
       "id": "wb:modern:network",
@@ -3387,13 +4954,15 @@
           "surface": "net",
           "kind": "free-base",
           "wordId": "VD-01780",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "網",
+          "masterSenseId": "VDO-261115-A2C-00114"
         },
         {
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "働く",
+          "masterSenseId": "VD-01044-v-01"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3414,7 +4983,24 @@
       "status": "draft-unreviewed",
       "wordMeaningJa": "ネットワーク・網",
       "meaningJa": "ネットワーク・網",
-      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。"
+      "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
+      "masterMeaningJa": "ネットワーク・網",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261114-MEGA1-00236",
+          "partOfSpeech": "noun",
+          "meaningJa": "ネットワーク・網",
+          "sourceBatch": "batches/original-20261114-b1-mega-01.json",
+          "exampleId": "VDO-261114-MEGA1-00236-e01"
+        }
+      ],
+      "exampleEn": "The school's computer network was upgraded.",
+      "exampleJa": "学校のコンピューターネットワークが更新されました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261114-MEGA1-00236-e01",
+        "senseId": "VDO-261114-MEGA1-00236"
+      }
     },
     {
       "id": "wb:modern:website",
@@ -3428,13 +5014,15 @@
           "surface": "web",
           "kind": "free-base",
           "wordId": "VD-02269",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "クモの巣・ウェブ",
+          "masterSenseId": "VDO-261115-A2C-00540"
         },
         {
           "surface": "site",
           "kind": "free-base",
           "wordId": "VD-00819",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "場所・用地",
+          "masterSenseId": "VDO-261114-GAP-00330"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3457,7 +5045,24 @@
       "meaningJa": "ウェブサイト",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "site は特定の場所を意味し、web 上のまとまったページ群という語義になっている。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "ウェブサイト",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00542",
+          "partOfSpeech": "noun",
+          "meaningJa": "ウェブサイト",
+          "sourceBatch": "batches/original-20261115-a2-complete-02.json",
+          "exampleId": "VDO-261115-A2C-00542-e01"
+        }
+      ],
+      "exampleEn": "The website explains the programme.",
+      "exampleJa": "サイトはプログラムを説明しています。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00542-e01",
+        "senseId": "VDO-261115-A2C-00542"
+      }
     },
     {
       "id": "wb:modern:online",
@@ -3471,13 +5076,15 @@
           "surface": "on",
           "kind": "free-base",
           "wordId": "VD-00649",
-          "meaningJa": "構成語1（マスター語義を参照）"
+          "meaningJa": "〜の上に",
+          "masterSenseId": "VDO-261114-GAP-00206"
         },
         {
           "surface": "line",
           "kind": "free-base",
           "wordId": "VD-00540",
-          "meaningJa": "構成語2（マスター語義を参照）"
+          "meaningJa": "線",
+          "masterSenseId": "VDO-261114-GAP-00126"
         }
       ],
       "meaningSource": "master-wordId",
@@ -3500,8 +5107,40 @@
       "meaningJa": "オンラインの・オンラインで",
       "meaningNoteJa": "学習用の代表的な意味。多義語・品詞差はマスター語彙の語義を優先して校閲する。",
       "lexicalizationCautionJa": "on + line は理解の手がかりだが、現在の意味はインターネット接続・利用状態。",
-      "editorialPriority": "high"
+      "editorialPriority": "high",
+      "masterMeaningJa": "オンラインで",
+      "masterSenseRefs": [
+        {
+          "senseId": "VDO-261115-A2C-00134",
+          "partOfSpeech": "adverb",
+          "meaningJa": "オンラインで",
+          "sourceBatch": "batches/original-20261115-a2-complete-01.json",
+          "exampleId": "VDO-261115-A2C-00134-e01"
+        }
+      ],
+      "exampleEn": "We met the partner school online.",
+      "exampleJa": "提携校とオンラインで会いました。",
+      "exampleSource": "existing-master-vocabulary",
+      "masterExampleRef": {
+        "exampleId": "VDO-261115-A2C-00134-e01",
+        "senseId": "VDO-261115-A2C-00134"
+      }
     }
   ],
-  "qualityNoteJa": "2026-11-18: 84語にオリジナルの日本語代表語義を付与。語史の正確性・多義語の語義対応は未審査。"
+  "qualityNoteJa": "2026-11-18: 84語にオリジナルの日本語代表語義を付与。語史の正確性・多義語の語義対応は未審査。",
+  "masterEvidence": {
+    "referenceFiles": [
+      "master-evidence-01.json",
+      "master-evidence-02.json",
+      "master-evidence-03.json",
+      "master-evidence-04.json",
+      "master-evidence-05.json",
+      "master-evidence-06.json",
+      "master-evidence-07.json"
+    ],
+    "sourceMaster": "data/vocabulary-drafts/manifest.json",
+    "sourceActiveBatches": 84,
+    "resolvedTargetWords": 84,
+    "status": "canonical-draft-senses-matched"
+  }
 }
