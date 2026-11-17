@@ -37,7 +37,7 @@ for (const link of ledger.links) {
   const morphemeId = link.id.slice(0, -(link.headword.length + 1));
   assert.equal(source.morphemeId, morphemeId, 'Link morpheme mismatch');
   const normalized = link.headword.trim().toLowerCase();
-  const match = masterEntries[normalized];
+  const match = Object.hasOwn(masterEntries, normalized) ? masterEntries[normalized] : null;
   if (!match) continue;
   if (source.wordId) assert.equal(source.wordId, match.wordId,
     'Previously matched word ID conflicts with full master: ' + link.headword);
@@ -67,7 +67,7 @@ const counts = {
   masterHeadwords: master.counts.headwords,
   legacyMatchedRelations: ledger.links.filter(link => link.wordId).length,
   additionalResolved: ledger.links.filter(link =>
-    !link.wordId && masterEntries[link.headword.trim().toLowerCase()]).length
+    !link.wordId && Object.hasOwn(masterEntries, link.headword.trim().toLowerCase())).length
 };
 assert.equal(counts.legacyMatchedRelations, manifest.counts.matchedRelations);
 assert.equal(counts.sourceRelations, manifest.counts.relations);
