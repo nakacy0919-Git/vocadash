@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "dataset": "voca-roots-word-breakdowns",
+  "createdOn": "2026-11-17",
+  "status": "draft-unreviewed",
+  "productionEnabled": false,
+  "masterTarget": 8653,
+  "candidateIndex": {
+    "path": "data/vocabulary-drafts/candidate-index.json",
+    "entryCount": 2733,
+    "completeMaster": false
+  },
+  "counts": {
+    "records": 1607,
+    "distinctHeadwords": 1604,
+    "automatedModernDerivationCandidates": 1572,
+    "handAuthoredCoreRecords": 35,
+    "candidateIndexMatchedRows": 184,
+    "candidateIndexMatchedDistinctHeadwords": 182,
+    "unresolvedMasterRows": 1423,
+    "fullyEditorialReviewed": 0
+  },
+  "files": [
+    "modern-derivation-candidates-001.json",
+    "modern-derivation-candidates-002.json",
+    "core-breakdowns-001.json",
+    "core-breakdowns-002.json"
+  ],
+  "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords).",
+  "qualityNotesJa": [
+    "語根・接頭辞・接尾辞の個別語源と日本語説明の校閲は未完了。",
+    "現代英語の派生関係候補は、既存の語族リストと品詞と文字列の直接連結だけで検証。語源確定を意味しない。",
+    "wordId は不完全な2,733語索引への完全一致のみ採用。未登録と確定しない。",
+    "本番・個人別記憶エンジンには接続しない。",
+    "綴り上の分割と、歴史的語源の説明を別種のレコードとして管理。"
+  ],
+  "references": [
+    "https://www.etymonline.com/word/transport",
+    "https://www.etymonline.com/word/import",
+    "https://www.etymonline.com/word/important",
+    "https://www.etymonline.com/word/importance",
+    "https://www.etymonline.com/word/impossible"
+  ]
+}
