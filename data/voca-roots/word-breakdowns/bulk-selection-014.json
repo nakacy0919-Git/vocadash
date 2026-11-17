@@ -1,0 +1,6040 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "productionEnabled": false,
+  "selectionPolicy": "Explicit educational allowlist of compound words, multiword expressions and -ally derivations; no raw-string automatic acceptance",
+  "sourceMaster": "data/voca-roots/word-breakdowns/full-master-index.json",
+  "sourceBaseBranch": "content/voca-roots-curated-013-20261118",
+  "counts": {
+    "items": 430,
+    "compound": 292,
+    "phrase": 95,
+    "adverb": 43
+  },
+  "items": [
+    {
+      "headword": "afternoon",
+      "wordId": "VD-00015",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "after",
+        "noon"
+      ],
+      "componentWordIds": [
+        "VD-00014",
+        "VD-01786"
+      ]
+    },
+    {
+      "headword": "anyone",
+      "wordId": "VD-00040",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "any",
+        "one"
+      ],
+      "componentWordIds": [
+        "VD-00038",
+        "VD-00651"
+      ]
+    },
+    {
+      "headword": "anything",
+      "wordId": "VD-00041",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "any",
+        "thing"
+      ],
+      "componentWordIds": [
+        "VD-00038",
+        "VD-00934"
+      ]
+    },
+    {
+      "headword": "baseball",
+      "wordId": "VD-00068",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "base",
+        "ball"
+      ],
+      "componentWordIds": [
+        "VD-01166",
+        "VD-00063"
+      ]
+    },
+    {
+      "headword": "basketball",
+      "wordId": "VD-00069",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "basket",
+        "ball"
+      ],
+      "componentWordIds": [
+        "VD-01169",
+        "VD-00063"
+      ]
+    },
+    {
+      "headword": "birthday",
+      "wordId": "VD-00099",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "birth",
+        "day"
+      ],
+      "componentWordIds": [
+        "VD-00098",
+        "VD-00239"
+      ]
+    },
+    {
+      "headword": "boyfriend",
+      "wordId": "VD-00120",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "boy",
+        "friend"
+      ],
+      "componentWordIds": [
+        "VD-00119",
+        "VD-00366"
+      ]
+    },
+    {
+      "headword": "breakfast",
+      "wordId": "VD-00124",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "break",
+        "fast"
+      ],
+      "componentWordIds": [
+        "VD-00123",
+        "VD-00322"
+      ]
+    },
+    {
+      "headword": "classmate",
+      "wordId": "VD-00183",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "class",
+        "mate"
+      ],
+      "componentWordIds": [
+        "VD-00182",
+        "VD-05708"
+      ]
+    },
+    {
+      "headword": "everyone",
+      "wordId": "VD-00301",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "every",
+        "one"
+      ],
+      "componentWordIds": [
+        "VD-00298",
+        "VD-00651"
+      ]
+    },
+    {
+      "headword": "everything",
+      "wordId": "VD-00302",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "every",
+        "thing"
+      ],
+      "componentWordIds": [
+        "VD-00298",
+        "VD-00934"
+      ]
+    },
+    {
+      "headword": "everywhere",
+      "wordId": "VD-00303",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "every",
+        "where"
+      ],
+      "componentWordIds": [
+        "VD-00298",
+        "VD-01027"
+      ]
+    },
+    {
+      "headword": "girlfriend",
+      "wordId": "VD-00382",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "girl",
+        "friend"
+      ],
+      "componentWordIds": [
+        "VD-00381",
+        "VD-00366"
+      ]
+    },
+    {
+      "headword": "grandfather",
+      "wordId": "VD-00396",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "father"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00324"
+      ]
+    },
+    {
+      "headword": "grandmother",
+      "wordId": "VD-00398",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "mother"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00599"
+      ]
+    },
+    {
+      "headword": "grandparent",
+      "wordId": "VD-00400",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "parent"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00676"
+      ]
+    },
+    {
+      "headword": "anybody",
+      "wordId": "VD-00039",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "any",
+        "body"
+      ],
+      "componentWordIds": [
+        "VD-00038",
+        "VD-00108"
+      ]
+    },
+    {
+      "headword": "everybody",
+      "wordId": "VD-00299",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "every",
+        "body"
+      ],
+      "componentWordIds": [
+        "VD-00298",
+        "VD-00108"
+      ]
+    },
+    {
+      "headword": "everyday",
+      "wordId": "VD-00300",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "every",
+        "day"
+      ],
+      "componentWordIds": [
+        "VD-00298",
+        "VD-00239"
+      ]
+    },
+    {
+      "headword": "fourteen",
+      "wordId": "VD-00363",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "four",
+        "teen"
+      ],
+      "componentWordIds": [
+        "VD-00362",
+        "VD-04213"
+      ]
+    },
+    {
+      "headword": "nineteen",
+      "wordId": "VD-00626",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "nine",
+        "teen"
+      ],
+      "componentWordIds": [
+        "VD-00625",
+        "VD-04213"
+      ]
+    },
+    {
+      "headword": "seventeen",
+      "wordId": "VD-00792",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "seven",
+        "teen"
+      ],
+      "componentWordIds": [
+        "VD-00791",
+        "VD-04213"
+      ]
+    },
+    {
+      "headword": "sixteen",
+      "wordId": "VD-00821",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "six",
+        "teen"
+      ],
+      "componentWordIds": [
+        "VD-00820",
+        "VD-04213"
+      ]
+    },
+    {
+      "headword": "someone",
+      "wordId": "VD-00845",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "one"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00651"
+      ]
+    },
+    {
+      "headword": "something",
+      "wordId": "VD-00846",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "thing"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00934"
+      ]
+    },
+    {
+      "headword": "yourself",
+      "wordId": "VD-01063",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "your",
+        "self"
+      ],
+      "componentWordIds": [
+        "VD-01061",
+        "VD-00786"
+      ]
+    },
+    {
+      "headword": "father",
+      "wordId": "VD-00324",
+      "cefrHeadword": "A1",
+      "kind": "compound",
+      "componentWords": [
+        "fat",
+        "her"
+      ],
+      "componentWordIds": [
+        "VD-00323",
+        "VD-00440"
+      ]
+    },
+    {
+      "headword": "deadline",
+      "wordId": "VD-02786",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "dead",
+        "line"
+      ],
+      "componentWordIds": [
+        "VD-01360",
+        "VD-00540"
+      ]
+    },
+    {
+      "headword": "ecosystem",
+      "wordId": "VD-02930",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "eco",
+        "system"
+      ],
+      "componentWordIds": [
+        "VD-02924",
+        "VD-02164"
+      ]
+    },
+    {
+      "headword": "feedback",
+      "wordId": "VD-05244",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "feed",
+        "back"
+      ],
+      "componentWordIds": [
+        "VD-00327",
+        "VD-00060"
+      ]
+    },
+    {
+      "headword": "safeguard",
+      "wordId": "VD-03966",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "safe",
+        "guard"
+      ],
+      "componentWordIds": [
+        "VD-01997",
+        "VD-01573"
+      ]
+    },
+    {
+      "headword": "widespread",
+      "wordId": "VD-04420",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wide",
+        "spread"
+      ],
+      "componentWordIds": [
+        "VD-02286",
+        "VD-02110"
+      ]
+    },
+    {
+      "headword": "awesome",
+      "wordId": "VD-02463",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "awe",
+        "some"
+      ],
+      "componentWordIds": [
+        "VD-04590",
+        "VD-00844"
+      ]
+    },
+    {
+      "headword": "babysit",
+      "wordId": "VD-02465",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "baby",
+        "sit"
+      ],
+      "componentWordIds": [
+        "VD-00059",
+        "VD-00818"
+      ]
+    },
+    {
+      "headword": "backache",
+      "wordId": "VD-02467",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "back",
+        "ache"
+      ],
+      "componentWordIds": [
+        "VD-00060",
+        "VD-02339"
+      ]
+    },
+    {
+      "headword": "backpacking",
+      "wordId": "VD-02470",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "back",
+        "packing"
+      ],
+      "componentWordIds": [
+        "VD-00060",
+        "VD-03665"
+      ]
+    },
+    {
+      "headword": "bedside",
+      "wordId": "VD-02496",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "bed",
+        "side"
+      ],
+      "componentWordIds": [
+        "VD-00080",
+        "VD-00811"
+      ]
+    },
+    {
+      "headword": "biochemistry",
+      "wordId": "VD-02507",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "bio",
+        "chemistry"
+      ],
+      "componentWordIds": [
+        "VD-04637",
+        "VD-02632"
+      ]
+    },
+    {
+      "headword": "breakthrough",
+      "wordId": "VD-02540",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "break",
+        "through"
+      ],
+      "componentWordIds": [
+        "VD-00123",
+        "VD-00941"
+      ]
+    },
+    {
+      "headword": "broadcast",
+      "wordId": "VD-02551",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "broad",
+        "cast"
+      ],
+      "componentWordIds": [
+        "VD-02550",
+        "VD-04730"
+      ]
+    },
+    {
+      "headword": "campsite",
+      "wordId": "VD-02582",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "camp",
+        "site"
+      ],
+      "componentWordIds": [
+        "VD-00151",
+        "VD-00819"
+      ]
+    },
+    {
+      "headword": "cashpoint",
+      "wordId": "VD-02600",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "cash",
+        "point"
+      ],
+      "componentWordIds": [
+        "VD-01236",
+        "VD-00709"
+      ]
+    },
+    {
+      "headword": "copyright",
+      "wordId": "VD-02733",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "copy",
+        "right"
+      ],
+      "componentWordIds": [
+        "VD-00215",
+        "VD-00757"
+      ]
+    },
+    {
+      "headword": "dustbin",
+      "wordId": "VD-02912",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "dust",
+        "bin"
+      ],
+      "componentWordIds": [
+        "VD-01419",
+        "VD-02506"
+      ]
+    },
+    {
+      "headword": "earache",
+      "wordId": "VD-02920",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "ear",
+        "ache"
+      ],
+      "componentWordIds": [
+        "VD-00280",
+        "VD-02339"
+      ]
+    },
+    {
+      "headword": "extraordinary",
+      "wordId": "VD-03026",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "extra",
+        "ordinary"
+      ],
+      "componentWordIds": [
+        "VD-01476",
+        "VD-03637"
+      ]
+    },
+    {
+      "headword": "faraway",
+      "wordId": "VD-03040",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "far",
+        "away"
+      ],
+      "componentWordIds": [
+        "VD-01485",
+        "VD-00058"
+      ]
+    },
+    {
+      "headword": "farewell",
+      "wordId": "VD-03041",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "fare",
+        "well"
+      ],
+      "componentWordIds": [
+        "VD-01486",
+        "VD-01022"
+      ]
+    },
+    {
+      "headword": "firework",
+      "wordId": "VD-03067",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "fire",
+        "work"
+      ],
+      "componentWordIds": [
+        "VD-00341",
+        "VD-01044"
+      ]
+    },
+    {
+      "headword": "freshman",
+      "wordId": "VD-03110",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "fresh",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-01531",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "furthermore",
+      "wordId": "VD-03125",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "further",
+        "more"
+      ],
+      "componentWordIds": [
+        "VD-01542",
+        "VD-00596"
+      ]
+    },
+    {
+      "headword": "gentleman",
+      "wordId": "VD-03144",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "gentle",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-01551",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "goalkeeper",
+      "wordId": "VD-03161",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "goal",
+        "keeper"
+      ],
+      "componentWordIds": [
+        "VD-00388",
+        "VD-05605"
+      ]
+    },
+    {
+      "headword": "handball",
+      "wordId": "VD-03202",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "hand",
+        "ball"
+      ],
+      "componentWordIds": [
+        "VD-00421",
+        "VD-00063"
+      ]
+    },
+    {
+      "headword": "highlight",
+      "wordId": "VD-03236",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "high",
+        "light"
+      ],
+      "componentWordIds": [
+        "VD-00445",
+        "VD-00537"
+      ]
+    },
+    {
+      "headword": "honeymoon",
+      "wordId": "VD-03249",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "honey",
+        "moon"
+      ],
+      "componentWordIds": [
+        "VD-01606",
+        "VD-00595"
+      ]
+    },
+    {
+      "headword": "innermost",
+      "wordId": "VD-03320",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "inner",
+        "most"
+      ],
+      "componentWordIds": [
+        "VD-01638",
+        "VD-00598"
+      ]
+    },
+    {
+      "headword": "lifeguard",
+      "wordId": "VD-03419",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "life",
+        "guard"
+      ],
+      "componentWordIds": [
+        "VD-00536",
+        "VD-01573"
+      ]
+    },
+    {
+      "headword": "lifelong",
+      "wordId": "VD-03420",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "life",
+        "long"
+      ],
+      "componentWordIds": [
+        "VD-00536",
+        "VD-00549"
+      ]
+    },
+    {
+      "headword": "loudspeaker",
+      "wordId": "VD-03446",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "loud",
+        "speaker"
+      ],
+      "componentWordIds": [
+        "VD-03445",
+        "VD-02102"
+      ]
+    },
+    {
+      "headword": "mailbox",
+      "wordId": "VD-03456",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "mail",
+        "box"
+      ],
+      "componentWordIds": [
+        "VD-00559",
+        "VD-00118"
+      ]
+    },
+    {
+      "headword": "mankind",
+      "wordId": "VD-03462",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "man",
+        "kind"
+      ],
+      "componentWordIds": [
+        "VD-00561",
+        "VD-00510"
+      ]
+    },
+    {
+      "headword": "meanwhile",
+      "wordId": "VD-03476",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "mean",
+        "while"
+      ],
+      "componentWordIds": [
+        "VD-00572",
+        "VD-02283"
+      ]
+    },
+    {
+      "headword": "moreover",
+      "wordId": "VD-03528",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "more",
+        "over"
+      ],
+      "componentWordIds": [
+        "VD-00596",
+        "VD-00663"
+      ]
+    },
+    {
+      "headword": "motherland",
+      "wordId": "VD-03531",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "mother",
+        "land"
+      ],
+      "componentWordIds": [
+        "VD-00599",
+        "VD-01674"
+      ]
+    },
+    {
+      "headword": "motorcycle",
+      "wordId": "VD-03537",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "motor",
+        "cycle"
+      ],
+      "componentWordIds": [
+        "VD-03536",
+        "VD-02775"
+      ]
+    },
+    {
+      "headword": "mountaintop",
+      "wordId": "VD-03540",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "mountain",
+        "top"
+      ],
+      "componentWordIds": [
+        "VD-00600",
+        "VD-00959"
+      ]
+    },
+    {
+      "headword": "northeast",
+      "wordId": "VD-03588",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "north",
+        "east"
+      ],
+      "componentWordIds": [
+        "VD-01788",
+        "VD-01425"
+      ]
+    },
+    {
+      "headword": "northeastern",
+      "wordId": "VD-03589",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "north",
+        "eastern"
+      ],
+      "componentWordIds": [
+        "VD-01788",
+        "VD-02922"
+      ]
+    },
+    {
+      "headword": "northwest",
+      "wordId": "VD-03591",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "north",
+        "west"
+      ],
+      "componentWordIds": [
+        "VD-01788",
+        "VD-02279"
+      ]
+    },
+    {
+      "headword": "northwestern",
+      "wordId": "VD-03592",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "north",
+        "western"
+      ],
+      "componentWordIds": [
+        "VD-01788",
+        "VD-06817"
+      ]
+    },
+    {
+      "headword": "noticeboard",
+      "wordId": "VD-03594",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "notice",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-01789",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "nowhere",
+      "wordId": "VD-03598",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "now",
+        "here"
+      ],
+      "componentWordIds": [
+        "VD-00636",
+        "VD-00441"
+      ]
+    },
+    {
+      "headword": "oneself",
+      "wordId": "VD-03624",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "one",
+        "self"
+      ],
+      "componentWordIds": [
+        "VD-00651",
+        "VD-00786"
+      ]
+    },
+    {
+      "headword": "outstanding",
+      "wordId": "VD-03651",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "out",
+        "standing"
+      ],
+      "componentWordIds": [
+        "VD-00661",
+        "VD-08527"
+      ]
+    },
+    {
+      "headword": "passport",
+      "wordId": "VD-03687",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "pass",
+        "port"
+      ],
+      "componentWordIds": [
+        "VD-01825",
+        "VD-03741"
+      ]
+    },
+    {
+      "headword": "password",
+      "wordId": "VD-03688",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "pass",
+        "word"
+      ],
+      "componentWordIds": [
+        "VD-01825",
+        "VD-01043"
+      ]
+    },
+    {
+      "headword": "photocopy",
+      "wordId": "VD-03712",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "photo",
+        "copy"
+      ],
+      "componentWordIds": [
+        "VD-00691",
+        "VD-00215"
+      ]
+    },
+    {
+      "headword": "pineapple",
+      "wordId": "VD-03720",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "pine",
+        "apple"
+      ],
+      "componentWordIds": [
+        "VD-06013",
+        "VD-00042"
+      ]
+    },
+    {
+      "headword": "popcorn",
+      "wordId": "VD-03739",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "pop",
+        "corn"
+      ],
+      "componentWordIds": [
+        "VD-00713",
+        "VD-00216"
+      ]
+    },
+    {
+      "headword": "pullover",
+      "wordId": "VD-03821",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "pull",
+        "over"
+      ],
+      "componentWordIds": [
+        "VD-01916",
+        "VD-00663"
+      ]
+    },
+    {
+      "headword": "railroad",
+      "wordId": "VD-03843",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "rail",
+        "road"
+      ],
+      "componentWordIds": [
+        "VD-03842",
+        "VD-01974"
+      ]
+    },
+    {
+      "headword": "railway",
+      "wordId": "VD-03844",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "rail",
+        "way"
+      ],
+      "componentWordIds": [
+        "VD-03842",
+        "VD-01014"
+      ]
+    },
+    {
+      "headword": "roadside",
+      "wordId": "VD-03952",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "road",
+        "side"
+      ],
+      "componentWordIds": [
+        "VD-01974",
+        "VD-00811"
+      ]
+    },
+    {
+      "headword": "runaway",
+      "wordId": "VD-03961",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "run",
+        "away"
+      ],
+      "componentWordIds": [
+        "VD-00767",
+        "VD-00058"
+      ]
+    },
+    {
+      "headword": "runway",
+      "wordId": "VD-03962",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "run",
+        "way"
+      ],
+      "componentWordIds": [
+        "VD-00767",
+        "VD-01014"
+      ]
+    },
+    {
+      "headword": "saucepan",
+      "wordId": "VD-03976",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sauce",
+        "pan"
+      ],
+      "componentWordIds": [
+        "VD-02004",
+        "VD-01821"
+      ]
+    },
+    {
+      "headword": "schoolmate",
+      "wordId": "VD-03986",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "school",
+        "mate"
+      ],
+      "componentWordIds": [
+        "VD-00778",
+        "VD-05708"
+      ]
+    },
+    {
+      "headword": "schoolteacher",
+      "wordId": "VD-03987",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "school",
+        "teacher"
+      ],
+      "componentWordIds": [
+        "VD-00778",
+        "VD-00909"
+      ]
+    },
+    {
+      "headword": "seaweed",
+      "wordId": "VD-03996",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sea",
+        "weed"
+      ],
+      "componentWordIds": [
+        "VD-00781",
+        "VD-06811"
+      ]
+    },
+    {
+      "headword": "signpost",
+      "wordId": "VD-04047",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sign",
+        "post"
+      ],
+      "componentWordIds": [
+        "VD-00813",
+        "VD-00714"
+      ]
+    },
+    {
+      "headword": "snowboard",
+      "wordId": "VD-04067",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "snow",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-00837",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "somehow",
+      "wordId": "VD-04074",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "how"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00464"
+      ]
+    },
+    {
+      "headword": "someplace",
+      "wordId": "VD-04075",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "place"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00700"
+      ]
+    },
+    {
+      "headword": "sometime",
+      "wordId": "VD-04076",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "time"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00947"
+      ]
+    },
+    {
+      "headword": "sometimes",
+      "wordId": "VD-04077",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "times"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-06600"
+      ]
+    },
+    {
+      "headword": "southeast",
+      "wordId": "VD-04085",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "south",
+        "east"
+      ],
+      "componentWordIds": [
+        "VD-02098",
+        "VD-01425"
+      ]
+    },
+    {
+      "headword": "southwest",
+      "wordId": "VD-04087",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "south",
+        "west"
+      ],
+      "componentWordIds": [
+        "VD-02098",
+        "VD-02279"
+      ]
+    },
+    {
+      "headword": "storyteller",
+      "wordId": "VD-04126",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "story",
+        "teller"
+      ],
+      "componentWordIds": [
+        "VD-00872",
+        "VD-04216"
+      ]
+    },
+    {
+      "headword": "strawberry",
+      "wordId": "VD-04131",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "straw",
+        "berry"
+      ],
+      "componentWordIds": [
+        "VD-04130",
+        "VD-04626"
+      ]
+    },
+    {
+      "headword": "sunbathe",
+      "wordId": "VD-04162",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sun",
+        "bathe"
+      ],
+      "componentWordIds": [
+        "VD-00887",
+        "VD-02488"
+      ]
+    },
+    {
+      "headword": "sundial",
+      "wordId": "VD-04163",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sun",
+        "dial"
+      ],
+      "componentWordIds": [
+        "VD-00887",
+        "VD-02851"
+      ]
+    },
+    {
+      "headword": "sweatshirt",
+      "wordId": "VD-04186",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "sweat",
+        "shirt"
+      ],
+      "componentWordIds": [
+        "VD-02157",
+        "VD-00800"
+      ]
+    },
+    {
+      "headword": "takeaway",
+      "wordId": "VD-04197",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "take",
+        "away"
+      ],
+      "componentWordIds": [
+        "VD-00903",
+        "VD-00058"
+      ]
+    },
+    {
+      "headword": "teammate",
+      "wordId": "VD-04208",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "team",
+        "mate"
+      ],
+      "componentWordIds": [
+        "VD-00910",
+        "VD-05708"
+      ]
+    },
+    {
+      "headword": "teamwork",
+      "wordId": "VD-04209",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "team",
+        "work"
+      ],
+      "componentWordIds": [
+        "VD-00910",
+        "VD-01044"
+      ]
+    },
+    {
+      "headword": "throughout",
+      "wordId": "VD-04240",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "through",
+        "out"
+      ],
+      "componentWordIds": [
+        "VD-00941",
+        "VD-00661"
+      ]
+    },
+    {
+      "headword": "tracksuit",
+      "wordId": "VD-04267",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "track",
+        "suit"
+      ],
+      "componentWordIds": [
+        "VD-02207",
+        "VD-02140"
+      ]
+    },
+    {
+      "headword": "trustworthy",
+      "wordId": "VD-04292",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "trust",
+        "worthy"
+      ],
+      "componentWordIds": [
+        "VD-02221",
+        "VD-04438"
+      ]
+    },
+    {
+      "headword": "viewpoint",
+      "wordId": "VD-04373",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "view",
+        "point"
+      ],
+      "componentWordIds": [
+        "VD-02254",
+        "VD-00709"
+      ]
+    },
+    {
+      "headword": "washbowl",
+      "wordId": "VD-04399",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wash",
+        "bowl"
+      ],
+      "componentWordIds": [
+        "VD-01011",
+        "VD-00117"
+      ]
+    },
+    {
+      "headword": "wetland",
+      "wordId": "VD-04411",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wet",
+        "land"
+      ],
+      "componentWordIds": [
+        "VD-02280",
+        "VD-01674"
+      ]
+    },
+    {
+      "headword": "whenever",
+      "wordId": "VD-04413",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "when",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-01026",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "whichever",
+      "wordId": "VD-04416",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "which",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-01028",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "whoever",
+      "wordId": "VD-04419",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "who",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-01030",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "windscreen",
+      "wordId": "VD-04424",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wind",
+        "screen"
+      ],
+      "componentWordIds": [
+        "VD-01036",
+        "VD-02016"
+      ]
+    },
+    {
+      "headword": "windsurfing",
+      "wordId": "VD-04425",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wind",
+        "surfing"
+      ],
+      "componentWordIds": [
+        "VD-01036",
+        "VD-02151"
+      ]
+    },
+    {
+      "headword": "workout",
+      "wordId": "VD-04432",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "work",
+        "out"
+      ],
+      "componentWordIds": [
+        "VD-01044",
+        "VD-00661"
+      ]
+    },
+    {
+      "headword": "worthwhile",
+      "wordId": "VD-04437",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "worth",
+        "while"
+      ],
+      "componentWordIds": [
+        "VD-04436",
+        "VD-02283"
+      ]
+    },
+    {
+      "headword": "wristwatch",
+      "wordId": "VD-04443",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "wrist",
+        "watch"
+      ],
+      "componentWordIds": [
+        "VD-04442",
+        "VD-01012"
+      ]
+    },
+    {
+      "headword": "barman",
+      "wordId": "VD-02483",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "bar",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-00067",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "checkout",
+      "wordId": "VD-02629",
+      "cefrHeadword": "B1",
+      "kind": "compound",
+      "componentWords": [
+        "check",
+        "out"
+      ],
+      "componentWordIds": [
+        "VD-00172",
+        "VD-00661"
+      ]
+    },
+    {
+      "headword": "armchair",
+      "wordId": "VD-01133",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "arm",
+        "chair"
+      ],
+      "componentWordIds": [
+        "VD-00046",
+        "VD-00169"
+      ]
+    },
+    {
+      "headword": "brainstorm",
+      "wordId": "VD-01208",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "brain",
+        "storm"
+      ],
+      "componentWordIds": [
+        "VD-00121",
+        "VD-02123"
+      ]
+    },
+    {
+      "headword": "businessman",
+      "wordId": "VD-01224",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "business",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-00138",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "businesswoman",
+      "wordId": "VD-01225",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "business",
+        "woman"
+      ],
+      "componentWordIds": [
+        "VD-00138",
+        "VD-01041"
+      ]
+    },
+    {
+      "headword": "chairman",
+      "wordId": "VD-01248",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "chair",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-00169",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "countryside",
+      "wordId": "VD-01330",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "country",
+        "side"
+      ],
+      "componentWordIds": [
+        "VD-01329",
+        "VD-00811"
+      ]
+    },
+    {
+      "headword": "cupboard",
+      "wordId": "VD-01348",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "cup",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-00229",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "drugstore",
+      "wordId": "VD-01416",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "drug",
+        "store"
+      ],
+      "componentWordIds": [
+        "VD-01415",
+        "VD-00871"
+      ]
+    },
+    {
+      "headword": "earring",
+      "wordId": "VD-01421",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "ear",
+        "ring"
+      ],
+      "componentWordIds": [
+        "VD-00280",
+        "VD-00758"
+      ]
+    },
+    {
+      "headword": "elsewhere",
+      "wordId": "VD-01435",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "else",
+        "where"
+      ],
+      "componentWordIds": [
+        "VD-00291",
+        "VD-01027"
+      ]
+    },
+    {
+      "headword": "forever",
+      "wordId": "VD-01522",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "for",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-00356",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "grandchild",
+      "wordId": "VD-01563",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "child"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00175"
+      ]
+    },
+    {
+      "headword": "granddad",
+      "wordId": "VD-01564",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "dad"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00232"
+      ]
+    },
+    {
+      "headword": "granddaughter",
+      "wordId": "VD-01565",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "daughter"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00238"
+      ]
+    },
+    {
+      "headword": "grandson",
+      "wordId": "VD-01566",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "grand",
+        "son"
+      ],
+      "componentWordIds": [
+        "VD-05359",
+        "VD-00847"
+      ]
+    },
+    {
+      "headword": "guidebook",
+      "wordId": "VD-01574",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "guide",
+        "book"
+      ],
+      "componentWordIds": [
+        "VD-03191",
+        "VD-00110"
+      ]
+    },
+    {
+      "headword": "headteacher",
+      "wordId": "VD-01590",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "head",
+        "teacher"
+      ],
+      "componentWordIds": [
+        "VD-00431",
+        "VD-00909"
+      ]
+    },
+    {
+      "headword": "herself",
+      "wordId": "VD-01596",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "her",
+        "self"
+      ],
+      "componentWordIds": [
+        "VD-00440",
+        "VD-00786"
+      ]
+    },
+    {
+      "headword": "himself",
+      "wordId": "VD-01602",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "him",
+        "self"
+      ],
+      "componentWordIds": [
+        "VD-00447",
+        "VD-00786"
+      ]
+    },
+    {
+      "headword": "however",
+      "wordId": "VD-01610",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "how",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-00464",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "lifestyle",
+      "wordId": "VD-01697",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "life",
+        "style"
+      ],
+      "componentWordIds": [
+        "VD-00536",
+        "VD-02133"
+      ]
+    },
+    {
+      "headword": "lunchtime",
+      "wordId": "VD-01713",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "lunch",
+        "time"
+      ],
+      "componentWordIds": [
+        "VD-00556",
+        "VD-00947"
+      ]
+    },
+    {
+      "headword": "motorway",
+      "wordId": "VD-01759",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "motor",
+        "way"
+      ],
+      "componentWordIds": [
+        "VD-03536",
+        "VD-01014"
+      ]
+    },
+    {
+      "headword": "playground",
+      "wordId": "VD-01863",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "play",
+        "ground"
+      ],
+      "componentWordIds": [
+        "VD-00703",
+        "VD-00407"
+      ]
+    },
+    {
+      "headword": "policeman",
+      "wordId": "VD-01873",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "police",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-01870",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "policewoman",
+      "wordId": "VD-01874",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "police",
+        "woman"
+      ],
+      "componentWordIds": [
+        "VD-01870",
+        "VD-01041"
+      ]
+    },
+    {
+      "headword": "roundabout",
+      "wordId": "VD-01988",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "round",
+        "about"
+      ],
+      "componentWordIds": [
+        "VD-01987",
+        "VD-00006"
+      ]
+    },
+    {
+      "headword": "schoolchild",
+      "wordId": "VD-02011",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "school",
+        "child"
+      ],
+      "componentWordIds": [
+        "VD-00778",
+        "VD-00175"
+      ]
+    },
+    {
+      "headword": "somebody",
+      "wordId": "VD-02093",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "body"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00108"
+      ]
+    },
+    {
+      "headword": "someday",
+      "wordId": "VD-02094",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "day"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-00239"
+      ]
+    },
+    {
+      "headword": "somewhere",
+      "wordId": "VD-02095",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "where"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-01027"
+      ]
+    },
+    {
+      "headword": "spaceship",
+      "wordId": "VD-02100",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "space",
+        "ship"
+      ],
+      "componentWordIds": [
+        "VD-02099",
+        "VD-00799"
+      ]
+    },
+    {
+      "headword": "stomachache",
+      "wordId": "VD-02122",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "stomach",
+        "ache"
+      ],
+      "componentWordIds": [
+        "VD-02121",
+        "VD-02339"
+      ]
+    },
+    {
+      "headword": "suitcase",
+      "wordId": "VD-02142",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "suit",
+        "case"
+      ],
+      "componentWordIds": [
+        "VD-02140",
+        "VD-00162"
+      ]
+    },
+    {
+      "headword": "sunglasses",
+      "wordId": "VD-02145",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "sun",
+        "glasses"
+      ],
+      "componentWordIds": [
+        "VD-00887",
+        "VD-00386"
+      ]
+    },
+    {
+      "headword": "sweetheart",
+      "wordId": "VD-02159",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "sweet",
+        "heart"
+      ],
+      "componentWordIds": [
+        "VD-00897",
+        "VD-00436"
+      ]
+    },
+    {
+      "headword": "swimsuit",
+      "wordId": "VD-02161",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "swim",
+        "suit"
+      ],
+      "componentWordIds": [
+        "VD-00898",
+        "VD-02140"
+      ]
+    },
+    {
+      "headword": "tablespoon",
+      "wordId": "VD-02166",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "table",
+        "spoon"
+      ],
+      "componentWordIds": [
+        "VD-00902",
+        "VD-02108"
+      ]
+    },
+    {
+      "headword": "thunderstorm",
+      "wordId": "VD-02190",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "thunder",
+        "storm"
+      ],
+      "componentWordIds": [
+        "VD-04243",
+        "VD-02123"
+      ]
+    },
+    {
+      "headword": "timetable",
+      "wordId": "VD-02195",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "time",
+        "table"
+      ],
+      "componentWordIds": [
+        "VD-00947",
+        "VD-00902"
+      ]
+    },
+    {
+      "headword": "whatever",
+      "wordId": "VD-02281",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "what",
+        "ever"
+      ],
+      "componentWordIds": [
+        "VD-01024",
+        "VD-01460"
+      ]
+    },
+    {
+      "headword": "wheelchair",
+      "wordId": "VD-02282",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "wheel",
+        "chair"
+      ],
+      "componentWordIds": [
+        "VD-01025",
+        "VD-00169"
+      ]
+    },
+    {
+      "headword": "without",
+      "wordId": "VD-02295",
+      "cefrHeadword": "A2",
+      "kind": "compound",
+      "componentWords": [
+        "with",
+        "out"
+      ],
+      "componentWordIds": [
+        "VD-01040",
+        "VD-00661"
+      ]
+    },
+    {
+      "headword": "aircrew",
+      "wordId": "VD-04496",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "air",
+        "crew"
+      ],
+      "componentWordIds": [
+        "VD-01095",
+        "VD-04918"
+      ]
+    },
+    {
+      "headword": "alongside",
+      "wordId": "VD-04502",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "along",
+        "side"
+      ],
+      "componentWordIds": [
+        "VD-00027",
+        "VD-00811"
+      ]
+    },
+    {
+      "headword": "anchorman",
+      "wordId": "VD-04526",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "anchor",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-04524",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "anchorperson",
+      "wordId": "VD-04527",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "anchor",
+        "person"
+      ],
+      "componentWordIds": [
+        "VD-04524",
+        "VD-00687"
+      ]
+    },
+    {
+      "headword": "barbershop",
+      "wordId": "VD-04607",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "barber",
+        "shop"
+      ],
+      "componentWordIds": [
+        "VD-01164",
+        "VD-00802"
+      ]
+    },
+    {
+      "headword": "bathhouse",
+      "wordId": "VD-04614",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "bath",
+        "house"
+      ],
+      "componentWordIds": [
+        "VD-00071",
+        "VD-00463"
+      ]
+    },
+    {
+      "headword": "battlefield",
+      "wordId": "VD-04615",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "battle",
+        "field"
+      ],
+      "componentWordIds": [
+        "VD-02489",
+        "VD-00332"
+      ]
+    },
+    {
+      "headword": "bestseller",
+      "wordId": "VD-04628",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "best",
+        "seller"
+      ],
+      "componentWordIds": [
+        "VD-00091",
+        "VD-06332"
+      ]
+    },
+    {
+      "headword": "birdcage",
+      "wordId": "VD-04640",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "bird",
+        "cage"
+      ],
+      "componentWordIds": [
+        "VD-00097",
+        "VD-02573"
+      ]
+    },
+    {
+      "headword": "birthplace",
+      "wordId": "VD-04641",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "birth",
+        "place"
+      ],
+      "componentWordIds": [
+        "VD-00098",
+        "VD-00700"
+      ]
+    },
+    {
+      "headword": "bloodstream",
+      "wordId": "VD-04650",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "blood",
+        "stream"
+      ],
+      "componentWordIds": [
+        "VD-01195",
+        "VD-04132"
+      ]
+    },
+    {
+      "headword": "bookmark",
+      "wordId": "VD-04664",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "book",
+        "mark"
+      ],
+      "componentWordIds": [
+        "VD-00110",
+        "VD-01727"
+      ]
+    },
+    {
+      "headword": "breakdown",
+      "wordId": "VD-04677",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "break",
+        "down"
+      ],
+      "componentWordIds": [
+        "VD-00123",
+        "VD-00265"
+      ]
+    },
+    {
+      "headword": "broadband",
+      "wordId": "VD-04683",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "broad",
+        "band"
+      ],
+      "componentWordIds": [
+        "VD-02550",
+        "VD-00065"
+      ]
+    },
+    {
+      "headword": "cardboard",
+      "wordId": "VD-04722",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "card",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-00156",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "carefree",
+      "wordId": "VD-04724",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "care",
+        "free"
+      ],
+      "componentWordIds": [
+        "VD-00157",
+        "VD-00364"
+      ]
+    },
+    {
+      "headword": "carpool",
+      "wordId": "VD-04727",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "car",
+        "pool"
+      ],
+      "componentWordIds": [
+        "VD-00155",
+        "VD-00711"
+      ]
+    },
+    {
+      "headword": "checkpoint",
+      "wordId": "VD-04754",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "check",
+        "point"
+      ],
+      "componentWordIds": [
+        "VD-00172",
+        "VD-00709"
+      ]
+    },
+    {
+      "headword": "citywide",
+      "wordId": "VD-04770",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "city",
+        "wide"
+      ],
+      "componentWordIds": [
+        "VD-00181",
+        "VD-02286"
+      ]
+    },
+    {
+      "headword": "coastline",
+      "wordId": "VD-04787",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "coast",
+        "line"
+      ],
+      "componentWordIds": [
+        "VD-01284",
+        "VD-00540"
+      ]
+    },
+    {
+      "headword": "commonwealth",
+      "wordId": "VD-04806",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "common",
+        "wealth"
+      ],
+      "componentWordIds": [
+        "VD-01294",
+        "VD-02268"
+      ]
+    },
+    {
+      "headword": "cornerstone",
+      "wordId": "VD-04884",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "corner",
+        "stone"
+      ],
+      "componentWordIds": [
+        "VD-00217",
+        "VD-00869"
+      ]
+    },
+    {
+      "headword": "countryman",
+      "wordId": "VD-04901",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "country",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-01329",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "countrywide",
+      "wordId": "VD-04902",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "country",
+        "wide"
+      ],
+      "componentWordIds": [
+        "VD-01329",
+        "VD-02286"
+      ]
+    },
+    {
+      "headword": "database",
+      "wordId": "VD-04948",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "data",
+        "base"
+      ],
+      "componentWordIds": [
+        "VD-04947",
+        "VD-01166"
+      ]
+    },
+    {
+      "headword": "desktop",
+      "wordId": "VD-04993",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "desk",
+        "top"
+      ],
+      "componentWordIds": [
+        "VD-00245",
+        "VD-00959"
+      ]
+    },
+    {
+      "headword": "doorkeeper",
+      "wordId": "VD-05070",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "door",
+        "keeper"
+      ],
+      "componentWordIds": [
+        "VD-00264",
+        "VD-05605"
+      ]
+    },
+    {
+      "headword": "doorway",
+      "wordId": "VD-05071",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "door",
+        "way"
+      ],
+      "componentWordIds": [
+        "VD-00264",
+        "VD-01014"
+      ]
+    },
+    {
+      "headword": "dropout",
+      "wordId": "VD-05090",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "drop",
+        "out"
+      ],
+      "componentWordIds": [
+        "VD-00273",
+        "VD-00661"
+      ]
+    },
+    {
+      "headword": "everlasting",
+      "wordId": "VD-05171",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "ever",
+        "lasting"
+      ],
+      "componentWordIds": [
+        "VD-01460",
+        "VD-03396"
+      ]
+    },
+    {
+      "headword": "fearsome",
+      "wordId": "VD-05240",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "fear",
+        "some"
+      ],
+      "componentWordIds": [
+        "VD-01492",
+        "VD-00844"
+      ]
+    },
+    {
+      "headword": "ferryboat",
+      "wordId": "VD-05245",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "ferry",
+        "boat"
+      ],
+      "componentWordIds": [
+        "VD-03053",
+        "VD-00107"
+      ]
+    },
+    {
+      "headword": "gateway",
+      "wordId": "VD-05320",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "gate",
+        "way"
+      ],
+      "componentWordIds": [
+        "VD-01547",
+        "VD-01014"
+      ]
+    },
+    {
+      "headword": "getaway",
+      "wordId": "VD-05335",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "get",
+        "away"
+      ],
+      "componentWordIds": [
+        "VD-00378",
+        "VD-00058"
+      ]
+    },
+    {
+      "headword": "giveaway",
+      "wordId": "VD-05337",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "give",
+        "away"
+      ],
+      "componentWordIds": [
+        "VD-00383",
+        "VD-00058"
+      ]
+    },
+    {
+      "headword": "goodwill",
+      "wordId": "VD-05352",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "good",
+        "will"
+      ],
+      "componentWordIds": [
+        "VD-00390",
+        "VD-01034"
+      ]
+    },
+    {
+      "headword": "gravestone",
+      "wordId": "VD-05362",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "grave",
+        "stone"
+      ],
+      "componentWordIds": [
+        "VD-03180",
+        "VD-00869"
+      ]
+    },
+    {
+      "headword": "guideline",
+      "wordId": "VD-05374",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "guide",
+        "line"
+      ],
+      "componentWordIds": [
+        "VD-03191",
+        "VD-00540"
+      ]
+    },
+    {
+      "headword": "gunshot",
+      "wordId": "VD-05377",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "gun",
+        "shot"
+      ],
+      "componentWordIds": [
+        "VD-01575",
+        "VD-02048"
+      ]
+    },
+    {
+      "headword": "housemaster",
+      "wordId": "VD-05428",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "house",
+        "master"
+      ],
+      "componentWordIds": [
+        "VD-00463",
+        "VD-05705"
+      ]
+    },
+    {
+      "headword": "keystroke",
+      "wordId": "VD-05607",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "key",
+        "stroke"
+      ],
+      "componentWordIds": [
+        "VD-00506",
+        "VD-06497"
+      ]
+    },
+    {
+      "headword": "landslide",
+      "wordId": "VD-05618",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "land",
+        "slide"
+      ],
+      "componentWordIds": [
+        "VD-01674",
+        "VD-02076"
+      ]
+    },
+    {
+      "headword": "laptop",
+      "wordId": "VD-05620",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "lap",
+        "top"
+      ],
+      "componentWordIds": [
+        "VD-05619",
+        "VD-00959"
+      ]
+    },
+    {
+      "headword": "lawmaker",
+      "wordId": "VD-05628",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "law",
+        "maker"
+      ],
+      "componentWordIds": [
+        "VD-01680",
+        "VD-01721"
+      ]
+    },
+    {
+      "headword": "lawsuit",
+      "wordId": "VD-05630",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "law",
+        "suit"
+      ],
+      "componentWordIds": [
+        "VD-01680",
+        "VD-02140"
+      ]
+    },
+    {
+      "headword": "lifetime",
+      "wordId": "VD-05656",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "life",
+        "time"
+      ],
+      "componentWordIds": [
+        "VD-00536",
+        "VD-00947"
+      ]
+    },
+    {
+      "headword": "masterpiece",
+      "wordId": "VD-05706",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "master",
+        "piece"
+      ],
+      "componentWordIds": [
+        "VD-05705",
+        "VD-00696"
+      ]
+    },
+    {
+      "headword": "motorbike",
+      "wordId": "VD-05780",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "motor",
+        "bike"
+      ],
+      "componentWordIds": [
+        "VD-03536",
+        "VD-00096"
+      ]
+    },
+    {
+      "headword": "nationwide",
+      "wordId": "VD-05801",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "nation",
+        "wide"
+      ],
+      "componentWordIds": [
+        "VD-01771",
+        "VD-02286"
+      ]
+    },
+    {
+      "headword": "newsworthy",
+      "wordId": "VD-05823",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "news",
+        "worthy"
+      ],
+      "componentWordIds": [
+        "VD-00621",
+        "VD-04438"
+      ]
+    },
+    {
+      "headword": "nightclub",
+      "wordId": "VD-05825",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "night",
+        "club"
+      ],
+      "componentWordIds": [
+        "VD-00624",
+        "VD-00195"
+      ]
+    },
+    {
+      "headword": "nobleman",
+      "wordId": "VD-05829",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "noble",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-05828",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "nutshell",
+      "wordId": "VD-05845",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "nut",
+        "shell"
+      ],
+      "componentWordIds": [
+        "VD-05844",
+        "VD-02041"
+      ]
+    },
+    {
+      "headword": "offhand",
+      "wordId": "VD-05860",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "off",
+        "hand"
+      ],
+      "componentWordIds": [
+        "VD-00642",
+        "VD-00421"
+      ]
+    },
+    {
+      "headword": "offshore",
+      "wordId": "VD-05861",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "off",
+        "shore"
+      ],
+      "componentWordIds": [
+        "VD-00642",
+        "VD-02046"
+      ]
+    },
+    {
+      "headword": "paintbrush",
+      "wordId": "VD-05928",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "paint",
+        "brush"
+      ],
+      "componentWordIds": [
+        "VD-00668",
+        "VD-00132"
+      ]
+    },
+    {
+      "headword": "pancake",
+      "wordId": "VD-05931",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "pan",
+        "cake"
+      ],
+      "componentWordIds": [
+        "VD-01821",
+        "VD-00148"
+      ]
+    },
+    {
+      "headword": "paperwork",
+      "wordId": "VD-05936",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "paper",
+        "work"
+      ],
+      "componentWordIds": [
+        "VD-00673",
+        "VD-01044"
+      ]
+    },
+    {
+      "headword": "pillowcase",
+      "wordId": "VD-06012",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "pillow",
+        "case"
+      ],
+      "componentWordIds": [
+        "VD-03718",
+        "VD-00162"
+      ]
+    },
+    {
+      "headword": "playmate",
+      "wordId": "VD-06020",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "play",
+        "mate"
+      ],
+      "componentWordIds": [
+        "VD-00703",
+        "VD-05708"
+      ]
+    },
+    {
+      "headword": "rainstorm",
+      "wordId": "VD-06153",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "rain",
+        "storm"
+      ],
+      "componentWordIds": [
+        "VD-00736",
+        "VD-02123"
+      ]
+    },
+    {
+      "headword": "roommate",
+      "wordId": "VD-06277",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "room",
+        "mate"
+      ],
+      "componentWordIds": [
+        "VD-00761",
+        "VD-05708"
+      ]
+    },
+    {
+      "headword": "sandstone",
+      "wordId": "VD-06299",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "sand",
+        "stone"
+      ],
+      "componentWordIds": [
+        "VD-03971",
+        "VD-00869"
+      ]
+    },
+    {
+      "headword": "schoolgirl",
+      "wordId": "VD-06312",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "school",
+        "girl"
+      ],
+      "componentWordIds": [
+        "VD-00778",
+        "VD-00381"
+      ]
+    },
+    {
+      "headword": "seesaw",
+      "wordId": "VD-06326",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "see",
+        "saw"
+      ],
+      "componentWordIds": [
+        "VD-00785",
+        "VD-00776"
+      ]
+    },
+    {
+      "headword": "setback",
+      "wordId": "VD-06343",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "set",
+        "back"
+      ],
+      "componentWordIds": [
+        "VD-00790",
+        "VD-00060"
+      ]
+    },
+    {
+      "headword": "shipwreck",
+      "wordId": "VD-06356",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "ship",
+        "wreck"
+      ],
+      "componentWordIds": [
+        "VD-00799",
+        "VD-06852"
+      ]
+    },
+    {
+      "headword": "shopkeeper",
+      "wordId": "VD-06358",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "shop",
+        "keeper"
+      ],
+      "componentWordIds": [
+        "VD-00802",
+        "VD-05605"
+      ]
+    },
+    {
+      "headword": "shoplift",
+      "wordId": "VD-06359",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "shop",
+        "lift"
+      ],
+      "componentWordIds": [
+        "VD-00802",
+        "VD-03421"
+      ]
+    },
+    {
+      "headword": "showcase",
+      "wordId": "VD-06365",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "show",
+        "case"
+      ],
+      "componentWordIds": [
+        "VD-00807",
+        "VD-00162"
+      ]
+    },
+    {
+      "headword": "skateboard",
+      "wordId": "VD-06376",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "skate",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-02067",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "smokestack",
+      "wordId": "VD-06394",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "smoke",
+        "stack"
+      ],
+      "componentWordIds": [
+        "VD-00834",
+        "VD-06451"
+      ]
+    },
+    {
+      "headword": "somewhat",
+      "wordId": "VD-06415",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "some",
+        "what"
+      ],
+      "componentWordIds": [
+        "VD-00844",
+        "VD-01024"
+      ]
+    },
+    {
+      "headword": "soundtrack",
+      "wordId": "VD-06419",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "sound",
+        "track"
+      ],
+      "componentWordIds": [
+        "VD-02096",
+        "VD-02207"
+      ]
+    },
+    {
+      "headword": "spellbound",
+      "wordId": "VD-06436",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "spell",
+        "bound"
+      ],
+      "componentWordIds": [
+        "VD-00855",
+        "VD-02532"
+      ]
+    },
+    {
+      "headword": "spreadsheet",
+      "wordId": "VD-06443",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "spread",
+        "sheet"
+      ],
+      "componentWordIds": [
+        "VD-02110",
+        "VD-04029"
+      ]
+    },
+    {
+      "headword": "standstill",
+      "wordId": "VD-06457",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "stand",
+        "still"
+      ],
+      "componentWordIds": [
+        "VD-00862",
+        "VD-00868"
+      ]
+    },
+    {
+      "headword": "statewide",
+      "wordId": "VD-06464",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "state",
+        "wide"
+      ],
+      "componentWordIds": [
+        "VD-02116",
+        "VD-02286"
+      ]
+    },
+    {
+      "headword": "stepfather",
+      "wordId": "VD-06469",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "step",
+        "father"
+      ],
+      "componentWordIds": [
+        "VD-00867",
+        "VD-00324"
+      ]
+    },
+    {
+      "headword": "stepmother",
+      "wordId": "VD-06470",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "step",
+        "mother"
+      ],
+      "componentWordIds": [
+        "VD-00867",
+        "VD-00599"
+      ]
+    },
+    {
+      "headword": "stockpile",
+      "wordId": "VD-06483",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "stock",
+        "pile"
+      ],
+      "componentWordIds": [
+        "VD-06481",
+        "VD-01853"
+      ]
+    },
+    {
+      "headword": "stonework",
+      "wordId": "VD-06484",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "stone",
+        "work"
+      ],
+      "componentWordIds": [
+        "VD-00869",
+        "VD-01044"
+      ]
+    },
+    {
+      "headword": "stopover",
+      "wordId": "VD-06486",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "stop",
+        "over"
+      ],
+      "componentWordIds": [
+        "VD-00870",
+        "VD-00663"
+      ]
+    },
+    {
+      "headword": "stopwatch",
+      "wordId": "VD-06487",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "stop",
+        "watch"
+      ],
+      "componentWordIds": [
+        "VD-00870",
+        "VD-01012"
+      ]
+    },
+    {
+      "headword": "straightforward",
+      "wordId": "VD-06489",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "straight",
+        "forward"
+      ],
+      "componentWordIds": [
+        "VD-00873",
+        "VD-01526"
+      ]
+    },
+    {
+      "headword": "tablecloth",
+      "wordId": "VD-06546",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "table",
+        "cloth"
+      ],
+      "componentWordIds": [
+        "VD-00902",
+        "VD-00191"
+      ]
+    },
+    {
+      "headword": "teaspoon",
+      "wordId": "VD-06559",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "tea",
+        "spoon"
+      ],
+      "componentWordIds": [
+        "VD-00907",
+        "VD-02108"
+      ]
+    },
+    {
+      "headword": "thereafter",
+      "wordId": "VD-06578",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "there",
+        "after"
+      ],
+      "componentWordIds": [
+        "VD-00929",
+        "VD-00014"
+      ]
+    },
+    {
+      "headword": "tightrope",
+      "wordId": "VD-06597",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "tight",
+        "rope"
+      ],
+      "componentWordIds": [
+        "VD-00946",
+        "VD-01985"
+      ]
+    },
+    {
+      "headword": "tiptoe",
+      "wordId": "VD-06602",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "tip",
+        "toe"
+      ],
+      "componentWordIds": [
+        "VD-02196",
+        "VD-02199"
+      ]
+    },
+    {
+      "headword": "toenail",
+      "wordId": "VD-06605",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "toe",
+        "nail"
+      ],
+      "componentWordIds": [
+        "VD-02199",
+        "VD-03550"
+      ]
+    },
+    {
+      "headword": "troublesome",
+      "wordId": "VD-06653",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "trouble",
+        "some"
+      ],
+      "componentWordIds": [
+        "VD-02219",
+        "VD-00844"
+      ]
+    },
+    {
+      "headword": "waistcoat",
+      "wordId": "VD-06795",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "waist",
+        "coat"
+      ],
+      "componentWordIds": [
+        "VD-06794",
+        "VD-00197"
+      ]
+    },
+    {
+      "headword": "wallboard",
+      "wordId": "VD-06798",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "wall",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-01006",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "wartime",
+      "wordId": "VD-06801",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "war",
+        "time"
+      ],
+      "componentWordIds": [
+        "VD-01008",
+        "VD-00947"
+      ]
+    },
+    {
+      "headword": "windshield",
+      "wordId": "VD-06829",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "wind",
+        "shield"
+      ],
+      "componentWordIds": [
+        "VD-01036",
+        "VD-06354"
+      ]
+    },
+    {
+      "headword": "workbench",
+      "wordId": "VD-06841",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "work",
+        "bench"
+      ],
+      "componentWordIds": [
+        "VD-01044",
+        "VD-01184"
+      ]
+    },
+    {
+      "headword": "workman",
+      "wordId": "VD-06842",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "work",
+        "man"
+      ],
+      "componentWordIds": [
+        "VD-01044",
+        "VD-00561"
+      ]
+    },
+    {
+      "headword": "worktable",
+      "wordId": "VD-06843",
+      "cefrHeadword": "B2",
+      "kind": "compound",
+      "componentWords": [
+        "work",
+        "table"
+      ],
+      "componentWordIds": [
+        "VD-01044",
+        "VD-00902"
+      ]
+    },
+    {
+      "headword": "beforehand",
+      "wordId": "VD-06925",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "before",
+        "hand"
+      ],
+      "componentWordIds": [
+        "VD-00084",
+        "VD-00421"
+      ]
+    },
+    {
+      "headword": "brainwash",
+      "wordId": "VD-06939",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "brain",
+        "wash"
+      ],
+      "componentWordIds": [
+        "VD-00121",
+        "VD-01011"
+      ]
+    },
+    {
+      "headword": "darkroom",
+      "wordId": "VD-07058",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "dark",
+        "room"
+      ],
+      "componentWordIds": [
+        "VD-00236",
+        "VD-00761"
+      ]
+    },
+    {
+      "headword": "drawback",
+      "wordId": "VD-07114",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "draw",
+        "back"
+      ],
+      "componentWordIds": [
+        "VD-00267",
+        "VD-00060"
+      ]
+    },
+    {
+      "headword": "firewall",
+      "wordId": "VD-07187",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "fire",
+        "wall"
+      ],
+      "componentWordIds": [
+        "VD-00341",
+        "VD-01006"
+      ]
+    },
+    {
+      "headword": "flashback",
+      "wordId": "VD-07190",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "flash",
+        "back"
+      ],
+      "componentWordIds": [
+        "VD-03074",
+        "VD-00060"
+      ]
+    },
+    {
+      "headword": "folktale",
+      "wordId": "VD-07197",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "folk",
+        "tale"
+      ],
+      "componentWordIds": [
+        "VD-03084",
+        "VD-04199"
+      ]
+    },
+    {
+      "headword": "grapefruit",
+      "wordId": "VD-07225",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "grape",
+        "fruit"
+      ],
+      "componentWordIds": [
+        "VD-00401",
+        "VD-00370"
+      ]
+    },
+    {
+      "headword": "headstrong",
+      "wordId": "VD-07241",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "head",
+        "strong"
+      ],
+      "componentWordIds": [
+        "VD-00431",
+        "VD-00877"
+      ]
+    },
+    {
+      "headword": "offspring",
+      "wordId": "VD-07399",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "off",
+        "spring"
+      ],
+      "componentWordIds": [
+        "VD-00642",
+        "VD-00859"
+      ]
+    },
+    {
+      "headword": "outset",
+      "wordId": "VD-07405",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "out",
+        "set"
+      ],
+      "componentWordIds": [
+        "VD-00661",
+        "VD-00790"
+      ]
+    },
+    {
+      "headword": "paywall",
+      "wordId": "VD-07416",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "pay",
+        "wall"
+      ],
+      "componentWordIds": [
+        "VD-00681",
+        "VD-01006"
+      ]
+    },
+    {
+      "headword": "screenplay",
+      "wordId": "VD-07581",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "screen",
+        "play"
+      ],
+      "componentWordIds": [
+        "VD-02016",
+        "VD-00703"
+      ]
+    },
+    {
+      "headword": "screenwriter",
+      "wordId": "VD-07582",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "screen",
+        "writer"
+      ],
+      "componentWordIds": [
+        "VD-02016",
+        "VD-01050"
+      ]
+    },
+    {
+      "headword": "shortlist",
+      "wordId": "VD-07598",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "short",
+        "list"
+      ],
+      "componentWordIds": [
+        "VD-00804",
+        "VD-00542"
+      ]
+    },
+    {
+      "headword": "sketchbook",
+      "wordId": "VD-07602",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "sketch",
+        "book"
+      ],
+      "componentWordIds": [
+        "VD-06378",
+        "VD-00110"
+      ]
+    },
+    {
+      "headword": "tastebud",
+      "wordId": "VD-07679",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "taste",
+        "bud"
+      ],
+      "componentWordIds": [
+        "VD-04203",
+        "VD-04692"
+      ]
+    },
+    {
+      "headword": "telltale",
+      "wordId": "VD-07685",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "tell",
+        "tale"
+      ],
+      "componentWordIds": [
+        "VD-00914",
+        "VD-04199"
+      ]
+    },
+    {
+      "headword": "washtub",
+      "wordId": "VD-07763",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "wash",
+        "tub"
+      ],
+      "componentWordIds": [
+        "VD-01011",
+        "VD-06658"
+      ]
+    },
+    {
+      "headword": "wayside",
+      "wordId": "VD-07765",
+      "cefrHeadword": "C1",
+      "kind": "compound",
+      "componentWords": [
+        "way",
+        "side"
+      ],
+      "componentWordIds": [
+        "VD-01014",
+        "VD-00811"
+      ]
+    },
+    {
+      "headword": "wordsmith",
+      "wordId": "VD-08650",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "word",
+        "smith"
+      ],
+      "componentWordIds": [
+        "VD-01043",
+        "VD-00833"
+      ]
+    },
+    {
+      "headword": "breadwinner",
+      "wordId": "VD-07882",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "bread",
+        "winner"
+      ],
+      "componentWordIds": [
+        "VD-00122",
+        "VD-02291"
+      ]
+    },
+    {
+      "headword": "brimstone",
+      "wordId": "VD-07885",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "brim",
+        "stone"
+      ],
+      "componentWordIds": [
+        "VD-07884",
+        "VD-00869"
+      ]
+    },
+    {
+      "headword": "counterproductive",
+      "wordId": "VD-07968",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "counter",
+        "productive"
+      ],
+      "componentWordIds": [
+        "VD-02739",
+        "VD-03791"
+      ]
+    },
+    {
+      "headword": "echolocate",
+      "wordId": "VD-08030",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "echo",
+        "locate"
+      ],
+      "componentWordIds": [
+        "VD-08029",
+        "VD-03436"
+      ]
+    },
+    {
+      "headword": "echolocation",
+      "wordId": "VD-08031",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "echo",
+        "location"
+      ],
+      "componentWordIds": [
+        "VD-08029",
+        "VD-03437"
+      ]
+    },
+    {
+      "headword": "ecotourism",
+      "wordId": "VD-08033",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "eco",
+        "tourism"
+      ],
+      "componentWordIds": [
+        "VD-02924",
+        "VD-04264"
+      ]
+    },
+    {
+      "headword": "minefield",
+      "wordId": "VD-08301",
+      "cefrHeadword": "C2",
+      "kind": "compound",
+      "componentWords": [
+        "mine",
+        "field"
+      ],
+      "componentWordIds": [
+        "VD-00583",
+        "VD-00332"
+      ]
+    },
+    {
+      "headword": "all right",
+      "wordId": "VD-00024",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "all",
+        "right"
+      ],
+      "componentWordIds": [
+        "VD-00023",
+        "VD-00757"
+      ]
+    },
+    {
+      "headword": "board game",
+      "wordId": "VD-01197",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "board",
+        "game"
+      ],
+      "componentWordIds": [
+        "VD-00106",
+        "VD-00375"
+      ]
+    },
+    {
+      "headword": "bus station",
+      "wordId": "VD-01221",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "bus",
+        "station"
+      ],
+      "componentWordIds": [
+        "VD-00137",
+        "VD-00865"
+      ]
+    },
+    {
+      "headword": "cd player",
+      "wordId": "VD-00166",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "cd",
+        "player"
+      ],
+      "componentWordIds": [
+        "VD-00165",
+        "VD-00704"
+      ]
+    },
+    {
+      "headword": "classical music",
+      "wordId": "VD-01274",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "classical",
+        "music"
+      ],
+      "componentWordIds": [
+        "VD-02647",
+        "VD-00609"
+      ]
+    },
+    {
+      "headword": "digital camera",
+      "wordId": "VD-01385",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "digital",
+        "camera"
+      ],
+      "componentWordIds": [
+        "VD-02856",
+        "VD-00150"
+      ]
+    },
+    {
+      "headword": "each other",
+      "wordId": "VD-00279",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "each",
+        "other"
+      ],
+      "componentWordIds": [
+        "VD-00278",
+        "VD-00658"
+      ]
+    },
+    {
+      "headword": "good night",
+      "wordId": "VD-00393",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "good",
+        "night"
+      ],
+      "componentWordIds": [
+        "VD-00390",
+        "VD-00624"
+      ]
+    },
+    {
+      "headword": "mobile phone",
+      "wordId": "VD-00587",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "mobile",
+        "phone"
+      ],
+      "componentWordIds": [
+        "VD-00586",
+        "VD-00690"
+      ]
+    },
+    {
+      "headword": "air force",
+      "wordId": "VD-02375",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "air",
+        "force"
+      ],
+      "componentWordIds": [
+        "VD-01095",
+        "VD-01520"
+      ]
+    },
+    {
+      "headword": "bank account",
+      "wordId": "VD-02479",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "bank",
+        "account"
+      ],
+      "componentWordIds": [
+        "VD-00066",
+        "VD-01070"
+      ]
+    },
+    {
+      "headword": "central heating",
+      "wordId": "VD-02612",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "central",
+        "heating"
+      ],
+      "componentWordIds": [
+        "VD-02611",
+        "VD-01592"
+      ]
+    },
+    {
+      "headword": "common sense",
+      "wordId": "VD-02673",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "common",
+        "sense"
+      ],
+      "componentWordIds": [
+        "VD-01294",
+        "VD-02030"
+      ]
+    },
+    {
+      "headword": "credit card",
+      "wordId": "VD-00226",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "credit",
+        "card"
+      ],
+      "componentWordIds": [
+        "VD-01338",
+        "VD-00156"
+      ]
+    },
+    {
+      "headword": "definite article",
+      "wordId": "VD-02806",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "definite",
+        "article"
+      ],
+      "componentWordIds": [
+        "VD-02805",
+        "VD-00050"
+      ]
+    },
+    {
+      "headword": "exchange rate",
+      "wordId": "VD-03007",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "exchange",
+        "rate"
+      ],
+      "componentWordIds": [
+        "VD-01465",
+        "VD-01932"
+      ]
+    },
+    {
+      "headword": "extreme sports",
+      "wordId": "VD-03028",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "extreme",
+        "sports"
+      ],
+      "componentWordIds": [
+        "VD-03027",
+        "VD-04107"
+      ]
+    },
+    {
+      "headword": "face to face",
+      "wordId": "VD-03030",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "face",
+        "to",
+        "face"
+      ],
+      "componentWordIds": [
+        "VD-00312",
+        "VD-00949",
+        "VD-00312"
+      ]
+    },
+    {
+      "headword": "fire station",
+      "wordId": "VD-03065",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "fire",
+        "station"
+      ],
+      "componentWordIds": [
+        "VD-00341",
+        "VD-00865"
+      ]
+    },
+    {
+      "headword": "good afternoon",
+      "wordId": "VD-00391",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "good",
+        "afternoon"
+      ],
+      "componentWordIds": [
+        "VD-00390",
+        "VD-00015"
+      ]
+    },
+    {
+      "headword": "good morning",
+      "wordId": "VD-00392",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "good",
+        "morning"
+      ],
+      "componentWordIds": [
+        "VD-00390",
+        "VD-00597"
+      ]
+    },
+    {
+      "headword": "first floor",
+      "wordId": "VD-03070",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "first",
+        "floor"
+      ],
+      "componentWordIds": [
+        "VD-00342",
+        "VD-00348"
+      ]
+    },
+    {
+      "headword": "first lady",
+      "wordId": "VD-03071",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "first",
+        "lady"
+      ],
+      "componentWordIds": [
+        "VD-00342",
+        "VD-00518"
+      ]
+    },
+    {
+      "headword": "full stop",
+      "wordId": "VD-03119",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "full",
+        "stop"
+      ],
+      "componentWordIds": [
+        "VD-00371",
+        "VD-00870"
+      ]
+    },
+    {
+      "headword": "ground floor",
+      "wordId": "VD-03186",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "ground",
+        "floor"
+      ],
+      "componentWordIds": [
+        "VD-00407",
+        "VD-00348"
+      ]
+    },
+    {
+      "headword": "heart attack",
+      "wordId": "VD-03223",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "heart",
+        "attack"
+      ],
+      "componentWordIds": [
+        "VD-00436",
+        "VD-01142"
+      ]
+    },
+    {
+      "headword": "ice hockey",
+      "wordId": "VD-03270",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "ice",
+        "hockey"
+      ],
+      "componentWordIds": [
+        "VD-00470",
+        "VD-01605"
+      ]
+    },
+    {
+      "headword": "ice skating",
+      "wordId": "VD-03271",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "ice",
+        "skating"
+      ],
+      "componentWordIds": [
+        "VD-00470",
+        "VD-02069"
+      ]
+    },
+    {
+      "headword": "identity card",
+      "wordId": "VD-03273",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "identity",
+        "card"
+      ],
+      "componentWordIds": [
+        "VD-03272",
+        "VD-00156"
+      ]
+    },
+    {
+      "headword": "indefinite article",
+      "wordId": "VD-03299",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "indefinite",
+        "article"
+      ],
+      "componentWordIds": [
+        "VD-07279",
+        "VD-00050"
+      ]
+    },
+    {
+      "headword": "message board",
+      "wordId": "VD-03496",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "message",
+        "board"
+      ],
+      "componentWordIds": [
+        "VD-00579",
+        "VD-00106"
+      ]
+    },
+    {
+      "headword": "navy blue",
+      "wordId": "VD-03559",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "navy",
+        "blue"
+      ],
+      "componentWordIds": [
+        "VD-05807",
+        "VD-00105"
+      ]
+    },
+    {
+      "headword": "next door",
+      "wordId": "VD-03576",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "next",
+        "door"
+      ],
+      "componentWordIds": [
+        "VD-01781",
+        "VD-00264"
+      ]
+    },
+    {
+      "headword": "pocket money",
+      "wordId": "VD-03727",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "pocket",
+        "money"
+      ],
+      "componentWordIds": [
+        "VD-00707",
+        "VD-00592"
+      ]
+    },
+    {
+      "headword": "primary school",
+      "wordId": "VD-03778",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "primary",
+        "school"
+      ],
+      "componentWordIds": [
+        "VD-06084",
+        "VD-00778"
+      ]
+    },
+    {
+      "headword": "public transport",
+      "wordId": "VD-03818",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "public",
+        "transport"
+      ],
+      "componentWordIds": [
+        "VD-01914",
+        "VD-04278"
+      ]
+    },
+    {
+      "headword": "question mark",
+      "wordId": "VD-03835",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "question",
+        "mark"
+      ],
+      "componentWordIds": [
+        "VD-00731",
+        "VD-01727"
+      ]
+    },
+    {
+      "headword": "remote control",
+      "wordId": "VD-03906",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "remote",
+        "control"
+      ],
+      "componentWordIds": [
+        "VD-01957",
+        "VD-01320"
+      ]
+    },
+    {
+      "headword": "science fiction",
+      "wordId": "VD-03988",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "science",
+        "fiction"
+      ],
+      "componentWordIds": [
+        "VD-00779",
+        "VD-01499"
+      ]
+    },
+    {
+      "headword": "secondary school",
+      "wordId": "VD-03998",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "secondary",
+        "school"
+      ],
+      "componentWordIds": [
+        "VD-06323",
+        "VD-00778"
+      ]
+    },
+    {
+      "headword": "soap opera",
+      "wordId": "VD-04069",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "soap",
+        "opera"
+      ],
+      "componentWordIds": [
+        "VD-02083",
+        "VD-00654"
+      ]
+    },
+    {
+      "headword": "traffic jam",
+      "wordId": "VD-04269",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "traffic",
+        "jam"
+      ],
+      "componentWordIds": [
+        "VD-02211",
+        "VD-01654"
+      ]
+    },
+    {
+      "headword": "travel agent",
+      "wordId": "VD-04281",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "travel",
+        "agent"
+      ],
+      "componentWordIds": [
+        "VD-00967",
+        "VD-01093"
+      ]
+    },
+    {
+      "headword": "vice president",
+      "wordId": "VD-04369",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "vice",
+        "president"
+      ],
+      "componentWordIds": [
+        "VD-04368",
+        "VD-03773"
+      ]
+    },
+    {
+      "headword": "video clip",
+      "wordId": "VD-04372",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "video",
+        "clip"
+      ],
+      "componentWordIds": [
+        "VD-00997",
+        "VD-02653"
+      ]
+    },
+    {
+      "headword": "weather forecast",
+      "wordId": "VD-04406",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "weather",
+        "forecast"
+      ],
+      "componentWordIds": [
+        "VD-01017",
+        "VD-03090"
+      ]
+    },
+    {
+      "headword": "carbon dioxide",
+      "wordId": "VD-04719",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "carbon",
+        "dioxide"
+      ],
+      "componentWordIds": [
+        "VD-04718",
+        "VD-02859"
+      ]
+    },
+    {
+      "headword": "climate change",
+      "wordId": "VD-04779",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "climate",
+        "change"
+      ],
+      "componentWordIds": [
+        "VD-02650",
+        "VD-00170"
+      ]
+    },
+    {
+      "headword": "debit card",
+      "wordId": "VD-04956",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "debit",
+        "card"
+      ],
+      "componentWordIds": [
+        "VD-04955",
+        "VD-00156"
+      ]
+    },
+    {
+      "headword": "environmentally friendly",
+      "wordId": "VD-05153",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "environmentally",
+        "friendly"
+      ],
+      "componentWordIds": [
+        "VD-05152",
+        "VD-05300"
+      ]
+    },
+    {
+      "headword": "first language",
+      "wordId": "VD-05259",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "first",
+        "language"
+      ],
+      "componentWordIds": [
+        "VD-00342",
+        "VD-00519"
+      ]
+    },
+    {
+      "headword": "first person",
+      "wordId": "VD-05260",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "first",
+        "person"
+      ],
+      "componentWordIds": [
+        "VD-00342",
+        "VD-00687"
+      ]
+    },
+    {
+      "headword": "hard drive",
+      "wordId": "VD-05387",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "hard",
+        "drive"
+      ],
+      "componentWordIds": [
+        "VD-00425",
+        "VD-00271"
+      ]
+    },
+    {
+      "headword": "health care",
+      "wordId": "VD-05398",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "health",
+        "care"
+      ],
+      "componentWordIds": [
+        "VD-00433",
+        "VD-00157"
+      ]
+    },
+    {
+      "headword": "junk food",
+      "wordId": "VD-05598",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "junk",
+        "food"
+      ],
+      "componentWordIds": [
+        "VD-01660",
+        "VD-00354"
+      ]
+    },
+    {
+      "headword": "last minute",
+      "wordId": "VD-05623",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "last",
+        "minute"
+      ],
+      "componentWordIds": [
+        "VD-01677",
+        "VD-00584"
+      ]
+    },
+    {
+      "headword": "native speaker",
+      "wordId": "VD-05802",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "native",
+        "speaker"
+      ],
+      "componentWordIds": [
+        "VD-01773",
+        "VD-02102"
+      ]
+    },
+    {
+      "headword": "alarm clock",
+      "wordId": "VD-01098",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "alarm",
+        "clock"
+      ],
+      "componentWordIds": [
+        "VD-01097",
+        "VD-00188"
+      ]
+    },
+    {
+      "headword": "bus stop",
+      "wordId": "VD-01222",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "bus",
+        "stop"
+      ],
+      "componentWordIds": [
+        "VD-00137",
+        "VD-00870"
+      ]
+    },
+    {
+      "headword": "capital letter",
+      "wordId": "VD-01232",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "capital",
+        "letter"
+      ],
+      "componentWordIds": [
+        "VD-01231",
+        "VD-00534"
+      ]
+    },
+    {
+      "headword": "car park",
+      "wordId": "VD-01234",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "car",
+        "park"
+      ],
+      "componentWordIds": [
+        "VD-00155",
+        "VD-00677"
+      ]
+    },
+    {
+      "headword": "chat show",
+      "wordId": "VD-02626",
+      "cefrHeadword": "B1",
+      "kind": "phrase",
+      "componentWords": [
+        "chat",
+        "show"
+      ],
+      "componentWordIds": [
+        "VD-01255",
+        "VD-00807"
+      ]
+    },
+    {
+      "headword": "department store",
+      "wordId": "VD-01370",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "department",
+        "store"
+      ],
+      "componentWordIds": [
+        "VD-02823",
+        "VD-00871"
+      ]
+    },
+    {
+      "headword": "fast food",
+      "wordId": "VD-01489",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "fast",
+        "food"
+      ],
+      "componentWordIds": [
+        "VD-00322",
+        "VD-00354"
+      ]
+    },
+    {
+      "headword": "first name",
+      "wordId": "VD-01505",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "first",
+        "name"
+      ],
+      "componentWordIds": [
+        "VD-00342",
+        "VD-00613"
+      ]
+    },
+    {
+      "headword": "high school",
+      "wordId": "VD-01598",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "high",
+        "school"
+      ],
+      "componentWordIds": [
+        "VD-00445",
+        "VD-00778"
+      ]
+    },
+    {
+      "headword": "ice cream",
+      "wordId": "VD-00471",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "ice",
+        "cream"
+      ],
+      "componentWordIds": [
+        "VD-00470",
+        "VD-00225"
+      ]
+    },
+    {
+      "headword": "id card",
+      "wordId": "VD-01616",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "id",
+        "card"
+      ],
+      "componentWordIds": [
+        "VD-01615",
+        "VD-00156"
+      ]
+    },
+    {
+      "headword": "last name",
+      "wordId": "VD-00521",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "last",
+        "name"
+      ],
+      "componentWordIds": [
+        "VD-01677",
+        "VD-00613"
+      ]
+    },
+    {
+      "headword": "living room",
+      "wordId": "VD-00547",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "living",
+        "room"
+      ],
+      "componentWordIds": [
+        "VD-00546",
+        "VD-00761"
+      ]
+    },
+    {
+      "headword": "main course",
+      "wordId": "VD-01717",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "main",
+        "course"
+      ],
+      "componentWordIds": [
+        "VD-03457",
+        "VD-00221"
+      ]
+    },
+    {
+      "headword": "mineral water",
+      "wordId": "VD-01749",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "mineral",
+        "water"
+      ],
+      "componentWordIds": [
+        "VD-03501",
+        "VD-01013"
+      ]
+    },
+    {
+      "headword": "olive oil",
+      "wordId": "VD-01798",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "olive",
+        "oil"
+      ],
+      "componentWordIds": [
+        "VD-05863",
+        "VD-01797"
+      ]
+    },
+    {
+      "headword": "petrol station",
+      "wordId": "VD-01847",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "petrol",
+        "station"
+      ],
+      "componentWordIds": [
+        "VD-01846",
+        "VD-00865"
+      ]
+    },
+    {
+      "headword": "point of view",
+      "wordId": "VD-06028",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "point",
+        "of",
+        "view"
+      ],
+      "componentWordIds": [
+        "VD-00709",
+        "VD-00641",
+        "VD-02254"
+      ]
+    },
+    {
+      "headword": "police officer",
+      "wordId": "VD-01871",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "police",
+        "officer"
+      ],
+      "componentWordIds": [
+        "VD-01870",
+        "VD-00644"
+      ]
+    },
+    {
+      "headword": "police station",
+      "wordId": "VD-01872",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "police",
+        "station"
+      ],
+      "componentWordIds": [
+        "VD-01870",
+        "VD-00865"
+      ]
+    },
+    {
+      "headword": "post office",
+      "wordId": "VD-01884",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "post",
+        "office"
+      ],
+      "componentWordIds": [
+        "VD-00714",
+        "VD-00643"
+      ]
+    },
+    {
+      "headword": "prime minister",
+      "wordId": "VD-06086",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "prime",
+        "minister"
+      ],
+      "componentWordIds": [
+        "VD-06085",
+        "VD-05746"
+      ]
+    },
+    {
+      "headword": "real estate",
+      "wordId": "VD-06164",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "real",
+        "estate"
+      ],
+      "componentWordIds": [
+        "VD-00743",
+        "VD-05162"
+      ]
+    },
+    {
+      "headword": "rush hour",
+      "wordId": "VD-06286",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "rush",
+        "hour"
+      ],
+      "componentWordIds": [
+        "VD-01995",
+        "VD-00462"
+      ]
+    },
+    {
+      "headword": "second person",
+      "wordId": "VD-06322",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "second",
+        "person"
+      ],
+      "componentWordIds": [
+        "VD-00783",
+        "VD-00687"
+      ]
+    },
+    {
+      "headword": "shop assistant",
+      "wordId": "VD-02045",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "shop",
+        "assistant"
+      ],
+      "componentWordIds": [
+        "VD-00802",
+        "VD-01137"
+      ]
+    },
+    {
+      "headword": "soft drink",
+      "wordId": "VD-02088",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "soft",
+        "drink"
+      ],
+      "componentWordIds": [
+        "VD-02087",
+        "VD-00270"
+      ]
+    },
+    {
+      "headword": "stock market",
+      "wordId": "VD-06482",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "stock",
+        "market"
+      ],
+      "componentWordIds": [
+        "VD-06481",
+        "VD-01728"
+      ]
+    },
+    {
+      "headword": "swimming costume",
+      "wordId": "VD-02160",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "swimming",
+        "costume"
+      ],
+      "componentWordIds": [
+        "VD-00899",
+        "VD-04899"
+      ]
+    },
+    {
+      "headword": "swimming pool",
+      "wordId": "VD-00900",
+      "cefrHeadword": "A1",
+      "kind": "phrase",
+      "componentWords": [
+        "swimming",
+        "pool"
+      ],
+      "componentWordIds": [
+        "VD-00899",
+        "VD-00711"
+      ]
+    },
+    {
+      "headword": "table tennis",
+      "wordId": "VD-02165",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "table",
+        "tennis"
+      ],
+      "componentWordIds": [
+        "VD-00902",
+        "VD-00917"
+      ]
+    },
+    {
+      "headword": "text message",
+      "wordId": "VD-02179",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "text",
+        "message"
+      ],
+      "componentWordIds": [
+        "VD-02178",
+        "VD-00579"
+      ]
+    },
+    {
+      "headword": "third person",
+      "wordId": "VD-06585",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "third",
+        "person"
+      ],
+      "componentWordIds": [
+        "VD-02185",
+        "VD-00687"
+      ]
+    },
+    {
+      "headword": "tour guide",
+      "wordId": "VD-02204",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "tour",
+        "guide"
+      ],
+      "componentWordIds": [
+        "VD-02203",
+        "VD-03191"
+      ]
+    },
+    {
+      "headword": "traffic light",
+      "wordId": "VD-02212",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "traffic",
+        "light"
+      ],
+      "componentWordIds": [
+        "VD-02211",
+        "VD-00537"
+      ]
+    },
+    {
+      "headword": "video game",
+      "wordId": "VD-02253",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "video",
+        "game"
+      ],
+      "componentWordIds": [
+        "VD-00997",
+        "VD-00375"
+      ]
+    },
+    {
+      "headword": "virtual reality",
+      "wordId": "VD-06783",
+      "cefrHeadword": "B2",
+      "kind": "phrase",
+      "componentWords": [
+        "virtual",
+        "reality"
+      ],
+      "componentWordIds": [
+        "VD-04376",
+        "VD-03858"
+      ]
+    },
+    {
+      "headword": "web page",
+      "wordId": "VD-02270",
+      "cefrHeadword": "A2",
+      "kind": "phrase",
+      "componentWords": [
+        "web",
+        "page"
+      ],
+      "componentWordIds": [
+        "VD-02269",
+        "VD-00667"
+      ]
+    },
+    {
+      "headword": "genetically",
+      "wordId": "VD-03142",
+      "cefrHeadword": "B1",
+      "kind": "adverb",
+      "componentWords": [
+        "genetic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-03141",
+        null
+      ]
+    },
+    {
+      "headword": "dramatically",
+      "wordId": "VD-05083",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "dramatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02906",
+        null
+      ]
+    },
+    {
+      "headword": "electronically",
+      "wordId": "VD-05118",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "electronic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02943",
+        null
+      ]
+    },
+    {
+      "headword": "enthusiastically",
+      "wordId": "VD-05148",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "enthusiastic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02981",
+        null
+      ]
+    },
+    {
+      "headword": "fantastically",
+      "wordId": "VD-05233",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "fantastic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-01484",
+        null
+      ]
+    },
+    {
+      "headword": "ironically",
+      "wordId": "VD-05581",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "ironic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08227",
+        null
+      ]
+    },
+    {
+      "headword": "scientifically",
+      "wordId": "VD-06313",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "scientific",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02013",
+        null
+      ]
+    },
+    {
+      "headword": "specifically",
+      "wordId": "VD-06432",
+      "cefrHeadword": "B2",
+      "kind": "adverb",
+      "componentWords": [
+        "specific",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02103",
+        null
+      ]
+    },
+    {
+      "headword": "automatically",
+      "wordId": "VD-01151",
+      "cefrHeadword": "A2",
+      "kind": "adverb",
+      "componentWords": [
+        "automatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-01150",
+        null
+      ]
+    },
+    {
+      "headword": "basically",
+      "wordId": "VD-01168",
+      "cefrHeadword": "A2",
+      "kind": "adverb",
+      "componentWords": [
+        "basic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-01167",
+        null
+      ]
+    },
+    {
+      "headword": "acoustically",
+      "wordId": "VD-06869",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "acoustic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-06868",
+        null
+      ]
+    },
+    {
+      "headword": "aesthetically",
+      "wordId": "VD-06881",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "aesthetic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-06880",
+        null
+      ]
+    },
+    {
+      "headword": "artistically",
+      "wordId": "VD-06916",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "artistic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-02435",
+        null
+      ]
+    },
+    {
+      "headword": "bureaucratically",
+      "wordId": "VD-06950",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "bureaucratic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-06949",
+        null
+      ]
+    },
+    {
+      "headword": "chaotically",
+      "wordId": "VD-06964",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "chaotic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-04751",
+        null
+      ]
+    },
+    {
+      "headword": "demographically",
+      "wordId": "VD-07070",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "demographic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07069",
+        null
+      ]
+    },
+    {
+      "headword": "domestically",
+      "wordId": "VD-07107",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "domestic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-05064",
+        null
+      ]
+    },
+    {
+      "headword": "dynamically",
+      "wordId": "VD-07119",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "dynamic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-05098",
+        null
+      ]
+    },
+    {
+      "headword": "eccentrically",
+      "wordId": "VD-07121",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "eccentric",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07120",
+        null
+      ]
+    },
+    {
+      "headword": "eclectically",
+      "wordId": "VD-07123",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "eclectic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07122",
+        null
+      ]
+    },
+    {
+      "headword": "ecstatically",
+      "wordId": "VD-07124",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "ecstatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-05108",
+        null
+      ]
+    },
+    {
+      "headword": "exotically",
+      "wordId": "VD-07155",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "exotic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-05202",
+        null
+      ]
+    },
+    {
+      "headword": "fanatically",
+      "wordId": "VD-07172",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "fanatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07171",
+        null
+      ]
+    },
+    {
+      "headword": "lethargically",
+      "wordId": "VD-07333",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "lethargic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07332",
+        null
+      ]
+    },
+    {
+      "headword": "magnetically",
+      "wordId": "VD-07346",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "magnetic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07345",
+        null
+      ]
+    },
+    {
+      "headword": "prolifically",
+      "wordId": "VD-07479",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "prolific",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07478",
+        null
+      ]
+    },
+    {
+      "headword": "sarcastically",
+      "wordId": "VD-07573",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "sarcastic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07572",
+        null
+      ]
+    },
+    {
+      "headword": "stylistically",
+      "wordId": "VD-07648",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "stylistic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07647",
+        null
+      ]
+    },
+    {
+      "headword": "synthetically",
+      "wordId": "VD-07670",
+      "cefrHeadword": "C1",
+      "kind": "adverb",
+      "componentWords": [
+        "synthetic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07669",
+        null
+      ]
+    },
+    {
+      "headword": "acrobatically",
+      "wordId": "VD-07788",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "acrobatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-07787",
+        null
+      ]
+    },
+    {
+      "headword": "anticlimactically",
+      "wordId": "VD-07822",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "anticlimactic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-06901",
+        null
+      ]
+    },
+    {
+      "headword": "catastrophically",
+      "wordId": "VD-07902",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "catastrophic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-04735",
+        null
+      ]
+    },
+    {
+      "headword": "euphemistically",
+      "wordId": "VD-08073",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "euphemistic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08072",
+        null
+      ]
+    },
+    {
+      "headword": "euphorically",
+      "wordId": "VD-08076",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "euphoric",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08075",
+        null
+      ]
+    },
+    {
+      "headword": "genomically",
+      "wordId": "VD-08117",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "genomic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08116",
+        null
+      ]
+    },
+    {
+      "headword": "histrionically",
+      "wordId": "VD-08144",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "histrionic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08143",
+        null
+      ]
+    },
+    {
+      "headword": "idiomatically",
+      "wordId": "VD-08160",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "idiomatic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08159",
+        null
+      ]
+    },
+    {
+      "headword": "impressionistically",
+      "wordId": "VD-08172",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "impressionistic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08171",
+        null
+      ]
+    },
+    {
+      "headword": "intrinsically",
+      "wordId": "VD-08226",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "intrinsic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08225",
+        null
+      ]
+    },
+    {
+      "headword": "kinetically",
+      "wordId": "VD-08234",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "kinetic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08233",
+        null
+      ]
+    },
+    {
+      "headword": "nostalgically",
+      "wordId": "VD-08324",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "nostalgic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08323",
+        null
+      ]
+    },
+    {
+      "headword": "philanthropically",
+      "wordId": "VD-08365",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "philanthropic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08364",
+        null
+      ]
+    },
+    {
+      "headword": "telescopically",
+      "wordId": "VD-08568",
+      "cefrHeadword": "C2",
+      "kind": "adverb",
+      "componentWords": [
+        "telescopic",
+        "-ally"
+      ],
+      "componentWordIds": [
+        "VD-08567",
+        null
+      ]
+    }
+  ]
+}
