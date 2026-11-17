@@ -142,22 +142,22 @@
       "cefrHeadword": "A2",
       "matchStatus": "candidate-index-exact",
       "meaningJa": "重要性",
-      "analysisType": "modern-derivation",
+      "analysisType": "historical-components-with-semantic-shift",
       "parts": [
         {
-          "surface": "important",
-          "kind": "derived-base",
-          "morphemeId": null,
-          "meaningJa": "重要な"
+          "surface": "import",
+          "kind": "historical-stem",
+          "morphemeId": "root:port",
+          "meaningJa": "運ぶに由来する歴史的語幹（重要性への意味変化あり）"
         },
         {
           "surface": "-ance",
           "kind": "suffix",
           "morphemeId": "suffix:ance",
-          "meaningJa": "性質・状態"
+          "meaningJa": "状態・性質"
         }
       ],
-      "explanationJa": "important から重要である性質を表す名詞。さらにさかのぼると Latin portare の歴史的つながりがある。",
+      "explanationJa": "importance は important の語族で、中世ラテン語・フランス語の語史を経て「重大な意味を持つこと」を表す。綴りは import + ance と切れるが、現代英語の動詞 import（輸入する）に -ance を機械的につけた語とは教えない。",
       "imageHintJa": null,
       "sourceRefs": [
         "https://www.etymonline.com/word/importance"
@@ -165,7 +165,8 @@
       "referenceLookupPending": false,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "warningJa": "字面の分解は単語の語史全体を説明しない。"
     },
     {
       "id": "wb:core:predict",
