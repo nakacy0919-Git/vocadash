@@ -6,16 +6,16 @@
   "productionEnabled": false,
   "masterTarget": 8653,
   "counts": {
-    "records": 3385,
-    "distinctHeadwords": 3382,
+    "records": 3474,
+    "distinctHeadwords": 3471,
     "automatedModernDerivationCandidates": 3350,
-    "handAuthoredCoreRecords": 35,
-    "candidateIndexMatchedRows": 996,
-    "candidateIndexMatchedDistinctHeadwords": 994,
+    "handAuthoredCoreRecords": 124,
+    "candidateIndexMatchedRows": 1085,
+    "candidateIndexMatchedDistinctHeadwords": 1083,
     "unresolvedMasterRows": 2389,
     "fullyEditorialReviewed": 0,
-    "fullMasterMatchedRows": 996,
-    "fullMasterMatchedDistinctHeadwords": 994,
+    "fullMasterMatchedRows": 1085,
+    "fullMasterMatchedDistinctHeadwords": 1083,
     "notIn8653MasterHeadwords": 2388
   },
   "files": [
@@ -28,7 +28,8 @@
     "modern-derivation-master-priority-007.json",
     "modern-derivation-master-priority-008.json",
     "core-breakdowns-001.json",
-    "core-breakdowns-002.json"
+    "core-breakdowns-002.json",
+    "core-breakdowns-003.json"
   ],
   "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords); all remain drafts pending review.",
   "qualityNotesJa": [
@@ -43,7 +44,8 @@
     "完全マスターに含まれない2,388の別見出し語は、教材の語源関連語・派生候補として残すが、8,653語への収録済みとして数えない。",
     "元教材の語義・語源が校閲済みという意味ではなく、VocaRoots本番公開は依然不可。",
     "006: JSの明示的なfamily関係と完全8,653語マスター双方に存在する語を優先し、重複しない136件を追加。接辞の意味は既存VocaRootsの語素IDから参照。歴史語源および意味の個別校閲は未完了。",
-    "追加007/008: 完全マスターに収録され、VocaUniverseの明示的なfamily連携（派生と屈折の区別を含む）に対応する77件を重複排除して登録。全件未校閲・非公開。"
+    "追加007/008: 完全マスターに収録され、VocaUniverseの明示的なfamily連携（派生と屈折の区別を含む）に対応する77件を重複排除して登録。全件未校閲・非公開。",
+    "009: 現行8,653語マスターの未登録見出し語89語について、接頭辞の否定・反転・反復・位置・相互関係を中心に日本語解説・オリジナル例文・和訳・学習用画像構想を付けた個別Word Breakdown候補を追加。語素IDとwordIdは既存IDを使用。語史の個別検証は未完了のため一律未公開。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
