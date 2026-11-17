@@ -1,0 +1,3982 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "012",
+  "type": "manually-curated-master-affix-learning-candidates",
+  "createdOn": "2026-11-18",
+  "productionEnabled": false,
+  "counts": {
+    "records": 107,
+    "prefix": 11,
+    "suffix": 96,
+    "byCefr": {
+      "A1": 8,
+      "A2": 14,
+      "B1": 24,
+      "B2": 39,
+      "C1": 17,
+      "C2": 5
+    }
+  },
+  "sourcePolicy": "Explicit hand-curated productive learning candidates; no automatic regex-only accept; no historical origin claims",
+  "records": [
+    {
+      "id": "wb:core:activity",
+      "headword": "activity",
+      "wordId": "VD-00009",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "活動",
+      "baseHeadword": "active",
+      "baseWordId": "VD-02345",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "activ",
+          "kind": "altered-free-base",
+          "wordId": "VD-02345",
+          "meaningJa": "活動的な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "activity は active（活動的な）と -ity（性質・状態）の関係に着目して覚える。全体では「活動」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "active に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "active と activity の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:beautiful",
+      "headword": "beautiful",
+      "wordId": "VD-00077",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "美しい",
+      "baseHeadword": "beauty",
+      "baseWordId": "VD-01173",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "beauti",
+          "kind": "altered-free-base",
+          "wordId": "VD-01173",
+          "meaningJa": "美しさ"
+        },
+        {
+          "surface": "-ful",
+          "kind": "suffix",
+          "meaningJa": "〜に富む"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "beautiful は beauty（美しさ）と -ful（〜に富む）の関係に着目して覚える。全体では「美しい」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "beauty に -ful を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "beauty と beautiful の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:computer",
+      "headword": "computer",
+      "wordId": "VD-00207",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "コンピューター",
+      "baseHeadword": "compute",
+      "baseWordId": "VD-04827",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "comput",
+          "kind": "altered-free-base",
+          "wordId": "VD-04827",
+          "meaningJa": "計算する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "computer は compute（計算する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「コンピューター」を表す。 現在は主に機械を指すため、-er を単純に「人」と訳さない。",
+      "learningQuestionJa": "compute に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "compute と computer の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:difference",
+      "headword": "difference",
+      "wordId": "VD-00248",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "違い",
+      "baseHeadword": "differ",
+      "baseWordId": "VD-02855",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "differ",
+          "kind": "free-base",
+          "wordId": "VD-02855",
+          "meaningJa": "異なる"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "difference は differ（異なる）と -ence（状態・結果）の関係に着目して覚える。全体では「違い」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "differ に -ence を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "differ と difference の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:driver",
+      "headword": "driver",
+      "wordId": "VD-00272",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "運転手",
+      "baseHeadword": "drive",
+      "baseWordId": "VD-00271",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "driv",
+          "kind": "altered-free-base",
+          "wordId": "VD-00271",
+          "meaningJa": "運転する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "driver は drive（運転する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「運転手」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "drive に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "drive と driver の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:lovely",
+      "headword": "lovely",
+      "wordId": "VD-00553",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "愛らしい",
+      "baseHeadword": "love",
+      "baseWordId": "VD-00552",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "love",
+          "kind": "free-base",
+          "wordId": "VD-00552",
+          "meaningJa": "愛する"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "lovely は love（愛する）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「愛らしい」を表す。 ここでの -ly は副詞語尾ではなく、形容詞の形成に関わる。",
+      "learningQuestionJa": "love に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "love と lovely の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:owner",
+      "headword": "owner",
+      "wordId": "VD-00665",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "所有者",
+      "baseHeadword": "own",
+      "baseWordId": "VD-00664",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "own",
+          "kind": "free-base",
+          "wordId": "VD-00664",
+          "meaningJa": "所有する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "owner は own（所有する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「所有者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "own に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "own と owner の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:writer",
+      "headword": "writer",
+      "wordId": "VD-01050",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "書き手・作家",
+      "baseHeadword": "write",
+      "baseWordId": "VD-01049",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "writ",
+          "kind": "altered-free-base",
+          "wordId": "VD-01049",
+          "meaningJa": "書く"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "writer は write（書く）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「書き手・作家」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "write に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "write と writer の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:appearance",
+      "headword": "appearance",
+      "wordId": "VD-01124",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "外見・出現",
+      "baseHeadword": "appear",
+      "baseWordId": "VD-01123",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "appear",
+          "kind": "free-base",
+          "wordId": "VD-01123",
+          "meaningJa": "現れる"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "appearance は appear（現れる）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「外見・出現」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "appear に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "appear と appearance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:argument",
+      "headword": "argument",
+      "wordId": "VD-01132",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "議論・主張",
+      "baseHeadword": "argue",
+      "baseWordId": "VD-01131",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "argu",
+          "kind": "altered-free-base",
+          "wordId": "VD-01131",
+          "meaningJa": "議論する"
+        },
+        {
+          "surface": "-ment",
+          "kind": "suffix",
+          "meaningJa": "行為・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "argument は argue（議論する）と -ment（行為・結果）の関係に着目して覚える。全体では「議論・主張」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "argue に -ment を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "argue と argument の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:badly",
+      "headword": "badly",
+      "wordId": "VD-01157",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "悪く",
+      "baseHeadword": "bad",
+      "baseWordId": "VD-00061",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "bad",
+          "kind": "free-base",
+          "wordId": "VD-00061",
+          "meaningJa": "悪い"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "badly は bad（悪い）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「悪く」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "bad に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "bad と badly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:comfortable",
+      "headword": "comfortable",
+      "wordId": "VD-01290",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "快適な",
+      "baseHeadword": "comfort",
+      "baseWordId": "VD-02667",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "comfort",
+          "kind": "free-base",
+          "wordId": "VD-02667",
+          "meaningJa": "快適さ"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "comfortable は comfort（快適さ）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「快適な」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "comfort に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "comfort と comfortable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:daily",
+      "headword": "daily",
+      "wordId": "VD-01354",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "毎日の・毎日",
+      "baseHeadword": "day",
+      "baseWordId": "VD-00239",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "dai",
+          "kind": "altered-free-base",
+          "wordId": "VD-00239",
+          "meaningJa": "日"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "daily は day（日）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「毎日の・毎日」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "day に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "day と daily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:dancer",
+      "headword": "dancer",
+      "wordId": "VD-01356",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "踊り手",
+      "baseHeadword": "dance",
+      "baseWordId": "VD-00234",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "danc",
+          "kind": "altered-free-base",
+          "wordId": "VD-00234",
+          "meaningJa": "踊る"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "dancer は dance（踊る）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「踊り手」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "dance に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "dance と dancer の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:folder",
+      "headword": "folder",
+      "wordId": "VD-01515",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "書類を入れるフォルダー",
+      "baseHeadword": "fold",
+      "baseWordId": "VD-03083",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "fold",
+          "kind": "free-base",
+          "wordId": "VD-03083",
+          "meaningJa": "折りたたむ"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "folder は fold（折りたたむ）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「書類を入れるフォルダー」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "fold に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "fold と folder の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:luckily",
+      "headword": "luckily",
+      "wordId": "VD-01712",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "幸運にも",
+      "baseHeadword": "lucky",
+      "baseWordId": "VD-00555",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "lucki",
+          "kind": "altered-free-base",
+          "wordId": "VD-00555",
+          "meaningJa": "幸運な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "luckily は lucky（幸運な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「幸運にも」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "lucky に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "lucky と luckily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:maker",
+      "headword": "maker",
+      "wordId": "VD-01721",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "作り手",
+      "baseHeadword": "make",
+      "baseWordId": "VD-00560",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mak",
+          "kind": "altered-free-base",
+          "wordId": "VD-00560",
+          "meaningJa": "作る"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "maker は make（作る）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「作り手」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "make に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "make と maker の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:performance",
+      "headword": "performance",
+      "wordId": "VD-01841",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "公演・実績",
+      "baseHeadword": "perform",
+      "baseWordId": "VD-01840",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "perform",
+          "kind": "free-base",
+          "wordId": "VD-01840",
+          "meaningJa": "実行する・演じる"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "performance は perform（実行する・演じる）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「公演・実績」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "perform に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "perform と performance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:sadly",
+      "headword": "sadly",
+      "wordId": "VD-01996",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "悲しそうに",
+      "baseHeadword": "sad",
+      "baseWordId": "VD-00768",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "sad",
+          "kind": "free-base",
+          "wordId": "VD-00768",
+          "meaningJa": "悲しい"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "sadly は sad（悲しい）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「悲しそうに」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "sad に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "sad と sadly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:truly",
+      "headword": "truly",
+      "wordId": "VD-02220",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "本当に",
+      "baseHeadword": "true",
+      "baseWordId": "VD-00972",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "tru",
+          "kind": "altered-free-base",
+          "wordId": "VD-00972",
+          "meaningJa": "本当の"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "truly は true（本当の）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「本当に」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "true に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "true と truly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:weekly",
+      "headword": "weekly",
+      "wordId": "VD-02274",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "毎週の・毎週",
+      "baseHeadword": "week",
+      "baseWordId": "VD-01019",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "week",
+          "kind": "free-base",
+          "wordId": "VD-01019",
+          "meaningJa": "週"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "weekly は week（週）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「毎週の・毎週」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "week に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "week と weekly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:adorable",
+      "headword": "adorable",
+      "wordId": "VD-02354",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "とても愛らしい",
+      "baseHeadword": "adore",
+      "baseWordId": "VD-04480",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ador",
+          "kind": "altered-free-base",
+          "wordId": "VD-04480",
+          "meaningJa": "深く愛する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "adorable は adore（深く愛する）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「とても愛らしい」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "adore に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "adore と adorable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:allowance",
+      "headword": "allowance",
+      "wordId": "VD-02381",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "手当・小遣い",
+      "baseHeadword": "allow",
+      "baseWordId": "VD-01100",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "allow",
+          "kind": "free-base",
+          "wordId": "VD-01100",
+          "meaningJa": "許す・与える"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "allowance は allow（許す・与える）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「手当・小遣い」を表す。 手当・小遣いという定着した意味は allow の意味から単純に決まらない。",
+      "learningQuestionJa": "allow に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "allow と allowance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:baker",
+      "headword": "baker",
+      "wordId": "VD-02473",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "パンを焼く人",
+      "baseHeadword": "bake",
+      "baseWordId": "VD-01159",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "bak",
+          "kind": "altered-free-base",
+          "wordId": "VD-01159",
+          "meaningJa": "焼く"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "baker は bake（焼く）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「パンを焼く人」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "bake に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "bake と baker の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:considerable",
+      "headword": "considerable",
+      "wordId": "VD-02710",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "かなりの",
+      "baseHeadword": "consider",
+      "baseWordId": "VD-01312",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "consider",
+          "kind": "free-base",
+          "wordId": "VD-01312",
+          "meaningJa": "考慮する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "considerable は consider（考慮する）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「かなりの」を表す。 「かなりの」という意味は consider + -able の直訳では説明できない。",
+      "learningQuestionJa": "consider に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "consider と considerable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:diver",
+      "headword": "diver",
+      "wordId": "VD-02891",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ダイバー",
+      "baseHeadword": "dive",
+      "baseWordId": "VD-02890",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "div",
+          "kind": "altered-free-base",
+          "wordId": "VD-02890",
+          "meaningJa": "潜る"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "diver は dive（潜る）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「ダイバー」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "dive に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "dive と diver の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:examiner",
+      "headword": "examiner",
+      "wordId": "VD-03004",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "試験官・検査員",
+      "baseHeadword": "examine",
+      "baseWordId": "VD-03003",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "examin",
+          "kind": "altered-free-base",
+          "wordId": "VD-03003",
+          "meaningJa": "調べる"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "examiner は examine（調べる）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「試験官・検査員」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "examine に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "examine と examiner の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:existence",
+      "headword": "existence",
+      "wordId": "VD-03012",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "存在",
+      "baseHeadword": "exist",
+      "baseWordId": "VD-01467",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "exist",
+          "kind": "free-base",
+          "wordId": "VD-01467",
+          "meaningJa": "存在する"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "existence は exist（存在する）と -ence（状態・結果）の関係に着目して覚える。全体では「存在」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "exist に -ence を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "exist と existence の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:freezer",
+      "headword": "freezer",
+      "wordId": "VD-03105",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "冷凍庫",
+      "baseHeadword": "freeze",
+      "baseWordId": "VD-01530",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "freez",
+          "kind": "altered-free-base",
+          "wordId": "VD-01530",
+          "meaningJa": "凍らせる"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "freezer は freeze（凍らせる）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「冷凍庫」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "freeze に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "freeze と freezer の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:friendliness",
+      "headword": "friendliness",
+      "wordId": "VD-03111",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "親しみやすさ",
+      "baseHeadword": "friendly",
+      "baseWordId": "VD-05300",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "friendli",
+          "kind": "altered-free-base",
+          "wordId": "VD-05300",
+          "meaningJa": "親しみやすい"
+        },
+        {
+          "surface": "-ness",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "friendliness は friendly（親しみやすい）と -ness（性質・状態）の関係に着目して覚える。全体では「親しみやすさ」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "friendly に -ness を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "friendly と friendliness の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:guidance",
+      "headword": "guidance",
+      "wordId": "VD-03190",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "指導・案内",
+      "baseHeadword": "guide",
+      "baseWordId": "VD-03191",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "guid",
+          "kind": "altered-free-base",
+          "wordId": "VD-03191",
+          "meaningJa": "案内する"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "guidance は guide（案内する）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「指導・案内」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "guide に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "guide と guidance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:heavenly",
+      "headword": "heavenly",
+      "wordId": "VD-03228",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "天国のような",
+      "baseHeadword": "heaven",
+      "baseWordId": "VD-03227",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "heaven",
+          "kind": "free-base",
+          "wordId": "VD-03227",
+          "meaningJa": "天国"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "heavenly は heaven（天国）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「天国のような」を表す。 heavenly は形容詞として使われることが多い。",
+      "learningQuestionJa": "heaven に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "heaven と heavenly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:lately",
+      "headword": "lately",
+      "wordId": "VD-03398",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "最近",
+      "baseHeadword": "late",
+      "baseWordId": "VD-00522",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "late",
+          "kind": "free-base",
+          "wordId": "VD-00522",
+          "meaningJa": "遅い"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "lately は late（遅い）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「最近」を表す。 lately は「最近」であり、late の副詞的な「遅く」と同一視しない。",
+      "learningQuestionJa": "late に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "late と lately の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:monthly",
+      "headword": "monthly",
+      "wordId": "VD-03525",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "毎月の・毎月",
+      "baseHeadword": "month",
+      "baseWordId": "VD-00594",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "month",
+          "kind": "free-base",
+          "wordId": "VD-00594",
+          "meaningJa": "月"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "monthly は month（月）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「毎月の・毎月」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "month に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "month と monthly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:newly",
+      "headword": "newly",
+      "wordId": "VD-03575",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "新しく",
+      "baseHeadword": "new",
+      "baseWordId": "VD-00620",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "new",
+          "kind": "free-base",
+          "wordId": "VD-00620",
+          "meaningJa": "新しい"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "newly は new（新しい）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「新しく」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "new に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "new と newly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:noisily",
+      "headword": "noisily",
+      "wordId": "VD-03582",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "騒がしく",
+      "baseHeadword": "noisy",
+      "baseWordId": "VD-01785",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "noisi",
+          "kind": "altered-free-base",
+          "wordId": "VD-01785",
+          "meaningJa": "騒がしい"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "noisily は noisy（騒がしい）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「騒がしく」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "noisy に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "noisy と noisily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:orderly",
+      "headword": "orderly",
+      "wordId": "VD-03636",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "整然とした",
+      "baseHeadword": "order",
+      "baseWordId": "VD-00657",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "order",
+          "kind": "free-base",
+          "wordId": "VD-00657",
+          "meaningJa": "順序"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "orderly は order（順序）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「整然とした」を表す。 orderly は形容詞と副詞の用法がある。品詞ごとに確認する。",
+      "learningQuestionJa": "order に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "order と orderly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:penniless",
+      "headword": "penniless",
+      "wordId": "VD-03695",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "一文無しの",
+      "baseHeadword": "penny",
+      "baseWordId": "VD-03696",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "penni",
+          "kind": "altered-free-base",
+          "wordId": "VD-03696",
+          "meaningJa": "ペニー硬貨"
+        },
+        {
+          "surface": "-less",
+          "kind": "suffix",
+          "meaningJa": "〜がない"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "penniless は penny（ペニー硬貨）と -less（〜がない）の関係に着目して覚える。全体では「一文無しの」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "penny に -less を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "penny と penniless の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:primarily",
+      "headword": "primarily",
+      "wordId": "VD-03777",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "主として",
+      "baseHeadword": "primary",
+      "baseWordId": "VD-06084",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "primari",
+          "kind": "altered-free-base",
+          "wordId": "VD-06084",
+          "meaningJa": "第一の・主要な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "primarily は primary（第一の・主要な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「主として」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "primary に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "primary と primarily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:producer",
+      "headword": "producer",
+      "wordId": "VD-03790",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "生産者・制作者",
+      "baseHeadword": "produce",
+      "baseWordId": "VD-01903",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "produc",
+          "kind": "altered-free-base",
+          "wordId": "VD-01903",
+          "meaningJa": "生産する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "producer は produce（生産する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「生産者・制作者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "produce に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "produce と producer の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reliable",
+      "headword": "reliable",
+      "wordId": "VD-03897",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "信頼できる",
+      "baseHeadword": "rely",
+      "baseWordId": "VD-03900",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "reli",
+          "kind": "altered-free-base",
+          "wordId": "VD-03900",
+          "meaningJa": "頼る"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "reliable は rely（頼る）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「信頼できる」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "rely に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "rely と reliable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:smoker",
+      "headword": "smoker",
+      "wordId": "VD-04065",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "喫煙者",
+      "baseHeadword": "smoke",
+      "baseWordId": "VD-00834",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "smok",
+          "kind": "altered-free-base",
+          "wordId": "VD-00834",
+          "meaningJa": "たばこを吸う"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "smoker は smoke（たばこを吸う）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「喫煙者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "smoke に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "smoke と smoker の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:steadily",
+      "headword": "steadily",
+      "wordId": "VD-04114",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "着実に",
+      "baseHeadword": "steady",
+      "baseWordId": "VD-04115",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "steadi",
+          "kind": "altered-free-base",
+          "wordId": "VD-04115",
+          "meaningJa": "着実な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "steadily は steady（着実な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「着実に」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "steady に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "steady と steadily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:stylish",
+      "headword": "stylish",
+      "wordId": "VD-04150",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "おしゃれな",
+      "baseHeadword": "style",
+      "baseWordId": "VD-02133",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "styl",
+          "kind": "altered-free-base",
+          "wordId": "VD-02133",
+          "meaningJa": "スタイル"
+        },
+        {
+          "surface": "-ish",
+          "kind": "suffix",
+          "meaningJa": "〜らしい"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "stylish は style（スタイル）と -ish（〜らしい）の関係に着目して覚える。全体では「おしゃれな」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "style に -ish を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "style と stylish の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:timely",
+      "headword": "timely",
+      "wordId": "VD-04251",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "適時の",
+      "baseHeadword": "time",
+      "baseWordId": "VD-00947",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "time",
+          "kind": "free-base",
+          "wordId": "VD-00947",
+          "meaningJa": "時間"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "timely は time（時間）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「適時の」を表す。 timely は主に形容詞。「時間的に〜」という機械的な副詞解釈をしない。",
+      "learningQuestionJa": "time に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "time と timely の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:admirable",
+      "headword": "admirable",
+      "wordId": "VD-04475",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "称賛に値する",
+      "baseHeadword": "admire",
+      "baseWordId": "VD-01079",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "admir",
+          "kind": "altered-free-base",
+          "wordId": "VD-01079",
+          "meaningJa": "称賛する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "admirable は admire（称賛する）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「称賛に値する」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "admire に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "admire と admirable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:adversity",
+      "headword": "adversity",
+      "wordId": "VD-04487",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "逆境",
+      "baseHeadword": "adverse",
+      "baseWordId": "VD-04485",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "advers",
+          "kind": "altered-free-base",
+          "wordId": "VD-04485",
+          "meaningJa": "不利な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "adversity は adverse（不利な）と -ity（性質・状態）の関係に着目して覚える。全体では「逆境」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "adverse に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "adverse と adversity の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:assurance",
+      "headword": "assurance",
+      "wordId": "VD-04566",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "保証・確信",
+      "baseHeadword": "assure",
+      "baseWordId": "VD-04567",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "assur",
+          "kind": "altered-free-base",
+          "wordId": "VD-04567",
+          "meaningJa": "保証する"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "assurance は assure（保証する）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「保証・確信」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "assure に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "assure と assurance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:attendance",
+      "headword": "attendance",
+      "wordId": "VD-04577",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "出席",
+      "baseHeadword": "attend",
+      "baseWordId": "VD-02454",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "attend",
+          "kind": "free-base",
+          "wordId": "VD-02454",
+          "meaningJa": "出席する"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "attendance は attend（出席する）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「出席」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "attend に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "attend と attendance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:bookish",
+      "headword": "bookish",
+      "wordId": "VD-04662",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "本好きの・学者風の",
+      "baseHeadword": "book",
+      "baseWordId": "VD-00110",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "本"
+        },
+        {
+          "surface": "-ish",
+          "kind": "suffix",
+          "meaningJa": "〜らしい"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "bookish は book（本）と -ish（〜らしい）の関係に着目して覚える。全体では「本好きの・学者風の」を表す。 本に関わる性質を示すが、実際の含意は文脈で変わる。",
+      "learningQuestionJa": "book に -ish を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "book と bookish の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:browser",
+      "headword": "browser",
+      "wordId": "VD-04690",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ブラウザー",
+      "baseHeadword": "browse",
+      "baseWordId": "VD-04689",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "brows",
+          "kind": "altered-free-base",
+          "wordId": "VD-04689",
+          "meaningJa": "閲覧する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "browser は browse（閲覧する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「ブラウザー」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "browse に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "browse と browser の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:costly",
+      "headword": "costly",
+      "wordId": "VD-04898",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "費用のかかる",
+      "baseHeadword": "cost",
+      "baseWordId": "VD-01327",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "cost",
+          "kind": "free-base",
+          "wordId": "VD-01327",
+          "meaningJa": "費用がかかる"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "costly は cost（費用がかかる）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「費用のかかる」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "cost に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "cost と costly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:cowardly",
+      "headword": "cowardly",
+      "wordId": "VD-04905",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "臆病な",
+      "baseHeadword": "coward",
+      "baseWordId": "VD-04904",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "coward",
+          "kind": "free-base",
+          "wordId": "VD-04904",
+          "meaningJa": "臆病者"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "cowardly は coward（臆病者）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「臆病な」を表す。 cowardly の -ly は形容詞を作り、単純な副詞接尾辞と区別する。",
+      "learningQuestionJa": "coward に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "coward と cowardly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:cyclist",
+      "headword": "cyclist",
+      "wordId": "VD-04941",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自転車に乗る人",
+      "baseHeadword": "cycle",
+      "baseWordId": "VD-02775",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "cycl",
+          "kind": "altered-free-base",
+          "wordId": "VD-02775",
+          "meaningJa": "自転車に乗る"
+        },
+        {
+          "surface": "-ist",
+          "kind": "suffix",
+          "meaningJa": "人・立場"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "cyclist は cycle（自転車に乗る）と -ist（人・立場）の関係に着目して覚える。全体では「自転車に乗る人」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "cycle に -ist を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "cycle と cyclist の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:desirable",
+      "headword": "desirable",
+      "wordId": "VD-04992",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "望ましい",
+      "baseHeadword": "desire",
+      "baseWordId": "VD-02835",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "desir",
+          "kind": "altered-free-base",
+          "wordId": "VD-02835",
+          "meaningJa": "望む"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "desirable は desire（望む）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「望ましい」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "desire に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "desire と desirable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:emergence",
+      "headword": "emergence",
+      "wordId": "VD-05130",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "出現",
+      "baseHeadword": "emerge",
+      "baseWordId": "VD-02949",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "emerg",
+          "kind": "altered-free-base",
+          "wordId": "VD-02949",
+          "meaningJa": "現れる"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "emergence は emerge（現れる）と -ence（状態・結果）の関係に着目して覚える。全体では「出現」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "emerge に -ence を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "emerge と emergence の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:endurance",
+      "headword": "endurance",
+      "wordId": "VD-05138",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "持久力",
+      "baseHeadword": "endure",
+      "baseWordId": "VD-02966",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "endur",
+          "kind": "altered-free-base",
+          "wordId": "VD-02966",
+          "meaningJa": "耐える"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "endurance は endure（耐える）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「持久力」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "endure に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "endure と endurance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:extraordinarily",
+      "headword": "extraordinarily",
+      "wordId": "VD-05218",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "並外れて",
+      "baseHeadword": "extraordinary",
+      "baseWordId": "VD-03026",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "extraordinari",
+          "kind": "altered-free-base",
+          "wordId": "VD-03026",
+          "meaningJa": "並外れた"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "extraordinarily は extraordinary（並外れた）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「並外れて」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "extraordinary に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "extraordinary と extraordinarily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:friendly",
+      "headword": "friendly",
+      "wordId": "VD-05300",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "親しみやすい",
+      "baseHeadword": "friend",
+      "baseWordId": "VD-00366",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "friend",
+          "kind": "free-base",
+          "wordId": "VD-00366",
+          "meaningJa": "友人"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "friendly は friend（友人）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「親しみやすい」を表す。 friendly は通常形容詞で、一般的な -ly 副詞ではない。",
+      "learningQuestionJa": "friend に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "friend と friendly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:hastily",
+      "headword": "hastily",
+      "wordId": "VD-05392",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "急いで・慌てて",
+      "baseHeadword": "hasty",
+      "baseWordId": "VD-03213",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "hasti",
+          "kind": "altered-free-base",
+          "wordId": "VD-03213",
+          "meaningJa": "性急な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "hastily は hasty（性急な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「急いで・慌てて」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "hasty に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "hasty と hastily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:hourly",
+      "headword": "hourly",
+      "wordId": "VD-05426",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "毎時間の・一時間ごとの",
+      "baseHeadword": "hour",
+      "baseWordId": "VD-00462",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "hour",
+          "kind": "free-base",
+          "wordId": "VD-00462",
+          "meaningJa": "時間"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "hourly は hour（時間）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「毎時間の・一時間ごとの」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "hour に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "hour と hourly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ignorance",
+      "headword": "ignorance",
+      "wordId": "VD-05458",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "無知",
+      "baseHeadword": "ignore",
+      "baseWordId": "VD-03276",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ignor",
+          "kind": "altered-free-base",
+          "wordId": "VD-03276",
+          "meaningJa": "無視する"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "ignorance は ignore（無視する）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「無知」を表す。 ignorance（無知）は ignore（意図的に無視する）の単純な動作名詞とは限らない。",
+      "learningQuestionJa": "ignore に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "ignore と ignorance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:intruder",
+      "headword": "intruder",
+      "wordId": "VD-05567",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "侵入者",
+      "baseHeadword": "intrude",
+      "baseWordId": "VD-05566",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "intrud",
+          "kind": "altered-free-base",
+          "wordId": "VD-05566",
+          "meaningJa": "侵入する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "intruder は intrude（侵入する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「侵入者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "intrude に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "intrude と intruder の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:leisurely",
+      "headword": "leisurely",
+      "wordId": "VD-05647",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "ゆったりとした・ゆっくりと",
+      "baseHeadword": "leisure",
+      "baseWordId": "VD-01688",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "leisure",
+          "kind": "free-base",
+          "wordId": "VD-01688",
+          "meaningJa": "余暇"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "leisurely は leisure（余暇）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「ゆったりとした・ゆっくりと」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "leisure に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "leisure と leisurely の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:mobility",
+      "headword": "mobility",
+      "wordId": "VD-05757",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "移動性",
+      "baseHeadword": "mobile",
+      "baseWordId": "VD-00586",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "mobil",
+          "kind": "altered-free-base",
+          "wordId": "VD-00586",
+          "meaningJa": "移動可能な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "mobility は mobile（移動可能な）と -ity（性質・状態）の関係に着目して覚える。全体では「移動性」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "mobile に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "mobile と mobility の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:momentarily",
+      "headword": "momentarily",
+      "wordId": "VD-05765",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "一瞬のうちに",
+      "baseHeadword": "momentary",
+      "baseWordId": "VD-05766",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "momentari",
+          "kind": "altered-free-base",
+          "wordId": "VD-05766",
+          "meaningJa": "一時的な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "momentarily は momentary（一時的な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「一瞬のうちに」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "momentary に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "momentary と momentarily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:outsider",
+      "headword": "outsider",
+      "wordId": "VD-05898",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "部外者",
+      "baseHeadword": "outside",
+      "baseWordId": "VD-00662",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "outsid",
+          "kind": "altered-free-base",
+          "wordId": "VD-00662",
+          "meaningJa": "外側"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "outsider は outside（外側）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「部外者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "outside に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "outside と outsider の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:persistence",
+      "headword": "persistence",
+      "wordId": "VD-05991",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "粘り強さ",
+      "baseHeadword": "persist",
+      "baseWordId": "VD-05990",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "persist",
+          "kind": "free-base",
+          "wordId": "VD-05990",
+          "meaningJa": "続ける"
+        },
+        {
+          "surface": "-ence",
+          "kind": "suffix",
+          "meaningJa": "状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "persistence は persist（続ける）と -ence（状態・結果）の関係に着目して覚える。全体では「粘り強さ」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "persist に -ence を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "persist と persistence の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:quotable",
+      "headword": "quotable",
+      "wordId": "VD-06139",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "引用する価値のある",
+      "baseHeadword": "quote",
+      "baseWordId": "VD-06141",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "quot",
+          "kind": "altered-free-base",
+          "wordId": "VD-06141",
+          "meaningJa": "引用する"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "quotable は quote（引用する）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「引用する価値のある」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "quote に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "quote と quotable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:readily",
+      "headword": "readily",
+      "wordId": "VD-06163",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "すぐに・快く",
+      "baseHeadword": "ready",
+      "baseWordId": "VD-00742",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "readi",
+          "kind": "altered-free-base",
+          "wordId": "VD-00742",
+          "meaningJa": "準備のできた"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "readily は ready（準備のできた）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「すぐに・快く」を表す。 readily は「すぐに・快く」の意味を持ち、ready からの直訳を避ける。",
+      "learningQuestionJa": "ready に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "ready と readily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:relativity",
+      "headword": "relativity",
+      "wordId": "VD-06206",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "相対性",
+      "baseHeadword": "relative",
+      "baseWordId": "VD-03894",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "relativ",
+          "kind": "altered-free-base",
+          "wordId": "VD-03894",
+          "meaningJa": "相対的な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "relativity は relative（相対的な）と -ity（性質・状態）の関係に着目して覚える。全体では「相対性」を表す。 相対性理論など専門的な意味は relative + -ity だけでは決まらない。",
+      "learningQuestionJa": "relative に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "relative と relativity の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:resistance",
+      "headword": "resistance",
+      "wordId": "VD-06233",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "抵抗",
+      "baseHeadword": "resist",
+      "baseWordId": "VD-03924",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "resist",
+          "kind": "free-base",
+          "wordId": "VD-03924",
+          "meaningJa": "抵抗する"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "resistance は resist（抵抗する）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「抵抗」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "resist に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "resist と resistance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:sincerity",
+      "headword": "sincerity",
+      "wordId": "VD-06374",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "誠実さ",
+      "baseHeadword": "sincere",
+      "baseWordId": "VD-06373",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "sincer",
+          "kind": "altered-free-base",
+          "wordId": "VD-06373",
+          "meaningJa": "誠実な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "sincerity は sincere（誠実な）と -ity（性質・状態）の関係に着目して覚える。全体では「誠実さ」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "sincere に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "sincere と sincerity の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:skateboarder",
+      "headword": "skateboarder",
+      "wordId": "VD-06377",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "スケートボードをする人",
+      "baseHeadword": "skateboard",
+      "baseWordId": "VD-06376",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "skateboard",
+          "kind": "free-base",
+          "wordId": "VD-06376",
+          "meaningJa": "スケートボード"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "skateboarder は skateboard（スケートボード）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「スケートボードをする人」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "skateboard に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "skateboard と skateboarder の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:speeder",
+      "headword": "speeder",
+      "wordId": "VD-06435",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "速度違反者",
+      "baseHeadword": "speed",
+      "baseWordId": "VD-02104",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "speed",
+          "kind": "free-base",
+          "wordId": "VD-02104",
+          "meaningJa": "速度を出す"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "speeder は speed（速度を出す）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「速度違反者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "speed に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "speed と speeder の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:stylist",
+      "headword": "stylist",
+      "wordId": "VD-06499",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "スタイリスト",
+      "baseHeadword": "style",
+      "baseWordId": "VD-02133",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "styl",
+          "kind": "altered-free-base",
+          "wordId": "VD-02133",
+          "meaningJa": "スタイル"
+        },
+        {
+          "surface": "-ist",
+          "kind": "suffix",
+          "meaningJa": "人・立場"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "stylist は style（スタイル）と -ist（人・立場）の関係に着目して覚える。全体では「スタイリスト」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "style に -ist を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "style と stylist の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:supplier",
+      "headword": "supplier",
+      "wordId": "VD-06527",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "供給者・供給会社",
+      "baseHeadword": "supply",
+      "baseWordId": "VD-04168",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "suppli",
+          "kind": "altered-free-base",
+          "wordId": "VD-04168",
+          "meaningJa": "供給する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "supplier は supply（供給する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「供給者・供給会社」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "supply に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "supply と supplier の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:trader",
+      "headword": "trader",
+      "wordId": "VD-06617",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "商人・取引業者",
+      "baseHeadword": "trade",
+      "baseWordId": "VD-02208",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "trad",
+          "kind": "altered-free-base",
+          "wordId": "VD-02208",
+          "meaningJa": "取引する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "trader は trade（取引する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「商人・取引業者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "trade に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "trade と trader の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:villager",
+      "headword": "villager",
+      "wordId": "VD-06780",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "村人",
+      "baseHeadword": "village",
+      "baseWordId": "VD-02255",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "villag",
+          "kind": "altered-free-base",
+          "wordId": "VD-02255",
+          "meaningJa": "村"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "villager は village（村）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「村人」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "village に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "village と villager の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:carrier",
+      "headword": "carrier",
+      "wordId": "VD-06959",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "運搬人・運送業者",
+      "baseHeadword": "carry",
+      "baseWordId": "VD-00160",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "carri",
+          "kind": "altered-free-base",
+          "wordId": "VD-00160",
+          "meaningJa": "運ぶ"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "carrier は carry（運ぶ）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「運搬人・運送業者」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "carry に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "carry と carrier の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:compliance",
+      "headword": "compliance",
+      "wordId": "VD-07001",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "遵守",
+      "baseHeadword": "comply",
+      "baseWordId": "VD-07005",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "compli",
+          "kind": "altered-free-base",
+          "wordId": "VD-07005",
+          "meaningJa": "従う"
+        },
+        {
+          "surface": "-ance",
+          "kind": "suffix",
+          "meaningJa": "動作・状態・結果"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "compliance は comply（従う）と -ance（動作・状態・結果）の関係に着目して覚える。全体では「遵守」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "comply に -ance を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "comply と compliance の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:dutiful",
+      "headword": "dutiful",
+      "wordId": "VD-07117",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "義務に忠実な",
+      "baseHeadword": "duty",
+      "baseWordId": "VD-02914",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "duti",
+          "kind": "altered-free-base",
+          "wordId": "VD-02914",
+          "meaningJa": "義務"
+        },
+        {
+          "surface": "-ful",
+          "kind": "suffix",
+          "meaningJa": "〜に富む"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "dutiful は duty（義務）と -ful（〜に富む）の関係に着目して覚える。全体では「義務に忠実な」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "duty に -ful を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "duty と dutiful の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:enviable",
+      "headword": "enviable",
+      "wordId": "VD-07142",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "うらやましいほどの",
+      "baseHeadword": "envy",
+      "baseWordId": "VD-01450",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "envi",
+          "kind": "altered-free-base",
+          "wordId": "VD-01450",
+          "meaningJa": "うらやむ"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "enviable は envy（うらやむ）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「うらやましいほどの」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "envy に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "envy と enviable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:fanciful",
+      "headword": "fanciful",
+      "wordId": "VD-07173",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "空想的な",
+      "baseHeadword": "fancy",
+      "baseWordId": "VD-01483",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "fanci",
+          "kind": "altered-free-base",
+          "wordId": "VD-01483",
+          "meaningJa": "空想"
+        },
+        {
+          "surface": "-ful",
+          "kind": "suffix",
+          "meaningJa": "〜に富む"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "fanciful は fancy（空想）と -ful（〜に富む）の関係に着目して覚える。全体では「空想的な」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "fancy に -ful を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "fancy と fanciful の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:fiendish",
+      "headword": "fiendish",
+      "wordId": "VD-07184",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "邪悪な・ひどく難しい",
+      "baseHeadword": "fiend",
+      "baseWordId": "VD-07183",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "fiend",
+          "kind": "free-base",
+          "wordId": "VD-07183",
+          "meaningJa": "悪魔"
+        },
+        {
+          "surface": "-ish",
+          "kind": "suffix",
+          "meaningJa": "〜らしい"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "fiendish は fiend（悪魔）と -ish（〜らしい）の関係に着目して覚える。全体では「邪悪な・ひどく難しい」を表す。 「非常に難しい」など語彙化した意味は字面から直接導けない。",
+      "learningQuestionJa": "fiend に -ish を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "fiend と fiendish の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:frostily",
+      "headword": "frostily",
+      "wordId": "VD-07205",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "冷ややかに",
+      "baseHeadword": "frosty",
+      "baseWordId": "VD-07206",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "frosti",
+          "kind": "altered-free-base",
+          "wordId": "VD-07206",
+          "meaningJa": "冷ややかな"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "frostily は frosty（冷ややかな）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「冷ややかに」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "frosty に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "frosty と frostily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ghostly",
+      "headword": "ghostly",
+      "wordId": "VD-07216",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "幽霊のような",
+      "baseHeadword": "ghost",
+      "baseWordId": "VD-00379",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ghost",
+          "kind": "free-base",
+          "wordId": "VD-00379",
+          "meaningJa": "幽霊"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "ghostly は ghost（幽霊）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「幽霊のような」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "ghost に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "ghost と ghostly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:hostility",
+      "headword": "hostility",
+      "wordId": "VD-07253",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "敵意",
+      "baseHeadword": "hostile",
+      "baseWordId": "VD-07252",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "hostil",
+          "kind": "altered-free-base",
+          "wordId": "VD-07252",
+          "meaningJa": "敵対的な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "hostility は hostile（敵対的な）と -ity（性質・状態）の関係に着目して覚える。全体では「敵意」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "hostile に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "hostile と hostility の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:impish",
+      "headword": "impish",
+      "wordId": "VD-07270",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "いたずらっぽい",
+      "baseHeadword": "imp",
+      "baseWordId": "VD-07261",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "imp",
+          "kind": "free-base",
+          "wordId": "VD-07261",
+          "meaningJa": "小悪魔"
+        },
+        {
+          "surface": "-ish",
+          "kind": "suffix",
+          "meaningJa": "〜らしい"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "impish は imp（小悪魔）と -ish（〜らしい）の関係に着目して覚える。全体では「いたずらっぽい」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "imp に -ish を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "imp と impish の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:ordinarily",
+      "headword": "ordinarily",
+      "wordId": "VD-07401",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "普通は",
+      "baseHeadword": "ordinary",
+      "baseWordId": "VD-03637",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "ordinari",
+          "kind": "altered-free-base",
+          "wordId": "VD-03637",
+          "meaningJa": "普通の"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "ordinarily は ordinary（普通の）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「普通は」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "ordinary に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "ordinary と ordinarily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:pleasurable",
+      "headword": "pleasurable",
+      "wordId": "VD-07447",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "楽しい・心地よい",
+      "baseHeadword": "pleasure",
+      "baseWordId": "VD-00706",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pleasur",
+          "kind": "altered-free-base",
+          "wordId": "VD-00706",
+          "meaningJa": "喜び"
+        },
+        {
+          "surface": "-able",
+          "kind": "suffix",
+          "meaningJa": "〜できる・〜に適した"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "pleasurable は pleasure（喜び）と -able（〜できる・〜に適した）の関係に着目して覚える。全体では「楽しい・心地よい」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "pleasure に -able を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "pleasure と pleasurable の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:voluntarily",
+      "headword": "voluntarily",
+      "wordId": "VD-07757",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "自発的に",
+      "baseHeadword": "voluntary",
+      "baseWordId": "VD-07758",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "voluntari",
+          "kind": "altered-free-base",
+          "wordId": "VD-07758",
+          "meaningJa": "自発的な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "y-to-i",
+      "explanationJa": "voluntarily は voluntary（自発的な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「自発的に」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "voluntary に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "voluntary と voluntarily の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:wryly",
+      "headword": "wryly",
+      "wordId": "VD-07776",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "皮肉っぽく",
+      "baseHeadword": "wry",
+      "baseWordId": "VD-07775",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "wry",
+          "kind": "free-base",
+          "wordId": "VD-07775",
+          "meaningJa": "皮肉な"
+        },
+        {
+          "surface": "-ly",
+          "kind": "suffix",
+          "meaningJa": "副詞・形容詞を作ることがある"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "wryly は wry（皮肉な）と -ly（副詞・形容詞を作ることがある）の関係に着目して覚える。全体では「皮肉っぽく」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "wry に -ly を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "wry と wryly の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:agility",
+      "headword": "agility",
+      "wordId": "VD-07801",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "敏捷性",
+      "baseHeadword": "agile",
+      "baseWordId": "VD-07800",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "agil",
+          "kind": "altered-free-base",
+          "wordId": "VD-07800",
+          "meaningJa": "機敏な"
+        },
+        {
+          "surface": "-ity",
+          "kind": "suffix",
+          "meaningJa": "性質・状態"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "agility は agile（機敏な）と -ity（性質・状態）の関係に着目して覚える。全体では「敏捷性」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "agile に -ity を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "agile と agility の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:collider",
+      "headword": "collider",
+      "wordId": "VD-07923",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "衝突型加速器",
+      "baseHeadword": "collide",
+      "baseWordId": "VD-07922",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "collid",
+          "kind": "altered-free-base",
+          "wordId": "VD-07922",
+          "meaningJa": "衝突する"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "collider は collide（衝突する）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「衝突型加速器」を表す。 現代の物理学用語では装置を指すため、-er を常に「人」としない。",
+      "learningQuestionJa": "collide に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "collide と collider の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:enabler",
+      "headword": "enabler",
+      "wordId": "VD-08055",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "可能にする人・もの",
+      "baseHeadword": "enable",
+      "baseWordId": "VD-02958",
+      "analysisType": "curated-suffix-learning-candidate",
+      "parts": [
+        {
+          "surface": "enabl",
+          "kind": "altered-free-base",
+          "wordId": "VD-02958",
+          "meaningJa": "可能にする"
+        },
+        {
+          "surface": "-er",
+          "kind": "suffix",
+          "meaningJa": "人・物を表すことがある"
+        }
+      ],
+      "orthographicRule": "drop-final-e",
+      "explanationJa": "enabler は enable（可能にする）と -er（人・物を表すことがある）の関係に着目して覚える。全体では「可能にする人・もの」を表す。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "enable に -er を加えると、意味や品詞はどう変わる？",
+      "imageHintJa": "enable と enabler の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reassure",
+      "headword": "reassure",
+      "wordId": "VD-07509",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "安心させ直す・改めて安心させる",
+      "baseHeadword": "assure",
+      "baseWordId": "VD-04567",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・改めて"
+        },
+        {
+          "surface": "assure",
+          "kind": "free-base",
+          "wordId": "VD-04567",
+          "meaningJa": "安心させる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "reassure は re- と assure を学習上の手がかりにして考える。assure は「安心させる」、reassure は「安心させ直す・改めて安心させる」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 re- は assure にどんな意味を加える？",
+      "imageHintJa": "assure と reassure の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:repaint",
+      "headword": "repaint",
+      "wordId": "VD-06221",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "塗り直す",
+      "baseHeadword": "paint",
+      "baseWordId": "VD-00668",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・改めて"
+        },
+        {
+          "surface": "paint",
+          "kind": "free-base",
+          "wordId": "VD-00668",
+          "meaningJa": "塗る"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "repaint は re- と paint を学習上の手がかりにして考える。paint は「塗る」、repaint は「塗り直す」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 re- は paint にどんな意味を加える？",
+      "imageHintJa": "paint と repaint の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:retrace",
+      "headword": "retrace",
+      "wordId": "VD-07549",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "たどり直す",
+      "baseHeadword": "trace",
+      "baseWordId": "VD-04266",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・改めて"
+        },
+        {
+          "surface": "trace",
+          "kind": "free-base",
+          "wordId": "VD-04266",
+          "meaningJa": "たどる"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "retrace は re- と trace を学習上の手がかりにして考える。trace は「たどる」、retrace は「たどり直す」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 re- は trace にどんな意味を加える？",
+      "imageHintJa": "trace と retrace の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:rediscover",
+      "headword": "rediscover",
+      "wordId": "VD-07515",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "再発見する",
+      "baseHeadword": "discover",
+      "baseWordId": "VD-01396",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・改めて"
+        },
+        {
+          "surface": "discover",
+          "kind": "free-base",
+          "wordId": "VD-01396",
+          "meaningJa": "発見する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "rediscover は re- と discover を学習上の手がかりにして考える。discover は「発見する」、rediscover は「再発見する」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 re- は discover にどんな意味を加える？",
+      "imageHintJa": "discover と rediscover の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:prehistoric",
+      "headword": "prehistoric",
+      "wordId": "VD-06065",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "先史時代の",
+      "baseHeadword": "historic",
+      "baseWordId": "VD-03241",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって・以前の"
+        },
+        {
+          "surface": "historic",
+          "kind": "free-base",
+          "wordId": "VD-03241",
+          "meaningJa": "歴史上重要な"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "prehistoric は pre- と historic を学習上の手がかりにして考える。historic は「歴史上重要な」、prehistoric は「先史時代の」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 pre- は historic にどんな意味を加える？",
+      "imageHintJa": "historic と prehistoric の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:prehuman",
+      "headword": "prehuman",
+      "wordId": "VD-06066",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "人類以前の",
+      "baseHeadword": "human",
+      "baseWordId": "VD-01612",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって・以前の"
+        },
+        {
+          "surface": "human",
+          "kind": "free-base",
+          "wordId": "VD-01612",
+          "meaningJa": "人間"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "prehuman は pre- と human を学習上の手がかりにして考える。human は「人間」、prehuman は「人類以前の」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 pre- は human にどんな意味を加える？",
+      "imageHintJa": "human と prehuman の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:preindustrial",
+      "headword": "preindustrial",
+      "wordId": "VD-06067",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "産業化以前の",
+      "baseHeadword": "industrial",
+      "baseWordId": "VD-03305",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって・以前の"
+        },
+        {
+          "surface": "industrial",
+          "kind": "free-base",
+          "wordId": "VD-03305",
+          "meaningJa": "産業の"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "preindustrial は pre- と industrial を学習上の手がかりにして考える。industrial は「産業の」、preindustrial は「産業化以前の」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 pre- は industrial にどんな意味を加える？",
+      "imageHintJa": "industrial と preindustrial の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:prejudge",
+      "headword": "prejudge",
+      "wordId": "VD-06068",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "早まって判断する",
+      "baseHeadword": "judge",
+      "baseWordId": "VD-00499",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって・以前の"
+        },
+        {
+          "surface": "judge",
+          "kind": "free-base",
+          "wordId": "VD-00499",
+          "meaningJa": "判断する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "prejudge は pre- と judge を学習上の手がかりにして考える。judge は「判断する」、prejudge は「早まって判断する」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 pre- は judge にどんな意味を加える？",
+      "imageHintJa": "judge と prejudge の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:presuppose",
+      "headword": "presuppose",
+      "wordId": "VD-08395",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "前提とする",
+      "baseHeadword": "suppose",
+      "baseWordId": "VD-04171",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "pre-",
+          "kind": "prefix",
+          "meaningJa": "前もって・以前の"
+        },
+        {
+          "surface": "suppose",
+          "kind": "free-base",
+          "wordId": "VD-04171",
+          "meaningJa": "仮定する"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "presuppose は pre- と suppose を学習上の手がかりにして考える。suppose は「仮定する」、presuppose は「前提とする」。 「事前に仮定する」という直訳より、「前提とする」の用法を優先する。",
+      "learningQuestionJa": "接頭辞 pre- は suppose にどんな意味を加える？",
+      "imageHintJa": "suppose と presuppose の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:reunion",
+      "headword": "reunion",
+      "wordId": "VD-01970",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "再会・再結集",
+      "baseHeadword": "union",
+      "baseWordId": "VD-04328",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "re-",
+          "kind": "prefix",
+          "meaningJa": "再び・改めて"
+        },
+        {
+          "surface": "union",
+          "kind": "free-base",
+          "wordId": "VD-04328",
+          "meaningJa": "結合"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "reunion は re- と union を学習上の手がかりにして考える。union は「結合」、reunion は「再会・再結集」。 単語全体の意味や品詞は接辞の一般的な意味だけでは決まらない。",
+      "learningQuestionJa": "接頭辞 re- は union にどんな意味を加える？",
+      "imageHintJa": "union と reunion の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:core:antithesis",
+      "headword": "antithesis",
+      "wordId": "VD-07824",
+      "cefrHeadword": "C2",
+      "matchStatus": "complete-master-exact",
+      "meaningJa": "正反対のもの・対立命題",
+      "baseHeadword": "thesis",
+      "baseWordId": "VD-06580",
+      "analysisType": "curated-prefix-learning-candidate",
+      "parts": [
+        {
+          "surface": "anti-",
+          "kind": "prefix",
+          "meaningJa": "反対の"
+        },
+        {
+          "surface": "thesis",
+          "kind": "free-base",
+          "wordId": "VD-06580",
+          "meaningJa": "命題"
+        }
+      ],
+      "orthographicRule": "exact",
+      "explanationJa": "antithesis は anti- と thesis を学習上の手がかりにして考える。thesis は「命題」、antithesis は「正反対のもの・対立命題」。 古典語起源の構成要素の学習案であり、現代の生産的接頭辞とは区別する。",
+      "learningQuestionJa": "接頭辞 anti- は thesis にどんな意味を加える？",
+      "imageHintJa": "thesis と antithesis の意味を比べる二場面。英文やラベルは入れない。",
+      "meaningSource": "original-editorial-draft-not-master-sense-verified",
+      "sourcePolicy": "manually-selected-transparent-derivation-candidate-not-historical-proof",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
