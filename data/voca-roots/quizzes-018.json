@@ -1,0 +1,6007 @@
+{
+  "schemaVersion": "1.1",
+  "batch": "017",
+  "quizGroup": "roots-word-family-recognition-a",
+  "records": [
+    {
+      "id": "quiz:family-match:root:port",
+      "morphemeId": "root:port",
+      "type": "word-family-recognition",
+      "questionJa": "「transport」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"transport\"?",
+      "choices": [
+        {
+          "id": "root:port",
+          "labelJa": "import"
+        },
+        {
+          "id": "root:ced",
+          "labelJa": "recede"
+        },
+        {
+          "id": "root:ject",
+          "labelJa": "inject"
+        },
+        {
+          "id": "root:cant",
+          "labelJa": "incantation"
+        }
+      ],
+      "answerId": "root:port",
+      "explanationJa": "transport と import は「運ぶ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dict",
+      "morphemeId": "root:dict",
+      "type": "word-family-recognition",
+      "questionJa": "「predict」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"predict\"?",
+      "choices": [
+        {
+          "id": "root:lumin",
+          "labelJa": "illumination"
+        },
+        {
+          "id": "root:sacr",
+          "labelJa": "sanctuary"
+        },
+        {
+          "id": "root:oper",
+          "labelJa": "operation"
+        },
+        {
+          "id": "root:dict",
+          "labelJa": "prediction"
+        }
+      ],
+      "answerId": "root:dict",
+      "explanationJa": "predict と prediction は「言う・述べる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:scrib",
+      "morphemeId": "root:scrib",
+      "type": "word-family-recognition",
+      "questionJa": "「describe」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"describe\"?",
+      "choices": [
+        {
+          "id": "root:apt",
+          "labelJa": "adaptation"
+        },
+        {
+          "id": "root:dign",
+          "labelJa": "indignant"
+        },
+        {
+          "id": "root:scrib",
+          "labelJa": "description"
+        },
+        {
+          "id": "root:cycl",
+          "labelJa": "recycling"
+        }
+      ],
+      "answerId": "root:scrib",
+      "explanationJa": "describe と description は「書く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:spect",
+      "morphemeId": "root:spect",
+      "type": "word-family-recognition",
+      "questionJa": "「inspect」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"inspect\"?",
+      "choices": [
+        {
+          "id": "root:vis",
+          "labelJa": "revise"
+        },
+        {
+          "id": "root:spect",
+          "labelJa": "inspection"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "audition"
+        },
+        {
+          "id": "root:nov",
+          "labelJa": "innovation"
+        }
+      ],
+      "answerId": "root:spect",
+      "explanationJa": "inspect と inspection は「見る・観察する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:vis",
+      "morphemeId": "root:vis",
+      "type": "word-family-recognition",
+      "questionJa": "「visible」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"visible\"?",
+      "choices": [
+        {
+          "id": "root:vis",
+          "labelJa": "invisible"
+        },
+        {
+          "id": "root:ced",
+          "labelJa": "concede"
+        },
+        {
+          "id": "root:cid-cut",
+          "labelJa": "incision"
+        },
+        {
+          "id": "root:popul",
+          "labelJa": "populace"
+        }
+      ],
+      "answerId": "root:vis",
+      "explanationJa": "visible と invisible は「見る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:aud",
+      "morphemeId": "root:aud",
+      "type": "word-family-recognition",
+      "questionJa": "「audible」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"audible\"?",
+      "choices": [
+        {
+          "id": "root:cert",
+          "labelJa": "certainty"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "innocent"
+        },
+        {
+          "id": "root:junct",
+          "labelJa": "junction"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "inaudible"
+        }
+      ],
+      "answerId": "root:aud",
+      "explanationJa": "audible と inaudible は「聞く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:tract",
+      "morphemeId": "root:tract",
+      "type": "word-family-recognition",
+      "questionJa": "「attract」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"attract\"?",
+      "choices": [
+        {
+          "id": "root:fabul",
+          "labelJa": "fabulist"
+        },
+        {
+          "id": "root:lact",
+          "labelJa": "lactic"
+        },
+        {
+          "id": "root:tract",
+          "labelJa": "attraction"
+        },
+        {
+          "id": "root:duc",
+          "labelJa": "conduct"
+        }
+      ],
+      "answerId": "root:tract",
+      "explanationJa": "attract と attraction は「引く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ject",
+      "morphemeId": "root:ject",
+      "type": "word-family-recognition",
+      "questionJa": "「reject」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"reject\"?",
+      "choices": [
+        {
+          "id": "root:pac",
+          "labelJa": "pacify"
+        },
+        {
+          "id": "root:ject",
+          "labelJa": "rejection"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "contagion"
+        },
+        {
+          "id": "root:civ",
+          "labelJa": "civilization"
+        }
+      ],
+      "answerId": "root:ject",
+      "explanationJa": "reject と rejection は「投げる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:duc",
+      "morphemeId": "root:duc",
+      "type": "word-family-recognition",
+      "questionJa": "「conduct」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"conduct\"?",
+      "choices": [
+        {
+          "id": "root:duc",
+          "labelJa": "conductor"
+        },
+        {
+          "id": "root:lith",
+          "labelJa": "monolith"
+        },
+        {
+          "id": "root:ordin",
+          "labelJa": "coordinate"
+        },
+        {
+          "id": "root:astrict",
+          "labelJa": "strict"
+        }
+      ],
+      "answerId": "root:duc",
+      "explanationJa": "conduct と conductor は「導く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:struct",
+      "morphemeId": "root:struct",
+      "type": "word-family-recognition",
+      "questionJa": "「construct」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"construct\"?",
+      "choices": [
+        {
+          "id": "root:fin",
+          "labelJa": "final"
+        },
+        {
+          "id": "root:mort",
+          "labelJa": "immortal"
+        },
+        {
+          "id": "root:fac",
+          "labelJa": "effect"
+        },
+        {
+          "id": "root:struct",
+          "labelJa": "construction"
+        }
+      ],
+      "answerId": "root:struct",
+      "explanationJa": "construct と construction は「組み立てる・築く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mit",
+      "morphemeId": "root:mit",
+      "type": "word-family-recognition",
+      "questionJa": "「submit」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"submit\"?",
+      "choices": [
+        {
+          "id": "root:pon",
+          "labelJa": "position"
+        },
+        {
+          "id": "root:ten",
+          "labelJa": "contain"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "submission"
+        },
+        {
+          "id": "root:vis",
+          "labelJa": "visible"
+        }
+      ],
+      "answerId": "root:mit",
+      "explanationJa": "submit と submission は「送る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:rupt",
+      "morphemeId": "root:rupt",
+      "type": "word-family-recognition",
+      "questionJa": "「interrupt」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"interrupt\"?",
+      "choices": [
+        {
+          "id": "root:lact",
+          "labelJa": "lactic"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "interruption"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "alto"
+        },
+        {
+          "id": "root:fort",
+          "labelJa": "fort"
+        }
+      ],
+      "answerId": "root:rupt",
+      "explanationJa": "interrupt と interruption は「破る・壊す」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cred",
+      "morphemeId": "root:cred",
+      "type": "word-family-recognition",
+      "questionJa": "「credit」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"credit\"?",
+      "choices": [
+        {
+          "id": "root:cred",
+          "labelJa": "credible"
+        },
+        {
+          "id": "root:struct",
+          "labelJa": "construct"
+        },
+        {
+          "id": "root:sequ",
+          "labelJa": "subsequent"
+        },
+        {
+          "id": "root:hist",
+          "labelJa": "histology"
+        }
+      ],
+      "answerId": "root:cred",
+      "explanationJa": "credit と credible は「信じる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:form",
+      "morphemeId": "root:form",
+      "type": "word-family-recognition",
+      "questionJa": "「form」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"form\"?",
+      "choices": [
+        {
+          "id": "root:neur",
+          "labelJa": "neuroscience"
+        },
+        {
+          "id": "root:fin",
+          "labelJa": "final"
+        },
+        {
+          "id": "root:psych",
+          "labelJa": "psychiatry"
+        },
+        {
+          "id": "root:form",
+          "labelJa": "formal"
+        }
+      ],
+      "answerId": "root:form",
+      "explanationJa": "form と formal は「形・形づくる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:flex",
+      "morphemeId": "root:flex",
+      "type": "word-family-recognition",
+      "questionJa": "「flexible」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"flexible\"?",
+      "choices": [
+        {
+          "id": "root:cad",
+          "labelJa": "accident"
+        },
+        {
+          "id": "root:hab",
+          "labelJa": "habit"
+        },
+        {
+          "id": "root:flex",
+          "labelJa": "flexibility"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "mutual"
+        }
+      ],
+      "answerId": "root:flex",
+      "explanationJa": "flexible と flexibility は「曲げる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:press",
+      "morphemeId": "root:press",
+      "type": "word-family-recognition",
+      "questionJa": "「press」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"press\"?",
+      "choices": [
+        {
+          "id": "root:nomin",
+          "labelJa": "denominator"
+        },
+        {
+          "id": "root:press",
+          "labelJa": "pressure"
+        },
+        {
+          "id": "root:cert",
+          "labelJa": "certainty"
+        },
+        {
+          "id": "root:plic",
+          "labelJa": "multiply"
+        }
+      ],
+      "answerId": "root:press",
+      "explanationJa": "press と pressure は「押す」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ten",
+      "morphemeId": "root:ten",
+      "type": "word-family-recognition",
+      "questionJa": "「retain」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"retain\"?",
+      "choices": [
+        {
+          "id": "root:ten",
+          "labelJa": "retention"
+        },
+        {
+          "id": "root:fer",
+          "labelJa": "refer"
+        },
+        {
+          "id": "root:grav",
+          "labelJa": "grievance"
+        },
+        {
+          "id": "root:flex",
+          "labelJa": "reflect"
+        }
+      ],
+      "answerId": "root:ten",
+      "explanationJa": "retain と retention は「保つ・持つ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ven",
+      "morphemeId": "root:ven",
+      "type": "word-family-recognition",
+      "questionJa": "「convene」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"convene\"?",
+      "choices": [
+        {
+          "id": "root:iter",
+          "labelJa": "reiterate"
+        },
+        {
+          "id": "root:ferv",
+          "labelJa": "effervescent"
+        },
+        {
+          "id": "root:fid",
+          "labelJa": "confidential"
+        },
+        {
+          "id": "root:ven",
+          "labelJa": "convention"
+        }
+      ],
+      "answerId": "root:ven",
+      "explanationJa": "convene と convention は「来る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fac",
+      "morphemeId": "root:fac",
+      "type": "word-family-recognition",
+      "questionJa": "「factory」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"factory\"?",
+      "choices": [
+        {
+          "id": "root:bene",
+          "labelJa": "beneficial"
+        },
+        {
+          "id": "root:path",
+          "labelJa": "pathetic"
+        },
+        {
+          "id": "root:fac",
+          "labelJa": "manufacture"
+        },
+        {
+          "id": "root:neg",
+          "labelJa": "negate"
+        }
+      ],
+      "answerId": "root:fac",
+      "explanationJa": "factory と manufacture は「作る・行う」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sent",
+      "morphemeId": "root:sent",
+      "type": "word-family-recognition",
+      "questionJa": "「sense」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"sense\"?",
+      "choices": [
+        {
+          "id": "root:grav",
+          "labelJa": "gravity"
+        },
+        {
+          "id": "root:sent",
+          "labelJa": "sensitive"
+        },
+        {
+          "id": "root:memor",
+          "labelJa": "memorize"
+        },
+        {
+          "id": "root:lab",
+          "labelJa": "laborious"
+        }
+      ],
+      "answerId": "root:sent",
+      "explanationJa": "sense と sensitive は「感じる・知覚する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:frag",
+      "morphemeId": "root:frag",
+      "type": "word-family-recognition",
+      "questionJa": "「fragile」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fragile\"?",
+      "choices": [
+        {
+          "id": "root:frag",
+          "labelJa": "fragment"
+        },
+        {
+          "id": "root:tract",
+          "labelJa": "extract"
+        },
+        {
+          "id": "root:fer",
+          "labelJa": "offer"
+        },
+        {
+          "id": "root:pon",
+          "labelJa": "expose"
+        }
+      ],
+      "answerId": "root:frag",
+      "explanationJa": "fragile と fragment は「折る・割る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ped",
+      "morphemeId": "root:ped",
+      "type": "word-family-recognition",
+      "questionJa": "「pedal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"pedal\"?",
+      "choices": [
+        {
+          "id": "root:mit",
+          "labelJa": "permit"
+        },
+        {
+          "id": "root:hem",
+          "labelJa": "hemorrhage"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "disrupt"
+        },
+        {
+          "id": "root:ped",
+          "labelJa": "pedestrian"
+        }
+      ],
+      "answerId": "root:ped",
+      "explanationJa": "pedal と pedestrian は「足」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:manu",
+      "morphemeId": "root:manu",
+      "type": "word-family-recognition",
+      "questionJa": "「manual」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"manual\"?",
+      "choices": [
+        {
+          "id": "root:cosm",
+          "labelJa": "cosmopolitan"
+        },
+        {
+          "id": "root:cur",
+          "labelJa": "course"
+        },
+        {
+          "id": "root:manu",
+          "labelJa": "manufacture"
+        },
+        {
+          "id": "root:fric",
+          "labelJa": "friction"
+        }
+      ],
+      "answerId": "root:manu",
+      "explanationJa": "manual と manufacture は「手」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mort",
+      "morphemeId": "root:mort",
+      "type": "word-family-recognition",
+      "questionJa": "「mortal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"mortal\"?",
+      "choices": [
+        {
+          "id": "root:dur",
+          "labelJa": "endurance"
+        },
+        {
+          "id": "root:mort",
+          "labelJa": "mortality"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "colonist"
+        },
+        {
+          "id": "root:pac",
+          "labelJa": "peace"
+        }
+      ],
+      "answerId": "root:mort",
+      "explanationJa": "mortal と mortality は「死」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:viv",
+      "morphemeId": "root:viv",
+      "type": "word-family-recognition",
+      "questionJa": "「vivid」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"vivid\"?",
+      "choices": [
+        {
+          "id": "root:viv",
+          "labelJa": "revive"
+        },
+        {
+          "id": "root:ten",
+          "labelJa": "container"
+        },
+        {
+          "id": "root:torqu",
+          "labelJa": "distortion"
+        },
+        {
+          "id": "root:nat",
+          "labelJa": "nature"
+        }
+      ],
+      "answerId": "root:viv",
+      "explanationJa": "vivid と revive は「生きる・生命」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:terr",
+      "morphemeId": "root:terr",
+      "type": "word-family-recognition",
+      "questionJa": "「territory」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"territory\"?",
+      "choices": [
+        {
+          "id": "root:ject",
+          "labelJa": "injection"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "important"
+        },
+        {
+          "id": "root:astrict",
+          "labelJa": "strict"
+        },
+        {
+          "id": "root:terr",
+          "labelJa": "terrain"
+        }
+      ],
+      "answerId": "root:terr",
+      "explanationJa": "territory と terrain は「大地」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:aqu",
+      "morphemeId": "root:aqu",
+      "type": "word-family-recognition",
+      "questionJa": "「aquatic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"aquatic\"?",
+      "choices": [
+        {
+          "id": "root:dent",
+          "labelJa": "dental"
+        },
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solitary"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "aquarium"
+        },
+        {
+          "id": "root:grat",
+          "labelJa": "congratulate"
+        }
+      ],
+      "answerId": "root:aqu",
+      "explanationJa": "aquatic と aquarium は「水」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lumin",
+      "morphemeId": "root:lumin",
+      "type": "word-family-recognition",
+      "questionJa": "「illuminate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"illuminate\"?",
+      "choices": [
+        {
+          "id": "root:vac",
+          "labelJa": "vacuum"
+        },
+        {
+          "id": "root:lumin",
+          "labelJa": "illumination"
+        },
+        {
+          "id": "root:fin",
+          "labelJa": "finite"
+        },
+        {
+          "id": "root:derm",
+          "labelJa": "dermatology"
+        }
+      ],
+      "answerId": "root:lumin",
+      "explanationJa": "illuminate と illumination は「光」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:loc",
+      "morphemeId": "root:loc",
+      "type": "word-family-recognition",
+      "questionJa": "「local」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"local\"?",
+      "choices": [
+        {
+          "id": "root:loc",
+          "labelJa": "locate"
+        },
+        {
+          "id": "root:liqu",
+          "labelJa": "liquid"
+        },
+        {
+          "id": "root:foli",
+          "labelJa": "portfolio"
+        },
+        {
+          "id": "root:eth",
+          "labelJa": "ethos"
+        }
+      ],
+      "answerId": "root:loc",
+      "explanationJa": "local と locate は「場所」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:migr",
+      "morphemeId": "root:migr",
+      "type": "word-family-recognition",
+      "questionJa": "「migrate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"migrate\"?",
+      "choices": [
+        {
+          "id": "root:lab",
+          "labelJa": "laborious"
+        },
+        {
+          "id": "root:matr",
+          "labelJa": "matriarch"
+        },
+        {
+          "id": "root:centr",
+          "labelJa": "centralize"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "migration"
+        }
+      ],
+      "answerId": "root:migr",
+      "explanationJa": "migrate と migration は「移動する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:grad",
+      "morphemeId": "root:grad",
+      "type": "word-family-recognition",
+      "questionJa": "「gradual」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"gradual\"?",
+      "choices": [
+        {
+          "id": "root:spect",
+          "labelJa": "prospect"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "locate"
+        },
+        {
+          "id": "root:grad",
+          "labelJa": "graduate"
+        },
+        {
+          "id": "root:dem",
+          "labelJa": "democracy"
+        }
+      ],
+      "answerId": "root:grad",
+      "explanationJa": "gradual と graduate は「歩む・段階」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cur",
+      "morphemeId": "root:cur",
+      "type": "word-family-recognition",
+      "questionJa": "「current」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"current\"?",
+      "choices": [
+        {
+          "id": "root:onym",
+          "labelJa": "synonym"
+        },
+        {
+          "id": "root:cur",
+          "labelJa": "course"
+        },
+        {
+          "id": "root:ped",
+          "labelJa": "pedestrian"
+        },
+        {
+          "id": "root:clam",
+          "labelJa": "claim"
+        }
+      ],
+      "answerId": "root:cur",
+      "explanationJa": "current と course は「走る・流れる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:solv",
+      "morphemeId": "root:solv",
+      "type": "word-family-recognition",
+      "questionJa": "「solve」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"solve\"?",
+      "choices": [
+        {
+          "id": "root:solv",
+          "labelJa": "solution"
+        },
+        {
+          "id": "root:duc",
+          "labelJa": "induce"
+        },
+        {
+          "id": "root:magn",
+          "labelJa": "magnify"
+        },
+        {
+          "id": "root:sal",
+          "labelJa": "exult"
+        }
+      ],
+      "answerId": "root:solv",
+      "explanationJa": "solve と solution は「ほどく・解く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fin",
+      "morphemeId": "root:fin",
+      "type": "word-family-recognition",
+      "questionJa": "「final」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"final\"?",
+      "choices": [
+        {
+          "id": "root:cand",
+          "labelJa": "candidate"
+        },
+        {
+          "id": "root:magn",
+          "labelJa": "magnitude"
+        },
+        {
+          "id": "root:opt-eye",
+          "labelJa": "optical"
+        },
+        {
+          "id": "root:fin",
+          "labelJa": "finish"
+        }
+      ],
+      "answerId": "root:fin",
+      "explanationJa": "final と finish は「終わり・境界」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:bio",
+      "morphemeId": "root:bio",
+      "type": "word-family-recognition",
+      "questionJa": "「biology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"biology\"?",
+      "choices": [
+        {
+          "id": "root:vac",
+          "labelJa": "vacant"
+        },
+        {
+          "id": "root:solv",
+          "labelJa": "resolve"
+        },
+        {
+          "id": "root:bio",
+          "labelJa": "biological"
+        },
+        {
+          "id": "root:phil",
+          "labelJa": "bibliophile"
+        }
+      ],
+      "answerId": "root:bio",
+      "explanationJa": "biology と biological は「生命」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:geo",
+      "morphemeId": "root:geo",
+      "type": "word-family-recognition",
+      "questionJa": "「geography」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"geography\"?",
+      "choices": [
+        {
+          "id": "root:junct",
+          "labelJa": "adjunct"
+        },
+        {
+          "id": "root:geo",
+          "labelJa": "geology"
+        },
+        {
+          "id": "root:cap",
+          "labelJa": "capture"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "eruption"
+        }
+      ],
+      "answerId": "root:geo",
+      "explanationJa": "geography と geology は「地球・土地」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:graph",
+      "morphemeId": "root:graph",
+      "type": "word-family-recognition",
+      "questionJa": "「graphic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"graphic\"?",
+      "choices": [
+        {
+          "id": "root:graph",
+          "labelJa": "graph"
+        },
+        {
+          "id": "root:flex",
+          "labelJa": "flexibility"
+        },
+        {
+          "id": "root:pon",
+          "labelJa": "expose"
+        },
+        {
+          "id": "root:mov",
+          "labelJa": "promote"
+        }
+      ],
+      "answerId": "root:graph",
+      "explanationJa": "graphic と graph は「書く・記録する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:phon",
+      "morphemeId": "root:phon",
+      "type": "word-family-recognition",
+      "questionJa": "「phone」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"phone\"?",
+      "choices": [
+        {
+          "id": "root:culp",
+          "labelJa": "culpability"
+        },
+        {
+          "id": "root:popul",
+          "labelJa": "popular"
+        },
+        {
+          "id": "root:astr",
+          "labelJa": "astrology"
+        },
+        {
+          "id": "root:phon",
+          "labelJa": "microphone"
+        }
+      ],
+      "answerId": "root:phon",
+      "explanationJa": "phone と microphone は「音・声」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:photo",
+      "morphemeId": "root:photo",
+      "type": "word-family-recognition",
+      "questionJa": "「photo」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"photo\"?",
+      "choices": [
+        {
+          "id": "root:junct",
+          "labelJa": "adjunct"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "synchronize"
+        },
+        {
+          "id": "root:photo",
+          "labelJa": "photograph"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "interruption"
+        }
+      ],
+      "answerId": "root:photo",
+      "explanationJa": "photo と photograph は「光」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:chron",
+      "morphemeId": "root:chron",
+      "type": "word-family-recognition",
+      "questionJa": "「chronology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"chronology\"?",
+      "choices": [
+        {
+          "id": "root:aesth",
+          "labelJa": "anesthesia"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "chronological"
+        },
+        {
+          "id": "root:sequ",
+          "labelJa": "sequence"
+        },
+        {
+          "id": "root:nat",
+          "labelJa": "natal"
+        }
+      ],
+      "answerId": "root:chron",
+      "explanationJa": "chronology と chronological は「時間」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:therm",
+      "morphemeId": "root:therm",
+      "type": "word-family-recognition",
+      "questionJa": "「thermal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"thermal\"?",
+      "choices": [
+        {
+          "id": "root:therm",
+          "labelJa": "thermometer"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "interruption"
+        },
+        {
+          "id": "root:foli",
+          "labelJa": "defoliate"
+        },
+        {
+          "id": "root:morph",
+          "labelJa": "metamorphosis"
+        }
+      ],
+      "answerId": "root:therm",
+      "explanationJa": "thermal と thermometer は「熱」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:metr",
+      "morphemeId": "root:metr",
+      "type": "word-family-recognition",
+      "questionJa": "「meter」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"meter\"?",
+      "choices": [
+        {
+          "id": "root:dict",
+          "labelJa": "predict"
+        },
+        {
+          "id": "root:geo",
+          "labelJa": "geological"
+        },
+        {
+          "id": "root:neur",
+          "labelJa": "neuron"
+        },
+        {
+          "id": "root:metr",
+          "labelJa": "metric"
+        }
+      ],
+      "answerId": "root:metr",
+      "explanationJa": "meter と metric は「測る・尺度」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:psych",
+      "morphemeId": "root:psych",
+      "type": "word-family-recognition",
+      "questionJa": "「psychology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"psychology\"?",
+      "choices": [
+        {
+          "id": "root:foli",
+          "labelJa": "defoliate"
+        },
+        {
+          "id": "root:clin",
+          "labelJa": "decline"
+        },
+        {
+          "id": "root:psych",
+          "labelJa": "psychological"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "innocence"
+        }
+      ],
+      "answerId": "root:psych",
+      "explanationJa": "psychology と psychological は「心・精神」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dem",
+      "morphemeId": "root:dem",
+      "type": "word-family-recognition",
+      "questionJa": "「democracy」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"democracy\"?",
+      "choices": [
+        {
+          "id": "root:morph",
+          "labelJa": "morphology"
+        },
+        {
+          "id": "root:dem",
+          "labelJa": "democratic"
+        },
+        {
+          "id": "root:sta",
+          "labelJa": "station"
+        },
+        {
+          "id": "root:voc",
+          "labelJa": "revoke"
+        }
+      ],
+      "answerId": "root:dem",
+      "explanationJa": "democracy と democratic は「人々・民衆」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:log",
+      "morphemeId": "root:log",
+      "type": "word-family-recognition",
+      "questionJa": "「logic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"logic\"?",
+      "choices": [
+        {
+          "id": "root:log",
+          "labelJa": "logical"
+        },
+        {
+          "id": "root:equ",
+          "labelJa": "equivalent"
+        },
+        {
+          "id": "root:dem",
+          "labelJa": "democratic"
+        },
+        {
+          "id": "root:astrict",
+          "labelJa": "restriction"
+        }
+      ],
+      "answerId": "root:log",
+      "explanationJa": "logic と logical は「言葉・論理・学問」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:path",
+      "morphemeId": "root:path",
+      "type": "word-family-recognition",
+      "questionJa": "「sympathy」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"sympathy\"?",
+      "choices": [
+        {
+          "id": "root:matr",
+          "labelJa": "maternity"
+        },
+        {
+          "id": "root:fin",
+          "labelJa": "definition"
+        },
+        {
+          "id": "root:leg-law",
+          "labelJa": "illegal"
+        },
+        {
+          "id": "root:path",
+          "labelJa": "empathy"
+        }
+      ],
+      "answerId": "root:path",
+      "explanationJa": "sympathy と empathy は「感情・苦しみ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cycl",
+      "morphemeId": "root:cycl",
+      "type": "word-family-recognition",
+      "questionJa": "「cycle」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"cycle\"?",
+      "choices": [
+        {
+          "id": "root:mov",
+          "labelJa": "move"
+        },
+        {
+          "id": "root:log",
+          "labelJa": "logical"
+        },
+        {
+          "id": "root:cycl",
+          "labelJa": "bicycle"
+        },
+        {
+          "id": "root:bene",
+          "labelJa": "benefit"
+        }
+      ],
+      "answerId": "root:cycl",
+      "explanationJa": "cycle と bicycle は「輪・循環」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:tele",
+      "morphemeId": "root:tele",
+      "type": "word-family-recognition",
+      "questionJa": "「telephone」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"telephone\"?",
+      "choices": [
+        {
+          "id": "root:nomin",
+          "labelJa": "nominate"
+        },
+        {
+          "id": "root:tele",
+          "labelJa": "television"
+        },
+        {
+          "id": "root:cub",
+          "labelJa": "recumbent"
+        },
+        {
+          "id": "root:corp",
+          "labelJa": "incorporate"
+        }
+      ],
+      "answerId": "root:tele",
+      "explanationJa": "telephone と television は「遠く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hydr",
+      "morphemeId": "root:hydr",
+      "type": "word-family-recognition",
+      "questionJa": "「hydrate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"hydrate\"?",
+      "choices": [
+        {
+          "id": "root:hydr",
+          "labelJa": "hydration"
+        },
+        {
+          "id": "root:nomin",
+          "labelJa": "nominal"
+        },
+        {
+          "id": "root:fid",
+          "labelJa": "confident"
+        },
+        {
+          "id": "root:lat",
+          "labelJa": "bilateral"
+        }
+      ],
+      "answerId": "root:hydr",
+      "explanationJa": "hydrate と hydration は「水」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:scope",
+      "morphemeId": "root:scope",
+      "type": "word-family-recognition",
+      "questionJa": "「telescope」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"telescope\"?",
+      "choices": [
+        {
+          "id": "root:popul",
+          "labelJa": "popular"
+        },
+        {
+          "id": "root:ordin",
+          "labelJa": "subordinate"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "thermometer"
+        },
+        {
+          "id": "root:scope",
+          "labelJa": "microscope"
+        }
+      ],
+      "answerId": "root:scope",
+      "explanationJa": "telescope と microscope は「見る・調べる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cap",
+      "morphemeId": "root:cap",
+      "type": "word-family-recognition",
+      "questionJa": "「capture」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"capture\"?",
+      "choices": [
+        {
+          "id": "root:chron",
+          "labelJa": "chronic"
+        },
+        {
+          "id": "root:bene",
+          "labelJa": "benefit"
+        },
+        {
+          "id": "root:cap",
+          "labelJa": "accept"
+        },
+        {
+          "id": "root:dent",
+          "labelJa": "dental"
+        }
+      ],
+      "answerId": "root:cap",
+      "explanationJa": "capture と accept は「取る・受け入れる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ced",
+      "morphemeId": "root:ced",
+      "type": "word-family-recognition",
+      "questionJa": "「proceed」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"proceed\"?",
+      "choices": [
+        {
+          "id": "root:flor",
+          "labelJa": "florist"
+        },
+        {
+          "id": "root:ced",
+          "labelJa": "exceed"
+        },
+        {
+          "id": "root:mus",
+          "labelJa": "musician"
+        },
+        {
+          "id": "root:culp",
+          "labelJa": "exculpate"
+        }
+      ],
+      "answerId": "root:ced",
+      "explanationJa": "proceed と exceed は「進む・譲る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fer",
+      "morphemeId": "root:fer",
+      "type": "word-family-recognition",
+      "questionJa": "「transfer」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"transfer\"?",
+      "choices": [
+        {
+          "id": "root:fer",
+          "labelJa": "refer"
+        },
+        {
+          "id": "root:voc",
+          "labelJa": "revoke"
+        },
+        {
+          "id": "root:fid",
+          "labelJa": "fidelity"
+        },
+        {
+          "id": "root:clam",
+          "labelJa": "proclaim"
+        }
+      ],
+      "answerId": "root:fer",
+      "explanationJa": "transfer と refer は「運ぶ・もたらす」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:pon",
+      "morphemeId": "root:pon",
+      "type": "word-family-recognition",
+      "questionJa": "「compose」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"compose\"?",
+      "choices": [
+        {
+          "id": "root:alt",
+          "labelJa": "alto"
+        },
+        {
+          "id": "root:sta",
+          "labelJa": "stable"
+        },
+        {
+          "id": "root:ide",
+          "labelJa": "ideology"
+        },
+        {
+          "id": "root:pon",
+          "labelJa": "deposit"
+        }
+      ],
+      "answerId": "root:pon",
+      "explanationJa": "compose と deposit は「置く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:plic",
+      "morphemeId": "root:plic",
+      "type": "word-family-recognition",
+      "questionJa": "「complicate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"complicate\"?",
+      "choices": [
+        {
+          "id": "root:loc",
+          "labelJa": "location"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "migration"
+        },
+        {
+          "id": "root:plic",
+          "labelJa": "imply"
+        },
+        {
+          "id": "root:grad",
+          "labelJa": "progress"
+        }
+      ],
+      "answerId": "root:plic",
+      "explanationJa": "complicate と imply は「折る・重ねる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sequ",
+      "morphemeId": "root:sequ",
+      "type": "word-family-recognition",
+      "questionJa": "「sequence」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"sequence\"?",
+      "choices": [
+        {
+          "id": "root:medi",
+          "labelJa": "medieval"
+        },
+        {
+          "id": "root:sequ",
+          "labelJa": "sequel"
+        },
+        {
+          "id": "root:tend",
+          "labelJa": "intend"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "horticulture"
+        }
+      ],
+      "answerId": "root:sequ",
+      "explanationJa": "sequence と sequel は「後に続く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sta",
+      "morphemeId": "root:sta",
+      "type": "word-family-recognition",
+      "questionJa": "「stable」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"stable\"?",
+      "choices": [
+        {
+          "id": "root:sta",
+          "labelJa": "status"
+        },
+        {
+          "id": "root:pac",
+          "labelJa": "pacify"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "amend"
+        },
+        {
+          "id": "root:flor",
+          "labelJa": "flourish"
+        }
+      ],
+      "answerId": "root:sta",
+      "explanationJa": "stable と status は「立つ・立たせる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:tang",
+      "morphemeId": "root:tang",
+      "type": "word-family-recognition",
+      "questionJa": "「contact」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"contact\"?",
+      "choices": [
+        {
+          "id": "root:cub",
+          "labelJa": "succumb"
+        },
+        {
+          "id": "root:volv",
+          "labelJa": "involve"
+        },
+        {
+          "id": "root:commod",
+          "labelJa": "commodity"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "tangible"
+        }
+      ],
+      "answerId": "root:tang",
+      "explanationJa": "contact と tangible は「触れる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:tend",
+      "morphemeId": "root:tend",
+      "type": "word-family-recognition",
+      "questionJa": "「extend」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"extend\"?",
+      "choices": [
+        {
+          "id": "root:lab",
+          "labelJa": "laboratory"
+        },
+        {
+          "id": "root:insul",
+          "labelJa": "insulation"
+        },
+        {
+          "id": "root:tend",
+          "labelJa": "extension"
+        },
+        {
+          "id": "root:ordin",
+          "labelJa": "order"
+        }
+      ],
+      "answerId": "root:tend",
+      "explanationJa": "extend と extension は「伸ばす・張る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:vert",
+      "morphemeId": "root:vert",
+      "type": "word-family-recognition",
+      "questionJa": "「convert」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"convert\"?",
+      "choices": [
+        {
+          "id": "root:dent",
+          "labelJa": "indent"
+        },
+        {
+          "id": "root:vert",
+          "labelJa": "revert"
+        },
+        {
+          "id": "root:opt-eye",
+          "labelJa": "optical"
+        },
+        {
+          "id": "root:pel",
+          "labelJa": "propel"
+        }
+      ],
+      "answerId": "root:vert",
+      "explanationJa": "convert と revert は「向きを変える」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ag",
+      "morphemeId": "root:ag",
+      "type": "word-family-recognition",
+      "questionJa": "「agent」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"agent\"?",
+      "choices": [
+        {
+          "id": "root:ag",
+          "labelJa": "action"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "permit"
+        },
+        {
+          "id": "root:photo",
+          "labelJa": "photography"
+        },
+        {
+          "id": "root:cub",
+          "labelJa": "recumbent"
+        }
+      ],
+      "answerId": "root:ag",
+      "explanationJa": "agent と action は「行う・動かす」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:equ",
+      "morphemeId": "root:equ",
+      "type": "word-family-recognition",
+      "questionJa": "「equal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"equal\"?",
+      "choices": [
+        {
+          "id": "root:nat",
+          "labelJa": "nation"
+        },
+        {
+          "id": "root:mov",
+          "labelJa": "motive"
+        },
+        {
+          "id": "root:nomin",
+          "labelJa": "nominee"
+        },
+        {
+          "id": "root:equ",
+          "labelJa": "equality"
+        }
+      ],
+      "answerId": "root:equ",
+      "explanationJa": "equal と equality は「等しい・公平な」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:bene",
+      "morphemeId": "root:bene",
+      "type": "word-family-recognition",
+      "questionJa": "「benefit」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"benefit\"?",
+      "choices": [
+        {
+          "id": "root:cad",
+          "labelJa": "coincide"
+        },
+        {
+          "id": "root:arm",
+          "labelJa": "disarm"
+        },
+        {
+          "id": "root:bene",
+          "labelJa": "beneficial"
+        },
+        {
+          "id": "root:lumin",
+          "labelJa": "illumination"
+        }
+      ],
+      "answerId": "root:bene",
+      "explanationJa": "benefit と beneficial は「良く・好ましく」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mal",
+      "morphemeId": "root:mal",
+      "type": "word-family-recognition",
+      "questionJa": "「malfunction」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"malfunction\"?",
+      "choices": [
+        {
+          "id": "root:nov",
+          "labelJa": "renovate"
+        },
+        {
+          "id": "root:mal",
+          "labelJa": "malnutrition"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "import"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "permit"
+        }
+      ],
+      "answerId": "root:mal",
+      "explanationJa": "malfunction と malnutrition は「悪い・悪く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:brev",
+      "morphemeId": "root:brev",
+      "type": "word-family-recognition",
+      "questionJa": "「brief」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"brief\"?",
+      "choices": [
+        {
+          "id": "root:brev",
+          "labelJa": "briefly"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "erupt"
+        },
+        {
+          "id": "root:vis",
+          "labelJa": "video"
+        },
+        {
+          "id": "root:frag",
+          "labelJa": "fracture"
+        }
+      ],
+      "answerId": "root:brev",
+      "explanationJa": "brief と briefly は「短い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:magn",
+      "morphemeId": "root:magn",
+      "type": "word-family-recognition",
+      "questionJa": "「magnify」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"magnify\"?",
+      "choices": [
+        {
+          "id": "root:grat",
+          "labelJa": "gratification"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "permission"
+        },
+        {
+          "id": "root:cumul",
+          "labelJa": "accumulation"
+        },
+        {
+          "id": "root:magn",
+          "labelJa": "magnitude"
+        }
+      ],
+      "answerId": "root:magn",
+      "explanationJa": "magnify と magnitude は「大きい」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:min",
+      "morphemeId": "root:min",
+      "type": "word-family-recognition",
+      "questionJa": "「minor」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"minor\"?",
+      "choices": [
+        {
+          "id": "root:onym",
+          "labelJa": "acronym"
+        },
+        {
+          "id": "root:ann",
+          "labelJa": "anniversary"
+        },
+        {
+          "id": "root:min",
+          "labelJa": "minimum"
+        },
+        {
+          "id": "root:flu",
+          "labelJa": "fluid"
+        }
+      ],
+      "answerId": "root:min",
+      "explanationJa": "minor と minimum は「より小さい・最小の」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ann",
+      "morphemeId": "root:ann",
+      "type": "word-family-recognition",
+      "questionJa": "「annual」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"annual\"?",
+      "choices": [
+        {
+          "id": "root:leg-choose",
+          "labelJa": "collect"
+        },
+        {
+          "id": "root:ann",
+          "labelJa": "anniversary"
+        },
+        {
+          "id": "root:luc",
+          "labelJa": "translucent"
+        },
+        {
+          "id": "root:commod",
+          "labelJa": "commodious"
+        }
+      ],
+      "answerId": "root:ann",
+      "explanationJa": "annual と anniversary は「一年」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:nov",
+      "morphemeId": "root:nov",
+      "type": "word-family-recognition",
+      "questionJa": "「novel」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"novel\"?",
+      "choices": [
+        {
+          "id": "root:nov",
+          "labelJa": "novelty"
+        },
+        {
+          "id": "root:iter",
+          "labelJa": "iteration"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "altitude"
+        },
+        {
+          "id": "root:form",
+          "labelJa": "reform"
+        }
+      ],
+      "answerId": "root:nov",
+      "explanationJa": "novel と novelty は「新しい」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mov",
+      "morphemeId": "root:mov",
+      "type": "word-family-recognition",
+      "questionJa": "「move」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"move\"?",
+      "choices": [
+        {
+          "id": "root:photo",
+          "labelJa": "photography"
+        },
+        {
+          "id": "root:astr",
+          "labelJa": "astrology"
+        },
+        {
+          "id": "root:ver-true",
+          "labelJa": "verify"
+        },
+        {
+          "id": "root:mov",
+          "labelJa": "movement"
+        }
+      ],
+      "answerId": "root:mov",
+      "explanationJa": "move と movement は「動く・動かす」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:pel",
+      "morphemeId": "root:pel",
+      "type": "word-family-recognition",
+      "questionJa": "「propel」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"propel\"?",
+      "choices": [
+        {
+          "id": "root:apt",
+          "labelJa": "adapter"
+        },
+        {
+          "id": "root:equ",
+          "labelJa": "equivalent"
+        },
+        {
+          "id": "root:pel",
+          "labelJa": "repel"
+        },
+        {
+          "id": "root:meas",
+          "labelJa": "measurement"
+        }
+      ],
+      "answerId": "root:pel",
+      "explanationJa": "propel と repel は「押す・駆り立てる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:pend",
+      "morphemeId": "root:pend",
+      "type": "word-family-recognition",
+      "questionJa": "「depend」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"depend\"?",
+      "choices": [
+        {
+          "id": "root:meas",
+          "labelJa": "measure"
+        },
+        {
+          "id": "root:pend",
+          "labelJa": "dependent"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "migrate"
+        },
+        {
+          "id": "root:sacr",
+          "labelJa": "consecrate"
+        }
+      ],
+      "answerId": "root:pend",
+      "explanationJa": "depend と dependent は「ぶら下がる・依存する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:spir",
+      "morphemeId": "root:spir",
+      "type": "word-family-recognition",
+      "questionJa": "「respiration」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"respiration\"?",
+      "choices": [
+        {
+          "id": "root:spir",
+          "labelJa": "inspire"
+        },
+        {
+          "id": "root:annunc",
+          "labelJa": "denounce"
+        },
+        {
+          "id": "root:photo",
+          "labelJa": "photo"
+        },
+        {
+          "id": "root:flu",
+          "labelJa": "fluid"
+        }
+      ],
+      "answerId": "root:spir",
+      "explanationJa": "respiration と inspire は「息をする」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:voc",
+      "morphemeId": "root:voc",
+      "type": "word-family-recognition",
+      "questionJa": "「vocal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"vocal\"?",
+      "choices": [
+        {
+          "id": "root:derm",
+          "labelJa": "hypodermic"
+        },
+        {
+          "id": "root:lith",
+          "labelJa": "lithic"
+        },
+        {
+          "id": "root:memor",
+          "labelJa": "memorize"
+        },
+        {
+          "id": "root:voc",
+          "labelJa": "vocation"
+        }
+      ],
+      "answerId": "root:voc",
+      "explanationJa": "vocal と vocation は「呼ぶ・声」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:volv",
+      "morphemeId": "root:volv",
+      "type": "word-family-recognition",
+      "questionJa": "「revolve」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"revolve\"?",
+      "choices": [
+        {
+          "id": "root:spir",
+          "labelJa": "inspire"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "allocate"
+        },
+        {
+          "id": "root:volv",
+          "labelJa": "revolution"
+        },
+        {
+          "id": "root:cant",
+          "labelJa": "chant"
+        }
+      ],
+      "answerId": "root:volv",
+      "explanationJa": "revolve と revolution は「回る・転がる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:flu",
+      "morphemeId": "root:flu",
+      "type": "word-family-recognition",
+      "questionJa": "「fluid」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fluid\"?",
+      "choices": [
+        {
+          "id": "root:leg-choose",
+          "labelJa": "lecture"
+        },
+        {
+          "id": "root:flu",
+          "labelJa": "fluent"
+        },
+        {
+          "id": "root:foli",
+          "labelJa": "foliage"
+        },
+        {
+          "id": "root:hab",
+          "labelJa": "inhabit"
+        }
+      ],
+      "answerId": "root:flu",
+      "explanationJa": "fluid と fluent は「流れる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cogn",
+      "morphemeId": "root:cogn",
+      "type": "word-family-recognition",
+      "questionJa": "「recognize」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"recognize\"?",
+      "choices": [
+        {
+          "id": "root:cogn",
+          "labelJa": "recognition"
+        },
+        {
+          "id": "root:am",
+          "labelJa": "amorous"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "exalt"
+        },
+        {
+          "id": "root:eth",
+          "labelJa": "ethic"
+        }
+      ],
+      "answerId": "root:cogn",
+      "explanationJa": "recognize と recognition は「知る・認識する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sci",
+      "morphemeId": "root:sci",
+      "type": "word-family-recognition",
+      "questionJa": "「science」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"science\"?",
+      "choices": [
+        {
+          "id": "root:doc",
+          "labelJa": "doctor"
+        },
+        {
+          "id": "root:fer",
+          "labelJa": "infer"
+        },
+        {
+          "id": "root:cur-care",
+          "labelJa": "secure"
+        },
+        {
+          "id": "root:sci",
+          "labelJa": "scientific"
+        }
+      ],
+      "answerId": "root:sci",
+      "explanationJa": "science と scientific は「知る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:memor",
+      "morphemeId": "root:memor",
+      "type": "word-family-recognition",
+      "questionJa": "「memory」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"memory\"?",
+      "choices": [
+        {
+          "id": "root:hum",
+          "labelJa": "exhume"
+        },
+        {
+          "id": "root:culp",
+          "labelJa": "culprit"
+        },
+        {
+          "id": "root:memor",
+          "labelJa": "memorable"
+        },
+        {
+          "id": "root:ego",
+          "labelJa": "egotism"
+        }
+      ],
+      "answerId": "root:memor",
+      "explanationJa": "memory と memorable は「覚えている」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fid",
+      "morphemeId": "root:fid",
+      "type": "word-family-recognition",
+      "questionJa": "「confide」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"confide\"?",
+      "choices": [
+        {
+          "id": "root:leg-law",
+          "labelJa": "legal"
+        },
+        {
+          "id": "root:fid",
+          "labelJa": "confidence"
+        },
+        {
+          "id": "root:mar",
+          "labelJa": "mariner"
+        },
+        {
+          "id": "root:astr",
+          "labelJa": "astronomy"
+        }
+      ],
+      "answerId": "root:fid",
+      "explanationJa": "confide と confidence は「信頼・信じる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:doc",
+      "morphemeId": "root:doc",
+      "type": "word-family-recognition",
+      "questionJa": "「doctor」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"doctor\"?",
+      "choices": [
+        {
+          "id": "root:doc",
+          "labelJa": "doctrine"
+        },
+        {
+          "id": "root:bell",
+          "labelJa": "rebel"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "contagion"
+        },
+        {
+          "id": "root:cresc",
+          "labelJa": "crescent"
+        }
+      ],
+      "answerId": "root:doc",
+      "explanationJa": "doctor と doctrine は「教える」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:corp",
+      "morphemeId": "root:corp",
+      "type": "word-family-recognition",
+      "questionJa": "「corporate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"corporate\"?",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "inscription"
+        },
+        {
+          "id": "root:nomin",
+          "labelJa": "nominal"
+        },
+        {
+          "id": "root:sacr",
+          "labelJa": "sanctuary"
+        },
+        {
+          "id": "root:corp",
+          "labelJa": "corporation"
+        }
+      ],
+      "answerId": "root:corp",
+      "explanationJa": "corporate と corporation は「身体・まとまった組織」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:leg-law",
+      "morphemeId": "root:leg-law",
+      "type": "word-family-recognition",
+      "questionJa": "「legal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"legal\"?",
+      "choices": [
+        {
+          "id": "root:pend",
+          "labelJa": "suspend"
+        },
+        {
+          "id": "root:sacr",
+          "labelJa": "sacred"
+        },
+        {
+          "id": "root:leg-law",
+          "labelJa": "illegal"
+        },
+        {
+          "id": "root:terr",
+          "labelJa": "terrace"
+        }
+      ],
+      "answerId": "root:leg-law",
+      "explanationJa": "legal と illegal は「法律」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:leg-choose",
+      "morphemeId": "root:leg-choose",
+      "type": "word-family-recognition",
+      "questionJa": "「select」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"select\"?",
+      "choices": [
+        {
+          "id": "root:luc",
+          "labelJa": "lucidity"
+        },
+        {
+          "id": "root:leg-choose",
+          "labelJa": "elect"
+        },
+        {
+          "id": "root:brev",
+          "labelJa": "brief"
+        },
+        {
+          "id": "root:mnem",
+          "labelJa": "mnemonics"
+        }
+      ],
+      "answerId": "root:leg-choose",
+      "explanationJa": "select と elect は「集める・選ぶ・読む」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:junct",
+      "morphemeId": "root:junct",
+      "type": "word-family-recognition",
+      "questionJa": "「junction」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"junction\"?",
+      "choices": [
+        {
+          "id": "root:junct",
+          "labelJa": "conjunction"
+        },
+        {
+          "id": "root:arm",
+          "labelJa": "disarm"
+        },
+        {
+          "id": "root:corp",
+          "labelJa": "corpse"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "horticulture"
+        }
+      ],
+      "answerId": "root:junct",
+      "explanationJa": "junction と conjunction は「つなぐ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:grat",
+      "morphemeId": "root:grat",
+      "type": "word-family-recognition",
+      "questionJa": "「gratitude」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"gratitude\"?",
+      "choices": [
+        {
+          "id": "root:dur",
+          "labelJa": "endurance"
+        },
+        {
+          "id": "root:annunc",
+          "labelJa": "denounce"
+        },
+        {
+          "id": "root:cid-cut",
+          "labelJa": "incision"
+        },
+        {
+          "id": "root:grat",
+          "labelJa": "grateful"
+        }
+      ],
+      "answerId": "root:grat",
+      "explanationJa": "gratitude と grateful は「喜ばしい・感謝」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:quer",
+      "morphemeId": "root:quer",
+      "type": "word-family-recognition",
+      "questionJa": "「query」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"query\"?",
+      "choices": [
+        {
+          "id": "root:phil",
+          "labelJa": "philosopher"
+        },
+        {
+          "id": "root:scrib",
+          "labelJa": "describe"
+        },
+        {
+          "id": "root:quer",
+          "labelJa": "question"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "altimeter"
+        }
+      ],
+      "answerId": "root:quer",
+      "explanationJa": "query と question は「求める・尋ねる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:oper",
+      "morphemeId": "root:oper",
+      "type": "word-family-recognition",
+      "questionJa": "「operate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"operate\"?",
+      "choices": [
+        {
+          "id": "root:col",
+          "labelJa": "culture"
+        },
+        {
+          "id": "root:oper",
+          "labelJa": "operation"
+        },
+        {
+          "id": "root:magn",
+          "labelJa": "magnitude"
+        },
+        {
+          "id": "root:quer",
+          "labelJa": "inquire"
+        }
+      ],
+      "answerId": "root:oper",
+      "explanationJa": "operate と operation は「仕事・働く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:nomin",
+      "morphemeId": "root:nomin",
+      "type": "word-family-recognition",
+      "questionJa": "「nominate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"nominate\"?",
+      "choices": [
+        {
+          "id": "root:nomin",
+          "labelJa": "nomination"
+        },
+        {
+          "id": "root:matr",
+          "labelJa": "maternity"
+        },
+        {
+          "id": "root:vis",
+          "labelJa": "revise"
+        },
+        {
+          "id": "root:tele",
+          "labelJa": "telescope"
+        }
+      ],
+      "answerId": "root:nomin",
+      "explanationJa": "nominate と nomination は「名前」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:nat",
+      "morphemeId": "root:nat",
+      "type": "word-family-recognition",
+      "questionJa": "「native」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"native\"?",
+      "choices": [
+        {
+          "id": "root:aud",
+          "labelJa": "audience"
+        },
+        {
+          "id": "root:opt-eye",
+          "labelJa": "optical"
+        },
+        {
+          "id": "root:memor",
+          "labelJa": "memorial"
+        },
+        {
+          "id": "root:nat",
+          "labelJa": "nation"
+        }
+      ],
+      "answerId": "root:nat",
+      "explanationJa": "native と nation は「生まれる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sol-alone",
+      "morphemeId": "root:sol-alone",
+      "type": "word-family-recognition",
+      "questionJa": "「solo」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"solo\"?",
+      "choices": [
+        {
+          "id": "root:vert",
+          "labelJa": "reverse"
+        },
+        {
+          "id": "root:lab",
+          "labelJa": "labor"
+        },
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solitary"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "important"
+        }
+      ],
+      "answerId": "root:sol-alone",
+      "explanationJa": "solo と solitary は「一人・単独」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ver-true",
+      "morphemeId": "root:ver-true",
+      "type": "word-family-recognition",
+      "questionJa": "「verify」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"verify\"?",
+      "choices": [
+        {
+          "id": "root:spect",
+          "labelJa": "spectator"
+        },
+        {
+          "id": "root:ver-true",
+          "labelJa": "verification"
+        },
+        {
+          "id": "root:tract",
+          "labelJa": "distraction"
+        },
+        {
+          "id": "root:oper",
+          "labelJa": "operate"
+        }
+      ],
+      "answerId": "root:ver-true",
+      "explanationJa": "verify と verification は「真実」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:pict",
+      "morphemeId": "root:pict",
+      "type": "word-family-recognition",
+      "questionJa": "「picture」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"picture\"?",
+      "choices": [
+        {
+          "id": "root:pict",
+          "labelJa": "depict"
+        },
+        {
+          "id": "root:ide",
+          "labelJa": "idea"
+        },
+        {
+          "id": "root:torqu",
+          "labelJa": "torque"
+        },
+        {
+          "id": "root:brev",
+          "labelJa": "brevity"
+        }
+      ],
+      "answerId": "root:pict",
+      "explanationJa": "picture と depict は「描く・色を塗る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:torqu",
+      "morphemeId": "root:torqu",
+      "type": "word-family-recognition",
+      "questionJa": "「distort」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"distort\"?",
+      "choices": [
+        {
+          "id": "root:dem",
+          "labelJa": "democratic"
+        },
+        {
+          "id": "root:cur-care",
+          "labelJa": "cure"
+        },
+        {
+          "id": "root:vis",
+          "labelJa": "video"
+        },
+        {
+          "id": "root:torqu",
+          "labelJa": "distortion"
+        }
+      ],
+      "answerId": "root:torqu",
+      "explanationJa": "distort と distortion は「ねじる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:vac",
+      "morphemeId": "root:vac",
+      "type": "word-family-recognition",
+      "questionJa": "「vacant」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"vacant\"?",
+      "choices": [
+        {
+          "id": "root:patr",
+          "labelJa": "patron"
+        },
+        {
+          "id": "root:sequ",
+          "labelJa": "subsequent"
+        },
+        {
+          "id": "root:vac",
+          "labelJa": "vacancy"
+        },
+        {
+          "id": "root:cant",
+          "labelJa": "accent"
+        }
+      ],
+      "answerId": "root:vac",
+      "explanationJa": "vacant と vacancy は「空いている・空の」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:phil",
+      "morphemeId": "root:phil",
+      "type": "word-family-recognition",
+      "questionJa": "「philosophy」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"philosophy\"?",
+      "choices": [
+        {
+          "id": "root:dynam",
+          "labelJa": "dynamic"
+        },
+        {
+          "id": "root:phil",
+          "labelJa": "philosopher"
+        },
+        {
+          "id": "root:ver-true",
+          "labelJa": "verification"
+        },
+        {
+          "id": "root:nat",
+          "labelJa": "native"
+        }
+      ],
+      "answerId": "root:phil",
+      "explanationJa": "philosophy と philosopher は「愛する・好む」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:astr",
+      "morphemeId": "root:astr",
+      "type": "word-family-recognition",
+      "questionJa": "「astronomy」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"astronomy\"?",
+      "choices": [
+        {
+          "id": "root:astr",
+          "labelJa": "astronaut"
+        },
+        {
+          "id": "root:nov",
+          "labelJa": "innovate"
+        },
+        {
+          "id": "root:dict",
+          "labelJa": "prediction"
+        },
+        {
+          "id": "root:empt",
+          "labelJa": "redeem"
+        }
+      ],
+      "answerId": "root:astr",
+      "explanationJa": "astronomy と astronaut は「星」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:morph",
+      "morphemeId": "root:morph",
+      "type": "word-family-recognition",
+      "questionJa": "「morphology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"morphology\"?",
+      "choices": [
+        {
+          "id": "root:mar",
+          "labelJa": "marine"
+        },
+        {
+          "id": "root:grad",
+          "labelJa": "progression"
+        },
+        {
+          "id": "root:neg",
+          "labelJa": "renegade"
+        },
+        {
+          "id": "root:morph",
+          "labelJa": "metamorphosis"
+        }
+      ],
+      "answerId": "root:morph",
+      "explanationJa": "morphology と metamorphosis は「形・形態」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:gen",
+      "morphemeId": "root:gen",
+      "type": "word-family-recognition",
+      "questionJa": "「generate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"generate\"?",
+      "choices": [
+        {
+          "id": "root:neur",
+          "labelJa": "neurology"
+        },
+        {
+          "id": "root:neg",
+          "labelJa": "renegade"
+        },
+        {
+          "id": "root:gen",
+          "labelJa": "generation"
+        },
+        {
+          "id": "root:cid-cut",
+          "labelJa": "excise"
+        }
+      ],
+      "answerId": "root:gen",
+      "explanationJa": "generate と generation は「生まれる・種類・起源」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:onym",
+      "morphemeId": "root:onym",
+      "type": "word-family-recognition",
+      "questionJa": "「synonym」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"synonym\"?",
+      "choices": [
+        {
+          "id": "root:centr",
+          "labelJa": "centric"
+        },
+        {
+          "id": "root:onym",
+          "labelJa": "antonym"
+        },
+        {
+          "id": "root:junct",
+          "labelJa": "junction"
+        },
+        {
+          "id": "root:spect",
+          "labelJa": "spectacle"
+        }
+      ],
+      "answerId": "root:onym",
+      "explanationJa": "synonym と antonym は「名前」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:apt",
+      "morphemeId": "root:apt",
+      "type": "word-family-recognition",
+      "questionJa": "「apt」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"apt\"?",
+      "choices": [
+        {
+          "id": "root:apt",
+          "labelJa": "adapt"
+        },
+        {
+          "id": "root:dur",
+          "labelJa": "duration"
+        },
+        {
+          "id": "root:ten",
+          "labelJa": "contain"
+        },
+        {
+          "id": "root:phon",
+          "labelJa": "phonology"
+        }
+      ],
+      "answerId": "root:apt",
+      "explanationJa": "apt と adapt は「適合する・結びつく」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:art",
+      "morphemeId": "root:art",
+      "type": "word-family-recognition",
+      "questionJa": "「art」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"art\"?",
+      "choices": [
+        {
+          "id": "root:therm",
+          "labelJa": "thermal"
+        },
+        {
+          "id": "root:brev",
+          "labelJa": "brevity"
+        },
+        {
+          "id": "root:tele",
+          "labelJa": "telecommunication"
+        },
+        {
+          "id": "root:art",
+          "labelJa": "artist"
+        }
+      ],
+      "answerId": "root:art",
+      "explanationJa": "art と artist は「技術・技芸」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:arm",
+      "morphemeId": "root:arm",
+      "type": "word-family-recognition",
+      "questionJa": "「armament」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"armament\"?",
+      "choices": [
+        {
+          "id": "root:fin",
+          "labelJa": "definition"
+        },
+        {
+          "id": "root:hem",
+          "labelJa": "hemorrhage"
+        },
+        {
+          "id": "root:arm",
+          "labelJa": "disarm"
+        },
+        {
+          "id": "root:cid-cut",
+          "labelJa": "decision"
+        }
+      ],
+      "answerId": "root:arm",
+      "explanationJa": "armament と disarm は「武器・武装」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:bell",
+      "morphemeId": "root:bell",
+      "type": "word-family-recognition",
+      "questionJa": "「rebellion」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"rebellion\"?",
+      "choices": [
+        {
+          "id": "root:ang",
+          "labelJa": "anxious"
+        },
+        {
+          "id": "root:bell",
+          "labelJa": "rebel"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "altimeter"
+        },
+        {
+          "id": "root:scrib",
+          "labelJa": "subscription"
+        }
+      ],
+      "answerId": "root:bell",
+      "explanationJa": "rebellion と rebel は「戦争」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cad",
+      "morphemeId": "root:cad",
+      "type": "word-family-recognition",
+      "questionJa": "「accident」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"accident\"?",
+      "choices": [
+        {
+          "id": "root:cad",
+          "labelJa": "incident"
+        },
+        {
+          "id": "root:morph",
+          "labelJa": "amorphous"
+        },
+        {
+          "id": "root:flor",
+          "labelJa": "flourish"
+        },
+        {
+          "id": "root:ferv",
+          "labelJa": "fervor"
+        }
+      ],
+      "answerId": "root:cad",
+      "explanationJa": "accident と incident は「落ちる・起こる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cand",
+      "morphemeId": "root:cand",
+      "type": "word-family-recognition",
+      "questionJa": "「candle」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"candle\"?",
+      "choices": [
+        {
+          "id": "root:dynam",
+          "labelJa": "dynamo"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "mend"
+        },
+        {
+          "id": "root:mov",
+          "labelJa": "motion"
+        },
+        {
+          "id": "root:cand",
+          "labelJa": "candid"
+        }
+      ],
+      "answerId": "root:cand",
+      "explanationJa": "candle と candid は「白く輝く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cant",
+      "morphemeId": "root:cant",
+      "type": "word-family-recognition",
+      "questionJa": "「chant」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"chant\"?",
+      "choices": [
+        {
+          "id": "root:sacr",
+          "labelJa": "sacred"
+        },
+        {
+          "id": "root:apt",
+          "labelJa": "adapter"
+        },
+        {
+          "id": "root:cant",
+          "labelJa": "incantation"
+        },
+        {
+          "id": "root:log",
+          "labelJa": "logic"
+        }
+      ],
+      "answerId": "root:cant",
+      "explanationJa": "chant と incantation は「歌う」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cert",
+      "morphemeId": "root:cert",
+      "type": "word-family-recognition",
+      "questionJa": "「certain」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"certain\"?",
+      "choices": [
+        {
+          "id": "root:her",
+          "labelJa": "cohesion"
+        },
+        {
+          "id": "root:cert",
+          "labelJa": "certainty"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "innocuous"
+        },
+        {
+          "id": "root:press",
+          "labelJa": "expression"
+        }
+      ],
+      "answerId": "root:cert",
+      "explanationJa": "certain と certainty は「確かな・決まった」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cid-cut",
+      "morphemeId": "root:cid-cut",
+      "type": "word-family-recognition",
+      "questionJa": "「incision」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"incision\"?",
+      "choices": [
+        {
+          "id": "root:cid-cut",
+          "labelJa": "decide"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "mutate"
+        },
+        {
+          "id": "root:annunc",
+          "labelJa": "announcement"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "amend"
+        }
+      ],
+      "answerId": "root:cid-cut",
+      "explanationJa": "incision と decide は「切る・打つ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:clar",
+      "morphemeId": "root:clar",
+      "type": "word-family-recognition",
+      "questionJa": "「clear」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"clear\"?",
+      "choices": [
+        {
+          "id": "root:voc",
+          "labelJa": "vocal"
+        },
+        {
+          "id": "root:fac",
+          "labelJa": "artifact"
+        },
+        {
+          "id": "root:mort",
+          "labelJa": "mortal"
+        },
+        {
+          "id": "root:clar",
+          "labelJa": "clarify"
+        }
+      ],
+      "answerId": "root:clar",
+      "explanationJa": "clear と clarify は「明るい・明瞭な」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:clin",
+      "morphemeId": "root:clin",
+      "type": "word-family-recognition",
+      "questionJa": "「incline」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"incline\"?",
+      "choices": [
+        {
+          "id": "root:terr",
+          "labelJa": "terrace"
+        },
+        {
+          "id": "root:civ",
+          "labelJa": "civil"
+        },
+        {
+          "id": "root:clin",
+          "labelJa": "decline"
+        },
+        {
+          "id": "root:err",
+          "labelJa": "erroneous"
+        }
+      ],
+      "answerId": "root:clin",
+      "explanationJa": "incline と decline は「傾く・曲げる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:clud",
+      "morphemeId": "root:clud",
+      "type": "word-family-recognition",
+      "questionJa": "「include」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"include\"?",
+      "choices": [
+        {
+          "id": "root:electr",
+          "labelJa": "electron"
+        },
+        {
+          "id": "root:clud",
+          "labelJa": "exclude"
+        },
+        {
+          "id": "root:lumin",
+          "labelJa": "illuminate"
+        },
+        {
+          "id": "root:gust",
+          "labelJa": "gustatory"
+        }
+      ],
+      "answerId": "root:clud",
+      "explanationJa": "include と exclude は「閉じる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cresc",
+      "morphemeId": "root:cresc",
+      "type": "word-family-recognition",
+      "questionJa": "「increase」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"increase\"?",
+      "choices": [
+        {
+          "id": "root:cresc",
+          "labelJa": "decrease"
+        },
+        {
+          "id": "root:grav",
+          "labelJa": "gravity"
+        },
+        {
+          "id": "root:bio",
+          "labelJa": "biological"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "intact"
+        }
+      ],
+      "answerId": "root:cresc",
+      "explanationJa": "increase と decrease は「成長する・増える」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cub",
+      "morphemeId": "root:cub",
+      "type": "word-family-recognition",
+      "questionJa": "「incubate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"incubate\"?",
+      "choices": [
+        {
+          "id": "root:liqu",
+          "labelJa": "liquid"
+        },
+        {
+          "id": "root:press",
+          "labelJa": "compress"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "immigration"
+        },
+        {
+          "id": "root:cub",
+          "labelJa": "incubation"
+        }
+      ],
+      "answerId": "root:cub",
+      "explanationJa": "incubate と incubation は「横たわる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:culp",
+      "morphemeId": "root:culp",
+      "type": "word-family-recognition",
+      "questionJa": "「culprit」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"culprit\"?",
+      "choices": [
+        {
+          "id": "root:civ",
+          "labelJa": "civil"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "tangible"
+        },
+        {
+          "id": "root:culp",
+          "labelJa": "culpable"
+        },
+        {
+          "id": "root:terr",
+          "labelJa": "terrain"
+        }
+      ],
+      "answerId": "root:culp",
+      "explanationJa": "culprit と culpable は「過失・責任」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dorm",
+      "morphemeId": "root:dorm",
+      "type": "word-family-recognition",
+      "questionJa": "「dormant」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"dormant\"?",
+      "choices": [
+        {
+          "id": "root:fid",
+          "labelJa": "confidential"
+        },
+        {
+          "id": "root:dorm",
+          "labelJa": "dormitory"
+        },
+        {
+          "id": "root:liber",
+          "labelJa": "liberty"
+        },
+        {
+          "id": "root:anim",
+          "labelJa": "animation"
+        }
+      ],
+      "answerId": "root:dorm",
+      "explanationJa": "dormant と dormitory は「眠る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dur",
+      "morphemeId": "root:dur",
+      "type": "word-family-recognition",
+      "questionJa": "「durable」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"durable\"?",
+      "choices": [
+        {
+          "id": "root:dur",
+          "labelJa": "duration"
+        },
+        {
+          "id": "root:min",
+          "labelJa": "minimize"
+        },
+        {
+          "id": "root:clam",
+          "labelJa": "reclaim"
+        },
+        {
+          "id": "root:bell",
+          "labelJa": "rebel"
+        }
+      ],
+      "answerId": "root:dur",
+      "explanationJa": "durable と duration は「硬い・持続する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:empt",
+      "morphemeId": "root:empt",
+      "type": "word-family-recognition",
+      "questionJa": "「redeem」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"redeem\"?",
+      "choices": [
+        {
+          "id": "root:magn",
+          "labelJa": "magnitude"
+        },
+        {
+          "id": "root:tele",
+          "labelJa": "television"
+        },
+        {
+          "id": "root:fug",
+          "labelJa": "fugitive"
+        },
+        {
+          "id": "root:empt",
+          "labelJa": "redemption"
+        }
+      ],
+      "answerId": "root:empt",
+      "explanationJa": "redeem と redemption は「買う・取る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:err",
+      "morphemeId": "root:err",
+      "type": "word-family-recognition",
+      "questionJa": "「error」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"error\"?",
+      "choices": [
+        {
+          "id": "root:civ",
+          "labelJa": "civilian"
+        },
+        {
+          "id": "root:astrict",
+          "labelJa": "strict"
+        },
+        {
+          "id": "root:err",
+          "labelJa": "erratic"
+        },
+        {
+          "id": "root:dent",
+          "labelJa": "dental"
+        }
+      ],
+      "answerId": "root:err",
+      "explanationJa": "error と erratic は「さまよう・誤る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ferv",
+      "morphemeId": "root:ferv",
+      "type": "word-family-recognition",
+      "questionJa": "「fervent」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fervent\"?",
+      "choices": [
+        {
+          "id": "root:astr",
+          "labelJa": "astrology"
+        },
+        {
+          "id": "root:ferv",
+          "labelJa": "fervor"
+        },
+        {
+          "id": "root:magn",
+          "labelJa": "magnificent"
+        },
+        {
+          "id": "root:fisc",
+          "labelJa": "fisc"
+        }
+      ],
+      "answerId": "root:ferv",
+      "explanationJa": "fervent と fervor は「沸く・熱する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:flor",
+      "morphemeId": "root:flor",
+      "type": "word-family-recognition",
+      "questionJa": "「floral」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"floral\"?",
+      "choices": [
+        {
+          "id": "root:flor",
+          "labelJa": "florist"
+        },
+        {
+          "id": "root:nov",
+          "labelJa": "renovate"
+        },
+        {
+          "id": "root:sacr",
+          "labelJa": "sanctuary"
+        },
+        {
+          "id": "root:vis",
+          "labelJa": "visible"
+        }
+      ],
+      "answerId": "root:flor",
+      "explanationJa": "floral と florist は「花・花が咲く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fug",
+      "morphemeId": "root:fug",
+      "type": "word-family-recognition",
+      "questionJa": "「refuge」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"refuge\"?",
+      "choices": [
+        {
+          "id": "root:empt",
+          "labelJa": "exempt"
+        },
+        {
+          "id": "root:hab",
+          "labelJa": "exhibit"
+        },
+        {
+          "id": "root:mnem",
+          "labelJa": "mnemonics"
+        },
+        {
+          "id": "root:fug",
+          "labelJa": "refugee"
+        }
+      ],
+      "answerId": "root:fug",
+      "explanationJa": "refuge と refugee は「逃げる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fund-pour",
+      "morphemeId": "root:fund-pour",
+      "type": "word-family-recognition",
+      "questionJa": "「confuse」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"confuse\"?",
+      "choices": [
+        {
+          "id": "root:onym",
+          "labelJa": "pseudonym"
+        },
+        {
+          "id": "root:her",
+          "labelJa": "adhere"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "confusion"
+        },
+        {
+          "id": "root:min",
+          "labelJa": "minor"
+        }
+      ],
+      "answerId": "root:fund-pour",
+      "explanationJa": "confuse と confusion は「注ぐ・流し出す」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:grav",
+      "morphemeId": "root:grav",
+      "type": "word-family-recognition",
+      "questionJa": "「gravity」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"gravity\"?",
+      "choices": [
+        {
+          "id": "root:memor",
+          "labelJa": "memory"
+        },
+        {
+          "id": "root:grav",
+          "labelJa": "grave"
+        },
+        {
+          "id": "root:cycl",
+          "labelJa": "cyclic"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "mend"
+        }
+      ],
+      "answerId": "root:grav",
+      "explanationJa": "gravity と grave は「重い・重大な」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hab",
+      "morphemeId": "root:hab",
+      "type": "word-family-recognition",
+      "questionJa": "「habit」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"habit\"?",
+      "choices": [
+        {
+          "id": "root:hab",
+          "labelJa": "habitat"
+        },
+        {
+          "id": "root:lact",
+          "labelJa": "lactation"
+        },
+        {
+          "id": "root:frater",
+          "labelJa": "fraternity"
+        },
+        {
+          "id": "root:leg-choose",
+          "labelJa": "eligible"
+        }
+      ],
+      "answerId": "root:hab",
+      "explanationJa": "habit と habitat は「持つ・住む」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:her",
+      "morphemeId": "root:her",
+      "type": "word-family-recognition",
+      "questionJa": "「adhere」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"adhere\"?",
+      "choices": [
+        {
+          "id": "root:err",
+          "labelJa": "error"
+        },
+        {
+          "id": "root:nov",
+          "labelJa": "novel"
+        },
+        {
+          "id": "root:equ",
+          "labelJa": "equivalent"
+        },
+        {
+          "id": "root:her",
+          "labelJa": "adhesion"
+        }
+      ],
+      "answerId": "root:her",
+      "explanationJa": "adhere と adhesion は「くっつく」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hosp",
+      "morphemeId": "root:hosp",
+      "type": "word-family-recognition",
+      "questionJa": "「hospital」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"hospital\"?",
+      "choices": [
+        {
+          "id": "root:civ",
+          "labelJa": "civil"
+        },
+        {
+          "id": "root:popul",
+          "labelJa": "populate"
+        },
+        {
+          "id": "root:hosp",
+          "labelJa": "hospitality"
+        },
+        {
+          "id": "root:opt-choose",
+          "labelJa": "option"
+        }
+      ],
+      "answerId": "root:hosp",
+      "explanationJa": "hospital と hospitality は「客・もてなす人」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hum",
+      "morphemeId": "root:hum",
+      "type": "word-family-recognition",
+      "questionJa": "「humble」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"humble\"?",
+      "choices": [
+        {
+          "id": "root:greg",
+          "labelJa": "gregarious"
+        },
+        {
+          "id": "root:hum",
+          "labelJa": "humility"
+        },
+        {
+          "id": "root:aesth",
+          "labelJa": "aesthetic"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "emend"
+        }
+      ],
+      "answerId": "root:hum",
+      "explanationJa": "humble と humility は「土・低い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lab",
+      "morphemeId": "root:lab",
+      "type": "word-family-recognition",
+      "questionJa": "「labor」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"labor\"?",
+      "choices": [
+        {
+          "id": "root:lab",
+          "labelJa": "laboratory"
+        },
+        {
+          "id": "root:lact",
+          "labelJa": "lactose"
+        },
+        {
+          "id": "root:junct",
+          "labelJa": "join"
+        },
+        {
+          "id": "root:viv",
+          "labelJa": "vivid"
+        }
+      ],
+      "answerId": "root:lab",
+      "explanationJa": "labor と laboratory は「労働・努力」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lact",
+      "morphemeId": "root:lact",
+      "type": "word-family-recognition",
+      "questionJa": "「lactose」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"lactose\"?",
+      "choices": [
+        {
+          "id": "root:solv",
+          "labelJa": "solution"
+        },
+        {
+          "id": "root:viv",
+          "labelJa": "survive"
+        },
+        {
+          "id": "root:cosm",
+          "labelJa": "cosmic"
+        },
+        {
+          "id": "root:lact",
+          "labelJa": "lactic"
+        }
+      ],
+      "answerId": "root:lact",
+      "explanationJa": "lactose と lactic は「乳」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lat",
+      "morphemeId": "root:lat",
+      "type": "word-family-recognition",
+      "questionJa": "「lateral」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"lateral\"?",
+      "choices": [
+        {
+          "id": "root:ang",
+          "labelJa": "anxious"
+        },
+        {
+          "id": "root:fort",
+          "labelJa": "fortification"
+        },
+        {
+          "id": "root:lat",
+          "labelJa": "bilateral"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "confuse"
+        }
+      ],
+      "answerId": "root:lat",
+      "explanationJa": "lateral と bilateral は「側面」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:liber",
+      "morphemeId": "root:liber",
+      "type": "word-family-recognition",
+      "questionJa": "「liberty」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"liberty\"?",
+      "choices": [
+        {
+          "id": "root:pel",
+          "labelJa": "impulse"
+        },
+        {
+          "id": "root:liber",
+          "labelJa": "liberal"
+        },
+        {
+          "id": "root:hab",
+          "labelJa": "prohibit"
+        },
+        {
+          "id": "root:grat",
+          "labelJa": "gratify"
+        }
+      ],
+      "answerId": "root:liber",
+      "explanationJa": "liberty と liberal は「自由な」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lingu",
+      "morphemeId": "root:lingu",
+      "type": "word-family-recognition",
+      "questionJa": "「linguist」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"linguist\"?",
+      "choices": [
+        {
+          "id": "root:lingu",
+          "labelJa": "linguistic"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "confuse"
+        },
+        {
+          "id": "root:ang",
+          "labelJa": "anxious"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "mutual"
+        }
+      ],
+      "answerId": "root:lingu",
+      "explanationJa": "linguist と linguistic は「舌・言語」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:liqu",
+      "morphemeId": "root:liqu",
+      "type": "word-family-recognition",
+      "questionJa": "「liquid」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"liquid\"?",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "describe"
+        },
+        {
+          "id": "root:geo",
+          "labelJa": "geological"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "migrate"
+        },
+        {
+          "id": "root:liqu",
+          "labelJa": "liquefy"
+        }
+      ],
+      "answerId": "root:liqu",
+      "explanationJa": "liquid と liquefy は「液体・流れる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:luc",
+      "morphemeId": "root:luc",
+      "type": "word-family-recognition",
+      "questionJa": "「lucid」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"lucid\"?",
+      "choices": [
+        {
+          "id": "root:cresc",
+          "labelJa": "accretion"
+        },
+        {
+          "id": "root:metr",
+          "labelJa": "geometry"
+        },
+        {
+          "id": "root:luc",
+          "labelJa": "elucidate"
+        },
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solitary"
+        }
+      ],
+      "answerId": "root:luc",
+      "explanationJa": "lucid と elucidate は「光・輝く」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mar",
+      "morphemeId": "root:mar",
+      "type": "word-family-recognition",
+      "questionJa": "「marine」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"marine\"?",
+      "choices": [
+        {
+          "id": "root:astr",
+          "labelJa": "astronomy"
+        },
+        {
+          "id": "root:mar",
+          "labelJa": "maritime"
+        },
+        {
+          "id": "root:ced",
+          "labelJa": "concede"
+        },
+        {
+          "id": "root:hydr",
+          "labelJa": "hydration"
+        }
+      ],
+      "answerId": "root:mar",
+      "explanationJa": "marine と maritime は「海」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:medi",
+      "morphemeId": "root:medi",
+      "type": "word-family-recognition",
+      "questionJa": "「medium」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"medium\"?",
+      "choices": [
+        {
+          "id": "root:medi",
+          "labelJa": "mediate"
+        },
+        {
+          "id": "root:luc",
+          "labelJa": "translucent"
+        },
+        {
+          "id": "root:astrict",
+          "labelJa": "constrain"
+        },
+        {
+          "id": "root:duc",
+          "labelJa": "produce"
+        }
+      ],
+      "answerId": "root:medi",
+      "explanationJa": "medium と mediate は「中間」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mend",
+      "morphemeId": "root:mend",
+      "type": "word-family-recognition",
+      "questionJa": "「mend」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"mend\"?",
+      "choices": [
+        {
+          "id": "root:empt",
+          "labelJa": "exempt"
+        },
+        {
+          "id": "root:dynam",
+          "labelJa": "dynamic"
+        },
+        {
+          "id": "root:leg-law",
+          "labelJa": "illegal"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "amend"
+        }
+      ],
+      "answerId": "root:mend",
+      "explanationJa": "mend と amend は「欠点・誤り」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:meas",
+      "morphemeId": "root:meas",
+      "type": "word-family-recognition",
+      "questionJa": "「measure」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"measure\"?",
+      "choices": [
+        {
+          "id": "root:volv",
+          "labelJa": "evolution"
+        },
+        {
+          "id": "root:ten",
+          "labelJa": "maintain"
+        },
+        {
+          "id": "root:meas",
+          "labelJa": "measurement"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "fusion"
+        }
+      ],
+      "answerId": "root:meas",
+      "explanationJa": "measure と measurement は「測る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mut",
+      "morphemeId": "root:mut",
+      "type": "word-family-recognition",
+      "questionJa": "「mutual」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"mutual\"?",
+      "choices": [
+        {
+          "id": "root:plic",
+          "labelJa": "imply"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "mutation"
+        },
+        {
+          "id": "root:rupt",
+          "labelJa": "eruption"
+        },
+        {
+          "id": "root:ver-true",
+          "labelJa": "verity"
+        }
+      ],
+      "answerId": "root:mut",
+      "explanationJa": "mutual と mutation は「変える」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:neg",
+      "morphemeId": "root:neg",
+      "type": "word-family-recognition",
+      "questionJa": "「negative」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"negative\"?",
+      "choices": [
+        {
+          "id": "root:neg",
+          "labelJa": "negate"
+        },
+        {
+          "id": "root:astr",
+          "labelJa": "astrology"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "allocate"
+        },
+        {
+          "id": "root:morph",
+          "labelJa": "morph"
+        }
+      ],
+      "answerId": "root:neg",
+      "explanationJa": "negative と negate は「否定する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:noc",
+      "morphemeId": "root:noc",
+      "type": "word-family-recognition",
+      "questionJa": "「innocent」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"innocent\"?",
+      "choices": [
+        {
+          "id": "root:press",
+          "labelJa": "press"
+        },
+        {
+          "id": "root:grad",
+          "labelJa": "graduation"
+        },
+        {
+          "id": "root:lat",
+          "labelJa": "multilateral"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "innocence"
+        }
+      ],
+      "answerId": "root:noc",
+      "explanationJa": "innocent と innocence は「害する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:nutr",
+      "morphemeId": "root:nutr",
+      "type": "word-family-recognition",
+      "questionJa": "「nutrition」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"nutrition\"?",
+      "choices": [
+        {
+          "id": "root:fid",
+          "labelJa": "confidence"
+        },
+        {
+          "id": "root:cur",
+          "labelJa": "current"
+        },
+        {
+          "id": "root:nutr",
+          "labelJa": "nutrient"
+        },
+        {
+          "id": "root:photo",
+          "labelJa": "photosynthesis"
+        }
+      ],
+      "answerId": "root:nutr",
+      "explanationJa": "nutrition と nutrient は「養う」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ocul",
+      "morphemeId": "root:ocul",
+      "type": "word-family-recognition",
+      "questionJa": "「ocular」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"ocular\"?",
+      "choices": [
+        {
+          "id": "root:hosp",
+          "labelJa": "hospital"
+        },
+        {
+          "id": "root:ocul",
+          "labelJa": "binocular"
+        },
+        {
+          "id": "root:noc",
+          "labelJa": "innocent"
+        },
+        {
+          "id": "root:form",
+          "labelJa": "reform"
+        }
+      ],
+      "answerId": "root:ocul",
+      "explanationJa": "ocular と binocular は「目」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:opt-eye",
+      "morphemeId": "root:opt-eye",
+      "type": "word-family-recognition",
+      "questionJa": "「optical」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"optical\"?",
+      "choices": [
+        {
+          "id": "root:opt-eye",
+          "labelJa": "optics"
+        },
+        {
+          "id": "root:dign",
+          "labelJa": "indignant"
+        },
+        {
+          "id": "root:lat",
+          "labelJa": "multilateral"
+        },
+        {
+          "id": "root:vert",
+          "labelJa": "versatile"
+        }
+      ],
+      "answerId": "root:opt-eye",
+      "explanationJa": "optical と optics は「視覚・見ること」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:opt-choose",
+      "morphemeId": "root:opt-choose",
+      "type": "word-family-recognition",
+      "questionJa": "「opt」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"opt\"?",
+      "choices": [
+        {
+          "id": "root:phil",
+          "labelJa": "philosophy"
+        },
+        {
+          "id": "root:leg-choose",
+          "labelJa": "elect"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "aqueduct"
+        },
+        {
+          "id": "root:opt-choose",
+          "labelJa": "option"
+        }
+      ],
+      "answerId": "root:opt-choose",
+      "explanationJa": "opt と option は「選ぶ・望む」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ordin",
+      "morphemeId": "root:ordin",
+      "type": "word-family-recognition",
+      "questionJa": "「order」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"order\"?",
+      "choices": [
+        {
+          "id": "root:ten",
+          "labelJa": "maintain"
+        },
+        {
+          "id": "root:ocul",
+          "labelJa": "binocular"
+        },
+        {
+          "id": "root:ordin",
+          "labelJa": "ordinary"
+        },
+        {
+          "id": "root:pict",
+          "labelJa": "pictorial"
+        }
+      ],
+      "answerId": "root:ordin",
+      "explanationJa": "order と ordinary は「順序」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:pac",
+      "morphemeId": "root:pac",
+      "type": "word-family-recognition",
+      "questionJa": "「peace」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"peace\"?",
+      "choices": [
+        {
+          "id": "root:culp",
+          "labelJa": "culpability"
+        },
+        {
+          "id": "root:pac",
+          "labelJa": "pacify"
+        },
+        {
+          "id": "root:fisc",
+          "labelJa": "fiscal"
+        },
+        {
+          "id": "root:fric",
+          "labelJa": "frictionless"
+        }
+      ],
+      "answerId": "root:pac",
+      "explanationJa": "peace と pacify は「平和」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:patr",
+      "morphemeId": "root:patr",
+      "type": "word-family-recognition",
+      "questionJa": "「paternal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"paternal\"?",
+      "choices": [
+        {
+          "id": "root:patr",
+          "labelJa": "patriarch"
+        },
+        {
+          "id": "root:mend",
+          "labelJa": "emend"
+        },
+        {
+          "id": "root:solv",
+          "labelJa": "solution"
+        },
+        {
+          "id": "root:psych",
+          "labelJa": "psychologist"
+        }
+      ],
+      "answerId": "root:patr",
+      "explanationJa": "paternal と patriarch は「父」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:popul",
+      "morphemeId": "root:popul",
+      "type": "word-family-recognition",
+      "questionJa": "「popular」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"popular\"?",
+      "choices": [
+        {
+          "id": "root:centr",
+          "labelJa": "concentrate"
+        },
+        {
+          "id": "root:hydr",
+          "labelJa": "hydrate"
+        },
+        {
+          "id": "root:spir",
+          "labelJa": "aspire"
+        },
+        {
+          "id": "root:popul",
+          "labelJa": "population"
+        }
+      ],
+      "answerId": "root:popul",
+      "explanationJa": "popular と population は「人々・民衆」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:anim",
+      "morphemeId": "root:anim",
+      "type": "word-family-recognition",
+      "questionJa": "「animal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"animal\"?",
+      "choices": [
+        {
+          "id": "root:centr",
+          "labelJa": "central"
+        },
+        {
+          "id": "root:mar",
+          "labelJa": "maritime"
+        },
+        {
+          "id": "root:anim",
+          "labelJa": "animate"
+        },
+        {
+          "id": "root:phil",
+          "labelJa": "philanthropy"
+        }
+      ],
+      "answerId": "root:anim",
+      "explanationJa": "animal と animate は「息・生命・心」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:annunc",
+      "morphemeId": "root:annunc",
+      "type": "word-family-recognition",
+      "questionJa": "「announce」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"announce\"?",
+      "choices": [
+        {
+          "id": "root:cumul",
+          "labelJa": "cumulative"
+        },
+        {
+          "id": "root:annunc",
+          "labelJa": "announcement"
+        },
+        {
+          "id": "root:eth",
+          "labelJa": "ethics"
+        },
+        {
+          "id": "root:brev",
+          "labelJa": "briefly"
+        }
+      ],
+      "answerId": "root:annunc",
+      "explanationJa": "announce と announcement は「知らせる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:astrict",
+      "morphemeId": "root:astrict",
+      "type": "word-family-recognition",
+      "questionJa": "「strict」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"strict\"?",
+      "choices": [
+        {
+          "id": "root:astrict",
+          "labelJa": "restrict"
+        },
+        {
+          "id": "root:fund-pour",
+          "labelJa": "fusion"
+        },
+        {
+          "id": "root:cap",
+          "labelJa": "capture"
+        },
+        {
+          "id": "root:cur",
+          "labelJa": "course"
+        }
+      ],
+      "answerId": "root:astrict",
+      "explanationJa": "strict と restrict は「締める・張る」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:aesth",
+      "morphemeId": "root:aesth",
+      "type": "word-family-recognition",
+      "questionJa": "「aesthetic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"aesthetic\"?",
+      "choices": [
+        {
+          "id": "root:cosm",
+          "labelJa": "cosmic"
+        },
+        {
+          "id": "root:tract",
+          "labelJa": "extract"
+        },
+        {
+          "id": "root:hum",
+          "labelJa": "humility"
+        },
+        {
+          "id": "root:aesth",
+          "labelJa": "aesthetics"
+        }
+      ],
+      "answerId": "root:aesth",
+      "explanationJa": "aesthetic と aesthetics は「感覚・知覚」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:alt",
+      "morphemeId": "root:alt",
+      "type": "word-family-recognition",
+      "questionJa": "「altitude」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"altitude\"?",
+      "choices": [
+        {
+          "id": "root:pict",
+          "labelJa": "picture"
+        },
+        {
+          "id": "root:scrib",
+          "labelJa": "manuscript"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "altimeter"
+        },
+        {
+          "id": "root:duc",
+          "labelJa": "conduct"
+        }
+      ],
+      "answerId": "root:alt",
+      "explanationJa": "altitude と altimeter は「高い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:am",
+      "morphemeId": "root:am",
+      "type": "word-family-recognition",
+      "questionJa": "「amateur」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"amateur\"?",
+      "choices": [
+        {
+          "id": "root:neg",
+          "labelJa": "negation"
+        },
+        {
+          "id": "root:am",
+          "labelJa": "amorous"
+        },
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solo"
+        },
+        {
+          "id": "root:liqu",
+          "labelJa": "liquidity"
+        }
+      ],
+      "answerId": "root:am",
+      "explanationJa": "amateur と amorous は「愛する・愛」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ang",
+      "morphemeId": "root:ang",
+      "type": "word-family-recognition",
+      "questionJa": "「anxiety」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"anxiety\"?",
+      "choices": [
+        {
+          "id": "root:ang",
+          "labelJa": "anxious"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "culture"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "immigration"
+        },
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solitary"
+        }
+      ],
+      "answerId": "root:ang",
+      "explanationJa": "anxiety と anxious は「締めつける・苦しめる」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sal",
+      "morphemeId": "root:sal",
+      "type": "word-family-recognition",
+      "questionJa": "「salient」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"salient\"?",
+      "choices": [
+        {
+          "id": "root:equ",
+          "labelJa": "equation"
+        },
+        {
+          "id": "root:vert",
+          "labelJa": "versatile"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "horticulture"
+        },
+        {
+          "id": "root:sal",
+          "labelJa": "assault"
+        }
+      ],
+      "answerId": "root:sal",
+      "explanationJa": "salient と assault は「跳ぶ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:urb",
+      "morphemeId": "root:urb",
+      "type": "word-family-recognition",
+      "questionJa": "「urban」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"urban\"?",
+      "choices": [
+        {
+          "id": "root:ag",
+          "labelJa": "activity"
+        },
+        {
+          "id": "root:ocul",
+          "labelJa": "binocular"
+        },
+        {
+          "id": "root:urb",
+          "labelJa": "suburb"
+        },
+        {
+          "id": "root:patr",
+          "labelJa": "patriot"
+        }
+      ],
+      "answerId": "root:urb",
+      "explanationJa": "urban と suburb は「都市」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:bibl",
+      "morphemeId": "root:bibl",
+      "type": "word-family-recognition",
+      "questionJa": "「bible」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"bible\"?",
+      "choices": [
+        {
+          "id": "root:ven",
+          "labelJa": "convene"
+        },
+        {
+          "id": "root:bibl",
+          "labelJa": "bibliography"
+        },
+        {
+          "id": "root:fort",
+          "labelJa": "fort"
+        },
+        {
+          "id": "root:anim",
+          "labelJa": "animation"
+        }
+      ],
+      "answerId": "root:bibl",
+      "explanationJa": "bible と bibliography は「本」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:sacr",
+      "morphemeId": "root:sacr",
+      "type": "word-family-recognition",
+      "questionJa": "「sacred」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"sacred\"?",
+      "choices": [
+        {
+          "id": "root:sacr",
+          "labelJa": "sacrifice"
+        },
+        {
+          "id": "root:ject",
+          "labelJa": "reject"
+        },
+        {
+          "id": "root:ann",
+          "labelJa": "biennial"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "allocation"
+        }
+      ],
+      "answerId": "root:sacr",
+      "explanationJa": "sacred と sacrifice は「神聖・尊い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:carn",
+      "morphemeId": "root:carn",
+      "type": "word-family-recognition",
+      "questionJa": "「carnivore」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"carnivore\"?",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "describe"
+        },
+        {
+          "id": "root:oper",
+          "labelJa": "operate"
+        },
+        {
+          "id": "root:torqu",
+          "labelJa": "distort"
+        },
+        {
+          "id": "root:carn",
+          "labelJa": "carnivorous"
+        }
+      ],
+      "answerId": "root:carn",
+      "explanationJa": "carnivore と carnivorous は「肉」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:centr",
+      "morphemeId": "root:centr",
+      "type": "word-family-recognition",
+      "questionJa": "「central」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"central\"?",
+      "choices": [
+        {
+          "id": "root:mend",
+          "labelJa": "emend"
+        },
+        {
+          "id": "root:viv",
+          "labelJa": "vitality"
+        },
+        {
+          "id": "root:centr",
+          "labelJa": "centralize"
+        },
+        {
+          "id": "root:cred",
+          "labelJa": "credibility"
+        }
+      ],
+      "answerId": "root:centr",
+      "explanationJa": "central と centralize は「中心」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:civ",
+      "morphemeId": "root:civ",
+      "type": "word-family-recognition",
+      "questionJa": "「civil」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"civil\"?",
+      "choices": [
+        {
+          "id": "root:pel",
+          "labelJa": "repel"
+        },
+        {
+          "id": "root:civ",
+          "labelJa": "civic"
+        },
+        {
+          "id": "root:spect",
+          "labelJa": "respect"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "allocate"
+        }
+      ],
+      "answerId": "root:civ",
+      "explanationJa": "civil と civic は「市民」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:clam",
+      "morphemeId": "root:clam",
+      "type": "word-family-recognition",
+      "questionJa": "「claim」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"claim\"?",
+      "choices": [
+        {
+          "id": "root:clam",
+          "labelJa": "exclaim"
+        },
+        {
+          "id": "root:neg",
+          "labelJa": "negative"
+        },
+        {
+          "id": "root:viv",
+          "labelJa": "vitality"
+        },
+        {
+          "id": "root:mar",
+          "labelJa": "submarine"
+        }
+      ],
+      "answerId": "root:clam",
+      "explanationJa": "claim と exclaim は「叫ぶ・呼ぶ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:col",
+      "morphemeId": "root:col",
+      "type": "word-family-recognition",
+      "questionJa": "「cultivate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"cultivate\"?",
+      "choices": [
+        {
+          "id": "root:arm",
+          "labelJa": "armor"
+        },
+        {
+          "id": "root:annunc",
+          "labelJa": "pronounce"
+        },
+        {
+          "id": "root:pon",
+          "labelJa": "deposit"
+        },
+        {
+          "id": "root:col",
+          "labelJa": "culture"
+        }
+      ],
+      "answerId": "root:col",
+      "explanationJa": "cultivate と culture は「耕す・世話をする」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:commod",
+      "morphemeId": "root:commod",
+      "type": "word-family-recognition",
+      "questionJa": "「accommodate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"accommodate\"?",
+      "choices": [
+        {
+          "id": "root:duc",
+          "labelJa": "conduct"
+        },
+        {
+          "id": "root:neur",
+          "labelJa": "neurology"
+        },
+        {
+          "id": "root:commod",
+          "labelJa": "accommodation"
+        },
+        {
+          "id": "root:fric",
+          "labelJa": "frictionless"
+        }
+      ],
+      "answerId": "root:commod",
+      "explanationJa": "accommodate と accommodation は「都合がよい・適している」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cosm",
+      "morphemeId": "root:cosm",
+      "type": "word-family-recognition",
+      "questionJa": "「cosmos」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"cosmos\"?",
+      "choices": [
+        {
+          "id": "root:vac",
+          "labelJa": "evacuate"
+        },
+        {
+          "id": "root:cosm",
+          "labelJa": "cosmic"
+        },
+        {
+          "id": "root:log",
+          "labelJa": "logic"
+        },
+        {
+          "id": "root:tang",
+          "labelJa": "tactile"
+        }
+      ],
+      "answerId": "root:cosm",
+      "explanationJa": "cosmos と cosmic は「秩序・世界・宇宙」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:crat",
+      "morphemeId": "root:crat",
+      "type": "word-family-recognition",
+      "questionJa": "「democracy」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"democracy\"?",
+      "choices": [
+        {
+          "id": "root:crat",
+          "labelJa": "autocracy"
+        },
+        {
+          "id": "root:tele",
+          "labelJa": "television"
+        },
+        {
+          "id": "root:fer",
+          "labelJa": "transfer"
+        },
+        {
+          "id": "root:commod",
+          "labelJa": "accommodate"
+        }
+      ],
+      "answerId": "root:crat",
+      "explanationJa": "democracy と autocracy は「力・統治」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cumul",
+      "morphemeId": "root:cumul",
+      "type": "word-family-recognition",
+      "questionJa": "「accumulate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"accumulate\"?",
+      "choices": [
+        {
+          "id": "root:mit",
+          "labelJa": "permission"
+        },
+        {
+          "id": "root:fort",
+          "labelJa": "fortitude"
+        },
+        {
+          "id": "root:lud",
+          "labelJa": "illusion"
+        },
+        {
+          "id": "root:cumul",
+          "labelJa": "accumulation"
+        }
+      ],
+      "answerId": "root:cumul",
+      "explanationJa": "accumulate と accumulation は「積み重ね・山」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:cur-care",
+      "morphemeId": "root:cur-care",
+      "type": "word-family-recognition",
+      "questionJa": "「cure」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"cure\"?",
+      "choices": [
+        {
+          "id": "root:flu",
+          "labelJa": "fluent"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "immigration"
+        },
+        {
+          "id": "root:cur-care",
+          "labelJa": "curator"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "permission"
+        }
+      ],
+      "answerId": "root:cur-care",
+      "explanationJa": "cure と curator は「世話・気遣い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dent",
+      "morphemeId": "root:dent",
+      "type": "word-family-recognition",
+      "questionJa": "「dentist」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"dentist\"?",
+      "choices": [
+        {
+          "id": "root:mit",
+          "labelJa": "permission"
+        },
+        {
+          "id": "root:dent",
+          "labelJa": "dental"
+        },
+        {
+          "id": "root:derm",
+          "labelJa": "dermatologist"
+        },
+        {
+          "id": "root:spir",
+          "labelJa": "inspiration"
+        }
+      ],
+      "answerId": "root:dent",
+      "explanationJa": "dentist と dental は「歯」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:derm",
+      "morphemeId": "root:derm",
+      "type": "word-family-recognition",
+      "questionJa": "「dermatology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"dermatology\"?",
+      "choices": [
+        {
+          "id": "root:derm",
+          "labelJa": "dermatologist"
+        },
+        {
+          "id": "root:alt",
+          "labelJa": "alto"
+        },
+        {
+          "id": "root:spir",
+          "labelJa": "expire"
+        },
+        {
+          "id": "root:cand",
+          "labelJa": "incandescent"
+        }
+      ],
+      "answerId": "root:derm",
+      "explanationJa": "dermatology と dermatologist は「皮膚」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dign",
+      "morphemeId": "root:dign",
+      "type": "word-family-recognition",
+      "questionJa": "「dignity」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"dignity\"?",
+      "choices": [
+        {
+          "id": "root:opt-eye",
+          "labelJa": "optical"
+        },
+        {
+          "id": "root:photo",
+          "labelJa": "photosynthesis"
+        },
+        {
+          "id": "root:migr",
+          "labelJa": "migration"
+        },
+        {
+          "id": "root:dign",
+          "labelJa": "dignified"
+        }
+      ],
+      "answerId": "root:dign",
+      "explanationJa": "dignity と dignified は「価値がある・ふさわしい」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:dynam",
+      "morphemeId": "root:dynam",
+      "type": "word-family-recognition",
+      "questionJa": "「dynamic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"dynamic\"?",
+      "choices": [
+        {
+          "id": "root:sol-alone",
+          "labelJa": "solely"
+        },
+        {
+          "id": "root:dign",
+          "labelJa": "indignant"
+        },
+        {
+          "id": "root:dynam",
+          "labelJa": "dynamics"
+        },
+        {
+          "id": "root:tract",
+          "labelJa": "extract"
+        }
+      ],
+      "answerId": "root:dynam",
+      "explanationJa": "dynamic と dynamics は「力・能力」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ego",
+      "morphemeId": "root:ego",
+      "type": "word-family-recognition",
+      "questionJa": "「ego」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"ego\"?",
+      "choices": [
+        {
+          "id": "root:scope",
+          "labelJa": "microscope"
+        },
+        {
+          "id": "root:ego",
+          "labelJa": "egoism"
+        },
+        {
+          "id": "root:fabul",
+          "labelJa": "fabulist"
+        },
+        {
+          "id": "root:spir",
+          "labelJa": "respiration"
+        }
+      ],
+      "answerId": "root:ego",
+      "explanationJa": "ego と egoism は「私・自我」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:electr",
+      "morphemeId": "root:electr",
+      "type": "word-family-recognition",
+      "questionJa": "「electric」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"electric\"?",
+      "choices": [
+        {
+          "id": "root:electr",
+          "labelJa": "electricity"
+        },
+        {
+          "id": "root:sal",
+          "labelJa": "assault"
+        },
+        {
+          "id": "root:bene",
+          "labelJa": "benefit"
+        },
+        {
+          "id": "root:fin",
+          "labelJa": "infinite"
+        }
+      ],
+      "answerId": "root:electr",
+      "explanationJa": "electric と electricity は「琥珀・電気」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:eth",
+      "morphemeId": "root:eth",
+      "type": "word-family-recognition",
+      "questionJa": "「ethics」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"ethics\"?",
+      "choices": [
+        {
+          "id": "root:fac",
+          "labelJa": "effect"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "allocation"
+        },
+        {
+          "id": "root:fric",
+          "labelJa": "fricative"
+        },
+        {
+          "id": "root:eth",
+          "labelJa": "ethical"
+        }
+      ],
+      "answerId": "root:eth",
+      "explanationJa": "ethics と ethical は「習慣・人格・倫理」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fabul",
+      "morphemeId": "root:fabul",
+      "type": "word-family-recognition",
+      "questionJa": "「fable」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fable\"?",
+      "choices": [
+        {
+          "id": "root:nov",
+          "labelJa": "renovate"
+        },
+        {
+          "id": "root:bio",
+          "labelJa": "biography"
+        },
+        {
+          "id": "root:fabul",
+          "labelJa": "fabulous"
+        },
+        {
+          "id": "root:greg",
+          "labelJa": "gregarious"
+        }
+      ],
+      "answerId": "root:fabul",
+      "explanationJa": "fable と fabulous は「話・物語」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fric",
+      "morphemeId": "root:fric",
+      "type": "word-family-recognition",
+      "questionJa": "「friction」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"friction\"?",
+      "choices": [
+        {
+          "id": "root:arm",
+          "labelJa": "armor"
+        },
+        {
+          "id": "root:fric",
+          "labelJa": "fricative"
+        },
+        {
+          "id": "root:hem",
+          "labelJa": "hemoglobin"
+        },
+        {
+          "id": "root:ag",
+          "labelJa": "active"
+        }
+      ],
+      "answerId": "root:fric",
+      "explanationJa": "friction と fricative は「こする」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fisc",
+      "morphemeId": "root:fisc",
+      "type": "word-family-recognition",
+      "questionJa": "「fiscal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fiscal\"?",
+      "choices": [
+        {
+          "id": "root:fisc",
+          "labelJa": "fisc"
+        },
+        {
+          "id": "root:spect",
+          "labelJa": "inspection"
+        },
+        {
+          "id": "root:hosp",
+          "labelJa": "hostel"
+        },
+        {
+          "id": "root:pon",
+          "labelJa": "deposit"
+        }
+      ],
+      "answerId": "root:fisc",
+      "explanationJa": "fiscal と fisc は「国庫・財政」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:foli",
+      "morphemeId": "root:foli",
+      "type": "word-family-recognition",
+      "questionJa": "「foliage」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"foliage\"?",
+      "choices": [
+        {
+          "id": "root:mus",
+          "labelJa": "musician"
+        },
+        {
+          "id": "root:hum",
+          "labelJa": "exhume"
+        },
+        {
+          "id": "root:anim",
+          "labelJa": "inanimate"
+        },
+        {
+          "id": "root:foli",
+          "labelJa": "folio"
+        }
+      ],
+      "answerId": "root:foli",
+      "explanationJa": "foliage と folio は「葉・紙の一枚」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:fort",
+      "morphemeId": "root:fort",
+      "type": "word-family-recognition",
+      "questionJa": "「fort」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fort\"?",
+      "choices": [
+        {
+          "id": "root:fid",
+          "labelJa": "confidence"
+        },
+        {
+          "id": "root:hosp",
+          "labelJa": "hospitality"
+        },
+        {
+          "id": "root:fort",
+          "labelJa": "fortify"
+        },
+        {
+          "id": "root:terr",
+          "labelJa": "territory"
+        }
+      ],
+      "answerId": "root:fort",
+      "explanationJa": "fort と fortify は「強い」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:frater",
+      "morphemeId": "root:frater",
+      "type": "word-family-recognition",
+      "questionJa": "「fraternal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"fraternal\"?",
+      "choices": [
+        {
+          "id": "root:bio",
+          "labelJa": "biography"
+        },
+        {
+          "id": "root:frater",
+          "labelJa": "fraternity"
+        },
+        {
+          "id": "root:flu",
+          "labelJa": "fluid"
+        },
+        {
+          "id": "root:nov",
+          "labelJa": "innovation"
+        }
+      ],
+      "answerId": "root:frater",
+      "explanationJa": "fraternal と fraternity は「兄弟」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:gno",
+      "morphemeId": "root:gno",
+      "type": "word-family-recognition",
+      "questionJa": "「diagnosis」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"diagnosis\"?",
+      "choices": [
+        {
+          "id": "root:gno",
+          "labelJa": "diagnose"
+        },
+        {
+          "id": "root:commod",
+          "labelJa": "commodity"
+        },
+        {
+          "id": "root:nat",
+          "labelJa": "native"
+        },
+        {
+          "id": "root:ven",
+          "labelJa": "convene"
+        }
+      ],
+      "answerId": "root:gno",
+      "explanationJa": "diagnosis と diagnose は「知る・知識」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:greg",
+      "morphemeId": "root:greg",
+      "type": "word-family-recognition",
+      "questionJa": "「aggregate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"aggregate\"?",
+      "choices": [
+        {
+          "id": "root:volv",
+          "labelJa": "revolution"
+        },
+        {
+          "id": "root:lab",
+          "labelJa": "laboratory"
+        },
+        {
+          "id": "root:cur-care",
+          "labelJa": "secure"
+        },
+        {
+          "id": "root:greg",
+          "labelJa": "congregate"
+        }
+      ],
+      "answerId": "root:greg",
+      "explanationJa": "aggregate と congregate は「群れ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:gust",
+      "morphemeId": "root:gust",
+      "type": "word-family-recognition",
+      "questionJa": "「disgust」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"disgust\"?",
+      "choices": [
+        {
+          "id": "root:hum",
+          "labelJa": "humiliate"
+        },
+        {
+          "id": "root:scope",
+          "labelJa": "microscope"
+        },
+        {
+          "id": "root:gust",
+          "labelJa": "gustatory"
+        },
+        {
+          "id": "root:greg",
+          "labelJa": "gregarious"
+        }
+      ],
+      "answerId": "root:gust",
+      "explanationJa": "disgust と gustatory は「味・味わう」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hem",
+      "morphemeId": "root:hem",
+      "type": "word-family-recognition",
+      "questionJa": "「hemoglobin」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"hemoglobin\"?",
+      "choices": [
+        {
+          "id": "root:matr",
+          "labelJa": "maternity"
+        },
+        {
+          "id": "root:hem",
+          "labelJa": "hematology"
+        },
+        {
+          "id": "root:fid",
+          "labelJa": "confide"
+        },
+        {
+          "id": "root:fac",
+          "labelJa": "effect"
+        }
+      ],
+      "answerId": "root:hem",
+      "explanationJa": "hemoglobin と hematology は「血液」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:hist",
+      "morphemeId": "root:hist",
+      "type": "word-family-recognition",
+      "questionJa": "「histology」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"histology\"?",
+      "choices": [
+        {
+          "id": "root:hist",
+          "labelJa": "histological"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "permission"
+        },
+        {
+          "id": "root:cur-care",
+          "labelJa": "curious"
+        },
+        {
+          "id": "root:centr",
+          "labelJa": "concentration"
+        }
+      ],
+      "answerId": "root:hist",
+      "explanationJa": "histology と histological は「織物・組織」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:holo",
+      "morphemeId": "root:holo",
+      "type": "word-family-recognition",
+      "questionJa": "「holistic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"holistic\"?",
+      "choices": [
+        {
+          "id": "root:mov",
+          "labelJa": "promote"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "audition"
+        },
+        {
+          "id": "root:torqu",
+          "labelJa": "torque"
+        },
+        {
+          "id": "root:holo",
+          "labelJa": "holism"
+        }
+      ],
+      "answerId": "root:holo",
+      "explanationJa": "holistic と holism は「全体」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:ide",
+      "morphemeId": "root:ide",
+      "type": "word-family-recognition",
+      "questionJa": "「idea」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"idea\"?",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "description"
+        },
+        {
+          "id": "root:hydr",
+          "labelJa": "hydroelectric"
+        },
+        {
+          "id": "root:ide",
+          "labelJa": "ideal"
+        },
+        {
+          "id": "root:min",
+          "labelJa": "minor"
+        }
+      ],
+      "answerId": "root:ide",
+      "explanationJa": "idea と ideal は「形・考え」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:insul",
+      "morphemeId": "root:insul",
+      "type": "word-family-recognition",
+      "questionJa": "「insular」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"insular\"?",
+      "choices": [
+        {
+          "id": "root:mit",
+          "labelJa": "transmission"
+        },
+        {
+          "id": "root:insul",
+          "labelJa": "insulate"
+        },
+        {
+          "id": "root:sci",
+          "labelJa": "omniscient"
+        },
+        {
+          "id": "root:jud",
+          "labelJa": "judgment"
+        }
+      ],
+      "answerId": "root:insul",
+      "explanationJa": "insular と insulate は「島」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:iter",
+      "morphemeId": "root:iter",
+      "type": "word-family-recognition",
+      "questionJa": "「iterate」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"iterate\"?",
+      "choices": [
+        {
+          "id": "root:iter",
+          "labelJa": "iteration"
+        },
+        {
+          "id": "root:form",
+          "labelJa": "transform"
+        },
+        {
+          "id": "root:graph",
+          "labelJa": "graph"
+        },
+        {
+          "id": "root:sta",
+          "labelJa": "status"
+        }
+      ],
+      "answerId": "root:iter",
+      "explanationJa": "iterate と iteration は「繰り返す・再び」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:jud",
+      "morphemeId": "root:jud",
+      "type": "word-family-recognition",
+      "questionJa": "「judge」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"judge\"?",
+      "choices": [
+        {
+          "id": "root:manu",
+          "labelJa": "manipulate"
+        },
+        {
+          "id": "root:cosm",
+          "labelJa": "cosmology"
+        },
+        {
+          "id": "root:grat",
+          "labelJa": "congratulate"
+        },
+        {
+          "id": "root:jud",
+          "labelJa": "judgment"
+        }
+      ],
+      "answerId": "root:jud",
+      "explanationJa": "judge と judgment は「裁く・判断する」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lith",
+      "morphemeId": "root:lith",
+      "type": "word-family-recognition",
+      "questionJa": "「monolith」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"monolith\"?",
+      "choices": [
+        {
+          "id": "root:nomin",
+          "labelJa": "nomination"
+        },
+        {
+          "id": "root:struct",
+          "labelJa": "construction"
+        },
+        {
+          "id": "root:lith",
+          "labelJa": "lithography"
+        },
+        {
+          "id": "root:grat",
+          "labelJa": "grateful"
+        }
+      ],
+      "answerId": "root:lith",
+      "explanationJa": "monolith と lithography は「石」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:lud",
+      "morphemeId": "root:lud",
+      "type": "word-family-recognition",
+      "questionJa": "「illusion」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"illusion\"?",
+      "choices": [
+        {
+          "id": "root:fid",
+          "labelJa": "confidential"
+        },
+        {
+          "id": "root:lud",
+          "labelJa": "delusion"
+        },
+        {
+          "id": "root:clam",
+          "labelJa": "proclaim"
+        },
+        {
+          "id": "root:sal",
+          "labelJa": "salient"
+        }
+      ],
+      "answerId": "root:lud",
+      "explanationJa": "illusion と delusion は「遊ぶ」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:matr",
+      "morphemeId": "root:matr",
+      "type": "word-family-recognition",
+      "questionJa": "「maternal」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"maternal\"?",
+      "choices": [
+        {
+          "id": "root:matr",
+          "labelJa": "maternity"
+        },
+        {
+          "id": "root:mut",
+          "labelJa": "mutual"
+        },
+        {
+          "id": "root:cresc",
+          "labelJa": "decrease"
+        },
+        {
+          "id": "root:ver-true",
+          "labelJa": "verify"
+        }
+      ],
+      "answerId": "root:matr",
+      "explanationJa": "maternal と maternity は「母」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mnem",
+      "morphemeId": "root:mnem",
+      "type": "word-family-recognition",
+      "questionJa": "「mnemonic」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"mnemonic\"?",
+      "choices": [
+        {
+          "id": "root:quer",
+          "labelJa": "acquire"
+        },
+        {
+          "id": "root:mit",
+          "labelJa": "mission"
+        },
+        {
+          "id": "root:sent",
+          "labelJa": "consent"
+        },
+        {
+          "id": "root:mnem",
+          "labelJa": "mnemonics"
+        }
+      ],
+      "answerId": "root:mnem",
+      "explanationJa": "mnemonic と mnemonics は「記憶」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:mus",
+      "morphemeId": "root:mus",
+      "type": "word-family-recognition",
+      "questionJa": "「music」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"music\"?",
+      "choices": [
+        {
+          "id": "root:hist",
+          "labelJa": "histology"
+        },
+        {
+          "id": "root:lud",
+          "labelJa": "allude"
+        },
+        {
+          "id": "root:mus",
+          "labelJa": "museum"
+        },
+        {
+          "id": "root:gen",
+          "labelJa": "genus"
+        }
+      ],
+      "answerId": "root:mus",
+      "explanationJa": "music と museum は「芸術の女神・学芸」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:family-match:root:neur",
+      "morphemeId": "root:neur",
+      "type": "word-family-recognition",
+      "questionJa": "「neuron」と同じ語根・語基に関連する語はどれですか？",
+      "questionEn": "Which word is associated with the same root or base as \"neuron\"?",
+      "choices": [
+        {
+          "id": "root:sal",
+          "labelJa": "assault"
+        },
+        {
+          "id": "root:neur",
+          "labelJa": "neural"
+        },
+        {
+          "id": "root:spect",
+          "labelJa": "inspection"
+        },
+        {
+          "id": "root:viv",
+          "labelJa": "vivid"
+        }
+      ],
+      "answerId": "root:neur",
+      "explanationJa": "neuron と neural は「神経」の語根・語基を学ぶ例語として登録されています。個別の歴史的関係は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
