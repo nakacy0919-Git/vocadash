@@ -49,6 +49,13 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - **Now 3,920 records / 3,917 distinct headwords; 1,531 records / 1,529 distinct master headwords** matched. **7,124** of 8,653 master headwords lack any candidate breakdown. Not all are meaningfully decomposable.
 - `historicalEtymologyVerified=false`, `editorialReviewRequired=true`, `productionEligible=false` remain in effect. **0 newly approved records**, and **0 production deploys**.
 
+## Canonical meanings and teaching examples for batches 010–011 (2026-11-18)
+- All **84 active vocabulary batches** were read, and seven scoped evidence files (`master-evidence-01.json` ... `master-evidence-07.json`) retain **870 exact master word IDs** (446 targets and their component bases) with source sense IDs, Japanese meanings, original example sentences and source batch paths.
+- **All 446 new Word Breakdown drafts now have a master-sourced Japanese meaning, an existing English example and its existing Japanese translation.** Word-part base glosses are also populated from the corresponding canonical master sense. This is a copy/link from the project's own draft master, not a new generative example or a historical etymology verification.
+- The 84 two-base compounds additionally have individually written Japanese display glosses. **26 lexicalized or easily misread compounds** have specific semantic cautions. Where the hand-authored display gloss differs from a master sense, both are retained for editorial reconciliation.
+- The live application is not wired to these draft files. The original master files were not modified. Examples and definitions in the master itself also have draft editorial status.
+- Run `node tools/validate-voca-roots-master-first.mjs` to verify full ID/source/example reference integrity for the new batch, as well as `node tools/validate-voca-roots-word-breakdowns.mjs` for the entire Word Breakdown dataset.
+
 ## Critical editorial cautions
 1. **Historical roots and today's morphological segmentation are different things.** Do not teach `important` as if today's meaning literally follows from `im + port + ant`.
 2. A visual match in spelling cannot establish an etymological relationship. Even exact joined forms from an authored family are only candidate records.
