@@ -86,6 +86,7 @@ for (const item of records) {
 const matched = records.filter(item => item.wordId);
 const modern = records.filter(item => item.id.startsWith('wb:modern:'));
 const authored = records.filter(item => item.id.startsWith('wb:core:'));
+const curated = records.filter(item => item.id.startsWith('wb:curated:'));
 assert.equal(matched.length, manifest.counts.candidateIndexMatchedRows);
 assert.equal(matched.length, manifest.counts.fullMasterMatchedRows);
 assert.equal(new Set(matched.map(item => item.headword)).size,
@@ -94,11 +95,13 @@ assert.equal(new Set(matched.map(item => item.headword)).size,
   manifest.counts.fullMasterMatchedDistinctHeadwords);
 assert.equal(modern.length, manifest.counts.automatedModernDerivationCandidates);
 assert.equal(authored.length, manifest.counts.handAuthoredCoreRecords);
+assert.equal(curated.length, manifest.counts.curatedMasterRecords ?? 0);
+assert.equal(records.length, modern.length + authored.length + curated.length);
 assert.equal(records.length - matched.length, manifest.counts.unresolvedMasterRows);
 assert.equal(headwords.size - new Set(matched.map(item => item.headword)).size, manifest.counts.notIn8653MasterHeadwords);
 assert.equal(manifest.counts.fullyEditorialReviewed, 0);
 console.log(JSON.stringify({
   status: 'STRUCTURE_OK', records: records.length, headwords: headwords.size,
-  modernCandidates: modern.length, authored: authored.length,
+  modernCandidates: modern.length, authored: authored.length, curatedMasterRows: curated.length,
   matchedFullMasterRows: matched.length, productionEnabled: false
 }, null, 2));
