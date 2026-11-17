@@ -10,7 +10,11 @@ const morphology = read('data/voca-roots/manifest.json').files
   .filter(file => /^(roots|prefixes|suffixes)-\d+\.json$/.test(file))
   .flatMap(file => read('data/voca-roots/' + file).records);
 const morphIds = new Set(morphology.map(item => item.id));
-const candidates = read('data/vocabulary-drafts/candidate-index.json').entries;
+const master = read('data/voca-roots/word-breakdowns/full-master-index.json');
+const candidates = master.entries;
+assert.equal(master.counts.headwords, 8653);
+assert.equal(master.counts.senses, 9614);
+assert.equal(Object.keys(candidates).length, master.counts.headwords);
 const ids = records.map(item => item.id);
 const headwords = new Set(records.map(item => item.headword));
 const sourceCache = new Map();
@@ -25,6 +29,8 @@ for (const item of records) {
   assert.equal(item.parts.map(part => part.surface.replaceAll('-', '')).join(''), item.headword,
     'spelling reconstruction for ' + item.headword);
   assert.equal(item.wordId, candidates[item.headword]?.wordId ?? null);
+  assert.equal(item.cefrHeadword, candidates[item.headword]?.cefrHeadword ?? null);
+  assert.equal(item.matchStatus, candidates[item.headword] ? 'complete-master-exact' : 'not-in-8653-headword-master');
   assert.equal(item.status, 'draft-unreviewed');
   assert.equal(item.productionEligible, false);
   assert.equal(item.editorialReviewRequired, true);
@@ -48,14 +54,18 @@ const matched = records.filter(item => item.wordId);
 const modern = records.filter(item => item.id.startsWith('wb:modern:'));
 const authored = records.filter(item => item.id.startsWith('wb:core:'));
 assert.equal(matched.length, manifest.counts.candidateIndexMatchedRows);
+assert.equal(matched.length, manifest.counts.fullMasterMatchedRows);
 assert.equal(new Set(matched.map(item => item.headword)).size,
   manifest.counts.candidateIndexMatchedDistinctHeadwords);
+assert.equal(new Set(matched.map(item => item.headword)).size,
+  manifest.counts.fullMasterMatchedDistinctHeadwords);
 assert.equal(modern.length, manifest.counts.automatedModernDerivationCandidates);
 assert.equal(authored.length, manifest.counts.handAuthoredCoreRecords);
 assert.equal(records.length - matched.length, manifest.counts.unresolvedMasterRows);
+assert.equal(headwords.size - new Set(matched.map(item => item.headword)).size, manifest.counts.notIn8653MasterHeadwords);
 assert.equal(manifest.counts.fullyEditorialReviewed, 0);
 console.log(JSON.stringify({
   status: 'STRUCTURE_OK', records: records.length, headwords: headwords.size,
   modernCandidates: modern.length, authored: authored.length,
-  matchedIndexRows: matched.length, productionEnabled: false
+  matchedFullMasterRows: matched.length, productionEnabled: false
 }, null, 2));
