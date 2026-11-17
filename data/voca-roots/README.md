@@ -33,3 +33,10 @@ Extra associations are **editorial candidates** from explicitly authored lexical
 - `study-map-by-cefr.json` organizes all **800** existing learning units by A1–C2 master-word candidate links. **548** units have exact master-word candidate matches; **252** have none.
 - Entries are planning metadata, **not reviewed etymologies**, not published questions, and are not imported by the live UI. The map references existing morpheme IDs without adding new root claims.
 - Validate: `node tools/build-voca-roots-study-map.mjs --check`. Regenerate locally with `--write`.
+
+
+## Teaching pilot — 32 editable lesson drafts (2026-11-17)
+- Curated **32** lesson seeds (**16** roots, **7** prefixes, **9** suffixes) with **172** master-matched word placements (**166** distinct headwords).
+- Each record includes an English inquiry question, original practice sentence, Japanese hint/caution, and exact existing word IDs/CEFR levels.
+- All linguistic accuracy, meanings and sentences require editorial verification. These are **not** classroom-ready, not imported in the live application and not published.
+- Run `node tools/validate-voca-roots-teaching-pilot.mjs` to verify structural links, word IDs, candidate placement and unpublished status.

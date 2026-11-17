@@ -423,5 +423,21 @@
         }
       }
     }
+  },
+  "teachingPilot": {
+    "path": "data/voca-roots/teaching-pilot-20261117.json",
+    "validator": "tools/validate-voca-roots-teaching-pilot.mjs",
+    "status": "draft-unreviewed",
+    "productionEnabled": false,
+    "counts": {
+      "lessons": 32,
+      "candidateWordOccurrences": 172,
+      "distinctSelectedHeadwords": 166,
+      "byKind": {
+        "root": 16,
+        "prefix": 7,
+        "suffix": 9
+      }
+    }
   }
 }

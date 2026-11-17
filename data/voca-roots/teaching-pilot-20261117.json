@@ -1,0 +1,1844 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "20261117",
+  "status": "draft-unreviewed",
+  "productionEnabled": false,
+  "licenseNoteJa": "既存語彙IDのみ利用し、説明・問い・例文は独自制作。外部辞書の定義文転載なし。",
+  "cautionsJa": [
+    "語源は個別未校閲。公開授業や本番アプリに自動投入しない。",
+    "CEFR値はVocaDashの既存マスターを継承し、一般的なCEFR認定を保証しない。",
+    "例文と質問は草案。歴史的語源と現代の接辞分解を混同しない。"
+  ],
+  "counts": {
+    "lessons": 32,
+    "candidateWordOccurrences": 172,
+    "distinctSelectedHeadwords": 166,
+    "byKind": {
+      "root": 16,
+      "prefix": 7,
+      "suffix": 9
+    }
+  },
+  "lessons": [
+    {
+      "lessonId": "vr-20261117-root-port",
+      "morphemeId": "root:port",
+      "morphemeKind": "root",
+      "hintMeaningJa": "運ぶ・持ち運ぶ",
+      "candidates": [
+        {
+          "headword": "transport",
+          "wordId": "VD-04278",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "transportation",
+          "wordId": "VD-04279",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "export",
+          "wordId": "VD-05211",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "import",
+          "wordId": "VD-05478",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "portable",
+          "wordId": "VD-07455",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 5,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "What kinds of goods do countries import and export?",
+      "practiceSentenceEn": "Our city imports coffee from other countries.",
+      "teacherNoteJa": "important は歴史的に関連しても「重要な」を単純に「運ぶ」から説明しない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-dict",
+      "morphemeId": "root:dict",
+      "morphemeKind": "root",
+      "hintMeaningJa": "言う・述べる",
+      "candidates": [
+        {
+          "headword": "predict",
+          "wordId": "VD-01889",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "prediction",
+          "wordId": "VD-01890",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "contradict",
+          "wordId": "VD-04865",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "contradiction",
+          "wordId": "VD-04866",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "dictator",
+          "wordId": "VD-05010",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "verdict",
+          "wordId": "VD-07746",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How are predict and prediction connected?",
+      "practiceSentenceEn": "The report predicts an increase in rainfall.",
+      "teacherNoteJa": "語形の変化を観察し、現代英語では意味が離れた語を直訳で説明しない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-scrib",
+      "morphemeId": "root:scrib",
+      "morphemeKind": "root",
+      "hintMeaningJa": "書く",
+      "candidates": [
+        {
+          "headword": "describe",
+          "wordId": "VD-00243",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "description",
+          "wordId": "VD-01372",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "inscribe",
+          "wordId": "VD-03325",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "inscription",
+          "wordId": "VD-03326",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "descriptive",
+          "wordId": "VD-04991",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "indescribable",
+          "wordId": "VD-05503",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "What changes when describe becomes description?",
+      "practiceSentenceEn": "Describe the picture in three sentences.",
+      "teacherNoteJa": "語根の異形 scrib / script を扱う。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-aud",
+      "morphemeId": "root:aud",
+      "morphemeKind": "root",
+      "hintMeaningJa": "聞く",
+      "candidates": [
+        {
+          "headword": "audience",
+          "wordId": "VD-01147",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "audio",
+          "wordId": "VD-01148",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "audition",
+          "wordId": "VD-04585",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 3,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How are audio and audition related to hearing?",
+      "practiceSentenceEn": "The audition begins at ten.",
+      "teacherNoteJa": "audience は「聴衆」から広がった意味も持つ。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-vis",
+      "morphemeId": "root:vis",
+      "morphemeKind": "root",
+      "hintMeaningJa": "見る",
+      "candidates": [
+        {
+          "headword": "visible",
+          "wordId": "VD-04379",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "vision",
+          "wordId": "VD-04380",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "visual",
+          "wordId": "VD-04381",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "visually",
+          "wordId": "VD-04382",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "invisible",
+          "wordId": "VD-05577",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "visibly",
+          "wordId": "VD-06786",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "What is visible in this picture?",
+      "practiceSentenceEn": "The mountains are clearly visible.",
+      "teacherNoteJa": "video や revise などは単純な現代の接辞分解とは分けて説明する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-bio",
+      "morphemeId": "root:bio",
+      "morphemeKind": "root",
+      "hintMeaningJa": "生命・生活",
+      "candidates": [
+        {
+          "headword": "biography",
+          "wordId": "VD-02508",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "biology",
+          "wordId": "VD-02509",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "biological",
+          "wordId": "VD-04638",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "biotechnology",
+          "wordId": "VD-04639",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 4,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "How do biology and biography both involve life?",
+      "practiceSentenceEn": "My sister studies biology.",
+      "teacherNoteJa": "生物学と人物伝を「生命・生涯」の異なる用法として比較する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-geo",
+      "morphemeId": "root:geo",
+      "morphemeKind": "root",
+      "hintMeaningJa": "地球・土地",
+      "candidates": [
+        {
+          "headword": "geographical",
+          "wordId": "VD-03145",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "geography",
+          "wordId": "VD-03146",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "geology",
+          "wordId": "VD-03147",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "geological",
+          "wordId": "VD-07214",
+          "cefrHeadword": "C1"
+        },
+        {
+          "headword": "geologically",
+          "wordId": "VD-07215",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 5,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "How do geography and geology differ?",
+      "practiceSentenceEn": "Geography helps us understand our world.",
+      "teacherNoteJa": "接尾要素 graphy / logy も併せて比較する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-photo",
+      "morphemeId": "root:photo",
+      "morphemeKind": "root",
+      "hintMeaningJa": "光",
+      "candidates": [
+        {
+          "headword": "photo",
+          "wordId": "VD-00691",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "photograph",
+          "wordId": "VD-01848",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "photographer",
+          "wordId": "VD-01849",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "photography",
+          "wordId": "VD-01850",
+          "cefrHeadword": "A2"
+        }
+      ],
+      "candidateCount": 4,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "Why does photograph contain a part related to light?",
+      "practiceSentenceEn": "Her photograph shows the sunrise.",
+      "teacherNoteJa": "photo は現代英語で写真の省略形として独立して使われる。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-graph",
+      "morphemeId": "root:graph",
+      "morphemeKind": "root",
+      "hintMeaningJa": "書く・記録する",
+      "candidates": [
+        {
+          "headword": "photograph",
+          "wordId": "VD-01848",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "photographer",
+          "wordId": "VD-01849",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "photography",
+          "wordId": "VD-01850",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "biography",
+          "wordId": "VD-02508",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "graph",
+          "wordId": "VD-03176",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "graphic",
+          "wordId": "VD-03177",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "What do graph and photograph help us record?",
+      "practiceSentenceEn": "The graph shows a steady increase.",
+      "teacherNoteJa": "graph には現代の名詞・動詞用法もあるため語史との違いを示す。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-tele",
+      "morphemeId": "root:tele",
+      "morphemeKind": "root",
+      "hintMeaningJa": "遠く",
+      "candidates": [
+        {
+          "headword": "telephone",
+          "wordId": "VD-00912",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "television",
+          "wordId": "VD-00913",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "telescope",
+          "wordId": "VD-06562",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "telescopic",
+          "wordId": "VD-08567",
+          "cefrHeadword": "C2"
+        }
+      ],
+      "candidateCount": 4,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "What can a telescope help us see from far away?",
+      "practiceSentenceEn": "The telescope helps us observe the moon.",
+      "teacherNoteJa": "tele- と現代の接頭辞の扱いは学術結合形として説明する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-tract",
+      "morphemeId": "root:tract",
+      "morphemeKind": "root",
+      "hintMeaningJa": "引く",
+      "candidates": [
+        {
+          "headword": "attractive",
+          "wordId": "VD-01146",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "attract",
+          "wordId": "VD-02455",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "attraction",
+          "wordId": "VD-02456",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "distract",
+          "wordId": "VD-05053",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "distraction",
+          "wordId": "VD-05054",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "extract",
+          "wordId": "VD-05217",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "subtract",
+          "wordId": "VD-06510",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 7,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How do attract and distract differ?",
+      "practiceSentenceEn": "The museum attracts many visitors.",
+      "teacherNoteJa": "字面だけから機械的に現代の意味を導かない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-form",
+      "morphemeId": "root:form",
+      "morphemeKind": "root",
+      "hintMeaningJa": "形・形づくる",
+      "candidates": [
+        {
+          "headword": "form",
+          "wordId": "VD-00360",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "formal",
+          "wordId": "VD-03093",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "transform",
+          "wordId": "VD-04274",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "transformation",
+          "wordId": "VD-04275",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "informal",
+          "wordId": "VD-05526",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "reform",
+          "wordId": "VD-06189",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "What can transform a community?",
+      "practiceSentenceEn": "Technology can transform education.",
+      "teacherNoteJa": "form を語基として扱う場合と歴史的な語族のつながりを分ける。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-cred",
+      "morphemeId": "root:cred",
+      "morphemeKind": "root",
+      "hintMeaningJa": "信じる",
+      "candidates": [
+        {
+          "headword": "credit",
+          "wordId": "VD-01338",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "incredible",
+          "wordId": "VD-03297",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "incredibly",
+          "wordId": "VD-03298",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "discredit",
+          "wordId": "VD-05029",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "credibility",
+          "wordId": "VD-07044",
+          "cefrHeadword": "C1"
+        },
+        {
+          "headword": "credible",
+          "wordId": "VD-07045",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "What makes a source credible?",
+      "practiceSentenceEn": "Check whether the source is credible.",
+      "teacherNoteJa": "credit の現代的な金融上の意味には語義変化がある。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-ject",
+      "morphemeId": "root:ject",
+      "morphemeKind": "root",
+      "hintMeaningJa": "投げる",
+      "candidates": [
+        {
+          "headword": "inject",
+          "wordId": "VD-03317",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "reject",
+          "wordId": "VD-03890",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "injection",
+          "wordId": "VD-05532",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "project",
+          "wordId": "VD-06100",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "projection",
+          "wordId": "VD-06101",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "rejection",
+          "wordId": "VD-06203",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "Why might reject and project have an old idea in common?",
+      "practiceSentenceEn": "The committee rejected the proposal.",
+      "teacherNoteJa": "語源的関連は説明できても現代の直訳で意味を作らない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-struct",
+      "morphemeId": "root:struct",
+      "morphemeKind": "root",
+      "hintMeaningJa": "組み立てる",
+      "candidates": [
+        {
+          "headword": "structure",
+          "wordId": "VD-02131",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "construct",
+          "wordId": "VD-02716",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "construction",
+          "wordId": "VD-02717",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "destruction",
+          "wordId": "VD-02840",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "instruction",
+          "wordId": "VD-03335",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "instructor",
+          "wordId": "VD-03336",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "What is the difference between construction and destruction?",
+      "practiceSentenceEn": "Construction of the bridge began in April.",
+      "teacherNoteJa": "destroy と destruction は現代の綴り一致に頼らず語史を確認する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-root-chron",
+      "morphemeId": "root:chron",
+      "morphemeKind": "root",
+      "hintMeaningJa": "時間",
+      "candidates": [
+        {
+          "headword": "chronological",
+          "wordId": "VD-02640",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "chronologically",
+          "wordId": "VD-07907",
+          "cefrHeadword": "C2"
+        },
+        {
+          "headword": "chronology",
+          "wordId": "VD-07908",
+          "cefrHeadword": "C2"
+        }
+      ],
+      "candidateCount": 3,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "How do you put events in chronological order?",
+      "practiceSentenceEn": "Put the events in chronological order.",
+      "teacherNoteJa": "時系列の表現と接尾辞 -ly の変化を扱う。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-re",
+      "morphemeId": "prefix:re",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "再び・戻って",
+      "candidates": [
+        {
+          "headword": "rebuild",
+          "wordId": "VD-03861",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "rewrite",
+          "wordId": "VD-03945",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "reconsider",
+          "wordId": "VD-06178",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "rejoin",
+          "wordId": "VD-06204",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "repaint",
+          "wordId": "VD-06221",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "reprint",
+          "wordId": "VD-06228",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "What changes when we add re- to write?",
+      "practiceSentenceEn": "Please rewrite the final paragraph.",
+      "teacherNoteJa": "re- が付くすべての語が単純に「再び」を意味するわけではない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-un-negative",
+      "morphemeId": "prefix:un-negative",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "〜でない",
+      "candidates": [
+        {
+          "headword": "uncertain",
+          "wordId": "VD-02225",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "unfair",
+          "wordId": "VD-02230",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "unhappy",
+          "wordId": "VD-02233",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "unhealthy",
+          "wordId": "VD-02234",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "unimportant",
+          "wordId": "VD-02236",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "unknown",
+          "wordId": "VD-02239",
+          "cefrHeadword": "A2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does un- change the meaning of happy?",
+      "practiceSentenceEn": "She felt unhappy with the decision.",
+      "teacherNoteJa": "否定の un- と動作を元に戻す un- を区別する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-dis",
+      "morphemeId": "prefix:dis",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "否定・逆方向",
+      "candidates": [
+        {
+          "headword": "disagree",
+          "wordId": "VD-01391",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "dishonest",
+          "wordId": "VD-01398",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "dislike",
+          "wordId": "VD-01399",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "disapprove",
+          "wordId": "VD-05024",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "disconnect",
+          "wordId": "VD-05028",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "disqualify",
+          "wordId": "VD-05045",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does dis- change agree?",
+      "practiceSentenceEn": "I disagree with the conclusion.",
+      "teacherNoteJa": "dis- の否定・分離・逆転などの複数機能を区別する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-mis",
+      "morphemeId": "prefix:mis",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "誤って・悪く",
+      "candidates": [
+        {
+          "headword": "mislead",
+          "wordId": "VD-03511",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "misunderstanding",
+          "wordId": "VD-03514",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "misconception",
+          "wordId": "VD-05748",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "mistreat",
+          "wordId": "VD-05753",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "misunderstand",
+          "wordId": "VD-05755",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 5,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "What can happen when we misunderstand a message?",
+      "practiceSentenceEn": "I misunderstood the instructions.",
+      "teacherNoteJa": "綴りの一致だけでなく元の語と意味の関係を見る。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-over",
+      "morphemeId": "prefix:over",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "過度に・上を",
+      "candidates": [
+        {
+          "headword": "overweight",
+          "wordId": "VD-01816",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "overwork",
+          "wordId": "VD-03659",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "overbook",
+          "wordId": "VD-05904",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "overestimate",
+          "wordId": "VD-05907",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "overhear",
+          "wordId": "VD-05908",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "overshadow",
+          "wordId": "VD-05912",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How do overwork and overhear differ in meaning?",
+      "practiceSentenceEn": "Do not overestimate the results.",
+      "teacherNoteJa": "overhear は単に「聞きすぎる」ではなく「偶然耳にする」である。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-under",
+      "morphemeId": "prefix:under",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "下に・不足して",
+      "candidates": [
+        {
+          "headword": "underestimate",
+          "wordId": "VD-06689",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "undergraduate",
+          "wordId": "VD-06690",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "underground",
+          "wordId": "VD-06691",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 3,
+      "earliestLevel": "B2",
+      "inquiryQuestionEn": "How are underground and underestimate different?",
+      "practiceSentenceEn": "Do not underestimate the difficulty.",
+      "teacherNoteJa": "undergraduate は現在の意味を under + graduate の単純和として説明しない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-prefix-pre",
+      "morphemeId": "prefix:pre",
+      "morphemeKind": "prefix",
+      "hintMeaningJa": "前もって",
+      "candidates": [
+        {
+          "headword": "preschool",
+          "wordId": "VD-03767",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "preconception",
+          "wordId": "VD-08386",
+          "cefrHeadword": "C2"
+        },
+        {
+          "headword": "presuppose",
+          "wordId": "VD-08395",
+          "cefrHeadword": "C2"
+        }
+      ],
+      "candidateCount": 3,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "What does pre- suggest in preschool?",
+      "practiceSentenceEn": "The children attend preschool.",
+      "teacherNoteJa": "pre- の位置と先行を表す意味を文脈とともに確認する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-able",
+      "morphemeId": "suffix:able",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "〜できる・〜に適した",
+      "candidates": [
+        {
+          "headword": "acceptable",
+          "wordId": "VD-01068",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "achievable",
+          "wordId": "VD-04460",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "affordable",
+          "wordId": "VD-04490",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "breakable",
+          "wordId": "VD-04676",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "readable",
+          "wordId": "VD-07504",
+          "cefrHeadword": "C1"
+        },
+        {
+          "headword": "sustainable",
+          "wordId": "VD-07664",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does -able change the meaning of read?",
+      "practiceSentenceEn": "The instructions are easy to read and fully readable.",
+      "teacherNoteJa": "派生元の動詞や形容詞によって意味・綴りが変わる。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-less",
+      "morphemeId": "suffix:less",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "〜がない",
+      "candidates": [
+        {
+          "headword": "careless",
+          "wordId": "VD-02594",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "homeless",
+          "wordId": "VD-03245",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "hopeless",
+          "wordId": "VD-03253",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "useless",
+          "wordId": "VD-04352",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "harmless",
+          "wordId": "VD-05389",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "effortless",
+          "wordId": "VD-07125",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "B1",
+      "inquiryQuestionEn": "How does hopeless differ from hopeful?",
+      "practiceSentenceEn": "No problem is entirely hopeless.",
+      "teacherNoteJa": "careless は文脈により「注意不足」を表し、「ケアがない」の直訳とは異なる。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ful",
+      "morphemeId": "suffix:ful",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "〜に満ちた・〜を持つ",
+      "candidates": [
+        {
+          "headword": "careful",
+          "wordId": "VD-00158",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "successful",
+          "wordId": "VD-00882",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "helpful",
+          "wordId": "VD-01594",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "useful",
+          "wordId": "VD-02248",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "hopeful",
+          "wordId": "VD-03251",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "meaningful",
+          "wordId": "VD-03475",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "How does helpful differ from help?",
+      "practiceSentenceEn": "Your advice was very helpful.",
+      "teacherNoteJa": "-ful は名詞 full と綴り・機能が異なる。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ment",
+      "morphemeId": "suffix:ment",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "行為・結果・状態を表す名詞",
+      "candidates": [
+        {
+          "headword": "government",
+          "wordId": "VD-01558",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "achievement",
+          "wordId": "VD-02340",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "agreement",
+          "wordId": "VD-02369",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "assignment",
+          "wordId": "VD-02441",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "development",
+          "wordId": "VD-02847",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "improvement",
+          "wordId": "VD-03290",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does development relate to develop?",
+      "practiceSentenceEn": "The program supports local development.",
+      "teacherNoteJa": "government など語義の広がりがあるため接尾辞だけで全体の意味を決めない。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ness",
+      "morphemeId": "suffix:ness",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "性質・状態を表す名詞",
+      "candidates": [
+        {
+          "headword": "happiness",
+          "wordId": "VD-01582",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "awareness",
+          "wordId": "VD-02462",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "carelessness",
+          "wordId": "VD-02596",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "darkness",
+          "wordId": "VD-02782",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "kindness",
+          "wordId": "VD-03387",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "loneliness",
+          "wordId": "VD-05671",
+          "cefrHeadword": "B2"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does happiness differ from happy?",
+      "practiceSentenceEn": "Small acts of kindness can make a difference.",
+      "teacherNoteJa": "形容詞からの名詞化と綴りの変化を学ぶ。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ion",
+      "morphemeId": "suffix:ion",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "行為・結果を表す名詞",
+      "candidates": [
+        {
+          "headword": "action",
+          "wordId": "VD-00008",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "communication",
+          "wordId": "VD-01296",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "discussion",
+          "wordId": "VD-01397",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "education",
+          "wordId": "VD-01427",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "prediction",
+          "wordId": "VD-01890",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "construction",
+          "wordId": "VD-02717",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "How does prediction relate to predict?",
+      "practiceSentenceEn": "Her prediction was correct.",
+      "teacherNoteJa": "-ion と -tion / -sion は学習用の綴り変異も扱う。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ity",
+      "morphemeId": "suffix:ity",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "性質・状態を表す名詞",
+      "candidates": [
+        {
+          "headword": "ability",
+          "wordId": "VD-01065",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "creativity",
+          "wordId": "VD-01336",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "equality",
+          "wordId": "VD-02988",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "complexity",
+          "wordId": "VD-04820",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "flexibility",
+          "wordId": "VD-05272",
+          "cefrHeadword": "B2"
+        },
+        {
+          "headword": "diversity",
+          "wordId": "VD-07104",
+          "cefrHeadword": "C1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A2",
+      "inquiryQuestionEn": "How does equality relate to equal?",
+      "practiceSentenceEn": "Education can promote equality.",
+      "teacherNoteJa": "対応する形容詞と語形変化を個別に確認する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-er-agent",
+      "morphemeId": "suffix:er-agent",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "〜する人・もの",
+      "candidates": [
+        {
+          "headword": "driver",
+          "wordId": "VD-00272",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "reader",
+          "wordId": "VD-00740",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "teacher",
+          "wordId": "VD-00909",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "writer",
+          "wordId": "VD-01050",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "manager",
+          "wordId": "VD-01725",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "designer",
+          "wordId": "VD-02834",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "How does driver relate to drive?",
+      "practiceSentenceEn": "The driver stopped at the crossing.",
+      "teacherNoteJa": "-er は比較級など他の機能もあるので、行為者接尾辞と区別する。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "lessonId": "vr-20261117-suffix-ly-adverb",
+      "morphemeId": "suffix:ly-adverb",
+      "morphemeKind": "suffix",
+      "hintMeaningJa": "〜に・〜く",
+      "candidates": [
+        {
+          "headword": "carefully",
+          "wordId": "VD-00159",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "quickly",
+          "wordId": "VD-00732",
+          "cefrHeadword": "A1"
+        },
+        {
+          "headword": "clearly",
+          "wordId": "VD-01277",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "easily",
+          "wordId": "VD-01424",
+          "cefrHeadword": "A2"
+        },
+        {
+          "headword": "accurately",
+          "wordId": "VD-02336",
+          "cefrHeadword": "B1"
+        },
+        {
+          "headword": "beautifully",
+          "wordId": "VD-02493",
+          "cefrHeadword": "B1"
+        }
+      ],
+      "candidateCount": 6,
+      "earliestLevel": "A1",
+      "inquiryQuestionEn": "How does quickly describe an action?",
+      "practiceSentenceEn": "She spoke clearly during the presentation.",
+      "teacherNoteJa": "-ly のすべてが副詞になるわけではない。easily では y→i の綴り変化がある。",
+      "lessonSequence": [
+        "notice",
+        "compare",
+        "explain",
+        "use-in-context",
+        "exit-ticket"
+      ],
+      "sourceMap": "data/voca-roots/study-map-by-cefr.json",
+      "validationFlags": {
+        "wordIdsExactMasterMatched": true,
+        "etymologyReviewed": false,
+        "meaningReviewed": false,
+        "sentenceReviewed": false
+      },
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
