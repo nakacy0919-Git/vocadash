@@ -1,0 +1,47 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+
+const directory = 'data/voca-roots/word-breakdowns/';
+const read = (file) => JSON.parse(fs.readFileSync(directory + file, 'utf8'));
+const master = read('full-master-index.json');
+const manifest = read('manifest.json');
+const batch = read('master-curated-012.json');
+const coverage = read('coverage-report-20261117.json');
+const earlier = manifest.files.filter(f => f !== 'master-curated-012.json').flatMap(f => read(f).records);
+const existingWords = new Set(earlier.map(r => r.headword));
+const existingIds = new Set(earlier.map(r => r.id));
+const seenWords = new Set();
+const newCounts = { prefix: 0, suffix: 0 };
+assert.equal(master.counts.headwords, 8653);
+assert.equal(manifest.productionEnabled, false);
+assert.equal(batch.productionEnabled, false);
+assert.equal(batch.records.length, batch.counts.records);
+for (const record of batch.records) {
+  assert.ok(!seenWords.has(record.headword), 'new duplicate: ' + record.headword);
+  assert.ok(!existingWords.has(record.headword), 'existing duplicate: ' + record.headword);
+  assert.ok(!existingIds.has(record.id), 'record ID duplicate: ' + record.id);
+  seenWords.add(record.headword);
+  assert.equal(record.wordId, master.entries[record.headword]?.wordId);
+  assert.equal(record.baseWordId, master.entries[record.baseHeadword]?.wordId);
+  assert.equal(record.cefrHeadword, master.entries[record.headword]?.cefrHeadword);
+  assert.equal(record.matchStatus, 'complete-master-exact');
+  assert.equal(record.parts.map(p => p.surface.replaceAll('-', '')).join(''), record.headword);
+  assert.ok(record.parts.every(p => p.surface && p.meaningJa));
+  assert.ok(record.explanationJa && record.learningQuestionJa && record.imageHintJa);
+  assert.equal(record.historicalEtymologyVerified, false);
+  assert.equal(record.semanticEditorialReviewRequired, true);
+  assert.equal(record.editorialReviewRequired, true);
+  assert.equal(record.productionEligible, false);
+  assert.equal(record.status, 'draft-unreviewed');
+  assert.equal(record.meaningSource, 'original-editorial-draft-not-master-sense-verified');
+  assert.equal(record.sourceRefs.length, 0);
+  const type = record.analysisType.includes('prefix') ? 'prefix' : 'suffix';
+  assert.ok(record.analysisType.includes(type));
+  newCounts[type]++;
+}
+assert.deepEqual(newCounts, { prefix: batch.counts.prefix, suffix: batch.counts.suffix });
+assert.equal(manifest.counts.records, earlier.length + batch.records.length);
+assert.equal(manifest.counts.distinctHeadwords, new Set([...existingWords, ...seenWords]).size);
+assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords, manifest.counts.fullMasterMatchedDistinctHeadwords);
+assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords, 8653 - manifest.counts.fullMasterMatchedDistinctHeadwords);
+console.log(JSON.stringify({status:'STRUCTURE_OK',added:batch.records.length,coverage:manifest.counts.fullMasterMatchedDistinctHeadwords,productionEnabled:false},null,2));
