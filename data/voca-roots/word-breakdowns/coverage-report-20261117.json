@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-17",
+  "publicationStatus": "development-draft-only",
+  "master": {
+    "headwords": 8653,
+    "senses": 9614,
+    "activeBatches": 84
+  },
+  "wordBreakdown": {
+    "records": 3385,
+    "distinctHeadwords": 3382,
+    "matchedMasterRows": 996,
+    "matchedMasterDistinctHeadwords": 994,
+    "notInMasterDistinctHeadwords": 2388,
+    "uncoveredMasterHeadwords": 7659
+  },
+  "coverageByLevel": [
+    {
+      "cefr": "A1",
+      "masterHeadwords": 1064,
+      "breakdownHeadwords": 27,
+      "uncoveredHeadwords": 1037,
+      "percent": 2.5
+    },
+    {
+      "cefr": "A2",
+      "masterHeadwords": 1243,
+      "breakdownHeadwords": 101,
+      "uncoveredHeadwords": 1142,
+      "percent": 8.1
+    },
+    {
+      "cefr": "B1",
+      "masterHeadwords": 2139,
+      "breakdownHeadwords": 288,
+      "uncoveredHeadwords": 1851,
+      "percent": 13.5
+    },
+    {
+      "cefr": "B2",
+      "masterHeadwords": 2417,
+      "breakdownHeadwords": 342,
+      "uncoveredHeadwords": 2075,
+      "percent": 14.1
+    },
+    {
+      "cefr": "C1",
+      "masterHeadwords": 914,
+      "breakdownHeadwords": 145,
+      "uncoveredHeadwords": 769,
+      "percent": 15.9
+    },
+    {
+      "cefr": "C2",
+      "masterHeadwords": 876,
+      "breakdownHeadwords": 91,
+      "uncoveredHeadwords": 785,
+      "percent": 10.4
+    }
+  ],
+  "notesJa": "意味・形態・歴史語源の校閲が完了したことを意味しない。未収録語には語源分解に適さない単語も含む。A1〜C2の各レベルは既存マスターの分類をそのまま集計。"
+}
