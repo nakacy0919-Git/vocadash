@@ -1,0 +1,2188 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-unreviewed",
+  "productionEnabled": false,
+  "sourceMorphemes": "data/voca-roots/roots-001..010.json",
+  "sourceCandidateIndex": "data/voca-roots/word-breakdowns/master-first-family-bridge-20261118.json",
+  "factCheckingNote": "The source etymologies and family membership are unreviewed candidates; these are not approved statements of historical derivation.",
+  "counts": {
+    "stories": 63,
+    "totalCandidateLinks": 86,
+    "multiWordStories": 18
+  },
+  "stories": [
+    {
+      "id": "story:root:ordin",
+      "morphemeId": "root:ordin",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "ordin",
+        "order"
+      ],
+      "learningMeaningJa": "順序",
+      "historicalOriginCandidate": "Latin ordo (ordinis)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05036",
+        "VD-05037",
+        "VD-07304"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05036",
+          "headword": "disorder",
+          "meaningJa": "混乱・無秩序",
+          "breakdownId": "wb:modern:disorder"
+        },
+        {
+          "wordId": "VD-05037",
+          "headword": "disorderly",
+          "meaningJa": "無秩序な",
+          "breakdownId": "wb:modern:disorderly"
+        },
+        {
+          "wordId": "VD-07304",
+          "headword": "insubordinate",
+          "meaningJa": "不服従の",
+          "breakdownId": "wb:modern:insubordinate"
+        }
+      ],
+      "teachingStoryJa": "「ordin/order」（順序）という学習上の共通イメージを手がかりに、disorder（混乱・無秩序）、disorderly（無秩序な）、insubordinate（不服従の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "disorder・disorderly・insubordinate に共通する意味の核は何だろう？",
+      "imageHintJa": "番号順に並ぶ本",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:prob",
+      "morphemeId": "root:prob",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "prob",
+        "prov"
+      ],
+      "learningMeaningJa": "試す・認める",
+      "historicalOriginCandidate": "Latin probare / probus",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05023"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05023",
+          "headword": "disapproval",
+          "meaningJa": "不賛成・非難",
+          "breakdownId": "wb:modern:disapproval"
+        }
+      ],
+      "teachingStoryJa": "「prob/prov」（試す・認める）という学習上の共通イメージを手がかりに、disapproval（不賛成・非難） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "disapproval に共通する意味の核は何だろう？",
+      "imageHintJa": "製品の性能を検査する人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.etymonline.com/it/word/prove",
+        "https://www.etymonline.com/word/provable"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:cred",
+      "morphemeId": "root:cred",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "cred"
+      ],
+      "learningMeaningJa": "信じる",
+      "historicalOriginCandidate": "Latin credere",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05029"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05029",
+          "headword": "discredit",
+          "meaningJa": "信用を失わせる",
+          "breakdownId": "wb:modern:discredit"
+        }
+      ],
+      "teachingStoryJa": "「cred」（信じる）という学習上の共通イメージを手がかりに、discredit（信用を失わせる） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "discredit に共通する意味の核は何だろう？",
+      "imageHintJa": "相手を信頼して手を差し伸べる人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:plac",
+      "morphemeId": "root:plac",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "plac",
+        "pleas"
+      ],
+      "learningMeaningJa": "喜ばせる・なだめる",
+      "historicalOriginCandidate": "Latin placere / placare",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05041"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05041",
+          "headword": "displeasure",
+          "meaningJa": "不満・不快",
+          "breakdownId": "wb:modern:displeasure"
+        }
+      ],
+      "teachingStoryJa": "「plac/pleas」（喜ばせる・なだめる）という学習上の共通イメージを手がかりに、displeasure（不満・不快） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "displeasure に共通する意味の核は何だろう？",
+      "imageHintJa": "相手を安心させて笑顔にする人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.etymonline.com/word/placate"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:sat",
+      "morphemeId": "root:sat",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "sat",
+        "satis"
+      ],
+      "learningMeaningJa": "十分",
+      "historicalOriginCandidate": "Latin satis",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05048"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05048",
+          "headword": "dissatisfaction",
+          "meaningJa": "不満",
+          "breakdownId": "wb:modern:dissatisfaction"
+        }
+      ],
+      "teachingStoryJa": "「sat/satis」（十分）という学習上の共通イメージを手がかりに、dissatisfaction（不満） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "dissatisfaction に共通する意味の核は何だろう？",
+      "imageHintJa": "満杯になったグラス",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:duc",
+      "morphemeId": "root:duc",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "duc",
+        "duct"
+      ],
+      "learningMeaningJa": "導く",
+      "historicalOriginCandidate": "Latin ducere",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03791",
+        "VD-03912"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03791",
+          "headword": "productive",
+          "meaningJa": "生産的な・実りある",
+          "breakdownId": "wb:modern:productive"
+        },
+        {
+          "wordId": "VD-03912",
+          "headword": "reproduce",
+          "meaningJa": "再現する・複製する",
+          "breakdownId": "wb:modern:reproduce"
+        }
+      ],
+      "teachingStoryJa": "「duc/duct」（導く）という学習上の共通イメージを手がかりに、productive（生産的な・実りある）、reproduce（再現する・複製する） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "productive・reproduce に共通する意味の核は何だろう？",
+      "imageHintJa": "案内人が集団を道へ導く",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:ag",
+      "morphemeId": "root:ag",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "ag",
+        "act"
+      ],
+      "learningMeaningJa": "行う・動かす",
+      "historicalOriginCandidate": "Latin agere (actus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02345",
+        "VD-03856"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02345",
+          "headword": "active",
+          "meaningJa": "活動的な・活発な",
+          "breakdownId": "wb:modern:active"
+        },
+        {
+          "wordId": "VD-03856",
+          "headword": "react",
+          "meaningJa": "反応する",
+          "breakdownId": "wb:modern:react"
+        }
+      ],
+      "teachingStoryJa": "「ag/act」（行う・動かす）という学習上の共通イメージを手がかりに、active（活動的な・活発な）、react（反応する） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "active・react に共通する意味の核は何だろう？",
+      "imageHintJa": "人が自らボタンを押して機械を動かす",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:clam",
+      "morphemeId": "root:clam",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "clam",
+        "claim"
+      ],
+      "learningMeaningJa": "叫ぶ・呼ぶ",
+      "historicalOriginCandidate": "Latin clamare",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03865"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03865",
+          "headword": "reclaim",
+          "meaningJa": "取り戻す",
+          "breakdownId": "wb:modern:reclaim"
+        }
+      ],
+      "teachingStoryJa": "「clam/claim」（叫ぶ・呼ぶ）という学習上の共通イメージを手がかりに、reclaim（取り戻す） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "reclaim に共通する意味の核は何だろう？",
+      "imageHintJa": "広場で声を上げる人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:form",
+      "morphemeId": "root:form",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "form"
+      ],
+      "learningMeaningJa": "形・形づくる",
+      "historicalOriginCandidate": "Latin forma",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07200",
+        "VD-06189"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07200",
+          "headword": "formality",
+          "meaningJa": "形式的手続き・形式ばった態度",
+          "breakdownId": "wb:modern:formality"
+        },
+        {
+          "wordId": "VD-06189",
+          "headword": "reform",
+          "meaningJa": "改革",
+          "breakdownId": "wb:modern:reform"
+        }
+      ],
+      "teachingStoryJa": "「form」（形・形づくる）という学習上の共通イメージを手がかりに、formality（形式的手続き・形式ばった態度）、reform（改革） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "formality・reform に共通する意味の核は何だろう？",
+      "imageHintJa": "粘土を手で形づくる",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:lead-guide",
+      "morphemeId": "root:lead-guide",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "lead"
+      ],
+      "learningMeaningJa": "導く",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05750"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05750",
+          "headword": "misleading",
+          "meaningJa": "誤解を招く",
+          "breakdownId": "wb:modern:misleading"
+        }
+      ],
+      "teachingStoryJa": "「lead」（導く）という学習上の共通イメージを手がかりに、misleading（誤解を招く） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "misleading に共通する意味の核は何だろう？",
+      "imageHintJa": "集団の先頭で道案内をする人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:hear-base",
+      "morphemeId": "root:hear-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "hear",
+        "heard"
+      ],
+      "learningMeaningJa": "聞く",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05908"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05908",
+          "headword": "overhear",
+          "meaningJa": "偶然耳にする",
+          "breakdownId": "wb:modern:overhear"
+        }
+      ],
+      "teachingStoryJa": "「hear/heard」（聞く）という学習上の共通イメージを手がかりに、overhear（偶然耳にする） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "overhear に共通する意味の核は何だろう？",
+      "imageHintJa": "耳を傾けて話を聞く人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:look",
+      "morphemeId": "root:look",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "look"
+      ],
+      "learningMeaningJa": "見る・注意を向ける",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05910"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05910",
+          "headword": "overlook",
+          "meaningJa": "見落とす",
+          "breakdownId": "wb:modern:overlook"
+        }
+      ],
+      "teachingStoryJa": "「look」（見る・注意を向ける）という学習上の共通イメージを手がかりに、overlook（見落とす） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "overlook に共通する意味の核は何だろう？",
+      "imageHintJa": "遠くの景色を見る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:take",
+      "morphemeId": "root:take",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "take",
+        "taken"
+      ],
+      "learningMeaningJa": "取る・受ける",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05915"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05915",
+          "headword": "overtake",
+          "meaningJa": "追い越す",
+          "breakdownId": "wb:modern:overtake"
+        }
+      ],
+      "teachingStoryJa": "「take/taken」（取る・受ける）という学習上の共通イメージを手がかりに、overtake（追い越す） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "overtake に共通する意味の核は何だろう？",
+      "imageHintJa": "物を手に取る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:see-base",
+      "morphemeId": "root:see-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "see",
+        "saw",
+        "seen"
+      ],
+      "learningMeaningJa": "見る",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07408"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07408",
+          "headword": "oversee",
+          "meaningJa": "監督する",
+          "breakdownId": "wb:modern:oversee"
+        }
+      ],
+      "teachingStoryJa": "「see/saw/seen」（見る）という学習上の共通イメージを手がかりに、oversee（監督する） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "oversee に共通する意味の核は何だろう？",
+      "imageHintJa": "窓の外の景色を見る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:medi",
+      "morphemeId": "root:medi",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "medi"
+      ],
+      "learningMeaningJa": "中間",
+      "historicalOriginCandidate": "Latin medius",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03345"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03345",
+          "headword": "intermediate",
+          "meaningJa": "中級の・中間の",
+          "breakdownId": "wb:modern:intermediate"
+        }
+      ],
+      "teachingStoryJa": "「medi」（中間）という学習上の共通イメージを手がかりに、intermediate（中級の・中間の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "intermediate に共通する意味の核は何だろう？",
+      "imageHintJa": "二つの点の真ん中の印",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:sec-cut",
+      "morphemeId": "root:sec-cut",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "sect",
+        "sec"
+      ],
+      "learningMeaningJa": "切る・分ける",
+      "historicalOriginCandidate": "Latin secare (sectus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05562"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05562",
+          "headword": "intersection",
+          "meaningJa": "交差点・交差部分",
+          "breakdownId": "wb:modern:intersection"
+        }
+      ],
+      "teachingStoryJa": "「sect/sec」（切る・分ける）という学習上の共通イメージを手がかりに、intersection（交差点・交差部分） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "intersection に共通する意味の核は何だろう？",
+      "imageHintJa": "円を複数の区画に分割する",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:sci",
+      "morphemeId": "root:sci",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "sci",
+        "scien"
+      ],
+      "learningMeaningJa": "知る",
+      "historicalOriginCandidate": "Latin scire",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04151"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04151",
+          "headword": "subconscious",
+          "meaningJa": "潜在意識の",
+          "breakdownId": "wb:modern:subconscious"
+        }
+      ],
+      "teachingStoryJa": "「sci/scien」（知る）という学習上の共通イメージを手がかりに、subconscious（潜在意識の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "subconscious に共通する意味の核は何だろう？",
+      "imageHintJa": "実験を観察して知識を得る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:urb",
+      "morphemeId": "root:urb",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "urb"
+      ],
+      "learningMeaningJa": "都市",
+      "historicalOriginCandidate": "Latin urbs (urbis)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07652"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07652",
+          "headword": "suburban",
+          "meaningJa": "郊外の",
+          "breakdownId": "wb:modern:suburban"
+        }
+      ],
+      "teachingStoryJa": "「urb」（都市）という学習上の共通イメージを手がかりに、suburban（郊外の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "suburban に共通する意味の核は何だろう？",
+      "imageHintJa": "建物が並ぶ都市の景観",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:oper",
+      "morphemeId": "root:oper",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "oper"
+      ],
+      "learningMeaningJa": "仕事・働く",
+      "historicalOriginCandidate": "Latin opus (operis) / operari",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04877"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04877",
+          "headword": "cooperate",
+          "meaningJa": "協力する",
+          "breakdownId": "wb:modern:cooperate"
+        }
+      ],
+      "teachingStoryJa": "「oper」（仕事・働く）という学習上の共通イメージを手がかりに、cooperate（協力する） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "cooperate に共通する意味の核は何だろう？",
+      "imageHintJa": "作業員が機械を操作する",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:use-base",
+      "morphemeId": "root:use-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "use"
+      ],
+      "learningMeaningJa": "使う・使用",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02248",
+        "VD-04352"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02248",
+          "headword": "useful",
+          "meaningJa": "役に立つ",
+          "breakdownId": "wb:modern:useful"
+        },
+        {
+          "wordId": "VD-04352",
+          "headword": "useless",
+          "meaningJa": "役に立たない",
+          "breakdownId": "wb:modern:useless"
+        }
+      ],
+      "teachingStoryJa": "「use」（使う・使用）という学習上の共通イメージを手がかりに、useful（役に立つ）、useless（役に立たない） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "useful・useless に共通する意味の核は何だろう？",
+      "imageHintJa": "道具を使って作業する人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:help",
+      "morphemeId": "root:help",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "help"
+      ],
+      "learningMeaningJa": "助ける",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01594",
+        "VD-03232"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01594",
+          "headword": "helpful",
+          "meaningJa": "役立つ・親切な",
+          "breakdownId": "wb:modern:helpful"
+        },
+        {
+          "wordId": "VD-03232",
+          "headword": "helpless",
+          "meaningJa": "自分ではどうにもできない",
+          "breakdownId": "wb:modern:helpless"
+        }
+      ],
+      "teachingStoryJa": "「help」（助ける）という学習上の共通イメージを手がかりに、helpful（役立つ・親切な）、helpless（自分ではどうにもできない） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "helpful・helpless に共通する意味の核は何だろう？",
+      "imageHintJa": "困っている人に手を貸す人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:play",
+      "morphemeId": "root:play",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "play"
+      ],
+      "learningMeaningJa": "遊ぶ・演奏する",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01862"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01862",
+          "headword": "playful",
+          "meaningJa": "遊び好きの・ふざけた",
+          "breakdownId": "wb:modern:playful"
+        }
+      ],
+      "teachingStoryJa": "「play」（遊ぶ・演奏する）という学習上の共通イメージを手がかりに、playful（遊び好きの・ふざけた） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "playful に共通する意味の核は何だろう？",
+      "imageHintJa": "公園で遊ぶ子どもとボール",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:end-base",
+      "morphemeId": "root:end-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "end"
+      ],
+      "learningMeaningJa": "終わり",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02965",
+        "VD-01020"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02965",
+          "headword": "endless",
+          "meaningJa": "終わりのない・果てしない",
+          "breakdownId": "wb:modern:endless"
+        },
+        {
+          "wordId": "VD-01020",
+          "headword": "weekend",
+          "meaningJa": "週末",
+          "breakdownId": "wb:modern:weekend"
+        }
+      ],
+      "teachingStoryJa": "「end」（終わり）という学習上の共通イメージを手がかりに、endless（終わりのない・果てしない）、weekend（週末） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "endless・weekend に共通する意味の核は何だろう？",
+      "imageHintJa": "ゴール地点に到達する走者",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:need-base",
+      "morphemeId": "root:need-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "need"
+      ],
+      "learningMeaningJa": "必要とする",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05811",
+        "VD-05812"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05811",
+          "headword": "needless",
+          "meaningJa": "不必要な",
+          "breakdownId": "wb:modern:needless"
+        },
+        {
+          "wordId": "VD-05812",
+          "headword": "needy",
+          "meaningJa": "困窮した",
+          "breakdownId": "wb:modern:needy"
+        }
+      ],
+      "teachingStoryJa": "「need」（必要とする）という学習上の共通イメージを手がかりに、needless（不必要な）、needy（困窮した） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "needless・needy に共通する意味の核は何だろう？",
+      "imageHintJa": "必要な道具を選ぶ人物",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:sleep-base",
+      "morphemeId": "root:sleep-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "sleep",
+        "slept"
+      ],
+      "learningMeaningJa": "眠る",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02073"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02073",
+          "headword": "sleepless",
+          "meaningJa": "眠れない",
+          "breakdownId": "wb:modern:sleepless"
+        }
+      ],
+      "teachingStoryJa": "「sleep/slept」（眠る）という学習上の共通イメージを手がかりに、sleepless（眠れない） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "sleepless に共通する意味の核は何だろう？",
+      "imageHintJa": "静かな夜に眠る人物",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:limit",
+      "morphemeId": "root:limit",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "limit"
+      ],
+      "learningMeaningJa": "境界・限界",
+      "historicalOriginCandidate": "Latin limes (limitis)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07337"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07337",
+          "headword": "limitless",
+          "meaningJa": "無限の",
+          "breakdownId": "wb:modern:limitless"
+        }
+      ],
+      "teachingStoryJa": "「limit」（境界・限界）という学習上の共通イメージを手がかりに、limitless（無限の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "limitless に共通する意味の核は何だろう？",
+      "imageHintJa": "立入範囲の境界線",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:electr",
+      "morphemeId": "root:electr",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "electr",
+        "electro"
+      ],
+      "learningMeaningJa": "琥珀・電気",
+      "historicalOriginCandidate": "Greek elektron",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02940",
+        "VD-02941"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02940",
+          "headword": "electrical",
+          "meaningJa": "電気の・電気を使う",
+          "breakdownId": "wb:modern:electrical"
+        },
+        {
+          "wordId": "VD-02941",
+          "headword": "electricity",
+          "meaningJa": "電気",
+          "breakdownId": "wb:modern:electricity"
+        }
+      ],
+      "teachingStoryJa": "「electr/electro」（琥珀・電気）という学習上の共通イメージを手がかりに、electrical（電気の・電気を使う）、electricity（電気） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "electrical・electricity に共通する意味の核は何だろう？",
+      "imageHintJa": "静電気で小さな紙片が引き寄せられる",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:min",
+      "morphemeId": "root:min",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "min"
+      ],
+      "learningMeaningJa": "より小さい・最小の",
+      "historicalOriginCandidate": "Latin minor / minimus",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03505"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03505",
+          "headword": "minority",
+          "meaningJa": "少数派・少数集団",
+          "breakdownId": "wb:modern:minority"
+        }
+      ],
+      "teachingStoryJa": "「min」（より小さい・最小の）という学習上の共通イメージを手がかりに、minority（少数派・少数集団） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "minority に共通する意味の核は何だろう？",
+      "imageHintJa": "大小の箱のうち最小の箱",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:simil",
+      "morphemeId": "root:simil",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "simil",
+        "sembl"
+      ],
+      "learningMeaningJa": "似ている",
+      "historicalOriginCandidate": "Latin similis / simulare",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04050"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04050",
+          "headword": "similarity",
+          "meaningJa": "類似点・類似性",
+          "breakdownId": "wb:modern:similarity"
+        }
+      ],
+      "teachingStoryJa": "「simil/sembl」（似ている）という学習上の共通イメージを手がかりに、similarity（類似点・類似性） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "similarity に共通する意味の核は何だろう？",
+      "imageHintJa": "よく似た二枚の図",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:mort",
+      "morphemeId": "root:mort",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "mort"
+      ],
+      "learningMeaningJa": "死",
+      "historicalOriginCandidate": "Latin mors (mortis)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05468"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05468",
+          "headword": "immortality",
+          "meaningJa": "不死・不朽",
+          "breakdownId": "wb:modern:immortality"
+        }
+      ],
+      "teachingStoryJa": "「mort」（死）という学習上の共通イメージを手がかりに、immortality（不死・不朽） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "immortality に共通する意味の核は何だろう？",
+      "imageHintJa": "枯れた植物と落ち葉",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:ori-rise",
+      "morphemeId": "root:ori-rise",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "ori"
+      ],
+      "learningMeaningJa": "生じる・昇る",
+      "historicalOriginCandidate": "Latin oriri",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05877"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05877",
+          "headword": "originality",
+          "meaningJa": "独創性",
+          "breakdownId": "wb:modern:originality"
+        }
+      ],
+      "teachingStoryJa": "「ori」（生じる・昇る）という学習上の共通イメージを手がかりに、originality（独創性） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "originality に共通する意味の核は何だろう？",
+      "imageHintJa": "東の地平線から昇る太陽",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:nat",
+      "morphemeId": "root:nat",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "nat",
+        "nasc"
+      ],
+      "learningMeaningJa": "生まれる",
+      "historicalOriginCandidate": "Latin nasci (natus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03557",
+        "VD-00614"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03557",
+          "headword": "nationalist",
+          "meaningJa": "民族主義者・国家主義者",
+          "breakdownId": "wb:modern:nationalist"
+        },
+        {
+          "wordId": "VD-00614",
+          "headword": "nationality",
+          "meaningJa": "国籍",
+          "breakdownId": "wb:modern:nationality"
+        }
+      ],
+      "teachingStoryJa": "「nat/nasc」（生まれる）という学習上の共通イメージを手がかりに、nationalist（民族主義者・国家主義者）、nationality（国籍） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "nationalist・nationality に共通する意味の核は何だろう？",
+      "imageHintJa": "新しく生まれた赤ちゃんの手",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:popul",
+      "morphemeId": "root:popul",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "popul"
+      ],
+      "learningMeaningJa": "人々・民衆",
+      "historicalOriginCandidate": "Latin populus",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-06038"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-06038",
+          "headword": "popularity",
+          "meaningJa": "人気",
+          "breakdownId": "wb:modern:popularity"
+        }
+      ],
+      "teachingStoryJa": "「popul」（人々・民衆）という学習上の共通イメージを手がかりに、popularity（人気） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "popularity に共通する意味の核は何だろう？",
+      "imageHintJa": "公共広場に集まる多くの人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:fat-fate",
+      "morphemeId": "root:fat-fate",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "fat"
+      ],
+      "learningMeaningJa": "運命・語られたこと",
+      "historicalOriginCandidate": "Latin fatum / fari",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07175"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07175",
+          "headword": "fatality",
+          "meaningJa": "死亡者・死亡事故",
+          "breakdownId": "wb:modern:fatality"
+        }
+      ],
+      "teachingStoryJa": "「fat」（運命・語られたこと）という学習上の共通イメージを手がかりに、fatality（死亡者・死亡事故） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "fatality に共通する意味の核は何だろう？",
+      "imageHintJa": "分かれ道に立つ人物",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:angul",
+      "morphemeId": "root:angul",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "angul",
+        "angle"
+      ],
+      "learningMeaningJa": "角",
+      "historicalOriginCandidate": "Latin angulus",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07815"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07815",
+          "headword": "angularity",
+          "meaningJa": "角張った性質",
+          "breakdownId": "wb:modern:angularity"
+        }
+      ],
+      "teachingStoryJa": "「angul/angle」（角）という学習上の共通イメージを手がかりに、angularity（角張った性質） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "angularity に共通する意味の核は何だろう？",
+      "imageHintJa": "二本の線が角を作る",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:tim",
+      "morphemeId": "root:tim",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "tim"
+      ],
+      "learningMeaningJa": "恐れる",
+      "historicalOriginCandidate": "Latin timere",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-08575"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-08575",
+          "headword": "timidity",
+          "meaningJa": "内気さ、臆病さ",
+          "breakdownId": "wb:modern:timidity"
+        }
+      ],
+      "teachingStoryJa": "「tim」（恐れる）という学習上の共通イメージを手がかりに、timidity（内気さ、臆病さ） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "timidity に共通する意味の核は何だろう？",
+      "imageHintJa": "人前で発言することに緊張する人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:ced",
+      "morphemeId": "root:ced",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "ced",
+        "cede",
+        "ceed",
+        "cess"
+      ],
+      "learningMeaningJa": "進む・譲る",
+      "historicalOriginCandidate": "Latin cedere",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05186"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05186",
+          "headword": "excessive",
+          "meaningJa": "過度の・必要以上の",
+          "breakdownId": "wb:modern:excessive"
+        }
+      ],
+      "teachingStoryJa": "「ced/cede/ceed/cess」（進む・譲る）という学習上の共通イメージを手がかりに、excessive（過度の・必要以上の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "excessive に共通する意味の核は何だろう？",
+      "imageHintJa": "道の先へ進む人と道を譲る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:fac",
+      "morphemeId": "root:fac",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "fac",
+        "fact",
+        "fect"
+      ],
+      "learningMeaningJa": "作る・行う",
+      "historicalOriginCandidate": "Latin facere (factus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02935"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02935",
+          "headword": "effective",
+          "meaningJa": "効果的な",
+          "breakdownId": "wb:modern:effective"
+        }
+      ],
+      "teachingStoryJa": "「fac/fact/fect」（作る・行う）という学習上の共通イメージを手がかりに、effective（効果的な） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "effective に共通する意味の核は何だろう？",
+      "imageHintJa": "作業台で物を作る職人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:press",
+      "morphemeId": "root:press",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "press"
+      ],
+      "learningMeaningJa": "押す",
+      "historicalOriginCandidate": "Latin premere (pressus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-05212"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-05212",
+          "headword": "expressive",
+          "meaningJa": "表現力豊かな",
+          "breakdownId": "wb:modern:expressive"
+        }
+      ],
+      "teachingStoryJa": "「press」（押す）という学習上の共通イメージを手がかりに、expressive（表現力豊かな） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "expressive に共通する意味の核は何だろう？",
+      "imageHintJa": "スポンジを手で押す",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:tract",
+      "morphemeId": "root:tract",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "tract"
+      ],
+      "learningMeaningJa": "引く",
+      "historicalOriginCandidate": "Latin trahere (tractus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01146"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01146",
+          "headword": "attractive",
+          "meaningJa": "魅力的な",
+          "breakdownId": "wb:modern:attractive"
+        }
+      ],
+      "teachingStoryJa": "「tract」（引く）という学習上の共通イメージを手がかりに、attractive（魅力的な） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "attractive に共通する意味の核は何だろう？",
+      "imageHintJa": "ロープで荷車を引く人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:flex",
+      "morphemeId": "root:flex",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "flex",
+        "flect"
+      ],
+      "learningMeaningJa": "曲げる",
+      "historicalOriginCandidate": "Latin flectere (flexus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-06188"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-06188",
+          "headword": "reflective",
+          "meaningJa": "内省的な・反射する",
+          "breakdownId": "wb:modern:reflective"
+        }
+      ],
+      "teachingStoryJa": "「flex/flect」（曲げる）という学習上の共通イメージを手がかりに、reflective（内省的な・反射する） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "reflective に共通する意味の核は何だろう？",
+      "imageHintJa": "柔らかい定規を曲げる手",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:spect",
+      "morphemeId": "root:spect",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "spect",
+        "spec"
+      ],
+      "learningMeaningJa": "見る・観察する",
+      "historicalOriginCandidate": "Latin specere / spectare",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07483"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07483",
+          "headword": "prospective",
+          "meaningJa": "将来の・見込みの",
+          "breakdownId": "wb:modern:prospective"
+        }
+      ],
+      "teachingStoryJa": "「spect/spec」（見る・観察する）という学習上の共通イメージを手がかりに、prospective（将来の・見込みの） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "prospective に共通する意味の核は何だろう？",
+      "imageHintJa": "双眼鏡で遠くを見る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:clean-base",
+      "morphemeId": "root:clean-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "clean"
+      ],
+      "learningMeaningJa": "清潔な・掃除する",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01275"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01275",
+          "headword": "cleaner",
+          "meaningJa": "清掃員・洗浄剤",
+          "breakdownId": "wb:modern:cleaner"
+        }
+      ],
+      "teachingStoryJa": "「clean」（清潔な・掃除する）という学習上の共通イメージを手がかりに、cleaner（清掃員・洗浄剤） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "cleaner に共通する意味の核は何だろう？",
+      "imageHintJa": "机をきれいに拭く手",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:art",
+      "morphemeId": "root:art",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "art"
+      ],
+      "learningMeaningJa": "技術・技芸",
+      "historicalOriginCandidate": "Latin ars (artis)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02434"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02434",
+          "headword": "artist",
+          "meaningJa": "芸術家・画家",
+          "breakdownId": "wb:modern:artist"
+        }
+      ],
+      "teachingStoryJa": "「art」（技術・技芸）という学習上の共通イメージを手がかりに、artist（芸術家・画家） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "artist に共通する意味の核は何だろう？",
+      "imageHintJa": "職人が丁寧に作品を仕上げる",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:geo",
+      "morphemeId": "root:geo",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "geo"
+      ],
+      "learningMeaningJa": "地球・土地",
+      "historicalOriginCandidate": "Greek ge",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03145",
+        "VD-07215"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03145",
+          "headword": "geographical",
+          "meaningJa": "地理的な・地理に関する",
+          "breakdownId": "wb:modern:geographical"
+        },
+        {
+          "wordId": "VD-07215",
+          "headword": "geologically",
+          "meaningJa": "地質学的に",
+          "breakdownId": "wb:modern:geologically"
+        }
+      ],
+      "teachingStoryJa": "「geo」（地球・土地）という学習上の共通イメージを手がかりに、geographical（地理的な・地理に関する）、geologically（地質学的に） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "geographical・geologically に共通する意味の核は何だろう？",
+      "imageHintJa": "地球儀と地層",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:free-base",
+      "morphemeId": "root:free-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "free"
+      ],
+      "learningMeaningJa": "自由・無料",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01529"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01529",
+          "headword": "freedom",
+          "meaningJa": "自由",
+          "breakdownId": "wb:modern:freedom"
+        }
+      ],
+      "teachingStoryJa": "「free」（自由・無料）という学習上の共通イメージを手がかりに、freedom（自由） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "freedom に共通する意味の核は何だろう？",
+      "imageHintJa": "扉が開いて自由に外へ出る人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:hard-base",
+      "morphemeId": "root:hard-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "hard"
+      ],
+      "learningMeaningJa": "硬い・困難な",
+      "historicalOriginCandidate": "Modern English free base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03211"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03211",
+          "headword": "hardship",
+          "meaningJa": "苦難・困難",
+          "breakdownId": "wb:modern:hardship"
+        }
+      ],
+      "teachingStoryJa": "「hard」（硬い・困難な）という学習上の共通イメージを手がかりに、hardship（苦難・困難） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "hardship に共通する意味の核は何だろう？",
+      "imageHintJa": "硬い石と柔らかい素材を比較する",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:spond",
+      "morphemeId": "root:spond",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "spond",
+        "spons"
+      ],
+      "learningMeaningJa": "約束する",
+      "historicalOriginCandidate": "Latin spondere (sponsus)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07621"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07621",
+          "headword": "sponsorship",
+          "meaningJa": "後援・資金援助",
+          "breakdownId": "wb:modern:sponsorship"
+        }
+      ],
+      "teachingStoryJa": "「spond/spons」（約束する）という学習上の共通イメージを手がかりに、sponsorship（後援・資金援助） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "sponsorship に共通する意味の核は何だろう？",
+      "imageHintJa": "約束を交わす二人の手",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:log",
+      "morphemeId": "root:log",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "log",
+        "logy"
+      ],
+      "learningMeaningJa": "言葉・論理・学問",
+      "historicalOriginCandidate": "Greek logos",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07215"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07215",
+          "headword": "geologically",
+          "meaningJa": "地質学的に",
+          "breakdownId": "wb:modern:geologically"
+        }
+      ],
+      "teachingStoryJa": "「log/logy」（言葉・論理・学問）という学習上の共通イメージを手がかりに、geologically（地質学的に） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "geologically に共通する意味の核は何だろう？",
+      "imageHintJa": "本と対話する人々",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [
+        "https://www.adlit.org/topics/vocabulary/root-words-roots-and-affixes"
+      ],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:anthrop",
+      "morphemeId": "root:anthrop",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "anthrop",
+        "anthropo"
+      ],
+      "learningMeaningJa": "人間",
+      "historicalOriginCandidate": "Greek anthropos",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-07821"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-07821",
+          "headword": "anthropologically",
+          "meaningJa": "人類学的に",
+          "breakdownId": "wb:modern:anthropologically"
+        }
+      ],
+      "teachingStoryJa": "「anthrop/anthropo」（人間）という学習上の共通イメージを手がかりに、anthropologically（人類学的に） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "anthropologically に共通する意味の核は何だろう？",
+      "imageHintJa": "さまざまな人々の集まり",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:home",
+      "morphemeId": "root:home",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "home"
+      ],
+      "learningMeaningJa": "家・故郷",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-00455",
+        "VD-00456"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-00455",
+          "headword": "hometown",
+          "meaningJa": "故郷",
+          "breakdownId": "wb:modern:hometown"
+        },
+        {
+          "wordId": "VD-00456",
+          "headword": "homework",
+          "meaningJa": "宿題",
+          "breakdownId": "wb:modern:homework"
+        }
+      ],
+      "teachingStoryJa": "「home」（家・故郷）という学習上の共通イメージを手がかりに、hometown（故郷）、homework（宿題） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "hometown・homework に共通する意味の核は何だろう？",
+      "imageHintJa": "家の玄関へ帰る人物",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:house",
+      "morphemeId": "root:house",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "house"
+      ],
+      "learningMeaningJa": "家・住まい",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03259",
+        "VD-05427",
+        "VD-03260"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03259",
+          "headword": "household",
+          "meaningJa": "世帯・家庭",
+          "breakdownId": "wb:modern:household"
+        },
+        {
+          "wordId": "VD-05427",
+          "headword": "housekeeper",
+          "meaningJa": "家事管理者・家政婦",
+          "breakdownId": "wb:modern:housekeeper"
+        },
+        {
+          "wordId": "VD-03260",
+          "headword": "housework",
+          "meaningJa": "家事",
+          "breakdownId": "wb:modern:housework"
+        }
+      ],
+      "teachingStoryJa": "「house」（家・住まい）という学習上の共通イメージを手がかりに、household（世帯・家庭）、housekeeper（家事管理者・家政婦）、housework（家事） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "household・housekeeper・housework に共通する意味の核は何だろう？",
+      "imageHintJa": "温かい明かりのともる家",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:book",
+      "morphemeId": "root:book",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "book"
+      ],
+      "learningMeaningJa": "本",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01201",
+        "VD-00111",
+        "VD-02180"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01201",
+          "headword": "bookcase",
+          "meaningJa": "本棚",
+          "breakdownId": "wb:modern:bookcase"
+        },
+        {
+          "wordId": "VD-00111",
+          "headword": "bookstore",
+          "meaningJa": "書店",
+          "breakdownId": "wb:modern:bookstore"
+        },
+        {
+          "wordId": "VD-02180",
+          "headword": "textbook",
+          "meaningJa": "教科書",
+          "breakdownId": "wb:modern:textbook"
+        }
+      ],
+      "teachingStoryJa": "「book」（本）という学習上の共通イメージを手がかりに、bookcase（本棚）、bookstore（書店）、textbook（教科書） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "bookcase・bookstore・textbook に共通する意味の核は何だろう？",
+      "imageHintJa": "本が並ぶ書棚",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:fall-base",
+      "morphemeId": "root:fall-base",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "fall",
+        "fell",
+        "fallen"
+      ],
+      "learningMeaningJa": "落ちる",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04402"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04402",
+          "headword": "waterfall",
+          "meaningJa": "滝",
+          "breakdownId": "wb:modern:waterfall"
+        }
+      ],
+      "teachingStoryJa": "「fall/fell/fallen」（落ちる）という学習上の共通イメージを手がかりに、waterfall（滝） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "waterfall に共通する意味の核は何だろう？",
+      "imageHintJa": "木から落ちる葉",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:water",
+      "morphemeId": "root:water",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "water"
+      ],
+      "learningMeaningJa": "水",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04402",
+        "VD-06803"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04402",
+          "headword": "waterfall",
+          "meaningJa": "滝",
+          "breakdownId": "wb:modern:waterfall"
+        },
+        {
+          "wordId": "VD-06803",
+          "headword": "waterproof",
+          "meaningJa": "防水の",
+          "breakdownId": "wb:modern:waterproof"
+        }
+      ],
+      "teachingStoryJa": "「water」（水）という学習上の共通イメージを手がかりに、waterfall（滝）、waterproof（防水の） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "waterfall・waterproof に共通する意味の核は何だろう？",
+      "imageHintJa": "透明な水をコップに注ぐ",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:light-illumination",
+      "morphemeId": "root:light-illumination",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "light"
+      ],
+      "learningMeaningJa": "光・照らす",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01359",
+        "VD-05769",
+        "VD-02146"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01359",
+          "headword": "daylight",
+          "meaningJa": "日光・昼光",
+          "breakdownId": "wb:modern:daylight"
+        },
+        {
+          "wordId": "VD-05769",
+          "headword": "moonlight",
+          "meaningJa": "月明かり",
+          "breakdownId": "wb:modern:moonlight"
+        },
+        {
+          "wordId": "VD-02146",
+          "headword": "sunlight",
+          "meaningJa": "太陽光",
+          "breakdownId": "wb:modern:sunlight"
+        }
+      ],
+      "teachingStoryJa": "「light」（光・照らす）という学習上の共通イメージを手がかりに、daylight（日光・昼光）、moonlight（月明かり）、sunlight（太陽光） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "daylight・moonlight・sunlight に共通する意味の核は何だろう？",
+      "imageHintJa": "暗い部屋に光をともす",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:day",
+      "morphemeId": "root:day",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "day"
+      ],
+      "learningMeaningJa": "日・昼",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01359",
+        "VD-04952",
+        "VD-02273"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01359",
+          "headword": "daylight",
+          "meaningJa": "日光・昼光",
+          "breakdownId": "wb:modern:daylight"
+        },
+        {
+          "wordId": "VD-04952",
+          "headword": "daytime",
+          "meaningJa": "昼間",
+          "breakdownId": "wb:modern:daytime"
+        },
+        {
+          "wordId": "VD-02273",
+          "headword": "weekday",
+          "meaningJa": "平日",
+          "breakdownId": "wb:modern:weekday"
+        }
+      ],
+      "teachingStoryJa": "「day」（日・昼）という学習上の共通イメージを手がかりに、daylight（日光・昼光）、daytime（昼間）、weekday（平日） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "daylight・daytime・weekday に共通する意味の核は何だろう？",
+      "imageHintJa": "日の出から日没までの景色",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:work",
+      "morphemeId": "root:work",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "work"
+      ],
+      "learningMeaningJa": "働く・仕事",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-04433"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-04433",
+          "headword": "workplace",
+          "meaningJa": "職場",
+          "breakdownId": "wb:modern:workplace"
+        }
+      ],
+      "teachingStoryJa": "「work」（働く・仕事）という学習上の共通イメージを手がかりに、workplace（職場） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "workplace に共通する意味の核は何だろう？",
+      "imageHintJa": "作業台で仕事をする人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:hand",
+      "morphemeId": "root:hand",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "hand"
+      ],
+      "learningMeaningJa": "手",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03204",
+        "VD-03205"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03204",
+          "headword": "handshake",
+          "meaningJa": "握手",
+          "breakdownId": "wb:modern:handshake"
+        },
+        {
+          "wordId": "VD-03205",
+          "headword": "handwriting",
+          "meaningJa": "手書き・筆跡",
+          "breakdownId": "wb:modern:handwriting"
+        }
+      ],
+      "teachingStoryJa": "「hand」（手）という学習上の共通イメージを手がかりに、handshake（握手）、handwriting（手書き・筆跡） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "handshake・handwriting に共通する意味の核は何だろう？",
+      "imageHintJa": "手で荷物を渡す人",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:hold",
+      "morphemeId": "root:hold",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "hold",
+        "held"
+      ],
+      "learningMeaningJa": "持つ・保つ",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-03259"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-03259",
+          "headword": "household",
+          "meaningJa": "世帯・家庭",
+          "breakdownId": "wb:modern:household"
+        }
+      ],
+      "teachingStoryJa": "「hold/held」（持つ・保つ）という学習上の共通イメージを手がかりに、household（世帯・家庭） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "household に共通する意味の核は何だろう？",
+      "imageHintJa": "物をしっかり握る手",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:food",
+      "morphemeId": "root:food",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "food"
+      ],
+      "learningMeaningJa": "食べ物",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-02019"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-02019",
+          "headword": "seafood",
+          "meaningJa": "魚介類",
+          "breakdownId": "wb:modern:seafood"
+        }
+      ],
+      "teachingStoryJa": "「food」（食べ物）という学習上の共通イメージを手がかりに、seafood（魚介類） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "seafood に共通する意味の核は何だろう？",
+      "imageHintJa": "さまざまな食材が並ぶ食卓",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:earth",
+      "morphemeId": "root:earth",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "earth"
+      ],
+      "learningMeaningJa": "地球・土",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01423"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01423",
+          "headword": "earthquake",
+          "meaningJa": "地震",
+          "breakdownId": "wb:modern:earthquake"
+        }
+      ],
+      "teachingStoryJa": "「earth」（地球・土）という学習上の共通イメージを手がかりに、earthquake（地震） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "earthquake に共通する意味の核は何だろう？",
+      "imageHintJa": "地球儀と土の断面",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "story:root:way",
+      "morphemeId": "root:way",
+      "kind": "candidate-root-family-learning-story",
+      "forms": [
+        "way"
+      ],
+      "learningMeaningJa": "道・方法",
+      "historicalOriginCandidate": "Modern English base (historical origin varies)",
+      "originReviewPending": true,
+      "memberWordIds": [
+        "VD-01599"
+      ],
+      "examples": [
+        {
+          "wordId": "VD-01599",
+          "headword": "highway",
+          "meaningJa": "幹線道路・高速道路",
+          "breakdownId": "wb:modern:highway"
+        }
+      ],
+      "teachingStoryJa": "「way」（道・方法）という学習上の共通イメージを手がかりに、highway（幹線道路・高速道路） の意味のつながりを考える。歴史的な語源関係の確定には個別の語史確認が必要。",
+      "discussionQuestionJa": "highway に共通する意味の核は何だろう？",
+      "imageHintJa": "分岐する道と標識",
+      "sourceRootStatus": "draft-unreviewed",
+      "sourceRefs": [],
+      "sourceWordLinkIndex": "data/voca-roots/full-master-word-links.json",
+      "status": "draft-unreviewed",
+      "productionEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
