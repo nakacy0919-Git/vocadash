@@ -6,16 +6,16 @@
   "productionEnabled": false,
   "masterTarget": 8653,
   "counts": {
-    "records": 3920,
-    "distinctHeadwords": 3917,
+    "records": 4027,
+    "distinctHeadwords": 4024,
     "automatedModernDerivationCandidates": 3796,
-    "handAuthoredCoreRecords": 124,
-    "candidateIndexMatchedRows": 1531,
-    "candidateIndexMatchedDistinctHeadwords": 1529,
+    "handAuthoredCoreRecords": 231,
+    "candidateIndexMatchedRows": 1638,
+    "candidateIndexMatchedDistinctHeadwords": 1636,
     "unresolvedMasterRows": 2389,
     "fullyEditorialReviewed": 0,
-    "fullMasterMatchedRows": 1531,
-    "fullMasterMatchedDistinctHeadwords": 1529,
+    "fullMasterMatchedRows": 1638,
+    "fullMasterMatchedDistinctHeadwords": 1636,
     "notIn8653MasterHeadwords": 2388
   },
   "files": [
@@ -31,7 +31,8 @@
     "core-breakdowns-002.json",
     "core-breakdowns-003.json",
     "master-affixes-010.json",
-    "master-compounds-011.json"
+    "master-compounds-011.json",
+    "master-curated-012.json"
   ],
   "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords); all remain drafts pending review.",
   "qualityNotesJa": [
@@ -48,7 +49,8 @@
     "006: JSの明示的なfamily関係と完全8,653語マスター双方に存在する語を優先し、重複しない136件を追加。接辞の意味は既存VocaRootsの語素IDから参照。歴史語源および意味の個別校閲は未完了。",
     "追加007/008: 完全マスターに収録され、VocaUniverseの明示的なfamily連携（派生と屈折の区別を含む）に対応する77件を重複排除して登録。全件未校閲・非公開。",
     "009: 現行8,653語マスターの未登録見出し語89語について、接頭辞の否定・反転・反復・位置・相互関係を中心に日本語解説・オリジナル例文・和訳・学習用画像構想を付けた個別Word Breakdown候補を追加。語素IDとwordIdは既存IDを使用。語史の個別検証は未完了のため一律未公開。",
-    "010–011（2026-11-18）: 446語（接頭辞86、接尾辞276、複合語84）のマスター完全一致Word Breakdown候補を追加。候補は選定済み語形の構造的学習案であり、歴史的語源・品詞・意味の辞書個別照合は未実施。マスターのwordIdを見出し語・語基に保存し、意味と例文の正本はマスター語彙参照。原稿はレビュー必須・非公開。"
+    "010–011（2026-11-18）: 446語（接頭辞86、接尾辞276、複合語84）のマスター完全一致Word Breakdown候補を追加。候補は選定済み語形の構造的学習案であり、歴史的語源・品詞・意味の辞書個別照合は未実施。マスターのwordIdを見出し語・語基に保存し、意味と例文の正本はマスター語彙参照。原稿はレビュー必須・非公開。",
+    "012（2026-11-18）: 明示的な手動選定で107語を追加。接辞と語基の学習上の接続候補。語義は独立作成の下書きでマスター語義との個別照合は未実施。語源確定や本番使用は不可。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
