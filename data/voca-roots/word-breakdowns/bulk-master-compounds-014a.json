@@ -5347,19 +5347,19 @@
       "analysisType": "compound-learning-candidate",
       "parts": [
         {
-          "surface": "now",
+          "surface": "no",
           "kind": "free-base",
-          "wordId": "VD-00636",
-          "meaningJa": "今",
+          "wordId": "VD-00628",
+          "meaningJa": "一つも〜ない・少しも〜ない",
           "masterSenseIds": [
-            "VDO-261114-GAP-00197"
+            "VDO-261114-GAP-00190"
           ]
         },
         {
-          "surface": "here",
+          "surface": "where",
           "kind": "free-base",
-          "wordId": "VD-00441",
-          "meaningJa": "ここに・ここで",
+          "wordId": "VD-01027",
+          "meaningJa": "どこに・どこで",
           "masterSenseIds": [
             "VDO-261114-GAP-00056"
           ]
@@ -5380,14 +5380,14 @@
         }
       ],
       "baseWordIds": [
-        "VD-00636",
-        "VD-00441"
+        "VD-00628",
+        "VD-01027"
       ],
-      "explanationJa": "nowhere を now ＋ here の語形のまとまりで捉える。マスター語義は「どこにも〜ない」。各構成語の意味だけで語全体を直訳せず、用例と比較する。",
-      "learningQuestionJa": "now ＋ here の意味を踏まえても、nowhere を一語として覚える必要があるのはなぜ？",
+      "explanationJa": "nowhere は no（否定）と where（場所・どこ）に着目して「どこにも〜ない」の語義を覚える。語源史の説明は別途検証する。",
+      "learningQuestionJa": "no と where から nowhere が『どこにも〜ない』となる仕組みを、例文で説明できる？",
       "imageHintJa": "nowhere の主な意味「どこにも〜ない」を表す例文場面を描く。文字を入れない。",
-      "semanticCautionJa": "構成要素の存在だけで歴史的な語形成や現在の意味を証明することはできない。",
-      "lexicalizationReviewPriority": false,
+      "semanticCautionJa": "nowhere を now（今）＋here（ここ）と分解しない。否定の no と場所を表す where の結び付きに注目する。",
+      "lexicalizationReviewPriority": true,
       "exampleEn": "There was nowhere to park our car.",
       "exampleJa": "車を止める場所がどこにもありませんでした。",
       "additionalMasterExamples": [
