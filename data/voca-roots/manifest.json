@@ -395,5 +395,33 @@
       "legacyMatchedRelations": 898,
       "additionalResolved": 2430
     }
+  },
+  "studyMap": {
+    "path": "data/voca-roots/study-map-by-cefr.json",
+    "generator": "tools/build-voca-roots-study-map.mjs",
+    "status": "draft-reference-only",
+    "productionEnabled": false,
+    "counts": {
+      "morphemeUnits": 800,
+      "unitsWithMasterMatches": 548,
+      "unitsWithoutMasterMatches": 252,
+      "matchedMasterWords": 2697,
+      "matchedRelations": 3328,
+      "sourceRelationCandidates": 10697,
+      "byKind": {
+        "root": {
+          "units": 500,
+          "withMasterMatches": 411
+        },
+        "prefix": {
+          "units": 150,
+          "withMasterMatches": 60
+        },
+        "suffix": {
+          "units": 150,
+          "withMasterMatches": 77
+        }
+      }
+    }
   }
 }

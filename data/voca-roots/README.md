@@ -27,3 +27,9 @@ Extra associations are **editorial candidates** from explicitly authored lexical
 - Existing source batches, link-ledger and old ID assignments are unchanged. The original manifest's `matchedRelations` count describes the **legacy partial-index** state. The new `fullMasterReconciliation.counts` describes the complete-master view.
 - This is **not** an etymological accuracy review, a new vocabulary addition, or a published learning feature. All source relationships remain draft-only; new `wordId` matches must not be exposed as approved breakdowns or quiz answers.
 - Deterministic commands: `node tools/reconcile-voca-roots-word-links.mjs --check` verifies the committed index; `--write` regenerates it after source changes, without editing any source batch or publishing.
+
+
+## CEFR study map (2026-11-17)
+- `study-map-by-cefr.json` organizes all **800** existing learning units by A1–C2 master-word candidate links. **548** units have exact master-word candidate matches; **252** have none.
+- Entries are planning metadata, **not reviewed etymologies**, not published questions, and are not imported by the live UI. The map references existing morpheme IDs without adding new root claims.
+- Validate: `node tools/build-voca-roots-study-map.mjs --check`. Regenerate locally with `--write`.
