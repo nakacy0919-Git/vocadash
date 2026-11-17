@@ -59,7 +59,10 @@ for(const bad of exclusions.examples) {
 }
 assert.equal(manifest.counts.records, previous.length + batch.records.length);
 assert.equal(manifest.counts.distinctHeadwords, new Set([...oldWords, ...newWords]).size);
-assert.equal(manifest.counts.fullMasterMatchedDistinctHeadwords, batch.counts.priorMatchedMasterHeadwords + batch.records.length);
+const fullRecords = [...previous, ...batch.records];
+const fullMatchedDistinct = new Set(fullRecords.filter(r => r.wordId).map(r => r.headword));
+assert.equal(manifest.counts.fullMasterMatchedDistinctHeadwords, fullMatchedDistinct.size);
+assert.ok(manifest.counts.fullMasterMatchedDistinctHeadwords >= batch.counts.priorMatchedMasterHeadwords + batch.records.length);
 assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords, manifest.counts.fullMasterMatchedDistinctHeadwords);
 assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords, 8653 - manifest.counts.fullMasterMatchedDistinctHeadwords);
 assert.equal(manifest.counts.fullyEditorialReviewed, 0);
