@@ -1,20 +1,20 @@
 {
   "schemaVersion": "1.0",
-  "batch": "004",
+  "batch": "005",
   "createdOn": "2026-11-17",
   "status": "draft-unreviewed",
   "productionEnabled": false,
   "counts": {
-    "roots": 200,
-    "prefixes": 91,
-    "suffixes": 89,
-    "relations": 1561,
-    "distinctHeadwords": 1483,
-    "matchedRelations": 240,
-    "matchedDistinctHeadwords": 225,
-    "unresolvedRelations": 1321,
-    "quizzes": 380,
-    "imagePrompts": 200,
+    "roots": 250,
+    "prefixes": 111,
+    "suffixes": 109,
+    "relations": 1885,
+    "distinctHeadwords": 1797,
+    "matchedRelations": 289,
+    "matchedDistinctHeadwords": 272,
+    "unresolvedRelations": 1596,
+    "quizzes": 470,
+    "imagePrompts": 250,
     "generatedImages": 0
   },
   "targets": {
@@ -58,9 +58,14 @@
     "prefixes-004.json",
     "suffixes-004.json",
     "word-links-004.json",
-    "quizzes-004.json"
+    "quizzes-004.json",
+    "roots-005.json",
+    "prefixes-005.json",
+    "suffixes-005.json",
+    "word-links-005.json",
+    "quizzes-005.json"
   ],
-  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。",
+  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。 バッチ005では現代英語の複合語要素も学習単位に含み、既存語根と関連する結合形には注記を付与。個別語源の校閲は未実施。",
   "batches": [
     {
       "batch": "001",
@@ -121,6 +126,22 @@
         "matchedRelations": 22,
         "matchedDistinctHeadwords": 22,
         "unresolvedRelations": 296,
+        "quizzes": 90,
+        "imagePrompts": 50,
+        "generatedImages": 0
+      }
+    },
+    {
+      "batch": "005",
+      "counts": {
+        "roots": 50,
+        "prefixes": 20,
+        "suffixes": 20,
+        "relations": 324,
+        "distinctHeadwords": 321,
+        "matchedRelations": 49,
+        "matchedDistinctHeadwords": 49,
+        "unresolvedRelations": 275,
         "quizzes": 90,
         "imagePrompts": 50,
         "generatedImages": 0
