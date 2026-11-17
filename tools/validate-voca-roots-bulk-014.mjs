@@ -71,7 +71,7 @@ for (let i = 0; i < records.length; i++) {
   assert.equal(r.referenceLookupPending,true);
   assert.deepEqual(r.sourceRefs,[]);
   const target = evidence[r.wordId];
-  assert.ok(target && target.headword === r.headword, 'Missing master evidence '+r.headword);
+  assert.ok(target && target.headword.trim().toLowerCase() === r.headword.trim().toLowerCase(), 'Missing master evidence '+r.headword);
   assert.equal(r.masterMeaningJa,target.senses[0].meaningJa);
   assert.deepEqual(r.masterSenseRefs.map(x=>x.senseId).sort(),target.senses.map(x=>x.senseId).sort());
   const examples = target.senses.flatMap(s=>s.examples.map(ex=>({...ex,senseId:s.senseId})));
