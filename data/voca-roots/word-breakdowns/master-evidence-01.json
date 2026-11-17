@@ -1,0 +1,2760 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-master-evidence",
+  "batchNumber": 1,
+  "sourceBatchCount": 12,
+  "sourceManifest": "data/vocabulary-drafts/manifest.json",
+  "usesOriginalMasterEntries": true,
+  "productionEnabled": false,
+  "entries": {
+    "VD-00110": {
+      "wordId": "VD-00110",
+      "headword": "book",
+      "senses": [
+        {
+          "senseId": "VD-00110-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "本",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00110-n-01-e01",
+            "en": "This book is easy to read.",
+            "ja": "この本は読みやすいです。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00110-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "予約する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00110-v-01-e01",
+            "en": "I booked a table for two.",
+            "ja": "私は2人用の席を予約しました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00537": {
+      "wordId": "VD-00537",
+      "headword": "light",
+      "senses": [
+        {
+          "senseId": "VD-00537-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "光・明かり",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00537-n-01-e01",
+            "en": "The light came through the window.",
+            "ja": "窓から光が差し込みました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00537-adj-01",
+          "partOfSpeech": "adjective",
+          "meaningJa": "軽い",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00537-adj-01-e01",
+            "en": "This bag is light enough to carry.",
+            "ja": "このバッグは持ち運べるほど軽いです。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00537-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "火をつける",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00537-v-01-e01",
+            "en": "Dad lit a candle during the blackout.",
+            "ja": "停電中、父はろうそくに火をつけました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00703": {
+      "wordId": "VD-00703",
+      "headword": "play",
+      "senses": [
+        {
+          "senseId": "VD-00703-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "スポーツをする",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00703-v-01-e01",
+            "en": "We play basketball after school.",
+            "ja": "私たちは放課後にバスケットボールをします。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00703-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "楽器を演奏する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00703-v-02-e01",
+            "en": "She plays the piano very well.",
+            "ja": "彼女はピアノをとても上手に弾きます。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00703-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "劇・演劇",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00703-n-01-e01",
+            "en": "Our class performed a short play.",
+            "ja": "私たちのクラスは短い劇を上演しました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-01044": {
+      "wordId": "VD-01044",
+      "headword": "work",
+      "senses": [
+        {
+          "senseId": "VD-01044-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "働く",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-01044-v-01-e01",
+            "en": "My mother works at a hospital.",
+            "ja": "母は病院で働いています。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-01044-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "うまく機能する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-01044-v-02-e01",
+            "en": "This key doesn't work in the door.",
+            "ja": "この鍵はそのドアには使えません。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-01044-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "仕事・作業",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-01044-n-01-e01",
+            "en": "I have a lot of work to finish.",
+            "ja": "私には終わらせるべき仕事がたくさんあります。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-01044-n-02",
+          "partOfSpeech": "noun",
+          "meaningJa": "作品",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-01044-n-02-e01",
+            "en": "This painting is her best work.",
+            "ja": "この絵は彼女の最高の作品です。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00149": {
+      "wordId": "VD-00149",
+      "headword": "call",
+      "senses": [
+        {
+          "senseId": "VD-00149-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "電話する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00149-v-01-e01",
+            "en": "Please call me after school.",
+            "ja": "放課後に電話してください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00149-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "呼ぶ・名付ける",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00149-v-02-e01",
+            "en": "People call him Ken.",
+            "ja": "人々は彼をケンと呼びます。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00149-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "電話・呼び出し",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00149-n-01-e01",
+            "en": "I got a call from my teacher.",
+            "ja": "先生から電話がありました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00977": {
+      "wordId": "VD-00977",
+      "headword": "turn",
+      "senses": [
+        {
+          "senseId": "VD-00977-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "回す・向きを変える",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00977-v-01-e01",
+            "en": "Turn the handle slowly.",
+            "ja": "取っ手をゆっくり回してください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00977-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "〜になる",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00977-v-02-e01",
+            "en": "The sky turned dark before the storm.",
+            "ja": "嵐の前に空が暗くなりました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00977-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "順番",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00977-n-01-e01",
+            "en": "It's your turn to speak.",
+            "ja": "次はあなたが話す番です。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00267": {
+      "wordId": "VD-00267",
+      "headword": "draw",
+      "senses": [
+        {
+          "senseId": "VD-00267-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "絵を描く",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00267-v-01-e01",
+            "en": "Can you draw a cat?",
+            "ja": "猫の絵を描けますか。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00267-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "引きつける",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00267-v-02-e01",
+            "en": "The festival draws many visitors.",
+            "ja": "その祭りには多くの来場者が集まります。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00267-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "引き分け",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00267-n-01-e01",
+            "en": "The final result was a draw.",
+            "ja": "最終結果は引き分けでした。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-02621": {
+      "wordId": "VD-02621",
+      "headword": "charge",
+      "senses": [
+        {
+          "senseId": "VD-02621-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "料金を請求する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-02621-v-01-e01",
+            "en": "They charge five dollars for delivery.",
+            "ja": "彼らは配達料として5ドル請求します。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-02621-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "充電する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-02621-v-02-e01",
+            "en": "I need to charge my phone.",
+            "ja": "携帯電話を充電する必要があります。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-02621-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "料金",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-02621-n-01-e01",
+            "en": "There is no extra charge for students.",
+            "ja": "生徒に追加料金はかかりません。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00790": {
+      "wordId": "VD-00790",
+      "headword": "set",
+      "senses": [
+        {
+          "senseId": "VD-00790-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "置く",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00790-v-01-e01",
+            "en": "She set the cup on the table.",
+            "ja": "彼女はカップをテーブルに置きました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00790-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "設定する・決める",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00790-v-02-e01",
+            "en": "We set a goal for this month.",
+            "ja": "私たちは今月の目標を決めました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00790-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "一式・セット",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00790-n-01-e01",
+            "en": "I bought a set of colored pencils.",
+            "ja": "私は色鉛筆のセットを買いました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00657": {
+      "wordId": "VD-00657",
+      "headword": "order",
+      "senses": [
+        {
+          "senseId": "VD-00657-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "順序",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00657-n-01-e01",
+            "en": "Put the pictures in the correct order.",
+            "ja": "絵を正しい順序に並べてください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00657-n-02",
+          "partOfSpeech": "noun",
+          "meaningJa": "注文",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00657-n-02-e01",
+            "en": "Our order arrived late.",
+            "ja": "私たちの注文品は遅れて届きました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00657-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "命令する・指示する",
+          "sourceBatch": "batches/batch-01.json",
+          "example": {
+            "id": "VD-00657-v-01-e01",
+            "en": "The coach ordered the team to stop.",
+            "ja": "監督はチームに止まるよう命じました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00903": {
+      "wordId": "VD-00903",
+      "headword": "take",
+      "senses": [
+        {
+          "senseId": "VD-00903-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "持っていく・連れていく",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00903-v-01-e01",
+            "en": "Please take your umbrella to school.",
+            "ja": "学校へ傘を持っていってください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00903-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "時間がかかる",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00903-v-02-e01",
+            "en": "It takes ten minutes to walk there.",
+            "ja": "そこへ歩いて行くには10分かかります。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00903-v-03",
+          "partOfSpeech": "verb",
+          "meaningJa": "乗り物を利用する",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00903-v-03-e01",
+            "en": "I take the bus to school.",
+            "ja": "私はバスで通学します。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00903-v-04",
+          "partOfSpeech": "verb",
+          "meaningJa": "写真を撮る",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00903-v-04-e01",
+            "en": "Can you take a picture of us?",
+            "ja": "私たちの写真を撮ってくれますか。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00903-n2-109",
+          "partOfSpeech": "verb",
+          "meaningJa": "持っていく・連れていく",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00903-n2-109-e01",
+            "en": "Take your umbrella to school.",
+            "ja": "学校に傘を持っていきなさい。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-00903-n2-110",
+          "partOfSpeech": "verb",
+          "meaningJa": "時間がかかる",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00903-n2-110-e01",
+            "en": "The test takes forty minutes.",
+            "ja": "その試験には40分かかります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00550": {
+      "wordId": "VD-00550",
+      "headword": "look",
+      "senses": [
+        {
+          "senseId": "VD-00550-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "見る",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00550-v-01-e01",
+            "en": "Look at the picture carefully.",
+            "ja": "その写真を注意深く見てください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00550-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "〜に見える",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00550-v-02-e01",
+            "en": "You look tired today.",
+            "ja": "今日は疲れているように見えます。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00550-v-03",
+          "partOfSpeech": "verb",
+          "meaningJa": "探す（look for）",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00550-v-03-e01",
+            "en": "I'm looking for my keys.",
+            "ja": "私は鍵を探しています。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00785": {
+      "wordId": "VD-00785",
+      "headword": "see",
+      "senses": [
+        {
+          "senseId": "VD-00785-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "見る・見える",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00785-v-01-e01",
+            "en": "I can see a mountain from here.",
+            "ja": "ここから山が見えます。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00785-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "理解する・わかる",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00785-v-02-e01",
+            "en": "I see what you mean.",
+            "ja": "あなたの言いたいことがわかります。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00785-v-03",
+          "partOfSpeech": "verb",
+          "meaningJa": "会う・面会する",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00785-v-03-e01",
+            "en": "I'll see you at the station.",
+            "ja": "駅で会いましょう。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00451": {
+      "wordId": "VD-00451",
+      "headword": "hold",
+      "senses": [
+        {
+          "senseId": "VD-00451-v-01",
+          "partOfSpeech": "verb",
+          "meaningJa": "握る・持つ",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00451-v-01-e01",
+            "en": "Hold my hand while we cross.",
+            "ja": "渡る間、私の手を握ってください。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00451-v-02",
+          "partOfSpeech": "verb",
+          "meaningJa": "行事を開催する",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00451-v-02-e01",
+            "en": "Our school will hold a speech contest.",
+            "ja": "学校ではスピーチコンテストを開催します。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00066": {
+      "wordId": "VD-00066",
+      "headword": "bank",
+      "senses": [
+        {
+          "senseId": "VD-00066-n-01",
+          "partOfSpeech": "noun",
+          "meaningJa": "銀行",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00066-n-01-e01",
+            "en": "I deposited my savings at the bank.",
+            "ja": "私は銀行に貯金を預けました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00066-n-02",
+          "partOfSpeech": "noun",
+          "meaningJa": "川岸",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00066-n-02-e01",
+            "en": "We sat on the bank of the river.",
+            "ja": "私たちは川岸に座りました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-01276": {
+      "wordId": "VD-01276",
+      "headword": "clear",
+      "senses": [
+        {
+          "senseId": "VD-01276-adj-01",
+          "partOfSpeech": "adjective",
+          "meaningJa": "わかりやすい・明確な",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-01276-adj-01-e01",
+            "en": "The teacher gave us clear instructions.",
+            "ja": "先生は私たちに明確な指示を出しました。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-01276-adj-02",
+          "partOfSpeech": "adjective",
+          "meaningJa": "透明な・澄んだ",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-01276-adj-02-e01",
+            "en": "The lake water was clear.",
+            "ja": "湖の水は澄んでいました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00425": {
+      "wordId": "VD-00425",
+      "headword": "hard",
+      "senses": [
+        {
+          "senseId": "VD-00425-adj-01",
+          "partOfSpeech": "adjective",
+          "meaningJa": "難しい",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00425-adj-01-e01",
+            "en": "This puzzle is hard for me.",
+            "ja": "このパズルは私には難しいです。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00425-adj-02",
+          "partOfSpeech": "adjective",
+          "meaningJa": "硬い",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00425-adj-02-e01",
+            "en": "The ground was hard after the dry weather.",
+            "ja": "乾燥した天気が続き、地面は硬くなりました。",
+            "context": "基本文脈"
+          }
+        }
+      ]
+    },
+    "VD-00364": {
+      "wordId": "VD-00364",
+      "headword": "free",
+      "senses": [
+        {
+          "senseId": "VD-00364-adj-01",
+          "partOfSpeech": "adjective",
+          "meaningJa": "無料の",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00364-adj-01-e01",
+            "en": "The museum is free for children.",
+            "ja": "その博物館は子どもは無料です。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00364-adj-02",
+          "partOfSpeech": "adjective",
+          "meaningJa": "自由な・拘束されない",
+          "sourceBatch": "batches/batch-02.json",
+          "example": {
+            "id": "VD-00364-adj-02-e01",
+            "en": "Everyone is free to express an opinion.",
+            "ja": "誰でも自由に意見を述べられます。",
+            "context": "基本文脈"
+          }
+        },
+        {
+          "senseId": "VD-00364-n2-194",
+          "partOfSpeech": "adjective",
+          "meaningJa": "無料の",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00364-n2-194-e01",
+            "en": "The museum is free for students.",
+            "ja": "その博物館は学生は無料です。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-00364-n2-195",
+          "partOfSpeech": "adjective",
+          "meaningJa": "自由な・空いている",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00364-n2-195-e01",
+            "en": "Are you free after school?",
+            "ja": "放課後は時間がありますか。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01013": {
+      "wordId": "VD-01013",
+      "headword": "water",
+      "senses": [
+        {
+          "senseId": "VD-01013-n2-006",
+          "partOfSpeech": "noun",
+          "meaningJa": "水",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01013-n2-006-e01",
+            "en": "Please drink some water after running.",
+            "ja": "走った後は水を飲んでください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00349": {
+      "wordId": "VD-00349",
+      "headword": "flower",
+      "senses": [
+        {
+          "senseId": "VD-00349-n2-017",
+          "partOfSpeech": "noun",
+          "meaningJa": "花",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00349-n2-017-e01",
+            "en": "A yellow flower grew beside the path.",
+            "ja": "黄色い花が小道のそばに咲いていました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00736": {
+      "wordId": "VD-00736",
+      "headword": "rain",
+      "senses": [
+        {
+          "senseId": "VD-00736-n2-023",
+          "partOfSpeech": "noun",
+          "meaningJa": "雨",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00736-n2-023-e01",
+            "en": "The rain stopped just before lunch.",
+            "ja": "昼食の直前に雨がやみました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00837": {
+      "wordId": "VD-00837",
+      "headword": "snow",
+      "senses": [
+        {
+          "senseId": "VD-00837-n2-024",
+          "partOfSpeech": "noun",
+          "meaningJa": "雪",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00837-n2-024-e01",
+            "en": "Snow covered the road overnight.",
+            "ja": "一晩のうちに雪が道路を覆いました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00887": {
+      "wordId": "VD-00887",
+      "headword": "sun",
+      "senses": [
+        {
+          "senseId": "VD-00887-n2-027",
+          "partOfSpeech": "noun",
+          "meaningJa": "太陽",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00887-n2-027-e01",
+            "en": "The sun rose above the hills.",
+            "ja": "太陽が丘の上に昇りました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00595": {
+      "wordId": "VD-00595",
+      "headword": "moon",
+      "senses": [
+        {
+          "senseId": "VD-00595-n2-028",
+          "partOfSpeech": "noun",
+          "meaningJa": "月",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00595-n2-028-e01",
+            "en": "A full moon appeared above the town.",
+            "ja": "満月が町の上に現れました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00863": {
+      "wordId": "VD-00863",
+      "headword": "star",
+      "senses": [
+        {
+          "senseId": "VD-00863-n2-029",
+          "partOfSpeech": "noun",
+          "meaningJa": "星",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00863-n2-029-e01",
+            "en": "We saw hundreds of stars in the sky.",
+            "ja": "私たちは空に何百もの星を見ました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00826": {
+      "wordId": "VD-00826",
+      "headword": "sky",
+      "senses": [
+        {
+          "senseId": "VD-00826-n2-030",
+          "partOfSpeech": "noun",
+          "meaningJa": "空",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00826-n2-030-e01",
+            "en": "The sky was clear after the storm.",
+            "ja": "嵐の後、空は晴れていました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00463": {
+      "wordId": "VD-00463",
+      "headword": "house",
+      "senses": [
+        {
+          "senseId": "VD-00463-n2-031",
+          "partOfSpeech": "noun",
+          "meaningJa": "家・建物",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00463-n2-031-e01",
+            "en": "Their house has a small garden.",
+            "ja": "彼らの家には小さな庭があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00454": {
+      "wordId": "VD-00454",
+      "headword": "home",
+      "senses": [
+        {
+          "senseId": "VD-00454-n2-032",
+          "partOfSpeech": "noun",
+          "meaningJa": "家庭・住まい",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00454-n2-032-e01",
+            "en": "I feel relaxed when I get home.",
+            "ja": "家に帰るとほっとします。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00761": {
+      "wordId": "VD-00761",
+      "headword": "room",
+      "senses": [
+        {
+          "senseId": "VD-00761-n2-033",
+          "partOfSpeech": "noun",
+          "meaningJa": "部屋",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00761-n2-033-e01",
+            "en": "My room faces the garden.",
+            "ja": "私の部屋は庭に面しています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00778": {
+      "wordId": "VD-00778",
+      "headword": "school",
+      "senses": [
+        {
+          "senseId": "VD-00778-n2-039",
+          "partOfSpeech": "noun",
+          "meaningJa": "学校",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00778-n2-039-e01",
+            "en": "Our school starts at eight thirty.",
+            "ja": "私たちの学校は8時半に始まります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00184": {
+      "wordId": "VD-00184",
+      "headword": "classroom",
+      "senses": [
+        {
+          "senseId": "VD-00184-n2-040",
+          "partOfSpeech": "noun",
+          "meaningJa": "教室",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00184-n2-040-e01",
+            "en": "Our classroom has large windows.",
+            "ja": "私たちの教室には大きな窓があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00456": {
+      "wordId": "VD-00456",
+      "headword": "homework",
+      "senses": [
+        {
+          "senseId": "VD-00456-n2-043",
+          "partOfSpeech": "noun",
+          "meaningJa": "宿題",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00456-n2-043-e01",
+            "en": "I finished my homework before dinner.",
+            "ja": "私は夕食前に宿題を終えました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00633": {
+      "wordId": "VD-00633",
+      "headword": "notebook",
+      "senses": [
+        {
+          "senseId": "VD-00633-n2-047",
+          "partOfSpeech": "noun",
+          "meaningJa": "ノート",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00633-n2-047-e01",
+            "en": "I wrote the new words in my notebook.",
+            "ja": "私は新しい単語をノートに書きました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00207": {
+      "wordId": "VD-00207",
+      "headword": "computer",
+      "senses": [
+        {
+          "senseId": "VD-00207-n2-048",
+          "partOfSpeech": "noun",
+          "meaningJa": "コンピューター",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00207-n2-048-e01",
+            "en": "The students used computers to make videos.",
+            "ja": "生徒たちは動画を作るためにコンピューターを使いました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00690": {
+      "wordId": "VD-00690",
+      "headword": "phone",
+      "senses": [
+        {
+          "senseId": "VD-00690-n2-049",
+          "partOfSpeech": "noun",
+          "meaningJa": "電話・携帯電話",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00690-n2-049-e01",
+            "en": "I left my phone at home.",
+            "ja": "私は携帯電話を家に忘れました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01046": {
+      "wordId": "VD-01046",
+      "headword": "world",
+      "senses": [
+        {
+          "senseId": "VD-01046-n2-070",
+          "partOfSpeech": "noun",
+          "meaningJa": "世界",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01046-n2-070-e01",
+            "en": "Students around the world joined the meeting.",
+            "ja": "世界中の生徒がその会議に参加しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00375": {
+      "wordId": "VD-00375",
+      "headword": "game",
+      "senses": [
+        {
+          "senseId": "VD-00375-n2-080",
+          "partOfSpeech": "noun",
+          "meaningJa": "ゲーム・試合",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00375-n2-080-e01",
+            "en": "The class played a word game.",
+            "ja": "クラスは単語ゲームをしました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00354": {
+      "wordId": "VD-00354",
+      "headword": "food",
+      "senses": [
+        {
+          "senseId": "VD-00354-n2-081",
+          "partOfSpeech": "noun",
+          "meaningJa": "食べ物",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00354-n2-081-e01",
+            "en": "We brought food for the picnic.",
+            "ja": "私たちはピクニック用の食べ物を持ってきました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00947": {
+      "wordId": "VD-00947",
+      "headword": "time",
+      "senses": [
+        {
+          "senseId": "VD-00947-n2-083",
+          "partOfSpeech": "noun",
+          "meaningJa": "時間",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00947-n2-083-e01",
+            "en": "We don't have enough time to finish.",
+            "ja": "私たちには終えるための十分な時間がありません。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00239": {
+      "wordId": "VD-00239",
+      "headword": "day",
+      "senses": [
+        {
+          "senseId": "VD-00239-n2-084",
+          "partOfSpeech": "noun",
+          "meaningJa": "日・一日",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00239-n2-084-e01",
+            "en": "The trip takes two days.",
+            "ja": "その旅行には2日かかります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00624": {
+      "wordId": "VD-00624",
+      "headword": "night",
+      "senses": [
+        {
+          "senseId": "VD-00624-n2-085",
+          "partOfSpeech": "noun",
+          "meaningJa": "夜",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00624-n2-085-e01",
+            "en": "We saw many stars at night.",
+            "ja": "私たちは夜に多くの星を見ました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00617": {
+      "wordId": "VD-00617",
+      "headword": "need",
+      "senses": [
+        {
+          "senseId": "VD-00617-n2-104",
+          "partOfSpeech": "verb",
+          "meaningJa": "必要とする",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00617-n2-104-e01",
+            "en": "You need a passport to travel abroad.",
+            "ja": "海外旅行にはパスポートが必要です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00439": {
+      "wordId": "VD-00439",
+      "headword": "help",
+      "senses": [
+        {
+          "senseId": "VD-00439-n2-105",
+          "partOfSpeech": "verb",
+          "meaningJa": "手伝う・助ける",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00439-n2-105-e01",
+            "en": "Can you help me carry these boxes?",
+            "ja": "この箱を運ぶのを手伝ってくれますか。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00991": {
+      "wordId": "VD-00991",
+      "headword": "use",
+      "senses": [
+        {
+          "senseId": "VD-00991-n2-108",
+          "partOfSpeech": "verb",
+          "meaningJa": "使う",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00991-n2-108-e01",
+            "en": "Use a ruler to draw a straight line.",
+            "ja": "直線を引くには定規を使ってください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00144": {
+      "wordId": "VD-00144",
+      "headword": "buy",
+      "senses": [
+        {
+          "senseId": "VD-00144-n2-112",
+          "partOfSpeech": "verb",
+          "meaningJa": "買う",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00144-n2-112-e01",
+            "en": "I bought a ticket online.",
+            "ja": "私はオンラインでチケットを買いました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01005": {
+      "wordId": "VD-01005",
+      "headword": "walk",
+      "senses": [
+        {
+          "senseId": "VD-01005-n2-116",
+          "partOfSpeech": "verb",
+          "meaningJa": "歩く",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01005-n2-116-e01",
+            "en": "I walk to the station every morning.",
+            "ja": "私は毎朝駅まで歩きます。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00185": {
+      "wordId": "VD-00185",
+      "headword": "clean",
+      "senses": [
+        {
+          "senseId": "VD-00185-n2-122",
+          "partOfSpeech": "verb",
+          "meaningJa": "掃除する・きれいにする",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00185-n2-122-e01",
+            "en": "Please clean your desk before leaving.",
+            "ja": "帰る前に机をきれいにしてください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00827": {
+      "wordId": "VD-00827",
+      "headword": "sleep",
+      "senses": [
+        {
+          "senseId": "VD-00827-n2-124",
+          "partOfSpeech": "verb",
+          "meaningJa": "眠る",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00827-n2-124-e01",
+            "en": "I usually sleep for eight hours.",
+            "ja": "私は普段8時間眠ります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00768": {
+      "wordId": "VD-00768",
+      "headword": "sad",
+      "senses": [
+        {
+          "senseId": "VD-00768-n2-163",
+          "partOfSpeech": "adjective",
+          "meaningJa": "悲しい",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00768-n2-163-e01",
+            "en": "She felt sad when her friend moved away.",
+            "ja": "友達が引っ越したとき彼女は悲しく感じました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00322": {
+      "wordId": "VD-00322",
+      "headword": "fast",
+      "senses": [
+        {
+          "senseId": "VD-00322-n2-178",
+          "partOfSpeech": "adjective",
+          "meaningJa": "速い",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00322-n2-178-e01",
+            "en": "This train is very fast.",
+            "ja": "この列車はとても速いです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-02248": {
+      "wordId": "VD-02248",
+      "headword": "useful",
+      "senses": [
+        {
+          "senseId": "VD-02248-n2-191",
+          "partOfSpeech": "adjective",
+          "meaningJa": "役に立つ",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-02248-n2-191-e01",
+            "en": "This dictionary is useful for beginners.",
+            "ja": "この辞書は初心者に役立ちます。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01521": {
+      "wordId": "VD-01521",
+      "headword": "forest",
+      "senses": [
+        {
+          "senseId": "VD-01521-n-3-001",
+          "partOfSpeech": "noun",
+          "meaningJa": "森林",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01521-n-3-001-e01",
+            "en": "We walked through a quiet forest after lunch.",
+            "ja": "昼食後、私たちは静かな森の中を歩きました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00488": {
+      "wordId": "VD-00488",
+      "headword": "island",
+      "senses": [
+        {
+          "senseId": "VD-00488-n-3-003",
+          "partOfSpeech": "noun",
+          "meaningJa": "島",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00488-n-3-003-e01",
+            "en": "My grandparents live on a small island.",
+            "ja": "祖父母は小さな島に住んでいます。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-02123": {
+      "wordId": "VD-02123",
+      "headword": "storm",
+      "senses": [
+        {
+          "senseId": "VD-02123-n-3-008",
+          "partOfSpeech": "noun",
+          "meaningJa": "嵐",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-02123-n-3-008-e01",
+            "en": "A storm damaged several houses near the coast.",
+            "ja": "嵐で海岸近くの家が数軒被害を受けました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01423": {
+      "wordId": "VD-01423",
+      "headword": "earthquake",
+      "senses": [
+        {
+          "senseId": "VD-01423-n-3-011",
+          "partOfSpeech": "noun",
+          "meaningJa": "地震",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01423-n-3-011-e01",
+            "en": "An earthquake woke us up early this morning.",
+            "ja": "今朝早く、地震で私たちは目を覚ましました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00710": {
+      "wordId": "VD-00710",
+      "headword": "pollution",
+      "senses": [
+        {
+          "senseId": "VD-00710-n-3-014",
+          "partOfSpeech": "noun",
+          "meaningJa": "汚染",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00710-n-3-014-e01",
+            "en": "Air pollution can affect people's health.",
+            "ja": "大気汚染は人々の健康に影響することがあります。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00034",
+          "partOfSpeech": "noun",
+          "meaningJa": "汚染",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00034-e01",
+            "en": "Air pollution is a serious health concern.",
+            "ja": "大気汚染は健康上の深刻な懸念です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04400": {
+      "wordId": "VD-04400",
+      "headword": "waste",
+      "senses": [
+        {
+          "senseId": "VD-04400-n-3-016",
+          "partOfSpeech": "noun",
+          "meaningJa": "廃棄物・ごみ",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-04400-n-3-016-e01",
+            "en": "The school is trying to produce less food waste.",
+            "ja": "学校は食品廃棄物を減らそうとしています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-04400-v-3-017",
+          "partOfSpeech": "verb",
+          "meaningJa": "無駄にする",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-04400-v-3-017-e01",
+            "en": "Don't waste water while brushing your teeth.",
+            "ja": "歯を磨いている間、水を無駄にしないでください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-02941": {
+      "wordId": "VD-02941",
+      "headword": "electricity",
+      "senses": [
+        {
+          "senseId": "VD-02941-n-3-020",
+          "partOfSpeech": "noun",
+          "meaningJa": "電気",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-02941-n-3-020-e01",
+            "en": "The village gets electricity from a nearby power station.",
+            "ja": "その村には近くの発電所から電気が供給されています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00021": {
+      "wordId": "VD-00021",
+      "headword": "airport",
+      "senses": [
+        {
+          "senseId": "VD-00021-n-3-026",
+          "partOfSpeech": "noun",
+          "meaningJa": "空港",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00021-n-3-026-e01",
+            "en": "We arrived at the airport two hours early.",
+            "ja": "私たちは2時間早く空港に着きました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00228": {
+      "wordId": "VD-00228",
+      "headword": "culture",
+      "senses": [
+        {
+          "senseId": "VD-00228-n-3-033",
+          "partOfSpeech": "noun",
+          "meaningJa": "文化",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00228-n-3-033-e01",
+            "en": "Food is an important part of a country's culture.",
+            "ja": "食べ物はその国の文化の重要な一部です。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-00228-n-3-034",
+          "partOfSpeech": "noun",
+          "meaningJa": "芸術・文化活動",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-00228-n-3-034-e01",
+            "en": "The city supports culture through free concerts.",
+            "ja": "市は無料コンサートを通して文化活動を支援しています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00049",
+          "partOfSpeech": "noun",
+          "meaningJa": "文化",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00049-e01",
+            "en": "Food is an important part of culture.",
+            "ja": "食べ物は文化の重要な一部です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01429": {
+      "wordId": "VD-01429",
+      "headword": "effect",
+      "senses": [
+        {
+          "senseId": "VD-01429-n-4-003",
+          "partOfSpeech": "noun",
+          "meaningJa": "影響・効果",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01429-n-4-003-e01",
+            "en": "The new rule had a positive effect on attendance.",
+            "ja": "新しい規則は出席状況に良い影響を与えました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00017",
+          "partOfSpeech": "noun",
+          "meaningJa": "影響・効果",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00017-e01",
+            "en": "More sleep had a positive effect on her concentration.",
+            "ja": "睡眠時間を増やしたことは彼女の集中力によい影響を与えました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04877": {
+      "wordId": "VD-04877",
+      "headword": "cooperate",
+      "senses": [
+        {
+          "senseId": "VD-04877-v-4-023",
+          "partOfSpeech": "verb",
+          "meaningJa": "協力する",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-04877-v-4-023-e01",
+            "en": "The students cooperated to finish the project.",
+            "ja": "生徒たちはプロジェクトを終えるために協力しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01903": {
+      "wordId": "VD-01903",
+      "headword": "produce",
+      "senses": [
+        {
+          "senseId": "VD-01903-v-5-002",
+          "partOfSpeech": "verb",
+          "meaningJa": "生産する・製造する",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01903-v-5-002-e01",
+            "en": "This factory produces bicycle parts.",
+            "ja": "この工場は自転車の部品を製造しています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-01903-v-5-003",
+          "partOfSpeech": "verb",
+          "meaningJa": "引き起こす・生み出す",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01903-v-5-003-e01",
+            "en": "The discussion produced several useful ideas.",
+            "ja": "その話し合いから役立つ考えがいくつか生まれました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01516": {
+      "wordId": "VD-01516",
+      "headword": "follow",
+      "senses": [
+        {
+          "senseId": "VD-01516-v-5-024",
+          "partOfSpeech": "verb",
+          "meaningJa": "後について行く",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01516-v-5-024-e01",
+            "en": "Follow me to the library.",
+            "ja": "図書館まで私について来てください。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-01516-v-5-025",
+          "partOfSpeech": "verb",
+          "meaningJa": "指示・規則に従う",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01516-v-5-025-e01",
+            "en": "Please follow the instructions on the screen.",
+            "ja": "画面の指示に従ってください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01083": {
+      "wordId": "VD-01083",
+      "headword": "advantage",
+      "senses": [
+        {
+          "senseId": "VD-01083-n-5-040",
+          "partOfSpeech": "noun",
+          "meaningJa": "利点・強み",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01083-n-5-040-e01",
+            "en": "An advantage of online learning is flexibility.",
+            "ja": "オンライン学習の利点の一つは柔軟性です。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00024",
+          "partOfSpeech": "noun",
+          "meaningJa": "利点・有利な点",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00024-e01",
+            "en": "A major advantage of cycling is its low cost.",
+            "ja": "自転車の大きな利点は費用があまりかからないことです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01390": {
+      "wordId": "VD-01390",
+      "headword": "disadvantage",
+      "senses": [
+        {
+          "senseId": "VD-01390-n-5-041",
+          "partOfSpeech": "noun",
+          "meaningJa": "不利な点・欠点",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-01390-n-5-041-e01",
+            "en": "A disadvantage of the apartment is its small kitchen.",
+            "ja": "そのアパートの欠点は台所が狭いことです。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00025",
+          "partOfSpeech": "noun",
+          "meaningJa": "不利な点・欠点",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00025-e01",
+            "en": "One disadvantage of this phone is its short battery life.",
+            "ja": "この携帯電話の欠点の1つは電池の持ちが短いことです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-02135": {
+      "wordId": "VD-02135",
+      "headword": "success",
+      "senses": [
+        {
+          "senseId": "VD-02135-n-5-050",
+          "partOfSpeech": "noun",
+          "meaningJa": "成功",
+          "sourceBatch": "batches/batch-03.json",
+          "example": {
+            "id": "VD-02135-n-5-050-e01",
+            "en": "The event was a great success.",
+            "ja": "その行事は大成功でした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01272": {
+      "wordId": "VD-01272",
+      "headword": "claim",
+      "senses": [
+        {
+          "senseId": "VD3-00004",
+          "partOfSpeech": "verb",
+          "meaningJa": "主張する",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00004-e01",
+            "en": "The company claims that the product saves energy.",
+            "ja": "その会社は製品が省エネルギーにつながると主張しています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD3-00005",
+          "partOfSpeech": "noun",
+          "meaningJa": "主張",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00005-e01",
+            "en": "Her claim needs more evidence.",
+            "ja": "彼女の主張にはさらに根拠が必要です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01065": {
+      "wordId": "VD-01065",
+      "headword": "ability",
+      "senses": [
+        {
+          "senseId": "VD3-00056",
+          "partOfSpeech": "noun",
+          "meaningJa": "能力",
+          "sourceBatch": "batches/batch-04.json",
+          "example": {
+            "id": "VD3-00056-e01",
+            "en": "She has the ability to solve difficult problems.",
+            "ja": "彼女には難しい問題を解く能力があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-02355": {
+      "wordId": "VD-02355",
+      "headword": "advance",
+      "senses": [
+        {
+          "senseId": "VD4-00003",
+          "partOfSpeech": "verb",
+          "meaningJa": "前進・進展する",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00003-e01",
+            "en": "The rescue team advanced slowly through the forest.",
+            "ja": "救助隊は森の中をゆっくり進みました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD4-00004",
+          "partOfSpeech": "noun",
+          "meaningJa": "進歩・進展",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00004-e01",
+            "en": "Recent advances have made batteries safer.",
+            "ja": "最近の技術の進歩によって電池はより安全になりました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03426": {
+      "wordId": "VD-03426",
+      "headword": "limit",
+      "senses": [
+        {
+          "senseId": "VD4-00073",
+          "partOfSpeech": "verb",
+          "meaningJa": "制限する",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00073-e01",
+            "en": "The school limits screen time during class.",
+            "ja": "その学校は授業中の画面を見る時間を制限しています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD4-00074",
+          "partOfSpeech": "noun",
+          "meaningJa": "限度・制限",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00074-e01",
+            "en": "There is a limit of two tickets per person.",
+            "ja": "チケットは1人2枚までという制限があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01947": {
+      "wordId": "VD-01947",
+      "headword": "reflect",
+      "senses": [
+        {
+          "senseId": "VD4-00091",
+          "partOfSpeech": "verb",
+          "meaningJa": "反射する",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00091-e01",
+            "en": "The lake reflected the mountains at sunrise.",
+            "ja": "湖は日の出の山々を映していました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD4-00092",
+          "partOfSpeech": "verb",
+          "meaningJa": "反映する・表す",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00092-e01",
+            "en": "The survey results reflect students' opinions.",
+            "ja": "そのアンケート結果は生徒の意見を反映しています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD4-00093",
+          "partOfSpeech": "verb",
+          "meaningJa": "振り返って考える",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00093-e01",
+            "en": "Take a moment to reflect on what you learned.",
+            "ja": "学んだことを少し振り返ってみてください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03883": {
+      "wordId": "VD-03883",
+      "headword": "regard",
+      "senses": [
+        {
+          "senseId": "VD4-00094",
+          "partOfSpeech": "verb",
+          "meaningJa": "～とみなす・考える",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00094-e01",
+            "en": "Many people regard her as an excellent leader.",
+            "ja": "多くの人が彼女を優れたリーダーだと考えています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01960": {
+      "wordId": "VD-01960",
+      "headword": "replace",
+      "senses": [
+        {
+          "senseId": "VD4-00098",
+          "partOfSpeech": "verb",
+          "meaningJa": "取り替える・代わりに使う",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00098-e01",
+            "en": "We replaced the old lights with LED bulbs.",
+            "ja": "私たちは古い照明をLED電球に取り替えました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03950": {
+      "wordId": "VD-03950",
+      "headword": "rise",
+      "senses": [
+        {
+          "senseId": "VD4-00106",
+          "partOfSpeech": "verb",
+          "meaningJa": "上がる・増加する",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00106-e01",
+            "en": "Sea levels are rising in many regions.",
+            "ja": "多くの地域で海面水位が上昇しています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04016": {
+      "wordId": "VD-04016",
+      "headword": "settle",
+      "senses": [
+        {
+          "senseId": "VD4-00108",
+          "partOfSpeech": "verb",
+          "meaningJa": "解決する・決着をつける",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00108-e01",
+            "en": "The two teams settled their disagreement peacefully.",
+            "ja": "2つのチームは争いを平和的に解決しました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD4-00109",
+          "partOfSpeech": "verb",
+          "meaningJa": "定住する・住み着く",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00109-e01",
+            "en": "Her family settled in Canada ten years ago.",
+            "ja": "彼女の家族は10年前にカナダに定住しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-06591": {
+      "wordId": "VD-06591",
+      "headword": "threaten",
+      "senses": [
+        {
+          "senseId": "VD4-00126",
+          "partOfSpeech": "verb",
+          "meaningJa": "脅かす・危険にさらす",
+          "sourceBatch": "batches/batch-05.json",
+          "example": {
+            "id": "VD4-00126-e01",
+            "en": "Rising temperatures threaten coral reefs.",
+            "ja": "気温の上昇はサンゴ礁を脅かしています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01412": {
+      "wordId": "VD-01412",
+      "headword": "dressed",
+      "senses": [
+        {
+          "senseId": "VD5-00057",
+          "partOfSpeech": "adjective",
+          "meaningJa": "服を着ている・身支度をした",
+          "sourceBatch": "batches/batch-06.json",
+          "example": {
+            "id": "VD5-00057-e01",
+            "en": "The children were dressed for the cold weather.",
+            "ja": "子どもたちは寒い天気に合わせた服を着ていました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00218": {
+      "wordId": "VD-00218",
+      "headword": "correct",
+      "senses": [
+        {
+          "senseId": "VD8-00001",
+          "partOfSpeech": "verb",
+          "meaningJa": "訂正する・直す",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00001-e01",
+            "en": "Please correct the spelling mistakes in this paragraph.",
+            "ja": "この段落のつづりの間違いを直してください。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD8-00002",
+          "partOfSpeech": "adjective",
+          "meaningJa": "正しい・正確な",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00002-e01",
+            "en": "Only one of these answers is correct.",
+            "ja": "これらの答えのうち正しいものは1つだけです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05918": {
+      "wordId": "VD-05918",
+      "headword": "overturn",
+      "senses": [
+        {
+          "senseId": "VD8-00075",
+          "partOfSpeech": "verb",
+          "meaningJa": "ひっくり返す・転覆させる",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00075-e01",
+            "en": "The strong wind overturned several chairs.",
+            "ja": "強風でいくつかの椅子が倒れました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD8-00076",
+          "partOfSpeech": "verb",
+          "meaningJa": "（決定・判決を）覆す",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00076-e01",
+            "en": "The court overturned the previous ruling.",
+            "ja": "裁判所は以前の判決を覆しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03912": {
+      "wordId": "VD-03912",
+      "headword": "reproduce",
+      "senses": [
+        {
+          "senseId": "VD8-00086",
+          "partOfSpeech": "verb",
+          "meaningJa": "再現する・複製する",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00086-e01",
+            "en": "The scientists reproduced the experiment's results.",
+            "ja": "科学者たちは実験結果を再現しました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD8-00087",
+          "partOfSpeech": "verb",
+          "meaningJa": "繁殖する",
+          "sourceBatch": "batches/batch-08.json",
+          "example": {
+            "id": "VD8-00087-e01",
+            "en": "Many insects reproduce quickly in warm weather.",
+            "ja": "多くの昆虫は暖かい天候では素早く繁殖します。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03505": {
+      "wordId": "VD-03505",
+      "headword": "minority",
+      "senses": [
+        {
+          "senseId": "VD9-00059",
+          "partOfSpeech": "noun",
+          "meaningJa": "少数派・少数集団",
+          "sourceBatch": "batches/batch-09.json",
+          "example": {
+            "id": "VD9-00059-e01",
+            "en": "A minority of students chose the evening course.",
+            "ja": "少数の生徒が夜間コースを選びました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-06088": {
+      "wordId": "VD-06088",
+      "headword": "priority",
+      "senses": [
+        {
+          "senseId": "VD9-00073",
+          "partOfSpeech": "noun",
+          "meaningJa": "優先事項・優先順位",
+          "sourceBatch": "batches/batch-09.json",
+          "example": {
+            "id": "VD9-00073-e01",
+            "en": "Student safety is our first priority.",
+            "ja": "生徒の安全が私たちの最優先事項です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05064": {
+      "wordId": "VD-05064",
+      "headword": "domestic",
+      "senses": [
+        {
+          "senseId": "VD10-00027",
+          "partOfSpeech": "adjective",
+          "meaningJa": "国内の・家庭内の",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00027-e01",
+            "en": "Domestic flights are usually shorter than international ones.",
+            "ja": "国内線は一般に国際線より短いです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07110": {
+      "wordId": "VD-07110",
+      "headword": "dominant",
+      "senses": [
+        {
+          "senseId": "VD10-00028",
+          "partOfSpeech": "adjective",
+          "meaningJa": "支配的な・最も目立つ",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00028-e01",
+            "en": "Blue is the dominant color in the painting.",
+            "ja": "その絵では青が最も目立つ色です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05184": {
+      "wordId": "VD-05184",
+      "headword": "exceptional",
+      "senses": [
+        {
+          "senseId": "VD10-00036",
+          "partOfSpeech": "adjective",
+          "meaningJa": "並外れた・非常に優れた",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00036-e01",
+            "en": "The student showed exceptional skill in music.",
+            "ja": "その生徒は音楽で並外れた能力を示しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05186": {
+      "wordId": "VD-05186",
+      "headword": "excessive",
+      "senses": [
+        {
+          "senseId": "VD10-00037",
+          "partOfSpeech": "adjective",
+          "meaningJa": "過度の・必要以上の",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00037-e01",
+            "en": "Excessive screen time can reduce sleep.",
+            "ja": "画面を見る時間が過度に長いと睡眠が減ることがあります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-01719": {
+      "wordId": "VD-01719",
+      "headword": "major",
+      "senses": [
+        {
+          "senseId": "VD10-00062",
+          "partOfSpeech": "adjective",
+          "meaningJa": "主要な・大きな",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00062-e01",
+            "en": "Air pollution is a major concern in the city.",
+            "ja": "大気汚染はその都市の大きな懸念事項です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05902": {
+      "wordId": "VD-05902",
+      "headword": "overall",
+      "senses": [
+        {
+          "senseId": "VD10-00068",
+          "partOfSpeech": "adjective",
+          "meaningJa": "全体的な・総合的な",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00068-e01",
+            "en": "The overall result was positive.",
+            "ja": "全体的な結果はよいものでした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-06087": {
+      "wordId": "VD-06087",
+      "headword": "prior",
+      "senses": [
+        {
+          "senseId": "VD10-00072",
+          "partOfSpeech": "adjective",
+          "meaningJa": "以前の・事前の",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00072-e01",
+            "en": "Prior experience is not required for this course.",
+            "ja": "この講座に事前の経験は必要ありません。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-06749": {
+      "wordId": "VD-06749",
+      "headword": "urban",
+      "senses": [
+        {
+          "senseId": "VD10-00092",
+          "partOfSpeech": "adjective",
+          "meaningJa": "都市の・都会の",
+          "sourceBatch": "batches/batch-10.json",
+          "example": {
+            "id": "VD10-00092-e01",
+            "en": "Urban areas often have dense public transport networks.",
+            "ja": "都市部には公共交通網が密集していることがよくあります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05814": {
+      "wordId": "VD-05814",
+      "headword": "neglect",
+      "senses": [
+        {
+          "senseId": "VD11-00017",
+          "partOfSpeech": "verb",
+          "meaningJa": "世話を怠る・放置する",
+          "sourceBatch": "batches/batch-11.json",
+          "example": {
+            "id": "VD11-00017-e01",
+            "en": "The owner neglected the garden for months.",
+            "ja": "持ち主は何か月も庭の手入れを怠りました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD11-00018",
+          "partOfSpeech": "verb",
+          "meaningJa": "おろそかにする・忘れる",
+          "sourceBatch": "batches/batch-11.json",
+          "example": {
+            "id": "VD11-00018-e01",
+            "en": "Do not neglect regular revision before exams.",
+            "ja": "試験前の定期的な復習をおろそかにしないでください。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD11-00019",
+          "partOfSpeech": "noun",
+          "meaningJa": "放置・世話の不足",
+          "sourceBatch": "batches/batch-11.json",
+          "example": {
+            "id": "VD11-00019-e01",
+            "en": "The old building suffered from years of neglect.",
+            "ja": "その古い建物は長年の放置によって傷んでいました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-03614": {
+      "wordId": "VD-03614",
+      "headword": "occasion",
+      "senses": [
+        {
+          "senseId": "VD11-00020",
+          "partOfSpeech": "noun",
+          "meaningJa": "機会・時",
+          "sourceBatch": "batches/batch-11.json",
+          "example": {
+            "id": "VD11-00020-e01",
+            "en": "On one occasion, we studied with a class overseas.",
+            "ja": "あるとき私たちは海外のクラスと一緒に学びました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD11-00021",
+          "partOfSpeech": "noun",
+          "meaningJa": "特別な行事・祝い事",
+          "sourceBatch": "batches/batch-11.json",
+          "example": {
+            "id": "VD11-00021-e01",
+            "en": "They prepared a meal for the special occasion.",
+            "ja": "彼らは特別な行事のために食事を用意しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00017": {
+      "wordId": "VD-00017",
+      "headword": "age",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00010",
+          "partOfSpeech": "noun",
+          "meaningJa": "年齢",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00010-e01",
+            "en": "What is the age of the youngest player?",
+            "ja": "最も若い選手の年齢はいくつですか。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00046": {
+      "wordId": "VD-00046",
+      "headword": "arm",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00023",
+          "partOfSpeech": "noun",
+          "meaningJa": "腕",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00023-e01",
+            "en": "He raised his arm to ask a question.",
+            "ja": "彼は質問するために手を挙げました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00049": {
+      "wordId": "VD-00049",
+      "headword": "art",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00026",
+          "partOfSpeech": "noun",
+          "meaningJa": "美術・芸術",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00026-e01",
+            "en": "Art is my favorite subject at school.",
+            "ja": "美術は私が学校で一番好きな教科です。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00060": {
+      "wordId": "VD-00060",
+      "headword": "back",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00035",
+          "partOfSpeech": "noun",
+          "meaningJa": "背中",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00035-e01",
+            "en": "My back hurts after carrying the bags.",
+            "ja": "荷物を運んだあと背中が痛みます。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-BULK-261114-A1-00036",
+          "partOfSpeech": "adverb",
+          "meaningJa": "戻って",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00036-e01",
+            "en": "We came back before sunset.",
+            "ja": "私たちは日没前に戻りました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00062": {
+      "wordId": "VD-00062",
+      "headword": "bag",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00038",
+          "partOfSpeech": "noun",
+          "meaningJa": "かばん・袋",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00038-e01",
+            "en": "She put her lunch in her bag.",
+            "ja": "彼女は弁当をかばんに入れました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00063": {
+      "wordId": "VD-00063",
+      "headword": "ball",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00039",
+          "partOfSpeech": "noun",
+          "meaningJa": "ボール・球",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00039-e01",
+            "en": "The ball rolled under the desk.",
+            "ja": "ボールは机の下に転がりました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00071": {
+      "wordId": "VD-00071",
+      "headword": "bath",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00045",
+          "partOfSpeech": "noun",
+          "meaningJa": "入浴・風呂",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00045-e01",
+            "en": "I usually take a bath before bed.",
+            "ja": "私はふつう寝る前にお風呂に入ります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00072": {
+      "wordId": "VD-00072",
+      "headword": "bathroom",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00046",
+          "partOfSpeech": "noun",
+          "meaningJa": "浴室・トイレ",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00046-e01",
+            "en": "The bathroom is at the end of the hall.",
+            "ja": "浴室は廊下の突き当たりにあります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00080": {
+      "wordId": "VD-00080",
+      "headword": "bed",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00052",
+          "partOfSpeech": "noun",
+          "meaningJa": "ベッド",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00052-e01",
+            "en": "The cat is sleeping on my bed.",
+            "ja": "猫は私のベッドで寝ています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00081": {
+      "wordId": "VD-00081",
+      "headword": "bedroom",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00053",
+          "partOfSpeech": "noun",
+          "meaningJa": "寝室",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00053-e01",
+            "en": "My bedroom has a small window.",
+            "ja": "私の寝室には小さな窓があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00101": {
+      "wordId": "VD-00101",
+      "headword": "black",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00069",
+          "partOfSpeech": "adjective",
+          "meaningJa": "黒い",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00069-e01",
+            "en": "The cat has black fur.",
+            "ja": "その猫の毛は黒いです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00102": {
+      "wordId": "VD-00102",
+      "headword": "blank",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00070",
+          "partOfSpeech": "adjective",
+          "meaningJa": "空白の・何も書かれていない",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00070-e01",
+            "en": "Please write your name on the blank line.",
+            "ja": "空欄に名前を書いてください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00106": {
+      "wordId": "VD-00106",
+      "headword": "board",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00075",
+          "partOfSpeech": "noun",
+          "meaningJa": "板・掲示板",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00075-e01",
+            "en": "The teacher wrote the date on the board.",
+            "ja": "先生は黒板に日付を書きました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00111": {
+      "wordId": "VD-00111",
+      "headword": "bookstore",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00079",
+          "partOfSpeech": "noun",
+          "meaningJa": "書店・本屋",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00079-e01",
+            "en": "We bought a dictionary at the bookstore.",
+            "ja": "私たちは書店で辞書を買いました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00118": {
+      "wordId": "VD-00118",
+      "headword": "box",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00086",
+          "partOfSpeech": "noun",
+          "meaningJa": "箱",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00086-e01",
+            "en": "The package arrived in a large box.",
+            "ja": "荷物は大きな箱に入って届きました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00132": {
+      "wordId": "VD-00132",
+      "headword": "brush",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00094",
+          "partOfSpeech": "noun",
+          "meaningJa": "ブラシ・はけ",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00094-e01",
+            "en": "Use a soft brush to clean the shoes.",
+            "ja": "柔らかいブラシで靴をきれいにしてください。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-BULK-261114-A1-00095",
+          "partOfSpeech": "verb",
+          "meaningJa": "ブラシをかける・磨く",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00095-e01",
+            "en": "Brush your teeth before bed.",
+            "ja": "寝る前に歯を磨いてください。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00156": {
+      "wordId": "VD-00156",
+      "headword": "card",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00108",
+          "partOfSpeech": "noun",
+          "meaningJa": "カード・札",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00108-e01",
+            "en": "She sent a birthday card to her friend.",
+            "ja": "彼女は友達に誕生日カードを送りました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00162": {
+      "wordId": "VD-00162",
+      "headword": "case",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00111",
+          "partOfSpeech": "noun",
+          "meaningJa": "箱・入れ物",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00111-e01",
+            "en": "The camera is in its case.",
+            "ja": "カメラはケースに入っています。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-BULK-261114-A1-00112",
+          "partOfSpeech": "noun",
+          "meaningJa": "場合・事例",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00112-e01",
+            "en": "In this case, we should ask the teacher.",
+            "ja": "この場合は先生に尋ねるべきです。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-00164": {
+      "wordId": "VD-00164",
+      "headword": "catch",
+      "senses": [
+        {
+          "senseId": "VD-BULK-261114-A1-00113",
+          "partOfSpeech": "verb",
+          "meaningJa": "つかまえる・受け止める",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00113-e01",
+            "en": "Can you catch the ball with one hand?",
+            "ja": "片手でボールをキャッチできますか。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VD-BULK-261114-A1-00114",
+          "partOfSpeech": "verb",
+          "meaningJa": "乗り物に間に合う・乗る",
+          "sourceBatch": "batches/bulk-20261114-a1.json",
+          "example": {
+            "id": "VD-BULK-261114-A1-00114-e01",
+            "en": "We need to catch the first train.",
+            "ja": "私たちは始発電車に乗る必要があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    }
+  }
+}
