@@ -56,6 +56,12 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - The live application is not wired to these draft files. The original master files were not modified. Examples and definitions in the master itself also have draft editorial status.
 - Run `node tools/validate-voca-roots-master-first.mjs` to verify full ID/source/example reference integrity for the new batch, as well as `node tools/validate-voca-roots-word-breakdowns.mjs` for the entire Word Breakdown dataset.
 
+## Root and affix family bridges (2026-11-18)
+- `master-first-family-bridge-20261118.json`: **162** of the 446 new master words link exactly to existing *candidate* VocaRoots family IDs. **284** have no confirmed candidate relationship and remain unlinked.
+- `master-first-root-stories-20261118.json`: **63** draft root-family teaching stories formed from **86** existing candidate root-word memberships; **18** stories contain multiple new member words. Their original etymological assertions are **not yet verified**.
+- `BULK_BREAKDOWN_AUDIT_20261118.md` records counts, provenance checks, 54 high-priority semantic-risk items, and the remaining editorial tasks.
+- Validate the new family bridge with `node tools/validate-voca-roots-family-bridge.mjs`. No new family link may be published solely because an exact word-ID join exists.
+
 ## Critical editorial cautions
 1. **Historical roots and today's morphological segmentation are different things.** Do not teach `important` as if today's meaning literally follows from `im + port + ant`.
 2. A visual match in spelling cannot establish an etymological relationship. Even exact joined forms from an authored family are only candidate records.
