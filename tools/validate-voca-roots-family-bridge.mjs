@@ -46,7 +46,7 @@ for (const story of stories.stories) {
   assert.equal(story.learningMeaningJa, roots.get(story.morphemeId).meaningJa);
   const members = bridge.byMorphemeId[story.morphemeId];
   assert.equal(members.length, story.examples.length);
-  assert.deepEqual(story.examples.map(x => x.wordId), members.map(x => x.wordId).sort((a,b)=>story.examples.findIndex(x=>x.wordId===a)-story.examples.findIndex(x=>x.wordId===b)));
+  assert.deepEqual(story.examples.map(x => x.wordId).sort(), members.map(x => x.wordId).sort());
   for(const x of story.examples) {
     assert.ok(members.some(m => m.wordId === x.wordId));
     assert.equal(byWordId.get(x.wordId)?.wordMeaningJa, x.meaningJa);
