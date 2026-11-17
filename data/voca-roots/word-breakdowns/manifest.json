@@ -11,28 +11,33 @@
     "completeMaster": false
   },
   "counts": {
-    "records": 1607,
-    "distinctHeadwords": 1604,
-    "automatedModernDerivationCandidates": 1572,
+    "records": 3172,
+    "distinctHeadwords": 3169,
+    "automatedModernDerivationCandidates": 3137,
     "handAuthoredCoreRecords": 35,
-    "candidateIndexMatchedRows": 184,
-    "candidateIndexMatchedDistinctHeadwords": 182,
-    "unresolvedMasterRows": 1423,
+    "candidateIndexMatchedRows": 219,
+    "candidateIndexMatchedDistinctHeadwords": 217,
+    "unresolvedMasterRows": 2953,
     "fullyEditorialReviewed": 0
   },
   "files": [
     "modern-derivation-candidates-001.json",
     "modern-derivation-candidates-002.json",
+    "modern-derivation-candidates-003.json",
+    "modern-derivation-candidates-004.json",
+    "modern-derivation-candidates-005.json",
     "core-breakdowns-001.json",
     "core-breakdowns-002.json"
   ],
-  "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords).",
+  "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords); all remain drafts pending review.",
   "qualityNotesJa": [
     "語根・接頭辞・接尾辞の個別語源と日本語説明の校閲は未完了。",
     "現代英語の派生関係候補は、既存の語族リストと品詞と文字列の直接連結だけで検証。語源確定を意味しない。",
     "wordId は不完全な2,733語索引への完全一致のみ採用。未登録と確定しない。",
     "本番・個人別記憶エンジンには接続しない。",
-    "綴り上の分割と、歴史的語源の説明を別種のレコードとして管理。"
+    "綴り上の分割と、歴史的語源の説明を別種のレコードとして管理。",
+    "追加バッチ003〜005では関連語族に基づく新規1,565件を登録。綴りの変化の候補（語末eの脱落・y→i・末子音重複）は学習上の仮分解であり、歴史語源が検証されたものではない。",
+    "2026-11-17追加の1,565件は既存見出し語との重複を除去済み。ただし同一語彙に複数の歴史的分析が成立する可能性を否定しない。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
