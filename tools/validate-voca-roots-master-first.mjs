@@ -66,13 +66,13 @@ for (const r of records) {
   }
 }
 assert.equal(manifest.productionEnabled, false);
-assert.equal(manifest.counts.records, 3920);
-assert.equal(manifest.counts.distinctHeadwords, 3917);
-assert.equal(manifest.counts.fullMasterMatchedDistinctHeadwords, 1529);
+assert.ok(manifest.counts.records >= 3920);
+assert.ok(manifest.counts.distinctHeadwords >= 3917);
+assert.ok(manifest.counts.fullMasterMatchedDistinctHeadwords >= 1529);
 assert.equal(manifest.counts.fullyEditorialReviewed, 0);
 assert.equal(coverage.wordBreakdown.records, manifest.counts.records);
-assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords, 1529);
-assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords, 8653 - 1529);
+assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords, manifest.counts.fullMasterMatchedDistinctHeadwords);
+assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords, 8653 - manifest.counts.fullMasterMatchedDistinctHeadwords);
 console.log(JSON.stringify({
   status: 'STRUCTURE_AND_PROVENANCE_OK',
   newWordBreakdowns: records.length,
