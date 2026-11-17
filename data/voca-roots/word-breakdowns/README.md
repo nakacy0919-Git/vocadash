@@ -4,9 +4,9 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 
 ## What is registered
 - **3,350 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
-- **124 individually written core teaching explanations and prefix-learning drafts**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **3,920 source records / 3,917 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- **1,531 records (1,529 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
+- **231 individually written core teaching explanations, prefix-learning drafts and curated morphology candidates**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
+- **4,027 source records / 4,024 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- **1,638 records (1,636 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -83,3 +83,13 @@ node tools/validate-voca-roots-word-breakdowns.mjs
 ```
 
 This checks structure, exact spelling reconstruction, unique IDs, source-family membership, morpheme references, master-index matching, counts and safe publication flags. Passing this check does **not** certify etymological accuracy.
+
+
+## Curated batch 012: high-utility transparent derivations (2026-11-18)
+- Added **107 explicitly selected master-matched drafts:** **96 suffix** and **11 prefix** candidates. The original vocabulary master and pre-existing breakdowns were left intact.
+- Distinct candidate breakdown coverage is now **1,636 / 8,653 (18.9%)**. This measures draft coverage only, not linguistic approval.
+- The source file `master-curated-012.json` contains original Japanese learning glosses, exact base word IDs, spelling rules, comparison questions and notes about semantic change.
+- False visual decompositions such as `flower = flow + -er`, `witness = wit + -ness`, `unless = un- + less` remain excluded by an explicit selection list.
+- `meaningSource = original-editorial-draft-not-master-sense-verified` means **the Japanese gloss is not yet checked against the exact original master sense**. No source examples or historic etymologies have been invented or certified.
+- All records remain `draft-unreviewed`, `editorialReviewRequired=true`, `historicalEtymologyVerified=false`, and `productionEligible=false`. No student UI or deployment.
+- Validate using `node tools/validate-voca-roots-word-breakdowns.mjs` and `node tools/validate-voca-roots-curated-012.mjs`.
