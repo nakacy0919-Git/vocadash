@@ -1,0 +1,4507 @@
+{
+  "schemaVersion": "1.1",
+  "batch": "017",
+  "quizGroup": "prefix-example-identification",
+  "records": [
+    {
+      "id": "quiz:examples:prefix:un-negative",
+      "morphemeId": "prefix:un-negative",
+      "type": "examples-to-morpheme",
+      "questionJa": "unhappy / unfair / unclear に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: unhappy, unfair, unclear?",
+      "choices": [
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        }
+      ],
+      "answerId": "prefix:un-negative",
+      "explanationJa": "un- は「〜でない」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:un-reversal",
+      "morphemeId": "prefix:un-reversal",
+      "type": "examples-to-morpheme",
+      "questionJa": "unlock / untie / unpack に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: unlock, untie, unpack?",
+      "choices": [
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        }
+      ],
+      "answerId": "prefix:un-reversal",
+      "explanationJa": "un- は「元の状態に戻す」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:re",
+      "morphemeId": "prefix:re",
+      "type": "examples-to-morpheme",
+      "questionJa": "rewrite / rebuild / review に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: rewrite, rebuild, review?",
+      "choices": [
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        }
+      ],
+      "answerId": "prefix:re",
+      "explanationJa": "re- は「再び・元へ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pre",
+      "morphemeId": "prefix:pre",
+      "type": "examples-to-morpheme",
+      "questionJa": "preview / prepay / preschool に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: preview, prepay, preschool?",
+      "choices": [
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:pre",
+          "labelJa": "pre-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        }
+      ],
+      "answerId": "prefix:pre",
+      "explanationJa": "pre- は「前もって・以前」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:post",
+      "morphemeId": "prefix:post",
+      "type": "examples-to-morpheme",
+      "questionJa": "postwar / postdate / postgraduate に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: postwar, postdate, postgraduate?",
+      "choices": [
+        {
+          "id": "prefix:post",
+          "labelJa": "post-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        }
+      ],
+      "answerId": "prefix:post",
+      "explanationJa": "post- は「後に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:dis",
+      "morphemeId": "prefix:dis",
+      "type": "examples-to-morpheme",
+      "questionJa": "disagree / dislike / disconnect に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: disagree, dislike, disconnect?",
+      "choices": [
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        }
+      ],
+      "answerId": "prefix:dis",
+      "explanationJa": "dis- は「否定・分離・反対」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:mis",
+      "morphemeId": "prefix:mis",
+      "type": "examples-to-morpheme",
+      "questionJa": "misunderstand / misread / mislead に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: misunderstand, misread, mislead?",
+      "choices": [
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        }
+      ],
+      "answerId": "prefix:mis",
+      "explanationJa": "mis- は「誤って」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:non",
+      "morphemeId": "prefix:non",
+      "type": "examples-to-morpheme",
+      "questionJa": "nonfiction / nonverbal / nonviolent に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: nonfiction, nonverbal, nonviolent?",
+      "choices": [
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        }
+      ],
+      "answerId": "prefix:non",
+      "explanationJa": "non- は「〜でない・非〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:in-negative",
+      "morphemeId": "prefix:in-negative",
+      "type": "examples-to-morpheme",
+      "questionJa": "invisible / impossible / illegal に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: invisible, impossible, illegal?",
+      "choices": [
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:in-negative",
+      "explanationJa": "in / im- は「〜でない」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:in-inward",
+      "morphemeId": "prefix:in-inward",
+      "type": "examples-to-morpheme",
+      "questionJa": "insert / inject / import に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: insert, inject, import?",
+      "choices": [
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:in-inward",
+      "explanationJa": "in / im- は「中へ・中に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ex",
+      "morphemeId": "prefix:ex",
+      "type": "examples-to-morpheme",
+      "questionJa": "export / exclude / extract に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: export, exclude, extract?",
+      "choices": [
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "ex / e-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        }
+      ],
+      "answerId": "prefix:ex",
+      "explanationJa": "ex / e- は「外へ・外に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:co",
+      "morphemeId": "prefix:co",
+      "type": "examples-to-morpheme",
+      "questionJa": "cooperate / combine / connect に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: cooperate, combine, connect?",
+      "choices": [
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexa-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        }
+      ],
+      "answerId": "prefix:co",
+      "explanationJa": "co / com- は「共に・一緒に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:inter",
+      "morphemeId": "prefix:inter",
+      "type": "examples-to-morpheme",
+      "questionJa": "international / interact / interconnect に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: international, interact, interconnect?",
+      "choices": [
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homo-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        }
+      ],
+      "answerId": "prefix:inter",
+      "explanationJa": "inter- は「間に・相互に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:intra",
+      "morphemeId": "prefix:intra",
+      "type": "examples-to-morpheme",
+      "questionJa": "intravenous / intranet / intramural に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: intravenous, intranet, intramural?",
+      "choices": [
+        {
+          "id": "prefix:micro",
+          "labelJa": "micro-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intra-"
+        }
+      ],
+      "answerId": "prefix:intra",
+      "explanationJa": "intra- は「内部に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:trans",
+      "morphemeId": "prefix:trans",
+      "type": "examples-to-morpheme",
+      "questionJa": "transport / transmit / transatlantic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: transport, transmit, transatlantic?",
+      "choices": [
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        }
+      ],
+      "answerId": "prefix:trans",
+      "explanationJa": "trans- は「越えて・横切って」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:sub",
+      "morphemeId": "prefix:sub",
+      "type": "examples-to-morpheme",
+      "questionJa": "submarine / subway / subheading に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: submarine, subway, subheading?",
+      "choices": [
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:sub",
+      "explanationJa": "sub- は「下に・副次的な」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:super",
+      "morphemeId": "prefix:super",
+      "type": "examples-to-morpheme",
+      "questionJa": "superpower / superhuman / superstructure に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: superpower, superhuman, superstructure?",
+      "choices": [
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        },
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        }
+      ],
+      "answerId": "prefix:super",
+      "explanationJa": "super- は「上に・超えて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:over",
+      "morphemeId": "prefix:over",
+      "type": "examples-to-morpheme",
+      "questionJa": "overcook / overwork / overestimate に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: overcook, overwork, overestimate?",
+      "choices": [
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        }
+      ],
+      "answerId": "prefix:over",
+      "explanationJa": "over- は「過度に・上に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:under",
+      "morphemeId": "prefix:under",
+      "type": "examples-to-morpheme",
+      "questionJa": "underestimate / underpay / underground に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: underestimate, underpay, underground?",
+      "choices": [
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:under",
+          "labelJa": "under-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        }
+      ],
+      "answerId": "prefix:under",
+      "explanationJa": "under- は「不足・下に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:anti",
+      "morphemeId": "prefix:anti",
+      "type": "examples-to-morpheme",
+      "questionJa": "antiwar / antibacterial / antivirus に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: antiwar, antibacterial, antivirus?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        }
+      ],
+      "answerId": "prefix:anti",
+      "explanationJa": "anti- は「反対・対抗」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:auto",
+      "morphemeId": "prefix:auto",
+      "type": "examples-to-morpheme",
+      "questionJa": "autobiography / autopilot / autograph に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: autobiography, autopilot, autograph?",
+      "choices": [
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        }
+      ],
+      "answerId": "prefix:auto",
+      "explanationJa": "auto- は「自分自身・自動」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:bi",
+      "morphemeId": "prefix:bi",
+      "type": "examples-to-morpheme",
+      "questionJa": "bicycle / bilingual / bilateral に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: bicycle, bilingual, bilateral?",
+      "choices": [
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:bi",
+      "explanationJa": "bi- は「二つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:tri",
+      "morphemeId": "prefix:tri",
+      "type": "examples-to-morpheme",
+      "questionJa": "triangle / tricycle / tripod に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: triangle, tricycle, tripod?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electro-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        }
+      ],
+      "answerId": "prefix:tri",
+      "explanationJa": "tri- は「三つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:multi",
+      "morphemeId": "prefix:multi",
+      "type": "examples-to-morpheme",
+      "questionJa": "multilingual / multicultural / multinational に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: multilingual, multicultural, multinational?",
+      "choices": [
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "ab / abs-"
+        }
+      ],
+      "answerId": "prefix:multi",
+      "explanationJa": "multi- は「多数の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:poly",
+      "morphemeId": "prefix:poly",
+      "type": "examples-to-morpheme",
+      "questionJa": "polygon / polytheism / polymer に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: polygon, polytheism, polymer?",
+      "choices": [
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:poly",
+      "explanationJa": "poly- は「多数の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:mono",
+      "morphemeId": "prefix:mono",
+      "type": "examples-to-morpheme",
+      "questionJa": "monologue / monopoly / monorail に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: monologue, monopoly, monorail?",
+      "choices": [
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:off",
+          "labelJa": "off-"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "mono-"
+        }
+      ],
+      "answerId": "prefix:mono",
+      "explanationJa": "mono- は「一つの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:micro",
+      "morphemeId": "prefix:micro",
+      "type": "examples-to-morpheme",
+      "questionJa": "microscope / microchip / microorganism に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: microscope, microchip, microorganism?",
+      "choices": [
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "micro-"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        }
+      ],
+      "answerId": "prefix:micro",
+      "explanationJa": "micro- は「小さい」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:macro",
+      "morphemeId": "prefix:macro",
+      "type": "examples-to-morpheme",
+      "questionJa": "macroeconomics / macroscopic / macromolecule に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: macroeconomics, macroscopic, macromolecule?",
+      "choices": [
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:macro",
+      "explanationJa": "macro- は「大きい・大規模」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:semi",
+      "morphemeId": "prefix:semi",
+      "type": "examples-to-morpheme",
+      "questionJa": "semicircle / semifinal / semiconductor に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: semicircle, semifinal, semiconductor?",
+      "choices": [
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:agro",
+          "labelJa": "agro-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        }
+      ],
+      "answerId": "prefix:semi",
+      "explanationJa": "semi- は「半分・部分的」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:counter",
+      "morphemeId": "prefix:counter",
+      "type": "examples-to-morpheme",
+      "questionJa": "counterattack / counterbalance / counterargument に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: counterattack, counterbalance, counterargument?",
+      "choices": [
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        }
+      ],
+      "answerId": "prefix:counter",
+      "explanationJa": "counter- は「対抗・反対」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:a-no",
+      "morphemeId": "prefix:a-no",
+      "type": "examples-to-morpheme",
+      "questionJa": "atypical / asymmetry / amoral に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: atypical, asymmetry, amoral?",
+      "choices": [
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        }
+      ],
+      "answerId": "prefix:a-no",
+      "explanationJa": "a / an- は「〜がない・欠如」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ab",
+      "morphemeId": "prefix:ab",
+      "type": "examples-to-morpheme",
+      "questionJa": "abduct / absent / abstain に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: abduct, absent, abstain?",
+      "choices": [
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:ab",
+          "labelJa": "ab / abs-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        }
+      ],
+      "answerId": "prefix:ab",
+      "explanationJa": "ab / abs- は「離れて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ad",
+      "morphemeId": "prefix:ad",
+      "type": "examples-to-morpheme",
+      "questionJa": "adapt / adhere / attract に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: adapt, adhere, attract?",
+      "choices": [
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudo-"
+        }
+      ],
+      "answerId": "prefix:ad",
+      "explanationJa": "ad / ac- は「〜へ・近づいて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ante",
+      "morphemeId": "prefix:ante",
+      "type": "examples-to-morpheme",
+      "questionJa": "antecedent / antenatal / antechamber に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: antecedent, antenatal, antechamber?",
+      "choices": [
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        }
+      ],
+      "answerId": "prefix:ante",
+      "explanationJa": "ante- は「前に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:circum",
+      "morphemeId": "prefix:circum",
+      "type": "examples-to-morpheme",
+      "questionJa": "circumnavigate / circumference / circumscribe に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: circumnavigate, circumference, circumscribe?",
+      "choices": [
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        }
+      ],
+      "answerId": "prefix:circum",
+      "explanationJa": "circum- は「周囲に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:contra",
+      "morphemeId": "prefix:contra",
+      "type": "examples-to-morpheme",
+      "questionJa": "contradict / contraception / contravene に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: contradict, contraception, contravene?",
+      "choices": [
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        }
+      ],
+      "answerId": "prefix:contra",
+      "explanationJa": "contra- は「反対に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:de",
+      "morphemeId": "prefix:de",
+      "type": "examples-to-morpheme",
+      "questionJa": "defrost / deactivate / devalue に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: defrost, deactivate, devalue?",
+      "choices": [
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        }
+      ],
+      "answerId": "prefix:de",
+      "explanationJa": "de- は「下へ・離す・取り除く」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:en-prefix",
+      "morphemeId": "prefix:en-prefix",
+      "type": "examples-to-morpheme",
+      "questionJa": "enable / enlarge / enrich に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: enable, enlarge, enrich?",
+      "choices": [
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:en-prefix",
+      "explanationJa": "en / em- は「〜にする・中に入れる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:extra",
+      "morphemeId": "prefix:extra",
+      "type": "examples-to-morpheme",
+      "questionJa": "extracurricular / extraordinary / extraterrestrial に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: extracurricular, extraordinary, extraterrestrial?",
+      "choices": [
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        }
+      ],
+      "answerId": "prefix:extra",
+      "explanationJa": "extra- は「外側・範囲を超えて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:fore",
+      "morphemeId": "prefix:fore",
+      "type": "examples-to-morpheme",
+      "questionJa": "forecast / foresee / forewarn に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: forecast, foresee, forewarn?",
+      "choices": [
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:fore",
+          "labelJa": "fore-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        }
+      ],
+      "answerId": "prefix:fore",
+      "explanationJa": "fore- は「前に・先に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hyper",
+      "morphemeId": "prefix:hyper",
+      "type": "examples-to-morpheme",
+      "questionJa": "hyperactive / hypertension / hypersensitive に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: hyperactive, hypertension, hypersensitive?",
+      "choices": [
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        }
+      ],
+      "answerId": "prefix:hyper",
+      "explanationJa": "hyper- は「過度・超えて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hypo",
+      "morphemeId": "prefix:hypo",
+      "type": "examples-to-morpheme",
+      "questionJa": "hypothermia / hypoglycemia / hypodermic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: hypothermia, hypoglycemia, hypodermic?",
+      "choices": [
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphi-"
+        },
+        {
+          "id": "prefix:hypo",
+          "labelJa": "hypo-"
+        }
+      ],
+      "answerId": "prefix:hypo",
+      "explanationJa": "hypo- は「下・不足」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hetero",
+      "morphemeId": "prefix:hetero",
+      "type": "examples-to-morpheme",
+      "questionJa": "heterogeneous / heterosexual / heteronym に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: heterogeneous, heterosexual, heteronym?",
+      "choices": [
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "ex / e-"
+        }
+      ],
+      "answerId": "prefix:hetero",
+      "explanationJa": "hetero- は「異なる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:homo",
+      "morphemeId": "prefix:homo",
+      "type": "examples-to-morpheme",
+      "questionJa": "homogeneous / homophone / homonym に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: homogeneous, homophone, homonym?",
+      "choices": [
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:homo",
+          "labelJa": "homo-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        },
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        }
+      ],
+      "answerId": "prefix:homo",
+      "explanationJa": "homo- は「同じ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:meta",
+      "morphemeId": "prefix:meta",
+      "type": "examples-to-morpheme",
+      "questionJa": "metamorphosis / metadata / metalinguistic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: metamorphosis, metadata, metalinguistic?",
+      "choices": [
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:in-inward",
+          "labelJa": "in / im-"
+        }
+      ],
+      "answerId": "prefix:meta",
+      "explanationJa": "meta- は「変化・一段上の視点」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:neo",
+      "morphemeId": "prefix:neo",
+      "type": "examples-to-morpheme",
+      "questionJa": "neoclassical / neonatal / neologism に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: neoclassical, neonatal, neologism?",
+      "choices": [
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        }
+      ],
+      "answerId": "prefix:neo",
+      "explanationJa": "neo- は「新しい」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:para",
+      "morphemeId": "prefix:para",
+      "type": "examples-to-morpheme",
+      "questionJa": "paramedic / paralegal / parathyroid に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: paramedic, paralegal, parathyroid?",
+      "choices": [
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        },
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        }
+      ],
+      "answerId": "prefix:para",
+      "explanationJa": "para- は「そば・関連・補助」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pro-forward",
+      "morphemeId": "prefix:pro-forward",
+      "type": "examples-to-morpheme",
+      "questionJa": "proceed / promote / propel に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: proceed, promote, propel?",
+      "choices": [
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        }
+      ],
+      "answerId": "prefix:pro-forward",
+      "explanationJa": "pro- は「前へ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:retro",
+      "morphemeId": "prefix:retro",
+      "type": "examples-to-morpheme",
+      "questionJa": "retroactive / retrospective / retrograde に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: retroactive, retrospective, retrograde?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        }
+      ],
+      "answerId": "prefix:retro",
+      "explanationJa": "retro- は「後ろへ・過去へ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:uni",
+      "morphemeId": "prefix:uni",
+      "type": "examples-to-morpheme",
+      "questionJa": "unilateral / unicycle / unify に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: unilateral, unicycle, unify?",
+      "choices": [
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "mono-"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        }
+      ],
+      "answerId": "prefix:uni",
+      "explanationJa": "uni- は「一つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ambi",
+      "morphemeId": "prefix:ambi",
+      "type": "examples-to-morpheme",
+      "questionJa": "ambidextrous / ambivalent / ambiguous に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ambidextrous, ambivalent, ambiguous?",
+      "choices": [
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        },
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        }
+      ],
+      "answerId": "prefix:ambi",
+      "explanationJa": "ambi- は「両方・二方向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:apo",
+      "morphemeId": "prefix:apo",
+      "type": "examples-to-morpheme",
+      "questionJa": "apostasy / apogee / apoptosis に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: apostasy, apogee, apoptosis?",
+      "choices": [
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        },
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        }
+      ],
+      "answerId": "prefix:apo",
+      "explanationJa": "apo- は「離れて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:arch",
+      "morphemeId": "prefix:arch",
+      "type": "examples-to-morpheme",
+      "questionJa": "archbishop / archenemy / archrival に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: archbishop, archenemy, archrival?",
+      "choices": [
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        }
+      ],
+      "answerId": "prefix:arch",
+      "explanationJa": "arch- は「首位・主要」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:be",
+      "morphemeId": "prefix:be",
+      "type": "examples-to-morpheme",
+      "questionJa": "befriend / belittle / bewitch に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: befriend, belittle, bewitch?",
+      "choices": [
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        },
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        }
+      ],
+      "answerId": "prefix:be",
+      "explanationJa": "be- は「〜にする・周囲に及ぶ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:dia",
+      "morphemeId": "prefix:dia",
+      "type": "examples-to-morpheme",
+      "questionJa": "diameter / diagonal / diaphragm に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: diameter, diagonal, diaphragm?",
+      "choices": [
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        }
+      ],
+      "answerId": "prefix:dia",
+      "explanationJa": "dia- は「通して・横切って」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:eu",
+      "morphemeId": "prefix:eu",
+      "type": "examples-to-morpheme",
+      "questionJa": "euphoria / euphemism / euthanasia に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: euphoria, euphemism, euthanasia?",
+      "choices": [
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        },
+        {
+          "id": "prefix:eu",
+          "labelJa": "eu-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        }
+      ],
+      "answerId": "prefix:eu",
+      "explanationJa": "eu- は「良い・正常な」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:dys",
+      "morphemeId": "prefix:dys",
+      "type": "examples-to-morpheme",
+      "questionJa": "dyslexia / dysfunction / dysphoria に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: dyslexia, dysfunction, dysphoria?",
+      "choices": [
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        }
+      ],
+      "answerId": "prefix:dys",
+      "explanationJa": "dys- は「困難・異常・悪い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:epi",
+      "morphemeId": "prefix:epi",
+      "type": "examples-to-morpheme",
+      "questionJa": "epidermis / epilogue / epicenter に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: epidermis, epilogue, epicenter?",
+      "choices": [
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        }
+      ],
+      "answerId": "prefix:epi",
+      "explanationJa": "epi- は「上に・付加して」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:infra",
+      "morphemeId": "prefix:infra",
+      "type": "examples-to-morpheme",
+      "questionJa": "infrared / infrastructure / infrasonic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: infrared, infrastructure, infrasonic?",
+      "choices": [
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:infra",
+      "explanationJa": "infra- は「下・より低い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ultra",
+      "morphemeId": "prefix:ultra",
+      "type": "examples-to-morpheme",
+      "questionJa": "ultraviolet / ultrasonic / ultramodern に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ultraviolet, ultrasonic, ultramodern?",
+      "choices": [
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "micro-"
+        }
+      ],
+      "answerId": "prefix:ultra",
+      "explanationJa": "ultra- は「超えて・極度に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:mid",
+      "morphemeId": "prefix:mid",
+      "type": "examples-to-morpheme",
+      "questionJa": "midday / midnight / midterm に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: midday, midnight, midterm?",
+      "choices": [
+        {
+          "id": "prefix:mid",
+          "labelJa": "mid-"
+        },
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:mid",
+      "explanationJa": "mid- は「中間」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:out",
+      "morphemeId": "prefix:out",
+      "type": "examples-to-morpheme",
+      "questionJa": "outperform / outnumber / outgrow に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: outperform, outnumber, outgrow?",
+      "choices": [
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        },
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudo-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        }
+      ],
+      "answerId": "prefix:out",
+      "explanationJa": "out- は「外へ・〜を上回る」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:self",
+      "morphemeId": "prefix:self",
+      "type": "examples-to-morpheme",
+      "questionJa": "self-control / self-esteem / self-taught に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: self-control, self-esteem, self-taught?",
+      "choices": [
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        }
+      ],
+      "answerId": "prefix:self",
+      "explanationJa": "self- は「自分自身」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:quasi",
+      "morphemeId": "prefix:quasi",
+      "type": "examples-to-morpheme",
+      "questionJa": "quasi-legal / quasi-scientific / quasi-public に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: quasi-legal, quasi-scientific, quasi-public?",
+      "choices": [
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        }
+      ],
+      "answerId": "prefix:quasi",
+      "explanationJa": "quasi- は「疑似・ほぼ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pseudo",
+      "morphemeId": "prefix:pseudo",
+      "type": "examples-to-morpheme",
+      "questionJa": "pseudonym / pseudoscience / pseudocode に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: pseudonym, pseudoscience, pseudocode?",
+      "choices": [
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudo-"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:ad",
+          "labelJa": "ad / ac-"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        }
+      ],
+      "answerId": "prefix:pseudo",
+      "explanationJa": "pseudo- は「偽り・見せかけ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pan",
+      "morphemeId": "prefix:pan",
+      "type": "examples-to-morpheme",
+      "questionJa": "pan-African / pan-European / panorama に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: pan-African, pan-European, panorama?",
+      "choices": [
+        {
+          "id": "prefix:neo",
+          "labelJa": "neo-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:pan",
+      "explanationJa": "pan- は「すべて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:omni",
+      "morphemeId": "prefix:omni",
+      "type": "examples-to-morpheme",
+      "questionJa": "omnipresent / omniscient / omnivore に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: omnipresent, omniscient, omnivore?",
+      "choices": [
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:omni",
+          "labelJa": "omni-"
+        },
+        {
+          "id": "prefix:macro",
+          "labelJa": "macro-"
+        }
+      ],
+      "answerId": "prefix:omni",
+      "explanationJa": "omni- は「すべて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:syn",
+      "morphemeId": "prefix:syn",
+      "type": "examples-to-morpheme",
+      "questionJa": "synchronize / synthesis / symmetry に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: synchronize, synthesis, symmetry?",
+      "choices": [
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:syn",
+          "labelJa": "syn / sym-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        }
+      ],
+      "answerId": "prefix:syn",
+      "explanationJa": "syn / sym- は「共に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:peri",
+      "morphemeId": "prefix:peri",
+      "type": "examples-to-morpheme",
+      "questionJa": "perimeter / peripheral / periscope に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: perimeter, peripheral, periscope?",
+      "choices": [
+        {
+          "id": "prefix:peri",
+          "labelJa": "peri-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        }
+      ],
+      "answerId": "prefix:peri",
+      "explanationJa": "peri- は「周囲」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:proto",
+      "morphemeId": "prefix:proto",
+      "type": "examples-to-morpheme",
+      "questionJa": "prototype / protozoan / proto-language に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: prototype, protozoan, proto-language?",
+      "choices": [
+        {
+          "id": "prefix:agro",
+          "labelJa": "agro-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        }
+      ],
+      "answerId": "prefix:proto",
+      "explanationJa": "proto- は「最初の・原初の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:amphi",
+      "morphemeId": "prefix:amphi",
+      "type": "examples-to-morpheme",
+      "questionJa": "amphibious / amphitheater / amphibian に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: amphibious, amphitheater, amphibian?",
+      "choices": [
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        },
+        {
+          "id": "prefix:amphi",
+          "labelJa": "amphi-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        }
+      ],
+      "answerId": "prefix:amphi",
+      "explanationJa": "amphi- は「両方・周囲」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:per",
+      "morphemeId": "prefix:per",
+      "type": "examples-to-morpheme",
+      "questionJa": "permeate / perforate / persist に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: permeate, perforate, persist?",
+      "choices": [
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:poly",
+          "labelJa": "poly-"
+        }
+      ],
+      "answerId": "prefix:per",
+      "explanationJa": "per- は「通して・完全に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ob",
+      "morphemeId": "prefix:ob",
+      "type": "examples-to-morpheme",
+      "questionJa": "object / oppose / obstruct に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: object, oppose, obstruct?",
+      "choices": [
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        }
+      ],
+      "answerId": "prefix:ob",
+      "explanationJa": "ob / oc- は「〜に向かって・対して」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:se-apart",
+      "morphemeId": "prefix:se-apart",
+      "type": "examples-to-morpheme",
+      "questionJa": "separate / seclude / segregate に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: separate, seclude, segregate?",
+      "choices": [
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:hyper",
+          "labelJa": "hyper-"
+        },
+        {
+          "id": "prefix:se-apart",
+          "labelJa": "se-"
+        }
+      ],
+      "answerId": "prefix:se-apart",
+      "explanationJa": "se- は「離れて・分けて」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pro-support",
+      "morphemeId": "prefix:pro-support",
+      "type": "examples-to-morpheme",
+      "questionJa": "pro-democracy / pro-choice / pro-government に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: pro-democracy, pro-choice, pro-government?",
+      "choices": [
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        },
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        }
+      ],
+      "answerId": "prefix:pro-support",
+      "explanationJa": "pro- は「〜に賛成して」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:perma",
+      "morphemeId": "prefix:perma",
+      "type": "examples-to-morpheme",
+      "questionJa": "permafrost / permaculture / permalink に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: permafrost, permaculture, permalink?",
+      "choices": [
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        }
+      ],
+      "answerId": "prefix:perma",
+      "explanationJa": "perma- は「恒久的な」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:vice",
+      "morphemeId": "prefix:vice",
+      "type": "examples-to-morpheme",
+      "questionJa": "vice-president / vice-chair / vice-chancellor に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: vice-president, vice-chair, vice-chancellor?",
+      "choices": [
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:infra",
+          "labelJa": "infra-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        }
+      ],
+      "answerId": "prefix:vice",
+      "explanationJa": "vice- は「代理・副〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:nano",
+      "morphemeId": "prefix:nano",
+      "type": "examples-to-morpheme",
+      "questionJa": "nanotechnology / nanometer / nanoparticle に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: nanotechnology, nanometer, nanoparticle?",
+      "choices": [
+        {
+          "id": "prefix:in-negative",
+          "labelJa": "in / im-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:co",
+          "labelJa": "co / com-"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nano-"
+        }
+      ],
+      "answerId": "prefix:nano",
+      "explanationJa": "nano- は「極小・十億分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:mega",
+      "morphemeId": "prefix:mega",
+      "type": "examples-to-morpheme",
+      "questionJa": "megabyte / megacity / megawatt に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: megabyte, megacity, megawatt?",
+      "choices": [
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:mega",
+          "labelJa": "mega-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        }
+      ],
+      "answerId": "prefix:mega",
+      "explanationJa": "mega- は「巨大・百万」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:giga",
+      "morphemeId": "prefix:giga",
+      "type": "examples-to-morpheme",
+      "questionJa": "gigabyte / gigawatt / gigahertz に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: gigabyte, gigawatt, gigahertz?",
+      "choices": [
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:giga",
+          "labelJa": "giga-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:multi",
+          "labelJa": "multi-"
+        }
+      ],
+      "answerId": "prefix:giga",
+      "explanationJa": "giga- は「十億」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:kilo",
+      "morphemeId": "prefix:kilo",
+      "type": "examples-to-morpheme",
+      "questionJa": "kilogram / kilometer / kilowatt に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: kilogram, kilometer, kilowatt?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        }
+      ],
+      "answerId": "prefix:kilo",
+      "explanationJa": "kilo- は「千」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hemi",
+      "morphemeId": "prefix:hemi",
+      "type": "examples-to-morpheme",
+      "questionJa": "hemisphere / hemiplegia / hemicycle に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: hemisphere, hemiplegia, hemicycle?",
+      "choices": [
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        }
+      ],
+      "answerId": "prefix:hemi",
+      "explanationJa": "hemi- は「半分」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:deci",
+      "morphemeId": "prefix:deci",
+      "type": "examples-to-morpheme",
+      "questionJa": "decimeter / deciliter / decigram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: decimeter, deciliter, decigram?",
+      "choices": [
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        }
+      ],
+      "answerId": "prefix:deci",
+      "explanationJa": "deci- は「十分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:centi",
+      "morphemeId": "prefix:centi",
+      "type": "examples-to-morpheme",
+      "questionJa": "centimeter / centiliter / centigram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: centimeter, centiliter, centigram?",
+      "choices": [
+        {
+          "id": "prefix:dia",
+          "labelJa": "dia-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        },
+        {
+          "id": "prefix:un-reversal",
+          "labelJa": "un-"
+        }
+      ],
+      "answerId": "prefix:centi",
+      "explanationJa": "centi- は「百分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:milli",
+      "morphemeId": "prefix:milli",
+      "type": "examples-to-morpheme",
+      "questionJa": "millimeter / milliliter / millisecond に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: millimeter, milliliter, millisecond?",
+      "choices": [
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        }
+      ],
+      "answerId": "prefix:milli",
+      "explanationJa": "milli- は「千分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hecto",
+      "morphemeId": "prefix:hecto",
+      "type": "examples-to-morpheme",
+      "questionJa": "hectometer / hectoliter / hectopascal に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: hectometer, hectoliter, hectopascal?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:hecto",
+          "labelJa": "hecto-"
+        }
+      ],
+      "answerId": "prefix:hecto",
+      "explanationJa": "hecto- は「百」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:tetra",
+      "morphemeId": "prefix:tetra",
+      "type": "examples-to-morpheme",
+      "questionJa": "tetrahedron / tetrapod / tetragon に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: tetrahedron, tetrapod, tetragon?",
+      "choices": [
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "post-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        }
+      ],
+      "answerId": "prefix:tetra",
+      "explanationJa": "tetra- は「四つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:penta",
+      "morphemeId": "prefix:penta",
+      "type": "examples-to-morpheme",
+      "questionJa": "pentagon / pentathlon / pentagram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: pentagon, pentathlon, pentagram?",
+      "choices": [
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:penta",
+          "labelJa": "penta-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        }
+      ],
+      "answerId": "prefix:penta",
+      "explanationJa": "penta- は「五つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hexa",
+      "morphemeId": "prefix:hexa",
+      "type": "examples-to-morpheme",
+      "questionJa": "hexagon / hexadecimal / hexahedron に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: hexagon, hexadecimal, hexahedron?",
+      "choices": [
+        {
+          "id": "prefix:hexa",
+          "labelJa": "hexa-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:hexa",
+      "explanationJa": "hexa- は「六つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:octa",
+      "morphemeId": "prefix:octa",
+      "type": "examples-to-morpheme",
+      "questionJa": "octagon / octahedron / octopus に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: octagon, octahedron, octopus?",
+      "choices": [
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        },
+        {
+          "id": "prefix:tri",
+          "labelJa": "tri-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        }
+      ],
+      "answerId": "prefix:octa",
+      "explanationJa": "octa / octo- は「八つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:deca",
+      "morphemeId": "prefix:deca",
+      "type": "examples-to-morpheme",
+      "questionJa": "decathlon / decagon / decameter に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: decathlon, decagon, decameter?",
+      "choices": [
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:bi",
+          "labelJa": "bi-"
+        }
+      ],
+      "answerId": "prefix:deca",
+      "explanationJa": "deca / deka- は「十」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:after",
+      "morphemeId": "prefix:after",
+      "type": "examples-to-morpheme",
+      "questionJa": "aftercare / aftereffect / afterthought に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: aftercare, aftereffect, afterthought?",
+      "choices": [
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:post",
+          "labelJa": "post-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        }
+      ],
+      "answerId": "prefix:after",
+      "explanationJa": "after- は「後の・後に」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:back",
+      "morphemeId": "prefix:back",
+      "type": "examples-to-morpheme",
+      "questionJa": "backtrack / backdate / backflow に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: backtrack, backdate, backflow?",
+      "choices": [
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:inter",
+          "labelJa": "inter-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        }
+      ],
+      "answerId": "prefix:back",
+      "explanationJa": "back- は「後ろ・逆方向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:cross",
+      "morphemeId": "prefix:cross",
+      "type": "examples-to-morpheme",
+      "questionJa": "cross-cultural / cross-border / cross-reference に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: cross-cultural, cross-border, cross-reference?",
+      "choices": [
+        {
+          "id": "prefix:after",
+          "labelJa": "after-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:grand-family",
+          "labelJa": "grand-"
+        },
+        {
+          "id": "prefix:cross",
+          "labelJa": "cross-"
+        }
+      ],
+      "answerId": "prefix:cross",
+      "explanationJa": "cross- は「横断・分野を越えた」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:down",
+      "morphemeId": "prefix:down",
+      "type": "examples-to-morpheme",
+      "questionJa": "downgrade / downsize / downplay に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: downgrade, downsize, downplay?",
+      "choices": [
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intra-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        }
+      ],
+      "answerId": "prefix:down",
+      "explanationJa": "down- は「下・減少方向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:up",
+      "morphemeId": "prefix:up",
+      "type": "examples-to-morpheme",
+      "questionJa": "upgrade / upscale / upskill に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: upgrade, upscale, upskill?",
+      "choices": [
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:up",
+          "labelJa": "up-"
+        },
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        }
+      ],
+      "answerId": "prefix:up",
+      "explanationJa": "up- は「上・増加方向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:off",
+      "morphemeId": "prefix:off",
+      "type": "examples-to-morpheme",
+      "questionJa": "offshore / offsite / offline に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: offshore, offsite, offline?",
+      "choices": [
+        {
+          "id": "prefix:off",
+          "labelJa": "off-"
+        },
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        }
+      ],
+      "answerId": "prefix:off",
+      "explanationJa": "off- は「離れた・通常の場所以外」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:on",
+      "morphemeId": "prefix:on",
+      "type": "examples-to-morpheme",
+      "questionJa": "online / onsite / onboard に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: online, onsite, onboard?",
+      "choices": [
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        }
+      ],
+      "answerId": "prefix:on",
+      "explanationJa": "on- は「接続中・現場」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:new",
+      "morphemeId": "prefix:new",
+      "type": "examples-to-morpheme",
+      "questionJa": "newborn / newfound / newlywed に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: newborn, newfound, newlywed?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:new",
+          "labelJa": "new-"
+        },
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        }
+      ],
+      "answerId": "prefix:new",
+      "explanationJa": "new- は「新しく」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:near",
+      "morphemeId": "prefix:near",
+      "type": "examples-to-morpheme",
+      "questionJa": "near-sighted / near-term / near-perfect に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: near-sighted, near-term, near-perfect?",
+      "choices": [
+        {
+          "id": "prefix:circum",
+          "labelJa": "circum-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        }
+      ],
+      "answerId": "prefix:near",
+      "explanationJa": "near- は「ほぼ・近い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:all",
+      "morphemeId": "prefix:all",
+      "type": "examples-to-morpheme",
+      "questionJa": "all-inclusive / all-purpose / all-round に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: all-inclusive, all-purpose, all-round?",
+      "choices": [
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        }
+      ],
+      "answerId": "prefix:all",
+      "explanationJa": "all- は「すべて・全面的」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:half",
+      "morphemeId": "prefix:half",
+      "type": "examples-to-morpheme",
+      "questionJa": "halfhearted / halfway / half-life に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: halfhearted, halfway, half-life?",
+      "choices": [
+        {
+          "id": "prefix:trans",
+          "labelJa": "trans-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        }
+      ],
+      "answerId": "prefix:half",
+      "explanationJa": "half- は「半分・不完全」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:double",
+      "morphemeId": "prefix:double",
+      "type": "examples-to-morpheme",
+      "questionJa": "double-check / double-sided / double-edged に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: double-check, double-sided, double-edged?",
+      "choices": [
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        },
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:ob",
+          "labelJa": "ob / oc-"
+        }
+      ],
+      "answerId": "prefix:double",
+      "explanationJa": "double- は「二重・二倍」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:electro",
+      "morphemeId": "prefix:electro",
+      "type": "examples-to-morpheme",
+      "questionJa": "electrocardiogram / electromagnetic / electrolysis に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: electrocardiogram, electromagnetic, electrolysis?",
+      "choices": [
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        },
+        {
+          "id": "prefix:electro",
+          "labelJa": "electro-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        }
+      ],
+      "answerId": "prefix:electro",
+      "explanationJa": "electro- は「電気を使う」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:eco",
+      "morphemeId": "prefix:eco",
+      "type": "examples-to-morpheme",
+      "questionJa": "eco-friendly / ecotourism / ecosystem に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: eco-friendly, ecotourism, ecosystem?",
+      "choices": [
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        }
+      ],
+      "answerId": "prefix:eco",
+      "explanationJa": "eco- は「環境・生態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:agro",
+      "morphemeId": "prefix:agro",
+      "type": "examples-to-morpheme",
+      "questionJa": "agroforestry / agrochemical / agroecology に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: agroforestry, agrochemical, agroecology?",
+      "choices": [
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:down",
+          "labelJa": "down-"
+        },
+        {
+          "id": "prefix:agro",
+          "labelJa": "agro-"
+        }
+      ],
+      "answerId": "prefix:agro",
+      "explanationJa": "agro- は「農業・農地」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:aero",
+      "morphemeId": "prefix:aero",
+      "type": "examples-to-morpheme",
+      "questionJa": "aerodynamic / aerospace / aeronautics に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: aerodynamic, aerospace, aeronautics?",
+      "choices": [
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        }
+      ],
+      "answerId": "prefix:aero",
+      "explanationJa": "aero- は「空気・航空」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:cardio",
+      "morphemeId": "prefix:cardio",
+      "type": "examples-to-morpheme",
+      "questionJa": "cardiovascular / cardiologist / cardiogram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: cardiovascular, cardiologist, cardiogram?",
+      "choices": [
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        },
+        {
+          "id": "prefix:cardio",
+          "labelJa": "cardio-"
+        },
+        {
+          "id": "prefix:ex",
+          "labelJa": "ex / e-"
+        },
+        {
+          "id": "prefix:ultra",
+          "labelJa": "ultra-"
+        }
+      ],
+      "answerId": "prefix:cardio",
+      "explanationJa": "cardio- は「心臓」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:cyber",
+      "morphemeId": "prefix:cyber",
+      "type": "examples-to-morpheme",
+      "questionJa": "cybersecurity / cybercrime / cyberbullying に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: cybersecurity, cybercrime, cyberbullying?",
+      "choices": [
+        {
+          "id": "prefix:cyber",
+          "labelJa": "cyber-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        },
+        {
+          "id": "prefix:mono",
+          "labelJa": "mono-"
+        }
+      ],
+      "answerId": "prefix:cyber",
+      "explanationJa": "cyber- は「コンピューター・ネット空間」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:iso",
+      "morphemeId": "prefix:iso",
+      "type": "examples-to-morpheme",
+      "questionJa": "isometric / isotope / isothermal に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: isometric, isotope, isothermal?",
+      "choices": [
+        {
+          "id": "prefix:octa",
+          "labelJa": "octa / octo-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        }
+      ],
+      "answerId": "prefix:iso",
+      "explanationJa": "iso- は「等しい・同じ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:crypto",
+      "morphemeId": "prefix:crypto",
+      "type": "examples-to-morpheme",
+      "questionJa": "cryptography / cryptocurrency / cryptogram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: cryptography, cryptocurrency, cryptogram?",
+      "choices": [
+        {
+          "id": "prefix:super",
+          "labelJa": "super-"
+        },
+        {
+          "id": "prefix:half",
+          "labelJa": "half-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        },
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        }
+      ],
+      "answerId": "prefix:crypto",
+      "explanationJa": "crypto- は「隠された・暗号に関する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ex-former",
+      "morphemeId": "prefix:ex-former",
+      "type": "examples-to-morpheme",
+      "questionJa": "ex-president / ex-partner / ex-colleague に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ex-president, ex-partner, ex-colleague?",
+      "choices": [
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:extra",
+          "labelJa": "extra-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        }
+      ],
+      "answerId": "prefix:ex-former",
+      "explanationJa": "ex- は「元〜・前〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:e-digital",
+      "morphemeId": "prefix:e-digital",
+      "type": "examples-to-morpheme",
+      "questionJa": "e-mail / e-commerce / e-learning に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: e-mail, e-commerce, e-learning?",
+      "choices": [
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        },
+        {
+          "id": "prefix:be",
+          "labelJa": "be-"
+        },
+        {
+          "id": "prefix:non",
+          "labelJa": "non-"
+        }
+      ],
+      "answerId": "prefix:e-digital",
+      "explanationJa": "e- は「電子・オンライン」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:step-family",
+      "morphemeId": "prefix:step-family",
+      "type": "examples-to-morpheme",
+      "questionJa": "stepfather / stepmother / stepchild に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: stepfather, stepmother, stepchild?",
+      "choices": [
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:pro-forward",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        },
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        }
+      ],
+      "answerId": "prefix:step-family",
+      "explanationJa": "step- は「継〜・姻族関係」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:grand-family",
+      "morphemeId": "prefix:grand-family",
+      "type": "examples-to-morpheme",
+      "questionJa": "grandparent / grandchild / granddaughter に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: grandparent, grandchild, granddaughter?",
+      "choices": [
+        {
+          "id": "prefix:quasi",
+          "labelJa": "quasi-"
+        },
+        {
+          "id": "prefix:proto",
+          "labelJa": "proto-"
+        },
+        {
+          "id": "prefix:grand-family",
+          "labelJa": "grand-"
+        },
+        {
+          "id": "prefix:milli",
+          "labelJa": "milli-"
+        }
+      ],
+      "answerId": "prefix:grand-family",
+      "explanationJa": "grand- は「祖父母・孫の関係」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:great-family",
+      "morphemeId": "prefix:great-family",
+      "type": "examples-to-morpheme",
+      "questionJa": "great-grandfather / great-grandmother / great-grandchild に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: great-grandfather, great-grandmother, great-grandchild?",
+      "choices": [
+        {
+          "id": "prefix:un-negative",
+          "labelJa": "un-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        },
+        {
+          "id": "prefix:crypto",
+          "labelJa": "crypto-"
+        }
+      ],
+      "answerId": "prefix:great-family",
+      "explanationJa": "great- は「さらに一世代離れた」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:mini",
+      "morphemeId": "prefix:mini",
+      "type": "examples-to-morpheme",
+      "questionJa": "minibus / miniskirt / miniseries に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: minibus, miniskirt, miniseries?",
+      "choices": [
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:auto",
+          "labelJa": "auto-"
+        }
+      ],
+      "answerId": "prefix:mini",
+      "explanationJa": "mini- は「小型・小規模」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:maxi",
+      "morphemeId": "prefix:maxi",
+      "type": "examples-to-morpheme",
+      "questionJa": "maxiskirt / maxidress / maxiscooter に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: maxiskirt, maxidress, maxiscooter?",
+      "choices": [
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:maxi",
+          "labelJa": "maxi-"
+        }
+      ],
+      "answerId": "prefix:maxi",
+      "explanationJa": "maxi- は「大型・長い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:tera",
+      "morphemeId": "prefix:tera",
+      "type": "examples-to-morpheme",
+      "questionJa": "terabyte / terawatt / terahertz に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: terabyte, terawatt, terahertz?",
+      "choices": [
+        {
+          "id": "prefix:epi",
+          "labelJa": "epi-"
+        },
+        {
+          "id": "prefix:hetero",
+          "labelJa": "hetero-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        }
+      ],
+      "answerId": "prefix:tera",
+      "explanationJa": "tera- は「一兆」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:pico",
+      "morphemeId": "prefix:pico",
+      "type": "examples-to-morpheme",
+      "questionJa": "picometer / picosecond / picofarad に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: picometer, picosecond, picofarad?",
+      "choices": [
+        {
+          "id": "prefix:electro",
+          "labelJa": "electro-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        }
+      ],
+      "answerId": "prefix:pico",
+      "explanationJa": "pico- は「一兆分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:femto",
+      "morphemeId": "prefix:femto",
+      "type": "examples-to-morpheme",
+      "questionJa": "femtosecond / femtometer / femtoampere に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: femtosecond, femtometer, femtoampere?",
+      "choices": [
+        {
+          "id": "prefix:femto",
+          "labelJa": "femto-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:on",
+          "labelJa": "on-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        }
+      ],
+      "answerId": "prefix:femto",
+      "explanationJa": "femto- は「千兆分の一」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:hepta",
+      "morphemeId": "prefix:hepta",
+      "type": "examples-to-morpheme",
+      "questionJa": "heptagon / heptathlon / heptane に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: heptagon, heptathlon, heptane?",
+      "choices": [
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        },
+        {
+          "id": "prefix:en-prefix",
+          "labelJa": "en / em-"
+        },
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        }
+      ],
+      "answerId": "prefix:hepta",
+      "explanationJa": "hepta- は「七つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:socio",
+      "morphemeId": "prefix:socio",
+      "type": "examples-to-morpheme",
+      "questionJa": "socioeconomic / sociocultural / sociopolitical に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: socioeconomic, sociocultural, sociopolitical?",
+      "choices": [
+        {
+          "id": "prefix:kilo",
+          "labelJa": "kilo-"
+        },
+        {
+          "id": "prefix:pseudo",
+          "labelJa": "pseudo-"
+        },
+        {
+          "id": "prefix:socio",
+          "labelJa": "socio-"
+        },
+        {
+          "id": "prefix:counter",
+          "labelJa": "counter-"
+        }
+      ],
+      "answerId": "prefix:socio",
+      "explanationJa": "socio- は「社会・社会的」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:techno",
+      "morphemeId": "prefix:techno",
+      "type": "examples-to-morpheme",
+      "questionJa": "technophobia / technophile / technocracy に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: technophobia, technophile, technocracy?",
+      "choices": [
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:centi",
+          "labelJa": "centi-"
+        }
+      ],
+      "answerId": "prefix:techno",
+      "explanationJa": "techno- は「技術・科学技術」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:info",
+      "morphemeId": "prefix:info",
+      "type": "examples-to-morpheme",
+      "questionJa": "infographic / infotainment / infodemic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: infographic, infotainment, infodemic?",
+      "choices": [
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:sub",
+          "labelJa": "sub-"
+        },
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        }
+      ],
+      "answerId": "prefix:info",
+      "explanationJa": "info- は「情報」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:immuno",
+      "morphemeId": "prefix:immuno",
+      "type": "examples-to-morpheme",
+      "questionJa": "immunology / immunotherapy / immunodeficiency に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: immunology, immunotherapy, immunodeficiency?",
+      "choices": [
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:immuno",
+          "labelJa": "immuno-"
+        }
+      ],
+      "answerId": "prefix:immuno",
+      "explanationJa": "immuno- は「免疫」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:gastro",
+      "morphemeId": "prefix:gastro",
+      "type": "examples-to-morpheme",
+      "questionJa": "gastroenterology / gastronomy / gastroscopy に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: gastroenterology, gastronomy, gastroscopy?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nano-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        }
+      ],
+      "answerId": "prefix:gastro",
+      "explanationJa": "gastro- は「胃」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:anglo",
+      "morphemeId": "prefix:anglo",
+      "type": "examples-to-morpheme",
+      "questionJa": "Anglophone / Anglophile / Anglo-American に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: Anglophone, Anglophile, Anglo-American?",
+      "choices": [
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:anglo",
+          "labelJa": "Anglo-"
+        },
+        {
+          "id": "prefix:endo",
+          "labelJa": "endo-"
+        },
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        }
+      ],
+      "answerId": "prefix:anglo",
+      "explanationJa": "Anglo- は「イングランド・英語圏」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:euro",
+      "morphemeId": "prefix:euro",
+      "type": "examples-to-morpheme",
+      "questionJa": "Eurozone / Eurocentric / Eurosceptic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: Eurozone, Eurocentric, Eurosceptic?",
+      "choices": [
+        {
+          "id": "prefix:euro",
+          "labelJa": "Euro-"
+        },
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:intra",
+          "labelJa": "intra-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        }
+      ],
+      "answerId": "prefix:euro",
+      "explanationJa": "Euro- は「欧州・ユーロ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:afro",
+      "morphemeId": "prefix:afro",
+      "type": "examples-to-morpheme",
+      "questionJa": "Afro-Caribbean / Afrobeat / Afrocentric に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: Afro-Caribbean, Afrobeat, Afrocentric?",
+      "choices": [
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:hepta",
+          "labelJa": "hepta-"
+        },
+        {
+          "id": "prefix:over",
+          "labelJa": "over-"
+        },
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        }
+      ],
+      "answerId": "prefix:afro",
+      "explanationJa": "Afro- は「アフリカ・アフリカ系」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:sino",
+      "morphemeId": "prefix:sino",
+      "type": "examples-to-morpheme",
+      "questionJa": "Sino-Japanese / Sino-American / Sinophone に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: Sino-Japanese, Sino-American, Sinophone?",
+      "choices": [
+        {
+          "id": "prefix:afro",
+          "labelJa": "Afro-"
+        },
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:sino",
+          "labelJa": "Sino-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        }
+      ],
+      "answerId": "prefix:sino",
+      "explanationJa": "Sino- は「中国」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:acro",
+      "morphemeId": "prefix:acro",
+      "type": "examples-to-morpheme",
+      "questionJa": "acropolis / acrophobia / acronym に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: acropolis, acrophobia, acronym?",
+      "choices": [
+        {
+          "id": "prefix:apo",
+          "labelJa": "apo-"
+        },
+        {
+          "id": "prefix:acro",
+          "labelJa": "acro-"
+        },
+        {
+          "id": "prefix:all",
+          "labelJa": "all-"
+        },
+        {
+          "id": "prefix:aero",
+          "labelJa": "aero-"
+        }
+      ],
+      "answerId": "prefix:acro",
+      "explanationJa": "acro- は「先端・高い所」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:bathy",
+      "morphemeId": "prefix:bathy",
+      "type": "examples-to-morpheme",
+      "questionJa": "bathymetry / bathysphere / bathypelagic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: bathymetry, bathysphere, bathypelagic?",
+      "choices": [
+        {
+          "id": "prefix:bathy",
+          "labelJa": "bathy-"
+        },
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:deca",
+          "labelJa": "deca / deka-"
+        },
+        {
+          "id": "prefix:micro",
+          "labelJa": "micro-"
+        }
+      ],
+      "answerId": "prefix:bathy",
+      "explanationJa": "bathy- は「深い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:brachy",
+      "morphemeId": "prefix:brachy",
+      "type": "examples-to-morpheme",
+      "questionJa": "brachytherapy / brachycephalic / brachydactyly に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: brachytherapy, brachycephalic, brachydactyly?",
+      "choices": [
+        {
+          "id": "prefix:mis",
+          "labelJa": "mis-"
+        },
+        {
+          "id": "prefix:dis",
+          "labelJa": "dis-"
+        },
+        {
+          "id": "prefix:dys",
+          "labelJa": "dys-"
+        },
+        {
+          "id": "prefix:brachy",
+          "labelJa": "brachy-"
+        }
+      ],
+      "answerId": "prefix:brachy",
+      "explanationJa": "brachy- は「短い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:chromo",
+      "morphemeId": "prefix:chromo",
+      "type": "examples-to-morpheme",
+      "questionJa": "chromosome / chromatography / chromatic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: chromosome, chromatography, chromatic?",
+      "choices": [
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nano-"
+        },
+        {
+          "id": "prefix:chromo",
+          "labelJa": "chromo / chromato-"
+        },
+        {
+          "id": "prefix:great-family",
+          "labelJa": "great-"
+        }
+      ],
+      "answerId": "prefix:chromo",
+      "explanationJa": "chromo / chromato- は「色」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:chloro",
+      "morphemeId": "prefix:chloro",
+      "type": "examples-to-morpheme",
+      "questionJa": "chlorophyll / chloroplast / chlorosis に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: chlorophyll, chloroplast, chlorosis?",
+      "choices": [
+        {
+          "id": "prefix:uni",
+          "labelJa": "uni-"
+        },
+        {
+          "id": "prefix:chloro",
+          "labelJa": "chloro-"
+        },
+        {
+          "id": "prefix:para",
+          "labelJa": "para-"
+        },
+        {
+          "id": "prefix:vice",
+          "labelJa": "vice-"
+        }
+      ],
+      "answerId": "prefix:chloro",
+      "explanationJa": "chloro- は「緑・黄緑」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:xeno",
+      "morphemeId": "prefix:xeno",
+      "type": "examples-to-morpheme",
+      "questionJa": "xenophobia / xenograft / xenolith に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: xenophobia, xenograft, xenolith?",
+      "choices": [
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:arch",
+          "labelJa": "arch-"
+        },
+        {
+          "id": "prefix:hemi",
+          "labelJa": "hemi-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        }
+      ],
+      "answerId": "prefix:xeno",
+      "explanationJa": "xeno- は「異国の・異質な」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:zoo",
+      "morphemeId": "prefix:zoo",
+      "type": "examples-to-morpheme",
+      "questionJa": "zoology / zoologist / zooplankton に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: zoology, zoologist, zooplankton?",
+      "choices": [
+        {
+          "id": "prefix:step-family",
+          "labelJa": "step-"
+        },
+        {
+          "id": "prefix:ex-former",
+          "labelJa": "ex-"
+        },
+        {
+          "id": "prefix:contra",
+          "labelJa": "contra-"
+        },
+        {
+          "id": "prefix:zoo",
+          "labelJa": "zoo-"
+        }
+      ],
+      "answerId": "prefix:zoo",
+      "explanationJa": "zoo- は「動物」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ornitho",
+      "morphemeId": "prefix:ornitho",
+      "type": "examples-to-morpheme",
+      "questionJa": "ornithology / ornithologist / ornithopter に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ornithology, ornithologist, ornithopter?",
+      "choices": [
+        {
+          "id": "prefix:pro-support",
+          "labelJa": "pro-"
+        },
+        {
+          "id": "prefix:gastro",
+          "labelJa": "gastro-"
+        },
+        {
+          "id": "prefix:ornitho",
+          "labelJa": "ornitho-"
+        },
+        {
+          "id": "prefix:info",
+          "labelJa": "info-"
+        }
+      ],
+      "answerId": "prefix:ornitho",
+      "explanationJa": "ornitho- は「鳥」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:paleo",
+      "morphemeId": "prefix:paleo",
+      "type": "examples-to-morpheme",
+      "questionJa": "paleontology / paleobotany / paleoclimate に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: paleontology, paleobotany, paleoclimate?",
+      "choices": [
+        {
+          "id": "prefix:ambi",
+          "labelJa": "ambi-"
+        },
+        {
+          "id": "prefix:paleo",
+          "labelJa": "paleo / palaeo-"
+        },
+        {
+          "id": "prefix:deci",
+          "labelJa": "deci-"
+        },
+        {
+          "id": "prefix:pan",
+          "labelJa": "pan-"
+        }
+      ],
+      "answerId": "prefix:paleo",
+      "explanationJa": "paleo / palaeo- は「古い」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:meso",
+      "morphemeId": "prefix:meso",
+      "type": "examples-to-morpheme",
+      "questionJa": "mesosphere / mesoderm / mesolithic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: mesosphere, mesoderm, mesolithic?",
+      "choices": [
+        {
+          "id": "prefix:meso",
+          "labelJa": "meso-"
+        },
+        {
+          "id": "prefix:tera",
+          "labelJa": "tera-"
+        },
+        {
+          "id": "prefix:meta",
+          "labelJa": "meta-"
+        },
+        {
+          "id": "prefix:near",
+          "labelJa": "near-"
+        }
+      ],
+      "answerId": "prefix:meso",
+      "explanationJa": "meso- は「中間」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:endo",
+      "morphemeId": "prefix:endo",
+      "type": "examples-to-morpheme",
+      "questionJa": "endogenous / endoskeleton / endoscopy に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: endogenous, endoskeleton, endoscopy?",
+      "choices": [
+        {
+          "id": "prefix:eco",
+          "labelJa": "eco-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        },
+        {
+          "id": "prefix:endo",
+          "labelJa": "endo-"
+        }
+      ],
+      "answerId": "prefix:endo",
+      "explanationJa": "endo- は「内側」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ecto",
+      "morphemeId": "prefix:ecto",
+      "type": "examples-to-morpheme",
+      "questionJa": "ectoderm / ectoplasm / ectopic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ectoderm, ectoplasm, ectopic?",
+      "choices": [
+        {
+          "id": "prefix:retro",
+          "labelJa": "retro-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:ecto",
+          "labelJa": "ecto-"
+        },
+        {
+          "id": "prefix:self",
+          "labelJa": "self-"
+        }
+      ],
+      "answerId": "prefix:ecto",
+      "explanationJa": "ecto- は「外側」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:exo",
+      "morphemeId": "prefix:exo",
+      "type": "examples-to-morpheme",
+      "questionJa": "exoskeleton / exoplanet / exogenous に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: exoskeleton, exoplanet, exogenous?",
+      "choices": [
+        {
+          "id": "prefix:ante",
+          "labelJa": "ante-"
+        },
+        {
+          "id": "prefix:exo",
+          "labelJa": "exo-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:nano",
+          "labelJa": "nano-"
+        }
+      ],
+      "answerId": "prefix:exo",
+      "explanationJa": "exo- は「外部」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ana",
+      "morphemeId": "prefix:ana",
+      "type": "examples-to-morpheme",
+      "questionJa": "anabolism / anaphase / anagram に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: anabolism, anaphase, anagram?",
+      "choices": [
+        {
+          "id": "prefix:ana",
+          "labelJa": "ana-"
+        },
+        {
+          "id": "prefix:a-no",
+          "labelJa": "a / an-"
+        },
+        {
+          "id": "prefix:tetra",
+          "labelJa": "tetra-"
+        },
+        {
+          "id": "prefix:pico",
+          "labelJa": "pico-"
+        }
+      ],
+      "answerId": "prefix:ana",
+      "explanationJa": "ana- は「上へ・再び」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:cata",
+      "morphemeId": "prefix:cata",
+      "type": "examples-to-morpheme",
+      "questionJa": "catabolism / catalyst / catapult に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: catabolism, catalyst, catapult?",
+      "choices": [
+        {
+          "id": "prefix:e-digital",
+          "labelJa": "e-"
+        },
+        {
+          "id": "prefix:xeno",
+          "labelJa": "xeno-"
+        },
+        {
+          "id": "prefix:back",
+          "labelJa": "back-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        }
+      ],
+      "answerId": "prefix:cata",
+      "explanationJa": "cata- は「下へ・分解」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:dorso",
+      "morphemeId": "prefix:dorso",
+      "type": "examples-to-morpheme",
+      "questionJa": "dorsoventral / dorsolateral / dorsomedial に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: dorsoventral, dorsolateral, dorsomedial?",
+      "choices": [
+        {
+          "id": "prefix:double",
+          "labelJa": "double-"
+        },
+        {
+          "id": "prefix:anti",
+          "labelJa": "anti-"
+        },
+        {
+          "id": "prefix:dorso",
+          "labelJa": "dorso-"
+        },
+        {
+          "id": "prefix:semi",
+          "labelJa": "semi-"
+        }
+      ],
+      "answerId": "prefix:dorso",
+      "explanationJa": "dorso- は「背側」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ventro",
+      "morphemeId": "prefix:ventro",
+      "type": "examples-to-morpheme",
+      "questionJa": "ventrolateral / ventromedial / ventrodorsal に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: ventrolateral, ventromedial, ventrodorsal?",
+      "choices": [
+        {
+          "id": "prefix:mini",
+          "labelJa": "mini-"
+        },
+        {
+          "id": "prefix:ventro",
+          "labelJa": "ventro-"
+        },
+        {
+          "id": "prefix:techno",
+          "labelJa": "techno-"
+        },
+        {
+          "id": "prefix:re",
+          "labelJa": "re-"
+        }
+      ],
+      "answerId": "prefix:ventro",
+      "explanationJa": "ventro- は「腹側」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:ortho",
+      "morphemeId": "prefix:ortho",
+      "type": "examples-to-morpheme",
+      "questionJa": "orthodontics / orthography / orthopedic に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: orthodontics, orthography, orthopedic?",
+      "choices": [
+        {
+          "id": "prefix:ortho",
+          "labelJa": "ortho-"
+        },
+        {
+          "id": "prefix:cata",
+          "labelJa": "cata-"
+        },
+        {
+          "id": "prefix:iso",
+          "labelJa": "iso-"
+        },
+        {
+          "id": "prefix:per",
+          "labelJa": "per-"
+        }
+      ],
+      "answerId": "prefix:ortho",
+      "explanationJa": "ortho- は「正しい・まっすぐ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:prefix:oligo",
+      "morphemeId": "prefix:oligo",
+      "type": "examples-to-morpheme",
+      "questionJa": "oligarchy / oligopoly / oligosaccharide に関連する接頭辞・語頭結合形はどれですか？",
+      "questionEn": "Which prefix or initial combining form is associated with these words: oligarchy, oligopoly, oligosaccharide?",
+      "choices": [
+        {
+          "id": "prefix:perma",
+          "labelJa": "perma-"
+        },
+        {
+          "id": "prefix:de",
+          "labelJa": "de-"
+        },
+        {
+          "id": "prefix:out",
+          "labelJa": "out-"
+        },
+        {
+          "id": "prefix:oligo",
+          "labelJa": "oligo-"
+        }
+      ],
+      "answerId": "prefix:oligo",
+      "explanationJa": "oligo- は「少ない」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
