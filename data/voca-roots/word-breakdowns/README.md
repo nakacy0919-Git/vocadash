@@ -4,9 +4,9 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 
 ## What is registered
 - **3,350 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
-- **231 individually written core teaching explanations, prefix-learning drafts and curated morphology candidates**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **4,027 source records / 4,024 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- **1,638 records (1,636 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
+- **361 individually written core teaching explanations, prefix-learning drafts and curated morphology candidates**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
+- **4,157 source records / 4,154 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- **1,768 records (1,766 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -31,14 +31,14 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - A further **213 draft Word Breakdown records** were added for distinct words that are **already present in the active 8,653-word master**. The 136/59/18 records were extracted from explicit JS `family` edges, not synonyms or collocations.
 - Inflection-only links were excluded: in morphology review sources, the family edge must carry the `派生・語族` marker. Extra records use the canonical VocaRoots affix meanings with base-word and target-word IDs from the full master.
 - Source evidence is checked as a specific base → target family link in its source JS object, and the normalized word reconstructs from its recorded parts. Linguistic review remains required before publication.
-- The 1,531 matching records cover **1,529 distinct target headwords** in the master; the other 7,124 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
+- The 1,768 matching records cover **1,766 distinct target headwords** in the master; the other 6,887 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
 
 
 ## Master-first batch 009: original prefix explanations (2026-11-17)
 - Added **89 new master-matched Word Breakdown drafts**, with separate human-authored examples and Japanese translations. Existing entries were left unchanged; the list was checked against the previous recorded headwords before writing.
 - The prefix families taught are `un-` (negation vs reversal), `in-/im-/ir-` (negation), `re-`, `mis-`, `over-`, `under-`, and `inter-`. Each new item has a known master word ID and an existing prefix morpheme ID.
 - Each record includes `exampleEn`, `exampleJa`, `imageHintJa`, `baseWordId` and original `explanationJa`. `historicalEtymologyVerified=false`, `referenceLookupPending=true`, `productionEligible=false` on every record. Modern spelling segmentation is only a **learning aid**, not a certified historical etymology.
-- Current totals: **3,920 records / 3,917 distinct headwords**, with **1,531 records / 1,529 distinct words matched** against the full 8,653-word master. **7,124** master words currently lack any Word Breakdown draft.
+- Current totals: **3,920 records / 3,917 distinct headwords**, with **1,531 records / 1,529 distinct words matched** against the full 8,653-word master. **6,887** master words currently lack any Word Breakdown draft.
 
 ## Master-first batches 010–011: structured affixes and compounds (2026-11-18)
 - **446 non-overlapping, complete-master-matched draft headwords:** **86 prefix, 276 suffix, and 84 two-base compound** breakdown candidates.
@@ -93,3 +93,13 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 - `meaningSource = original-editorial-draft-not-master-sense-verified` means **the Japanese gloss is not yet checked against the exact original master sense**. No source examples or historic etymologies have been invented or certified.
 - All records remain `draft-unreviewed`, `editorialReviewRequired=true`, `historicalEtymologyVerified=false`, and `productionEligible=false`. No student UI or deployment.
 - Validate using `node tools/validate-voca-roots-word-breakdowns.mjs` and `node tools/validate-voca-roots-curated-012.mjs`.
+
+
+## Curated batch 013: transparent morphology and compounds (2026-11-18)
+- Added **130 explicitly selected draft headwords**, with **88 suffix cases**, **19 prefixes** and **23 compound-like first elements**. All target and base IDs match the active 8,653-headword master exactly.
+- Master candidate coverage now **1,766 / 8,653 (20.4%)** with **6,887** uncovered headwords. Coverage is not etymology review or classroom readiness.
+- New source `master-curated-013.json` includes the whole-word Japanese gloss, base gloss, spelling-reconstruction rule, linguistic-learning question, original image concept, and editorial caution. Its glosses are original draft annotations, **not verified master sense definitions**.
+- `false-split-exclusions-013.json` lists **26 explicit misleading splits** such as `flower = flow + er`, `university = universe + ity`, and `portable = port + able` (where port means a harbor), to avoid future false automatic morphological links. It is not part of the student-facing data.
+- In modern teaching, `out-`, `up-`, and `down-` can be compound-like independent first elements; the dataset explicitly distinguishes these from prefixes rather than claiming shared historical etymology.
+- All records remain `draft-unreviewed` with `productionEligible=false`, `historicalEtymologyVerified=false` and `editorialReviewRequired=true`. No live UI, learner quiz, main merge, or production deploy.
+- Run `node tools/validate-voca-roots-curated-013.mjs` plus existing validation checks before any review or integration.
