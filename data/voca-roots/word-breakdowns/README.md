@@ -3,10 +3,10 @@
 This dataset supports the future **Word Breakdown** experience in VocaDash. It is separate from the original vocabulary master and from the live application. All entries are **unreviewed**, and `productionEnabled=false`.
 
 ## What is registered
-- **3,137 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
+- **3,350 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
 - **35 individually written teaching explanations**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **3,172 source records / 3,169 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- **783 records (781 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
+- **3,385 source records / 3,382 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- **996 records (994 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -26,6 +26,12 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - Canonical matching uses exact lowercased, trimmed headword strings; no fuzzy matching, no guessed IDs. The previous 2,733-word candidate index is retained only for historical reference.
 - A separate reproducible script, `tools/build-voca-roots-master-index.mjs`, regenerates the index and can audit overlaps. It does not publish data.
 - Matching a `wordId` does **not** mean that a word's etymology or derived explanation has been verified.
+
+## Master-first batches 006–008 (2026-11-17)
+- A further **213 draft Word Breakdown records** were added for distinct words that are **already present in the active 8,653-word master**. The 136/59/18 records were extracted from explicit JS `family` edges, not synonyms or collocations.
+- Inflection-only links were excluded: in morphology review sources, the family edge must carry the `派生・語族` marker. Extra records use the canonical VocaRoots affix meanings with base-word and target-word IDs from the full master.
+- Source evidence is checked as a specific base → target family link in its source JS object, and the normalized word reconstructs from its recorded parts. Linguistic review remains required before publication.
+- The 996 matching records cover **994 distinct target headwords** in the master; the other 7,659 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
 
 ## Critical editorial cautions
 1. **Historical roots and today's morphological segmentation are different things.** Do not teach `important` as if today's meaning literally follows from `im + port + ant`.
