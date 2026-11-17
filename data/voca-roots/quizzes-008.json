@@ -1,0 +1,1356 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "008",
+  "records": [
+    {
+      "id": "quiz:root:laud",
+      "morphemeId": "root:laud",
+      "type": "morpheme-meaning",
+      "questionJa": "laud / laudable / laudatory に共通する 語根 laud の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:laud",
+          "labelJa": "称賛する"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:laud",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:plaud",
+      "morphemeId": "root:plaud",
+      "type": "morpheme-meaning",
+      "questionJa": "applaud / applause / plaudit に共通する 語根 plaud の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:plaud",
+          "labelJa": "拍手する"
+        }
+      ],
+      "answerId": "root:plaud",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:prec",
+      "morphemeId": "root:prec",
+      "type": "morpheme-meaning",
+      "questionJa": "precatory / precarious / deprecate に共通する 語根 prec の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:prec",
+          "labelJa": "願う・祈る"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:prec",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:prob",
+      "morphemeId": "root:prob",
+      "type": "morpheme-meaning",
+      "questionJa": "prove / proof / approve に共通する 語根 prob の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:prob",
+          "labelJa": "試す・認める"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:prob",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:sum-take",
+      "morphemeId": "root:sum-take",
+      "type": "morpheme-meaning",
+      "questionJa": "assume / consume / resume に共通する 語根 sum の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:sum-take",
+          "labelJa": "取る・引き受ける"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:sum-take",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:teg",
+      "morphemeId": "root:teg",
+      "type": "morpheme-meaning",
+      "questionJa": "protect / protection / detect に共通する 語根 teg の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:teg",
+          "labelJa": "覆う・守る"
+        }
+      ],
+      "answerId": "root:teg",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:tinct",
+      "morphemeId": "root:tinct",
+      "type": "morpheme-meaning",
+      "questionJa": "tinge / tint / tincture に共通する 語根 tinct の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:tinct",
+          "labelJa": "染める・色を付ける"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:tinct",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:test-witness",
+      "morphemeId": "root:test-witness",
+      "type": "morpheme-meaning",
+      "questionJa": "testify / testimony / attest に共通する 語根 test の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:test-witness",
+          "labelJa": "証人・証言する"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:test-witness",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:trib",
+      "morphemeId": "root:trib",
+      "type": "morpheme-meaning",
+      "questionJa": "contribute / contribution / distribute に共通する 語根 trib の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:trib",
+          "labelJa": "割り当てる・与える"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:trib",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:turb",
+      "morphemeId": "root:turb",
+      "type": "morpheme-meaning",
+      "questionJa": "disturb / disturbance / turbulent に共通する 語根 turb の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:turb",
+          "labelJa": "混乱・かき乱す"
+        }
+      ],
+      "answerId": "root:turb",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:urg",
+      "morphemeId": "root:urg",
+      "type": "morpheme-meaning",
+      "questionJa": "urge / urgent / urgency に共通する 語根 urg の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:urg",
+          "labelJa": "押す・迫る"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:urg",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:vulg",
+      "morphemeId": "root:vulg",
+      "type": "morpheme-meaning",
+      "questionJa": "vulgar / vulgarity / divulge に共通する 語根 vulg の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:vulg",
+          "labelJa": "一般の人々・大衆"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:vulg",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:vulner",
+      "morphemeId": "root:vulner",
+      "type": "morpheme-meaning",
+      "questionJa": "vulnerable / vulnerability / invulnerable に共通する 語根 vulner の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:vulner",
+          "labelJa": "傷"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:vulner",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:vag",
+      "morphemeId": "root:vag",
+      "type": "morpheme-meaning",
+      "questionJa": "vague / vagrant / vagabond に共通する 語根 vag の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:vag",
+          "labelJa": "さまよう・定まらない"
+        }
+      ],
+      "answerId": "root:vag",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:vest",
+      "morphemeId": "root:vest",
+      "type": "morpheme-meaning",
+      "questionJa": "vest / vestment / invest に共通する 語根 vest の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:vest",
+          "labelJa": "衣服・着せる"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:vest",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:mand",
+      "morphemeId": "root:mand",
+      "type": "morpheme-meaning",
+      "questionJa": "mandate / mandatory / command に共通する 語根 mand の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:mand",
+          "labelJa": "委ねる・命じる"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:mand",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:merc",
+      "morphemeId": "root:merc",
+      "type": "morpheme-meaning",
+      "questionJa": "merchant / commerce / commercial に共通する 語根 merc の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:merc",
+          "labelJa": "商品・商取引"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:merc",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:mur-wall",
+      "morphemeId": "root:mur-wall",
+      "type": "morpheme-meaning",
+      "questionJa": "mural / intramural / extramural に共通する 語根 mur の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:mur-wall",
+          "labelJa": "壁"
+        }
+      ],
+      "answerId": "root:mur-wall",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:ori-rise",
+      "morphemeId": "root:ori-rise",
+      "type": "morpheme-meaning",
+      "questionJa": "origin / original / originate に共通する 語根 ori の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:ori-rise",
+          "labelJa": "生じる・昇る"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:ori-rise",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:orat",
+      "morphemeId": "root:orat",
+      "type": "morpheme-meaning",
+      "questionJa": "orator / oration / oratory に共通する 語根 or の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:orat",
+          "labelJa": "話す・祈る"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:orat",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:os-mouth",
+      "morphemeId": "root:os-mouth",
+      "type": "morpheme-meaning",
+      "questionJa": "oral / orally / orifice に共通する 語根 or の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:os-mouth",
+          "labelJa": "口"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:os-mouth",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:piet",
+      "morphemeId": "root:piet",
+      "type": "morpheme-meaning",
+      "questionJa": "pious / piety / impiety に共通する 語根 pi の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:piet",
+          "labelJa": "敬虔・敬意"
+        }
+      ],
+      "answerId": "root:piet",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:plac",
+      "morphemeId": "root:plac",
+      "type": "morpheme-meaning",
+      "questionJa": "please / pleasant / pleasure に共通する 語根 plac の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:plac",
+          "labelJa": "喜ばせる・なだめる"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:plac",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:plen",
+      "morphemeId": "root:plen",
+      "type": "morpheme-meaning",
+      "questionJa": "plenty / plenary / replenish に共通する 語根 plen の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:plen",
+          "labelJa": "満ちた・いっぱいの"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:plen",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:plor",
+      "morphemeId": "root:plor",
+      "type": "morpheme-meaning",
+      "questionJa": "deplore / implore / deplorable に共通する 語根 plor の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:plor",
+          "labelJa": "泣く・嘆く"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:plor",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:work",
+      "morphemeId": "root:work",
+      "type": "morpheme-meaning",
+      "questionJa": "work / worker / workplace に共通する 基本語 work の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:work",
+          "labelJa": "働く・仕事"
+        }
+      ],
+      "answerId": "root:work",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:hand",
+      "morphemeId": "root:hand",
+      "type": "morpheme-meaning",
+      "questionJa": "hand / handful / handmade に共通する 基本語 hand の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:hand",
+          "labelJa": "手"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:hand",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:teach",
+      "morphemeId": "root:teach",
+      "type": "morpheme-meaning",
+      "questionJa": "teach / teacher / teaching に共通する 基本語 teach の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:teach",
+          "labelJa": "教える"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:teach",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:heart",
+      "morphemeId": "root:heart",
+      "type": "morpheme-meaning",
+      "questionJa": "heart / heartfelt / heartless に共通する 基本語 heart の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:heart",
+          "labelJa": "心・心臓"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:heart",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:house",
+      "morphemeId": "root:house",
+      "type": "morpheme-meaning",
+      "questionJa": "house / housing / household に共通する 基本語 house の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:house",
+          "labelJa": "家・住まい"
+        }
+      ],
+      "answerId": "root:house",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:light-illumination",
+      "morphemeId": "root:light-illumination",
+      "type": "morpheme-meaning",
+      "questionJa": "light / lighting / daylight に共通する 基本語 light の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:light-illumination",
+          "labelJa": "光・照らす"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:light-illumination",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:book",
+      "morphemeId": "root:book",
+      "type": "morpheme-meaning",
+      "questionJa": "book / bookstore / bookcase に共通する 基本語 book の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:book",
+          "labelJa": "本"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:book",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:write",
+      "morphemeId": "root:write",
+      "type": "morpheme-meaning",
+      "questionJa": "write / writer / writing に共通する 基本語 write の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:write",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        }
+      ],
+      "answerId": "root:write",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:read",
+      "morphemeId": "root:read",
+      "type": "morpheme-meaning",
+      "questionJa": "read / reader / reading に共通する 基本語 read の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:read",
+          "labelJa": "読む"
+        }
+      ],
+      "answerId": "root:read",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:speak",
+      "morphemeId": "root:speak",
+      "type": "morpheme-meaning",
+      "questionJa": "speak / speaker / speaking に共通する 基本語 speak の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:speak",
+          "labelJa": "話す"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:speak",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:break",
+      "morphemeId": "root:break",
+      "type": "morpheme-meaning",
+      "questionJa": "break / breakable / breakdown に共通する 基本語 break の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:break",
+          "labelJa": "壊す・分ける"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:break",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:bear-carry",
+      "morphemeId": "root:bear-carry",
+      "type": "morpheme-meaning",
+      "questionJa": "bear / bearable / unbearable に共通する 基本語 bear の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:bear-carry",
+          "labelJa": "運ぶ・担う・耐える"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:bear-carry",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:build",
+      "morphemeId": "root:build",
+      "type": "morpheme-meaning",
+      "questionJa": "build / builder / building に共通する 基本語 build の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:build",
+          "labelJa": "建てる・築く"
+        }
+      ],
+      "answerId": "root:build",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:draw",
+      "morphemeId": "root:draw",
+      "type": "morpheme-meaning",
+      "questionJa": "draw / drawing / withdraw に共通する 基本語 draw の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:draw",
+          "labelJa": "引く・描く"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:draw",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:drive",
+      "morphemeId": "root:drive",
+      "type": "morpheme-meaning",
+      "questionJa": "drive / driver / driving に共通する 基本語 drive の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:drive",
+          "labelJa": "動かす・駆り立てる"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:drive",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:fly",
+      "morphemeId": "root:fly",
+      "type": "morpheme-meaning",
+      "questionJa": "fly / flying / flyer に共通する 基本語 fly の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:fly",
+          "labelJa": "飛ぶ"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:fly",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:hold",
+      "morphemeId": "root:hold",
+      "type": "morpheme-meaning",
+      "questionJa": "hold / holder / uphold に共通する 基本語 hold の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:hold",
+          "labelJa": "持つ・保つ"
+        }
+      ],
+      "answerId": "root:hold",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:keep",
+      "morphemeId": "root:keep",
+      "type": "morpheme-meaning",
+      "questionJa": "keep / keeper / housekeeping に共通する 基本語 keep の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:keep",
+          "labelJa": "保つ・維持する"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:keep",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:lead-guide",
+      "morphemeId": "root:lead-guide",
+      "type": "morpheme-meaning",
+      "questionJa": "lead / leader / leadership に共通する 基本語 lead の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:lead-guide",
+          "labelJa": "導く"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:lead-guide",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:make",
+      "morphemeId": "root:make",
+      "type": "morpheme-meaning",
+      "questionJa": "make / maker / remake に共通する 基本語 make の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:make",
+          "labelJa": "作る"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:make",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:know",
+      "morphemeId": "root:know",
+      "type": "morpheme-meaning",
+      "questionJa": "know / knowledge / known に共通する 基本語 know の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:know",
+          "labelJa": "知る"
+        }
+      ],
+      "answerId": "root:know",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:look",
+      "morphemeId": "root:look",
+      "type": "morpheme-meaning",
+      "questionJa": "look / lookout / overlook に共通する 基本語 look の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:look",
+          "labelJa": "見る・注意を向ける"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:look",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:run",
+      "morphemeId": "root:run",
+      "type": "morpheme-meaning",
+      "questionJa": "run / runner / running に共通する 基本語 run の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:mort",
+          "labelJa": "死"
+        },
+        {
+          "id": "root:run",
+          "labelJa": "走る・動く"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:aud",
+          "labelJa": "聞く"
+        }
+      ],
+      "answerId": "root:run",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:take",
+      "morphemeId": "root:take",
+      "type": "morpheme-meaning",
+      "questionJa": "take / taker / undertake に共通する 基本語 take の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:take",
+          "labelJa": "取る・受ける"
+        },
+        {
+          "id": "root:port",
+          "labelJa": "運ぶ"
+        },
+        {
+          "id": "root:aqu",
+          "labelJa": "水"
+        },
+        {
+          "id": "root:therm",
+          "labelJa": "熱"
+        }
+      ],
+      "answerId": "root:take",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    },
+    {
+      "id": "quiz:root:turn-base",
+      "morphemeId": "root:turn-base",
+      "type": "morpheme-meaning",
+      "questionJa": "turn / turning / return に共通する 基本語 turn の学習用の意味は？",
+      "choices": [
+        {
+          "id": "root:scrib",
+          "labelJa": "書く"
+        },
+        {
+          "id": "root:chron",
+          "labelJa": "時間"
+        },
+        {
+          "id": "root:loc",
+          "labelJa": "場所"
+        },
+        {
+          "id": "root:turn-base",
+          "labelJa": "回す・向きを変える"
+        }
+      ],
+      "answerId": "root:turn-base",
+      "status": "draft-unreviewed",
+      "quizEligible": false
+    }
+  ]
+}
