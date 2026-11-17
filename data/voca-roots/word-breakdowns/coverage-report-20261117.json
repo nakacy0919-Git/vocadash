@@ -8,56 +8,56 @@
     "activeBatches": 84
   },
   "wordBreakdown": {
-    "records": 3474,
-    "distinctHeadwords": 3471,
-    "matchedMasterRows": 1085,
-    "matchedMasterDistinctHeadwords": 1083,
+    "records": 3920,
+    "distinctHeadwords": 3917,
+    "matchedMasterRows": 1531,
+    "matchedMasterDistinctHeadwords": 1529,
     "notInMasterDistinctHeadwords": 2388,
-    "uncoveredMasterHeadwords": 7570
+    "uncoveredMasterHeadwords": 7124
   },
   "coverageByLevel": [
     {
       "cefr": "A1",
       "masterHeadwords": 1064,
-      "breakdownHeadwords": 29,
-      "uncoveredHeadwords": 1035,
-      "percent": 2.7
+      "breakdownHeadwords": 45,
+      "uncoveredHeadwords": 1019,
+      "percent": 4.2
     },
     {
       "cefr": "A2",
       "masterHeadwords": 1243,
-      "breakdownHeadwords": 109,
-      "uncoveredHeadwords": 1134,
-      "percent": 8.8
+      "breakdownHeadwords": 160,
+      "uncoveredHeadwords": 1083,
+      "percent": 12.9
     },
     {
       "cefr": "B1",
       "masterHeadwords": 2139,
-      "breakdownHeadwords": 317,
-      "uncoveredHeadwords": 1822,
-      "percent": 14.8
+      "breakdownHeadwords": 422,
+      "uncoveredHeadwords": 1717,
+      "percent": 19.7
     },
     {
       "cefr": "B2",
       "masterHeadwords": 2417,
-      "breakdownHeadwords": 383,
-      "uncoveredHeadwords": 2034,
-      "percent": 15.8
+      "breakdownHeadwords": 522,
+      "uncoveredHeadwords": 1895,
+      "percent": 21.6
     },
     {
       "cefr": "C1",
       "masterHeadwords": 914,
-      "breakdownHeadwords": 153,
-      "uncoveredHeadwords": 761,
-      "percent": 16.7
+      "breakdownHeadwords": 226,
+      "uncoveredHeadwords": 688,
+      "percent": 24.7
     },
     {
       "cefr": "C2",
       "masterHeadwords": 876,
-      "breakdownHeadwords": 92,
-      "uncoveredHeadwords": 784,
-      "percent": 10.5
+      "breakdownHeadwords": 154,
+      "uncoveredHeadwords": 722,
+      "percent": 17.6
     }
   ],
-  "notesJa": "意味・形態・歴史語源の校閲が完了したことを意味しない。未収録語には語源分解に適さない単語も含む。A1〜C2の各レベルは既存マスターの分類をそのまま集計。 追加009: 89語を8,653語マスターの完全一致IDにて追加し、説明・例文・和訳・画像案を登録。語源・意味は引き続き未校閲。"
+  "notesJa": "意味・形態・歴史語源の校閲が完了したことを意味しない。未収録語には語源分解に適さない単語も含む。A1〜C2の各レベルは既存マスターの分類をそのまま集計。 追加009: 89語を8,653語マスターの完全一致IDにて追加し、説明・例文・和訳・画像案を登録。語源・意味は引き続き未校閲。 2026-11-18: 接頭辞86・接尾辞276・複合語84のWord Breakdown原稿を追加。語源事実の審査済みと混同しない。"
 }
