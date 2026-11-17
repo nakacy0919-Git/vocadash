@@ -18,3 +18,6 @@
 6. 構造検査と編集レビュー後、UI / Voca Universe / spaced repetition に接続する。本番は別途明示的に許可された場合のみ。
 
 Run `node tools/validate-voca-roots.mjs` from repository root.
+
+## Bulk-link evidence (batches 011+)
+Extra associations are **editorial candidates** from explicitly authored lexical families, not verified historical etymologies. Each item has familyEvidence pointing at the source file and anchor; generic related, synonym and collocation links are excluded. IDs come only from exact matches in the incomplete candidate index. Never publish without editorial review. link-ledger.json is a derived deduplication index, not runtime data.
