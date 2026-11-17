@@ -1012,12 +1012,12 @@
       "cefrHeadword": "B1",
       "kind": "compound",
       "componentWords": [
-        "now",
-        "here"
+        "no",
+        "where"
       ],
       "componentWordIds": [
-        "VD-00636",
-        "VD-00441"
+        "VD-00628",
+        "VD-01027"
       ]
     },
     {
@@ -6023,5 +6023,9 @@
       ]
     }
   ],
-  "editorialRemovalNoteJa": "false split father = fat + her を除外。文字列一致による誤解析のため登録しない。"
+  "editorialRemovalNoteJa": "false split father = fat + her を除外。文字列一致による誤解析のため登録しない。",
+  "editorialCorrectionsJa": [
+    "nowhere = now + here は綴り一致による誤分解。no + where に修正し、双方の原語義IDを保持。",
+    "father = fat + her は未採用"
+  ]
 }
