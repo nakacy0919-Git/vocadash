@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "batch": "015",
+  "batch": "016",
   "createdOn": "2026-11-17",
   "status": "draft-unreviewed",
   "productionEnabled": false,
@@ -13,7 +13,7 @@
     "matchedRelations": 898,
     "matchedDistinctHeadwords": 731,
     "unresolvedRelations": 9799,
-    "quizzes": 800,
+    "quizzes": 1600,
     "imagePrompts": 500,
     "generatedImages": 0
   },
@@ -90,9 +90,12 @@
     "word-links-012.json",
     "word-links-013.json",
     "word-links-014.json",
-    "word-links-015.json"
+    "word-links-015.json",
+    "quizzes-011.json",
+    "quizzes-012.json",
+    "quizzes-013.json"
   ],
-  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。 バッチ005では現代英語の複合語要素も学習単位に含み、既存語根と関連する結合形には注記を付与。個別語源の校閲は未実施。 バッチ006は基本語の歴史的関連、アカデミック語彙、現代複合語要素を追加。一部の語源参照URLを記録したが、全項目は未校閲。 バッチ007は語根・学術結合形・屈折接辞・複合語要素を区別してドラフト登録。個別語源や用例は未校閲。目標数は学習単位の数であって、厳密な独立接辞数ではない。 バッチ008では歴史的語根25件と現代英語の自由語基25件を区別して追加。roots は学習単位の総数であり、独立した歴史語根数ではない。個別校閲・画像生成は未実施。 バッチ009では歴史的語根25件と現代英語の自由語基25件を追加。語源や分類、各語義は未校閲。独立歴史語根の件数ではなく学習単位の集計。 バッチ010では歴史的語族25件と現代英語の自由語基25件を追加し、800学習単位の初稿制作目標に到達。これは独立した歴史語根・厳密な接辞の数ではなく、校閲・全マスター照合・画像生成・UI接続は未完了。 Batch 011: extracted VocaDash explicitly authored word-families and paired affixes, all links are candidates pending linguistic review. Batch 015 adds candidate word links from explicitly authored JS family edges only; excludes synonym/related/collocation types.",
+  "notesJa": "語根・接辞の意味は学習用の短い説明。語源の事実確認と個別の語義確認は別の編集工程。候補ID未照合は本番連携不可。語源の説明文・画像は未生成のものを完成と数えない。 バッチ002では関連語彙の学習用日本語訳を追加。参照先未確認の個別項目は referenceLookupPending=true として保留。 バッチ003は屈折接尾辞と結合要素も学習上の分類として明記し、個別語源は未校閲。 バッチ004は科学・医療・社会・日常の関連語を追加。接頭・接尾結合要素を含み、語源の個別確認は保留。 バッチ005では現代英語の複合語要素も学習単位に含み、既存語根と関連する結合形には注記を付与。個別語源の校閲は未実施。 バッチ006は基本語の歴史的関連、アカデミック語彙、現代複合語要素を追加。一部の語源参照URLを記録したが、全項目は未校閲。 バッチ007は語根・学術結合形・屈折接辞・複合語要素を区別してドラフト登録。個別語源や用例は未校閲。目標数は学習単位の数であって、厳密な独立接辞数ではない。 バッチ008では歴史的語根25件と現代英語の自由語基25件を区別して追加。roots は学習単位の総数であり、独立した歴史語根数ではない。個別校閲・画像生成は未実施。 バッチ009では歴史的語根25件と現代英語の自由語基25件を追加。語源や分類、各語義は未校閲。独立歴史語根の件数ではなく学習単位の集計。 バッチ010では歴史的語族25件と現代英語の自由語基25件を追加し、800学習単位の初稿制作目標に到達。これは独立した歴史語根・厳密な接辞の数ではなく、校閲・全マスター照合・画像生成・UI接続は未完了。 Batch 011: extracted VocaDash explicitly authored word-families and paired affixes, all links are candidates pending linguistic review. Batch 015 adds candidate word links from explicitly authored JS family edges only; excludes synonym/related/collocation types. Batch 016: 既存800学習単位の意味→語根・接辞の4択逆引き問題800問を新規追加。重複のないID・選択肢と正答を構造検査済み。ただし語源と誤答選択肢の意味上の適切さは未校閲で、quizEligible=falseのまま公開不可。",
   "batches": [
     {
       "batch": "001",
@@ -330,6 +333,22 @@
         "matchedDistinctHeadwords": 5,
         "unresolvedRelations": 321,
         "quizzes": 0,
+        "imagePrompts": 0,
+        "generatedImages": 0
+      }
+    },
+    {
+      "batch": "016",
+      "counts": {
+        "roots": 0,
+        "prefixes": 0,
+        "suffixes": 0,
+        "relations": 0,
+        "distinctHeadwords": 0,
+        "matchedRelations": 0,
+        "matchedDistinctHeadwords": 0,
+        "unresolvedRelations": 0,
+        "quizzes": 800,
         "imagePrompts": 0,
         "generatedImages": 0
       }
