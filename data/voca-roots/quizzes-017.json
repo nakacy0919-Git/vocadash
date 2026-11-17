@@ -1,0 +1,4507 @@
+{
+  "schemaVersion": "1.1",
+  "batch": "017",
+  "quizGroup": "suffix-example-identification",
+  "records": [
+    {
+      "id": "quiz:examples:suffix:able",
+      "morphemeId": "suffix:able",
+      "type": "examples-to-morpheme",
+      "questionJa": "readable / washable / portable に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: readable, washable, portable?",
+      "choices": [
+        {
+          "id": "suffix:able",
+          "labelJa": "-able / ible"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        },
+        {
+          "id": "suffix:itude",
+          "labelJa": "-itude"
+        },
+        {
+          "id": "suffix:en-verb",
+          "labelJa": "-en"
+        }
+      ],
+      "answerId": "suffix:able",
+      "explanationJa": "-able / ible は「〜できる・〜されうる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:less",
+      "morphemeId": "suffix:less",
+      "type": "examples-to-morpheme",
+      "questionJa": "careless / hopeless / useless に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: careless, hopeless, useless?",
+      "choices": [
+        {
+          "id": "suffix:related",
+          "labelJa": "-related"
+        },
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:aholic",
+          "labelJa": "-aholic / oholic"
+        },
+        {
+          "id": "suffix:less",
+          "labelJa": "-less"
+        }
+      ],
+      "answerId": "suffix:less",
+      "explanationJa": "-less は「〜がない」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ful",
+      "morphemeId": "suffix:ful",
+      "type": "examples-to-morpheme",
+      "questionJa": "helpful / careful / hopeful に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: helpful, careful, hopeful?",
+      "choices": [
+        {
+          "id": "suffix:minded",
+          "labelJa": "-minded"
+        },
+        {
+          "id": "suffix:ly-adj",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:ful",
+          "labelJa": "-ful"
+        },
+        {
+          "id": "suffix:friendly",
+          "labelJa": "-friendly"
+        }
+      ],
+      "answerId": "suffix:ful",
+      "explanationJa": "-ful は「〜に満ちた・〜のある」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ness",
+      "morphemeId": "suffix:ness",
+      "type": "examples-to-morpheme",
+      "questionJa": "kindness / happiness / darkness に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: kindness, happiness, darkness?",
+      "choices": [
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        },
+        {
+          "id": "suffix:ness",
+          "labelJa": "-ness"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        },
+        {
+          "id": "suffix:worthy",
+          "labelJa": "-worthy"
+        }
+      ],
+      "answerId": "suffix:ness",
+      "explanationJa": "-ness は「性質・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ity",
+      "morphemeId": "suffix:ity",
+      "type": "examples-to-morpheme",
+      "questionJa": "activity / ability / flexibility に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: activity, ability, flexibility?",
+      "choices": [
+        {
+          "id": "suffix:ity",
+          "labelJa": "-ity / ty"
+        },
+        {
+          "id": "suffix:hood",
+          "labelJa": "-hood"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        }
+      ],
+      "answerId": "suffix:ity",
+      "explanationJa": "-ity / ty は「性質・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ment",
+      "morphemeId": "suffix:ment",
+      "type": "examples-to-morpheme",
+      "questionJa": "development / improvement / agreement に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: development, improvement, agreement?",
+      "choices": [
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:saving",
+          "labelJa": "-saving"
+        },
+        {
+          "id": "suffix:ling",
+          "labelJa": "-ling"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "-ment"
+        }
+      ],
+      "answerId": "suffix:ment",
+      "explanationJa": "-ment は「行為・結果・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ion",
+      "morphemeId": "suffix:ion",
+      "type": "examples-to-morpheme",
+      "questionJa": "creation / education / decision に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: creation, education, decision?",
+      "choices": [
+        {
+          "id": "suffix:tomy",
+          "labelJa": "-tomy"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:ion",
+          "labelJa": "-ion / tion"
+        },
+        {
+          "id": "suffix:osis",
+          "labelJa": "-osis"
+        }
+      ],
+      "answerId": "suffix:ion",
+      "explanationJa": "-ion / tion は「行為・過程・結果」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ance",
+      "morphemeId": "suffix:ance",
+      "type": "examples-to-morpheme",
+      "questionJa": "appearance / performance / existence に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: appearance, performance, existence?",
+      "choices": [
+        {
+          "id": "suffix:ready",
+          "labelJa": "-ready"
+        },
+        {
+          "id": "suffix:ance",
+          "labelJa": "-ance / ence"
+        },
+        {
+          "id": "suffix:fold",
+          "labelJa": "-fold"
+        },
+        {
+          "id": "suffix:phile",
+          "labelJa": "-phile"
+        }
+      ],
+      "answerId": "suffix:ance",
+      "explanationJa": "-ance / ence は「状態・行為」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:er-agent",
+      "morphemeId": "suffix:er-agent",
+      "type": "examples-to-morpheme",
+      "questionJa": "teacher / writer / worker に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: teacher, writer, worker?",
+      "choices": [
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:an-person",
+          "labelJa": "-an"
+        },
+        {
+          "id": "suffix:ee",
+          "labelJa": "-ee"
+        },
+        {
+          "id": "suffix:s-plural",
+          "labelJa": "-s / es"
+        }
+      ],
+      "answerId": "suffix:er-agent",
+      "explanationJa": "-er は「〜する人・もの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:or-agent",
+      "morphemeId": "suffix:or-agent",
+      "type": "examples-to-morpheme",
+      "questionJa": "actor / visitor / creator に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: actor, visitor, creator?",
+      "choices": [
+        {
+          "id": "suffix:ready",
+          "labelJa": "-ready"
+        },
+        {
+          "id": "suffix:ary",
+          "labelJa": "-ary"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        }
+      ],
+      "answerId": "suffix:or-agent",
+      "explanationJa": "-or は「〜する人・もの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ist",
+      "morphemeId": "suffix:ist",
+      "type": "examples-to-morpheme",
+      "questionJa": "artist / scientist / journalist に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: artist, scientist, journalist?",
+      "choices": [
+        {
+          "id": "suffix:ready",
+          "labelJa": "-ready"
+        },
+        {
+          "id": "suffix:ing-noun",
+          "labelJa": "-ing"
+        },
+        {
+          "id": "suffix:ist",
+          "labelJa": "-ist"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        }
+      ],
+      "answerId": "suffix:ist",
+      "explanationJa": "-ist は「専門家・実践者・支持者」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ian",
+      "morphemeId": "suffix:ian",
+      "type": "examples-to-morpheme",
+      "questionJa": "musician / historian / librarian に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: musician, historian, librarian?",
+      "choices": [
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:ian",
+          "labelJa": "-ian"
+        },
+        {
+          "id": "suffix:related",
+          "labelJa": "-related"
+        },
+        {
+          "id": "suffix:ify",
+          "labelJa": "-ify / fy"
+        }
+      ],
+      "answerId": "suffix:ian",
+      "explanationJa": "-ian は「専門家・関係者」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ee",
+      "morphemeId": "suffix:ee",
+      "type": "examples-to-morpheme",
+      "questionJa": "employee / interviewee / trainee に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: employee, interviewee, trainee?",
+      "choices": [
+        {
+          "id": "suffix:ee",
+          "labelJa": "-ee"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        },
+        {
+          "id": "suffix:trophy",
+          "labelJa": "-trophy"
+        }
+      ],
+      "answerId": "suffix:ee",
+      "explanationJa": "-ee は「行為を受ける人など」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ship",
+      "morphemeId": "suffix:ship",
+      "type": "examples-to-morpheme",
+      "questionJa": "friendship / leadership / membership に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: friendship, leadership, membership?",
+      "choices": [
+        {
+          "id": "suffix:ic",
+          "labelJa": "-ic"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        },
+        {
+          "id": "suffix:logist",
+          "labelJa": "-logist"
+        },
+        {
+          "id": "suffix:ship",
+          "labelJa": "-ship"
+        }
+      ],
+      "answerId": "suffix:ship",
+      "explanationJa": "-ship は「関係・地位・技能」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:hood",
+      "morphemeId": "suffix:hood",
+      "type": "examples-to-morpheme",
+      "questionJa": "childhood / adulthood / parenthood に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: childhood, adulthood, parenthood?",
+      "choices": [
+        {
+          "id": "suffix:related",
+          "labelJa": "-related"
+        },
+        {
+          "id": "suffix:looking",
+          "labelJa": "-looking"
+        },
+        {
+          "id": "suffix:hood",
+          "labelJa": "-hood"
+        },
+        {
+          "id": "suffix:tech",
+          "labelJa": "-tech"
+        }
+      ],
+      "answerId": "suffix:hood",
+      "explanationJa": "-hood は「状態・時期」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ism",
+      "morphemeId": "suffix:ism",
+      "type": "examples-to-morpheme",
+      "questionJa": "capitalism / socialism / realism に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: capitalism, socialism, realism?",
+      "choices": [
+        {
+          "id": "suffix:kin",
+          "labelJa": "-kin"
+        },
+        {
+          "id": "suffix:ism",
+          "labelJa": "-ism"
+        },
+        {
+          "id": "suffix:based",
+          "labelJa": "-based"
+        },
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        }
+      ],
+      "answerId": "suffix:ism",
+      "explanationJa": "-ism は「思想・制度・傾向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ize",
+      "morphemeId": "suffix:ize",
+      "type": "examples-to-morpheme",
+      "questionJa": "modernize / organize / realize に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: modernize, organize, realize?",
+      "choices": [
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        },
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:ive",
+          "labelJa": "-ive"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "-ish"
+        }
+      ],
+      "answerId": "suffix:ize",
+      "explanationJa": "-ize / ise は「〜にする・〜化する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ify",
+      "morphemeId": "suffix:ify",
+      "type": "examples-to-morpheme",
+      "questionJa": "simplify / clarify / purify に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: simplify, clarify, purify?",
+      "choices": [
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        },
+        {
+          "id": "suffix:kin",
+          "labelJa": "-kin"
+        },
+        {
+          "id": "suffix:ify",
+          "labelJa": "-ify / fy"
+        }
+      ],
+      "answerId": "suffix:ify",
+      "explanationJa": "-ify / fy は「〜にする」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:en-verb",
+      "morphemeId": "suffix:en-verb",
+      "type": "examples-to-morpheme",
+      "questionJa": "strengthen / widen / deepen に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: strengthen, widen, deepen?",
+      "choices": [
+        {
+          "id": "suffix:ical",
+          "labelJa": "-ical"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:en-verb",
+          "labelJa": "-en"
+        },
+        {
+          "id": "suffix:ways",
+          "labelJa": "-ways"
+        }
+      ],
+      "answerId": "suffix:en-verb",
+      "explanationJa": "-en は「〜にする・〜になる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ous",
+      "morphemeId": "suffix:ous",
+      "type": "examples-to-morpheme",
+      "questionJa": "dangerous / famous / curious に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: dangerous, famous, curious?",
+      "choices": [
+        {
+          "id": "suffix:filled",
+          "labelJa": "-filled"
+        },
+        {
+          "id": "suffix:ous",
+          "labelJa": "-ous / ious"
+        },
+        {
+          "id": "suffix:lasting",
+          "labelJa": "-lasting"
+        },
+        {
+          "id": "suffix:free",
+          "labelJa": "-free"
+        }
+      ],
+      "answerId": "suffix:ous",
+      "explanationJa": "-ous / ious は「〜の性質を持つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ive",
+      "morphemeId": "suffix:ive",
+      "type": "examples-to-morpheme",
+      "questionJa": "active / creative / productive に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: active, creative, productive?",
+      "choices": [
+        {
+          "id": "suffix:ive",
+          "labelJa": "-ive"
+        },
+        {
+          "id": "suffix:ary",
+          "labelJa": "-ary"
+        },
+        {
+          "id": "suffix:ready",
+          "labelJa": "-ready"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        }
+      ],
+      "answerId": "suffix:ive",
+      "explanationJa": "-ive は「〜する性質・傾向」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:al-adj",
+      "morphemeId": "suffix:al-adj",
+      "type": "examples-to-morpheme",
+      "questionJa": "national / personal / cultural に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: national, personal, cultural?",
+      "choices": [
+        {
+          "id": "suffix:tech",
+          "labelJa": "-tech"
+        },
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:proof",
+          "labelJa": "-proof"
+        },
+        {
+          "id": "suffix:al-adj",
+          "labelJa": "-al"
+        }
+      ],
+      "answerId": "suffix:al-adj",
+      "explanationJa": "-al は「〜に関する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ic",
+      "morphemeId": "suffix:ic",
+      "type": "examples-to-morpheme",
+      "questionJa": "historic / atomic / poetic に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: historic, atomic, poetic?",
+      "choices": [
+        {
+          "id": "suffix:nik",
+          "labelJa": "-nik"
+        },
+        {
+          "id": "suffix:kin",
+          "labelJa": "-kin"
+        },
+        {
+          "id": "suffix:ic",
+          "labelJa": "-ic"
+        },
+        {
+          "id": "suffix:land",
+          "labelJa": "-land"
+        }
+      ],
+      "answerId": "suffix:ic",
+      "explanationJa": "-ic は「〜に関する・〜的」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ical",
+      "morphemeId": "suffix:ical",
+      "type": "examples-to-morpheme",
+      "questionJa": "historical / biological / political に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: historical, biological, political?",
+      "choices": [
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        },
+        {
+          "id": "suffix:ical",
+          "labelJa": "-ical"
+        },
+        {
+          "id": "suffix:ous",
+          "labelJa": "-ous / ious"
+        },
+        {
+          "id": "suffix:en-adj",
+          "labelJa": "-en"
+        }
+      ],
+      "answerId": "suffix:ical",
+      "explanationJa": "-ical は「〜に関する・〜的」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:y",
+      "morphemeId": "suffix:y",
+      "type": "examples-to-morpheme",
+      "questionJa": "rainy / cloudy / windy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: rainy, cloudy, windy?",
+      "choices": [
+        {
+          "id": "suffix:y",
+          "labelJa": "-y"
+        },
+        {
+          "id": "suffix:naut",
+          "labelJa": "-naut"
+        },
+        {
+          "id": "suffix:arium",
+          "labelJa": "-arium"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        }
+      ],
+      "answerId": "suffix:y",
+      "explanationJa": "-y は「〜の多い・〜の性質」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ish",
+      "morphemeId": "suffix:ish",
+      "type": "examples-to-morpheme",
+      "questionJa": "childish / selfish / greenish に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: childish, selfish, greenish?",
+      "choices": [
+        {
+          "id": "suffix:ist",
+          "labelJa": "-ist"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        },
+        {
+          "id": "suffix:ing-noun",
+          "labelJa": "-ing"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "-ish"
+        }
+      ],
+      "answerId": "suffix:ish",
+      "explanationJa": "-ish は「〜のような・やや〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:like",
+      "morphemeId": "suffix:like",
+      "type": "examples-to-morpheme",
+      "questionJa": "childlike / lifelike / dreamlike に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: childlike, lifelike, dreamlike?",
+      "choices": [
+        {
+          "id": "suffix:en-adj",
+          "labelJa": "-en"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        }
+      ],
+      "answerId": "suffix:like",
+      "explanationJa": "-like は「〜に似た」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ly-adverb",
+      "morphemeId": "suffix:ly-adverb",
+      "type": "examples-to-morpheme",
+      "questionJa": "quickly / carefully / quietly に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: quickly, carefully, quietly?",
+      "choices": [
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:ite",
+          "labelJa": "-ite"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        }
+      ],
+      "answerId": "suffix:ly-adverb",
+      "explanationJa": "-ly は「〜の仕方で」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ward",
+      "morphemeId": "suffix:ward",
+      "type": "examples-to-morpheme",
+      "questionJa": "forward / backward / upward に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: forward, backward, upward?",
+      "choices": [
+        {
+          "id": "suffix:ward",
+          "labelJa": "-ward / wards"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:athon",
+          "labelJa": "-athon"
+        },
+        {
+          "id": "suffix:borne",
+          "labelJa": "-borne"
+        }
+      ],
+      "answerId": "suffix:ward",
+      "explanationJa": "-ward / wards は「〜の方向へ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:wise",
+      "morphemeId": "suffix:wise",
+      "type": "examples-to-morpheme",
+      "questionJa": "clockwise / counterclockwise / lengthwise に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: clockwise, counterclockwise, lengthwise?",
+      "choices": [
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        },
+        {
+          "id": "suffix:saving",
+          "labelJa": "-saving"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        }
+      ],
+      "answerId": "suffix:wise",
+      "explanationJa": "-wise は「〜の方向・やり方で」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ate-verb",
+      "morphemeId": "suffix:ate-verb",
+      "type": "examples-to-morpheme",
+      "questionJa": "activate / validate / regulate に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: activate, validate, regulate?",
+      "choices": [
+        {
+          "id": "suffix:y",
+          "labelJa": "-y"
+        },
+        {
+          "id": "suffix:ese",
+          "labelJa": "-ese"
+        },
+        {
+          "id": "suffix:ate-verb",
+          "labelJa": "-ate"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        }
+      ],
+      "answerId": "suffix:ate-verb",
+      "explanationJa": "-ate は「〜にする・行う」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:age-noun",
+      "morphemeId": "suffix:age-noun",
+      "type": "examples-to-morpheme",
+      "questionJa": "breakage / storage / leakage に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: breakage, storage, leakage?",
+      "choices": [
+        {
+          "id": "suffix:ive",
+          "labelJa": "-ive"
+        },
+        {
+          "id": "suffix:age-noun",
+          "labelJa": "-age"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        }
+      ],
+      "answerId": "suffix:age-noun",
+      "explanationJa": "-age は「集合・量・結果など」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:al-noun",
+      "morphemeId": "suffix:al-noun",
+      "type": "examples-to-morpheme",
+      "questionJa": "arrival / refusal / approval に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: arrival, refusal, approval?",
+      "choices": [
+        {
+          "id": "suffix:al-noun",
+          "labelJa": "-al"
+        },
+        {
+          "id": "suffix:ant-adj",
+          "labelJa": "-ant / ent"
+        },
+        {
+          "id": "suffix:onymic",
+          "labelJa": "-onymic"
+        },
+        {
+          "id": "suffix:tomy",
+          "labelJa": "-tomy"
+        }
+      ],
+      "answerId": "suffix:al-noun",
+      "explanationJa": "-al は「行為・結果」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ure",
+      "morphemeId": "suffix:ure",
+      "type": "examples-to-morpheme",
+      "questionJa": "failure / closure / departure に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: failure, closure, departure?",
+      "choices": [
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:bound",
+          "labelJa": "-bound"
+        },
+        {
+          "id": "suffix:ure",
+          "labelJa": "-ure"
+        }
+      ],
+      "answerId": "suffix:ure",
+      "explanationJa": "-ure は「行為・結果・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ery",
+      "morphemeId": "suffix:ery",
+      "type": "examples-to-morpheme",
+      "questionJa": "bakery / brewery / scenery に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: bakery, brewery, scenery?",
+      "choices": [
+        {
+          "id": "suffix:onymic",
+          "labelJa": "-onymic"
+        },
+        {
+          "id": "suffix:worker",
+          "labelJa": "-worker"
+        },
+        {
+          "id": "suffix:ery",
+          "labelJa": "-ery / ry"
+        },
+        {
+          "id": "suffix:ese",
+          "labelJa": "-ese"
+        }
+      ],
+      "answerId": "suffix:ery",
+      "explanationJa": "-ery / ry は「場所・活動・集合」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:dom",
+      "morphemeId": "suffix:dom",
+      "type": "examples-to-morpheme",
+      "questionJa": "freedom / kingdom / wisdom に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: freedom, kingdom, wisdom?",
+      "choices": [
+        {
+          "id": "suffix:age-noun",
+          "labelJa": "-age"
+        },
+        {
+          "id": "suffix:dom",
+          "labelJa": "-dom"
+        },
+        {
+          "id": "suffix:keeper",
+          "labelJa": "-keeper"
+        },
+        {
+          "id": "suffix:ist",
+          "labelJa": "-ist"
+        }
+      ],
+      "answerId": "suffix:dom",
+      "explanationJa": "-dom は「状態・領域」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:acy",
+      "morphemeId": "suffix:acy",
+      "type": "examples-to-morpheme",
+      "questionJa": "accuracy / privacy / adequacy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: accuracy, privacy, adequacy?",
+      "choices": [
+        {
+          "id": "suffix:acy",
+          "labelJa": "-acy"
+        },
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        },
+        {
+          "id": "suffix:related",
+          "labelJa": "-related"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        }
+      ],
+      "answerId": "suffix:acy",
+      "explanationJa": "-acy は「性質・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ician",
+      "morphemeId": "suffix:ician",
+      "type": "examples-to-morpheme",
+      "questionJa": "electrician / technician / magician に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: electrician, technician, magician?",
+      "choices": [
+        {
+          "id": "suffix:making",
+          "labelJa": "-making"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:oid",
+          "labelJa": "-oid"
+        },
+        {
+          "id": "suffix:ician",
+          "labelJa": "-ician"
+        }
+      ],
+      "answerId": "suffix:ician",
+      "explanationJa": "-ician は「技術・専門分野の人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ess",
+      "morphemeId": "suffix:ess",
+      "type": "examples-to-morpheme",
+      "questionJa": "actress / waitress / princess に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: actress, waitress, princess?",
+      "choices": [
+        {
+          "id": "suffix:s-3sg",
+          "labelJa": "-s / es"
+        },
+        {
+          "id": "suffix:size",
+          "labelJa": "-sized / size"
+        },
+        {
+          "id": "suffix:ess",
+          "labelJa": "-ess"
+        },
+        {
+          "id": "suffix:ery",
+          "labelJa": "-ery / ry"
+        }
+      ],
+      "answerId": "suffix:ess",
+      "explanationJa": "-ess は「女性を表す（伝統的・限定的）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:let",
+      "morphemeId": "suffix:let",
+      "type": "examples-to-morpheme",
+      "questionJa": "booklet / leaflet / droplet に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: booklet, leaflet, droplet?",
+      "choices": [
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:based",
+          "labelJa": "-based"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        }
+      ],
+      "answerId": "suffix:let",
+      "explanationJa": "-let は「小さいもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ling",
+      "morphemeId": "suffix:ling",
+      "type": "examples-to-morpheme",
+      "questionJa": "duckling / gosling / seedling に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: duckling, gosling, seedling?",
+      "choices": [
+        {
+          "id": "suffix:ling",
+          "labelJa": "-ling"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:safe",
+          "labelJa": "-safe"
+        },
+        {
+          "id": "suffix:some",
+          "labelJa": "-some"
+        }
+      ],
+      "answerId": "suffix:ling",
+      "explanationJa": "-ling は「小さい・若いもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ary",
+      "morphemeId": "suffix:ary",
+      "type": "examples-to-morpheme",
+      "questionJa": "budgetary / dietary / planetary に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: budgetary, dietary, planetary?",
+      "choices": [
+        {
+          "id": "suffix:al-adj",
+          "labelJa": "-al"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "-able / ible"
+        },
+        {
+          "id": "suffix:ary",
+          "labelJa": "-ary"
+        }
+      ],
+      "answerId": "suffix:ary",
+      "explanationJa": "-ary は「〜に関係する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ory",
+      "morphemeId": "suffix:ory",
+      "type": "examples-to-morpheme",
+      "questionJa": "introductory / explanatory / compulsory に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: introductory, explanatory, compulsory?",
+      "choices": [
+        {
+          "id": "suffix:ance",
+          "labelJa": "-ance / ence"
+        },
+        {
+          "id": "suffix:bound",
+          "labelJa": "-bound"
+        },
+        {
+          "id": "suffix:ory",
+          "labelJa": "-ory"
+        },
+        {
+          "id": "suffix:ity",
+          "labelJa": "-ity / ty"
+        }
+      ],
+      "answerId": "suffix:ory",
+      "explanationJa": "-ory は「〜に関係する・機能する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ant-adj",
+      "morphemeId": "suffix:ant-adj",
+      "type": "examples-to-morpheme",
+      "questionJa": "dependent / resistant / abundant に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: dependent, resistant, abundant?",
+      "choices": [
+        {
+          "id": "suffix:ish",
+          "labelJa": "-ish"
+        },
+        {
+          "id": "suffix:ant-adj",
+          "labelJa": "-ant / ent"
+        },
+        {
+          "id": "suffix:aholic",
+          "labelJa": "-aholic / oholic"
+        },
+        {
+          "id": "suffix:ee",
+          "labelJa": "-ee"
+        }
+      ],
+      "answerId": "suffix:ant-adj",
+      "explanationJa": "-ant / ent は「〜する性質・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:some",
+      "morphemeId": "suffix:some",
+      "type": "examples-to-morpheme",
+      "questionJa": "troublesome / tiresome / burdensome に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: troublesome, tiresome, burdensome?",
+      "choices": [
+        {
+          "id": "suffix:some",
+          "labelJa": "-some"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        },
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        }
+      ],
+      "answerId": "suffix:some",
+      "explanationJa": "-some は「〜を引き起こす・〜の性質」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ly-adj",
+      "morphemeId": "suffix:ly-adj",
+      "type": "examples-to-morpheme",
+      "questionJa": "friendly / lovely / weekly に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: friendly, lovely, weekly?",
+      "choices": [
+        {
+          "id": "suffix:keeper",
+          "labelJa": "-keeper"
+        },
+        {
+          "id": "suffix:ectomy",
+          "labelJa": "-ectomy"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "-able / ible"
+        },
+        {
+          "id": "suffix:ly-adj",
+          "labelJa": "-ly"
+        }
+      ],
+      "answerId": "suffix:ly-adj",
+      "explanationJa": "-ly は「〜のような・〜ごとの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ed-adj",
+      "morphemeId": "suffix:ed-adj",
+      "type": "examples-to-morpheme",
+      "questionJa": "skilled / wooded / bearded に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: skilled, wooded, bearded?",
+      "choices": [
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:ette",
+          "labelJa": "-ette"
+        },
+        {
+          "id": "suffix:ed-adj",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        }
+      ],
+      "answerId": "suffix:ed-adj",
+      "explanationJa": "-ed は「〜を備えた・〜の状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:proof",
+      "morphemeId": "suffix:proof",
+      "type": "examples-to-morpheme",
+      "questionJa": "waterproof / fireproof / soundproof に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: waterproof, fireproof, soundproof?",
+      "choices": [
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        },
+        {
+          "id": "suffix:proof",
+          "labelJa": "-proof"
+        },
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:safe",
+          "labelJa": "-safe"
+        }
+      ],
+      "answerId": "suffix:proof",
+      "explanationJa": "-proof は「〜に耐える・〜を防ぐ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:wide",
+      "morphemeId": "suffix:wide",
+      "type": "examples-to-morpheme",
+      "questionJa": "worldwide / nationwide / citywide に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: worldwide, nationwide, citywide?",
+      "choices": [
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "-ward / wards"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        }
+      ],
+      "answerId": "suffix:wide",
+      "explanationJa": "-wide は「〜全体にわたる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:most",
+      "morphemeId": "suffix:most",
+      "type": "examples-to-morpheme",
+      "questionJa": "innermost / outermost / uppermost に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: innermost, outermost, uppermost?",
+      "choices": [
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        },
+        {
+          "id": "suffix:less",
+          "labelJa": "-less"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        }
+      ],
+      "answerId": "suffix:most",
+      "explanationJa": "-most は「最も〜の位置にある」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:arium",
+      "morphemeId": "suffix:arium",
+      "type": "examples-to-morpheme",
+      "questionJa": "aquarium / terrarium / planetarium に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: aquarium, terrarium, planetarium?",
+      "choices": [
+        {
+          "id": "suffix:grade",
+          "labelJa": "-grade"
+        },
+        {
+          "id": "suffix:worker",
+          "labelJa": "-worker"
+        },
+        {
+          "id": "suffix:arium",
+          "labelJa": "-arium"
+        },
+        {
+          "id": "suffix:ess",
+          "labelJa": "-ess"
+        }
+      ],
+      "answerId": "suffix:arium",
+      "explanationJa": "-arium は「収容する場所・設備」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:orium",
+      "morphemeId": "suffix:orium",
+      "type": "examples-to-morpheme",
+      "questionJa": "auditorium / crematorium / sanatorium に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: auditorium, crematorium, sanatorium?",
+      "choices": [
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:orium",
+          "labelJa": "-orium"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:acy",
+          "labelJa": "-acy"
+        }
+      ],
+      "answerId": "suffix:orium",
+      "explanationJa": "-orium は「用途のある場所」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ette",
+      "morphemeId": "suffix:ette",
+      "type": "examples-to-morpheme",
+      "questionJa": "kitchenette / cigarette / statuette に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: kitchenette, cigarette, statuette?",
+      "choices": [
+        {
+          "id": "suffix:ette",
+          "labelJa": "-ette"
+        },
+        {
+          "id": "suffix:tomy",
+          "labelJa": "-tomy"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:metric",
+          "labelJa": "-metric"
+        }
+      ],
+      "answerId": "suffix:ette",
+      "explanationJa": "-ette は「小型のもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:kin",
+      "morphemeId": "suffix:kin",
+      "type": "examples-to-morpheme",
+      "questionJa": "lambkin / mannikin / catkin に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: lambkin, mannikin, catkin?",
+      "choices": [
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:bound",
+          "labelJa": "-bound"
+        },
+        {
+          "id": "suffix:vore",
+          "labelJa": "-vore"
+        },
+        {
+          "id": "suffix:kin",
+          "labelJa": "-kin"
+        }
+      ],
+      "answerId": "suffix:kin",
+      "explanationJa": "-kin は「小さい・親しみのあるもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ster",
+      "morphemeId": "suffix:ster",
+      "type": "examples-to-morpheme",
+      "questionJa": "youngster / gangster / trickster に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: youngster, gangster, trickster?",
+      "choices": [
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:lysis",
+          "labelJa": "-lysis"
+        },
+        {
+          "id": "suffix:ster",
+          "labelJa": "-ster"
+        },
+        {
+          "id": "suffix:minded",
+          "labelJa": "-minded"
+        }
+      ],
+      "answerId": "suffix:ster",
+      "explanationJa": "-ster は「人・従事者（時に否定的）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ard",
+      "morphemeId": "suffix:ard",
+      "type": "examples-to-morpheme",
+      "questionJa": "drunkard / coward / dullard に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: drunkard, coward, dullard?",
+      "choices": [
+        {
+          "id": "suffix:holder",
+          "labelJa": "-holder"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        },
+        {
+          "id": "suffix:oriented",
+          "labelJa": "-oriented"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        }
+      ],
+      "answerId": "suffix:ard",
+      "explanationJa": "-ard は「特徴を持つ人（しばしば否定的）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ite",
+      "morphemeId": "suffix:ite",
+      "type": "examples-to-morpheme",
+      "questionJa": "Israelite / Trotskyite / pre-Raphaelite に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: Israelite, Trotskyite, pre-Raphaelite?",
+      "choices": [
+        {
+          "id": "suffix:ite",
+          "labelJa": "-ite"
+        },
+        {
+          "id": "suffix:worker",
+          "labelJa": "-worker"
+        },
+        {
+          "id": "suffix:ship",
+          "labelJa": "-ship"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        }
+      ],
+      "answerId": "suffix:ite",
+      "explanationJa": "-ite は「支持者・所属者」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:an-person",
+      "morphemeId": "suffix:an-person",
+      "type": "examples-to-morpheme",
+      "questionJa": "American / African / Korean に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: American, African, Korean?",
+      "choices": [
+        {
+          "id": "suffix:vore",
+          "labelJa": "-vore"
+        },
+        {
+          "id": "suffix:metric",
+          "labelJa": "-metric"
+        },
+        {
+          "id": "suffix:friendly",
+          "labelJa": "-friendly"
+        },
+        {
+          "id": "suffix:an-person",
+          "labelJa": "-an"
+        }
+      ],
+      "answerId": "suffix:an-person",
+      "explanationJa": "-an は「地域・集団の出身者・所属者」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ese",
+      "morphemeId": "suffix:ese",
+      "type": "examples-to-morpheme",
+      "questionJa": "Japanese / Chinese / Vietnamese に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: Japanese, Chinese, Vietnamese?",
+      "choices": [
+        {
+          "id": "suffix:al-noun",
+          "labelJa": "-al"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:ese",
+          "labelJa": "-ese"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        }
+      ],
+      "answerId": "suffix:ese",
+      "explanationJa": "-ese は「地域・国の人や言語」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:esque",
+      "morphemeId": "suffix:esque",
+      "type": "examples-to-morpheme",
+      "questionJa": "picturesque / grotesque / chaplinesque に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: picturesque, grotesque, chaplinesque?",
+      "choices": [
+        {
+          "id": "suffix:giving",
+          "labelJa": "-giving"
+        },
+        {
+          "id": "suffix:esque",
+          "labelJa": "-esque"
+        },
+        {
+          "id": "suffix:friendly",
+          "labelJa": "-friendly"
+        },
+        {
+          "id": "suffix:less",
+          "labelJa": "-less"
+        }
+      ],
+      "answerId": "suffix:esque",
+      "explanationJa": "-esque は「〜風の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:oid",
+      "morphemeId": "suffix:oid",
+      "type": "examples-to-morpheme",
+      "questionJa": "humanoid / asteroid / ovoid に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: humanoid, asteroid, ovoid?",
+      "choices": [
+        {
+          "id": "suffix:oid",
+          "labelJa": "-oid"
+        },
+        {
+          "id": "suffix:ish",
+          "labelJa": "-ish"
+        },
+        {
+          "id": "suffix:ion",
+          "labelJa": "-ion / tion"
+        },
+        {
+          "id": "suffix:ian",
+          "labelJa": "-ian"
+        }
+      ],
+      "answerId": "suffix:oid",
+      "explanationJa": "-oid は「〜に似た形・もの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ate-noun",
+      "morphemeId": "suffix:ate-noun",
+      "type": "examples-to-morpheme",
+      "questionJa": "directorate / secretariat / electorate に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: directorate, secretariat, electorate?",
+      "choices": [
+        {
+          "id": "suffix:th",
+          "labelJa": "-th"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:en-adj",
+          "labelJa": "-en"
+        },
+        {
+          "id": "suffix:ate-noun",
+          "labelJa": "-ate"
+        }
+      ],
+      "answerId": "suffix:ate-noun",
+      "explanationJa": "-ate は「官職・団体など」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:itude",
+      "morphemeId": "suffix:itude",
+      "type": "examples-to-morpheme",
+      "questionJa": "solitude / aptitude / certitude に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: solitude, aptitude, certitude?",
+      "choices": [
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:itude",
+          "labelJa": "-itude"
+        },
+        {
+          "id": "suffix:safe",
+          "labelJa": "-safe"
+        }
+      ],
+      "answerId": "suffix:itude",
+      "explanationJa": "-itude は「性質・状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:th",
+      "morphemeId": "suffix:th",
+      "type": "examples-to-morpheme",
+      "questionJa": "warmth / depth / width に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: warmth, depth, width?",
+      "choices": [
+        {
+          "id": "suffix:logist",
+          "labelJa": "-logist"
+        },
+        {
+          "id": "suffix:th",
+          "labelJa": "-th"
+        },
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:s-3sg",
+          "labelJa": "-s / es"
+        }
+      ],
+      "answerId": "suffix:th",
+      "explanationJa": "-th は「性質・状態・尺度」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:let-verb",
+      "morphemeId": "suffix:let-verb",
+      "type": "examples-to-morpheme",
+      "questionJa": "twinkle / crackle / sparkle に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: twinkle, crackle, sparkle?",
+      "choices": [
+        {
+          "id": "suffix:let-verb",
+          "labelJa": "-le"
+        },
+        {
+          "id": "suffix:ory",
+          "labelJa": "-ory"
+        },
+        {
+          "id": "suffix:emia",
+          "labelJa": "-emia / aemia"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        }
+      ],
+      "answerId": "suffix:let-verb",
+      "explanationJa": "-le は「反復・小さな動作（歴史的）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:fold",
+      "morphemeId": "suffix:fold",
+      "type": "examples-to-morpheme",
+      "questionJa": "twofold / threefold / fourfold に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: twofold, threefold, fourfold?",
+      "choices": [
+        {
+          "id": "suffix:making",
+          "labelJa": "-making"
+        },
+        {
+          "id": "suffix:ite",
+          "labelJa": "-ite"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:fold",
+          "labelJa": "-fold"
+        }
+      ],
+      "answerId": "suffix:fold",
+      "explanationJa": "-fold は「〜倍・〜重」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:free",
+      "morphemeId": "suffix:free",
+      "type": "examples-to-morpheme",
+      "questionJa": "sugar-free / carefree / smoke-free に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: sugar-free, carefree, smoke-free?",
+      "choices": [
+        {
+          "id": "suffix:nomy",
+          "labelJa": "-nomy"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "-ment"
+        },
+        {
+          "id": "suffix:free",
+          "labelJa": "-free"
+        },
+        {
+          "id": "suffix:worthy",
+          "labelJa": "-worthy"
+        }
+      ],
+      "answerId": "suffix:free",
+      "explanationJa": "-free は「〜を含まない」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:er-comparative",
+      "morphemeId": "suffix:er-comparative",
+      "type": "examples-to-morpheme",
+      "questionJa": "faster / smaller / older に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: faster, smaller, older?",
+      "choices": [
+        {
+          "id": "suffix:lasting",
+          "labelJa": "-lasting"
+        },
+        {
+          "id": "suffix:er-comparative",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:gamy",
+          "labelJa": "-gamy"
+        },
+        {
+          "id": "suffix:mancy",
+          "labelJa": "-mancy"
+        }
+      ],
+      "answerId": "suffix:er-comparative",
+      "explanationJa": "-er は「より〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:est-superlative",
+      "morphemeId": "suffix:est-superlative",
+      "type": "examples-to-morpheme",
+      "questionJa": "fastest / smallest / oldest に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: fastest, smallest, oldest?",
+      "choices": [
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "-est"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:ance",
+          "labelJa": "-ance / ence"
+        }
+      ],
+      "answerId": "suffix:est-superlative",
+      "explanationJa": "-est は「最も〜」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:phobia",
+      "morphemeId": "suffix:phobia",
+      "type": "examples-to-morpheme",
+      "questionJa": "claustrophobia / arachnophobia / acrophobia に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: claustrophobia, arachnophobia, acrophobia?",
+      "choices": [
+        {
+          "id": "suffix:mania",
+          "labelJa": "-mania"
+        },
+        {
+          "id": "suffix:athon",
+          "labelJa": "-athon"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:phobia",
+          "labelJa": "-phobia"
+        }
+      ],
+      "answerId": "suffix:phobia",
+      "explanationJa": "-phobia は「恐怖・強い嫌悪」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:phile",
+      "morphemeId": "suffix:phile",
+      "type": "examples-to-morpheme",
+      "questionJa": "bibliophile / audiophile / Anglophile に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: bibliophile, audiophile, Anglophile?",
+      "choices": [
+        {
+          "id": "suffix:logist",
+          "labelJa": "-logist"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:phile",
+          "labelJa": "-phile"
+        },
+        {
+          "id": "suffix:genesis",
+          "labelJa": "-genesis"
+        }
+      ],
+      "answerId": "suffix:phile",
+      "explanationJa": "-phile は「〜を好む人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ectomy",
+      "morphemeId": "suffix:ectomy",
+      "type": "examples-to-morpheme",
+      "questionJa": "appendectomy / tonsillectomy / mastectomy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: appendectomy, tonsillectomy, mastectomy?",
+      "choices": [
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        },
+        {
+          "id": "suffix:ectomy",
+          "labelJa": "-ectomy"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        }
+      ],
+      "answerId": "suffix:ectomy",
+      "explanationJa": "-ectomy は「外科的切除」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:itis",
+      "morphemeId": "suffix:itis",
+      "type": "examples-to-morpheme",
+      "questionJa": "arthritis / bronchitis / dermatitis に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: arthritis, bronchitis, dermatitis?",
+      "choices": [
+        {
+          "id": "suffix:itis",
+          "labelJa": "-itis"
+        },
+        {
+          "id": "suffix:logist",
+          "labelJa": "-logist"
+        },
+        {
+          "id": "suffix:ate-verb",
+          "labelJa": "-ate"
+        },
+        {
+          "id": "suffix:dom",
+          "labelJa": "-dom"
+        }
+      ],
+      "answerId": "suffix:itis",
+      "explanationJa": "-itis は「炎症」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:osis",
+      "morphemeId": "suffix:osis",
+      "type": "examples-to-morpheme",
+      "questionJa": "fibrosis / scoliosis / osmosis に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: fibrosis, scoliosis, osmosis?",
+      "choices": [
+        {
+          "id": "suffix:ways",
+          "labelJa": "-ways"
+        },
+        {
+          "id": "suffix:cide",
+          "labelJa": "-cide"
+        },
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        },
+        {
+          "id": "suffix:osis",
+          "labelJa": "-osis"
+        }
+      ],
+      "answerId": "suffix:osis",
+      "explanationJa": "-osis は「状態・過程（医学など）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:emia",
+      "morphemeId": "suffix:emia",
+      "type": "examples-to-morpheme",
+      "questionJa": "anemia / hypoglycemia / leukemia に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: anemia, hypoglycemia, leukemia?",
+      "choices": [
+        {
+          "id": "suffix:tomy",
+          "labelJa": "-tomy"
+        },
+        {
+          "id": "suffix:ify",
+          "labelJa": "-ify / fy"
+        },
+        {
+          "id": "suffix:emia",
+          "labelJa": "-emia / aemia"
+        },
+        {
+          "id": "suffix:carrying",
+          "labelJa": "-carrying"
+        }
+      ],
+      "answerId": "suffix:emia",
+      "explanationJa": "-emia / aemia は「血液の状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:algia",
+      "morphemeId": "suffix:algia",
+      "type": "examples-to-morpheme",
+      "questionJa": "neuralgia / myalgia / arthralgia に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: neuralgia, myalgia, arthralgia?",
+      "choices": [
+        {
+          "id": "suffix:osis",
+          "labelJa": "-osis"
+        },
+        {
+          "id": "suffix:algia",
+          "labelJa": "-algia"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        }
+      ],
+      "answerId": "suffix:algia",
+      "explanationJa": "-algia は「痛み」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:therapy",
+      "morphemeId": "suffix:therapy",
+      "type": "examples-to-morpheme",
+      "questionJa": "psychotherapy / physiotherapy / radiotherapy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: psychotherapy, physiotherapy, radiotherapy?",
+      "choices": [
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:lasting",
+          "labelJa": "-lasting"
+        },
+        {
+          "id": "suffix:ism",
+          "labelJa": "-ism"
+        }
+      ],
+      "answerId": "suffix:therapy",
+      "explanationJa": "-therapy は「治療」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:tomy",
+      "morphemeId": "suffix:tomy",
+      "type": "examples-to-morpheme",
+      "questionJa": "tracheotomy / laparotomy / craniotomy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: tracheotomy, laparotomy, craniotomy?",
+      "choices": [
+        {
+          "id": "suffix:plasty",
+          "labelJa": "-plasty"
+        },
+        {
+          "id": "suffix:nomy",
+          "labelJa": "-nomy"
+        },
+        {
+          "id": "suffix:worker",
+          "labelJa": "-worker"
+        },
+        {
+          "id": "suffix:tomy",
+          "labelJa": "-tomy"
+        }
+      ],
+      "answerId": "suffix:tomy",
+      "explanationJa": "-tomy は「切開」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:plasty",
+      "morphemeId": "suffix:plasty",
+      "type": "examples-to-morpheme",
+      "questionJa": "rhinoplasty / angioplasty / arthroplasty に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: rhinoplasty, angioplasty, arthroplasty?",
+      "choices": [
+        {
+          "id": "suffix:carrying",
+          "labelJa": "-carrying"
+        },
+        {
+          "id": "suffix:kin",
+          "labelJa": "-kin"
+        },
+        {
+          "id": "suffix:plasty",
+          "labelJa": "-plasty"
+        },
+        {
+          "id": "suffix:gamy",
+          "labelJa": "-gamy"
+        }
+      ],
+      "answerId": "suffix:plasty",
+      "explanationJa": "-plasty は「外科的形成・修復」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:cide",
+      "morphemeId": "suffix:cide",
+      "type": "examples-to-morpheme",
+      "questionJa": "pesticide / insecticide / suicide に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: pesticide, insecticide, suicide?",
+      "choices": [
+        {
+          "id": "suffix:dom",
+          "labelJa": "-dom"
+        },
+        {
+          "id": "suffix:cide",
+          "labelJa": "-cide"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:aholic",
+          "labelJa": "-aholic / oholic"
+        }
+      ],
+      "answerId": "suffix:cide",
+      "explanationJa": "-cide は「殺す行為・殺すもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:vore",
+      "morphemeId": "suffix:vore",
+      "type": "examples-to-morpheme",
+      "questionJa": "herbivore / carnivore / omnivore に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: herbivore, carnivore, omnivore?",
+      "choices": [
+        {
+          "id": "suffix:vore",
+          "labelJa": "-vore"
+        },
+        {
+          "id": "suffix:friendly",
+          "labelJa": "-friendly"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:free",
+          "labelJa": "-free"
+        }
+      ],
+      "answerId": "suffix:vore",
+      "explanationJa": "-vore は「〜を食べる生物」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:mania",
+      "morphemeId": "suffix:mania",
+      "type": "examples-to-morpheme",
+      "questionJa": "kleptomania / pyromania / megalomania に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: kleptomania, pyromania, megalomania?",
+      "choices": [
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:al-noun",
+          "labelJa": "-al"
+        },
+        {
+          "id": "suffix:mania",
+          "labelJa": "-mania"
+        }
+      ],
+      "answerId": "suffix:mania",
+      "explanationJa": "-mania は「熱狂・異常な衝動」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:naut",
+      "morphemeId": "suffix:naut",
+      "type": "examples-to-morpheme",
+      "questionJa": "astronaut / cosmonaut / aquanaut に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: astronaut, cosmonaut, aquanaut?",
+      "choices": [
+        {
+          "id": "suffix:acy",
+          "labelJa": "-acy"
+        },
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "-est"
+        },
+        {
+          "id": "suffix:naut",
+          "labelJa": "-naut"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        }
+      ],
+      "answerId": "suffix:naut",
+      "explanationJa": "-naut は「航海者・航行者」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:nomy",
+      "morphemeId": "suffix:nomy",
+      "type": "examples-to-morpheme",
+      "questionJa": "astronomy / taxonomy / agronomy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: astronomy, taxonomy, agronomy?",
+      "choices": [
+        {
+          "id": "suffix:crat-person",
+          "labelJa": "-crat"
+        },
+        {
+          "id": "suffix:nomy",
+          "labelJa": "-nomy"
+        },
+        {
+          "id": "suffix:plasty",
+          "labelJa": "-plasty"
+        },
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        }
+      ],
+      "answerId": "suffix:nomy",
+      "explanationJa": "-nomy は「体系・法則・学問」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:gamy",
+      "morphemeId": "suffix:gamy",
+      "type": "examples-to-morpheme",
+      "questionJa": "monogamy / polygamy / endogamy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: monogamy, polygamy, endogamy?",
+      "choices": [
+        {
+          "id": "suffix:gamy",
+          "labelJa": "-gamy"
+        },
+        {
+          "id": "suffix:nomy",
+          "labelJa": "-nomy"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        }
+      ],
+      "answerId": "suffix:gamy",
+      "explanationJa": "-gamy は「婚姻・接合」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:genesis",
+      "morphemeId": "suffix:genesis",
+      "type": "examples-to-morpheme",
+      "questionJa": "pathogenesis / biogenesis / carcinogenesis に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: pathogenesis, biogenesis, carcinogenesis?",
+      "choices": [
+        {
+          "id": "suffix:ster",
+          "labelJa": "-ster"
+        },
+        {
+          "id": "suffix:ary",
+          "labelJa": "-ary"
+        },
+        {
+          "id": "suffix:ful",
+          "labelJa": "-ful"
+        },
+        {
+          "id": "suffix:genesis",
+          "labelJa": "-genesis"
+        }
+      ],
+      "answerId": "suffix:genesis",
+      "explanationJa": "-genesis は「起源・生成」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:lysis",
+      "morphemeId": "suffix:lysis",
+      "type": "examples-to-morpheme",
+      "questionJa": "hydrolysis / electrolysis / hemolysis に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: hydrolysis, electrolysis, hemolysis?",
+      "choices": [
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        },
+        {
+          "id": "suffix:lysis",
+          "labelJa": "-lysis"
+        },
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        }
+      ],
+      "answerId": "suffix:lysis",
+      "explanationJa": "-lysis は「分解・溶解」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:crat-person",
+      "morphemeId": "suffix:crat-person",
+      "type": "examples-to-morpheme",
+      "questionJa": "autocrat / bureaucrat / aristocrat に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: autocrat, bureaucrat, aristocrat?",
+      "choices": [
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:crat-person",
+          "labelJa": "-crat"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:carrying",
+          "labelJa": "-carrying"
+        }
+      ],
+      "answerId": "suffix:crat-person",
+      "explanationJa": "-crat は「統治者・権力を持つ人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:trophy",
+      "morphemeId": "suffix:trophy",
+      "type": "examples-to-morpheme",
+      "questionJa": "atrophy / hypertrophy / dystrophy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: atrophy, hypertrophy, dystrophy?",
+      "choices": [
+        {
+          "id": "suffix:trophy",
+          "labelJa": "-trophy"
+        },
+        {
+          "id": "suffix:making",
+          "labelJa": "-making"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        }
+      ],
+      "answerId": "suffix:trophy",
+      "explanationJa": "-trophy は「栄養・成長の状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:aholic",
+      "morphemeId": "suffix:aholic",
+      "type": "examples-to-morpheme",
+      "questionJa": "workaholic / shopaholic / chocoholic に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: workaholic, shopaholic, chocoholic?",
+      "choices": [
+        {
+          "id": "suffix:esque",
+          "labelJa": "-esque"
+        },
+        {
+          "id": "suffix:mancy",
+          "labelJa": "-mancy"
+        },
+        {
+          "id": "suffix:ery",
+          "labelJa": "-ery / ry"
+        },
+        {
+          "id": "suffix:aholic",
+          "labelJa": "-aholic / oholic"
+        }
+      ],
+      "answerId": "suffix:aholic",
+      "explanationJa": "-aholic / oholic は「〜に夢中な人（口語）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:athon",
+      "morphemeId": "suffix:athon",
+      "type": "examples-to-morpheme",
+      "questionJa": "hackathon / readathon / danceathon に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: hackathon, readathon, danceathon?",
+      "choices": [
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:ectomy",
+          "labelJa": "-ectomy"
+        },
+        {
+          "id": "suffix:athon",
+          "labelJa": "-athon"
+        },
+        {
+          "id": "suffix:ling",
+          "labelJa": "-ling"
+        }
+      ],
+      "answerId": "suffix:athon",
+      "explanationJa": "-athon は「長時間続く活動・イベント」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:arian",
+      "morphemeId": "suffix:arian",
+      "type": "examples-to-morpheme",
+      "questionJa": "vegetarian / humanitarian / utilitarian に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: vegetarian, humanitarian, utilitarian?",
+      "choices": [
+        {
+          "id": "suffix:filled",
+          "labelJa": "-filled"
+        },
+        {
+          "id": "suffix:arian",
+          "labelJa": "-arian"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:grade",
+          "labelJa": "-grade"
+        }
+      ],
+      "answerId": "suffix:arian",
+      "explanationJa": "-arian は「主義・生活様式などに関わる人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:centric",
+      "morphemeId": "suffix:centric",
+      "type": "examples-to-morpheme",
+      "questionJa": "user-centric / customer-centric / egocentric に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: user-centric, customer-centric, egocentric?",
+      "choices": [
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:er-agent",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:crat-person",
+          "labelJa": "-crat"
+        },
+        {
+          "id": "suffix:itude",
+          "labelJa": "-itude"
+        }
+      ],
+      "answerId": "suffix:centric",
+      "explanationJa": "-centric は「〜を中心とする」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:borne",
+      "morphemeId": "suffix:borne",
+      "type": "examples-to-morpheme",
+      "questionJa": "airborne / waterborne / bloodborne に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: airborne, waterborne, bloodborne?",
+      "choices": [
+        {
+          "id": "suffix:looking",
+          "labelJa": "-looking"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        },
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:borne",
+          "labelJa": "-borne"
+        }
+      ],
+      "answerId": "suffix:borne",
+      "explanationJa": "-borne は「〜で運ばれる・伝わる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:driven",
+      "morphemeId": "suffix:driven",
+      "type": "examples-to-morpheme",
+      "questionJa": "data-driven / market-driven / mission-driven に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: data-driven, market-driven, mission-driven?",
+      "choices": [
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        },
+        {
+          "id": "suffix:rich",
+          "labelJa": "-rich"
+        },
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        },
+        {
+          "id": "suffix:giving",
+          "labelJa": "-giving"
+        }
+      ],
+      "answerId": "suffix:driven",
+      "explanationJa": "-driven は「〜に動かされる・基づく」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:friendly",
+      "morphemeId": "suffix:friendly",
+      "type": "examples-to-morpheme",
+      "questionJa": "user-friendly / eco-friendly / child-friendly に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: user-friendly, eco-friendly, child-friendly?",
+      "choices": [
+        {
+          "id": "suffix:room",
+          "labelJa": "-room"
+        },
+        {
+          "id": "suffix:friendly",
+          "labelJa": "-friendly"
+        },
+        {
+          "id": "suffix:scape",
+          "labelJa": "-scape"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        }
+      ],
+      "answerId": "suffix:friendly",
+      "explanationJa": "-friendly は「〜に優しい・使いやすい」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:based",
+      "morphemeId": "suffix:based",
+      "type": "examples-to-morpheme",
+      "questionJa": "evidence-based / school-based / plant-based に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: evidence-based, school-based, plant-based?",
+      "choices": [
+        {
+          "id": "suffix:based",
+          "labelJa": "-based"
+        },
+        {
+          "id": "suffix:therapy",
+          "labelJa": "-therapy"
+        },
+        {
+          "id": "suffix:scape",
+          "labelJa": "-scape"
+        },
+        {
+          "id": "suffix:arian",
+          "labelJa": "-arian"
+        }
+      ],
+      "answerId": "suffix:based",
+      "explanationJa": "-based は「〜を基盤とする」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:gram",
+      "morphemeId": "suffix:gram",
+      "type": "examples-to-morpheme",
+      "questionJa": "telegram / diagram / electrocardiogram に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: telegram, diagram, electrocardiogram?",
+      "choices": [
+        {
+          "id": "suffix:en-adj",
+          "labelJa": "-en"
+        },
+        {
+          "id": "suffix:ette",
+          "labelJa": "-ette"
+        },
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:gram",
+          "labelJa": "-gram"
+        }
+      ],
+      "answerId": "suffix:gram",
+      "explanationJa": "-gram は「記録・図・書かれたもの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:head-person",
+      "morphemeId": "suffix:head-person",
+      "type": "examples-to-morpheme",
+      "questionJa": "gearhead / metalhead / airhead に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: gearhead, metalhead, airhead?",
+      "choices": [
+        {
+          "id": "suffix:ly-adverb",
+          "labelJa": "-ly"
+        },
+        {
+          "id": "suffix:ery",
+          "labelJa": "-ery / ry"
+        },
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:ling",
+          "labelJa": "-ling"
+        }
+      ],
+      "answerId": "suffix:head-person",
+      "explanationJa": "-head は「特定の特徴をもつ人（口語）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:land",
+      "morphemeId": "suffix:land",
+      "type": "examples-to-morpheme",
+      "questionJa": "wetland / grassland / woodland に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: wetland, grassland, woodland?",
+      "choices": [
+        {
+          "id": "suffix:like",
+          "labelJa": "-like"
+        },
+        {
+          "id": "suffix:land",
+          "labelJa": "-land"
+        },
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "-est"
+        },
+        {
+          "id": "suffix:ling",
+          "labelJa": "-ling"
+        }
+      ],
+      "answerId": "suffix:land",
+      "explanationJa": "-land は「土地・場所」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:lepsy",
+      "morphemeId": "suffix:lepsy",
+      "type": "examples-to-morpheme",
+      "questionJa": "epilepsy / narcolepsy / catalepsy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: epilepsy, narcolepsy, catalepsy?",
+      "choices": [
+        {
+          "id": "suffix:lepsy",
+          "labelJa": "-lepsy"
+        },
+        {
+          "id": "suffix:ance",
+          "labelJa": "-ance / ence"
+        },
+        {
+          "id": "suffix:carrying",
+          "labelJa": "-carrying"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        }
+      ],
+      "answerId": "suffix:lepsy",
+      "explanationJa": "-lepsy は「発作・発作的状態」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:logist",
+      "morphemeId": "suffix:logist",
+      "type": "examples-to-morpheme",
+      "questionJa": "biologist / psychologist / geologist に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: biologist, psychologist, geologist?",
+      "choices": [
+        {
+          "id": "suffix:ory",
+          "labelJa": "-ory"
+        },
+        {
+          "id": "suffix:ous",
+          "labelJa": "-ous / ious"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:logist",
+          "labelJa": "-logist"
+        }
+      ],
+      "answerId": "suffix:logist",
+      "explanationJa": "-logist は「分野の専門家」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:mancy",
+      "morphemeId": "suffix:mancy",
+      "type": "examples-to-morpheme",
+      "questionJa": "necromancy / cartomancy / geomancy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: necromancy, cartomancy, geomancy?",
+      "choices": [
+        {
+          "id": "suffix:some",
+          "labelJa": "-some"
+        },
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:mancy",
+          "labelJa": "-mancy"
+        },
+        {
+          "id": "suffix:vore",
+          "labelJa": "-vore"
+        }
+      ],
+      "answerId": "suffix:mancy",
+      "explanationJa": "-mancy は「占い・予言」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:metric",
+      "morphemeId": "suffix:metric",
+      "type": "examples-to-morpheme",
+      "questionJa": "geometric / barometric / photometric に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: geometric, barometric, photometric?",
+      "choices": [
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        },
+        {
+          "id": "suffix:metric",
+          "labelJa": "-metric"
+        },
+        {
+          "id": "suffix:crat-person",
+          "labelJa": "-crat"
+        },
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        }
+      ],
+      "answerId": "suffix:metric",
+      "explanationJa": "-metric は「測定に関わる」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:onymic",
+      "morphemeId": "suffix:onymic",
+      "type": "examples-to-morpheme",
+      "questionJa": "patronymic / toponymic / metonymic に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: patronymic, toponymic, metonymic?",
+      "choices": [
+        {
+          "id": "suffix:onymic",
+          "labelJa": "-onymic"
+        },
+        {
+          "id": "suffix:ian",
+          "labelJa": "-ian"
+        },
+        {
+          "id": "suffix:ion",
+          "labelJa": "-ion / tion"
+        },
+        {
+          "id": "suffix:grade",
+          "labelJa": "-grade"
+        }
+      ],
+      "answerId": "suffix:onymic",
+      "explanationJa": "-onymic は「名前に関する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:preneur",
+      "morphemeId": "suffix:preneur",
+      "type": "examples-to-morpheme",
+      "questionJa": "solopreneur / ecopreneur / technopreneur に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: solopreneur, ecopreneur, technopreneur?",
+      "choices": [
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "-est"
+        },
+        {
+          "id": "suffix:keeper",
+          "labelJa": "-keeper"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:preneur",
+          "labelJa": "-preneur"
+        }
+      ],
+      "answerId": "suffix:preneur",
+      "explanationJa": "-preneur は「事業を起こす人（新しい結合形）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:scape",
+      "morphemeId": "suffix:scape",
+      "type": "examples-to-morpheme",
+      "questionJa": "landscape / cityscape / seascape に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: landscape, cityscape, seascape?",
+      "choices": [
+        {
+          "id": "suffix:itude",
+          "labelJa": "-itude"
+        },
+        {
+          "id": "suffix:saving",
+          "labelJa": "-saving"
+        },
+        {
+          "id": "suffix:scape",
+          "labelJa": "-scape"
+        },
+        {
+          "id": "suffix:ing-participle",
+          "labelJa": "-ing"
+        }
+      ],
+      "answerId": "suffix:scape",
+      "explanationJa": "-scape は「景観・見渡せる空間」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:tech",
+      "morphemeId": "suffix:tech",
+      "type": "examples-to-morpheme",
+      "questionJa": "fintech / edtech / biotech に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: fintech, edtech, biotech?",
+      "choices": [
+        {
+          "id": "suffix:arian",
+          "labelJa": "-arian"
+        },
+        {
+          "id": "suffix:tech",
+          "labelJa": "-tech"
+        },
+        {
+          "id": "suffix:itude",
+          "labelJa": "-itude"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        }
+      ],
+      "answerId": "suffix:tech",
+      "explanationJa": "-tech は「技術分野」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ware",
+      "morphemeId": "suffix:ware",
+      "type": "examples-to-morpheme",
+      "questionJa": "software / hardware / kitchenware に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: software, hardware, kitchenware?",
+      "choices": [
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        },
+        {
+          "id": "suffix:holder",
+          "labelJa": "-holder"
+        },
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:land",
+          "labelJa": "-land"
+        }
+      ],
+      "answerId": "suffix:ware",
+      "explanationJa": "-ware は「製品・用具・ソフトウェア類」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:worthy",
+      "morphemeId": "suffix:worthy",
+      "type": "examples-to-morpheme",
+      "questionJa": "trustworthy / newsworthy / noteworthy に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: trustworthy, newsworthy, noteworthy?",
+      "choices": [
+        {
+          "id": "suffix:naut",
+          "labelJa": "-naut"
+        },
+        {
+          "id": "suffix:ate-noun",
+          "labelJa": "-ate"
+        },
+        {
+          "id": "suffix:ster",
+          "labelJa": "-ster"
+        },
+        {
+          "id": "suffix:worthy",
+          "labelJa": "-worthy"
+        }
+      ],
+      "answerId": "suffix:worthy",
+      "explanationJa": "-worthy は「〜に値する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ready",
+      "morphemeId": "suffix:ready",
+      "type": "examples-to-morpheme",
+      "questionJa": "oven-ready / market-ready / camera-ready に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: oven-ready, market-ready, camera-ready?",
+      "choices": [
+        {
+          "id": "suffix:naut",
+          "labelJa": "-naut"
+        },
+        {
+          "id": "suffix:less",
+          "labelJa": "-less"
+        },
+        {
+          "id": "suffix:ready",
+          "labelJa": "-ready"
+        },
+        {
+          "id": "suffix:giving",
+          "labelJa": "-giving"
+        }
+      ],
+      "answerId": "suffix:ready",
+      "explanationJa": "-ready は「〜の準備ができている」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:safe",
+      "morphemeId": "suffix:safe",
+      "type": "examples-to-morpheme",
+      "questionJa": "dishwasher-safe / microwave-safe / child-safe に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: dishwasher-safe, microwave-safe, child-safe?",
+      "choices": [
+        {
+          "id": "suffix:let-verb",
+          "labelJa": "-le"
+        },
+        {
+          "id": "suffix:safe",
+          "labelJa": "-safe"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        }
+      ],
+      "answerId": "suffix:safe",
+      "explanationJa": "-safe は「〜に安全・対応可能な」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:conscious",
+      "morphemeId": "suffix:conscious",
+      "type": "examples-to-morpheme",
+      "questionJa": "health-conscious / cost-conscious / environment-conscious に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: health-conscious, cost-conscious, environment-conscious?",
+      "choices": [
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        },
+        {
+          "id": "suffix:oriented",
+          "labelJa": "-oriented"
+        },
+        {
+          "id": "suffix:plasty",
+          "labelJa": "-plasty"
+        },
+        {
+          "id": "suffix:genesis",
+          "labelJa": "-genesis"
+        }
+      ],
+      "answerId": "suffix:conscious",
+      "explanationJa": "-conscious は「〜を重視する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:minded",
+      "morphemeId": "suffix:minded",
+      "type": "examples-to-morpheme",
+      "questionJa": "open-minded / like-minded / narrow-minded に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: open-minded, like-minded, narrow-minded?",
+      "choices": [
+        {
+          "id": "suffix:trophy",
+          "labelJa": "-trophy"
+        },
+        {
+          "id": "suffix:arium",
+          "labelJa": "-arium"
+        },
+        {
+          "id": "suffix:ing-noun",
+          "labelJa": "-ing"
+        },
+        {
+          "id": "suffix:minded",
+          "labelJa": "-minded"
+        }
+      ],
+      "answerId": "suffix:minded",
+      "explanationJa": "-minded は「〜な考え方の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:oriented",
+      "morphemeId": "suffix:oriented",
+      "type": "examples-to-morpheme",
+      "questionJa": "goal-oriented / detail-oriented / customer-oriented に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: goal-oriented, detail-oriented, customer-oriented?",
+      "choices": [
+        {
+          "id": "suffix:seeking",
+          "labelJa": "-seeking"
+        },
+        {
+          "id": "suffix:ive",
+          "labelJa": "-ive"
+        },
+        {
+          "id": "suffix:oriented",
+          "labelJa": "-oriented"
+        },
+        {
+          "id": "suffix:mania",
+          "labelJa": "-mania"
+        }
+      ],
+      "answerId": "suffix:oriented",
+      "explanationJa": "-oriented は「〜を重視した」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:related",
+      "morphemeId": "suffix:related",
+      "type": "examples-to-morpheme",
+      "questionJa": "work-related / age-related / stress-related に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: work-related, age-related, stress-related?",
+      "choices": [
+        {
+          "id": "suffix:er-comparative",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:related",
+          "labelJa": "-related"
+        },
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        }
+      ],
+      "answerId": "suffix:related",
+      "explanationJa": "-related は「〜に関連する」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:specific",
+      "morphemeId": "suffix:specific",
+      "type": "examples-to-morpheme",
+      "questionJa": "task-specific / region-specific / context-specific に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: task-specific, region-specific, context-specific?",
+      "choices": [
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:athon",
+          "labelJa": "-athon"
+        },
+        {
+          "id": "suffix:naut",
+          "labelJa": "-naut"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "-able / ible"
+        }
+      ],
+      "answerId": "suffix:specific",
+      "explanationJa": "-specific は「〜に特有の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:bound",
+      "morphemeId": "suffix:bound",
+      "type": "examples-to-morpheme",
+      "questionJa": "homebound / Tokyo-bound / time-bound に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: homebound, Tokyo-bound, time-bound?",
+      "choices": [
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        },
+        {
+          "id": "suffix:mania",
+          "labelJa": "-mania"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:bound",
+          "labelJa": "-bound"
+        }
+      ],
+      "answerId": "suffix:bound",
+      "explanationJa": "-bound は「〜へ向かう・制約された」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:rich",
+      "morphemeId": "suffix:rich",
+      "type": "examples-to-morpheme",
+      "questionJa": "protein-rich / nutrient-rich / carbon-rich に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: protein-rich, nutrient-rich, carbon-rich?",
+      "choices": [
+        {
+          "id": "suffix:genesis",
+          "labelJa": "-genesis"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        },
+        {
+          "id": "suffix:rich",
+          "labelJa": "-rich"
+        },
+        {
+          "id": "suffix:lepsy",
+          "labelJa": "-lepsy"
+        }
+      ],
+      "answerId": "suffix:rich",
+      "explanationJa": "-rich は「〜に富む」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:style",
+      "morphemeId": "suffix:style",
+      "type": "examples-to-morpheme",
+      "questionJa": "Japanese-style / Western-style / restaurant-style に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: Japanese-style, Western-style, restaurant-style?",
+      "choices": [
+        {
+          "id": "suffix:minded",
+          "labelJa": "-minded"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        },
+        {
+          "id": "suffix:metric",
+          "labelJa": "-metric"
+        },
+        {
+          "id": "suffix:saving",
+          "labelJa": "-saving"
+        }
+      ],
+      "answerId": "suffix:style",
+      "explanationJa": "-style は「〜風の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:size",
+      "morphemeId": "suffix:size",
+      "type": "examples-to-morpheme",
+      "questionJa": "life-size / pocket-sized / medium-sized に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: life-size, pocket-sized, medium-sized?",
+      "choices": [
+        {
+          "id": "suffix:size",
+          "labelJa": "-sized / size"
+        },
+        {
+          "id": "suffix:er-comparative",
+          "labelJa": "-er"
+        },
+        {
+          "id": "suffix:age-noun",
+          "labelJa": "-age"
+        },
+        {
+          "id": "suffix:rich",
+          "labelJa": "-rich"
+        }
+      ],
+      "answerId": "suffix:size",
+      "explanationJa": "-sized / size は「〜の大きさの」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:level",
+      "morphemeId": "suffix:level",
+      "type": "examples-to-morpheme",
+      "questionJa": "entry-level / high-level / graduate-level に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: entry-level, high-level, graduate-level?",
+      "choices": [
+        {
+          "id": "suffix:seeking",
+          "labelJa": "-seeking"
+        },
+        {
+          "id": "suffix:ant-adj",
+          "labelJa": "-ant / ent"
+        },
+        {
+          "id": "suffix:al-noun",
+          "labelJa": "-al"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        }
+      ],
+      "answerId": "suffix:level",
+      "explanationJa": "-level は「〜の水準の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:grade",
+      "morphemeId": "suffix:grade",
+      "type": "examples-to-morpheme",
+      "questionJa": "food-grade / medical-grade / industrial-grade に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: food-grade, medical-grade, industrial-grade?",
+      "choices": [
+        {
+          "id": "suffix:bearing",
+          "labelJa": "-bearing"
+        },
+        {
+          "id": "suffix:giving",
+          "labelJa": "-giving"
+        },
+        {
+          "id": "suffix:grade",
+          "labelJa": "-grade"
+        },
+        {
+          "id": "suffix:ician",
+          "labelJa": "-ician"
+        }
+      ],
+      "answerId": "suffix:grade",
+      "explanationJa": "-grade は「〜の品質・等級の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:maker",
+      "morphemeId": "suffix:maker",
+      "type": "examples-to-morpheme",
+      "questionJa": "filmmaker / decision-maker / coffeemaker に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: filmmaker, decision-maker, coffeemaker?",
+      "choices": [
+        {
+          "id": "suffix:head-person",
+          "labelJa": "-head"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        },
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        },
+        {
+          "id": "suffix:acy",
+          "labelJa": "-acy"
+        }
+      ],
+      "answerId": "suffix:maker",
+      "explanationJa": "-maker は「〜を作る人・機器」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:holder",
+      "morphemeId": "suffix:holder",
+      "type": "examples-to-morpheme",
+      "questionJa": "cardholder / shareholder / ticket holder に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: cardholder, shareholder, ticket holder?",
+      "choices": [
+        {
+          "id": "suffix:holder",
+          "labelJa": "-holder"
+        },
+        {
+          "id": "suffix:able",
+          "labelJa": "-able / ible"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        },
+        {
+          "id": "suffix:ess",
+          "labelJa": "-ess"
+        }
+      ],
+      "answerId": "suffix:holder",
+      "explanationJa": "-holder は「〜を保持する人・物」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:keeper",
+      "morphemeId": "suffix:keeper",
+      "type": "examples-to-morpheme",
+      "questionJa": "goalkeeper / bookkeeper / zookeeper に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: goalkeeper, bookkeeper, zookeeper?",
+      "choices": [
+        {
+          "id": "suffix:aholic",
+          "labelJa": "-aholic / oholic"
+        },
+        {
+          "id": "suffix:gram",
+          "labelJa": "-gram"
+        },
+        {
+          "id": "suffix:driven",
+          "labelJa": "-driven"
+        },
+        {
+          "id": "suffix:keeper",
+          "labelJa": "-keeper"
+        }
+      ],
+      "answerId": "suffix:keeper",
+      "explanationJa": "-keeper は「〜を管理する人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:worker",
+      "morphemeId": "suffix:worker",
+      "type": "examples-to-morpheme",
+      "questionJa": "healthcare worker / social worker / office worker に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: healthcare worker, social worker, office worker?",
+      "choices": [
+        {
+          "id": "suffix:tested",
+          "labelJa": "-tested"
+        },
+        {
+          "id": "suffix:let",
+          "labelJa": "-let"
+        },
+        {
+          "id": "suffix:worker",
+          "labelJa": "-worker"
+        },
+        {
+          "id": "suffix:making",
+          "labelJa": "-making"
+        }
+      ],
+      "answerId": "suffix:worker",
+      "explanationJa": "-worker は「〜の仕事をする人」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:nik",
+      "morphemeId": "suffix:nik",
+      "type": "examples-to-morpheme",
+      "questionJa": "beatnik / peacenik / refusenik に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: beatnik, peacenik, refusenik?",
+      "choices": [
+        {
+          "id": "suffix:ment",
+          "labelJa": "-ment"
+        },
+        {
+          "id": "suffix:nik",
+          "labelJa": "-nik"
+        },
+        {
+          "id": "suffix:rich",
+          "labelJa": "-rich"
+        },
+        {
+          "id": "suffix:plasty",
+          "labelJa": "-plasty"
+        }
+      ],
+      "answerId": "suffix:nik",
+      "explanationJa": "-nik は「特徴や活動に関わる人（口語）」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ing-noun",
+      "morphemeId": "suffix:ing-noun",
+      "type": "examples-to-morpheme",
+      "questionJa": "reading / writing / building に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: reading, writing, building?",
+      "choices": [
+        {
+          "id": "suffix:ing-noun",
+          "labelJa": "-ing"
+        },
+        {
+          "id": "suffix:ory",
+          "labelJa": "-ory"
+        },
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:or-agent",
+          "labelJa": "-or"
+        }
+      ],
+      "answerId": "suffix:ing-noun",
+      "explanationJa": "-ing は「行為・活動・結果」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:en-adj",
+      "morphemeId": "suffix:en-adj",
+      "type": "examples-to-morpheme",
+      "questionJa": "wooden / golden / woolen に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: wooden, golden, woolen?",
+      "choices": [
+        {
+          "id": "suffix:ity",
+          "labelJa": "-ity / ty"
+        },
+        {
+          "id": "suffix:ify",
+          "labelJa": "-ify / fy"
+        },
+        {
+          "id": "suffix:ite",
+          "labelJa": "-ite"
+        },
+        {
+          "id": "suffix:en-adj",
+          "labelJa": "-en"
+        }
+      ],
+      "answerId": "suffix:en-adj",
+      "explanationJa": "-en は「〜でできた・〜製の」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:s-plural",
+      "morphemeId": "suffix:s-plural",
+      "type": "examples-to-morpheme",
+      "questionJa": "books / boxes / classes に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: books, boxes, classes?",
+      "choices": [
+        {
+          "id": "suffix:ive",
+          "labelJa": "-ive"
+        },
+        {
+          "id": "suffix:est-superlative",
+          "labelJa": "-est"
+        },
+        {
+          "id": "suffix:s-plural",
+          "labelJa": "-s / es"
+        },
+        {
+          "id": "suffix:al-noun",
+          "labelJa": "-al"
+        }
+      ],
+      "answerId": "suffix:s-plural",
+      "explanationJa": "-s / es は「複数を表す」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:s-3sg",
+      "morphemeId": "suffix:s-3sg",
+      "type": "examples-to-morpheme",
+      "questionJa": "works / goes / watches に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: works, goes, watches?",
+      "choices": [
+        {
+          "id": "suffix:osis",
+          "labelJa": "-osis"
+        },
+        {
+          "id": "suffix:s-3sg",
+          "labelJa": "-s / es"
+        },
+        {
+          "id": "suffix:level",
+          "labelJa": "-level"
+        },
+        {
+          "id": "suffix:algia",
+          "labelJa": "-algia"
+        }
+      ],
+      "answerId": "suffix:s-3sg",
+      "explanationJa": "-s / es は「現在形の三人称単数を表す」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ed-past",
+      "morphemeId": "suffix:ed-past",
+      "type": "examples-to-morpheme",
+      "questionJa": "walked / played / studied に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: walked, played, studied?",
+      "choices": [
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        },
+        {
+          "id": "suffix:ward",
+          "labelJa": "-ward / wards"
+        },
+        {
+          "id": "suffix:ways",
+          "labelJa": "-ways"
+        }
+      ],
+      "answerId": "suffix:ed-past",
+      "explanationJa": "-ed は「規則動詞の過去を表す」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ing-participle",
+      "morphemeId": "suffix:ing-participle",
+      "type": "examples-to-morpheme",
+      "questionJa": "running / walking / swimming に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: running, walking, swimming?",
+      "choices": [
+        {
+          "id": "suffix:ard",
+          "labelJa": "-ard"
+        },
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:wise",
+          "labelJa": "-wise"
+        },
+        {
+          "id": "suffix:ing-participle",
+          "labelJa": "-ing"
+        }
+      ],
+      "answerId": "suffix:ing-participle",
+      "explanationJa": "-ing は「現在分詞を作る」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:ways",
+      "morphemeId": "suffix:ways",
+      "type": "examples-to-morpheme",
+      "questionJa": "sideways / lengthways / crossways に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: sideways, lengthways, crossways?",
+      "choices": [
+        {
+          "id": "suffix:oriented",
+          "labelJa": "-oriented"
+        },
+        {
+          "id": "suffix:gram",
+          "labelJa": "-gram"
+        },
+        {
+          "id": "suffix:ways",
+          "labelJa": "-ways"
+        },
+        {
+          "id": "suffix:dom",
+          "labelJa": "-dom"
+        }
+      ],
+      "answerId": "suffix:ways",
+      "explanationJa": "-ways は「方向・向き」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:powered",
+      "morphemeId": "suffix:powered",
+      "type": "examples-to-morpheme",
+      "questionJa": "solar-powered / battery-powered / wind-powered に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: solar-powered, battery-powered, wind-powered?",
+      "choices": [
+        {
+          "id": "suffix:scape",
+          "labelJa": "-scape"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        },
+        {
+          "id": "suffix:most",
+          "labelJa": "-most"
+        },
+        {
+          "id": "suffix:minded",
+          "labelJa": "-minded"
+        }
+      ],
+      "answerId": "suffix:powered",
+      "explanationJa": "-powered は「〜を動力とする」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:shaped",
+      "morphemeId": "suffix:shaped",
+      "type": "examples-to-morpheme",
+      "questionJa": "heart-shaped / star-shaped / egg-shaped に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: heart-shaped, star-shaped, egg-shaped?",
+      "choices": [
+        {
+          "id": "suffix:shaped",
+          "labelJa": "-shaped"
+        },
+        {
+          "id": "suffix:size",
+          "labelJa": "-sized / size"
+        },
+        {
+          "id": "suffix:ian",
+          "labelJa": "-ian"
+        },
+        {
+          "id": "suffix:ion",
+          "labelJa": "-ion / tion"
+        }
+      ],
+      "answerId": "suffix:shaped",
+      "explanationJa": "-shaped は「〜の形をした」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:looking",
+      "morphemeId": "suffix:looking",
+      "type": "examples-to-morpheme",
+      "questionJa": "good-looking / young-looking / tired-looking に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: good-looking, young-looking, tired-looking?",
+      "choices": [
+        {
+          "id": "suffix:ward",
+          "labelJa": "-ward / wards"
+        },
+        {
+          "id": "suffix:ware",
+          "labelJa": "-ware"
+        },
+        {
+          "id": "suffix:ed-adj",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:looking",
+          "labelJa": "-looking"
+        }
+      ],
+      "answerId": "suffix:looking",
+      "explanationJa": "-looking は「〜に見える」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:lasting",
+      "morphemeId": "suffix:lasting",
+      "type": "examples-to-morpheme",
+      "questionJa": "long-lasting / short-lasting / everlasting に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: long-lasting, short-lasting, everlasting?",
+      "choices": [
+        {
+          "id": "suffix:ing-noun",
+          "labelJa": "-ing"
+        },
+        {
+          "id": "suffix:ite",
+          "labelJa": "-ite"
+        },
+        {
+          "id": "suffix:lasting",
+          "labelJa": "-lasting"
+        },
+        {
+          "id": "suffix:ism",
+          "labelJa": "-ism"
+        }
+      ],
+      "answerId": "suffix:lasting",
+      "explanationJa": "-lasting は「〜の間続く」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:known",
+      "morphemeId": "suffix:known",
+      "type": "examples-to-morpheme",
+      "questionJa": "well-known / little-known / less-known に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: well-known, little-known, less-known?",
+      "choices": [
+        {
+          "id": "suffix:hood",
+          "labelJa": "-hood"
+        },
+        {
+          "id": "suffix:known",
+          "labelJa": "-known"
+        },
+        {
+          "id": "suffix:ical",
+          "labelJa": "-ical"
+        },
+        {
+          "id": "suffix:centric",
+          "labelJa": "-centric"
+        }
+      ],
+      "answerId": "suffix:known",
+      "explanationJa": "-known は「〜のように知られている」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:saving",
+      "morphemeId": "suffix:saving",
+      "type": "examples-to-morpheme",
+      "questionJa": "energy-saving / time-saving / life-saving に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: energy-saving, time-saving, life-saving?",
+      "choices": [
+        {
+          "id": "suffix:saving",
+          "labelJa": "-saving"
+        },
+        {
+          "id": "suffix:onymic",
+          "labelJa": "-onymic"
+        },
+        {
+          "id": "suffix:ance",
+          "labelJa": "-ance / ence"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        }
+      ],
+      "answerId": "suffix:saving",
+      "explanationJa": "-saving は「〜を節約する・救う」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:making",
+      "morphemeId": "suffix:making",
+      "type": "examples-to-morpheme",
+      "questionJa": "decision-making / policy-making / film-making に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: decision-making, policy-making, film-making?",
+      "choices": [
+        {
+          "id": "suffix:rich",
+          "labelJa": "-rich"
+        },
+        {
+          "id": "suffix:wide",
+          "labelJa": "-wide"
+        },
+        {
+          "id": "suffix:lepsy",
+          "labelJa": "-lepsy"
+        },
+        {
+          "id": "suffix:making",
+          "labelJa": "-making"
+        }
+      ],
+      "answerId": "suffix:making",
+      "explanationJa": "-making は「〜を作る行為・過程」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:seeking",
+      "morphemeId": "suffix:seeking",
+      "type": "examples-to-morpheme",
+      "questionJa": "attention-seeking / help-seeking / risk-seeking に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: attention-seeking, help-seeking, risk-seeking?",
+      "choices": [
+        {
+          "id": "suffix:ize",
+          "labelJa": "-ize / ise"
+        },
+        {
+          "id": "suffix:ify",
+          "labelJa": "-ify / fy"
+        },
+        {
+          "id": "suffix:seeking",
+          "labelJa": "-seeking"
+        },
+        {
+          "id": "suffix:conscious",
+          "labelJa": "-conscious"
+        }
+      ],
+      "answerId": "suffix:seeking",
+      "explanationJa": "-seeking は「〜を求める」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:giving",
+      "morphemeId": "suffix:giving",
+      "type": "examples-to-morpheme",
+      "questionJa": "life-giving / pleasure-giving / caregiving に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: life-giving, pleasure-giving, caregiving?",
+      "choices": [
+        {
+          "id": "suffix:th",
+          "labelJa": "-th"
+        },
+        {
+          "id": "suffix:giving",
+          "labelJa": "-giving"
+        },
+        {
+          "id": "suffix:specific",
+          "labelJa": "-specific"
+        },
+        {
+          "id": "suffix:osis",
+          "labelJa": "-osis"
+        }
+      ],
+      "answerId": "suffix:giving",
+      "explanationJa": "-giving は「〜を与える」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:bearing",
+      "morphemeId": "suffix:bearing",
+      "type": "examples-to-morpheme",
+      "questionJa": "fruit-bearing / interest-bearing / load-bearing に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: fruit-bearing, interest-bearing, load-bearing?",
+      "choices": [
+        {
+          "id": "suffix:bearing",
+          "labelJa": "-bearing"
+        },
+        {
+          "id": "suffix:ed-past",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:let-verb",
+          "labelJa": "-le"
+        },
+        {
+          "id": "suffix:trophy",
+          "labelJa": "-trophy"
+        }
+      ],
+      "answerId": "suffix:bearing",
+      "explanationJa": "-bearing は「〜を含む・持つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:carrying",
+      "morphemeId": "suffix:carrying",
+      "type": "examples-to-morpheme",
+      "questionJa": "water-carrying / passenger-carrying / oxygen-carrying に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: water-carrying, passenger-carrying, oxygen-carrying?",
+      "choices": [
+        {
+          "id": "suffix:algia",
+          "labelJa": "-algia"
+        },
+        {
+          "id": "suffix:ment",
+          "labelJa": "-ment"
+        },
+        {
+          "id": "suffix:emia",
+          "labelJa": "-emia / aemia"
+        },
+        {
+          "id": "suffix:carrying",
+          "labelJa": "-carrying"
+        }
+      ],
+      "answerId": "suffix:carrying",
+      "explanationJa": "-carrying は「〜を運ぶ・持つ」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:tested",
+      "morphemeId": "suffix:tested",
+      "type": "examples-to-morpheme",
+      "questionJa": "lab-tested / field-tested / clinically-tested に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: lab-tested, field-tested, clinically-tested?",
+      "choices": [
+        {
+          "id": "suffix:ed-adj",
+          "labelJa": "-ed"
+        },
+        {
+          "id": "suffix:esque",
+          "labelJa": "-esque"
+        },
+        {
+          "id": "suffix:tested",
+          "labelJa": "-tested"
+        },
+        {
+          "id": "suffix:style",
+          "labelJa": "-style"
+        }
+      ],
+      "answerId": "suffix:tested",
+      "explanationJa": "-tested は「〜で検証された」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:filled",
+      "morphemeId": "suffix:filled",
+      "type": "examples-to-morpheme",
+      "questionJa": "smoke-filled / water-filled / fun-filled に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: smoke-filled, water-filled, fun-filled?",
+      "choices": [
+        {
+          "id": "suffix:nomy",
+          "labelJa": "-nomy"
+        },
+        {
+          "id": "suffix:filled",
+          "labelJa": "-filled"
+        },
+        {
+          "id": "suffix:s-3sg",
+          "labelJa": "-s / es"
+        },
+        {
+          "id": "suffix:ful",
+          "labelJa": "-ful"
+        }
+      ],
+      "answerId": "suffix:filled",
+      "explanationJa": "-filled は「〜で満たされた」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:room",
+      "morphemeId": "suffix:room",
+      "type": "examples-to-morpheme",
+      "questionJa": "classroom / bedroom / storeroom に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: classroom, bedroom, storeroom?",
+      "choices": [
+        {
+          "id": "suffix:room",
+          "labelJa": "-room"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        },
+        {
+          "id": "suffix:phobia",
+          "labelJa": "-phobia"
+        },
+        {
+          "id": "suffix:powered",
+          "labelJa": "-powered"
+        }
+      ],
+      "answerId": "suffix:room",
+      "explanationJa": "-room は「特定用途の部屋」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    },
+    {
+      "id": "quiz:examples:suffix:craft",
+      "morphemeId": "suffix:craft",
+      "type": "examples-to-morpheme",
+      "questionJa": "woodcraft / handcraft / statecraft に関連する接尾辞・語尾結合形はどれですか？",
+      "questionEn": "Which suffix or final combining form is associated with these words: woodcraft, handcraft, statecraft?",
+      "choices": [
+        {
+          "id": "suffix:ster",
+          "labelJa": "-ster"
+        },
+        {
+          "id": "suffix:maker",
+          "labelJa": "-maker"
+        },
+        {
+          "id": "suffix:ician",
+          "labelJa": "-ician"
+        },
+        {
+          "id": "suffix:craft",
+          "labelJa": "-craft"
+        }
+      ],
+      "answerId": "suffix:craft",
+      "explanationJa": "-craft は「技術・技能」を表す学習単位。例語と分類は校閲待ち。",
+      "status": "draft-unreviewed",
+      "quizEligible": false,
+      "editorialReviewRequired": true
+    }
+  ]
+}
