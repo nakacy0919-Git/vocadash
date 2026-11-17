@@ -1,0 +1,2412 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-master-evidence",
+  "batchNumber": 4,
+  "sourceBatchCount": 12,
+  "sourceManifest": "data/vocabulary-drafts/manifest.json",
+  "usesOriginalMasterEntries": true,
+  "productionEnabled": false,
+  "entries": {
+    "VD-04421": {
+      "wordId": "VD-04421",
+      "headword": "wildlife",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00001",
+          "partOfSpeech": "noun",
+          "meaningJa": "野生生物",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00001-e01",
+            "en": "The island is home to abundant wildlife.",
+            "ja": "島には豊かな野生生物が生息しています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04433": {
+      "wordId": "VD-04433",
+      "headword": "workplace",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00014",
+          "partOfSpeech": "noun",
+          "meaningJa": "職場",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00014-e01",
+            "en": "The company promotes workplace safety.",
+            "ja": "会社は職場の安全を推進します。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04434": {
+      "wordId": "VD-04434",
+      "headword": "workshop",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00015",
+          "partOfSpeech": "noun",
+          "meaningJa": "講習会・実践研修",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00015-e01",
+            "en": "We joined a workshop on storytelling.",
+            "ja": "物語の語り方の講習会に参加しました。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261114-MEGA3C-00016",
+          "partOfSpeech": "noun",
+          "meaningJa": "作業場・工房",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00016-e01",
+            "en": "The carpenter returned to his workshop.",
+            "ja": "大工は作業場に戻りました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04482": {
+      "wordId": "VD-04482",
+      "headword": "advancement",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00066",
+          "partOfSpeech": "noun",
+          "meaningJa": "進歩・昇進",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00066-e01",
+            "en": "Technological advancement changed the industry.",
+            "ja": "技術の進歩が産業を変えました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04491": {
+      "wordId": "VD-04491",
+      "headword": "ageless",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00074",
+          "partOfSpeech": "adjective",
+          "meaningJa": "年齢を感じさせない・時代を超えた",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00074-e01",
+            "en": "The song has an ageless appeal.",
+            "ja": "その歌には時代を超えた魅力があります。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04495": {
+      "wordId": "VD-04495",
+      "headword": "aircraft",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00078",
+          "partOfSpeech": "noun",
+          "meaningJa": "航空機",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00078-e01",
+            "en": "The aircraft landed safely in the rain.",
+            "ja": "航空機は雨の中無事着陸しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04497": {
+      "wordId": "VD-04497",
+      "headword": "alcoholism",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00080",
+          "partOfSpeech": "noun",
+          "meaningJa": "アルコール依存症（従来の表現）",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00080-e01",
+            "en": "The center offers support for people affected by alcoholism.",
+            "ja": "施設はアルコール依存症の影響を受ける人を支援しています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04531": {
+      "wordId": "VD-04531",
+      "headword": "antiaircraft",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00114",
+          "partOfSpeech": "adjective",
+          "meaningJa": "対空の",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00114-e01",
+            "en": "The history museum displays antiaircraft equipment.",
+            "ja": "歴史博物館は対空装備を展示しています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04533": {
+      "wordId": "VD-04533",
+      "headword": "anticancer",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00116",
+          "partOfSpeech": "noun",
+          "meaningJa": "抗がん作用・抗がん（名詞用法は限定的）",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00116-e01",
+            "en": "The paper discusses the compound's anticancer activity.",
+            "ja": "論文は化合物の抗がん作用を論じています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04536": {
+      "wordId": "VD-04536",
+      "headword": "antipollution",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00119",
+          "partOfSpeech": "noun",
+          "meaningJa": "汚染防止（通常は修飾語）",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00119-e01",
+            "en": "The factory adopted antipollution measures.",
+            "ja": "工場は汚染防止対策を採用しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04549": {
+      "wordId": "VD-04549",
+      "headword": "armful",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00132",
+          "partOfSpeech": "noun",
+          "meaningJa": "両腕いっぱいの量",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00132-e01",
+            "en": "She carried an armful of books.",
+            "ja": "彼女は両腕いっぱいの本を運びました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04568": {
+      "wordId": "VD-04568",
+      "headword": "astonish",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00145",
+          "partOfSpeech": "verb",
+          "meaningJa": "仰天させる",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00145-e01",
+            "en": "The discovery astonished the research team.",
+            "ja": "その発見は研究チームを驚かせました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04571": {
+      "wordId": "VD-04571",
+      "headword": "astonishment",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00148",
+          "partOfSpeech": "noun",
+          "meaningJa": "驚愕・驚き",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00148-e01",
+            "en": "To our astonishment, the painting was intact.",
+            "ja": "驚いたことに絵は無傷でした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04595": {
+      "wordId": "VD-04595",
+      "headword": "backyard",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00173",
+          "partOfSpeech": "noun",
+          "meaningJa": "裏庭",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00173-e01",
+            "en": "We planted vegetables in the backyard.",
+            "ja": "裏庭に野菜を植えました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04604": {
+      "wordId": "VD-04604",
+      "headword": "banker",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00181",
+          "partOfSpeech": "noun",
+          "meaningJa": "銀行家・銀行員",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00181-e01",
+            "en": "A banker explained how loans work.",
+            "ja": "銀行員は融資の仕組みを説明しました。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04618": {
+      "wordId": "VD-04618",
+      "headword": "beam",
+      "senses": [
+        {
+          "senseId": "VDO-261114-MEGA3C-00195",
+          "partOfSpeech": "noun",
+          "meaningJa": "梁・光線",
+          "sourceBatch": "batches/original-20261114-mega-03c.json",
+          "example": {
+            "id": "VDO-261114-MEGA3C-00195-e01",
+            "en": "The ceiling rests on wooden beams.",
+            "ja": "天井は木の梁に支えられています。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04659": {
+      "wordId": "VD-04659",
+      "headword": "bomber",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E1-00037",
+          "partOfSpeech": "noun",
+          "meaningJa": "爆撃機",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00037-e01",
+            "en": "An old bomber was displayed in the aviation museum.",
+            "ja": "航空博物館には旧式の爆撃機が展示されていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04667": {
+      "wordId": "VD-04667",
+      "headword": "bossy",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E1-00047",
+          "partOfSpeech": "adjective",
+          "meaningJa": "指図したがる",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00047-e01",
+            "en": "Nobody enjoyed working with the bossy group leader.",
+            "ja": "誰も指図ばかりするリーダーと作業したがらなかった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04672": {
+      "wordId": "VD-04672",
+      "headword": "boxer",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E1-00051",
+          "partOfSpeech": "noun",
+          "meaningJa": "ボクシング選手",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00051-e01",
+            "en": "The young boxer trained before school every morning.",
+            "ja": "若いボクサーは毎朝登校前に練習した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04684": {
+      "wordId": "VD-04684",
+      "headword": "broadcaster",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E1-00065",
+          "partOfSpeech": "noun",
+          "meaningJa": "放送局・放送者",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00065-e01",
+            "en": "The national broadcaster covered the election throughout the night.",
+            "ja": "全国放送局は一晩中選挙を報道した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04705": {
+      "wordId": "VD-04705",
+      "headword": "buzz",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E1-00085",
+          "partOfSpeech": "noun",
+          "meaningJa": "ブーンという音",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00085-e01",
+            "en": "A faint buzz came from the old refrigerator.",
+            "ja": "古い冷蔵庫からかすかなブーンという音が聞こえた。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261114-B2E1-00086",
+          "partOfSpeech": "verb",
+          "meaningJa": "活気に満ちる",
+          "sourceBatch": "batches/original-20261114-b2-evening-01.json",
+          "example": {
+            "id": "VDO-261114-B2E1-00086-e01",
+            "en": "The school buzzed with excitement before the concert.",
+            "ja": "コンサート前、学校は興奮に包まれていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04736": {
+      "wordId": "VD-04736",
+      "headword": "catchy",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E2-00002",
+          "partOfSpeech": "adjective",
+          "meaningJa": "覚えやすく印象的な",
+          "sourceBatch": "batches/original-20261114-b2-evening-02.json",
+          "example": {
+            "id": "VDO-261114-B2E2-00002-e01",
+            "en": "The advertisement used a catchy tune.",
+            "ja": "広告には覚えやすい曲が使われた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04743": {
+      "wordId": "VD-04743",
+      "headword": "cellist",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E2-00010",
+          "partOfSpeech": "noun",
+          "meaningJa": "チェロ奏者",
+          "sourceBatch": "batches/original-20261114-b2-evening-02.json",
+          "example": {
+            "id": "VDO-261114-B2E2-00010-e01",
+            "en": "The young cellist practiced a difficult passage.",
+            "ja": "若いチェロ奏者は難しい一節を練習した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04755": {
+      "wordId": "VD-04755",
+      "headword": "cheeky",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E2-00022",
+          "partOfSpeech": "adjective",
+          "meaningJa": "生意気な・いたずらっぽい",
+          "sourceBatch": "batches/original-20261114-b2-evening-02.json",
+          "example": {
+            "id": "VDO-261114-B2E2-00022-e01",
+            "en": "The child gave a cheeky reply to his older brother.",
+            "ja": "子供は兄に生意気な返事をした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04776": {
+      "wordId": "VD-04776",
+      "headword": "clearness",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E2-00046",
+          "partOfSpeech": "noun",
+          "meaningJa": "明瞭さ",
+          "sourceBatch": "batches/original-20261114-b2-evening-02.json",
+          "example": {
+            "id": "VDO-261114-B2E2-00046-e01",
+            "en": "We appreciated the clearness of his explanation.",
+            "ja": "私たちは彼の説明の明瞭さを評価した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04801": {
+      "wordId": "VD-04801",
+      "headword": "comfortably",
+      "senses": [
+        {
+          "senseId": "VDO-261114-B2E2-00071",
+          "partOfSpeech": "adverb",
+          "meaningJa": "快適に・無理なく",
+          "sourceBatch": "batches/original-20261114-b2-evening-02.json",
+          "example": {
+            "id": "VDO-261114-B2E2-00071-e01",
+            "en": "The children sat comfortably on the large cushions.",
+            "ja": "子供たちは大きなクッションに快適に座った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04872": {
+      "wordId": "VD-04872",
+      "headword": "converse",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00009",
+          "partOfSpeech": "adjective",
+          "meaningJa": "逆の",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00009-e01",
+            "en": "The converse argument is also worth examining.",
+            "ja": "逆の主張も検討する価値がある。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04873": {
+      "wordId": "VD-04873",
+      "headword": "conversely",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00010",
+          "partOfSpeech": "adverb",
+          "meaningJa": "逆に",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00010-e01",
+            "en": "Heat expands the metal; conversely, cooling contracts it.",
+            "ja": "熱で金属は膨張し、逆に冷却で収縮する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04890": {
+      "wordId": "VD-04890",
+      "headword": "correctness",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00023",
+          "partOfSpeech": "noun",
+          "meaningJa": "正しさ",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00023-e01",
+            "en": "Check the correctness of each calculation.",
+            "ja": "各計算の正しさを確認しなさい。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04923": {
+      "wordId": "VD-04923",
+      "headword": "crossly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00055",
+          "partOfSpeech": "adverb",
+          "meaningJa": "不機嫌に",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00055-e01",
+            "en": "He spoke crossly after missing the bus.",
+            "ja": "バスに乗り遅れ、彼は不機嫌に話した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04933": {
+      "wordId": "VD-04933",
+      "headword": "curl",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00064",
+          "partOfSpeech": "noun",
+          "meaningJa": "巻き毛・カール",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00064-e01",
+            "en": "A loose curl fell across her forehead.",
+            "ja": "巻き毛が額にかかった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-04952": {
+      "wordId": "VD-04952",
+      "headword": "daytime",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4A-00081",
+          "partOfSpeech": "noun",
+          "meaningJa": "昼間",
+          "sourceBatch": "batches/original-20261114-b2-mega-04a.json",
+          "example": {
+            "id": "VDO-261114-M4A-00081-e01",
+            "en": "The museum is open during the daytime.",
+            "ja": "博物館は昼間開いている。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05002": {
+      "wordId": "VD-05002",
+      "headword": "detect",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00019",
+          "partOfSpeech": "verb",
+          "meaningJa": "検出する・発見する",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00019-e01",
+            "en": "The sensor detects movement in the room.",
+            "ja": "センサーは部屋の動きを検知する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05023": {
+      "wordId": "VD-05023",
+      "headword": "disapproval",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00037",
+          "partOfSpeech": "noun",
+          "meaningJa": "不賛成・非難",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00037-e01",
+            "en": "The proposal met with public disapproval.",
+            "ja": "提案は世間の不賛成に遭った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05025": {
+      "wordId": "VD-05025",
+      "headword": "discharge",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00039",
+          "partOfSpeech": "noun",
+          "meaningJa": "放出・排出",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00039-e01",
+            "en": "The report measured the discharge of wastewater.",
+            "ja": "報告書は排水の放出量を測定した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05029": {
+      "wordId": "VD-05029",
+      "headword": "discredit",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00043",
+          "partOfSpeech": "verb",
+          "meaningJa": "信用を失わせる",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00043-e01",
+            "en": "The new evidence discredited the rumor.",
+            "ja": "新証拠は噂の信頼性を失わせた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05031": {
+      "wordId": "VD-05031",
+      "headword": "disgrace",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00044",
+          "partOfSpeech": "noun",
+          "meaningJa": "不名誉・恥",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00044-e01",
+            "en": "The scandal brought disgrace to the organization.",
+            "ja": "不祥事は組織に不名誉をもたらした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05036": {
+      "wordId": "VD-05036",
+      "headword": "disorder",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00048",
+          "partOfSpeech": "noun",
+          "meaningJa": "混乱・無秩序",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00048-e01",
+            "en": "The papers lay in disorder across the desk.",
+            "ja": "書類が机の上に乱雑に広がっていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05037": {
+      "wordId": "VD-05037",
+      "headword": "disorderly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00049",
+          "partOfSpeech": "adjective",
+          "meaningJa": "無秩序な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00049-e01",
+            "en": "The crowd became disorderly near the entrance.",
+            "ja": "入口の近くで群衆が無秩序になった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05039": {
+      "wordId": "VD-05039",
+      "headword": "dispensable",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00051",
+          "partOfSpeech": "adjective",
+          "meaningJa": "なくてもよい",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00051-e01",
+            "en": "The designer removed dispensable features.",
+            "ja": "設計者は不要な機能を取り除いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05040": {
+      "wordId": "VD-05040",
+      "headword": "displace",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00052",
+          "partOfSpeech": "verb",
+          "meaningJa": "移動させる・追い出す",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00052-e01",
+            "en": "The flood displaced hundreds of residents.",
+            "ja": "洪水は数百人の住民を避難させた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05041": {
+      "wordId": "VD-05041",
+      "headword": "displeasure",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00053",
+          "partOfSpeech": "noun",
+          "meaningJa": "不満・不快",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00053-e01",
+            "en": "The audience expressed displeasure at the delay.",
+            "ja": "観客は遅延に不満を示した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05045": {
+      "wordId": "VD-05045",
+      "headword": "disqualify",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00057",
+          "partOfSpeech": "verb",
+          "meaningJa": "失格にする",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00057-e01",
+            "en": "Officials disqualified the runner for a rule violation.",
+            "ja": "審判は規則違反で走者を失格にした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05046": {
+      "wordId": "VD-05046",
+      "headword": "disregard",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00058",
+          "partOfSpeech": "noun",
+          "meaningJa": "無視・軽視",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00058-e01",
+            "en": "The driver showed disregard for safety regulations.",
+            "ja": "運転者は安全規則を軽視した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05048": {
+      "wordId": "VD-05048",
+      "headword": "dissatisfaction",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00059",
+          "partOfSpeech": "noun",
+          "meaningJa": "不満",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00059-e01",
+            "en": "Customers expressed dissatisfaction with the service.",
+            "ja": "顧客はサービスに不満を示した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05060": {
+      "wordId": "VD-05060",
+      "headword": "division",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00071",
+          "partOfSpeech": "noun",
+          "meaningJa": "分割・区分",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00071-e01",
+            "en": "The division of tasks saved time.",
+            "ja": "作業の分担は時間を節約した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05085": {
+      "wordId": "VD-05085",
+      "headword": "dread",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00093",
+          "partOfSpeech": "verb",
+          "meaningJa": "ひどく恐れる",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00093-e01",
+            "en": "He dreaded speaking before a large audience.",
+            "ja": "彼は大勢の前で話すことをひどく恐れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05086": {
+      "wordId": "VD-05086",
+      "headword": "dreadful",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00094",
+          "partOfSpeech": "adjective",
+          "meaningJa": "ひどい・恐ろしい",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00094-e01",
+            "en": "We had dreadful weather during the trip.",
+            "ja": "旅行中はひどい天気だった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05096": {
+      "wordId": "VD-05096",
+      "headword": "dwarf",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00103",
+          "partOfSpeech": "verb",
+          "meaningJa": "小さく見せる",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00103-e01",
+            "en": "The new tower dwarfs the surrounding buildings.",
+            "ja": "新しい塔は周囲の建物を小さく見せる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05102": {
+      "wordId": "VD-05102",
+      "headword": "ease",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00108",
+          "partOfSpeech": "verb",
+          "meaningJa": "和らげる",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00108-e01",
+            "en": "The new bridge eased traffic congestion.",
+            "ja": "新しい橋は交通渋滞を緩和した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05103": {
+      "wordId": "VD-05103",
+      "headword": "eastward",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4B-00109",
+          "partOfSpeech": "adverb",
+          "meaningJa": "東へ",
+          "sourceBatch": "batches/original-20261114-b2-mega-04b.json",
+          "example": {
+            "id": "VDO-261114-M4B-00109-e01",
+            "en": "The clouds drifted eastward.",
+            "ja": "雲は東へ流れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05115": {
+      "wordId": "VD-05115",
+      "headword": "elect",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00012",
+          "partOfSpeech": "verb",
+          "meaningJa": "選挙で選ぶ",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00012-e01",
+            "en": "Students elected their class representative.",
+            "ja": "生徒は学級代表を選出した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05116": {
+      "wordId": "VD-05116",
+      "headword": "elective",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00013",
+          "partOfSpeech": "adjective",
+          "meaningJa": "選択制の",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00013-e01",
+            "en": "She took an elective photography course.",
+            "ja": "彼女は選択科目の写真講座を受けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05121": {
+      "wordId": "VD-05121",
+      "headword": "elegant",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00018",
+          "partOfSpeech": "adjective",
+          "meaningJa": "優雅な・洗練された",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00018-e01",
+            "en": "The room had an elegant wooden staircase.",
+            "ja": "部屋には優雅な木の階段があった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05122": {
+      "wordId": "VD-05122",
+      "headword": "elegantly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00019",
+          "partOfSpeech": "adverb",
+          "meaningJa": "優雅に",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00019-e01",
+            "en": "The skater moved elegantly across the ice.",
+            "ja": "スケーターは氷上を優雅に滑った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05123": {
+      "wordId": "VD-05123",
+      "headword": "elemental",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00020",
+          "partOfSpeech": "adjective",
+          "meaningJa": "根源的な・基本的な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00020-e01",
+            "en": "The poem explores elemental human fears.",
+            "ja": "詩は人間の根源的な恐怖を探究する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05139": {
+      "wordId": "VD-05139",
+      "headword": "enduring",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00034",
+          "partOfSpeech": "adjective",
+          "meaningJa": "長く続く",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00034-e01",
+            "en": "They formed an enduring friendship.",
+            "ja": "彼らは長く続く友情を築いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05160": {
+      "wordId": "VD-05160",
+      "headword": "essayist",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00052",
+          "partOfSpeech": "noun",
+          "meaningJa": "随筆家",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00052-e01",
+            "en": "The essayist wrote about everyday life.",
+            "ja": "随筆家は日常生活について書いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05185": {
+      "wordId": "VD-05185",
+      "headword": "exceptionally",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00072",
+          "partOfSpeech": "adverb",
+          "meaningJa": "例外的に・非常に",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00072-e01",
+            "en": "The library was exceptionally quiet today.",
+            "ja": "今日の図書館は非常に静かだった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05212": {
+      "wordId": "VD-05212",
+      "headword": "expressive",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00097",
+          "partOfSpeech": "adjective",
+          "meaningJa": "表現力豊かな",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00097-e01",
+            "en": "She has an expressive speaking voice.",
+            "ja": "彼女は表現力豊かな話し声を持つ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05222": {
+      "wordId": "VD-05222",
+      "headword": "eyelid",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4C-00105",
+          "partOfSpeech": "noun",
+          "meaningJa": "まぶた",
+          "sourceBatch": "batches/original-20261114-b2-mega-04c.json",
+          "example": {
+            "id": "VDO-261114-M4C-00105-e01",
+            "en": "She closed her eyelids against the bright light.",
+            "ja": "彼女はまぶしい光にまぶたを閉じた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05224": {
+      "wordId": "VD-05224",
+      "headword": "fabulous",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00002",
+          "partOfSpeech": "adjective",
+          "meaningJa": "すばらしい",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00002-e01",
+            "en": "The orchestra gave a fabulous performance.",
+            "ja": "楽団はすばらしい演奏をした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05236": {
+      "wordId": "VD-05236",
+      "headword": "fatal",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00012",
+          "partOfSpeech": "adjective",
+          "meaningJa": "致命的な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00012-e01",
+            "en": "The report examined the causes of the fatal accident.",
+            "ja": "報告書は死亡事故の原因を調べた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05250": {
+      "wordId": "VD-05250",
+      "headword": "figurative",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00025",
+          "partOfSpeech": "adjective",
+          "meaningJa": "比喩的な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00025-e01",
+            "en": "The poem uses figurative language throughout.",
+            "ja": "詩は全体で比喩的な言葉を用いる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05254": {
+      "wordId": "VD-05254",
+      "headword": "fingernail",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00029",
+          "partOfSpeech": "noun",
+          "meaningJa": "手の爪",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00029-e01",
+            "en": "A small speck of ink stained her fingernail.",
+            "ja": "小さなインクの染みが彼女の爪についた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05256": {
+      "wordId": "VD-05256",
+      "headword": "firearm",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00031",
+          "partOfSpeech": "noun",
+          "meaningJa": "銃器",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00031-e01",
+            "en": "The museum displays historical firearms behind glass.",
+            "ja": "博物館は歴史的な銃器をガラス越しに展示する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05257": {
+      "wordId": "VD-05257",
+      "headword": "fireplace",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00032",
+          "partOfSpeech": "noun",
+          "meaningJa": "暖炉",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00032-e01",
+            "en": "A stone fireplace stood at one end of the room.",
+            "ja": "部屋の端に石造りの暖炉があった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05261": {
+      "wordId": "VD-05261",
+      "headword": "firstly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00036",
+          "partOfSpeech": "adverb",
+          "meaningJa": "第一に",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00036-e01",
+            "en": "Firstly, we need to identify the problem.",
+            "ja": "第一に問題を特定する必要がある。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05279": {
+      "wordId": "VD-05279",
+      "headword": "follower",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00053",
+          "partOfSpeech": "noun",
+          "meaningJa": "支持者・フォロワー",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00053-e01",
+            "en": "The artist gained followers through her online work.",
+            "ja": "芸術家はオンライン作品で支持者を増やした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05281": {
+      "wordId": "VD-05281",
+      "headword": "fondly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00055",
+          "partOfSpeech": "adverb",
+          "meaningJa": "愛情を込めて",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00055-e01",
+            "en": "She fondly recalled her childhood summers.",
+            "ja": "彼女は幼少期の夏を懐かしんだ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05283": {
+      "wordId": "VD-05283",
+      "headword": "footnote",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00057",
+          "partOfSpeech": "noun",
+          "meaningJa": "脚注",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00057-e01",
+            "en": "A footnote provides the source of the quotation.",
+            "ja": "脚注は引用の出典を示す。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05306": {
+      "wordId": "VD-05306",
+      "headword": "functional",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00080",
+          "partOfSpeech": "adjective",
+          "meaningJa": "機能的な・実用的な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00080-e01",
+            "en": "The classroom furniture is simple and functional.",
+            "ja": "教室の家具は簡素で実用的だ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05307": {
+      "wordId": "VD-05307",
+      "headword": "functionality",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00081",
+          "partOfSpeech": "noun",
+          "meaningJa": "機能・機能性",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00081-e01",
+            "en": "The update improved the app's functionality.",
+            "ja": "更新はアプリの機能性を改善した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05309": {
+      "wordId": "VD-05309",
+      "headword": "funk",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00082",
+          "partOfSpeech": "noun",
+          "meaningJa": "ファンク音楽",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00082-e01",
+            "en": "The band performed a lively funk number.",
+            "ja": "バンドは活気のあるファンク曲を演奏した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05310": {
+      "wordId": "VD-05310",
+      "headword": "funky",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00083",
+          "partOfSpeech": "adjective",
+          "meaningJa": "個性的でおしゃれな（口語）",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00083-e01",
+            "en": "The cafe features funky furniture.",
+            "ja": "カフェには個性的な家具がある。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05318": {
+      "wordId": "VD-05318",
+      "headword": "gardener",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00091",
+          "partOfSpeech": "noun",
+          "meaningJa": "庭師・園芸家",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00091-e01",
+            "en": "The gardener planted roses beside the gate.",
+            "ja": "庭師は門のそばにバラを植えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05333": {
+      "wordId": "VD-05333",
+      "headword": "geographic",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4D-00105",
+          "partOfSpeech": "adjective",
+          "meaningJa": "地理的な",
+          "sourceBatch": "batches/original-20261114-b2-mega-04d.json",
+          "example": {
+            "id": "VDO-261114-M4D-00105-e01",
+            "en": "The survey shows geographic differences in rainfall.",
+            "ja": "調査は降水量の地理的な違いを示す。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05351": {
+      "wordId": "VD-05351",
+      "headword": "godly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4E-00006",
+          "partOfSpeech": "adjective",
+          "meaningJa": "信仰心の厚い",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "example": {
+            "id": "VDO-261114-M4E-00006-e01",
+            "en": "The biography describes a godly life of service.",
+            "ja": "伝記は信仰心の厚い奉仕の人生を描く。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05385": {
+      "wordId": "VD-05385",
+      "headword": "handout",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4E-00037",
+          "partOfSpeech": "noun",
+          "meaningJa": "配布資料",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "example": {
+            "id": "VDO-261114-M4E-00037-e01",
+            "en": "The teacher distributed a handout before the lecture.",
+            "ja": "教師は講義前に資料を配布した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05386": {
+      "wordId": "VD-05386",
+      "headword": "handrail",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4E-00038",
+          "partOfSpeech": "noun",
+          "meaningJa": "手すり",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "example": {
+            "id": "VDO-261114-M4E-00038-e01",
+            "en": "Hold the handrail when using the stairs.",
+            "ja": "階段では手すりを持ちなさい。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05394": {
+      "wordId": "VD-05394",
+      "headword": "haunting",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M4E-00046",
+          "partOfSpeech": "adjective",
+          "meaningJa": "心に残る・忘れがたい",
+          "sourceBatch": "batches/original-20261114-b2-mega-04e.json",
+          "example": {
+            "id": "VDO-261114-M4E-00046-e01",
+            "en": "The film ended with a haunting melody.",
+            "ja": "映画は心に残る旋律で終わった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05417": {
+      "wordId": "VD-05417",
+      "headword": "homeward",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00001",
+          "partOfSpeech": "adjective",
+          "meaningJa": "家に向かう",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00001-e01",
+            "en": "The homeward train was nearly empty.",
+            "ja": "帰宅する方向の電車はほぼ空いていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05427": {
+      "wordId": "VD-05427",
+      "headword": "housekeeper",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00010",
+          "partOfSpeech": "noun",
+          "meaningJa": "家事管理人・客室清掃員",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00010-e01",
+            "en": "The housekeeper prepared the guest room.",
+            "ja": "家事管理人は客室を準備した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05429": {
+      "wordId": "VD-05429",
+      "headword": "housewife",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00012",
+          "partOfSpeech": "noun",
+          "meaningJa": "専業主婦",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00012-e01",
+            "en": "The novel portrays a housewife who starts a business.",
+            "ja": "小説は事業を始める専業主婦を描く。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05431": {
+      "wordId": "VD-05431",
+      "headword": "hugely",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00014",
+          "partOfSpeech": "adverb",
+          "meaningJa": "非常に・大いに",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00014-e01",
+            "en": "The project was hugely popular with students.",
+            "ja": "計画は生徒に非常に人気があった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05434": {
+      "wordId": "VD-05434",
+      "headword": "humanist",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00017",
+          "partOfSpeech": "noun",
+          "meaningJa": "人文主義者・人道主義者",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00017-e01",
+            "en": "The Renaissance humanist studied ancient manuscripts.",
+            "ja": "ルネサンスの人文主義者は古代写本を研究した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05467": {
+      "wordId": "VD-05467",
+      "headword": "immortal",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00046",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不死の・不朽の",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00046-e01",
+            "en": "The myth tells of an immortal hero.",
+            "ja": "神話は不死の英雄を語る。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05468": {
+      "wordId": "VD-05468",
+      "headword": "immortality",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00047",
+          "partOfSpeech": "noun",
+          "meaningJa": "不死・不朽",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00047-e01",
+            "en": "The legend explores the desire for immortality.",
+            "ja": "伝説は不死への願望を探究する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05484": {
+      "wordId": "VD-05484",
+      "headword": "impressionist",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00059",
+          "partOfSpeech": "noun",
+          "meaningJa": "印象派の芸術家",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00059-e01",
+            "en": "The impressionist painted the garden at different times of day.",
+            "ja": "その印象派画家は一日の異なる時間帯に庭を描いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05505": {
+      "wordId": "VD-05505",
+      "headword": "indifferent",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00079",
+          "partOfSpeech": "adjective",
+          "meaningJa": "無関心な",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00079-e01",
+            "en": "Some residents were indifferent to the proposal.",
+            "ja": "一部の住民は提案に無関心だった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05507": {
+      "wordId": "VD-05507",
+      "headword": "indispensable",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00081",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不可欠な",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00081-e01",
+            "en": "A reliable dictionary is indispensable for translators.",
+            "ja": "信頼できる辞書は翻訳者に不可欠だ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05509": {
+      "wordId": "VD-05509",
+      "headword": "indulgent",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00083",
+          "partOfSpeech": "adjective",
+          "meaningJa": "甘い・寛容な",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00083-e01",
+            "en": "The indulgent uncle let the children choose dessert.",
+            "ja": "甘い叔父は子供にデザートを選ばせた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05546": {
+      "wordId": "VD-05546",
+      "headword": "instinct",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5A-00117",
+          "partOfSpeech": "noun",
+          "meaningJa": "本能・直感",
+          "sourceBatch": "batches/original-20261114-b2-mega-05a.json",
+          "example": {
+            "id": "VDO-261114-M5A-00117-e01",
+            "en": "Birds build nests largely by instinct.",
+            "ja": "鳥は主に本能によって巣を作る。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05554": {
+      "wordId": "VD-05554",
+      "headword": "interactive",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00001",
+          "partOfSpeech": "adjective",
+          "meaningJa": "双方向の・対話型の",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00001-e01",
+            "en": "The museum installed an interactive map.",
+            "ja": "博物館は対話型の地図を設置した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05562": {
+      "wordId": "VD-05562",
+      "headword": "intersection",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00008",
+          "partOfSpeech": "noun",
+          "meaningJa": "交差点・交差部分",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00008-e01",
+            "en": "The bus stopped near a busy intersection.",
+            "ja": "バスは混雑した交差点の近くで止まった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05589": {
+      "wordId": "VD-05589",
+      "headword": "islander",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00034",
+          "partOfSpeech": "noun",
+          "meaningJa": "島民",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00034-e01",
+            "en": "The islanders welcomed the ferry passengers.",
+            "ja": "島民はフェリーの乗客を歓迎した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05605": {
+      "wordId": "VD-05605",
+      "headword": "keeper",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00049",
+          "partOfSpeech": "noun",
+          "meaningJa": "管理人・飼育員",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00049-e01",
+            "en": "The zoo keeper prepared food for the animals.",
+            "ja": "動物園の飼育員は動物の餌を準備した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05617": {
+      "wordId": "VD-05617",
+      "headword": "landlady",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00061",
+          "partOfSpeech": "noun",
+          "meaningJa": "女性の家主",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00061-e01",
+            "en": "The landlady arranged for the heater to be repaired.",
+            "ja": "女性の家主は暖房の修理を手配した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05619": {
+      "wordId": "VD-05619",
+      "headword": "lap",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00063",
+          "partOfSpeech": "noun",
+          "meaningJa": "ひざの上",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00063-e01",
+            "en": "The kitten fell asleep on her lap.",
+            "ja": "子猫は彼女のひざで眠った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05625": {
+      "wordId": "VD-05625",
+      "headword": "lastly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00069",
+          "partOfSpeech": "adverb",
+          "meaningJa": "最後に",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00069-e01",
+            "en": "Lastly, check that every answer is complete.",
+            "ja": "最後にすべての回答が完全か確認しなさい。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05648": {
+      "wordId": "VD-05648",
+      "headword": "lengthen",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00091",
+          "partOfSpeech": "verb",
+          "meaningJa": "長くする・長くなる",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00091-e01",
+            "en": "The school decided to lengthen the lunch break.",
+            "ja": "学校は昼休みを長くすることにした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05654": {
+      "wordId": "VD-05654",
+      "headword": "lid",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00097",
+          "partOfSpeech": "noun",
+          "meaningJa": "ふた",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00097-e01",
+            "en": "Put the lid back on the jar.",
+            "ja": "瓶のふたを戻しなさい。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05659": {
+      "wordId": "VD-05659",
+      "headword": "likewise",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00102",
+          "partOfSpeech": "adverb",
+          "meaningJa": "同様に",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00102-e01",
+            "en": "The second group reacted likewise to the change.",
+            "ja": "第二のグループも同様に変更に反応した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05677": {
+      "wordId": "VD-05677",
+      "headword": "lowland",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00120",
+          "partOfSpeech": "noun",
+          "meaningJa": "低地",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00120-e01",
+            "en": "Farmers grow rice in the fertile lowlands.",
+            "ja": "農家は肥沃な低地で米を育てる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05684": {
+      "wordId": "VD-05684",
+      "headword": "madness",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5B-00127",
+          "partOfSpeech": "noun",
+          "meaningJa": "狂気・正気とは思えない行為",
+          "sourceBatch": "batches/original-20261114-b2-mega-05b.json",
+          "example": {
+            "id": "VDO-261114-M5B-00127-e01",
+            "en": "The play explores the boundary between ambition and madness.",
+            "ja": "劇は野心と狂気の境界を探究する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05730": {
+      "wordId": "VD-05730",
+      "headword": "microcomputer",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00021",
+          "partOfSpeech": "noun",
+          "meaningJa": "マイクロコンピューター",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00021-e01",
+            "en": "The team built a sensor using a microcomputer.",
+            "ja": "チームはマイクロコンピューターでセンサーを作った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05732": {
+      "wordId": "VD-05732",
+      "headword": "microorganism",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00023",
+          "partOfSpeech": "noun",
+          "meaningJa": "微生物",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00023-e01",
+            "en": "The lake contains many kinds of microorganisms.",
+            "ja": "湖には多種類の微生物がいる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05737": {
+      "wordId": "VD-05737",
+      "headword": "microwave",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00028",
+          "partOfSpeech": "noun",
+          "meaningJa": "電子レンジ",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00028-e01",
+            "en": "She warmed the soup in the microwave.",
+            "ja": "彼女は電子レンジでスープを温めた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05750": {
+      "wordId": "VD-05750",
+      "headword": "misleading",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00040",
+          "partOfSpeech": "adjective",
+          "meaningJa": "誤解を招く",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00040-e01",
+            "en": "The chart uses a misleading scale.",
+            "ja": "グラフは誤解を招く目盛りを使っている。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05768": {
+      "wordId": "VD-05768",
+      "headword": "moody",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00058",
+          "partOfSpeech": "adjective",
+          "meaningJa": "気分が変わりやすい",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00058-e01",
+            "en": "The character becomes moody when under pressure.",
+            "ja": "登場人物はプレッシャーを受けると気分が変わりやすい。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05769": {
+      "wordId": "VD-05769",
+      "headword": "moonlight",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00059",
+          "partOfSpeech": "noun",
+          "meaningJa": "月光",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00059-e01",
+            "en": "The path was faintly visible in the moonlight.",
+            "ja": "小道は月光の中でかすかに見えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05771": {
+      "wordId": "VD-05771",
+      "headword": "morality",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00061",
+          "partOfSpeech": "noun",
+          "meaningJa": "道徳・倫理",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00061-e01",
+            "en": "The novel explores morality in wartime.",
+            "ja": "小説は戦時の道徳を探究する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05781": {
+      "wordId": "VD-05781",
+      "headword": "motorist",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00071",
+          "partOfSpeech": "noun",
+          "meaningJa": "自動車運転者",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00071-e01",
+            "en": "Motorists were advised to avoid the flooded road.",
+            "ja": "運転者は浸水した道路を避けるよう助言された。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05782": {
+      "wordId": "VD-05782",
+      "headword": "mournful",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00072",
+          "partOfSpeech": "adjective",
+          "meaningJa": "悲しげな",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00072-e01",
+            "en": "The violin played a mournful melody.",
+            "ja": "バイオリンは悲しげな旋律を奏でた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05811": {
+      "wordId": "VD-05811",
+      "headword": "needless",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00100",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不必要な",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00100-e01",
+            "en": "The redesign removed needless steps.",
+            "ja": "再設計は不要な手順を削除した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05812": {
+      "wordId": "VD-05812",
+      "headword": "needy",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00101",
+          "partOfSpeech": "adjective",
+          "meaningJa": "困窮した",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00101-e01",
+            "en": "The organization provides food to needy families.",
+            "ja": "団体は困窮する家族に食料を提供する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05817": {
+      "wordId": "VD-05817",
+      "headword": "nerve",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00105",
+          "partOfSpeech": "noun",
+          "meaningJa": "神経",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00105-e01",
+            "en": "The diagram shows the nerves in the hand.",
+            "ja": "図は手の神経を示す。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05834": {
+      "wordId": "VD-05834",
+      "headword": "nonprofessional",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00122",
+          "partOfSpeech": "adjective",
+          "meaningJa": "非専門職の・アマチュアの",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00122-e01",
+            "en": "The festival welcomes nonprofessional musicians.",
+            "ja": "祭りはアマチュア音楽家を歓迎する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05835": {
+      "wordId": "VD-05835",
+      "headword": "northward",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5C-00123",
+          "partOfSpeech": "adverb",
+          "meaningJa": "北へ",
+          "sourceBatch": "batches/original-20261114-b2-mega-05c.json",
+          "example": {
+            "id": "VDO-261114-M5C-00123-e01",
+            "en": "The birds flew northward in spring.",
+            "ja": "鳥は春に北へ飛んだ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05853": {
+      "wordId": "VD-05853",
+      "headword": "obsess",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00002",
+          "partOfSpeech": "verb",
+          "meaningJa": "取りつかれる・頭から離れなくなる",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00002-e01",
+            "en": "He obsessed over small errors in the design.",
+            "ja": "彼は設計の小さな誤りを気にしすぎた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05855": {
+      "wordId": "VD-05855",
+      "headword": "obsessive",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00004",
+          "partOfSpeech": "adjective",
+          "meaningJa": "執着しすぎる",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00004-e01",
+            "en": "His obsessive attention to detail slowed the project.",
+            "ja": "細部への彼の過度な執着が計画を遅らせた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05856": {
+      "wordId": "VD-05856",
+      "headword": "odd",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00005",
+          "partOfSpeech": "adjective",
+          "meaningJa": "奇妙な",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00005-e01",
+            "en": "An odd sound came from the empty room.",
+            "ja": "無人の部屋から奇妙な音がした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05877": {
+      "wordId": "VD-05877",
+      "headword": "originality",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00026",
+          "partOfSpeech": "noun",
+          "meaningJa": "独創性",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00026-e01",
+            "en": "The judges rewarded originality in the designs.",
+            "ja": "審査員は設計の独創性を評価した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05903": {
+      "wordId": "VD-05903",
+      "headword": "overboard",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00050",
+          "partOfSpeech": "adverb",
+          "meaningJa": "船外へ",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00050-e01",
+            "en": "A hat blew overboard in the strong wind.",
+            "ja": "強風で帽子が船外へ飛んだ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05908": {
+      "wordId": "VD-05908",
+      "headword": "overhear",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00055",
+          "partOfSpeech": "verb",
+          "meaningJa": "偶然耳にする",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00055-e01",
+            "en": "She overheard a conversation on the train.",
+            "ja": "彼女は電車で会話を偶然耳にした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05909": {
+      "wordId": "VD-05909",
+      "headword": "overlap",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00056",
+          "partOfSpeech": "noun",
+          "meaningJa": "重なり・共通部分",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00056-e01",
+            "en": "There is an overlap between the two courses.",
+            "ja": "二つの講座には重複部分がある。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05910": {
+      "wordId": "VD-05910",
+      "headword": "overlook",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00057",
+          "partOfSpeech": "verb",
+          "meaningJa": "見落とす",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00057-e01",
+            "en": "The editor overlooked a small spelling error.",
+            "ja": "編集者は小さな綴りの誤りを見落とした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05911": {
+      "wordId": "VD-05911",
+      "headword": "overly",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00058",
+          "partOfSpeech": "adverb",
+          "meaningJa": "過度に",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00058-e01",
+            "en": "The instructions were overly complicated.",
+            "ja": "指示は過度に複雑だった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05912": {
+      "wordId": "VD-05912",
+      "headword": "overshadow",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00059",
+          "partOfSpeech": "verb",
+          "meaningJa": "目立たなくさせる",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00059-e01",
+            "en": "The controversy overshadowed the project's achievements.",
+            "ja": "論争が計画の成果を目立たなくさせた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05913": {
+      "wordId": "VD-05913",
+      "headword": "oversize",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00060",
+          "partOfSpeech": "adjective",
+          "meaningJa": "特大の",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00060-e01",
+            "en": "The machine prints oversize posters.",
+            "ja": "機械は特大ポスターを印刷する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05915": {
+      "wordId": "VD-05915",
+      "headword": "overtake",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00062",
+          "partOfSpeech": "verb",
+          "meaningJa": "追い越す",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00062-e01",
+            "en": "A cyclist overtook us near the bridge.",
+            "ja": "橋の近くで自転車利用者が私たちを追い越した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-05935": {
+      "wordId": "VD-05935",
+      "headword": "paperless",
+      "senses": [
+        {
+          "senseId": "VDO-261114-M5D-00081",
+          "partOfSpeech": "adjective",
+          "meaningJa": "紙を使わない",
+          "sourceBatch": "batches/original-20261114-b2-mega-05d.json",
+          "example": {
+            "id": "VDO-261114-M5D-00081-e01",
+            "en": "The office adopted a paperless filing system.",
+            "ja": "事務所は紙を使わない書類管理制度を採用した。",
+            "context": "basic"
+          }
+        }
+      ]
+    }
+  }
+}
