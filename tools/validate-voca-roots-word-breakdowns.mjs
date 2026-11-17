@@ -7,7 +7,7 @@ const read = path => JSON.parse(fs.readFileSync(path, 'utf8'));
 const datasets = manifest.files.map(file => read(root + file));
 const records = datasets.flatMap(dataset => dataset.records);
 const morphology = read('data/voca-roots/manifest.json').files
-  .filter(file => /^(roots|prefixes|suffixes)-\\d+\\.json$/.test(file))
+  .filter(file => /^(roots|prefixes|suffixes)-\d+\.json$/.test(file))
   .flatMap(file => read('data/voca-roots/' + file).records);
 const morphIds = new Set(morphology.map(item => item.id));
 const candidates = read('data/vocabulary-drafts/candidate-index.json').entries;
