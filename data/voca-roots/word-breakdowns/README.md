@@ -4,9 +4,9 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 
 ## What is registered
 - **3,350 modern derivation candidates** from the project's explicitly authored word-family groups. A candidate is included only if its base and derivative occur in the same authored family, their parts of speech fit a rule, and recorded spelling changes can reconstruct the word. This **does not verify the word's historical etymology** or its semantic suitability for publication.
-- **361 individually written core teaching explanations, prefix-learning drafts and curated morphology candidates**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
-- **4,157 source records / 4,154 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
-- **1,768 records (1,766 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
+- **361 individually written core teaching explanations, prefix-learning drafts and curated morphology candidates**, plus **429 master-sourced compound/phrase/adverb learning drafts**, including `transport`, `import`, `important`, `photograph`, `geography`, and `reconsider`.
+- **4,586 source records / 4,583 distinct headwords**. Three headwords occur in both an authored core record and a candidate record; prefer the **core** record for display only after editorial approval.
+- **2,197 records (2,195 distinct headwords)** match the complete 8,653-headword master by exact headword. Their IDs and CEFR values are recorded. The other **2,389 records (2,388 distinct headwords)** are useful extra word-family candidates but are not entries in the active 8,653-word master; their `wordId` remains `null`.
 
 ## Schema
 - `headword`, `wordId`, `cefrHeadword`, `matchStatus`, `wordMeaningJa` or `meaningJa`.
@@ -31,14 +31,14 @@ This dataset supports the future **Word Breakdown** experience in VocaDash. It i
 - A further **213 draft Word Breakdown records** were added for distinct words that are **already present in the active 8,653-word master**. The 136/59/18 records were extracted from explicit JS `family` edges, not synonyms or collocations.
 - Inflection-only links were excluded: in morphology review sources, the family edge must carry the `派生・語族` marker. Extra records use the canonical VocaRoots affix meanings with base-word and target-word IDs from the full master.
 - Source evidence is checked as a specific base → target family link in its source JS object, and the normalized word reconstructs from its recorded parts. Linguistic review remains required before publication.
-- The 1,768 matching records cover **1,766 distinct target headwords** in the master; the other 6,887 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
+- The 2,197 matching records cover **2,195 distinct target headwords** in the master; the other 6,458 master headwords are not yet represented by approved (or candidate) Word Breakdown records. Not every master word is meaningfully decomposable.
 
 
 ## Master-first batch 009: original prefix explanations (2026-11-17)
 - Added **89 new master-matched Word Breakdown drafts**, with separate human-authored examples and Japanese translations. Existing entries were left unchanged; the list was checked against the previous recorded headwords before writing.
 - The prefix families taught are `un-` (negation vs reversal), `in-/im-/ir-` (negation), `re-`, `mis-`, `over-`, `under-`, and `inter-`. Each new item has a known master word ID and an existing prefix morpheme ID.
 - Each record includes `exampleEn`, `exampleJa`, `imageHintJa`, `baseWordId` and original `explanationJa`. `historicalEtymologyVerified=false`, `referenceLookupPending=true`, `productionEligible=false` on every record. Modern spelling segmentation is only a **learning aid**, not a certified historical etymology.
-- Current totals: **3,920 records / 3,917 distinct headwords**, with **1,531 records / 1,529 distinct words matched** against the full 8,653-word master. **6,887** master words currently lack any Word Breakdown draft.
+- Current totals: **3,920 records / 3,917 distinct headwords**, with **1,531 records / 1,529 distinct words matched** against the full 8,653-word master. **6,458** master words currently lack any Word Breakdown draft.
 
 ## Master-first batches 010–011: structured affixes and compounds (2026-11-18)
 - **446 non-overlapping, complete-master-matched draft headwords:** **86 prefix, 276 suffix, and 84 two-base compound** breakdown candidates.
@@ -103,3 +103,12 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 - In modern teaching, `out-`, `up-`, and `down-` can be compound-like independent first elements; the dataset explicitly distinguishes these from prefixes rather than claiming shared historical etymology.
 - All records remain `draft-unreviewed` with `productionEligible=false`, `historicalEtymologyVerified=false` and `editorialReviewRequired=true`. No live UI, learner quiz, main merge, or production deploy.
 - Run `node tools/validate-voca-roots-curated-013.mjs` plus existing validation checks before any review or integration.
+
+## Bulk batch 014: existing-master sense and example linkage (2026-11-18)
+- **429 new unique exact-master-matched learning records**: **291** compound headwords, **95** multiword expressions and **43** adverb spelling/derivation patterns.
+- The original **84 active vocabulary batches** provided sense-level meanings and paired original English/Japanese examples; **950 exact master IDs**, **1,075 source senses** were indexed in seven non-runtime evidence files. **429/429** records contain a target bilingual example plus one further sourced example. These examples were not generated from guesses in this batch.
+- Each new breakdown includes original master sense IDs, component word IDs, component master sense candidates, original Japanese study prompts, a visual concept and an editorial caution. **61** entries have more specific semantic warning notes.
+- Source selection was explicitly reviewed to exclude nonsense string matches, e.g. **father = fat + her** was rejected. A transparent spelling split is *not* certification of historical etymology. For `-ally` the split is a spelling-oriented learning pattern, not a claim that `ally` is an independent word in the adverb.
+- Candidate master-headword coverage: **2,195 / 8,653 (25.4%)**; records total **4,586** including older out-of-master supplemental records. Not all master headwords are decomposable or suitable for Word Breakdown.
+- No UI integration, main-branch merge, or live deploy; `productionEligible=false` and `historicalEtymologyVerified=false` for all new entries. Original source vocabulary itself remains draft/unreviewed.
+- Validate with `node tools/validate-voca-roots-bulk-014.mjs` and the existing word-breakdown and master-first validators before review.
