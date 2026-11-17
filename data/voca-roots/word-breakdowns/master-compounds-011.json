@@ -1,0 +1,3202 @@
+{
+  "schemaVersion": "1.0",
+  "batch": "011",
+  "type": "master-first-compound-learning-candidates",
+  "createdOn": "2026-11-18",
+  "productionEnabled": false,
+  "sourcePolicy": "explicit curated component pairs; semantic shift not evaluated",
+  "records": [
+    {
+      "id": "wb:modern:airport",
+      "headword": "airport",
+      "wordId": "VD-00021",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "air",
+          "kind": "free-base",
+          "wordId": "VD-01095",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "port",
+          "kind": "free-base",
+          "wordId": "VD-03741",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "air と port が結びついた複合語 airport。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "air と port の組み合わせから連想できる意味と、airport の実際の意味は同じ？",
+      "imageHintJa": "air と port の要素を1つの場面に統合し、airport の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:aircraft",
+      "headword": "aircraft",
+      "wordId": "VD-04495",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "air",
+          "kind": "free-base",
+          "wordId": "VD-01095",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "craft",
+          "kind": "free-base",
+          "wordId": "VD-02745",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "air と craft が結びついた複合語 aircraft。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "air と craft の組み合わせから連想できる意味と、aircraft の実際の意味は同じ？",
+      "imageHintJa": "air と craft の要素を1つの場面に統合し、aircraft の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:airline",
+      "headword": "airline",
+      "wordId": "VD-02376",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "air",
+          "kind": "free-base",
+          "wordId": "VD-01095",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "line",
+          "kind": "free-base",
+          "wordId": "VD-00540",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "air と line が結びついた複合語 airline。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "air と line の組み合わせから連想できる意味と、airline の実際の意味は同じ？",
+      "imageHintJa": "air と line の要素を1つの場面に統合し、airline の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bedroom",
+      "headword": "bedroom",
+      "wordId": "VD-00081",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "bed",
+          "kind": "free-base",
+          "wordId": "VD-00080",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "room",
+          "kind": "free-base",
+          "wordId": "VD-00761",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "bed と room が結びついた複合語 bedroom。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "bed と room の組み合わせから連想できる意味と、bedroom の実際の意味は同じ？",
+      "imageHintJa": "bed と room の要素を1つの場面に統合し、bedroom の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:classroom",
+      "headword": "classroom",
+      "wordId": "VD-00184",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "class",
+          "kind": "free-base",
+          "wordId": "VD-00182",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "room",
+          "kind": "free-base",
+          "wordId": "VD-00761",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "class と room が結びついた複合語 classroom。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "class と room の組み合わせから連想できる意味と、classroom の実際の意味は同じ？",
+      "imageHintJa": "class と room の要素を1つの場面に統合し、classroom の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bathroom",
+      "headword": "bathroom",
+      "wordId": "VD-00072",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "bath",
+          "kind": "free-base",
+          "wordId": "VD-00071",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "room",
+          "kind": "free-base",
+          "wordId": "VD-00761",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "bath と room が結びついた複合語 bathroom。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "bath と room の組み合わせから連想できる意味と、bathroom の実際の意味は同じ？",
+      "imageHintJa": "bath と room の要素を1つの場面に統合し、bathroom の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:schoolwork",
+      "headword": "schoolwork",
+      "wordId": "VD-02012",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "school",
+          "kind": "free-base",
+          "wordId": "VD-00778",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "school と work が結びついた複合語 schoolwork。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "school と work の組み合わせから連想できる意味と、schoolwork の実際の意味は同じ？",
+      "imageHintJa": "school と work の要素を1つの場面に統合し、schoolwork の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:homework",
+      "headword": "homework",
+      "wordId": "VD-00456",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "home",
+          "kind": "free-base",
+          "wordId": "VD-00454",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "home と work が結びついた複合語 homework。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "home と work の組み合わせから連想できる意味と、homework の実際の意味は同じ？",
+      "imageHintJa": "home と work の要素を1つの場面に統合し、homework の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:housework",
+      "headword": "housework",
+      "wordId": "VD-03260",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "house",
+          "kind": "free-base",
+          "wordId": "VD-00463",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "house と work が結びついた複合語 housework。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "house と work の組み合わせから連想できる意味と、housework の実際の意味は同じ？",
+      "imageHintJa": "house と work の要素を1つの場面に統合し、housework の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bookcase",
+      "headword": "bookcase",
+      "wordId": "VD-01201",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "case",
+          "kind": "free-base",
+          "wordId": "VD-00162",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "book と case が結びついた複合語 bookcase。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "book と case の組み合わせから連想できる意味と、bookcase の実際の意味は同じ？",
+      "imageHintJa": "book と case の要素を1つの場面に統合し、bookcase の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bookstore",
+      "headword": "bookstore",
+      "wordId": "VD-00111",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "store",
+          "kind": "free-base",
+          "wordId": "VD-00871",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "book と store が結びついた複合語 bookstore。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "book と store の組み合わせから連想できる意味と、bookstore の実際の意味は同じ？",
+      "imageHintJa": "book と store の要素を1つの場面に統合し、bookstore の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bookshelf",
+      "headword": "bookshelf",
+      "wordId": "VD-01202",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "shelf",
+          "kind": "free-base",
+          "wordId": "VD-00798",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "book と shelf が結びついた複合語 bookshelf。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "book と shelf の組み合わせから連想できる意味と、bookshelf の実際の意味は同じ？",
+      "imageHintJa": "book と shelf の要素を1つの場面に統合し、bookshelf の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:bookshop",
+      "headword": "bookshop",
+      "wordId": "VD-01203",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "shop",
+          "kind": "free-base",
+          "wordId": "VD-00802",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "book と shop が結びついた複合語 bookshop。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "book と shop の組み合わせから連想できる意味と、bookshop の実際の意味は同じ？",
+      "imageHintJa": "book と shop の要素を1つの場面に統合し、bookshop の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:notebook",
+      "headword": "notebook",
+      "wordId": "VD-00633",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "note",
+          "kind": "free-base",
+          "wordId": "VD-00632",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "note と book が結びついた複合語 notebook。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "note と book の組み合わせから連想できる意味と、notebook の実際の意味は同じ？",
+      "imageHintJa": "note と book の要素を1つの場面に統合し、notebook の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:textbook",
+      "headword": "textbook",
+      "wordId": "VD-02180",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "text",
+          "kind": "free-base",
+          "wordId": "VD-02178",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "book",
+          "kind": "free-base",
+          "wordId": "VD-00110",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "text と book が結びついた複合語 textbook。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "text と book の組み合わせから連想できる意味と、textbook の実際の意味は同じ？",
+      "imageHintJa": "text と book の要素を1つの場面に統合し、textbook の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:newspaper",
+      "headword": "newspaper",
+      "wordId": "VD-00622",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "news",
+          "kind": "free-base",
+          "wordId": "VD-00621",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "paper",
+          "kind": "free-base",
+          "wordId": "VD-00673",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "news と paper が結びついた複合語 newspaper。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "news と paper の組み合わせから連想できる意味と、newspaper の実際の意味は同じ？",
+      "imageHintJa": "news と paper の要素を1つの場面に統合し、newspaper の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:worldwide",
+      "headword": "worldwide",
+      "wordId": "VD-02300",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "world",
+          "kind": "free-base",
+          "wordId": "VD-01046",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "wide",
+          "kind": "free-base",
+          "wordId": "VD-02286",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "world と wide が結びついた複合語 worldwide。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "world と wide の組み合わせから連想できる意味と、worldwide の実際の意味は同じ？",
+      "imageHintJa": "world と wide の要素を1つの場面に統合し、worldwide の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:worldview",
+      "headword": "worldview",
+      "wordId": "VD-06845",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "world",
+          "kind": "free-base",
+          "wordId": "VD-01046",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "view",
+          "kind": "free-base",
+          "wordId": "VD-02254",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "world と view が結びついた複合語 worldview。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "world と view の組み合わせから連想できる意味と、worldview の実際の意味は同じ？",
+      "imageHintJa": "world と view の要素を1つの場面に統合し、worldview の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:waterfall",
+      "headword": "waterfall",
+      "wordId": "VD-04402",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "water",
+          "kind": "free-base",
+          "wordId": "VD-01013",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "fall",
+          "kind": "free-base",
+          "wordId": "VD-01481",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "water と fall が結びついた複合語 waterfall。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "water と fall の組み合わせから連想できる意味と、waterfall の実際の意味は同じ？",
+      "imageHintJa": "water と fall の要素を1つの場面に統合し、waterfall の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:waterproof",
+      "headword": "waterproof",
+      "wordId": "VD-06803",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "water",
+          "kind": "free-base",
+          "wordId": "VD-01013",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "proof",
+          "kind": "free-base",
+          "wordId": "VD-03800",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "water と proof が結びついた複合語 waterproof。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "water と proof の組み合わせから連想できる意味と、waterproof の実際の意味は同じ？",
+      "imageHintJa": "water と proof の要素を1つの場面に統合し、waterproof の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:waterfront",
+      "headword": "waterfront",
+      "wordId": "VD-07764",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "water",
+          "kind": "free-base",
+          "wordId": "VD-01013",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "front",
+          "kind": "free-base",
+          "wordId": "VD-00369",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "water と front が結びついた複合語 waterfront。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "water と front の組み合わせから連想できる意味と、waterfront の実際の意味は同じ？",
+      "imageHintJa": "water と front の要素を1つの場面に統合し、waterfront の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:rainfall",
+      "headword": "rainfall",
+      "wordId": "VD-03845",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "rain",
+          "kind": "free-base",
+          "wordId": "VD-00736",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "fall",
+          "kind": "free-base",
+          "wordId": "VD-01481",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "rain と fall が結びついた複合語 rainfall。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "rain と fall の組み合わせから連想できる意味と、rainfall の実際の意味は同じ？",
+      "imageHintJa": "rain と fall の要素を1つの場面に統合し、rainfall の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:rainbow",
+      "headword": "rainbow",
+      "wordId": "VD-06152",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "rain",
+          "kind": "free-base",
+          "wordId": "VD-00736",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "bow",
+          "kind": "free-base",
+          "wordId": "VD-02533",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "rain と bow が結びついた複合語 rainbow。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "rain と bow の組み合わせから連想できる意味と、rainbow の実際の意味は同じ？",
+      "imageHintJa": "rain と bow の要素を1つの場面に統合し、rainbow の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:raincoat",
+      "headword": "raincoat",
+      "wordId": "VD-01928",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "rain",
+          "kind": "free-base",
+          "wordId": "VD-00736",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "coat",
+          "kind": "free-base",
+          "wordId": "VD-00197",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "rain と coat が結びついた複合語 raincoat。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "rain と coat の組み合わせから連想できる意味と、raincoat の実際の意味は同じ？",
+      "imageHintJa": "rain と coat の要素を1つの場面に統合し、raincoat の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:snowball",
+      "headword": "snowball",
+      "wordId": "VD-06400",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "snow",
+          "kind": "free-base",
+          "wordId": "VD-00837",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "ball",
+          "kind": "free-base",
+          "wordId": "VD-00063",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "snow と ball が結びついた複合語 snowball。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "snow と ball の組み合わせから連想できる意味と、snowball の実際の意味は同じ？",
+      "imageHintJa": "snow と ball の要素を1つの場面に統合し、snowball の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:snowstorm",
+      "headword": "snowstorm",
+      "wordId": "VD-04068",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "snow",
+          "kind": "free-base",
+          "wordId": "VD-00837",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "storm",
+          "kind": "free-base",
+          "wordId": "VD-02123",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "snow と storm が結びついた複合語 snowstorm。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "snow と storm の組み合わせから連想できる意味と、snowstorm の実際の意味は同じ？",
+      "imageHintJa": "snow と storm の要素を1つの場面に統合し、snowstorm の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunshine",
+      "headword": "sunshine",
+      "wordId": "VD-00890",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "shine",
+          "kind": "free-base",
+          "wordId": "VD-02042",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と shine が結びついた複合語 sunshine。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と shine の組み合わせから連想できる意味と、sunshine の実際の意味は同じ？",
+      "imageHintJa": "sun と shine の要素を1つの場面に統合し、sunshine の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunlight",
+      "headword": "sunlight",
+      "wordId": "VD-02146",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "light",
+          "kind": "free-base",
+          "wordId": "VD-00537",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と light が結びついた複合語 sunlight。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と light の組み合わせから連想できる意味と、sunlight の実際の意味は同じ？",
+      "imageHintJa": "sun と light の要素を1つの場面に統合し、sunlight の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunflower",
+      "headword": "sunflower",
+      "wordId": "VD-02144",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "flower",
+          "kind": "free-base",
+          "wordId": "VD-00349",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と flower が結びついた複合語 sunflower。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と flower の組み合わせから連想できる意味と、sunflower の実際の意味は同じ？",
+      "imageHintJa": "sun と flower の要素を1つの場面に統合し、sunflower の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunrise",
+      "headword": "sunrise",
+      "wordId": "VD-04164",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "rise",
+          "kind": "free-base",
+          "wordId": "VD-03950",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と rise が結びついた複合語 sunrise。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と rise の組み合わせから連想できる意味と、sunrise の実際の意味は同じ？",
+      "imageHintJa": "sun と rise の要素を1つの場面に統合し、sunrise の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunset",
+      "headword": "sunset",
+      "wordId": "VD-04165",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "set",
+          "kind": "free-base",
+          "wordId": "VD-00790",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と set が結びついた複合語 sunset。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と set の組み合わせから連想できる意味と、sunset の実際の意味は同じ？",
+      "imageHintJa": "sun と set の要素を1つの場面に統合し、sunset の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sunbeam",
+      "headword": "sunbeam",
+      "wordId": "VD-06519",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sun",
+          "kind": "free-base",
+          "wordId": "VD-00887",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "beam",
+          "kind": "free-base",
+          "wordId": "VD-04618",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sun と beam が結びついた複合語 sunbeam。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sun と beam の組み合わせから連想できる意味と、sunbeam の実際の意味は同じ？",
+      "imageHintJa": "sun と beam の要素を1つの場面に統合し、sunbeam の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:daylight",
+      "headword": "daylight",
+      "wordId": "VD-01359",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "day",
+          "kind": "free-base",
+          "wordId": "VD-00239",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "light",
+          "kind": "free-base",
+          "wordId": "VD-00537",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "day と light が結びついた複合語 daylight。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "day と light の組み合わせから連想できる意味と、daylight の実際の意味は同じ？",
+      "imageHintJa": "day と light の要素を1つの場面に統合し、daylight の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:daytime",
+      "headword": "daytime",
+      "wordId": "VD-04952",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "day",
+          "kind": "free-base",
+          "wordId": "VD-00239",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "time",
+          "kind": "free-base",
+          "wordId": "VD-00947",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "day と time が結びついた複合語 daytime。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "day と time の組み合わせから連想できる意味と、daytime の実際の意味は同じ？",
+      "imageHintJa": "day と time の要素を1つの場面に統合し、daytime の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:daydream",
+      "headword": "daydream",
+      "wordId": "VD-07061",
+      "cefrHeadword": "C1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "day",
+          "kind": "free-base",
+          "wordId": "VD-00239",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "dream",
+          "kind": "free-base",
+          "wordId": "VD-00268",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "day と dream が結びついた複合語 daydream。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "day と dream の組み合わせから連想できる意味と、daydream の実際の意味は同じ？",
+      "imageHintJa": "day と dream の要素を1つの場面に統合し、daydream の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:nightlife",
+      "headword": "nightlife",
+      "wordId": "VD-03580",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "night",
+          "kind": "free-base",
+          "wordId": "VD-00624",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "life",
+          "kind": "free-base",
+          "wordId": "VD-00536",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "night と life が結びついた複合語 nightlife。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "night と life の組み合わせから連想できる意味と、nightlife の実際の意味は同じ？",
+      "imageHintJa": "night と life の要素を1つの場面に統合し、nightlife の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:weekday",
+      "headword": "weekday",
+      "wordId": "VD-02273",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "week",
+          "kind": "free-base",
+          "wordId": "VD-01019",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "day",
+          "kind": "free-base",
+          "wordId": "VD-00239",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "week と day が結びついた複合語 weekday。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "week と day の組み合わせから連想できる意味と、weekday の実際の意味は同じ？",
+      "imageHintJa": "week と day の要素を1つの場面に統合し、weekday の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:weekend",
+      "headword": "weekend",
+      "wordId": "VD-01020",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "week",
+          "kind": "free-base",
+          "wordId": "VD-01019",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "end",
+          "kind": "free-base",
+          "wordId": "VD-00293",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "week と end が結びついた複合語 weekend。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "week と end の組み合わせから連想できる意味と、weekend の実際の意味は同じ？",
+      "imageHintJa": "week と end の要素を1つの場面に統合し、weekend の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:workplace",
+      "headword": "workplace",
+      "wordId": "VD-04433",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "place",
+          "kind": "free-base",
+          "wordId": "VD-00700",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "work と place が結びついた複合語 workplace。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "work と place の組み合わせから連想できる意味と、workplace の実際の意味は同じ？",
+      "imageHintJa": "work と place の要素を1つの場面に統合し、workplace の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:workshop",
+      "headword": "workshop",
+      "wordId": "VD-04434",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "shop",
+          "kind": "free-base",
+          "wordId": "VD-00802",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "work と shop が結びついた複合語 workshop。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "work と shop の組み合わせから連想できる意味と、workshop の実際の意味は同じ？",
+      "imageHintJa": "work と shop の要素を1つの場面に統合し、workshop の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:headache",
+      "headword": "headache",
+      "wordId": "VD-00432",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "head",
+          "kind": "free-base",
+          "wordId": "VD-00431",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "ache",
+          "kind": "free-base",
+          "wordId": "VD-02339",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "head と ache が結びついた複合語 headache。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "head と ache の組み合わせから連想できる意味と、headache の実際の意味は同じ？",
+      "imageHintJa": "head と ache の要素を1つの場面に統合し、headache の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:headline",
+      "headword": "headline",
+      "wordId": "VD-03219",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "head",
+          "kind": "free-base",
+          "wordId": "VD-00431",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "line",
+          "kind": "free-base",
+          "wordId": "VD-00540",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "head と line が結びついた複合語 headline。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "head と line の組み合わせから連想できる意味と、headline の実際の意味は同じ？",
+      "imageHintJa": "head と line の要素を1つの場面に統合し、headline の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:headphone",
+      "headword": "headphone",
+      "wordId": "VD-01589",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "head",
+          "kind": "free-base",
+          "wordId": "VD-00431",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "phone",
+          "kind": "free-base",
+          "wordId": "VD-00690",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "head と phone が結びついた複合語 headphone。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "head と phone の組み合わせから連想できる意味と、headphone の実際の意味は同じ？",
+      "imageHintJa": "head と phone の要素を1つの場面に統合し、headphone の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:haircut",
+      "headword": "haircut",
+      "wordId": "VD-00417",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hair",
+          "kind": "free-base",
+          "wordId": "VD-00416",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "cut",
+          "kind": "free-base",
+          "wordId": "VD-00230",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hair と cut が結びついた複合語 haircut。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hair と cut の組み合わせから連想できる意味と、haircut の実際の意味は同じ？",
+      "imageHintJa": "hair と cut の要素を1つの場面に統合し、haircut の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:eyelid",
+      "headword": "eyelid",
+      "wordId": "VD-05222",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "eye",
+          "kind": "free-base",
+          "wordId": "VD-00311",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "lid",
+          "kind": "free-base",
+          "wordId": "VD-05654",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "eye と lid が結びついた複合語 eyelid。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "eye と lid の組み合わせから連想できる意味と、eyelid の実際の意味は同じ？",
+      "imageHintJa": "eye と lid の要素を1つの場面に統合し、eyelid の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:eyesight",
+      "headword": "eyesight",
+      "wordId": "VD-03029",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "eye",
+          "kind": "free-base",
+          "wordId": "VD-00311",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "sight",
+          "kind": "free-base",
+          "wordId": "VD-00812",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "eye と sight が結びついた複合語 eyesight。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "eye と sight の組み合わせから連想できる意味と、eyesight の実際の意味は同じ？",
+      "imageHintJa": "eye と sight の要素を1つの場面に統合し、eyesight の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:toothbrush",
+      "headword": "toothbrush",
+      "wordId": "VD-02202",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "tooth",
+          "kind": "free-base",
+          "wordId": "VD-00958",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "brush",
+          "kind": "free-base",
+          "wordId": "VD-00132",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "tooth と brush が結びついた複合語 toothbrush。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "tooth と brush の組み合わせから連想できる意味と、toothbrush の実際の意味は同じ？",
+      "imageHintJa": "tooth と brush の要素を1つの場面に統合し、toothbrush の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:toothache",
+      "headword": "toothache",
+      "wordId": "VD-02201",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "tooth",
+          "kind": "free-base",
+          "wordId": "VD-00958",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "ache",
+          "kind": "free-base",
+          "wordId": "VD-02339",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "tooth と ache が結びついた複合語 toothache。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "tooth と ache の組み合わせから連想できる意味と、toothache の実際の意味は同じ？",
+      "imageHintJa": "tooth と ache の要素を1つの場面に統合し、toothache の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:fingernail",
+      "headword": "fingernail",
+      "wordId": "VD-05254",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "finger",
+          "kind": "free-base",
+          "wordId": "VD-03064",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "nail",
+          "kind": "free-base",
+          "wordId": "VD-03550",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "finger と nail が結びついた複合語 fingernail。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "finger と nail の組み合わせから連想できる意味と、fingernail の実際の意味は同じ？",
+      "imageHintJa": "finger と nail の要素を1つの場面に統合し、fingernail の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:handshake",
+      "headword": "handshake",
+      "wordId": "VD-03204",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hand",
+          "kind": "free-base",
+          "wordId": "VD-00421",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "shake",
+          "kind": "free-base",
+          "wordId": "VD-00794",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hand と shake が結びついた複合語 handshake。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hand と shake の組み合わせから連想できる意味と、handshake の実際の意味は同じ？",
+      "imageHintJa": "hand と shake の要素を1つの場面に統合し、handshake の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:handwriting",
+      "headword": "handwriting",
+      "wordId": "VD-03205",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hand",
+          "kind": "free-base",
+          "wordId": "VD-00421",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "writing",
+          "kind": "free-base",
+          "wordId": "VD-02304",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hand と writing が結びついた複合語 handwriting。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hand と writing の組み合わせから連想できる意味と、handwriting の実際の意味は同じ？",
+      "imageHintJa": "hand と writing の要素を1つの場面に統合し、handwriting の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:handrail",
+      "headword": "handrail",
+      "wordId": "VD-05386",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hand",
+          "kind": "free-base",
+          "wordId": "VD-00421",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "rail",
+          "kind": "free-base",
+          "wordId": "VD-03842",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hand と rail が結びついた複合語 handrail。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hand と rail の組み合わせから連想できる意味と、handrail の実際の意味は同じ？",
+      "imageHintJa": "hand と rail の要素を1つの場面に統合し、handrail の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:handbag",
+      "headword": "handbag",
+      "wordId": "VD-01578",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hand",
+          "kind": "free-base",
+          "wordId": "VD-00421",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "bag",
+          "kind": "free-base",
+          "wordId": "VD-00062",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hand と bag が結びついた複合語 handbag。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hand と bag の組み合わせから連想できる意味と、handbag の実際の意味は同じ？",
+      "imageHintJa": "hand と bag の要素を1つの場面に統合し、handbag の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:handout",
+      "headword": "handout",
+      "wordId": "VD-05385",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "hand",
+          "kind": "free-base",
+          "wordId": "VD-00421",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "out",
+          "kind": "free-base",
+          "wordId": "VD-00661",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "hand と out が結びついた複合語 handout。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "hand と out の組み合わせから連想できる意味と、handout の実際の意味は同じ？",
+      "imageHintJa": "hand と out の要素を1つの場面に統合し、handout の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:football",
+      "headword": "football",
+      "wordId": "VD-00355",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "foot",
+          "kind": "free-base",
+          "wordId": "VD-03088",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "ball",
+          "kind": "free-base",
+          "wordId": "VD-00063",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "foot と ball が結びついた複合語 football。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "foot と ball の組み合わせから連想できる意味と、football の実際の意味は同じ？",
+      "imageHintJa": "foot と ball の要素を1つの場面に統合し、football の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:footnote",
+      "headword": "footnote",
+      "wordId": "VD-05283",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "foot",
+          "kind": "free-base",
+          "wordId": "VD-03088",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "note",
+          "kind": "free-base",
+          "wordId": "VD-00632",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "foot と note が結びついた複合語 footnote。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "foot と note の組み合わせから連想できる意味と、footnote の実際の意味は同じ？",
+      "imageHintJa": "foot と note の要素を1つの場面に統合し、footnote の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:backpack",
+      "headword": "backpack",
+      "wordId": "VD-02468",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "back",
+          "kind": "free-base",
+          "wordId": "VD-00060",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "pack",
+          "kind": "free-base",
+          "wordId": "VD-01818",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "back と pack が結びついた複合語 backpack。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "back と pack の組み合わせから連想できる意味と、backpack の実際の意味は同じ？",
+      "imageHintJa": "back と pack の要素を1つの場面に統合し、backpack の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:backyard",
+      "headword": "backyard",
+      "wordId": "VD-04595",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "back",
+          "kind": "free-base",
+          "wordId": "VD-00060",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "yard",
+          "kind": "free-base",
+          "wordId": "VD-01052",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "back と yard が結びついた複合語 backyard。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "back と yard の組み合わせから連想できる意味と、backyard の実際の意味は同じ？",
+      "imageHintJa": "back と yard の要素を1つの場面に統合し、backyard の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:background",
+      "headword": "background",
+      "wordId": "VD-01156",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "back",
+          "kind": "free-base",
+          "wordId": "VD-00060",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "ground",
+          "kind": "free-base",
+          "wordId": "VD-00407",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "back と ground が結びついた複合語 background。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "back と ground の組み合わせから連想できる意味と、background の実際の意味は同じ？",
+      "imageHintJa": "back と ground の要素を1つの場面に統合し、background の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:blackboard",
+      "headword": "blackboard",
+      "wordId": "VD-01191",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "black",
+          "kind": "free-base",
+          "wordId": "VD-00101",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "board",
+          "kind": "free-base",
+          "wordId": "VD-00106",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "black と board が結びついた複合語 blackboard。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "black と board の組み合わせから連想できる意味と、blackboard の実際の意味は同じ？",
+      "imageHintJa": "black と board の要素を1つの場面に統合し、blackboard の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:keyboard",
+      "headword": "keyboard",
+      "wordId": "VD-03385",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "key",
+          "kind": "free-base",
+          "wordId": "VD-00506",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "board",
+          "kind": "free-base",
+          "wordId": "VD-00106",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "key と board が結びついた複合語 keyboard。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "key と board の組み合わせから連想できる意味と、keyboard の実際の意味は同じ？",
+      "imageHintJa": "key と board の要素を1つの場面に統合し、keyboard の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:hometown",
+      "headword": "hometown",
+      "wordId": "VD-00455",
+      "cefrHeadword": "A1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "home",
+          "kind": "free-base",
+          "wordId": "VD-00454",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "town",
+          "kind": "free-base",
+          "wordId": "VD-00964",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "home と town が結びついた複合語 hometown。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "home と town の組み合わせから連想できる意味と、hometown の実際の意味は同じ？",
+      "imageHintJa": "home と town の要素を1つの場面に統合し、hometown の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:household",
+      "headword": "household",
+      "wordId": "VD-03259",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "house",
+          "kind": "free-base",
+          "wordId": "VD-00463",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "hold",
+          "kind": "free-base",
+          "wordId": "VD-00451",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "house と hold が結びついた複合語 household。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "house と hold の組み合わせから連想できる意味と、household の実際の意味は同じ？",
+      "imageHintJa": "house と hold の要素を1つの場面に統合し、household の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:housekeeper",
+      "headword": "housekeeper",
+      "wordId": "VD-05427",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "house",
+          "kind": "free-base",
+          "wordId": "VD-00463",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "keeper",
+          "kind": "free-base",
+          "wordId": "VD-05605",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "house と keeper が結びついた複合語 housekeeper。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "house と keeper の組み合わせから連想できる意味と、housekeeper の実際の意味は同じ？",
+      "imageHintJa": "house と keeper の要素を1つの場面に統合し、housekeeper の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:housewife",
+      "headword": "housewife",
+      "wordId": "VD-05429",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "house",
+          "kind": "free-base",
+          "wordId": "VD-00463",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "wife",
+          "kind": "free-base",
+          "wordId": "VD-01033",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "house と wife が結びついた複合語 housewife。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "house と wife の組み合わせから連想できる意味と、housewife の実際の意味は同じ？",
+      "imageHintJa": "house と wife の要素を1つの場面に統合し、housewife の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:greenhouse",
+      "headword": "greenhouse",
+      "wordId": "VD-03182",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "green",
+          "kind": "free-base",
+          "wordId": "VD-00405",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "house",
+          "kind": "free-base",
+          "wordId": "VD-00463",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "green と house が結びついた複合語 greenhouse。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "green と house の組み合わせから連想できる意味と、greenhouse の実際の意味は同じ？",
+      "imageHintJa": "green と house の要素を1つの場面に統合し、greenhouse の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:rainforest",
+      "headword": "rainforest",
+      "wordId": "VD-03846",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "rain",
+          "kind": "free-base",
+          "wordId": "VD-00736",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "forest",
+          "kind": "free-base",
+          "wordId": "VD-01521",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "rain と forest が結びついた複合語 rainforest。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "rain と forest の組み合わせから連想できる意味と、rainforest の実際の意味は同じ？",
+      "imageHintJa": "rain と forest の要素を1つの場面に統合し、rainforest の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:wildlife",
+      "headword": "wildlife",
+      "wordId": "VD-04421",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "wild",
+          "kind": "free-base",
+          "wordId": "VD-02288",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "life",
+          "kind": "free-base",
+          "wordId": "VD-00536",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "wild と life が結びついた複合語 wildlife。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "wild と life の組み合わせから連想できる意味と、wildlife の実際の意味は同じ？",
+      "imageHintJa": "wild と life の要素を1つの場面に統合し、wildlife の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:seaside",
+      "headword": "seaside",
+      "wordId": "VD-02021",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sea",
+          "kind": "free-base",
+          "wordId": "VD-00781",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "side",
+          "kind": "free-base",
+          "wordId": "VD-00811",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sea と side が結びついた複合語 seaside。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sea と side の組み合わせから連想できる意味と、seaside の実際の意味は同じ？",
+      "imageHintJa": "sea と side の要素を1つの場面に統合し、seaside の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:seawater",
+      "headword": "seawater",
+      "wordId": "VD-03995",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sea",
+          "kind": "free-base",
+          "wordId": "VD-00781",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "water",
+          "kind": "free-base",
+          "wordId": "VD-01013",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sea と water が結びついた複合語 seawater。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sea と water の組み合わせから連想できる意味と、seawater の実際の意味は同じ？",
+      "imageHintJa": "sea と water の要素を1つの場面に統合し、seawater の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:seafood",
+      "headword": "seafood",
+      "wordId": "VD-02019",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "sea",
+          "kind": "free-base",
+          "wordId": "VD-00781",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "food",
+          "kind": "free-base",
+          "wordId": "VD-00354",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "sea と food が結びついた複合語 seafood。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "sea と food の組み合わせから連想できる意味と、seafood の実際の意味は同じ？",
+      "imageHintJa": "sea と food の要素を1つの場面に統合し、seafood の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:earthquake",
+      "headword": "earthquake",
+      "wordId": "VD-01423",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "earth",
+          "kind": "free-base",
+          "wordId": "VD-01422",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "quake",
+          "kind": "free-base",
+          "wordId": "VD-03831",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "earth と quake が結びついた複合語 earthquake。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "earth と quake の組み合わせから連想できる意味と、earthquake の実際の意味は同じ？",
+      "imageHintJa": "earth と quake の要素を1つの場面に統合し、earthquake の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:landlady",
+      "headword": "landlady",
+      "wordId": "VD-05617",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "land",
+          "kind": "free-base",
+          "wordId": "VD-01674",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "lady",
+          "kind": "free-base",
+          "wordId": "VD-00518",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "land と lady が結びついた複合語 landlady。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "land と lady の組み合わせから連想できる意味と、landlady の実際の意味は同じ？",
+      "imageHintJa": "land と lady の要素を1つの場面に統合し、landlady の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:farmland",
+      "headword": "farmland",
+      "wordId": "VD-03043",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "farm",
+          "kind": "free-base",
+          "wordId": "VD-00320",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "land",
+          "kind": "free-base",
+          "wordId": "VD-01674",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "farm と land が結びついた複合語 farmland。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "farm と land の組み合わせから連想できる意味と、farmland の実際の意味は同じ？",
+      "imageHintJa": "farm と land の要素を1つの場面に統合し、farmland の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:firefighter",
+      "headword": "firefighter",
+      "wordId": "VD-03066",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "fire",
+          "kind": "free-base",
+          "wordId": "VD-00341",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "fighter",
+          "kind": "free-base",
+          "wordId": "VD-01500",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "fire と fighter が結びついた複合語 firefighter。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "fire と fighter の組み合わせから連想できる意味と、firefighter の実際の意味は同じ？",
+      "imageHintJa": "fire と fighter の要素を1つの場面に統合し、firefighter の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:fireplace",
+      "headword": "fireplace",
+      "wordId": "VD-05257",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "fire",
+          "kind": "free-base",
+          "wordId": "VD-00341",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "place",
+          "kind": "free-base",
+          "wordId": "VD-00700",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "fire と place が結びついた複合語 fireplace。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "fire と place の組み合わせから連想できる意味と、fireplace の実際の意味は同じ？",
+      "imageHintJa": "fire と place の要素を1つの場面に統合し、fireplace の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:firearm",
+      "headword": "firearm",
+      "wordId": "VD-05256",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "fire",
+          "kind": "free-base",
+          "wordId": "VD-00341",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "arm",
+          "kind": "free-base",
+          "wordId": "VD-00046",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "fire と arm が結びついた複合語 firearm。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "fire と arm の組み合わせから連想できる意味と、firearm の実際の意味は同じ？",
+      "imageHintJa": "fire と arm の要素を1つの場面に統合し、firearm の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:moonlight",
+      "headword": "moonlight",
+      "wordId": "VD-05769",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "moon",
+          "kind": "free-base",
+          "wordId": "VD-00595",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "light",
+          "kind": "free-base",
+          "wordId": "VD-00537",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "moon と light が結びついた複合語 moonlight。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "moon と light の組み合わせから連想できる意味と、moonlight の実際の意味は同じ？",
+      "imageHintJa": "moon と light の要素を1つの場面に統合し、moonlight の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:sidewalk",
+      "headword": "sidewalk",
+      "wordId": "VD-04042",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "side",
+          "kind": "free-base",
+          "wordId": "VD-00811",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "walk",
+          "kind": "free-base",
+          "wordId": "VD-01005",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "side と walk が結びついた複合語 sidewalk。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "side と walk の組み合わせから連想できる意味と、sidewalk の実際の意味は同じ？",
+      "imageHintJa": "side と walk の要素を1つの場面に統合し、sidewalk の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:highway",
+      "headword": "highway",
+      "wordId": "VD-01599",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "high",
+          "kind": "free-base",
+          "wordId": "VD-00445",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "way",
+          "kind": "free-base",
+          "wordId": "VD-01014",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "high と way が結びついた複合語 highway。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "high と way の組み合わせから連想できる意味と、highway の実際の意味は同じ？",
+      "imageHintJa": "high と way の要素を1つの場面に統合し、highway の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:lowland",
+      "headword": "lowland",
+      "wordId": "VD-05677",
+      "cefrHeadword": "B2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "low",
+          "kind": "free-base",
+          "wordId": "VD-01711",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "land",
+          "kind": "free-base",
+          "wordId": "VD-01674",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "low と land が結びついた複合語 lowland。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "low と land の組み合わせから連想できる意味と、lowland の実際の意味は同じ？",
+      "imageHintJa": "low と land の要素を1つの場面に統合し、lowland の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:network",
+      "headword": "network",
+      "wordId": "VD-03570",
+      "cefrHeadword": "B1",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "net",
+          "kind": "free-base",
+          "wordId": "VD-01780",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "work",
+          "kind": "free-base",
+          "wordId": "VD-01044",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "net と work が結びついた複合語 network。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "net と work の組み合わせから連想できる意味と、network の実際の意味は同じ？",
+      "imageHintJa": "net と work の要素を1つの場面に統合し、network の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:website",
+      "headword": "website",
+      "wordId": "VD-02271",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "web",
+          "kind": "free-base",
+          "wordId": "VD-02269",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "site",
+          "kind": "free-base",
+          "wordId": "VD-00819",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "web と site が結びついた複合語 website。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "web と site の組み合わせから連想できる意味と、website の実際の意味は同じ？",
+      "imageHintJa": "web と site の要素を1つの場面に統合し、website の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    },
+    {
+      "id": "wb:modern:online",
+      "headword": "online",
+      "wordId": "VD-01802",
+      "cefrHeadword": "A2",
+      "matchStatus": "complete-master-exact",
+      "analysisType": "compound-learning-candidate",
+      "parts": [
+        {
+          "surface": "on",
+          "kind": "free-base",
+          "wordId": "VD-00649",
+          "meaningJa": "構成語1（マスター語義を参照）"
+        },
+        {
+          "surface": "line",
+          "kind": "free-base",
+          "wordId": "VD-00540",
+          "meaningJa": "構成語2（マスター語義を参照）"
+        }
+      ],
+      "meaningSource": "master-wordId",
+      "explanationJa": "on と line が結びついた複合語 online。二語の組み合わせを覚え、複合語として確立した実際の意味・用法をマスター語彙で確認する。",
+      "learningQuestionJa": "on と line の組み合わせから連想できる意味と、online の実際の意味は同じ？",
+      "imageHintJa": "on と line の要素を1つの場面に統合し、online の意味を示す。文字なし。",
+      "sourceRefs": [],
+      "referenceLookupPending": true,
+      "selectionEvidence": {
+        "method": "explicit-reviewed-allowlist-for-candidate-creation",
+        "masterLookup": "exact-headword",
+        "historicalEvidence": "not-evaluated"
+      },
+      "historicalEtymologyVerified": false,
+      "semanticEditorialReviewRequired": true,
+      "editorialReviewRequired": true,
+      "productionEligible": false,
+      "status": "draft-unreviewed"
+    }
+  ]
+}
