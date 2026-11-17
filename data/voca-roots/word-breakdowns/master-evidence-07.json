@@ -1,0 +1,1926 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-master-evidence",
+  "batchNumber": 7,
+  "sourceBatchCount": 12,
+  "sourceManifest": "data/vocabulary-drafts/manifest.json",
+  "usesOriginalMasterEntries": true,
+  "productionEnabled": false,
+  "entries": {
+    "VD-07780": {
+      "wordId": "VD-07780",
+      "headword": "abhorrent",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0003",
+          "partOfSpeech": "adjective",
+          "meaningJa": "忌まわしい・嫌悪すべき",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0003-e01",
+            "en": "The council condemned the abhorrent treatment of migrant workers.",
+            "ja": "議会は移住労働者に対する忌まわしい扱いを非難した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07781": {
+      "wordId": "VD-07781",
+      "headword": "abhorrently",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0004",
+          "partOfSpeech": "adverb",
+          "meaningJa": "嫌悪を催すほどひどく",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0004-e01",
+            "en": "The landlord behaved abhorrently toward families who could not pay on time.",
+            "ja": "家主は期日までに家賃を払えない家族に対してひどい振る舞いをした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07809": {
+      "wordId": "VD-07809",
+      "headword": "amorphous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0036",
+          "partOfSpeech": "adjective",
+          "meaningJa": "明確な形・構造のない",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0036-e01",
+            "en": "The molten plastic cooled into an amorphous mass.",
+            "ja": "溶けたプラスチックは冷えて不定形の塊になった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07810": {
+      "wordId": "VD-07810",
+      "headword": "amorphously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0037",
+          "partOfSpeech": "adverb",
+          "meaningJa": "不定形に・明確な構造なしに",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0037-e01",
+            "en": "The spilled paint spread amorphously across the canvas.",
+            "ja": "こぼれた絵の具はキャンバス上に不定形に広がった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07814": {
+      "wordId": "VD-07814",
+      "headword": "angular",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0041",
+          "partOfSpeech": "adjective",
+          "meaningJa": "角張った",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0041-e01",
+            "en": "The architect designed an angular building with a sloping roof.",
+            "ja": "建築家は傾斜屋根のある角張った建物を設計した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F13-0042",
+          "partOfSpeech": "adjective",
+          "meaningJa": "角度・回転に関する",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0042-e01",
+            "en": "The sensor measures the angular velocity of the rotating wheel.",
+            "ja": "センサーは回転する車輪の角速度を測定する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07815": {
+      "wordId": "VD-07815",
+      "headword": "angularity",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0043",
+          "partOfSpeech": "noun",
+          "meaningJa": "角張った性質",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0043-e01",
+            "en": "The angularity of the sculpture contrasts with the round fountain.",
+            "ja": "彫刻の角張った形は丸い噴水と対照的だ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07820": {
+      "wordId": "VD-07820",
+      "headword": "anthropological",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0049",
+          "partOfSpeech": "adjective",
+          "meaningJa": "人類学の",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0049-e01",
+            "en": "The team conducted anthropological research in a mountain village.",
+            "ja": "チームは山村で人類学的な研究を行った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07821": {
+      "wordId": "VD-07821",
+      "headword": "anthropologically",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0050",
+          "partOfSpeech": "adverb",
+          "meaningJa": "人類学的に",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0050-e01",
+            "en": "The ritual is anthropologically significant because it marks a change in social status.",
+            "ja": "その儀式は社会的地位の変化を示すため人類学的に重要だ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07829": {
+      "wordId": "VD-07829",
+      "headword": "arcane",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0060",
+          "partOfSpeech": "adjective",
+          "meaningJa": "難解な・ごく一部の人だけが知る",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0060-e01",
+            "en": "The guide translated the arcane insurance rules into ordinary language.",
+            "ja": "ガイドは難解な保険規則を平易な言葉に直した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07830": {
+      "wordId": "VD-07830",
+      "headword": "arcanely",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0061",
+          "partOfSpeech": "adverb",
+          "meaningJa": "難解な形で",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0061-e01",
+            "en": "The contract was so arcanely worded that even experienced managers struggled with it.",
+            "ja": "契約書は非常に難解な文面で、経験豊富な管理職でさえ理解に苦労した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07844": {
+      "wordId": "VD-07844",
+      "headword": "athleticism",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F13-0080",
+          "partOfSpeech": "noun",
+          "meaningJa": "運動能力",
+          "sourceBatch": "batches/original-20261115-c2-finish-13.json",
+          "example": {
+            "id": "VDO-261115-C2-F13-0080-e01",
+            "en": "The dancer's athleticism was evident in every leap.",
+            "ja": "ダンサーの高い運動能力は一つ一つの跳躍に表れていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07869": {
+      "wordId": "VD-07869",
+      "headword": "bereft",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0013",
+          "partOfSpeech": "adjective",
+          "meaningJa": "失っている・欠いている",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0013-e01",
+            "en": "After the fire, the community was bereft of its meeting hall.",
+            "ja": "火災後、地域社会は集会所を失った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07870": {
+      "wordId": "VD-07870",
+      "headword": "bereftly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0014",
+          "partOfSpeech": "adverb",
+          "meaningJa": "喪失感を抱いて（まれ）",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0014-e01",
+            "en": "He looked bereftly at the empty shelf where her books had stood.",
+            "ja": "彼は彼女の本が並んでいた今は空の棚を喪失感に満ちた目で見つめた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07894": {
+      "wordId": "VD-07894",
+      "headword": "calamitous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0046",
+          "partOfSpeech": "adjective",
+          "meaningJa": "悲惨な・災難をもたらす",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0046-e01",
+            "en": "A calamitous software error delayed emergency messages across the region.",
+            "ja": "悲惨な結果を招くソフトウェアの不具合により地域全体で緊急メッセージの配信が遅れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07895": {
+      "wordId": "VD-07895",
+      "headword": "calamitously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0047",
+          "partOfSpeech": "adverb",
+          "meaningJa": "悲惨な結果となる形で",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0047-e01",
+            "en": "The evacuation drill went calamitously wrong when several exits were blocked.",
+            "ja": "複数の出口がふさがれていたため避難訓練はひどい失敗に終わった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07924": {
+      "wordId": "VD-07924",
+      "headword": "colloquial",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0080",
+          "partOfSpeech": "adjective",
+          "meaningJa": "口語的な",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0080-e01",
+            "en": "The editor replaced several colloquial expressions with more formal alternatives.",
+            "ja": "編集者は数個の口語表現をより改まった表現に置き換えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07925": {
+      "wordId": "VD-07925",
+      "headword": "colloquially",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F14-0081",
+          "partOfSpeech": "adverb",
+          "meaningJa": "口語的に・通称で",
+          "sourceBatch": "batches/original-20261115-c2-finish-14.json",
+          "example": {
+            "id": "VDO-261115-C2-F14-0081-e01",
+            "en": "The narrow passage is known colloquially as the mouse hole.",
+            "ja": "その狭い通路は通称「ネズミ穴」と呼ばれている。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08551": {
+      "wordId": "VD-08551",
+      "headword": "surreptitious",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL-0024",
+          "partOfSpeech": "adjective",
+          "meaningJa": "人目を盗んだ、ひそかな",
+          "sourceBatch": "batches/original-20261115-c2-tail-8530-8598.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL-0024-e01",
+            "en": "She took a surreptitious glance at the clock during the speech.",
+            "ja": "彼女は演説中、人目を盗んで時計をちらりと見た。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08552": {
+      "wordId": "VD-08552",
+      "headword": "surreptitiously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL-0025",
+          "partOfSpeech": "adverb",
+          "meaningJa": "こっそりと、人目を盗んで",
+          "sourceBatch": "batches/original-20261115-c2-tail-8530-8598.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL-0025-e01",
+            "en": "The child surreptitiously slipped a birthday card under the door.",
+            "ja": "子どもは誕生日カードをこっそりドアの下に差し入れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08575": {
+      "wordId": "VD-08575",
+      "headword": "timidity",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL-0052",
+          "partOfSpeech": "noun",
+          "meaningJa": "内気さ、臆病さ",
+          "sourceBatch": "batches/original-20261115-c2-tail-8530-8598.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL-0052-e01",
+            "en": "Role-playing helped the shy student overcome her timidity in discussions.",
+            "ja": "ロールプレイは内気な生徒が討論での気後れを克服するのに役立った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08593": {
+      "wordId": "VD-08593",
+      "headword": "undemonstrative",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL-0077",
+          "partOfSpeech": "adjective",
+          "meaningJa": "感情をあまり表に出さない",
+          "sourceBatch": "batches/original-20261115-c2-tail-8530-8598.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL-0077-e01",
+            "en": "Her undemonstrative father showed affection by repairing things for her.",
+            "ja": "感情を表に出さない父は彼女の物を修理することで愛情を示した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08594": {
+      "wordId": "VD-08594",
+      "headword": "undemonstratively",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL-0078",
+          "partOfSpeech": "adverb",
+          "meaningJa": "感情を表に出さずに",
+          "sourceBatch": "batches/original-20261115-c2-tail-8530-8598.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL-0078-e01",
+            "en": "He accepted the praise undemonstratively with a small nod.",
+            "ja": "彼は感情を表に出さず小さくうなずいて称賛を受け入れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07943": {
+      "wordId": "VD-07943",
+      "headword": "confrontational",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0016",
+          "partOfSpeech": "adjective",
+          "meaningJa": "対立的な・けんか腰の",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0016-e01",
+            "en": "The interviewer adopted a confrontational style that made the guest defensive.",
+            "ja": "インタビュアーが対立的な進め方をしたため、ゲストは身構えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07944": {
+      "wordId": "VD-07944",
+      "headword": "confrontationally",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0017",
+          "partOfSpeech": "adverb",
+          "meaningJa": "対立的な態度で",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0017-e01",
+            "en": "The delegate responded confrontationally to a routine procedural question.",
+            "ja": "代表者は通常の手続き上の質問に対立的な態度で答えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07949": {
+      "wordId": "VD-07949",
+      "headword": "consign",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0024",
+          "partOfSpeech": "verb",
+          "meaningJa": "発送する・委託する",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0024-e01",
+            "en": "The gallery consigned three paintings to an auction house.",
+            "ja": "画廊は絵画三点を競売会社に委託した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F15-0025",
+          "partOfSpeech": "verb",
+          "meaningJa": "ある状態に追いやる・委ねる",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0025-e01",
+            "en": "The invention consigned the old filing method to history.",
+            "ja": "その発明によって古い書類整理方法は過去のものとなった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07950": {
+      "wordId": "VD-07950",
+      "headword": "consignment",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0026",
+          "partOfSpeech": "noun",
+          "meaningJa": "委託品・発送された荷物の一口",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0026-e01",
+            "en": "A consignment of medical supplies arrived at the island clinic.",
+            "ja": "医療物資の一便が島の診療所に到着した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07968": {
+      "wordId": "VD-07968",
+      "headword": "counterproductive",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0050",
+          "partOfSpeech": "adjective",
+          "meaningJa": "逆効果の",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0050-e01",
+            "en": "Punishing every small mistake can be counterproductive in language learning.",
+            "ja": "語学学習では小さな間違いをその都度罰すると逆効果になり得る。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07969": {
+      "wordId": "VD-07969",
+      "headword": "counterproductively",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0051",
+          "partOfSpeech": "adverb",
+          "meaningJa": "逆効果になる形で",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0051-e01",
+            "en": "The manager responded counterproductively by adding paperwork to an already slow process.",
+            "ja": "管理職はすでに時間のかかる手続きに書類を増やすことで逆効果となる対応をした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07977": {
+      "wordId": "VD-07977",
+      "headword": "dampen",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0061",
+          "partOfSpeech": "verb",
+          "meaningJa": "少し湿らせる",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0061-e01",
+            "en": "Dampen a clean cloth before wiping dust from the leaves.",
+            "ja": "葉のほこりを拭く前に清潔な布を少し湿らせなさい。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F15-0062",
+          "partOfSpeech": "verb",
+          "meaningJa": "弱める・抑える",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0062-e01",
+            "en": "The cancellation did little to dampen the team's enthusiasm.",
+            "ja": "中止になってもチームの意欲はほとんど衰えなかった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07978": {
+      "wordId": "VD-07978",
+      "headword": "deaden",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0063",
+          "partOfSpeech": "verb",
+          "meaningJa": "感覚・音などを鈍らせる",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0063-e01",
+            "en": "Thick curtains helped deaden the sound of traffic outside.",
+            "ja": "厚いカーテンは外の交通騒音を弱めるのに役立った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07981": {
+      "wordId": "VD-07981",
+      "headword": "deficient",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0066",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不足している・欠けている",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0066-e01",
+            "en": "The soil was deficient in nitrogen, limiting plant growth.",
+            "ja": "土壌は窒素が不足していたため植物の成長が制限された。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-07982": {
+      "wordId": "VD-07982",
+      "headword": "deficiently",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0067",
+          "partOfSpeech": "adverb",
+          "meaningJa": "不十分に（まれ）",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0067-e01",
+            "en": "The remote station was deficiently equipped for the winter conditions.",
+            "ja": "遠隔地の観測基地は冬の環境に対する装備が不十分だった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08001": {
+      "wordId": "VD-08001",
+      "headword": "deviant",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0088",
+          "partOfSpeech": "adjective",
+          "meaningJa": "社会的・統計的な規範から逸脱した",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0088-e01",
+            "en": "The sociologist noted that what is considered deviant behavior varies across societies.",
+            "ja": "社会学者は何が逸脱行動とみなされるかは社会によって異なると指摘した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08002": {
+      "wordId": "VD-08002",
+      "headword": "deviantly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F15-0089",
+          "partOfSpeech": "adverb",
+          "meaningJa": "規範から外れる形で（まれ）",
+          "sourceBatch": "batches/original-20261115-c2-finish-15.json",
+          "example": {
+            "id": "VDO-261115-C2-F15-0089-e01",
+            "en": "The paper examined why some participants behaved deviantly under particular group pressures.",
+            "ja": "論文は特定の集団圧力の下で一部の参加者が規範から外れた行動を取った理由を検討した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08455": {
+      "wordId": "VD-08455",
+      "headword": "remorseful",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0008",
+          "partOfSpeech": "adjective",
+          "meaningJa": "深く後悔している、悔いている",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0008-e01",
+            "en": "The remorseful student apologized for damaging the borrowed tablet.",
+            "ja": "生徒は深く反省し、借りたタブレットを壊したことを謝った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08463": {
+      "wordId": "VD-08463",
+      "headword": "resounding",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0019",
+          "partOfSpeech": "adjective",
+          "meaningJa": "鳴り響くような、圧倒的な",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0019-e01",
+            "en": "The community concert was a resounding success.",
+            "ja": "地域のコンサートは大成功を収めた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08464": {
+      "wordId": "VD-08464",
+      "headword": "resoundingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0020",
+          "partOfSpeech": "adverb",
+          "meaningJa": "圧倒的に、決定的に",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0020-e01",
+            "en": "The voters resoundingly rejected the proposed parking fees.",
+            "ja": "有権者は提案された駐車料金を圧倒的多数で拒否した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08468": {
+      "wordId": "VD-08468",
+      "headword": "retrospective",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0025",
+          "partOfSpeech": "adjective",
+          "meaningJa": "回顧的な、過去を振り返る",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0025-e01",
+            "en": "The gallery organized a retrospective exhibition of her paintings.",
+            "ja": "画廊は彼女の絵画の回顧展を開催した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0026",
+          "partOfSpeech": "noun",
+          "meaningJa": "回顧展、回顧上映",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0026-e01",
+            "en": "The cinema presented a retrospective of the director's films.",
+            "ja": "映画館はその監督の作品の回顧上映を行った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08476": {
+      "wordId": "VD-08476",
+      "headword": "rhetorical",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0037",
+          "partOfSpeech": "adjective",
+          "meaningJa": "修辞的な、説得を目的とする",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0037-e01",
+            "en": "The lecturer identified a rhetorical device in the famous speech.",
+            "ja": "講師は有名な演説の修辞技法を指摘した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0038",
+          "partOfSpeech": "adjective",
+          "meaningJa": "答えを求めない（質問）",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0038-e01",
+            "en": "The teacher asked a rhetorical question to introduce the topic.",
+            "ja": "教師はテーマを導入するため答えを求めない質問をした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08477": {
+      "wordId": "VD-08477",
+      "headword": "rhetorically",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0039",
+          "partOfSpeech": "adverb",
+          "meaningJa": "修辞的に、答えを求めずに",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0039-e01",
+            "en": "The speaker asked rhetorically whether anyone could live without water.",
+            "ja": "話し手は水なしで生きられる人がいるだろうかと、答えを求めずに問いかけた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08492": {
+      "wordId": "VD-08492",
+      "headword": "secular",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0060",
+          "partOfSpeech": "adjective",
+          "meaningJa": "世俗的な、宗教から独立した",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0060-e01",
+            "en": "The library hosts both religious and secular cultural events.",
+            "ja": "図書館は宗教的な行事と世俗的な文化行事の両方を開催する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08493": {
+      "wordId": "VD-08493",
+      "headword": "secularly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL2-0061",
+          "partOfSpeech": "adverb",
+          "meaningJa": "世俗的に、宗教と切り離して",
+          "sourceBatch": "batches/original-20261115-c2-tail-8450-8529.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL2-0061-e01",
+            "en": "The center is secularly governed while welcoming people of all faiths.",
+            "ja": "施設は宗教と独立して運営され、あらゆる信仰の人を歓迎している。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08304": {
+      "wordId": "VD-08304",
+      "headword": "modernism",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0005",
+          "partOfSpeech": "noun",
+          "meaningJa": "モダニズム・近代主義",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0005-e01",
+            "en": "The course introduces literary modernism through experiments with narrative structure.",
+            "ja": "講座では物語構成の実験的な手法を通して文学のモダニズムを紹介する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08313": {
+      "wordId": "VD-08313",
+      "headword": "mutinous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0015",
+          "partOfSpeech": "adjective",
+          "meaningJa": "反抗的な・反乱を起こしそうな",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0015-e01",
+            "en": "The captain tried to address the concerns of the mutinous crew.",
+            "ja": "船長は反抗的な乗組員の懸念に対処しようとした。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08314": {
+      "wordId": "VD-08314",
+      "headword": "mutinously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0016",
+          "partOfSpeech": "adverb",
+          "meaningJa": "反抗的に",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0016-e01",
+            "en": "The crew muttered mutinously when ordered to work another shift.",
+            "ja": "もう一度勤務するよう命じられると、乗組員は反抗的につぶやいた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08340": {
+      "wordId": "VD-08340",
+      "headword": "overlay",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0047",
+          "partOfSpeech": "verb",
+          "meaningJa": "上に重ねる・覆う",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0047-e01",
+            "en": "The students overlaid a historical map on a modern street plan.",
+            "ja": "生徒たちは現代の街路図に歴史地図を重ねた。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F16-0048",
+          "partOfSpeech": "noun",
+          "meaningJa": "重ね合わせる層・表示",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0048-e01",
+            "en": "A transparent overlay showed the proposed cycling routes.",
+            "ja": "透明な重ね図に計画中の自転車ルートが示されていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08341": {
+      "wordId": "VD-08341",
+      "headword": "painstaking",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0049",
+          "partOfSpeech": "adjective",
+          "meaningJa": "骨の折れるほど入念な",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0049-e01",
+            "en": "Painstaking restoration revealed the painting's original colors.",
+            "ja": "入念な修復によって絵画の元の色が明らかになった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08342": {
+      "wordId": "VD-08342",
+      "headword": "painstakingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F16-0050",
+          "partOfSpeech": "adverb",
+          "meaningJa": "丹念に・細心の注意を払って",
+          "sourceBatch": "batches/original-20261115-c2-finish-16.json",
+          "example": {
+            "id": "VDO-261115-C2-F16-0050-e01",
+            "en": "The archivist painstakingly numbered every fragment of the damaged letter.",
+            "ja": "資料館の職員は損傷した手紙の破片すべてに丹念に番号を付けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08009": {
+      "wordId": "VD-08009",
+      "headword": "disparaging",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0042",
+          "partOfSpeech": "adjective",
+          "meaningJa": "けなすような、見下した",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0042-e01",
+            "en": "The committee rejected the proposal without making disparaging remarks about its author.",
+            "ja": "委員会は作成者をけなす発言をせずに提案を退けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08010": {
+      "wordId": "VD-08010",
+      "headword": "disparagingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0043",
+          "partOfSpeech": "adverb",
+          "meaningJa": "けなすように、見下して",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0043-e01",
+            "en": "The speaker referred disparagingly to workers without university degrees.",
+            "ja": "講演者は大学の学位を持たない労働者を見下すように述べた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08021": {
+      "wordId": "VD-08021",
+      "headword": "domesticity",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0056",
+          "partOfSpeech": "noun",
+          "meaningJa": "家庭生活、家庭的な暮らし",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0056-e01",
+            "en": "The novel contrasts the excitement of travel with quiet domesticity.",
+            "ja": "その小説は旅行の興奮と静かな家庭生活を対比させる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08026": {
+      "wordId": "VD-08026",
+      "headword": "dwarfism",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0064",
+          "partOfSpeech": "noun",
+          "meaningJa": "低身長症",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0064-e01",
+            "en": "The documentary follows an athlete with dwarfism preparing for competition.",
+            "ja": "ドキュメンタリーは競技に向け準備する低身長症の選手を追う。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08039": {
+      "wordId": "VD-08039",
+      "headword": "elasticity",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0084",
+          "partOfSpeech": "noun",
+          "meaningJa": "弾力性、伸縮性",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0084-e01",
+            "en": "Heat gradually reduced the elasticity of the rubber band.",
+            "ja": "熱によって輪ゴムの弾力性は徐々に低下した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F03-0085",
+          "partOfSpeech": "noun",
+          "meaningJa": "弾力性（経済学）、変化に対する反応の度合い",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0085-e01",
+            "en": "The report examined the price elasticity of demand for train tickets.",
+            "ja": "報告書は鉄道券の需要の価格弾力性を調べた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08059": {
+      "wordId": "VD-08059",
+      "headword": "enduringly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0109",
+          "partOfSpeech": "adverb",
+          "meaningJa": "長く続く形で、永続的に",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0109-e01",
+            "en": "The story remains enduringly popular with young readers.",
+            "ja": "その物語は若い読者から長く支持され続けている。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08078": {
+      "wordId": "VD-08078",
+      "headword": "exalted",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0133",
+          "partOfSpeech": "adjective",
+          "meaningJa": "高い地位にある、尊い",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0133-e01",
+            "en": "The official's exalted status did not exempt her from the rules.",
+            "ja": "その役人の高い地位も規則の適用を免除するものではなかった。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-F03-0134",
+          "partOfSpeech": "adjective",
+          "meaningJa": "高揚した、崇高な",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0134-e01",
+            "en": "The choir's music created an exalted mood in the hall.",
+            "ja": "合唱団の音楽はホールに高揚した雰囲気を生み出した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08079": {
+      "wordId": "VD-08079",
+      "headword": "exaltedly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F03-0135",
+          "partOfSpeech": "adverb",
+          "meaningJa": "高揚して、気高く（まれ）",
+          "sourceBatch": "batches/original-20261115-c2-reconciled-8006-8079.json",
+          "example": {
+            "id": "VDO-261115-C2-F03-0135-e01",
+            "en": "The orator spoke exaltedly of the possibilities of peace.",
+            "ja": "演説者は平和の可能性について高揚した口調で語った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08375": {
+      "wordId": "VD-08375",
+      "headword": "ponderous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0008",
+          "partOfSpeech": "adjective",
+          "meaningJa": "重くて動きが鈍い",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0008-e01",
+            "en": "The ponderous stone door moved only a few centimeters at a time.",
+            "ja": "重々しい石の扉は一度に数センチずつしか動かなかった。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0009",
+          "partOfSpeech": "adjective",
+          "meaningJa": "堅苦しく退屈な",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0009-e01",
+            "en": "The editor replaced the ponderous introduction with a concise anecdote.",
+            "ja": "編集者は堅苦しく退屈な序論を簡潔な逸話に置き換えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08376": {
+      "wordId": "VD-08376",
+      "headword": "ponderously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0010",
+          "partOfSpeech": "adverb",
+          "meaningJa": "重々しく、鈍重に",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0010-e01",
+            "en": "The old elevator rose ponderously to the third floor.",
+            "ja": "古いエレベーターは重々しく三階へ上がった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08384": {
+      "wordId": "VD-08384",
+      "headword": "precocious",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0017",
+          "partOfSpeech": "adjective",
+          "meaningJa": "早熟な、年齢の割に能力が発達した",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0017-e01",
+            "en": "The precocious nine-year-old composed music for a school play.",
+            "ja": "早熟な9歳の子は学校劇の音楽を作曲した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08385": {
+      "wordId": "VD-08385",
+      "headword": "precociously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0018",
+          "partOfSpeech": "adverb",
+          "meaningJa": "早熟に、年齢の割に早く発達して",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0018-e01",
+            "en": "The precociously talented violinist performed with an adult orchestra.",
+            "ja": "早熟な才能を持つバイオリン奏者は大人のオーケストラと共演した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08391": {
+      "wordId": "VD-08391",
+      "headword": "presentational",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0024",
+          "partOfSpeech": "adjective",
+          "meaningJa": "提示・発表の仕方に関する",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0024-e01",
+            "en": "The workshop helped teachers improve their presentational skills.",
+            "ja": "研修会は教師が発表技術を向上させるのに役立った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08392": {
+      "wordId": "VD-08392",
+      "headword": "preservationist",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0025",
+          "partOfSpeech": "noun",
+          "meaningJa": "保存・保護活動家",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0025-e01",
+            "en": "The preservationist campaigned to save the town's oldest cinema.",
+            "ja": "保存活動家は町で最も古い映画館を守る運動を展開した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08423": {
+      "wordId": "VD-08423",
+      "headword": "punitive",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0062",
+          "partOfSpeech": "adjective",
+          "meaningJa": "懲罰的な、罰を与えるための",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0062-e01",
+            "en": "The school replaced punitive measures with restorative conversations.",
+            "ja": "学校は懲罰的措置を関係修復を目的とした対話に置き換えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08424": {
+      "wordId": "VD-08424",
+      "headword": "punitively",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0063",
+          "partOfSpeech": "adverb",
+          "meaningJa": "懲罰的に、処罰を目的として",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0063-e01",
+            "en": "The manager chose to respond constructively rather than punitively to the mistake.",
+            "ja": "管理職はその誤りに対し懲罰的にではなく建設的に対応することを選んだ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08431": {
+      "wordId": "VD-08431",
+      "headword": "rapturous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0070",
+          "partOfSpeech": "adjective",
+          "meaningJa": "歓喜に満ちた、熱狂的な",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0070-e01",
+            "en": "The young singer received rapturous applause after her debut.",
+            "ja": "若い歌手はデビュー演奏の後、熱狂的な拍手を受けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08432": {
+      "wordId": "VD-08432",
+      "headword": "rapturously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0071",
+          "partOfSpeech": "adverb",
+          "meaningJa": "歓喜して、熱狂的に",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0071-e01",
+            "en": "The audience applauded rapturously after the unexpected encore.",
+            "ja": "予想外のアンコール後、聴衆は熱狂的に拍手した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08447": {
+      "wordId": "VD-08447",
+      "headword": "redundantly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-TAIL3-0090",
+          "partOfSpeech": "adverb",
+          "meaningJa": "重複して、冗長に",
+          "sourceBatch": "batches/original-20261115-c2-tail-8369-8449.json",
+          "example": {
+            "id": "VDO-261115-C2-TAIL3-0090-e01",
+            "en": "The instructions were redundantly phrased in several sections.",
+            "ja": "説明書の数か所には同じ内容が冗長に書かれていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08250": {
+      "wordId": "VD-08250",
+      "headword": "luridly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0001",
+          "partOfSpeech": "adverb",
+          "meaningJa": "けばけばしく、センセーショナルに",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0001-e01",
+            "en": "The article luridly described the scandal without checking the facts.",
+            "ja": "その記事は事実確認もせずに醜聞をセンセーショナルに描いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08251": {
+      "wordId": "VD-08251",
+      "headword": "lyrical",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0002",
+          "partOfSpeech": "adjective",
+          "meaningJa": "叙情的な、歌うような",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0002-e01",
+            "en": "Her lyrical prose captures the stillness of the rice fields at dawn.",
+            "ja": "彼女の叙情的な散文は夜明けの田んぼの静けさを描き出す。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08252": {
+      "wordId": "VD-08252",
+      "headword": "lyrically",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0003",
+          "partOfSpeech": "adverb",
+          "meaningJa": "叙情的に、歌うように",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0003-e01",
+            "en": "The author writes lyrically about her childhood by the sea.",
+            "ja": "作家は海辺で過ごした子ども時代を叙情的に描く。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08253": {
+      "wordId": "VD-08253",
+      "headword": "lyricist",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0004",
+          "partOfSpeech": "noun",
+          "meaningJa": "作詞家",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0004-e01",
+            "en": "The composer asked a young lyricist to write words for the musical.",
+            "ja": "作曲家は若い作詞家にミュージカルの歌詞を依頼した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08275": {
+      "wordId": "VD-08275",
+      "headword": "mediate",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0027",
+          "partOfSpeech": "verb",
+          "meaningJa": "仲介する、調停する",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0027-e01",
+            "en": "A neutral teacher mediated the dispute between the two clubs.",
+            "ja": "中立の教師が二つの部活動間の対立を調停した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-C2-MID1-0028",
+          "partOfSpeech": "verb",
+          "meaningJa": "媒介する、影響の仲立ちをする",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0028-e01",
+            "en": "Certain proteins mediate communication between cells.",
+            "ja": "特定のタンパク質は細胞間の情報伝達を媒介する。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08279": {
+      "wordId": "VD-08279",
+      "headword": "melodious",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0033",
+          "partOfSpeech": "adjective",
+          "meaningJa": "耳に心地よい、旋律の美しい",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0033-e01",
+            "en": "A melodious birdsong woke us shortly before dawn.",
+            "ja": "夜明けの少し前に美しい鳥のさえずりで目が覚めた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08280": {
+      "wordId": "VD-08280",
+      "headword": "melodiously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0034",
+          "partOfSpeech": "adverb",
+          "meaningJa": "美しい旋律で、心地よく",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0034-e01",
+            "en": "The children sang melodiously at the winter concert.",
+            "ja": "子どもたちは冬の演奏会で美しい旋律を歌った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08282": {
+      "wordId": "VD-08282",
+      "headword": "menacing",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0037",
+          "partOfSpeech": "adjective",
+          "meaningJa": "威嚇するような、不吉な",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0037-e01",
+            "en": "Menacing clouds gathered above the football ground.",
+            "ja": "不吉な雲がサッカー場の上に集まった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08283": {
+      "wordId": "VD-08283",
+      "headword": "menacingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-MID1-0038",
+          "partOfSpeech": "adverb",
+          "meaningJa": "威嚇するように、不吉に",
+          "sourceBatch": "batches/original-20261115-c2-mid-8250-8299.json",
+          "example": {
+            "id": "VDO-261115-C2-MID1-0038-e01",
+            "en": "The dog growled menacingly when a stranger approached the gate.",
+            "ja": "見知らぬ人が門に近づくと犬は威嚇するようにうなった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08201": {
+      "wordId": "VD-08201",
+      "headword": "infernal",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8201-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "ひどく不快な・うんざりする",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8201-1-e01",
+            "en": "The infernal noise from the broken fan kept us awake.",
+            "ja": "壊れた扇風機のひどい騒音で眠れなかった。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-T8200-8201-2",
+          "partOfSpeech": "adjective",
+          "meaningJa": "地獄の・地獄のような",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8201-2-e01",
+            "en": "The illustrator used infernal imagery to depict the mythical underworld.",
+            "ja": "イラストレーターは地獄を思わせるイメージで神話の冥界を描いた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08202": {
+      "wordId": "VD-08202",
+      "headword": "infernally",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8202-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "ひどく・耐えがたいほど",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8202-1-e01",
+            "en": "The attic became infernally hot by midday.",
+            "ja": "屋根裏は正午までに耐えがたいほど暑くなった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08208": {
+      "wordId": "VD-08208",
+      "headword": "ingratiating",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8208-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "人の気に入られようとする",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8208-1-e01",
+            "en": "The salesman greeted the customer with an ingratiating smile.",
+            "ja": "販売員は気に入られようとするような笑顔で客を迎えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08209": {
+      "wordId": "VD-08209",
+      "headword": "ingratiatingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8209-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "機嫌を取るように",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8209-1-e01",
+            "en": "The candidate smiled ingratiatingly at the influential guests.",
+            "ja": "候補者は影響力のある客たちに取り入るような笑顔を向けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08221": {
+      "wordId": "VD-08221",
+      "headword": "interrogative",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8221-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "疑問の・疑問文の",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8221-1-e01",
+            "en": "The teacher asked the class to change the sentence into its interrogative form.",
+            "ja": "教師はクラスにその文を疑問文に変えるよう求めた。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-T8200-8221-2",
+          "partOfSpeech": "noun",
+          "meaningJa": "疑問詞・疑問表現",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8221-2-e01",
+            "en": "The linguist compared interrogatives in three related languages.",
+            "ja": "言語学者は関連する三つの言語の疑問表現を比較した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08222": {
+      "wordId": "VD-08222",
+      "headword": "interrogatively",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8222-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "問いかけるように",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8222-1-e01",
+            "en": "She looked interrogatively at her colleague when the figures failed to match.",
+            "ja": "数値が一致しないとき、彼女は同僚に問いかけるような視線を向けた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08249": {
+      "wordId": "VD-08249",
+      "headword": "lurid",
+      "senses": [
+        {
+          "senseId": "VDO-261115-T8200-8249-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "けばけばしい・どぎつい",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8249-1-e01",
+            "en": "The shop window was decorated in lurid shades of orange and purple.",
+            "ja": "店のショーウィンドーはどぎついオレンジと紫で飾られていた。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-T8200-8249-2",
+          "partOfSpeech": "adjective",
+          "meaningJa": "扇情的な・ぞっとするような",
+          "sourceBatch": "batches/original-20261115-c2-tail-8200-8249.json",
+          "example": {
+            "id": "VDO-261115-T8200-8249-2-e01",
+            "en": "The newspaper published a lurid account of the scandal without verifying the details.",
+            "ja": "新聞は詳細を確認せずにスキャンダルの扇情的な記事を掲載した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08157": {
+      "wordId": "VD-08157",
+      "headword": "hysterical",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8157-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "感情を抑えられない・取り乱した",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8157-1-e01",
+            "en": "The witness became hysterical after hearing the unexpected announcement.",
+            "ja": "証人は思いがけない発表を聞いて取り乱した。",
+            "context": "basic"
+          }
+        },
+        {
+          "senseId": "VDO-261115-M8141-8157-2",
+          "partOfSpeech": "adjective",
+          "meaningJa": "非常におかしい・爆笑ものの",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8157-2-e01",
+            "en": "The audience loved the hysterical scene involving the lost suitcase.",
+            "ja": "観客はなくなったスーツケースをめぐる爆笑ものの場面を気に入った。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08158": {
+      "wordId": "VD-08158",
+      "headword": "hysterically",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8158-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "取り乱して・抑えがたい感情で",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8158-1-e01",
+            "en": "He was crying hysterically when the family finally found him.",
+            "ja": "家族がようやく彼を見つけたとき彼は激しく泣いていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08163": {
+      "wordId": "VD-08163",
+      "headword": "ignominious",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8163-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不名誉な・屈辱的な",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8163-1-e01",
+            "en": "The team's ignominious defeat prompted a complete review of its strategy.",
+            "ja": "チームの屈辱的な敗北をきっかけに戦略の全面的な見直しが行われた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08164": {
+      "wordId": "VD-08164",
+      "headword": "ignominiously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8164-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "不名誉にも・屈辱的に",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8164-1-e01",
+            "en": "The expedition ended ignominiously when its leader was exposed as a fraud.",
+            "ja": "隊長の不正が発覚すると探検は不名誉な形で終わった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08174": {
+      "wordId": "VD-08174",
+      "headword": "inartistic",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8174-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "芸術的でない・美的配慮に欠ける",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8174-1-e01",
+            "en": "The critic found the exhibition's layout functional but inartistic.",
+            "ja": "批評家は展示の配置を実用的だが芸術性に欠けると評価した。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08175": {
+      "wordId": "VD-08175",
+      "headword": "inchoate",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8175-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "未形成の・発展の初期段階にある",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8175-1-e01",
+            "en": "The students' inchoate idea gradually became a workable research proposal.",
+            "ja": "生徒たちのまだ形にならない考えが徐々に実行可能な研究計画になった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08176": {
+      "wordId": "VD-08176",
+      "headword": "inchoately",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8176-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "未形成の状態で・漠然と",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8176-1-e01",
+            "en": "The ambitions of the organization were only inchoately expressed in its first statement.",
+            "ja": "組織の志は最初の声明ではまだ漠然としか表明されていなかった。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08180": {
+      "wordId": "VD-08180",
+      "headword": "incongruous",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8180-1",
+          "partOfSpeech": "adjective",
+          "meaningJa": "不調和な・場違いな",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8180-1-e01",
+            "en": "The large neon sign seemed incongruous beside the old temple.",
+            "ja": "大きなネオン看板は古い寺のそばでは場違いに見えた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08181": {
+      "wordId": "VD-08181",
+      "headword": "incongruously",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8181-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "場違いに・不調和に",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8181-1-e01",
+            "en": "A brightly painted telephone booth stood incongruously in the forest clearing.",
+            "ja": "鮮やかに塗られた電話ボックスが森の空き地に場違いに立っていた。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08194": {
+      "wordId": "VD-08194",
+      "headword": "indulgently",
+      "senses": [
+        {
+          "senseId": "VDO-261115-M8141-8194-1",
+          "partOfSpeech": "adverb",
+          "meaningJa": "甘やかすように・寛容に",
+          "sourceBatch": "batches/original-20261115-c2-mid-8141-8199.json",
+          "example": {
+            "id": "VDO-261115-M8141-8194-1-e01",
+            "en": "The grandfather smiled indulgently as the child explained her imaginary invention.",
+            "ja": "祖父は子どもが空想の発明品を説明すると優しく大目に見るようにほほ笑んだ。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08096": {
+      "wordId": "VD-08096",
+      "headword": "figuratively",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F04-0022",
+          "partOfSpeech": "adverb",
+          "meaningJa": "比喩的に",
+          "sourceBatch": "batches/original-20261115-final-reconciled-01.json",
+          "example": {
+            "id": "VDO-261115-C2-F04-0022-e01",
+            "en": "The phrase open a door is often used figuratively to describe creating an opportunity.",
+            "ja": "open a doorは機会を作るという意味で比喩的によく使われる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08123": {
+      "wordId": "VD-08123",
+      "headword": "gravitational",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F04-0055",
+          "partOfSpeech": "adjective",
+          "meaningJa": "重力の",
+          "sourceBatch": "batches/original-20261115-final-reconciled-01.json",
+          "example": {
+            "id": "VDO-261115-C2-F04-0055-e01",
+            "en": "The planets remain in orbit because of gravitational attraction.",
+            "ja": "惑星は重力による引力のため軌道にとどまる。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08124": {
+      "wordId": "VD-08124",
+      "headword": "gravitationally",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F04-0056",
+          "partOfSpeech": "adverb",
+          "meaningJa": "重力によって、重力的に",
+          "sourceBatch": "batches/original-20261115-final-reconciled-01.json",
+          "example": {
+            "id": "VDO-261115-C2-F04-0056-e01",
+            "en": "The two stars are gravitationally bound to each other.",
+            "ja": "2つの恒星は重力によって互いに束縛されている。",
+            "context": "basic"
+          }
+        }
+      ]
+    },
+    "VD-08134": {
+      "wordId": "VD-08134",
+      "headword": "hauntingly",
+      "senses": [
+        {
+          "senseId": "VDO-261115-C2-F04-0067",
+          "partOfSpeech": "adverb",
+          "meaningJa": "心に残るほどに、忘れがたいほどに",
+          "sourceBatch": "batches/original-20261115-final-reconciled-01.json",
+          "example": {
+            "id": "VDO-261115-C2-F04-0067-e01",
+            "en": "A hauntingly beautiful melody played over the film's closing credits.",
+            "ja": "映画のエンドクレジットに忘れがたいほど美しい旋律が流れた。",
+            "context": "basic"
+          }
+        }
+      ]
+    }
+  }
+}
