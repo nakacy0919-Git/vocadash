@@ -112,3 +112,7 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 - Candidate master-headword coverage: **2,195 / 8,653 (25.4%)**; records total **4,586** including older out-of-master supplemental records. Not all master headwords are decomposable or suitable for Word Breakdown.
 - No UI integration, main-branch merge, or live deploy; `productionEligible=false` and `historicalEtymologyVerified=false` for all new entries. Original source vocabulary itself remains draft/unreviewed.
 - Validate with `node tools/validate-voca-roots-bulk-014.mjs` and the existing word-breakdown and master-first validators before review.
+
+### Editorial review queue for batch 014
+- `bulk-editorial-review-014.json` lists **all 429 new entries** by follow-up priority: **75 high**, **192 medium**, **162 low**. These are workflow priorities only, **not** linguistic approval or a CEFR confidence score.
+- The queue flags 62 lexicalized-meaning cautions, 108 component-polysemy review cases, 95 phrase-vs-morpheme distinctions, 43 adverb-spelling cases, and 2 acronym capitalization comparisons. Multiple flags can occur on one entry.
