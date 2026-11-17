@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0",
+  "createdOn": "2026-11-18",
+  "status": "draft-anti-pattern-reference",
+  "productionEnabled": false,
+  "reason": "False or misleading purely string-based word part parsing; remain excluded from batch 013 and automated suggestions",
+  "examples": [
+    {
+      "headword": "flower",
+      "base": "flow",
+      "apparentAffix": "er",
+      "reasonJa": "花は flow + -er という現代派生ではない"
+    },
+    {
+      "headword": "witness",
+      "base": "wit",
+      "apparentAffix": "ness",
+      "reasonJa": "witness を wit + -ness として教えるのは不適切"
+    },
+    {
+      "headword": "unless",
+      "base": "less",
+      "apparentAffix": "un",
+      "reasonJa": "否定接頭辞 un- と less の現代派生ではない"
+    },
+    {
+      "headword": "finish",
+      "base": "fine",
+      "apparentAffix": "ish",
+      "reasonJa": "finish は fine + -ish による派生ではない"
+    },
+    {
+      "headword": "subsidize",
+      "base": "subside",
+      "apparentAffix": "ize",
+      "reasonJa": "subsidize は subsidy 系統で subside + -ize ではない"
+    },
+    {
+      "headword": "notable",
+      "base": "not",
+      "apparentAffix": "able",
+      "reasonJa": "notable の語基は否定語 not ではない"
+    },
+    {
+      "headword": "incurable",
+      "base": "incur",
+      "apparentAffix": "able",
+      "reasonJa": "incurable は incur ではなく cure と関連する"
+    },
+    {
+      "headword": "mansion",
+      "base": "man",
+      "apparentAffix": "sion",
+      "reasonJa": "mansion の語基は man ではない"
+    },
+    {
+      "headword": "retire",
+      "base": "tire",
+      "apparentAffix": "re",
+      "reasonJa": "retire の tire は疲れるを表す現代動詞ではない"
+    },
+    {
+      "headword": "remember",
+      "base": "member",
+      "apparentAffix": "re",
+      "reasonJa": "remember は member + re- の現代派生ではない"
+    },
+    {
+      "headword": "repair",
+      "base": "pair",
+      "apparentAffix": "re",
+      "reasonJa": "repair は pair + re- の現代派生ではない"
+    },
+    {
+      "headword": "display",
+      "base": "play",
+      "apparentAffix": "dis",
+      "reasonJa": "display は play に dis- を付けた語ではない"
+    },
+    {
+      "headword": "missing",
+      "base": "sing",
+      "apparentAffix": "mis",
+      "reasonJa": "missing は mis- + sing ではない"
+    },
+    {
+      "headword": "pretend",
+      "base": "tend",
+      "apparentAffix": "pre",
+      "reasonJa": "pretend は現代語 tend + pre- の単純合成ではない"
+    },
+    {
+      "headword": "subside",
+      "base": "side",
+      "apparentAffix": "sub",
+      "reasonJa": "subside を side + sub- と解釈しない"
+    },
+    {
+      "headword": "reverb",
+      "base": "verb",
+      "apparentAffix": "re",
+      "reasonJa": "reverb は言語学の verb に re- を付けた語ではない"
+    },
+    {
+      "headword": "early",
+      "base": "ear",
+      "apparentAffix": "ly",
+      "reasonJa": "early の ear は耳ではない"
+    },
+    {
+      "headword": "number",
+      "base": "numb",
+      "apparentAffix": "er",
+      "reasonJa": "number は numb + -er ではない"
+    },
+    {
+      "headword": "commodity",
+      "base": "commode",
+      "apparentAffix": "ity",
+      "reasonJa": "commodity は commode + -ity という現代派生ではない"
+    },
+    {
+      "headword": "liver",
+      "base": "live",
+      "apparentAffix": "er",
+      "reasonJa": "臓器の liver は live + -er の現代派生ではない"
+    },
+    {
+      "headword": "organism",
+      "base": "organ",
+      "apparentAffix": "ism",
+      "reasonJa": "organism は organ + -ism の直訳では意味が分からない"
+    },
+    {
+      "headword": "career",
+      "base": "care",
+      "apparentAffix": "er",
+      "reasonJa": "career と care の綴りによる単純派生は誤り"
+    },
+    {
+      "headword": "legal",
+      "base": "leg",
+      "apparentAffix": "al",
+      "reasonJa": "legal は leg（脚）+ -al ではない"
+    },
+    {
+      "headword": "polish",
+      "base": "pole",
+      "apparentAffix": "ish",
+      "reasonJa": "polish は pole + -ish の現代派生ではない"
+    },
+    {
+      "headword": "portable",
+      "base": "port",
+      "apparentAffix": "able",
+      "reasonJa": "portable の port は港ではなくラテン語の『運ぶ』に関係"
+    },
+    {
+      "headword": "university",
+      "base": "universe",
+      "apparentAffix": "ity",
+      "reasonJa": "university は universe + -ity という単純派生ではない"
+    }
+  ]
+}
