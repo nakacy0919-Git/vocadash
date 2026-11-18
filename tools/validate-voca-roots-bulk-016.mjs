@@ -14,7 +14,7 @@ assert.equal(new Set([...old,...fresh].map(x=>x.headword)).size,5062);
 assert.equal(manifest.counts.records,5065);
 assert.equal(manifest.counts.fullMasterMatchedDistinctHeadwords,2674);
 assert.equal(new Set([...old,...fresh].filter(x=>x.wordId).map(x=>x.headword)).size,2674);
-const holds=new Set(originalMaster.editorialHoldWordIds||[]),sources=new Set(originalMaster.batchFiles),allEvidence={};let totalSenses=0;
+const holds=new Set(originalMaster.editorialHoldWordIds||[]),sources=new Set(originalMaster.batchFiles),allEvidence={},sourceCache=new Map();let totalSenses=0;
 assert.equal(sources.size,84);
 for(let i=1;i<=7;i++){
  const section=read('master-evidence-016-0'+i+'.json');assert.equal(section.productionEnabled,false);
@@ -24,6 +24,19 @@ for(let i=1;i<=7;i++){
   for(const s of e.senses){
    assert.ok(sources.has(s.sourceBatch));assert.ok(s.meaningJa&&s.senseId&&s.examples.length>0);
    assert.ok(s.examples.every(ex=>ex.id&&ex.en&&ex.ja));
+   // Verify captured source senses against the original active vocabulary batches.
+   const originalRecords=sourceCache.get(s.sourceBatch) || (()=>{
+     const document=JSON.parse(fs.readFileSync('data/vocabulary-drafts/'+s.sourceBatch,'utf8'));
+     sourceCache.set(s.sourceBatch,document.records);
+     return document.records;
+   })();
+   const original=originalRecords.find(r=>r.wordId===id&&r.senseId===s.senseId);
+   assert.ok(original,'Missing original sense '+id+':'+s.senseId);
+   assert.equal(original.meaningJa,s.meaningJa);
+   assert.equal(original.partOfSpeech,s.partOfSpeech);
+   for(const ex of s.examples){
+     assert.ok(original.examples.some(e=>e.id===ex.id&&e.en===ex.en&&e.ja===ex.ja),'Source example mismatch '+ex.id);
+   }
   }
  }
 }
