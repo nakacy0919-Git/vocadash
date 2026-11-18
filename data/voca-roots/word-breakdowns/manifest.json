@@ -6,18 +6,18 @@
   "productionEnabled": false,
   "masterTarget": 8653,
   "counts": {
-    "records": 4586,
-    "distinctHeadwords": 4583,
+    "records": 4720,
+    "distinctHeadwords": 4717,
     "automatedModernDerivationCandidates": 3796,
     "handAuthoredCoreRecords": 361,
-    "candidateIndexMatchedRows": 2197,
-    "candidateIndexMatchedDistinctHeadwords": 2195,
+    "candidateIndexMatchedRows": 2331,
+    "candidateIndexMatchedDistinctHeadwords": 2329,
     "unresolvedMasterRows": 2389,
     "fullyEditorialReviewed": 0,
-    "fullMasterMatchedRows": 2197,
-    "fullMasterMatchedDistinctHeadwords": 2195,
+    "fullMasterMatchedRows": 2331,
+    "fullMasterMatchedDistinctHeadwords": 2329,
     "notIn8653MasterHeadwords": 2388,
-    "curatedMasterRecords": 429
+    "curatedMasterRecords": 563
   },
   "files": [
     "modern-derivation-candidates-001.json",
@@ -36,7 +36,8 @@
     "master-curated-012.json",
     "master-curated-013.json",
     "bulk-master-compounds-014a.json",
-    "bulk-master-compounds-014b.json"
+    "bulk-master-compounds-014b.json",
+    "master-curated-015.json"
   ],
   "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords); all remain drafts pending review.",
   "qualityNotesJa": [
@@ -56,7 +57,8 @@
     "010–011（2026-11-18）: 446語（接頭辞86、接尾辞276、複合語84）のマスター完全一致Word Breakdown候補を追加。候補は選定済み語形の構造的学習案であり、歴史的語源・品詞・意味の辞書個別照合は未実施。マスターのwordIdを見出し語・語基に保存し、意味と例文の正本はマスター語彙参照。原稿はレビュー必須・非公開。",
     "012（2026-11-18）: 明示的な手動選定で107語を追加。接辞と語基の学習上の接続候補。語義は独立作成の下書きでマスター語義との個別照合は未実施。語源確定や本番使用は不可。",
     "013 (2026-11-18): 130件の手動選定されたマスター完全一致 Word Breakdown 下書きを追加（接尾辞88、接頭辞19、複合的な先行語要素23）。綴り一致による誤分解26例を別メタデータで除外。原語義との個別照合、語史・例文の校閲は未実施で全件未公開。",
-    "014（2026-11-18）: 完全マスターからの明示的な選定による429項目を追加（複合語291、複合表現95、-ally派生副詞43）。950語彙IDについて84ソースファイルの1075語義を保存し、全429件に元マスターの英文例文と日本語訳を紐づけた。語源史や意味の個別語学校閲は未完了で全件非公開。"
+    "014（2026-11-18）: 完全マスターからの明示的な選定による429項目を追加（複合語291、複合表現95、-ally派生副詞43）。950語彙IDについて84ソースファイルの1075語義を保存し、全429件に元マスターの英文例文と日本語訳を紐づけた。語源史や意味の個別語学校閲は未完了で全件非公開。",
+    "015（2026-11-18）: 未重複の134語を語基と派生形の明示的選定で追加。全84マスターバッチに照合して266語彙ID/323語義の原典を保持。014の429語に858件の文脈意味確認・英文再構成の練習問題下書きを追加。語源史や意味の個別校閲は未完了で全件非公開。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
@@ -108,5 +110,28 @@
       "medium": 192,
       "low": 162
     }
+  },
+  "bulk015": {
+    "selection": "bulk-selection-015.json",
+    "dataFile": "master-curated-015.json",
+    "evidenceFiles": [
+      "master-evidence-015-01.json",
+      "master-evidence-015-02.json",
+      "master-evidence-015-03.json",
+      "master-evidence-015-04.json",
+      "master-evidence-015-05.json",
+      "master-evidence-015-06.json",
+      "master-evidence-015-07.json"
+    ],
+    "practiceFiles": [
+      "master-practice-015a.json",
+      "master-practice-015b.json"
+    ],
+    "newWordBreakdowns": 134,
+    "sourceLinkedPractices": 858,
+    "sourceEvidenceWordIds": 266,
+    "sourceEvidenceSenses": 323,
+    "originalMasterBatches": 84,
+    "productionEnabled": false
   }
 }

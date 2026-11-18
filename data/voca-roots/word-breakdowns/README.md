@@ -116,3 +116,10 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 ### Editorial review queue for batch 014
 - `bulk-editorial-review-014.json` lists **all 429 new entries** by follow-up priority: **75 high**, **192 medium**, **162 low**. These are workflow priorities only, **not** linguistic approval or a CEFR confidence score.
 - The queue flags 62 lexicalized-meaning cautions, 108 component-polysemy review cases, 95 phrase-vs-morpheme distinctions, 43 adverb-spelling cases, and 2 acronym capitalization comparisons. Multiple flags can occur on one entry.
+
+## Bulk batch 015: master-sourced morphology and retrieval practice (2026-11-18)
+- Added **134** non-overlapping active-master draft headwords, with exact master IDs, bilingual usage examples and curated morphology/usage prompts (including distinct -ing use types).
+- Added **858** source-linked open-response practice prompts using the previous batch's **429** target words; English reconstructions accept valid paraphrases rather than strict text matching.
+- Master evidence was read from **84** original source batches and retained for **266** canonical word IDs / **323** source senses in seven files.
+- Candidate breakdown coverage is now **2,329 / 8,653** master words. Every record stays **draft-unreviewed**, **editorialReviewRequired=true**, and **productionEligible=false**.
+- See `BULK_015_AUDIT_20261118.md`; validate with `node tools/validate-voca-roots-bulk-015.mjs`. No automatic merge or publication.
