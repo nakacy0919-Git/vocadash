@@ -6,18 +6,18 @@
   "productionEnabled": false,
   "masterTarget": 8653,
   "counts": {
-    "records": 4720,
-    "distinctHeadwords": 4717,
+    "records": 5065,
+    "distinctHeadwords": 5062,
     "automatedModernDerivationCandidates": 3796,
     "handAuthoredCoreRecords": 361,
-    "candidateIndexMatchedRows": 2331,
-    "candidateIndexMatchedDistinctHeadwords": 2329,
+    "candidateIndexMatchedRows": 2676,
+    "candidateIndexMatchedDistinctHeadwords": 2674,
     "unresolvedMasterRows": 2389,
     "fullyEditorialReviewed": 0,
-    "fullMasterMatchedRows": 2331,
-    "fullMasterMatchedDistinctHeadwords": 2329,
+    "fullMasterMatchedRows": 2676,
+    "fullMasterMatchedDistinctHeadwords": 2674,
     "notIn8653MasterHeadwords": 2388,
-    "curatedMasterRecords": 563
+    "curatedMasterRecords": 908
   },
   "files": [
     "modern-derivation-candidates-001.json",
@@ -37,7 +37,9 @@
     "master-curated-013.json",
     "bulk-master-compounds-014a.json",
     "bulk-master-compounds-014b.json",
-    "master-curated-015.json"
+    "master-curated-015.json",
+    "master-curated-016a.json",
+    "master-curated-016b.json"
   ],
   "uniqueHeadwordPolicy": "Core authored records take precedence over modern derivation candidates when headwords overlap (3 overlap headwords); all remain drafts pending review.",
   "qualityNotesJa": [
@@ -58,7 +60,8 @@
     "012（2026-11-18）: 明示的な手動選定で107語を追加。接辞と語基の学習上の接続候補。語義は独立作成の下書きでマスター語義との個別照合は未実施。語源確定や本番使用は不可。",
     "013 (2026-11-18): 130件の手動選定されたマスター完全一致 Word Breakdown 下書きを追加（接尾辞88、接頭辞19、複合的な先行語要素23）。綴り一致による誤分解26例を別メタデータで除外。原語義との個別照合、語史・例文の校閲は未実施で全件未公開。",
     "014（2026-11-18）: 完全マスターからの明示的な選定による429項目を追加（複合語291、複合表現95、-ally派生副詞43）。950語彙IDについて84ソースファイルの1075語義を保存し、全429件に元マスターの英文例文と日本語訳を紐づけた。語源史や意味の個別語学校閲は未完了で全件非公開。",
-    "015（2026-11-18）: 未重複の134語を語基と派生形の明示的選定で追加。全84マスターバッチに照合して266語彙ID/323語義の原典を保持。014の429語に858件の文脈意味確認・英文再構成の練習問題下書きを追加。語源史や意味の個別校閲は未完了で全件非公開。"
+    "015（2026-11-18）: 未重複の134語を語基と派生形の明示的選定で追加。全84マスターバッチに照合して266語彙ID/323語義の原典を保持。014の429語に858件の文脈意味確認・英文再構成の練習問題下書きを追加。語源史や意味の個別校閲は未完了で全件非公開。",
+    "016（2026-11-18）: 345件の高頻度語形・派生語・複合表現を完全8,653語マスターと照合した下書きとして追加。84ファイルから639語彙ID・737語義と元例文を保存。690問の文脈意味・英文再構成の復習下書きを追加。6件の誤解リスクの高い語形分析は保留。全件未公開・未校閲。"
   ],
   "references": [
     "https://www.etymonline.com/word/transport",
@@ -132,6 +135,32 @@
     "sourceEvidenceWordIds": 266,
     "sourceEvidenceSenses": 323,
     "originalMasterBatches": 84,
+    "productionEnabled": false
+  },
+  "bulk016": {
+    "selection": "bulk-selection-016.json",
+    "files": [
+      "master-curated-016a.json",
+      "master-curated-016b.json"
+    ],
+    "evidenceFiles": [
+      "master-evidence-016-01.json",
+      "master-evidence-016-02.json",
+      "master-evidence-016-03.json",
+      "master-evidence-016-04.json",
+      "master-evidence-016-05.json",
+      "master-evidence-016-06.json",
+      "master-evidence-016-07.json"
+    ],
+    "practiceFiles": [
+      "master-practice-016a.json",
+      "master-practice-016b.json"
+    ],
+    "records": 345,
+    "questions": 690,
+    "sourceWordIds": 639,
+    "sourceSenses": 737,
+    "quarantinedAnalyses": 6,
     "productionEnabled": false
   }
 }

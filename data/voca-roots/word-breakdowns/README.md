@@ -128,3 +128,10 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 - Corrected **scary** from spurious `scar + -y` to master-sourced `scare → scary`; reviewed selected sense glosses in eight polysemous base words.
 - Quarantined five dangerous spelling-only breakdowns (`fabrication`, `publication`, `justify`, `classify`, `classy`): **never publish or present them as verified etymologies**. Context examples remain reference drafts.
 - No counts, IDs, quiz totals, or production status changed. See the 015 audit log.
+
+## Bulk batch 016: high-volume master-backed word forms and phrase use (2026-11-18)
+- **345** additional original-master-matched draft word breakdown/usage records: ed 106, ing 89, ation 25, adjectiveY 26, adverbLy 37, ive 18, agentOr 8, prefix 6, phrase 30.
+- Added **690** open-response bilingual practice items with exact source sentence/sense IDs; **639** original master word IDs and **737** senses sourced across all 84 source batches.
+- Coverage **2,674 / 8,653** master headwords; **5,065** Word Breakdown draft records overall.
+- **6** misleading morphology candidates explicitly quarantined: canned, missing, willing, conversation, decomposition, degrade. No learner-facing approval and no deploy.
+- Review `BULK_016_AUDIT_20261118.md` and validate via `node tools/validate-voca-roots-bulk-016.mjs`.
