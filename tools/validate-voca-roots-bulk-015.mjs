@@ -33,6 +33,16 @@ for(let i=0;i<batch.records.length;i++){
  assert.equal(master.entries[x.baseHeadword]?.wordId,x.baseWordId);
  assert.ok(!holds.has(x.wordId));
  assert.equal(x.parts.map(p=>p.surface.replaceAll('-','')).join(''),x.headword);
+ if(x.teachingBaseSenseId){
+  const selected=x.baseSenseRefs.find(s=>s.senseId===x.teachingBaseSenseId);
+  assert.ok(selected,'Missing reviewed master base sense '+x.headword);
+  assert.equal(x.parts[0].meaningJa,selected.meaningJa);
+ }
+ if(x.morphologyDisplayType==='quarantined-spelling-candidate-not-approved-for-etymology-lessons'){
+  assert.equal(x.productionEligible,false);
+  assert.equal(x.analysisType,'orthographic-relationship-review-only');
+ }
+
  assert.equal(x.productionEligible,false);assert.equal(x.editorialReviewRequired,true);
  assert.equal(x.semanticEditorialReviewRequired,true);assert.equal(x.historicalEtymologyVerified,false);
  assert.equal(x.status,'draft-unreviewed');

@@ -123,3 +123,8 @@ This checks structure, exact spelling reconstruction, unique IDs, source-family 
 - Master evidence was read from **84** original source batches and retained for **266** canonical word IDs / **323** source senses in seven files.
 - Candidate breakdown coverage is now **2,329 / 8,653** master words. Every record stays **draft-unreviewed**, **editorialReviewRequired=true**, and **productionEligible=false**.
 - See `BULK_015_AUDIT_20261118.md`; validate with `node tools/validate-voca-roots-bulk-015.mjs`. No automatic merge or publication.
+
+### QA safeguards for batch 015
+- Corrected **scary** from spurious `scar + -y` to master-sourced `scare → scary`; reviewed selected sense glosses in eight polysemous base words.
+- Quarantined five dangerous spelling-only breakdowns (`fabrication`, `publication`, `justify`, `classify`, `classy`): **never publish or present them as verified etymologies**. Context examples remain reference drafts.
+- No counts, IDs, quiz totals, or production status changed. See the 015 audit log.

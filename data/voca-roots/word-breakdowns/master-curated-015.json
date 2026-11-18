@@ -86,7 +86,7 @@
       "explanationJa": "found（設立する）と -ation の関係を、foundation（基礎・土台）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
       "learningQuestionJa": "found と foundation の意味や品詞には、どんな違いがある？",
       "imageHintJa": "foundation を使う例文「作業員は建物の基礎を修理しました。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
+      "semanticCautionJa": "found（設立する）と関係するが、foundation の「土台」という意味は found + -ation の単純な直訳ではない。語義の広がりを例文で確認する。",
       "semanticReviewPriority": "high",
       "exampleEn": "Workers repaired the foundation of the building.",
       "exampleJa": "作業員は建物の基礎を修理しました。",
@@ -115,7 +115,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "editorial-review-required"
     },
     {
       "id": "wb:curated:information",
@@ -381,10 +382,8 @@
           "surface": "present",
           "kind": "free-base",
           "wordId": "VD-00720",
-          "meaningJa": "贈り物",
+          "meaningJa": "発表する・提示する",
           "masterSenseIds": [
-            "VD-00720-n-01",
-            "VD-00720-adj-01",
             "VD-00720-v-01"
           ]
         },
@@ -428,7 +427,7 @@
           "sourceBatch": "batches/batch-01.json"
         }
       ],
-      "explanationJa": "present（贈り物）と -ation の関係を、presentation（発表・プレゼンテーション）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "present（発表する・提示する）と -ation の関連を、presentation（発表・プレゼンテーション）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "present と presentation の意味や品詞には、どんな違いがある？",
       "imageHintJa": "presentation を使う例文「河川汚染について発表を準備しました。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
@@ -460,7 +459,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VD-00720-v-01"
     },
     {
       "id": "wb:curated:formation",
@@ -476,9 +477,8 @@
           "surface": "form",
           "kind": "free-base",
           "wordId": "VD-00360",
-          "meaningJa": "申込用紙・記入欄",
+          "meaningJa": "形作る・作る",
           "masterSenseIds": [
-            "VDO-261114-C-00018",
             "VDO-261114-C-00019"
           ]
         },
@@ -516,7 +516,7 @@
           "sourceBatch": "batches/original-20261114-a1-03.json"
         }
       ],
-      "explanationJa": "form（申込用紙・記入欄）と -ation の関係を、formation（形成・隊形）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "form（形作る・作る）と -ation の関連を、formation（形成・隊形）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "form と formation の意味や品詞には、どんな違いがある？",
       "imageHintJa": "formation を使う例文「授業は雲の形成を説明した。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
@@ -548,7 +548,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VDO-261114-C-00019"
     },
     {
       "id": "wb:curated:publication",
@@ -556,7 +558,7 @@
       "wordId": "VD-06119",
       "cefrHeadword": "B2",
       "matchStatus": "complete-master-exact",
-      "analysisType": "curated-suffix-derivation-learning-candidate",
+      "analysisType": "orthographic-relationship-review-only",
       "baseHeadword": "public",
       "baseWordId": "VD-01914",
       "parts": [
@@ -597,10 +599,10 @@
           "sourceBatch": "batches/original-20261115-a2-complete-01.json"
         }
       ],
-      "explanationJa": "public（公の・一般向けの）と -ation の関係を、publication（出版物・出版）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "publication（出版物・出版）の意味と例文は元マスターを参照できる。ただし現在の分解案は意味的・語史的に不十分なため、生徒向けに表示しない。",
       "learningQuestionJa": "public と publication の意味や品詞には、どんな違いがある？",
       "imageHintJa": "publication を使う例文「図書館は新しい科学出版物を受け取った。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
+      "semanticCautionJa": "publication を public + -ation と機械的に語源分解しない。publish（出版する）との関連と語史を確認してから掲載する。",
       "semanticReviewPriority": "high",
       "exampleEn": "The library received a new scientific publication.",
       "exampleJa": "図書館は新しい科学出版物を受け取った。",
@@ -629,7 +631,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "quarantined-spelling-candidate-not-approved-for-etymology-lessons"
     },
     {
       "id": "wb:curated:relaxation",
@@ -893,7 +896,7 @@
       "wordId": "VD-08087",
       "cefrHeadword": "C2",
       "matchStatus": "complete-master-exact",
-      "analysisType": "curated-suffix-derivation-learning-candidate",
+      "analysisType": "orthographic-relationship-review-only",
       "baseHeadword": "fabric",
       "baseWordId": "VD-05223",
       "parts": [
@@ -941,11 +944,11 @@
           "sourceBatch": "batches/original-20261114-b2-mega-04d.json"
         }
       ],
-      "explanationJa": "fabric（織物・生地）と -ation の関係を、fabrication（捏造、作り話）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "fabrication（捏造、作り話）の意味と例文は元マスターを参照できる。ただし現在の分解案は意味的・語史的に不十分なため、生徒向けに表示しない。",
       "learningQuestionJa": "fabric と fabrication の意味や品詞には、どんな違いがある？",
       "imageHintJa": "fabrication を使う例文「広く拡散したうわさは完全な作り話だったことが判明した。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
-      "semanticReviewPriority": "standard",
+      "semanticCautionJa": "fabric（布・生地）と fabrication（捏造）は、文字がつながるだけで説明しない。語史は fabricate（作る・捏造する）などを含めて要確認。fabric + -ation を学習者向けの語源説明として使用しない。",
+      "semanticReviewPriority": "high",
       "exampleEn": "The widely shared rumor turned out to be a complete fabrication.",
       "exampleJa": "広く拡散したうわさは完全な作り話だったことが判明した。",
       "exampleSource": "existing-master-vocabulary",
@@ -973,7 +976,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "quarantined-spelling-candidate-not-approved-for-etymology-lessons"
     },
     {
       "id": "wb:curated:lamentation",
@@ -1281,7 +1285,7 @@
       "explanationJa": "profess（公言する・自称する）と -or の関係を、professor（教授）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
       "learningQuestionJa": "profess と professor の意味や品詞には、どんな違いがある？",
       "imageHintJa": "professor を使う例文「教授は模型を使って理論を説明しました。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
+      "semanticCautionJa": "profess（公言する）+ -or と直訳して現在の professor（教授）を説明しない。現代語義と語史に差があるので語族学習候補にとどめる。",
       "semanticReviewPriority": "high",
       "exampleEn": "The professor explained the theory using a model.",
       "exampleJa": "教授は模型を使って理論を説明しました。",
@@ -1310,7 +1314,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "editorial-review-required"
     },
     {
       "id": "wb:curated:collector",
@@ -2103,8 +2108,8 @@
       "explanationJa": "account（口座・アカウント）と -ant の関係を、accountant（会計士・経理担当者）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
       "learningQuestionJa": "account と accountant の意味や品詞には、どんな違いがある？",
       "imageHintJa": "accountant を使う例文「会計担当者は会社の経費を確認しました。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
-      "semanticReviewPriority": "standard",
+      "semanticCautionJa": "account は「口座」「説明」以外に会計・計算に関する語史と用法がある。口座 + -ant = 会計士と直訳しない。語構成の説明は辞書確認まで保留。",
+      "semanticReviewPriority": "high",
       "exampleEn": "The accountant checked the company's expenses.",
       "exampleJa": "会計担当者は会社の経費を確認しました。",
       "exampleSource": "existing-master-vocabulary",
@@ -2132,7 +2137,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "editorial-review-required"
     },
     {
       "id": "wb:curated:inhabitant",
@@ -3037,7 +3043,7 @@
       "wordId": "VD-05601",
       "cefrHeadword": "B2",
       "matchStatus": "complete-master-exact",
-      "analysisType": "curated-suffix-derivation-learning-candidate",
+      "analysisType": "orthographic-relationship-review-only",
       "baseHeadword": "just",
       "baseWordId": "VD-00504",
       "parts": [
@@ -3078,10 +3084,10 @@
           "sourceBatch": "batches/original-20261114-gap-a1.json"
         }
       ],
-      "explanationJa": "just（たった今・ちょうど）と -ify の関係を、justify（正当化する・理由を説明する）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "justify（正当化する・理由を説明する）の意味と例文は元マスターを参照できる。ただし現在の分解案は意味的・語史的に不十分なため、生徒向けに表示しない。",
       "learningQuestionJa": "just と justify の意味や品詞には、どんな違いがある？",
       "imageHintJa": "justify を使う例文「自分の選択を証拠を用いて正当化できますか。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
+      "semanticCautionJa": "元マスターの just は副詞「たった今・ちょうど」の意味しか持たず、justify（正当化する）の語形成説明に適さない。正当性・公正さの語義と歴史的関連を校閲するまで分解説明を表示しない。",
       "semanticReviewPriority": "high",
       "exampleEn": "Can you justify your choice with evidence?",
       "exampleJa": "自分の選択を証拠を用いて正当化できますか。",
@@ -3110,7 +3116,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "quarantined-spelling-candidate-not-approved-for-etymology-lessons"
     },
     {
       "id": "wb:curated:classify",
@@ -3118,7 +3125,7 @@
       "wordId": "VD-02648",
       "cefrHeadword": "B1",
       "matchStatus": "complete-master-exact",
-      "analysisType": "curated-suffix-derivation-learning-candidate",
+      "analysisType": "orthographic-relationship-review-only",
       "baseHeadword": "class",
       "baseWordId": "VD-00182",
       "parts": [
@@ -3166,11 +3173,11 @@
           "sourceBatch": "batches/original-20261114-a1-01.json"
         }
       ],
-      "explanationJa": "class（授業）と -ify の関係を、classify（分類する）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "classify（分類する）の意味と例文は元マスターを参照できる。ただし現在の分解案は意味的・語史的に不十分なため、生徒向けに表示しない。",
       "learningQuestionJa": "class と classify の意味や品詞には、どんな違いがある？",
       "imageHintJa": "classify を使う例文「語を品詞別に分類しました。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "語形と意味のつながりは学習上の候補であり、歴史的語源が裏づけられたことは意味しない。",
-      "semanticReviewPriority": "standard",
+      "semanticCautionJa": "class の元マスター語義は「授業」「クラス・学級」のみで、classify（分類する）の中心となる「種類・区分」を説明できない。学級を分類するといった誤解を防ぐため分解説明は非表示。",
+      "semanticReviewPriority": "high",
       "exampleEn": "We classified the words by part of speech.",
       "exampleJa": "語を品詞別に分類しました。",
       "exampleSource": "existing-master-vocabulary",
@@ -3198,7 +3205,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "quarantined-spelling-candidate-not-approved-for-etymology-lessons"
     },
     {
       "id": "wb:curated:personify",
@@ -3690,7 +3698,7 @@
       "wordId": "VD-06979",
       "cefrHeadword": "C1",
       "matchStatus": "complete-master-exact",
-      "analysisType": "curated-suffix-derivation-learning-candidate",
+      "analysisType": "orthographic-relationship-review-only",
       "baseHeadword": "class",
       "baseWordId": "VD-00182",
       "parts": [
@@ -3738,11 +3746,11 @@
           "sourceBatch": "batches/original-20261114-a1-01.json"
         }
       ],
-      "explanationJa": "class（授業）と -y の関係を、classy（上品な・洗練された）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "classy（上品な・洗練された）の意味と例文は元マスターを参照できる。ただし現在の分解案は意味的・語史的に不十分なため、生徒向けに表示しない。",
       "learningQuestionJa": "class と classy の意味や品詞には、どんな違いがある？",
       "imageHintJa": "classy を使う例文「彼女はシンプルだが上品なドレスを選んだ。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "接尾辞 -y との語形上の対応に注目する。一語として定着した意味は、元の語からの単純な直訳と限らない。",
-      "semanticReviewPriority": "standard",
+      "semanticCautionJa": "class の元マスター語義は「授業」「クラス・学級」のみ。classy に関係する社会階層・上品さの class の語義を個別に確認するまで分解説明を使わない。",
+      "semanticReviewPriority": "high",
       "exampleEn": "She chose a simple but classy dress.",
       "exampleJa": "彼女はシンプルだが上品なドレスを選んだ。",
       "exampleSource": "existing-master-vocabulary",
@@ -3770,7 +3778,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "quarantined-spelling-candidate-not-approved-for-etymology-lessons"
     },
     {
       "id": "wb:curated:scary",
@@ -3779,16 +3788,16 @@
       "cefrHeadword": "B1",
       "matchStatus": "complete-master-exact",
       "analysisType": "curated-suffix-derivation-learning-candidate",
-      "baseHeadword": "scar",
-      "baseWordId": "VD-06305",
+      "baseHeadword": "scare",
+      "baseWordId": "VD-03979",
       "parts": [
         {
           "surface": "scar",
-          "kind": "free-base",
-          "wordId": "VD-06305",
-          "meaningJa": "傷痕",
+          "kind": "altered-free-base",
+          "wordId": "VD-03979",
+          "meaningJa": "怖がらせる",
           "masterSenseIds": [
-            "VDO-261115-B2N-00153"
+            "VDO-261114-MEGA2C-00094"
           ]
         },
         {
@@ -3797,7 +3806,7 @@
           "meaningJa": "性質・状態などを表す形容詞や名詞の形成に関わる語尾"
         }
       ],
-      "orthographicRule": "exact",
+      "orthographicRule": "final-e-drop",
       "meaningJa": "恐ろしい",
       "wordMeaningJa": "恐ろしい",
       "masterMeaningJa": "恐ろしい",
@@ -3813,17 +3822,17 @@
       ],
       "baseSenseRefs": [
         {
-          "senseId": "VDO-261115-B2N-00153",
-          "partOfSpeech": "noun",
-          "meaningJa": "傷痕",
-          "sourceBatch": "batches/original-20261115-b2-400-01.json"
+          "senseId": "VDO-261114-MEGA2C-00094",
+          "partOfSpeech": "verb",
+          "meaningJa": "怖がらせる",
+          "sourceBatch": "batches/original-20261114-b1-mega-02c.json"
         }
       ],
-      "explanationJa": "scar（傷痕）と -y の関係を、scary（恐ろしい）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
-      "learningQuestionJa": "scar と scary の意味や品詞には、どんな違いがある？",
+      "explanationJa": "scare（怖がらせる）の語末 -e を取って -y を付けると scary（恐ろしい）になる。scar（傷痕）+ -y という誤った分解は使わない。",
+      "learningQuestionJa": "scare と scary は、どちらが動詞でどちらが形容詞？",
       "imageHintJa": "scary を使う例文「その物語は子どもたちには怖すぎました。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "接尾辞 -y との語形上の対応に注目する。一語として定着した意味は、元の語からの単純な直訳と限らない。",
-      "semanticReviewPriority": "standard",
+      "semanticCautionJa": "scar（傷痕）と scary（恐ろしい）は見た目が似るが、scary の学習用の語基は scare（怖がらせる）。",
+      "semanticReviewPriority": "high",
       "exampleEn": "The story was too scary for the children.",
       "exampleJa": "その物語は子どもたちには怖すぎました。",
       "exampleSource": "existing-master-vocabulary",
@@ -3843,7 +3852,7 @@
       "exampleSurfaceVerified": true,
       "sourceRefs": [
         "batches/original-20261114-b1-mega-02c.json",
-        "batches/original-20261115-b2-400-01.json"
+        "batches/original-20261114-b1-mega-02c.json"
       ],
       "sourcePolicy": "explicit-curated-allowlist-with-exact-master-sourced-bilingual-definitions-and-examples",
       "historicalEtymologyVerified": false,
@@ -3851,7 +3860,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "explicit-corrected-existing-master-sense"
     },
     {
       "id": "wb:curated:quirky",
@@ -4225,7 +4235,7 @@
       "explanationJa": "baker（パン職人）と -y の関係を、bakery（パン屋）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
       "learningQuestionJa": "baker と bakery の意味や品詞には、どんな違いがある？",
       "imageHintJa": "bakery を使う例文「そのパン屋は毎朝7時に開きます。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "接尾辞 -y との語形上の対応に注目する。一語として定着した意味は、元の語からの単純な直訳と限らない。",
+      "semanticCautionJa": "bakery は baker / bake と関連するが、綴りの baker + -y がそのまま歴史的な語形成を証明するわけではない。bake + -ery の分析も含めて確認する。",
       "semanticReviewPriority": "high",
       "exampleEn": "The bakery opens at seven every morning.",
       "exampleJa": "そのパン屋は毎朝7時に開きます。",
@@ -4253,7 +4263,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "editorial-review-required"
     },
     {
       "id": "wb:curated:mastery",
@@ -4723,7 +4734,7 @@
       "explanationJa": "photograph（写真）と -y の関係を、photography（写真撮影・写真術）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
       "learningQuestionJa": "photograph と photography の意味や品詞には、どんな違いがある？",
       "imageHintJa": "photography を使う例文「写真撮影は彼女の一番の趣味です。」の具体的な情景を文字なしで描く。",
-      "semanticCautionJa": "接尾辞 -y との語形上の対応に注目する。一語として定着した意味は、元の語からの単純な直訳と限らない。",
+      "semanticCautionJa": "photography は photo-（光・写真）や -graphy（記録・描画）の語形成も含めて確認する。photograph + -y の綴り上の学習は歴史的語源の確定ではない。",
       "semanticReviewPriority": "high",
       "exampleEn": "Photography is her favourite hobby.",
       "exampleJa": "写真撮影は彼女の一番の趣味です。",
@@ -4751,7 +4762,8 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "morphologyDisplayType": "editorial-review-required"
     },
     {
       "id": "wb:curated:devastating",
@@ -5010,12 +5022,9 @@
           "surface": "challeng",
           "kind": "altered-free-base",
           "wordId": "VD-01249",
-          "meaningJa": "難しい課題",
+          "meaningJa": "挑戦する",
           "masterSenseIds": [
-            "VD-01249-n-4-018",
-            "VD-01249-v-4-019",
-            "VD3-00026",
-            "VD3-00027"
+            "VD-01249-v-4-019"
           ]
         },
         {
@@ -5064,7 +5073,7 @@
           "sourceBatch": "batches/batch-04.json"
         }
       ],
-      "explanationJa": "challenge（難しい課題）と -ing の関係を、challenging（やりがいのある・難しい）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "challenge（挑戦する）と -ing の関連を、challenging（やりがいのある・難しい）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "challenge と challenging の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "challenging を使う例文「その読解課題は難しかったですが役立ちました。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -5096,7 +5105,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VD-01249-v-4-019"
     },
     {
       "id": "wb:curated:confusing",
@@ -6370,12 +6381,9 @@
           "surface": "work",
           "kind": "free-base",
           "wordId": "VD-01044",
-          "meaningJa": "働く",
+          "meaningJa": "うまく機能する",
           "masterSenseIds": [
-            "VD-01044-v-01",
-            "VD-01044-v-02",
-            "VD-01044-n-01",
-            "VD-01044-n-02"
+            "VD-01044-v-02"
           ]
         },
         {
@@ -6424,7 +6432,7 @@
           "sourceBatch": "batches/batch-01.json"
         }
       ],
-      "explanationJa": "work（働く）と -ing の関係を、working（機能している・作業用の）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "work（うまく機能する）と -ing の関連を、working（機能している・作業用の）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "work と working の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "working を使う例文「ついに動作する模型を作りました。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -6456,7 +6464,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VD-01044-v-02"
     },
     {
       "id": "wb:curated:developing",
@@ -6985,9 +6995,8 @@
           "surface": "coach",
           "kind": "free-base",
           "wordId": "VD-00196",
-          "meaningJa": "指導者・コーチ",
+          "meaningJa": "指導する・コーチする",
           "masterSenseIds": [
-            "VDO-261114-A-00026",
             "VDO-261114-A-00027"
           ]
         },
@@ -7025,7 +7034,7 @@
           "sourceBatch": "batches/original-20261114-a1-01.json"
         }
       ],
-      "explanationJa": "coach（指導者・コーチ）と -ing の関係を、coaching（指導・訓練）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "coach（指導する・コーチする）と -ing の関連を、coaching（指導・訓練）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "coach と coaching の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "coaching を使う例文「定期的な指導が走者の技術向上に役立った。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -7057,7 +7066,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VDO-261114-A-00027"
     },
     {
       "id": "wb:curated:banking",
@@ -7161,11 +7172,9 @@
           "surface": "record",
           "kind": "free-base",
           "wordId": "VD-01944",
-          "meaningJa": "記録",
+          "meaningJa": "録音・録画する",
           "masterSenseIds": [
-            "VD-01944-n-01",
-            "VD-01944-v-01",
-            "VD-01944-n-02"
+            "VD-01944-v-01"
           ]
         },
         {
@@ -7208,7 +7217,7 @@
           "sourceBatch": "batches/batch-01.json"
         }
       ],
-      "explanationJa": "record（記録）と -ing の関係を、recording（録音・録画）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "record（録音・録画する）と -ing の関連を、recording（録音・録画）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "record と recording の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "recording を使う例文「答える前に録音を聞いてください。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -7240,7 +7249,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VD-01944-v-01"
     },
     {
       "id": "wb:curated:engineering",
@@ -7418,9 +7429,8 @@
           "surface": "book",
           "kind": "free-base",
           "wordId": "VD-00110",
-          "meaningJa": "本",
+          "meaningJa": "予約する",
           "masterSenseIds": [
-            "VD-00110-n-01",
             "VD-00110-v-01"
           ]
         },
@@ -7458,7 +7468,7 @@
           "sourceBatch": "batches/batch-01.json"
         }
       ],
-      "explanationJa": "book（本）と -ing の関係を、booking（予約）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "book（予約する）と -ing の関連を、booking（予約）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "book と booking の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "booking を使う例文「私は昨日ホテルの予約を確認しました。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -7490,7 +7500,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VD-00110-v-01"
     },
     {
       "id": "wb:curated:farming",
@@ -8701,9 +8713,8 @@
           "surface": "iron",
           "kind": "free-base",
           "wordId": "VD-03360",
-          "meaningJa": "鉄",
+          "meaningJa": "アイロンをかける",
           "masterSenseIds": [
-            "VDO-261114-MEGA1-00010",
             "VDO-261114-MEGA1-00011"
           ]
         },
@@ -8741,7 +8752,7 @@
           "sourceBatch": "batches/original-20261114-b1-mega-01.json"
         }
       ],
-      "explanationJa": "iron（鉄）と -ing の関係を、ironing（アイロンがけ）の用例で確かめる。構成要素だけで直訳せず、文脈に応じた意味を学ぶ。",
+      "explanationJa": "iron（アイロンをかける）と -ing の関連を、ironing（アイロンがけ）の原文例で確かめる。文脈に応じた意味・品詞を優先する。",
       "learningQuestionJa": "iron と ironing の形・品詞・意味を例文で比較しよう。",
       "imageHintJa": "ironing を使う例文「父は日曜の夕方にアイロンがけをします。」の具体的な情景を文字なしで描く。",
       "semanticCautionJa": "-ing は現在分詞・動名詞・形容詞や定着した名詞などに用いられる。文中での品詞と意味を確かめる。",
@@ -8772,7 +8783,9 @@
       "semanticEditorialReviewRequired": true,
       "editorialReviewRequired": true,
       "productionEligible": false,
-      "status": "draft-unreviewed"
+      "status": "draft-unreviewed",
+      "baseGlossEditorialMethod": "selected-existing-master-sense",
+      "teachingBaseSenseId": "VDO-261114-MEGA1-00011"
     },
     {
       "id": "wb:curated:packing",
