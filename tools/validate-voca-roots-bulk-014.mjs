@@ -116,10 +116,10 @@ assert.deepEqual(kinds,{compound:291,phrase:95,adverb:43});
 assert.deepEqual(selection.counts,{items:429,...kinds});
 assert.equal(manifest.counts.records,earlier.length+429);
 assert.equal(manifest.counts.distinctHeadwords,new Set([...oldWords,...observedWords]).size);
-assert.equal(manifest.counts.curatedMasterRecords,429);
-assert.equal(manifest.counts.fullMasterMatchedDistinctHeadwords,2195);
-assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords,2195);
-assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords,8653-2195);
+assert.ok(manifest.counts.curatedMasterRecords >= 429); // Later curated batches may be appended
+assert.ok(manifest.counts.fullMasterMatchedDistinctHeadwords >= 2195); // Batch 014 historical baseline
+assert.equal(coverage.wordBreakdown.matchedMasterDistinctHeadwords,manifest.counts.fullMasterMatchedDistinctHeadwords);
+assert.equal(coverage.wordBreakdown.uncoveredMasterHeadwords,8653-manifest.counts.fullMasterMatchedDistinctHeadwords);
 assert.ok(coverage.coverageByLevel.every(level=>level.breakdownHeadwords >= levels[level.cefr]));
 assert.equal(manifest.counts.fullyEditorialReviewed,0);
 assert.equal(originalExamples,429);
@@ -128,5 +128,5 @@ console.log(JSON.stringify({
   status:'STRUCTURE_AND_MASTER_EVIDENCE_OK',newRecords:429,kinds,
   masterSourceBatches:sourceCount,masterEvidenceWords:Object.keys(evidence).length,
   masterSenses:senseCount,pairedExamples:originalExamples+originalExtraExamples,
-  specialCautions,matchedMasterHeadwords:2195,productionEnabled:false
+  specialCautions,historicalAfter014MatchedMasterHeadwords:2195,currentMatchedMasterHeadwords:manifest.counts.fullMasterMatchedDistinctHeadwords,productionEnabled:false
 },null,2));
