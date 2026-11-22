@@ -165,3 +165,59 @@
 .ls-home .ls-rings .vd-medallion-label{color:#d6e6f5;font-weight:700;margin:0;line-height:1.35;text-align:center}
 .ls-home .ls-rings .vd-progress-medallion.is-reading .vd-medallion-value small{color:#a8d9cc}
 @media(prefers-reduced-motion:reduce){.ls-cosmic-stars{animation:none!important;will-change:auto;transform:none}.ls-home .ls-hero .ls-stars{animation:none!important}}
+
+
+/* Home clarity: one primary learning action, secondary information on demand. */
+.ls-simplified-home .ls-hero-copy h1{margin:2px 0 6px}
+.ls-simplified-home .ls-hero-copy p{color:#bcd5eb;font-size:13px}
+.ls-simplified-home .ls-progress{display:flex;flex-direction:column;padding:20px 22px}
+.ls-simplified-home .ls-progress-info{display:flex;flex-direction:column;flex:1;min-width:0}
+.ls-simplified-home .ls-progress-info h3{font-size:16px;line-height:1.55;overflow-wrap:anywhere;margin:5px 0 6px}
+.ls-simplified-home .ls-current-caption{font-size:11px;color:#9cb4cd;margin:4px 0 0}
+.ls-simplified-home .ls-current-count{margin:4px 0 18px;color:#b8cfe3}
+.ls-simplified-home .ls-current-count span{color:#9eb8d2}
+.ls-simplified-home .ls-continue-button{margin-top:auto;min-height:56px;font-size:16px;padding:12px 18px;box-shadow:0 7px 23px #4cbcf123}
+.ls-simplified-home .ls-fast-actions{margin-top:9px;gap:9px}
+.ls-simplified-home .ls-fast-actions button{min-height:42px;font-size:13px}
+.ls-progress-detail{margin-top:18px;border-top:1px solid #2e4961;padding-top:10px}
+.ls-progress-detail summary{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:38px;cursor:pointer;color:#b5d5eb;font-size:12px;list-style:none}
+.ls-progress-detail summary::-webkit-details-marker{display:none}
+.ls-progress-detail summary:after{content:'＋';font-size:18px;color:#8bd6ee}
+.ls-progress-detail[open] summary:after{content:'−'}
+.ls-progress-detail summary:focus-visible{outline:3px solid #71defa;outline-offset:2px;border-radius:6px}
+.ls-progress-detail .ls-rings{margin:7px auto 12px;max-width:290px}
+.ls-progress-detail .ls-metrics{grid-template-columns:repeat(3,minmax(0,1fr));margin:8px 0 4px}
+.ls-simplified-home .ls-mission{padding:8px 0}
+.ls-simplified-home .ls-mission .ls-sectionhead{margin:0 0 14px}
+.ls-simplified-home .ls-goals{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ls-simplified-home .ls-goal{min-height:112px;padding:17px 18px;gap:14px;border-radius:17px}
+.ls-simplified-home .ls-goal-icon{font-size:31px}
+.ls-simplified-home .ls-goal>div{gap:6px}
+.ls-simplified-home .ls-goal strong{font-size:17px}
+.ls-simplified-home .ls-goal small{font-size:12px}
+.ls-simplified-home .ls-goal-arrow{right:13px;bottom:11px;font-size:19px}
+.ls-more-categories{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:44px;margin-top:12px;padding:10px 16px;border:1px solid #365777;border-radius:12px;background:#14263d;color:#c8e7f6;font-size:13px;font-weight:700}
+.ls-more-categories:hover{border-color:#5ca8c6;background:#1c344e}
+.ls-more-categories span{font-size:20px;line-height:1}
+.ls-simplified-home .ls-extra-goals{margin-top:12px}
+.ls-simplified-home .ls-bottom-actions{display:flex;justify-content:flex-end}
+.ls-simplified-home .ls-bottom-actions .ls-outline{width:auto;min-width:190px;min-height:42px;padding:10px 15px;font-size:12px!important}
+@media(max-width:899px){
+ .ls-simplified-home .ls-progress{padding:17px}
+ .ls-simplified-home .ls-mission{padding:4px 0}
+ .ls-simplified-home .ls-goal{min-height:94px}
+}
+@media(max-width:550px){
+ .ls-simplified-home .ls-goals{gap:9px}
+ .ls-simplified-home .ls-goal{padding:13px 11px;gap:8px;min-height:93px}
+ .ls-simplified-home .ls-goal-icon{font-size:24px}
+ .ls-simplified-home .ls-goal strong{font-size:14px}
+ .ls-simplified-home .ls-goal small{font-size:10px}
+ .ls-simplified-home .ls-progress-info h3{font-size:15px}
+ .ls-simplified-home .ls-current-count{margin-bottom:15px}
+ .ls-simplified-home .ls-bottom-actions .ls-outline{width:100%}
+}
+@media(max-width:370px){
+ .ls-simplified-home .ls-goals{grid-template-columns:1fr}
+ .ls-simplified-home .ls-goal{min-height:72px}
+}
