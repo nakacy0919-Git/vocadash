@@ -37,22 +37,22 @@ function Dialog({title,onClose,children}){
  useEffect(()=>{const el=ref.current;if(!el)return;el.showModal();return()=>{if(el.open)el.close()};},[]);
  return <dialog ref={ref} className="ls-dialog" aria-labelledby="ls-dialog-title" onCancel={e=>{e.preventDefault();onClose()}} onClick={e=>{if(e.target===e.currentTarget){const r=e.currentTarget.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)onClose()}}}><header><div><span className="ls-eyebrow">YOUR LEARNING JOURNEY</span><h2 id="ls-dialog-title">{title}</h2></div><button type="button" className="ls-close" aria-label="閉じる" onClick={onClose}>×</button></header>{children}</dialog>;
 }
+// The four most common starting points stay visible; other paths remain one tap away.
 const missions=[
- ['CEFR・レベル別','A1–C2','Aa','オリジナル全語彙 · 入門から上級','cyan'],
- ['学年・入試','LEVEL','↗','中学 → 高校 → 大学受験','cyan'],
- ['英検対策','EXAM','◎','英検・級別対策','violet'],
- ['ジャンル別','TOPIC','◈','環境・社会・科学など','mint'],
- ['品詞別','WORD CLASS','Aa','動詞・名詞・形容詞・副詞','amber'],
- ['学校教材','SCHOOL','▤','定期考査・長文語彙','cyan'],
- ['発展学習','ADVANCED','✦','上級・画像と音声','violet']
+ ['CEFR・レベル別','レベル別','Aa','A1–C2','cyan'],
+ ['学年・入試','学年・入試','↗','中学〜大学受験','cyan'],
+ ['英検対策','英検対策','◎','級を選んで学ぶ','violet'],
+ ['学校教材','学校教材','▤','定期考査など','cyan'],
+ ['ジャンル別','ジャンル別','◈','環境・社会など','mint'],
+ ['品詞別','品詞別','Aa','動詞・名詞など','amber'],
+ ['発展学習','発展学習','✦','画像・音声など','violet']
 ];
 export default function LearningSpace({catalog,selection,onStart,onResume,onLibrary,onQuizStudio,onSettings,progress,courseLabel,unitLabel,stats,today,allLearned,allDue,loading,error,onRetry,onExplore,onDash,unitAvailable,externalCategory,onCategoryConsumed}){
- const [goal,setGoal]=useState(null),[step,setStep]=useState(0),[picked,setPicked]=useState(null),[unitId,setUnitId]=useState(null),[query,setQuery]=useState(''),[exploreError,setExploreError]=useState(''),[busy,setBusy]=useState(false),[page,setPage]=useState(0),[reviewOnly,setReviewOnly]=useState(false),[searchText,setSearchText]=useState('');
+ const [goal,setGoal]=useState(null),[step,setStep]=useState(0),[picked,setPicked]=useState(null),[unitId,setUnitId]=useState(null),[query,setQuery]=useState(''),[exploreError,setExploreError]=useState(''),[busy,setBusy]=useState(false),[page,setPage]=useState(0),[reviewOnly,setReviewOnly]=useState(false),[searchText,setSearchText]=useState(''),[moreCategories,setMoreCategories]=useState(false);
  const close=()=>{setGoal(null);setStep(0);setExploreError('');setPage(0)};
  const begin=(id,review=false)=>{setGoal(id);setStep(0);setPicked(null);setUnitId(null);setQuery('');setExploreError('');setPage(0);setReviewOnly(review)};
  useEffect(()=>{if(externalCategory){begin(externalCategory.group);onCategoryConsumed?.();}},[externalCategory]);
  const available=catalog.filter(c=>c.units.some(u=>unitAvailable(c.id,u.id))),current=available.find(c=>c.id===selection.courseId);
- const lessonCount=available.reduce((n,c)=>n+c.units.filter(u=>unitAvailable(c.id,u.id)).length,0);
  const chooseCourse=c=>{setPicked(c);setPage(0);const u=c.units.filter(x=>unitAvailable(c.id,x.id));if(u.length===1){setUnitId(u[0].id);if(reviewOnly)setStep(2);else{onStart(c.id,u[0].id,'library');close();}}else setStep(1)};
  const modeList=studyModes.filter(m=>(!reviewOnly||m.id==='review'||m.id==='memory')&&(m.id!=='listening'||picked?.id==='eiken1_master'));
  const start=m=>{if(!picked||!unitId)return;onStart(picked.id,unitId,m);close()};
@@ -61,13 +61,29 @@ export default function LearningSpace({catalog,selection,onStart,onResume,onLibr
  const choices=step===0?groups:step===1?(picked?.units.filter(u=>unitAvailable(picked.id,u.id))||[]):modeList;
  const pageSize=6,pages=Math.max(1,Math.ceil(choices.length/pageSize)),visible=choices.slice(page*pageSize,(page+1)*pageSize);
  const quick=(review)=>{begin(review?'review':(current?.group||'学年・入試'),review);if(current){setPicked(current);setUnitId(selection.unitId);setStep(2)}};
- return <div className="ls-home ls-compact-home">
+ return <div className="ls-home ls-compact-home ls-simplified-home">
  <div className="ls-cosmic-backdrop" aria-hidden="true"><div className="ls-cosmic-nebula"/><div className="ls-cosmic-stars ls-cosmic-stars-far"/><div className="ls-cosmic-stars ls-cosmic-stars-near"/><div className="ls-cosmic-vignette"/></div>
- <section className="ls-hero"><div className="ls-stars"/><div className="ls-hero-copy"><span className="ls-eyebrow">VOCADASH 3.0 / LEARNING SPACE</span><h1>Beyond <em>Words.</em></h1><p>覚える、使う、定着する。今日の語彙学習を始めよう。</p></div><form className="ls-hero-search" onSubmit={e=>search(e,searchText)}><label htmlFor="ls-global-search" className="ls-sr-only">英単語検索</label><input id="ls-global-search" value={searchText} onChange={e=>setSearchText(e.target.value)} placeholder="英単語を探索（Voca Universe）…" autoComplete="off"/><button type="submit" disabled={busy||!searchText.trim()}>{busy?'…':'⌕'}</button></form><button className="ls-dash-link" onClick={onDash} aria-label="Dash Assistant を開く"><Orb/><span>DASH <small>マイクは手動</small></span></button></section>
+ <section className="ls-hero"><div className="ls-stars"/><div className="ls-hero-copy"><h1>Beyond <em>Words.</em></h1><p>今日の学習を始めましょう。</p></div><form className="ls-hero-search" onSubmit={e=>search(e,searchText)}><label htmlFor="ls-global-search" className="ls-sr-only">英単語を検索する</label><input id="ls-global-search" value={searchText} onChange={e=>setSearchText(e.target.value)} placeholder="英単語を検索" autoComplete="off"/><button type="submit" disabled={busy||!searchText.trim()} aria-label="検索する">{busy?'…':'⌕'}</button></form><button className="ls-dash-link" onClick={onDash} aria-label="Dash Assistant を開く"><Orb/><span>DASH</span></button></section>
  <div className="ls-command-grid">
- <section className="ls-progress"><div className="ls-sectionhead"><div><span className="ls-eyebrow">YOUR PROGRESS</span><h2>学習の進捗</h2></div><button className="ls-text-button" onClick={onSettings} aria-label="学習設定">⚙</button></div><div className="ls-progress-body"><div className="ls-rings">{progress}</div><div className="ls-progress-info"><h3>{courseLabel} · {unitLabel}</h3>{loading?<p role="status">読み込み中…</p>:error?<p>{error} <button onClick={onRetry}>再試行</button></p>:<p>学習済み <strong>{stats.seen}/{stats.total}語</strong></p>}<div className="ls-metrics"><div><b>{today}</b><small>今日</small></div><div><b>{allLearned}</b><small>学習記録</small></div><div><b>{allDue}</b><small>復習待ち</small></div></div><button className="ls-primary" disabled={loading||!!error||!stats.total} onClick={onResume}>今日の記憶ミッション <span>→</span></button><div className="ls-fast-actions"><button onClick={onLibrary} disabled={loading||!!error||!stats.total}>単語一覧・赤シート ↗</button><button onClick={()=>quick(true)}>復習する ↻</button></div><small className="ls-note">円グラフは現在のユニット</small></div></div></section>
- <section className="ls-mission"><div className="ls-sectionhead"><div><span className="ls-eyebrow">CHOOSE YOUR MISSION</span><h2>教材を選ぶ</h2></div><span className="ls-note">{lessonCount}ユニット</span></div><div className="ls-goals">{missions.map(([group,tag,icon,sub,tone])=><button key={group} onClick={()=>begin(group)} className={'ls-goal '+tone}><span className="ls-goal-icon" aria-hidden="true">{icon}</span><div><span className="ls-goal-tag">{tag}</span><strong>{group==='英検対策'?'資格試験':group}</strong><small>{sub}</small></div><span className="ls-goal-arrow">→</span></button>)}</div></section>
- </div><div className="ls-bottom-actions"><button className="ls-outline" onClick={onQuizStudio}>✦ 多角度語彙クイズ <small>意味・音・例文・語形</small> →</button></div>
+ <section className="ls-progress" aria-labelledby="ls-continue-title">
+ <div className="ls-sectionhead"><h2 id="ls-continue-title">今日の学習</h2><button className="ls-text-button" onClick={onSettings} aria-label="学習設定">⚙</button></div>
+ <div className="ls-progress-info">
+ <p className="ls-current-caption">現在の教材</p><h3>{courseLabel} · {unitLabel}</h3>
+ {loading?<p role="status">読み込み中…</p>:error?<p>{error} <button onClick={onRetry}>再試行</button></p>:<p className="ls-current-count">学習済み <strong>{stats.seen}/{stats.total}語</strong> <span>・ 復習待ち {allDue}語</span></p>}
+ <button className="ls-primary ls-continue-button" disabled={loading||!!error||!stats.total} onClick={onResume}>{stats.seen>0?'続きから学習する':'この教材で学習を始める'} <span>→</span></button>
+ <div className="ls-fast-actions"><button onClick={onLibrary} disabled={loading||!!error||!stats.total}>単語一覧</button><button onClick={()=>quick(true)}>復習する</button></div>
+ <details className="ls-progress-detail"><summary>学習状況を詳しく見る</summary><div className="ls-rings">{progress}</div><div className="ls-metrics"><div><b>{today}</b><small>今日</small></div><div><b>{allLearned}</b><small>学習記録</small></div><div><b>{allDue}</b><small>復習待ち</small></div></div></details>
+ </div></section>
+ <section className="ls-mission" aria-labelledby="ls-choose-title">
+ <div className="ls-sectionhead"><h2 id="ls-choose-title">教材を選んで始める</h2></div>
+ <div className="ls-goals">
+ {missions.slice(0,4).map(([group,label,icon,sub,tone])=><button key={group} onClick={()=>begin(group)} className={'ls-goal '+tone}><span className="ls-goal-icon" aria-hidden="true">{icon}</span><div><strong>{label}</strong><small>{sub}</small></div><span className="ls-goal-arrow" aria-hidden="true">→</span></button>)}
+ </div>
+ <button type="button" className="ls-more-categories" onClick={()=>setMoreCategories(v=>!v)} aria-expanded={moreCategories}>{moreCategories?'その他の教材を閉じる':'その他の教材を選ぶ'} <span aria-hidden="true">{moreCategories?'−':'＋'}</span></button>
+ {moreCategories&&<div className="ls-goals ls-extra-goals">{missions.slice(4).map(([group,label,icon,sub,tone])=><button key={group} onClick={()=>begin(group)} className={'ls-goal '+tone}><span className="ls-goal-icon" aria-hidden="true">{icon}</span><div><strong>{label}</strong><small>{sub}</small></div><span className="ls-goal-arrow" aria-hidden="true">→</span></button>)}</div>}
+ </section>
+ </div>
+ <div className="ls-bottom-actions"><button className="ls-outline" onClick={onQuizStudio}>多角度語彙クイズ <span aria-hidden="true">→</span></button></div>
  {goal&&<Dialog title={missions.find(g=>g[0]===goal)?.[0]||(goal==='library'?'教材ライブラリー':goal==='review'?'復習する':'Voca Universe')} onClose={close}>
  {goal==='library'?<div className="ls-library-detail"><p>20冊以上の教材を比較・参照候補にした独自語彙マスター（8,653語）を整備中。学年・ジャンル・品詞別はオリジナル先行100語から開始しています。</p>{sourceGroups.map(([title,desc])=><article key={title}><strong>{title}</strong><p>{desc}</p></article>)}<p className="ls-note">市販教材の本文・全収録語を提供するものではありません。</p><button className="ls-primary" onClick={()=>begin('学年・入試')}>学習する →</button></div>:goal==='explore'?<form className="ls-search" onSubmit={e=>search(e,query)}><label htmlFor="ls-word">調べたい英単語</label><input id="ls-word" value={query} onChange={e=>setQuery(e.target.value)} placeholder="例：improve" autoFocus/><button className="ls-primary" disabled={busy||!query.trim()}>{busy?'検索中…':'探索する →'}</button>{exploreError&&<p role="alert">{exploreError}</p>}</form>:<>
  <div className="ls-step">{(reviewOnly?['教材','ユニット','学習方法']:['教材','ユニット']).map((s,i)=><span key={s} className={i===step?'active':i<step?'done':''}>{i+1} {s}</span>)}</div>
