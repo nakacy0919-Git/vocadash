@@ -14,3 +14,17 @@
 .vd-orb-state-dot{width:7px;height:7px;border-radius:50%;background:#62738d;box-shadow:0 0 8px #99b1ce55;flex:none}
 .vd-orb-state-dot[data-enabled=true]{background:#77e5cf;box-shadow:0 0 10px #77e5cf}
 @media(max-height:520px){.vd-orb-full .vd-orb-copy{top:47px;max-height:24dvh}.vd-orb-full .vd-orb-label{font-size:20px}.vd-orb-full .vd-orb-transcript,.vd-orb-full .vd-orb-notice{font-size:12px}.vd-orb-touch-status{bottom:max(10px,env(safe-area-inset-bottom));font-size:11px}.vd-orb-touch-status small{font-size:10px}.vd-orb-full .vd-orb-top{top:9px}}
+
+/* Lamp-first Dash feedback: voice messages never take over the transcript row. */
+.vd-orb-signal-row{display:flex;align-items:center;justify-content:center;min-height:19px;pointer-events:auto}
+.vd-orb-signal{width:14px;height:14px;flex:0 0 14px;border-radius:50%;border:1px solid rgba(255,255,255,.45);transition:background-color .18s,box-shadow .18s;background:#67768c;box-shadow:0 0 6px #77869f88}
+.vd-orb-signal-standby{background:#4da9ff;box-shadow:0 0 6px #4da9ff,0 0 18px #4da9ff88}
+.vd-orb-signal-success{background:#39e98c;box-shadow:0 0 7px #39e98c,0 0 20px #39e98c88}
+.vd-orb-signal-retry{background:#ff586d;box-shadow:0 0 7px #ff586d,0 0 20px #ff586d88}
+.vd-orb-signal-working{background:#f7c95b;box-shadow:0 0 7px #f7c95b,0 0 20px #f7c95b88}
+.vd-orb-screen-reader{position:absolute!important;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+.vd-orb-copy .vd-orb-transcript{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;max-width:100%;overflow:hidden;overflow-wrap:anywhere;background:#030815b0}
+.vd-orb-full .vd-orb-copy{gap:8px;max-height:min(20dvh,145px)}
+.vd-orb-compact .vd-orb-copy{gap:3px}
+.vd-orb-compact .vd-orb-signal{width:11px;height:11px;flex-basis:11px}
+.vd-orb-touch-status:empty{display:none}
