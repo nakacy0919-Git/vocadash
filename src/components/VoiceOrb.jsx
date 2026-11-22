@@ -3,7 +3,7 @@ import './VoiceOrb.css';
 import {createEnergyRenderer} from '../lib/voiceEnergyRenderer.js';
 const particles=Array.from({length:960},(_,i)=>{const t=(i+.5)/960,h=1-2*t;return {arm:i%5,t,h,angle:i*2.39996323,r:.76+.23*((i*73%97)/97),weight:.45+(i%7)*.14};});
 const stars=Array.from({length:100},(_,i)=>({x:(Math.sin(i*87.31)*43758.5453%1+1)%1,y:(Math.sin(i*42.78+7)*26378.72%1+1)%1,r:.3+(i%4)*.25}));
-export default function VoiceOrb({visible=false,supports=true,status,onStart,onClose,enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop}){
+export default function VoiceOrb({visible=false,supports=true,status,onStart,onClose,enabled,phase,micState,busy,full,meter,meterReady,transcript,interim,notice,suggestions,onChoose,onMinimize,onExpand,onStop,signal='idle'}){
  const canvas=useRef(null),cinematic=useRef(null),live=useRef({});live.current={phase,micState,busy,meterReady};
  useEffect(()=>{
   if((!enabled&&!full)||!canvas.current)return;
@@ -49,19 +49,25 @@ export default function VoiceOrb({visible=false,supports=true,status,onStart,onC
  },[enabled,full,meter]);
  if(!visible&&!enabled&&!notice&&!suggestions.length)return null;
  const state=busy?'thinking':phase==='standby'?'standby':micState;
- const label=!enabled?'Dash Assistant':micState==='model'?'Playing model audio…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':busy?'Processing…':phase==='standby'?'Waiting for Dash…':micState==='speaking'?'Listening to you…':micState==='listening'?'Listening…':micState==='starting'?'Connecting microphone…':micState==='reconnecting'?'Reconnecting…':'Dash Assistant';
+ // Keep the spoken transcript separate from microphone/command feedback.
+ // Signal precedence makes a successful command or retry visible even during reconnects.
+ const signalKind=signal==='retry'?'retry':signal==='success'?'success':busy?'working':enabled?'standby':'off';
+ const signalText=signalKind==='retry'?'Command not understood. Please try again.':signalKind==='success'?'Speech command recognized.':signalKind==='working'?'Processing command.':signalKind==='standby'?'Dash is listening or waiting.':'Microphone off.';
+
  return <div className={'vd-orb-overlay '+(full?'vd-orb-full ':'vd-orb-compact ')+'vd-orb-'+state}>
   {(enabled||full)&&<canvas ref={canvas} className="vd-orb-canvas" aria-hidden="true"/>}
   {full&&<canvas ref={cinematic} className="vd-orb-canvas vd-orb-cinematic" aria-hidden="true"/>}
   {full&&<div className="vd-orb-top"><span>DASH<span className="vd-orb-brand-accent"> ASSISTANT</span><small className="vd-orb-edition">NEURAL INTERFACE</small></span><div className="vd-orb-top-actions"><button type="button" aria-label="Minimize assistant" onClick={onMinimize}>−</button><button type="button" aria-label="Close assistant" onClick={onClose}>×</button></div></div>}
   <div className="vd-orb-copy">
-   {(enabled||full)&&<div id="vd-voice-live" role="status" className="vd-orb-label">{label}</div>}
-   {enabled&&transcript&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')}>“{transcript}”</div>}
-   {notice&&<div role="status" className="vd-orb-notice">{notice}</div>}
+   {(enabled||full)&&<div id="vd-voice-live" className="vd-orb-signal-row" role="status" aria-live="polite" title={status||signalText}>
+    <span className={'vd-orb-signal vd-orb-signal-'+signalKind} aria-hidden="true"/>
+    <span className="vd-orb-screen-reader">{signalText}</span>
+   </div>}
+   {transcript&&<div className={'vd-orb-transcript'+(interim?' is-interim':'')} aria-label="Recognized speech">“{transcript}”</div>}
    {suggestions.length>0&&<div className="vd-orb-suggestions">{suggestions.map((word,i)=><button key={word} type="button" onClick={()=>onChoose(word)}>{i+1}. {word}</button>)}</div>}
   </div>
   {full&&<button className="vd-orb-touch" type="button" aria-label={enabled?'マイクを停止':'マイクを開始'} aria-pressed={enabled} aria-describedby="vd-orb-touch-hint" disabled={!supports&&!enabled} onClick={enabled?onStop:onStart}/>}
-  {full&&<div className="vd-orb-touch-status" id="vd-orb-touch-hint"><span className="vd-orb-state-dot" data-enabled={enabled}/><span>{!supports?'このブラウザは音声認識に対応していません':enabled?'タップしてマイクを停止':'中央の光をタップして開始'}</span>{status&&<small role="status">{status}</small>}</div>}
+  {full&&<div className="vd-orb-touch-status" id="vd-orb-touch-hint">{!supports?'このブラウザは音声認識に対応していません':!enabled?'中央の光をタップして開始':null}</div>}
   {enabled&&!full&&<button className="vd-orb-expand" type="button" onClick={onExpand} aria-label="Expand assistant">⤢</button>}
  </div>;
 }
