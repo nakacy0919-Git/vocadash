@@ -76,7 +76,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   if(processing.current){if(supersedesVoiceLookup(parsed.kind,parsed.value,universeOpen)){commandEpoch.current++;pending.current=null;clearTimeout(pendingTimer.current);processing.current=false;setBusy(false);}else{if(parsed.kind!=='unknown')pending.current={raw,alternatives};return;}}
   const epoch=commandEpoch.current;
   const valid=()=>epoch===commandEpoch.current;
-  processing.current=true;setBusy(true);setInterim('');setTranscript(raw);setSuggestions([]);
+  processing.current=true;setBusy(true);setInterim('');if(!alternatives.length)setTranscript(raw);setSuggestions([]);
   try{
    const cmd=parsed;const {kind,value}=cmd;
    if(returnsToAssistant(kind,universeOpen)){returnAssistant();return;}
@@ -176,7 +176,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
   r.onaudioend=()=>{if(!live())return;clearTimeout(captureTimer.current);setMicState(modelPlaying.current?'model':'reconnecting');if(!modelPlaying.current)captureTimer.current=setTimeout(reconnectCapture,2500);};
   r.onspeechstart=()=>{if(live()&&!modelPlaying.current){captured();setMicState('speaking');}};
   r.onspeechend=()=>{if(live()&&!modelPlaying.current)setMicState('listening');};
-  r.onnomatch=()=>{if(live()){setInterim('');flash('聞き取れませんでした。もう一度話してください');}};
+  r.onnomatch=()=>{if(live()){setInterim('');setTranscript('');flash('聞き取れませんでした。もう一度話してください');}};
   r.onresult=e=>{
    if(recognition.current!==r||!wanted.current||suspendRef.current||document.hidden||modelPlaying.current||window.speechSynthesis?.speaking)return;
    captured();const segments=speechSegments(e);
@@ -193,7 +193,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
      const wasStandby=phaseRef.current==='standby';
      activate();
      if(routed.command)latest.current?.(routed.command,alternatives);
-     else{if(wasStandby)wakeChime();setTranscript('Dash');}
+     else{if(wasStandby)wakeChime();}
     }else latest.current?.(routed.command,alternatives);
    }
   };
@@ -201,7 +201,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
    if(['not-allowed','service-not-allowed'].includes(e.error)){stop();setStatus('マイクへのアクセスが拒否されました');flash('ブラウザのマイク権限をご確認ください');return;}
    if(e.error==='audio-capture'&&meter.current&&!meterRetry.current){meterRetry.current=true;releaseMeter();}
    if(['audio-capture','network'].includes(e.error)){if(++audioRetry.current>3){stop();setStatus('音声認識を再接続できません');flash('マイクまたはネットワークをご確認ください');return;}setMicState('reconnecting');flash('音声認識を再接続しています');try{r.abort();}catch{};captureTimer.current=setTimeout(()=>{if(live()&&running.current){running.current=false;restart();}},2500);}
-   else if(e.error==='no-speech'){setInterim('');setMicState('reconnecting');captureTimer.current=setTimeout(reconnectCapture,2500);}
+   else if(e.error==='no-speech'){setInterim('');setTranscript('');setMicState('reconnecting');captureTimer.current=setTimeout(reconnectCapture,2500);}
   };
   r.onend=()=>{if(recognition.current!==r)return;clearTimeout(captureTimer.current);running.current=false;setInterim('');setMicState(modelPlaying.current?'model':'reconnecting');if(wanted.current&&!modelPlaying.current)restart();};
   try{r.start();clearTimeout(captureTimer.current);captureTimer.current=setTimeout(()=>{if(live()&&!modelPlaying.current){stop();setStatus('マイクの許可と音声認識サービスを確認し、再度タップしてください');}},20000);
