@@ -10,3 +10,14 @@
 .vd-voice-bottom,.vd-voice-panel{position:relative;z-index:3}.vd-voice-shell:has(.vd-orb-full) .vd-voice-bottom{visibility:hidden}.vd-voice-result,.vd-voice-help{z-index:4}
 
 .vd-voice-shell.in-universe{z-index:2147483001}.vd-voice-bottom.vd-voice-docked{display:none}.vd-voice-shell.in-universe .vd-voice-result,.vd-voice-shell.in-universe .vd-voice-help{margin-bottom:0}
+
+/* Dash uses a single light indicator plus the recognized utterance, without status-message rows. */
+.vu-live-copy{display:flex;align-items:center;gap:8px;min-width:0}
+.vu-live-copy small{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vd-voice-dock-lamp,.vd-voice-launch-lamp{display:inline-block;flex:none;width:12px;height:12px;border-radius:50%;border:1px solid rgba(255,255,255,.48);background:#4da9ff;box-shadow:0 0 8px #4da9ff,0 0 15px #4da9ff88}
+.vd-voice-dock-lamp-success,.vd-voice-launch-lamp-success{background:#39e98c;box-shadow:0 0 8px #39e98c,0 0 17px #39e98c88}
+.vd-voice-dock-lamp-retry,.vd-voice-launch-lamp-retry{background:#ff586d;box-shadow:0 0 8px #ff586d,0 0 17px #ff586d88}
+.vd-voice-dock-lamp-working,.vd-voice-launch-lamp-working{background:#f7c95b;box-shadow:0 0 8px #f7c95b,0 0 17px #f7c95b88}
+.vd-voice-launch-lamp-off{background:#8c94a3;box-shadow:0 0 7px #7c869a77}
+.vd-voice-button.vd-voice-round{position:relative}
+.vd-voice-launch-lamp{position:absolute;right:0;top:0;width:12px;height:12px}
