@@ -62,7 +62,7 @@ export default function PeriodicPractice({
 
   useEffect(() => { write(base + ':settings', settings); }, [base, settings]);
   useEffect(() => { write(base + ':wrong', wrongIds); }, [base, wrongIds]);
-  useEffect(() => { if (session && stage === 'quiz') write(base + ':session', session); }, [base, session, stage]);
+  useEffect(() => { if (session && stage === 'quiz') { write(base + ':session', session); setSaved(session); } }, [base, session, stage]);
   useEffect(() => {
     if (!feedback || stage !== 'quiz') return;
     const timer = window.setTimeout(() => advance(), !settings.instantFeedback ? 220 : feedback.correct ? 700 : 1800);
