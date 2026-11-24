@@ -115,7 +115,7 @@ export default function PeriodicPractice({
     const updated = { ...session, answers: [...session.answers, answer] };
     setSession(updated);
     setFeedback({ index, correct });
-    setWrongIds(old => correct ? old.filter(id => id !== current.id) : [...new Set([...old, current.id])]);
+    if (settings.retryWrong) setWrongIds(old => correct ? old.filter(id => id !== current.id) : [...new Set([...old, current.id])]);
     onRecord(current, correct);
   }
   function finish(value) {
@@ -165,7 +165,7 @@ export default function PeriodicPractice({
               <Action onClick={startWrong} disabled={!wrongAvailable}>↻ <span>まちがい復習</span></Action>
             </div>
           </div>
-          <div className="px-secondary-row"><button onClick={() => setStage('setup')}>⚙ 出題数・出題順などを設定する →</button>{recoverable && <span>続きから再開できます：{recoverable.answers.length} / {recoverable.ids.length}問</span>}</div>
+          <div className="px-secondary-row"><button onClick={() => setStage('setup')}>⚙ 出題数・出題順などを設定する →</button><details className="px-legacy"><summary>その他の練習</summary><button onClick={onLegacyMemory}>記憶ミッション（従来の学習方法）</button></details>{recoverable && <span>続きから再開できます：{recoverable.answers.length} / {recoverable.ids.length}問</span>}</div>
           <div className="px-metrics">
             <Metric icon="▱" value={available.length} label="総問題数"/>
             <Metric icon="▤" value={available.length - seenCount} label="未学習" highlight/>
@@ -206,14 +206,14 @@ export default function PeriodicPractice({
               const isRight = feedback && option.index === current.correctIndex;
               return <button type="button" key={option.index} className={'px-answer ' + (isRight ? 'px-right ' : '') + (selected && !feedback.correct ? 'px-wrong ' : '')} disabled={!!feedback} onClick={() => choose(option.index)}><span>{LETTERS[i]}</span>{option.text}</button>;
             })}</div>
-            {feedback && <div className={'px-feedback ' + (feedback.correct ? 'px-feedback-right' : 'px-feedback-wrong')} role="status">
+            {feedback && settings.instantFeedback && <div className={'px-feedback ' + (feedback.correct ? 'px-feedback-right' : 'px-feedback-wrong')} role="status">
               <strong>{feedback.correct ? '✓ 正解です！' : feedback.index === -1 ? 'スキップしました' : 'もう一度覚えよう'}</strong>
               <span>正解：{current.word}　{current.meaning}</span>
               {settings.instantFeedback && <p>{current.explanation || current.english}</p>}
               <button onClick={advance}>次の問題へ →</button>
             </div>}
             <div className="px-question-footer"><div className="px-tools">
-              {settings.audio && <button onClick={() => onSpeak(current, !!feedback)} disabled={!sound}>♫ {feedback ? '英文を聞く' : '発音を聞く'}</button>}
+              {settings.audio && feedback && <button onClick={() => onSpeak(current, true)} disabled={!sound}>♫ 正しい英文を聞く</button>}
               <button onClick={() => setWrongIds(old => [...new Set([...old, current.id])])}>▤ あとで復習</button>
               {!feedback && <button onClick={() => choose(-1)}>≫ スキップ</button>}
             </div>
