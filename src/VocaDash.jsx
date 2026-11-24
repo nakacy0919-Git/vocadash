@@ -5,6 +5,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CATALOG, firstUnit, sourcePath, normalizeWords, assetImage, safeLoad, safeSave, updateRecord, isDue, summaryFor, shuffled, splitDialogueTurns, makeSessionQueue, splitTargetSegments, STORAGE_KEY } from './lib/learning';
 import './VocaDash.css';
 import MemoryTrainer from './components/MemoryTrainer.jsx';
+import PeriodicPractice from './components/PeriodicPractice.jsx';
 import CourseLibrary from './components/CourseLibrary.jsx';
 import {applyMemoryAttempt,memorySnapshot,quizMemoryAttempt,universeMemoryAttempt} from './lib/memoryBridge.js';
 import ReadingPractice from './components/ReadingPractice';
@@ -338,11 +339,13 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   };
   const startGuided = (courseId,unitId,name) => {
     if(!unitLoader(courseId,unitId))return;
+    // A selected periodic exam now opens the one-tap cloze practice instead of the vocabulary card grid.
+    const requestedMode = courseId === 'regular' && name === 'library' ? 'periodic' : name;
     if(courseId!==selection.courseId||unitId!==selection.unitId)setLibraryPage(0);
     if(name==='memory'){setMissionScope(null);setReturnToLibrary(false);}
-    if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(name);return;}
-    resetCard(); readingCounted.current.clear(); setAutoplay(false);setDashboardOpen(false);setQueue([]);setCursor(0);setMode(name);setSession({answered:0,correct:0});
-    pendingMode.current={key:courseId+':'+unitId,mode:name};
+    if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(requestedMode);return;}
+    resetCard(); readingCounted.current.clear(); setAutoplay(false);setDashboardOpen(false);setQueue([]);setCursor(0);setMode(requestedMode);setSession({answered:0,correct:0});
+    pendingMode.current={key:courseId+':'+unitId,mode:requestedMode};
     const next={courseId,unitId};setSelection(next);setStore(prev=>({...prev,lastSelection:next}));
     if(courseId===selection.courseId&&unitId===selection.unitId)retry();
   };
@@ -472,6 +475,27 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
+  if (!dashboardOpen && mode === 'periodic') return <PeriodicPractice
+    key={selection.courseId + ':' + selection.unitId}
+    words={loadedKey === selection.courseId + ':' + selection.unitId ? words : []}
+    records={store.records}
+    unitId={selection.unitId}
+    unitLabel={unit.label}
+    loading={loading || loadedKey !== selection.courseId + ':' + selection.unitId}
+    error={error}
+    onRetry={retry}
+    sound={store.settings.sound}
+    onSpeak={speak}
+    onClose={() => { resetCard(); setDashboardOpen(true); }}
+    onLegacyMemory={() => startMode('memory')}
+    onRecord={(word, correct) => {
+      playQuizFeedbackSound(correct, store.settings.sound);
+      recordClassroom(word, correct, 'quiz', selection);
+      setStore(prev => applyMemoryAttempt(updateRecord(prev, word.id, correct), {
+        id:word.id, word:word.word, meaning:word.meaning, correct, kind:'cloze'
+      }));
+    }}
+  />;
   if(!dashboardOpen&&mode==='memory')return <MemoryTrainer focusIds={missionScope} sound={store.settings.sound} onSpeak={speak} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(!returnToLibrary);setMode(returnToLibrary?'library':'study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
   return <div className={'vd-app'+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen&&mode!=='library' ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <Opening/>
@@ -495,7 +519,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       <div className="vd-page">
         {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode('memory')} onLibrary={()=>startMode('library')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode(course.id==='regular'?'periodic':'memory')} onLibrary={()=>startMode(course.id==='regular'?'periodic':'library')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
