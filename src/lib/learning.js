@@ -16,6 +16,8 @@ export const CATALOG = [
   ] },
   { id: 'regular', label: '定期考査対策', short: '定期考査', group: '学校教材', units: [
     { id: 'regular', label: '第1回 KICK OFF' }, { id: 'regular2', label: '第2回 KICK OFF' },
+    { id: 'regular3', label: '第3回 定期テスト（No.233–362）' },
+    { id: 'regular4', label: '第4回 KICK OFF（Stage 4 / No.363–496）' },
   ] },
   { id: 'reading', label: '長文読解 語彙', short: '長文語彙', group: '学校教材', units: Array.from({ length: 15 }, (_, i) => ({ id: String(i + 1), label: 'Lesson ' + (i + 1) })) },
   ...CEFR_COURSES,
