@@ -208,6 +208,7 @@ export default function VoiceControl({voiceDock,current,words,universeOpen,onOpe
  useEffect(()=>{if(wasUniverseOpen.current&&!universeOpen){if(wanted.current&&!skipAutoReturn.current)stop();skipAutoReturn.current=false;}wasUniverseOpen.current=universeOpen;},[universeOpen,enabled]);
  useEffect(()=>{if(!dashboardOpen&&!universeOpen&&wanted.current&&!open)stop();},[dashboardOpen,universeOpen]);
  useEffect(()=>{const show=()=>{setOpen(true);setCompact(false);setHelpOpen(false);setResultOpen(false);};window.addEventListener('vd-open-dash',show);return()=>window.removeEventListener('vd-open-dash',show);},[]);
+ useEffect(()=>{const launch=()=>{if(wanted.current){setOpen(true);setCompact(false);return;}start();};window.addEventListener('vd-start-dash',launch);return()=>window.removeEventListener('vd-start-dash',launch);},[suspended]);
  useEffect(()=>{if(suspended&&wanted.current){stop();setStatus('音読と競合しないよう音声操作を停止しました');}},[suspended]);
  useEffect(()=>{
   const hidden=()=>{if(document.hidden&&wanted.current){stop();setStatus('画面が非表示になったため停止しました');}};

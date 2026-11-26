@@ -12,7 +12,7 @@ import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
 import VoiceControl from './components/VoiceControl';
 import QuizStudio from './components/QuizStudio';
-import LearningSpace,{Opening} from './components/LearningSpace';
+import LearningSpace from './components/LearningSpace';
 import {lookupUniverse} from './lib/universe';
 import {categoryUnit,categoryCourse} from './lib/category.js';
 import {findVocabulary,searchVocabulary} from './lib/vocabularyLookup.js';
@@ -466,7 +466,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const resolveVocabulary=raw=>findVocabulary(raw,{words,loadCourseWords:voiceCourseSearch});
   const exploreFromHome=async raw=>{const item=await resolveVocabulary(raw);if(!item)return false;openUniverse(item);return true;};
   const searchAll=raw=>searchVocabulary(raw,courseIndex);
-  const launchDash=()=>window.dispatchEvent(new Event('vd-open-dash'));
+  const launchDash=()=>window.dispatchEvent(new Event('vd-start-dash'));
   const voiceAppCommand=kind=>{
     if(universeEntry){stopUniverseLaunchSound();stopAudio();setUniverseEntry(null);}
     if(kind==='close')return;
@@ -497,8 +497,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     }}
   />;
   if(!dashboardOpen&&mode==='memory')return <MemoryTrainer focusIds={missionScope} sound={store.settings.sound} onSpeak={speak} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} store={store} savedError={savedError} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} title={course.label+' / '+unit.label} onExit={()=>{resetCard();setDashboardOpen(!returnToLibrary);setMode(returnToLibrary?'library':'study');}} onRecord={(id,grade,kind,at,evidence)=>{const word=words.find(w=>w.id===id);setStore(prev=>applyMemoryAttempt(prev,{id,word:word?.word,meaning:word?.meaning,grade,kind,at,...evidence}));}}/>;
-  return <div className={'vd-app'+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen&&mode!=='library' ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
-    <Opening/>
+  return <div className={'vd-app'+(dashboardOpen&&!quizStudioOpen?' vd-library-home':'')+((dashboardOpen||mode==='library')?' ls-dashboard':'')+(!dashboardOpen&&mode!=='library' ? (mode === 'reading' ? ' is-reading-view' : ' is-focus-view') : '')+(!dashboardOpen && ['study','sentence','review'].includes(mode) ? ' is-compact-card' : '')}>
     <aside className="vd-sidebar" hidden={dashboardOpen||mode==='library'}>
       <Brand/>
       <a className="vd-dashboard-nav" href="/?classroom=1">Classroom</a>
@@ -524,7 +523,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
-            onExplore={exploreFromHome} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
+            onExplore={exploreFromHome} onLookup={resolveVocabulary} onSpeak={speak} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
         ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('memory');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
           <>
