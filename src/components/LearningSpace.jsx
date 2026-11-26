@@ -72,6 +72,10 @@ export default function LearningSpace({catalog,selection,onStart,onResume,onLibr
  const quick=(review)=>{begin(review?'review':(current?.group||'学年・入試'),review);if(current){setPicked(current);setUnitId(selection.unitId);setStep(2)}};
  return <div className="ls-home ls-library-home" lang={lang}>
  <div className="lh-background" aria-hidden="true"/>
+ <div className="lh-starlight" aria-hidden="true">
+ {Array.from({length:38},(_,i)=>{const x=(i*73.173+9)%100,y=(i*39.617+7)%92;return <span key={i} className={'lh-star'+(i%7===0?' lh-star-cross':'')} style={{'--x':x+'%','--y':y+'%','--s':(i%7===0?7:1.6+(i%4)*.85)+'px','--delay':(-i*.81)+'s','--period':(3.4+(i%6)*.65)+'s','--drift':((i%5)-2)*8+'px'}}/>})}
+ {[{x:12,y:11,delay:-1,period:12},{x:52,y:4,delay:-7,period:17},{x:80,y:20,delay:-13,period:23}].map((s,i)=><span className="lh-meteor" key={i} style={{'--mx':s.x+'%','--my':s.y+'%','--md':s.delay+'s','--mp':s.period+'s'}}/>)}
+ </div>
  <header className="lh-toolbar"><a href="/?classroom=1">Classroom</a><div className="lh-language" aria-label="Language"><button aria-pressed={lang==='ja'} onClick={()=>switchLang('ja')}>日本語</button><button aria-pressed={lang==='en'} onClick={()=>switchLang('en')}>EN</button></div><button className="lh-settings" aria-label={t('設定','Settings')} onClick={onSettings}>⚙</button></header>
  <div className="lh-center">
  <div className="lh-brand-row"><div className="lh-wordmark"><svg aria-hidden="true" viewBox="0 0 48 48" fill="none"><path d="M24 38c-6-5-13-7-21-5V12c8-2 15 0 21 5 6-5 13-7 21-5v21c-8-2-15 0-21 5Zm0 0V17" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 13C24 6 29 3 37 2c-1 7-5 11-13 11ZM23 13C15 13 11 9 10 4c7 0 12 3 13 9Z" fill="#69845b"/></svg><h1>VocaDash</h1></div><div className="lh-floating-orb" aria-hidden="true"><Orb/></div></div>
