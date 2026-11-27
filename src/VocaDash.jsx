@@ -324,6 +324,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   };
   useEffect(() => {
     const pending=pendingMode.current;
+    if(mode==='vocasheet'&&!pending)return;
     if(pending&&(loading||loadedKey!==pending.key))return;
     const nextMode=pending?.mode||'study';
     if(pending)pendingMode.current=null;
@@ -535,7 +536,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </header>
       <div className="vd-page">
         {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
-          <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided} onVocaSheet={()=>{resetCard();setAutoplay(false);setDashboardOpen(false);setMode('vocasheet');}}
+          <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided} onVocaSheet={()=>{pendingMode.current=null;resetCard();setAutoplay(false);setDashboardOpen(false);setMode('vocasheet');}}
             onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>{setMissionScope(null);setReturnToLibrary(false);startMode('fast-resume');}} onLibrary={()=>startMode(course.id==='regular'?'periodic':'library')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}

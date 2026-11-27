@@ -26,3 +26,19 @@
 @media(prefers-reduced-motion:reduce){.vs-turn-glint{display:none}}
 @media(min-width:760px) and (max-height:820px){.vs-root{padding:6px 12px}.vs-topbar{margin-bottom:4px}.vs-desk{padding:8px 12px;gap:5px}.vs-book-heading h1{font-size:24px}.vs-book-row{min-height:clamp(59px,8dvh,78px)}.rs-book-left,.rs-book-right{padding-block:4px}.rs-book-workspace .rs-word,.rs-book-workspace button.rs-word{font-size:clamp(19px,3.15dvh,27px)!important}.vs-root .rs-controls button{min-height:29px;padding:4px 7px}.vs-root .rs-controls button.rs-swatch{width:28px;height:28px;min-height:28px}.vs-book-workspace .rs-instruction{padding-block:1px}.vs-pager{margin-top:3px}.vs-book-workspace .rs-example-line p{font-size:clamp(14px,2.4dvh,20px)}}
 @media(max-width:700px){.vs-root{padding:5px}.vs-desk{padding:7px;gap:6px}.vs-brand strong{font-size:27px}.vs-brand small{font-size:7px}.vs-brand-icon{display:none}.vs-root .vs-home,.vs-root .vs-sound{font-size:11px;padding:7px}.vs-head-meta small{display:none}.vs-book-frame{padding:5px}.vs-book-row{min-height:87px}.rs-book-left,.rs-book-right{padding:6px;gap:4px}.rs-book-no{width:27px}.rs-book-no b{font-size:10px}.rs-book-pos{white-space:normal;font-size:9px}.rs-book-meaning{flex-wrap:wrap;gap:2px}.rs-book-workspace .rs-word,.rs-book-workspace button.rs-word{font-size:clamp(16px,3.7vw,24px)!important}.rs-book-workspace .rs-meaning,.rs-book-workspace button.rs-meaning{font-size:11px!important}.rs-book-workspace .rs-audio{width:26px;height:26px;min-height:26px;padding:4px}.rs-book-workspace .rs-example-line p{font-size:clamp(12px,3.25vw,19px)}.rs-book-exno{margin-left:0}.vs-book-labels{padding:5px}.vs-book-labels span{display:none}.vs-root .vs-pager .vs-turn{font-size:11px;padding:8px}.vs-pager form{gap:3px}.vs-root .vs-pager input{width:53px}.vs-reading-progress small{max-width:55%}.vs-editorial{font-size:9px}}
+
+/* Headings sit directly on the facing paper; turn animation is decorative so
+   the optical film and source text remain aligned while moving. */
+.rs-book-paper .rs-book-grid{grid-template-rows:auto;grid-auto-rows:1fr}
+.rs-book-column-head{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #d4bf9a;padding-block:6px}
+.rs-book-column-head>div{display:flex;align-items:center;gap:8px;padding-inline:clamp(8px,2vw,29px);min-width:0}
+.rs-book-column-head b{font:800 12px Georgia,serif;letter-spacing:.14em;color:#557445}
+.rs-book-column-head span{font-size:10px;color:#846b48}
+.rs-optical-layer .rs-book-column-head{border-color:#392b2444}
+.rs-optical-layer .rs-book-column-head b,.rs-optical-layer .rs-book-column-head span{color:var(--rs-covered-ink)}
+.vs-turn-leaf{position:absolute;z-index:3;top:38%;bottom:25px;left:50%;right:9px;transform-origin:left center;pointer-events:none;border-radius:0 7px 7px 0;border-left:1px solid #b69a66;background:linear-gradient(100deg,#bfab8580,#fffaf0e6 18%,#fffdf3dc 85%,#c4ab7c9c);box-shadow:5px 5px 17px #72573542;animation:vs-leaf-next .46s cubic-bezier(.2,.65,.35,1) forwards}
+.vs-turn-leaf.reverse{left:9px;right:50%;transform-origin:right center;border-radius:7px 0 0 7px;animation-name:vs-leaf-prev}
+@keyframes vs-leaf-next{0%{transform:perspective(1000px) rotateY(0);opacity:.9}65%{opacity:.7}100%{transform:perspective(1000px) rotateY(-155deg);opacity:0}}
+@keyframes vs-leaf-prev{0%{transform:perspective(1000px) rotateY(0);opacity:.9}65%{opacity:.7}100%{transform:perspective(1000px) rotateY(155deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.vs-turn-leaf{display:none}}
+@media(max-width:700px){.rs-book-column-head span{display:none}.rs-book-column-head b{font-size:11px}}
