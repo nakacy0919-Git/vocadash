@@ -59,3 +59,41 @@ export function summarizePractice(answers = []) {
   return { correct, total: answers.length, rate: answers.length ? Math.round(correct / answers.length * 100) : 0,
     wrong: answers.filter(answer => !answer.correct).map(answer => answer.id) };
 }
+
+// Extend authored practice to vocabulary courses without changing their source data.
+export function prepareFastWords(words = []) {
+  return words.flatMap(w => {
+    if (isClozeReady(w)) return [{...w, practiceKind:'cloze'}];
+    if (!w?.id || !w.word || !w.meaning) return [];
+    const key = w.word.trim().toLowerCase();
+    let choices = Array.isArray(w.choices) && w.choices.length === 4 && new Set(w.choices.map(x=>x.toLowerCase())).size===4 && w.choices.some(x=>x.toLowerCase()===key) ? [...w.choices] : [];
+    if (!choices.length) {
+      const blocked = new Set([key]);
+      for (const term of [...(Array.isArray(w.synonyms)?w.synonyms:[]),...(Array.isArray(w.antonyms)?w.antonyms:[])]) blocked.add(String(typeof term==='string'?term:term?.word||'').toLowerCase());
+      choices=[w.word];
+      for (const x of words) {
+        const k=String(x.word||'').toLowerCase();
+        if (!k || blocked.has(k) || !x.meaning || x.meaning===w.meaning) continue;
+        blocked.add(k);choices.push(x.word);if(choices.length===4)break;
+      }
+    }
+    if(choices.length!==4)return [];
+    const correctIndex=choices.findIndex(x=>x.toLowerCase()===key);
+    const target=w.word.replace(/[.*+?^$(){}|[\]\\]/g,'\\$&');
+    const exact=new RegExp('(^|[^A-Za-z0-9])('+target+')(?=$|[^A-Za-z0-9])','i');
+    const sentence=String(w.english||'');
+    const match=sentence.match(exact);
+    // Never display the answer as an unmasked sentence; if the exact surface form
+    // is absent, use the Japanese meaning instead of inventing an example.
+    const prompt=match?sentence.replace(exact,(_,prefix)=>prefix+'________'):'________';
+    return [{...w,choices,correctIndex,prompt,practiceKind:match?'cloze':'meaning'}];
+  });
+}
+export function timedPracticeSummary(answers = []) {
+  const timed=answers.filter(a=>!a.skipped&&Number.isFinite(a.responseMs)&&a.responseMs>=0);
+  const scores=answers.filter(a=>!a.skipped&&Number.isFinite(a.mastery)).map(a=>a.mastery);
+  return { averageMs:timed.length?Math.round(timed.reduce((n,a)=>n+a.responseMs,0)/timed.length):null,
+    fastestMs:timed.length?Math.min(...timed.map(a=>a.responseMs)):null,
+    mastery:scores.length?Math.round(scores.reduce((n,v)=>n+v,0)/scores.length):null,
+    timedCount:timed.length, skipped:answers.filter(a=>a.skipped).length };
+}

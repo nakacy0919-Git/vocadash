@@ -35,3 +35,14 @@ test('results preserve missed IDs for targeted retry', () => {
   const a=[{id:'a',correct:false},{id:'b',correct:true},{id:'c',correct:true}];
   assert.deepEqual(summarizePractice(a),{correct:2,total:3,rate:67,wrong:['a']});
 });
+
+import {prepareFastWords,timedPracticeSummary} from './periodicPractice.js';
+test('fast mission keeps authored cloze, masks exact example and uses meaning if no safe match',()=>{
+ const a=sample(1), b={id:'b',word:'work',meaning:'働く',english:'I work here.',choices:['work','walk','play','read']},c={...b,id:'c',english:'She works here.'};
+ const out=prepareFastWords([a,b,c]);
+ assert.equal(out[0].prompt,a.prompt);assert.equal(out[1].prompt,'I ________ here.');assert.equal(out[2].practiceKind,'meaning');assert.equal(out[2].prompt,'________');
+});
+test('timing statistics exclude skips and unknown times; no fake mastery for missing history',()=>{
+ assert.deepEqual(timedPracticeSummary([{responseMs:2000,mastery:25},{responseMs:6000,mastery:45},{skipped:true,responseMs:500,mastery:0},{responseMs:null}]),{averageMs:4000,fastestMs:2000,mastery:35,timedCount:2,skipped:1});
+ assert.equal(timedPracticeSummary([]).mastery,null);
+});

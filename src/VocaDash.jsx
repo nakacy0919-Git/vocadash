@@ -488,12 +488,14 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
-  if (!dashboardOpen && mode === 'periodic') return <PeriodicPractice
+  if (!dashboardOpen && ['periodic','fast','fast-resume'].includes(mode)) return <PeriodicPractice
     key={selection.courseId + ':' + selection.unitId}
     words={loadedKey === selection.courseId + ':' + selection.unitId ? words : []}
     records={store.records}
     unitId={selection.unitId}
     unitLabel={unit.label}
+    courseId={course.id} courseLabel={course.label} autoStart={mode!=='periodic'} resumeOnStart={mode==='fast-resume'} focusIds={mode==='periodic'?null:missionScope}
+    onBack={()=>{resetCard();setDashboardOpen(!returnToLibrary);setMode(returnToLibrary?'library':'study');}}
     loading={loading || loadedKey !== selection.courseId + ':' + selection.unitId}
     error={error}
     onRetry={retry}
@@ -501,11 +503,11 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     onSpeak={speak}
     onClose={() => { resetCard(); setDashboardOpen(true); }}
     onLegacyMemory={() => startMode('memory')}
-    onRecord={(word, correct) => {
+    onRecord={(word, correct, evidence) => {
       playQuizFeedbackSound(correct, store.settings.sound);
       recordClassroom(word, correct, 'quiz', selection);
       setStore(prev => applyMemoryAttempt(updateRecord(prev, word.id, correct), {
-        id:word.id, word:word.word, meaning:word.meaning, correct, kind:'cloze'
+        id:word.id, word:word.word, meaning:word.meaning, correct, kind:'cloze',...evidence
       }));
     }}
   />;
@@ -531,14 +533,14 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       <div className="vd-page">
         {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
           <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
-            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>startMode(course.id==='regular'?'periodic':'memory')} onLibrary={()=>startMode(course.id==='regular'?'periodic':'library')} onSettings={()=>setAdvancedOpen(true)}
+            onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>{setMissionScope(null);setReturnToLibrary(false);startMode('fast-resume');}} onLibrary={()=>startMode(course.id==='regular'?'periodic':'library')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}
             allDue={Object.values(store.records).filter(r=>isDue(r)).length} readingPassed={readingPassed}
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
             onExplore={exploreFromHome} onLookup={resolveVocabulary} onSpeak={speak} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
-        ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('memory');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
+        ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('fast');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
           <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>

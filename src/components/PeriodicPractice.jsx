@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { isDue } from '../lib/learning.js';
+import { gradeAnswer, reviewMemory, mastery } from '../lib/memoryEngine.js';
 import {
   DEFAULT_PRACTICE_OPTIONS, PRACTICE_COUNTS, eligibleClozeWords,
-  shuffledChoices, sessionItems, recoverSession, summarizePractice
+  shuffledChoices, sessionItems, recoverSession, summarizePractice, prepareFastWords, timedPracticeSummary
 } from '../lib/periodicPractice.js';
 import './PeriodicPractice.css';
 
@@ -27,9 +28,9 @@ function Action({ children, onClick, disabled = false, accent = false, className
 }
 export default function PeriodicPractice({
   words, records, unitId, unitLabel, loading, error, onRetry, onClose,
-  onRecord, onSpeak, onLegacyMemory, sound = true
+  onRecord, onSpeak, onLegacyMemory, sound = true, courseId='regular', courseLabel='定期考査対策', autoStart=false, resumeOnStart=false, focusIds=null, onBack
 }) {
-  const base = 'vd-periodic-v2:' + unitId;
+  const base = courseId==='regular'?'vd-periodic-v2:'+unitId:'vd-fast-v1:'+courseId+':'+unitId+(focusIds?.length?':page:'+focusIds[0]:'');
   const [stage, setStage] = useState('home');
   const [settings, setSettings] = useState(() => ({
     ...DEFAULT_PRACTICE_OPTIONS, ...(read(base + ':settings', {}) || {})
@@ -42,8 +43,9 @@ export default function PeriodicPractice({
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
   const [notice, setNotice] = useState('');
-  const locked = useRef(false);
-  const available = useMemo(() => eligibleClozeWords(words), [words]);
+  const locked = useRef(false), startedAt = useRef(null), autoStarted=useRef(false);
+  const [resultPage,setResultPage]=useState(0),[resultTab,setResultTab]=useState('wrong');
+  const available = useMemo(() => {const scope=focusIds?words.filter(w=>focusIds.includes(w.id)):words;return courseId==='regular'?eligibleClozeWords(scope):prepareFastWords(scope);}, [words,focusIds,courseId]);
   const byId = useMemo(() => new Map(available.map(w => [w.id, w])), [available]);
   const recoverable = useMemo(() => recoverSession(saved, available), [saved, available]);
   const current = session && stage === 'quiz' ? byId.get(session.ids[session.cursor]) : null;
@@ -51,7 +53,7 @@ export default function PeriodicPractice({
   const done = (session?.answers || []).filter(a => a.correct).length;
   const seenCount = available.filter(w => (records[w.id]?.seen || 0) > 0 || (records[w.id]?.memory?.attempts || 0) > 0).length;
   const dueCount = available.filter(w => isDue(records[w.id])).length;
-  const unitTitle = '定期考査対策 / ' + unitLabel;
+  const unitTitle = courseLabel + ' / ' + unitLabel;
   const wrongAvailable = available.filter(w => wrongIds.includes(w.id)).length;
   const wordList = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -83,6 +85,9 @@ export default function PeriodicPractice({
     return () => window.removeEventListener('keydown', key);
   });
 
+  useEffect(()=>{if(!autoStart||autoStarted.current||loading||error||!available.length)return;autoStarted.current=true;if(resumeOnStart&&recoverable)resume();else start();},[autoStart,resumeOnStart,loading,error,available,recoverable]);
+  useEffect(()=>{startedAt.current=stage==='quiz'&&current&&!feedback&&!document.hidden?performance.now():null;},[stage,current?.id,session?.cursor,feedback]);
+  useEffect(()=>{const invalidate=()=>{startedAt.current=null;};document.addEventListener('visibilitychange',invalidate);return()=>document.removeEventListener('visibilitychange',invalidate);},[]);
   function start(ids = null) {
     const eligibleIds = ids || sessionItems(available, settings);
     if (!eligibleIds.length) return;
@@ -111,16 +116,22 @@ export default function PeriodicPractice({
     if (locked.current || feedback || !current || !session) return;
     locked.current = true;
     const correct = index === current.correctIndex;
-    const answer = { id: current.id, correct, selectedIndex: index, skipped: index === -1 };
+    const skipped=index===-1, at=Date.now();
+    const responseMs=skipped||startedAt.current===null?null:Math.max(0,Math.round(performance.now()-startedAt.current));
+    const kind=current.practiceKind||'cloze';
+    const grade=gradeAnswer({correct,responseMs,kind});
+    const predicted=skipped?null:mastery(reviewMemory(records[current.id]?.memory,grade,kind,at,{responseMs}),at);
+    const answer = { id: current.id, correct, selectedIndex: index, skipped, responseMs, mastery:predicted, at };
     const updated = { ...session, answers: [...session.answers, answer] };
     setSession(updated);
     setFeedback({ index, correct });
     if (settings.retryWrong) setWrongIds(old => correct ? old.filter(id => id !== current.id) : [...new Set([...old, current.id])]);
-    onRecord(current, correct);
+    if(!skipped)onRecord(current, correct, {responseMs,kind,grade,at});
   }
   function finish(value) {
     const summary = summarizePractice(value.answers);
-    const next = { ...summary, at: Date.now() };
+    const next = { ...summary, ...timedPracticeSummary(value.answers), at: Date.now() };
+    setResultPage(0);setResultTab('wrong');
     setLastResult(next);
     write(base + ':last', next);
     clear(base + ':session');
@@ -137,7 +148,7 @@ export default function PeriodicPractice({
     else setSession(old => ({ ...old, cursor: old.cursor + 1 }));
   }
   function showList() { setQuery(''); setPage(0); setStage('list'); setNotice(''); }
-  function returnHome() { setFeedback(null); locked.current = false; setStage('home'); }
+  function returnHome() { setFeedback(null); locked.current = false; if(autoStart&&onBack){onBack();return;}setStage('home'); }
   function changeSetting(key, value) { setSettings(prev => ({ ...prev, [key]: value })); }
 
   return <main className={"px-root px-stage-"+stage}>
@@ -148,8 +159,8 @@ export default function PeriodicPractice({
     <div className="px-shell">
       <div className="px-breadcrumb"><button onClick={stage === 'home' ? onClose : returnHome}>← {stage === 'home' ? '教材選択に戻る' : 'コースに戻る'}</button></div>
       <div className="px-hero">
-        <div><p className="px-kicker">{unitTitle}</p><h1>{stage === 'quiz' ? '4択穴埋め' : stage === 'setup' ? '4択穴埋めスタート' : stage === 'result' ? '練習結果' : stage === 'list' ? '収録単語一覧' : '定期考査対策'}</h1>
-          <p className="px-subtitle">{stage === 'quiz' ? '英文の空欄に入る英単語を、4つの選択肢から選ぼう。' : '定期テストの重要語を、4択の穴埋めでテンポよく練習しよう。'}</p>
+        <div><p className="px-kicker">{unitTitle}</p><h1>{stage === 'quiz' ? '4択穴埋め' : stage === 'setup' ? '4択穴埋めスタート' : stage === 'result' ? '練習結果' : stage === 'list' ? '収録単語一覧' : courseLabel}</h1>
+          <p className="px-subtitle">{stage === 'quiz' ? '英文の空欄に入る英単語を、4つの選択肢から選ぼう。' : '重要語彙を、例文の穴埋めでテンポよく練習しよう。'}</p>
         </div>
         <div className="px-book-decoration" aria-hidden="true"><svg viewBox="0 0 210 140" fill="none"><defs><linearGradient id="px-book" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#fff9db"/><stop offset="1" stopColor="#e6c784"/></linearGradient></defs><ellipse cx="105" cy="120" rx="90" ry="9" fill="#a87a3d" opacity=".14"/><circle cx="106" cy="64" r="56" fill="#e5c77f" opacity=".19"/><path d="M105 47Q72 23 19 36l9 71q42-14 77 5 35-19 77-5l9-71Q138 23 105 47Z" fill="#698352" stroke="#4d6743" strokeWidth="3"/><path d="M105 42Q70 16 27 28l9 68q37-11 69 9 32-20 69-9l9-68Q140 16 105 42Z" fill="url(#px-book)" stroke="#b59a63" strokeWidth="2"/><path d="M105 43v62M44 47q29-6 48 9M46 61q29-6 46 8M48 75q27-6 44 7M118 56q21-15 48-9M118 69q21-15 46-8M118 82q21-15 44-7" stroke="#b49b6b" strokeWidth="2" strokeLinecap="round"/><path d="M148 44V22l15 3v48l-8-5-7 7Z" fill="#9b6841"/><path d="M12 16v14m-7-7h14M191 4v20m-10-10h20" stroke="#cda54c" strokeWidth="2" strokeLinecap="round"/></svg></div>
       </div>
@@ -158,7 +169,7 @@ export default function PeriodicPractice({
       <>
         {stage === 'home' && <>
           <div className="px-hero-actions">
-            <Action accent className="px-start" onClick={() => start()}><span aria-hidden="true">▶</span> 4択穴埋めを今すぐ始める <span aria-hidden="true">→</span></Action>
+            <Action accent className="px-start" onClick={() => start()}><span aria-hidden="true">▶</span><strong className="px-cta-label">4択穴埋めを今すぐ始める</strong><span aria-hidden="true">→</span></Action>
             <div className="px-small-actions">
               <Action onClick={resume} disabled={!recoverable}>▷ <span>前回の続き</span></Action>
               <Action onClick={showList}>▤ <span>単語一覧</span></Action>
@@ -198,8 +209,8 @@ export default function PeriodicPractice({
         </>}
         {stage === 'quiz' && session && current && <>
           <div className="px-quiz-progress"><strong>{session.cursor + 1} <small>/ {session.ids.length} 問</small></strong><div className="px-track"><span style={{ width: String((session.cursor + 1) / session.ids.length * 100) + '%' }}/></div><span>正解 <b>{done}</b></span><span>あと <b>{session.ids.length - session.cursor - 1}問</b></span></div>
-          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>意味に合う語を選ぼう</strong></div>
-            <div className="px-prompt-block"><p className="px-sentence" lang="en">{current.prompt}</p><p className="px-translation">{current.japanese}</p></div>
+          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>{current.practiceKind==='meaning'?'日本語の意味に合う英単語を選ぼう':'意味に合う語を選ぼう'}</strong></div>
+            <div className="px-prompt-block"><p className="px-sentence" lang={current.practiceKind==="meaning"?"ja":"en"}>{current.practiceKind==="meaning"?current.meaning:current.prompt}</p>{current.practiceKind!=="meaning"&&<p className="px-translation">{current.japanese}</p>}</div>
             <div className="px-answer-grid">{options.map((option, i) => {
               const selected = feedback?.index === option.index;
               const isRight = feedback && option.index === current.correctIndex;
@@ -207,7 +218,7 @@ export default function PeriodicPractice({
             })}</div>
             {feedback && settings.instantFeedback && <div className={'px-feedback ' + (feedback.correct ? 'px-feedback-right' : 'px-feedback-wrong')} role="status">
               <strong>{feedback.correct ? '✓ 正解です！' : feedback.index === -1 ? 'スキップしました' : 'もう一度覚えよう'}</strong>
-              <span>正解：{current.word}　{current.meaning}</span>
+              <span>正解：{current.word}　{current.meaning}{session.answers.at(-1)?.responseMs!=null&&<small className="px-answer-time"> · {(session.answers.at(-1).responseMs/1000).toFixed(1)}秒</small>}</span>
               {settings.instantFeedback && <p>{current.explanation || current.english}</p>}
               <button onClick={advance}>次の問題へ →</button>
             </div>}
@@ -222,12 +233,20 @@ export default function PeriodicPractice({
           <button className="px-exit-quiz" onClick={returnHome}>← 途中で終了（続きから再開できます）</button>
         </>}
         {stage === 'result' && session && (() => {
-          const summary = summarizePractice(session.answers);
-          const wrongRows = session.answers.filter(a => !a.correct).map(a => byId.get(a.id)).filter(Boolean);
-          return <section className="px-panel px-result"><div className="px-result-hero"><span>練習完了</span><strong>{summary.rate}%</strong><p>{summary.correct} / {summary.total} 問 正解</p></div>
-            <div className="px-result-actions"><Action accent onClick={() => start()}>もう一度4択で練習 →</Action><Action onClick={startWrong} disabled={!wrongAvailable}>まちがいだけ復習</Action><Action onClick={returnHome}>コースに戻る</Action></div>
-            <h2>まちがえた問題 {wrongRows.length}問</h2>{wrongRows.length === 0 ? <p>すべて正解です！ 次は問題の順番を変えて挑戦してみましょう。</p> :
-              <div className="px-wrong-list">{wrongRows.map((w,i) => <article key={w.id + ':' + i}><b>{w.prompt}</b><p>正解：<strong>{w.word}</strong> / {w.meaning}</p><small>{w.explanation}</small></article>)}</div>}
+          const summary = summarizePractice(session.answers), timing=timedPracticeSummary(session.answers);
+          const wrongRows=session.answers.filter(a=>!a.correct);
+          const rows=resultTab==='wrong'?wrongRows:session.answers;
+          const row=rows[Math.min(resultPage,Math.max(0,rows.length-1))], w=row&&byId.get(row.id);
+          const seconds=n=>n==null?'—':(n/1000).toFixed(1)+'秒';
+          return <section className="px-panel px-result px-result-dashboard">
+            <div className="px-result-overview">
+              <div className="px-result-gauge"><span className="px-result-kicker">✦ MISSION COMPLETE</span><div className="px-gauge-art"><svg viewBox="0 0 240 137" role="img" aria-label={'正答率 '+summary.rate+'%'}><defs><linearGradient id="px-gauge-green"><stop stopColor="#b3c981"/><stop offset="1" stopColor="#52743e"/></linearGradient></defs><path d="M18 120 A102 102 0 0 1 222 120" fill="none" stroke="#e5dac2" strokeWidth="17" strokeLinecap="round"/><path d="M18 120 A102 102 0 0 1 222 120" pathLength="100" fill="none" stroke="url(#px-gauge-green)" strokeWidth="17" strokeLinecap="round" strokeDasharray={summary.rate+' 100'} className="px-gauge-fill"/></svg><div className="px-gauge-number"><small>正答率</small><strong>{summary.rate}<em>%</em></strong></div></div><p>{summary.correct} / {summary.total} 問 正解</p></div>
+              <div className="px-result-stat-grid"><div><small>平均解答時間</small><strong>{seconds(timing.averageMs)}</strong><span>計測 {timing.timedCount} 問</span></div><div><small>最速解答</small><strong>{seconds(timing.fastestMs)}</strong><span>正誤を問わず計測</span></div><div><small>語彙定着度（推定）</small><strong>{timing.mastery==null?'—':timing.mastery+'%'}</strong><span>記憶履歴・正誤・時間</span></div><div><small>要復習</small><strong>{wrongRows.length}<em> 語</em></strong><span>スキップ {timing.skipped} 問を含む</span></div></div>
+            </div>
+            <div className="px-result-review"><div className="px-result-review-head"><h2>学習の振り返り</h2><div className="px-choice-row"><button aria-pressed={resultTab==='wrong'} onClick={()=>{setResultTab('wrong');setResultPage(0)}}>まちがい {wrongRows.length}</button><button aria-pressed={resultTab==='all'} onClick={()=>{setResultTab('all');setResultPage(0)}}>全結果 {session.answers.length}</button></div></div>
+            {w?<article className="px-result-word"><div className="px-result-word-heading"><strong>{w.word}</strong><span>{row.skipped?'スキップ':row.correct?'✓ 正解':'要復習'} · {seconds(row.responseMs)} · 定着度 {row.mastery==null?'—':row.mastery+'%'}</span></div><p lang="en">{w.english||w.prompt}</p><small>{w.meaning} {w.japanese&&' · '+w.japanese}</small></article>:<p className="px-result-empty">すべて正解です！ 次の学習に進みましょう。</p>}
+            <div className="px-pagination"><button disabled={resultPage===0} onClick={()=>setResultPage(n=>n-1)}>← 前へ</button><span>{rows.length?resultPage+1:0} / {rows.length}</span><button disabled={resultPage>=rows.length-1} onClick={()=>setResultPage(n=>n+1)}>次へ →</button></div></div>
+            <div className="px-result-actions"><Action accent onClick={()=>start()}>もう一度4択で練習 →</Action><Action onClick={()=>start(wrongRows.map(a=>a.id))} disabled={!wrongRows.length}>まちがいだけ復習</Action><Action onClick={returnHome}>コースに戻る</Action></div>
           </section>;
         })()}
         {stage === 'list' && <section className="px-panel px-library"><div className="px-library-top"><div><h2>▤ 収録単語 {available.length}語</h2><p>単語の意味と英文を確認できます。4択練習に戻ることもできます。</p></div><label>検索 <input type="search" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} placeholder="英語・日本語で検索"/></label></div>
