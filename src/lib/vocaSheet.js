@@ -79,3 +79,6 @@ export function bookSynonyms(entry,limit=3){
  return mergeLexical(entry?.sense?.synonyms).filter(x=>x.word.toLowerCase()!==target).slice(0,limit);
 }
 export function bookCollocations(entry,translated=[]){return mergeLexical(entry?.sense?.collocations,translated);}
+
+export const pocketPageSize=value=>Number(value)===3?3:1;
+export function remapBookPage(page,oldSize,newSize){return Math.floor(Math.max(0,Math.floor(Number(page)||0))*Math.max(1,Number(oldSize)||6)/Math.max(1,Number(newSize)||1));}

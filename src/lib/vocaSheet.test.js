@@ -24,3 +24,6 @@ test('CEFR and POS filter the same sense and preserve serials while ordering',()
  assert.equal(bookOrigin({word:'unknown',sense:{}}),null);assert.ok(bookOrigin({word:'achieve'}).url);
  assert.deepEqual(mergeLexical('attain; reach',[{en:'attain',ja:'達成する'}]),[{word:'attain',meaning:'達成する'},{word:'reach',meaning:''}]);
 });
+
+import {pocketPageSize,remapBookPage} from './vocaSheet.js';
+test('pocket pagination preserves all words and restores the same reading position across layouts',()=>{const rows=Array.from({length:8653},(_,i)=>({number:i+1}));for(const size of [1,3]){const pages=bookPage(rows,0,size).pages;assert.deepEqual(Array.from({length:pages},(_,i)=>bookPage(rows,i,size).items).flat(),rows);assert.equal(bookPosition(rows,8653,size),pages-1);}assert.equal(pocketPageSize(undefined),1);assert.equal(pocketPageSize(3),3);assert.equal(remapBookPage(5,6,1),30);assert.equal(remapBookPage(31,1,3),10);assert.equal(remapBookPage(10,3,6),5);});
