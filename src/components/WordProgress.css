@@ -1,0 +1,20 @@
+
+.vd-progress-ring{position:relative;display:inline-grid;place-items:center;width:clamp(52px,7.2dvh,67px);height:clamp(52px,7.2dvh,67px);flex:none;vertical-align:middle;isolation:isolate}
+.vd-progress-ring svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 2px 2px #95794d18)}
+.vd-ring-center{z-index:1;display:grid;justify-items:center;gap:1px;line-height:1}
+.vd-ring-center b{font:800 clamp(17px,2.5dvh,23px)/1 Georgia,serif;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.vd-ring-center b i{font:700 .53em system-ui;letter-spacing:0}
+.vd-ring-center small{font:650 9px/1.1 system-ui!important;color:#78664b!important;letter-spacing:0!important}
+.vd-progress-ring.is-large{width:clamp(60px,9dvh,83px);height:clamp(60px,9dvh,83px)}
+.vd-progress-ring.is-large .vd-ring-center b{font-size:clamp(22px,3.3dvh,31px)}
+.vd-word-progress{display:flex;justify-content:space-between;align-items:center;gap:5px;min-width:0}
+.vd-word-progress-text{min-width:0;display:grid;gap:4px;align-content:center}
+.vd-progress-status{font-size:11px;font-weight:750;color:#7b694f;line-height:1.3}
+.vd-progress-status[data-status="定着"]{color:#527545}.vd-progress-status[data-status="要復習"]{color:#a05d48}
+.vd-progress-time{font-size:clamp(10px,1.5dvh,13px);color:#79644c;line-height:1.3}
+.vd-progress-time b{color:#4c693c;font-size:clamp(12px,1.9dvh,17px);font-variant-numeric:tabular-nums}
+.vd-course-progress{display:grid;grid-template-columns:auto minmax(110px,1.7fr) repeat(3,minmax(70px,1fr));align-items:center;gap:clamp(8px,1.3vw,18px);padding:7px 14px;background:linear-gradient(145deg,#fffdf5,#f1e6cd);border:1px solid #dcc59a;border-radius:15px;box-shadow:0 3px 12px #8e6a2713;color:#4b3827;min-width:0}
+.vd-course-coverage{display:grid;gap:4px;min-width:0}.vd-course-coverage>span{display:flex;justify-content:space-between;gap:5px;flex-wrap:wrap;font-size:12px}.vd-course-coverage strong{color:#4c6c3d;font-size:14px}
+.vd-course-track{height:9px;background:#e2d8c0;border-radius:99px;overflow:hidden}.vd-course-track>span{display:block;height:100%;background:linear-gradient(90deg,#abc37e,#557646);border-radius:99px}
+.vd-course-coverage small,.vd-course-stat small{font-size:10px;color:#78654a;font-weight:650}.vd-course-stat{display:grid;gap:3px;border-left:1px solid #dfcda9;padding-left:clamp(8px,1.2vw,15px);min-width:0}.vd-course-stat>b{font-size:clamp(19px,2.9dvh,29px);color:#4b6b3e;line-height:1.1;font-weight:800;font-variant-numeric:tabular-nums}.vd-course-stat i{font-size:.5em;font-style:normal}
+@media(max-width:680px){.vd-course-progress{grid-template-columns:auto 1fr 1fr;gap:7px;padding:7px 9px}.vd-course-coverage{grid-column:2/-1}.vd-course-stat{padding-left:8px}.vd-course-stat:nth-child(3){border-left:0}.vd-word-progress-text{gap:2px}.vd-progress-status{font-size:10px}}

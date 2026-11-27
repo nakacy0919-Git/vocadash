@@ -297,3 +297,7 @@
 .px-root .px-model-audio{justify-self:start;border:1px solid #b5c58b;border-radius:12px;padding:8px 14px;background:#e5edd2;color:#42623a;font-size:clamp(13px,1.8dvh,17px);font-weight:800}
 @media(max-width:680px){.px-with-picture .px-question-context{grid-template-columns:1fr;gap:8px}.px-illustration img{height:clamp(100px,19dvh,165px)}.px-root .px-with-picture .px-sentence{font-size:clamp(20px,5vw,30px)}.px-root .px-with-picture .px-answer-word{font-size:clamp(17px,4.1vw,24px)}}
 @media(min-width:681px) and (max-height:680px){.px-illustration img{height:clamp(85px,21dvh,140px)}.px-root .px-with-picture .px-answer{min-height:48px}.px-root .px-with-picture .px-sentence{font-size:clamp(21px,4.2dvh,30px)}.px-root .px-with-picture .px-translation{font-size:15px}}
+
+.px-question-progress{margin-left:auto;display:flex;align-items:center;gap:10px;min-width:0;color:#6c573b}.px-question-progress>span{display:grid;text-align:right;gap:3px;font-size:clamp(10px,1.4dvh,13px)}.px-question-progress>span>b{font-size:clamp(16px,2.8dvh,26px);line-height:1.1;color:#4c703e;font-variant-numeric:tabular-nums}.px-question-progress .vd-progress-ring{width:clamp(42px,6dvh,58px);height:clamp(42px,6dvh,58px)}
+.px-library .vd-course-progress{margin:8px 0 12px}.px-word-grid .vd-word-progress{margin:6px 0;border-top:1px solid #e1d1af;padding-top:3px}
+@media(max-width:680px){.px-question-head{flex-wrap:wrap;gap:6px}.px-question-progress{gap:5px}.px-question-progress>span>b{font-size:16px}}

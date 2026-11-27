@@ -1,6 +1,8 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { isDue, assetImage } from '../lib/learning.js';
 import { gradeAnswer, reviewMemory, mastery } from '../lib/memoryEngine.js';
+import {wordProgress,courseProgress,formatAnswerTime} from '../lib/courseLibrary.js';
+import {ProgressRing,WordProgress,CourseProgress} from './WordProgress.jsx';
 import {
   DEFAULT_PRACTICE_OPTIONS, PRACTICE_COUNTS, eligibleClozeWords,
   shuffledChoices, sessionItems, recoverSession, summarizePractice, prepareFastWords, timedPracticeSummary
@@ -55,6 +57,8 @@ export default function PeriodicPractice({
   const keepAudioFeedback=courseId==='eiken1_master'&&!!current?.audio&&sound&&settings.audio&&settings.instantFeedback;
   const options = useMemo(() => current ? shuffledChoices(current, session.seed) : [], [current, session?.seed]);
   const done = (session?.answers || []).filter(a => a.correct).length;
+  const currentProgress=current?wordProgress(records[current.id]):null;
+  const answerEvidence=feedback?session?.answers.at(-1):null;
   const seenCount = available.filter(w => (records[w.id]?.seen || 0) > 0 || (records[w.id]?.memory?.attempts || 0) > 0).length;
   const dueCount = available.filter(w => isDue(records[w.id])).length;
   const unitTitle = courseLabel + ' / ' + unitLabel;
@@ -214,7 +218,7 @@ export default function PeriodicPractice({
         </>}
         {stage === 'quiz' && session && current && <>
           <div className="px-quiz-progress"><strong>{session.cursor + 1} <small>/ {session.ids.length} 問</small></strong><div className="px-track"><span style={{ width: String((session.cursor + 1) / session.ids.length * 100) + '%' }}/></div><span>正解 <b>{done}</b></span><span>あと <b>{session.ids.length - session.cursor - 1}問</b></span></div>
-          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")+(showPicture?" px-with-picture":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>{current.practiceKind==='meaning'?'日本語の意味に合う英単語を選ぼう':'意味に合う語を選ぼう'}</strong></div>
+          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")+(showPicture?" px-with-picture":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>{current.practiceKind==='meaning'?'日本語の意味に合う英単語を選ぼう':'意味に合う語を選ぼう'}</strong>{currentProgress&&<div className="px-question-progress" role="status"><span>{answerEvidence?(answerEvidence.skipped?'スキップ':answerEvidence.correct?'正解時間':'解答時間'):'定着度（推定）'}<b>{answerEvidence?formatAnswerTime(answerEvidence.responseMs):currentProgress.attempts?currentProgress.percent+'%':'未計測'}</b></span>{answerEvidence&&!answerEvidence.skipped&&answerEvidence.mastery!=null&&<ProgressRing value={answerEvidence.mastery}/>}</div>}</div>
             <div className="px-question-context">{showPicture&&<figure className="px-illustration"><img key={picture} src={picture} alt="例文の場面を表すイラスト" onError={()=>setFailedImage(picture)}/><figcaption>VISUAL VOCABULARY</figcaption></figure>}<div className="px-prompt-block"><p className="px-sentence" lang={current.practiceKind==="meaning"?"ja":"en"}>{current.practiceKind==="meaning"?current.meaning:current.prompt}</p>{current.practiceKind!=="meaning"&&<p className="px-translation">{current.japanese}</p>}{keepAudioFeedback&&feedback&&<button type="button" className="px-model-audio" onClick={()=>onSpeak(current,true)}>♫ 合成音声で例文を聞く</button>}</div></div>
             <div className="px-answer-grid">{options.map((option, i) => {
               const selected = feedback?.index === option.index;
@@ -255,7 +259,7 @@ export default function PeriodicPractice({
           </section>;
         })()}
         {stage === 'list' && <section className="px-panel px-library"><div className="px-library-top"><div><h2>▤ 収録単語 {available.length}語</h2><p>単語の意味と英文を確認できます。4択練習に戻ることもできます。</p></div><label>検索 <input type="search" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} placeholder="英語・日本語で検索"/></label></div>
-          <div className="px-word-grid">{visibleWords.map((w,i) => <article key={w.id}><small>{page * 12 + i + 1}</small><h3>{w.word}</h3><p>{w.meaning}</p><details><summary>例文を見る</summary><p lang="en">{w.english}</p><p>{w.japanese}</p><small>{w.explanation}</small></details></article>)}</div>
+          <CourseProgress data={courseProgress(available,records)}/><div className="px-word-grid">{visibleWords.map((w,i) => <article key={w.id}><small>{page * 12 + i + 1}</small><h3>{w.word}</h3><p>{w.meaning}</p><WordProgress data={wordProgress(records[w.id])}/><details><summary>例文を見る</summary><p lang="en">{w.english}</p><p>{w.japanese}</p><small>{w.explanation}</small></details></article>)}</div>
           {wordList.length === 0 && <p>該当する単語がありません。</p>}
           <div className="px-pagination"><button disabled={page === 0} onClick={() => setPage(p => p - 1)}>← 前へ</button><span>{page + 1} / {totalPages}</span><button disabled={page >= totalPages - 1} onClick={() => setPage(p => p + 1)}>次へ →</button></div>
           <div className="px-setup-footer"><Action accent onClick={() => start()}>▶ 4択練習を始める</Action><Action onClick={returnHome}>コースに戻る</Action></div>

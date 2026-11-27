@@ -4,3 +4,20 @@
 .cl-page .cl-course-actions .cl-primary{font-size:clamp(17px,2vw,25px)!important;font-weight:850!important;min-height:52px;padding:11px 20px;line-height:1.2}
 .cl-page .cl-course-actions>button,.cl-page .cl-more summary{font-weight:700}
 .cl-page .cl-tabs button[aria-pressed=true],.cl-page .cl-view-tabs button[aria-pressed=true],.cl-page .cl-tools button[aria-pressed=true]{background:#527442!important;border-color:#72905b!important;color:#fffaf0!important}
+
+/* Learning cards with compact progress rings: preserve the 12-word page. */
+.cl-page .cl-switch button[aria-pressed=true],.cl-page .cl-sheet-tools button[aria-pressed=true]{background:#527442!important;border-color:#72905b!important;color:#fffaf0!important}
+.cl-page .cl-course-actions{border-bottom-color:#dfcba6;padding-bottom:5px}
+.cl-page .cl-progress-card{padding:9px 11px!important;gap:3px!important;min-height:0!important;position:relative}
+.cl-page .cl-progress-card:hover{border-color:#a6b47b;box-shadow:0 5px 14px #7b603027}
+.cl-progress-card>.cl-thumb{height:clamp(31px,5.5dvh,62px);object-position:center 42%}
+.cl-progress-card>strong{font-size:clamp(18px,2.65dvh,25px);line-height:1.15}
+.cl-progress-card>span:not(.vd-word-progress){font-size:clamp(11px,1.7dvh,14px);line-height:1.3}
+.cl-progress-card>.vd-word-progress{margin-top:auto;border-top:1px solid #e3d4b8;padding-top:2px}
+.cl-toolbar-filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.cl-sort{display:flex;align-items:center;gap:5px;font-size:11px;color:#776448}
+.cl-sort select{min-width:0;max-width:180px;font:inherit;font-size:12px;padding:8px 6px;border:1px solid #d9c7a4;background:#fffaf1;color:#59452e;border-radius:8px;min-height:36px}
+.cl-detail-progress{display:flex;align-items:center;flex-wrap:wrap;gap:12px;padding:9px 12px;margin:12px 0;background:#f5ecd8;border:1px solid #dcc69e;border-radius:13px;color:#4b6239}
+.cl-detail-progress>div{display:grid;gap:3px;flex:1;min-width:100px}.cl-detail-progress small{font-size:12px;color:#7a6549}.cl-detail-progress b{font-size:16px}
+.cl-detail .cl-word-hero h1{color:#3c2d20}.cl-detail .cl-meaning,.cl-detail .cl-ipa,.cl-detail .cl-pos,.cl-detail h3,.cl-detail article small{color:#715b42}.cl-detail section{border-color:#dcc9a5}
+@media(min-width:850px) and (max-height:920px){.cl-page:has(.cl-progress-card){gap:6px;padding-block:5px 8px}.cl-page .cl-header{padding:3px 6px}.cl-page .cl-header h1{font-size:clamp(20px,3.1dvh,29px);margin:2px 0}.cl-page .cl-header p{display:none}.cl-page .cl-course-actions .cl-primary{min-height:42px;padding-block:7px}.cl-page .cl-course-actions>button,.cl-page .cl-more summary,.cl-page .cl-switch button,.cl-page .cl-pagination button{min-height:36px;padding-block:6px}.cl-page .cl-grid{gap:6px}.cl-page .cl-progress-card{padding:5px 9px!important;gap:2px!important}.cl-progress-card>.cl-thumb{height:clamp(25px,4.2dvh,42px)}.cl-page .vd-progress-ring{width:clamp(44px,6.2dvh,58px);height:clamp(44px,6.2dvh,58px)}.cl-page .vd-progress-ring.is-large{width:clamp(50px,7.5dvh,66px);height:clamp(50px,7.5dvh,66px)}.cl-page .vd-course-progress{padding:4px 12px}.cl-page .cl-pagination{padding-top:0}.cl-page .cl-page-jump input{padding:5px 8px}}
