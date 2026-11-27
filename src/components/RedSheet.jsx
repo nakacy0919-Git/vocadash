@@ -1,41 +1,59 @@
-import React,{useEffect,useRef,useState} from 'react';
-import {INITIAL_SHEET,boundSheet,moveSheet,sizeSheet,sheetClip,isRedField} from '../lib/redSheet.js';
-import {posLabel} from '../lib/courseLibrary.js';
+import React,{useEffect,useLayoutEffect,useRef,useState} from 'react';
+import {createPortal} from 'react-dom';
+import {INITIAL_SHEET,SHEET_THEMES,SHEET_SIZES,boundSheet,moveSheet,resizeFilm,paperFilmClip,isRedField,targetParts} from '../lib/redSheet.js';
+import {posLabel,examplesFor} from '../lib/courseLibrary.js';
 import './RedSheet.css';
 
-export default function RedSheet({items,start,page,total}){
+const viewportSize=()=>({width:document.documentElement.clientWidth||window.innerWidth,height:window.innerHeight});
+function Speaker({label,onClick,disabled,filtered}){
+ const icon=<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/><path d="M16 9a4 4 0 0 1 0 6m2-9a8 8 0 0 1 0 12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>;
+ return filtered?<span className="rs-audio" aria-hidden="true">{icon}</span>:<button type="button" className="rs-audio" title={label} aria-label={label} disabled={disabled} onClick={onClick}>{icon}</button>;
+}
+export default function RedSheet({items,start,page,total,onSpeak,sound,showExamples=false,onShowExamples}){
  const [mode,setMode]=useState('meaning'),[custom,setCustom]=useState(false),[overrides,setOverrides]=useState({});
+ const [theme,setTheme]=useState('red'),[sheetColor,setSheetColor]=useState(SHEET_THEMES.red.sheet),[inkColor,setInkColor]=useState(SHEET_THEMES.red.ink);
+ const [hideExample,setHideExample]=useState(true),[translation,setTranslation]=useState(false);
  const [rect,setRect]=useState(INITIAL_SHEET),[visible,setVisible]=useState(true),[size,setSize]=useState('medium'),[dragging,setDragging]=useState(false);
- const paper=useRef(null),gesture=useRef(null),handle=useRef(null);
+ const [geometry,setGeometry]=useState(()=>({viewport:viewportSize(),paper:{left:0,top:0,width:0,height:0}}));
+ const paper=useRef(null),gesture=useRef(null),initialized=useRef(false),film=useRef(null);
+ const measure=()=>{const el=paper.current;if(!el)return null;const b=el.getBoundingClientRect();return {viewport:viewportSize(),paper:{left:b.left+el.clientLeft,top:b.top+el.clientTop,width:el.clientWidth,height:el.clientHeight}};};
+ const anchored=(g,s)=>{const [w,h]=SHEET_SIZES[s]||SHEET_SIZES.medium,p=g.paper,v=g.viewport;return boundSheet({x:(p.left+p.width*(s==='full'?0:.2))/v.width,y:(p.top+p.height*(s==='full'?0:.08))/v.height,w:p.width*w/v.width,h:p.height*h/v.height});};
+ useLayoutEffect(()=>{
+  let frame=0;
+  const update=()=>{const g=measure();if(!g)return;setGeometry(g);if(!initialized.current&&g.paper.width&&g.paper.height){initialized.current=true;setRect(anchored(g,'medium'));}};
+  const schedule=()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(update);};
+  update();const observer=typeof ResizeObserver==='function'?new ResizeObserver(schedule):null;observer?.observe(paper.current);
+  window.addEventListener('resize',schedule);window.addEventListener('scroll',schedule,true);window.visualViewport?.addEventListener('resize',schedule);
+  return()=>{cancelAnimationFrame(frame);observer?.disconnect();window.removeEventListener('resize',schedule);window.removeEventListener('scroll',schedule,true);window.visualViewport?.removeEventListener('resize',schedule);};
+ },[page,showExamples,translation,items,custom]);
  useEffect(()=>{gesture.current=null;setDragging(false);},[page]);
  const changeMode=m=>{setMode(m);setOverrides({});setCustom(false);};
- const changeSize=s=>{setSize(s);setRect(r=>sizeSheet(r,s));setVisible(true);};
- const toggle=(id,field)=>{setOverrides(prev=>({...prev,[id+':'+field]:!isRedField(mode,prev,id,field)}));};
- const down=e=>{
-   if(e.button!==0||gesture.current||!paper.current)return;
-   const bounds=paper.current.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
-   e.preventDefault();e.currentTarget.focus({preventScroll:true});e.currentTarget.setPointerCapture(e.pointerId);
-   gesture.current={id:e.pointerId,x:e.clientX,y:e.clientY,rect,width:bounds.width,height:bounds.height};setDragging(true);
- };
- const move=e=>{const g=gesture.current;if(!g||g.id!==e.pointerId)return;setRect(moveSheet(g.rect,(e.clientX-g.x)/g.width,(e.clientY-g.y)/g.height));};
+ const changeTheme=t=>{const a=SHEET_THEMES[t];setTheme(t);setSheetColor(a.sheet);setInkColor(a.ink);};
+ const changeSize=s=>{setSize(s);setRect(anchored(measure()||geometry,s));setVisible(true);setCustom(false);};
+ const toggle=(id,field)=>setOverrides(prev=>({...prev,[id+':'+field]:!isRedField(mode,prev,id,field)}));
+ const down=(e,kind)=>{if(e.button!==0||gesture.current)return;e.stopPropagation();e.preventDefault();e.currentTarget.focus({preventScroll:true});e.currentTarget.setPointerCapture(e.pointerId);const v=viewportSize();gesture.current={id:e.pointerId,x:e.clientX,y:e.clientY,rect,width:v.width,height:v.height,kind};setDragging(true);};
+ const move=e=>{const g=gesture.current;if(!g||g.id!==e.pointerId)return;const dx=(e.clientX-g.x)/g.width,dy=(e.clientY-g.y)/g.height;setRect(g.kind==='resize'?resizeFilm(g.rect,dx,dy):moveSheet(g.rect,dx,dy));if(g.kind==='resize')setSize('custom');};
  const finish=e=>{if(gesture.current?.id!==e.pointerId)return;gesture.current=null;setDragging(false);if(e.currentTarget.hasPointerCapture?.(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId);};
- const keyMove=e=>{const n=e.shiftKey?.1:.025;const delta={ArrowLeft:[-n,0],ArrowRight:[n,0],ArrowUp:[0,-n],ArrowDown:[0,n]}[e.key];if(delta){e.preventDefault();setRect(r=>moveSheet(r,...delta));}};
- const reset=()=>{setRect(INITIAL_SHEET);setSize('medium');setVisible(true);};
- const renderPaper=filtered=><div className={'rs-paper-grid'+(filtered?' rs-filtered':'')} aria-hidden={filtered?true:undefined}>{items.map((w,i)=><div className="rs-row" key={w.id}><div className="rs-index"><b>{String(start+i+1).padStart(2,'0')}</b><small>{posLabel(w.partOfSpeech)}</small></div>{['word','meaning'].map(field=>{
- const red=isRedField(mode,overrides,w.id,field),cls='rs-field rs-'+field+(red?' rs-red-ink':'')+(custom?' rs-editable':'');
- const value=w[field]||'—';
- return !filtered&&custom?<button type="button" key={field} className={cls} aria-pressed={red} aria-label={(field==='word'?'英単語':'日本語訳')+'の赤字を切り替える '+value} onClick={()=>toggle(w.id,field)}>{value}</button>:<span key={field} className={cls} lang={field==='word'?'en':'ja'}>{value}</span>;
- })}</div>)}</div>;
- const r=boundSheet(rect);
- return <section className="rs-workspace" aria-label="リアル赤シート学習">
-  <div className="rs-heading"><div className="rs-emblem" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><rect x="5" y="6" width="27" height="34" rx="3" fill="#fff8e8" stroke="#9f8051" strokeWidth="1.5"/><path d="M11 14h15M11 20h15M11 26h15M11 32h10" stroke="#b69e78" strokeWidth="2" strokeLinecap="round"/><rect x="17" y="3" width="23" height="34" rx="3" fill="#c72d49" fillOpacity=".79" stroke="#a41d3a" strokeWidth="1.5"/><path d="M21 8h14" stroke="#ffcfcc" strokeWidth="2" strokeLinecap="round"/></svg></div><div><small>VOCADASH / RED SHEET LAB</small><h2>リアル赤シート</h2><p>指でシートを動かすと、重なった赤字だけが消えます。</p></div><span className="rs-page-count">{start+1}–{start+items.length} / {total}語</span></div>
-  <div className="rs-controls"><div className="rs-control-group"><span>赤字にする箇所</span><div role="group" aria-label="赤字にする箇所">{[['meaning','日本語訳'],['word','英単語'],['both','両方']].map(([m,label])=><button key={m} type="button" aria-pressed={mode===m&&!Object.keys(overrides).length} onClick={()=>changeMode(m)}>{label}</button>)}<button type="button" aria-pressed={custom} onClick={()=>{setCustom(v=>!v);setVisible(false);}}>個別設定</button></div></div>
-  <div className="rs-control-group"><span>シートサイズ</span><div role="group" aria-label="シートサイズ">{[['small','小'],['medium','縦長'],['wide','ワイド']].map(([s,label])=><button type="button" key={s} aria-pressed={size===s&&visible} onClick={()=>changeSize(s)}>{label}</button>)}</div></div>
-  <div className="rs-control-group rs-visibility"><span>シート操作</span><div><button type="button" onClick={()=>setVisible(v=>!v)} aria-pressed={visible}>{visible?'シートを外す':'シートを置く'}</button><button type="button" onClick={()=>changeSize('full')}>全て覆う</button><button type="button" onClick={reset}>初期位置</button></div></div></div>
-  <div className="rs-instruction"><span className="rs-ink-sample">赤字</span><span>{custom?'単語・意味をタップして赤字／黒字を切り替えます。':'赤いシートをつかんで自由に移動。黒い文字は透けて見えます。'}</span><span className="rs-key-hint">PC：矢印キーでも移動</span></div>
-  <div className="rs-paper" ref={paper}>{renderPaper(false)}
-    {visible&&<><div className="rs-optical-layer" aria-hidden="true" style={{clipPath:sheetClip(r),WebkitClipPath:sheetClip(r)}}>{renderPaper(true)}</div><div ref={handle} className={'rs-sheet-handle'+(dragging?' is-dragging':'')} role="button" tabIndex={0} aria-label="赤シートを移動。矢印キーで移動、Shiftと矢印で大きく移動" style={{left:r.x*100+'%',top:r.y*100+'%',width:r.w*100+'%',height:r.h*100+'%'}} onPointerDown={down} onPointerMove={move} onPointerUp={finish} onPointerCancel={finish} onLostPointerCapture={finish} onKeyDown={keyMove}><span className="rs-grip" aria-hidden="true">⠿</span></div></>}
-  </div>
-  <div className="rs-footer"><span>赤シートで隠すだけでは学習記録は変わりません。</span><span>次のページにも同じ赤字設定を適用</span></div>
+ const keyboard=(e,kind)=>{if(e.key==='Escape'){setVisible(false);return;}const n=e.shiftKey?.08:.02,delta={ArrowLeft:[-n,0],ArrowRight:[n,0],ArrowUp:[0,-n],ArrowDown:[0,n]}[e.key];if(delta){e.preventDefault();e.stopPropagation();setRect(r=>kind==='resize'?resizeFilm(r,...delta):moveSheet(r,...delta));if(kind==='resize')setSize('custom');}};
+ const pointerProps={onPointerMove:move,onPointerUp:finish,onPointerCancel:finish,onLostPointerCapture:finish};
+ const reset=()=>changeSize('medium');
+ const themeEdge=SHEET_THEMES[theme]?.edge||'#876a5a',vars={'--rs-filter':sheetColor,'--rs-red':inkColor,'--rs-edge':themeEdge};
+ const renderPaper=filtered=><div className={'rs-paper-grid'+(filtered?' rs-filtered':'')} aria-hidden={filtered?true:undefined}>{items.map((w,i)=>{
+  const ex=examplesFor(w)[0],parts=targetParts(ex?.en,w.word),matched=parts.some(p=>p.target);
+  const field=(name)=>{const red=isRedField(mode,overrides,w.id,name),cls='rs-field rs-'+name+(red?' rs-red-ink':'')+(custom?' rs-editable':'');const value=w[name]||'—';return !filtered&&custom?<button type="button" className={cls} aria-pressed={red} aria-label={(name==='word'?'英単語':'日本語訳')+'の消える文字を切り替える '+value} onClick={()=>toggle(w.id,name)}>{value}</button>:<span className={cls} lang={name==='word'?'en':'ja'}>{value}</span>;};
+  return <div className="rs-row" key={w.id}><div className="rs-index"><b>{String(start+i+1).padStart(2,'0')}</b><small>{posLabel(w.partOfSpeech)}</small></div><div className="rs-word-group"><Speaker filtered={filtered} disabled={!sound||!onSpeak} label={w.word+' の発音'} onClick={()=>onSpeak?.(w,false)}/>{field('word')}</div>{field('meaning')}
+  {showExamples&&<div className="rs-example">{ex?<><div className="rs-example-line"><Speaker filtered={filtered} disabled={!sound||!onSpeak} label={w.word+' の例文音声'} onClick={()=>onSpeak?.({...w,english:ex.en,audio:ex.en===w.english?w.audio:''},true)}/><p lang="en">{parts.map((p,j)=><span key={j} className={p.target&&hideExample?'rs-red-ink':undefined}>{p.text}</span>)}</p></div>{translation&&ex.ja&&<p className="rs-example-ja">{ex.ja}</p>}{hideExample&&!matched&&<small className="rs-no-target">例文内に一致する語形なし</small>}</>:<small className="rs-no-target">例文未登録</small>}</div>}</div>;
+ })}</div>;
+ const r=boundSheet(rect),clip=paperFilmClip(r,geometry.viewport,geometry.paper);
+ return <section className={'rs-workspace'+(showExamples?' rs-with-examples':'')} style={vars} aria-label="リアル赤シート学習">
+ <div className="rs-heading"><div className="rs-emblem" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><rect x="5" y="6" width="27" height="34" rx="3" fill="#fff8e8" stroke="#9f8051" strokeWidth="1.5"/><path d="M11 14h15M11 20h15M11 26h15M11 32h10" stroke="#b69e78" strokeWidth="2" strokeLinecap="round"/><rect x="17" y="3" width="23" height="34" rx="3" fill={sheetColor} stroke={themeEdge} strokeWidth="1.5"/><path d="M21 8h14" stroke="#fff9eb" strokeWidth="2" strokeLinecap="round"/></svg></div><div><small>VOCADASH / COLOR SHEET LAB</small><h2>リアル赤シート</h2><p>好きな色のシートで、覚えたい文字だけを隠しましょう。</p></div><span className="rs-page-count">{start+1}–{start+items.length} / {total}語</span></div>
+ <div className="rs-controls rs-color-controls"><div className="rs-control-group"><span>シートカラー</span><div role="group" aria-label="シートカラー">{Object.entries(SHEET_THEMES).map(([id,t])=><button type="button" key={id} className="rs-swatch" style={{'--swatch':t.sheet,'--swatch-edge':t.edge}} title={t.label} aria-label={t.label} aria-pressed={theme===id} onClick={()=>changeTheme(id)}><span aria-hidden="true">{theme===id?'✓':''}</span></button>)}</div></div><div className="rs-control-group"><span>自由に色を調整</span><div className="rs-color-pickers"><label>シート<input type="color" aria-label="シートの色" value={sheetColor} onChange={e=>{setSheetColor(e.target.value);setTheme('custom');}}/></label><label>文字<input type="color" aria-label="消える文字の色" value={inkColor} onChange={e=>{setInkColor(e.target.value);setTheme('custom');}}/></label></div></div><div className="rs-control-group"><span>消える文字</span><div role="group" aria-label="消える文字">{[['meaning','日本語訳'],['word','英単語'],['both','両方']].map(([m,label])=><button key={m} type="button" aria-pressed={mode===m&&!Object.keys(overrides).length} onClick={()=>changeMode(m)}>{label}</button>)}<button type="button" aria-pressed={custom} onClick={()=>{setCustom(v=>!v);setVisible(false);}}>個別設定</button></div></div>
+ <div className="rs-control-group"><span>学習内容</span><div><button type="button" aria-pressed={showExamples} onClick={()=>onShowExamples?.(!showExamples)}>例文 {showExamples?'ON':'OFF'}</button>{showExamples&&<><button type="button" aria-pressed={hideExample} onClick={()=>setHideExample(v=>!v)}>例文の語を隠す</button><button type="button" aria-pressed={translation} onClick={()=>setTranslation(v=>!v)}>和訳</button></>}</div></div>
+ <div className="rs-control-group"><span>サイズ</span><div role="group" aria-label="サイズ">{[['small','小'],['medium','縦長'],['wide','ワイド']].map(([s,label])=><button type="button" key={s} aria-pressed={size===s&&visible} onClick={()=>changeSize(s)}>{label}</button>)}</div></div>
+ <div className="rs-control-group rs-visibility"><span>シート操作</span><div><button type="button" onClick={()=>{setVisible(v=>!v);setCustom(false);}} aria-pressed={visible}>{visible?'シートを外す':'シートを置く'}</button><button type="button" onClick={()=>changeSize('full')}>全て覆う</button><button type="button" onClick={reset}>初期位置</button></div></div></div>
+ <div className="rs-instruction"><span className="rs-ink-sample">消える文字</span><span>{custom?'単語・意味をタップして色を切り替えます。':'シートを自由に移動・右下のハンドルで拡大縮小。'}</span><span className="rs-key-hint">PC：矢印キーでも操作</span></div>
+ <div className="rs-paper" ref={paper}>{renderPaper(false)}{visible&&<div className="rs-optical-layer" aria-hidden="true" style={{clipPath:clip,WebkitClipPath:clip}}>{renderPaper(true)}</div>}</div>
+ {visible&&createPortal(<div ref={film} className={'rs-floating-film'+(dragging?' is-dragging':'')} style={{...vars,left:r.x*geometry.viewport.width,top:r.y*geometry.viewport.height,width:r.w*geometry.viewport.width,height:r.h*geometry.viewport.height}} role="group" aria-label="移動できる学習シート"><div className="rs-film-drag" role="button" tabIndex={0} aria-label="シートを移動。矢印キーでも移動" onPointerDown={e=>down(e,'move')} onKeyDown={e=>keyboard(e,'move')} {...pointerProps}/><button type="button" className="rs-film-close" aria-label="シートを外す" onClick={()=>setVisible(false)}>×</button><button type="button" className="rs-film-resize" aria-label="シートの幅と高さを変更。矢印キーでも変更" onPointerDown={e=>down(e,'resize')} onKeyDown={e=>keyboard(e,'resize')} {...pointerProps}><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 19 14-14M10 19l9-9m-4 9 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg></button></div>,document.body)}
+ <div className="rs-footer"><span>シート学習だけでは定着度は変わりません。</span><span>{showExamples?'例文あり：6語ずつ':'単語帳：12語ずつ'} · 設定は次のページにも適用</span></div>
  </section>;
 }

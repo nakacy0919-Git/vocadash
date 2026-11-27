@@ -33,3 +33,21 @@ test('red ink switches between languages and individual fields without changing 
  assert.equal(isRedField('meaning',{'w:word':true},'w','word'),true);
  assert.equal(isRedField('meaning',{'w:word':true},'other','word'),false);
 });
+
+import {SHEET_THEMES,resizeFilm,paperFilmClip,targetParts} from './redSheet.js';
+test('colored sheets are independently configurable and film can cross paper boundaries',()=>{
+ assert.equal(Object.keys(SHEET_THEMES).length,7);
+ assert.deepEqual(resizeFilm({x:.2,y:.3,w:.3,h:.4},1,1),{x:.2,y:.3,w:.8,h:.7});
+ const view={width:1000,height:800},paper={left:200,top:200,width:600,height:400};
+ assert.equal(paperFilmClip({x:0,y:0,w:.1,h:.1},view,paper),'inset(0 100% 100% 0)');
+ assert.equal(paperFilmClip({x:.2,y:.25,w:.6,h:.5},view,paper),'inset(0% 0% 0% 0%)');
+ assert.equal(paperFilmClip({x:.35,y:.375,w:.3,h:.25},view,paper),'inset(25% 25% 25% 25%)');
+});
+test('example concealment preserves source text and selects complete target forms only',()=>{
+ const sentence='She recommenced work. The recommencement was welcome.';
+ const p=targetParts(sentence,'recommence');
+ assert.equal(p.map(x=>x.text).join(''),sentence);assert.deepEqual(p.filter(x=>x.target).map(x=>x.text),['recommenced']);
+ assert.deepEqual(targetParts('He took off his coat.','take off').filter(x=>x.target).map(x=>x.text),['took off']);
+ assert.deepEqual(targetParts('The children went home.','child').filter(x=>x.target).map(x=>x.text),['children']);
+ assert.equal(targetParts('An unrelated example.','run').some(x=>x.target),false);
+});
