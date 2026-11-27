@@ -4,6 +4,19 @@ import {scoreReading} from '../lib/reading.js';
 import {targetParts} from '../lib/redSheet.js';
 import './BookReading.css';
 
+function ReadingIcon({name}){
+ const shapes={
+  mic:<><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 10.5v1.5a6.5 6.5 0 0 0 13 0v-1.5M12 18.5v3m-3 0h6"/></>,
+  stop:<rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" stroke="none"/>,
+  retry:<><path d="M3.5 11a8.5 8.5 0 1 1 2.7 7.2M3.5 5.5V11H9"/></>,
+  next:<path d="M4 12h15m-6-6 6 6-6 6"/>,
+  volume:<><path d="M3 9h4l5-4v14l-5-4H3zM16 9a4 4 0 0 1 0 6m2-9a8 8 0 0 1 0 12"/></>,
+  settings:<><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="10" cy="18" r="2" fill="currentColor" stroke="none"/></>,
+  history:<><path d="M3 11a9 9 0 1 1 3 7M3 5v6h6m3-4v5l3 2"/></>,
+  close:<path d="m6 6 12 12M18 6 6 18"/>
+ };
+ return <svg className="br-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[name]}</svg>;
+}
 const PREFIX='vd-vocasheet-reading-v1:';
 export const bookReadKey=(w,ex)=>PREFIX+encodeURIComponent(JSON.stringify([w.id,ex.en]));
 export function readBookHistory(key){
@@ -18,7 +31,7 @@ function saveHistory(key,percent,stage,level){
 const dateText=at=>new Intl.DateTimeFormat('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(at);
 export function BookReadingBadge({history,filtered,onClick}){
  const last=history.attempts[0];
- const content=<><span className="br-badge-mic">🎙 音読</span><span className="br-badge-count">{history.count||0}回</span>{last&&<><span className={'br-badge-score'+(last.percent>=90?' br-good':'')}>{last.percent}%</span><span className="br-badge-best">最高 {history.best}%</span><span className="br-badge-date">{dateText(last.at)}</span></>}</>;
+ const content=<><span className="br-badge-mic"><ReadingIcon name="mic"/></span><span className="br-badge-count">{history.count||0}回</span>{last&&<><span className={'br-badge-score'+(last.percent>=90?' br-good':'')}>{last.percent}%</span><span className="br-badge-best">最高 {history.best}%</span><span className="br-badge-date">{dateText(last.at)}</span></>}</>;
  return filtered?<span className="br-badge">{content}</span>:<button type="button" className="br-badge" onClick={onClick} title="例文の音読・過去の記録" aria-label="例文を音読する。学習回数と履歴を表示">{content}</button>;
 }
 const descriptions=[['全文表示','ターゲット語を隠す','25%穴埋め'],['40%穴埋め','60%穴埋め','80%穴埋め']];
@@ -43,14 +56,14 @@ function chime(enabled,percent){
 }
 function AccuracyGauge({percent,live,passed}){
  const p=Number.isFinite(percent)?Math.min(100,Math.max(0,percent)):0;
- const color=passed?'#7dffd0':'#7ae1ff';
- return <div className={'br-gauge'+(passed?' br-gauge-pass':'')+(live?' br-gauge-live':'')}><svg viewBox="0 0 220 220" aria-hidden="true"><defs><linearGradient id="br-meter-gradient" x1="0" y1="1" x2="1" y2="0"><stop stopColor="#26a6f3"/><stop offset=".55" stopColor={color}/><stop offset="1" stopColor="#f4e4ac"/></linearGradient></defs><circle cx="110" cy="110" r="101" fill="none" stroke="#90c4c4" strokeOpacity=".18" strokeDasharray="2 7"/><circle cx="110" cy="110" r="86" fill="none" stroke="#a9d8d5" strokeOpacity=".14" strokeWidth="13"/><circle className="br-gauge-arc" cx="110" cy="110" r="86" fill="none" stroke="url(#br-meter-gradient)" strokeWidth="13" strokeLinecap="round" pathLength="100" strokeDasharray={p+' 100'} transform="rotate(-90 110 110)"/><circle cx="110" cy="110" r="69" stroke="#b0e3dd" strokeOpacity=".09" fill="none"/></svg><div className="br-gauge-center"><small>ACCURACY</small><strong>{percent===null?'—':p}<span>%</span></strong><b>{live?'LISTENING':passed?'✦ EXCELLENT':percent===null?'READY':'KEEP GOING'}</b></div></div>;
+ const color=passed?'#91b477':'#cbb477';
+ return <div className={'br-gauge'+(passed?' br-gauge-pass':'')+(live?' br-gauge-live':'')}><svg viewBox="0 0 220 220" aria-hidden="true"><defs><linearGradient id="br-meter-gradient" x1="0" y1="1" x2="1" y2="0"><stop stopColor="#64844b"/><stop offset=".55" stopColor={color}/><stop offset="1" stopColor="#d6b36b"/></linearGradient></defs><circle cx="110" cy="110" r="101" fill="none" stroke="#a48a61" strokeOpacity=".18" strokeDasharray="2 7"/><circle cx="110" cy="110" r="86" fill="none" stroke="#a89975" strokeOpacity=".14" strokeWidth="13"/><circle className="br-gauge-arc" cx="110" cy="110" r="86" fill="none" stroke="url(#br-meter-gradient)" strokeWidth="13" strokeLinecap="round" pathLength="100" strokeDasharray={p+' 100'} transform="rotate(-90 110 110)"/><circle cx="110" cy="110" r="69" stroke="#b39c6b" strokeOpacity=".09" fill="none"/></svg><div className="br-gauge-center"><small>ACCURACY</small><strong>{percent===null?'—':p}<span>%</span></strong><b>{live?'LISTENING':passed?'✦ EXCELLENT':percent===null?'READY':'KEEP GOING'}</b></div></div>;
 }
 function HistoryGraph({attempts}){
  const recent=attempts.slice(0,10).reverse();
  if(!recent.length)return <div className="br-trend-empty">音読すると記録が表示されます</div>;
  const pts=recent.map((a,i)=>[recent.length===1?95:8+i*174/(recent.length-1),76-a.percent*.64]);
- return <svg viewBox="0 0 190 90" role="img" aria-label="最近のAccuracyの推移"><defs><linearGradient id="br-trend-fill" x1="0" x2="0" y1="0" y2="1"><stop stopColor="#69e0d1" stopOpacity=".38"/><stop offset="1" stopColor="#69e0d1" stopOpacity="0"/></linearGradient></defs>{[12,44,76].map(y=><line key={y} x1="8" y1={y} x2="182" y2={y} stroke="#a6d8dc" strokeOpacity=".18" strokeDasharray="3 4"/>)}{pts.length>1&&<><polygon points={pts.map(p=>p.join(',')).join(' ')+' 182,76 8,76'} fill="url(#br-trend-fill)"/><polyline points={pts.map(p=>p.join(',')).join(' ')} fill="none" stroke="#7eedd8" strokeWidth="2.5" strokeLinejoin="round"/></>}{pts.map(([x,y],i)=><circle key={i} cx={x} cy={y} r={i===pts.length-1?4:2.5} fill="#b5fff1"/>)}<text x="8" y="88" fontSize="7" fill="#8ca8b2">OLD</text><text x="182" y="88" textAnchor="end" fontSize="7" fill="#8ca8b2">NEW</text></svg>;
+ return <svg viewBox="0 0 190 90" role="img" aria-label="最近のAccuracyの推移"><defs><linearGradient id="br-trend-fill" x1="0" x2="0" y1="0" y2="1"><stop stopColor="#87a16b" stopOpacity=".38"/><stop offset="1" stopColor="#87a16b" stopOpacity="0"/></linearGradient></defs>{[12,44,76].map(y=><line key={y} x1="8" y1={y} x2="182" y2={y} stroke="#b39b74" strokeOpacity=".18" strokeDasharray="3 4"/>)}{pts.length>1&&<><polygon points={pts.map(p=>p.join(',')).join(' ')+' 182,76 8,76'} fill="url(#br-trend-fill)"/><polyline points={pts.map(p=>p.join(',')).join(' ')} fill="none" stroke="#64844b" strokeWidth="2.5" strokeLinejoin="round"/></>}{pts.map(([x,y],i)=><circle key={i} cx={x} cy={y} r={i===pts.length-1?4:2.5} fill="#b58b42"/>)}<text x="8" y="88" fontSize="7" fill="#8a7559">OLD</text><text x="182" y="88" textAnchor="end" fontSize="7" fill="#8a7559">NEW</text></svg>;
 }
 export default function BookReading({entry,sound,onStopAudio,onModel,onClose,nextEntry,onNext,onSaved}){
  const [stage,setStage]=useState(1),[level,setLevel]=useState(1),[phase,setPhase]=useState('idle'),[transcript,setTranscript]=useState(''),[result,setResult]=useState(null),[status,setStatus]=useState('音読開始を押して練習しましょう。'),[history,setHistory]=useState(()=>readBookHistory(entry.key)),[showHistory,setShowHistory]=useState(false),[celebrate,setCelebrate]=useState(false);
@@ -99,21 +112,21 @@ export default function BookReading({entry,sound,onStopAudio,onModel,onClose,nex
  const busy=phase!=='idle';
  return createPortal(<div className="br-overlay" role="dialog" aria-modal="true" aria-label="例文音読練習" onKeyDown={e=>{e.stopPropagation();if(e.key==='Escape'){release();onStopAudio?.();onClose();}}}>
   <section className="br-modal">
-   <header className="br-header"><div><small>VOCADASH / SPEAK &amp; MASTER</small><b>例文音読トレーニング</b></div><button ref={closeButton} type="button" className="br-close" onClick={()=>{release();onStopAudio?.();onClose();}} aria-label="閉じる">×</button></header>
+   <header className="br-header"><div className="br-header-brand"><small>VOCADASH / LIBRARY EDITION</small><b>例文音読トレーニング</b></div><div className="br-header-actions"><button type="button" className="br-icon-button" title="練習レベル設定" aria-label="練習レベル設定" disabled={busy} aria-expanded={showSettings} onClick={()=>{setShowHistory(false);setShowSettings(v=>!v);}}><ReadingIcon name="settings"/></button><button type="button" className="br-icon-button" title="学習履歴" aria-label="学習履歴" aria-expanded={showHistory} onClick={()=>{setShowSettings(false);setShowHistory(v=>!v);}}><ReadingIcon name="history"/></button><button ref={closeButton} type="button" className="br-close br-icon-button" onClick={()=>{release();onStopAudio?.();onClose();}} title="閉じる" aria-label="閉じる"><ReadingIcon name="close"/></button></div></header>
    <div className="br-main">
-    <div className="br-toolbar"><button type="button" className="br-difficulty" disabled={busy} aria-expanded={showSettings} onClick={()=>setShowSettings(v=>!v)}><span>S{stage} · L{level}</span> {descriptions[stage-1][level-1]} <b>⌄</b></button><button type="button" disabled={busy||!sound} onClick={()=>onModel?.(entry)}>♫ お手本</button><button type="button" aria-expanded={showHistory} onClick={()=>setShowHistory(v=>!v)}>履歴 {history.count||0}回</button></div>
+
     {showSettings&&<div className="br-difficulty-list">{descriptions.flatMap((group,s)=>group.map((label,l)=><button type="button" key={s*3+l} disabled={busy} aria-pressed={difficulty===s*3+l} onClick={()=>selectDifficulty(s*3+l)}>S{s+1} · L{l+1}<small>{label}</small></button>))}</div>}
     {showHistory&&<div className="br-history-list">{history.attempts.length?history.attempts.map((a,i)=><div key={i}><span>{new Date(a.at).toLocaleString('ja-JP')}</span><span>S{a.stage} · L{a.level}</span><b>{a.percent}%</b></div>):'まだ記録がありません。'}</div>}
-    <div className="br-target"><small>TARGET WORD · No. {entry.w.bookNumber} / EX {entry.index+1}</small><strong>{entry.w.word}</strong><span>{entry.w.meaning}</span></div>
-    <div className="br-sentence" lang="en">{maskBookSentence(entry.ex.en,entry.w.word,stage,level).map((p,i)=>p.hidden?<span className="br-blank" key={i} aria-label="空欄">{'＿'.repeat(Math.min(7,Math.max(2,p.text.replace(/[^\p{L}\p{N}]/gu,'').length)))}</span>:<span key={i} className={p.target?'br-target-ink':undefined}>{p.text}</span>)}</div>
+    <div className="br-target"><small>TARGET WORD · No. {entry.w.bookNumber} / EX {entry.index+1}</small><div className="br-target-wordline"><strong lang="en">{entry.w.word}</strong><span>{entry.w.meaning}</span></div></div>
+    <div className="br-sentence-card"><button type="button" className="br-model-icon br-icon-button" title="お手本を聞く" aria-label="お手本を聞く" disabled={busy||!sound} onClick={()=>onModel?.(entry)}><ReadingIcon name="volume"/></button><div className="br-sentence" lang="en">{maskBookSentence(entry.ex.en,entry.w.word,stage,level).map((p,i)=>p.hidden?<span className="br-blank" key={i} aria-label="空欄">{'＿'.repeat(Math.min(7,Math.max(2,p.text.replace(/[^\p{L}\p{N}]/gu,'').length)))}</span>:<span key={i} className={p.target?'br-target-ink':undefined}>{p.text}</span>)}</div>{entry.ex.ja&&<p className="br-translation" lang="ja">{entry.ex.ja}</p>}</div>
     <div className="br-dashboard"><AccuracyGauge percent={result?.percent??(transcript?scoreReading(entry.ex.en,transcript).percent:null)} live={busy} passed={result?.percent>=90}/><div className="br-side"><div className="br-metrics"><div><small>ATTEMPTS</small><b>{history.count||0}<span> 回</span></b></div><div><small>PERSONAL BEST</small><b>{history.count?history.best:'—'}<span>%</span></b></div></div><div className="br-trend"><small>RECENT ACCURACY</small><HistoryGraph attempts={history.attempts}/></div></div></div>
     <div className="br-transcript" aria-live="polite"><small>YOUR VOICE / 文字起こし</small><p>{result?result.wordMatches.map((w,i)=><span key={i} className={w.matched?'br-match':'br-miss'}>{w.value} </span>):transcript||'ここに認識した英語が表示されます。'}</p></div>
     {result&&result.missedWords.length>0&&<p className="br-missed">要確認：{result.missedWords.join(' / ')}</p>}
-    {celebrate&&<div className="br-confetti" aria-hidden="true">{Array.from({length:24},(_,i)=><i key={i} style={{'--x':(i*41)%100+'%','--d':(i%7)*.045+'s','--c':['#f9c75e','#65d8b1','#ff879d','#91c7ff'][i%4]}}/>)}</div>}
+    {celebrate&&<div className="br-confetti" aria-hidden="true">{Array.from({length:24},(_,i)=><i key={i} style={{'--x':(i*41)%100+'%','--d':(i%7)*.045+'s','--c':['#d8af55','#83a86c','#eadab2','#b68f60'][i%4]}}/>)}</div>}
     <p className="br-status" role="status">{status}</p>
 
    </div>
-   <footer className="br-footer"><button type="button" className="br-start" disabled={phase==='stopping'} onClick={busy?stop:()=>start()}>{phase==='stopping'?'判定中…':busy?'■ 終了・判定':result?'🎙 もう一度':'🎙 音読開始'}</button><button type="button" className="br-next" disabled={busy||!nextEntry} onClick={advance}>次の例文 →</button></footer>
+   <footer className="br-footer"><button type="button" className="br-start" disabled={phase==='stopping'} onClick={busy?stop:()=>start()}><ReadingIcon name={busy?'stop':result?'retry':'mic'}/><span>{phase==='stopping'?'判定中…':busy?'終了・判定':result?'もう一度':'音読開始'}</span></button><button type="button" className="br-next" disabled={busy||!nextEntry} onClick={advance}><span>次の例文</span><ReadingIcon name="next"/></button></footer>
    <div className="br-note">Accuracyは音声認識結果と例文の語順の一致率です。発音の質そのものではありません。履歴はこのブラウザーに保存されます。</div>
   </section>
  </div>,document.body);
