@@ -25,3 +25,11 @@ test('all active drafts are loadable, unique and assigned to a CEFR level',()=>{
  assert.equal(new Set(rows.map(r=>r.wordId)).size,manifest.totals.distinctHeadwords);
  for(const c of CEFR_COURSES)assert.ok(rows.some(r=>r.cefrHeadword===c.short),'Missing '+c.short);
 });
+
+import {coursesForLearningRoute} from './learningFlow.js';
+import {CATALOG} from './learning.js';
+test('all seven learning routes expose a vocabulary course, including advanced aliases',()=>{
+ const groups=['CEFR・レベル別','学年・入試','英検対策','ジャンル別','品詞別','学校教材','発展学習'];
+ for(const group of groups){const courses=coursesForLearningRoute(CATALOG,group);assert.ok(courses.length>0,group);assert.equal(new Set(courses.map(c=>c.id)).size,courses.length);assert.ok(courses.every(c=>c.units.length));}
+ const master=CATALOG.find(c=>c.id==='eiken1_master');assert.ok(coursesForLearningRoute(CATALOG,'発展学習').includes(master));assert.ok(coursesForLearningRoute(CATALOG,'英検対策').includes(master));
+});

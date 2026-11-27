@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react';
 import './LearningSpace.css';
 import './LibraryHome.css';
+import {coursesForLearningRoute} from '../lib/learningFlow.js';
 const goals=[
  {id:'learn',tag:'01 / LEARN',icon:'▣',title:'単語を覚えたい',sub:'意味・例文・音声で語彙を増やす',tone:'cyan'},
  {id:'practice',tag:'02 / PRACTICE',icon:'↗',title:'単語を練習したい',sub:'クイズ・音読・聞き取りで定着',tone:'mint'},
@@ -74,14 +75,14 @@ export default function LearningSpace({catalog,selection,onStart,onResume,onLibr
  const search=async(e,raw)=>{e.preventDefault();if(!raw.trim()||busy)return;const epoch=++searchEpoch.current;setBusy(true);setFound(null);setExploreError('');try{const item=await onLookup(raw.trim());if(epoch!==searchEpoch.current)return;if(item)setFound(item);else setExploreError(t('登録済みの語が見つかりませんでした。別の英単語をお試しください。','No matching word. Try another English word.'));}catch{if(epoch===searchEpoch.current)setExploreError(t('読み込みに失敗しました。もう一度お試しください。','Unable to load. Please try again.'));}finally{if(epoch===searchEpoch.current)setBusy(false)}};
  const examples=found?.examples?.length?found.examples:found?.english?[{en:found.english,ja:found.japanese}]:[];
 
- const groups=goal==='review'?available:available.filter(c=>c.group===goal);
+ const groups=coursesForLearningRoute(available,goal);
  const choices=step===0?groups:step===1?(picked?.units.filter(u=>unitAvailable(picked.id,u.id))||[]):modeList;
  const routeDialog=!!goal&&!['learn','explore','progress','library'].includes(goal);
  const routeKind=Math.max(0,missions.findIndex(m=>m[0]===goal));
  const pageSize=6,pages=Math.max(1,Math.ceil(choices.length/pageSize)),visible=choices.slice(page*pageSize,(page+1)*pageSize);
  const routeTypes=['level','level','level','topic','grammar','school','level'];
  const filterOptions=[['all','すべて','All'],['level','レベル・試験','Levels & exams'],['school','学校・教材','School'],['grammar','文法・語法','Word classes'],['topic','テーマ別','Topics']];
- const routeRows=missions.map((m,i)=>({m,i,courses:available.filter(c=>c.group===m[0])})).filter(({m,i,courses})=>(routeFilter==='all'||routeTypes[i]===routeFilter)&&(!routeQuery.trim()||[...m,groupName(m[0]),...courses.flatMap(c=>[c.label,c.short,...c.units.map(u=>u.label)])].join(' ').toLowerCase().includes(routeQuery.trim().toLowerCase())));
+ const routeRows=missions.map((m,i)=>({m,i,courses:coursesForLearningRoute(available,m[0])})).filter(({m,i,courses})=>(routeFilter==='all'||routeTypes[i]===routeFilter)&&(!routeQuery.trim()||[...m,groupName(m[0]),...courses.flatMap(c=>[c.label,c.short,...c.units.map(u=>u.label)])].join(' ').toLowerCase().includes(routeQuery.trim().toLowerCase())));
  const basics=available.find(c=>c.group==='CEFR・レベル別'&&/(^|\W)A1(\W|$)/i.test(c.label+' '+c.short))||available.find(c=>c.group==='CEFR・レベル別');
  const progressPct=stats.total?Math.min(100,Math.round(stats.seen/stats.total*100)):0;
  const quick=(review)=>{begin(review?'review':(current?.group||'学年・入試'),review);if(current){setPicked(current);setUnitId(selection.unitId);setStep(2)}};

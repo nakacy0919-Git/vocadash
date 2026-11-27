@@ -1,13 +1,14 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { isDue, assetImage } from '../lib/learning.js';
 import { gradeAnswer, reviewMemory, mastery } from '../lib/memoryEngine.js';
-import {wordProgress,courseProgress,formatAnswerTime} from '../lib/courseLibrary.js';
+import {wordProgress,courseProgress,formatAnswerTime,libraryPage} from '../lib/courseLibrary.js';
 import {ProgressRing,WordProgress,CourseProgress} from './WordProgress.jsx';
 import {
   DEFAULT_PRACTICE_OPTIONS, PRACTICE_COUNTS, eligibleClozeWords,
   shuffledChoices, sessionItems, recoverSession, summarizePractice, prepareFastWords, timedPracticeSummary
 } from '../lib/periodicPractice.js';
 import './PeriodicPractice.css';
+import RedSheet from './RedSheet.jsx';
 
 const read = (key, fallback = null) => {
   try { const saved = JSON.parse(localStorage.getItem(key) || 'null'); return saved ?? fallback; }
@@ -44,6 +45,7 @@ export default function PeriodicPractice({
   const [lastResult, setLastResult] = useState(() => read(base + ':last'));
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
+  const [listView,setListView]=useState('cards'),[sheetExamples,setSheetExamples]=useState(false);
   const [notice, setNotice] = useState('');
   const locked = useRef(false), startedAt = useRef(null), autoStarted=useRef(false);
   const [resultPage,setResultPage]=useState(0),[resultTab,setResultTab]=useState('wrong');
@@ -65,10 +67,14 @@ export default function PeriodicPractice({
   const wrongAvailable = available.filter(w => wrongIds.includes(w.id)).length;
   const wordList = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return !q ? available : available.filter(w => [w.word, w.meaning, w.prompt].join(' ').toLowerCase().includes(q));
-  }, [available, query]);
-  const totalPages = Math.max(1, Math.ceil(wordList.length / 12));
-  const visibleWords = wordList.slice(page * 12, (page + 1) * 12);
+    const source=listView==='sheet'?words:available;
+    return !q ? source : source.filter(w => [w.word, w.meaning, w.prompt,w.english].join(' ').toLowerCase().includes(q));
+  }, [available, words,query,listView]);
+  const listPage=libraryPage(wordList,page,listView==='sheet'&&sheetExamples?6:12);
+  const totalPages=listPage.pages,visibleWords=listPage.items;
+  useEffect(()=>{if(page!==listPage.page)setPage(listPage.page);},[page,listPage.page]);
+  function changeListView(next){if(next===listView)return;setPage(Math.floor(listPage.start/(next==='sheet'&&sheetExamples?6:12)));setListView(next);}
+  function changeSheetExamples(next){setPage(Math.floor(listPage.start/(next?6:12)));setSheetExamples(next);}
 
   useEffect(() => { write(base + ':settings', settings); }, [base, settings]);
   useEffect(() => { write(base + ':wrong', wrongIds); }, [base, wrongIds]);
@@ -156,19 +162,20 @@ export default function PeriodicPractice({
     if (session.cursor >= session.ids.length - 1) finish(session);
     else setSession(old => ({ ...old, cursor: old.cursor + 1 }));
   }
-  function showList() { onStopAudio?.(); setQuery(''); setPage(0); setStage('list'); setNotice(''); }
+  function showList() { onStopAudio?.(); setQuery(''); setPage(0); setListView('cards'); setStage('list'); setNotice(''); }
+  function showSheet() { onStopAudio?.(); setQuery(''); setPage(0); setListView('sheet'); setStage('list'); setNotice(''); }
   function returnHome() { onStopAudio?.(); setFeedback(null); locked.current = false; if(autoStart&&onBack){onBack();return;}setStage('home'); }
   function changeSetting(key, value) { setSettings(prev => ({ ...prev, [key]: value })); }
 
   return <main className={"px-root px-stage-"+stage}>
     <header className="px-topbar">
       <div className="px-brand"><span className="px-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 38c-6-5-13-7-21-5V12c8-2 15 0 21 5 6-5 13-7 21-5v21c-8-2-15 0-21 5Zm0 0V17" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 13C24 6 29 3 37 2c-1 7-5 11-13 11ZM23 13C15 13 11 9 10 4c7 0 12 3 13 9Z" fill="#91ae70"/></svg></span><strong>VocaDash</strong><span className="px-brand-note">VOCABULARY STUDIO</span></div>
-      <nav aria-label="学習画面ナビゲーション"><button onClick={onClose}>⌂ ホーム</button><button onClick={returnHome}>▤ コース</button><button onClick={showList}>☷ 単語一覧</button></nav>
+      <nav aria-label="学習画面ナビゲーション"><button onClick={onClose}>⌂ ホーム</button><button onClick={returnHome}>▤ コース</button><button onClick={showList}>☷ 単語一覧</button><button className="px-sheet-nav" onClick={showSheet}>▰ 赤シート</button></nav>
     </header>
     <div className="px-shell">
       <div className="px-breadcrumb"><button onClick={stage === 'home' ? onClose : returnHome}>← {stage === 'home' ? '教材選択に戻る' : 'コースに戻る'}</button></div>
       <div className="px-hero">
-        <div><p className="px-kicker">{unitTitle}</p><h1>{stage === 'quiz' ? '4択穴埋め' : stage === 'setup' ? '4択穴埋めスタート' : stage === 'result' ? '練習結果' : stage === 'list' ? '収録単語一覧' : courseLabel}</h1>
+        <div><p className="px-kicker">{unitTitle}</p><h1>{stage === 'quiz' ? '4択穴埋め' : stage === 'setup' ? '4択穴埋めスタート' : stage === 'result' ? '練習結果' : stage === 'list' ? (listView==='sheet'?'赤シート学習':'収録単語一覧') : courseLabel}</h1>
           <p className="px-subtitle">{stage === 'quiz' ? '英文の空欄に入る英単語を、4つの選択肢から選ぼう。' : '重要語彙を、例文の穴埋めでテンポよく練習しよう。'}</p>
         </div>
         <div className="px-book-decoration" aria-hidden="true"><svg viewBox="0 0 210 140" fill="none"><defs><linearGradient id="px-book" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#fff9db"/><stop offset="1" stopColor="#e6c784"/></linearGradient></defs><ellipse cx="105" cy="120" rx="90" ry="9" fill="#a87a3d" opacity=".14"/><circle cx="106" cy="64" r="56" fill="#e5c77f" opacity=".19"/><path d="M105 47Q72 23 19 36l9 71q42-14 77 5 35-19 77-5l9-71Q138 23 105 47Z" fill="#698352" stroke="#4d6743" strokeWidth="3"/><path d="M105 42Q70 16 27 28l9 68q37-11 69 9 32-20 69-9l9-68Q140 16 105 42Z" fill="url(#px-book)" stroke="#b59a63" strokeWidth="2"/><path d="M105 43v62M44 47q29-6 48 9M46 61q29-6 46 8M48 75q27-6 44 7M118 56q21-15 48-9M118 69q21-15 46-8M118 82q21-15 44-7" stroke="#b49b6b" strokeWidth="2" strokeLinecap="round"/><path d="M148 44V22l15 3v48l-8-5-7 7Z" fill="#9b6841"/><path d="M12 16v14m-7-7h14M191 4v20m-10-10h20" stroke="#cda54c" strokeWidth="2" strokeLinecap="round"/></svg></div>
@@ -185,7 +192,7 @@ export default function PeriodicPractice({
               <Action onClick={startWrong} disabled={!wrongAvailable}>↻ <span>まちがい復習</span></Action>
             </div>
           </div>
-          <div className="px-secondary-row"><button onClick={() => setStage('setup')}>⚙ 出題数・出題順などを設定する →</button><details className="px-legacy"><summary>その他の練習</summary><button onClick={onLegacyMemory}>記憶ミッション（従来の学習方法）</button></details>{recoverable && <span>続きから再開できます：{recoverable.answers.length} / {recoverable.ids.length}問</span>}</div>
+          <div className="px-secondary-row"><button className="px-sheet-entry" onClick={showSheet}>▰ 赤シートで覚える →</button><button onClick={() => setStage('setup')}>⚙ 出題数・出題順などを設定する →</button><details className="px-legacy"><summary>その他の練習</summary><button onClick={onLegacyMemory}>記憶ミッション（従来の学習方法）</button></details>{recoverable && <span>続きから再開できます：{recoverable.answers.length} / {recoverable.ids.length}問</span>}</div>
           <div className="px-metrics">
             <Metric icon="▱" value={available.length} label="総問題数"/>
             <Metric icon="▤" value={available.length - seenCount} label="未学習" highlight/>
@@ -214,7 +221,7 @@ export default function PeriodicPractice({
               <label><input type="checkbox" checked={settings.instantFeedback} onChange={e => changeSetting('instantFeedback', e.target.checked)}/> 1問ごとに正誤と解説を表示</label>
             </div></fieldset>
           </div><div className="px-recommend">✦ おすすめ設定：20問・ランダム・まちがい復習</div></section>
-          <div className="px-setup-footer"><Action accent onClick={() => start()}>▶ 4択練習を開始 →</Action><Action onClick={showList}>▤ 単語一覧を見る</Action></div>
+          <div className="px-setup-footer"><Action accent onClick={() => start()}>▶ 4択練習を開始 →</Action><Action onClick={showList}>▤ 単語一覧を見る</Action><Action onClick={showSheet}>▰ 赤シート</Action></div>
         </>}
         {stage === 'quiz' && session && current && <>
           <div className="px-quiz-progress"><strong>{session.cursor + 1} <small>/ {session.ids.length} 問</small></strong><div className="px-track"><span style={{ width: String((session.cursor + 1) / session.ids.length * 100) + '%' }}/></div><span>正解 <b>{done}</b></span><span>あと <b>{session.ids.length - session.cursor - 1}問</b></span></div>
@@ -258,11 +265,11 @@ export default function PeriodicPractice({
             <div className="px-result-actions"><Action accent onClick={()=>start()}>もう一度4択で練習 →</Action><Action onClick={()=>start(wrongRows.map(a=>a.id))} disabled={!wrongRows.length}>まちがいだけ復習</Action><Action onClick={returnHome}>コースに戻る</Action></div>
           </section>;
         })()}
-        {stage === 'list' && <section className="px-panel px-library"><div className="px-library-top"><div><h2>▤ 収録単語 {available.length}語</h2><p>単語の意味と英文を確認できます。4択練習に戻ることもできます。</p></div><label>検索 <input type="search" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} placeholder="英語・日本語で検索"/></label></div>
-          <CourseProgress data={courseProgress(available,records)}/><div className="px-word-grid">{visibleWords.map((w,i) => <article key={w.id}><small>{page * 12 + i + 1}</small><h3>{w.word}</h3><p>{w.meaning}</p><WordProgress data={wordProgress(records[w.id])}/><details><summary>例文を見る</summary><p lang="en">{w.english}</p><p>{w.japanese}</p><small>{w.explanation}</small></details></article>)}</div>
+        {stage === 'list' && <section className={"px-panel px-library"+(listView==='sheet'?' px-sheet-library':'')}><div className="px-library-top"><div><h2>▤ {listView==='sheet'?words.length:available.length}語</h2><div className="px-list-switch" role="group" aria-label="学習表示"><button type="button" aria-pressed={listView==='cards'} onClick={()=>changeListView('cards')}>▦ 単語一覧</button><button type="button" aria-pressed={listView==='sheet'} onClick={()=>changeListView('sheet')}>▰ 赤シート</button></div></div><label>検索 <input type="search" value={query} onChange={e => { setQuery(e.target.value); setPage(0); }} placeholder="英語・日本語で検索"/></label></div>
+          {listView==='sheet'?(visibleWords.length>0&&<RedSheet items={visibleWords} start={listPage.start} page={listPage.page} total={wordList.length} onSpeak={onSpeak} sound={sound} showExamples={sheetExamples} onShowExamples={changeSheetExamples}/>):<><CourseProgress data={courseProgress(available,records)}/><div className="px-word-grid">{visibleWords.map((w,i) => <article key={w.id}><small>{listPage.start + i + 1}</small><h3>{w.word}</h3><p>{w.meaning}</p><WordProgress data={wordProgress(records[w.id])}/><details><summary>例文を見る</summary><p lang="en">{w.english}</p><p>{w.japanese}</p><small>{w.explanation}</small></details></article>)}</div></>}
           {wordList.length === 0 && <p>該当する単語がありません。</p>}
-          <div className="px-pagination"><button disabled={page === 0} onClick={() => setPage(p => p - 1)}>← 前へ</button><span>{page + 1} / {totalPages}</span><button disabled={page >= totalPages - 1} onClick={() => setPage(p => p + 1)}>次へ →</button></div>
-          <div className="px-setup-footer"><Action accent onClick={() => start()}>▶ 4択練習を始める</Action><Action onClick={returnHome}>コースに戻る</Action></div>
+          <div className="px-pagination"><button disabled={listPage.page === 0} onClick={() => setPage(p => p - 1)}>← 前へ</button><span>{listPage.page + 1} / {totalPages} · {wordList.length}語</span><button disabled={listPage.page >= totalPages - 1} onClick={() => setPage(p => p + 1)}>次へ →</button></div>
+          <div className="px-setup-footer"><Action accent disabled={!available.length} onClick={() => start()}>▶ 4択練習を始める</Action><Action onClick={returnHome}>コースに戻る</Action></div>
         </section>}
       </>}
     </div>

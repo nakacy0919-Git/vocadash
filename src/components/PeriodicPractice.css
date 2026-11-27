@@ -301,3 +301,13 @@
 .px-question-progress{margin-left:auto;display:flex;align-items:center;gap:10px;min-width:0;color:#6c573b}.px-question-progress>span{display:grid;text-align:right;gap:3px;font-size:clamp(10px,1.4dvh,13px)}.px-question-progress>span>b{font-size:clamp(16px,2.8dvh,26px);line-height:1.1;color:#4c703e;font-variant-numeric:tabular-nums}.px-question-progress .vd-progress-ring{width:clamp(42px,6dvh,58px);height:clamp(42px,6dvh,58px)}
 .px-library .vd-course-progress{margin:8px 0 12px}.px-word-grid .vd-word-progress{margin:6px 0;border-top:1px solid #e1d1af;padding-top:3px}
 @media(max-width:680px){.px-question-head{flex-wrap:wrap;gap:6px}.px-question-progress{gap:5px}.px-question-progress>span>b{font-size:16px}}
+
+/* The full Color Sheet experience is shared by all vocabulary and exam routes. */
+.px-root .px-sheet-entry{display:inline-flex;align-items:center;padding:7px 12px;border-radius:9px;background:#f6e5df;border:1px solid #d4a79b;color:#8b3e42;font-weight:800}
+.px-root .px-sheet-nav{color:#8c4142}
+.px-list-switch{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px}
+.px-root .px-list-switch button{min-height:38px;padding:7px 14px;border:1px solid #d4bf97;border-radius:9px;background:#fff9ed;color:#5e4b35;font-size:14px;font-weight:750}
+.px-root .px-list-switch button[aria-pressed=true]{background:#527442;color:#fffaf0;border-color:#78945e}
+.px-root .px-sheet-library{padding:clamp(9px,1.6vw,20px);margin-top:0}.px-sheet-library .px-library-top{margin-bottom:7px;gap:8px;align-items:center}.px-sheet-library .px-library-top h2{font-size:15px;margin:0}.px-sheet-library .px-library-top>div{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.px-sheet-library .px-list-switch{margin-top:0}.px-sheet-library .px-library-top input{padding:7px 10px;min-width:0}.px-sheet-library .px-pagination{margin:10px 0 6px}.px-sheet-library .px-pagination button{padding:7px 12px}.px-sheet-library .px-setup-footer{margin-top:7px}
+.px-stage-list:has(.px-sheet-library) .px-hero{min-height:0}.px-stage-list:has(.px-sheet-library) .px-hero h1{font-size:clamp(20px,3.4dvh,34px)}.px-stage-list:has(.px-sheet-library) .px-subtitle,.px-stage-list:has(.px-sheet-library) .px-book-decoration{display:none}.px-stage-list:has(.px-sheet-library) .px-breadcrumb button{padding-bottom:3px}.px-stage-list:has(.px-sheet-library) .px-shell{padding-block:8px 12px}
+@media(max-width:680px){.px-root .px-topbar nav .px-sheet-nav{display:inline-block}.px-sheet-library .px-library-top{align-items:stretch}.px-sheet-library .px-library-top input{width:100%}.px-root .px-sheet-entry{font-size:12px;padding:6px 8px}}
