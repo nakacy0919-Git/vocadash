@@ -73,3 +73,5 @@
 /* Book examples use the same selectable disappearing ink as the word column. */
 .rs-workspace .rs-book-right .rs-example-line .rs-red-ink{color:var(--rs-red);font-weight:800}
 .rs-workspace .rs-optical-layer .rs-book-right .rs-example-line .rs-red-ink{color:var(--rs-filter)!important;text-shadow:none}
+
+.rs-course-concept{display:block;flex:none;width:clamp(28px,4vw,48px);height:clamp(28px,4vw,48px);border-radius:6px;border:1px solid #d6c3a0;object-fit:cover}

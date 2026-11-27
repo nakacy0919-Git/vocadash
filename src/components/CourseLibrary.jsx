@@ -1,12 +1,14 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import {assetImage} from '../lib/learning.js';
+import {conceptVisual} from '../lib/profileVisuals.js';
 import {ProgressRing,WordProgress,CourseProgress} from './WordProgress.jsx';
 import {libraryPage,posLabel,examplesFor,PAGE_SIZE,cardPageSize,wordProgress,courseProgress,formatAnswerTime} from '../lib/courseLibrary.js';
 import './CourseLibrary.css';
 import RedSheet from './RedSheet.jsx';
 
 export function WordImage({word,className=''}) {
- const src=typeof word?.image==='string'&&word.image?assetImage(word.image):'';
+ const visual=conceptVisual(word?.word);
+ const src=visual?.src||(typeof word?.image==='string'&&word.image?assetImage(word.image):'');
  const [failed,setFailed]=useState(false);
  useEffect(()=>setFailed(false),[src]);
  return src&&!failed?<img className={className} src={src} alt={word.word+' の学習画像'} loading="lazy" onError={()=>setFailed(true)}/>:null;
