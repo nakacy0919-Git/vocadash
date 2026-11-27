@@ -27,6 +27,7 @@ function courseIndex(){if(!courseIndexPromise){const units=CATALOG.flatMap(c=>c.
 
 let quizEffectsAudioContext;
 function playQuizFeedbackSound(correct, enabled) {
+  if(correct && typeof document !== 'undefined') showCorrectCelebration();
   if (!enabled || typeof window === 'undefined') return;
   const Context = window.AudioContext || window.webkitAudioContext;
   if (!Context) return;
@@ -37,7 +38,7 @@ function playQuizFeedbackSound(correct, enabled) {
     }
     const now = quizEffectsAudioContext.currentTime;
     const notes = correct
-      ? [[659.25, 0], [783.99, 0.105], [987.77, 0.21]]
+      ? [[523.25,0],[659.25,.065],[783.99,.13],[1046.5,.22],[1318.51,.28]]
       : [[392, 0], [329.63, 0.15]];
     notes.forEach(([frequency, delay]) => {
       const oscillator = quizEffectsAudioContext.createOscillator();
@@ -46,18 +47,30 @@ function playQuizFeedbackSound(correct, enabled) {
       oscillator.type = 'sine';
       oscillator.frequency.setValueAtTime(frequency, start);
       volume.gain.setValueAtTime(0.0001, start);
-      volume.gain.exponentialRampToValueAtTime(correct ? 0.075 : 0.052, start + 0.025);
-      volume.gain.exponentialRampToValueAtTime(0.0001, start + (correct ? 0.28 : 0.31));
+      volume.gain.exponentialRampToValueAtTime(correct ? (frequency>1000?.024:.052) : 0.052, start + 0.025);
+      volume.gain.exponentialRampToValueAtTime(0.0001, start + (correct ? 0.31 : 0.31));
       oscillator.connect(volume);
       volume.connect(quizEffectsAudioContext.destination);
       oscillator.start(start);
-      oscillator.stop(start + 0.34);
+      oscillator.stop(start + 0.36);
     });
   } catch {
     // Audio may be unavailable or blocked; the visual result always remains available.
   }
 }
 
+// A transient, accessible visual reward shared by all existing feedback callbacks.
+let rewardTimer;
+function showCorrectCelebration(){
+ if(!document.body)return;
+ document.querySelector('.vd-golden-reward')?.remove();clearTimeout(rewardTimer);
+ const root=document.createElement('div');root.className='vd-golden-reward';root.setAttribute('aria-hidden','true');
+ const halo=document.createElement('div');halo.className='vd-reward-halo';root.appendChild(halo);
+ const badge=document.createElement('div');badge.className='vd-reward-medal';badge.textContent='✓';root.appendChild(badge);
+ const label=document.createElement('div');label.className='vd-reward-label';label.textContent='Excellent!';root.appendChild(label);
+ for(let i=0;i<24;i++){const star=document.createElement('i'),ang=i*Math.PI*2/24,dist=90+(i%4)*25;star.textContent=i%3===0?'✦':'•';star.style.setProperty('--dx',Math.cos(ang)*dist+'px');star.style.setProperty('--dy',Math.sin(ang)*dist+'px');star.style.setProperty('--delay',(i%5)*.025+'s');root.appendChild(star)}
+ document.body.appendChild(root);rewardTimer=setTimeout(()=>root.remove(),1050);
+}
 // One short click and frequency sweep; triggered directly by the user's tap.
 // Render a short original click + acceleration effect into a PCM WAV.
 // HTMLAudio plays from the actual tap; Web Audio is a secondary route.
