@@ -65,7 +65,7 @@ export default function PeriodicPractice({
   useEffect(() => { if (session && stage === 'quiz') { write(base + ':session', session); setSaved(session); } }, [base, session, stage]);
   useEffect(() => {
     if (!feedback || stage !== 'quiz') return;
-    const timer = window.setTimeout(() => advance(), !settings.instantFeedback ? 220 : feedback.correct ? 700 : 1800);
+    const timer = window.setTimeout(() => advance(), !settings.instantFeedback ? 220 : feedback.correct ? 1100 : 2200);
     return () => window.clearTimeout(timer);
   }, [feedback, stage, settings.instantFeedback]);
 
@@ -140,9 +140,9 @@ export default function PeriodicPractice({
   function returnHome() { setFeedback(null); locked.current = false; setStage('home'); }
   function changeSetting(key, value) { setSettings(prev => ({ ...prev, [key]: value })); }
 
-  return <main className="px-root">
+  return <main className={"px-root px-stage-"+stage}>
     <header className="px-topbar">
-      <div className="px-brand"><span className="px-mark" aria-hidden="true">▣</span><strong>VocaDash</strong><span className="px-brand-note">VOCABULARY STUDIO</span></div>
+      <div className="px-brand"><span className="px-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 38c-6-5-13-7-21-5V12c8-2 15 0 21 5 6-5 13-7 21-5v21c-8-2-15 0-21 5Zm0 0V17" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"/><path d="M24 13C24 6 29 3 37 2c-1 7-5 11-13 11ZM23 13C15 13 11 9 10 4c7 0 12 3 13 9Z" fill="#91ae70"/></svg></span><strong>VocaDash</strong><span className="px-brand-note">VOCABULARY STUDIO</span></div>
       <nav aria-label="学習画面ナビゲーション"><button onClick={onClose}>⌂ ホーム</button><button onClick={returnHome}>▤ コース</button><button onClick={showList}>☷ 単語一覧</button></nav>
     </header>
     <div className="px-shell">
@@ -151,7 +151,7 @@ export default function PeriodicPractice({
         <div><p className="px-kicker">{unitTitle}</p><h1>{stage === 'quiz' ? '4択穴埋め' : stage === 'setup' ? '4択穴埋めスタート' : stage === 'result' ? '練習結果' : stage === 'list' ? '収録単語一覧' : '定期考査対策'}</h1>
           <p className="px-subtitle">{stage === 'quiz' ? '英文の空欄に入る英単語を、4つの選択肢から選ぼう。' : '定期テストの重要語を、4択の穴埋めでテンポよく練習しよう。'}</p>
         </div>
-        <div className="px-book-decoration" aria-hidden="true"><span>▱</span><span>╱</span></div>
+        <div className="px-book-decoration" aria-hidden="true"><svg viewBox="0 0 210 140" fill="none"><defs><linearGradient id="px-book" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#fff9db"/><stop offset="1" stopColor="#e6c784"/></linearGradient></defs><ellipse cx="105" cy="120" rx="90" ry="9" fill="#a87a3d" opacity=".14"/><circle cx="106" cy="64" r="56" fill="#e5c77f" opacity=".19"/><path d="M105 47Q72 23 19 36l9 71q42-14 77 5 35-19 77-5l9-71Q138 23 105 47Z" fill="#698352" stroke="#4d6743" strokeWidth="3"/><path d="M105 42Q70 16 27 28l9 68q37-11 69 9 32-20 69-9l9-68Q140 16 105 42Z" fill="url(#px-book)" stroke="#b59a63" strokeWidth="2"/><path d="M105 43v62M44 47q29-6 48 9M46 61q29-6 46 8M48 75q27-6 44 7M118 56q21-15 48-9M118 69q21-15 46-8M118 82q21-15 44-7" stroke="#b49b6b" strokeWidth="2" strokeLinecap="round"/><path d="M148 44V22l15 3v48l-8-5-7 7Z" fill="#9b6841"/><path d="M12 16v14m-7-7h14M191 4v20m-10-10h20" stroke="#cda54c" strokeWidth="2" strokeLinecap="round"/></svg></div>
       </div>
       {loading || error ? <section className="px-panel px-status"><h2>{loading ? '教材を読み込んでいます…' : '教材の読み込みに失敗しました'}</h2>{error && <><p>{error}</p><Action onClick={onRetry}>再試行</Action></>}</section> :
       available.length === 0 ? <section className="px-panel px-status"><h2>4択穴埋め問題が見つかりません</h2><p>この教材には4択の穴埋め問題がありません。別の教材をご利用ください。</p><Action onClick={onClose}>教材選択へ戻る</Action></section> :
@@ -198,13 +198,12 @@ export default function PeriodicPractice({
         </>}
         {stage === 'quiz' && session && current && <>
           <div className="px-quiz-progress"><strong>{session.cursor + 1} <small>/ {session.ids.length} 問</small></strong><div className="px-track"><span style={{ width: String((session.cursor + 1) / session.ids.length * 100) + '%' }}/></div><span>正解 <b>{done}</b></span><span>あと <b>{session.ids.length - session.cursor - 1}問</b></span></div>
-          <section className="px-panel px-question"><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>意味に合う語を選ぼう</strong></div>
-            <p className="px-sentence" lang="en">{current.prompt}</p>
-            <p className="px-translation">{current.japanese}</p>
+          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>意味に合う語を選ぼう</strong></div>
+            <div className="px-prompt-block"><p className="px-sentence" lang="en">{current.prompt}</p><p className="px-translation">{current.japanese}</p></div>
             <div className="px-answer-grid">{options.map((option, i) => {
               const selected = feedback?.index === option.index;
               const isRight = feedback && option.index === current.correctIndex;
-              return <button type="button" key={option.index} className={'px-answer ' + (isRight ? 'px-right ' : '') + (selected && !feedback.correct ? 'px-wrong ' : '')} disabled={!!feedback} onClick={() => choose(option.index)}><span>{LETTERS[i]}</span>{option.text}</button>;
+              return <button type="button" key={option.index} className={'px-answer ' + (isRight ? 'px-right ' : '') + (selected && !feedback.correct ? 'px-wrong ' : '')} disabled={!!feedback} onClick={() => choose(option.index)}><span>{LETTERS[i]}</span><b className="px-answer-word">{option.text}</b>{isRight&&<i aria-hidden="true" className="px-answer-check">✓</i>}</button>;
             })}</div>
             {feedback && settings.instantFeedback && <div className={'px-feedback ' + (feedback.correct ? 'px-feedback-right' : 'px-feedback-wrong')} role="status">
               <strong>{feedback.correct ? '✓ 正解です！' : feedback.index === -1 ? 'スキップしました' : 'もう一度覚えよう'}</strong>
