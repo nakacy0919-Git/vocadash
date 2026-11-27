@@ -53,9 +53,9 @@ export function targetParts(sentence,word){
   if(/[aeiou][bcdfgklmnprst]$/.test(first)){forms.add(first+first.at(-1)+'ed');forms.add(first+first.at(-1)+'ing');}
  }
  const alternatives=[...forms].sort((a,b)=>b.length-a.length).map(escapeRx).join('|');
- const pattern='(?<![A-Za-z0-9])(?:'+alternatives+')'+(rest.length?'\\s+'+rest.map(escapeRx).join('\\s+'):'')+'(?![A-Za-z0-9])';
+ const pattern='(^|[^A-Za-z0-9])((?:'+alternatives+')'+(rest.length?'\\s+'+rest.map(escapeRx).join('\\s+'):'')+')(?![A-Za-z0-9])';
  const result=[];let cursor=0;
- for(const m of text.matchAll(new RegExp(pattern,'gi'))){if(m.index>cursor)result.push({text:text.slice(cursor,m.index),target:false});result.push({text:m[0],target:true});cursor=m.index+m[0].length;}
+ for(const m of text.matchAll(new RegExp(pattern,'gi'))){const start=m.index+m[1].length;if(start>cursor)result.push({text:text.slice(cursor,start),target:false});result.push({text:m[2],target:true});cursor=start+m[2].length;}
  if(cursor<text.length)result.push({text:text.slice(cursor),target:false});
  return result.length?result:[{text,target:false}];
 }

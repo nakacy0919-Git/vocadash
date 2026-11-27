@@ -37,7 +37,8 @@ export default function RedSheet({items,start,page,total,onSpeak,sound,showExamp
  const keyboard=(e,kind)=>{if(e.key==='Escape'){setVisible(false);return;}const n=e.shiftKey?.08:.02,delta={ArrowLeft:[-n,0],ArrowRight:[n,0],ArrowUp:[0,-n],ArrowDown:[0,n]}[e.key];if(delta){e.preventDefault();e.stopPropagation();setRect(r=>kind==='resize'?resizeFilm(r,...delta):moveSheet(r,...delta));if(kind==='resize')setSize('custom');}};
  const pointerProps={onPointerMove:move,onPointerUp:finish,onPointerCancel:finish,onLostPointerCapture:finish};
  const reset=()=>changeSize('medium');
- const themeEdge=SHEET_THEMES[theme]?.edge||'#876a5a',vars={'--rs-filter':sheetColor,'--rs-red':inkColor,'--rs-edge':themeEdge};
+ const rgb=[1,3,5].map(i=>parseInt(sheetColor.slice(i,i+2),16));const luminance=rgb.reduce((sum,v,i)=>sum+[.2126,.7152,.0722][i]*(v/255<=.04045?v/255/12.92:Math.pow((v/255+.055)/1.055,2.4)),0);const coveredInk=luminance<.16?'#fffaf0':'#302820';
+ const themeEdge=SHEET_THEMES[theme]?.edge||'#876a5a',vars={'--rs-filter':sheetColor,'--rs-red':inkColor,'--rs-edge':themeEdge,'--rs-covered-ink':coveredInk};
  const renderPaper=filtered=><div className={'rs-paper-grid'+(filtered?' rs-filtered':'')} aria-hidden={filtered?true:undefined}>{items.map((w,i)=>{
   const ex=examplesFor(w)[0],parts=targetParts(ex?.en,w.word),matched=parts.some(p=>p.target);
   const field=(name)=>{const red=isRedField(mode,overrides,w.id,name),cls='rs-field rs-'+name+(red?' rs-red-ink':'')+(custom?' rs-editable':'');const value=w[name]||'—';return !filtered&&custom?<button type="button" className={cls} aria-pressed={red} aria-label={(name==='word'?'英単語':'日本語訳')+'の消える文字を切り替える '+value} onClick={()=>toggle(w.id,name)}>{value}</button>:<span className={cls} lang={name==='word'?'en':'ja'}>{value}</span>;};

@@ -37,7 +37,7 @@ test('red ink switches between languages and individual fields without changing 
 import {SHEET_THEMES,resizeFilm,paperFilmClip,targetParts} from './redSheet.js';
 test('colored sheets are independently configurable and film can cross paper boundaries',()=>{
  assert.equal(Object.keys(SHEET_THEMES).length,7);
- assert.deepEqual(resizeFilm({x:.2,y:.3,w:.3,h:.4},1,1),{x:.2,y:.3,w:.8,h:.7});
+ const resized=resizeFilm({x:.2,y:.3,w:.3,h:.4},1,1);for(const [key,value] of Object.entries({x:.2,y:.3,w:.8,h:.7}))assert.ok(Math.abs(resized[key]-value)<1e-9);
  const view={width:1000,height:800},paper={left:200,top:200,width:600,height:400};
  assert.equal(paperFilmClip({x:0,y:0,w:.1,h:.1},view,paper),'inset(0 100% 100% 0)');
  assert.equal(paperFilmClip({x:.2,y:.25,w:.6,h:.5},view,paper),'inset(0% 0% 0% 0%)');
