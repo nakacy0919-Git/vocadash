@@ -16,3 +16,20 @@ test('card progress uses measured successful recall and does not invent timing',
  const summary=courseProgress([{id:'a'},{id:'b'}],{a:{memory:third}},at+2000);
  assert.equal(summary.learned,1);assert.equal(summary.coverage,50);assert.equal(summary.averageCorrectMs,2500);assert.equal(summary.timedWords,1);assert.equal(summary.average,Math.round(row.percent/2));
 });
+
+import {INITIAL_SHEET,boundSheet,moveSheet,sizeSheet,sheetClip,isRedField} from './redSheet.js';
+test('red sheet stays inside page and supports partial and full coverage',()=>{
+ assert.deepEqual(boundSheet({x:-2,y:5,w:.25,h:.5}),{x:0,y:.5,w:.25,h:.5});
+ const m=moveSheet(INITIAL_SHEET,.1,-.05);assert.ok(Math.abs(m.x-.3)<1e-9);assert.ok(Math.abs(m.y-.07)<1e-9);
+ assert.deepEqual(sizeSheet(m,'full'),{x:0,y:0,w:1,h:1});
+ assert.equal(sheetClip({x:0,y:0,w:1,h:1}),'inset(0% 0% 0% 0%)');
+ assert.equal(sheetClip({x:.25,y:.25,w:.5,h:.5}),'inset(25% 25% 25% 25%)');
+});
+test('red ink switches between languages and individual fields without changing words',()=>{
+ assert.equal(isRedField('meaning',{},'w','word'),false);
+ assert.equal(isRedField('meaning',{},'w','meaning'),true);
+ assert.equal(isRedField('both',{},'w','word'),true);
+ assert.equal(isRedField('word',{'w:word':false},'w','word'),false);
+ assert.equal(isRedField('meaning',{'w:word':true},'w','word'),true);
+ assert.equal(isRedField('meaning',{'w:word':true},'other','word'),false);
+});
