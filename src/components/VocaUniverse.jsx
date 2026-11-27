@@ -109,7 +109,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
      else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus();}
    }
  };
- return createPortal(<div ref={overlay} className="vu-overlay vu-portal-open" onClick={onClose}>
+ return createPortal(<div ref={overlay} className="vu-overlay vu-portal-open vu-library-atlas" onClick={onClose}>
   {profile&&profileWarp&&<div key={profileWarp.id} className="vu-profile-warp" aria-hidden="true"><div className="vp-warp-ring"/><div className="vp-warp-ring vp-warp-ring-alt"/>{Array.from({length:40},(_,i)=><i key={i} style={{'--pw-angle':(i*9)+'deg','--pw-length':(12+(i*11)%28)+'vmin','--pw-delay':(i%5)*.014+'s','--pw-color':i%3===0?'#b7a3ff':'#78e3ff'}}/>)}<div className="vp-warp-label"><small>ACCESSING WORD PROFILE</small><strong>{profileWarp.word}</strong><span>DEFINITION · EXAMPLES</span></div></div>}
   {!instantBack&&<div key={warpVersion} className="vu-warp" aria-hidden="true"><div className="vu-warp-core"/>{Array.from({length:24},(_,i)=><i key={i} style={{"--vu-angle":(i*15)+"deg","--vu-delay":(i%6)*.024+"s","--vu-length":(18+(i*7)%21)+"vmin"}}/>)}<span>{warpVersion===0?"ENTERING VOCA UNIVERSE":center.word.toUpperCase()}</span></div>}
   <section className={"vu-dialog vu-dialog-warp"+(instantBack?" vu-instant-back":"")} role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialog} onKeyDown={key} onClick={e=>e.stopPropagation()}>

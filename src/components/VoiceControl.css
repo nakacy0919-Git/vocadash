@@ -10,3 +10,14 @@
 .vd-voice-bottom,.vd-voice-panel{position:relative;z-index:3}.vd-voice-shell:has(.vd-orb-full) .vd-voice-bottom{visibility:hidden}.vd-voice-result,.vd-voice-help{z-index:4}
 
 .vd-voice-shell.in-universe{z-index:2147483001}.vd-voice-bottom.vd-voice-docked{display:none}.vd-voice-shell.in-universe .vd-voice-result,.vd-voice-shell.in-universe .vd-voice-help{margin-bottom:0}
+
+/* The dock's ancillary help/result panels share the library palette. Full-screen
+   DASH orb renderer itself is unchanged. */
+.vd-voice-shell.in-universe .vd-voice-panel{background:#fffaf0f7;color:#443325;border-color:#d3bc8d;box-shadow:0 8px 30px #70502b45;color-scheme:light}
+.vd-voice-shell.in-universe .vd-voice-panel button,.vd-voice-shell.in-universe .vd-wake-option select{background:#f2ead5;color:#493728;border-color:#cfb98d}
+.vd-voice-shell.in-universe .vd-voice-panel button[aria-pressed=true]{background:#587648;color:white;border-color:#bba36b}
+.vd-voice-shell.in-universe .vd-voice-status,.vd-voice-shell.in-universe .vd-voice-status.phase-active{color:#527746}
+.vd-voice-shell.in-universe .vd-voice-status.phase-standby{color:#87632d}
+.vd-voice-shell.in-universe .vd-voice-transcript,.vd-voice-shell.in-universe .vd-voice-hint,.vd-voice-shell.in-universe .vd-voice-privacy,.vd-voice-shell.in-universe .vd-voice-panel details,.vd-voice-shell.in-universe .vd-voice-entry small{color:#705c43}
+.vd-voice-shell.in-universe .vd-voice-sense{border-color:#ddc9a6}
+.vd-voice-shell.in-universe .vd-voice-draft{color:#936628}

@@ -189,3 +189,28 @@
 .vp-single.vp-portrait:not(.vp-tight) .vp-examples{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr)}
 .vp-single.vp-portrait:not(.vp-tight) .vp-example:only-of-type{grid-column:1/-1}
 @container(max-width:480px){.vp-single.vp-portrait:not(.vp-tight) .vp-examples{display:grid}.vp-single .vp-category-icon{display:none}.vu-dialog .vp-single .vp-term{font-size:11px}.vp-single .vp-term small{display:none}}
+
+/* Library Atlas word profiles: maintain the existing page budgets and grid. */
+.vu-library-atlas .vu-dialog .vu-profile.vp-single{color:#413022}
+.vu-library-atlas .vp-single .vp-word-card,.vu-library-atlas .vp-single .vp-definition,.vu-library-atlas .vp-single .vp-example,.vu-library-atlas .vp-single .vp-detail,.vu-library-atlas .vp-single .vp-detail-term{background:linear-gradient(145deg,#fffdf5f7,#f4e9d2f2);border-color:#d7c097;box-shadow:0 3px 10px #88632a14,inset 0 1px #fff}
+.vu-library-atlas .vp-single .vp-word-heading h1,.vu-library-atlas .vp-single .vp-meaning,.vu-library-atlas .vp-single .vp-definition-text,.vu-library-atlas .vp-single .vp-example-en,.vu-library-atlas .vp-single .vp-detail-word,.vu-library-atlas .vp-single .vp-visual-caption strong{color:#3b2b20}
+.vu-library-atlas .vp-single .vp-word-heading h1{font-family:Georgia,"Times New Roman",serif}
+.vu-library-atlas .vp-single .vp-card-heading h2{color:#4c633d}
+.vu-library-atlas .vp-single .vp-card-heading h2 small,.vu-library-atlas .vp-single .vp-badges small,.vu-library-atlas .vp-single .vp-ipa,.vu-library-atlas .vp-single .vp-meta,.vu-library-atlas .vp-single .vp-bar span,.vu-library-atlas .vp-single .vp-pager span,.vu-library-atlas .vp-single .vp-unregistered,.vu-library-atlas .vp-single .vp-example-count,.vu-library-atlas .vp-single .vp-example-top small,.vu-library-atlas .vp-single .vp-example-ja,.vu-library-atlas .vp-single .vp-detail-meaning,.vu-library-atlas .vp-single .vp-detail-term small,.vu-library-atlas .vp-single .vp-visual-caption p{color:#715b43}
+.vu-library-atlas .vp-single .vp-cefr{background:#e5ecd3;border-color:#b1c28d;color:#456539}
+.vu-library-atlas .vp-single .vp-audio-status{color:#876027}
+.vu-library-atlas .vp-single .vp-lexical-group{--rel-rgb:103,128,78;--rel-ink:#4d6a3c;--rel-base:#f5f4e2;background:linear-gradient(145deg,#fffdf4,var(--rel-base));box-shadow:0 3px 12px #77592312,inset 0 1px #fff}
+.vu-library-atlas .vp-single .vp-type-synonym{--rel-rgb:96,131,78;--rel-ink:#48663a;--rel-base:#e7eedb}
+.vu-library-atlas .vp-single .vp-type-contrast{--rel-rgb:180,119,104;--rel-ink:#8b4c40;--rel-base:#f5e5dc}
+.vu-library-atlas .vp-single .vp-type-family{--rel-rgb:83,123,133;--rel-ink:#40676d;--rel-base:#e5eeea}
+.vu-library-atlas .vp-single .vp-type-collocation{--rel-rgb:171,123,50;--rel-ink:#80571e;--rel-base:#f9edce}
+.vu-library-atlas .vu-dialog .vp-single .vp-term,.vu-library-atlas .vu-dialog .vp-single.vp-portrait .vp-term,.vu-library-atlas .vu-dialog .vp-single.vp-tight .vp-term{color:#443225;background:transparent;box-shadow:none}
+.vu-library-atlas .vu-dialog .vp-single .vp-term:hover{color:var(--rel-ink);background:transparent;box-shadow:none}
+.vu-library-atlas .vu-dialog .vp-single .vp-link,.vu-library-atlas .vu-dialog .vp-single .vp-text-more{color:#49663d;background:#e9eedb;border-color:#b6c49b}
+.vu-library-atlas .vu-dialog .vp-single .vp-lexical-group .vp-link{color:var(--rel-ink);background:rgba(var(--rel-rgb),.12);border-color:rgba(var(--rel-rgb),.4)}
+.vu-library-atlas .vu-dialog .vp-single .vp-sound{background:#e3ebcf;color:#4c6e40;border-color:#b1c18b}
+.vu-library-atlas .vu-dialog .vp-single .vp-sound:hover,.vu-library-atlas .vu-dialog .vp-single .vp-sound[data-audio="playing"]{background:#5c7b47;color:#fff8e8;border-color:#bda05f;box-shadow:0 0 12px #89a55b44}
+.vu-library-atlas .vu-dialog .vp-single .vp-sound[data-audio="starting"]{color:#527145;border-color:#8daa70}
+.vu-library-atlas .vu-dialog .vp-single .vp-sound[data-audio="error"]{color:#903c2e;border-color:#c68d7a;background:#f4ddd4}
+.vu-library-atlas .vu-dialog .vp-single .vp-visual-thumb{background:#efe5cf;border-color:#d1ba91}
+.vu-library-atlas .vp-single .vp-visual-thumb span{background:#fff7e8e8;color:#5b472f;border-color:#d6be8b}

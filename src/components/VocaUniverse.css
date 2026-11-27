@@ -236,3 +236,89 @@
 .vu-dialog .vu-voice-idle button{min-height:27px;padding:3px 8px;flex:none}
 .vu-dialog .vu-voice-idle .vu-dock-mic{display:inline-flex;align-items:center;justify-content:center;gap:5px;border-color:#4d8dc5;color:#d3eeff;background:#183858;font-weight:650}
 @media(max-height:500px){.vu-dialog .vu-voice-idle{min-height:28px;padding:2px 5px}.vu-dialog .vu-voice-idle button{min-height:24px;padding:2px 6px}}
+
+/* Library Atlas — presentation only. Existing visualViewport, orbit positions,
+   focus management, paging, and voice docking are left intact. */
+.vu-overlay.vu-library-atlas{--atlas-ink:#3c2c20;--atlas-muted:#705b43;--atlas-green:#4e7041;--atlas-gold:#b99a5c;--atlas-line:#d7c39d;--atlas-paper:#fffaf0;background:#e8dcc2;color-scheme:light}
+.vu-library-atlas .vu-dialog.vu-dialog-warp{color:var(--atlas-ink);color-scheme:light;background:#f4ebda;box-shadow:none}
+.vu-library-atlas .vu-space{background:linear-gradient(110deg,#fff7e4c9,#f5eddbcf 55%,#f7e9d1bd),url('/images/library-study-hd.avif') center/cover no-repeat}
+.vu-library-atlas .vu-space-nebula{background:radial-gradient(ellipse at 30% 28%,#fff6d480,transparent 36%),radial-gradient(ellipse at 78% 62%,#b9c58b33,transparent 35%);opacity:.8}
+.vu-library-atlas .vu-space-stars.far{opacity:.63;background-image:radial-gradient(circle at 17px 21px,#fffdf0 0 .8px,transparent 2px),radial-gradient(circle at 79px 52px,#dcb367 0 .6px,transparent 1.5px),radial-gradient(circle at 35px 86px,#fff7dc 0 .8px,transparent 2px)}
+.vu-library-atlas .vu-space-stars.near{opacity:.8;background-image:radial-gradient(circle at 49px 37px,#fffdf2 0 1.2px,#e4ba6666 2px,transparent 4px),radial-gradient(circle at 103px 112px,#fff3c9 0 1px,transparent 2.5px)}
+.vu-library-atlas .vu-dialog .vu-header{border-color:#cbb78e;padding-inline:clamp(3px,1vw,14px)}
+.vu-library-atlas .vu-header h2{font-family:Georgia,"Times New Roman",serif;font-weight:750;color:#39271c;letter-spacing:-.035em;text-shadow:0 1px #fff9e9}
+.vu-library-atlas .vu-header small{color:#795c38;font-weight:750;letter-spacing:.13em}
+.vu-library-atlas .vu-dialog button{color:#493728;background:linear-gradient(145deg,#fffdf4,#f0e5cc);border-color:#cdb68c;box-shadow:0 2px 5px #78552614,inset 0 1px #fff;transition:background .16s,border-color .16s,box-shadow .16s}
+.vu-library-atlas .vu-dialog button:not(:disabled):hover{background:#e9eed9;border-color:#8eaa70;box-shadow:0 3px 10px #657b3a25}
+.vu-library-atlas .vu-dialog button:focus-visible{outline:3px solid #577942;outline-offset:2px}
+.vu-library-atlas .vu-dialog button[aria-pressed=true]{background:linear-gradient(135deg,#71905a,#49663e);border-color:#c4a361;color:#fffaf0;box-shadow:inset 0 1px #dce9bd70,0 3px 9px #526e3c28}
+.vu-library-atlas .vu-header-actions .vu-effects-toggle[aria-pressed=true]{color:#fdf9eb;border-color:#bda05c}
+.vu-library-atlas .vu-header-actions .vu-close{color:#785a39;background:#fff8e8}
+.vu-library-atlas .vu-live-voice{background:linear-gradient(145deg,#fffdf6ed,#eee3caee);border:1px solid #cdb88e;color:#48663c;box-shadow:0 3px 10px #8e6c2915}
+.vu-library-atlas .vu-live-copy small,.vu-library-atlas .vu-suggestion-caption,.vu-library-atlas .vu-dialog .vu-voice-idle .vu-live-copy{color:#725d43}
+.vu-library-atlas .vu-live-indicator{background:#63934e;box-shadow:0 0 0 3px #87aa6540,0 0 9px #a9c57a}
+.vu-library-atlas .vu-live-indicator[data-state="reconnecting"]{background:#c48d3d;box-shadow:none}
+.vu-library-atlas .vu-live-indicator[data-state="model"]{background:#668d86;box-shadow:0 0 9px #96b3a1}
+.vu-library-atlas .vu-live-model-icon{color:#52776d}
+.vu-library-atlas .vu-dialog .vu-live-suggestions button{background:#f9f4e4;border-color:#c8bc9b;color:#4a3b2b}
+.vu-library-atlas .vu-suggestion-number{color:#557346}
+.vu-library-atlas .vu-dialog .vu-voice-idle .vu-dock-mic{background:#547343;color:#fffaf0;border-color:#bdad72}
+.vu-library-atlas .vu-dialog .vu-live-stop{background:#a65346;color:white;border-color:#d29480}
+.vu-library-atlas .vu-sidebar{background:linear-gradient(155deg,#fff9e9bb,#f4ebd6a6);border:1px solid #d6c29c;border-radius:15px;padding:clamp(6px,1vw,12px) 8px;box-shadow:0 4px 12px #74562813}
+.vu-library-atlas .vu-side-caption{color:#83643d;font-weight:750}
+.vu-library-atlas .vu-dialog .vu-sidebar button{font-weight:700;border-radius:10px;min-height:40px;background:linear-gradient(145deg,#fffdf4,#f1e7d2);color:#49382a}
+.vu-library-atlas .vu-dialog .vu-sidebar button[aria-pressed=true]{color:#fffaf0;background:linear-gradient(135deg,#718b54,#4d6b40);border-color:#c5aa68;box-shadow:inset 3px 0 #ecd18b,0 3px 8px #637c3c25}
+.vu-library-atlas .vu-filter-dot{background:#97ae75}
+.vu-library-atlas .vu-dialog .vu-sidebar button[aria-pressed=true] .vu-filter-dot{box-shadow:0 0 0 2px #fff6d770}
+.vu-library-atlas .vu-side-separator{background:#d8c59e}
+.vu-library-atlas .vu-image-toggle{color:#604e37;font-weight:650}
+.vu-library-atlas .vu-image-toggle input{accent-color:#577746}
+.vu-library-atlas .vu-dialog .vu-map{background:radial-gradient(ellipse at 50% 50%,#fff9e2a0,transparent 68%)}
+.vu-library-atlas .vu-ring{stroke:#9f8757;stroke-width:.14;opacity:.5}
+.vu-library-atlas .vu-line{stroke:#9b835c;stroke-width:.20;opacity:.75}
+.vu-library-atlas .vu-dialog .vu-map .vu-center,.vu-library-atlas .vu-dialog .vu-map .vu-node{color:#3b2a1c;background:linear-gradient(145deg,#fffdf3f7,#f1e5cdef);border-color:#c9ad76;box-shadow:0 5px 15px #795a2925,inset 0 1px #fff8e8}
+.vu-library-atlas .vu-dialog .vu-map .vu-center{background:radial-gradient(ellipse at 20% 5%,#fdfbe6,transparent 70%),linear-gradient(145deg,#eff1d8,#d6e2b9);border:2px solid #a8b77b;box-shadow:0 0 0 3px #f7e8b786,0 8px 25px #677c473d,inset 0 1px #fff}
+.vu-library-atlas .vu-dialog .vu-center .vu-center-word{color:#34532c;box-shadow:none;background:transparent;border:0}
+.vu-library-atlas .vu-dialog .vu-center strong{font-family:Georgia,"Times New Roman",serif;font-weight:750}
+.vu-library-atlas .vu-dialog .vu-map .vu-node strong{font-weight:750;color:#3f3025}
+.vu-library-atlas .vu-center span,.vu-library-atlas .vu-center small,.vu-library-atlas .vu-dialog .vu-map .vu-node small,.vu-library-atlas .vu-dialog .vu-map .vu-node .vu-node-memory{color:#66583f}
+.vu-library-atlas .vu-dialog .vu-center>button:not(.vu-center-word){background:#fff8e9;color:#4d6b3e;border-color:#aebd8a}
+.vu-library-atlas .vu-dialog .vu-map .vu-node:hover{background:#fffdf6;box-shadow:0 0 0 2px #dfc58d,0 7px 18px #765a2d35}
+.vu-library-atlas .vu-line.synonym{stroke:#60834e} .vu-library-atlas .vu-dialog [data-type=synonym]{border-color:#60834e} .vu-library-atlas .vu-sidebar [data-type=synonym] .vu-filter-dot{background:#60834e} .vu-library-atlas .vu-dialog .vu-map .vu-node[data-type=synonym]{background:linear-gradient(145deg,#fffdf5,#e4ecd7);border-color:#60834e}
+.vu-library-atlas .vu-line.family{stroke:#537b85} .vu-library-atlas .vu-dialog [data-type=family]{border-color:#537b85} .vu-library-atlas .vu-sidebar [data-type=family] .vu-filter-dot{background:#537b85} .vu-library-atlas .vu-dialog .vu-map .vu-node[data-type=family]{background:linear-gradient(145deg,#fffdf5,#e0ece9);border-color:#537b85}
+.vu-library-atlas .vu-line.collocation{stroke:#ab7b32} .vu-library-atlas .vu-dialog [data-type=collocation]{border-color:#ab7b32} .vu-library-atlas .vu-sidebar [data-type=collocation] .vu-filter-dot{background:#ab7b32} .vu-library-atlas .vu-dialog .vu-map .vu-node[data-type=collocation]{background:linear-gradient(145deg,#fffdf5,#f8e9c5);border-color:#ab7b32}
+.vu-library-atlas .vu-line.related{stroke:#8672a0} .vu-library-atlas .vu-dialog [data-type=related]{border-color:#8672a0} .vu-library-atlas .vu-sidebar [data-type=related] .vu-filter-dot{background:#8672a0} .vu-library-atlas .vu-dialog .vu-map .vu-node[data-type=related]{background:linear-gradient(145deg,#fffdf5,#ede5f2);border-color:#8672a0}
+.vu-library-atlas .vu-line.contrast{stroke:#b47768} .vu-library-atlas .vu-dialog [data-type=contrast]{border-color:#b47768} .vu-library-atlas .vu-sidebar [data-type=contrast] .vu-filter-dot{background:#b47768} .vu-library-atlas .vu-dialog .vu-map .vu-node[data-type=contrast]{background:linear-gradient(145deg,#fffdf5,#f5e2d9);border-color:#b47768}
+/* Memory states retain distinct borders and explicit status text; category remains visible in the line and dot. */
+.vu-library-atlas .vu-dialog .vu-map [data-memory=strong]{background:linear-gradient(145deg,#f3f8e2,#d5e9b9);border:2px solid #7fa35e;box-shadow:0 0 0 2px #d4bd7070,0 5px 18px #71934b40}
+.vu-library-atlas .vu-dialog .vu-map [data-memory=learned]{border-width:2px;box-shadow:0 0 0 2px #b4c48f60,0 4px 12px #8b9a5926}
+.vu-library-atlas .vu-dialog .vu-map [data-memory=fading]{background:linear-gradient(145deg,#f8f2e6,#e8dfcf);border-color:#aaa08a;box-shadow:0 3px 8px #8d78531c}
+.vu-library-atlas .vu-dialog .vu-map [data-memory=weak]{background:#fff0d8;border:2px dashed #bb8950;box-shadow:0 2px 8px #b0813730}
+.vu-library-atlas .vu-map-footer{border-color:#d0b98b;color:#6d583c;padding-bottom:3px}
+.vu-library-atlas .vu-map-footer .vu-practice-short{background:linear-gradient(135deg,#739056,#4b6a3d);color:#fffaf0;border-color:#bba361;font-weight:750}
+.vu-library-atlas .vu-full-list h3,.vu-library-atlas .vu-full-list button span,.vu-library-atlas .vu-list-center span,.vu-library-atlas .vu-list,.vu-library-atlas .vu-toolbar,.vu-library-atlas .vu-display-tools,.vu-library-atlas .vu-map-sense,.vu-library-atlas .vu-rings,.vu-library-atlas .vu-reverse,.vu-library-atlas .vu-detail small,.vu-library-atlas .vu-sense-results small{color:#705a41}
+.vu-library-atlas .vu-list-center,.vu-library-atlas .vu-draft-example{border-color:#d6c39e}
+.vu-library-atlas .vu-list-center,.vu-library-atlas .vu-center-example{background:#fffaf0c9;border-radius:12px;padding:10px}
+.vu-library-atlas .vu-search-anchor .vu-search-wrap,.vu-library-atlas .vu-controls .vu-search-wrap,.vu-library-atlas .vu-detail,.vu-library-atlas .vu-empty,.vu-library-atlas .vu-learning,.vu-library-atlas .vu-draft-definition,.vu-library-atlas .vu-usage-note{background:#fffaf0f5;color:#433325;border-color:#d1bb90;box-shadow:0 8px 24px #75562922}
+.vu-library-atlas .vu-search-wrap label,.vu-library-atlas .vu-search-results small,.vu-library-atlas .vu-draft-definition h3 small,.vu-library-atlas .vu-usage-note strong,.vu-library-atlas .vu-usage-note p[lang=en]{color:#5d6945}
+.vu-library-atlas .vu-search-wrap input,.vu-library-atlas .vu-learning input{background:#fffdf5;color:#3d2e21;border-color:#cbb78c}
+.vu-library-atlas .vu-draft-banner{background:#f8ebcd;color:#785324;border-color:#d4b16c}.vu-library-atlas .vu-draft-banner small{color:#826742}
+.vu-library-atlas .vu-learning nav{border-color:#d8c6a2}
+.vu-library-atlas .vu-learning .vu-choice-grid button.vu-choice-correct{background:#dfedcb;color:#345c2e;border-color:#86a364}
+.vu-library-atlas .vu-learning .vu-choice-grid button.vu-choice-wrong{background:#f4dcd1;color:#8e4133;border-color:#d19b86}
+.vu-library-atlas .vu-warp{background:radial-gradient(ellipse at center,#fff6d373,transparent 75%)}
+.vu-library-atlas .vu-warp-core,.vu-library-atlas .vp-warp-ring{border-color:#e0b65f;box-shadow:0 0 35px #f6d88b,inset 0 0 12px #fff0b5}
+.vu-library-atlas .vu-warp i,.vu-library-atlas .vu-profile-warp i{background:linear-gradient(90deg,transparent,#f7d480)}
+.vu-library-atlas .vu-profile-warp{background:radial-gradient(ellipse at center,#f8e9b94d,transparent 65%)}
+.vu-library-atlas .vp-warp-label{background:#fff6e2ed;border-color:#d2ae66;color:#3e2d20;box-shadow:0 0 25px #e4c17c70}
+.vu-library-atlas .vp-warp-label small,.vu-library-atlas .vp-warp-label span{color:#765a36}
+.vu-launch:not(.vu-launch-round){background:linear-gradient(145deg,#f7edda,#e0e8c9);color:#416438;border-color:#c9bd90;box-shadow:0 3px 10px #62794320}
+.vu-launch:not(.vu-launch-round) .vu-launch-text strong,.vu-launch:not(.vu-launch-round) .vu-launch-text small,.vu-launch:not(.vu-launch-round) .vu-launch-arrow{color:#48683c}
+.vu-launch:not(.vu-launch-round) .vu-launch-symbol{color:#628050;filter:none}
+.vu-launch.vu-launch-round{background:radial-gradient(circle at 36% 25%,#adc894,#507347 63%,#344f32);border-color:#e4c57b;box-shadow:0 0 0 3px #f1d99c55,0 4px 13px #5b71344d}
+.vu-launch-round .vu-launch-symbol{color:#fff5cd;filter:drop-shadow(0 0 3px #e6d399)}
+.vu-launch-label{color:#587349}
+@media(max-width:540px){.vu-library-atlas .vu-sidebar.is-open{background:#fff8e8;border-color:#d1bb90;box-shadow:0 8px 24px #75562955}}
+@media(max-height:650px){.vu-library-atlas .vu-sidebar{gap:5px;padding-block:6px}.vu-library-atlas .vu-dialog .vu-sidebar button{min-height:34px;padding-block:5px}.vu-library-atlas .vu-dialog .vu-sidebar .vu-filters,.vu-library-atlas .vu-dialog .vu-sidebar .vu-view-switch{gap:5px}}
+@media(max-height:500px){.vu-library-atlas .vu-dialog .vu-sidebar button{min-height:28px;padding-block:3px}}
+@media(prefers-reduced-motion:reduce){.vu-library-atlas .vu-dialog button{transition:none}}
