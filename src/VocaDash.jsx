@@ -248,7 +248,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const universeMemoryAdapter=useMemo(()=>({version:1,getSnapshot:({now}={})=>memorySnapshot(memoryStoreRef.current.records,memoryWordsRef.current,now),recordAttempt:attempt=>storeExternalAttempt(universeMemoryAttempt(attempt))}),[storeExternalAttempt]);
   const pendingMode=useRef(null);
   const [mode, setMode] = useState('study');
-  const [libraryPage,setLibraryPage]=useState(0),[missionScope,setMissionScope]=useState(null);
+  const [libraryPage,setLibraryPage]=useState(0),[libraryDensity,setLibraryDensity]=useState(6),[missionScope,setMissionScope]=useState(null);
   const [returnToLibrary,setReturnToLibrary]=useState(false);
   const [quizStudioOpen,setQuizStudioOpen]=useState(false);
   const [quizStudioWord,setQuizStudioWord]=useState('');
@@ -541,7 +541,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
             questionCount={store.settings.questionCount} loading={loading} error={error} onRetry={retry}
             onExplore={exploreFromHome} onLookup={resolveVocabulary} onSpeak={speak} onDash={launchDash} externalCategory={homeCategory} onCategoryConsumed={()=>setHomeCategory(null)} unitAvailable={(c,u)=>Boolean(unitLoader(c,u))}
             progress={<><ProgressMedallion value={masteryPercent} title="語彙の定着率" detail="MASTERED" variant="mastery"/><ProgressMedallion value={readingPercent} title="音読の合格率" detail="READING" variant="reading"/></>}/>
-        ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('fast');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
+        ) : mode==='library' ? <CourseLibrary key={selection.courseId+':'+selection.unitId} words={loadedKey===selection.courseId+':'+selection.unitId?words:[]} records={store.records} title={course.label+' / '+unit.label} loading={loading||loadedKey!==selection.courseId+':'+selection.unitId} error={error} onRetry={retry} page={libraryPage} onPage={setLibraryPage} cardDensity={libraryDensity} onCardDensity={setLibraryDensity} sound={store.settings.sound} onSpeak={speak} onExplore={openUniverse} onHome={()=>{resetCard();setDashboardOpen(true);}} onStudy={word=>jumpTo(word,'study')} onSentence={word=>jumpTo(word,'sentence')} onMode={startMode} onMission={ids=>{startMode('fast');setMissionScope(ids);setReturnToLibrary(true);}}/> : (
           <>
         <div className="vd-mobile-course"><label htmlFor="vd-course">教材</label><select id="vd-course" value={course.id} onChange={e => selectCourse(e.target.value)}>{CATALOG.map(c => <option key={c.id} value={c.id}>{c.label}</option>)}</select></div>
         <div className="vd-toolbar"><div className="vd-unit"><label htmlFor="vd-unit">学習ユニット</label><select id="vd-unit" value={unit.id} onChange={e => selectUnit(e.target.value)}>{course.units.map(u => <option key={u.id} value={u.id}>{u.label}</option>)}</select></div>

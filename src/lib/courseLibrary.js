@@ -25,3 +25,6 @@ export function courseProgress(words,records={},now=Date.now()){
  return {total,learned,mastered,unlearned:total-learned,average:total?Math.round(rows.reduce((sum,r)=>sum+r.percent,0)/total):0,coverage:total?Math.round(learned*100/total):0,averageCorrectMs:times.length?Math.round(times.reduce((a,b)=>a+b,0)/times.length):null,timedWords:times.length};
 }
 export const formatAnswerTime=ms=>Number.isFinite(ms)&&ms>=0?(ms/1000).toFixed(1)+'秒':'—';
+
+// The larger illustrated layout is the default; compact mode preserves 12-word review.
+export function cardPageSize(density){return Number(density)===12?12:6;}

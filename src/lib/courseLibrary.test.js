@@ -51,3 +51,11 @@ test('example concealment preserves source text and selects complete target form
  assert.deepEqual(targetParts('The children went home.','child').filter(x=>x.target).map(x=>x.text),['children']);
  assert.equal(targetParts('An unrelated example.','run').some(x=>x.target),false);
 });
+
+import {cardPageSize} from './courseLibrary.js';
+test('illustrated library offers six large or twelve compact cards without dropping vocabulary',()=>{
+ const rows=Array.from({length:100},(_,i)=>({id:String(i)}));
+ assert.equal(cardPageSize(undefined),6);assert.equal(cardPageSize(12),12);
+ for(const density of [6,12]){const size=cardPageSize(density),pages=libraryPage(rows,0,size).pages;assert.deepEqual(Array.from({length:pages},(_,i)=>libraryPage(rows,i,size).items).flat(),rows);}
+ const start=libraryPage(rows,3,6).start;const compact=libraryPage(rows,Math.floor(start/12),12);assert.ok(compact.items.some(w=>w.id===String(start)));
+});
