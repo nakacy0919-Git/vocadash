@@ -15,9 +15,16 @@ export function bookWords(records=[]){
   id,number:index+1,headword:senses[0].headword,level:senses[0].cefrHeadword||'',senses:[...senses].sort((a,b)=>sortId(a.senseId,b.senseId))
  }));
 }
-export function bookFilter(words,level='all',query=''){
+export function bookFilter(words,level='all',query='',pos='all',sort='number'){
  const q=String(query||'').trim().normalize('NFKC').toLowerCase();
- return words.filter(w=>(level==='all'||w.senses.some(s=>s.cefrHeadword===level))&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||w.senses.some(s=>String(s.meaningJa).includes(q))));
+ const rows=words.flatMap(w=>{
+  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
+  return senses.length?[{...w,senses,level:senses[0].cefrHeadword||w.level}]:[];
+ });
+ if(sort==='alpha')rows.sort((a,b)=>a.headword.localeCompare(b.headword,'en')||a.number-b.number);
+ if(sort==='level'){const rank=x=>{const n=BOOK_LEVELS.indexOf(x);return n<0?99:n;};rows.sort((a,b)=>rank(a.level)-rank(b.level)||a.number-b.number);}
+ if(sort==='pos')rows.sort((a,b)=>bookPos(a.senses[0].partOfSpeech).kind.localeCompare(bookPos(b.senses[0].partOfSpeech).kind)||a.number-b.number);
+ return rows;
 }
 export function bookPage(words,page=0,size=BOOK_PAGE_SIZE){
  const n=Math.max(1,Math.floor(Number(size)||BOOK_PAGE_SIZE)),pages=Math.max(1,Math.ceil(words.length/n)),index=Math.max(0,Math.min(pages-1,Math.floor(Number(page)||0)));
@@ -45,5 +52,23 @@ export function bookPos(raw){
 }
 export function bookEntry(w,index=0){
  const i=Math.max(0,Math.min(w.senses.length-1,Math.floor(Number(index)||0))),s=w.senses[i],pos=bookPos(s.partOfSpeech),ex=s.examples?.[0]||{};
- return {id:'quiz:'+s.senseId,bookId:w.id,bookNumber:w.number,senseIndex:i,senseCount:w.senses.length,level:s.cefrHeadword||w.level,word:s.headword,meaning:s.meaningJa,partOfSpeech:s.partOfSpeech,posKind:pos.kind,posIcon:pos.icon,english:ex.en||'',japanese:ex.ja||'',examples:s.examples||[],audio:s.audio||''};
+ return {id:'quiz:'+s.senseId,bookId:w.id,bookNumber:w.number,senseIndex:i,senseCount:w.senses.length,level:s.cefrHeadword||w.level,word:s.headword,meaning:s.meaningJa,partOfSpeech:s.partOfSpeech,posKind:pos.kind,posIcon:pos.icon,english:ex.en||'',japanese:ex.ja||'',examples:s.examples||[],audio:s.audio||'',sense:s};
+}
+
+export function lexicalRows(value){
+ const items=Array.isArray(value)?value:typeof value==='string'?value.split(/[;；,、]/):[];
+ return items.map(x=>typeof x==='string'?{word:x.trim(),meaning:''}:{word:String(x?.word||x?.en||x?.term||'').trim(),meaning:String(x?.meaning||x?.ja||'').trim()}).filter(x=>x.word);
+}
+export function mergeLexical(...groups){
+ const map=new Map();for(const x of groups.flatMap(lexicalRows)){const key=x.word.toLowerCase();if(!map.has(key)||(!map.get(key).meaning&&x.meaning))map.set(key,x);}return [...map.values()];
+}
+const verifiedOrigins={
+ achieve:{text:'中英語 acheven を経て古フランス語 achever（終える・成し遂げる）に由来。chief（頭・終点）と歴史的につながり、終点に到達するという発想が背景にある。',url:'https://www.etymonline.com/word/achieve'},
+ knowledge:{text:'中英語 knowleche / knowlege に由来し、know（知る）と歴史的に関連する。語尾の詳しい成立には諸説がある。',url:'https://www.etymonline.com/word/knowledge'}
+};
+export function bookOrigin(entry){
+ const s=entry?.sense||{},raw=s.etymologyJa||s.etymology||s.wordOriginJa||s.wordOrigin;
+ if(typeof raw==='string'&&raw.trim())return {text:raw,source:'既存教材'};
+ if(raw&&typeof raw==='object'&&typeof (raw.ja||raw.text||raw.en)==='string')return {text:raw.ja||raw.text||raw.en,source:'既存教材'};
+ return verifiedOrigins[String(entry?.word||'').toLowerCase()]||null;
 }
