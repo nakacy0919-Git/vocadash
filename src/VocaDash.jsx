@@ -7,6 +7,7 @@ import './VocaDash.css';
 import MemoryTrainer from './components/MemoryTrainer.jsx';
 import PeriodicPractice from './components/PeriodicPractice.jsx';
 import CourseLibrary from './components/CourseLibrary.jsx';
+import VocaSheet from './components/VocaSheet.jsx';
 import {applyMemoryAttempt,memorySnapshot,quizMemoryAttempt,universeMemoryAttempt} from './lib/memoryBridge.js';
 import ReadingPractice from './components/ReadingPractice';
 import VocaUniverse from './components/VocaUniverse';
@@ -455,7 +456,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
         if (e.key === 'Escape') { e.preventDefault(); next(); }
         return;
       }
-      if (mode === 'reading' || mode==='library' || mode==='memory' || ratingFeedback !== null) return;
+      if (mode === 'reading' || mode==='library' || mode==='memory' || mode==='vocasheet' || ratingFeedback !== null) return;
       if ((mode === 'quiz' || mode === 'listening') && feedback !== null) return;
       if (advancedOpen || dashboardOpen || wordListOpen || e.altKey || e.ctrlKey || e.metaKey || /INPUT|SELECT|TEXTAREA/.test(e.target?.tagName || '')) return;
       if (e.key === 'ArrowRight' && current) { e.preventDefault(); next(); }
@@ -489,6 +490,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     if(kind==='next'||kind==='back'){setAutoplay(false);if(kind==='next'&&current&&feedback===null)next();else if(kind==='back')previous();return;}
     if(['study','sentence','quiz','review'].includes(kind))startMode(kind);
   };
+  if (!dashboardOpen && mode==='vocasheet') return <VocaSheet sound={store.settings.sound} onSound={value=>setSetting('sound',value)} onSpeak={speak} onStopAudio={stopAudio} onClose={()=>{resetCard();setDashboardOpen(true);setMode('study');}}/>;
   if (!dashboardOpen && ['periodic','fast','fast-resume'].includes(mode)) return <PeriodicPractice
     key={selection.courseId + ':' + selection.unitId}
     words={loadedKey === selection.courseId + ':' + selection.unitId ? words : []}
@@ -533,7 +535,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
       </header>
       <div className="vd-page">
         {quizStudioOpen ? <QuizStudio initialLevel={course.id.startsWith('draft-')?course.short:'B1'} initialWord={quizStudioWord} sound={store.settings.sound} onFeedback={correct=>playQuizFeedbackSound(correct,store.settings.sound)} onClose={()=>setQuizStudioOpen(false)} onAttempt={attempt=>storeExternalAttempt(quizMemoryAttempt(attempt))}/> : dashboardOpen ? (
-          <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided}
+          <LearningSpace catalog={CATALOG} selection={selection} onStart={startGuided} onVocaSheet={()=>{resetCard();setAutoplay(false);setDashboardOpen(false);setMode('vocasheet');}}
             onQuizStudio={()=>{resetCard();setAutoplay(false);setQuizStudioWord('');setQuizStudioOpen(true);}} onResume={()=>{setMissionScope(null);setReturnToLibrary(false);startMode('fast-resume');}} onLibrary={()=>startMode(course.id==='regular'?'periodic':'library')} onSettings={()=>setAdvancedOpen(true)}
             courseLabel={course.label} unitLabel={unit.label} stats={stats} today={today}
             totalAnswers={store.totalAnswers} allLearned={Object.values(store.records).filter(r=>r?.seen>0||r?.readingLastAt||r?.memory?.attempts>0).length}

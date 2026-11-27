@@ -1,0 +1,37 @@
+import React,{useEffect,useMemo,useState,useRef} from 'react';
+import {loadDraftRecords} from '../lib/draftCorpus.js';
+import {BOOK_PAGE_SIZE,BOOK_LEVELS,BOOK_STORAGE,bookWords,bookFilter,bookPage,bookPosition,bookEntry} from '../lib/vocaSheet.js';
+import RedSheet from './RedSheet.jsx';
+import './VocaSheet.css';
+const savedPlace=()=>{try{return JSON.parse(localStorage.getItem(BOOK_STORAGE)||'{}')||{}}catch{return {}}};
+export default function VocaSheet({sound,onSound,onSpeak,onStopAudio,onClose}){
+ const initial=useRef(savedPlace());
+ const [all,setAll]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState(''),[retry,setRetry]=useState(0);
+ const [level,setLevel]=useState(initial.current.level||'all'),[page,setPage]=useState(Number(initial.current.page)||0),[size,setSize]=useState(initial.current.size===4?4:BOOK_PAGE_SIZE),[query,setQuery]=useState(''),[sense,setSense]=useState({}),[example,setExample]=useState(0),[jump,setJump]=useState(''),[pageInput,setPageInput]=useState(''),[note,setNote]=useState(''),[direction,setDirection]=useState(0);
+ useEffect(()=>{let active=true;setLoading(true);setError('');loadDraftRecords().then(rows=>{if(active)setAll(bookWords(rows));}).catch(e=>{if(active)setError(e.message||'教材を読み込めませんでした。');}).finally(()=>{if(active)setLoading(false);});return()=>{active=false};},[retry]);
+ const filtered=useMemo(()=>bookFilter(all,level,query),[all,level,query]);
+ const p=useMemo(()=>bookPage(filtered,page,size),[filtered,page,size]);
+ const items=useMemo(()=>p.items.map(w=>bookEntry(w,sense[w.id]||0)),[p.items,sense]);
+ const maxExamples=Math.max(1,...items.map(w=>w.examples.length));
+ const exIndex=Math.min(example,maxExamples-1);
+ useEffect(()=>{if(!loading&&all.length&&!query){try{localStorage.setItem(BOOK_STORAGE,JSON.stringify({level,page:p.page,size}));}catch{}}},[loading,all.length,query,level,p.page,size]);
+ useEffect(()=>{if(!loading&&page!==p.page)setPage(p.page);},[loading,page,p.page]);
+ useEffect(()=>setPageInput(String(p.page+1)),[p.page,p.pages]);
+ const turn=delta=>{const next=Math.min(p.pages-1,Math.max(0,p.page+delta));if(next===p.page)return;onStopAudio?.();setDirection(Math.sign(delta));setPage(next);setNote('');};
+ useEffect(()=>{const handler=e=>{if(e.defaultPrevented||e.altKey||e.ctrlKey||e.metaKey||e.target.closest?.('input,select,textarea,button,[role=button]'))return;if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();turn(e.key==='ArrowRight'?1:-1);}else if(e.key==='Escape'){onStopAudio?.();onClose?.();}};window.addEventListener('keydown',handler);return()=>window.removeEventListener('keydown',handler);},[p.page,p.pages,onClose,onStopAudio]);
+ const changeLevel=value=>{onStopAudio?.();setLevel(value);setPage(0);setNote('');};
+ const changeSize=value=>{setPage(Math.floor(p.start/value));setSize(value);};
+ const goNumber=e=>{e.preventDefault();const n=Number(jump);if(!Number.isInteger(n)||n<1||n>all.length){setNote('1〜'+all.length+'の番号を入力してください。');return;}const dest=bookPosition(all,n,size);if(dest===null)return;onStopAudio?.();setLevel('all');setQuery('');setPage(dest);setNote('No.'+n+' のページへ移動しました。');};
+ const goPage=e=>{e.preventDefault();const n=Number(pageInput);if(Number.isInteger(n)&&n>=1&&n<=p.pages)turn(n-1-p.page);else setPageInput(String(p.page+1));};
+ const changeSense=(id,n)=>{onStopAudio?.();setSense(old=>({...old,[id]:n}));};
+ return <main className="vs-root"><header className="vs-topbar"><button className="vs-home" onClick={()=>{onStopAudio?.();onClose?.();}}>⌂ VocaDash</button><div className="vs-brand"><span className="vs-brand-icon" aria-hidden="true">▤</span><div><strong>VocaSheet</strong><small>THE VOCABULARY BOOK</small></div></div><button className="vs-sound" aria-pressed={sound} onClick={()=>{if(sound)onStopAudio?.();onSound?.(!sound);}}>♫ 音声 {sound?'ON':'OFF'}</button></header>
+ <section className="vs-desk" aria-label="見開き単語帳"><div className="vs-book-heading"><div><span>VOCADASH · LIBRARY EDITION</span><h1>見開き単語帳 <small>{all.length?all.length.toLocaleString('ja-JP')+'語':''}</small></h1></div><div className="vs-head-meta"><b>{filtered.length.toLocaleString('ja-JP')} 語</b><small>英単語・意味・例文をページで学ぶ</small></div></div>
+ {loading?<div className="vs-status" role="status">単語帳を読み込み中…</div>:error?<div className="vs-status" role="alert">{error}<button onClick={()=>setRetry(n=>n+1)}>再試行</button></div>:<>
+ <div className="vs-tools"><div className="vs-levels" role="group" aria-label="CEFRレベル">{['all',...BOOK_LEVELS].map(v=><button key={v} aria-pressed={level===v} onClick={()=>changeLevel(v)}>{v==='all'?'全語彙':v}</button>)}</div><label className="vs-search">検索<input type="search" placeholder="英語・日本語" value={query} onChange={e=>{setQuery(e.target.value);setPage(0);setNote('');}}/></label><form onSubmit={goNumber} className="vs-jump"><label>No. <input type="number" min="1" max={all.length} value={jump} onChange={e=>setJump(e.target.value)} placeholder="番号" required/></label><button type="submit">移動</button></form><label className="vs-size">見開き<select value={size} onChange={e=>changeSize(Number(e.target.value))}><option value={6}>6語</option><option value={4}>4語（大きめ）</option></select></label><label className="vs-ex-choice">例文<select value={exIndex} onChange={e=>{onStopAudio?.();setExample(Number(e.target.value));}}>{Array.from({length:maxExamples},(_,i)=><option key={i} value={i}>例文 {i+1}</option>)}</select></label></div>
+ <div className="vs-book-frame"><div className="vs-book-labels"><div><b>WORDS</b><span>単語・品詞・意味</span></div><div><b>EXAMPLES</b><span>文脈で覚える</span></div></div>
+ {items.length?<RedSheet book items={items} start={p.start} page={p.page} total={filtered.length} showExamples bookExampleIndex={exIndex} onBookSense={changeSense} onBookSwipe={turn} onSpeak={onSpeak} sound={sound}/>:<p className="vs-status">該当する単語がありません。</p>}
+ <div key={p.page+':'+level+':'+size} className={'vs-turn-glint '+(direction<0?'reverse':'')} aria-hidden="true"/><div className="vs-page-numbers"><span>PAGE {p.page*2+1}</span><span>{items.length?'No. '+items[0].bookNumber+' – '+items.at(-1).bookNumber:'—'}</span><span>PAGE {p.page*2+2}</span></div></div>
+ <footer className="vs-pager"><button className="vs-turn" disabled={p.page===0} onClick={()=>turn(-1)}>← 前のページ</button><form onSubmit={goPage}><label>見開き <input type="number" min="1" max={p.pages} value={pageInput} onChange={e=>setPageInput(e.target.value)}/></label><span>/ {p.pages}</span><button type="submit">移動</button></form><button className="vs-turn" disabled={p.page>=p.pages-1} onClick={()=>turn(1)}>次のページ →</button></footer><div className="vs-reading-progress"><span>読書位置</span><progress max={p.pages} value={filtered.length?p.page+1:0}/><small>{note||'しおりは端末に保存 · 左右スワイプでもページ移動'}</small></div>
+ </>}
+ <div className="vs-editorial">既存のVocaDashオリジナル語彙・例文データ（編集確認中）。語義・例文の切替で全文を確認できます。</div></section></main>;
+}
