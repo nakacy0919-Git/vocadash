@@ -72,3 +72,10 @@ export function bookOrigin(entry){
  if(raw&&typeof raw==='object'&&typeof (raw.ja||raw.text||raw.en)==='string')return {text:raw.ja||raw.text||raw.en,source:'既存教材'};
  return verifiedOrigins[String(entry?.word||'').toLowerCase()]||null;
 }
+
+// Use the active sense's editorial order; never mix synonyms from another meaning.
+export function bookSynonyms(entry,limit=3){
+ const target=String(entry?.word||'').trim().toLowerCase();
+ return mergeLexical(entry?.sense?.synonyms).filter(x=>x.word.toLowerCase()!==target).slice(0,limit);
+}
+export function bookCollocations(entry,translated=[]){return mergeLexical(entry?.sense?.collocations,translated);}
