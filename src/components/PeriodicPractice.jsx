@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { isDue } from '../lib/learning.js';
+import { isDue, assetImage } from '../lib/learning.js';
 import { gradeAnswer, reviewMemory, mastery } from '../lib/memoryEngine.js';
 import {
   DEFAULT_PRACTICE_OPTIONS, PRACTICE_COUNTS, eligibleClozeWords,
@@ -28,7 +28,7 @@ function Action({ children, onClick, disabled = false, accent = false, className
 }
 export default function PeriodicPractice({
   words, records, unitId, unitLabel, loading, error, onRetry, onClose,
-  onRecord, onSpeak, onLegacyMemory, sound = true, courseId='regular', courseLabel='定期考査対策', autoStart=false, resumeOnStart=false, focusIds=null, onBack
+  onRecord, onSpeak, onLegacyMemory, sound = true, courseId='regular', courseLabel='定期考査対策', autoStart=false, resumeOnStart=false, focusIds=null, onBack, onStopAudio
 }) {
   const base = courseId==='regular'?'vd-periodic-v2:'+unitId:'vd-fast-v1:'+courseId+':'+unitId+(focusIds?.length?':page:'+focusIds[0]:'');
   const [stage, setStage] = useState('home');
@@ -49,6 +49,10 @@ export default function PeriodicPractice({
   const byId = useMemo(() => new Map(available.map(w => [w.id, w])), [available]);
   const recoverable = useMemo(() => recoverSession(saved, available), [saved, available]);
   const current = session && stage === 'quiz' ? byId.get(session.ids[session.cursor]) : null;
+  const [failedImage,setFailedImage]=useState('');
+  const picture=current?.image?assetImage(current.image):'';
+  const showPicture=!!picture&&failedImage!==picture;
+  const keepAudioFeedback=courseId==='eiken1_master'&&!!current?.audio&&sound&&settings.audio&&settings.instantFeedback;
   const options = useMemo(() => current ? shuffledChoices(current, session.seed) : [], [current, session?.seed]);
   const done = (session?.answers || []).filter(a => a.correct).length;
   const seenCount = available.filter(w => (records[w.id]?.seen || 0) > 0 || (records[w.id]?.memory?.attempts || 0) > 0).length;
@@ -66,10 +70,10 @@ export default function PeriodicPractice({
   useEffect(() => { write(base + ':wrong', wrongIds); }, [base, wrongIds]);
   useEffect(() => { if (session && stage === 'quiz') { write(base + ':session', session); setSaved(session); } }, [base, session, stage]);
   useEffect(() => {
-    if (!feedback || stage !== 'quiz') return;
+    if (!feedback || stage !== 'quiz' || keepAudioFeedback) return;
     const timer = window.setTimeout(() => advance(), !settings.instantFeedback ? 220 : feedback.correct ? 1100 : 2200);
     return () => window.clearTimeout(timer);
-  }, [feedback, stage, settings.instantFeedback]);
+  }, [feedback, stage, settings.instantFeedback, keepAudioFeedback]);
 
   useEffect(() => {
     if (stage !== 'quiz') return;
@@ -142,13 +146,14 @@ export default function PeriodicPractice({
   }
   function advance() {
     if (!session) return;
+    onStopAudio?.();
     locked.current = false;
     setFeedback(null);
     if (session.cursor >= session.ids.length - 1) finish(session);
     else setSession(old => ({ ...old, cursor: old.cursor + 1 }));
   }
-  function showList() { setQuery(''); setPage(0); setStage('list'); setNotice(''); }
-  function returnHome() { setFeedback(null); locked.current = false; if(autoStart&&onBack){onBack();return;}setStage('home'); }
+  function showList() { onStopAudio?.(); setQuery(''); setPage(0); setStage('list'); setNotice(''); }
+  function returnHome() { onStopAudio?.(); setFeedback(null); locked.current = false; if(autoStart&&onBack){onBack();return;}setStage('home'); }
   function changeSetting(key, value) { setSettings(prev => ({ ...prev, [key]: value })); }
 
   return <main className={"px-root px-stage-"+stage}>
@@ -209,8 +214,8 @@ export default function PeriodicPractice({
         </>}
         {stage === 'quiz' && session && current && <>
           <div className="px-quiz-progress"><strong>{session.cursor + 1} <small>/ {session.ids.length} 問</small></strong><div className="px-track"><span style={{ width: String((session.cursor + 1) / session.ids.length * 100) + '%' }}/></div><span>正解 <b>{done}</b></span><span>あと <b>{session.ids.length - session.cursor - 1}問</b></span></div>
-          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>{current.practiceKind==='meaning'?'日本語の意味に合う英単語を選ぼう':'意味に合う語を選ぼう'}</strong></div>
-            <div className="px-prompt-block"><p className="px-sentence" lang={current.practiceKind==="meaning"?"ja":"en"}>{current.practiceKind==="meaning"?current.meaning:current.prompt}</p>{current.practiceKind!=="meaning"&&<p className="px-translation">{current.japanese}</p>}</div>
+          <section className={"px-panel px-question"+(feedback?" px-has-feedback":"")+(feedback?.correct?" px-question-success":"")+(showPicture?" px-with-picture":"")}><div className="px-question-head"><span className="px-qbadge">Q{session.cursor + 1}</span><strong>{current.practiceKind==='meaning'?'日本語の意味に合う英単語を選ぼう':'意味に合う語を選ぼう'}</strong></div>
+            <div className="px-question-context">{showPicture&&<figure className="px-illustration"><img key={picture} src={picture} alt="例文の場面を表すイラスト" onError={()=>setFailedImage(picture)}/><figcaption>VISUAL VOCABULARY</figcaption></figure>}<div className="px-prompt-block"><p className="px-sentence" lang={current.practiceKind==="meaning"?"ja":"en"}>{current.practiceKind==="meaning"?current.meaning:current.prompt}</p>{current.practiceKind!=="meaning"&&<p className="px-translation">{current.japanese}</p>}{keepAudioFeedback&&feedback&&<button type="button" className="px-model-audio" onClick={()=>onSpeak(current,true)}>♫ 合成音声で例文を聞く</button>}</div></div>
             <div className="px-answer-grid">{options.map((option, i) => {
               const selected = feedback?.index === option.index;
               const isRight = feedback && option.index === current.correctIndex;
@@ -223,11 +228,11 @@ export default function PeriodicPractice({
               <button onClick={advance}>次の問題へ →</button>
             </div>}
             <div className="px-question-footer"><div className="px-tools">
-              {settings.audio && feedback && <button onClick={() => onSpeak(current, true)} disabled={!sound}>♫ 正しい英文を聞く</button>}
+              {settings.audio && feedback && !keepAudioFeedback && <button onClick={() => onSpeak(current, true)} disabled={!sound}>♫ 正しい英文を聞く</button>}
               <button onClick={() => setWrongIds(old => [...new Set([...old, current.id])])}>▤ あとで復習</button>
               {!feedback && <button onClick={() => choose(-1)}>≫ スキップ</button>}
             </div>
-              <span className="px-quiz-help">{feedback ? '正解と意味を確認して次へ進もう' : '選択肢を押すだけで解答できます · キーボード 1〜4'}</span>
+              <span className="px-quiz-help">{feedback ? (keepAudioFeedback?'例文の音声を確認し、次の問題へ進もう':'正解と意味を確認して次へ進もう') : '選択肢を押すだけで解答できます · キーボード 1〜4'}</span>
             </div>
           </section>
           <button className="px-exit-quiz" onClick={returnHome}>← 途中で終了（続きから再開できます）</button>

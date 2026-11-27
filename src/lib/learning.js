@@ -4,16 +4,16 @@ import {isMastered} from './memoryEngine.js';
 // Shared vocabulary catalog and local-first spaced-review utilities.
 // Existing course JSON files are deliberately kept unchanged.
 export const CATALOG = [
+  { id: 'eiken1_master', label: '英検1級（画像・音声付き400語）', short: '1級 · 400語', group: '英検対策', units: [
+    { id: 'verb', label: '動詞 · 100語' }, { id: 'adjective', label: '形容詞 · 100語' },
+    { id: 'noun', label: '名詞 · 100語' }, { id: 'phrasal_verb', label: '句動詞 · 100語' },
+  ] },
   { id: 'eiken_4', label: '英検 4級', short: '4級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_3', label: '英検 3級', short: '3級', group: '英検対策', units: [1,2].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre2', label: '英検 準2級', short: '準2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_2', label: '英検 2級', short: '2級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'eiken_pre1', label: '英検 準1級', short: '準1級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
-  { id: 'eiken_1', label: '英検 1級', short: '1級', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
-  { id: 'eiken1_master', label: '英検1級マスター', short: '1級マスター', group: '発展学習', units: [
-    { id: 'verb', label: '動詞 · 100語' }, { id: 'adjective', label: '形容詞 · 100語' },
-    { id: 'noun', label: '名詞 · 100語' }, { id: 'phrasal_verb', label: '句動詞 · 100語' },
-  ] },
+  { id: 'eiken_1', label: '英検1級（従来のStage教材）', short: '1級 Stage', group: '英検対策', units: [1, 2, 3].map(n => ({ id: String(n), label: 'Stage ' + n })) },
   { id: 'regular', label: '定期考査対策', short: '定期考査', group: '学校教材', units: [
     { id: 'regular', label: '第1回 KICK OFF' }, { id: 'regular2', label: '第2回 KICK OFF' },
     { id: 'regular3', label: '第3回 定期テスト（No.233–362）' },

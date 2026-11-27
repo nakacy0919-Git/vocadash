@@ -344,6 +344,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     setSelection(next); setStore(prev => ({ ...prev, lastSelection: next }));
   };
   const startMode = name => {
+    if(name==='quiz'&&course.id==='eiken1_master'){name='fast';setMissionScope(null);setReturnToLibrary(mode==='library'&&!dashboardOpen);}
     pendingMode.current=null;
     if(name==='memory'){setMissionScope(null);setReturnToLibrary(mode==='library'&&!dashboardOpen);} 
     resetCard(); readingCounted.current.clear(); setDashboardOpen(false); setAutoplay(false); setMode(name); setCursor(0);
@@ -353,7 +354,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
   const startGuided = (courseId,unitId,name) => {
     if(!unitLoader(courseId,unitId))return;
     // A selected periodic exam now opens the one-tap cloze practice instead of the vocabulary card grid.
-    const requestedMode = courseId === 'regular' && name === 'library' ? 'periodic' : name;
+    const requestedMode = courseId === 'regular' && name === 'library' ? 'periodic' : courseId==='eiken1_master'&&name==='quiz'?'fast':name;
     if(courseId!==selection.courseId||unitId!==selection.unitId)setLibraryPage(0);
     if(name==='memory'){setMissionScope(null);setReturnToLibrary(false);}
     if(courseId===selection.courseId&&unitId===selection.unitId&&!loading&&!error){startMode(requestedMode);return;}
@@ -500,7 +501,7 @@ export default function VocaDash({classroomAssignment, classroomUserId} = {}) {
     error={error}
     onRetry={retry}
     sound={store.settings.sound}
-    onSpeak={speak}
+    onSpeak={speak} onStopAudio={stopAudio}
     onClose={() => { resetCard(); setDashboardOpen(true); }}
     onLegacyMemory={() => startMode('memory')}
     onRecord={(word, correct, evidence) => {
