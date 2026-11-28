@@ -108,7 +108,8 @@ test('natural back commands work even after the universe wake window expires',()
 import {readFileSync} from 'node:fs';
 test('voice resolver can read every canonical original vocabulary sense and requested search examples',async()=>{
  const root=new URL('../../data/vocabulary-drafts/',import.meta.url);const manifest=JSON.parse(readFileSync(new URL('manifest.json',root),'utf8'));const rows=manifest.batchFiles.flatMap(path=>JSON.parse(readFileSync(new URL(path,root),'utf8')).records);const index=new Map();for(const r of rows)for(const k of [r.headword,...r.headword.split('/')].map(w=>w.toLowerCase().trim())){const list=index.get(k)||[];list.push(r);index.set(k,list);}
- assert.equal(new Set(rows.map(r=>r.wordId)).size,8653);
+ assert.equal(new Set(rows.map(r=>r.wordId)).size,manifest.totals.distinctHeadwords);
+ assert.equal(rows.length,manifest.totals.senses);
  for(const [k] of index){const item=await resolveVocabularyEntry(k,{getDrafts:async()=>index});assert.ok(item?.meaning,k);}
  for(const k of ['beauty','sad','accelerator']){const item=await resolveVocabularyEntry(k,{lookup:lookupUniverse,getDrafts:async()=>index});assert.ok(item?.word,k+' must resolve');}
 });
