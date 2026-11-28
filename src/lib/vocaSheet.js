@@ -1,4 +1,6 @@
 
+import {wordForms,formMatches,contractionMatch} from './wordForms.js';
+import {schoolLevel} from './schoolVocabulary.js';
 export const BOOK_PAGE_SIZE=6;
 export const BOOK_LEVELS=['A1','A2','B1','B2','C1','C2'];
 export const BOOK_STORAGE='vd-vocasheet-place-v1';
@@ -15,10 +17,10 @@ export function bookWords(records=[]){
   id,number:index+1,headword:senses[0].headword,level:senses[0].cefrHeadword||'',senses:[...senses].sort((a,b)=>sortId(a.senseId,b.senseId))
  }));
 }
-export function bookFilter(words,level='all',query='',pos='all',sort='number'){
+export function bookFilter(words,level='all',query='',pos='all',sort='number',school='all'){
  const q=String(query||'').trim().normalize('NFKC').toLowerCase();
  const rows=words.flatMap(w=>{
-  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
+  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(school==='all'||schoolLevel(s)===school)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)||formMatches(s.headword,s.partOfSpeech,q)||contractionMatch(s.headword,q)));
   return senses.length?[{...w,senses,level:senses[0].cefrHeadword||w.level}]:[];
  });
  if(sort==='alpha')rows.sort((a,b)=>a.headword.localeCompare(b.headword,'en')||a.number-b.number);
@@ -52,7 +54,7 @@ export function bookPos(raw){
 }
 export function bookEntry(w,index=0){
  const i=Math.max(0,Math.min(w.senses.length-1,Math.floor(Number(index)||0))),s=w.senses[i],pos=bookPos(s.partOfSpeech),ex=s.examples?.[0]||{};
- return {id:'quiz:'+s.senseId,bookId:w.id,bookNumber:w.number,senseIndex:i,senseCount:w.senses.length,level:s.cefrHeadword||w.level,word:s.headword,meaning:s.meaningJa,partOfSpeech:s.partOfSpeech,posKind:pos.kind,posIcon:pos.icon,english:ex.en||'',japanese:ex.ja||'',examples:s.examples||[],audio:s.audio||'',sense:s};
+ return {id:'quiz:'+s.senseId,bookId:w.id,bookNumber:w.number,senseIndex:i,senseCount:w.senses.length,level:s.cefrHeadword||w.level,word:s.headword,meaning:s.meaningJa,partOfSpeech:s.partOfSpeech,posKind:pos.kind,posIcon:pos.icon,english:ex.en||'',japanese:ex.ja||'',examples:s.examples||[],audio:s.audio||'',sense:s,schoolLevel:schoolLevel(s),forms:wordForms(s.headword,s.partOfSpeech)};
 }
 
 export function lexicalRows(value){
