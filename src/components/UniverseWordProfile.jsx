@@ -51,7 +51,7 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
  <div className="vp-summary">
   <article className={"vp-word-card"+(concept?" vp-with-concept":"")}>
    <div className="vp-word-copy"><div className="vp-word-heading"><div><h1 title={data.word}>{data.word}</h1>{data.word.length>24&&<button type="button" className="vp-link" onClick={()=>fullText('Headword',data.word,data.word)}>語彙全文 ↗</button>}<div className="vp-badges"><span className="vp-cefr">CEFR {p.cefr||'未登録'}</span><small>{posLabel(p.pos)||'品詞未登録'}</small></div></div>{speakButton(data.word,data.word+' の発音')}</div>
-   <p className="vp-ipa">IPA: {p.pronunciation||data.pronunciation||data.ipa||'未登録'}</p>
+   <button type="button" className="vp-link" onClick={()=>fullText('語形・文法 / Word forms',[p.morphology.label,...p.morphology.forms.map(([k,v])=>k+'：'+v),p.morphology.note,'出典：'+p.morphology.source].filter(Boolean).join('\n'))}>語形・文法 ↗</button><p className="vp-ipa">IPA: {p.pronunciation||data.pronunciation||data.ipa||'未登録'}</p>
    <BoundedText className="vp-meaning" text={p.meaning||'日本語訳未登録'} onFull={()=>fullText('日本語の意味',p.meaning||'未登録')}/></div>{concept&&<VisualThumb key={concept.src} visual={concept} onOpen={()=>openVisual(concept,data.word+' · 語彙イメージ')}/>}
   </article>
   <article className="vp-definition"><div className="vp-card-heading"><h2>ENGLISH DEFINITION <small>英英定義</small></h2>{data.image&&!badImage&&<button type="button" className="vp-link" onClick={()=>openDetail({type:'image',title:'学習画像'})}>画像 ↗</button>}</div>

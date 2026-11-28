@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "classroom:server": "node classroom/server.js",
     "test:classroom": "node --test classroom/*.test.js",
-    "audit:word-images": "node tools/word-image-audit.mjs"
+    "audit:word-images": "node tools/word-image-audit.mjs",
+    "audit:word-forms": "node tools/audit-word-forms.mjs"
   },
   "dependencies": {
     "qrcode": "^1.5.4",
