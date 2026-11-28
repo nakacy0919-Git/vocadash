@@ -1,0 +1,4 @@
+# CEFR-J missing headwords — 2026-11-28
+
+Source: The CEFR-J Wordlist Version 1.6. Compiled by Yukio Tono, Tokyo University of Foreign Studies. https://www.cefr-j.org/download.html (2020-03-24). Official source rows: May noun A1, having have-verb A1, it pronoun A1, march noun and verb B1, miss verb A1, tonne noun B2. New IDs VD-08654–VD-08659; prior 8,653 IDs unchanged. Seven senses with 14 independently written bilingual examples. `having` uses learner-facing verb plus exact official POS metadata. Keep IT/it, May/may, March/march and Miss/miss distinct. Validation counts stable word IDs rather than lowercasing the headword. The official list covers A1–B2 only. Verify with `node tools/validate-vocabulary.mjs` and `python3 tools/audit-cefrj.py`. No textbook data added. Human editorial review pending.
+

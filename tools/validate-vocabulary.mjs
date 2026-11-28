@@ -10,6 +10,7 @@ const warnings = [];
 const ids = new Set();
 const exampleIds = new Set();
 const headwords = new Set();
+const caseFoldedHeadwords = new Set();
 const sentences = new Map();
 let senses = 0, examples = 0;
 for (const filename of manifest.batchFiles) {
@@ -24,7 +25,8 @@ for (const filename of manifest.batchFiles) {
     }
     if (ids.has(key)) errors.push('Duplicate sense ID: ' + key);
     ids.add(key);
-    headwords.add(String(record.headword || '').toLowerCase());
+    headwords.add(record.wordId);
+    caseFoldedHeadwords.add(String(record.headword || '').toLowerCase());
     if (!Array.isArray(record.examples) || record.examples.length < 2) {
       errors.push('Need at least two examples: ' + key); continue;
     }
@@ -77,7 +79,8 @@ for (const [sentence, entries] of collisions) warnings.push('Duplicate sentence 
 if (collisions.length !== manifest.quality.exactDuplicateExamplePairs) {
   errors.push('Manifest duplicate count mismatch');
 }
-console.log(JSON.stringify({actual, errors:errors.length, warnings:warnings.length}, null, 2));
+console.log(JSON.stringify({actual, caseFoldedHeadwords:caseFoldedHeadwords.size, errors:errors.length, warnings:warnings.length}, null, 2));
 warnings.forEach(w => console.warn('WARN:', w));
 errors.forEach(e => console.error('ERROR:', e));
 if (errors.length) process.exitCode = 1;
+
