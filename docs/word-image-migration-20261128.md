@@ -20,13 +20,13 @@
 - `umbrealla.webp` → `umbrella.webp`
 - `violion.webp` → `violin.webp`
 
-## Review before further renames
+## Additional image-content verification
 
-- `detech.webp`: detach or detect (detect.webp already exists).
-- `monkery.webp`: monkey likely, but monkery is also a word.
-- `plan trees.webp`: plant trees likely; confirm picture.
-- `play player.webp`: unclear intended word.
-- `see saw.webp`: see/saw or seesaw.
-- `hot2.webp`: additional image for hot or different asset; hot.webp already exists.
+- `detech.webp` → `detach.webp` (person opening a backpack buckle).
+- `monkery.webp` → `monkey.webp` (monkey illustration).
+- `plan trees.webp` → `plant trees.webp` (children planting a tree).
+- `play player.webp` → `play.webp` (children playing soccer and with blocks).
+- `see saw.webp`: paired verb illustrations, not a playground seesaw. Retain original filename and index `see` and `saw` as aliases; exact images take precedence.
+- `hot2.webp`: alternate image of hot weather. Retain it; do not index as a separate headword.
 
-These files are preserved, without automatic fuzzy reassignment. Explicit spelling/inflection aliases are used only when no exact image exists. Run `npm run audit:word-images` for review-only 80–100% candidates against the active draft and course JSON vocabulary. Similarity is not proof of a matching image; no arbitrary fuzzy lookup is used on learner screens.
+Run `npm run audit:word-images` for review-only 80–100% candidates against the active draft and course JSON vocabulary. Similarity is not proof of a matching image; arbitrary fuzzy lookup is not used on learner screens.
