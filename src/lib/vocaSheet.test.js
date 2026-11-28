@@ -53,3 +53,21 @@ test('school-stage counts are backed by the active vocabulary corpus',()=>{
  assert.ok(counts.elementary>100);assert.ok(counts.middle>counts.elementary);assert.ok(counts.high>counts.elementary);
  console.log('VocaSheet school counts: '+JSON.stringify(counts)+'; elementary source distinct: '+Object.keys(ELEMENTARY_WORDS).length);
 });
+
+import {bookWithElementary,bookScope,bookScopeCounts} from './vocaSheet.js';
+test('elementary supplement retains every source headword without changing existing IDs or numbering',()=>{
+ const root=new URL('../../data/vocabulary-drafts/',import.meta.url),m=JSON.parse(readFileSync(new URL('manifest.json',root),'utf8'));
+ const records=m.batchFiles.flatMap(p=>JSON.parse(readFileSync(new URL(p,root),'utf8')).records),base=bookWords(records),all=bookWithElementary(records);
+ assert.deepEqual(all.slice(0,base.length),base);
+ const elementary=bookFilter(all,'all','','all','number','all','elementary');
+ assert.deepEqual([...new Set(elementary.map(w=>w.headword.normalize('NFKC').trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ')))].sort(),Object.keys(ELEMENTARY_WORDS).sort());
+ assert.equal(new Set(all.map(w=>w.id)).size,all.length);
+ for(const w of all.slice(base.length)){assert.equal(w.senses[0].examples.length,0);assert.equal(w.level,'');}
+ const counts=bookScopeCounts(all,'school',['elementary','middle','high']);console.log('VocaSheet complete counts: '+JSON.stringify({all:all.length,added:all.length-base.length,...counts}));
+ assert.ok(counts.elementary>=551);assert.ok(counts.middle>counts.elementary);assert.ok(counts.high>counts.elementary);
+});
+test('new route selections never inherit previous unrelated filters',()=>{
+ assert.deepEqual(bookScope('school','elementary'),{school:'elementary',level:'all',topic:'all',pos:'all'});
+ assert.deepEqual(bookScope('level','C2','verb'),{school:'all',level:'C2',topic:'all',pos:'verb'});
+ assert.deepEqual(bookScope('all'),{school:'all',level:'all',topic:'all',pos:'all'});
+});

@@ -23,6 +23,23 @@ const topicKey=(word,pos)=>String(word||'').normalize('NFKC').trim().toLowerCase
 const topicIndex=new Map();
 for(const row of CATEGORY_WORDS){const key=topicKey(row.word,row.pos);if(!topicIndex.has(key))topicIndex.set(key,new Set());topicIndex.get(key).add(row.topic);}
 export function bookTopicMatches(s,topic='all'){return topic==='all'||!!topicIndex.get(topicKey(s.headword,s.partOfSpeech))?.has(topic);}
+// Append source-backed elementary entries without renumbering any existing book entry.
+export function bookWithElementary(records=[]){
+ const words=bookWords(records),existing=new Set(words.map(w=>schoolKey(w.headword)));
+ for(const [headword,meanings] of Object.entries(ELEMENTARY_WORDS)){
+  if(existing.has(schoolKey(headword)))continue;
+  const id='picflash:'+encodeURIComponent(headword);
+  const sense={wordId:id,senseId:id+':source',headword,meaningJa:meanings.join('・'),partOfSpeech:'',cefrHeadword:'',examples:[],sourceKind:'picspeak-elementary'};
+  words.push({id,number:words.length+1,headword,level:'',senses:[sense]});
+ }
+ return words;
+}
+export function bookScope(route,id='all',pos='all'){
+ return {school:route==='school'?id:'all',level:route==='level'?id:'all',topic:route==='topic'?id:'all',pos};
+}
+export function bookScopeCounts(words,route,ids){
+ return Object.fromEntries(ids.map(id=>{const s=bookScope(route,id);return [id,bookFilter(words,s.level,'',s.pos,'number',s.topic,s.school).length];}));
+}
 export const BOOK_SCHOOLS=[['all','すべての学校段階'],['elementary','小学校'],['middle','中学校'],['high','高校']];
 const schoolKey=x=>String(x||'').normalize('NFKC').trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ');
 const primaryKeys=new Set(Object.keys(ELEMENTARY_WORDS));
@@ -31,7 +48,7 @@ for(const row of CATEGORY_WORDS){const key=topicKey(row.word,row.pos);if(!gradeI
 export function bookSchoolMatches(s,school='all'){
  if(school==='all')return true;
  if(school==='elementary')return primaryKeys.has(schoolKey(s.headword));
- if(school==='middle')return ['A1','A2'].includes(s.cefrHeadword)||!!gradeIndex.get(topicKey(s.headword,s.partOfSpeech))?.has('middle');
+ if(school==='middle')return primaryKeys.has(schoolKey(s.headword))||['A1','A2'].includes(s.cefrHeadword)||!!gradeIndex.get(topicKey(s.headword,s.partOfSpeech))?.has('middle');
  if(school==='high')return ['A2','B1','B2'].includes(s.cefrHeadword)||!!gradeIndex.get(topicKey(s.headword,s.partOfSpeech))?.has('high');
  return false;
 }
