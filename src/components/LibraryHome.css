@@ -195,3 +195,6 @@ body:has(.vd-library-home) .vd-voice-shell:not(.in-universe) .vd-orb-full{
 @media(max-width:760px){.lh-sheet-hint{left:12px;bottom:calc(12px + env(safe-area-inset-bottom));max-width:45vw;width:clamp(125px,39vw,235px)}.lh-sheet-hint::after{display:none}.lh-sheet-guide-grid{grid-template-columns:1fr}.lh-sheet-guide-grid .lh-sheet-mini{min-height:90px}.lh-sheet-guide-fallback{padding:12px}.lh-sheet-guide-close{width:36px;height:36px;font-size:23px}.lh-sheet-guide footer button{padding:9px 12px}.lh-quick .lh-sheet-help{width:28px;min-width:28px}}
 @media(max-height:540px) and (orientation:landscape){.lh-sheet-hint{bottom:8px;width:155px}.lh-sheet-guide-visual>img{max-height:calc(92dvh - 63px)}.lh-sheet-guide footer{padding:6px}.lh-sheet-guide footer button{min-height:38px}}
 @media(prefers-reduced-motion:reduce){.lh-sheet-hint{animation:none}}
+
+/* Trim the white margin of the supplied promotional image in the small callout. */
+.lh-sheet-hint-open>img{width:100%;aspect-ratio:1.8;object-fit:cover;object-position:center 55%}

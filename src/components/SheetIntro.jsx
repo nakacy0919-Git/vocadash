@@ -3,7 +3,7 @@ const KEY='vd-vocasheet-intro-v1';
 let shownInSession=false;
 export function sheetIntroSeen(){try{return shownInSession||localStorage.getItem(KEY)==='1'}catch{return shownInSession}}
 export function markSheetIntro(){shownInSession=true;try{localStorage.setItem(KEY,'1')}catch{}}
-const banner='/images/vocasheet-banner.webp',guide='/images/vocasheet-guide.webp';
+const banner='/images/vocasheet-banner.jpeg',guide='/images/vocasheet-guide.jpeg';
 function Illustration(){return <div className="lh-sheet-mini" aria-hidden="true"><div><b>comment</b><small>意見を述べる</small><b>commit</b><small>専念する</small><b>compete</b><small>競争する</small></div><div className="lh-sheet-mini-ex"><span>The students commented.</span><span>She committed herself.</span><span>Three teams competed.</span><i/></div></div>}
 export default function SheetIntro({active,lang,open,setOpen,onStart}){
  const [notice,setNotice]=useState(false),[bannerMissing,setBannerMissing]=useState(false),[guideMissing,setGuideMissing]=useState(false);
