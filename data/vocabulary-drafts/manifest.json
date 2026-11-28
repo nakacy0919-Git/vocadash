@@ -89,13 +89,14 @@
     "batches/original-20261115-c2-tail-8200-8249.json",
     "batches/original-20261115-c2-mid-8141-8199.json",
     "batches/original-20261115-final-reconciled-01.json",
-    "batches/original-20261128-cefrj-missing-06.json"
+    "batches/original-20261128-cefrj-missing-06.json",
+    "batches/original-20261128-school-core-01.json"
   ],
   "totals": {
-    "distinctHeadwords": 8659,
-    "senses": 9621,
-    "examples": 19242,
-    "distinctExamples": 19242
+    "distinctHeadwords": 8763,
+    "senses": 9725,
+    "examples": 19450,
+    "distinctExamples": 19450
   },
   "quality": {
     "humanReviewed": false,
@@ -114,16 +115,16 @@
   "licenseNote": "Do not publish third-party 8,653-headword source master before verifying source licensing; only drafted word/sense/examples migrated here.",
   "lastUpdated": "2026-11-28",
   "recentWork": {
-    "source": "CEFR-J v1.6 six missing case-sensitive headwords, original bilingual examples",
+    "source": "Original school vocabulary enrichment for everyday thematic domains and ordinals",
     "newBatches": [
-      "batches/original-20261128-cefrj-missing-06.json"
+      "batches/original-20261128-school-core-01.json"
     ],
-    "headwordsAdded": 6,
-    "sensesAdded": 7,
-    "translatedExamplesAdded": 14,
+    "headwordsAdded": 104,
+    "sensesAdded": 104,
+    "translatedExamplesAdded": 208,
     "editorialStatus": "draft-unreviewed"
   },
-  "notes": "All 8,653 target word IDs have draft records in the 84 active batches; supplemental alternative examples are preserved separately and are not counted. Global duplicate audit reports 0 duplicate sense IDs, 0 duplicate example IDs and 0 normalized English or bilingual-pair duplicates. 334 missing synonym-or-note entries and 55 C2 collocation entries were addressed. Legacy collocations remain incomplete (5,262 senses based on full audit minus the repaired C2 batch); three master spelling/rarity holds and independent linguistic review remain. Do not publish as fully editorially approved. 2026-11-28: Six independently authored supplemental headwords added beyond the original 8,653 reference IDs; four case-sensitive distinctions retained, including IT/it and March/march. Official CEFR-J levels separately recorded. Manifest headword total counts stable word IDs.",
+  "notes": "All 8,653 target word IDs have draft records in the 84 active batches; supplemental alternative examples are preserved separately and are not counted. Global duplicate audit reports 0 duplicate sense IDs, 0 duplicate example IDs and 0 normalized English or bilingual-pair duplicates. 334 missing synonym-or-note entries and 55 C2 collocation entries were addressed. Legacy collocations remain incomplete (5,262 senses based on full audit minus the repaired C2 batch); three master spelling/rarity holds and independent linguistic review remain. Do not publish as fully editorially approved. 2026-11-28: Six independently authored supplemental headwords added beyond the original 8,653 reference IDs; four case-sensitive distinctions retained, including IT/it and March/march. Official CEFR-J levels separately recorded. Manifest headword total counts stable word IDs. School vocabulary supplement: original definitions and examples, independent provisional school labels. No textbook source text, selection order or page data included.",
   "supplementalBatchFiles": [
     "batches/original-20261115-c2-tail-8400-8449.json",
     "batches/original-20261115-c2-tail-8500-8529.json",
