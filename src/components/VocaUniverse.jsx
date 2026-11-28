@@ -2,6 +2,7 @@ import React, {lazy,Suspense,useEffect,useSyncExternalStore,useLayoutEffect,useI
 import {createPortal} from 'react-dom';
 import {getRelations,orbitNodes,orbitPageCount,ORBIT_RADII,lookupUniverse,universeEntries,types,tierLabels,getWordForms} from '../lib/universe';
 import {assetImage} from '../lib/learning';
+import {conceptVisual} from '../lib/profileVisuals.js';
 import {centerFromRelation} from '../lib/universeNavigation.js';
 import './VocaUniverse.css';
 import UniverseLearning from './UniverseLearning';
@@ -11,6 +12,13 @@ import {pushProfileHistory,popProfileHistory} from '../lib/wordProfile.js';
 import {playModelSpeech} from '../lib/modelSpeech.js';
 const UniverseSenseExplorer=lazy(()=>import('./UniverseSenseExplorer'));
 import {planetState,memoryLabels,indexMemorySnapshot,getUniverseMemoryAdapter,subscribeUniverseMemory} from '../lib/universeMemory.js';
+function UniverseThumbnail({item,fallback,className=''}) {
+ const concept=conceptVisual(item?.word),local=fallback?.image||item?.image;
+ const src=concept?.src||(local?assetImage(local):'');
+ const [failed,setFailed]=useState('');
+ if(!src||failed===src)return null;
+ return <img className={'vu-word-thumb '+className} src={src} alt={item.word+' の学習画像'} decoding="async" onError={()=>setFailed(src)}/>;
+}
 export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSpeak,onPractice,onFeedback,sound,effects=true,onToggleEffects,onWarp,onProfileWarp,onCancelProfileWarp,voiceDockRef,initialFilter='all',records={},memoryAdapter=null}) {
  const [center,setCenter]=useState(entry);
  const displayedProfilePage=useRef(null);
@@ -35,7 +43,6 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
  const [warpVersion,setWarpVersion]=useState(0);
  const [instantBack,setInstantBack]=useState(false);
  const [profileWarp,setProfileWarp]=useState(null);
- const [badImage,setBadImage]=useState(false);
  const [showImages,setShowImages]=useState(true);
  const [view,setView]=useState(initialFilter==='forms'||(typeof window!=='undefined'&&window.innerWidth<640)?'list':'map');
  const [page,setPage]=useState(0);
@@ -68,7 +75,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
 
  const screen=()=>({center,filter,view,page,draftOpen,profile,profilePage,learningOpen});
  const remember=()=>setTrail(t=>pushProfileHistory(t,screen()));
- const change=(next,{back=false}={})=>{if(!next)return;setInstantBack(back);setProfileWarp(null);onCancelProfileWarp?.();setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setBadImage(false);setPage(0);setQuery('');setSearchOpen(false);if(changed&&!back){setWarpVersion(v=>v+1);onWarp?.();}};
+ const change=(next,{back=false}={})=>{if(!next)return;setInstantBack(back);setProfileWarp(null);onCancelProfileWarp?.();setProfile(null);setProfileData(null);const changed=next.word.toLowerCase()!==center.word.toLowerCase();setCenter(next);setDraftOpen(false);setLearningOpen(false);setFilter('all');setPage(0);setQuery('');setSearchOpen(false);if(changed&&!back){setWarpVersion(v=>v+1);onWarp?.();}};
  const searchFull=async()=>{const text=query.trim();if(!text||searchBusy)return;setSearchBusy(true);setSearchNotice('');try{const item=await resolveVocabulary?.(text);if(item){if(profile||item.word.toLowerCase()!==center.word.toLowerCase())remember();change(item);setView('map');}else setSearchNotice('登録済みの語が見つかりません。');}catch{setSearchNotice('検索に失敗しました。もう一度お試しください。');}finally{setSearchBusy(false);}};
  const explore=node=>{const next=centerFromRelation(node,lookupUniverse,index);if(!next)return;if(profile||next.word.toLowerCase()!==center.word.toLowerCase())remember();change(next);setView('map');};
  const showProfile=(word,seed)=>{const target=String(word||center.word).trim();if(!target)return;if(profile?.word.toLowerCase()===target.toLowerCase())return;const initial=initialVocabularyProfile(target,{words,seed});void warmVocabularyIndex().catch(()=>{});remember();setProfileWarp({word:target,id:performance.now()});onProfileWarp?.();setProfile({word:target,seed:initial||seed});setProfileData(initial);setProfilePage(0);setLearningOpen(false);setDraftOpen(false);setSearchOpen(false);};
@@ -91,7 +98,7 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
     if(['focus','search','universe'].includes(kind)&&value){
      const k=value.trim().toLowerCase(),link=links.find(x=>x.word.toLowerCase()===k),item=lookupUniverse(k),local=index.get(k),resolved=c.resolvedEntry;
      if(!link&&!item&&!local&&!resolved){if(!c.localOnly)done('未登録: '+value);return;}
-     if(profile||center.word.toLowerCase()!==k)remember();const next={...link,...item,...local,...resolved,word:resolved?.word||local?.word||item?.word||link?.word||k,meaning:resolved?.meaning||local?.meaning||item?.meaning||link?.meaning||''};change(next);setView('map');c.entry=next;c.relations=getRelations(next);if(candidateData){for(const sense of candidateData.sensesFor(next.word))c.relations.push(...candidateData.candidateTerms(sense));}done('Focus: '+k);return;
+     if(profile||center.word.toLowerCase()!==k)remember();const next={...link,...item,...local,...resolved,word:resolved?.word||local?.word||item?.word||link?.word||k,meaning:resolved?.meaning||local?.meaning||item?.meaning||link?.meaning||''};change(next);if(c.relation){applyFilter(c.relation==='forms'?'family':c.relation);setView(c.relation==='forms'?'list':'map');}else setView('map');c.entry=next;c.relations=getRelations(next);if(candidateData){for(const sense of candidateData.sensesFor(next.word))c.relations.push(...candidateData.candidateTerms(sense));}done('Focus: '+k);return;
     }
     if(kind==='read'){const item=center;if(!sound){done('音声設定がオフです');return;}if(value){if(value==='first'&&item.english){const u=new SpeechSynthesisUtterance(item.english);u.lang='en-US';window.speechSynthesis.speak(u);}else{done('この画面にはその例文がありません');return;}}else onSpeak(item);done();return;}
     if(kind==='universe'){if(profile)remember();setProfile(null);setProfileData(null);setView('map');done();return;}
@@ -134,14 +141,14 @@ export default function VocaUniverse({entry,words,resolveVocabulary,onClose,onSp
       {ORBIT_RADII.map(r=><circle key={r} cx="50" cy="50" r={r} className="vu-ring"/>)}
       {nodes.map(n=><line key={n.word} x1="50" y1="50" x2={n.x} y2={n.y} className={'vu-line '+n.type}/>)}
     </svg>
-    <div className="vu-center" data-memory={memoryFor(center).status} style={{'--vu-memory-light':memoryFor(center).brightness}}>{showImages&&center.image&&!badImage&&<img src={assetImage(center.image)} onError={()=>setBadImage(true)} alt={center.word+' の参考画像'}/>}<button className="vu-center-word" title="単語の詳しい情報" onClick={()=>showProfile(center.word,center)}><strong>{center.word}</strong></button><span>{mapSense||center.meaning}</span><small>{memoryLabels[memoryFor(center).status]}</small><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
-    {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:instantBack?'0ms':(i*9)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}><strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{n.candidate?"未校閲候補 · ":""}{memoryLabels[memoryFor(n).status]}</small></button>)}
+    <div className="vu-center" data-memory={memoryFor(center).status} style={{'--vu-memory-light':memoryFor(center).brightness}}>{showImages&&<UniverseThumbnail item={center} fallback={index.get(center.word.toLowerCase())}/>}<button className="vu-center-word" title="単語の詳しい情報" onClick={()=>showProfile(center.word,center)}><strong>{center.word}</strong></button><span>{mapSense||center.meaning}</span><small>{memoryLabels[memoryFor(center).status]}</small><button disabled={!sound} aria-label={center.word+' の発音'} onClick={()=>onSpeak(center)}>♫ 発音</button></div>
+    {nodes.map((n,i)=><button key={n.word} data-type={n.type} data-memory={memoryFor(n).status} className="vu-node" style={{'--vu-memory-light':memoryFor(n).brightness,left:n.x+'%',top:n.y+'%',animationDelay:instantBack?'0ms':(i*9)+'ms','--vu-from-x':(50-n.x)/100*100+'cqw','--vu-from-y':(50-n.y)/100*100+'cqh'}} onClick={()=>explore(n)} aria-label={n.word+" "+(n.meaning||types[n.type])+" を中心に表示"} title={n.word+" · "+(n.meaning||types[n.type])}>{showImages&&<UniverseThumbnail item={n} fallback={index.get(n.word.toLowerCase())}/>}<strong>{n.word}</strong><small>{n.meaning||types[n.type]}</small><small className="vu-node-memory">{n.candidate?"未校閲候補 · ":""}{memoryLabels[memoryFor(n).status]}</small></button>)}
    </div></div>
    <footer className="vu-map-footer"><span>{visible.length?visible.length+'件': '関連語 0件'}{needsCandidates&&!candidateData&&!candidateError?' · 読込中…':''}{candidateError?' · 追加教材の読込に失敗':''}</span><div className="vu-pagination"><button disabled={currentPage===0} onClick={()=>{setPage(p=>Math.max(0,p-1));}}>← 前へ</button><span>{Math.min(page+1,pageCount)} / {pageCount}</span><button disabled={currentPage>=pageCount-1} onClick={()=>{setPage(p=>Math.min(pageCount-1,p+1));}}>次へ →</button></div>{onPractice&&<button className="vu-practice-short" onClick={()=>onPractice(center.word)}>クイズ →</button>}</footer></>}
-   {view==='list'&&<section className="vu-list-center"><button onClick={()=>showProfile(center.word,center)}>{center.word} ↗</button><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
+   {view==='list'&&<section className="vu-list-center">{showImages&&<UniverseThumbnail item={center} fallback={index.get(center.word.toLowerCase())}/>}<button onClick={()=>showProfile(center.word,center)}>{center.word} ↗</button><span>{center.meaning}</span><button disabled={!sound} onClick={()=>onSpeak(center)}>♫ 発音</button>{onPractice&&<button onClick={()=>onPractice(center.word)}>この単語をクイズで練習 →</button>}{formRows.length>0&&<details><summary>語形変化</summary>{formRows.map(row=><p key={row.label}><small>{row.label}：</small> {row.forms.join(" / ")}</p>)}</details>}</section>}
    {view==='list'&&center.draft&&<p className="vu-empty">追加教材β・未校閲</p>}{view==='list'&&center.english&&<details className="vu-center-example"><summary>例文を見る</summary><p>{center.english}</p><small>{center.japanese}</small></details>}{!visible.length&&view==='list'&&<p className="vu-empty">{links.length?'この種類の関連語は未登録です。':'この単語の関連語データはまだ登録されていません。'}</p>}
 
-   {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} onClick={()=>explore(n)} aria-label={n.word+" を中心に表示"} data-type={n.type}><strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}{n.candidate?' · 未校閲候補':''}</span></button>)}</section>})}</div>}
+   {visible.length>0&&view==='list'&&<div className="vu-full-list">{Object.entries(tierLabels).map(([tier,label])=>{const group=visible.filter(n=>n.tier===tier);return group.length>0&&<section key={tier}><h3>{label} <small>{group.length}語</small></h3>{group.map(n=><button key={n.word} onClick={()=>explore(n)} aria-label={n.word+" を中心に表示"} data-type={n.type}>{showImages&&<UniverseThumbnail item={n} fallback={index.get(n.word.toLowerCase())}/>}<strong>{n.word}</strong><span>{n.meaning||types[n.type]} · {types[n.type]}{n.candidate?' · 未校閲候補':''}</span></button>)}</section>})}</div>}
   </>}
   </div>
   {learningOpen&&<UniverseLearning center={center} catalog={catalog} words={words} records={records} adapter={activeAdapter} links={links} onExplore={explore} snapshot={indexedSnapshot} onSnapshot={setSnapshot} command={learningCommand} onFeedback={onFeedback} onClose={()=>setLearningOpen(false)}/>}

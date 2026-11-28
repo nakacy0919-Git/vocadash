@@ -322,3 +322,21 @@
 @media(max-height:650px){.vu-library-atlas .vu-sidebar{gap:5px;padding-block:6px}.vu-library-atlas .vu-dialog .vu-sidebar button{min-height:34px;padding-block:5px}.vu-library-atlas .vu-dialog .vu-sidebar .vu-filters,.vu-library-atlas .vu-dialog .vu-sidebar .vu-view-switch{gap:5px}}
 @media(max-height:500px){.vu-library-atlas .vu-dialog .vu-sidebar button{min-height:28px;padding-block:3px}}
 @media(prefers-reduced-motion:reduce){.vu-library-atlas .vu-dialog button{transition:none}}
+
+/* Keep the microphone strip at one invariant height, including while candidates change. */
+.vu-library-atlas .vu-dialog .vu-live-voice{height:44px;min-height:44px;max-height:44px;box-sizing:border-box;flex-wrap:nowrap;overflow:hidden;gap:6px;padding:4px 8px}
+.vu-library-atlas .vu-dialog .vu-live-copy{display:flex;flex:1 1 35%;flex-direction:row;align-items:center;gap:8px;min-width:0;overflow:hidden;white-space:nowrap}
+.vu-library-atlas .vu-dialog .vu-live-copy strong{flex:none;max-width:48%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vu-library-atlas .vu-dialog .vu-live-copy small{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vu-library-atlas .vu-dialog .vu-live-voice>button{flex:none;white-space:nowrap}
+.vu-library-atlas .vu-dialog .vu-live-suggestions{order:0;flex:0 1 40%;flex-basis:40%;min-width:0;overflow-x:auto;overflow-y:hidden;flex-wrap:nowrap;padding:0;scrollbar-width:none}
+.vu-library-atlas .vu-dialog .vu-live-suggestions:has(button){order:0}
+.vu-library-atlas .vu-dialog .vu-live-suggestions:not(:has(button)){visibility:hidden}
+.vu-library-atlas .vu-dialog .vu-voice-lang{font-weight:750;min-width:36px}
+.vu-library-atlas .vu-dialog .vu-map .vu-word-thumb{display:block;flex:none;width:auto;max-width:90%;height:clamp(24px,8cqh,64px);object-fit:contain;border-radius:8px;border:1px solid #b8a57d55}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center .vu-word-thumb{display:block;height:clamp(30px,12cqh,86px);max-width:90%;object-fit:contain}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-node:has(.vu-word-thumb){max-height:32%}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center:has(.vu-word-thumb){max-height:43%}
+.vu-library-atlas .vu-dialog .vu-full-list .vu-word-thumb,.vu-library-atlas .vu-dialog .vu-list-center .vu-word-thumb{width:52px;height:48px;object-fit:contain;border-radius:6px;flex:none}
+@media(max-width:640px){.vu-library-atlas .vu-dialog .vu-live-copy strong{max-width:38%}.vu-library-atlas .vu-dialog .vu-live-suggestions{flex-basis:24%}.vu-library-atlas .vu-dialog .vu-suggestion-caption{display:none}.vu-library-atlas .vu-dialog .vu-live-voice{gap:3px;padding:4px}.vu-library-atlas .vu-dialog .vu-live-voice>button{padding:4px 6px}}
+@media(max-height:500px){.vu-library-atlas .vu-dialog .vu-live-voice{height:36px;min-height:36px;max-height:36px}.vu-library-atlas .vu-dialog .vu-map .vu-word-thumb{height:24px}.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center .vu-word-thumb{height:32px}}

@@ -215,3 +215,12 @@ test('important concept and exact sentence visuals use real WebP assets',()=>{
  assert.equal(exampleVisual('important','This is important.'),null);assert.equal(conceptVisual('importance'),null);assert.equal(exampleVisual('other','Sleep is important for learning.'),null);
  assert.equal(exampleVisual('IMPORTANT',' Sleep is important for learning '),imgs[1]);
 });
+
+test('Japanese voice commands preserve target and relation',()=>{
+ assert.deepEqual(parseVoice('ビーの類義語を表示して'),{kind:'search',value:'bee',relation:'synonym'});
+ assert.deepEqual(parseVoice('cookの例文を見せてください'),{kind:'examples',value:'cook'});
+ assert.deepEqual(parseVoice('flyを表示して'),{kind:'search',value:'fly'});
+ assert.deepEqual(parseVoice('類義語を表示して'),{kind:'filter',value:'synonym'});
+ assert.deepEqual(parseVoice('Could you show me an example of bee?'),{kind:'examples',value:'bee'});
+ assert.deepEqual(parseVoice('take offの例文を表示して'),{kind:'examples',value:'take off'});
+});

@@ -36,7 +36,7 @@ export default function UniverseWordProfile({request,words,resolveVocabulary,onB
  const lexicalLinks=useMemo(()=>data?getRelations(data):[],[data]);
  const groups=p?[{label:'Synonyms',ja:'類義語',rows:p.synonyms,type:'synonym'},{label:'Antonyms',ja:'対義語',rows:p.antonyms,type:'contrast'},{label:'Word family',ja:'派生語',rows:p.family,type:'family'},{label:'Collocations',ja:'コロケーション',rows:p.collocations,type:'collocation'}].map(g=>({...g,rows:profileRelationRows(g.rows,lexicalLinks.filter(l=>l.type===g.type))})):[];
  const openDetail=value=>{setDetail(value);setDetailPage(0);};
- const concept=conceptVisual(data?.word);
+ const concept=conceptVisual(data?.word)||(data?.image?{src:assetImage(data.image),alt:data.word+' の単語イメージ'}:null);
  const openVisual=(visual,title,sentence='',translation='')=>openDetail({type:'image',title,visual,sentence,translation});
  const fullText=(title,text,speech='')=>openDetail({type:'text',title,text,speech});
  const activeGroup=groups.find(g=>g.type===detail?.group);
