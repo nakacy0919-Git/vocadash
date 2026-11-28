@@ -11,7 +11,7 @@ const readNotes=()=>{try{return JSON.parse(localStorage.getItem(NOTE_KEY)||'{}')
 export default function VocaSheetDetail({entry,onClose,onSpeak,sound}){
  const ref=useRef(null),s=entry.sense||{},map=lookupUniverse(entry.word),links=map?.relatedWords||[];
  const [imageExpanded,setImageExpanded]=useState(false);
- const [translated,setTranslated]=useState([]),[translationState,setTranslationState]=useState('loading'),[tab,setTab]=useState('meaning'),[note,setNote]=useState(()=>readNotes()[entry.id]||''),[saved,setSaved]=useState('');
+ const [translated,setTranslated]=useState([]),[translationState,setTranslationState]=useState('loading'),[tab,setTab]=useState(entry.initialTab==='forms'?'forms':'meaning'),[note,setNote]=useState(()=>readNotes()[entry.id]||''),[saved,setSaved]=useState('');
  useEffect(()=>{const d=ref.current;d?.showModal();let active=true;loadTranslatedCollocations().then(m=>{if(active){setTranslated([...(m.get(s.senseId)?.values()||[])]);setTranslationState('ready');}}).catch(()=>{if(active)setTranslationState('error')});return()=>{active=false;d?.close();};},[s.senseId]);
  const groups=[['類義語','synonym',s.synonyms],['対義語','contrast',s.antonyms],['派生語・語形','family',s.family||s.derivations||s.wordFamily],['コロケーション','collocation',mergeLexical(s.collocations,translated)],['関連語','related',s.relatedWords]];
  const origin=bookOrigin(entry),visual=conceptVisual(entry.word);
