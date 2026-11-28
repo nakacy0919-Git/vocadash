@@ -241,3 +241,26 @@
  .vs-pocket-settings header>span{display:none}
  .vs-pocket-settings .rs-controls{align-items:start}
 }
+
+
+/* Reader-first: one compact navigation line, no permanent settings panels. */
+.vs-root .vs-reader-bar{display:flex;align-items:center;gap:clamp(6px,1.1vw,16px);min-width:0;flex-wrap:wrap;padding:0 0 3px}
+.vs-root .vs-reader-title{flex:1 1 160px;min-width:0}
+.vs-root .vs-reader-title h1{font-size:clamp(17px,2.5svh,25px);font-weight:850;line-height:1.15;color:#4b3421;margin:0 0 3px}
+.vs-root .vs-reader-title small{font-size:11px;color:#83694a;line-height:1.35;display:block;overflow-wrap:anywhere}
+.vs-root .vs-reader-title b{color:#527442;white-space:nowrap}
+.vs-root .vs-reader-actions{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.vs-root .vs-reader-actions .vs-layout-switch{margin:0;flex:none}
+.vs-root .vs-reader-icon{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid #d5c19c;background:#fffaf0;color:#5f7046;border-radius:9px;min-height:40px;padding:5px 8px;font:750 12px/1.2 system-ui,sans-serif;white-space:nowrap}
+.vs-root .vs-reader-icon svg{width:22px;height:22px;flex:none}
+.vs-root .vs-reader-icon.vs-sheet-icon{color:#b53d55;background:#fff5ef;border-color:#dec0b5}
+.vs-root .vs-reader-icon[aria-expanded=true]{outline:2px solid #779553}
+.vs-root .vs-reader-icon:disabled{opacity:.45}
+.vs-root .vs-search-active{display:flex;align-items:center;gap:8px;font-size:12px;color:#6e583e}
+.vs-root .vs-search-active button{border:1px solid #d5c19c;border-radius:6px;background:#fffaf0;color:#5f7046;padding:4px 8px}
+.vs-root .vs-setting-note{grid-column:1/-1;color:#8b4c32;font-size:12px}
+.vs-root .vs-desk:has(.vs-reader-bar){gap:5px;padding:clamp(7px,1vw,14px)}
+.vs-root .vs-desk:has(.vs-reader-bar) .vs-book-frame{padding:5px 7px 3px}
+@media(min-width:701px){.vs-root .vs-reader-bar .vs-pick-back{white-space:nowrap;min-height:40px}.vs-root .vs-reader-actions .vs-layout-switch button{min-height:36px}}
+@media(max-width:700px){.vs-root .vs-reader-bar{gap:5px}.vs-root .vs-reader-title{flex:1 1 110px}.vs-root .vs-reader-title h1{font-size:17px}.vs-root .vs-reader-title small{font-size:10px}.vs-root .vs-reader-actions{gap:4px}.vs-root .vs-reader-icon{min-width:42px;min-height:42px;padding:6px}.vs-root .vs-reader-icon span{display:none}.vs-root .vs-reader-actions .vs-layout-switch button{padding:5px 7px;min-height:38px}.vs-root .vs-reader-bar .vs-pick-back{padding:7px 6px;min-height:40px;font-size:11px}}
+@media(max-width:480px){.vs-root .vs-reader-actions{flex:1 0 100%;justify-content:flex-end}.vs-root .vs-reader-actions .vs-layout-switch{margin-right:auto}}
