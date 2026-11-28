@@ -35,3 +35,21 @@ test('registered themes combine with CEFR and POS without renumbering or inventi
  assert.deepEqual(bookFilter(words,'B2','','all','number','t').map(w=>w.number),[2]);
  assert.equal(bookFilter(words).length,3);
 });
+
+import {ELEMENTARY_WORDS,ELEMENTARY_SOURCE} from '../data/vocasheet-elementary.js';
+test('school-stage filters combine with level and POS while preserving global IDs and numbering',()=>{
+ const words=bookWords([{wordId:'1',senseId:'a',headword:'apple',meaningJa:'りんご',partOfSpeech:'noun',cefrHeadword:'A1'},{wordId:'2',senseId:'b',headword:'algorithm',meaningJa:'アルゴリズム',partOfSpeech:'noun',cefrHeadword:'B2'},{wordId:'3',senseId:'c',headword:'unlisted-example',meaningJa:'例',partOfSpeech:'verb',cefrHeadword:'A2'},{wordId:'4',senseId:'d',headword:'unlisted-advanced',meaningJa:'例',partOfSpeech:'noun',cefrHeadword:'C2'}]);
+ assert.ok(Object.hasOwn(ELEMENTARY_WORDS,'apple'));assert.ok(ELEMENTARY_SOURCE.sourceRows>=Object.keys(ELEMENTARY_WORDS).length);
+ assert.deepEqual(bookFilter(words,'all','','all','number','all','elementary').map(w=>w.number),[1]);
+ assert.deepEqual(bookFilter(words,'all','','all','number','all','middle').map(w=>w.number),[1,3]);
+ assert.deepEqual(bookFilter(words,'B2','','noun','number','t','high').map(w=>w.number),[2]);
+ assert.equal(bookFilter(words,'all','','verb','number','all','elementary').length,0);
+ assert.equal(bookFilter(words).length,4);
+});
+test('school-stage counts are backed by the active vocabulary corpus',()=>{
+ const root=new URL('../../data/vocabulary-drafts/',import.meta.url),m=JSON.parse(readFileSync(new URL('manifest.json',root),'utf8'));
+ const words=bookWords(m.batchFiles.flatMap(p=>JSON.parse(readFileSync(new URL(p,root),'utf8')).records));
+ const counts=Object.fromEntries(['elementary','middle','high'].map(id=>[id,bookFilter(words,'all','','all','number','all',id).length]));
+ assert.ok(counts.elementary>100);assert.ok(counts.middle>counts.elementary);assert.ok(counts.high>counts.elementary);
+ console.log('VocaSheet school counts: '+JSON.stringify(counts)+'; elementary source distinct: '+Object.keys(ELEMENTARY_WORDS).length);
+});

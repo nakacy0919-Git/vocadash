@@ -1,4 +1,5 @@
 import {CATEGORY_WORDS} from './category.js';
+import {ELEMENTARY_WORDS} from '../data/vocasheet-elementary.js';
 
 export const BOOK_PAGE_SIZE=6;
 export const BOOK_LEVELS=['A1','A2','B1','B2','C1','C2'];
@@ -22,10 +23,22 @@ const topicKey=(word,pos)=>String(word||'').normalize('NFKC').trim().toLowerCase
 const topicIndex=new Map();
 for(const row of CATEGORY_WORDS){const key=topicKey(row.word,row.pos);if(!topicIndex.has(key))topicIndex.set(key,new Set());topicIndex.get(key).add(row.topic);}
 export function bookTopicMatches(s,topic='all'){return topic==='all'||!!topicIndex.get(topicKey(s.headword,s.partOfSpeech))?.has(topic);}
-export function bookFilter(words,level='all',query='',pos='all',sort='number',topic='all'){
+export const BOOK_SCHOOLS=[['all','すべての学校段階'],['elementary','小学校'],['middle','中学校'],['high','高校']];
+const schoolKey=x=>String(x||'').normalize('NFKC').trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ');
+const primaryKeys=new Set(Object.keys(ELEMENTARY_WORDS));
+const gradeIndex=new Map();
+for(const row of CATEGORY_WORDS){const key=topicKey(row.word,row.pos);if(!gradeIndex.has(key))gradeIndex.set(key,new Set());gradeIndex.get(key).add(row.level===1?'middle':'high');}
+export function bookSchoolMatches(s,school='all'){
+ if(school==='all')return true;
+ if(school==='elementary')return primaryKeys.has(schoolKey(s.headword));
+ if(school==='middle')return ['A1','A2'].includes(s.cefrHeadword)||!!gradeIndex.get(topicKey(s.headword,s.partOfSpeech))?.has('middle');
+ if(school==='high')return ['A2','B1','B2'].includes(s.cefrHeadword)||!!gradeIndex.get(topicKey(s.headword,s.partOfSpeech))?.has('high');
+ return false;
+}
+export function bookFilter(words,level='all',query='',pos='all',sort='number',topic='all',school='all'){
  const q=String(query||'').trim().normalize('NFKC').toLowerCase();
  const rows=words.flatMap(w=>{
-  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&bookTopicMatches(s,topic)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
+  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&bookTopicMatches(s,topic)&&bookSchoolMatches(s,school)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
   return senses.length?[{...w,senses,level:senses[0].cefrHeadword||w.level}]:[];
  });
  if(sort==='alpha')rows.sort((a,b)=>a.headword.localeCompare(b.headword,'en')||a.number-b.number);
