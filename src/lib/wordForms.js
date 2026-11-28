@@ -320,7 +320,24 @@ const result=(status,forms,note='',origin='VocaDash 独自整理')=>({status,lab
 const verbRows=(w,v)=>[['原形',w],['三人称単数',v[0]],['過去形',v[1]],['過去分詞',v[2]],['-ing形',v[3]]].filter(([,f])=>f);
 const compareRows=(w,v)=>[['原級',w],['比較級',v[0]],['最上級',v[1]]].filter(([,f])=>f);
 const validForms=(values,w)=>Array.isArray(values)?[...new Set(values.filter(x=>typeof x==='string'&&x.length<=100&&/^[A-Za-z][A-Za-z .'-]*$/.test(x)&&!/\b(?:countable|uncountable|plural|singular|comparative|superlative|obsolete|archaic)\b/i.test(x)))].join(' / '):'';
-const posKey=p=>({v:'verb',n:'noun',adj:'adjective',a:'adjective',adv:'adverb',r:'adverb',pron:'pronoun',det:'determiner',prep:'preposition',conj:'conjunction',num:'numeral',aux:'auxiliary', 'modal verb':'modal','proper noun':'proper noun','proper name':'proper noun','phrasal verb':'phrasal verb'}[formKey(p).replace(/\.$/,'')]||formKey(p).replace(/\.$/,''));
+const posKey=p=>({v:'verb',n:'noun',adj:'adjective',a:'adjective',adv:'adverb',r:'adverb',pron:'pronoun',det:'determiner',prep:'preposition',conj:'conjunction',num:'numeral',aux:'auxiliary', 'modal verb':'modal','modal auxiliary':'modal','auxiliary verb':'auxiliary','number':'numeral','adjective phrase':'adjective','title':'proper noun','proper noun':'proper noun','proper name':'proper noun','phrasal verb':'phrasal verb'}[formKey(p).replace(/\.$/,'')]||formKey(p).replace(/\.$/,''));
+// Transparent regular-rule candidates, only for registered vocabulary.
+// Never treat a generated candidate as a dictionary-attested search alias.
+function regularVerbCandidates(w){
+ if(!/^[a-z]+$/.test(w)||w.length<2||/(?:[bcdfghjklmnpqrstvwxyz])\1$/.test(w)&&!/ss$|ll$/.test(w))return [];
+ const third=/[^aeiou]y$/.test(w)?w.slice(0,-1)+'ies':/(?:s|x|z|ch|sh|o)$/.test(w)?w+'es':w+'s';
+ const out=[['三人称単数候補',third]];
+ // Final single vowel + consonant requires stress and exception knowledge.
+ if(/[^aeiou][aeiou][bdgklmnprst]$/.test(w)||/c$|oe$/.test(w))return out;
+ const past=/[^aeiou]y$/.test(w)?w.slice(0,-1)+'ied':/e$/.test(w)?w+'d':w+'ed';
+ const ing=/ie$/.test(w)?w.slice(0,-2)+'ying':/[^eoy]e$/.test(w)?w.slice(0,-1)+'ing':w+'ing';
+ return [...out,['過去形候補',past],['過去分詞候補',past],['-ing形候補',ing]];
+}
+function regularNounCandidate(w){
+ if(!/^[a-z][a-z-]*$/.test(w)||/[-]$/.test(w)||/(?:us|is|um|on|ex|ix|f|fe|o|a|s)$/.test(w))return '';
+ return /[^aeiou]y$/.test(w)?w.slice(0,-1)+'ies':/(?:x|z|ch|sh)$/.test(w)?w+'es':w+'s';
+}
+const extraComparisons={full:['fuller','fullest'],empty:['emptier','emptiest'],few:['fewer','fewest'],fun:['more fun','most fun'],fit:['fitter','fittest'],wet:['wetter','wettest'],dry:['drier/dryer','driest/dryest'],fat:['fatter','fattest'],flat:['flatter','flattest'],fine:['finer','finest'],fair:['fairer','fairest'],fresh:['fresher','freshest'],sweet:['sweeter','sweetest'],sour:['sourer','sourest'],tough:['tougher','toughest'],rough:['rougher','roughest'],smooth:['smoother','smoothest'],sharp:['sharper','sharpest'],soft:['softer','softest'],loose:['looser','loosest'],tight:['tighter','tightest'],ripe:['riper','ripest'],rare:['rarer','rarest'],wild:['wilder','wildest'],wise:['wiser','wisest'],true:['truer','truest'],strange:['stranger','strangest'],brave:['braver','bravest'],calm:['calmer','calmest'],kind:['kinder','kindest'],gentle:['gentler','gentlest'],polite:['politer/more polite','politest/most polite'],narrow:['narrower','narrowest'],shallow:['shallower','shallowest'],mild:['milder','mildest'],pale:['paler','palest'],plain:['plainer','plainest'],proud:['prouder','proudest'],cruel:['crueler/crueller','cruelest/cruellest'],bitter:['bitterer/more bitter','bitterest/most bitter'],crazy:['crazier','craziest'],lazy:['lazier','laziest'],lucky:['luckier','luckiest'],noisy:['noisier','noisiest'],sleepy:['sleepier','sleepiest'],thirsty:['thirstier','thirstiest'],wealthy:['wealthier','wealthiest'],lovely:['lovelier','loveliest'],lively:['livelier','liveliest'],ugly:['uglier','ugliest'],spicy:['spicier','spiciest'],salty:['saltier','saltiest'],tasty:['tastier','tastiest'],crispy:['crispier','crispiest'],cloudy:['cloudier','cloudiest'],sunny:['sunnier','sunniest'],windy:['windier','windiest'],rainy:['rainier','rainiest'],snowy:['snowier','snowiest'],foggy:['foggier','foggiest'],messy:['messier','messiest'],neat:['neater','neatest'],mad:['madder','maddest']};
 const textFor=r=>String(r?.meaningJa||r?.meaning||'')+' '+String(r?.definitionEn||r?.definition||'');
 export function formProfile(word,pos,record={}){
  const exact=String(word??'').normalize('NFKC').trim(),w=formKey(exact),p=posKey(pos),meaning=textFor(record);
@@ -333,6 +350,17 @@ export function formProfile(word,pos,record={}){
    return result(ps.every(x=>x.status==='invariant')?'invariant':'conditional',ps.flatMap((x,i)=>x.forms.map(([k,f])=>[variants[i]+' · '+k,f])), '併記された綴り・語形を個別に表示します。語義と綴りの対応を確認してください。',ps.some(x=>x.source.includes('UniMorph'))?source:'VocaDash 独自整理');
   }
  }
+ if(p==='contraction'){
+  const entry=Object.entries(contractions).find(([k])=>formKey(k)===w);
+  return entry?result('editorial',[['短縮形',exact],['短縮前',entry[1]]],'文脈により複数の展開形があります。'):result('review',base,'短縮前の形を個別確認。');
+ }
+ if(p==='verb form'){
+  const candidates=[...verbs,...extraVerbs].filter(([k,v])=>k!==w&&v.some(f=>f.split(/\s*\/\s*/).some(x=>formKey(x)===w)));
+  if(candidates.length===1)return result('editorial',verbRows(candidates[0][0],candidates[0][1]),'見出し語はこの動詞の活用形です。');
+  if(candidates.length>1)return result('conditional',candidates.flatMap(([k,v])=>verbRows(k,v).map(([label,f])=>[k+' · '+label,f])),'複数の原形に対応する可能性があります。');
+  return result('review',base,'原形・活用形の対応を個別確認。');
+ }
+ if(p==='modal expression')return result('invariant',base,'固定された助動詞表現。動詞部分の活用は個別の用法で確認します。');
  if(p==='modal'||p==='auxiliary'&&Object.hasOwn(modals,w)||p==='verb'&&Object.hasOwn(modals,w)&&/助動詞|modal auxiliary/i.test(meaning)){
   return result('editorial',[['助動詞',exact],...(modals[w]?[['関連する助動詞',modals[w]]]:[])],'一般動詞の三単現・-ing形・過去分詞はありません。関連形は時制だけでなく丁寧さ・仮定等でも使われます。');
  }
@@ -346,7 +374,7 @@ export function formProfile(word,pos,record={}){
    return result('conditional',[...verbRows('lie',verbs.get('lie')).map(([k,f])=>['横たわる · '+k,f]),...verbRows('lie',['lies','lied','lied','lying']).map(([k,f])=>['うそをつく · '+k,f])],'語義ごとに活用が異なります。');
   }
   if(w==='hang'&&/絞首|処刑|execute|execution/i.test(meaning))return result('editorial',verbRows(w,['hangs','hanged','hanged','hanging']),'絞首刑にする語義。');
-  if(w==='hang'&&!meaning)return result('conditional',verbRows(w,['hangs','hung / hanged','hung / hanged','hanging']),'hung は通常の「掛ける」、hanged は絞首刑の語義。');
+  if(w==='hang'&&!/掛|吊|つる|hang|suspend/i.test(meaning))return result('conditional',verbRows(w,['hangs','hung / hanged','hung / hanged','hanging']),'hung は通常の「掛ける」、hanged は絞首刑の語義。');
   if(w==='bear')return result('conditional',verbRows(w,verbs.get(w)),'borne は一般の過去分詞、born は出生を表す用法。語義に応じて使います。');
   if(w==='read')return result('editorial',verbRows(w,verbs.get(w)),'原形・現在形 read は /riːd/、過去形・過去分詞 read は /red/ と発音します。');
   const v=verbs.get(w)||extraVerbs.get(w);
@@ -358,10 +386,13 @@ export function formProfile(word,pos,record={}){
    const hp=formProfile(head,'verb',record);
    if(hp.forms.length>1&&hp.status!=='review'&&hp.status!=='invariant')return result('conditional',hp.forms.map(([k,f])=>[k,f.split(/\s*\/\s*/).map(x=>x+tail).join(' / ')]),'句動詞の先頭動詞を活用した候補です。語順・分離可能性・固定表現は要確認。',hp.source);
   }
-  return result('review',[['原形',exact]],'辞書照合・例外確認が必要です。推測した活用は表示しません。');
+  const regular=record.senseId?regularVerbCandidates(w):[];
+  if(regular.length)return result('conditional',[['原形',exact],...regular],'規則から生成した未校閲候補です。不規則変化・語末の子音重複・綴りの例外を個別確認してください。', 'VocaDash 規則候補');
+  return result('review',[['原形',exact]],'辞書照合・例外確認が必要です。推測した活用は確定表示しません。');
  }
  if(p==='adjective'||p==='adverb'){
-  const cmp=(p==='adjective'?adj:advForms).get(w);
+  if(p==='adjective'&&w==='little'&&/小さ|幼|small|young/i.test(meaning))return result('editorial',compareRows(exact,['littler','littlest']),'小さいという語義。通常は smaller/smallest も用います。');
+  const cmp=(p==='adjective'?adj:advForms).get(w)||(p==='adjective'?own(extraComparisons,w):undefined);
   if(cmp)return result('editorial',compareRows(exact,cmp));
   if((p==='adjective'?nonGradable:nonGradableAdv).has(w))return result('conditional',[['原級',exact]],'通常の用法では程度比較をしない、または比較形を限定的に使う語です。文脈によって例外があります。');
   if(p==='adjective'){
@@ -377,12 +408,14 @@ export function formProfile(word,pos,record={}){
  if(p==='noun'||p==='proper noun'){
   if(p==='proper noun'||/^[A-Z]/.test(exact)&&/固有名詞|国名|月名|人名|地名|proper noun/i.test(meaning)||/^(?:[A-Z]{2,})$/.test(exact))return result('invariant',base,'固有名詞・略語は通常の可算名詞の複数化とは区別します。');
   if(pluralOnly.has(w))return result('conditional',[['通常の複数形',exact]],'通常は複数形で使用します。単数相当の表現や別語義は個別確認。');
-  if(w==='May' || exact==='May')return result('invariant',base,'月名。');
+  if(exact==='May')return result('invariant',base,'月名。');
   if(Object.hasOwn(nouns,w))return result('editorial',[['単数形',exact],['複数形',nouns[w]]],'可算の語義で使用する形です。');
   const n=validForms(own(nLex,exact)?.plural,w);
   if(mass.has(w)||/不可算|uncountable|mass noun/i.test(meaning))return result('conditional',[['通常の形',exact],...(n?[['可算の別用法での辞書形',n]]:[])],'通常は不可算として扱う語義があります。種類・個別の物などを指す場合に可算になることがあります。',n?source:'VocaDash 独自整理');
   if(n)return result('reference',[['単数形候補',exact],['複数形',n]],'可算の語義の場合。不可算・固有名詞・別の語義への適用は未確認。',source);
-  return result('review',base,'可算性と複数形を個別確認。未確認の -s 形は自動表示しません。');
+  const regular=record.senseId?regularNounCandidate(w):'';
+  if(regular)return result('conditional',[['見出し語',exact],['複数形候補',regular]],'可算名詞として使用する場合の規則形候補です。可算性・例外・別語義は未校閲です。', 'VocaDash 規則候補');
+  return result('review',base,'可算性と複数形を個別確認。未確認の -s 形は確定表示しません。');
  }
  if(p==='pronoun'||p==='determiner'||p==='article'){
   if(exact==='IT')return result('invariant',base,'略語の語形は代名詞 it と区別します。');
@@ -399,11 +432,11 @@ export function formProfile(word,pos,record={}){
   const i=Math.max(cardinal.indexOf(w),ordinal.indexOf(w));
   if(i>=0)return result('editorial',[['基数',cardinal[i]],['序数',ordinal[i]]],'基数と序数は関連する数表現です。');
  }
- if(['preposition','conjunction','interjection','phrase','idiom','numeral','particle','prefix','suffix','abbreviation','expression','proper noun'].includes(p))return result('invariant',base,'通常は独立した活用表を持たない品詞・表現です。');
+ if(['preposition','conjunction','interjection','phrase','idiom','numeral','particle','prefix','suffix','abbreviation','expression','proper noun','combining form'].includes(p))return result('invariant',base,'通常は独立した活用表を持たない品詞・表現です。');
  return result('review',base,'品詞表記または語形の適用範囲を要確認。');
 }
 export function wordForms(word,pos,record){return formProfile(word,pos,record).forms;}
 export function formMatches(word,pos,q,record){const k=formKey(q);const profile=formProfile(word,pos,record);return profile.forms.some(([label,v])=>!label.includes('候補')&&v.split(/\s*\/\s*/).some(s=>formKey(s)===k));}
 export const contractionForms=Object.entries(contractions).map(([short,full])=>({short,full}));
 export function contractionMatch(word,q){const w=formKey(word),k=formKey(q);return contractionForms.some(({short,full})=>formKey(short)===k&&full.split("/").some(f=>formKey(f).split(" ").includes(w)));}
-export function formCounts(){return {verbs:verbs.size+extraVerbs.size,adjectives:adj.size,adverbs:advForms.size,nouns:Object.keys(nouns).length,contractions:contractionForms.length};}
+export function formCounts(){return {verbs:verbs.size+extraVerbs.size,adjectives:new Set([...adj.keys(),...Object.keys(extraComparisons)]).size,adverbs:advForms.size,nouns:Object.keys(nouns).length,contractions:contractionForms.length};}
