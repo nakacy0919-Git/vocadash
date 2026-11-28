@@ -16,7 +16,7 @@ const jaAliases={'ビー':'bee','ビイ':'bee','ミツバチ':'bee','蜜蜂':'be
 export function parseJapaneseVoice(raw){
  const t=String(raw||'').normalize('NFKC').trim().replace(/[。！？!?、]+$/g,'').replace(/\s*([ぁ-んァ-ヶ一-龯])\s*/g,'$1').replace(/^(?:ねえ)?(?:ダッシュ|dash)[、,:]?/i,'').replace(/^(?:すみません|お願い|では|じゃあ)/,'');
  const target=x=>{const w=x.trim().replace(/^[「『"'“]+|[」』"'”]+$/g,'');return jaAliases[w]||w.toLowerCase();};
- const end='(?:を)?(?:表示(?:して(?:ください)?|する)?|見せて(?:ください)?|教えて(?:ください)?|開いて(?:ください)?|出して(?:ください)?|調べて(?:ください)?)';
+ const end='(?:を)?(?:表示(?:して(?:ください)?|する)?|見せて(?:ください)?|教えて(?:ください)?|開いて(?:ください)?|出して(?:ください)?|調べて(?:ください)?|確認して(?:ください)?|確認したい|見たい|知りたい)';
  const named=t.match(new RegExp('^(.+?)の(類義語|同義語|対義語|反意語|派生語|語形変化|語形|関連語|コロケーション|連語|例文|意味|詳細)'+end+'$'));
  if(named){const [,word,what]=named;if(jaRelation[what])return {kind:'search',value:target(word),relation:jaRelation[what]};return {kind:'examples',value:target(word)};}
  const current=t.match(new RegExp('^(類義語|同義語|対義語|反意語|派生語|語形変化|語形|関連語|コロケーション|連語|例文|意味|詳細)'+end+'$'));
@@ -26,13 +26,37 @@ export function parseJapaneseVoice(raw){
  if(/^(?:音声認識を停止して|マイクを止めて|停止して)$/.test(t))return {kind:'stop',value:''};
  if(/^(?:画像を表示して|画像を見せて)$/.test(t))return {kind:'images',value:'show'};
  if(/^(?:画像を隠して|画像を非表示にして)$/.test(t))return {kind:'images',value:'hide'};
- const generic=t.match(new RegExp('^(.+?)'+end+'$'));
+ const generic=t.replace(/(?:を)?ちょっと(?=見せて|表示|確認)/,'を').match(new RegExp('^(.+?)'+end+'$'));
  if(generic&&/[ぁ-んァ-ヶ一-龯]/.test(t))return {kind:'search',value:target(generic[1])};
  return null;
 }
+// Remove hesitation tokens and repeated request starts, not lexical articles.
+// Keep exact multiword vocabulary (e.g. "a little", "take care of") intact.
+export function normalizeVoiceRequest(raw){
+ let text=String(raw||'').normalize('NFKC').replace(/[’‘]/g,"'").toLowerCase()
+  .replace(/[“”"?.!,]/g,' ').replace(/(?:^|\s)(?:uh+|um+|ah+|er+|erm+|hmm+)(?=\s|$)/g,' ')
+  .replace(/(?:えーと|えっと|あのー|あー|うーん)/g,' ').replace(/\s+/g,' ').trim();
+ // Only remove abandoned starts at the beginning of an utterance, before
+ // another request. Never strip words from the actual search target.
+ text=text.replace(/^((?:hey\s+)?dash(?:\s+assistant)?\s+)?(?:(?:i (?:want|need|would like) to|i'd like to|let me|could you|can you|would you)\s+)+(?=(?:i (?:want|need|would like) to|i'd like to|let me|could you|can you|would you)\s+)/,(_,wake)=>wake||'');
+ text=text.replace(/^((?:hey\s+)?dash(?:\s+assistant)?\s+)?((?:(?:i (?:want|need|would like) to|i'd like to|let me)\s+)?(?:see|check|show me|look up|expand))\s+\2\s+/g,'$1$2 ');
+ return text;
+}
 export function parseVoice(raw) {
- const japanese=parseJapaneseVoice(raw);if(japanese)return japanese;
- const t=String(raw||'').toLowerCase().replace(/[“”"?.!,]/g,'').replace(/\s+/g,' ').trim().replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ const cleaned=normalizeVoiceRequest(raw);const japanese=parseJapaneseVoice(cleaned);if(japanese)return japanese;
+ const t=cleaned.replace(/^(?:hey\s+)?dash(?:\s+assistant)?(?:\s+|$)/,'').replace(/^(?:(?:please|thank you|thanks|okay|ok|can you|could you|would you)\s+)+/,'').replace(/\s+(?:please|thank you|thanks)$/,'').trim();
+ // Repeated or restarted requests such as "I want to see I want to check builder".
+ const repeated=t.match(/^(?:(?:i (?:want|need|would like) to|i'd like to|let me)\s+)(?:(?:see|check|show me|look up|expand)\s+)?((?:i (?:want|need|would like) to|i'd like to|let me)\s+.+)$/);
+ if(repeated)return parseVoice(repeated[1]);
+ // Canonicalize natural requests before applying the existing specific
+ // commands, so "I want to see an example of bee" remains a profile request.
+ const conversational=t.match(/^(?:(?:i (?:want|need|would like) to|i'd like to|let me|can i|could i|may i)\s+)?(?:see|check(?: out)?|display|view|show me|show|open)\s+(.+)$/);
+ if(conversational&&!/^(?:show|open)\b/.test(t)){
+  const target=conversational[1].replace(/^(?:see|check(?: out)?|show me)\s+(?=\S)/,'');
+  return parseVoice('show me '+target);
+ }
+ const politeRequest=t.match(/^(?:i (?:want|need|would like) to|i'd like to|let me|can i|could i|may i)\s+(show me|show|open|expand|explore|focus on|look up)\s+(.+)$/);
+ if(politeRequest)return parseVoice(politeRequest[1]+' '+politeRequest[2]);
  // Natural requests for a full lexical profile, not just a map.
  const natural=t.match(/^(?:(?:i (?:want|need|would like) to|i'd like to|let's|lets|let me)\s+)?(?:take a look at|have a look at|look at|learn about|learn more about|know more about|see details (?:of|for|about)|see (?:the )?(?:word )?(?:profile|details) (?:of|for)|show (?:me )?(?:the )?(?:word )?(?:profile|details|information) (?:of|for|about))\s+(.+)$/);
  if(natural)return {kind:'examples',value:natural[1].replace(/^(?:the word|the term)\s+/,'')};
@@ -70,7 +94,7 @@ export function parseVoice(raw) {
  ['map',/^(show (the )?map|map view)$/],
  ['images',/^(show|hide) images?$/],
  ['translation',/^(show|hide) (japanese|translation)$/],
- ['search',/^(?:show me|look up|find|search for|what does|what is|define|tell me about) (.+?)(?: mean)?$/],
+ ['search',/^(?:show me|show|look up|find|search for|what does|what is|define|tell me about|open|check|see) (.+?)(?: mean)?$/],
  ];
  for(const [kind,re] of rules){const m=t.match(re);if(!m)continue;let value='';
  if(kind==='universe')value=m[5]||'';

@@ -224,3 +224,15 @@ test('Japanese voice commands preserve target and relation',()=>{
  assert.deepEqual(parseVoice('Could you show me an example of bee?'),{kind:'examples',value:'bee'});
  assert.deepEqual(parseVoice('take offの例文を表示して'),{kind:'examples',value:'take off'});
 });
+
+test('natural voice requests accept hesitation, self-correction and optional articles',()=>{
+ for(const raw of ['I want to see a builder','I want to check builder','I want to check, uh, the builder','I want to, I want to check builder','I want to see, I want to check builder','Let me see builder','Could you check builder','I want to check, um, builder','I want to see I want to see builder','I want to check あー builder']){
+  const cmd=parseVoice(raw);assert.equal(cmd.kind,'search',raw);assert.ok(wordCandidates(cmd.value).includes('builder'),raw);
+ }
+ assert.deepEqual(parseVoice('I want to see an example of bee'),{kind:'examples',value:'bee'});
+ assert.deepEqual(parseVoice('I want to check a little'),{kind:'search',value:'a little'});
+ assert.deepEqual(parseVoice('Could you show me, um, take care of'),{kind:'search',value:'take care of'});
+ assert.deepEqual(parseVoice('builderをちょっと見せて'),{kind:'search',value:'builder'});
+ assert.deepEqual(parseVoice('constructionを確認したい'),{kind:'search',value:'construction'});
+ assert.equal(parseVoice('I want to go back').kind,'back');
+});

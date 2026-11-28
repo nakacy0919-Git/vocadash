@@ -340,3 +340,19 @@
 .vu-library-atlas .vu-dialog .vu-full-list .vu-word-thumb,.vu-library-atlas .vu-dialog .vu-list-center .vu-word-thumb{width:52px;height:48px;object-fit:contain;border-radius:6px;flex:none}
 @media(max-width:640px){.vu-library-atlas .vu-dialog .vu-live-copy strong{max-width:38%}.vu-library-atlas .vu-dialog .vu-live-suggestions{flex-basis:24%}.vu-library-atlas .vu-dialog .vu-suggestion-caption{display:none}.vu-library-atlas .vu-dialog .vu-live-voice{gap:3px;padding:4px}.vu-library-atlas .vu-dialog .vu-live-voice>button{padding:4px 6px}}
 @media(max-height:500px){.vu-library-atlas .vu-dialog .vu-live-voice{height:36px;min-height:36px;max-height:36px}.vu-library-atlas .vu-dialog .vu-map .vu-word-thumb{height:24px}.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center .vu-word-thumb{height:32px}}
+
+/* Library atlas: text on the left, larger artwork on the right. */
+.vu-library-atlas .vu-dialog .vu-card-copy{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-width:0;max-width:100%;text-align:center;overflow-wrap:anywhere}
+.vu-library-atlas .vu-dialog .vu-card-copy>*{max-width:100%;min-width:0}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map :is(.vu-node,.vu-center):has(>.vu-word-thumb){display:grid;grid-template-columns:minmax(0,1fr) minmax(0,38%);align-items:center;justify-items:stretch;gap:8px;max-height:27%;overflow:hidden}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center:has(>.vu-word-thumb){grid-template-columns:minmax(0,1fr) minmax(0,42%);max-height:36%}
+.vu-library-atlas .vu-dialog :is(.vu-node,.vu-center,.vu-full-list button):has(>.vu-word-thumb)>.vu-card-copy{align-items:flex-start;text-align:left;overflow:hidden}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-node>.vu-card-copy strong{font-size:clamp(11px,min(1.75cqw,4.6cqh),19px)}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-node:not(:has(>.vu-word-thumb))>.vu-card-copy strong{font-size:clamp(11px,min(2.05cqw,5cqh),21px)}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map :is(.vu-node,.vu-center)>.vu-word-thumb{width:100%;max-width:100%;height:auto;aspect-ratio:1;max-height:clamp(30px,15cqh,86px);object-fit:contain;border-radius:8px;background:#fffaf180}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center>.vu-word-thumb{max-height:clamp(40px,20cqh,120px)}
+.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map .vu-center:has(>.vu-word-thumb) .vu-center-word strong{font-size:clamp(14px,min(2.5cqw,6cqh),30px)}
+.vu-library-atlas .vu-dialog .vu-center .vu-card-copy>button:not(.vu-center-word){min-height:24px;padding:3px 6px;font-size:10px;background:#fff8e9;color:#4d6b3e;border-color:#aebd8a}
+.vu-library-atlas .vu-dialog .vu-full-list button:has(>.vu-word-thumb){display:grid;grid-template-columns:minmax(0,1fr) 56px;align-items:center;gap:8px}
+.vu-library-atlas .vu-dialog .vu-full-list button>.vu-card-copy{align-items:flex-start;text-align:left}
+@media(max-height:500px){.vu-library-atlas .vu-dialog .vu-card-copy{gap:1px}.vu-library-atlas .vu-dialog .vu-wide-workspace>.vu-stage>.vu-map-scroll>.vu-map :is(.vu-node,.vu-center):has(>.vu-word-thumb){gap:4px}}
