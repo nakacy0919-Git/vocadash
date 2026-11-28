@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useRef} from 'react';
 import './LearningSpace.css';
 import './LibraryHome.css';
+import SheetIntro,{sheetIntroSeen,markSheetIntro} from './SheetIntro.jsx';
 import {coursesForLearningRoute} from '../lib/learningFlow.js';
 const goals=[
  {id:'learn',tag:'01 / LEARN',icon:'▣',title:'単語を覚えたい',sub:'意味・例文・音声で語彙を増やす',tone:'cyan'},
@@ -59,6 +60,8 @@ const missions=[
 export default function LearningSpace({catalog,selection,onStart,onResume,onLibrary,onVocaSheet,onQuizStudio,onSettings,progress,courseLabel,unitLabel,stats,today,allLearned,allDue,loading,error,onRetry,onExplore,onLookup,onSpeak,onDash,unitAvailable,externalCategory,onCategoryConsumed}){
  const [goal,setGoal]=useState(null),[step,setStep]=useState(0),[picked,setPicked]=useState(null),[unitId,setUnitId]=useState(null),[query,setQuery]=useState(''),[exploreError,setExploreError]=useState(''),[busy,setBusy]=useState(false),[page,setPage]=useState(0),[reviewOnly,setReviewOnly]=useState(false),[searchText,setSearchText]=useState('');
  const [lang,setLang]=useState(()=>{try{return localStorage.getItem('vd-library-language')==='en'?'en':'ja'}catch{return 'ja'}}),[found,setFound]=useState(null);
+ const [sheetGuide,setSheetGuide]=useState(false);
+ const openSheet=()=>{if(!sheetIntroSeen()){markSheetIntro();setSheetGuide(true)}else onVocaSheet?.()};
  const searchEpoch=useRef(0); const [routeFilter,setRouteFilter]=useState('all'),[routeQuery,setRouteQuery]=useState('');
  const t=(ja,en)=>lang==='en'?en:ja;
  const switchLang=next=>{setLang(next);try{localStorage.setItem('vd-library-language',next)}catch{}};
@@ -100,9 +103,10 @@ export default function LearningSpace({catalog,selection,onStart,onResume,onLibr
  <button className="lh-main-button" onClick={()=>begin('learn')}><span className="lh-action-icon" aria-hidden="true">Aa</span><span><strong>{t('単語を覚える','Learn Words')}</strong><small>{t('意味・例文・復習','Words, examples & review')}</small></span><span aria-hidden="true">›</span></button>
  <button className="lh-main-button" onClick={()=>begin('explore')}><span className="lh-action-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6" strokeLinecap="round"/></svg></span><span><strong>{t('単語を調べる','Search Words')}</strong><small>{t('意味・発音・関連語','Meanings, pronunciation & related words')}</small></span><span aria-hidden="true">›</span></button>
  </div>
- <div className="lh-quick"><button className="lh-vocasheet-entry" onClick={onVocaSheet} style={{fontWeight:800,background:'#e5ecd4',borderColor:'#c3cfa2',color:'#405e35'}}><span aria-hidden="true">▤ </span>VocaSheet · {t('見開き単語帳','Vocabulary book')} →</button><button onClick={onResume} disabled={loading||!!error||!stats.total}>{t('前回の続き','Continue learning')} →</button><button onClick={()=>begin('progress')}>{t('学習記録','My progress')} · {allLearned}</button></div>
+ <div className="lh-quick"><button className="lh-vocasheet-entry" onClick={openSheet} style={{fontWeight:800,background:'#e5ecd4',borderColor:'#c3cfa2',color:'#405e35'}}><span aria-hidden="true">▤ </span>VocaSheet · {t('見開き単語帳','Vocabulary book')} →</button><button type="button" className="lh-sheet-help" aria-label={t('VocaSheetの使い方','VocaSheet guide')} title={t('VocaSheetの使い方','VocaSheet guide')} onClick={()=>setSheetGuide(true)}>?</button><button onClick={onResume} disabled={loading||!!error||!stats.total}>{t('前回の続き','Continue learning')} →</button><button onClick={()=>begin('progress')}>{t('学習記録','My progress')} · {allLearned}</button></div>
  <div className="lh-voice"><button className="lh-mic" onClick={onDash} aria-label={t('DASHのマイクを開始','Start DASH microphone')}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"><rect x="9" y="2.5" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3.5M8.5 21.5h7"/></svg></button><span>{t('DASHと話す','Talk with DASH')}</span><small>{t('例：Show me beautiful','Try: Show me beautiful')}</small></div>
  </div>
+ <SheetIntro active={!goal} lang={lang} open={sheetGuide} setOpen={setSheetGuide} onStart={onVocaSheet}/>
  {goal&&<Dialog journey={goal==='learn'||routeDialog} route={routeDialog} artKind={routeDialog?routeKind:4} subtitle={routeDialog?(step===0?t('学習したい教材を選んでください。','Choose your course.'):step===1?t('学習するユニットを選びましょう。','Choose a unit to study.'):t('今日の学習方法を選びましょう。','Choose a learning mode.')):undefined} lang={lang} title={goal==='learn'?t('単語を覚える','Learn Words'):goal==='explore'?t('単語を調べる','Search Words'):goal==='progress'?t('学習記録','My progress'):goal==='review'?t('復習する','Review'):goal==='library'?t('教材ライブラリー','Learning library'):groupName(goal)} onClose={close}>
  {goal==='learn'?<div className="lh-journey-body">
  <button className="lh-resume-banner" onClick={()=>{onResume();close()}} disabled={loading||!!error||!stats.total}><RouteArt kind={7}/><span className="lh-resume-copy"><strong>{t('前回の続き・記憶ミッション','Continue / Memory Mission')} →</strong><small>{t('中断した学習の続きから、効率よく記憶を定着させましょう。','Pick up where you left off and strengthen your memory.')}</small></span><span className="lh-resume-course"><small>{t('前回の学習','Last course')}</small><b>{courseLabel} · {unitLabel}</b></span><span className="lh-resume-progress"><b>{t('学習進捗','Progress')} {progressPct}%</b><progress max="100" value={progressPct}/></span></button>
