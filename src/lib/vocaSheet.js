@@ -1,3 +1,4 @@
+import {CATEGORY_WORDS} from './category.js';
 
 export const BOOK_PAGE_SIZE=6;
 export const BOOK_LEVELS=['A1','A2','B1','B2','C1','C2'];
@@ -15,10 +16,16 @@ export function bookWords(records=[]){
   id,number:index+1,headword:senses[0].headword,level:senses[0].cefrHeadword||'',senses:[...senses].sort((a,b)=>sortId(a.senseId,b.senseId))
  }));
 }
-export function bookFilter(words,level='all',query='',pos='all',sort='number'){
+export const BOOK_TOPICS=[['all','すべてのテーマ'],['d','生活・日常'],['e','環境・自然'],['h','健康・医療'],['l','教育・学習'],['s','社会・文化'],['t','科学・技術']];
+export const BOOK_POS_OPTIONS=[['all','すべての品詞'],['verb','動詞'],['noun','名詞'],['adjective','形容詞'],['adverb','副詞'],['phrase','熟語・句'],['other','その他']];
+const topicKey=(word,pos)=>String(word||'').normalize('NFKC').trim().toLowerCase()+'|'+bookPos(pos).kind;
+const topicIndex=new Map();
+for(const row of CATEGORY_WORDS){const key=topicKey(row.word,row.pos);if(!topicIndex.has(key))topicIndex.set(key,new Set());topicIndex.get(key).add(row.topic);}
+export function bookTopicMatches(s,topic='all'){return topic==='all'||!!topicIndex.get(topicKey(s.headword,s.partOfSpeech))?.has(topic);}
+export function bookFilter(words,level='all',query='',pos='all',sort='number',topic='all'){
  const q=String(query||'').trim().normalize('NFKC').toLowerCase();
  const rows=words.flatMap(w=>{
-  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
+  const senses=w.senses.filter(s=>(level==='all'||s.cefrHeadword===level)&&(pos==='all'||bookPos(s.partOfSpeech).kind===pos)&&bookTopicMatches(s,topic)&&(!q||String(w.number)===q||w.headword.toLowerCase().includes(q)||String(s.meaningJa).includes(q)));
   return senses.length?[{...w,senses,level:senses[0].cefrHeadword||w.level}]:[];
  });
  if(sort==='alpha')rows.sort((a,b)=>a.headword.localeCompare(b.headword,'en')||a.number-b.number);

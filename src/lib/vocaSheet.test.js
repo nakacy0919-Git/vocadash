@@ -27,3 +27,11 @@ test('CEFR and POS filter the same sense and preserve serials while ordering',()
 
 import {pocketPageSize,remapBookPage} from './vocaSheet.js';
 test('pocket pagination preserves all words and restores the same reading position across layouts',()=>{const rows=Array.from({length:8653},(_,i)=>({number:i+1}));for(const size of [1,3]){const pages=bookPage(rows,0,size).pages;assert.deepEqual(Array.from({length:pages},(_,i)=>bookPage(rows,i,size).items).flat(),rows);assert.equal(bookPosition(rows,8653,size),pages-1);}assert.equal(pocketPageSize(undefined),1);assert.equal(pocketPageSize(3),3);assert.equal(remapBookPage(5,6,1),30);assert.equal(remapBookPage(31,1,3),10);assert.equal(remapBookPage(10,3,6),5);});
+
+test('registered themes combine with CEFR and POS without renumbering or inventing matches',()=>{
+ const words=bookWords([{wordId:'1',senseId:'a',headword:'forest',meaningJa:'森林',partOfSpeech:'noun',cefrHeadword:'A1'},{wordId:'1',senseId:'b',headword:'forest',meaningJa:'植林する',partOfSpeech:'verb',cefrHeadword:'B2'},{wordId:'2',senseId:'c',headword:'algorithm',meaningJa:'アルゴリズム',partOfSpeech:'noun',cefrHeadword:'B2'},{wordId:'3',senseId:'d',headword:'xyz',meaningJa:'未分類',partOfSpeech:'noun',cefrHeadword:'A1'}]);
+ assert.deepEqual(bookFilter(words,'A1','','noun','number','e').map(w=>w.number),[1]);
+ assert.equal(bookFilter(words,'B2','','verb','number','e').length,0);
+ assert.deepEqual(bookFilter(words,'B2','','all','number','t').map(w=>w.number),[2]);
+ assert.equal(bookFilter(words).length,3);
+});
