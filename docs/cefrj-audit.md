@@ -1,0 +1,3 @@
+## CEFR-J v1.6 audit
+
+Run `python3 tools/audit-cefrj.py --source /path/to/CEFRJ_wordlist_ver1.6.zip --output /tmp/vocadash-cefrj-audit.json` or omit --source to retrieve the official ZIP. Counts must match the publisher's 6,868 headwords and 7,801 rows (A1 1166, A2 1411, B1 2445, B2 2779). The script compares all active manifest batches by wordId and sense, retaining existing CEFR; case-only and POS discrepancies require review. Explicit slash variants supported; no fuzzy matching or C1/C2 inference. Output is a local audit, not a production data replacement. Source: The CEFR-J Wordlist Version 1.6. Compiled by Yukio Tono, Tokyo University of Foreign Studies. https://www.cefr-j.org/download.html (2020-03-24 edition). Use with attribution per official terms.
